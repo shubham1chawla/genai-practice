@@ -5,6 +5,8 @@ import json
 import logging
 import os
 import time
+from collections import deque
+from concurrent.futures import ThreadPoolExecutor, Future
 from typing import List, Tuple, TypedDict
 from uuid import uuid4
 
@@ -58,19 +60,6 @@ class ExtractableEntitiesRelationships(BaseModel):
     entities: List[ExtractableEntity] = Field(description='List of entities')
     relationships: List[ExtractableRelationship] = Field(description='List of relationships between entities')
 
-    @staticmethod
-    def from_chunk(chunk: Document) -> 'ExtractableEntitiesRelationships':
-        parser = OutputFixingParser.from_llm(
-            llm=llm,
-            parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
-            max_retries=3,
-        )
-        chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
-        return chain.invoke({
-            'format_instructions': parser.get_format_instructions(), 
-            'chunk': chunk.page_content,
-        })
-
 
 class Book(TypedDict):
     id: str
@@ -118,6 +107,7 @@ class Entity(BaseModel):
     def merge(self, other: 'Entity'):
         if self.key != other.key:
             raise ValueError(f'Entity Keys should match to merge!')
+        logger.info(f'[MERGE] {Entity.__name__}({self.key})')
         self.descriptions += other.descriptions
 
     def to_cypher(self) -> str:
@@ -167,11 +157,12 @@ class Relationship(BaseModel):
 
     @property
     def key(self) -> str:
-        return f'{self.entity_1}>[{self.relationship_type}]>{self.entity_2}'
+        return f'{self.entity_1.key}>[{self.relationship_type}]>{self.entity_2.key}'
 
     def merge(self, other: 'Relationship'):
         if self.key != other.key:
             raise ValueError(f'Relationship Keys should match to merge!')
+        logger.info(f'[MERGE] {Relationship.__name__}({self.key})')
         self.descriptions += other.descriptions
 
     def to_cypher(self) -> str:
@@ -217,6 +208,7 @@ class BuildDatabaseAgentState(TypedDict):
     export_dir: str
     chunk_size: int
     chunk_overlap: int
+    max_threads: int
 
     books: List[Book]
     chunks: dict[str, List[Document]]
@@ -265,67 +257,87 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
     # Relationship Key -> Relationship
     relationships_dict: dict[str, Relationship] = dict()
 
+    def extract_from_chunk(i: int, chunk: Document):
+        parser = OutputFixingParser.from_llm(
+            llm=llm,
+            parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
+            max_retries=3,
+        )
+        chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
+        entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
+            'format_instructions': parser.get_format_instructions(), 
+            'chunk': chunk.page_content,
+        })
+
+        """
+        Creating a temp dict to store the relationship between extractable entity
+        and the final entity for identifying relationships
+        """
+        extractable_entity_dict: dict[str, Entity] = dict()
+        for extractable_entity in entities_relationships.entities:
+            # Creating entity instance
+            entity = Entity.from_extractable_entity(
+                extractable_entity, 
+                book, i, state['chunk_size'], state['chunk_overlap']
+            )
+            
+            # Merging entities if already existing
+            if entity.key in entities_dict:
+                entities_dict[entity.key].merge(entity)
+            else:
+                entities_dict[entity.key] = entity
+
+            # Storing temp link between extractable entity and final entity
+            extractable_entity_dict[extractable_entity.name] = entities_dict[entity.key]
+
+        for extractable_relationship in entities_relationships.relationships:
+            entity_1_name, entity_2_name = extractable_relationship.entity_1, extractable_relationship.entity_2
+
+            # Finding final entity instance from entities' names
+            entity_1 = extractable_entity_dict.get(entity_1_name, None)
+            entity_2 = extractable_entity_dict.get(entity_2_name, None)
+
+            if entity_1 and entity_2:
+                # Creating relationship instance
+                relationship = Relationship.from_entities(
+                    (entity_1, entity_2),
+                    extractable_relationship.relationship_type,
+                    extractable_relationship.description,
+                    book, i, state['chunk_size'], state['chunk_overlap']
+                )
+
+                # Merging relationships if already existing
+                if relationship.key in relationships_dict:
+                    relationships_dict[relationship.key].merge(relationship)
+                else:
+                    relationships_dict[relationship.key] = relationship
+            else:
+                logger.warning(f'Relationship\'s Entity "{entity_1_name if not entity_1 else entity_2_name}" is missing!')
+        return i
+
     for book_id, chunks in state['chunks'].items():
         logger.info(f'Extracting entities & relationships from book: [{book_id}]')
         book = book_dict[book_id]
         
-        for i, chunk in enumerate(chunks[0:2]):
-            try :
-                entities_relationships = ExtractableEntitiesRelationships.from_chunk(chunk)
-            except Exception as ex:
-                if isinstance(ex, KeyboardInterrupt):
-                    raise ex
-                logger.warning(f"Unable to load entities & relationships from chunk: {i+1}")
-                continue
-
-            """
-            Creating a temp dict to store the relationship between extractable entity
-            and the final entity for identifying relationships
-            """
-            extractable_entity_dict: dict[str, Entity] = dict()
-            for extractable_entity in entities_relationships.entities:
-                # Creating entity instance
-                entity = Entity.from_extractable_entity(
-                    extractable_entity, 
-                    book, i, state['chunk_size'], state['chunk_overlap']
-                )
-                
-                # Merging entities if already existing
-                if entity.key in entities_dict:
-                    logger.info(f'Merging Entities with Key: "{entity.key}"')
-                    entities_dict[entity.key].merge(entity)
-                else:
-                    entities_dict[entity.key] = entity
-
-                # Storing temp link between extractable entity and final entity
-                extractable_entity_dict[extractable_entity.name] = entities_dict[entity.key]
-
-            for extractable_relationship in entities_relationships.relationships:
-                entity_1_name, entity_2_name = extractable_relationship.entity_1, extractable_relationship.entity_2
-
-                # Finding final entity instance from entities' names
-                entity_1 = extractable_entity_dict.get(entity_1_name, None)
-                entity_2 = extractable_entity_dict.get(entity_2_name, None)
-
-                if entity_1 and entity_2:
-                    # Creating relationship instance
-                    relationship = Relationship.from_entities(
-                        (entity_1, entity_2),
-                        extractable_relationship.relationship_type,
-                        extractable_relationship.description,
-                        book, i, state['chunk_size'], state['chunk_overlap']
-                    )
-
-                    # Merging relationships if already existing
-                    if relationship.key in relationships_dict:
-                        logger.info(f'Merging Relationships with Key: "{entity.key}"')
-                        relationships_dict[relationship.key].merge(relationship)
-                    else:
-                        relationships_dict[relationship.key] = relationship
-                else:
-                    logger.warning(f'Relationship\'s Entity "{entity_1_name if not entity_1 else entity_2_name}" is missing!')
+        max_workers = min(state['max_threads'], len(chunks))
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
             
-            logger.info(f'[Chunk {i+1}/{len(chunks)}] TE: {len(entities_dict)} | TR: {len(relationships_dict)}')  
+            # Invoking LLM in multiple threads
+            futures: deque[Future[Tuple[int, ExtractableEntitiesRelationships]]] = deque()
+            for i, chunk in enumerate(chunks):
+                futures.append(executor.submit(extract_from_chunk, i, chunk))
+
+            # Waiting for threads to complete execution
+            while futures:
+                future = futures.popleft()
+                if future.done():
+                    i = future.result()
+                    logger.info(' '.join([
+                        f'[CHUNK-{i}|{len(chunks) - len(futures)}/{len(chunks)}]',
+                        f'TE: {len(entities_dict)} & TR: {len(relationships_dict)}'
+                    ])) 
+                else:
+                    futures.append(future)
 
     return {
         'entities': [entity for entity in entities_dict.values()], 
@@ -400,10 +412,10 @@ if __name__ == "__main__":
         logging.getLogger(mute_packages).setLevel(logging.WARNING)
 
     llm = ChatOllama(model=constants.LLM_MODEL_NAME, temperature=0, format="json")
-    graph = build_graph()
-    graph.invoke({
+    build_graph().invoke({
         'json_path': constants.BOOKS_JSON_PATH,
         'export_dir': constants.EXPORT_DIR,
         'chunk_size': constants.CHUNK_SIZE,
         'chunk_overlap': constants.CHUNK_OVERLAP,
+        'max_threads': constants.MAX_THREADS,
     })
