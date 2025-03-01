@@ -178,6 +178,7 @@ class Relationship(BaseModel):
     ) -> 'Relationship':
         relationship_type = '_'.join(relationship_type.split())
         relationship_type = '_'.join(relationship_type.split('-'))
+        relationship_type = '_'.join(relationship_type.split('\''))
         return Relationship(**{
             'id': str(uuid4()),
             'entity_1': entities[0],

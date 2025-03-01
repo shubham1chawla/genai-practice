@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import re
 from concurrent.futures import Future, ThreadPoolExecutor
 from typing import Any, List, Tuple, TypedDict
 
@@ -33,8 +34,8 @@ class BuildDatabaseAgentState(TypedDict):
 
     books: List[Book]
     book_documents: dict[str, List[Document]]
-    chunks: dict[str, List[Document]]
-    book_extracts: dict[str, List[Tuple[int, ExtractableEntitiesRelationships]]]
+    book_chunks: dict[str, List[Document]]
+    book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]]
     entities: List[Entity]
     relationships: List[Relationship]
 
@@ -80,68 +81,94 @@ def chunk_books(state: BuildDatabaseAgentState):
         chunk_overlap=state['chunk_overlap'],
     )
 
-    chunks: dict[str, List[Document]] = dict()
+    book_chunks: dict[str, List[Document]] = dict()
     for book_id, documents in state['book_documents'].items():
-        chunks[book_id] = text_splitter.split_documents(documents)
-        logger.info(f'Chunked book [{book_id}] into {len(chunks[book_id])} documents')
+        book_chunks[book_id] = text_splitter.split_documents(documents)
+        logger.info(f'Chunked book [{book_id}] into {len(book_chunks[book_id])} documents')
     
-    return {'chunks': chunks}
+    return {'book_chunks': book_chunks}
 
 
 @loggraph
 def extract_entities_relationships(state: BuildDatabaseAgentState):
-    book_extracts: dict[str, List[Tuple[int, ExtractableEntitiesRelationships]]] = dict()
+    book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]] = dict()
+
+    # Loading already exported entities & relationships
+    for book_id, chunks in state['book_chunks'].items():
+        book_extracts[book_id] = dict()
+
+        # Checking if book folder exists
+        book_dir = os.path.join(state['export_dir'], book_id)
+        if not os.path.exists(book_dir) or not os.path.isdir(book_dir):
+            continue
+
+        chunk_jsons = os.listdir(book_dir)
+        if not chunk_jsons:
+            continue
+
+        # Reading exported files from book directory
+        for filename in chunk_jsons:
+            i = int(re.findall(r'\d+', filename)[0])
+            
+            file_path = os.path.join(book_dir, filename)
+            with open(file_path, 'r') as file:
+                book_extracts[book_id][i] = ExtractableEntitiesRelationships.model_validate_json(file.read())
+            
+            logger.debug(f'[{book_id}] [{len(book_extracts[book_id])}/{len(chunks)}] Imported chunk: {i}')
+        
+        logger.info(f'[{book_id}] Imported entities & relationships from {len(book_extracts[book_id])}/{len(chunks)} chunks')
 
     def extract_from_chunk(i: int, chunk: Document) -> Tuple[int, ExtractableEntitiesRelationships]:
-        llm = state['llm']
-        parser = OutputFixingParser.from_llm(
-            llm=llm,
-            parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
-            max_retries=3,
-        )
-        chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
-        entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
-            'format_instructions': parser.get_format_instructions(), 
-            'chunk': chunk.page_content,
-        })
-        return i, entities_relationships
+        try:
+            llm = state['llm']
+            parser = OutputFixingParser.from_llm(
+                llm=llm,
+                parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
+                max_retries=5,
+            )
+            chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
+            entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
+                'format_instructions': parser.get_format_instructions(), 
+                'chunk': chunk.page_content,
+            })
+            return i, entities_relationships
+        except Exception as e:
+            logger.error(f'[{book_id}] [CHUNK-{i}] Unable to extract entities & relationships!')
+            raise e
 
     def callback(book_id: str, future: Future[Tuple[int, ExtractableEntitiesRelationships]]):
         i, entities_relationships = future.result()
-        book_extracts[book_id].append((i, entities_relationships))
+        book_extracts[book_id][i] = entities_relationships
 
         # Exporting extracted entities & relationships
         json_file_path = os.path.join(book_dir, f'chunk-{i}.json')
         with open(json_file_path, 'w') as file:
             file.write(entities_relationships.model_dump_json(indent=2))
 
-        logger.info(f'[{len(book_extracts[book_id])}/{len(chunks)}] Exported chunk: {i}')
+        logger.info(f'[{book_id}] [{len(book_extracts[book_id])}/{len(chunks)}] Exported chunk: {i}')
 
-    for book_id, chunks in state['chunks'].items():
-        logger.info(f'Extracting entities & relationships from book: [{book_id}]')
-        book_extracts[book_id] = []
+    for book_id, chunks in state['book_chunks'].items():
+    
+        # Filtering imported chunks
+        filtered_chunks = list(filter(lambda tuple: tuple[0] not in book_extracts[book_id], enumerate(chunks)))
+        if not filtered_chunks:
+            logger.info(f'[{book_id}] All entities & relationships imported')
+            continue
 
         # Checking if book folder exists
         book_dir = os.path.join(state['export_dir'], book_id)
         if not os.path.exists(book_dir) or not os.path.isdir(book_dir):
+            logger.info(f'Creating directory for book [{book_id}]')
             os.mkdir(book_dir)
 
+        logger.info(f'[{book_id}] Extracting entities & relationships from {len(filtered_chunks)}/{len(chunks)} chunks')
+
         # Invoking LLM in multiple threads
-        max_workers = min(state['max_workers'], len(chunks))
+        max_workers = min(len(filtered_chunks), state['max_workers'])
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            for i, chunk in enumerate(chunks):
 
-                # Checking if chunk already exported
-                json_file_path = os.path.join(book_dir, f'chunk-{i}.json')
-                if os.path.exists(json_file_path) and os.path.isfile(json_file_path):
-                    with open(json_file_path, 'r') as file:
-                        entities_relationships = ExtractableEntitiesRelationships.model_validate_json(file.read())
-                        book_extracts[book_id].append((i, entities_relationships))
-                        
-                    logger.info(f'[{len(book_extracts[book_id])}/{len(chunks)}] Imported chunk: {i}')
-                    continue
-
-                # Extracting using LLM if not previously exported
+            # Extracting using LLM if not previously exported
+            for i, chunk in filtered_chunks:
                 future = executor.submit(extract_from_chunk, i, chunk)
                 future.add_done_callback(lambda f: callback(book_id, f))
 
@@ -160,10 +187,10 @@ def process_extracted_entities_relationships(state: BuildDatabaseAgentState):
     relationships_dict: dict[str, Relationship] = dict()
 
     for book_id, extracts in state['book_extracts'].items():
-        logger.info(f'Processing entities & relationships from book: [{book_id}]')
+        logger.info(f'[{book_id}] Processing entities & relationships from {len(extracts)} chunks')
         book = book_dict[book_id]
 
-        for i, entities_relationships in extracts:
+        for i, entities_relationships in extracts.items():
             """
             Creating a temp dict to store the relationship between extractable entity
             and the final entity for identifying relationships
@@ -207,9 +234,11 @@ def process_extracted_entities_relationships(state: BuildDatabaseAgentState):
                     else:
                         relationships_dict[relationship.key] = relationship
                 else:
-                    logger.warning(f'Relationship\'s Entity "{entity_1_name if not entity_1 else entity_2_name}" is missing!')
+                    logger.debug(f'Relationship\'s Entity "{entity_1_name if not entity_1 else entity_2_name}" is missing!')
 
-            logger.info(f'[TE: {len(entities_dict)}, TR: {len(relationships_dict)}] Completed chunk: {i}')
+            logger.debug(f'[{book_id}] [{i+1}/{len(extracts)}] TE: {len(entities_dict)} TR: {len(relationships_dict)}')
+
+        logger.info(f'[{book_id}] TE: {len(entities_dict)} TR: {len(relationships_dict)}')
 
     entities = [entity for entity in entities_dict.values()]
     relationships = [relationship for relationship in relationships_dict.values()]
@@ -234,8 +263,14 @@ def post_cyphers(state: BuildDatabaseAgentState):
     conn = GraphDatabase.driver(uri=state['neo4j_uri'], auth=state['neo4j_auth'])
     session = conn.session()
     tx = session.begin_transaction()
-    for cypher in cyphers:
-        tx.run(cypher)
+    logger.info(f'Posting {len(cyphers)} cyphers')
+    for i, cypher in enumerate(cyphers):
+        try:
+            tx.run(cypher)
+            logger.debug(f'[{i+1}/{len(cyphers)}] Posted cypher!')
+        except Exception as e:
+            logger.error(f'[{i+1}/{len(cyphers)}] Invalid cypher: {cypher}')
+            raise e
     tx.commit()
 
     filename = os.path.join(state['export_dir'], 'cyphers.json')

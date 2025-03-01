@@ -15,7 +15,6 @@ if __name__ == "__main__":
 
     # Setting up logger
     logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(os.path.basename(__file__))
     for package in ['httpx', 'neo4j']:
         logging.getLogger(package).setLevel(logging.WARNING)
 
