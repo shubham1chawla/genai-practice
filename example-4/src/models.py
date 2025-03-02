@@ -1,8 +1,9 @@
 import json
 import logging
-from typing import List, Tuple
+from typing import List, Tuple, TypedDict
 from uuid import uuid4
 
+from langchain_core.documents import Document
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger(__name__)
@@ -192,4 +193,54 @@ class Relationship(BaseModel):
                 'chunk_overlap': chunk_overlap,
                 'content': description,
             })],
+        })
+
+
+class BuildDatabaseAgentState(TypedDict):
+    model: str
+    books_json_path: str
+    export_dir: str
+    chunk_size: int
+    chunk_overlap: int
+    max_workers: int
+    max_retries: int
+    neo4j_uri: str
+    neo4j_auth: Tuple[str, str]
+
+    books: List[Book]
+    book_documents: dict[str, List[Document]]
+    book_chunks: dict[str, List[Document]]
+    book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]]
+    entities: List[Entity]
+    relationships: List[Relationship]
+
+
+class ExportDirectoryMetdata(BaseModel):
+    class Book(BaseModel):
+        url: str
+        start_page: int
+        end_page: int
+        chunks: int
+
+    model: str
+    chunk_size: int
+    chunk_overlap: int
+    books: dict[str, Book]
+
+    @staticmethod
+    def from_state(state: BuildDatabaseAgentState) -> 'ExportDirectoryMetdata':
+        books: dict[str, ExportDirectoryMetdata.Book] = dict()
+        for book in state['books']:
+            books[book.id] = {
+                'url': book.url,
+                'start_page': book.start_page,
+                'end_page': book.end_page,
+                'chunks': len(state['book_chunks'][book.id]),
+            }
+
+        return ExportDirectoryMetdata(**{
+            'model': state['model'],
+            'chunk_size': state['chunk_size'],
+            'chunk_overlap': state['chunk_overlap'],
+            'books': books,
         })

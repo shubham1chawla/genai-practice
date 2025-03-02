@@ -3,7 +3,7 @@ import logging
 import os
 import re
 from concurrent.futures import Future, ThreadPoolExecutor
-from typing import Any, List, Tuple, TypedDict
+from typing import Any, List, Tuple
 
 from langchain.output_parsers.fix import OutputFixingParser
 from langchain.output_parsers.pydantic import PydanticOutputParser
@@ -16,34 +16,16 @@ from langgraph.graph.graph import CompiledGraph
 from neo4j import GraphDatabase
 
 from src import prompts
-from src.models import Book, Entity, ExtractableEntitiesRelationships, Relationship
-from src.utils import loggraph
+from src.models import Book, BuildDatabaseAgentState, Entity, ExportDirectoryMetdata, ExtractableEntitiesRelationships, Relationship
+from src.utils import loggraph, validate_export_metadata
 
 logger = logging.getLogger(__name__)
-
-
-class BuildDatabaseAgentState(TypedDict):
-    llm: ChatOllama
-    json_path: str
-    export_dir: str
-    chunk_size: int
-    chunk_overlap: int
-    max_workers: int
-    neo4j_uri: str
-    neo4j_auth: Tuple[str, str]
-
-    books: List[Book]
-    book_documents: dict[str, List[Document]]
-    book_chunks: dict[str, List[Document]]
-    book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]]
-    entities: List[Entity]
-    relationships: List[Relationship]
 
 
 @loggraph
 def load_books(state: BuildDatabaseAgentState):
     # Loading books info from JSON
-    with open(state['json_path'], 'r') as file:
+    with open(state['books_json_path'], 'r') as file:
         dicts: List[dict[str, Any]] = json.loads(file.read())
     
     # Loading PDF files
@@ -84,14 +66,49 @@ def chunk_books(state: BuildDatabaseAgentState):
     book_chunks: dict[str, List[Document]] = dict()
     for book_id, documents in state['book_documents'].items():
         book_chunks[book_id] = text_splitter.split_documents(documents)
-        logger.info(f'Chunked book [{book_id}] into {len(book_chunks[book_id])} documents')
+        logger.info(f'[{book_id}] Chunked book into {len(book_chunks[book_id])} documents')
     
     return {'book_chunks': book_chunks}
 
 
 @loggraph
+def validate_exports(state: BuildDatabaseAgentState):
+    try:
+        validate_export_metadata(state)
+        return 'export_metadata'
+    except Exception as e:
+        logger.error(e)
+        return END
+
+
+@loggraph
+def export_metadata(state: BuildDatabaseAgentState):
+
+    # Creating export directory if doesn't exists
+    export_dir = state['export_dir']
+    if not os.path.exists(export_dir) or not os.path.isdir(export_dir):
+        logger.info(f'Creating export directory: "{export_dir}"')
+        os.mkdir(export_dir)
+
+    # Exporting metadata
+    metadata = ExportDirectoryMetdata.from_state(state)
+    metadata_json_path = os.path.join(export_dir, 'metadata.json')
+    with open(metadata_json_path, 'w') as file:
+        file.write(metadata.model_dump_json(indent=2))
+
+    logger.info(f'Exported metadata: "{metadata_json_path}"')
+
+
+@loggraph
 def extract_entities_relationships(state: BuildDatabaseAgentState):
     book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]] = dict()
+    llm = ChatOllama(model=state['model'], temperature=0, format='json')
+    parser = OutputFixingParser.from_llm(
+        llm=llm,
+        parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
+        max_retries=state['max_retries'],
+    )
+    chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
 
     # Loading already exported entities & relationships
     for book_id, chunks in state['book_chunks'].items():
@@ -102,7 +119,7 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
         if not os.path.exists(book_dir) or not os.path.isdir(book_dir):
             continue
 
-        chunk_jsons = os.listdir(book_dir)
+        chunk_jsons = [filename for filename in os.listdir(book_dir) if filename.startswith('chunk-') and filename.endswith('.json')]
         if not chunk_jsons:
             continue
 
@@ -120,13 +137,6 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
 
     def extract_from_chunk(i: int, chunk: Document) -> Tuple[int, ExtractableEntitiesRelationships]:
         try:
-            llm = state['llm']
-            parser = OutputFixingParser.from_llm(
-                llm=llm,
-                parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
-                max_retries=5,
-            )
-            chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
             entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
                 'format_instructions': parser.get_format_instructions(), 
                 'chunk': chunk.page_content,
@@ -139,6 +149,12 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
     def callback(book_id: str, future: Future[Tuple[int, ExtractableEntitiesRelationships]]):
         i, entities_relationships = future.result()
         book_extracts[book_id][i] = entities_relationships
+
+        # Checking if book folder exists
+        book_dir = os.path.join(state['export_dir'], book_id)
+        if not os.path.exists(book_dir) or not os.path.isdir(book_dir):
+            logger.info(f'[{book_id}] Creating directory')
+            os.mkdir(book_dir)
 
         # Exporting extracted entities & relationships
         json_file_path = os.path.join(book_dir, f'chunk-{i}.json')
@@ -154,12 +170,6 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
         if not filtered_chunks:
             logger.info(f'[{book_id}] All entities & relationships imported')
             continue
-
-        # Checking if book folder exists
-        book_dir = os.path.join(state['export_dir'], book_id)
-        if not os.path.exists(book_dir) or not os.path.isdir(book_dir):
-            logger.info(f'Creating directory for book [{book_id}]')
-            os.mkdir(book_dir)
 
         logger.info(f'[{book_id}] Extracting entities & relationships from {len(filtered_chunks)}/{len(chunks)} chunks')
 
@@ -288,14 +298,24 @@ def build_graph() -> CompiledGraph:
     # Adding nodes
     graph.add_node('load_books', load_books)
     graph.add_node('chunk_books', chunk_books)
+    graph.add_node('export_metadata', export_metadata)
     graph.add_node('extract_entities_relationships', extract_entities_relationships)
     graph.add_node('process_extracted_entities_relationships', process_extracted_entities_relationships)
     graph.add_node('post_cyphers', post_cyphers)
 
+    # Adding conditional edges
+    graph.add_conditional_edges(
+        'chunk_books', validate_exports,
+        {
+            END: END,
+            'export_metadata': 'export_metadata',
+        },
+    )
+
     # Adding edges
     graph.add_edge(START, 'load_books')
     graph.add_edge('load_books', 'chunk_books')
-    graph.add_edge('chunk_books', 'extract_entities_relationships')
+    graph.add_edge('export_metadata', 'extract_entities_relationships')
     graph.add_edge('extract_entities_relationships', 'process_extracted_entities_relationships'),
     graph.add_edge('process_extracted_entities_relationships', 'post_cyphers')
     graph.add_edge('post_cyphers', END)
