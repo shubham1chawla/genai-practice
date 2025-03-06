@@ -1,6 +1,6 @@
 import json
 import logging
-from typing import List, Tuple, TypedDict
+from typing import Any, List, Literal, Tuple, TypedDict
 from uuid import uuid4
 
 from langchain_core.documents import Document
@@ -28,6 +28,26 @@ class ExtractableEntitiesRelationships(BaseModel):
     relationships: List[ExtractableRelationship] = Field(description='List of relationships between entities')
 
 
+class APOCNode(BaseModel):
+    type: Literal['node'] = Field(default='node')
+    id: str
+    labels: List[str]
+    properties: dict[str, Any]
+
+
+class APOCRelationship(BaseModel):
+    class Node(BaseModel):
+        id: str
+        labels: List[str]
+
+    type: Literal['relationship'] = Field(default='relationship')
+    id: str
+    label: str
+    properties: dict[str, Any]
+    start: Node
+    end: Node
+
+
 class Book(BaseModel):
     id: str
     name: str
@@ -35,16 +55,12 @@ class Book(BaseModel):
     start_page: int
     end_page: int
 
-    def to_cypher(self) -> str:
-        return f"""
-        CREATE (:{Book.__name__} {{
-            id: "{self.id}",
-            name: "{self.name}",
-            url: "{self.url}",
-            start_page: {self.start_page},
-            end_page: {self.end_page}
-        }})
-        """
+    def to_apoc_node(self) -> APOCNode:
+        return APOCNode(**{
+            'id': self.id,
+            'labels': [Book.__name__],
+            'properties': self.model_dump(),
+        })
 
 
 class Description(BaseModel):
@@ -55,20 +71,33 @@ class Description(BaseModel):
     chunk_overlap: int
     content: str
 
-    def to_cypher(self) -> str:
-        return f"""
-        // CREATES DESCRIPTION NODE & LINKS WITH BOOK
-        CREATE (d:{Description.__name__} {{
-            id: "{self.id}",
-            content: {json.dumps(self.content)},
-            chunk_index: {self.chunk_index},
-            chunk_size: {self.chunk_size},
-            chunk_overlap: {self.chunk_overlap}
-        }})
-        WITH d
-        MATCH (b:{Book.__name__} {{ id: "{self.book.id}" }})
-        CREATE (d)-[:mentioned_in {{ system: true }}]->(b)
-        """
+    def to_apoc_node(self) -> APOCNode:
+        node_properties = self.model_dump()
+        del node_properties['book']
+        return APOCNode(**{
+            'id': self.id,
+            'labels': [Description.__name__],
+            'properties': node_properties,
+        })
+    
+    def to_apoc_relationships(self) -> List[APOCRelationship]:
+        return [
+            APOCRelationship(**{
+                'id': str(uuid4()),
+                'label': 'mentioned_in',
+                'properties': {
+                    'system': True,
+                },
+                'start': {
+                    'id': self.id,
+                    'labels': [Description.__name__],
+                },
+                'end': {
+                    'id': self.book.id,
+                    'labels': [Book.__name__],
+                },
+            }),
+        ]
 
 
 class Entity(BaseModel):
@@ -88,24 +117,34 @@ class Entity(BaseModel):
         logger.debug(f'[MERGE] {Entity.__name__}({self.key})')
         self.descriptions += other.descriptions
 
-    def to_cypher(self) -> str:
-        match_cyphers, create_cyphers = [], []
-        for i, description in enumerate(self.descriptions):
-            match_cyphers.append(f'(d_{i}:{Description.__name__} {{ id: "{description.id}" }})')
-            create_cyphers.append(f'CREATE (e)-[:described_as {{ system: true }}]->(d_{i})')
-
-        return f"""
-        // CREATES ENTITY NODE & LINKS WITH DESCRIPTIONS
-        CREATE (e:{Entity.__name__} {{
-            id: "{self.id}", 
-            name: "{self.name}", 
-            entity_name: "{self.entity_type}",
-            singular: {json.dumps(self.singular)}
-        }})
-        WITH e
-        MATCH {', '.join(match_cyphers)}
-        {'\n'.join(create_cyphers)}
-        """
+    def to_apoc_node(self) -> APOCNode:
+        node_properties = self.model_dump()
+        del node_properties['descriptions']
+        return APOCNode(**{
+            'id': self.id,
+            'labels': [Entity.__name__],
+            'properties': node_properties,
+        })
+    
+    def to_apoc_relationships(self) -> List[APOCRelationship]:
+        relationships = []
+        for description in self.descriptions:
+            relationships.append(APOCRelationship(**{
+                'id': str(uuid4()),
+                'label': 'described_as',
+                'properties': {
+                    'system': True,
+                },
+                'start': {
+                    'id': self.id,
+                    'labels': [Entity.__name__],
+                },
+                'end': {
+                    'id': description.id,
+                    'labels': [Description.__name__],
+                },
+            }))
+        return relationships
 
     @staticmethod
     def from_extractable_entity(
@@ -147,25 +186,46 @@ class Relationship(BaseModel):
             raise ValueError(f'Relationship Keys should match to merge!')
         logger.debug(f'[MERGE] {Relationship.__name__}({self.key})')
         self.descriptions += other.descriptions
+    
+    def to_apoc_relationships(self) -> List[APOCRelationship]:
+        relationships = []
+        for description in self.descriptions:
+            relationships += [
+                # E1 -> D
+                APOCRelationship(**{
+                    'id': str(uuid4()),
+                    'label': self.relationship_type,
+                    'properties': {
+                        'system': False,
+                    },
+                    'start': {
+                        'id': self.entity_1.id,
+                        'labels': [Entity.__name__],
+                    },
+                    'end': {
+                        'id': description.id,
+                        'labels': [Description.__name__],
+                    }
+                }),
 
-    def to_cypher(self) -> str:
-        create_cyphers, match_cyphers = [], [
-            f'(e1:{Entity.__name__} {{id: "{self.entity_1.id}"}})',
-            f'(e2:{Entity.__name__} {{id: "{self.entity_2.id}"}})',
-        ]
-        for i, description in enumerate(self.descriptions):
-            match_cyphers.append(f'(d_{i}:{Description.__name__} {{ id: "{description.id}" }})')
-            create_cyphers.append(f"""
-            CREATE (e1)-[:{self.relationship_type} {{ system: false }}]->(d_{i})-[:{self.relationship_type} {{ system: false }}]->(e2)
-            """)
-
-        return f"""
-        // FINDS ENTITIES & DESCRIPTIONS
-        MATCH {', '.join(match_cyphers)}
-
-        // CREATING LINKS BETWEEN ENTITY 1 & 2
-        {'\n'.join(create_cyphers)}
-        """
+                # D -> E2
+                APOCRelationship(**{
+                    'id': str(uuid4()),
+                    'label': self.relationship_type,
+                    'properties': {
+                        'system': False,
+                    },
+                    'start': {
+                        'id': description.id,
+                        'labels': [Description.__name__],
+                    },
+                    'end': {
+                        'id': self.entity_2.id,
+                        'labels': [Entity.__name__],
+                    }
+                }),
+            ]
+        return relationships
 
     @staticmethod
     def from_entities(
@@ -206,11 +266,13 @@ class BuildDatabaseAgentState(TypedDict):
     max_retries: int
     neo4j_uri: str
     neo4j_auth: Tuple[str, str]
+    neo4j_import_dir: str
 
     books: List[Book]
     book_documents: dict[str, List[Document]]
     book_chunks: dict[str, List[Document]]
     book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]]
+    retries: int
     entities: List[Entity]
     relationships: List[Relationship]
 

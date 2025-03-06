@@ -13,10 +13,13 @@ from langchain_ollama import ChatOllama
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.graph import CompiledGraph
-from neo4j import GraphDatabase
+from neo4j import GraphDatabase, ManagedTransaction, ResultSummary
 
 from src import prompts
-from src.models import Book, BuildDatabaseAgentState, Entity, ExportDirectoryMetdata, ExtractableEntitiesRelationships, Relationship
+from src.models import (
+    APOCNode, APOCRelationship, Book, BuildDatabaseAgentState, Description, Entity, 
+    ExportDirectoryMetdata, ExtractableEntitiesRelationships, Relationship
+)
 from src.utils import loggraph, validate_export_metadata
 
 logger = logging.getLogger(__name__)
@@ -72,7 +75,7 @@ def chunk_books(state: BuildDatabaseAgentState):
 
 
 @loggraph
-def validate_exports(state: BuildDatabaseAgentState):
+def validate_metadata(state: BuildDatabaseAgentState):
     try:
         validate_export_metadata(state)
         return 'export_metadata'
@@ -102,13 +105,6 @@ def export_metadata(state: BuildDatabaseAgentState):
 @loggraph
 def extract_entities_relationships(state: BuildDatabaseAgentState):
     book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]] = dict()
-    llm = ChatOllama(model=state['model'], temperature=0, format='json')
-    parser = OutputFixingParser.from_llm(
-        llm=llm,
-        parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
-        max_retries=state['max_retries'],
-    )
-    chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
 
     # Loading already exported entities & relationships
     for book_id, chunks in state['book_chunks'].items():
@@ -137,16 +133,26 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
 
     def extract_from_chunk(i: int, chunk: Document) -> Tuple[int, ExtractableEntitiesRelationships]:
         try:
+            llm = ChatOllama(model=state['model'], temperature=0, format='json')
+            parser = OutputFixingParser.from_llm(
+                llm=llm,
+                parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
+                max_retries=state['max_retries'],
+            )
+            chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
             entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
                 'format_instructions': parser.get_format_instructions(), 
                 'chunk': chunk.page_content,
             })
             return i, entities_relationships
         except Exception as e:
-            logger.error(f'[{book_id}] [CHUNK-{i}] Unable to extract entities & relationships!')
-            raise e
+            logger.error(f'[{book_id}] [CHUNK-{i}] Unable to extract entities & relationships! Chunk: {chunk}')
+            logger.debug(e)
 
     def callback(book_id: str, future: Future[Tuple[int, ExtractableEntitiesRelationships]]):
+        if not future.result():
+            return
+
         i, entities_relationships = future.result()
         book_extracts[book_id][i] = entities_relationships
 
@@ -182,7 +188,26 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
                 future = executor.submit(extract_from_chunk, i, chunk)
                 future.add_done_callback(lambda f: callback(book_id, f))
 
-    return {'book_extracts': book_extracts}
+    retries = state.get('retries', 0) + 1
+    return {'book_extracts': book_extracts, 'retries': retries}
+
+
+@loggraph
+def check_extracted_entities_relationships(state: BuildDatabaseAgentState):
+    # Checking if max retries reached
+    if state['retries'] == state['max_retries']:
+        logger.error(f'Max retries reached, unable to build the database!')
+        return END
+
+    # Checking if all entities & relationships are imported/exported
+    for book_id, chunks in state['book_chunks'].items():
+        if len(chunks) != len(state['book_extracts'][book_id]):
+            logger.warning(f'[{book_id}] Detected missing chunks, retrying extraction process...')
+            return 'extract_entities_relationships'
+        
+        logger.info(f'[{book_id}] All entities & relationship imported or exported!')
+
+    return 'process_extracted_entities_relationships'
 
 
 @loggraph
@@ -257,38 +282,75 @@ def process_extracted_entities_relationships(state: BuildDatabaseAgentState):
 
 @loggraph
 def post_cyphers(state: BuildDatabaseAgentState):
-    cyphers = [f'MATCH (n) DETACH DELETE n']
-    cyphers += [book.to_cypher() for book in state['books']]
+    # Checking neo4j import directory
+    if not os.path.exists(state['neo4j_import_dir']) or not os.path.isdir(state['neo4j_import_dir']):
+        raise ValueError(f'Neo4j import directory not found! Did you forgot to run "docker compose up -d"?')
 
-    # Adding entities & descriptions
+    apoc_nodes: List[APOCNode] = []
+    apoc_relationships: List[APOCRelationship] = []
+
+    # Adding books
+    for book in state['books']:
+        apoc_nodes.append(book.to_apoc_node())
+
+    # Adding entities
     for entity in state['entities']:
-        cyphers += [description.to_cypher() for description in entity.descriptions]
-        cyphers.append(entity.to_cypher())
-
-    # Adding relationships & descriptions
+        for description in entity.descriptions:
+            apoc_nodes.append(description.to_apoc_node())
+            apoc_relationships += description.to_apoc_relationships()
+        apoc_nodes.append(entity.to_apoc_node())
+        apoc_relationships += entity.to_apoc_relationships()
+    
+    # Adding relationships
     for relationship in state['relationships']:
-        cyphers += [description.to_cypher() for description in relationship.descriptions]
-        cyphers.append(relationship.to_cypher())
+        for description in relationship.descriptions:
+            apoc_nodes.append(description.to_apoc_node())
+            apoc_relationships += description.to_apoc_relationships()
+        apoc_relationships += relationship.to_apoc_relationships()
 
-    conn = GraphDatabase.driver(uri=state['neo4j_uri'], auth=state['neo4j_auth'])
-    session = conn.session()
-    tx = session.begin_transaction()
-    logger.info(f'Posting {len(cyphers)} cyphers')
-    for i, cypher in enumerate(cyphers):
+    # Exporting APOC JSON files
+    apoc_jsons = '\n'.join([apoc_entity.model_dump_json() for apoc_entity in apoc_nodes + apoc_relationships])
+    filename = 'apoc.json'
+    file_paths = [
+        os.path.join(state['neo4j_import_dir'], filename),
+        os.path.join(state['export_dir'], filename),
+    ]
+    for file_path in file_paths:
+        with open(file_path, 'w') as file:
+            file.write(apoc_jsons)
+
+    driver = GraphDatabase.driver(uri=state['neo4j_uri'], auth=state['neo4j_auth'])
+    with driver.session() as session:
+
+        def executor(tx: ManagedTransaction, query: str, params):
+            result = tx.run(query, **params)
+            summary: ResultSummary = result.consume()
+            logger.info(f'Executed: {query} | {summary.counters}')
+
+        queries = [
+            ('MATCH (n) DETACH DELETE n', {}), # Deleting old entities & relationships
+            ('CALL apoc.schema.assert({}, {})', {}), # Removing all constaints
+        ]
+
+        # Adding new constraints queries
+        for label in [Book.__name__, Description.__name__, Entity.__name__]:
+            queries.append((f'CREATE CONSTRAINT FOR (n:{label}) REQUIRE n.neo4jImportId IS UNIQUE;', {}))
+        
+        # Adding final APOC json import query
+        queries.append((
+            'CALL apoc.import.json($file_path)',
+            {'file_path': f'file:///var/lib/neo4j/import/{filename}'}
+        ))
+
+        # Executing queries
         try:
-            tx.run(cypher)
-            logger.debug(f'[{i+1}/{len(cyphers)}] Posted cypher!')
+            for query, params in queries:
+                session.execute_write(executor, query, params)
         except Exception as e:
-            logger.error(f'[{i+1}/{len(cyphers)}] Invalid cypher: {cypher}')
-            raise e
-    tx.commit()
+            logger.error(f'Unable to create database!')
+            logger.debug(e)
 
-    filename = os.path.join(state['export_dir'], 'cyphers.json')
-    with open(filename, 'w') as file:
-        file.write(json.dumps(cyphers, indent=2))
-    logger.info(f'Posted & exported cyphers to {filename}')
-
-    conn.close()
+    driver.close()
 
 
 def build_graph() -> CompiledGraph:
@@ -305,18 +367,25 @@ def build_graph() -> CompiledGraph:
 
     # Adding conditional edges
     graph.add_conditional_edges(
-        'chunk_books', validate_exports,
+        'chunk_books', validate_metadata,
         {
             END: END,
             'export_metadata': 'export_metadata',
         },
+    )
+    graph.add_conditional_edges(
+        'extract_entities_relationships', check_extracted_entities_relationships,
+        {
+            END: END,
+            'extract_entities_relationships': 'extract_entities_relationships',
+            'process_extracted_entities_relationships': 'process_extracted_entities_relationships',
+        }
     )
 
     # Adding edges
     graph.add_edge(START, 'load_books')
     graph.add_edge('load_books', 'chunk_books')
     graph.add_edge('export_metadata', 'extract_entities_relationships')
-    graph.add_edge('extract_entities_relationships', 'process_extracted_entities_relationships'),
     graph.add_edge('process_extracted_entities_relationships', 'post_cyphers')
     graph.add_edge('post_cyphers', END)
 

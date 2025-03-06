@@ -28,4 +28,5 @@ if __name__ == "__main__":
         'max_retries': 3,
         'neo4j_uri': 'bolt://localhost:7687',
         'neo4j_auth': ('neo4j', os.environ['NEO4J_PASSWORD']),
+        'neo4j_import_dir': './db/import'
     })
