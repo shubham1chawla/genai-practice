@@ -1,4 +1,3 @@
-import json
 import logging
 from typing import Any, List, Literal, Tuple, TypedDict
 from uuid import uuid4
@@ -103,19 +102,20 @@ class Description(BaseModel):
 class Entity(BaseModel):
     id: str
     name: str
-    entity_type: str
+    entity_types: set[str]
     singular: bool
     descriptions: List[Description]
 
     @property
     def key(self) -> str:
-        return f'{self.name}-{self.entity_type}-{self.singular}'.lower()
+        return f'{self.name}-{self.singular}'.lower()
 
     def merge(self, other: 'Entity'):
         if self.key != other.key:
             raise ValueError(f'Entity Keys should match to merge!')
         logger.debug(f'[MERGE] {Entity.__name__}({self.key})')
         self.descriptions += other.descriptions
+        self.entity_types = self.entity_types.union(other.entity_types)
 
     def to_apoc_node(self) -> APOCNode:
         node_properties = self.model_dump()
@@ -157,7 +157,7 @@ class Entity(BaseModel):
         return Entity(**{
             'id': str(uuid4()),
             'name': extractable_entity.name.lower(),
-            'entity_type': extractable_entity.entity_type.lower(),
+            'entity_types': set([extractable_entity.entity_type.lower()]),
             'singular': extractable_entity.singular,
             'descriptions': [Description(**{
                 'id': str(uuid4()),
