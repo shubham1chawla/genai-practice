@@ -24,8 +24,8 @@ class ExtractableRelationship(BaseModel):
 
 
 class ExtractableEntitiesRelationships(BaseModel):
-    entities: List[ExtractableEntity] = Field(description='List of entities')
-    relationships: List[ExtractableRelationship] = Field(description='List of relationships between entities')
+    entities: List[ExtractableEntity] = Field(description='List of entities', default=[])
+    relationships: List[ExtractableRelationship] = Field(description='List of relationships between entities', default=[])
 
 
 class APOCNode(BaseModel):

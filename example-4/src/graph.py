@@ -2,7 +2,7 @@ import json
 import logging
 import os
 import re
-from concurrent.futures import Future, ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 from typing import Any, List, Tuple
 
 from langchain.output_parsers.fix import OutputFixingParser
@@ -103,7 +103,7 @@ def export_metadata(state: BuildDatabaseAgentState):
 
 
 @loggraph
-def extract_entities_relationships(state: BuildDatabaseAgentState):
+def import_extracted_entities_relationships(state: BuildDatabaseAgentState):
     book_extracts: dict[str, dict[int, ExtractableEntitiesRelationships]] = dict()
 
     # Loading already exported entities & relationships
@@ -131,13 +131,20 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
         
         logger.info(f'[{book_id}] Imported entities & relationships from {len(book_extracts[book_id])}/{len(chunks)} chunks')
 
+    return {'book_extracts': book_extracts}
+
+
+@loggraph
+def extract_entities_relationships(state: BuildDatabaseAgentState):
+    book_extracts = state['book_extracts']
+
     def extract_from_chunk(i: int, chunk: Document) -> Tuple[int, ExtractableEntitiesRelationships]:
         try:
             llm = ChatOllama(model=state['model'], temperature=0, format='json')
             parser = OutputFixingParser.from_llm(
                 llm=llm,
                 parser=PydanticOutputParser(pydantic_object=ExtractableEntitiesRelationships),
-                max_retries=state['max_retries'],
+                max_retries=3,
             )
             chain = prompts.EXTRACT_ENTITIES_RELATIONSHIPS_PROMPT | llm | parser
             entities_relationships: ExtractableEntitiesRelationships = chain.invoke({
@@ -149,11 +156,7 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
             logger.error(f'[{book_id}] [CHUNK-{i}] Unable to extract entities & relationships! Chunk: {chunk}')
             logger.debug(e)
 
-    def callback(book_id: str, future: Future[Tuple[int, ExtractableEntitiesRelationships]]):
-        if not future.result():
-            return
-
-        i, entities_relationships = future.result()
+    def callback(book_id: str, i: int, entities_relationships: ExtractableEntitiesRelationships):
         book_extracts[book_id][i] = entities_relationships
 
         # Checking if book folder exists
@@ -176,17 +179,26 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
         if not filtered_chunks:
             logger.info(f'[{book_id}] All entities & relationships imported')
             continue
-
         logger.info(f'[{book_id}] Extracting entities & relationships from {len(filtered_chunks)}/{len(chunks)} chunks')
 
-        # Invoking LLM in multiple threads
-        max_workers = min(len(filtered_chunks), state['max_workers'])
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Defaulting to 1 worker if not provided
+        max_workers = min(len(filtered_chunks), max(state.get('max_workers', 1), 1))
+        logger.debug(f'[{book_id}] Using {max_workers} workers to extract chunks...')
 
-            # Extracting using LLM if not previously exported
+        if max_workers == 1:
+            # Single threaded operation
             for i, chunk in filtered_chunks:
-                future = executor.submit(extract_from_chunk, i, chunk)
-                future.add_done_callback(lambda f: callback(book_id, f))
+                result = extract_from_chunk(i, chunk)
+                if result:
+                    callback(book_id, i, result[1])
+        else:
+            # Invoking LLM in multiple threads
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+
+                # Extracting using LLM if not previously exported
+                for i, chunk in filtered_chunks:
+                    future = executor.submit(extract_from_chunk, i, chunk)
+                    future.add_done_callback(lambda f: callback(book_id, f.result()[0], f.result()[1]) if f.result() else None)
 
     retries = state.get('retries', 0) + 1
     return {'book_extracts': book_extracts, 'retries': retries}
@@ -194,16 +206,25 @@ def extract_entities_relationships(state: BuildDatabaseAgentState):
 
 @loggraph
 def check_extracted_entities_relationships(state: BuildDatabaseAgentState):
-    # Checking if max retries reached
-    if state['retries'] == state['max_retries']:
-        logger.error(f'Max retries reached, unable to build the database!')
-        return END
+    retries, max_retries = state['retries'], state['max_retries']
 
     # Checking if all entities & relationships are imported/exported
     for book_id, chunks in state['book_chunks'].items():
         if len(chunks) != len(state['book_extracts'][book_id]):
-            logger.warning(f'[{book_id}] Detected missing chunks, retrying extraction process...')
-            return 'extract_entities_relationships'
+
+            # Checking if max retries reached
+            if retries == max_retries:
+                logger.error("""
+                Max retries reached, unable to build the database!
+                - Try setting 'max_workers' to 1 to disable parallel execution
+                - Try 'manual.py' file to manually extract entities & relationships
+                
+                If you still face issues, please contact the developer!
+                """)
+                return END
+
+            logger.warning(f'[{book_id}] Detected missing chunks, remaining retries: {max_retries - retries}')
+            return 'import_extracted_entities_relationships'
         
         logger.info(f'[{book_id}] All entities & relationship imported or exported!')
 
@@ -361,6 +382,7 @@ def build_graph() -> CompiledGraph:
     graph.add_node('load_books', load_books)
     graph.add_node('chunk_books', chunk_books)
     graph.add_node('export_metadata', export_metadata)
+    graph.add_node('import_extracted_entities_relationships', import_extracted_entities_relationships)
     graph.add_node('extract_entities_relationships', extract_entities_relationships)
     graph.add_node('process_extracted_entities_relationships', process_extracted_entities_relationships)
     graph.add_node('post_cyphers', post_cyphers)
@@ -377,7 +399,7 @@ def build_graph() -> CompiledGraph:
         'extract_entities_relationships', check_extracted_entities_relationships,
         {
             END: END,
-            'extract_entities_relationships': 'extract_entities_relationships',
+            'import_extracted_entities_relationships': 'import_extracted_entities_relationships',
             'process_extracted_entities_relationships': 'process_extracted_entities_relationships',
         }
     )
@@ -385,7 +407,8 @@ def build_graph() -> CompiledGraph:
     # Adding edges
     graph.add_edge(START, 'load_books')
     graph.add_edge('load_books', 'chunk_books')
-    graph.add_edge('export_metadata', 'extract_entities_relationships')
+    graph.add_edge('export_metadata', 'import_extracted_entities_relationships')
+    graph.add_edge('import_extracted_entities_relationships', 'extract_entities_relationships')
     graph.add_edge('process_extracted_entities_relationships', 'post_cyphers')
     graph.add_edge('post_cyphers', END)
 
