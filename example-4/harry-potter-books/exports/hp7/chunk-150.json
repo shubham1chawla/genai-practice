@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is a person who has been killed by Voldemort. He was heading north with Dung when they were attacked."
+    },
+    {
+      "name": "dung",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dung is a person who was with Mad-Eye when he was killed by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the one who killed Mad-Eye and Dung. He can fly."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is Harry's cousin who witnessed the death of Mad-Eye and Dung."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is Bill's wife who also witnessed the death of Mad-Eye and Dung."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who tried to comfort Harry after he heard about Mad-Eye's death."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who was affected by Mad-Eye's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "mad-eye",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Mad-Eye with a curse."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dung",
+      "relationship_type": "killed_by",
+      "description": "Voldemort also killed Dung."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "mad-eye",
+      "relationship_type": "witnessed_death_of",
+      "description": "Bill witnessed the death of Mad-Eye."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "mad-eye",
+      "relationship_type": "witnessed_death_of",
+      "description": "Fleur also witnessed the death of Mad-Eye."
+    }
+  ]
+}

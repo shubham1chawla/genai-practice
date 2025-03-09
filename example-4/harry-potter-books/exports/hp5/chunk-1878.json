@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who needs to talk to Nick, as mentioned in the text: 'No — Nick — please,' said Harry, 'I really need to talk to you.'"
+    },
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a person who is dead but still present, as mentioned in the text: 'It's —' said Harry, 'it's just — you're dead. But you're still here, aren't you?'"
+    },
+    {
+      "name": "classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The classroom is a location where Harry and Nick meet, as mentioned in the text: 'Can we go in here?' said Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nick",
+      "relationship_type": "talk_to",
+      "description": "Harry needs to talk to Nick, as mentioned in the text: 'No — Nick — please,' said Harry, 'I really need to talk to you.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "classroom",
+      "relationship_type": "enter",
+      "description": "Harry enters the classroom with Nick, as mentioned in the text: 'Can we go in here?' said Harry."
+    },
+    {
+      "entity_1": "nick",
+      "entity_2": "grounds",
+      "relationship_type": "gaze_at",
+      "description": "Nick gazes at the grounds, as mentioned in the text: 'You to come and find me,' said Nick, now gliding over to the window and looking out at the darkening grounds."
+    }
+  ]
+}

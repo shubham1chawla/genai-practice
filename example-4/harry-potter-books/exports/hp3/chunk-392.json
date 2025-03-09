@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Wood."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is having a conversation with Harry."
+    },
+    {
+      "name": "christmas",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "The holiday being referred to in the conversation."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "supernatural_beings",
+      "singular": false,
+      "description": "Supernatural beings that are a threat to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "conversed_with",
+      "description": "Wood is having a conversation with Harry."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "dementors",
+      "relationship_type": "threatened_by",
+      "description": "Wood is concerned about the threat posed by dementors to Harry."
+    }
+  ]
+}

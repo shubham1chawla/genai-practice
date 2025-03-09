@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "cauldwell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cauldwell is mentioned as a name called out during the Triwizard Tournament. The text states \"Cauldwell, Owen!\" indicating that Cauldwell is a person."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Hufflepuff is one of the four houses at Hogwarts School of Witchcraft and Wizardry. The text states \"HUFFLEPUFF!\" indicating that Hufflepuff is a house."
+    },
+    {
+      "name": "dennis creevey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dennis Creevey is mentioned as a student who is being sorted into a house during the Triwizard Tournament. The text states \"Creevey, Dennis!\" indicating that Dennis Creevey is a person."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and Care of Magical Creatures teacher at Hogwarts School of Witchcraft and Wizardry. The text states \"Tiny Dennis Creevey staggered forward, tripping over Hagrid's moleskin...\" indicating that Hagrid is a person."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry. The text states \"GRYFFINDOR!\" indicating that Gryffindor is a house."
+    },
+    {
+      "name": "colin creevey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin Creevey is mentioned as Dennis Creevey's brother. The text states \"Dennis Creevey...hurried over to join his brother.\" indicating that Colin Creevey is a person."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Sorting Hat is an object used at Hogwarts School of Witchcraft and Wizardry to sort students into their respective houses. The text states \"The rip at the brim opened wide...\" indicating that the Sorting Hat is an object."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dennis creevey",
+      "relationship_type": "helped",
+      "description": "Hagrid helped Dennis Creevey by clapping along with the Gryffindors and watching over him as he was being sorted into a house."
+    },
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "gryffindor",
+      "relationship_type": "sorted_into",
+      "description": "The Sorting Hat sorted Dennis Creevey into Gryffindor house."
+    },
+    {
+      "entity_1": "dennis creevey",
+      "entity_2": "colin creevey",
+      "relationship_type": "brother_of",
+      "description": "Dennis Creevey is the brother of Colin Creevey."
+    }
+  ]
+}

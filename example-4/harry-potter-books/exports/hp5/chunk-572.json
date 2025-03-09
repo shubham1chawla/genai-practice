@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student who is being disciplined by Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is disciplining Harry."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and Umbridge are in."
+    },
+    {
+      "name": "detentions",
+      "entity_type": "punishment",
+      "singular": false,
+      "description": "A form of punishment where students have to stay after class for a certain amount of time."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "disciplined_by",
+      "description": "Umbridge is disciplining Harry, as evident from the conversation where she tells him to do his detentions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "detentions",
+      "relationship_type": "subject_of_punishment",
+      "description": "Harry is being punished with detentions, as mentioned by Umbridge."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "discipliner",
+      "description": "Umbridge is the one disciplining Harry, which is a reciprocal relationship to 'disciplined_by'."
+    }
+  ]
+}

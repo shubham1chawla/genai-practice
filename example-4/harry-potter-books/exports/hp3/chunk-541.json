@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student in the class who is waiting for someone to come down from the trapdoor."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and is also waiting for someone to come down from the trapdoor."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student in the class who is hesitant to tell something to his friends."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who had suspicions about another person."
+    },
+    {
+      "name": "parvati",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Parvati is a student in the class who has been told by the crystal ball that she has the makings of a true Seer."
+    },
+    {
+      "name": "crystal ball",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The crystal ball is an object that has predicted something about Parvati."
+    },
+    {
+      "name": "trapdoor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The trapdoor is a location where someone is hiding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends who are waiting for someone to come down from the trapdoor."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "crystal ball",
+      "relationship_type": "prediction",
+      "description": "The crystal ball has predicted something about Neville, but he is hesitant to tell his friends."
+    },
+    {
+      "entity_1": "parvati",
+      "entity_2": "crystal ball",
+      "relationship_type": "prediction",
+      "description": "The crystal ball has told Parvati that she has the makings of a true Seer."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "trapdoor",
+      "relationship_type": "suspicion",
+      "description": "Hermione had suspicions about someone who was hiding in the trapdoor."
+    }
+  ]
+}

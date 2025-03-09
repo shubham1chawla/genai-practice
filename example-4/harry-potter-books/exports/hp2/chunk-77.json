@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the person being spoken to by Mrs Weasley. (\"Good Lord, is it Harry Potter? Very pleased to meet you...\")"
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as having told others about Harry Potter. (\"Ron’s told us so much about –\")"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as being angry and scolding her sons for flying a car to Harry's house. (\"Your sons flew that car to Harry’s house and back last night! What have you got to say about that, eh?\")"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is mentioned as being eager to hear about the flying of the car. (\"Did it go all right? I-I mean,\")"
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny Weasley is mentioned as being shy and not speaking normally. (\"You don’t know how weird it is for her to be this shy, she never shuts up normally –\")"
+    },
+    {
+      "name": "the burrow 35",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow 35 is mentioned as the location where Harry and Ron are visiting. (\"T HE BURROW 35\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "spoke_to",
+      "description": "Mr Weasley spoke to Harry Potter. (\"Good Lord, is it Harry Potter? Very pleased to meet you...\")"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "mr weasley",
+      "relationship_type": "scolded",
+      "description": "Mrs Weasley scolded Mr Weasley for his sons flying a car. (\"Your sons flew that car to Harry’s house and back last night! What have you got to say about that, eh?\")"
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "showed_around",
+      "description": "Ron Weasley showed Harry around the Burrow. (\"Come on, I’ll show you my bedroom.\")"
+    },
+    {
+      "entity_1": "ginny weasley",
+      "entity_2": "ron weasley",
+      "relationship_type": "saw",
+      "description": "Ginny Weasley was seen by Ron when he opened her door. (\"Harry just caught sight of a pair of bright brown eyes staring at him before it closed with a snap.\")"
+    }
+  ]
+}

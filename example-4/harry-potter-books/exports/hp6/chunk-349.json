@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry is described as bending low to retrieve a book."
+    },
+    {
+      "name": "book",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A book that Harry is trying to retrieve, its back cover has some scribbled writing."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "liquid",
+      "singular": true,
+      "description": "A liquid that Harry won in a competition, it's now safely hidden inside a pair of socks."
+    },
+    {
+      "name": "half-blood prince",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book that Harry is currently holding, its back cover has some scribbled writing."
+    },
+    {
+      "name": "instructions",
+      "entity_type": "document",
+      "singular": true,
+      "description": "Instructions that won Harry a bottle of Felix Felicis."
+    },
+    {
+      "name": "pair of socks",
+      "entity_type": "clothing item",
+      "singular": false,
+      "description": "A pair of socks where Felix Felicis is safely hidden."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "book",
+      "relationship_type": "holds",
+      "description": "Harry is holding the book as he tries to retrieve it."
+    },
+    {
+      "entity_1": "instructions",
+      "entity_2": "felix felicis",
+      "relationship_type": "won",
+      "description": "The instructions won Harry a bottle of Felix Felicis."
+    },
+    {
+      "entity_1": "book",
+      "entity_2": "half-blood prince",
+      "relationship_type": "property of",
+      "description": "This book is the property of the Half-Blood Prince, as written on its back cover."
+    },
+    {
+      "entity_1": "felix felicis",
+      "entity_2": "pair of socks",
+      "relationship_type": "hidden in",
+      "description": "Felix Felicis is safely hidden inside a pair of socks."
+    }
+  ]
+}

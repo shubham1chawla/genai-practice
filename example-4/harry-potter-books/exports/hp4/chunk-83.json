@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as someone who should go back and tell George not to try to enter the house."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as someone who should be told by Fred not to try to enter the house."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone Harry should tell to let them out."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who tries to communicate with Mr. Weasley through the fireplace."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as someone who is trying to enter the house through the fireplace."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "inform",
+      "description": "Fred informs George not to try to enter the house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "inform",
+      "description": "Harry tells Ron that he should let them out."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "communicate",
+      "description": "Harry tries to communicate with Mr. Weasley through the fireplace."
+    }
+  ]
+}

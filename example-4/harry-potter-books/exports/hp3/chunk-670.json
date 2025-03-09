@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who sets off at a sprint with Hermione behind him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is following Harry and they are both trying to sneak over to Hagrid's house."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "tree",
+      "singular": true,
+      "description": "The Whomping Willow is a tree that they need to skirt around."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper who lives in a house near the forest and receives a knock on his door."
+    },
+    {
+      "name": "hagrid's house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hagrid's house is located near the forest where Harry and Hermione are trying to sneak over."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "follows",
+      "description": "Harry sets off at a sprint with Hermione behind him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "whomping willow",
+      "relationship_type": "skirted around",
+      "description": "They skirted around the Whomping Willow as they tore toward the shelter of the forest."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid's house",
+      "relationship_type": "approached",
+      "description": "As they glimpsed the front of Hagrid's house, they heard a knock upon his door."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid's house",
+      "relationship_type": "approached",
+      "description": "As they glimpsed the front of Hagrid's house, they heard a knock upon his door."
+    }
+  ]
+}

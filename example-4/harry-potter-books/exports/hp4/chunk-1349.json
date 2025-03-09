@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "barty crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty Crouch is a person who has been bound by Dumbledore's wand."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who stood up and stared at Barty Crouch with disgust."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a person who was asked by Dumbledore to stand guard."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one that Dumbledore wants to take upstairs."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is a person who needs to be called by Snape."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is the one who needs to call Madam Pomfrey."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius Fudge is a person who needs to be brought up by Severus Snape."
+    },
+    {
+      "name": "alastor moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alastor Moody is the one who needs to go into the hospital wing."
+    },
+    {
+      "name": "minerva mcgonagall",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Minerva McGonagall is a title given to Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "barty crouch",
+      "relationship_type": "binds",
+      "description": "Dumbledore binds Barty Crouch with his wand."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "asks_for_help",
+      "description": "Dumbledore asks Professor McGonagall to stand guard."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "calls",
+      "description": "Severus Snape calls Madam Pomfrey."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "takes_upstairs",
+      "description": "Dumbledore takes Harry upstairs."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "brings_up",
+      "description": "Severus Snape brings Cornelius Fudge up to the office."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "alastor moody",
+      "relationship_type": "needs_medical_attention",
+      "description": "Dumbledore needs Alastor Moody to go into the hospital wing."
+    }
+  ]
+}

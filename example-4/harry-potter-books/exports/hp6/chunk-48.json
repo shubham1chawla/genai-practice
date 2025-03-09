@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, referred to as the Dark Lord, is a powerful wizard who has ordered Snape to spy on Dumbledore."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a character who seems hesitant and discomfited when questioned by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one questioning Bellatrix and seems to be confident in his answers."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a character who Snape has been ordered by the Dark Lord to spy on."
+    },
+    {
+      "name": "hogwarts school of witchcraft and wizardry",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is a school where Snape was ordered to be when the Dark Lord fell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dark lord",
+      "relationship_type": "ordered_by",
+      "description": "The Dark Lord has ordered Snape to spy on Dumbledore."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "target_of_spying",
+      "description": "Snape was ordered by the Dark Lord to spy on Dumbledore."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn, a Hogwarts professor, who is asking questions about Polyjuice Potion and Amortentia."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger, a student at Hogwarts, who answers Professor Slughorn's question correctly."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A magical potion that allows the drinker to assume the form of someone else."
+    },
+    {
+      "name": "amortentia",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A romantic love potion that reveals one's deepest desires and passions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "asked_about",
+      "description": "Professor Slughorn asks about Polyjuice Potion, which is featured in Ministry leaflets."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "amortentia",
+      "relationship_type": "asked_about",
+      "description": "Professor Slughorn also asks about Amortentia."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "answered_correctly",
+      "description": "Hermione answers Professor Slughorn's question correctly, identifying Polyjuice Potion."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "amortentia",
+      "relationship_type": "answered_correctly",
+      "description": "Hermione also answers Professor Slughorn's question about Amortentia correctly."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who noticed an empty chair at the staff table and is also Snape's least favourite student. (\"Hang on ... Harry muttered to Ron.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone Harry is talking to and is hopeful that Snape might be ill. (\"Maybe he’s ill! said Ron hopefully .\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher who is cruel, sarcastic, and disliked by everybody except the students from Slytherin house. He teaches Potions. (\"Professor Severus Snape was Harry’s least favourite teacher.\")"
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is mentioned as a professor who teaches Potions and is described as cruel and sarcastic. (\"Professor Severus Snape was Harry’s least favourite teacher.\")"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin house is mentioned as the one whose students are not disliked by Snape. (\"Cruel, sarcastic and disliked by everybody except the students from his own house (Slytherin), Snape taught Potions.\")"
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "Potions is mentioned as a subject that Snape teaches. (\"Cruel, sarcastic and disliked by everybody except the students from his own house (Slytherin), Snape taught Potions.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "least favourite student",
+      "description": "Harry is mentioned as Snape's least favourite student. (\"Harry also happened to be Snape’s least favourite student.\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "least favourite teacher",
+      "description": "Snape is mentioned as Harry's least favourite teacher. (\"Professor Severus Snape was Harry’s least favourite teacher.\")"
+    }
+  ]
+}

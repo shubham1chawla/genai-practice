@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is alarmed and concerned about Harry's condition. She suggests that he should go to St. Mungo's for treatment."
+    },
+    {
+      "name": "st mungo's",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "St. Mungo's is a hospital where Hermione suggests Harry should go for treatment."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who has collapsed and is unable to walk straight."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "st mungo's",
+      "relationship_type": "suggests_treatment",
+      "description": "Hermione suggests that Harry should go to St. Mungo's for treatment."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "st mungo's",
+      "relationship_type": "needs_treatment",
+      "description": "Harry needs treatment at St. Mungo's."
+    }
+  ]
+}

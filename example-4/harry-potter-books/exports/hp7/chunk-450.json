@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as speaking in the text. He says 'They nearly saw me coming back in just now'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as adding to the conversation and craning around to watch Hermione reentering the kitchen."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as reentering the kitchen with a large framed picture."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "conversation_participant",
+      "description": "Harry and Ron are having a conversation, as evidenced by Harry speaking and Ron adding to the conversation."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "picture",
+      "relationship_type": "carrying",
+      "description": "Hermione is carrying a large framed picture into the kitchen."
+    }
+  ]
+}

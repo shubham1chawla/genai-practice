@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story. He is described as having fallen to the ground after hitting Harry with the Killing Curse."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the protagonist of the story. He has been hit by Voldemort's Killing Curse and is lying on the ground waiting to be examined."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is a Death Eater who seems to be hesitant to approach Harry or assist him in any way."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "hit_by",
+      "description": "Voldemort hit Harry with the Killing Curse, causing both of them to fall unconscious."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "bellatrix",
+      "relationship_type": "ordered_to_examine",
+      "description": "Voldemort ordered Bellatrix to examine Harry and determine whether he is dead."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "hit_by",
+      "description": "Harry was hit by Voldemort's Killing Curse, causing both of them to fall unconscious."
+    }
+  ]
+}

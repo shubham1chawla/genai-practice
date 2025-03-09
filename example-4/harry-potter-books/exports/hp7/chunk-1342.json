@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is the mother of Lily and sister of Harry. She is described as being able to understand the tone of a word, despite not knowing its meaning."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is Petunia's daughter and Harry's sister. She obeys her mother's command to leave."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is watching Lily and Petunia as they leave. He is described as having bitter disappointment."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the narrator of the scene and recognizes Snape's disappointment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "petunia",
+      "entity_2": "lily",
+      "relationship_type": "parent_child",
+      "description": "Petunia is Lily's mother."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "observer_observed",
+      "description": "Snape watches Harry as he observes Snape's disappointment."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "snape",
+      "relationship_type": "disappointed_by",
+      "description": "Petunia's actions cause Snape to feel disappointed."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "snape",
+      "relationship_type": "glared_at",
+      "description": "Lily glares at Snape as she leaves."
+    }
+  ]
+}

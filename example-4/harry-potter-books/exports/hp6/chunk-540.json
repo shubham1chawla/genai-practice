@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harper is a person who is participating in a game. He is described as having his hand outstretched and being feet from the Snitch."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is participating in a game. He is described as yelling at Harper and catching the Snitch."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who is mentioned by Harry, implying that he was supposed to participate in the game instead of Harper."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who is participating in the game. She is described as speeding past Harry and the rest of the team."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "paid_by",
+      "description": "Harry implies that Malfoy paid Harper to come on instead of him, suggesting a financial transaction between Malfoy and Harper."
+    },
+    {
+      "entity_1": "harper",
+      "entity_2": "harry",
+      "relationship_type": "interacted_with",
+      "description": "Harper and Harry interact with each other during the game, with Harper fumbling the Snitch and Harry catching it."
+    }
+  ]
+}

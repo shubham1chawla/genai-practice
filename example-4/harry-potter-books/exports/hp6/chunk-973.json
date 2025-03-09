@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mr filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Filch is mentioned as the one who has been looking for someone to clear out old files. He is described as saying something softly."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the professor who assigns Harry a task. He is described as having a malicious smile on his lips."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is assigned a task by Snape. He is described as responding with contempt."
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James Potter is mentioned as someone who was apprehended for using an illegal hex."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as someone who was apprehended for using an illegal hex."
+    },
+    {
+      "name": "bertram aubrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertram Aubrey is mentioned as the one who was a victim of James Potter and Sirius Black's illegal hex."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "assigns_task",
+      "description": "Snape assigns Harry a task to clear out old files."
+    },
+    {
+      "entity_1": "james potter",
+      "entity_2": "bertram aubrey",
+      "relationship_type": "victim_of_crime",
+      "description": "James Potter and Sirius Black used an illegal hex on Bertram Aubrey."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "bertram aubrey",
+      "relationship_type": "victim_of_crime",
+      "description": "James Potter and Sirius Black used an illegal hex on Bertram Aubrey."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "mr filch",
+      "relationship_type": "shared_task",
+      "description": "Snape mentions that Mr Filch has been looking for someone to clear out old files."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to defeat Voldemort. (\"It's your one last chance,\" said Harry...)"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, who is being threatened by Harry. (\"You dare -- ?\" said Voldemort again.)"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as having a plan that backfired on Voldemort. (\"Dumbledore's last plan hasn't backfired on me at all.\")"
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose hand Harry is gripping tightly. (The moment... he knew, was seconds away.)"
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as being murdered by Voldemort. (\"You murdered the wrong person.\")"
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that is being used by Voldemort and Harry. (Voldemort's hand was trembling on the Elder Wand...)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "threatens",
+      "description": "Harry is threatening Voldemort, trying to defeat him. (\"It's your one last chance,\" said Harry...)"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "severus snape",
+      "relationship_type": "planned death with",
+      "description": "Dumbledore and Snape planned Dumbledore's death together. (Dumbledore intended to die undefeated, the wand's last true master!)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "draco",
+      "relationship_type": "gripped tightly",
+      "description": "Harry is gripping Draco's hand tightly. (The moment... he knew, was seconds away.)"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus snape",
+      "relationship_type": "murdered",
+      "description": "Voldemort murdered Snape. (\"You murdered the wrong person.\")"
+    }
+  ]
+}

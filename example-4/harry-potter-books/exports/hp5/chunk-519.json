@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the Dean of Hogwarts School of Witchcraft and Wizardry. She is described as smiling in a very irritating fashion at Dean Thomas (line 1). She talks over him and criticizes the way things have been run in the school (lines 5-8)."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean Thomas is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being talked over by Professor Umbridge (line 4). He defends Professor Lupin, calling him the best teacher they ever had (lines 11-12)."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is a teacher at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being defended by Dean Thomas (lines 11-12)."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "dean thomas",
+      "relationship_type": "criticizes",
+      "description": "Professor Umbridge criticizes Dean Thomas for being exposed to irresponsible wizards in her class (lines 5-8)."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "dean thomas",
+      "relationship_type": "talks_over",
+      "description": "Professor Umbridge talks over Dean Thomas, interrupting him while he is trying to respond (line 4)."
+    },
+    {
+      "entity_1": "dean thomas",
+      "entity_2": "professor lupin",
+      "relationship_type": "defends",
+      "description": "Dean Thomas defends Professor Lupin, calling him the best teacher they ever had (lines 11-12)."
+    }
+  ]
+}

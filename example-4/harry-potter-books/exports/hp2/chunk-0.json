@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the nephew of Mr. Vernon Dursley and lives at number four, Privet Drive."
+    },
+    {
+      "name": "mr vernon dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Vernon Dursley is Harry's uncle and lives at number four, Privet Drive."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Mr. Vernon Dursley's wife."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is the son of Mr. and Mrs. Dursley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr vernon dursley",
+      "relationship_type": "nephew_of",
+      "description": "Harry is the nephew of Mr. Vernon Dursley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "petunia",
+      "relationship_type": "aunt_of",
+      "description": "Petunia is Harry's aunt."
+    },
+    {
+      "entity_1": "mr vernon dursley",
+      "entity_2": "petunia",
+      "relationship_type": "spouse_of",
+      "description": "Mr. Vernon Dursley is married to Petunia."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "mr vernon dursley",
+      "relationship_type": "son_of",
+      "description": "Dudley is the son of Mr. and Mrs. Dursley."
+    }
+  ]
+}

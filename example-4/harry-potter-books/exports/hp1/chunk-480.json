@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and is speaking to Malfoy. He is mentioned as saying 'Right then' and 'now, listen carefully'."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts and is being spoken to by Hagrid. He is mentioned as looking at Hagrid furiously."
+    },
+    {
+      "name": "the castle",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The castle is the location where Malfoy is being told to get back to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "malfoy",
+      "relationship_type": "speaks_to",
+      "description": "Hagrid speaks to Malfoy, telling him to get back to the castle and pack."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "the castle",
+      "relationship_type": "location_of_action",
+      "description": "The action of Hagrid speaking to Malfoy is taking place in the castle."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having a past, present, and future connection with Harry Potter. (Excerpt: 'Voldemort... is my past, present and future, Harry Potter ...')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, mentioned as being connected to Voldemort in the past, present, and future. (Excerpt: 'Voldemort... is my past, present and future, Harry Potter ...')"
+    },
+    {
+      "name": "tom marvolo riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The real name of Lord Voldemort, mentioned as being used by him at Hogwarts. (Excerpt: 'TOM MARVOLO RIDDLE')"
+    },
+    {
+      "name": "salazar slytherin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and one of the founders of Hogwarts, mentioned as having a blood connection with Voldemort through his mother's side. (Excerpt: 'I, in whose veins runs the blood of Salazar Slytherin himself, through my mother’s side')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for wizards and witches, mentioned as a place where Voldemort used his alias name. (Excerpt: 'You think I was going to use my filthy Muggle father’s name for ever? I, in whose veins runs the blood of Salazar Slytherin himself, through my mother’s side?')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "connected_to",
+      "description": "Voldemort is connected to Harry Potter in the past, present, and future. (Excerpt: 'Voldemort... is my past, present and future, Harry Potter ...')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "tom marvolo riddle",
+      "relationship_type": "alias_of",
+      "description": "Voldemort used the alias name Tom Marvolo Riddle at Hogwarts. (Excerpt: 'TOM MARVOLO RIDDLE')"
+    },
+    {
+      "entity_1": "salazar slytherin",
+      "entity_2": "voldemort",
+      "relationship_type": "blood_connection",
+      "description": "Salazar Slytherin has a blood connection with Voldemort through his mother's side. (Excerpt: 'I, in whose veins runs the blood of Salazar Slytherin himself, through my mother’s side')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Voldemort attended Hogwarts and used his alias name there. (Excerpt: 'You think I was going to use my filthy Muggle father’s name for ever?')"
+    }
+  ]
+}

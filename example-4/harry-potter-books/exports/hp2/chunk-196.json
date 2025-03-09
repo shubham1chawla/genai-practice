@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gilderoy Lockhart is introduced as a teacher who clears his throat loudly and starts a quiz."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom's copy of 'Travels with Trolls' is picked up by Lockhart."
+    },
+    {
+      "name": "gilderoy lockhart",
+      "entity_type": "award",
+      "singular": true,
+      "description": "Gilderoy Lockhart mentions his awards and achievements."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "neville longbottom",
+      "relationship_type": "owns",
+      "description": "Lockhart picks up Neville Longbottom's copy of 'Travels with Trolls'."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "gilderoy lockhart",
+      "relationship_type": "self_reference",
+      "description": "Gilderoy Lockhart mentions his own awards and achievements."
+    }
+  ]
+}

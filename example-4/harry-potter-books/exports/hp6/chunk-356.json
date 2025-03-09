@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the one who tried to kill Harry Potter fifteen years ago. (\"what prompted Lord Voldemort to try and kill you fifteen years ago\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in the conversation with Dumbledore. (\"You said, at the end of last term, you were going to tell me everything,\" said Harry.)"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one having a conversation with Harry Potter. (\"There was a pause. 'You said, at the end of last term, you were going to tell me everything,' said Harry.)"
+    },
+    {
+      "name": "humphrey belcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Humphrey Belcher is mentioned as someone who made a mistake in believing it was time for a cheese cauldron. (\"From hereon in, Harry, I may be as woefully wrong as Humphrey Belcher, who believed the time was ripe for a cheese cauldron.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "conversation",
+      "description": "Dumbledore and Harry Potter are having a conversation. (\"There was a pause. 'You said, at the end of last term, you were going to tell me everything,' said Harry.)"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lord voldemort",
+      "relationship_type": "enemy",
+      "description": "Dumbledore and Lord Voldemort are enemies. (\"what prompted Lord Voldemort to try and kill you fifteen years ago\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation",
+      "description": "Harry Potter and Dumbledore are having a conversation. (\"You said, at the end of last term, you were going to tell me everything,\" said Harry.)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lord voldemort",
+      "relationship_type": "victim",
+      "description": "Harry Potter is a victim of Lord Voldemort. (\"what prompted Lord Voldemort to try and kill you fifteen years ago\")"
+    }
+  ]
+}

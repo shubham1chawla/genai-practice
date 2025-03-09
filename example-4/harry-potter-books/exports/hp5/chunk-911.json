@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who has been attacked by giants. He is also described as being unhelpful in answering Ron's question about where the difficult things to find are."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as asking Hagrid questions and trying to get him to tell them what he has been up to."
+    },
+    {
+      "name": "giants",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Giants are mentioned as being the ones who attacked Hagrid."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are mentioned as being the ones that attacked Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "giants",
+      "relationship_type": "attacked_by",
+      "description": "Hagrid was attacked by giants."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "questioning",
+      "description": "Ron is questioning Hagrid about what he has been up to."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "attacked_by",
+      "description": "Harry was attacked by dementors."
+    }
+  ]
+}

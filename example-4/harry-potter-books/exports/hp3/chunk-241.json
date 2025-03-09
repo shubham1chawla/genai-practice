@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "zonko's",
+      "entity_type": "store",
+      "singular": true,
+      "description": "Zonko's is a store where Harry needs to buy Stink Pellets."
+    },
+    {
+      "name": "stink pellets",
+      "entity_type": "product",
+      "singular": true,
+      "description": "Stink Pellets are a product that Harry needs to buy from Zonko's."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who wants to visit Zonko's and buy Stink Pellets."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who suggests asking McGonagall for permission to go to Hogsmeade."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend who tries to dissuade him from going to Hogsmeade."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "McGonagall is a teacher at Hogwarts who has the authority to grant permission for students to go to Hogsmeade."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who has been sighted and is being pursued by Harry."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a location where students are allowed to go on weekends."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Crookshanks is Hermione's cat who jumps onto her lap."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "zonko's",
+      "relationship_type": "visit",
+      "description": "Harry wants to visit Zonko's to buy Stink Pellets."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mcgonagall",
+      "relationship_type": "ask_permission",
+      "description": "Ron suggests asking McGonagall for permission to go to Hogsmeade."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "dissuade",
+      "description": "Hermione tries to dissuade Harry from going to Hogsmeade."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "grant_permission",
+      "description": "McGonagall has the authority to grant permission for Harry to go to Hogsmeade."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry",
+      "relationship_type": "pursue",
+      "description": "Harry is pursuing Black."
+    },
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "hermione",
+      "relationship_type": "sit_on_lap",
+      "description": "Crookshanks jumps onto Hermione's lap."
+    }
+  ]
+}

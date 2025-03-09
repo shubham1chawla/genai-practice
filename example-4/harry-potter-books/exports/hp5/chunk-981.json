@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "vo ldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of the person mentioned in the text is Vo ldemort. The text states that Harry hiccuped at the sound of Vo ldemort's name."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who survived as a baby and is being talked to by Cho in the text."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a person who is talking to Harry and getting upset about mentioning Cedric."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is a person mentioned in the text as someone who died."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "vo ldemort",
+      "relationship_type": "reaction_to_name",
+      "description": "Harry reacted to hearing Vo ldemort's name."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "cedric",
+      "relationship_type": "mention_of_person",
+      "description": "Cho mentioned Cedric, which made Harry upset."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "interaction_with_person",
+      "description": "Harry was interacting with Cho and trying to comfort her."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "apology_to_person",
+      "description": "Cho apologized to Harry for getting upset."
+    }
+  ]
+}

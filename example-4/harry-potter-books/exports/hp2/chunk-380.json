@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts School of Witchcraft and Wizardry. He is described as hitting Malfoy with a Tickling Charm (\"Harry had hit him with a Tickling Charm\")."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts School of Witchcraft and Wizardry. He is described as being hit by Harry's Tickling Charm (\"Harry had hit him with a Tickling Charm\")."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lockhart is a teacher at Hogwarts School of Witchcraft and Wizardry. He is described as shouting in alarm over the heads of the battling crowd (\"‘I said disarm only!’ Lockhart shouted in alarm\")."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts School of Witchcraft and Wizardry. He is described as taking charge and shouting \"Finite Incantatem!\" (\"‘Finite Incantatem!’ he shouted\")."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville is a student at Hogwarts School of Witchcraft and Wizardry. He is described as lying on the floor, panting (\"A haze of greenish smoke was hovering over the scene. Both Neville and Justin were lying on the floor, panting\")."
+    },
+    {
+      "name": "justin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Justin is a student at Hogwarts School of Witchcraft and Wizardry. He is described as lying on the floor, panting (\"A haze of greenish smoke was hovering over the scene. Both Neville and Justin were lying on the floor, panting\")."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts School of Witchcraft and Wizardry. He is described as holding up an ashen-faced Seamus (\"Ron was holding up an ashen-faced Seamus\")."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Seamus is a student at Hogwarts School of Witchcraft and Wizardry. He is described as being held up by Ron (\"Ron was holding up an ashen-faced Seamus\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "hit_with_spell",
+      "description": "Harry hit Malfoy with a Tickling Charm, causing him to double over and laugh uncontrollably (\"Harry had hit him with a Tickling Charm\")."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "hit_with_spell",
+      "description": "Malfoy pointed his wand at Harry's knees, causing Harry to jerk around out of control in a quickstep (\"Gasping for breath, Malfoy pointed his wand at Harry’s knees\")."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry",
+      "relationship_type": "shouted_at",
+      "description": "Lockhart shouted at Harry to stop using the Tickling Charm (\"‘I said disarm only!’ Lockhart shouted in alarm over the heads of the battling crowd\")."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "stopped_harry's_spell",
+      "description": "Snape took charge and shouted \"Finite Incantatem!\" to stop Harry's spell (\"‘Finite Incantatem!’ he shouted\")."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "stopped_malfoy's_spell",
+      "description": "Snape took charge and shouted \"Finite Incantatem!\" to stop Malfoy's spell (\"‘Finite Incantatem!’ he shouted\")."
+    }
+  ]
+}

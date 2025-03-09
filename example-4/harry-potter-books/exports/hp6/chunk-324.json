@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is described as a student who is struggling with the task of jinxing Ron. He has his wand raised and is waiting to repel a jinx."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is described as a student who is supposed to be jinxing Harry but is struggling with the task."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is described as a teacher who is watching Harry and Ron struggle with the task. He turns his wand on Harry and knocks him off-balance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "knocks_off_balance",
+      "description": "Snape's non-verbal spell knocks Harry off-balance, causing him to hit a desk."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snape",
+      "relationship_type": "struggles_with_task",
+      "description": "Ron is struggling with the task of jinxing Harry under Snape's supervision."
+    }
+  ]
+}

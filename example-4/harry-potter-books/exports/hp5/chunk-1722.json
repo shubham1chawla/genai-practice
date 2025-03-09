@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is fighting against a Death Eater. He launched himself across the floor and grabbed the Death Eater around the knees, causing him to topple."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who helps Harry in fighting against the Death Eater. He overturned his desk in anxiety and pointed his wand wildly at the struggling pair, shouting 'EXPELLIARMUS!'"
+    },
+    {
+      "name": "death eater",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An enemy of Harry who is being fought against by him. He was grabbed around the knees by Harry and his aim went awry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "fights_against",
+      "description": "Harry is fighting against the Death Eater, as evident from the text where Harry launched himself across the floor and grabbed the Death Eater around the knees."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "death eater",
+      "relationship_type": "helps_fight_against",
+      "description": "Neville is helping Harry in fighting against the Death Eater, as evident from the text where Neville overturned his desk and pointed his wand wildly at the struggling pair."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "works_together",
+      "description": "Harry and Neville are working together to fight against the Death Eater, as evident from the text where Harry flung himself sideways as Neville took aim again."
+    }
+  ]
+}

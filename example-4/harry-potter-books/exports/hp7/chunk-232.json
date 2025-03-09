@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "her wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hermione's wand is used to turn leaves on a crabapple tree to gold."
+    },
+    {
+      "name": "trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Trees are present in the scene and Hermione's magic affects them."
+    },
+    {
+      "name": "bushes",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Bushes are present in the scene and Hermione's magic affects them."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who gives compliments to Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one using her wand and receiving compliments from Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who turns away, smiling to himself, after Hermione's magic."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who catches Harry's eye and he grins at her."
+    },
+    {
+      "name": "monsieur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Monsieur Delacour is a person with whom Harry strikes up a conversation."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a person who brings in a giant Snitch that turns out to be Harry's birthday cake."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A giant, beach-ball-sized Snitch appears to be floating in front of Mrs. Weasley."
+    },
+    {
+      "name": "twelve fail-safe ways to charm witches",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Harry has a copy of this book and is looking for a chapter on compliments."
+    },
+    {
+      "name": "crabapple tree",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A crabapple tree is present in the scene and Hermione's magic affects its leaves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "trees",
+      "relationship_type": "affects",
+      "description": "Hermione uses her wand to turn leaves on the trees to gold."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "compliments",
+      "description": "Ron gives compliments to Hermione for her magic."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "grins_at",
+      "description": "Harry grins at Ginny after catching her eye."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "monsieur delacour",
+      "relationship_type": "talks_to",
+      "description": "Harry strikes up a conversation with Monsieur Delacour."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "snitch",
+      "relationship_type": "carries",
+      "description": "Mrs. Weasley carries the Snitch, which turns out to be Harry's birthday cake."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "minerva",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as Minerva in a formal or respectful tone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is the student being discussed by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is a professor who is defending Harry's abilities."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Umbridge is the one being directly addressed by Professor McGonagall."
+    },
+    {
+      "name": "defense against the dark arts",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Defense Against the Dark Arts is a subject that Harry has been taking."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "defends",
+      "description": "Professor McGonagall defends Harry's abilities in class."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_directed_at",
+      "description": "Professor Umbridge is directly addressed by Professor McGonagall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "defense against the dark arts",
+      "relationship_type": "takes",
+      "description": "Harry has been taking Defense Against the Dark Arts classes."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has had defense lessons against dementors with Sirius Black. He is arguing with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher who is angry at Harry for speaking to him disrespectfully. He mentions that he has saved Harry's neck and suggests that Harry should be thanking him."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person who has been helping Harry with defense lessons against dementors. Snape implies that Sirius might have killed Harry if he wanted to."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are creatures that Harry and Sirius Black have been having defense lessons against."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "argument",
+      "description": "Harry is arguing with Snape, who is angry at him for speaking disrespectfully. Snape suggests that Harry should be thanking him for saving his neck."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius black",
+      "relationship_type": "helping",
+      "description": "Harry has been having defense lessons against dementors with Sirius Black. Snape implies that Sirius might have killed Harry if he wanted to."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "saved",
+      "description": "Snape has saved Harry's neck, and suggests that Harry should be thanking him for it."
+    }
+  ]
+}

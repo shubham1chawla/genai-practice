@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, mentioned as 'Potter' by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's, who is searching for something with him."
+    },
+    {
+      "name": "godric’s hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Godric's Hollow is an old grave site where Harry and Hermione are searching."
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stone is a mossy, crumpling object that Hermione finds and shows to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Harry and Hermione are searching together for the stone."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in the stone, but does not want to be sidetracked by it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "stone",
+      "relationship_type": "found",
+      "description": "Hermione finds the stone and shows it to Harry."
+    }
+  ]
+}

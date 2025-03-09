@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is mentioned as a person to be turned in."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is being spoken to and is free."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as Harry's godfather."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "pettigrew",
+      "relationship_type": "target_of_action",
+      "description": "Harry is the target of an action to turn Pettigrew in."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry",
+      "relationship_type": "godfather_to",
+      "description": "Black is Harry's godfather."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who wrote the biography 'The Life and Lies of Albus Dumbledore'. She is described as revealing the disturbed childhood, lawless youth, and guilty secrets of Dumbledore. (Excerpt: 'Stripping away the popular image of serene, silver-bearded wisdom, Rita Skeeter reveals...')"
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is a wizard who was tipped to be Minister of Magic. He had a disturbed childhood and carried guilty secrets to his grave. (Excerpt: 'The answers to these and many more questions are explored in the explosive new biography, The Life and Lies of Albus Dumbledore...')"
+    },
+    {
+      "name": "betty braithwaite",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Betty Braithwaite is a person who exclusively interviewed Rita Skeeter for her biography. (Excerpt: 'exclusively interviewed by Betty Braithwaite, page 13, inside')"
+    },
+    {
+      "name": "the order of the phoenix",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Order of the Phoenix is a secret organization whose real purpose is unknown. (Excerpt: 'WHAT was the real purpose of the secret organization known as the Order of the Phoenix?')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who ripped open the paper to find an article about Rita Skeeter. (Excerpt: 'Harry ripped open the paper and found page thirteen.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "wrote_biography_of",
+      "description": "Rita Skeeter wrote a biography about Albus Dumbledore. (Excerpt: 'The Life and Lies of Albus Dumbledore, by Rita Skeeter...')"
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "betty braithwaite",
+      "relationship_type": "interviewed_by",
+      "description": "Rita Skeeter was exclusively interviewed by Betty Braithwaite. (Excerpt: 'exclusively interviewed by Betty Braithwaite, page 13, inside')"
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "the order of the phoenix",
+      "relationship_type": "involved_with",
+      "description": "Albus Dumbledore was involved with the Order of the Phoenix. (Excerpt: 'WHAT was the real purpose of the secret organization known as the Order of the Phoenix?')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rita skeeter",
+      "relationship_type": "read_article_about",
+      "description": "Harry read an article about Rita Skeeter. (Excerpt: 'Harry ripped open the paper and found page thirteen.')"
+    }
+  ]
+}

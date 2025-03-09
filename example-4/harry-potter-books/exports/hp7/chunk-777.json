@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, asked a question to Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sat down in a chair with her arms and legs crossed."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Told Harry about the snatchers."
+    },
+    {
+      "name": "snatchers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A gang of people trying to earn gold by rounding up Muggleborns and blood traitors."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Offered a reward for everyone captured."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person Ron pretended to be to get out of being dragged to the Ministry."
+    },
+    {
+      "name": "muggleborns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "People born to non-magical parents."
+    },
+    {
+      "name": "blood traitors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "People who are not pure-blood wizards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "snatchers",
+      "relationship_type": "encountered",
+      "description": "Ron told Harry about his encounter with the snatchers."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Hermione a question, but she didn't respond."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "stan shunpike",
+      "relationship_type": "pretended_to_be",
+      "description": "Ron pretended to be Stan Shunpike to get out of being dragged to the Ministry."
+    }
+  ]
+}

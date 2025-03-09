@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as being absent."
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and a great-great-grandfather of Harry Potter, mentioned in a portrait."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, who is dead but not known to Phineas Nigellus."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trapped in a room with portraits."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "phineas nigellus",
+      "relationship_type": "sent_message",
+      "description": "Dumbledore sent a message to Phineas Nigellus."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "sirius",
+      "relationship_type": "godfather",
+      "description": "Harry's godfather is Sirius."
+    }
+  ]
+}

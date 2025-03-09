@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "umbridge-itis",
+      "entity_type": "disease",
+      "singular": true,
+      "description": "The mysterious symptoms that the students are suffering from. (Excerpt: 'they were suffering “Umbridg e-itis.”')"
+    },
+    {
+      "name": "snackboxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Devices used by students to access food or other items. (Excerpt: 'But not even the users of the Snac kboxes could compete with that master of chaos, Peeves')"
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A poltergeist who is causing chaos in the school. (Excerpt: 'Cackling ma dly, he soared through the school...')"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who gave Peeves some parting words that he took to heart. (Excerpt: 'who seem ed to have taken Fred’s parting words deeply to heart')"
+    },
+    {
+      "name": "mrs. norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is being shut inside suits of armor by Peeves. (Excerpt: 'Twice he shut Mrs. Norris inside suits of armor')"
+    },
+    {
+      "name": "caregiver",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The person responsible for rescuing Mrs. Norris from the suits of armor. (Excerpt: 'from which she was rescued, yowling loudly, by the furious caretaker')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "fred",
+      "relationship_type": "inspired_by",
+      "description": "Peeves seems to have taken Fred's parting words deeply to heart. (Excerpt: 'who seem ed to have taken Fred’s parting words deeply to heart')"
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "mrs. norris",
+      "relationship_type": "trapped",
+      "description": "Peeves shut Mrs. Norris inside suits of armor twice. (Excerpt: 'Twice he shut Mrs. Norris inside suits of armor')"
+    },
+    {
+      "entity_1": "caregiver",
+      "entity_2": "mrs. norris",
+      "relationship_type": "rescued",
+      "description": "The caregiver rescued Mrs. Norris from the suits of armor. (Excerpt: 'from which she was rescued, yowling loudly, by the furious caretaker')"
+    }
+  ]
+}

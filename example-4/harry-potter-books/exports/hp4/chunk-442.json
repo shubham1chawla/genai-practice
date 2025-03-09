@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Mentioned as one of the schools that Harry Potter knows, along with Durmstrang."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Mentioned as one of the schools that Harry Potter knows, along with Beauxbatons."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is visiting the Owlery."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's owl, who is sleeping in the Owlery."
+    },
+    {
+      "name": "west tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location of the Owlery."
+    },
+    {
+      "name": "the owlery",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A circular stone room in West Tower where owls are kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry Potter owns Hedwig, as mentioned when he visits her in the Owlery."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "beauxbatons",
+      "relationship_type": "knows_of",
+      "description": "Harry Potter knows of Beauxbatons, as mentioned in the text."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "durmstrang",
+      "relationship_type": "knows_of",
+      "description": "Harry Potter knows of Durmstrang, as mentioned in the text."
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "barn owl",
+      "relationship_type": "is_nestled_with",
+      "description": "Hedwig is nestled between a barn owl and a tawny owl."
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "tawny owl",
+      "relationship_type": "is_nestled_with",
+      "description": "Hedwig is nestled between a barn owl and a tawny owl."
+    }
+  ]
+}

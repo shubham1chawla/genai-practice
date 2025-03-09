@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is referred to as a student and the main character in the conversation. He is addressed by his last name 'Potter' and also called 'Harry'. (e.g. 'Your nickname,' repeated Snape; 'I think that you are a liar and a cheat and that you deserve detention with me every Saturday until the end of term, Potter?')"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is referred to as a teacher and the one who is giving Harry detentions. He has 'cold, black eyes' and is described as having a 'smile that showed his yellow teeth'. (e.g. 'The cold, black eyes were boring once more into Harry's; he tried not to look into them.')"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as a house in the conversation, specifically in relation to Quidditch. (e.g. 'Poor Gryffindor ... fourth place this year, I fear...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "gives_detention",
+      "description": "Snape is giving Harry detentions every Saturday until the end of term. (e.g. 'I think that you are a liar and a cheat and that you deserve detention with me every Saturday until the end of term.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "receives_detention",
+      "description": "Harry is receiving detentions from Snape. (e.g. 'Well, we shall see how you feel after your detentions...')"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is nervous and beckons Harry closer."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story, to whom Dobby is speaking."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Dumbledore is a respected character who has secrets and silence kept by Dobby."
+    },
+    {
+      "name": "malfoys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Malfoys are a family about whom Harry asks Dobby if he can speak freely."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "speaking_to",
+      "description": "Dobby is speaking to Harry Potter."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "loyal_to",
+      "description": "Dobby is loyal to Professor Dumbledore and keeps his secrets."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoys",
+      "relationship_type": "asking_about",
+      "description": "Harry Potter asks Dobby about the Malfoys."
+    }
+  ]
+}

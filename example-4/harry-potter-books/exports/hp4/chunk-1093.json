@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as the one giving instructions to Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as someone who comes panting into sight with Fang at his heels."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is mentioned as being at Hagrid's heels."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is introduced as someone whose student has been attacked."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is introduced as someone who is limping toward them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "asks_for_help",
+      "description": "Dumbledore asks Hagrid to fetch Professor Karkaroff."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "requests_notification",
+      "description": "Dumbledore requests Moody to be alerted."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "karkaroff",
+      "relationship_type": "fetches",
+      "description": "Hagrid is asked by Dumbledore to fetch Professor Karkaroff."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "dumbledore",
+      "relationship_type": "responds_to_request",
+      "description": "Moody responds to Dumbledore's request for notification."
+    }
+  ]
+}

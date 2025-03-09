@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one leaving out clothes."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who has been taking some of Hermione's clothes."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Winky is another house-elf who does not care for clothes and drinks lots."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one whose happiness Dobby is concerned about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "hermione",
+      "relationship_type": "takes_clothes_from",
+      "description": "Dobby has been taking some of Hermione's clothes."
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "clothes",
+      "relationship_type": "does_not_care_for",
+      "description": "Winky does not care for clothes."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "concerned_about_happiness_of",
+      "description": "Dobby is concerned about Harry Potter's happiness."
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "clothes",
+      "relationship_type": "does_not_care_for",
+      "description": "Winky does not care for clothes."
+    },
+    {
+      "entity_1": "house-elves",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "will_no_longer_clean",
+      "description": "None of the house-elves will clean Gryffindor Tower anymore."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "meets",
+      "description": "Dobby hopes to meet Harry Potter."
+    }
+  ]
+}

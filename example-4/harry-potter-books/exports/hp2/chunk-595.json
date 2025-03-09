@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The teacher who is trying to put a Memory Charm on the boys. He is mentioned as 'he' and 'him'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the boys who is being targeted by Lockhart's Memory Charm. He is mentioned as 'Harry'."
+    },
+    {
+      "name": "boys",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of students that Lockhart is trying to put a Memory Charm on. They are referred to as 'them'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "boys",
+      "relationship_type": "target",
+      "description": "Lockhart is targeting the boys with his Memory Charm, as mentioned in the sentence 'Can't have you blabbing my secrets all over the place.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart",
+      "relationship_type": "interrupter",
+      "description": "Harry interrupts Lockhart's attempt to put a Memory Charm on the boys, as mentioned in the sentence 'Harry reached his wand just in time. Lockhart had barely raised his, when Harry bellowed, ‘Expelliarmus!’"
+    }
+  ]
+}

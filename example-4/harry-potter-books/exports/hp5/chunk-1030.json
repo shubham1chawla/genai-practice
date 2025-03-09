@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "candle wick",
+      "entity_type": "candle_wick",
+      "singular": true,
+      "description": "The candle wick is described as sinking lower and lower into liquid wax."
+    },
+    {
+      "name": "liquid wax",
+      "entity_type": "liquid_wax",
+      "singular": false,
+      "description": "The liquid wax is mentioned as the substance that the candle wick is sinking into."
+    },
+    {
+      "name": "bottles",
+      "entity_type": "bottles",
+      "singular": false,
+      "description": "Bottles are mentioned as being raised to people's lips."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "candle wick",
+      "entity_2": "liquid wax",
+      "relationship_type": "sinks_into",
+      "description": "The candle wick is sinking into the liquid wax."
+    },
+    {
+      "entity_1": "people",
+      "entity_2": "bottles",
+      "relationship_type": "raises_to_lips",
+      "description": "People are raising bottles to their lips."
+    }
+  ]
+}

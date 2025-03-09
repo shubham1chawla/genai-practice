@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one asking Dumbledore a question. He is referred to by name and is described as being startled."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one responding to Harry's question. He is referred to by name and is described as withdrawing a bottle of silver memories from his robes."
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas Nigellus is mentioned as someone who shares Harry's feeling that Dumbledore might be pushing his luck. He is referred to by name and is described as hissing softly."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is mentioned as someone who has been treating Harry's inheritance with contempt. He is referred to by name and is described as going to ground since being accosted by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "question_asked_by",
+      "description": "Harry asks Dumbledore a question, which is responded to by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mundungus",
+      "relationship_type": "aware_of_behavior",
+      "description": "Dumbledore is aware of Mundungus's behavior and describes it as contemptible."
+    }
+  ]
+}

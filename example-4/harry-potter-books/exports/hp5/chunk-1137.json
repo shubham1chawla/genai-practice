@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is giving Harry a brief hug before they leave. (\"Sirius was giving him a brief, one-armed hug.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being hugged by Sirius and then shunted out into the winter air. (\"He said gruffly, “Look after yourself, Harry,” and next moment Harry found himself being shunted out into the icy winter air.\")"
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is disguised as a tall, tweedy woman with iron-gray hair and chivvying Harry down the steps. (\"Tonks (today heavily disguised as a tall, tweedy woman with iron-gray hair) chivvying him down the steps.\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is leading Harry and Tonks down the front steps. (\"They followed Lupin down the front steps.\")"
+    },
+    {
+      "name": "number twelve",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Number twelve is a house that is shrinking rapidly as those on either side of it stretch sideways. (\"The door of number twelve slammed shut behind them. They followed Lupin down the front steps. As he reached the pavement, Harry looked around. Number twelve was shrinking rapidly as those on either side of it stretched sideways, squeezing it out of sight; one blink later, it had gone.\")"
+    },
+    {
+      "name": "bus",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "A violently purple, triple-decker bus appears out of thin air in front of them. (\"BANG. A violently purple, triple-decker bus had appeared out of thin air in front of them, narrowly avoiding the nearest lamppost.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "gave_hug_to",
+      "description": "Sirius gives Harry a brief hug before they leave. (\"Sirius was giving him a brief, one-armed hug.\")"
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "chivvied_down_steps_from",
+      "description": "Tonks chivvies Harry down the steps. (\"Tonks (today heavily disguised as a tall, tweedy woman with iron-gray hair) chivvying him down the steps.\")"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "led_down_steps_to",
+      "description": "Lupin leads Harry and Tonks down the front steps. (\"They followed Lupin down the front steps.\")"
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "number twelve",
+      "relationship_type": "pushed_out_of_sight_from",
+      "description": "Tonks pushes number twelve out of sight with her magic. (\"The door of number twelve slammed shut behind them. They followed Lupin down the front steps. As he reached the pavement, Harry looked around. Number twelve was shrinking rapidly as those on either side of it stretched sideways, squeezing it out of sight; one blink later, it had gone.\")"
+    },
+    {
+      "entity_1": "bus",
+      "entity_2": "number twelve",
+      "relationship_type": "appeared_in_front_of",
+      "description": "A bus appears in front of number twelve. (\"BANG. A violently purple, triple-decker bus had appeared out of thin air in front of them, narrowly avoiding the nearest lamppost.\")"
+    }
+  ]
+}

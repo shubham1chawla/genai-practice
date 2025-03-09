@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is being searched for a specific object or person."
+    },
+    {
+      "name": "desk",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "The desk is mentioned as a potential hiding place."
+    },
+    {
+      "name": "somebody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Somebody had searched the room before the narrator."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "room",
+      "entity_2": "desk",
+      "relationship_type": "contains",
+      "description": "The desk is located within the room."
+    },
+    {
+      "entity_1": "somebody",
+      "entity_2": "room",
+      "relationship_type": "searched",
+      "description": "Somebody had searched the room before the narrator."
+    }
+  ]
+}

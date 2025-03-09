@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is asking for directions to the North Tower."
+    },
+    {
+      "name": "knight",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A knight who is initially hostile towards Harry, but later becomes his guide. He is described as being exhausted and struggling with his sword."
+    },
+    {
+      "name": "north tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The destination that Harry and the knight are trying to reach. It is mentioned as a place they need to find, but the knight does not know the way there initially."
+    },
+    {
+      "name": "fat pony",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A pony that the knight tries to mount, but fails. It is described as being fat."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "knight",
+      "relationship_type": "guide",
+      "description": "The knight agrees to guide Harry to the North Tower after initially being hostile towards him. This is shown when the knight says 'Come follow me, dear friends...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "north tower",
+      "relationship_type": "goal",
+      "description": "Harry and the knight are trying to reach the North Tower. This is shown when Harry asks the knight if he knows the way there."
+    }
+  ]
+}

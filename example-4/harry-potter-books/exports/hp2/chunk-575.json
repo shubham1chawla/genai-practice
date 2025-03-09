@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is trying to avoid detention by telling a convincing story."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is initially skeptical of Harry's story but eventually gives in. She has a 'strangely croaky voice' and is seen blowing her nose."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, who is impressed by Harry's storytelling skills."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student at Hogwarts who is being visited by Harry. Professor McGonagall gives permission for Harry to visit her."
+    },
+    {
+      "name": "professor binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is informed by Professor McGonagall of Harry's whereabouts."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The nurse at Hogwarts who is informed by Professor McGonagall that Harry has permission to visit Miss Granger."
+    },
+    {
+      "name": "mandrakes",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "A type of magical plant that is being cared for in the hospital wing. Professor McGonagall mentions that they are 'nearly ready'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "visit",
+      "description": "Harry is visiting Professor McGonagall to ask for permission to visit Miss Granger."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "miss granger",
+      "relationship_type": "visit",
+      "description": "Professor McGonagall gives Harry permission to visit Miss Granger."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "inform",
+      "description": "Professor McGonagall informs Madam Pomfrey that she has given her permission for Harry to visit Miss Granger."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor binns",
+      "relationship_type": "inform",
+      "description": "Professor McGonagall informs Professor Binns of Harry's whereabouts."
+    }
+  ]
+}

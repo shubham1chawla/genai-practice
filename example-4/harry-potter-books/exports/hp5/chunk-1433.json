@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of non-magical people that wizards need to interact with."
+    },
+    {
+      "name": "o.w.l.",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "An Ordinary Wizarding Level exam in Muggle Studies."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is a wizard and has a sarcastic comment about his uncle."
+    },
+    {
+      "name": "gringotts wizarding bank",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A bank that provides financial services to wizards and is currently recruiting Curse-Breakers."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is considering a career in banking but doesn't fancy it."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has a voice that can be heard by Harry."
+    },
+    {
+      "name": "curse-breakers",
+      "entity_type": "job_title",
+      "singular": true,
+      "description": "A position at Gringotts Wizarding Bank that involves breaking curses and is advertised as thrilling opportunities abroad."
+    },
+    {
+      "name": "arithmancy",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A subject required for the Curse-Breaker job at Gringotts Wizarding Bank."
+    },
+    {
+      "name": "security trolls",
+      "entity_type": "job_title",
+      "singular": false,
+      "description": "A position that Hermione is reading about in a pamphlet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gringotts wizarding bank",
+      "relationship_type": "recruiting",
+      "description": "Gringotts Wizarding Bank is recruiting Curse-Breakers, and Harry thinks Hermione could do it."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "security trolls",
+      "relationship_type": "reading_about",
+      "description": "Hermione is reading about the job of training security trolls in a pamphlet."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "talking_to",
+      "description": "Fred Weasley has a voice that can be heard by Harry, and they are talking to each other."
+    }
+  ]
+}

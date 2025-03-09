@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a young boy who has been watched by an unknown entity."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Foul creatures that threaten Harry's safety and well-being."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, a wizard who has been rescued by Harry."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who was killed in the maze last year."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of the wizarding world."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "threatened_by",
+      "description": "Harry is threatened by dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "rescued",
+      "description": "Harry rescued Sirius from the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "killed_by",
+      "description": "Cedric was killed in the maze last year, which is a concern for Harry's safety."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "involved_with",
+      "description": "The Ministry is involved with Sirius and Cedric's situation."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is telling his friends about a plan."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is reacting with horror to what Harry is saying."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who is asking hasty questions."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of the school, who is not present tonight."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at the school, who is suspected of being involved in something suspicious."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "not_present",
+      "description": "Harry explains that Dumbledore won't be present tonight."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "involved_in_suspicious_activity",
+      "description": "Harry suspects Malfoy of being involved in something suspicious."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "to_watch",
+      "description": "Harry tells Hermione to watch Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "involved_in_suspicious_activity",
+      "description": "Harry suspects Snape of being involved in something suspicious."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a person who is frowning at the lighthearted behavior of others."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a person who points out someone as 'that tall, good-looking one'."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is a person who describes the silent person as 'strong and silent'."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a person who teases Oliver about being worried."
+    },
+    {
+      "name": "oliver",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Oliver is a person who is worried and needs to be calmed down by Fred."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Hufflepuff is the team that they are playing against."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is an object that Harry caught in a previous match."
+    },
+    {
+      "name": "diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Diggory is a person who has put together a strong side for the team."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is the team that they are trying to outsmart."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "hufflepuff",
+      "relationship_type": "opponent",
+      "description": "Wood is frowning at the lighthearted behavior of others while thinking about their upcoming match against Hufflepuff."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "hufflepuff",
+      "relationship_type": "pointing_out_opponent",
+      "description": "Angelina points out someone as 'that tall, good-looking one' who is part of the Hufflepuff team."
+    },
+    {
+      "entity_1": "katie",
+      "entity_2": "hufflepuff",
+      "relationship_type": "describing_opponent",
+      "description": "Katie describes the silent person as 'strong and silent' who is part of the Hufflepuff team."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "oliver",
+      "relationship_type": "teasing",
+      "description": "Fred teases Oliver about being worried."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "slytherin",
+      "relationship_type": "trying_to_outsmart",
+      "description": "Wood warns that Slytherin is trying to wrong-foot them."
+    },
+    {
+      "entity_1": "diggory",
+      "entity_2": "hufflepuff",
+      "relationship_type": "opponent",
+      "description": "Diggory has put together a strong side for the team against Hufflepuff."
+    },
+    {
+      "entity_1": "oliver",
+      "entity_2": "slytherin",
+      "relationship_type": "trying_to_outsmart",
+      "description": "Oliver is worried that Slytherin is trying to wrong-foot them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "caught",
+      "description": "Harry caught the Snitch in a previous match against Hufflepuff."
+    }
+  ]
+}

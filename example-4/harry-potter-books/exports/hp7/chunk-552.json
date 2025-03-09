@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is trying to open a locket that contains a Horcrux."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is also trying to help him open the locket."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends who is helping him try to open the locket."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A dark object that contains a piece of Voldemort's soul. It is hidden inside the locket."
+    },
+    {
+      "name": "locket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that contains the Horcrux. Harry and his friends are trying to open it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "locket",
+      "relationship_type": "has",
+      "description": "Harry is holding the locket, trying to open it. (\"He handed the locket back to Ron and Hermione...\", \"After a moment or two, Harry thought he knew what Ron meant.\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "locket",
+      "relationship_type": "has",
+      "description": "Ron is holding the locket at one point. (\"Ron passed the Horcrux to Harry...\", \"Ron asked in a hushed voice, as he held it tight in his clenched fist.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "locket",
+      "relationship_type": "has",
+      "description": "Hermione is holding the locket at one point. (\"He handed the locket back to Ron and Hermione...\", \"Each of whom did their best, but were no more successful at opening it than he had been.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "contains",
+      "description": "The locket contains the Horcrux. (\"Was it his own blood pulsing through his veins that he could feel, or was it something beating inside the locket, like a tiny metal heart?\")"
+    }
+  ]
+}

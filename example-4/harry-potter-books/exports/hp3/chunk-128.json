@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "goblin rebellion",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The goblin rebellion is mentioned as a significant event in Britain."
+    },
+    {
+      "name": "shrieking shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Shrieking Shack is described as the most severely haunted building in Britain."
+    },
+    {
+      "name": "britain",
+      "entity_type": "country",
+      "singular": true,
+      "description": "Britain is mentioned as a country where the goblin rebellion and haunted buildings are located."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is one of Harry's friends who is present in the conversation."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is one of Harry's friends who is present in the conversation and trying to convince him to sneak out of school."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who is unable to go to Hogsmeade due to lack of permission."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's relatives who did not sign his permission form."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who would not give Harry permission to go to Hogsmeade."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is the head of Gryffindor House and is very strict."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred Weasley is one of Harry's friends who knows secret passages out of the castle."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley is one of Harry's friends who knows secret passages out of the castle."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who is on the loose and Hermione does not think it is safe for Harry to sneak out with him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dursleys",
+      "relationship_type": "has_permission_from",
+      "description": "Harry's relatives, the Dursleys, did not sign his permission form."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "fudge",
+      "relationship_type": "lacks_permission_from",
+      "description": "Fudge would not give Harry permission to go to Hogsmeade."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "fred weasley",
+      "relationship_type": "is_friend_of",
+      "description": "Ron and Fred are friends who know secret passages out of the castle."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "george weasley",
+      "relationship_type": "is_friend_of",
+      "description": "Ron and George are friends who know secret passages out of the castle."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "harry potter",
+      "relationship_type": "tries_to_convince",
+      "description": "Hermione is trying to convince Harry to sneak out of school."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry potter",
+      "relationship_type": "is_a_threat_to",
+      "description": "Black is a person who is on the loose and Hermione does not think it is safe for Harry to sneak out with him."
+    }
+  ]
+}

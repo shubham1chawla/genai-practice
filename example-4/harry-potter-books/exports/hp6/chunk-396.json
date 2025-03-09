@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "grawp",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grawp is Hagrid's half-brother. He is mentioned as someone they would have been teaching how to tie his shoelaces if they had stayed."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and a teacher at Hogwarts. Hermione misses talking to him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's best friends. She is upset about not being able to talk to Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main protagonist and a student at Hogwarts. He is popular and interesting."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's best friends. He thinks they are better off without Grawp in their lives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "has_friend",
+      "description": "Harry and Hermione are close friends."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "has_friend",
+      "description": "Harry and Ron are close friends."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "misses_person",
+      "description": "Hermione misses talking to Hagrid."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "grawp",
+      "relationship_type": "does_not_want_to_be_related_to",
+      "description": "Ron does not want Grawp in their lives."
+    }
+  ]
+}

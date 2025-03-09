@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry Potter' in the first line."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and Hermione, described as 'bent double, wheezing and spluttering'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and Neville, described as 'clutching at the stitch in her chest'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and Hermione, mentioned as saying 'We've got to get back to Gryffindor Tower'."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who tricked Harry, mentioned as having tipped off Filch."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was informed by Malfoy, mentioned as knowing someone would be in the trophy room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "neville",
+      "relationship_type": "with",
+      "description": "Harry and Neville are together, described as 'They ripped through a tapestry and found themselves in a hidden passageway...'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Harry and Hermione are together, described as 'They hadn't gone more than a dozen paces when a doorknob rattled...'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "tricked_by",
+      "description": "Malfoy tricked Harry, described as 'Malfoy tricked you,' Hermione said to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "told",
+      "description": "Hermione told Harry that Malfoy tricked him, described as 'I – told – you,' Hermione gasped."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location_of",
+      "description": "Ron said they had to get back to Gryffindor Tower, described as 'We've got to get back to Gryffindor Tower'."
+    }
+  ]
+}

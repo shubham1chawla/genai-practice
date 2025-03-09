@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is absent from the proceedings, allowing Harry to feel more relaxed during the Potions class."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is taking the Potions exam and feels more relaxed without Snape present."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville, sitting near Harry, looks happier than usual during the Potions class."
+    },
+    {
+      "name": "marchbanks",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Marchbanks announces the end of the exam and tells students to step away from their cauldrons."
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Parvati Patil is a student who has finished her exams and is heading back to the Gryffindor common room with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is also heading back to the Gryffindor common room with Harry and Parvati Patil, and expresses her frustration about having Arithmancy as an exam subject."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "absence",
+      "description": "Harry feels more relaxed during the Potions class because Snape is absent."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "proximity",
+      "description": "Neville is sitting near Harry during the Potions class and looks happier than usual."
+    },
+    {
+      "entity_1": "marchbanks",
+      "entity_2": "students",
+      "relationship_type": "instruction",
+      "description": "Professor Marchbanks instructs students to step away from their cauldrons, indicating the end of the exam."
+    },
+    {
+      "entity_1": "parvati patil",
+      "entity_2": "harry",
+      "relationship_type": "companionship",
+      "description": "Parvati Patil is heading back to the Gryffindor common room with Harry and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "parvati patil",
+      "relationship_type": "companionship",
+      "description": "Hermione is also heading back to the Gryffindor common room with Harry and Parvati Patil."
+    }
+  ]
+}

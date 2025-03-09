@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as a person who was supposed to smuggle a Horcrux into Hogwarts. He is described as being afraid of Voldemort and not knowing what the diary really was."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a master who had been gone for years and whom Lucius believed dead. He is also described as having told Lucius that the diary would cause the Chamber of Secrets to reopen."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place where Lucius was supposed to smuggle a Horcrux into."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Horcruxes are mentioned as objects that Voldemort had created and was planning to create more of. They are described as being cleverly enchanted."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is mentioned as a Horcrux that Lucius held in his hands. It is described as being cleverly enchanted and causing the Chamber of Secrets to reopen."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber of Secrets is mentioned as a place that was reopened by the diary."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "ordered_by",
+      "description": "Voldemort ordered Lucius Malfoy to smuggle a Horcrux into Hogwarts, but Lucius did not know what the diary really was."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "diary",
+      "relationship_type": "created",
+      "description": "Voldemort created the diary, which is described as being cleverly enchanted and causing the Chamber of Secrets to reopen."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "diary",
+      "relationship_type": "possessed",
+      "description": "Lucius Malfoy possessed the diary, but he did not know what it really was."
+    }
+  ]
+}

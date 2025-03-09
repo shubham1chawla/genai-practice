@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the Weasley twins who are playing Exploding Snap with Harry."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the Weasley twins who are playing Exploding Snap with Harry and being blackmailed by someone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is playing Exploding Snap with Fred and George, and he wants to know who they were blackmailing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "asked_about_blackmail",
+      "description": "Harry asked George if he was going to tell him about who they were blackmailing."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "played_exploding_snap_with",
+      "description": "Fred and Harry are playing Exploding Snap together."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "was_being_blackmailed_by",
+      "description": "George was being blackmailed by someone, which Harry wants to know about."
+    }
+  ]
+}

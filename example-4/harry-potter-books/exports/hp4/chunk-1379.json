@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a place where dementors are standing guard at night."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who put Lord Voldemort's supporters in the care of creatures."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person with dangerous supporters and dementors behind him."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the one who will be hard-pressed to stop Voldemort from regaining power."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are mentioned as creatures that will join Voldemort if he asks them."
+    },
+    {
+      "name": "cornelius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius is mentioned in the context of sleeping less soundly due to knowing that Voldemort's supporters are in the care of creatures."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dementors",
+      "relationship_type": "has_supporters",
+      "description": "Voldemort has dementors as his supporters."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "voldemort",
+      "relationship_type": "will_be_opposed_by",
+      "description": "Fudge will be hard-pressed to stop Voldemort from regaining power."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort's_supporters",
+      "relationship_type": "has_control_over",
+      "description": "Dumbledore has control over Voldemort's supporters."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "cornelius",
+      "relationship_type": "will_be_affect_by",
+      "description": "Fudge will be affected by Cornelius' actions."
+    }
+  ]
+}

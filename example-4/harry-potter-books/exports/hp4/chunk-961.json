@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "will start",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The event that Harry will participate in, described as starting on his whistle."
+    },
+    {
+      "name": "my whistle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's whistle, used to signal the start of the event."
+    },
+    {
+      "name": "precisely an hour",
+      "entity_type": "time",
+      "singular": true,
+      "description": "The time Harry has to recover what has been taken from them."
+    },
+    {
+      "name": "champions",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of champions participating in the event, mentioned as doing something but not specified."
+    },
+    {
+      "name": "gillyweed",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry uses to aid him in the water, described as being pulled out of his pocket and stuffed into his mouth."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character participating in the event, described as pulling off his shoes and socks, wading into the lake, and using gillyweed."
+    },
+    {
+      "name": "shoes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry removes before participating in the event."
+    },
+    {
+      "name": "socks",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry removes before participating in the event."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where the event takes place, described as being cold and icy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "gillyweed",
+      "relationship_type": "uses",
+      "description": "Harry uses gillyweed to aid him in the water, described as being pulled out of his pocket and stuffed into his mouth."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "lake",
+      "relationship_type": "enters",
+      "description": "Harry enters the lake as part of the event, described as wading in deeper."
+    }
+  ]
+}

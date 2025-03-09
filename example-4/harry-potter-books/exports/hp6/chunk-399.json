@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a graffitied copy of Advanced Potion-Making."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as being delighted and scandalised by his actions."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as asking if anyone they know is dead."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as being given a new copy of Advanced Potion-Making by Harry."
+    },
+    {
+      "name": "advanced potion-making",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book that is the subject of Harry's prank."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper mentioned as being delivered to Hermione by owl."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "store",
+      "singular": false,
+      "description": "A store where books are sold."
+    },
+    {
+      "name": "prince's copy",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The original copy of Advanced Potion-Making that Harry disguises as a new book."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "interaction",
+      "description": "Harry and Hermione interact with each other, with Hermione being delighted and scandalised by Harry's actions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "transaction",
+      "description": "Harry gives a new copy of Advanced Potion-Making to Slughorn."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "daily prophet",
+      "relationship_type": "receipt",
+      "description": "Hermione receives the Daily Prophet by owl."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "prince's copy",
+      "relationship_type": "disguise",
+      "description": "Harry disguises the Prince's copy of Advanced Potion-Making as a new book."
+    }
+  ]
+}

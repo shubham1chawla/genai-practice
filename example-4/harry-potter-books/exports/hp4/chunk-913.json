@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is a poltergeist mentioned in the conversation between Snape and Filch. He is described as being unable to enter Snape's office."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a professor who is having a conversation with Filch about an egg that was found in his office."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a character who is having a conversation with Snape about the egg and Peeves."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An egg that was found in Snape's office and thrown by Peeves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "filch",
+      "relationship_type": "conversation",
+      "description": "Snape and Filch are having a conversation about the egg and Peeves."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "egg",
+      "relationship_type": "threw",
+      "description": "Peeves threw the egg, according to Filch."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "office",
+      "relationship_type": "has",
+      "description": "Snape has an office where the torches were lit and a cupboard door was ajar."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as the murderer who escaped from Azkaban prison. He is described as a person of great importance and a leader in the escape plan."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the one who blamed Sirius for the breakout. He is described as someone who is trying to cover up his own mistakes."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix Lestrange is mentioned as Sirius Black's cousin and one of the individuals involved in the breakout. She is described as someone who has rallied around Black as their leader."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a prison where Sirius Black escaped from. It is described as a place of great security and difficulty to escape from."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone who is shocked by Fudge's accusations against Sirius. He is described as someone who is bitter about the situation."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as someone who is bitter and skeptical of Fudge's accusations against Sirius. She is described as someone who is trying to make sense of the situation."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as someone who is looking at Harry with a mixture of shock and awe. He is described as someone who is trying to understand the situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "sirius black",
+      "relationship_type": "blames",
+      "description": "Fudge blamed Sirius for the breakout, suggesting that he was trying to cover up his own mistakes. (\"the murderer Sirius Black escaped,\" said Fudge last night.)"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "bellatrix lestrange",
+      "relationship_type": "involved_in_breakout",
+      "description": "Fudge mentioned that Bellatrix Lestrange was one of the individuals involved in the breakout, suggesting that she was part of Sirius's escape plan. (\"We think it likely that these individuals, who include Black’s cousin, Bellatrix Lestrange, have rallied around Black as their leader.\")"
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "azkaban",
+      "relationship_type": "escaped_from",
+      "description": "Sirius Black escaped from Azkaban prison, which is described as a place of great security and difficulty to escape from. (\"An escape of this magnitude suggests outside help, and we must remember that Black, as the first person ever to break out of  Azkaban, would be ideally placed to help others follow in his footsteps.\")"
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "sirius black",
+      "relationship_type": "cousin_of",
+      "description": "Bellatrix Lestrange is mentioned as Sirius Black's cousin, suggesting a close family relationship. (\"Black’s cousin, Bellatrix Lestrange,\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "fudge",
+      "relationship_type": "disagrees_with",
+      "description": "Harry Potter disagreed with Fudge's accusations against Sirius, suggesting that he did not believe Fudge's version of events. (\"I don’t believe this,\" snarled Harry, \"Fudge is blaming the break-out on Sirius?\")"
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "fudge",
+      "relationship_type": "disagrees_with",
+      "description": "Hermione Granger also disagreed with Fudge's accusations against Sirius, suggesting that she did not believe Fudge's version of events. (\"What other options does he have?\" said Hermione bitterly.)"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as someone who will be notified when the golden cup is missing."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as being notified by the goblins of Gringotts."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The bank where Bellatrix is associated with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "bellatrix",
+      "relationship_type": "notify",
+      "description": "Voldemort will be notified when the goblins of Gringotts notify Bellatrix that the golden cup is missing."
+    },
+    {
+      "entity_1": "gringotts",
+      "entity_2": "bellatrix",
+      "relationship_type": "notify",
+      "description": "The goblins of Gringotts will notify Bellatrix when they discover that the golden cup is missing."
+    }
+  ]
+}

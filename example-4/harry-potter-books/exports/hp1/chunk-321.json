@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "bludgers",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Bludgers are flying objects that try to knock players off their brooms. They are described as 'flying around' and trying to hit the players."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Weasley twins are two Beaters on Harry's team who protect their side from the Bludgers and try to knock them towards the other team."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is a ball that three Chasers try to score with."
+    },
+    {
+      "name": "keeper",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Keeper guards the goalposts."
+    },
+    {
+      "name": "beaters",
+      "entity_type": "position",
+      "singular": false,
+      "description": "The Beaters keep the Bludgers away from their team."
+    },
+    {
+      "name": "chasers",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Three Chasers try to score with the Quaffle."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the Seeker on his team."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is the teacher who explains the rules of Quidditch to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasley twins",
+      "entity_2": "bludgers",
+      "relationship_type": "protects_against",
+      "description": "The Weasley twins protect their side from the Bludgers."
+    },
+    {
+      "entity_1": "beaters",
+      "entity_2": "bludgers",
+      "relationship_type": "keeps_away_from",
+      "description": "The Beaters keep the Bludgers away from their team."
+    },
+    {
+      "entity_1": "chasers",
+      "entity_2": "quaffle",
+      "relationship_type": "tries_to_score_with",
+      "description": "Three Chasers try to score with the Quaffle."
+    },
+    {
+      "entity_1": "keeper",
+      "entity_2": "goalposts",
+      "relationship_type": "guards",
+      "description": "The Keeper guards the goalposts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quaffle",
+      "relationship_type": "does_not_have_to_worry_about",
+      "description": "Harry does not have to worry about the Quaffle as a Seeker."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludgers",
+      "relationship_type": "does_not_have_to_worry_about",
+      "description": "Harry does not have to worry about the Bludgers as a Seeker."
+    }
+  ]
+}

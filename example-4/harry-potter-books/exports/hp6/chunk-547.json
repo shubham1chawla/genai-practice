@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a character who has found Hermione in an unlocked classroom."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as sitting on the teacher's desk, conjuring birds out of midair."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as enjoying the celebrations and being pulled into the room by Lavender."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender is described as being pulled into the room by Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "found",
+      "description": "Harry found Hermione in an unlocked classroom."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron weasley",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Ron, as they are both mentioned together in the context of the party."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron weasley",
+      "relationship_type": "mentioned_together",
+      "description": "Hermione mentions Ron to Harry, indicating that they are aware of each other's presence."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lavender",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Lavender, as she is being pulled into the room by Ron."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "lavender",
+      "relationship_type": "pulled_into_room",
+      "description": "Ron pulls Lavender into the room."
+    }
+  ]
+}

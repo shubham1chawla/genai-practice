@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as having rough stone walls and a large fire at the far end."
+    },
+    {
+      "name": "fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The fire is mentioned as the source of most of the light in the room."
+    },
+    {
+      "name": "pipe smoke",
+      "entity_type": "substance",
+      "singular": false,
+      "description": "The pipe smoke is described as hanging in the air like battle fumes."
+    },
+    {
+      "name": "shapes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The menacing shapes are mentioned as looming through the haze of pipe smoke."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "room",
+      "entity_2": "fire",
+      "relationship_type": "contains",
+      "description": "The room contains a large fire at the far end."
+    },
+    {
+      "entity_1": "pipe smoke",
+      "entity_2": "shapes",
+      "relationship_type": "obscures",
+      "description": "The haze of pipe smoke obscures the menacing shapes."
+    }
+  ]
+}

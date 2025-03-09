@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is the teacher who dismissed the students and demonstrated the Cruciatus Curse. (Excerpt: 'Moody had dismissed them and they had left the classroom...') "
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who was present in the classroom during Moody's lesson. (Excerpt: 'They were talking about the lesson, Harry thought, as though it had been some sort of spectacular show...') "
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who was present in the classroom during Moody's lesson. (Excerpt: 'Nor, it seemed, had Hermione.') "
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who was present in the classroom during Moody's lesson. (Excerpt: 'Not the ruddy library again?' said Ron.) "
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who was present in the classroom during Moody's lesson and seemed to be traumatized by the Cruciatus Curse. (Excerpt: 'Neville was standing alone, halfway up the passage...') "
+    },
+    {
+      "name": "cruciatus curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Cruciatus Curse is a spell that Moody demonstrated in class. (Excerpt: 'Moody had demonstrated the Cruciatus Curse.') "
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "cruciatus curse",
+      "relationship_type": "demonstrated",
+      "description": "Moody demonstrated the Cruciatus Curse in class. (Excerpt: 'Moody had demonstrated the Cruciatus Curse.') "
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "thought_about",
+      "description": "Harry thought about Moody's lesson and how it was not entertaining. (Excerpt: 'They were talking about the lesson, Harry thought, as though it had been some sort of spectacular show...') "
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "neville",
+      "relationship_type": "concerned_about",
+      "description": "Hermione was concerned about Neville's well-being after the lesson. (Excerpt: '“Neville?” Hermione said gently.') "
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "library",
+      "relationship_type": "disliked_going_to",
+      "description": "Ron did not like going to the library, as mentioned in his conversation with Harry. (Excerpt: 'Not the ruddy library again?' said Ron.) "
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "cruciatus curse",
+      "relationship_type": "traumatized_by",
+      "description": "Neville was traumatized by the Cruciatus Curse, as evidenced by his horrified expression. (Excerpt: 'Neville was standing alone, halfway up the passage...') "
+    }
+  ]
+}

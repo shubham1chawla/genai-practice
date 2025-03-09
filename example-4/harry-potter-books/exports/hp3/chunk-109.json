@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being in a conversation with Mr. Weasley and Molly."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of Harry's conversation, banging his fist on the table."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly Weasley, a person in a conversation with Mr. Weasley and Harry."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who wanted the incident kept quiet from the press."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who escaped from Azkaban and is talking in his sleep about Harry being at Hogwarts."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as a reason why Harry would be safe at the school."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A prison where Black was kept for twelve years."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school that Harry attends and is mentioned as a place where Black thinks Harry is."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "azkaban",
+      "relationship_type": "imprisoned_in",
+      "description": "Black was kept in Azkaban for twelve years."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "press",
+      "relationship_type": "wanted_to_keep_quiet_from",
+      "description": "Fudge wanted the incident kept quiet from the press."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_harm",
+      "description": "Black wants to harm Harry, as mentioned in his sleep."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Dumbledore is headmaster of Hogwarts and would protect Harry."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "you",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Lord Voldemort."
+    },
+    {
+      "name": "your lordship",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title used to address Lord Voldemort."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the people present in the scene, who is being addressed by Lord Voldemort."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "snake",
+      "singular": true,
+      "description": "Lord Voldemort's snake, which needs to be milked regularly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "you",
+      "entity_2": "your lordship",
+      "relationship_type": "address",
+      "description": "The person being addressed by Lord Voldemort."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "your lordship",
+      "relationship_type": "address",
+      "description": "Wormtail is being addressed by Lord Voldemort."
+    },
+    {
+      "entity_1": "you",
+      "entity_2": "nagini",
+      "relationship_type": "caregiver",
+      "description": "The person taking care of Nagini, who needs to be milked regularly."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "the man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The man is described as giving a howl of pain after being hit by a spell in his face. He then pounds away after the brother and sister."
+    },
+    {
+      "name": "brother",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The brother is mentioned as one of the people that the man is pounding after."
+    },
+    {
+      "name": "sister",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The sister is also mentioned as one of the people that the man is pounding after."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as scrambling up from the floor and sprinting along the corridor."
+    },
+    {
+      "name": "Snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having an immense head-start in the chase."
+    },
+    {
+      "name": "the Order",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Order is mentioned as possibly making steps to secure the Cabinet in the Room of Requirement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Snape",
+      "relationship_type": "chase",
+      "description": "Harry and Snape are described as being in a chase, with Harry trying to catch up to Snape."
+    },
+    {
+      "entity_1": "the man",
+      "entity_2": "brother",
+      "relationship_type": "pursuit",
+      "description": "The man is pounding after the brother."
+    },
+    {
+      "entity_1": "the man",
+      "entity_2": "sister",
+      "relationship_type": "pursuit",
+      "description": "The man is also pounding after the sister."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Cabinet in the Room of Requirement",
+      "relationship_type": "approach",
+      "description": "Harry is trying to reach the Cabinet in the Room of Requirement."
+    },
+    {
+      "entity_1": "Snape",
+      "entity_2": "Cabinet in the Room of Requirement",
+      "relationship_type": "entry",
+      "description": "It is possible that Snape has already entered the Cabinet in the Room of Requirement."
+    }
+  ]
+}

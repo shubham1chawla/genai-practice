@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Gryffindor students are mentioned as a group to be led out by Professor McGonagall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being led out with his fellow Gryffindors."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is Harry's friend who nudges him to get up from their seats."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is the Head of Gryffindor House and leads her students out."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Slughorn is the Head of Slytherin House and is seen wearing magnificent robes."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout is the Head of Hufflepuff House and is described as looking clean."
+    },
+    {
+      "name": "madam pince",
+      "entity_type": "staff",
+      "singular": true,
+      "description": "Madam Pince is a librarian who stands beside Filch in the Entrance Hall."
+    },
+    {
+      "name": "filch",
+      "entity_type": "staff",
+      "singular": true,
+      "description": "Filch is the caretaker of Hogwarts and stands beside Madam Pince."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindors",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor House, as indicated by Professor McGonagall's instruction to follow the Heads of House out."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindors",
+      "relationship_type": "leader_of",
+      "description": "Professor McGonagall is the leader of Gryffindor House, as she leads her students out."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "slytherin",
+      "relationship_type": "head_of",
+      "description": "Professor Slughorn is the Head of Slytherin House."
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "hufflepuff",
+      "relationship_type": "head_of",
+      "description": "Professor Sprout is the Head of Hufflepuff House."
+    }
+  ]
+}

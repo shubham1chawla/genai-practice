@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as having met Mr. Ollivander before and buying his wand from him in Diagon Alley."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Ollivander is a wizard who is the wand-maker. He is mentioned as having sold Harry his wand three years ago."
+    },
+    {
+      "name": "fleur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur Delacour is a person who is being examined by Mr. Ollivander. She hands over her wand to him for examination."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is a location where Harry bought his wand from Mr. Ollivander three years ago."
+    },
+    {
+      "name": "mademoiselle delacour",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Mademoiselle Delacour is the title given to Fleur Delacour by Mr. Ollivander."
+    },
+    {
+      "name": "ze'sead of a veela",
+      "entity_type": "air",
+      "singular": false,
+      "description": "Ze'sead of a Veela is an air that is contained in Fleur's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "harry",
+      "relationship_type": "met_before",
+      "description": "Mr. Ollivander and Harry have met before, as mentioned in the text."
+    },
+    {
+      "entity_1": "fleur delacour",
+      "entity_2": "mr ollivander",
+      "relationship_type": "examined_by",
+      "description": "Fleur Delacour is being examined by Mr. Ollivander."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "bought_wand_from",
+      "description": "Harry bought his wand from Diagon Alley three years ago."
+    },
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "fleur delacour",
+      "relationship_type": "examining",
+      "description": "Mr. Ollivander is examining Fleur Delacour's wand."
+    },
+    {
+      "entity_1": "ze'sead of a veela",
+      "entity_2": "fleur delacour",
+      "relationship_type": "contained_in",
+      "description": "Ze'sead of a Veela is contained in Fleur's wand."
+    }
+  ]
+}

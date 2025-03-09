@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is waiting for the Sorting Hat's decision."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who was also sorted into Gryffindor house."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who was also sorted into Gryffindor house."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family of wizards and witches, several members of which were sorted into Gryffindor house."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, known for producing dark witches and wizards."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, to which Harry was sorted."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts School of Witchcraft and Wizardry, who is watching the Sorting from the staff table."
+    },
+    {
+      "name": "gilderoy lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and former Defense Against the Dark Arts teacher at Hogwarts, who is sitting several seats along from Professor Dumbledore."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts School of Witchcraft and Wizardry, who is drinking from his goblet at the end of the staff table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "potential_membership",
+      "description": "The Sorting Hat initially considered sorting Harry into Slytherin house, but ultimately decided against it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Harry was sorted into Gryffindor house during the Sorting Ceremony."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Ron was also sorted into Gryffindor house during the Sorting Ceremony."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Hermione was also sorted into Gryffindor house during the Sorting Ceremony."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as mentioned in the text."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and father of Fred and George Weasley."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A village near Hogwarts where students are allowed to visit on weekends."
+    },
+    {
+      "name": "fred and george weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Twin brothers of Mr. Weasley and friends of Harry."
+    },
+    {
+      "name": "honeydukes",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A sweet shop in Hogsmeade village."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "advice_given",
+      "description": "Mr. Weasley had warned Harry about the dangers of magical objects that can think for themselves."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "map",
+      "relationship_type": "used",
+      "description": "Harry used the map to try and get into Hogsmeade village."
+    },
+    {
+      "entity_1": "fred and george weasley",
+      "entity_2": "map",
+      "relationship_type": "used",
+      "description": "Fred and George Weasley had been using the map for years without any problems."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "honeydukes",
+      "relationship_type": "accessed_through_secret_passage",
+      "description": "Harry used the secret passage on the map to get to Honeydukes."
+    }
+  ]
+}

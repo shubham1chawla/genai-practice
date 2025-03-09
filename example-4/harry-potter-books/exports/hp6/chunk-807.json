@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, introduced as he takes a seat and is addressed by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of the school, who greets Voldemort warmly and offers him a drink."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at the school, whose seat Voldemort takes in the present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "greeted_by",
+      "description": "Dumbledore greets Voldemort warmly and offers him a drink."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "offered_drink_to",
+      "description": "Voldemort is offered a drink by Dumbledore."
+    }
+  ]
+}

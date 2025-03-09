@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who is about to turn 11 years old."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is sleeping and snoring loudly."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The street where Harry lives with his relatives, the Dursleys."
+    },
+    {
+      "name": "midnight",
+      "entity_type": "time",
+      "singular": true,
+      "description": "A time of day mentioned in the story as when the thunder started."
+    },
+    {
+      "name": "letter-writer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who wrote a letter to Harry, but their identity is not specified."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dudley",
+      "relationship_type": "cousin",
+      "description": "Harry and Dudley are cousins."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "privet drive",
+      "relationship_type": "residence",
+      "description": "Harry lives on Privet Drive with his relatives."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "letter-writer",
+      "relationship_type": "recipient",
+      "description": "Harry received a letter from the letter-writer, but their identity is not specified."
+    }
+  ]
+}

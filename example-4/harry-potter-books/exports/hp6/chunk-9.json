@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the Minister of Magic who has a conversation with the Prime Minister about keeping the wizarding world hidden from non-magical people. He mentions that he only bothers the Prime Minister if there's something serious going on that affects Muggles."
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prime Minister is a non-magical person who has a conversation with Fudge about keeping the wizarding world hidden. He's initially dumbstruck and then finds his voice to ask if Fudge is a hoax."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are non-magical people who live in the world alongside wizards. Fudge mentions that he only bothers the Prime Minister if something serious is going to affect Muggles."
+    },
+    {
+      "name": "opposition",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The opposition is a group of people who are against Fudge and his policies. They're mentioned as planning a hoax to discredit Fudge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "prime minister",
+      "relationship_type": "conversation",
+      "description": "Fudge has a conversation with the Prime Minister about keeping the wizarding world hidden from non-magical people."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "muggles",
+      "relationship_type": "concern_for",
+      "description": "Fudge is concerned about the impact of the wizarding world on Muggles and only bothers the Prime Minister if something serious is going to affect them."
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "fudge",
+      "relationship_type": "distrust",
+      "description": "The Prime Minister initially distrusts Fudge, thinking he might be a hoax planned by the opposition."
+    }
+  ]
+}

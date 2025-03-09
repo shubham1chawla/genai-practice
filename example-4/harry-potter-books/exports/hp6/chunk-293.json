@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking and having a conversation with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as speaking and trying to create an alibi."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as diving for a chocolate gateau."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as spreading the story of Harry's involvement."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being involved in something Harry wants to be associated with."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Dementors are mentioned as being involved in something Harry wants to be associated with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "involved_with",
+      "description": "Harry wants to be associated with Death Eaters."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "involved_with",
+      "description": "Harry wants to be associated with Dementors."
+    }
+  ]
+}

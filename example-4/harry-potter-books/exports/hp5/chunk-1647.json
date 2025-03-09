@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is recognized as Bane by others in the text."
+    },
+    {
+      "name": "bane",
+      "entity_type": "magical creature",
+      "singular": true,
+      "description": "Bane is a magical creature with near-human intelligence, according to Law Fifteen B."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione says 'Don't call them that!' in response to Umbridge's actions."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Umbridge is pointing her wand at Magorian and citing Law Fifteen B."
+    },
+    {
+      "name": "magorian",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Magorian is a centaur who roars with rage in response to Umbridge's actions."
+    },
+    {
+      "name": "law fifteen b",
+      "entity_type": "law",
+      "singular": true,
+      "description": "Law Fifteen B states that 'Any attack by a magical creature who is deemed to have near-human intelligence...'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "magorian",
+      "relationship_type": "attack",
+      "description": "Umbridge points her wand at Magorian and cites Law Fifteen B."
+    },
+    {
+      "entity_1": "bane",
+      "entity_2": "humans",
+      "relationship_type": "insult",
+      "description": "Bane considers 'near-human intelligence' a great insult to humans."
+    },
+    {
+      "entity_1": "magorian",
+      "entity_2": "umbridge",
+      "relationship_type": "anger",
+      "description": "Magorian roars with rage in response to Umbridge's actions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "forest",
+      "relationship_type": "visit",
+      "description": "Harry and Hermione have visited the forest before."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "forest",
+      "relationship_type": "dispute",
+      "description": "Umbridge disputes Magorian's claim that it is their forest."
+    }
+  ]
+}

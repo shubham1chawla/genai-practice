@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'famous'."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, who was killed by a powerful curse."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, who was also killed by the curse."
+    },
+    {
+      "name": "house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The family home that was destroyed by the curse."
+    },
+    {
+      "name": "curse",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A powerful and evil spell that killed Harry's parents and destroyed their house."
+    },
+    {
+      "name": "mckinnons",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family of witches and wizards who were killed by the same person who tried to kill Harry's parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "curse",
+      "entity_2": "house",
+      "relationship_type": "destroyed_by",
+      "description": "The curse destroyed Harry's house."
+    },
+    {
+      "entity_1": "curse",
+      "entity_2": "mum",
+      "relationship_type": "killed_by",
+      "description": "The curse killed Harry's mother."
+    },
+    {
+      "entity_1": "curse",
+      "entity_2": "dad",
+      "relationship_type": "killed_by",
+      "description": "The curse killed Harry's father."
+    },
+    {
+      "entity_1": "curse",
+      "entity_2": "mckinnons",
+      "relationship_type": "killed_by",
+      "description": "The same person who tried to kill Harry's parents also killed the McKinnon family."
+    }
+  ]
+}

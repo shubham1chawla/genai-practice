@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as taking a large dose of Polyjuice Potion and becoming the double of a redheaded Muggle boy from Ottery St. Catchpole. He is also referred to as 'Cousin Barny'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as standing outside the marquee with Harry, Fred, and George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is described as stealing hairs from a redheaded Muggle boy using a Summoning Charm to help Harry disguise himself."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as standing outside the marquee with Harry, Ron, and Fred."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "Polyjuice Potion is described as a magical potion that allows Harry to disguise himself as another person."
+    },
+    {
+      "name": "ottery st. catchpole",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Ottery St. Catchpole is mentioned as the village where the redheaded Muggle boy lives from whom Fred stole hairs to help Harry disguise himself."
+    },
+    {
+      "name": "marquee",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "The marquee is described as a large white structure in the orchard where the wedding guests are arriving."
+    },
+    {
+      "name": "orchard",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The orchard is mentioned as the location of the marquee and the wedding ceremony."
+    },
+    {
+      "name": "wedding guests",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The wedding guests are mentioned as arriving at the marquee, but their identities are not specified."
+    },
+    {
+      "name": "waiters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A host of white-robed waiters is described as having arrived an hour earlier to help with the wedding ceremony."
+    },
+    {
+      "name": "band",
+      "entity_type": "group",
+      "singular": true,
+      "description": "A golden jacketed band is mentioned as arriving along with the waiters to provide music for the wedding ceremony."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "uses",
+      "description": "Harry takes a large dose of Polyjuice Potion to disguise himself as another person."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ottery st. catchpole",
+      "relationship_type": "stole_hairs_from",
+      "description": "Fred steals hairs from a redheaded Muggle boy in Ottery St. Catchpole to help Harry disguise himself."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marquee",
+      "relationship_type": "is_at",
+      "description": "Harry is standing outside the marquee with Ron, Fred, and George."
+    }
+  ]
+}

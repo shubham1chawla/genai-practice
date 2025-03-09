@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is mentioned as the one who claims to have prevented a series of attacks in Ouagadougou. He also has photographs on the walls nodding in agreement with him."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who tells Filch that Mrs Norris is not dead but Petrified."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as the one who is shocked and tearful when he finds out that Mrs Norris is not dead."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is being pointed at by Filch to ask about how Mrs Norris was Petrified."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs Norris is a cat that has been Petrified and is stiff and frozen."
+    },
+    {
+      "name": "ouagadougou",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Ouagadougou is mentioned as the location where Lockhart claims to have prevented a series of attacks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "ouagadougou",
+      "relationship_type": "visited",
+      "description": "Lockhart visited Ouagadougou and prevented a series of attacks."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mrs norris",
+      "relationship_type": "petrified",
+      "description": "Dumbledore told Filch that Mrs Norris was Petrified."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "harry",
+      "relationship_type": "accused",
+      "description": "Filch accused Harry of knowing how Mrs Norris was Petrified."
+    }
+  ]
+}

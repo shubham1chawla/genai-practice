@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who knew who those people were."
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley Dursley is described as Harry's cousin and is accompanied by his gang."
+    },
+    {
+      "name": "gang",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The gang is mentioned as being faithful to Dudley Dursley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley dursley",
+      "relationship_type": "cousin_of",
+      "description": "Harry and Dudley Dursley are described as cousins."
+    },
+    {
+      "entity_1": "dudley dursley",
+      "entity_2": "gang",
+      "relationship_type": "leader_of",
+      "description": "Dudley Dursley is accompanied by his gang."
+    }
+  ]
+}

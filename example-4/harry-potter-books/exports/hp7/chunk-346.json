@@ -1,0 +1,144 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is lying in bed with bitter thoughts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who slept in the same bedroom as Harry last time they were here."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Order, who might have searched the house."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who had pilfered plenty from this house before and after Sirius died."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, whose death is mentioned in the text."
+    },
+    {
+      "name": "phineas nigellus black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius's great-great-grandfather, who is sometimes contained in a portrait."
+    },
+    {
+      "name": "troll leg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that was overturned downstairs."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand, which he used to light his way."
+    },
+    {
+      "name": "bedroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The bedroom where Harry and Ron slept last time they were here."
+    },
+    {
+      "name": "wardrobe",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A piece of furniture in the bedroom with open doors."
+    },
+    {
+      "name": "bedclothes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The bedclothes that were ripped back in the bedroom."
+    },
+    {
+      "name": "portrait",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A portrait of Phineas Nigellus Black."
+    },
+    {
+      "name": "order",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group that left the house and might have been searched by Snape or Mundungus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "suspect",
+      "description": "Harry suspects Snape of searching the house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mundungus",
+      "relationship_type": "suspect",
+      "description": "Harry also suspects Mundungus of searching the house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "troll leg",
+      "relationship_type": "connection",
+      "description": "The overturned troll leg is connected to Harry's investigation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "possession",
+      "description": "Harry possesses a wand, which he used to light his way."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bedroom",
+      "relationship_type": "visited",
+      "description": "Harry visited the bedroom where he and Ron slept last time they were here."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "portrait",
+      "relationship_type": "connection",
+      "description": "The portrait of Phineas Nigellus Black is connected to Harry's investigation."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "mundungus",
+      "relationship_type": "victim",
+      "description": "Mundungus pilfered plenty from this house before and after Sirius died."
+    },
+    {
+      "entity_1": "phineas nigellus black",
+      "entity_2": "portrait",
+      "relationship_type": "subject",
+      "description": "Phineas Nigellus Black is the subject of the portrait."
+    },
+    {
+      "entity_1": "order",
+      "entity_2": "snape",
+      "relationship_type": "member",
+      "description": "Snape is a member of the Order, which left the house and might have been searched by Snape or Mundungus."
+    },
+    {
+      "entity_1": "order",
+      "entity_2": "mundungus",
+      "relationship_type": "suspect",
+      "description": "Mundungus is also suspected of searching the house."
+    }
+  ]
+}

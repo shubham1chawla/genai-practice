@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator of the story who is listening to a conversation between two men."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the men in the conversation with Lord Voldemort, who is hesitant to follow through with the plan."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the group and the one giving orders to Wormtail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "lord voldemort",
+      "relationship_type": "is_under",
+      "description": "Wormtail is under Lord Voldemort's control, as he is being ordered around by him."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "frank",
+      "relationship_type": "has_no_relationship",
+      "description": "There is no direct relationship between Wormtail and Frank, but they are both present in the conversation."
+    }
+  ]
+}

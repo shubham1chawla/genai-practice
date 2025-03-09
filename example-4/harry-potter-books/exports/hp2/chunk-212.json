@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is holding up a large diagram of a Quidditch pitch. He is launching into a speech about his new tactics."
+    },
+    {
+      "name": "quidditch pitch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where the sport of Quidditch is played. It has many lines, arrows and crosses drawn on it in different-coloured inks."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the people who are listening to Wood's speech. His head droops onto Alicia Spinnet's shoulder."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose shoulder Fred Weasley's head is on. She is also listening to Wood's speech."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "has_diagram",
+      "description": "Wood is holding up a large diagram of the Quidditch pitch."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "fred weasley",
+      "relationship_type": "is_talking_to",
+      "description": "Wood is launching into a speech about his new tactics, and Fred Weasley is listening."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "alicia spinnet",
+      "relationship_type": "has_head_on_shoulders_of",
+      "description": "Fred Weasley's head droops onto Alicia Spinnet's shoulder."
+    }
+  ]
+}

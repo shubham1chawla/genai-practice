@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as still disheveled and angry. He is mentioned as speaking to Harry and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one Ron is talking to."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as getting up from a rug and reading the notice board. She is also mentioned as being allowed in the dormitory."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "book",
+      "singular": false,
+      "description": "The book 'Hogwarts, A History' is mentioned as saying that the founders thought boys were less trustworthy than girls."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "speaking_to",
+      "description": "Ron is speaking to Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "speaking_to",
+      "description": "Ron is also speaking to Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "being_spoken_to",
+      "description": "Harry is being spoken to by Ron."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "being_spoken_to",
+      "description": "Hermione is also being spoken to by Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "notice board",
+      "relationship_type": "showing_something",
+      "description": "Ron shows something on the notice board to Hermione."
+    }
+  ]
+}

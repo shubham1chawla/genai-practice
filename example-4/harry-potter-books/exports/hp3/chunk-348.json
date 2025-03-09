@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as speaking to someone. She uses strong language, calling the person 'stupid boy' and 'foolish boy'. (\"Stupid boy … foolish boy … he was always hopeless at dueling … should have left it to the Ministry.\")"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as speaking to Professor McGonagall. He uses aggressive language and says that if he had gotten to Black first, he would have ripped him limb from limb. (\"I tell yeh, if I’d got ter Black before little Pettigrew did, I wouldn’t’ve messed around with wands — I’d’ve ripped him limb — from — limb,\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as speaking to Hagrid. He says that nobody but trained Hit Wizards would have stood a chance against Black once he was cornered. (\"You don’t know what you’re talking about, Hagrid,\" said Fudge sharply.)"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as having murdered people and standing over the body of Pettigrew. He is described as laughing while surrounded by bloodstained robes and fragments of Pettigrew’s body. (\"A crater in the middle of the street, so deep it had cracked the sewer below. Bodies everywhere. Muggles screaming. And Black standing there laughing, with what was left of Pettigrew in front of him … a heap of bloodstained robes and a few — a few fragments —\")"
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is mentioned as being murdered by Black. He is described as being ripped limb from limb. (\"I tell yeh, if I’d got ter Black before little Pettigrew did, I wouldn’t’ve messed around with wands — I’d’ve ripped him limb — from — limb,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "black",
+      "relationship_type": "would_have_attacked",
+      "description": "Hagrid says that if he had gotten to Black first, he would have attacked him. (\"I tell yeh, if I’d got ter Black before little Pettigrew did, I wouldn’t’ve messed around with wands — I’d’ve ripped him limb — from — limb,\")"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "black",
+      "relationship_type": "would_have_defeated",
+      "description": "Fudge says that nobody but trained Hit Wizards would have stood a chance against Black once he was cornered. (\"You don’t know what you’re talking about, Hagrid,\" said Fudge sharply.)"
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "pettigrew",
+      "relationship_type": "murdered",
+      "description": "Black is described as having murdered Pettigrew. (\"A crater in the middle of the street, so deep it had cracked the sewer below. Bodies everywhere. Muggles screaming. And Black standing there laughing, with what was left of Pettigrew in front of him … a heap of bloodstained robes and a few — a few fragments —\")"
+    }
+  ]
+}

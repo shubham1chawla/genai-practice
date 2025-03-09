@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The goblet is mentioned as an object that turns red and shoots out a piece of parchment."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A second piece of parchment is shot out of the goblet by the flames."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore announces Fleur Delacour as the champion for Beauxbatons."
+    },
+    {
+      "name": "fleur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur Delacour is announced as the champion for Beauxbatons by Dumbledore."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron confirms that Fleur Delacour is indeed the champion for Beauxbatons."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry shouts in confirmation of Fleur Delacour being the champion for Beauxbatons."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Beauxbatons is mentioned as a school that has a party and a champion."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Ravenclaw is mentioned as one of the houses in the school."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Hufflepuff is mentioned as another house in the school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fleur delacour",
+      "relationship_type": "announce_champion",
+      "description": "Dumbledore announces Fleur Delacour as the champion for Beauxbatons."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fleur delacour",
+      "relationship_type": "confirm_champion",
+      "description": "Ron confirms that Fleur Delacour is indeed the champion for Beauxbatons."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fleur delacour",
+      "relationship_type": "confirm_champion",
+      "description": "Harry shouts in confirmation of Fleur Delacour being the champion for Beauxbatons."
+    },
+    {
+      "entity_1": "beauxbatons",
+      "entity_2": "ravenclaw",
+      "relationship_type": "host_party",
+      "description": "Beauxbatons is hosting a party, and Ravenclaw is one of the houses present."
+    },
+    {
+      "entity_1": "beauxbatons",
+      "entity_2": "hufflepuff",
+      "relationship_type": "host_party",
+      "description": "Beauxbatons is hosting a party, and Hufflepuff is another house present."
+    }
+  ]
+}

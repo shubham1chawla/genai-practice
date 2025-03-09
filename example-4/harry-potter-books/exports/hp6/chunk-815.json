@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom is mentioned as someone Harry wishes he could talk to about his crimes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is on the verge of shouting a warning and later talks to Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone whose hand Harry suspects of moving towards his pocket and wand."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who has a hand on Harry's arm and later talks to him about Voldemort's return."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "suspect",
+      "description": "Harry suspects Voldemort of moving his hand towards his pocket and wand."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "support",
+      "description": "Dumbledore has a supportive role by having a hand on Harry's arm."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "target",
+      "description": "Voldemort is the target of Harry's suspicion and warning."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "influence",
+      "description": "Dumbledore seems to have some influence over Voldemort, as he is able to make him return."
+    }
+  ]
+}

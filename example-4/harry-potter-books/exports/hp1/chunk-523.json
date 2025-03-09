@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fluffy",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "Fluffy is mentioned as the one to use the pocketed item on."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object_name",
+      "singular": true,
+      "description": "The cloak is mentioned as something that needs to be put on and covers all three of them."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Filch is mentioned as someone who might spot one of their feet wandering along on its own."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fluffy",
+      "entity_2": "cloak",
+      "relationship_type": "uses",
+      "description": "Fluffy will use the cloak."
+    },
+    {
+      "entity_1": "cloak",
+      "entity_2": "filch",
+      "relationship_type": "protects_from",
+      "description": "The cloak is meant to protect them from Filch spotting one of their feet."
+    }
+  ]
+}

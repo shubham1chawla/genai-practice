@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to transport Dumbledore to Hogsmeade."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor and a wizard, who has been struck by lightning and needs to be transported to Hogsmeade."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A village in the Harry Potter universe, where Harry is trying to transport Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "carries",
+      "description": "Harry is carrying Dumbledore on his back as he tries to transport him to Hogsmeade."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "destination",
+      "description": "Harry's destination is Hogsmeade, where he is trying to transport Dumbledore."
+    }
+  ]
+}

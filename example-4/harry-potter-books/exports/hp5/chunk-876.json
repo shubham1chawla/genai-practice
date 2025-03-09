@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "professor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The professor is mentioned as someone who adds interest to the game, but no further details are provided."
+    },
+    {
+      "name": "warrington",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Warrington is a wizard who has been hit by Bludger from Crabbe. He is also mentioned as someone who dodges Warrington's spell."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Crabbe is a wizard who hits Warrington with a Bludger."
+    },
+    {
+      "name": "montague",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Montague is a wizard who catches the Quaffle and is hit by a Bludger from George Weasley. He drops the Quaffle, which is caught by Katie Bell."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "George Weasley is mentioned as someone who hits Montague with a Bludger."
+    },
+    {
+      "name": "katie bell",
+      "entity_type": "witch",
+      "singular": true,
+      "description": "Katie Bell is a witch from Gryffindor who catches the Quaffle dropped by Montague and reverse passes it to Alicia Spinnet."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "witch",
+      "singular": true,
+      "description": "Alicia Spinnet is a witch who receives the reverse pass from Katie Bell and takes the Quaffle away."
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "commentator",
+      "singular": true,
+      "description": "Lee Jordan is a commentator who provides play-by-play commentary of the game, including the actions of the players and the crowd's reactions."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is mentioned as someone who listens to Lee Jordan's commentary through the wind and din of the crowd."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crabbe",
+      "entity_2": "warrington",
+      "relationship_type": "hit_by",
+      "description": "Crabbe hits Warrington with a Bludger, as mentioned in the commentary."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "montague",
+      "relationship_type": "hit_with_bludger",
+      "description": "George Weasley hits Montague with a Bludger, causing him to drop the Quaffle."
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "alicia spinnet",
+      "relationship_type": "reverse_passes_to",
+      "description": "Katie Bell reverse passes the Quaffle to Alicia Spinnet, who takes it away."
+    }
+  ]
+}

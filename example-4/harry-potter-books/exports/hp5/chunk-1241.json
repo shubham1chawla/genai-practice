@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "stomach",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "The stomach is mentioned as giving an unpleasant lurch, indicating a physical reaction to something."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor table is mentioned as the location where someone sat down with their back to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as asking Harry about his date with Cho."
+    },
+    {
+      "name": "ravenclaw table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Ravenclaw table is mentioned as the location where Hermione glanced over at."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is mentioned as Harry's date."
+    },
+    {
+      "name": "madam puddifoot’s tea shop",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Madam Puddifoot’s Tea Shop is mentioned as the location where something happened with Cho."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as telling Hermione about his date with Cho."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor table",
+      "relationship_type": "sat_at",
+      "description": "Hermione sat down at the Gryffindor table, but with her back to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam puddifoot’s tea shop",
+      "relationship_type": "visited",
+      "description": "Harry visited Madam Puddifoot’s Tea Shop where something happened with Cho."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "dated",
+      "description": "Cho was Harry's date."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ravenclaw table",
+      "relationship_type": "glanced_at",
+      "description": "Hermione glanced over at the Ravenclaw table."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "dated_with",
+      "description": "Harry dated Cho, but something went wrong with their date."
+    }
+  ]
+}

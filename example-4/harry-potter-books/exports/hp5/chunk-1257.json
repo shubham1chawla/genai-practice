@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is a house at Hogwarts School of Witchcraft and Wizardry. It is mentioned as the whole table leaned forward to watch the owls land."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is present at the scene where the owls are landing. He asks 'What's going on?' in amazement."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another friend of Harry's who is present at the scene. She breathlessly pulls out a screec h owl bearing a package and suggests opening it first."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who receives the owls. He rips off the packaging to reveal a copy of The Quibbler."
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "The Quibbler is a magazine that Harry receives in one of the packages. It is mentioned as March's edition."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the quibbler",
+      "relationship_type": "received",
+      "description": "Harry received The Quibbler in one of the owl packages."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "owl",
+      "relationship_type": "pulled_out",
+      "description": "Hermione pulled out an owl bearing a package from the feathery mass."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor table",
+      "relationship_type": "belonged_to",
+      "description": "Ron was part of the Gryffindor table that leaned forward to watch the owls land."
+    }
+  ]
+}

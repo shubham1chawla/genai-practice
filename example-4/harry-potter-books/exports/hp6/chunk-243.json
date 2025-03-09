@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' throughout the text."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A family member of Harry's, mentioned as helping him load his trunk onto the train."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A family member of Harry's, mentioned as helping him load his trunk onto the train and waving goodbye to Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being involved in arrangements for Harry to visit Mr. and Mrs. Weasley for Christmas."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr weasley",
+      "relationship_type": "helped_by",
+      "description": "Mr. Weasley helped Harry load his trunk onto the train."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mrs weasley",
+      "relationship_type": "helped_by",
+      "description": "Mrs. Weasley helped Harry load his trunk onto the train."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "humoured",
+      "description": "Mr. Weasley was humouring Harry when he said 'Well, maybe'."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "waved_goodbye_to",
+      "description": "Mrs. Weasley waved goodbye to Harry as the train moved away."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mr and mrs weasley",
+      "relationship_type": "arranged_visit_with",
+      "description": "Dumbledore was involved in arrangements for Harry to visit Mr. and Mrs. Weasley for Christmas."
+    }
+  ]
+}

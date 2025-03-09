@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is described as pulling her shawls tight about her with slightly trembling hands and surveying the class through her hugely magnifying lenses. She is also mentioned as making a brave attempt at her usual mystic tones, though her voice shook slightly."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is described as sitting right beside Professor Trelawney's seat and making notes on her clipboard."
+    },
+    {
+      "name": "parvati",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Parvati is mentioned as being in discussion with Lavender about Parvati's most recent dream."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Lavender is mentioned as being in discussion with Parvati about Parvati's most recent dream."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is mentioned as opening his copy of The Dream Oracle and watching Umbridge covertly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "parvati",
+      "relationship_type": "teaches",
+      "description": "Professor Trelawney is teaching the class and Parvati is one of her students."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "professor trelawney",
+      "relationship_type": "sits near",
+      "description": "Professor Umbridge is sitting right beside Professor Trelawney's seat."
+    },
+    {
+      "entity_1": "parvati",
+      "entity_2": "lavender",
+      "relationship_type": "discusses with",
+      "description": "Parvati and Lavender are in discussion about Parvati's most recent dream."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "watches",
+      "description": "Harry is watching Professor Umbridge covertly."
+    }
+  ]
+}

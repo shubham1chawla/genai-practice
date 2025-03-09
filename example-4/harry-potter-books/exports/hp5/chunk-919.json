@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who told Hagrid how to give gifts to the Gurg."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the one who is giving gifts to the Gurg and explaining how to do it."
+    },
+    {
+      "name": "gurg",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Gurg is a title given to the chief of the group."
+    },
+    {
+      "name": "karkus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkus is mentioned as the biggest, ugliest, and laziest Gurg who is waiting to be fed by others."
+    },
+    {
+      "name": "olymppe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Olympe is mentioned as someone who went down the mountainside with Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people asking questions about how to give gifts to the Gurg."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another person who is asking questions about how to give gifts to the Gurg."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gurg",
+      "relationship_type": "has_to_give_gifts_to",
+      "description": "Hagrid has to give gifts to the Gurg as per Dumbledore's instructions."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "olymppe",
+      "relationship_type": "is_married_to",
+      "description": "Karkus is married to Olympe."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "olymppe",
+      "relationship_type": "went_down_mountainside_with",
+      "description": "Hagrid went down the mountainside with Olympe."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "gurg",
+      "relationship_type": "is_a",
+      "description": "Karkus is a Gurg."
+    }
+  ]
+}

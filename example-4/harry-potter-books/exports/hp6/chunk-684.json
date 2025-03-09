@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione recited a law at top speed."
+    },
+    {
+      "name": "golpalott",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Golpalott's Third Law was mentioned by Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn beamed and gave points to Gryffindor."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor was given 10 points by Slughorn."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "slughorn",
+      "relationship_type": "recited_law_to",
+      "description": "Hermione recited Golpalott's Third Law to Slughorn."
+    },
+    {
+      "entity_1": "golpalott",
+      "entity_2": "slughorn",
+      "relationship_type": "mentioned_by",
+      "description": "Golpalott's Third Law was mentioned by Slughorn."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "gryffindor",
+      "relationship_type": "awarded_points_to",
+      "description": "Slughorn awarded 10 points to Gryffindor."
+    }
+  ]
+}

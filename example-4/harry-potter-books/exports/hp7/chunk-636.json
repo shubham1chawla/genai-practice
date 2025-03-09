@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to read runes."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who knows about Ancient Runes."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The daughter of a person wearing Grindelwald's mark."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose mark is being discussed."
+    },
+    {
+      "name": "syllabary",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "A collection of symbols used to represent sounds or words."
+    },
+    {
+      "name": "runes",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "An ancient writing system."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "question",
+      "description": "Harry is asking Hermione about Ancient Runes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "syllabary",
+      "relationship_type": "comparison",
+      "description": "Harry is comparing the symbol to a picture in the syllabary."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "runes",
+      "relationship_type": "knowledge",
+      "description": "Hermione has knowledge about Ancient Runes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "connection",
+      "description": "Harry is connecting the symbol to Luna's dad."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "grindelwald",
+      "relationship_type": "identification",
+      "description": "Harry identifies the symbol as Grindelwald's mark."
+    }
+  ]
+}

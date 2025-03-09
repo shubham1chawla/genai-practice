@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to as 'Not Harry' by the woman. The text describes him as someone who is not the target of her warning."
+    },
+    {
+      "name": "the child",
+      "entity_type": "child",
+      "singular": true,
+      "description": "The baby in the crib who remains silent throughout the scene. The text describes him as looking up at the intruder with interest."
+    },
+    {
+      "name": "the woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is trying to protect Harry and begging for mercy. She drops like her husband when the green light flashes."
+    },
+    {
+      "name": "the husband",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The woman's husband who also falls down when the green light flashes."
+    },
+    {
+      "name": "the intruder",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is trying to harm Harry and the child. The text describes him as pointing a wand at the child."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the woman",
+      "relationship_type": "target_of_warning",
+      "description": "The woman warns that she will do anything to protect Harry."
+    },
+    {
+      "entity_1": "the intruder",
+      "entity_2": "harry",
+      "relationship_type": "threat_to_person",
+      "description": "The intruder is trying to harm Harry."
+    },
+    {
+      "entity_1": "the intruder",
+      "entity_2": "the child",
+      "relationship_type": "threat_to_person",
+      "description": "The intruder points a wand at the child."
+    },
+    {
+      "entity_1": "the woman",
+      "entity_2": "her husband",
+      "relationship_type": "similar_fate",
+      "description": "Both the woman and her husband fall down when the green light flashes."
+    }
+  ]
+}

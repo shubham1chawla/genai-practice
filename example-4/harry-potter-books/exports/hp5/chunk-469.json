@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is mentioned as a student who is talking to Harry about the news of Dumbledore being sacked. He says that his parents don't get the Daily Prophet and therefore don't know about the situation."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as a student who believes Harry and his gran's opinion on Dumbledore. He says that his gran has canceled their subscription to the Daily Prophet because she thinks it's going downhill."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person being talked about by Seamus and Neville. He feels grateful towards Neville for supporting him."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster of Hogwarts who has been sacked from the Wiz-engamot and the International Confederation of Wizards because he's losing his marbles."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as a person who Neville's gran believes will come back one day. She says that if Dumbledore says he's back, then he's back."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": false,
+      "description": "The Daily Prophet is mentioned as the newspaper that Seamus' parents don't get and Neville's gran has canceled their subscription to because she thinks it's going downhill."
+    },
+    {
+      "name": "wiz-engamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Wiz-engamot is mentioned as an organization where Dumbledore has been sacked from."
+    },
+    {
+      "name": "international confederation of wizards",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The International Confederation of Wizards is mentioned as an organization where Dumbledore has been sacked from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "seamus",
+      "entity_2": "harry",
+      "relationship_type": "disagreement",
+      "description": "Seamus and Harry disagree on the news about Dumbledore being sacked. Seamus says that his parents don't get the Daily Prophet and therefore don't know about the situation."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "support",
+      "description": "Neville supports Harry by saying that he believes in him and his gran's opinion on Dumbledore. He says that his gran has canceled their subscription to the Daily Prophet because she thinks it's going downhill."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "dumbledore",
+      "relationship_type": "trust",
+      "description": "Neville trusts Dumbledore and believes in what he says. He says that if Dumbledore says You-Know-Who is back, then he's back."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "gratitude",
+      "description": "Harry feels grateful towards Neville for supporting him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "you-know-who",
+      "relationship_type": "prediction",
+      "description": "Dumbledore is mentioned as the person who has predicted that You-Know-Who will come back one day. Neville's gran believes in this prediction and says that if Dumbledore says he's back, then he's back."
+    }
+  ]
+}

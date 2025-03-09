@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is described as having her eyes following the bouncing ferret's progress through the air."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a teacher at Hogwarts School of Witchcraft and Wizardry. He is described as teaching using Transfiguration as a punishment."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Draco Malfoy is a student at Hogwarts School of Witchcraft and Wizardry. He is described as being punished by Moody using Transfiguration."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. He is mentioned as having told Moody not to use Transfiguration as a punishment."
+    },
+    {
+      "name": "harry potter's school (hogwarts)",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts School of Witchcraft and Wizardry is the school attended by Draco Malfoy. It is described as having professors like McGonagall and Moody."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "draco malfoy",
+      "relationship_type": "punished",
+      "description": "Moody punishes Draco Malfoy using Transfiguration."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "moody",
+      "relationship_type": "disapproves_of",
+      "description": "Professor McGonagall disapproves of Moody's use of Transfiguration as a punishment."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having read something about Krum in a fan magazine."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being discussed by Harry and fans, mentioned to be looking mollified."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose current whereabouts are unknown, mentioned in the conversation between Harry and Krum."
+    },
+    {
+      "name": "fan magazine",
+      "entity_type": "publication",
+      "singular": false,
+      "description": "A type of publication where fans discuss celebrities like Krum."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "krum",
+      "relationship_type": "discussed_by",
+      "description": "Harry discussed Krum in a fan magazine."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "gregorovitch",
+      "relationship_type": "mentioned_with",
+      "description": "Krum was mentioned with Gregorovitch in the conversation between Harry and Krum."
+    }
+  ]
+}

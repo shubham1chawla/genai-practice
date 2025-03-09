@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being present in the scene."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person on lookout duty, mentioned as remaining while Harry and Hermione are discussing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, mentioned as being present in the scene and trying to find out about Dark spells."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as looking at a picture with Harry."
+    },
+    {
+      "name": "prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose book is being handled by Harry and Hermione."
+    },
+    {
+      "name": "dark spells",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "A type of spell mentioned in the conversation between Harry and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "is_on_lookout_of",
+      "description": "Harry is on lookout duty with Snape, as mentioned in the text."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dark spells",
+      "relationship_type": "is_investigating",
+      "description": "Hermione is investigating Dark spells, as mentioned in her conversation with Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "prince",
+      "relationship_type": "has_book_of",
+      "description": "Harry has a book belonging to Prince, which he and Hermione are handling."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "newsprint",
+      "relationship_type": "has",
+      "description": "Hermione has an old piece of newsprint that she shows to Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "picture",
+      "relationship_type": "looks_at",
+      "description": "Ron looks at a picture with Harry, as mentioned in the text."
+    }
+  ]
+}

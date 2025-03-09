@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people appealing for support. He shakes his head in response to a question about the voice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is also mentioned as one of the people appealing for support and agrees with Harry that it was a human voice."
+    },
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is mentioned as an elf who is being questioned by Mr. Diggory about the last spell her wand performed."
+    },
+    {
+      "name": "mr diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Diggory is mentioned as a person who knows how to discover the last spell a wand performed and is questioning Winky about it."
+    },
+    {
+      "name": "dumbledore's army member (implied)",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Although not explicitly stated, Mr. Diggory seems to be associated with Dumbledore's Army as he knows how to discover the last spell a wand performed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr diggory",
+      "entity_2": "winky",
+      "relationship_type": "questioned_by",
+      "description": "Mr. Diggory is questioning Winky about the last spell her wand performed."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore's army member (implied)",
+      "relationship_type": "associated_with",
+      "description": "Although not explicitly stated, Mr. Diggory seems to be associated with Dumbledore's Army as he knows how to discover the last spell a wand performed."
+    },
+    {
+      "entity_1": "mr diggory",
+      "entity_2": "harry",
+      "relationship_type": "related_to",
+      "description": "Mr. Diggory is related to Harry in some way, possibly as his teacher or mentor."
+    }
+  ]
+}

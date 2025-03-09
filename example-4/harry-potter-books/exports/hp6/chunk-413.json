@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is talking to Hagrid in a low voice. He asks how Hagrid is doing and if he is missing someone."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is wearing a large flowery apron and carrying a sack of potatoes. He has an enormous boarhound named Fang."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is talking to Harry and Ron. She looks stricken when Hagrid slams the door."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is with Hermione and Harry. Fang attempts to lick his ears."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "talk_to",
+      "description": "Harry talks to Hagrid in a low voice."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "interact_with",
+      "description": "Hagrid interacts with Hermione when Fang jumps up at her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "try_to_contact",
+      "description": "Harry tries to contact Hagrid by knocking on the door."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "interact_with",
+      "description": "Hagrid interacts with Ron when Fang jumps up at him."
+    }
+  ]
+}

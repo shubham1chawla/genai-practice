@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has been picturing his parents' deaths for three years. He is the son of James and Lily Potter."
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James Potter was Harry's father who tried to hold off Voldemort while shielding his wife and son."
+    },
+    {
+      "name": "lily potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily Potter was Harry's mother who begged Voldemort to kill her instead of her son."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist who killed James and Lily Potter. He tried to kill Harry but was thwarted by his mother's sacrifice."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail betrayed James and Lily Potter's whereabouts to Voldemort, leading to their deaths."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "james potter",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed James Potter."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lily potter",
+      "relationship_type": "killed_by",
+      "description": "Voldemort tried to kill Lily Potter but she sacrificed herself instead."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "james potter",
+      "relationship_type": "betrayed",
+      "description": "Wormtail betrayed James and Lily Potter's whereabouts to Voldemort."
+    },
+    {
+      "entity_1": "lily potter",
+      "entity_2": "harry",
+      "relationship_type": "protected",
+      "description": "Lily Potter protected her son Harry from Voldemort's killing curse."
+    }
+  ]
+}

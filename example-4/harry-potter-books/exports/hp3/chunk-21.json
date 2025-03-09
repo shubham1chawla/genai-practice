@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who would not send Harry anything dangerous on purpose, but has a different view of what is dangerous."
+    },
+    {
+      "name": "parcels",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The parcel is described as giving a strange quiver and snapping loudly, like it had jaws."
+    },
+    {
+      "name": "spiders",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Giant spiders are mentioned as being befriended by Hagrid."
+    },
+    {
+      "name": "dogs",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Vicious, three-headed dogs are mentioned as being bought by Hagrid from men in pubs."
+    },
+    {
+      "name": "dragon eggs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Illegal dragon eggs are mentioned as being sneaked into Hagrid's cabin."
+    },
+    {
+      "name": "book",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The book is described as having a handsome green cover and flipping onto its edge to scuttle sideways like a crab."
+    },
+    {
+      "name": "lamp",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry uses the lamp on his bedside table to prepare for an attack."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "parcels",
+      "relationship_type": "sent",
+      "description": "Hagrid is mentioned as sending Harry a parcel."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "spiders",
+      "relationship_type": "befriended",
+      "description": "Giant spiders are befriended by Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dogs",
+      "relationship_type": "bought",
+      "description": "Vicious, three-headed dogs are bought by Hagrid from men in pubs."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dragon eggs",
+      "relationship_type": "sneaked",
+      "description": "Illegal dragon eggs are sneaked into Hagrid's cabin."
+    },
+    {
+      "entity_1": "parcels",
+      "entity_2": "book",
+      "relationship_type": "contains",
+      "description": "The parcel contains a book."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lamp",
+      "relationship_type": "used",
+      "description": "Harry uses the lamp on his bedside table to prepare for an attack."
+    },
+    {
+      "entity_1": "book",
+      "entity_2": "crab",
+      "relationship_type": "resembles",
+      "description": "The book is described as flipping onto its edge and scuttling sideways like a crab."
+    }
+  ]
+}

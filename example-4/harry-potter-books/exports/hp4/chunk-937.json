@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who has an office that was broken into by Mr. Crouch."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is sending letters to Sirius."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's cushion was hit by Harry's cushion."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the recipient of a letter from Harry."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch broke into Snape's office."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody had a conversation with Snape."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is mentioned as the school where Harry and his friends are attending."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "conversation_participant",
+      "description": "Harry and Snape had a conversation with Moody."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "snape",
+      "relationship_type": "break_in_target",
+      "description": "Mr. Crouch broke into Snape's office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "letter_sender",
+      "description": "Harry sent a letter to Sirius about the odd events at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "physical_interaction",
+      "description": "Harry's cushion landed on top of Hermione's cushion."
+    }
+  ]
+}

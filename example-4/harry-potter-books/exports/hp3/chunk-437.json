@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The stadium is where the match is taking place. (\"the stadium and began squinting around for the Snitch\")"
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee Jordan is providing commentary for the match. (\"which was being provided by the Weasley twins’ friend Lee Jordan.\")"
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Weasley twins are friends with Lee Jordan. (\"the Weasley twins’ friend Lee Jordan\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is flying the Firebolt for Gryffindor. (\"the big excitement this match is the Firebolt that Harry Potter is ﬂying for Gryﬀindor\")"
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is a broomstick being flown by Harry Potter. (\"the big excitement this match is the Firebolt that Harry Potter is ﬂying for Gryﬀindor\")"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Gryffindor is a team in the match. (\"the big excitement this match is the Firebolt that Harry Potter is ﬂying for Gryﬀindor\")"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall interrupts Lee Jordan to ask him to focus on the match. (\"‘Jordan, would you mind telling us what’s going on in the match?’\")"
+    },
+    {
+      "name": "katie bell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie Bell is a player for Gryffindor who is heading for goal. (\"Gryﬀindor in possession, Katie Bell of Gryﬡindor heading for goal …\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lee jordan",
+      "entity_2": "weasley twins",
+      "relationship_type": "friendship",
+      "description": "Lee Jordan is friends with the Weasley twins. (\"the Weasley twins’ friend Lee Jordan.\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "firebolt",
+      "relationship_type": "possession",
+      "description": "Harry Potter is flying the Firebolt. (\"the big excitement this match is the Firebolt that Harry Potter is ﬂying for Gryﬀindor\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Harry Potter is a member of Gryffindor. (\"the big excitement this match is the Firebolt that Harry Potter is ﬂying for Gryﬀindor\")"
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Katie Bell is a player for Gryffindor. (\"Gryﬡindor in possession, Katie Bell of Gryﬡindor heading for goal …\")"
+    },
+    {
+      "entity_1": "lee jordan",
+      "entity_2": "stadium",
+      "relationship_type": "location",
+      "description": "Lee Jordan is providing commentary from the stadium. (\"the stadium and began squinting around for the Snitch\")"
+    }
+  ]
+}

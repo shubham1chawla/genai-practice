@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "toffee",
+      "entity_type": "food_item",
+      "singular": true,
+      "description": "Mentioned as a type of sweet treat that the speaker thinks they will like."
+    },
+    {
+      "name": "flavoured one",
+      "entity_type": "candy",
+      "singular": false,
+      "description": "Previous experience with this type of candy is mentioned by the speaker."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "toffee",
+      "entity_2": "flavoured one",
+      "relationship_type": "similar_to",
+      "description": "The speaker thinks they will like toffee because it's similar to a flavoured one, which they previously had."
+    },
+    {
+      "entity_1": "flavoured one",
+      "entity_2": "toffee",
+      "relationship_type": "similar_to",
+      "description": "Inverse relationship: The speaker thinks toffee is similar to the flavoured one they previously had."
+    }
+  ]
+}

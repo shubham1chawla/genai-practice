@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster who delegates tasks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a student who needs Remedial Potions."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the one asking Snape why he can't teach Harry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the Potions master who has been assigned to teach Harry Remedial Potions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "delegate_task",
+      "description": "Dumbledore delegates less enjoyable tasks, implying that he delegates tasks to others."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "teach",
+      "description": "Snape is assigned to teach Harry Remedial Potions."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "dumbledore",
+      "relationship_type": "question",
+      "description": "Sirius asks Dumbledore why he can't teach Harry."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "sirius",
+      "relationship_type": "answer_question",
+      "description": "Snape answers Sirius' question about why he is teaching Harry Remedial Potions."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts and a friend of Harry's."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's Muggle uncle."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts and a respected wizard."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry official who became Minister of Magic."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body for wizards and witches in the UK."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "daily prophet",
+      "relationship_type": "reads",
+      "description": "Hagrid is reading the Daily Prophet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "unaware_of",
+      "description": "Harry was unaware that there was a Ministry of Magic until Hagrid told him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "superior_to",
+      "description": "Dumbledore was considered for the position of Minister, but Fudge got it instead."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "harry",
+      "relationship_type": "concerned_with",
+      "description": "The Ministry is concerned with keeping magic a secret from Muggles."
+    }
+  ]
+}

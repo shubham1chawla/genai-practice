@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "horcrux",
+      "entity_type": "horcruxes",
+      "singular": true,
+      "description": "The diadem is referred to as a Horcrux, an object that contains a piece of Voldemort's soul. (\"But the diadem, once it became his precious Horcrux...\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who hid the diadem in the castle. (\"Voldemort must have put it there —“ — the night he asked for a job!\""
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who Voldemort asked to let him teach. (\"the night he asked Dumbledore to let him teach!\")"
+    },
+    {
+      "name": "gryffindor's sword",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "Gryffindor's sword is mentioned as an object that Voldemort might have tried to steal. (\"...then he might’ve got the chance to nick Gryﬃndor’s sword as well . . .\")"
+    },
+    {
+      "name": "diadem",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "The diadem is mentioned as an object that Voldemort hid in the castle. (\"He hid the diadem in the castle, the night he asked Dumbledore to let him teach!\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is mentioned as the one who figured out where Voldemort hid the diadem. (\"said Harry, ﬁnishing his thought.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "diadem",
+      "relationship_type": "hid",
+      "description": "Voldemort hid the diadem in the castle. (\"He hid the diadem in the castle, the night he asked Dumbledore to let him teach!\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gryffindor's sword",
+      "relationship_type": "tried_to_steal",
+      "description": "Voldemort tried to steal Gryffindor's sword. (\"...then he might’ve got the chance to nick Gryﬃndor’s sword as well . . .\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diadem",
+      "relationship_type": "figured_out_where_hidden",
+      "description": "Harry figured out where Voldemort hid the diadem. (\"said Harry, ﬁnishing his thought.\")"
+    }
+  ]
+}

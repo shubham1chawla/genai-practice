@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who appears in the crowd and helps Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main character who is being held captive."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's cruel and neglectful Muggle relatives."
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dudley is the spoiled and arrogant son of Vernon and Petunia Dursley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "helped_by",
+      "description": "Dobby helps Harry Potter by calling out to him and telling the crowd that he is safe."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dursleys",
+      "relationship_type": "held_captive_by",
+      "description": "The Dursleys are holding Harry Potter captive in a cage."
+    }
+  ]
+}

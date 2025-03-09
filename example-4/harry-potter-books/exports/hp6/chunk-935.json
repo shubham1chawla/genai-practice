@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who has been tempted by Voldemort but remains pure of heart."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard who is trying to possess Harry's soul."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government-like institution that deals with magical affairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lord voldemort",
+      "relationship_type": "has_been_tempted_by",
+      "description": "Harry has been tempted by Voldemort, but remains pure of heart."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ministry",
+      "relationship_type": "was_involvement_with",
+      "description": "Harry's soul was involved in a situation at the Ministry where Voldemort tried to possess him."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "has_tried_to_possess",
+      "description": "Voldemort has tried to possess Harry's soul, but was unable to do so without enduring mortal agony."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "ministry",
+      "relationship_type": "was_involved_in",
+      "description": "Voldemort was involved in a situation at the Ministry where he tried to possess Harry's soul."
+    }
+  ]
+}

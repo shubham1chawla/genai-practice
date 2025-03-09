@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is looking up out of the kitchen fireplace."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being upstairs to look for Kreacher."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The man who is sitting at the table and talking to Harry."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf mentioned as being hidden in the attic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "wanted_to_chat_with",
+      "description": "Harry wanted to have a chat with Sirius."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "kreacher",
+      "relationship_type": "looking_for",
+      "description": "Lupin is looking for Kreacher in the attic."
+    }
+  ]
+}

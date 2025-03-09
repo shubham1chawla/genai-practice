@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The voice is familiar and is trying to get Harry out of the place."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry recognizes the voice as Rubeus and steps out behind Riddle."
+    },
+    {
+      "name": "rubeus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rubeus is a person that Harry knows."
+    },
+    {
+      "name": "box",
+      "entity_type": "object",
+      "singular": true,
+      "description": "There is a large box next to the open door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry",
+      "relationship_type": "follows",
+      "description": "Riddle is trying to get Harry out of the place."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rubeus",
+      "relationship_type": "knows",
+      "description": "Harry recognizes Rubeus."
+    },
+    {
+      "entity_1": "rubeus",
+      "entity_2": "box",
+      "relationship_type": "next_to",
+      "description": "Rubeus is next to the box."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "box",
+      "relationship_type": "sees",
+      "description": "Harry can see the box."
+    }
+  ]
+}

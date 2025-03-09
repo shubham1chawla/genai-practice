@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having the ability to speak Parseltongue and being friends with werewolves and giants."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts, who has concealed facts about Harry Potter from the wizarding public."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A fourth-year student at Hogwarts, who reveals that Harry Potter can speak Parseltongue."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as the one who gave Harry a scar, but not explicitly named."
+    },
+    {
+      "name": "harry's scar",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A physical object that is still hurting Harry, according to him."
+    },
+    {
+      "name": "parseltongue",
+      "entity_type": "language",
+      "singular": true,
+      "description": "A language that allows the speaker to converse with snakes, considered a Dark Art."
+    },
+    {
+      "name": "harry's friends (werewolves and giants)",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are friends with Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "reveal_info",
+      "description": "Draco Malfoy reveals that Harry Potter can speak Parseltongue."
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "conceal_info",
+      "description": "Albus Dumbledore conceals facts about Harry Potter from the wizarding public."
+    }
+  ]
+}

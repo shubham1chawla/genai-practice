@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is trying to find and destroy Horcruxes."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who is helping Harry in his quest."
+    },
+    {
+      "name": "bogrod",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "An old goblin who is being controlled by the dragon."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "beast",
+      "singular": true,
+      "description": "A fierce creature that is guarding the vault."
+    },
+    {
+      "name": "clankers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are known for using hot swords."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "helped_by",
+      "description": "Griphook is helping Harry in his quest."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bogrod",
+      "relationship_type": "controlled_by",
+      "description": "Bogrod is being controlled by the dragon."
+    },
+    {
+      "entity_1": "dragon",
+      "entity_2": "clankers",
+      "relationship_type": "fears",
+      "description": "The dragon fears the Clankers."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is buying a wand from Mr. Ollivander's shop."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and the owner of the wand shop where Harry buys his wand."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is also buying a wand from Mr. Ollivander's shop."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's gamekeeper and a wizard, who accompanies Harry to the wand shop."
+    },
+    {
+      "name": "phoenix",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A mythical bird whose tail feather is used in Harry's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr ollivander",
+      "relationship_type": "customer_and_shopkeeper",
+      "description": "Harry buys a wand from Mr. Ollivander's shop."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "krum",
+      "relationship_type": "classmate",
+      "description": "Both Harry and Krum are students buying wands from the same shop."
+    },
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "hagrid",
+      "relationship_type": "acquaintance",
+      "description": "Mr. Ollivander knows Hagrid, who is accompanying Harry to the shop."
+    }
+  ]
+}

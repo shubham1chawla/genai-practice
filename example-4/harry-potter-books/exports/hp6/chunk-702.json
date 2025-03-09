@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to focus on his hoop game."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is being watched by Harry, and whose activities are puzzling Harry."
+    },
+    {
+      "name": "t wycross",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The instructor of the hoop game, guiding the students through the steps."
+    },
+    {
+      "name": "ernie macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is also playing the hoop game and is being watched by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "is_watching",
+      "description": "Harry is watching Malfoy, trying to figure out what he's doing that needs lookouts."
+    },
+    {
+      "entity_1": "t wycross",
+      "entity_2": "harry",
+      "relationship_type": "instructing",
+      "description": "T Wycross is instructing Harry on how to play the hoop game, guiding him through the steps."
+    },
+    {
+      "entity_1": "t wycross",
+      "entity_2": "ernie macmillan",
+      "relationship_type": "instructing",
+      "description": "T Wycross is also instructing Ernie Macmillan on how to play the hoop game."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ernie macmillan",
+      "relationship_type": "is_watching",
+      "description": "Harry is watching Ernie Macmillan, who is struggling with his hoop game."
+    }
+  ]
+}

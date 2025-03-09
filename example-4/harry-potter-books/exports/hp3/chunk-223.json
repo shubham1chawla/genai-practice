@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that can take on any form to frighten its victims. It is described as not remotely frightening when turned into half a slug."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher who is instructing the class on how to cast the riddikulus charm. He says that laughter is what really finishes a boggart and that the word alone is not enough."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student in Professor Lupin's class who is chosen to practice the riddikulus charm. He is described as walking forward as though he were heading for the gallows."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "boggart",
+      "entity_2": "laughter",
+      "relationship_type": "repels",
+      "description": "The boggart is repelled by laughter, which is what really finishes it."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "neville",
+      "relationship_type": "teaches",
+      "description": "Professor Lupin is teaching Neville how to cast the riddikulus charm."
+    }
+  ]
+}

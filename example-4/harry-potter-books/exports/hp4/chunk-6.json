@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "police",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The police are mentioned as the ones who received the report and were investigating the case."
+    },
+    {
+      "name": "doctors",
+      "entity_type": "profession",
+      "singular": true,
+      "description": "A team of doctors examined the bodies and concluded that none of the Riddles had been harmed."
+    },
+    {
+      "name": "Riddles",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Riddles are mentioned as a family who were found dead under mysterious circumstances."
+    },
+    {
+      "name": "Frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Frank is mentioned as someone who was let go by the police due to lack of evidence."
+    },
+    {
+      "name": "Little Hangleton churchyard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Riddles were buried in this churchyard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "police",
+      "entity_2": "Riddles",
+      "relationship_type": "investigated",
+      "description": "The police investigated the case of the Riddles."
+    },
+    {
+      "entity_1": "doctors",
+      "entity_2": "Riddles",
+      "relationship_type": "examined",
+      "description": "A team of doctors examined the bodies of the Riddles."
+    },
+    {
+      "entity_1": "police",
+      "entity_2": "Frank",
+      "relationship_type": "released",
+      "description": "The police released Frank due to lack of evidence."
+    }
+  ]
+}

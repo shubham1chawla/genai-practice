@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts and is being spoken to by Harry."
+    },
+    {
+      "name": "aragog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Aragog is a giant spider that has died and is being mourned by Hagrid and Harry."
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is a Hogwarts professor who meets Harry coming down to the scene of Aragog's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "aragog",
+      "relationship_type": "mourns",
+      "description": "Harry is mourning the death of Aragog."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "aragog",
+      "relationship_type": "mourns",
+      "description": "Hagrid is mourning the death of Aragog."
+    },
+    {
+      "entity_1": "professor slughorn",
+      "entity_2": "aragog",
+      "relationship_type": "pays_respects",
+      "description": "Professor Slughorn wants to pay his last respects to Aragog."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor slughorn",
+      "relationship_type": "has_positive_relationship",
+      "description": "Hagrid is surprised and touched by Professor Slughorn's actions."
+    }
+  ]
+}

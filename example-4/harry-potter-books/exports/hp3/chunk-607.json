@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master who has a sinister tone and seems to be beyond reason. He mentions calling dementors and dragging Lupin."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as someone that dementors are pleased to see, implying he has some connection with them."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Dementors are supernatural creatures that Snape mentions will be pleased to see Black and might give him a kiss."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a werewolf who Snape wants to drag in front of the dementors."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is Harry Potter, who blocks the door and is scolded by Snape for being in trouble already."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "black",
+      "relationship_type": "has_connection_with",
+      "description": "Snape mentions that dementors are pleased to see Black, implying a connection between them."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "wants_to_drag_in_front_of_dementors",
+      "description": "Snape wants to drag Lupin in front of the dementors."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "is_scolded_by",
+      "description": "Potter is scolded by Snape for blocking the door."
+    }
+  ]
+}

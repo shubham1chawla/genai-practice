@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flitwick is a model pupil who had never set foot in that particular place. He is mentioned as someone who knows a secret with Voldemort that Dumbledore has not discovered."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who had strayed oﬀ the beaten track in his time at school. He knows a secret with Voldemort that Dumbledore has not discovered."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is someone who shares a secret with Harry that Dumbledore has not discovered."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who does not know a certain secret shared by Harry and Voldemort."
+    },
+    {
+      "name": "sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is a teacher at Hogwarts who rouses Harry from his sleep to inform him about the situation."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student at Hogwarts who is wearing earmuffs and carrying potted plants. He informs Harry that they are going to lob mandrakes over the walls."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts who gallops behind Harry."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is Hagrid's dog that gallops behind Harry."
+    },
+    {
+      "name": "mandrakes",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "Mandrakes are plants being carried by Neville and others to be lobbed over the walls."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "shared_secret",
+      "description": "Harry and Voldemort share a secret that Dumbledore has not discovered."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "lacked_knowledge",
+      "description": "Dumbledore does not know the secret shared by Harry and Voldemort."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "mandrakes",
+      "relationship_type": "carrying",
+      "description": "Neville is carrying mandrakes to be lobbed over the walls."
+    }
+  ]
+}

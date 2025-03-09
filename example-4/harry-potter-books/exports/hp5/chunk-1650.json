@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being dragged upright by a centaur's arm. He sees Umbridge being borne away through the trees."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione too had been pulled to her feet by a centaur."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is being borne away through the trees by Bane."
+    },
+    {
+      "name": "bane",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Bane is bearing Umbridge away through the trees."
+    },
+    {
+      "name": "ronan",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Ronan is speaking from behind Harry."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "Hermione mentions that they are not Ministry of Magic employees."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bane",
+      "relationship_type": "is_being_borne_by",
+      "description": "Harry sees Umbridge being borne away through the trees by Bane."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ronan",
+      "relationship_type": "is_being_held_by",
+      "description": "Hermione is being held by Ronan."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ronan",
+      "relationship_type": "is_being_shaken_by",
+      "description": "Ronan shakes Harry by the neck of his robes."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "bane",
+      "relationship_type": "is_being_borne_by",
+      "description": "Umbridge is being borne away through the trees by Bane."
+    }
+  ]
+}

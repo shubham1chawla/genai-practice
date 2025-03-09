@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum is mentioned as the source of Harry's parents, introduced in the text with a pronoun 'they' and a verb 'came'. The text states: \"... they came out of his wand.\""
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad is mentioned as the source of Harry's parents, introduced in the text with a pronoun 'they' and a verb 'came'. The text states: \"... they came out of his wand.\""
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the main character, introduced in the text with a direct address and a verb 'heard'. The text states: \"In here, Harry...\""
+    },
+    {
+      "name": "Moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as a character who helps Harry, introduced in the text with a direct address and a verb 'helped'. The text states: \"Moody helped tip the stuff down Harry's throat.\""
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Wand is mentioned as an object that produced Harry's parents, introduced in the text with a verb 'came'. The text states: \"... they came out of his wand.\""
+    },
+    {
+      "name": "cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Cup is mentioned as an object that was pushed into Harry's hands, introduced in the text with a verb 'felt' and a preposition 'into'. The text states: \"Harry heard a key scrape in a lock and felt a cup being pushed into his hands.\""
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mum",
+      "entity_2": "dad",
+      "relationship_type": "parent_of",
+      "description": "Mum and dad are mentioned as Harry's parents, introduced in the text with a pronoun 'they' and a verb 'came'. The text states: \"... they came out of his wand.\""
+    },
+    {
+      "entity_1": "Moody",
+      "entity_2": "Harry",
+      "relationship_type": "helped_by",
+      "description": "Moody is mentioned as the one who helped Harry, introduced in the text with a verb 'helped'. The text states: \"Moody helped tip the stuff down Harry's throat.\""
+    },
+    {
+      "entity_1": "wand",
+      "entity_2": "mum",
+      "relationship_type": "produced",
+      "description": "Wand is mentioned as an object that produced Harry's parents, introduced in the text with a verb 'came'. The text states: \"... they came out of his wand.\""
+    },
+    {
+      "entity_1": "wand",
+      "entity_2": "dad",
+      "relationship_type": "produced",
+      "description": "Wand is mentioned as an object that produced Harry's parents, introduced in the text with a verb 'came'. The text states: \"... they came out of his wand.\""
+    }
+  ]
+}

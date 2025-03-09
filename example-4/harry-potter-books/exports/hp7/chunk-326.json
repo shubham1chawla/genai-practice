@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to regain feeling in his body. He is described as picking up his wand and climbing over debris."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the past tense, who died on a night when Harry was present."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is able to recognize one of the Death Eaters from old wanted posters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is panicking and trying to figure out how they found them."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "death eater",
+      "singular": true,
+      "description": "A Death Eater who was paralyzed by Harry. He is recognized by Ron from old wanted posters."
+    },
+    {
+      "name": "thorfinn rowle",
+      "entity_type": "death eater",
+      "singular": true,
+      "description": "Another Death Eater mentioned by Ron, but not described in detail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dolohov",
+      "relationship_type": "paralyzed_by",
+      "description": "Harry paralyzed Dolohov with his magic. This is inferred from the text as Harry looks down at Dolohov and thinks fast."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dolohov",
+      "relationship_type": "recognized",
+      "description": "Ron recognized Dolohov from old wanted posters. This is stated directly in the text."
+    }
+  ]
+}

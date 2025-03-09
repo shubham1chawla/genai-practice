@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having bought eight hundred red barrels of mulled mead from Madam Rosmerta. This indicates that he is a person involved in the story."
+    },
+    {
+      "name": "madam rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Rosmerta is mentioned as being the seller of eight hundred red barrels of mulled mead to Dumbledore. This indicates that she is a person involved in the story."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as not knowing who or what the Weird Sisters are, but deducing that they are a famous musical group based on the excitement of those who have grown up listening to the WWN. This indicates that he is a person involved in the story."
+    },
+    {
+      "name": "weird sisters",
+      "entity_type": "musical_group",
+      "singular": false,
+      "description": "The Weird Sisters are mentioned as being a very famous musical group. Harry deduces this from the wild excitement of those who have grown up listening to the WWN."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick is mentioned as giving up trying to teach Harry and his friends when their minds are elsewhere. He allows them to play games in his lesson on Wednesday and spends most of it talking to Harry about the perfect Summoning Charm."
+    },
+    {
+      "name": "wwn",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The WWN (Wizarding Wireless Network) is mentioned as a source of information for those who have grown up listening to it. It seems to be an organization that provides news and entertainment to the wizarding community."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madam rosmerta",
+      "relationship_type": "purchased_from",
+      "description": "Dumbledore bought eight hundred red barrels of mulled mead from Madam Rosmerta."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weird sisters",
+      "relationship_type": "has_knowledge_of",
+      "description": "Harry deduced that the Weird Sisters are a famous musical group based on the excitement of those who have grown up listening to the WWN."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "harry",
+      "relationship_type": "spoke_to",
+      "description": "Professor Flitwick spent most of his lesson talking to Harry about the perfect Summoning Charm."
+    }
+  ]
+}

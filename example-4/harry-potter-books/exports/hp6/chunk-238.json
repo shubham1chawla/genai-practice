@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "muggle suits",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The text describes 'muggle suits' as a group of people who are dressed in formal attire and are moving forward with efficiency."
+    },
+    {
+      "name": "cars",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The cars stopped, allowing the muggle suits to move forward."
+    },
+    {
+      "name": "party",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The party is being escorted by the muggle suits into the station."
+    },
+    {
+      "name": "station",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The party and the muggle suits are entering the station."
+    },
+    {
+      "name": "Mrs Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is a member of the Weasley family and seems flustered by the efficiency of the muggle suits."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being escorted by the Aurors into the station."
+    },
+    {
+      "name": "Auror",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Aurors are assisting in escorting Harry and the party into the station."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione joins Harry on platform nine and three-quarters."
+    },
+    {
+      "name": "Weasleys",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Weasley family is joining Harry on platform nine and three-quarters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "muggle suits",
+      "entity_2": "party",
+      "relationship_type": "escort",
+      "description": "The muggle suits are escorting the party into the station."
+    },
+    {
+      "entity_1": "Mrs Weasley",
+      "entity_2": "muggle suits",
+      "relationship_type": "comment_on",
+      "description": "Mrs Weasley is commenting on the efficiency of the muggle suits."
+    },
+    {
+      "entity_1": "Auror",
+      "entity_2": "Harry",
+      "relationship_type": "escort",
+      "description": "The Aurors are escorting Harry into the station."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "platform nine and three-quarters",
+      "relationship_type": "location_on",
+      "description": "Hermione is located on platform nine and three-quarters."
+    },
+    {
+      "entity_1": "Weasleys",
+      "entity_2": "platform nine and three-quarters",
+      "relationship_type": "location_on",
+      "description": "The Weasley family is located on platform nine and three-quarters."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "platform nine and three-quarters",
+      "relationship_type": "location_on",
+      "description": "Harry is located on platform nine and three-quarters."
+    }
+  ]
+}

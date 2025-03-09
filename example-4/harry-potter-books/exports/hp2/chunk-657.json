@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley led Ginny out of the room. She is a person who is part of the Weasley family."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is being led out by Mrs Weasley. She is a person and a member of the Weasley family."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley followed Mrs Weasley, still looking deeply shaken. He is a person and part of the Weasley family."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore suggested having a feast to celebrate the events that have occurred. He is a person and a professor at Hogwarts School."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall was asked by Professor Dumbledore to alert the kitchens about having a feast. She is a person and a professor at Hogwarts School."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter and Ron Weasley were being referred to by Professor McGonagall as people who need to be dealt with. He is a person and a student at Hogwarts School."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley was being referred to by Professor McGonagall as someone who needs to be dealt with. He is a person and a student at Hogwarts School."
+    },
+    {
+      "name": "kitchens",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The kitchens were asked to prepare for a feast by Professor McGonagall. They are the location where food is prepared."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "kitchens",
+      "relationship_type": "alerted",
+      "description": "Professor McGonagall was asked by Professor Dumbledore to alert the kitchens about having a feast."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "will deal with",
+      "description": "Professor Dumbledore said that he will have to deal with Harry Potter and Ron Weasley for breaking school rules."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "ron weasley",
+      "relationship_type": "will deal with",
+      "description": "Professor Dumbledore said that he will have to deal with Harry Potter and Ron Weasley for breaking school rules."
+    }
+  ]
+}

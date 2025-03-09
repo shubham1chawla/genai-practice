@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is walking with Luna, checking the Marauder's Map to avoid obstacles. He is particularly afraid of Peeves."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is walking with Harry, guiding him through a spiral staircase and knocking on a door."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is a poltergeist that Harry fears encountering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "accompanying",
+      "description": "Harry and Luna are walking together, checking the Marauder's Map to avoid obstacles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "fearing",
+      "description": "Harry fears encountering Peeves, a poltergeist."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "harry",
+      "relationship_type": "guiding",
+      "description": "Luna is guiding Harry through a spiral staircase and knocking on a door."
+    }
+  ]
+}

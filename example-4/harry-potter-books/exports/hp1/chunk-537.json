@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "light",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The light is described as being ahead of the speaker and moving."
+    },
+    {
+      "name": "passageway",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The passageway is where they reached the end of."
+    },
+    {
+      "name": "chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The chamber is described as being brilliantly lit and having an arching ceiling."
+    },
+    {
+      "name": "ceiling",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ceiling is described as arcing high above them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "light",
+      "entity_2": "passageway",
+      "relationship_type": "location",
+      "description": "The light is ahead of the passageway."
+    },
+    {
+      "entity_1": "they",
+      "entity_2": "chamber",
+      "relationship_type": "destination",
+      "description": "They reached the end of the passageway and saw before them a chamber."
+    },
+    {
+      "entity_1": "ceiling",
+      "entity_2": "chamber",
+      "relationship_type": "part_of",
+      "description": "The ceiling is part of the chamber."
+    }
+  ]
+}

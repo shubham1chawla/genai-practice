@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is struggling with Vanishing Spells."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and also struggles with Vanishing Spells."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who successfully vanishes her snail on the third attempt."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who gives homework to students."
+    },
+    {
+      "name": "moonstones",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Moonstones are used in potion-making."
+    },
+    {
+      "name": "snails",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Snails are objects that students practice vanishing spells on."
+    },
+    {
+      "name": "vanishing spells",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Vanishing Spells are a type of magic that students learn in their O.W.L. exams."
+    },
+    {
+      "name": "harry's slur",
+      "entity_type": "event",
+      "singular": false,
+      "description": "Harry makes a comment about Ron's woolly hats."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor",
+      "relationship_type": "belongs_to",
+      "description": "Hermione is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "vanishing spells",
+      "relationship_type": "struggling_with",
+      "description": "Harry struggles with Vanishing Spells."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "vanishing spells",
+      "relationship_type": "struggling_with",
+      "description": "Ron also struggles with Vanishing Spells."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snails",
+      "relationship_type": "vanished",
+      "description": "Hermione successfully vanishes her snail."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "assigns_homework_to",
+      "description": "Professor McGonagall gives homework to Gryffindor students."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moonstones",
+      "relationship_type": "researches",
+      "description": "Harry researches the uses of moonstones in potion-making."
+    }
+  ]
+}

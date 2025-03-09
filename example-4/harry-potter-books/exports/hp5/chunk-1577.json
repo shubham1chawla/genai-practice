@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "star chart",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The text mentions a 'star chart' that the person is looking at, implying it's an important or significant document. (\"over his star chart\")"
+    },
+    {
+      "name": "notes",
+      "entity_type": "notes",
+      "singular": false,
+      "description": "The text mentions adding 'notes' to the star chart, suggesting that notes are being taken on the chart itself. (\"pretended to be adding notes to it\")"
+    },
+    {
+      "name": "person",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The text mentions a person who is looking at the star chart and taking notes, but does not provide any specific details about this person. (\"over his star chart\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "person",
+      "entity_2": "star chart",
+      "relationship_type": "observes",
+      "description": "The person is observing the star chart, as indicated by the phrase 'over his star chart'. This implies that the person has a visual connection to the chart."
+    },
+    {
+      "entity_1": "person",
+      "entity_2": "notes",
+      "relationship_type": "takes",
+      "description": "The person is taking notes on the star chart, as indicated by the phrase 'pretended to be adding notes to it'. This implies that the person has a causal connection to the notes."
+    }
+  ]
+}

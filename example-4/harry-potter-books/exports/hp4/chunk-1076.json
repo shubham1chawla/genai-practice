@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned in the conversation between Harry and Krum."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student from Durmstrang Institute, walking with Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, mentioned as they passed his cabin."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, mentioned by Krum."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A school from France, participating in the Triwizard Tournament."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A school from Eastern Europe, participating in the Triwizard Tournament."
+    },
+    {
+      "name": "harry and krum",
+      "entity_type": "pair",
+      "singular": true,
+      "description": "The pair of students walking together in the forest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "krum",
+      "entity_2": "hermione",
+      "relationship_type": "question_about_relationship",
+      "description": "Krum asks Harry about his relationship with Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "beauxbatons",
+      "relationship_type": "proximity",
+      "description": "Harry and Krum are walking near the Beauxbatons carriage."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "durmstrang",
+      "relationship_type": "affiliation",
+      "description": "Krum is a student from Durmstrang Institute."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bagman",
+      "relationship_type": "conversation",
+      "description": "Harry and Bagman are having a conversation."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "hagrid",
+      "relationship_type": "proximity",
+      "description": "Krum and Harry pass Hagrid's cabin."
+    }
+  ]
+}

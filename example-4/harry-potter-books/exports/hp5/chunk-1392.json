@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master who is standing with his back to Harry, removing thoughts from Dumbledore's Pensieve."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has arrived late and is facing Snape in the dungeon."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is someone Harry had a conversation with about Marietta before arriving at the dungeon."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's Pensieve is where Snape is removing thoughts from."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is someone Harry had a conversation with Cho about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_pensieve",
+      "description": "Snape is using Dumbledore's Pensieve to remove thoughts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "had_conversation_with",
+      "description": "Harry had a conversation with Cho about Marietta before arriving at the dungeon."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "is_confronting",
+      "description": "Snape is confronting Harry in the dungeon."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "is_afraid_of",
+      "description": "Harry's heart is pumping fast with anger and anxiety about how much Snape is going to extract from his mind."
+    }
+  ]
+}

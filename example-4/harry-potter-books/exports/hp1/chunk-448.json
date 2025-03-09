@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "egg",
+      "entity_type": "egg",
+      "singular": true,
+      "description": "The speaker is referring to an egg as the subject of their instructions."
+    },
+    {
+      "name": "fire",
+      "entity_type": "fire",
+      "singular": true,
+      "description": "The fire is where the egg needs to be kept."
+    },
+    {
+      "name": "mothers",
+      "entity_type": "mothers",
+      "singular": false,
+      "description": "The mothers are the ones who breathe on the eggs."
+    },
+    {
+      "name": "Norwegian Ridgeback",
+      "entity_type": "breed_of_dog",
+      "singular": true,
+      "description": "The speaker is referring to a specific breed of dog."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "egg",
+      "entity_2": "fire",
+      "relationship_type": "kept_in",
+      "description": "The egg needs to be kept in the fire."
+    },
+    {
+      "entity_1": "mothers",
+      "entity_2": "egg",
+      "relationship_type": "breath_on",
+      "description": "The mothers breathe on the eggs."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "Norwegian Ridgeback",
+      "relationship_type": "has",
+      "description": "The speaker has a Norwegian Ridgeback."
+    }
+  ]
+}

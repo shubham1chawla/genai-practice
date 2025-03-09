@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaw",
+      "entity_type": "diadem",
+      "singular": true,
+      "description": "The diadem is mentioned as the d–diadem of Ravenclaw. It has been lost for centuries."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as entering the castle and searching for something hidden."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Flitwick is mentioned as someone Harry wants to speak to."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as rising to her feet and using the Imperio spell on Amycus."
+    },
+    {
+      "name": "amykus",
+      "entity_type": "death eater",
+      "singular": true,
+      "description": "Amycus is a Death Eater who is controlled by Professor McGonagall's Imperio spell."
+    },
+    {
+      "name": "alecto",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alecto is mentioned as lying on the floor beside Amycus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "flitwick",
+      "relationship_type": "wants_to_speak_to",
+      "description": "Harry Potter wants to speak to Professor Flitwick."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "amykus",
+      "relationship_type": "controls_with_imperio",
+      "description": "Professor McGonagall controls Amycus with the Imperio spell."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "ravenclaw",
+      "relationship_type": "searches_for",
+      "description": "Harry Potter is searching for something hidden, which could be the diadem of Ravenclaw."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "amykus",
+      "relationship_type": "controls_with_imperio_reverse",
+      "description": "Amycus is controlled by Professor McGonagall's Imperio spell."
+    }
+  ]
+}

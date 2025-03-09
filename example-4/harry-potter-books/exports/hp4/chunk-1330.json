@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "polyjuice potion",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "A potion that can change one's appearance to match another person. It is mentioned as being used by the imposter to keep the real Moody close."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is known for drinking from his hip flask. He is also referred to as 'the real Moody'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who recognizes the imposter and explains how he was using Polyjuice Potion."
+    },
+    {
+      "name": "hip flask",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A container that Moody uses to drink from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "recognition",
+      "description": "Dumbledore recognizes the real Moody and explains how he was using Polyjuice Potion."
+    },
+    {
+      "entity_1": "polyjuice potion",
+      "entity_2": "moody",
+      "relationship_type": "use",
+      "description": "The imposter used Polyjuice Potion to change his appearance to match the real Moody."
+    }
+  ]
+}

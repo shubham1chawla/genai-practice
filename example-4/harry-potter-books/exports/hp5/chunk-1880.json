@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a person who has a conversation with Harry about Sirius Black. He mentions that wizards can leave an imprint of themselves upon the earth (Excerpt: 'Wizards can leave an imprint of themselves upon the earth...')."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who has a conversation with Nick about Sirius Black. He believes that Sirius will come back (Excerpt: 'Anyway — it doesn’t matter — Sirius won’t care if it’s unusual, he’ll come back, I know he will!')."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person who has died and left an imprint of himself upon the earth. Nick mentions that Sirius won't come back (Excerpt: 'He won’t come back')."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nick",
+      "entity_2": "sirius black",
+      "relationship_type": "has_left_imprint",
+      "description": "Nick mentions that Sirius Black has left an imprint of himself upon the earth (Excerpt: 'Wizards can leave an imprint of themselves upon the earth...')."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius black",
+      "relationship_type": "believes_will_return",
+      "description": "Harry believes that Sirius Black will come back (Excerpt: 'Anyway — it doesn’t matter — Sirius won’t care if it’s unusual, he’ll come back, I know he will!')."
+    },
+    {
+      "entity_1": "nick",
+      "entity_2": "sirius black",
+      "relationship_type": "has_died",
+      "description": "Nick mentions that Sirius Black has died (Excerpt: 'He won’t come back')."
+    }
+  ]
+}

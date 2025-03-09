@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "switching spells",
+      "entity_type": "spells",
+      "singular": true,
+      "description": "Mentioned as a type of spell, but the speaker is skeptical about its effectiveness."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Mentioned as something that is difficult to harm or kill, even with magic."
+    },
+    {
+      "name": "transfigure",
+      "entity_type": "spells",
+      "singular": true,
+      "description": "Suggested by the speaker as a possible spell to use on the dragon."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Mentioned as someone who might be able to cast a successful spell on the dragon."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "The person being spoken to by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "The person speaking to Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "transfigure",
+      "entity_2": "dragon",
+      "relationship_type": "can_be_cast_on",
+      "description": "Suggested by the speaker as a possible spell to use on the dragon."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "dragon",
+      "relationship_type": "can_cast_spell_on",
+      "description": "Mentioned as someone who might be able to cast a successful spell on the dragon."
+    }
+  ]
+}

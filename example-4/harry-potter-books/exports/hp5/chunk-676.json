@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to remember a dream."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is helping him with the Dream Oracle."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who Harry dreamed of drowning in his cauldron."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The High Inquisitor of Hogwarts, who is making notes on Neville's dream diary."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who is questioning Neville about his dream diary."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, whose dream diary is being questioned by Professor Trelawney."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": false,
+      "description": "The school where Harry and his friends are students."
+    },
+    {
+      "name": "dream oracle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A tool used by Ron to interpret Harry's dream."
+    },
+    {
+      "name": "cauldron",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object in Harry's dream, where he drowned Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "dreamed_of_drowning",
+      "description": "Harry dreamed of drowning Snape in his cauldron."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "neville",
+      "relationship_type": "questioning",
+      "description": "Professor Umbridge is questioning Neville about his dream diary."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "neville",
+      "relationship_type": "questioning",
+      "description": "Professor Trelawney is questioning Neville about his dream diary."
+    }
+  ]
+}

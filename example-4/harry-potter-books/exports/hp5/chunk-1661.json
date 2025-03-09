@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, asked a question by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's, handed back Hermione's wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's, whose wand was handed back by Ron."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's, got Malfoy with a Bat-Bogey Hex."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "An enemy of Harry's, got hit by Ginny's Bat-Bogey Hex."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A person who was chased away by a herd of centaurs."
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A group of creatures that chased Umbridge."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hagrid's little brother, who chased off the centaurs."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A person with a little brother named Grawp."
+    },
+    {
+      "name": "luna",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's, asked about Grawp."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A person who was killed by You-Know-Who."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "The main antagonist of the story, killed Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Ron a question."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "returned_wand",
+      "description": "Ron returned Hermione's wand to her."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "malfoy",
+      "relationship_type": "hit_with_spell",
+      "description": "Ginny hit Malfoy with a Bat-Bogey Hex."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "centaurs",
+      "relationship_type": "chased_by",
+      "description": "Umbridge was chased by a herd of centaurs."
+    },
+    {
+      "entity_1": "grawp",
+      "entity_2": "centaurs",
+      "relationship_type": "chased_off",
+      "description": "Grawp chased off the centaurs."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "killed_by",
+      "description": "You-Know-Who killed Sirius."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "sirius",
+      "relationship_type": "killed",
+      "description": "You-Know-Who killed Sirius."
+    }
+  ]
+}

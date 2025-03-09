@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as someone who whispered something, indicating he is a person present in the scene."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is described with a 'horrible wide toadlike smile', indicating she is a person present in the scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who has been listening and questioning Umbridge, indicating he is a person present in the scene."
+    },
+    {
+      "name": "miss edgecombe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Edgecombe is introduced as someone who will report on meetings, indicating she is a person present in the scene."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as feeling a horrible plummeting in his stomach, indicating he is a person present in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "dumbledore",
+      "relationship_type": "questioned_by",
+      "description": "Umbridge questioned Dumbledore about Miss Edgecombe's presence."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "miss edgecombe",
+      "relationship_type": "asked_to_report",
+      "description": "Dumbledore asked Miss Edgecombe to report on meetings."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "miss edgecombe",
+      "relationship_type": "questioned_by",
+      "description": "Umbridge questioned Miss Edgecombe about the length of meetings."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_about",
+      "description": "Harry was concerned about Dumbledore's situation, as indicated by his feeling a horrible plummeting in his stomach."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "champions",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The group of people competing in the tournament."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the champions, mentioned as wanting to stop Colin from saying something."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A champion who says some last few words that Harry wants to stop."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another champion who is staring at the ceiling."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher who is in charge of the situation and giving orders."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "colin",
+      "relationship_type": "wants_to_stop",
+      "description": "Harry wants to stop Colin from saying something."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "gives_order",
+      "description": "Snape gives an order to Harry (Potter) to leave his things and get out of sight."
+    }
+  ]
+}

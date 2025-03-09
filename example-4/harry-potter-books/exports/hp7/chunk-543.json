@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, who is remembering past events."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend and companion, who is weak and pale."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's other friend and companion, who is taking charge of their situation."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who is mentioned as a possible threat."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, who are mentioned as having found Harry and his friends in the past."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends and companions."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Hermione is also a friend of Harry's."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "leader_followers",
+      "description": "Voldemort is the leader of the Death Eaters."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are friends."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "death eaters",
+      "relationship_type": "target_of_threat",
+      "description": "Ron is a target of the Death Eaters, as they found Harry and his friends in the past."
+    }
+  ]
+}

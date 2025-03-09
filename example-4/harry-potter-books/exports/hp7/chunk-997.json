@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "the wandmaker",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wandmaker is a person who examines and identifies the wands. He is described as taking the first of the wands and holding it close to his faded eyes, rolling it between his knobble-knuckled fingers, flexing it slightly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who asks the wandmaker if he can identify the wands. He is described as taking one of the wands and possibly making it his own."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix Lestrange is a person whose wand was identified by the wandmaker. The wand is described as being made of walnut and dragon heartstring."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is a person whose wand was identified by the wandmaker. The wand is described as being made of hawthorn and unicorn hair."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ollivander is a person who performs the same examination as the wandmaker."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "draco malfoy",
+      "relationship_type": "took_wand_from",
+      "description": "Harry took the wand from Draco Malfoy, which may have changed the allegiance of the wand."
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "wand",
+      "relationship_type": "owned_by",
+      "description": "The wand belonged to Bellatrix Lestrange."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "wand",
+      "relationship_type": "owned_by",
+      "description": "The wand was the property of Draco Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "may_own",
+      "description": "The wand may belong to Harry, depending on how he took it."
+    }
+  ]
+}

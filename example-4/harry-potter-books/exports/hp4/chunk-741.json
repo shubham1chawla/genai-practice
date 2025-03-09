@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is a house-elf who has been freed by her master, Mr. Crouch."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is Winky's master and a judge in the Triwizard Tournament."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is talking to Winky."
+    },
+    {
+      "name": "mr bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Bagman is a judge in the Triwizard Tournament and works with Mr. Crouch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "mr crouch",
+      "relationship_type": "master_of",
+      "description": "Winky is the house-elf of Mr. Crouch."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "winky",
+      "relationship_type": "talking_to",
+      "description": "Hermione is talking to Winky."
+    },
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "mr bagman",
+      "relationship_type": "colleague_of",
+      "description": "Mr. Crouch and Mr. Bagman are judges in the Triwizard Tournament together."
+    }
+  ]
+}

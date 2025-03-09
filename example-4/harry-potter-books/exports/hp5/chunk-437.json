@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "houses",
+      "entity_type": "halls_of_residence",
+      "singular": false,
+      "description": "The four houses that held up the school are mentioned in the first stanza. The text describes them as pillars and mentions their names later on."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "hall_of_residence",
+      "singular": true,
+      "description": "Slytherin is one of the four houses that held up the school. It departed from the school, leaving the other houses downhearted."
+    },
+    {
+      "name": "founders",
+      "entity_type": "people",
+      "singular": false,
+      "description": "The founders are mentioned as the original four people who created the school and its houses."
+    },
+    {
+      "name": "sorting_hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sorts students into their respective houses. It is mentioned in the poem as being present to sort the students."
+    },
+    {
+      "name": "dueling",
+      "entity_type": "activity",
+      "singular": false,
+      "description": "Dueling and fighting are mentioned as activities that were happening at the school."
+    },
+    {
+      "name": "fighting",
+      "entity_type": "activity",
+      "singular": false,
+      "description": "Fighting is mentioned as an activity that was happening at the school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "houses",
+      "entity_2": "slytherin",
+      "relationship_type": "departure",
+      "description": "The houses turned against each other and sought to rule, but Slytherin departed from the school."
+    },
+    {
+      "entity_1": "founders",
+      "entity_2": "houses",
+      "relationship_type": "creation",
+      "description": "The founders created the four houses that held up the school."
+    },
+    {
+      "entity_1": "sorting_hat",
+      "entity_2": "houses",
+      "relationship_type": "assignment",
+      "description": "The Sorting Hat sorts students into their respective houses."
+    },
+    {
+      "entity_1": "dueling",
+      "entity_2": "fighting",
+      "relationship_type": "coexistence",
+      "description": "Dueling and fighting were happening at the same time."
+    }
+  ]
+}

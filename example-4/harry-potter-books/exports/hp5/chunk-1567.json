@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is looking forward to the Potions exam."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and classmate who seems determined to be in a bad mood."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate who is studying for the Potions exam with him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a teacher at Hogwarts who Hermione seems to dislike."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "has_bad_mood",
+      "description": "Hermione's bad mood persists for most of the weekend."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "studies_with",
+      "description": "Harry and Ron spend most of Saturday and Sunday studying for Potions together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "is_concerned_about",
+      "description": "Harry is concerned that Umbridge will wait for proof before taking action."
+    }
+  ]
+}

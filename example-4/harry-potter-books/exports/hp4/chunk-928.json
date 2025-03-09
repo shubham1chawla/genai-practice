@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "the egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Egg is mentioned as a symbol or object in the text."
+    },
+    {
+      "name": "the eye",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Eye is mentioned as a symbol or object in the text."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of dark wizards and witches who follow Lord Voldemort. They are mentioned in the context of someone walking free."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "death eater",
+      "relationship_type": "associated_with",
+      "description": "Moody is associated with Death Eaters, as he mentions that a Death Eater walked free."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "map",
+      "relationship_type": "owns",
+      "description": "Harry owns the map, which Moody wants to borrow."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "map",
+      "relationship_type": "wants_to_borrow",
+      "description": "Moody wants to borrow Harry's map."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "owes_favor",
+      "description": "Harry owes Moody a favor, as he is relieved that Moody isn't asking where he got the map from."
+    }
+  ]
+}

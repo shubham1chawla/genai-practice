@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hospital",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hospital is mentioned as a convenient place for the students to meet their mother. (Excerpt: 'convenient for the hospital than the Burrow')"
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is mentioned as an alternative location, but not convenient for the hospital. (Excerpt: 'convenient for the hospital than the Burrow')"
+    },
+    {
+      "name": "floo powder",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Floo powder is a magical object that allows for transportation, but not safe to use at the moment. (Excerpt: 'How’re we going? asked Fred, looking shaken. “Floo powder?”')"
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Portkey is a magical object that will be used for transportation instead of Floo powder. (Excerpt: 'You will be taking a Portkey.')"
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas Nigellus is a wizard who needs to report back before the students can leave. (Excerpt: 'I wish to be sure that the coast is clear before sending you — Phineas Nigellus to report back')"
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fawkes is a magical creature who sends a warning signal by leaving a golden feather. (Excerpt: 'It is Fawkes’s warning, said Dumbledore')"
+    },
+    {
+      "name": "minerva mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a person who goes to head off someone. (Excerpt: 'Minerva, go and head her off — tell her any story')"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the main character who is giving instructions to the students. (Throughout the text)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "dumbledore",
+      "relationship_type": "reporting_to",
+      "description": "Phineas Nigellus needs to report back to Dumbledore before the students can leave. (Excerpt: 'I wish to be sure that the coast is clear before sending you — Phineas Nigellus to report back')"
+    },
+    {
+      "entity_1": "fawkes",
+      "entity_2": "dumbledore",
+      "relationship_type": "warning_dumbledore",
+      "description": "Fawkes sends a warning signal to Dumbledore. (Excerpt: 'It is Fawkes’s warning, said Dumbledore')"
+    },
+    {
+      "entity_1": "minerva mcgonagall",
+      "entity_2": "dumbledore",
+      "relationship_type": "following_instructions_from_dumbledore",
+      "description": "Professor McGonagall goes to head off someone as instructed by Dumbledore. (Excerpt: 'Minerva, go and head her off — tell her any story')"
+    }
+  ]
+}

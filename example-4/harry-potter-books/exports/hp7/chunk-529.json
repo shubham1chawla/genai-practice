@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The group behind Harry and his friends, mentioned as a silent group."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is leading the group."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who helps to shepherd the Muggleborns."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who helps to shepherd the Muggleborns."
+    },
+    {
+      "name": "runcorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who has a powerful voice and is able to stop the wizards sealing the fireplaces."
+    },
+    {
+      "name": "muggleborns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of students who are being protected by Harry and his friends."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large area where people are moving from fireplace to fireplace, sealing them off."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical creature",
+      "singular": true,
+      "description": "Harry's magical protector."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "muggleborn registration commission",
+      "relationship_type": "leader_of",
+      "description": "Harry is leading the group behind the Muggleborn Registration Commission."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "muggleborns",
+      "relationship_type": "shepherd_of",
+      "description": "Ron is helping to shepherd the Muggleborns."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "muggleborns",
+      "relationship_type": "shepherd_of",
+      "description": "Hermione is helping to shepherd the Muggleborns."
+    },
+    {
+      "entity_1": "runcorn",
+      "entity_2": "wizards",
+      "relationship_type": "influencer_of",
+      "description": "Runcorn's powerful voice has an influence on the wizards sealing the fireplaces."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "owner_of",
+      "description": "Harry is the owner of the Patronus."
+    }
+  ]
+}

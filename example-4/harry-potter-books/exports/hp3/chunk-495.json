@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is concerned about Hermione's disappearance."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and companion who shares his concerns about Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the third member of the trio who has gone missing."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a rival student who is suspected by Ron to be involved in Hermione's disappearance."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is the location where Harry and Ron go to look for Hermione."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Fat Lady is a portrait that guards the entrance to Gryffindor Tower."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concern",
+      "description": "Harry is concerned about Hermione's disappearance."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "concern",
+      "description": "Ron shares Harry's concern about Hermione's disappearance."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hermione",
+      "relationship_type": "suspect",
+      "description": "Ron suspects Malfoy to be involved in Hermione's disappearance."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location",
+      "description": "Harry and Ron go to Gryffindor Tower to look for Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location",
+      "description": "Harry and Ron go to Gryffindor Tower to look for Hermione."
+    }
+  ]
+}

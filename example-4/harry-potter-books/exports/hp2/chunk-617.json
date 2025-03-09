@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry Potter'."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is speaking to Harry, also known as Tom Riddle."
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny Weasley is mentioned as the one who opened the Chamber of Secrets."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts School of Witchcraft and Wizardry, mentioned in relation to a serpent."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "ginny weasley",
+      "relationship_type": "accused_of_crime",
+      "description": "Riddle accuses Ginny Weasley of opening the Chamber of Secrets and committing various crimes."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry potter",
+      "relationship_type": "talking_to",
+      "description": "Riddle is speaking to Harry Potter."
+    }
+  ]
+}

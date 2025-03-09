@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is mentioned as the teacher who was supposed to teach the lesson. He is described as being ill and unable to teach."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the person who is taking over Professor Lupin's class. He is described as having a twisted smile and black eyes that glitter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the student who is late to class and is being reprimanded by Snape for not sitting down."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a student who quickly corrects Snape's statement about what they have covered in class so far."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is mentioned as the house that Harry Potter belongs to. It is also mentioned as being penalized by Snape for Harry's behavior."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "penalizes",
+      "description": "Snape penalizes Gryffindor house for Harry's behavior, taking away ten points from them."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "defies",
+      "description": "Harry Potter defies Snape by not sitting down when told to do so."
+    }
+  ]
+}

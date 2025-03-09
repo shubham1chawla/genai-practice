@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "goblin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The goblin is mentioned as the one who created or has a connection to the Horcrux, but its exact role is not specified. (\"The Goblin's Revenge\")"
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux is an object that contains a piece of Voldemort's soul and is mentioned as something that the trio is trying to protect. (\"We are not leaving that Horcrux lying around\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is one of the main characters and is mentioned as being concerned about losing or stealing the Horcrux. (\"We are not leaving that Horcrux lying around\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is one of the main characters and is mentioned as being concerned about losing or stealing the Horcrux. (\"We are not leaving that Horcrux lying around\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of the main characters and is mentioned as being concerned about food and other practical matters. (\"Great, and now we've sorted that out, can we please get some food?\")"
+    },
+    {
+      "name": "dementors",
+      "entity_type": "character",
+      "singular": false,
+      "description": "Dementors are creatures that are mentioned as being present in the area where the trio is trying to stay. (\"There's no point staying where we know dementors are swooping around\")"
+    },
+    {
+      "name": "farm",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The farm is a location where the trio obtains food and stays for the night. (\"In the end they settled down for the night in a far flung field belonging to a lonely farm\")"
+    },
+    {
+      "name": "chicken coop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The chicken coop is a location where Hermione leaves money as payment for the food. (\"Not if I left some money under the chicken coop?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "has_concern",
+      "description": "Harry is concerned about losing or stealing the Horcrux. (\"We are not leaving that Horcrux lying around\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "horcrux",
+      "relationship_type": "has_concern",
+      "description": "Hermione is concerned about losing or stealing the Horcrux. (\"We are not leaving that Horcrux lying around\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "chicken coop",
+      "relationship_type": "left_payment",
+      "description": "Hermione leaves money under the chicken coop as payment for the food. (\"Not if I left some money under the chicken coop?\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "food",
+      "relationship_type": "has_concern",
+      "description": "Ron is concerned about getting food. (\"Great, and now we've sorted that out, can we please get some food?\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "farm",
+      "relationship_type": "stayed_at",
+      "description": "Hermione stays at the farm with Harry and Ron. (\"In the end they settled down for the night in a far flung field belonging to a lonely farm\")"
+    }
+  ]
+}

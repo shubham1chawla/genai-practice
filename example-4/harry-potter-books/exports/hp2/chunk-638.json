@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. (Excerpt: 'Harry threw his whole weight behind the sword...')"
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A giant snake-like creature that is attacking Harry. (Excerpt: 'The Basilisk lunged again...')"
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A phoenix who helps Harry. (Excerpt: 'Fawkes,' said Harry thickly. 'You were brilliant, Fawkes ...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "basilisk",
+      "relationship_type": "attacked_by",
+      "description": "Harry is being attacked by the Basilisk. (Excerpt: 'The Basilisk lunged again...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fawkes",
+      "relationship_type": "helped_by",
+      "description": "Fawkes helps Harry. (Excerpt: 'You were brilliant, Fawkes ...')"
+    }
+  ]
+}

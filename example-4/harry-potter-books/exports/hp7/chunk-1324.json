@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is described as a clever man who has been a good and faithful servant. He is also the one who killed Albus Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as someone who needs to master the Elder Wand in order to master Harry Potter."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is mentioned as the last owner of the Elder Wand."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone Voldemort wants to master."
+    },
+    {
+      "name": "the elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is described as a powerful object that cannot serve Voldemort properly unless he is its true master."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as someone who has been a good and faithful servant, but also as the one who killed Albus Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "the elder wand",
+      "relationship_type": "ownership",
+      "description": "Voldemort needs to master the Elder Wand in order to truly possess it."
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "killed_by",
+      "description": "Severus killed Albus Dumbledore, which means that Voldemort cannot truly be the master of the Elder Wand as long as Severus lives."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "goal_to_master",
+      "description": "Voldemort wants to master Harry Potter."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "the elder wand",
+      "relationship_type": "cannot_be_owned_by",
+      "description": "As long as Snape lives, the Elder Wand cannot truly be owned by Voldemort."
+    }
+  ]
+}

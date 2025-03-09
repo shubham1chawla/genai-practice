@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is being petrified by James and Sirius. He is referred to as 'Snivellus' by James."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is a person who is present in the scene and is interacting with Snape and Lily."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is present in the scene and is interacting with Snape and James."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is a person who is present in the scene and is interacting with Snape, James, and Sirius."
+    },
+    {
+      "name": "ground",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The ground is where the scene is taking place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "james",
+      "entity_2": "snape",
+      "relationship_type": "petrified_by",
+      "description": "James uses a countercurse to petrify Snape."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "petrified_by",
+      "description": "Sirius uses the spell 'Petrificus Totalus' to petrify Snape."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "james",
+      "relationship_type": "warned",
+      "description": "Lily warns James not to hex her."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "james",
+      "relationship_type": "helped_by",
+      "description": "James helps Snape by removing the curse that was cast on him."
+    }
+  ]
+}

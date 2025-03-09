@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who is speaking to Harry. He is described as being beside Harry and reseating himself behind his desk."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is having a conversation with Dumbledore. He is described as leaving the floor to fall back onto the rug in front of Dumbledore's desk."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is mentioned as someone who asked a question and failed to get an answer."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "speaking_to",
+      "description": "Dumbledore is speaking to Harry."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "dumbledore",
+      "relationship_type": "asked_question_of",
+      "description": "Riddle asked a question of Dumbledore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversed_with",
+      "description": "Harry is conversing with Dumbledore."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry",
+      "relationship_type": "asked_question_of",
+      "description": "Riddle asked a question of Harry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "memory",
+      "relationship_type": "tampered_with",
+      "description": "Dumbledore mentions that the memory has been tampered with."
+    }
+  ]
+}

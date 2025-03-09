@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The golden ball with silver wings left by Dumbledore as a reminder of perseverance and skill."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who received the Snitch from Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The former headmaster of Hogwarts who left the Snitch for Harry as a reminder."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Ministry official questioning Harry about the Snitch."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The school where Dumbledore was headmaster and where Harry received the Snitch."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who laughed derisively at Scrimgeour's question."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "left_for",
+      "description": "Dumbledore left the Snitch for Harry as a reminder of perseverance and skill."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry potter",
+      "relationship_type": "questioned",
+      "description": "Scrimgeour questioned Harry about the reasons behind Dumbledore leaving him the Snitch."
+    }
+  ]
+}

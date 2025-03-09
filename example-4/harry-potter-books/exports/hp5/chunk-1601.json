@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to rescue Sirius."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is present in the scene."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person being tortured by someone else."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A place where there are shelves covered in little glass balls, and it is located at the end of row ninety-seven."
+    },
+    {
+      "name": "row ninety-seven",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A specific location within the Department of Mysteries."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "destination",
+      "description": "Harry knows exactly where to go to rescue Sirius, which is the Department of Mysteries."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "concerned about",
+      "description": "Harry is trying to rescue Sirius."
+    },
+    {
+      "entity_1": "someone else",
+      "entity_2": "sirius",
+      "relationship_type": "torturing",
+      "description": "Someone else is torturing Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asking for help",
+      "description": "Harry asks Ron and others to help him get to the Department of Mysteries."
+    }
+  ]
+}

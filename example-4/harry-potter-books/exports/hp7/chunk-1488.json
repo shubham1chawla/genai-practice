@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is trying to protect herself from the crowd and her children's safety."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is taunting Molly, saying she will kill her children when she kills Molly."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly is fighting against Bellatrix and Voldemort, trying to protect herself and her family."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is fighting against Molly and Bellatrix, trying to kill them."
+    },
+    {
+      "name": "fred-die",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred-die is mentioned as someone who has been killed by Voldemort, making Molly sad and angry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "bellatrix",
+      "relationship_type": "opponent",
+      "description": "Mrs. Weasley is fighting against Bellatrix, trying to protect herself from her attacks."
+    },
+    {
+      "entity_1": "molly",
+      "entity_2": "voldemort",
+      "relationship_type": "opponent",
+      "description": "Molly is fighting against Voldemort, trying to protect herself and her family."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "molly",
+      "relationship_type": "opponent",
+      "description": "Bellatrix is taunting Molly, saying she will kill her children when she kills Molly."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "fred-die",
+      "relationship_type": "killer",
+      "description": "Voldemort killed Fred-die, making Molly sad and angry."
+    }
+  ]
+}

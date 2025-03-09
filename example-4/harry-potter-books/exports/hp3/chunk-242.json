@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is present in the scene, scowling at Crookshanks. He says 'Does he have to eat that in front of us?' and 'Just keep him over there, that's all.' (Excerpt: '“Does he have to eat that in front of us?” said Ron,' and '“Just keep him over there, that’s all,” said Ron irritably')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is present in the scene. She says 'Clever Crookshanks, did you catch that all by yourself?' and seems to disapprove of Ron copying his star chart. (Excerpt: '“Clever Crookshanks, did you catch that all by yourself?” said Hermione,' and 'Hermione, who disapproved of copying, pursed her lips but didn’t say anything')"
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Crookshanks is a cat who is present in the scene. He catches a spider and eats it, staring unblinkingly at Ron. (Excerpt: 'Clever Crookshanks, did you catch that all by yourself?' and 'Crookshanks slowly chewed up the spider')"
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "rat",
+      "singular": true,
+      "description": "Scabbers is a rat who is mentioned as being asleep in Ron's bag. (Excerpt: 'I’ve got Scabbers asleep in my bag')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present in the scene, yawns and wants to go to bed. (Excerpt: 'Harry yawned. He really wanted to go to bed')"
+    },
+    {
+      "name": "spider",
+      "entity_type": "insect",
+      "singular": true,
+      "description": "A spider is mentioned as being caught by Crookshanks and eaten. (Excerpt: 'dead spider was dangling from his mouth')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "crookshanks",
+      "relationship_type": "stares_at",
+      "description": "Ron stares at Crookshanks, who is staring unblinkingly back at him. (Excerpt: 'Crookshanks slowly chewed up the spider, his yellow eyes ﬁxed insolently on Ron')"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns",
+      "description": "Ron owns Scabbers, who is asleep in his bag. (Excerpt: 'I’ve got Scabbers asleep in my bag')"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "star_chart",
+      "relationship_type": "has",
+      "description": "Ron has a star chart that he is working on. (Excerpt: 'turning back to his star chart')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "star_chart",
+      "relationship_type": "has",
+      "description": "Harry also has a star chart that he needs to complete. (Excerpt: 'He really wanted to go to bed, but he still had his own star chart to complete')"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "gives",
+      "description": "Ron gives Harry a copy of his star chart. (Excerpt: '“You can copy mine, if you like,” said Ron')"
+    },
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "spider",
+      "relationship_type": "catches_and_eats",
+      "description": "Crookshanks catches and eats a spider. (Excerpt: 'dead spider was dangling from his mouth' and 'Crookshanks slowly chewed up the spider')"
+    },
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "ron",
+      "relationship_type": "attacks",
+      "description": "Crookshanks attacks Ron by pouncing on him. (Excerpt: 'Then, without warning, he pounced')"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who locks the door and gives instructions to Harry and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is trying to escape with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is trying to escape with Harry and receives instructions from Dumbledore."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Granger is mentioned as the title given to Hermione by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "gives_instructions",
+      "description": "Dumbledore gives instructions to Harry on how to escape, saying 'three turns should do it'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hermione",
+      "relationship_type": "gives_instructions",
+      "description": "Dumbledore gives instructions to Hermione on how to escape, saying 'three turns should do it'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "tries_to_escape_from",
+      "description": "Harry tries to escape from Dumbledore's locked door."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "tries_to_escape_from",
+      "description": "Hermione tries to escape from Dumbledore's locked door."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and has the ability to fly. He is trying to keep his flying a secret from Harry."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": true,
+      "description": "Gringotts is a bank that stores valuable treasures and has high-security vaults guarded by dragons."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is eager to see more magic."
+    },
+    {
+      "name": "dragons",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Dragons are guarding the high-security vaults of Gringotts bank."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gringotts",
+      "relationship_type": "guardian_of",
+      "description": "Hagrid is warning Harry about the dangers of trying to rob Gringotts, which has dragons guarding its high-security vaults."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "instructor",
+      "description": "Hagrid is instructing Harry on the dangers of trying to rob Gringotts bank."
+    }
+  ]
+}

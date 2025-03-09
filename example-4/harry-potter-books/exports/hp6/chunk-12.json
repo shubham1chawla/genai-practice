@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The minister is described as someone who has a term in office and is trying to avoid seeing something. (\"the thing remained motionless and silent for the rest of his term in office.\")"
+    },
+    {
+      "name": "painting",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The painting is described as having an occupant that can move around. (\"he could have sworn he saw out of the corner of his eye the occupant of the painting yawning, or else scratching his nose.\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is described as someone who bursts out of the fireplace and is in a state of panic. (\"the portrait had once again announced the imminent arrival of Fudge, who had burst out of the fireplace, sopping wet and in a state of considerable panic.\")"
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prime Minister is described as someone who has an office and can see the painting. (\"Then, three years ago, on a night very like tonight, the Prime Minister had been alone in his office when the portrait had once again announced the imminent arrival of Fudge.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "minister",
+      "entity_2": "painting",
+      "relationship_type": "can_see",
+      "description": "The minister can see the painting, but tries not to look at it. (\"However, he had trained himself not to look at the picture very much.\")"
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "painting",
+      "relationship_type": "can_see",
+      "description": "The Prime Minister can see the painting and sees Fudge bursting out of it. (\"Then, three years ago, on a night very like tonight, the Prime Minister had been alone in his office when the portrait had once again announced the imminent arrival of Fudge.\")"
+    },
+    {
+      "entity_1": "painting",
+      "entity_2": "fudge",
+      "relationship_type": "contains",
+      "description": "The painting contains Fudge who bursts out of it. (\"the portrait had once again announced the imminent arrival of Fudge, who had burst out of the fireplace.\")"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper and teacher at Hogwarts."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are enemies of Harry Potter."
+    },
+    {
+      "name": "dragon-fire",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "A magical vehicle that Hagrid is driving."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "pursued_by",
+      "description": "Harry is being pursued by the Death Eaters."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dragon-fire",
+      "relationship_type": "operates",
+      "description": "Hagrid is operating the dragon-fire vehicle."
+    }
+  ]
+}

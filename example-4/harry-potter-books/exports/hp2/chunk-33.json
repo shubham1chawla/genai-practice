@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'Harry Potter'. He is expecting letters from his friends and is upset when he finds out that Dobby has been stopping them. (Excerpt: 'How do you know my friends haven’t been writing to me?')"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An elf who is working for the Malfoy family, but seems to have a soft spot for Harry. He has been stopping Harry's letters from his friends. (Excerpt: 'Dobby shuffled his feet.')"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Hogwarts gamekeeper, mentioned as having written a letter to Harry. (Excerpt: 'even a scribble that looked as though it was from the Hogwarts gamekeeper, Hagrid')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as having written a letter to him. (Excerpt: 'Hermione’s neat writing')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as having written a letter to him. (Excerpt: 'Ron’s untidy scrawl')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "stops_letters",
+      "description": "Dobby has been stopping Harry's letters from his friends. (Excerpt: 'Dobby has them here, sir...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "receives_letters_from",
+      "description": "Harry receives letters from Hermione. (Excerpt: 'Hermione’s neat writing')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "receives_letters_from",
+      "description": "Harry receives letters from Ron. (Excerpt: 'Ron’s untidy scrawl')"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "hagrid",
+      "relationship_type": "has_letter_from",
+      "description": "Dobby has a letter from Hagrid. (Excerpt: 'even a scribble that looked as though it was from the Hogwarts gamekeeper, Hagrid')"
+    }
+  ]
+}

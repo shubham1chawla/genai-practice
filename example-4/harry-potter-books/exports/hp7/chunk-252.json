@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is reacting to Scrimgeour's announcement."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is the new Minister of Magic who is delivering Dumbledore's bequest to Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a deceased person whose will is being read by Scrimgeour."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is receiving Dumbledore's bequest."
+    },
+    {
+      "name": "godric gryffindor",
+      "entity_type": "historical_figure",
+      "singular": true,
+      "description": "Godric Gryffindor is a historical figure whose sword is being discussed."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is an object that chose Harry to find the sword."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "dumbledore",
+      "relationship_type": "gave_bequest",
+      "description": "Scrimgeour is delivering Dumbledore's bequest to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sorting hat",
+      "relationship_type": "chosen_by",
+      "description": "The Sorting Hat chose Harry to find the sword."
+    },
+    {
+      "entity_1": "godric gryffindor",
+      "entity_2": "sword",
+      "relationship_type": "owned",
+      "description": "Godric Gryffindor owned the sword."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "chosen_by",
+      "description": "The sword chose Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "godric gryffindor",
+      "relationship_type": "disagrees_with",
+      "description": "Hermione disagrees with Scrimgeour's statement that the sword belongs to Godric Gryffindor."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "godric gryffindor",
+      "relationship_type": "claims_belongs_to",
+      "description": "Scrimgeour claims that the sword belongs to Godric Gryffindor."
+    }
+  ]
+}

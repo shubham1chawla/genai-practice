@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mione is mentioned as offering to accompany Harry into Umbridge's office as a sign of solidarity and loyalty. She is described as looking relieved that Harry accepted the plan."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as accepting Mione's offer and planning to sneak into Umbridge's office. He is described as being angry when Hermione hesitates."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as the person whose office Harry and Mione plan to sneak into. The location of her office is specified as having a corridor."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as being part of the Inquisitorial Squad that is floating around Umbridge's office."
+    },
+    {
+      "name": "inquisitorial squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Inquisitorial Squad is mentioned as a group that is floating around Umbridge's office and making it difficult for Harry and Mione to sneak in."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as being tortured by Umbridge. This is used as motivation for Harry to act quickly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mione",
+      "relationship_type": "accompany",
+      "description": "Harry and Mione plan to accompany each other into Umbridge's office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "sneak_into_office",
+      "description": "Harry plans to sneak into Umbridge's office with the help of Mione."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "part_of",
+      "description": "Filch is part of the Inquisitorial Squad that is floating around Umbridge's office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "concerned_for",
+      "description": "Harry is concerned for Sirius, who is being tortured by Umbridge."
+    }
+  ]
+}

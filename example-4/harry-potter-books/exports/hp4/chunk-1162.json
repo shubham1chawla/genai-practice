@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch, the person who is being addressed by his son, is described as having bulging eyes and roaring at the dementors."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "The dementors are described as having cold, draining power and being controlled by Mr. Crouch."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person who is trying to help the boy fight off the dementors and is addressed by Mr. Crouch."
+    },
+    {
+      "name": "boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boy is described as struggling against the dementors and being addressed by his father, Mr. Crouch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crouch",
+      "entity_2": "boy",
+      "relationship_type": "parent_child",
+      "description": "Mr. Crouch denies being the boy's father, but the boy insists that he is his son."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crouch",
+      "relationship_type": "acquaintance",
+      "description": "Harry is addressed by Mr. Crouch and seems to be aware of their relationship, but it is not specified what kind of acquaintance they are."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "boy",
+      "relationship_type": "helper",
+      "description": "Harry tries to help the boy fight off the dementors and seems to be concerned for his well-being."
+    }
+  ]
+}

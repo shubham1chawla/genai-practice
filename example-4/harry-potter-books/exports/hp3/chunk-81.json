@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "the trash bin",
+      "entity_type": "trash_bin",
+      "singular": true,
+      "description": "The trash bin is mentioned as the object that opens to reveal Diagon Alley."
+    },
+    {
+      "name": "Diagon Alley",
+      "entity_type": "diagon_alley",
+      "singular": true,
+      "description": "Diagon Alley is introduced as a hidden alleyway that can be accessed through an archway in the wall."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the protagonist who spends his days exploring shops and eating outside cafes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "the trash bin",
+      "entity_2": "Diagon Alley",
+      "relationship_type": "leads_to",
+      "description": "The trash bin opens to reveal Diagon Alley, indicating a direct connection between the two entities."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "shops",
+      "relationship_type": "visits",
+      "description": "Harry is mentioned as exploring shops, indicating that he visits these establishments."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "cafes",
+      "relationship_type": "eats_at",
+      "description": "Harry is eating outside cafes, indicating a relationship between him and the cafes."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as the one who will face the boggart. He is described as uncertain and wondering what was coming next."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Lupin is guiding Neville on how to deal with the boggart. He explains that the boggart will assume the form of Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Snape is mentioned as the form that the boggart will take. Neville's task is to make the boggart take on this form."
+    },
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "The boggart is a monster that can take on different forms. It is described as being forced into a vulture-topped hat and a green dress with a big red handbag."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "boggart",
+      "relationship_type": "will_face",
+      "description": "Neville will face the boggart, which will assume the form of Professor Snape."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "neville",
+      "relationship_type": "guides",
+      "description": "Professor Lupin guides Neville on how to deal with the boggart."
+    }
+  ]
+}

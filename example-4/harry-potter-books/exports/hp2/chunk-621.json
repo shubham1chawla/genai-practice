@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid was expelled from school."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is the one who kept a close watch on Harry and left behind a diary."
+    },
+    {
+      "name": "chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber was opened by Riddle in his teenage years."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Riddle left behind a diary to preserve his teenage self and finish Salazar Slytherin's work."
+    },
+    {
+      "name": "salazar slytherin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Salazar Slytherin is the one who started the Chamber and Riddle wants to finish his work."
+    },
+    {
+      "name": "mandrake draught",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Mandrake Draught will be ready in a few hours to cure those who were Petrified."
+    },
+    {
+      "name": "mudbloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Mudbloods are the target of Riddle's hatred, but he says it doesn't matter anymore."
+    },
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The cat was Petrified and will be cured by the Mandrake Draught."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is being targeted by Riddle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "diary",
+      "relationship_type": "created",
+      "description": "Riddle created the diary to preserve his teenage self and finish Salazar Slytherin's work."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mandrake draught",
+      "relationship_type": "will be cured by",
+      "description": "The Mandrake Draught will cure Harry who was Petrified."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "mudbloods",
+      "relationship_type": "targeted",
+      "description": "Riddle says he doesn't care about Mudbloods anymore, but his target is now Harry."
+    }
+  ]
+}

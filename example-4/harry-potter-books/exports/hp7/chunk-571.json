@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who kicked a chair leg. He is described as being hungry and snarling at Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one to whom Ron is speaking. She is described as clapping her hand to her forehead and startling both of them into silence."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who has been fighting dementors and wearing a Horcrux. He is described as being stung by Hermione's words."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Dementors are mentioned as the creatures that Harry has been fighting. They are described as being a threat to Harry and his friends."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Horcrux is mentioned as an object that Harry is still wearing. It is described as having a heavy weight pressing on Harry's stomach."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "speaks_to",
+      "description": "Ron speaks to Hermione, expressing his hunger and frustration. (\"What?\" he snarled at Hermione.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "fights_against",
+      "description": "Harry fights against the dementors, as mentioned by Ron. (\"You go and fight your way through the dementors, then,\" said Harry.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "wears",
+      "description": "Harry is still wearing the Horcrux, as mentioned by Hermione. (\"Come on,\" she said impatiently, clicking her fingers at him, \"the Horcrux, Harry, you're still wearing it!\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "horcrux",
+      "relationship_type": "removes_from_harry",
+      "description": "Hermione removes the Horcrux from Harry's neck. (She held out her hands, and Harry lifted the golden chain over his head.)"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "chocolate",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Chocolate is mentioned as being in the library. It is not clear what kind of chocolate it is or why it's there, but it seems to be a surprise for someone."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The library is where the chocolate is found and where the scene with Hermione chasing Harry and Ginny takes place. It's also mentioned as having tables in Gryffindor Tower."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who finds the chocolate in the library and chases Harry and Ginny out. She's also mentioned as being involved in career advice meetings."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is chased by Hermione from the library along with Ginny. He's also mentioned as having a meeting with Professor McGonagall to discuss his future career."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is chased by Hermione from the library along with Harry. She's also mentioned as being involved in career advice meetings."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who will be meeting with Harry to discuss his future career. She's also the Head of Gryffindor House."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is mentioned as having tables where pamphlets and notices are placed. It's also the location of Professor McGonagall's office."
+    },
+    {
+      "name": "pamphlets",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Pamphlets are mentioned as being placed on tables in Gryffindor Tower. They're related to various Wizarding careers."
+    },
+    {
+      "name": "leaflets",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Leaflets are mentioned as being placed on tables in Gryffindor Tower. They're related to various Wizarding careers."
+    },
+    {
+      "name": "notices",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Notices are mentioned as being placed on tables in Gryffindor Tower and on the board. They're related to career advice meetings."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "library",
+      "relationship_type": "location_of",
+      "description": "Hermione is in the library when she finds the chocolate and chases Harry and Ginny out."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "meeting_with",
+      "description": "Harry has a meeting with Professor McGonagall to discuss his future career. The time of the meeting is listed below."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "chases",
+      "description": "Hermione chases Harry and Ginny out of the library with her wand."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ginny",
+      "relationship_type": "chases",
+      "description": "Hermione chases Harry and Ginny out of the library with her wand."
+    }
+  ]
+}

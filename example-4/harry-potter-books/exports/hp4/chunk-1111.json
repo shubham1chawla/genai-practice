@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who asks Moody if he found Mr. Crouch."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a teacher who has a wooden leg and uses a magical eye."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who asks if Mr. Crouch Disapparated."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who thinks about a career as an Auror and has a conversation with Moody."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who is missing and being searched for by Harry, Ron, and Hermione."
+    },
+    {
+      "name": "auror",
+      "entity_type": "career",
+      "singular": false,
+      "description": "Auror is a career that Moody thinks Hermione would be good at."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "asked_question",
+      "description": "Harry asks Moody if he found Mr. Crouch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mr crouch",
+      "relationship_type": "speculated_disappearance_method",
+      "description": "Ron speculates that Mr. Crouch might have Disapparated."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moody",
+      "relationship_type": "had_conversation",
+      "description": "Hermione has a conversation with Moody about her potential career as an Auror."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr crouch",
+      "relationship_type": "searched_for_person",
+      "description": "Harry is searching for Mr. Crouch along with Ron and Hermione."
+    }
+  ]
+}

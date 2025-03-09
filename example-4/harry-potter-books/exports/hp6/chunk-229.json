@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a feeling about Hermione's intentions."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is trying to buy a birthday present for Draco Malfoy."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person Hermione wants to get a birthday present for."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A shopkeeper who is suspicious of Hermione's intentions."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "The currency being used to buy items in the story."
+    },
+    {
+      "name": "skull",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An item Hermione is trying to buy from Borgin's shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "draco malfoy",
+      "relationship_type": "friendship",
+      "description": "Hermione mentions that Draco Malfoy is her friend, indicating a relationship between the two."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "borgin",
+      "relationship_type": "suspicion",
+      "description": "Harry has a feeling that Borgin knows what Hermione is up to, suggesting a relationship of suspicion between Harry and Borgin."
+    }
+  ]
+}

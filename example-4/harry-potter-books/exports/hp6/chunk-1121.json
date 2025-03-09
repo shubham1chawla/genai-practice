@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by his first name."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and Ron's brother, who has been bitten by a werewolf."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, referred to as being on the same level as Bill."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The matron who is trying to heal Bill's wounds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bill",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Bill's condition and asks Madam Pomfrey if she can fix his wounds with a charm."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bill",
+      "relationship_type": "concerned_about",
+      "description": "Ron is also concerned about Bill's condition and tries to reassure him that he won't be a true werewolf."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "asked_for_help",
+      "description": "Harry asks Madam Pomfrey if she can fix Bill's wounds with a charm."
+    }
+  ]
+}

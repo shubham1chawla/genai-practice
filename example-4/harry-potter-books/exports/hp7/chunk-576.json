@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He was born and raised at an orphanage, educated at Hogwarts, worked at Borgin and Burkes, and spent his years of exile in Albania."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry's who makes a sarcastic comment about searching the entire country of Albania."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who speculates that the Horcruxes are not in Albania because they were made before Harry went into exile."
+    },
+    {
+      "name": "albania",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Albania is a country where Harry spent his years of exile and where Ron suggests searching for the Horcruxes."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a school where Harry was educated."
+    },
+    {
+      "name": "borgin and burkes",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Borgin and Burkes is a store where Harry worked after completing school."
+    },
+    {
+      "name": "vol",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vol is not explicitly described in the text but it seems to be associated with You-Know-Who."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is a person who is associated with Vol and the snake."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is certain that the snake is the sixth Horcrux."
+    },
+    {
+      "name": "the orphanage",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The orphanage is where Harry was born and raised."
+    },
+    {
+      "name": "the goblin's revenge",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Goblin's Revenge is a book that is mentioned in the text but its relevance to the story is unclear."
+    },
+    {
+      "name": "the snake",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The snake is one of Harry's Horcruxes and is associated with You-Know-Who."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "albania",
+      "relationship_type": "spent_years_in",
+      "description": "Harry spent his years of exile in Albania."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "albania",
+      "relationship_type": "suggested_searching",
+      "description": "Ron suggested searching the entire country of Albania for the Horcruxes."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "albania",
+      "relationship_type": "speculated_not_in_albania",
+      "description": "Hermione speculated that the Horcruxes are not in Albania because they were made before Harry went into exile."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "educated_at",
+      "description": "Harry was educated at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "borgin and burkes",
+      "relationship_type": "worked_at",
+      "description": "Harry worked at Borgin and Burkes after completing school."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the snake",
+      "relationship_type": "associated_with",
+      "description": "Dumbledore is certain that the snake is the sixth Horcrux."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "the snake",
+      "relationship_type": "associated_with",
+      "description": "You-Know-Who is associated with the snake."
+    }
+  ]
+}

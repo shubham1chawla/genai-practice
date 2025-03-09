@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "babies",
+      "entity_type": "entities",
+      "singular": false,
+      "description": "Mentioned in the context of Parvati's reaction"
+    },
+    {
+      "name": "parvati",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Reacting to something with babies"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Snatching the Remembrall from the grass"
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Whose gran sent him the Remembrall"
+    },
+    {
+      "name": "remembrall",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "Glittering in the sun and snatched by Malfoy"
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Asking for the Remembrall back from Malfoy"
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Warning Harry not to move"
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Telling students not to move"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "remembrall",
+      "relationship_type": "has",
+      "description": "Malfoy snatched the Remembrall from the grass"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "remembrall",
+      "relationship_type": "wants",
+      "description": "Harry asked for the Remembrall back from Malfoy"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "longbottom",
+      "relationship_type": "has_item_sent_by",
+      "description": "The Remembrall was sent by Longbottom's gran"
+    }
+  ]
+}

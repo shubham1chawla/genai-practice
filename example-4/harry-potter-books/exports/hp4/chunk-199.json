@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "veela",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people with magical powers that can entice men to do their bidding."
+    },
+    {
+      "name": "terrible things",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Unspecified negative consequences that would occur if the veela stopped dancing."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story who is watching the veela dance."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is concerned about his actions."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend who is frozen in an attitude as if he were about to dive from a springboard."
+    },
+    {
+      "name": "stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the veela are dancing and Harry is watching."
+    },
+    {
+      "name": "box",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A raised platform or structure from which Harry is watching the veela dance."
+    },
+    {
+      "name": "music",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The sound of music that is being played during the veela's dance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "veela",
+      "relationship_type": "watching",
+      "description": "Harry is watching the veela dance."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Harry",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about Harry's actions."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "stadium",
+      "relationship_type": "positioned_to_diving_platform",
+      "description": "Ron is positioned as if he were about to dive from a springboard in the stadium."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "box",
+      "relationship_type": "standing_on",
+      "description": "Harry is standing on the box."
+    },
+    {
+      "entity_1": "music",
+      "entity_2": "veela",
+      "relationship_type": "associated_with",
+      "description": "The music is associated with the veela's dance."
+    }
+  ]
+}

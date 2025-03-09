@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who was considered by someone and had his face stamped by that person. He felt pain in his nose and blood spurted everywhere."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a person who dragged the Cloak out from under Harry's body and threw it over him. He also left the compartment after taking care to tread on Harry's fingers."
+    },
+    {
+      "name": "the train",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The train is mentioned as a vehicle that will be back in London by the time Harry is found."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "London is mentioned as a location where the train will be back by the time Harry is found."
+    },
+    {
+      "name": "the cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Cloak is mentioned as an object that was dragged out from under Harry's body and thrown over him by Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "attacked",
+      "description": "Malfoy attacked Harry by stamping on his face, breaking his nose, and making blood spurt everywhere."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "the cloak",
+      "relationship_type": "used",
+      "description": "Malfoy used the Cloak to cover Harry after dragging it out from under him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "london",
+      "relationship_type": "will be found in",
+      "description": "Harry will be found in London by the time the train is back."
+    }
+  ]
+}

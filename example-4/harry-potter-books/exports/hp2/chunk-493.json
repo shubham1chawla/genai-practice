@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boy who is being talked to by Riddle."
+    },
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle's name for Harry."
+    },
+    {
+      "name": "rubeus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boy who is being accused of letting a monster out."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character in the story."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is talking to Rubeus."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school that is being threatened with closure."
+    },
+    {
+      "name": "monsters",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Creatures that are being referred to as pets."
+    },
+    {
+      "name": "girl",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A girl who was killed by a monster."
+    },
+    {
+      "name": "parents",
+      "entity_type": "people",
+      "singular": false,
+      "description": "The parents of the dead girl."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry potter",
+      "relationship_type": "accusing",
+      "description": "Riddle is accusing Harry Potter of letting a monster out."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "rubeus",
+      "relationship_type": "confronting",
+      "description": "Riddle is confronting Rubeus about the monster."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "monsters",
+      "relationship_type": "owning",
+      "description": "Harry Potter is being accused of owning monsters."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "hogwarts",
+      "relationship_type": "threatening",
+      "description": "Riddle is threatening Hogwarts with closure."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "girl",
+      "relationship_type": "victim_of",
+      "description": "Harry Potter is being accused of killing a girl."
+    },
+    {
+      "entity_1": "rubeus",
+      "entity_2": "monsters",
+      "relationship_type": "controlling",
+      "description": "Rubeus is being accused of controlling monsters."
+    }
+  ]
+}

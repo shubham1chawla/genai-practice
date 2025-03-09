@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is described as one of the twins who are usually in the thick of things and like to be in the noisy center of attention. He is working silently on a piece of parchment with his brother George."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is described as one of the twins who are usually in the thick of things and like to be in the noisy center of attention. He is working silently on a piece of parchment with his brother Fred."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as watching Fred and George work on a piece of parchment. He wonders if they are entering the Triwizard Tournament."
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee Jordan is mentioned as someone who would be let in on a joke by Fred and George if it were an order form for Weasleys' Wizard Wheezes."
+    },
+    {
+      "name": "weasleys' wizard wheezes",
+      "entity_type": "business",
+      "singular": false,
+      "description": "Weasleys' Wizard Wheezes is mentioned as a business that Fred and George are involved in. Harry thought they might be working on an order form for the business."
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is mentioned as a location where Fred and George sat together writing something before."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Triwizard Tournament is mentioned as an event that Harry wonders if Fred and George are entering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "collaboration",
+      "description": "Fred and George are working together on a piece of parchment, which is unusual for them. They usually like to be in the thick of things and like to be in the noisy center of attention."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "observation",
+      "description": "Harry is watching Fred and George work on a piece of parchment."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "observation",
+      "description": "Harry is watching Fred and George work on a piece of parchment."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "weasleys' wizard wheezes",
+      "relationship_type": "affiliation",
+      "description": "Fred and George are involved in Weasleys' Wizard Wheezes, which they might be working on an order form for."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "weasleys' wizard wheezes",
+      "relationship_type": "affiliation",
+      "description": "Fred and George are involved in Weasleys' Wizard Wheezes, which they might be working on an order form for."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "triwizard tournament",
+      "relationship_type": "speculation",
+      "description": "Harry wonders if Fred and George are entering the Triwizard Tournament."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "burrow",
+      "relationship_type": "location",
+      "description": "Fred and George sat together writing something at the Burrow before."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "burrow",
+      "relationship_type": "location",
+      "description": "Fred and George sat together writing something at the Burrow before."
+    }
+  ]
+}

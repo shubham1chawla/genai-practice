@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who is disliked by Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a student at Hogwarts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and Ron attend."
+    },
+    {
+      "name": "quidditch pitch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Quidditch is played."
+    },
+    {
+      "name": "detention",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A punishment given to students for misbehavior."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "has_detention_with",
+      "description": "Harry has a detention with Umbridge."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "may_see_from_window",
+      "description": "Harry may see the Quidditch pitch from Umbridge's window."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "will_tryout_at",
+      "description": "Ron will try out at the Quidditch pitch."
+    }
+  ]
+}

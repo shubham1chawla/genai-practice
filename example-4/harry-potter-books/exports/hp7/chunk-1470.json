@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Harry Potter'. (Excerpt: 'Happy now, are yeh, that yeh didn’ ﬁght, yeh cowardly bunch o’ nags? Are yeh happy Harry Potter’s — d–dead . . . ?')"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts and a close friend of Harry's. (Excerpt: 'Hagrid’s unexpected bellow nearly forced Harry’s eyes open.')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, referred to as 'Voldemort'. (Excerpt: 'Harry thought that Hagrid must have been forced to obey Voldemort’s command...')"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort. (Excerpt: 'The jeers of the Death Eaters were drowned.')"
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of mythical creatures, referred to as 'centaurs'. (Excerpt: 'Harry wondered how many centaurs were watching their procession pass;')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "voldemort",
+      "relationship_type": "obey",
+      "description": "Hagrid is forced to obey Voldemort's command. (Excerpt: 'Harry thought that Hagrid must have been forced to obey Voldemort’s command...')"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "death eaters",
+      "relationship_type": "command",
+      "description": "Hagrid is in charge of the Death Eaters. (Excerpt: 'Hagrid could not continue, but broke down in fresh tears.')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "target",
+      "description": "The Death Eaters are insulting Harry Potter. (Excerpt: 'Some of the Death Eaters called insults at the centaurs as they left them behind.')"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "centaurs",
+      "relationship_type": "watch",
+      "description": "Hagrid is watching the centaurs. (Excerpt: 'Harry wondered how many centaurs were watching their procession pass;')"
+    }
+  ]
+}

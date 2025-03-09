@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagr",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is being addressed by Magorian. He is described as wanting to walk back to Magorian and yelling at him."
+    },
+    {
+      "name": "magorian",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Magorian is a person who is addressing Hagrid and the centaurs. He is described as being in charge of the forest."
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "group_of_beings",
+      "singular": false,
+      "description": "The centaurs are a group of beings that are mentioned as slipping out of sight. They are described as not wanting Hagrid to be there."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is pushing against Hagrid's waistcoat along with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is pushing against Hagrid's waistcoat along with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagr",
+      "entity_2": "magorian",
+      "relationship_type": "addressed_by",
+      "description": "Magorian addresses Hagrid."
+    },
+    {
+      "entity_1": "hagr",
+      "entity_2": "centaurs",
+      "relationship_type": "conflict_with",
+      "description": "Hagrid is in conflict with the centaurs, who do not want him to be there."
+    },
+    {
+      "entity_1": "magorian",
+      "entity_2": "centaurs",
+      "relationship_type": "in_charge_of",
+      "description": "Magorian is in charge of the centaurs and the forest."
+    }
+  ]
+}

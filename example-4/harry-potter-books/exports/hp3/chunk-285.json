@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student in the class who seems unable to restrain herself from speaking out of turn."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is the teacher who is teaching the lesson and is known for his deadly calm voice."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Miss Granger is a title given to Hermione by Snape."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Lupin is a teacher who has taught the class about werewolves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "hermione",
+      "relationship_type": "teaches",
+      "description": "Snape teaches Hermione in the class."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "professor lupin",
+      "relationship_type": "contrasts_with",
+      "description": "Snape contrasts with Professor Lupin, who has taught the class about werewolves."
+    }
+  ]
+}

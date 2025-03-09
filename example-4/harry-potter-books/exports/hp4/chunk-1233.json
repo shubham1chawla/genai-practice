@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is a person who is yelling 'Stupefy!' and checking on Harry's well-being. (Excerpt: \"He could hear Cedric yelling ‘Stupefy !’ too...\" and \"‘Harry!’ he heard Cedric shouting.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is trying to cast spells to defend himself against the spider. (Excerpt: \"He raised his wand as the spider opened its pincers once more and shouted ‘Expelliarmus !’\" and \"‘No,’ Harry called back, panting.\")"
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The spider is an animal that is attacking Harry. (Excerpt: \"the spider opened its pincers once more\" and \"The two spells combined did what one alone had not: The spi-der keeled over sideways...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "spider",
+      "relationship_type": "attacked_by",
+      "description": "Harry is being attacked by the spider. (Excerpt: \"the spider opened its pincers once more\" and \"It worked — the Disarming Spell made the spider drop him...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "helped_by",
+      "description": "Cedric is helping Harry by checking on his well-being. (Excerpt: \"‘Harry!’ he heard Cedric shouting.\")"
+    }
+  ]
+}

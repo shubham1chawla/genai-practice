@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having murdered someone and turning his wand on Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who has heard his parents' voices when fighting dementors."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character speaking to Harry from a distance, teaching him about curses."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Creatures that force their victims to relive the worst memories of their lives and drown in despair."
+    },
+    {
+      "name": "avada kedavra",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "A powerful curse mentioned by Moody as needing a lot of magic behind it."
+    },
+    {
+      "name": "countercurse",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "A countermeasure to the Avada Kedavra curse, which is not explicitly explained in this text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "victim_of",
+      "description": "Harry has been targeted by Voldemort's wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "affected_by",
+      "description": "Harry has fought dementors and heard his parents' voices when doing so."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "avada kedavra",
+      "relationship_type": "teaches_about",
+      "description": "Moody is teaching Harry about the Avada Kedavra curse."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "countercurse",
+      "relationship_type": "needs_to_know",
+      "description": "Harry needs to know about the countercurse, as mentioned by Moody."
+    }
+  ]
+}

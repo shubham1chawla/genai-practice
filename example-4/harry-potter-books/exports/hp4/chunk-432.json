@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as looking over and seeing Harry watching him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as grinning and returning to his predictions after being seen by George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as rolling up parchment with his twin brother George."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as climbing into the common room through the portrait hole and carrying a sheaf of parchment and a box."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as throwing down his quill after finishing his predictions."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Crookshanks is mentioned as arched his back and purring when Hermione enters the room."
+    },
+    {
+      "name": "portrait hole",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The portrait hole is mentioned as opening to allow Hermione to enter the common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "watching",
+      "description": "George saw Harry watching him."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "twin",
+      "description": "Fred and George are twins."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "portrait hole",
+      "relationship_type": "entered_through",
+      "description": "Hermione entered the common room through the portrait hole."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "compared_to",
+      "description": "Ron compared his predictions to Harry's."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "shared_predictions_with",
+      "description": "Hermione shared her finished predictions with Ron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "eavesdropped_on",
+      "description": "Harry didn't want George to think he was eavesdropping."
+    }
+  ]
+}

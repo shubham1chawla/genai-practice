@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "foy-glass",
+      "entity_type": "foy glass",
+      "singular": true,
+      "description": "A magical artifact that displays the reflections of important people."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is trying to revive Crouch's son. He has a wand and can cast spells."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts whose reflection appears in the Foy-Glass."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts whose reflection appears in the Foy-Glass."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is trembling and covering her face."
+    },
+    {
+      "name": "crouch's son",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose life Dumbledore is trying to revive. He has been poisoned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "foy-glass",
+      "entity_2": "dumbledore",
+      "relationship_type": "displayed-reflection",
+      "description": "Dumbledore's reflection appears in the Foy-Glass."
+    },
+    {
+      "entity_1": "foy-glass",
+      "entity_2": "snape",
+      "relationship_type": "displayed-reflection",
+      "description": "Snape's reflection appears in the Foy-Glass."
+    },
+    {
+      "entity_1": "foy-glass",
+      "entity_2": "mcgonagall",
+      "relationship_type": "displayed-reflection",
+      "description": "McGonagall's reflection appears in the Foy-Glass."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "crouch's son",
+      "relationship_type": "reviving-person",
+      "description": "Dumbledore is trying to revive Crouch's son using magic."
+    },
+    {
+      "entity_1": "foy-glass",
+      "entity_2": "winky",
+      "relationship_type": "observing-entity",
+      "description": "Winky is observing the Foy-Glass and its reflections."
+    }
+  ]
+}

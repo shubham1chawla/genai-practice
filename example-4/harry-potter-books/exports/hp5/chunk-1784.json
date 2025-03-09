@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "death chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room where the escaped Death Eaters are contained."
+    },
+    {
+      "name": "anti-disapparation jinx",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that prevents Disapparition."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character and a powerful wizard."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry of Magic official who is initially against Dumbledore."
+    },
+    {
+      "name": "aurors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Magical law enforcement officers."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist and a powerful wizard who has returned."
+    },
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror."
+    },
+    {
+      "name": "williamson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "argument",
+      "description": "Dumbledore and Fudge are arguing about the return of Voldemort."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "aurors",
+      "relationship_type": "opposition",
+      "description": "Dumbledore is opposed to the Aurors, who are working for Fudge."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dawlish",
+      "relationship_type": "command",
+      "description": "Fudge orders Dawlish and Williamson to go down to the Death Chamber."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "williamson",
+      "relationship_type": "command",
+      "description": "Fudge also orders Williamson to go down to the Death Chamber."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as having their own ways of detecting underage magic."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are mentioned as being a concern for the Ministry, and Harry had to use magic to get rid of them."
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus Fletcher is mentioned by name, and it is stated that he will be killed by the Ministry."
+    },
+    {
+      "name": "figgy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Figgy is a nickname for Mundungus Fletcher, and he materializes in front of Harry and his friends."
+    },
+    {
+      "name": "wisteria walk",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Wisteria Walk is mentioned as the location where Dementors were floating around."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "mundungus fletcher",
+      "relationship_type": "target_of_action",
+      "description": "The Ministry will kill Mundungus Fletcher, as stated by Mrs. Figg."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "affected_by",
+      "description": "Harry had to use magic to get rid of Dementors in Wisteria Walk."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as one of the top contenders in the tournament. He is described as being tied with Mr. Cedric Diggory for first place, with eighty-five points each."
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Cedric Diggory is mentioned as one of the top contenders in the tournament. He is described as being tied with Harry Potter for first place, with eighty-five points each."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is mentioned as being in second place, with eighty points."
+    },
+    {
+      "name": "fleur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Fleur Delacour is mentioned as being in third place."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the top contenders in the tournament. He is described as waving up at his friends and family in the stands."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as the person who gives the signal for Harry and Cedric to enter the maze."
+    },
+    {
+      "name": "hogwarts school",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts School is mentioned as the institution that Mr. Cedric Diggory and Harry Potter attend."
+    },
+    {
+      "name": "durmstrang institute",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Durmstrang Institute is mentioned as the institution that Viktor Krum attends."
+    },
+    {
+      "name": "beauxbatons academy",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Beauxbatons Academy is mentioned as the institution that Miss Fleur Delacour attends."
+    },
+    {
+      "name": "forbidden forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Forbidden Forest is mentioned as a location where birds are seen fluttering into the darkening sky."
+    },
+    {
+      "name": "maze",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The maze is mentioned as the location where Harry and Cedric enter to compete in the tournament."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "cedric diggory",
+      "relationship_type": "tied_for_first_place",
+      "description": "Harry Potter and Cedric Diggory are tied for first place, with eighty-five points each."
+    },
+    {
+      "entity_1": "viktor krum",
+      "entity_2": "harry potter",
+      "relationship_type": "behind_harry_potter",
+      "description": "Viktor Krum is behind Harry Potter in the standings, with eighty points."
+    },
+    {
+      "entity_1": "fleur delacour",
+      "entity_2": "viktor krum",
+      "relationship_type": "behind_viktor_krum",
+      "description": "Fleur Delacour is behind Viktor Krum in the standings."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bagman",
+      "relationship_type": "given_signal_by_bagman",
+      "description": "Bagman gives the signal for Harry Potter to enter the maze."
+    },
+    {
+      "entity_1": "cedric diggory",
+      "entity_2": "bagman",
+      "relationship_type": "given_signal_by_bagman",
+      "description": "Bagman also gives the signal for Cedric Diggory to enter the maze."
+    }
+  ]
+}

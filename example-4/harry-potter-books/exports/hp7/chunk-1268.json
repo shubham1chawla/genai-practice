@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is a location where the room has hidden objects."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is searching for an object in Gringotts."
+    },
+    {
+      "name": "stone bust of an old man wearing a wig and a tiara",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stone bust is an object that Harry is looking for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "searches_in",
+      "description": "Harry is searching in Gringotts for the stone bust of an old man wearing a wig and a tiara."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone bust of an old man wearing a wig and a tiara",
+      "relationship_type": "looking_for",
+      "description": "Harry is looking for the stone bust of an old man wearing a wig and a tiara in Gringotts."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as humming quietly and speaking to the Dursleys. He is also referred to as 'Professor' by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as saying 'I'm ready now' and being addressed by Dumbledore. His age is also discussed in the conversation."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are referred to as a family unit, with Aunt Petunia speaking on their behalf."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as speaking for the first time since Dumbledore's arrival and correcting Dumbledore about Harry's age."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as being a month older than Harry and not turning 18 until the year after next."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "addressed_by",
+      "description": "Harry addresses Dumbledore with 'Professor'."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dumbledore",
+      "relationship_type": "corrects",
+      "description": "Aunt Petunia corrects Dumbledore about Harry's age."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizarding world",
+      "relationship_type": "part_of",
+      "description": "Harry is part of the wizarding world, which comes of age at 17."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "aunt petunia",
+      "relationship_type": "speaks_to",
+      "description": "Dumbledore speaks to Aunt Petunia about Harry's age."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizarding world",
+      "relationship_type": "comes_of_age_at",
+      "description": "In the wizarding world, Harry comes of age at 17."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "xenophilius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Xenophilius is a character who is sobbing and begging not to harm Harry Potter. He claims that it really is Potter and asks the Death Eater not to hurt him."
+    },
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Potter is a character who is being referred to by Xenophilius as the person they are trying to protect. The Death Eater is skeptical of this claim."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of people who are trying to harm Xenophilius and Potter. They are led by Selwyn."
+    },
+    {
+      "name": "selwyn",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Selwyn is the leader of the Death Eaters. He is described as a wizard who is shouting at Xenophilius."
+    },
+    {
+      "name": "crumple",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Crumple is a location that the Death Eaters are trying to get proof about in order to return their girl."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "potter",
+      "relationship_type": "protects",
+      "description": "Xenophilius is protecting Potter and claims that it really is him."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "crumple",
+      "relationship_type": "trying_to_get_proof",
+      "description": "The Death Eaters are trying to get proof about Crumple in order to return their girl."
+    }
+  ]
+}

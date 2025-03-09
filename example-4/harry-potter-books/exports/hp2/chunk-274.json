@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry Potter'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as 'Ron'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as 'Hermione'."
+    },
+    {
+      "name": "the chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in the story, mentioned as 'THE CHAMBER OF SECRETS HAS BEEN OPENED.'"
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The caretaker's cat, mentioned as 'Mrs Norris'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "the chamber of secrets",
+      "relationship_type": "location_of",
+      "description": "Harry is aware that the Chamber of Secrets has been opened."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mrs norris",
+      "relationship_type": "action_performed_on",
+      "description": "Ron suggests getting out of the room where Mrs Norris is hanging."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mrs norris",
+      "relationship_type": "action_performed_on",
+      "description": "Harry wants to help Mrs Norris, but Ron advises against it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "advised",
+      "description": "Ron advises Harry not to try and help Mrs Norris."
+    }
+  ]
+}

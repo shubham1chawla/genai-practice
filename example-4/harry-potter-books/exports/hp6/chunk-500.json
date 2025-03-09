@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is a wizard."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard mentioned in the conversation between Harry and Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation_participant",
+      "description": "Harry is having a conversation with Dumbledore about Riddle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "riddle",
+      "relationship_type": "mentioned_in_conversation",
+      "description": "Riddle is mentioned in the conversation between Harry and Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "subject_of_observation",
+      "description": "Dumbledore had observed Riddle when he was young and felt that he should keep an eye on him."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "past_interaction",
+      "description": "Hagrid had previously told Harry that he was a wizard."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who is leaving Hogwarts. He is being asked by Professor McGonagall where he will go."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is mentioned as the one who is asking Dumbledore where he will go."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as someone who wishes Dumbledore had never been dislodged from Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who started the D.A. and caused trouble for Dumbledore."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who will be teaching Harry Occlumency."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mcgonagall",
+      "relationship_type": "question_answered",
+      "description": "McGonagall asks Dumbledore where he will go, and Dumbledore responds."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "wish_target",
+      "description": "Fudge wishes that Harry had never started the D.A. and caused trouble for Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "instruction_giver",
+      "description": "Dumbledore instructs Harry to study Occlumency with Snape."
+    }
+  ]
+}

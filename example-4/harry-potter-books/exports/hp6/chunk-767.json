@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "kreecher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is an elf who is being teased by Peeves. He is described as having a mistress and being a master, implying that he has some sort of authority or status."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who intervenes in the fight between Kreacher and Peeves. He knocks out half of Kreacher's teeth with his fist."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who is causing trouble in the room. He is described as 'happily' pelting bits of chalk at the elves and egging them on to fight."
+    },
+    {
+      "name": "mudbloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Mudbloods are a group of people who are described as being associated with Kreacher's master. The term is used in a derogatory way, implying that they are somehow inferior or impure."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is one of the students who intervenes in the fight between Kreacher and Peeves. He uses his wand to cast a spell on Peeves, causing him to clutch at his throat."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who intervenes in the fight between Kreacher and Peeves. He helps Harry to wrench the two elves apart."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "kreecher",
+      "relationship_type": "teasing",
+      "description": "Peeves is teasing Kreacher, pelting him with bits of chalk and egging him on to fight."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "kreecher",
+      "relationship_type": "defeated",
+      "description": "Dobby defeats Kreacher by knocking out half of his teeth with his fist."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "cast_spell",
+      "description": "Harry casts a spell on Peeves, causing him to clutch at his throat and leave the room."
+    }
+  ]
+}

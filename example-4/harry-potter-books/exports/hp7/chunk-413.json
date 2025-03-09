@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry Potter's best friends. He is mentioned as speaking in the conversation."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and a teacher at Hogwarts. He is mentioned as speaking in the conversation."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry Potter's best friends. She is mentioned as being glanced at by Ron."
+    },
+    {
+      "name": "squibs",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "People born to magical parents but have no magical powers themselves. They are mentioned in the conversation as an example."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "glanced_at",
+      "description": "Ron glanced at Hermione during their conversation."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "squibs",
+      "relationship_type": "related_to",
+      "description": "Lupin mentions that Squibs are an example of people who would not have magical powers if magic could be stolen."
+    }
+  ]
+}

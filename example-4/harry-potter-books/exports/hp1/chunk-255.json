@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is a teacher in Harry's classroom who has a turban and claims to have fought off a zombie."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus Finnigan is a student in Quirrell's class who asks about the zombie story"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student in Quirrell's class who finds out he's not behind everyone else in learning magic"
+    },
+    {
+      "name": "african prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An African prince gave Quirrell the turban as a thank-you for getting rid of a zombie"
+    },
+    {
+      "name": "zombie",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A zombie that Quirrell claims to have fought off and was given thanks by an African prince"
+    },
+    {
+      "name": "vampire",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A vampire from Romania that Quirrell is afraid will come back for him"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "quirrell",
+      "entity_2": "african prince",
+      "relationship_type": "gave_gift",
+      "description": "Quirrell received the turban from an African prince as a thank-you for getting rid of a zombie"
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "zombie",
+      "relationship_type": "defeated_monster",
+      "description": "Quirrell claims to have fought off and defeated the zombie"
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "vampire",
+      "relationship_type": "afraid_of_monster",
+      "description": "Quirrell is afraid that the vampire from Romania will come back for him"
+    }
+  ]
+}

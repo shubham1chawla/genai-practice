@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "kitchen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The kitchen is mentioned as a place where house-elves work."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "House-elves are mentioned as working in the kitchens and being looked after by Harry."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as giving instructions to Kreacher and making arrangements for Buckbeak."
+    },
+    {
+      "name": "Kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is a house-elf who is given instructions by Harry."
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the place where Kreacher will work in the kitchens."
+    },
+    {
+      "name": "Buckbeak",
+      "entity_type": "hippogriff",
+      "singular": true,
+      "description": "Buckbeak is a hippogriff who is looked after by Hagrid and later becomes Harry's responsibility."
+    },
+    {
+      "name": "Hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as looking after Buckbeak since Sirius died."
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as having died and leaving Hagrid to look after Buckbeak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Kreacher",
+      "relationship_type": "gives_instructions_to",
+      "description": "Harry gives instructions to Kreacher about working in the kitchens at Hogwarts."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Buckbeak",
+      "relationship_type": "takes_care_of",
+      "description": "Harry becomes responsible for taking care of Buckbeak."
+    },
+    {
+      "entity_1": "Hagrid",
+      "entity_2": "Buckbeak",
+      "relationship_type": "takes_care_of",
+      "description": "Hagrid looks after Buckbeak since Sirius died."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hogwarts",
+      "relationship_type": "works_at",
+      "description": "Kreacher will work in the kitchens at Hogwarts."
+    }
+  ]
+}

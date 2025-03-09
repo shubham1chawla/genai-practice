@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "bowtruckle",
+      "entity_type": "living_thing",
+      "singular": true,
+      "description": "A magical creature that is described as having long twiglike fingers. It is angry and flexing its fingers at Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to get to London without wands."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is dragging herself up and wondering how they will get to London."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who comes into sight with Ginny, Neville, and Luna behind him. He has a bleeding lip."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's sister who is hurrying along behind Ron. She has several long scratches on her cheek."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is hurrying along behind Ron. He has a large purple lump above his right eye."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is hurrying along behind Ron."
+    },
+    {
+      "name": "wands",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Magical objects that are needed to get to London."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bowtruckle",
+      "relationship_type": "is_confronted_by",
+      "description": "Harry is confronted by an angry bowtruckle."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "returns_harry's_wand",
+      "description": "Ron returns Harry's wand to him."
+    }
+  ]
+}

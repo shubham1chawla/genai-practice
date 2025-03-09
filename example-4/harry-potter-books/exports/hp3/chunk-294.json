@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, playing Quidditch."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A referee in the Quidditch game."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The coach of Harry's team."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A type of ball used in Quidditch that is thrown by the Beaters to try and hit players or the Quaffle."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ball used in Quidditch to score points."
+    },
+    {
+      "name": "broom",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A flying broomstick used by the players in Quidditch."
+    },
+    {
+      "name": "umbrella",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used to protect oneself from rain."
+    },
+    {
+      "name": "field",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The area where the Quidditch game is being played."
+    },
+    {
+      "name": "mud",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A substance found on the ground after heavy rain."
+    },
+    {
+      "name": "lightning",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A natural phenomenon that occurs during thunderstorms."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "almost_hit_by",
+      "description": "Harry came very close to being unseated by a Bludger."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wood",
+      "relationship_type": "coached_by",
+      "description": "Wood is the coach of Harry's team."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "harry",
+      "relationship_type": "called_time_out_for",
+      "description": "Madam Hooch called for a time-out in favor of Harry."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "team",
+      "relationship_type": "coached",
+      "description": "Wood is the coach of his team."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbrella",
+      "relationship_type": "under",
+      "description": "Harry huddled under a large umbrella with his team."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is being expelled by Professor McGonagall. He is described as saying 'We'll go and get our stuff' in a hopeless sort of voice."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who is expelling Ron. She is described as barking at Ron saying 'What are you talking about, Weasley?'"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who is not expelling Ron today. He is described as saying 'Not today, Mr Weasley' and 'It will be for Professor McGonagall to decide on these boys' punishments.'"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as looking unhappy when he hears that Ron and Harry are not being expelled. He is described as saying 'Professor Dumbledore, these boys have flouted the Decree for the Restriction of Underage Wizardry'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as looking quickly at Dumbledore when Ron says that they are being expelled. He is not described as doing anything else in this passage."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as the one to whom Dumbledore will be writing tonight. They are described as Ron's family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mcgonagall",
+      "relationship_type": "assigns_punishment",
+      "description": "Dumbledore assigns the punishment of Ron and Harry to Professor McGonagall saying 'It will be for Professor McGonagall to decide on these boys' punishments.'"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "weasley",
+      "relationship_type": "writes_letter",
+      "description": "Dumbledore writes a letter to the Weasley family tonight saying 'I must also warn you that if you do anything like this again, I will have no choice but to expel you.'"
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "ron",
+      "relationship_type": "expels",
+      "description": "Professor McGonagall is mentioned as the one who is expelling Ron saying 'What are you talking about, Weasley?'"
+    }
+  ]
+}

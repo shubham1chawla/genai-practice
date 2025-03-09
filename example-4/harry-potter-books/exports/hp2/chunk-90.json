@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young boy who has just learned about his wizarding world and its money."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": false,
+      "description": "A bank in the wizarding world where Harry's parents had left him a fortune. It is located in London."
+    },
+    {
+      "name": "london",
+      "entity_type": "city",
+      "singular": true,
+      "description": "The city where Gringotts bank is located."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "A type of currency used in the wizarding world."
+    },
+    {
+      "name": "sickles",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "A type of currency used in the wizarding world."
+    },
+    {
+      "name": "knuts",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "A type of currency used in the wizarding world."
+    },
+    {
+      "name": "muggle shops",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Stores that do not accept wizarding money."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Harry's Muggle relatives who are afraid of magic."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Ron and a kind person who is helping Harry."
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's father."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "has_account",
+      "description": "Harry has a bank account at Gringotts."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "arthur",
+      "relationship_type": "spouse",
+      "description": "Mrs Weasley is married to Arthur."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mrs weasley",
+      "relationship_type": "parent",
+      "description": "Ron's mother is Mrs Weasley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "relative",
+      "description": "Harry is related to the Dursleys."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "arthur",
+      "relationship_type": "parent",
+      "description": "Ron's father is Arthur."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs weasley",
+      "relationship_type": "friend",
+      "description": "Harry is friends with Mrs Weasley."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend",
+      "description": "Ron and Harry are friends."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron",
+      "relationship_type": "parent",
+      "description": "Mrs Weasley is Ron's mother."
+    }
+  ]
+}

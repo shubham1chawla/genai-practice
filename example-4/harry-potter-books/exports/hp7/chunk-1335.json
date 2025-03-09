@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the Weasleys who died for Harry."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are mentioned as a family that Harry cannot bear to join."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as someone who has died."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is mentioned as someone who has died."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and narrator of the story."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape's last thoughts are mentioned as being in a crystal flask."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts and someone Harry yearns to see."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "weasleys",
+      "relationship_type": "cannot_join",
+      "description": "Harry cannot bear to join the Weasleys."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "caused_death",
+      "description": "If Harry had given himself up, Fred might never have died."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "died_with",
+      "description": "Lupin is mentioned as someone who has died."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tonks",
+      "relationship_type": "died_with",
+      "description": "Tonks is mentioned as someone who has died."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "possesses_last_thoughts",
+      "description": "Snape's last thoughts are in a crystal flask that Harry clutches."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "yearns_to_see",
+      "description": "Harry yearns to see Dumbledore."
+    }
+  ]
+}

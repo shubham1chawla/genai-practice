@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, who is being threatened by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, who is trying to intimidate Harry."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, who are laughing at Harry's refusal."
+    },
+    {
+      "name": "cruciatus curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A curse that has left Harry with aches all over his body."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Voldemort is threatening Harry with pain and death."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "follows",
+      "description": "The Death Eaters are followers of Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cruciatus curse",
+      "relationship_type": "affected_by",
+      "description": "Harry has been affected by the Cruciatus Curse, which has left him with aches all over his body."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "intimidates",
+      "description": "Voldemort is trying to intimidate Harry."
+    }
+  ]
+}

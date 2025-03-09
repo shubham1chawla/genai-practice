@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "he",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is able to recall the dead using a magical stone. (\"Here he took out the stone... and he turned it thrice in his hand.\")"
+    },
+    {
+      "name": "the girl",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who died untimely and was recalled by the protagonist using the magical stone. (\"the ﬁgure of the girl... appeared at once before him.\")"
+    },
+    {
+      "name": "Death",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A personification of death, who takes souls to the afterlife. (\"And so Death took the second brother for his own.\")"
+    },
+    {
+      "name": "the second brother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the protagonist's brothers, who killed himself in hope of joining the girl in death. (\"Finally the second brother... killed himself so as truly to join her.\")"
+    },
+    {
+      "name": "the third brother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The youngest of the protagonist's brothers, who eventually gave up his Cloak of Invisibility and went with Death. (\"It was only when he attained a great age... that the youngest brother ﬁnally took oﬀ the Cloak of Invisibility.\")"
+    },
+    {
+      "name": "Xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The owner of the book being read by Hermione. (\"Hermione closed the book... It was a moment or two before Xenophilius seemed to realize that she\")"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person reading the book owned by Xenophilius. (\"Hermione closed the book.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "he",
+      "entity_2": "the girl",
+      "relationship_type": "recall",
+      "description": "The protagonist was able to recall the dead girl using a magical stone. (\"To his amazement and his delight, the ﬁgure of the girl... appeared at once before him.\")"
+    },
+    {
+      "entity_1": "Death",
+      "entity_2": "the second brother",
+      "relationship_type": "take",
+      "description": "Death took the second brother for his own. (\"And so Death took the second brother for his own.\")"
+    },
+    {
+      "entity_1": "Death",
+      "entity_2": "the third brother",
+      "relationship_type": "search_for",
+      "description": "Death searched for the third brother for many years, but was never able to find him. (\"But though Death searched for the third brother... he was never able to ﬁnd him.\")"
+    },
+    {
+      "entity_1": "the youngest brother",
+      "entity_2": "his son",
+      "relationship_type": "give",
+      "description": "The youngest brother gave his Cloak of Invisibility to his son. (\"And then he greeted Death as an old friend, and went with him gladly, and, equals, they departed this life.\")"
+    },
+    {
+      "entity_1": "the third brother",
+      "entity_2": "Death",
+      "relationship_type": "go_with",
+      "description": "The youngest brother eventually gave up his Cloak of Invisibility and went with Death. (\"And then he greeted Death as an old friend, and went with him gladly.\")"
+    }
+  ]
+}

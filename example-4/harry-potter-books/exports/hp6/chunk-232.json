@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as having a shrivelled-up arm."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is mentioned as possibly having another broken object."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one asking questions and making observations."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "has_object",
+      "description": "Malfoy wants both objects, suggesting Borgin has another one of the broken objects."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "questions_person",
+      "description": "Harry is asking questions about Malfoy's intentions and actions."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "borgin",
+      "relationship_type": "none",
+      "description": "Ron is trying to scrape dirt off his broom handle, but there is no direct relationship with Borgin."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "they",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The subject of the sentence, watching something."
+    },
+    {
+      "name": "mouths",
+      "entity_type": "body_part",
+      "singular": false,
+      "description": "The body parts that are open."
+    },
+    {
+      "name": "head",
+      "entity_type": "anatomical_structure",
+      "singular": true,
+      "description": "A part of the human body that is swelling."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "they",
+      "entity_2": "mouths",
+      "relationship_type": "has_open_mouth",
+      "description": "Their mouths are open as they watch something."
+    },
+    {
+      "entity_1": "head",
+      "entity_2": "they",
+      "relationship_type": "belongs_to",
+      "description": "The head belongs to them."
+    }
+  ]
+}

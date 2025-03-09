@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor is mentioned as a group of people who have arrived at the hideout. The text states that it was originally smaller and only had Gryffindor hangings."
+    },
+    {
+      "name": "d.a.",
+      "entity_type": "group",
+      "singular": false,
+      "description": "D.A. (Death Eaters) is mentioned as a group of people who have arrived at the hideout. The text states that it has expanded as more and more of the D.A. have arrived."
+    },
+    {
+      "name": "carrows",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Carrows are mentioned as a group of people who cannot get into the hideout. The text states that Harry is looking around for the door to prevent them from getting in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "d.a.",
+      "relationship_type": "has_expanded_to_include",
+      "description": "The hideout has expanded as more and more of the D.A. have arrived, but it originally had Gryffindor hangings."
+    },
+    {
+      "entity_1": "carrows",
+      "entity_2": "hideout",
+      "relationship_type": "cannot_get_in",
+      "description": "Carrows cannot get into the hideout."
+    }
+  ]
+}

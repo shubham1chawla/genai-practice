@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' throughout the text. (Excerpt: 'H ARRY POTTER', 'All right there, Harry?')"
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of the game plan with Harry and Wood's. (Excerpt: 'Wood had said')"
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who scored a goal in the game. (Excerpt: 'When Angelina had scored')"
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Weasley brother who is chasing after a Bludger. (Excerpt: 'Fred Weasley came chasing after it')"
+    },
+    {
+      "name": "marcus flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin player who is being targeted by the Bludger. (Excerpt: 'beat the Bludger furiously towards Marcus Flint')"
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who is commentating on the game. (Excerpt: 'Lee Jordan was saying')"
+    },
+    {
+      "name": "adrian pucey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin player who drops the ball. (Excerpt: 'Adrian Pucey dropped the')"
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that Harry and Wood's are trying to catch. (Excerpt: 'for some sign of the Snitch', 'was that the Snitch?')"
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A ball-like object that is being used in the game. (Excerpt: 'a Bludger decided to come pelting his way')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for the Snitch in the game. (Excerpt: 'Once he caught sight of a flash of gold but it was just a reflection from one of the Weasleys' wristwatches, and once a Bludger decided to come pelting his way')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "dodging",
+      "description": "Harry is dodging a Bludger in the game. (Excerpt: 'but Harry dodged it and Fred Weasley came chasing after it')"
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "bludger",
+      "relationship_type": "chasing_after",
+      "description": "Fred Weasley is chasing after a Bludger in the game. (Excerpt: 'but Harry dodged it and Fred Weasley came chasing after it')"
+    },
+    {
+      "entity_1": "lee jordan",
+      "entity_2": "adrian pucey",
+      "relationship_type": "commenting_on",
+      "description": "Lee Jordan is commenting on Adrian Pucey's actions in the game. (Excerpt: 'Lee Jordan was saying. 'Chaser Pucey ducks two Bludgers, two Weasleys and Chaser Bell and speeds towards the – wait a moment – was that the Snitch?')"
+    },
+    {
+      "entity_1": "adrian pucey",
+      "entity_2": "snitch",
+      "relationship_type": "dropping_ball_near",
+      "description": "Adrian Pucey is dropping the ball near the Snitch. (Excerpt: 'A murmur ran through the crowd as Adrian Pucey dropped the')"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'I' and 'me'. He is evacuating from Hogsmeade with Ron and Hermione."
+    },
+    {
+      "name": "potter",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A pub where Harry has had hundreds of kids running through it. It is also referred to as 'my pub' by Aberforth."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, who is attacking because Harry hasn't been handed over to him."
+    },
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth Dumbledore, the brother of Albus Dumbledore. He is mentioned as saying that keeping Slytherins hostage would have been a good idea."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where Harry and his friends are evacuating from."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "A house at Hogwarts School of Witchcraft and Wizardry. Aberforth suggests keeping some Slytherins hostage."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": true,
+      "description": "A group of followers of Voldemort. Harry's friends have sent some Death Eaters to safety."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape, a teacher at Hogwarts School of Witchcraft and Wizardry. Dumbledore defended him for so long."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore, the headmaster of Hogwarts School of Witchcraft and Wizardry. Harry thinks that he would never have held students hostage."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends, who is evacuating with him and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends, who is evacuating with him and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aberforth",
+      "entity_2": "harry",
+      "relationship_type": "suggested_action",
+      "description": "Aberforth suggests that keeping some Slytherins hostage would have been a good idea, but Harry disagrees."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "attacker_target",
+      "description": "Voldemort is attacking because he wants to capture Harry."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "potter",
+      "relationship_type": "owner",
+      "description": "Aberforth refers to Potter as 'my pub'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "comparative",
+      "description": "Harry thinks that Dumbledore would never have held students hostage, unlike Aberforth."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Ron and Hermione are evacuating together with Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target",
+      "description": "Voldemort is attacking because he wants to capture Harry."
+    }
+  ]
+}

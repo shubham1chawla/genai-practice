@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is having a nightmare about Voldemort. (Excerpt: 'Harry kept waking in the night...')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, who is mentioned as being remembered by Harry. (Excerpt: 'remembering his livid face, his wide, mad eyes ...')"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is teasing him about not having any birthday cards. (Excerpt: 'I know what day it is,' sang Dudley...)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "remembers",
+      "description": "Harry remembers Voldemort's face and eyes, indicating that he has a traumatic experience with him. (Excerpt: 'remembering his livid face, his wide, mad eyes ...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "cousin",
+      "description": "Harry and Dudley are cousins, as indicated by the text. (Excerpt: 'Dudley... your cousin')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_experience_with",
+      "description": "Harry has a traumatic experience with Voldemort, which is hinted at in the story. (Excerpt: 'weeks later, Harry kept waking in the night...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "is_teased_by",
+      "description": "Dudley teases Harry about not having any birthday cards, indicating that he is bullying him. (Excerpt: 'Haven't you even got friends at that freak place?')"
+    }
+  ]
+}

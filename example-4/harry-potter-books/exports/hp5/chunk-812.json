@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the characters in the story who is debating whether to use a Skiving Snackbox to get out of flying. He mentions that he offered to sell Puking Pastilles to someone, implying that he has some knowledge about these products."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is another character in the story who is debating with Fred whether to use a Skiving Snackbox. He suggests using Fever Fudge, which no one has seen yet."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a character in the story who is hoping that the Fever Fudge will work. He asks Fred if it does, implying that he is interested in using it to get out of flying."
+    },
+    {
+      "name": "skiving snackbox",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Skiving Snackbox is a device that can be used to get out of flying. Fred and George are debating whether to use one of their own."
+    },
+    {
+      "name": "puking pastilles",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Puking Pastilles are a product that Fred mentions he offered to sell to someone. They seem to be some kind of medicine or potion."
+    },
+    {
+      "name": "fever fudge",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Fever Fudge is another product that George suggests using. It seems to have a similar effect to the Skiving Snackbox, but no one has seen it yet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "puking pastilles",
+      "relationship_type": "sold",
+      "description": "Fred offered to sell Puking Pastilles to someone, implying that he has some knowledge about these products."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "fever fudge",
+      "relationship_type": "suggested_using",
+      "description": "George suggests using Fever Fudge to get out of flying."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fever fudge",
+      "relationship_type": "interested_in_using",
+      "description": "Ron is hoping that the Fever Fudge will work, implying that he is interested in using it to get out of flying."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "skiving snackbox",
+      "relationship_type": "debating_using",
+      "description": "Fred and George are debating whether to use one of their own Skiving Snackboxes to get out of flying."
+    }
+  ]
+}

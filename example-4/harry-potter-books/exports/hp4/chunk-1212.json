@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, who is participating in a maze competition."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A competitor in the maze competition, who is also a friend of Harry's."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The person responsible for blowing the whistle to signal the start of the competition."
+    },
+    {
+      "name": "krum",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A competitor in the maze competition."
+    },
+    {
+      "name": "maze",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where the competition is taking place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "friendship",
+      "description": "Harry and Cedric are friends, as indicated by their conversation in the maze."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bagman",
+      "relationship_type": "competitor",
+      "description": "Harry is competing against Bagman in the maze competition."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "krum",
+      "relationship_type": "competitor",
+      "description": "Harry is competing against Krum in the maze competition."
+    }
+  ]
+}

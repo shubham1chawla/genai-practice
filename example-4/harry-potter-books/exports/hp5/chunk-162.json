@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "grimmald place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location mentioned in the text as 'NUMBER  TWELVE, GRIMMAULD PLACE'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as hearing whispers and moving towards the front door."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Harry's group, mentioned as whispering to Harry and hoisting the Extendable Ear back up again."
+    },
+    {
+      "name": "extendable ear",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Fred to listen in on conversations."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Harry's group, mentioned as telling Harry that Snape never eats here."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned by Ron as not eating at the location."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Harry's group, mentioned as whispering to Harry and reminding him to keep his voice down in the hall."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being at the front door with Mrs. Weasley and Tonks."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as lying flat on the floor after causing a crash."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being at the front door with Lupin and Tonks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Fred, as they are moving together towards the front door."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snape",
+      "relationship_type": "mentioned_together",
+      "description": "Ron and Snape are mentioned together in the same sentence."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "associated_with",
+      "description": "Hermione is associated with Harry, as they are moving together towards the front door."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "tonks",
+      "relationship_type": "present_together",
+      "description": "Lupin and Tonks are present together at the front door."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "tonks",
+      "relationship_type": "caused_crash_with",
+      "description": "Mrs. Weasley is caused a crash with Tonks, as Tonks was lying flat on the floor after causing a crash."
+    }
+  ]
+}

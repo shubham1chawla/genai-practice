@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a wizard who split his soul into multiple Horcruxes. The text states that no book would have given him the information on how to do this."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore received proof that Voldemort had split his soul and is mentioned as having handed Harry a diary that contained instructions on how to reopen the Chamber of Secrets."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having given Dumbledore the diary that contained the instructions on how to reopen the Chamber of Secrets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "has_horcruxes",
+      "description": "Voldemort split his soul into multiple Horcruxes."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "proof",
+      "relationship_type": "received_proof",
+      "description": "Dumbledore received proof that Voldemort had split his soul."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "diary",
+      "relationship_type": "handed_diary",
+      "description": "Dumbledore handed Harry the diary that contained instructions on how to reopen the Chamber of Secrets."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "riddle's diary",
+      "relationship_type": "created_diary",
+      "description": "Voldemort created Riddle's diary, which contained instructions on how to reopen the Chamber of Secrets."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as giving a look to the class and speaking to them. He is described as smirking a little."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor house is mentioned as losing ten points due to Ronald Weasley's actions."
+    },
+    {
+      "name": "ronald weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ronald Weasley is mentioned as being the one who lost points for Gryffindor and is described as solid but unable to Apparate."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as opening his mouth furiously in response to Snape's comment."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as whispering to Harry and grabbing his arm."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender is mentioned as catching up with Ron at the end of the lesson."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "penalty",
+      "description": "Snape deducts ten points from Gryffindor house."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ronald weasley",
+      "relationship_type": "teaching",
+      "description": "Snape is teaching the class and comments on Ronald Weasley's inability to Apparate."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Hermione advises Harry not to respond to Snape's comment."
+    }
+  ]
+}

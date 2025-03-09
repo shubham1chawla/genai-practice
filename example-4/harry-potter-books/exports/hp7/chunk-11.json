@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person Voldemort is planning to kill. He is referred to as 'Potter'."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A follower of Voldemort who is scolded for not keeping the prisoner quiet."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character and leader of the followers. He is planning to kill Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "scolded_by",
+      "description": "Voldemort scolds Wormtail for not keeping the prisoner quiet."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "planning_to_kill",
+      "description": "Voldemort is planning to kill Harry Potter."
+    }
+  ]
+}

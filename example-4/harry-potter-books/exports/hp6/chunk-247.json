@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as 'Harry' throughout the text."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard who sold wands, mentioned as one of the last ones ever sold."
+    },
+    {
+      "name": "trevor",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is being called back by another character."
+    },
+    {
+      "name": "luna",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is asking Harry about DA meetings and mentions enjoying them as a way to have friends."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who was removed by Harry, mentioned as the reason for not having DA meetings anymore."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who bumped his head against a seat and looked disappointed about the end of DA meetings."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ollivander",
+      "relationship_type": "sold_wands_to",
+      "description": "Harry is not directly related to Ollivander, but it's mentioned that one of the last wands ever sold by Ollivander was shown to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "trevor",
+      "relationship_type": "called_back",
+      "description": "Harry is calling back Trevor, who had dived under a seat to retrieve his toad."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "harry",
+      "relationship_type": "asked_question_to",
+      "description": "Luna is asking Harry about DA meetings."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "removed",
+      "description": "Harry removed Umbridge, which is mentioned as the reason for not having DA meetings anymore."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "neville",
+      "relationship_type": "spoke_to",
+      "description": "Luna spoke to Neville when he bumped his head against a seat."
+    }
+  ]
+}

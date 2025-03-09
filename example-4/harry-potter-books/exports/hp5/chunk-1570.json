@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "jupiter",
+      "entity_type": "celestial_body",
+      "singular": true,
+      "description": "Jupiter is mentioned as a celestial body that has moons. The text states that Harry was not convinced he got the names of all of Jupiter's moons right."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who took the Astronomy theory exam and Divination exam. He is described as being confident about some aspects of the exams but struggling with others."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who also took the exams. He is gloomy about their performance in Divination."
+    },
+    {
+      "name": "professor marchbanks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Marchbanks is a teacher of Divination. Harry has a vision that Professor Marchbanks will meet a round, dark, soggy stranger."
+    },
+    {
+      "name": "marchbanks",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Marchbanks is another name for the person mentioned as Professor Marchbanks"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "jupiter",
+      "relationship_type": "has_moons",
+      "description": "Harry was not convinced he got the names of all of Jupiter's moons right."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor marchbanks",
+      "relationship_type": "will_meet",
+      "description": "Harry has a vision that Professor Marchbanks will meet a round, dark, soggy stranger."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is watching Hermione and talking to Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is helping Harry with a potion. She is reading about Chameleon Ghouls."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student and friend of Harry's. He is listening to Harry talk about Dobby."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who visited Harry in the middle of the night. He told Harry that the Chamber of Secrets has been opened before."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as someone who might have opened the Chamber of Secrets when he was at school."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as someone who might be told by his father how to open the Chamber of Secrets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "visited_by",
+      "description": "Dobby visited Harry in the middle of the night."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "chameleon ghouls",
+      "relationship_type": "read_about",
+      "description": "Hermione has read about Chameleon Ghouls and thinks they might be able to disguise themselves or make themselves invisible."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "listened_to",
+      "description": "Ron listened to Harry talk about Dobby."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "opened",
+      "description": "Lucius Malfoy might have opened the Chamber of Secrets when he was at school."
+    }
+  ]
+}

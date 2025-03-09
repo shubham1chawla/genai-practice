@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "whirlpool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A long, black pole began to rise slowly out of the heart of the whirlpool."
+    },
+    {
+      "name": "mast",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry saw the rigging and exclaimed, \"It's a mast!\""
+    },
+    {
+      "name": "ship",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The ship rose out of the water, gleaming in the moonlight."
+    },
+    {
+      "name": "portholes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Dim, misty lights were shimmering at its portholes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "whirlpool",
+      "entity_2": "mast",
+      "relationship_type": "contains",
+      "description": "A long, black pole began to rise slowly out of the heart of the whirlpool. an d then Harry saw the rigging."
+    },
+    {
+      "entity_1": "ship",
+      "entity_2": "portholes",
+      "relationship_type": "has",
+      "description": "Dim, misty lights were shimmering at its portholes."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaw",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students at Hogwarts who are known for their intelligence and wisdom. They froze in response to the rap on the door."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts. He heard the soft, musical voice from the eagle door knocker."
+    },
+    {
+      "name": "eagle door knocker",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A door knocker in the shape of an eagle that issued the soft, musical voice asking about Vanished objects."
+    },
+    {
+      "name": "vanished objects",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Objects that have disappeared or gone missing. The eagle door knocker asked where they go."
+    },
+    {
+      "name": "amycus carrow",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Carrow siblings who is an unkind and uncouth person. He snarled at Harry Potter."
+    },
+    {
+      "name": "alecto carrow",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other Carrow sibling who is mentioned as being possibly involved in a situation with Harry Potter."
+    },
+    {
+      "name": "malfoys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family of wizards that are known to be evil. Amycus threatened Harry Potter by mentioning them."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is mentioned in the context of 'The Sacking'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "amycus carrow",
+      "entity_2": "harry potter",
+      "relationship_type": "threat",
+      "description": "Amycus threatened Harry Potter by mentioning the Malfoys."
+    },
+    {
+      "entity_1": "alecto carrow",
+      "entity_2": "harry potter",
+      "relationship_type": "involvement",
+      "description": "Alecto is possibly involved in a situation with Harry Potter, as Amycus asked if she had him."
+    },
+    {
+      "entity_1": "amycus carrow",
+      "entity_2": "eagle door knocker",
+      "relationship_type": "interaction",
+      "description": "Amycus interacted with the eagle door knocker by asking it to open the door."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ravenclaw",
+      "relationship_type": "association",
+      "description": "Harry Potter is associated with the Ravenclaws, as they were whispering amongst themselves in response to the situation."
+    }
+  ]
+}

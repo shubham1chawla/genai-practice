@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the one who presented a battle helmet to Karkus and had conversations with him."
+    },
+    {
+      "name": "karkus",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Karkus is a giant who was presented with a battle helmet by Hagrid and showed interest in Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person mentioned as having argued against the killing of giants."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Hagrid's companions who asked about what happened to Karkus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "karkus",
+      "relationship_type": "presented_battle_helmet_to",
+      "description": "Hagrid presented a battle helmet to Karkus."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "dumbledore",
+      "relationship_type": "interested_in",
+      "description": "Karkus showed interest in what Dumbledore had to say."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "spoke_to",
+      "description": "Hagrid spoke to Ron about what happened to Karkus."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "giants",
+      "relationship_type": "fights_with",
+      "description": "Karkus fights with other giants."
+    }
+  ]
+}

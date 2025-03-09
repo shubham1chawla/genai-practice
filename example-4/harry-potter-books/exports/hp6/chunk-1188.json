@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being present with Dumbledore when he left the school the night he died."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A great wizard and the headmaster of Hogwarts School, who has passed away."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic, who is trying to console Harry about Dumbledore's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "was_with",
+      "description": "Harry was with Dumbledore when he left the school the night he died, as mentioned by Scrimgeour."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry potter",
+      "relationship_type": "is_consoling",
+      "description": "Scrimgeour is trying to console Harry about Dumbledore's death."
+    }
+  ]
+}

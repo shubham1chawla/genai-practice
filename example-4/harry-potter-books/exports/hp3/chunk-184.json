@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "omen",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "An omen is mentioned as the cause of death in the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is still alive and has not seen an omen."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who has seen an omen in a cup and is confident about it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is skeptical about Divination and thinks it's woolly."
+    },
+    {
+      "name": "grim",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The Grim is an omen that Ron saw in a cup."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a person who said Hermione didn't have the right aura."
+    },
+    {
+      "name": "divination",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Divination is a subject that Hermione thinks is woolly and full of guesswork."
+    },
+    {
+      "name": "arithmancy book",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Hermione's new Arithmancy book is mentioned in the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "grim",
+      "relationship_type": "saw",
+      "description": "Ron saw the Grim in a cup."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor trelawney",
+      "relationship_type": "disagreed_with",
+      "description": "Hermione disagreed with Professor Trelawney's statement about her aura."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "omen",
+      "relationship_type": "avoided",
+      "description": "Harry avoided seeing an omen."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "divination",
+      "relationship_type": "skeptical_of",
+      "description": "Hermione is skeptical about Divination."
+    }
+  ]
+}

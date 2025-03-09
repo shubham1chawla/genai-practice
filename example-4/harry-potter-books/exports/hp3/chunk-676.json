@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "walden macnair",
+      "entity_type": "executioner",
+      "singular": true,
+      "description": "appointed executioner by the Committee"
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "bird",
+      "singular": true,
+      "description": "the bird sentenced to execution"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "Hagrid signs a document and wants to be with Buckbeak during the execution"
+    },
+    {
+      "name": "committee",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "the organization that appointed Walden Macnair as an executioner"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "walden macnair",
+      "entity_2": "buckbeak",
+      "relationship_type": "appointed_to_execute",
+      "description": "Walden Macnair is appointed to execute Buckbeak"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "committee",
+      "relationship_type": "member_of",
+      "description": "Hagrid is a member of the Committee"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "buckbeak",
+      "relationship_type": "concerned_for",
+      "description": "Hagrid is concerned for Buckbeak's well-being"
+    }
+  ]
+}

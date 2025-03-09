@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the students who are part of a group being paired by Lockhart."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the students who are part of a group being paired by Lockhart."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is introduced as a teacher who is demonstrating a Disarming Charm."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher who is looking murderous and is asked to help Lockhart pair the students."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is paired with Justin Finch-Fletchley by Lockhart."
+    },
+    {
+      "name": "justin finch-fletchley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Justin Finch-Fletchley is mentioned as one of the students who are being paired by Lockhart."
+    },
+    {
+      "name": "miss brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Brown is mentioned as a teacher who helps Lockhart with his wand."
+    },
+    {
+      "name": "the duelling club 143",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Duelling Club 143 is mentioned as the context in which the events are taking place."
+    },
+    {
+      "name": "harry and ron",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry and Ron are mentioned together as a group being paired by Lockhart."
+    },
+    {
+      "name": "the crowd",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The crowd is mentioned as the context in which Lockhart and Snape move through to pair the students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "snape",
+      "relationship_type": "helped_by",
+      "description": "Lockhart asks Snape for help in pairing the students."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry and ron",
+      "relationship_type": "paired_with",
+      "description": "Lockhart pairs Harry and Ron together."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry and ron",
+      "relationship_type": "reached_before",
+      "description": "Snape reaches Harry and Ron before Lockhart can pair them."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "neville",
+      "relationship_type": "paired_with",
+      "description": "Lockhart pairs Neville with Justin Finch-Fletchley."
+    },
+    {
+      "entity_1": "miss brown",
+      "entity_2": "lockhart",
+      "relationship_type": "helped",
+      "description": "Miss Brown helps Lockhart by returning his wand."
+    }
+  ]
+}

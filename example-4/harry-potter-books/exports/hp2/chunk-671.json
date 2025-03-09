@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is described as thinking hard and coming up with a plan to give back the diary to Mr. Malfoy."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is being tortured by Lucius Malfoy. Harry can hear Dobby's squeals of pain as he runs down the corridor."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is calm and advises Harry to hurry."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is being given the diary by Harry. He is described as ripping off the sock and throwing it aside."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Malfoy's father, who is torturing Dobby. Harry gives the diary to Lucius Malfoy by forcing a smelly sock into his hand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "asked_for_advice",
+      "description": "Harry asks Professor Dumbledore for permission to give the diary back to Mr. Malfoy."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr malfoy",
+      "relationship_type": "gave_diary_to",
+      "description": "Harry gives the diary to Mr. Malfoy by forcing a smelly sock into his hand."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "gave_diary_to",
+      "description": "Harry gives the diary to Lucius Malfoy by forcing a smelly sock into his hand."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "being_tortured_by",
+      "description": "Dobby is being tortured by Lucius Malfoy."
+    }
+  ]
+}

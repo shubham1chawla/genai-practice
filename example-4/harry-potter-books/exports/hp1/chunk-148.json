@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as someone who is wishing to say something more interesting."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, standing in front of Harry and pointing at ice-creams."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school where Hagrid works, mentioned by Harry as a place of work for Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "knows",
+      "description": "Harry knows Hagrid, as he mentions that Hagrid is the gamekeeper at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "works_at",
+      "description": "Hogwarts is where Harry's friend works, mentioned by Harry when introducing Hagrid."
+    }
+  ]
+}

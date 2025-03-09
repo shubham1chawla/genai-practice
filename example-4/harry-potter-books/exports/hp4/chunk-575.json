@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "zoo",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the wand weighing is taking place. (Excerpt: 'across the room to her all lesson')"
+    },
+    {
+      "name": "wands",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The objects being weighed. (Excerpt: 'the weighing of the wands')"
+    },
+    {
+      "name": "board dusters",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects that are attracted to Harry. (Excerpt: 'weird magnet for board dusters')"
+    },
+    {
+      "name": "wastepaper baskets",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects that are attracted to Harry. (Excerpt: 'weird magnet for board dusters')"
+    },
+    {
+      "name": "lunascopes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects that are attracted to Harry. (Excerpt: 'weird magnet for board dusters')"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. (Excerpt: 'You just weren’t concentrating properly —‘ said Harry darkly)"
+    },
+    {
+      "name": "Cedric Diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is walking past Harry. (Excerpt: 'Cedric Diggory walked past, surrounded by a large group of simpering girls')"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is sitting next to Harry in class. (Excerpt: 'Hermione sittin g next to him intoning ‘ignore’)"
+    },
+    {
+      "name": "Snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Potions master who is making the experience of Double Potions unpleasant for Harry. (Excerpt: 'Being shut in a dungeon for an hour and a half with Snape')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "board dusters",
+      "relationship_type": "attracted_to",
+      "description": "Harry is attracted to board dusters. (Excerpt: 'weird magnet for board dusters, wastepaper baskets, and lunascopes')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "wastepaper baskets",
+      "relationship_type": "attracted_to",
+      "description": "Harry is attracted to wastepaper baskets. (Excerpt: 'weird magnet for board dusters, wastepaper baskets, and lunascopes')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "lunascopes",
+      "relationship_type": "attracted_to",
+      "description": "Harry is attracted to lunascopes. (Excerpt: 'weird magnet for board dusters, wastepaper baskets, and lunascopes')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Snape",
+      "relationship_type": "opponent",
+      "description": "Harry has a difficult relationship with Snape in the context of Double Potions. (Excerpt: 'Being shut in a dungeon for an hour and a half with Snape')"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Harry",
+      "relationship_type": "acquaintance",
+      "description": "Hermione is sitting next to Harry in class, indicating they are acquaintances. (Excerpt: 'Hermione sittin g next to him intoning ‘ignore’)"
+    }
+  ]
+}

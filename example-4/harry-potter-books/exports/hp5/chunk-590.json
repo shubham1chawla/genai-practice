@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "detention",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Detention is mentioned as an event that Umbridge has with Dolores."
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores Umbridge is the one who is giving detention to Potter. She is described as having a soft voice and stretching out her short be-ringed fingers for his arm."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is the one receiving detention from Umbridge. He has a scar on his forehead."
+    },
+    {
+      "name": "scar",
+      "entity_type": "physical characteristic",
+      "singular": true,
+      "description": "The scar on Potter's forehead is mentioned as being painful when touched by Umbridge."
+    },
+    {
+      "name": "school bag",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Potter coughs up his school bag and leaves the room quickly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "detention",
+      "relationship_type": "is receiving",
+      "description": "Potter is receiving detention from Umbridge."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "potter",
+      "relationship_type": "is giving",
+      "description": "Umbridge is giving detention to Potter."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "scar",
+      "relationship_type": "has touched",
+      "description": "Umbridge has touched the scar on Potter's forehead."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "school bag",
+      "relationship_type": "is carrying",
+      "description": "Potter is carrying his school bag."
+    }
+  ]
+}

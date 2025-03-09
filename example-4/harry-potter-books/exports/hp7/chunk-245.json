@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is the one who leaned forward and passed the Deluminator to Ron. He is described as watching Ron."
+    },
+    {
+      "name": "deluminator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Deluminator is a valuable object that Dumbledore designed. It has the power to suck all light from a place and restore it with a simple click."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron took the Deluminator and turned it over in his fingers, looking stunned."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who designed the Deluminator. He remembered Ron in his will."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is Ron's father."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "deluminator",
+      "relationship_type": "passed_to",
+      "description": "Scrimgeour passed the Deluminator to Ron."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "deluminator",
+      "relationship_type": "designed",
+      "description": "Dumbledore designed the Deluminator."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "deluminator",
+      "relationship_type": "possesses",
+      "description": "Ron took possession of the Deluminator."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ron",
+      "relationship_type": "remembered_in_will",
+      "description": "Dumbledore remembered Ron in his will."
+    }
+  ]
+}

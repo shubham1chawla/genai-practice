@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to remain hidden."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is suspicious and malevolent."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who looks livid and is standing beside Filch."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A poltergeist who threw an egg down the stairs."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry is wearing to remain hidden."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An egg thrown down the stairs by Peeves."
+    },
+    {
+      "name": "map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A map that Harry is trying to keep hidden."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wears",
+      "description": "Harry is wearing the Invisibility Cloak to remain hidden."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "egg",
+      "relationship_type": "found",
+      "description": "Filch found the egg thrown down the stairs by Peeves."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "sees",
+      "description": "Snape sees Harry, who is trying to remain hidden."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "egg",
+      "relationship_type": "threw",
+      "description": "Peeves threw the egg down the stairs."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "snape",
+      "relationship_type": "tells",
+      "description": "Filch tells Snape about Peeves throwing the egg."
+    }
+  ]
+}

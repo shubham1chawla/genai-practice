@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is present in the scene and has a conversation with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present in the scene and has a conversation with Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is present in the scene and has a conversation with Harry."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Felix Felicis is a substance that Hermione recognizes as having a good effect."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is an object that Harry uses to become invisible."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry and Ron have a conversation about burying a giant spider."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry and Hermione have a conversation about Felix Felicis."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "trusts",
+      "description": "Ron trusts Harry's decision to use the Invisibility Cloak."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "is_alarmed_by",
+      "description": "Hermione is alarmed by Harry's decision to use the Invisibility Cloak."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "uses",
+      "description": "Harry uses the Invisibility Cloak to become invisible."
+    }
+  ]
+}

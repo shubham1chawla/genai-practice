@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "knight bus",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The Knight Bus is a magical vehicle that nearly ran over the narrator."
+    },
+    {
+      "name": "grim",
+      "entity_type": "beast",
+      "singular": true,
+      "description": "The Grim is a creature that the narrator fears will haunt him until he dies."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Dementors are horrible creatures that suck happiness from people's souls and leave them feeling sick and humiliated."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "grim",
+      "entity_2": "narrator",
+      "relationship_type": "haunts",
+      "description": "The Grim is going to haunt the narrator until he actually dies."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "narrator",
+      "relationship_type": "affects",
+      "description": "When dementors approach, the narrator feels sick and humiliated."
+    }
+  ]
+}

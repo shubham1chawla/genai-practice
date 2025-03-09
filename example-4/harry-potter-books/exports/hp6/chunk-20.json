@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Minister is mentioned as being present and speaking."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the name of a person who is being spoken to by the Prime Minister."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Sirius Black is mentioned as someone who was thought to be guilty but turned out to be innocent."
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "He Who Must Not Be Named is a dark lord who is mentioned in the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "sirius black",
+      "relationship_type": "misidentification",
+      "description": "Fudge mistakenly identifies Sirius Black as 'Black'."
+    },
+    {
+      "entity_1": "minister",
+      "entity_2": "he who must not be named",
+      "relationship_type": "involvement",
+      "description": "The Minister mentions that there was evidence pointing to He Who Must Not Be Named's involvement with Sirius Black."
+    }
+  ]
+}

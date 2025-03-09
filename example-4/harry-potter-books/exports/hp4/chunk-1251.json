@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being held captive by Wormtail."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is torturing Harry and attempting to resurrect his enemy using a potion."
+    },
+    {
+      "name": "dagger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A silver dagger that is being used by Wormtail to take blood from Harry."
+    },
+    {
+      "name": "potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A potion that is being created by Wormtail using the blood of Harry's enemy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wormtail",
+      "relationship_type": "is_being_tortured_by",
+      "description": "Wormtail is torturing Harry, attempting to take his blood."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "dagger",
+      "relationship_type": "is_holding",
+      "description": "Wormtail is holding the silver dagger and using it to take blood from Harry."
+    }
+  ]
+}

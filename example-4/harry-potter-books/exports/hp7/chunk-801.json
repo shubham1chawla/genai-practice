@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned in the text as 'Godric's Hollow'"
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text as a wizard who came along before the dates on the headstone"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text as someone who left Hermione 'The Tales of Beedle the Bard'"
+    },
+    {
+      "name": "lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text as someone who was wearing a symbol at the wedding"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text as Harry's friend"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hollow",
+      "entity_2": "grindelwald",
+      "relationship_type": "before",
+      "description": "The dates on the headstone were long before Grindelwald came along"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hermione",
+      "relationship_type": "gave",
+      "description": "Dumbledore left Hermione 'The Tales of Beedle the Bard'"
+    },
+    {
+      "entity_1": "lovegood",
+      "entity_2": "hollow",
+      "relationship_type": "visited",
+      "description": "Lovegood was wearing a symbol at the wedding, which is related to Hollow"
+    }
+  ]
+}

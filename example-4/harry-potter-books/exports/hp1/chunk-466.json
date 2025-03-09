@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as a student who is caught by Professor McGonagall for being out of bed at night. He tries to tell Neville that the story about him getting into trouble is not true."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville is mentioned as a student who heard the story and believed it. Harry tries to reassure him without words."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the authority figure who catches Harry and his friends out of bed at night and gives them detentions."
+    },
+    {
+      "name": "granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Miss Granger is mentioned as one of the students who was caught by Professor McGonagall for being out of bed at night."
+    },
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a student who is caught by Professor McGonagall for being out of bed at night."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor house is mentioned as the house that Harry and his friends are part of. They will receive detentions and lose points because of their actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "scolded",
+      "description": "Professor McGonagall scolds Harry for being out of bed at night."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "granger",
+      "relationship_type": "disappointed",
+      "description": "Professor McGonagall is disappointed in Miss Granger for being out of bed at night."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "potter",
+      "relationship_type": "disappointed",
+      "description": "Professor McGonagall is disappointed in Harry Potter for being out of bed at night."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "reassured",
+      "description": "Harry tries to reassure Neville that the story about him getting into trouble is not true."
+    }
+  ]
+}

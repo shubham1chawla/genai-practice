@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "the advanced guard",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are guarding something or someone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a boy who is being taken away by others."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher and friend of Harry's, who has come to take him away."
+    },
+    {
+      "name": "the woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An unknown person with a unfamiliar voice, who is also present at the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor lupin",
+      "relationship_type": "is_being_taken_by",
+      "description": "Professor Lupin has come to take Harry away."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "the advanced guard",
+      "relationship_type": "has_arrived_with",
+      "description": "Professor Lupin is accompanied by the Advanced Guard when he comes to take Harry away."
+    }
+  ]
+}

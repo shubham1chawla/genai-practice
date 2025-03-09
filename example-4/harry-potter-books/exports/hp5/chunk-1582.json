@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and is known for his loud voice. He is described as taking two massive swipes at his attackers and being able to withstand spells."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who gasps in shock when Hagrid starts fighting."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a teacher at Hogwarts who screams for someone to get Hagrid but her helper is reluctant."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is Hagrid's dog and is described as being draped around his shoulders after he collapses."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbridge",
+      "relationship_type": "shouts_at",
+      "description": "Hagrid shouts at Umbridge, calling her cowards."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "is_near",
+      "description": "Hermione is near Hagrid when he starts fighting and gasps in shock."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "helper",
+      "relationship_type": "orders",
+      "description": "Umbridge orders her helper to get Hagrid but the helper is reluctant."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "fang",
+      "relationship_type": "carries",
+      "description": "Hagrid carries Fang's limp body around his shoulders after he collapses."
+    }
+  ]
+}

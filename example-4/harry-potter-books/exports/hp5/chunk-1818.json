@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who informed the Order about Harry's conversation with Sirius. He also deduced where Harry had gone when he didn't return from the forest and gave Professor Umbridge fake Veritaserum."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who goaded Sirius about staying in the house and made out Sirius was a coward. Harry also mentions that Snape stopped giving him Occlumency lessons."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the one who had a conversation with Harry in the forest. He is also described as being much too old and clever to have allowed Snape's taunts to hurt him."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as the one who was attempting to force Harry to tell of Sirius's whereabouts using fake Veritaserum given by Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who had a conversation with Sirius in the forest and didn't return from it. He also mentions that Snape stopped giving him Occlumency lessons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor umbridge",
+      "relationship_type": "gave_fake_veritaserum_to",
+      "description": "Dumbledore gave Professor Umbridge fake Veritaserum to use on Harry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "deduced_location_of",
+      "description": "Dumbledore deduced where Harry had gone when he didn't return from the forest."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "sirius",
+      "relationship_type": "goaded",
+      "description": "Snape goaded Sirius about staying in the house and made out Sirius was a coward."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "stopped_occlumency_lessons_with",
+      "description": "Snape stopped giving Harry Occlumency lessons."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "was_treated_cruelly_by",
+      "description": "Sirius was goaded by Snape about staying in the house and made out Sirius was a coward."
+    }
+  ]
+}

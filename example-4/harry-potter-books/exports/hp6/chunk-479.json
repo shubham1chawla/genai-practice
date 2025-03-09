@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of the person mentioned in the text is Harry Potter. The text does not provide any further information about him."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a teacher who has come to discuss Tom Riddle's future. He is described as being in Mrs Cole's house, and he leads her into a small room."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle is the person whose future Dumbledore wants to discuss. He has qualities that Hogwarts believes are desirable."
+    },
+    {
+      "name": "mrs cole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Cole is a woman who lives in the house where Dumbledore meets her. She seems nervous and unsure of what to make of Dumbledore's visit."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "tom riddle",
+      "relationship_type": "interested_in",
+      "description": "Dumbledore is interested in Tom Riddle because he believes he has qualities that Hogwarts looks for."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hawgwarts",
+      "relationship_type": "student_of",
+      "description": "Although not explicitly stated, it can be inferred from the context that Harry Potter is a student at Hogwarts."
+    }
+  ]
+}

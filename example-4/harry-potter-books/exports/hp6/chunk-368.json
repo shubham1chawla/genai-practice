@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gaunt is described as speaking aggressively and making a claim of private property. He is also referred to as 'Mr Gaunt' which suggests he is an adult male."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is described as being on the receiving end of Gaunt's aggression and is referred to as 'man'. He is also shown to be able to cast spells."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is mentioned by Gaunt as his son. He is instructed by Gaunt to get in the house and not argue."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gaunt",
+      "entity_2": "ogden",
+      "relationship_type": "aggression",
+      "description": "Gaunt is being aggressive towards Ogden, as evidenced by his tone and language. He also accuses Ogden of being an 'intruder'."
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "morfin",
+      "relationship_type": "parent_child",
+      "description": "Gaunt refers to Morfin as his son, establishing a parent-child relationship between the two."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "gaunt",
+      "relationship_type": "aggression_reverse",
+      "description": "Ogden is also being aggressive towards Gaunt, as evidenced by his tone and language."
+    }
+  ]
+}

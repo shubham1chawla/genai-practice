@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, and his temper is mentioned as being on edge throughout the day. He is also the one who suggests Lord Voldemort as a possible attacker."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Umbridge is the teacher in the classroom, and she is described as having a 'horrribly honeyed voice' and a 'grimly satisfied expression' on her face. She also takes away points from Gryffindor."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as a possible attacker of children like Harry's friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron gasps in response to Harry's suggestion that Lord Voldemort might be the attacker."
+    },
+    {
+      "name": "lavender brown",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Lavender Brown utters a little scream in response to Harry's suggestion."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville slips sideways off his stool in response to Harry's suggestion."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is a house at Hogwarts that loses points due to Harry's behavior."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "suggested_attacker",
+      "description": "Harry suggests that Lord Voldemort might be the attacker of children like himself and his friends."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "gryffindor",
+      "relationship_type": "punished_house",
+      "description": "Professor Umbridge takes away points from Gryffindor as a result of Harry's behavior."
+    }
+  ]
+}

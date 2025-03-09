@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is waiting outside the Leaky Cauldron."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is waiting with Harry and gives an estimate of how long he will be."
+    },
+    {
+      "name": "rubeus hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Hogwarts gamekeeper who arrives to pick up Harry and is wearing a long beaverskin coat."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A bird that has been released into the open air and is happy to be back outside."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who has decided that Hagrid will pick up Harry instead of sending Aurors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "wait_for",
+      "description": "Harry is waiting for Mr Weasley to give him an estimate of how long he will be."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rubeus hagrid",
+      "relationship_type": "picked_up_by",
+      "description": "Hagrid picks up Harry from outside the Leaky Cauldron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "buckbeak",
+      "relationship_type": "related_to",
+      "description": "Harry is related to Buckbeak as the bird has been released by him."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "approved_by",
+      "description": "Dumbledore has approved Hagrid to pick up Harry instead of sending Aurors."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is trying to protect Harry Potter from danger. He is described as 'stammered', 'his eyes huge in the dark' and 'squealed'. Dobby says 'Harry Potter must not be here when they happen' and 'Go home, Harry Potter. Go home!' (Excerpt: 'Ah, sir, ask no more, ask no more of poor Dobby ,...')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is a student who is in danger from the Chamber. He is described as 'noble' and 'valiant'. Harry says 'I'm not going anywhere!' and 'One of my best friends is Muggle-born, she'll be first in line if the Chamber really has been opened...' (Excerpt: 'Harry Potter risks his own life for his friends!')"
+    },
+    {
+      "name": "chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber is a place where dark deeds are planned. Dobby says 'Dark deeds are planned in this place...' (Excerpt: 'Dark deeds are planned in this place, but Harry Potter must not be here when they happen.')"
+    },
+    {
+      "name": "muggle-born",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle-born is a group of people who were born to non-magical parents. Dobby says 'Harry Potter risks his own life for his friends!' and Harry mentions that one of his best friends is Muggle-born (Excerpt: 'One of my best friends is Muggle-born, she'll be first in line if the Chamber really has been opened...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "protects",
+      "description": "Dobby is trying to protect Harry Potter from danger. Dobby says 'Harry Potter must not be here when they happen' and 'Go home, Harry Potter. Go home!' (Excerpt: 'Ah, sir, ask no more, ask no more of poor Dobby ,...')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "chamber",
+      "relationship_type": "in danger from",
+      "description": "Harry Potter is in danger from the Chamber. Dobby says 'Dark deeds are planned in this place, but Harry Potter must not be here when they happen.' (Excerpt: 'Dark deeds are planned in this place...')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "muggle-born",
+      "relationship_type": "protects",
+      "description": "Harry Potter is trying to protect his Muggle-born friend. Harry says 'One of my best friends is Muggle-born, she'll be first in line if the Chamber really has been opened...' (Excerpt: 'One of my best friends is Muggle-born, she'll be first in line if the Chamber really has been opened...')"
+    }
+  ]
+}

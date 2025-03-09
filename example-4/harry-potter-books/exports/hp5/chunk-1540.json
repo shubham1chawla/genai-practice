@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters in the story, mentioned as having been with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a main character in the story, mentioned as being upset and incredulous about Hagrid's actions."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a main character in the story, mentioned as having been with Ron and Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who has been injured since returning from the giants, and wants to tell Harry, Ron, and Hermione something."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Grawp is a giant that Hagrid brought back and hid in the forest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "grawp",
+      "relationship_type": "has_brought_back",
+      "description": "Hagrid has brought Grawp back from the giants."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "forest",
+      "relationship_type": "hid_in",
+      "description": "Hagrid hid Grawp in the forest."
+    }
+  ]
+}

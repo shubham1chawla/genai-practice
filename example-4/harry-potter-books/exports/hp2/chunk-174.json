@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as 'Hermione'. She is described as being friendly again after receiving a Howler."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as 'Ron'. He receives a Howler and is defensive about it."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher or authority figure, mentioned as facing an inquiry at work. Harry feels guilty for causing him trouble."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher, handing out timetables to the students."
+    },
+    {
+      "name": "hufflepuffs",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts, mentioned as having a double Herbology class with Gryffindor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr weasley",
+      "relationship_type": "guilt",
+      "description": "Harry feels guilty for causing Mr. Weasley trouble."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "interaction",
+      "description": "Professor McGonagall hands Harry his timetable."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "friendship",
+      "description": "Hermione is friendly with Harry and seems to have forgiven him for the Howler."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "friendship",
+      "description": "Ron is friends with Harry and receives a Howler from him."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "hufflepuffs",
+      "relationship_type": "competition",
+      "description": "Gryffindor has a double Herbology class with Hufflepuff."
+    }
+  ]
+}

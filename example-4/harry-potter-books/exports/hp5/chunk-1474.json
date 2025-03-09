@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the Weasley twins who are selling their products in Diagon Alley. He is mentioned as saying 'Yeah, don't bother to keep in touch' and offering special discounts to Hogwarts students."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the Weasley twins who are selling their products in Diagon Alley. He is mentioned as looking around at the assembled students and crowd."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a Hogwarts teacher who is being targeted by Fred and George's joke shop. She is mentioned as shouting 'STOP THEM!'"
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is the poltergeist of Hogwarts who is mentioned as bobbing on his level above the crowd."
+    },
+    {
+      "name": "Weasleys' Wizarding Wheezes",
+      "entity_type": "business",
+      "singular": false,
+      "description": "Weasleys' Wizarding Wheezes is a joke shop owned by Fred and George Weasley. It is mentioned as being located at number 93 in Diagon Alley."
+    },
+    {
+      "name": "Inquisitorial Squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Inquisitorial Squad is a group of students who are trying to stop Fred and George's joke shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "umbridge",
+      "relationship_type": "targeted_by",
+      "description": "George and his joke shop are being targeted by Professor Umbridge."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "peeves",
+      "relationship_type": "ordered_from",
+      "description": "Fred orders Peeves to 'Give her hell from us'."
+    }
+  ]
+}

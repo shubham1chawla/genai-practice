@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is a person who has worked for Gringotts since leaving Hogwarts. He knows goblins well."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one Bill wants to have a private word with, and it's implied that he's planning something with Griphook."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a goblin who Harry is planning something with. Bill knows him well."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "harry",
+      "relationship_type": "has_private_word_with",
+      "description": "Bill wants to have a private word with Harry, implying that he's concerned about what Harry is planning with Griphook."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "griphook",
+      "relationship_type": "knows",
+      "description": "Bill knows Griphook well, having worked for Gringotts and having goblin friends."
+    }
+  ]
+}

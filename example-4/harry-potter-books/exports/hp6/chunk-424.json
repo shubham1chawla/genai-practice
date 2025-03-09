@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who did something for Dumbledore in the past."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone Snape did something for."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who wants Harry to come with her."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone Hermione wants to come with her."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mclaggen is mentioned as someone Hermione might be thinking about."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as someone who might be invited."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who has been in a bad mood since the encounter with Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is mentioned as someone Ron had an encounter with."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Gryffindor Tower is mentioned as a location where the characters are heading back to."
+    },
+    {
+      "name": "evening prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "Evening Prophet is mentioned as a newspaper that Hermione picks up."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "did_something_for",
+      "description": "Snape did something for Dumbledore in the past."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_be_with",
+      "description": "Hermione wants Harry to come with her."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "slughorn",
+      "relationship_type": "had_encounter_with",
+      "description": "Ron had an encounter with Slughorn."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mclaggen",
+      "relationship_type": "might_be_thinking_about",
+      "description": "Hermione might be thinking about McLaggen."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "invitation",
+      "relationship_type": "will_probably_get",
+      "description": "Ginny will probably get an invitation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "slughorn",
+      "relationship_type": "was_ignored_by",
+      "description": "Ron was ignored by Slughorn."
+    }
+  ]
+}

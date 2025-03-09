@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who was talking with Harry and Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is having a conversation with Hermione and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who was talking with Harry and Hermione."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone Mrs. Weasley had a meeting with before going home."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as having a meeting with Dumbledore before going home."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_request",
+      "description": "Harry has a request to go back to the Dursleys, at least at first, as per Dumbledore's wish."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "dumbledore",
+      "relationship_type": "had_meeting",
+      "description": "Mrs. Weasley had a meeting with Dumbledore before going home."
+    }
+  ]
+}

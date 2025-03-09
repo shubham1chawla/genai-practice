@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as the one speaking and interacting with Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as having taken Jack Sloper to the hospital wing."
+    },
+    {
+      "name": "jack sloper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Jack Sloper is mentioned as being knocked out by his own bat."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as having a new screening process for packages."
+    },
+    {
+      "name": "hogwarts high inquisitor",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Hogwarts High Inquisitor is mentioned as the one who inspected and passed the package."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum is mentioned as sending Easter eggs to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as receiving the Easter egg from Ginny."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ginny",
+      "entity_2": "jack sloper",
+      "relationship_type": "took_to_hospital",
+      "description": "Ginny took Jack Sloper to the hospital wing."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "package",
+      "relationship_type": "screened",
+      "description": "Umbridge screened the package."
+    },
+    {
+      "entity_1": "hogwarts high inquisitor",
+      "entity_2": "package",
+      "relationship_type": "inspected_and_passed",
+      "description": "The Hogwarts High Inquisitor inspected and passed the package."
+    },
+    {
+      "entity_1": "mum",
+      "entity_2": "harry",
+      "relationship_type": "sent_easter_eggs",
+      "description": "Mum sent Easter eggs to Harry."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "harry",
+      "relationship_type": "gave_easter_egg",
+      "description": "Ginny gave an Easter egg to Harry."
+    }
+  ]
+}

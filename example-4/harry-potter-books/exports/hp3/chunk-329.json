@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as someone who can see Harry's location."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being hidden from Dudley."
+    },
+    {
+      "name": "sweets",
+      "entity_type": "food",
+      "singular": false,
+      "description": "There are many types of sweets available in the room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "visibility",
+      "description": "Harry is hidden from Dudley's view."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sweets",
+      "relationship_type": "proximity",
+      "description": "Harry is in close proximity to the sweets."
+    }
+  ]
+}

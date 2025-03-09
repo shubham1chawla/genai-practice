@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as having written a letter to Harry."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as the location of a weekend event."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as having read a note over Harry's shoulder."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone Harry wants to tell Sirius about."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as someone Harry wants to tell Sirius about."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The egg's clue is mentioned as something Harry forgot to mention to Sirius."
+    },
+    {
+      "name": "parc hment",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The parc hment is mentioned as something Harry looked at."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "hogsmeade",
+      "relationship_type": "location_of_weekend_event",
+      "description": "Sirius's letter mentions the Hogsmeade weekend event."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "sirius",
+      "relationship_type": "read_note_over_shoulder",
+      "description": "Hermione read a note over Harry's shoulder, which was written by Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "sent_letter_to",
+      "description": "Harry sent a letter to Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "egg",
+      "relationship_type": "forgot_to_mention_clue",
+      "description": "Harry forgot to mention the egg's clue to Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "wanted_to_tell_sirius_about",
+      "description": "Harry wanted to tell Sirius about Snape."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "wanted_to_tell_sirius_about",
+      "description": "Harry wanted to tell Sirius about Moody."
+    }
+  ]
+}

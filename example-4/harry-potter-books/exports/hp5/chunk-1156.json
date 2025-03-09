@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "occlumency",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A magical technique used to prevent others from reading one's thoughts, mentioned in the conversation between Harry and Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Severus Snape, a Hogwarts teacher, who is teaching Occlumency to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the main character, who is learning Occlumency from Snape."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore, the headmaster of Hogwarts, who is mentioned as someone who might be guessing."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The main antagonist, Voldemort, who is aware that Harry is gaining access to his thoughts and feelings."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "teaches",
+      "description": "Snape is teaching Occlumency to Harry."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "harry",
+      "relationship_type": "aware_of_thoughts",
+      "description": "The Dark Lord is aware that Harry is gaining access to his thoughts and feelings."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "harry",
+      "relationship_type": "can_access_thoughts",
+      "description": "The Dark Lord can also access Harry's thoughts and feelings."
+    }
+  ]
+}

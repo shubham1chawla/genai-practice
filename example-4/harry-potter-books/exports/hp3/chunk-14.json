@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as the eldest son of the Weasley family. He works as a curse breaker for Gringotts Wizarding Bank."
+    },
+    {
+      "name": "gringotts wizarding bank",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Gringotts Wizarding Bank is mentioned as Bill's workplace."
+    },
+    {
+      "name": "weasley family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as a whole. They will be spending a month in Egypt and returning for the start of the new school year at Hogwarts."
+    },
+    {
+      "name": "egypt",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Egypt is mentioned as the destination where the Weasley family will spend a month."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school that the Weasley children currently attend."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the Weasley children. He is shown in a moving photograph waving at Harry with his pet rat Scabbers on his shoulder."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is mentioned as Ron's pet rat."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as one of the Weasley children. She is shown in a moving photograph waving at Harry with her brother Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is looking at a moving photograph of the Weasleys."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "gringotts wizarding bank",
+      "relationship_type": "works_for",
+      "description": "Bill works for Gringotts Wizarding Bank."
+    },
+    {
+      "entity_1": "weasley family",
+      "entity_2": "egypt",
+      "relationship_type": "will_visit",
+      "description": "The Weasley family will be spending a month in Egypt."
+    },
+    {
+      "entity_1": "weasley children",
+      "entity_2": "hogwarts",
+      "relationship_type": "attend_school",
+      "description": "Five of the Weasley children currently attend Hogwarts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns_pet",
+      "description": "Ron owns Scabbers, his pet rat."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "ron",
+      "relationship_type": "sibling_of",
+      "description": "Ginny is Ron's sister."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is yelling on the phone, trying to talk to Harry Potter. He mentions that he is a friend of Harry's from school."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as Ron's friend from school, but Uncle Vernon claims there is no Harry Potter at his house."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is the one who answers the phone and has a conversation with Ron. He seems to be frightened by Ron's loud voice."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "friendship",
+      "description": "Ron is trying to talk to Harry on the phone, indicating that they are friends."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "ron weasley",
+      "relationship_type": "conversation",
+      "description": "Uncle Vernon has a conversation with Ron on the phone, where he is trying to figure out who Ron is and why he is yelling."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry potter",
+      "relationship_type": "denial_of_presence",
+      "description": "Uncle Vernon denies that Harry Potter is at his house, indicating that he does not know where Harry is."
+    }
+  ]
+}

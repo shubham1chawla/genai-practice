@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "log",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A log fell in the fire, indicating a physical event."
+    },
+    {
+      "name": "flames",
+      "entity_type": "fire",
+      "singular": true,
+      "description": "Flames reared, their light darting across a terriﬁed face, indicating a visual effect."
+    },
+    {
+      "name": "face",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "A terriﬁed, pointed white face was visible, indicating Harry's reaction to the situation."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry drew heaving breaths and opened his eyes, indicating that he was waking up or regaining consciousness."
+    },
+    {
+      "name": "bathtub",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "He was spread-eagled on the cold black marble ﬂoor, near one of the silver serpent tails that supported the large bathtub, indicating a physical location."
+    },
+    {
+      "name": "Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy’s gaunt, petriﬁed face seemed burned on the inside of his eyes, indicating Harry's reaction to what he had seen."
+    },
+    {
+      "name": "Draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry felt sickened by what he had seen, by the use to which Draco was now being put by Voldemort, indicating a relationship between characters."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry felt sickened by what he had seen, by the use to which Draco was now being put by Voldemort, indicating a relationship between characters."
+    },
+    {
+      "name": "door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "There was a sharp rap on the door, indicating an external event."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione’s voice rang out, indicating her presence and action in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "flames",
+      "relationship_type": "observed_by",
+      "description": "Flames reared, their light darting across a terriﬁed face — with a sense of emerging from deep water, Harry drew heaving breaths and opened his eyes."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "bathtub",
+      "relationship_type": "near",
+      "description": "He was spread-eagled on the cold black marble ﬂoor, near one of the silver serpent tails that supported the large bathtub."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Malfoy",
+      "relationship_type": "observed_by",
+      "description": "Malfoy’s gaunt, petriﬁed face seemed burned on the inside of his eyes. Harry felt sickened by what he had seen, by the use to which Draco was now being put by Voldemort."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Draco",
+      "relationship_type": "concerned_about",
+      "description": "Harry felt sickened by what he had seen, by the use to which Draco was now being put by Voldemort."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Voldemort",
+      "relationship_type": "concerned_about",
+      "description": "Harry felt sickened by what he had seen, by the use to which Draco was now being put by Voldemort."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "door",
+      "relationship_type": "acted_on",
+      "description": "There was a sharp rap on the door, and Harry jumped as Hermione’s voice rang out."
+    }
+  ]
+}

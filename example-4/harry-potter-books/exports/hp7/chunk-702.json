@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The snake is described as sending a message to You-Know-Who and attacking Hermione. It is also mentioned that it came out of Bathilda’s neck."
+    },
+    {
+      "name": "bathildas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bathilda is mentioned as the source from which the snake came out of."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who did not need to know the details about the snake."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as the person to whom the snake sent a message and for whom Hermione was kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snake",
+      "entity_2": "bathildas",
+      "relationship_type": "came_from",
+      "description": "The text states that the snake came out of Bathilda’s neck."
+    },
+    {
+      "entity_1": "snake",
+      "entity_2": "you-know-who",
+      "relationship_type": "sent_message_to",
+      "description": "The text mentions that the snake sent a message to You-Know-Who."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snake",
+      "relationship_type": "attacked_by",
+      "description": "The text states that Hermione was attacked by the snake."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "hermione",
+      "relationship_type": "kept_for",
+      "description": "The text mentions that Hermione was kept for You-Know-Who."
+    }
+  ]
+}

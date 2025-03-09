@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a main character in the story, mentioned as being worried about and having his name put in the Goblet of Fire."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who is concerned for his safety and tries to reason with him."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as someone who is worried about Harry, along with Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a friend of Harry's who is also worried about him."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is someone who was Stunned and kidnapped by the attackers."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is a person who was involved in the kidnapping of Krum."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone who thinks that Harry is being targeted."
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Goblet of Fire is a magical object where Harry's name was put."
+    },
+    {
+      "name": "snuffles",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snuffles is likely a nickname for Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblet of fire",
+      "relationship_type": "has_name_in",
+      "description": "Harry's name was put in the Goblet of Fire."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "is_concerned_for",
+      "description": "Hermione is concerned for Harry's safety."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "is_worried_about",
+      "description": "Moody is worried about Harry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "is_worried_about",
+      "description": "Hagrid is also worried about Harry."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a character in the story who repeats the phrase 'Extinct in the male line?'"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a character in the story who explains what 'Extinct in the male line' means"
+    },
+    {
+      "name": "peverells",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Peverell family is mentioned as an example of a name that died out centuries ago"
+    },
+    {
+      "name": "marvolo gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marvolo Gaunt is mentioned as the grandfather of You-Know-Who and is seen in the Pensieve with Dumbledore"
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as the grandson of Marvolo Gaunt"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being in the Pensieve with Marvolo Gaunt"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "marvolo gaunt",
+      "entity_2": "you-know-who",
+      "relationship_type": "grandparent",
+      "description": "Marvolo Gaunt is the grandfather of You-Know-Who"
+    },
+    {
+      "entity_1": "marvolo gaunt",
+      "entity_2": "dumbledore",
+      "relationship_type": "interaction",
+      "description": "Marvolo Gaunt interacts with Dumbledore in the Pensieve"
+    }
+  ]
+}

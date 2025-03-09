@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a member of Dumbledore's Army and suggests a name for their group."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a member of Dumbledore's Army and suggests a name for their group."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a member of Dumbledore's Army and suggests an alternative name for their group."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a member of Dumbledore's Army and agrees with Hermione's suggestion."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the leader of Dumbledore's Army and suggests practicing their skills."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "hermione",
+      "relationship_type": "suggested_name",
+      "description": "Fred suggested a name for their group, which Hermione did not like."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "d.a.",
+      "relationship_type": "proposed_name",
+      "description": "Cho proposed an alternative name for their group, the D.A."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "hermione",
+      "relationship_type": "agreed_with_suggestion",
+      "description": "Ginny agreed with Hermione's suggestion to call their group Dumbledore's Army."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "d.a.",
+      "relationship_type": "leader_of_group",
+      "description": "Harry is the leader of Dumbledore's Army and suggests practicing their skills."
+    }
+  ]
+}

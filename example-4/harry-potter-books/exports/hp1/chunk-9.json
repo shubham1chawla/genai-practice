@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The cat didn't move and gave a stern look."
+    },
+    {
+      "name": "mr dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Dursley wondered if the cat's behavior was normal."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Dursley had a nice day and talked about Mrs Next Door's problems."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "child",
+      "singular": true,
+      "description": "Dudley learned the word 'Shan't!'"
+    },
+    {
+      "name": "mrs next door",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Next Door had problems with her daughter."
+    },
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Bird-watchers reported unusual owl behavior."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "cat",
+      "relationship_type": "observed",
+      "description": "Mr Dursley observed the cat's behavior."
+    },
+    {
+      "entity_1": "mrs dursley",
+      "entity_2": "mrs next door",
+      "relationship_type": "related_to",
+      "description": "Mrs Dursley talked about Mrs Next Door's problems."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "owl",
+      "relationship_type": "affected_by",
+      "description": "Dudley was affected by the unusual owl behavior."
+    }
+  ]
+}

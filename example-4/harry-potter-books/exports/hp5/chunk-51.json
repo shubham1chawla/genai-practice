@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who told Harry and others to keep him from doing magic at all costs."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the conversation with Mrs. Figg."
+    },
+    {
+      "name": "mrs. figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Figg is a person who is following Harry and has instructions from Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "ordered_by",
+      "description": "Dumbledore ordered Mrs. Figg to keep Harry from doing magic at all costs."
+    },
+    {
+      "entity_1": "mrs. figg",
+      "entity_2": "harry",
+      "relationship_type": "following",
+      "description": "Mrs. Figg is following Harry and has instructions from Dumbledore."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'yeh' by Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, expelled from school but allowed to stay on due to Dumbledore's intervention."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as a great man by Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "was_allowed_by",
+      "description": "Hagrid was allowed to stay on as gamekeeper at Hogwarts due to Dumbledore's intervention."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "is_gamekeeper_of",
+      "description": "Hagrid is the gamekeeper who helps Harry with his letters and other tasks."
+    }
+  ]
+}

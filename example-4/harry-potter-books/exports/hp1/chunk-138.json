@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The main shopping street for wizards in London. It is described as a place where people can buy magical items and services."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts School of Witchcraft and Wizardry. He is helping Harry Potter with his banking needs in Diagon Alley."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts School of Witchcraft and Wizardry. He has a safe in Diagon Alley where he keeps his money."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "species",
+      "singular": false,
+      "description": "Goblins are creatures that work in the bank in Diagon Alley. They are responsible for managing the finances of wizards and witches."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "diagon alley",
+      "relationship_type": "location_of_work",
+      "description": "Hagrid is working in Diagon Alley, helping Harry Potter with his banking needs."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "goblins",
+      "relationship_type": "colleague_of",
+      "description": "Hagrid is working alongside goblins in the bank in Diagon Alley."
+    }
+  ]
+}

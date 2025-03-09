@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is introduced as Uncle Vernon's son and Harry's cousin. He is described as a layabout wizard."
+    },
+    {
+      "name": "harry",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Harry is introduced as a wizard who is part of the Order people. He is described as shouting at Uncle Vernon."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is introduced as Dudley's father and Harry's uncle. He is described as being frustrated with Harry and the Order people."
+    },
+    {
+      "name": "the order people",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Order people are introduced as a group that Harry is part of. They are described as helping Dudley and his parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "helps",
+      "description": "Harry helps Dudley by convincing him to accept the Order's help."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "the order people",
+      "relationship_type": "opposes",
+      "description": "Uncle Vernon opposes the Order people and is frustrated with Harry for being part of them."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "harry",
+      "relationship_type": "listens_to",
+      "description": "Dudley listens to Harry and decides to accept the Order's help."
+    },
+    {
+      "entity_1": "the order people",
+      "entity_2": "dudley's parents",
+      "relationship_type": "helps",
+      "description": "The Order people help Dudley's parents by protecting them from the Death Eaters."
+    }
+  ]
+}

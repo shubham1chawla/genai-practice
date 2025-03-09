@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "argus filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker of Hogwarts who is strict and has a cat named Mrs Norris. He was described as being worse than Peeves."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "spirit",
+      "singular": true,
+      "description": "A poltergeist that was mentioned to be worse than Argus Filch."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "One of the main characters who got on the wrong side of Argus Filch on their first morning."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry's friend who also got on the wrong side of Argus Filch."
+    },
+    {
+      "name": "professor quirrell",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A professor who rescued Harry and Ron from being locked in the dungeons by Argus Filch."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "students",
+      "singular": false,
+      "description": "The twin brothers of Ron Weasley who are known to be clever and have secret passageways knowledge."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Argus Filch's cat that patrols the corridors and reports any rule breakers to Filch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "argus filch",
+      "entity_2": "peeves",
+      "relationship_type": "worse_than",
+      "description": "Peeves was described as being worse than Argus Filch."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "argus filch",
+      "relationship_type": "got_on_wrong_side_of",
+      "description": "Harry and Ron got on the wrong side of Argus Filch on their first morning."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "argus filch",
+      "relationship_type": "got_on_wrong_side_of",
+      "description": "Harry and Ron got on the wrong side of Argus Filch on their first morning."
+    },
+    {
+      "entity_1": "professor quirrell",
+      "entity_2": "harry potter",
+      "relationship_type": "rescued",
+      "description": "Professor Quirrell rescued Harry from being locked in the dungeons by Argus Filch."
+    },
+    {
+      "entity_1": "argus filch",
+      "entity_2": "mrs norris",
+      "relationship_type": "owned",
+      "description": "Argus Filch owned a cat called Mrs Norris."
+    },
+    {
+      "entity_1": "weasley twins",
+      "entity_2": "secret passageways",
+      "relationship_type": "knew",
+      "description": "The Weasley twins knew the secret passageways of Hogwarts better than anyone except Argus Filch."
+    },
+    {
+      "entity_1": "argus filch",
+      "entity_2": "secret passageways",
+      "relationship_type": "knew",
+      "description": "Argus Filch knew the secret passageways of Hogwarts better than anyone except the Weasley twins."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as a figure that Harry is caught by."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the prisoners, who has been caught by Voldemort."
+    },
+    {
+      "name": "prisoner",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people that Harry is part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "has_caught",
+      "description": "Voldemort has caught Harry, as mentioned in the text."
+    },
+    {
+      "entity_1": "prisoner",
+      "entity_2": "voldemort",
+      "relationship_type": "is_caught_by",
+      "description": "The prisoners, including Harry, are caught by Voldemort."
+    }
+  ]
+}

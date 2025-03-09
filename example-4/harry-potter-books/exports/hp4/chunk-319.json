@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The man's opinion of Dumbledore is mentioned in the text as being a 'Mudblood-lover'. This suggests that Dumbledore has a positive attitude towards those with non-magical heritage."
+    },
+    {
+      "name": "mudblood",
+      "entity_type": "term",
+      "singular": false,
+      "description": "A term used to describe someone with non-magical heritage. It is mentioned in the text as being associated with Dumbledore's opinion."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Durmstrang is a wizarding school that is mentioned in the text as having a different approach to the Dark Arts compared to Hogwarts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a wizarding school that is mentioned in the text as being different from Durmstrang in its approach to the Dark Arts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is mentioned in the text as having an opinion about Durmstrang and Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is mentioned in the text as reacting to Malfoy's voice."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person whose voice is being blocked out by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mudblood",
+      "relationship_type": "associated_with",
+      "description": "Dumbledore's opinion of Mudbloods is mentioned in the text as being positive."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Harry attended Hogwarts, which is mentioned in the text."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "reacted_to",
+      "description": "Hermione reacted to Malfoy's voice being blocked out by her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "durmstrang",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in Durmstrang, as mentioned in the text when he asks if it's another wizarding school."
+    }
+  ]
+}

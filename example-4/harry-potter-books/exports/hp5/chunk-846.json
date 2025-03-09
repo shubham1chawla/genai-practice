@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is participating in a spell-casting activity with his friends. He is trying to correct those who are doing the spell wrong."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is Harry's friend and teammate. He says sorry to Harry when he catches his eye."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a student who is participating in the spell-casting activity with her partner Michael Corner. She is doing very well."
+    },
+    {
+      "name": "michael corner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Michael Corner is Ginny's partner in the spell-casting activity. He is either very bad or unwilling to jinx his partner."
+    },
+    {
+      "name": "ernie macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie Macmillan is a student who is participating in the spell-casting activity with his partner. He is flourishing his wand unnecessarily."
+    },
+    {
+      "name": "creevey brothers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Creevey brothers are enthusiastic but erratic and mainly responsible for all the books leaping off the shelves around them."
+    },
+    {
+      "name": "luna lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna Lovegood is a student who is participating in the spell-casting activity. She is patchy and occasionally sends Justin Finch-Fletchley's wand spinning out of his hand."
+    },
+    {
+      "name": "justin finch-fletchley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Justin Finch-Fletchley is a student who is participating in the spell-casting activity with Luna Lovegood. His wand is occasionally sent spinning out of his hand by Luna."
+    },
+    {
+      "name": "michael",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Michael is another name for Michael Corner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "apologized_to",
+      "description": "George says sorry to Harry when he catches his eye."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "teammate_of",
+      "description": "Harry and Ginny are teammates in the spell-casting activity."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "michael corner",
+      "relationship_type": "teammate_of",
+      "description": "Harry and Michael Corner are teammates in the spell-casting activity."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "apologized_to",
+      "description": "George says sorry to Harry when he catches his eye."
+    },
+    {
+      "entity_1": "luna lovegood",
+      "entity_2": "justin finch-fletchley",
+      "relationship_type": "partner_of",
+      "description": "Luna Lovegood and Justin Finch-Fletchley are partners in the spell-casting activity."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ernie macmillan",
+      "relationship_type": "teammate_of",
+      "description": "Harry and Ernie Macmillan are teammates in the spell-casting activity."
+    }
+  ]
+}

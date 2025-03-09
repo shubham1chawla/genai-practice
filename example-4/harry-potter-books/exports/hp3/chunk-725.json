@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is described as the parents' best friend and someone who would have been like a father to Harry if he were there. (\"his parents' best friend\", \"It would have been the next best thing to having his own father back\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a student who has passed his exams and is concerned about Sirius's absence. (\"Harry couldn't help feeling miserable when he thought of the home he might have had\", \"The exam results came out on the last day of term\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of Harry's friends who has passed his exams. (\"Harry, Ron, and Hermione had passed every subject\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of Harry's friends who has passed her exams. (\"Harry, Ron, and Hermione had passed every subject\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as someone who might have intervened to prevent Snape from failing Harry in Potions. (\"He had a shrewd suspicion that Dumbledore might have stepped in to stop Snape failing him on purpose\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as someone who dislikes Harry and has been behaving alarmingly towards him. (\"Snape's behavior toward Harry over the past week had been quite alarming\", \"A muscle twitched unpleasantly at the corner of Snape's thin mouth every time he looked at Harry\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "has_missing_parent",
+      "description": "Harry is described as feeling miserable about the home he might have had if Sirius were there. (\"He couldn't help feeling miserable when he thought of the home he might have had\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_protector",
+      "description": "Harry is described as having a suspicion that Dumbledore might have intervened to prevent Snape from failing him in Potions. (\"He had a shrewd suspicion that Dumbledore might have stepped in to stop Snape failing him on purpose\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "dislikes",
+      "description": "Snape is described as someone who dislikes Harry and has been behaving alarmingly towards him. (\"A muscle twitched unpleasantly at the corner of Snape's thin mouth every time he looked at Harry\")"
+    }
+  ]
+}

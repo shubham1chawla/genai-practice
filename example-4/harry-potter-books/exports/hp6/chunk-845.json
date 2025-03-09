@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "room 433",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A mysterious room where Myrtle is hiding. It is described as an old tiled bathroom."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is hiding in the toilet of Room 433. She is described as sensitive and lonely."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is talking to Myrtle. He is described as amused by Myrtle's story."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is curious about the boy crying in Room 433."
+    },
+    {
+      "name": "the boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A young boy who was crying in Room 433. His identity is not revealed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "myrtle",
+      "entity_2": "room 433",
+      "relationship_type": "hiding_in",
+      "description": "Myrtle is hiding in the toilet of Room 433."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "myrtle",
+      "relationship_type": "talking_to",
+      "description": "Ron is talking to Myrtle about her story."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "room 433",
+      "relationship_type": "curious_about",
+      "description": "Harry is curious about the boy crying in Room 433."
+    },
+    {
+      "entity_1": "myrtle",
+      "entity_2": "the boy",
+      "relationship_type": "knows_secret_of",
+      "description": "Myrtle knows a secret of the boy who was crying in Room 433."
+    }
+  ]
+}

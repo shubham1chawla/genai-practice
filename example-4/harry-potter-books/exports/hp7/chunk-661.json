@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "death",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The concept of death is mentioned as the last enemy to be destroyed."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned in the context of understanding the meaning of 'death'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as providing an explanation to Harry."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned in the context of their idea of defeating death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "explained_by",
+      "description": "Hermione explains to Harry the meaning of 'death'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "contrasted_with",
+      "description": "Harry contrasts his understanding of death with that of the Death Eaters."
+    }
+  ]
+}

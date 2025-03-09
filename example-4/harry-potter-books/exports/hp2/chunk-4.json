@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "cupboard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cupboard is mentioned as being under the stairs. (\"a cupboard under the stairs\")"
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is introduced as a family member of Harry's. (\"by Uncle Vernon\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is mentioned as having come home. (\"the instant Harry had come home\")"
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are introduced as Harry's family members. (\"What did the Dursleys care...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "family_member_of",
+      "description": "Harry is a member of the Dursley family. (\"the instant Harry had come home\")"
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "family_member_of",
+      "description": "Uncle Vernon is a member of Harry's family. (\"by Uncle Vernon\")"
+    }
+  ]
+}

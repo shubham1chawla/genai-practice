@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, as mentioned by his name being used in the context of receiving an essay back from Snape."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another student in the class, as mentioned by her name being used in the context of encouraging Harry to get going."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Umbridge is a teacher at Hogwarts, as mentioned by her name being used in the context of inspecting classes."
+    },
+    {
+      "name": "binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Binns is a History of Magic teacher at Hogwarts, as mentioned by his name being used in the context of Professor Umbridge inspecting his class."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a Potions teacher at Hogwarts, as mentioned by his name being used in the context of handing back Harry's essay."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "received_feedback",
+      "description": "Harry received feedback on his moonstone essay from Snape, as mentioned by Snape's comment about awarding grades based on O.W.L. standards."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "encouraged",
+      "description": "Hermione encouraged Harry to get going, as mentioned by her name being used in the context of urging him to hurry up."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "binns",
+      "relationship_type": "inspected_class",
+      "description": "Professor Umbridge inspected Binns's History of Magic class, as mentioned by her name being used in the context of inspecting classes."
+    }
+  ]
+}

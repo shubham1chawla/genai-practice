@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an entity that is determined to weed out unsatisfactory teachers."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a teacher and is being addressed by Harry."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is on probation already."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is pulling off the Invisibility Cloak."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who seized Harry's wrist."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "hagrid",
+      "relationship_type": "target_of_action",
+      "description": "The Ministry is determined to weed out unsatisfactory teachers, which includes Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "trelawney",
+      "relationship_type": "similar_to",
+      "description": "Hagrid seems to be thinking that Trelawney might also be targeted by the Ministry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "concerned_about",
+      "description": "Hagrid is concerned about what Hermione will think of his lessons."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "similar_to",
+      "description": "Hagrid seems to be thinking that Harry might also be targeted by the Ministry."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as not being present at the scene."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's companions at the bar."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's companions at the bar."
+    },
+    {
+      "name": "madam rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Rosmerta is the owner of the bar where Harry and his friends are sitting."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ludo Bagman is a person who is talking to goblins in a shadowy corner."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Goblins are mentioned as being present and talking to Ludo Bagman."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "not_present_at_location",
+      "description": "Harry is told that Hagrid isn't there."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ludo bagman",
+      "relationship_type": "in_same_location",
+      "description": "Hermione points out Ludo Bagman in the mirror behind the bar."
+    }
+  ]
+}

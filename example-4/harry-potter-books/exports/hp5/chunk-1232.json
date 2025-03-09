@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who must not be named, and Rita jumps at the sound of his name. He is also described as being seen by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as reporting what he saw to Hermione, and it is implied that he has information about Voldemort's appearance and the Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is asking Rita to report Harry's story, and she wants all the facts exactly as Harry reports them."
+    },
+    {
+      "name": "rita",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Rita is a journalist who is being asked by Hermione to write about Harry's story. She is hesitant at first, but then suggests writing the story from a different angle."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as being seen by Harry, and Rita is asked to report their names."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "saw",
+      "description": "Harry saw Voldemort, and this information is being reported by Rita."
+    },
+    {
+      "entity_1": "rita",
+      "entity_2": "hermione",
+      "relationship_type": "asked_to_report",
+      "description": "Rita was asked by Hermione to report Harry's story."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The famous boy who is being brought to Hogwarts by Hagrid."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who trusts Hagrid with important tasks."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts who is bringing Harry Potter to the school."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who has doubts about Hagrid's ability to bring Harry safely."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "trusts",
+      "description": "Dumbledore trusts Hagrid with important tasks."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hagrid",
+      "relationship_type": "doubts",
+      "description": "Professor McGonagall has doubts about Hagrid's ability to bring Harry safely."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry potter",
+      "relationship_type": "brings",
+      "description": "Hagrid is bringing Harry Potter to Hogwarts."
+    }
+  ]
+}

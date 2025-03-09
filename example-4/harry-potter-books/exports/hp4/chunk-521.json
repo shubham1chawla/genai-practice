@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that contains flames, described as turning red and shooting sparks."
+    },
+    {
+      "name": "victor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The champion for Durmstrang, announced by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who caught the piece of parchment and read it aloud."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who yelled 'No surprises there!' in response to Dumbledore's announcement."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who saw Viktor Krum rise from the Slytherin table."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who boomed 'Bravo, Viktor!' in praise of Viktor Krum."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school that Viktor Krum represents."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house in the school where Harry saw Viktor Krum rise from."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A piece of parchment that was charred and flew out of the goblet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "victor krum",
+      "relationship_type": "announce_champion",
+      "description": "Dumbledore announced Viktor Krum as the champion for Durmstrang."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "victor krum",
+      "relationship_type": "react_to_announcement",
+      "description": "Ron yelled 'No surprises there!' in response to Dumbledore's announcement of Viktor Krum as the champion."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "victor krum",
+      "relationship_type": "observe_viktor_krum",
+      "description": "Harry saw Viktor Krum rise from the Slytherin table."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "victor krum",
+      "relationship_type": "praise_champion",
+      "description": "Karkaroff boomed 'Bravo, Viktor!' in praise of Viktor Krum."
+    }
+  ]
+}

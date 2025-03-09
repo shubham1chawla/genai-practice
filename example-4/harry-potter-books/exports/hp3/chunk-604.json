@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Severus is mentioned as the one who used this old place as his hideout."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lupin is mentioned as someone who tries to explain a situation."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is mentioned as the one whose presence is being explained by Lupin."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as the target of Sirius's actions."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Azkaban is mentioned as a place where people are sent."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is mentioned as someone who wants to see the consequences of sending people to Azkaban."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus",
+      "entity_2": "hideout",
+      "relationship_type": "uses",
+      "description": "Severus uses this old place as his hideout."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "sirius",
+      "relationship_type": "defends",
+      "description": "Lupin defends Sirius's actions."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "azkaban",
+      "relationship_type": "interested_in",
+      "description": "Snape is interested in seeing the consequences of sending people to Azkaban."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Lupin tries to protect Harry."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "azkaban",
+      "relationship_type": "will_send_to",
+      "description": "Snape will send people to Azkaban tonight."
+    }
+  ]
+}

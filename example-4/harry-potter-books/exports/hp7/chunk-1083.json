@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Griphook is a goblin who helps Harry, Ron, and Hermione. He is partially blind but more savage for that."
+    },
+    {
+      "name": "bogrod",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bogrod is a person who accepts the metal instruments from Griphook and must place his palm on the door of the vault."
+    },
+    {
+      "name": "clankers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Clankers are small metal instruments that make a long ringing noise when shaken, used to control the beast in the chamber."
+    },
+    {
+      "name": "beast",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The beast is partially blind but more savage for that. It has learned what to expect when the Clankers come and will retreat when it hears the noise."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "griphook",
+      "entity_2": "clankers",
+      "relationship_type": "has",
+      "description": "Griphook has the Clankers, which he uses to control the beast."
+    },
+    {
+      "entity_1": "bogrod",
+      "entity_2": "vault",
+      "relationship_type": "must_place_palm_on",
+      "description": "Bogrod must place his palm on the door of the vault after the beast retreats."
+    },
+    {
+      "entity_1": "beast",
+      "entity_2": "clankers",
+      "relationship_type": "expects_pain_from",
+      "description": "The beast expects pain when it hears the noise made by the Clankers, which causes it to retreat."
+    }
+  ]
+}

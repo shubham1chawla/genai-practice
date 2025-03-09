@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned in the text as 'Harry's first Quidditch match' and 'Potter'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, also a student at Hogwarts. He is mentioned in the text as 'Ron'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, also a student at Hogwarts. She is mentioned in the text as 'Hermione'."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A teacher at Hogwarts who seems to have it out for Harry and his friends. He is mentioned in the text as 'Snape'."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry. It is mentioned in the text as 'Gryffindor'."
+    },
+    {
+      "name": "quidditch through the ages",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book about Quidditch that Harry shows to Snape. It is mentioned in the text as 'Quidditch through the Ages'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "has_conflict_with",
+      "description": "Harry and Snape have a conflict, as evidenced by Snape's constant attempts to discipline Harry. This is mentioned in the text when Snape says 'Five points from Gryffindor'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry and Ron are friends, as evidenced by their actions together in the courtyard. This is mentioned in the text when they move closer together to block the fire from view."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry and Hermione are friends, as evidenced by their actions together in the courtyard. This is mentioned in the text when they move closer together to block the fire from view."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "punishes",
+      "description": "Snape punishes Gryffindor house by taking away five points, as evidenced by his actions in the text. This is mentioned in the text when he says 'Five points from Gryffindor'."
+    }
+  ]
+}

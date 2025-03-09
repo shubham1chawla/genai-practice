@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "bane",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bane is a person who walked over to stand next to Ronan and looked skywards. He mentioned that Mars is bright tonight."
+    },
+    {
+      "name": "ronan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ronan is a person who was standing with Bane and looking at the sky."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is grumpy and has heard that Mars is bright tonight. He wants to know if anyone sees anything unusual."
+    },
+    {
+      "name": "mars",
+      "entity_type": "planet",
+      "singular": true,
+      "description": "Mars is mentioned as being bright tonight by Bane."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who asks Hagrid if there are many centaurs in the area and if they are good at turning up when needed."
+    },
+    {
+      "name": "centaur",
+      "entity_type": "species",
+      "singular": false,
+      "description": "Centaurs are mentioned as being deep and knowing things but not letting on much. They are also described as star-gazers who are not interested in anything closer than the moon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "centaur",
+      "relationship_type": "has_good_relationship_with",
+      "description": "Hagrid has a good relationship with centaurs, as he mentions that they are good enough about turning up when needed."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "asks_question_to",
+      "description": "Hermione asks Hagrid questions about the centaurs in the area."
+    }
+  ]
+}

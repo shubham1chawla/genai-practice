@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who is offering to help Harry. He is described as making an Unbreakable Oath or Vow."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being offered help by Snape and he confirms that Snape made an Unbreakable Oath or Vow to protect him."
+    },
+    {
+      "name": "malfoy's mother",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Malfoy's mother is mentioned as someone who asked Snape to protect Harry. She is not explicitly named but referred to by her relation to Malfoy."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is standing with Harry at the kitchen sink and is reacting to Snape's offer of help."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are mentioned as people who tried to get Ron to make an Unbreakable Vow when he was five years old."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Snape is offering to help Harry, as mentioned in the conversation between Harry and Ron."
+    },
+    {
+      "entity_1": "malfoy's mother",
+      "entity_2": "snape",
+      "relationship_type": "asks_for_protection",
+      "description": "Malfoy's mother asked Snape to protect Harry, which led Snape to make an Unbreakable Oath or Vow."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fred and george",
+      "relationship_type": "influenced_by",
+      "description": "Fred and George tried to get Ron to make an Unbreakable Vow when he was five years old."
+    }
+  ]
+}

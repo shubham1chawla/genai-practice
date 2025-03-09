@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is a house-elf who does not know the new boy's name. He is described as having pale eyes and muttering faster and more furiously than ever when he sees Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is introduced by Hermione as the new boy. Kreacher does not know his name at first but recognizes him later."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is talking to Kreacher and introduces Harry Potter to him. She also tries to calm down Ron and Ginny when they get angry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron gets angry with Hermione for calling her a Mudblood."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ginny also gets angry with Hermione for calling her a Mudblood."
+    },
+    {
+      "name": "mudblood",
+      "entity_type": "term",
+      "singular": false,
+      "description": "Mudblood is a term used by Kreacher to refer to Hermione. It is considered derogatory and Ron and Ginny get angry when they hear it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "harry potter",
+      "relationship_type": "knows",
+      "description": "Kreacher does not know Harry Potter's name at first but recognizes him later."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "kreacher",
+      "relationship_type": "talking_to",
+      "description": "Hermione is talking to Kreacher and introduces Harry Potter to him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "angry_at",
+      "description": "Ron gets angry with Hermione for calling her a Mudblood."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "hermione",
+      "relationship_type": "angry_at",
+      "description": "Ginny also gets angry with Hermione for calling her a Mudblood."
+    }
+  ]
+}

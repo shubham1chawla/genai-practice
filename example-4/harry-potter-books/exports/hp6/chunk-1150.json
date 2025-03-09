@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and Care of Magical Creatures teacher at Hogwarts School of Witchcraft and Wizardry. He is described as having puffy red eyes and croaked, indicating that he is emotional and upset."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the Headmaster of Hogwarts School of Witchcraft and Wizardry. He is valued by Professor McGonagall and Hagrid, and his absence from Hogwarts is deeply felt."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is kind and values the views of others, including Hagrid."
+    },
+    {
+      "name": "heads of house",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Heads of House are a group of teachers who are responsible for the houses at Hogwarts School of Witchcraft and Wizardry. They will decide on what to do about Professor Dumbledore's absence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "affection",
+      "description": "Hagrid is emotionally attached to Professor Dumbledore and is deeply affected by his absence from Hogwarts."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "filius",
+      "relationship_type": "colleague",
+      "description": "Professor McGonagall is a colleague of Filius, as they are both teachers at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "kids",
+      "relationship_type": "teacher_student",
+      "description": "Hagrid wants to teach kids at Hogwarts if there are any who want him to."
+    }
+  ]
+}

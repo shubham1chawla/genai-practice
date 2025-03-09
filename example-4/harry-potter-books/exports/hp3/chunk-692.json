@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dementors are described as closing in on Sirius and emerging out of the darkness from every direction."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Sirius is mentioned as being targeted by dementors."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is the main character who is running to Sirius and trying to see if it's his father."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who would be running to Sirius with Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Hagrid's door is mentioned where Harry stands irresolute."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_objects",
+      "singular": true,
+      "description": "The Patronus is mentioned as being sent by someone and would be appearing at any moment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "targeted_by",
+      "description": "Harry's father, Sirius, is targeted by dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "waiting_for",
+      "description": "Harry is waiting for the Patronus to appear."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "sirius",
+      "relationship_type": "targeting",
+      "description": "Dementors are closing in on Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "nearby",
+      "description": "Harry stands near Hagrid's door."
+    }
+  ]
+}

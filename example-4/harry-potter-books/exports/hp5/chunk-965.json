@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ward",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Professor Umbridge"
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student in Hagrid's lesson who is known for her laughter and ability to understand thestrals"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "The professor teaching the lesson on thestrals"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "A professor who is present in Hagrid's lesson and asks Pansy Parkinson a question"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pansy parkinson",
+      "entity_2": "hagrid",
+      "relationship_type": "understands",
+      "description": "Pansy Parkinson has difficulty understanding Professor Hagrid when he talks, describing his speech as 'grunting'"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "pansy parkinson",
+      "relationship_type": "questions",
+      "description": "Professor Umbridge asks Pansy Parkinson a question about whether she can understand Professor Hagrid"
+    }
+  ]
+}

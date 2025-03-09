@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who successfully completes the obstacle course."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who struggles with the hinkypunk and sinks into the quagmire."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is terrified by a boggart in an old trunk."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is supervising the obstacle course and gives feedback to Harry."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who appears as a boggart in an old trunk, scaring Hermione."
+    },
+    {
+      "name": "grindylow",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that is present in the paddling pool and must be waded through by the students."
+    },
+    {
+      "name": "red caps",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "A group of creatures that are present in the potholes and must be crossed by the students."
+    },
+    {
+      "name": "hinkypunk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that is present near the marsh and gives misleading directions to Ron."
+    },
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that is present in an old trunk and must be battled by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "supervises",
+      "description": "Lupin is supervising the obstacle course, giving feedback to Harry as he completes it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hinkypunk",
+      "relationship_type": "interacts_with",
+      "description": "Ron interacts with the hinkypunk, which confuses him and causes him to sink into the quagmire."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mcgonagall",
+      "relationship_type": "encounters",
+      "description": "Hermione encounters Professor McGonagall as a boggart in an old trunk, causing her to scream."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "boggart",
+      "relationship_type": "interacts_with",
+      "description": "Hermione interacts with the boggart in the old trunk, which scares her and causes her to fail the obstacle course."
+    }
+  ]
+}

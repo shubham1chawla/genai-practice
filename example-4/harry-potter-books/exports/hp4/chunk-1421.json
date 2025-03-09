@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Potter'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as being targeted by Malfoy."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as being targeted by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is hostile towards Harry and his friends."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy's friend, mentioned as being unconscious."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy's friend, mentioned as being unconscious."
+    },
+    {
+      "name": "diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is mentioned by Malfoy."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": false,
+      "description": "The school that Harry and his friends attend."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title given to the main antagonist of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "hostility",
+      "description": "Malfoy is hostile towards Harry and his friends."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ron",
+      "relationship_type": "hostility",
+      "description": "Malfoy is hostile towards Ron."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hermione",
+      "relationship_type": "hostility",
+      "description": "Malfoy is hostile towards Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendance",
+      "description": "Harry attends Hogwarts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendance",
+      "description": "Ron attends Hogwarts."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendance",
+      "description": "Hermione attends Hogwarts."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "friendship",
+      "description": "Malfoy and Crabbe are friends."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "friendship",
+      "description": "Malfoy and Goyle are friends."
+    },
+    {
+      "entity_1": "diggory",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendance",
+      "description": "Diggory attends Hogwarts."
+    }
+  ]
+}

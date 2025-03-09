@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as 'he' in the text. The text states that Harry's insides went cold when he saw the dementors."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Tall, hooded creatures whose faces are concealed and have dead and rotten-looking hands. They are described as gliding slowly towards the chair in the center of the room."
+    },
+    {
+      "name": "chair",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "A chair with chains on its arms, located in the center of the room. The dementors are moving towards this chair."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "fear",
+      "description": "Harry feels fear when he sees the dementors, as his insides go cold. The text states that Harry couldn't help but feel a sense of dread."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chair",
+      "relationship_type": "observation",
+      "description": "Harry is observing the chair with chains on its arms, which is located in the center of the room."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "man",
+      "relationship_type": "restraint",
+      "description": "The dementors are grasping the man's arms with their dead and rotten-looking hands."
+    },
+    {
+      "entity_1": "chair",
+      "entity_2": "dementors",
+      "relationship_type": "approach",
+      "description": "The dementors are gliding slowly towards the chair in the center of the room."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is talking to Uncle Vernon."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is skeptical and dismissive of Harry's claims."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The most evil wizard of all time, mentioned by Harry as the one who sent owls to him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "conversation",
+      "description": "Harry is talking to Uncle Vernon about Lord Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "sent_by",
+      "description": "Lord Voldemort sent owls to Harry, as mentioned by Harry in the conversation with Uncle Vernon."
+    }
+  ]
+}

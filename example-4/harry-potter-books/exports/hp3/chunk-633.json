@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is deciding what to do with Pettigrew."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has done something wrong and is being considered for punishment."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison where Pettigrew can be sent."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to persuade Harry to spare Pettigrew."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is also trying to persuade Harry to spare Pettigrew."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "pettigrew",
+      "relationship_type": "consideration",
+      "description": "Harry is considering what to do with Pettigrew, whether to send him to Azkaban or spare his life."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry",
+      "relationship_type": "persuasion",
+      "description": "Black is trying to persuade Harry to spare Pettigrew's life."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "persuasion",
+      "description": "Lupin is also trying to persuade Harry to spare Pettigrew's life."
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "azkaban",
+      "relationship_type": "destination",
+      "description": "Pettigrew can be sent to Azkaban as punishment."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "floor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The floor is mentioned as the location where the students were caught red-handed. (\"when we reached the seventh floor they were running in every direction.\")"
+    },
+    {
+      "name": "Miss Pa rkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Pa rkinson is a trustworthy student who helps Harry by checking if the students left anything behind. (\"Miss Pa rkinson ran into the Room of Re-quirement for me to see if they ha d left anything behind.\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being dealt with by Fudge and Dolores. (\"The moment I saw Potter’s name on the list, I knew what we were dealing with\")"
+    },
+    {
+      "name": "Fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who is impressed by Dolores' discovery. (\"Excellent,\" said Fudge, a smile spreading across his face.)"
+    },
+    {
+      "name": "Dolores",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores is a person who discovers the list of names and hands it to Fudge. (\"The moment I saw Potter’s name on the list, I knew what we were dealing with\")"
+    },
+    {
+      "name": "Marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is a person who is standing beside Dumbledore. (\"He looked up at Dumbledore, who was still standing beside Mari-etta\")"
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is standing beside Marietta. (\"He looked up at Dumbledore, who was still standing beside Mari-etta\")"
+    },
+    {
+      "name": "Room of Re-quirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Room of Re-quirement is a location where Miss Pa rkinson checks if the students left anything behind. (\"Miss Pa rkinson ran into the Room of Re-quirement for me to see if they ha d left anything behind.\")"
+    },
+    {
+      "name": "Potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is a person whose name is on the list. (\"The moment I saw Potter’s name on the list, I knew what we were dealing with\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Dolores",
+      "entity_2": "Fudge",
+      "relationship_type": "hand_over_list",
+      "description": "Dolores hands over the list of names to Fudge. (\"And . . . by thunder . . . He looked up at Dumbledore, who was still standing beside Mari-etta\")"
+    },
+    {
+      "entity_1": "Fudge",
+      "entity_2": "Potter",
+      "relationship_type": "target_of_investigation",
+      "description": "Fudge is dealing with Potter. (\"The moment I saw Potter’s name on the list, I knew what we were dealing with\")"
+    },
+    {
+      "entity_1": "Miss Pa rkinson",
+      "entity_2": "Room of Re-quirement",
+      "relationship_type": "entered_location",
+      "description": "Miss Pa rkinson enters the Room of Re-quirement. (\"Miss Pa rkinson ran into the Room of Re-quirement for me to see if they ha d left anything behind.\")"
+    }
+  ]
+}

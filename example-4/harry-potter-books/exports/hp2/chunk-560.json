@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "windscreen",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The windscreen is mentioned as an obstacle that Fang flung himself at to get out of the car."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The forest is where Harry and Ron are located when they reach its edge."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is a dog that flung himself at the windscreen to get out of the car."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid's house is where Fang runs off to after getting out of the car."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who gets out of the car after a minute or so."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of Ron's friends who gets out of the car first."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fang",
+      "entity_2": "windscreen",
+      "relationship_type": "collision",
+      "description": "Fang flung himself at the windscreen to get out of the car."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "car",
+      "relationship_type": "exit",
+      "description": "Harry got out of the car after Fang shot off through the trees."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "car",
+      "relationship_type": "exit",
+      "description": "Ron followed Harry out of the car after a minute or so."
+    },
+    {
+      "entity_1": "fang",
+      "entity_2": "hagrid's house",
+      "relationship_type": "destination",
+      "description": "Fang ran off to Hagrid's house after getting out of the car."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid's house",
+      "relationship_type": "destination",
+      "description": "Ron followed Fang to Hagrid's house."
+    }
+  ]
+}

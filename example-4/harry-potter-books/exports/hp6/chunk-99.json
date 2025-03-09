@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as a wise and powerful wizard who ignores Uncle Vernon's muttering."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is introduced as someone who is dismissive of Dumbledore's words."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as a returned wizard and the one who has attempted to kill Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as someone who was left on the Dursleys' doorstep by Dumbledore."
+    },
+    {
+      "name": "the dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as a family that has neglected and often been cruel to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "left_on_doorstep",
+      "description": "Dumbledore left Harry on the doorstep of the Dursleys' house."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "harry",
+      "relationship_type": "attempted_to_kill",
+      "description": "Lord Voldemort has attempted to kill Harry multiple times."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the dursleys",
+      "relationship_type": "asked_for_care",
+      "description": "Dumbledore asked the Dursleys to care for Harry as their own son."
+    }
+  ]
+}

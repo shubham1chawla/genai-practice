@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "horace",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Horace is described as someone who has an uncanny knack for choosing people who will become outstanding in their fields. He forms a club of his favorites and makes introductions to reap benefits."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one speaking to Harry and telling him about Horace."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one listening to Dumbledore's story about Horace."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horace",
+      "relationship_type": "speaks_about",
+      "description": "Dumbledore is telling Harry about Horace."
+    },
+    {
+      "entity_1": "horace",
+      "entity_2": "harry",
+      "relationship_type": "has_interest_in",
+      "description": "Horace has an interest in Harry, as Dumbledore is telling him about Horace's behavior towards Harry."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "spinnet",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Mentioned as the best team Hogwarts has seen in a good few years"
+    },
+    {
+      "name": "weasley",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Mentioned as one of the teams, alongside Spinnet and Wood"
+    },
+    {
+      "name": "wood",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Mentioned as one of the teams, alongside Weasley and Spinnet"
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Commenting on the Slytherin team's lineup"
+    },
+    {
+      "name": "flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Captain of the Slytherin team"
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Referee of the Quidditch match"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "spinnet",
+      "entity_2": "weasley",
+      "relationship_type": "comparable",
+      "description": "Both teams are mentioned as being among the best Hogwarts has seen"
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "flint",
+      "relationship_type": "commented_on",
+      "description": "Lee comments on Flint's changes to the Slytherin team's lineup"
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "flint",
+      "relationship_type": "interacted_with",
+      "description": "Madam Hooch tells Flint and Wood to shake hands before the match"
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "wood",
+      "relationship_type": "interacted_with",
+      "description": "Madam Hooch tells Flint and Wood to shake hands before the match"
+    }
+  ]
+}

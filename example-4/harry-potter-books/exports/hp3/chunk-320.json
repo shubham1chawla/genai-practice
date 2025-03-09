@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, mentioned as starting to grin."
+    },
+    {
+      "name": "Fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins, mentioned as speaking and smirking."
+    },
+    {
+      "name": "George",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins, mentioned as causing a diversion and speaking."
+    },
+    {
+      "name": "Filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker of Hogwarts, mentioned as possibly suspecting what the device was."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Fred",
+      "entity_2": "device",
+      "relationship_type": "knows_how_to_work",
+      "description": "Fred knows how to work the device, according to George."
+    },
+    {
+      "entity_1": "George",
+      "entity_2": "device",
+      "relationship_type": "caused_diversion_with",
+      "description": "George caused a diversion by dropping another Dungbomb near the device."
+    },
+    {
+      "entity_1": "Filch",
+      "entity_2": "device",
+      "relationship_type": "suspected",
+      "description": "Filch probably suspected what the device was, according to George."
+    }
+  ]
+}

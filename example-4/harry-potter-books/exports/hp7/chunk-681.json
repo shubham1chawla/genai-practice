@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'he' or 'him'. The old lady points at him and wants him to go upstairs with her."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is present in the scene. She helps interpret Bathilda's gestures."
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old lady who is trying to communicate with Harry and Hermione through gestures."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned in the conversation as possibly having given instructions to Bathilda."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bathilda",
+      "entity_2": "harry",
+      "relationship_type": "points_at",
+      "description": "Bathilda points at Harry, indicating that he should go upstairs with her."
+    },
+    {
+      "entity_1": "bathilda",
+      "entity_2": "hermione",
+      "relationship_type": "points_away_from",
+      "description": "Bathilda shakes her head and points away from Hermione, indicating that she does not want Hermione to come with Harry."
+    }
+  ]
+}

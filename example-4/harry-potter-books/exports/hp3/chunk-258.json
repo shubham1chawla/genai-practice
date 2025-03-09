@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who is having a conversation with Harry. He is described as raising his eyebrows and sounding surprised."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is having a conversation with Lupin. He is described as being taken aback by Lupin's answer."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who is mentioned in the conversation between Harry and Lupin. He is described as someone that people would panic if he materialized in the staffroom."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned in the conversation between Harry and Lupin. He is described as one of the only people who has ever said Voldemort's name aloud."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Lupin and Harry are having a conversation about why Lupin didn't let Harry fight the boggart."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "staffroom",
+      "relationship_type": "materialization",
+      "description": "Voldemort is said to materialize in the staffroom if he faced Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "memory",
+      "description": "Harry remembered the dementors when Lupin asked him why he didn't think of Voldemort."
+    }
+  ]
+}

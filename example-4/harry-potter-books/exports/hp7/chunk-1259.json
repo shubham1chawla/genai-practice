@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diadem is mentioned as an object that Harry knows the appearance of and its location. It is described as being hidden in a place where everyone has been hiding stuff for centuries."
+    },
+    {
+      "name": "potions book",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Harry mentions his old Potions book, which suggests it's an object that he used to study or learn from."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Room of Requirement is a location where Harry and the others go after the explosion. It's described as being empty except for three women."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "diadem",
+      "entity_2": "potions book",
+      "relationship_type": "similar_location",
+      "description": "The diadem is hidden in a location similar to where Harry hid his old Potions book, suggesting that both objects are stored in secret places."
+    },
+    {
+      "entity_1": "diadem",
+      "entity_2": "room of requirement",
+      "relationship_type": "location_of",
+      "description": "The diadem is located in the Room of Requirement, which is a specific location where Harry and others go to find it."
+    },
+    {
+      "entity_1": "potions book",
+      "entity_2": "diadem",
+      "relationship_type": "similar_location_inverse",
+      "description": "The Potions book is also stored in a secret place similar to the diadem's location, suggesting that both objects have similar hiding spots."
+    }
+  ]
+}

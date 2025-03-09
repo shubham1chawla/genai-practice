@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being part of the team and having Quidditch practice."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The coach of the team, mentioned as working the team harder than ever and giving them bad news."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house in the school, mentioned as being the opponent in the next match."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house in the school, mentioned as being overtaken by Gryffindor if they win their next match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wood",
+      "relationship_type": "support",
+      "description": "Harry is on Wood's side, as mentioned in the text: 'The Weasleys complained that Wood was becoming a fanatic, but Harry was on Wood’s side.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hufflepuff",
+      "relationship_type": "opponent",
+      "description": "Harry's team is playing against Hufflepuff in their next match, as mentioned in the text: 'If they won their next match, against Hufflepuff...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "rival",
+      "description": "Harry's team is trying to overtake Slytherin in the House Championship, as mentioned in the text: 'If they won their next match, against Hufflepuff, they would overtake Slytherin...'"
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "coach_player",
+      "description": "Wood is the coach of Harry's team, as mentioned in the text: 'Wood was working the team harder than ever.'"
+    }
+  ]
+}

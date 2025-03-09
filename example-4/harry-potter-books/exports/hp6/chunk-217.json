@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as a person who gave a start-up loan to someone. He is sternly reminding them to tell people where they got the loan from."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person leading Harry back into the main part of the shop and showing Hermione and Ginny the Patented Daydream Charms."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being led by Fred back into the main part of the shop."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the girls who are looking at the Patented Daydream Charms with Ginny."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as one of the girls who are looking at the Patented Daydream Charms with Hermione."
+    },
+    {
+      "name": "wonderwitch products",
+      "entity_type": "product",
+      "singular": false,
+      "description": "WonderWitch products are mentioned as a special range of love potions."
+    },
+    {
+      "name": "patented daydream charms",
+      "entity_type": "product",
+      "singular": false,
+      "description": "Patented Daydream Charms are mentioned as something that Hermione and Ginny are looking at."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "wonderwitch products",
+      "relationship_type": "provided",
+      "description": "George provided the WonderWitch products."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "led",
+      "description": "Fred led Harry back into the main part of the shop."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "hermione",
+      "relationship_type": "showed",
+      "description": "Fred showed Hermione and Ginny the Patented Daydream Charms."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ginny",
+      "relationship_type": "showed",
+      "description": "Fred showed Hermione and Ginny the Patented Daydream Charms."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "wonderwitch products",
+      "relationship_type": "examined",
+      "description": "Hermione examined the WonderWitch products."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "wonderwitch products",
+      "relationship_type": "examined",
+      "description": "Ginny examined the WonderWitch products."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "love potions",
+      "relationship_type": "claimed_effectiveness",
+      "description": "George claimed that the love potions work for up to twenty-four hours at a time depending on the weight of the boy in question."
+    }
+  ]
+}

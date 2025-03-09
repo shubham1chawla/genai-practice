@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prime Minister is talking about Harry Potter as a powerful wizard who has eluded capture for almost three decades. (\"...one of the most powerful wiz-ards of all time, a wizard who has eluded capture for almost three decades!\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the Minister who is being questioned by the Prime Minister about his handling of the blackmailer. (\"My fault!\" said Fudge, colouring up.)"
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Prime Minister is a government official who is questioning Fudge about his handling of the blackmailer. (\"said the Prime Minister furiously.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "prime minister",
+      "relationship_type": "questioned_by",
+      "description": "The Prime Minister is questioning Fudge about his handling of the blackmailer. (\"My fault!\" said Fudge, colouring up.)"
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "fudge",
+      "relationship_type": "accusing",
+      "description": "The Prime Minister is accusing Fudge of not doing enough to catch the blackmailer. (\"Are you saying you would have caved in to blackmail like that?\" said the Prime Minister.)"
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "harry potter",
+      "relationship_type": "concerned_about",
+      "description": "The Prime Minister is concerned about Harry Potter, who has eluded capture for almost three decades. (\"So I suppose you're going to tell me he caused the hurricane in the West Country, too?\" said the Prime Minister.)"
+    }
+  ]
+}

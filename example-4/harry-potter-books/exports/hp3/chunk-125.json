@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having expected the news to be taken worse than he did."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is frightened of Black and trying to reassure Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend, who is also frightened of Black but tries to be optimistic."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A top-security prisoner in Azkaban, mentioned as being feared by Ron and Hermione."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A prison where Black was a top-security prisoner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "black",
+      "relationship_type": "fear_of",
+      "description": "Ron is frightened of Black."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "black",
+      "relationship_type": "fear_of",
+      "description": "Hermione is also frightened of Black."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "less_frightened_than",
+      "description": "Harry is less frightened of Black than Ron and Hermione."
+    }
+  ]
+}

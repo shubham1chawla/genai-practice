@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is having a conversation with Nearly Headless Nick about coming back as a ghost."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Nearly Headless Nick is a ghost who can walk and talk."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is the school where Harry and Nearly Headless Nick are having their conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "conversation",
+      "description": "Harry is having a conversation with Nearly Headless Nick about coming back as a ghost."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "location",
+      "description": "The conversation between Harry and Nearly Headless Nick is taking place at Hogwarts."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Nearly Headless Nick is also having a conversation with Harry about coming back as a ghost."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "hogwarts",
+      "relationship_type": "location",
+      "description": "The conversation between Nearly Headless Nick and Harry is taking place at Hogwarts."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is the mother of Draco Malfoy. She is worried about her son's safety and believes that Snape could be a better choice for the task."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who has been tasked by the Dark Lord to kill someone. He seems reluctant to do so but is willing to follow orders."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is Narcissa's son and the one chosen by the Dark Lord for the task. Narcissa believes that Snape would be a better choice."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Dark Lord is the one who has tasked Snape with killing someone. He seems to have a plan in place and wants Draco to try first."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "narcissa",
+      "entity_2": "snape",
+      "relationship_type": "believes_in",
+      "description": "Narcissa believes that Snape could be a better choice for the task than her son, Draco."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "draco",
+      "relationship_type": "has_chosen",
+      "description": "The Dark Lord has chosen Draco to try and complete the task first."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dark lord",
+      "relationship_type": "is_tasked_by",
+      "description": "Snape is tasked by the Dark Lord with killing someone, but he seems reluctant to do so."
+    }
+  ]
+}

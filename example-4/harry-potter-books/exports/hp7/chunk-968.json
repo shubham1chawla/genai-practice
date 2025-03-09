@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "hallow",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "Hallows are mentioned as being related to Horcruxes in the text."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "Horcruxes are mentioned as being related to Hallows in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hallow",
+      "entity_2": "horcrux",
+      "relationship_type": "related_to",
+      "description": "Hallows and Horcruxes are mentioned as being related to each other in the text."
+    },
+    {
+      "entity_1": "horcrux",
+      "entity_2": "hallow",
+      "relationship_type": "related_to",
+      "description": "Horcruxes and Hallows are mentioned as being related to each other in the text. This relationship is bidirectional, so we have included both directions."
+    }
+  ]
+}

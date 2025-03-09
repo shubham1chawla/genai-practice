@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as the one who stuck a device to her office door to spy on people. (\"Umbridge had stuck it to her oﬃce door, to spy on people.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who wanted a place enclosed and undercover. (\"In the woods where they held the Quidditch World Cup,\" said Hermione. \"I wanted somewhere enclosed, undercover, and this was —\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is injured and feeling lousy. (\"How d’you feel?\" Hermione whispered. \"Lousy,\" croaked Ron, wincing as he felt his injured arm.)"
+    },
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is mentioned as the event that was held in the woods. (\"In the woods where they held the Quidditch World Cup,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "people",
+      "relationship_type": "spies_on",
+      "description": "Umbridge is spying on people. (\"Umbridge had stuck it to her oﬃce door, to spy on people.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "related_to",
+      "description": "Hermione is related to the Quidditch World Cup as it was held in the woods where they are currently located. (\"In the woods where they held the Quidditch World Cup,\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "injured_by",
+      "description": "Ron is injured and Hermione is mentioned as being present. (\"How d’you feel?\" Hermione whispered. \"Lousy,\" croaked Ron, wincing as he felt his injured arm.)"
+    }
+  ]
+}

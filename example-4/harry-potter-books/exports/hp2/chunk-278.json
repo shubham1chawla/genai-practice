@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being present in the scene."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is bent close to something, her eyes narrowed."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is looming behind others, wearing a peculiar expression."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is hovering around the group, making suggestions."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is slumped in a chair by the desk, unable to look at Mrs Norris."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Filch's cat, mentioned as being present in the scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as muttering strange words under his breath."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "transmogrifian torture",
+      "relationship_type": "used_by",
+      "description": "Lockhart mentions that he has seen the Transmogrifian Torture used many times."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "filch",
+      "relationship_type": "believes",
+      "description": "Dumbledore believes Filch, which would lead to Filch's expulsion if true."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_about",
+      "description": "Harry feels sorry for himself because of Dumbledore's belief in Filch."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody shouted \"ing followed!\" which indicates he is speaking."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks screamed from the front and gave instructions to Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin's voice came in saying \"Time to start the descent!\""
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry followed Tonks into a dive and landed behind her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "lupin",
+      "relationship_type": "gave_instructions_to",
+      "description": "Tonks gave instructions to Lupin, who responded with \"Time to start the descent!\""
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tonks",
+      "relationship_type": "followed",
+      "description": "Harry followed Tonks into a dive."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "led",
+      "description": "Tonks led Harry and landed first."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "tonks",
+      "relationship_type": "responded_to",
+      "description": "Lupin responded to Tonks' instructions with \"Time to start the descent!\""
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "unrelated",
+      "description": "Harry and Moody are not related in this context."
+    }
+  ]
+}

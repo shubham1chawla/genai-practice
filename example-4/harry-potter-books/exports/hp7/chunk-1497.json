@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist, a dark wizard. He is described as having followed every word with rapt attention and letting out a cackle of mad laughter."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who was dying when Snape finished him. He is mentioned as trying to keep the Elder Wand from Voldemort."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A spy who worked against Voldemort and was supposed to be Dumbledore's. He is also described as having a supposed great love for Harry's mother."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist, a boy who is trying to understand the situation."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that Voldemort and Harry are fighting over. It is mentioned as being intended for Snape to be the true master of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "opponent",
+      "description": "Voldemort and Dumbledore were opponents, with Voldemort trying to get the Elder Wand from Dumbledore."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "opponent",
+      "description": "Voldemort and Snape were also opponents, with Voldemort trying to crush Snape's supposed great love."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "ally",
+      "description": "Dumbledore and Snape were allies, with Dumbledore intending for Snape to be the true master of the Elder Wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "goal",
+      "description": "Voldemort's goal was to get the Elder Wand."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "opponent",
+      "description": "Harry and Voldemort were opponents, with Harry trying to understand the situation and Voldemort trying to crush him."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "elder wand",
+      "relationship_type": "intended_master",
+      "description": "Snape was intended to be the true master of the Elder Wand."
+    }
+  ]
+}

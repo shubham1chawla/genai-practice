@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to avoid detection by Filch and Snape. (Excerpt: 'Harry stood rooted to the spot...')"
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is tasked with maintaining discipline. (Excerpt: 'Filch and Snape came around the corner ahead.')"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A potions master at Hogwarts who is known for being strict and intimidating. (Excerpt: 'Filch and Snape came around the corner ahead.')"
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry is wearing, which allows him to become invisible. (Excerpt: 'The Cloak didn’t stop him being solid')"
+    },
+    {
+      "name": "door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A door in the corridor that Harry uses to escape from Filch and Snape. (Excerpt: 'He squeezed through it, holding his breath...')"
+    },
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room where Harry hides after escaping from Filch and Snape. (Excerpt: 'That had been close, very close. It was a few seconds before he noticed anything about the room he had hidden in.')"
+    },
+    {
+      "name": "classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A disused classroom that Harry hides in. (Excerpt: 'It looked like a disused classroom...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "is_being_chased_by",
+      "description": "Harry is being chased by Filch and Snape. (Excerpt: 'The Restricted Section? Well, they can’t be far, we’ll catch them.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "is_being_chased_by",
+      "description": "Harry is being chased by Filch and Snape. (Excerpt: 'The Restricted Section? Well, they can’t be far, we’ll catch them.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cloak",
+      "relationship_type": "is_wearing",
+      "description": "Harry is wearing the Cloak. (Excerpt: 'The Cloak didn’t stop him being solid')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "door",
+      "relationship_type": "passed_through",
+      "description": "Harry passed through the door to escape from Filch and Snape. (Excerpt: 'He squeezed through it, holding his breath...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "room",
+      "relationship_type": "is_hiding_in",
+      "description": "Harry is hiding in the room. (Excerpt: 'That had been close, very close. It was a few seconds before he noticed anything about the room he had hidden in.')"
+    }
+  ]
+}

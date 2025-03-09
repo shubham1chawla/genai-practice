@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "screaming yo-yos",
+      "entity_type": "forbidden objects",
+      "singular": false,
+      "description": "mentioned as one of the items forbidden inside the castle this year"
+    },
+    {
+      "name": "fanged frisbees",
+      "entity_type": "forbidden objects",
+      "singular": false,
+      "description": "mentioned as one of the items forbidden inside the castle this year"
+    },
+    {
+      "name": "ever-bashing boomerangs",
+      "entity_type": "forbidden objects",
+      "singular": false,
+      "description": "mentioned as one of the items forbidden inside the castle this year"
+    },
+    {
+      "name": "inter-house quidditch cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "mentioned as not taking place this year"
+    },
+    {
+      "name": "hogsmeade village",
+      "entity_type": "location",
+      "singular": false,
+      "description": "mentioned as being out-of-bounds to all below third year"
+    },
+    {
+      "name": "forest on the grounds",
+      "entity_type": "location",
+      "singular": false,
+      "description": "mentioned as being out-of-bounds to students"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hogsmeade village",
+      "entity_2": "students",
+      "relationship_type": "out_of_bounds",
+      "description": "mentioned that the village of Hogsmeade is out-of-bounds to all below third year"
+    },
+    {
+      "entity_1": "forest on the grounds",
+      "entity_2": "students",
+      "relationship_type": "out_of_bounds",
+      "description": "mentioned that the forest on the grounds is out-of-bounds to students"
+    },
+    {
+      "entity_1": "inter-house quidditch cup",
+      "entity_2": "this year",
+      "relationship_type": "not_held",
+      "description": "mentioned that the Inter-House Quidditch Cup will not take place this year"
+    }
+  ]
+}

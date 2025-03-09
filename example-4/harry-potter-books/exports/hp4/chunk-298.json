@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as someone who should have sent someone to look for Rita Skeeter. He is not described in detail, but his name is used as a proper noun."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is mentioned as a high-ranking Ministry official who has been saying that Rita Skeeter should be found for weeks and weeks. He is described as being lucky because Rita hasn't found out about Winky."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Winky is mentioned as a house-elf who was caught holding the wand that conjured the Dark Mark. She is described as being irresponsible, but not responsible for conjuring the Mark."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is mentioned as a journalist who has been missing and should be found. She is described as being a problem because she might find out about Winky."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone who quickly agrees with Mr. Crouch that Rita Skeeter should be found. He is described as being hotly defensive of Mr. Crouch."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is angry with Mr. Crouch for being mean to elves and not paying Winky. She is described as having a passionate voice."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as someone who irritably says that Mr. Crouch is lucky Rita hasn't found out about Winky."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crouch",
+      "entity_2": "winky",
+      "relationship_type": "owns",
+      "description": "Mr. Crouch owns or has a house-elf named Winky, who was caught holding the wand that conjured the Dark Mark."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "rita skeeter",
+      "relationship_type": "concerned_about",
+      "description": "Mr. Crouch is concerned about Rita Skeeter being missing and might be found out by her."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "rita skeeter",
+      "relationship_type": "should_have_found",
+      "description": "Bagman should have sent someone to look for Rita Skeeter, but he didn't."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "crouch",
+      "relationship_type": "angry_with",
+      "description": "Hermione is angry with Mr. Crouch for being mean to elves and not paying Winky."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is trying to get a new wand from Ollivander."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wand maker who is helping Harry choose a new wand."
+    },
+    {
+      "name": "holly and phoenix feather",
+      "entity_type": "wand_materials",
+      "singular": false,
+      "description": "The materials used to make the wand. Ollivander mentions that it's made of holly and phoenix feather."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ollivander",
+      "relationship_type": "interaction",
+      "description": "Harry is interacting with Ollivander to get a new wand. They are discussing the wand's materials and its repairability."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "holly and phoenix feather",
+      "relationship_type": "ownership",
+      "description": "Harry is trying to get a new wand made of holly and phoenix feather. He is interested in this material for his new wand."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Ollivander is giving advice to Harry about the repairability of the wand. He tells Harry that it cannot be repaired."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dragons",
+      "entity_type": "dragon",
+      "singular": false,
+      "description": "The dragons are described as enormous, vicious-looking, and having different colors such as silvery-blue, green, red, and black. They are also mentioned to be shooting fire from their mouths."
+    },
+    {
+      "name": "wizards",
+      "entity_type": "wizard",
+      "singular": false,
+      "description": "The wizards are described as attempting to control the dragons by pulling on chains connected to heavy leather straps around the dragons' necks and legs."
+    },
+    {
+      "name": "enclosure",
+      "entity_type": "enclosure",
+      "singular": true,
+      "description": "The enclosure is described as being fenced with thick planks of wood, where the dragons are rearing onto their hind legs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizards",
+      "entity_2": "dragons",
+      "relationship_type": "attempt_to_control",
+      "description": "The wizards are attempting to control the dragons by pulling on chains connected to heavy leather straps around the dragons' necks and legs."
+    },
+    {
+      "entity_1": "wizards",
+      "entity_2": "enclosure",
+      "relationship_type": "located_near",
+      "description": "The wizards are located near the enclosure where the dragons are being kept."
+    }
+  ]
+}

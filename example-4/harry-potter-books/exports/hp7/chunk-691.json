@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "child",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The child is the main subject of the story, introduced as someone who would be affected by the movement of the wand."
+    },
+    {
+      "name": "mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother is the parent of the child and is mentioned as a target for the child's reach."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wand is an object that has the power to affect the child's movement."
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The street is a location where the character moves and is described as darker."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "child",
+      "entity_2": "mother",
+      "relationship_type": "target_of_reach",
+      "description": "The child's movement is directed towards reaching their mother, but this action is prevented by the wand."
+    },
+    {
+      "entity_1": "character",
+      "entity_2": "street",
+      "relationship_type": "movement_through",
+      "description": "The character moves through a new and darker street as they head to their destination."
+    }
+  ]
+}

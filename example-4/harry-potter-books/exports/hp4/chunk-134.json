@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "people",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to individuals with cheaper tickets who have to arrive two weeks beforehand."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to non-magical people who are not aware of the wizarding world."
+    },
+    {
+      "name": "wizards",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to individuals with magical abilities."
+    },
+    {
+      "name": "portkeys",
+      "entity_type": "objects",
+      "singular": false,
+      "description": "Objects used to transport wizards from one spot to another at a prearranged time."
+    },
+    {
+      "name": "stoatshead hill",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where a Portkey is placed."
+    },
+    {
+      "name": "ottery st. catchpole",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A village where the group is currently located."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "portkeys",
+      "entity_2": "stoatshead hill",
+      "relationship_type": "located_at",
+      "description": "Portkeys are placed at strategic points around Britain, and one of them is located at Stoatshead Hill."
+    },
+    {
+      "entity_1": "people",
+      "entity_2": "muggles",
+      "relationship_type": "separated_from",
+      "description": "People with cheaper tickets have to arrive two weeks beforehand to avoid clogging up Muggle transport."
+    }
+  ]
+}

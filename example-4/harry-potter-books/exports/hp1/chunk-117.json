@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is initially unsure if his dream was real or not."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "A giant who appears in Harry's dream and tells him he is going to a school for wizards. He is also physically present in the hut when Harry wakes up."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who knocks on the door in his dream."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location that is mentioned as a place where wizards go to buy school supplies."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "visited_by",
+      "description": "Hagrid visits Harry in his dream."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "related_to",
+      "description": "Harry has a connection to Diagon Alley, although it is not specified what this relationship is."
+    }
+  ]
+}

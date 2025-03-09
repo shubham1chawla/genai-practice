@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "midnight",
+      "entity_type": "time",
+      "singular": true,
+      "description": "The time of day when the Yule Ball is taking place."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large hall in Hogwarts where students gather for meals and events."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Transfiguration professor who is also the Head of Gryffindor House."
+    },
+    {
+      "name": "yule ball",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A traditional Hogwarts event where students dance and socialize."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is giggling at Professor McGonagall's comment."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a Gryffindor student."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "yule ball",
+      "relationship_type": "hosts",
+      "description": "Professor McGonagall is hosting the Yule Ball event."
+    },
+    {
+      "entity_1": "lavender",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "finds funny",
+      "description": "Lavender finds Professor McGonagall's comment funny."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "sees",
+      "description": "Harry sees Professor McGonagall looking as though she has never let her hair down."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "is displeased with",
+      "description": "Professor McGonagall is displeased with the idea of a Gryffindor student embarrassing the school."
+    }
+  ]
+}

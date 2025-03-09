@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that the narrator is referring to. They are mentioned as getting into bed and falling asleep."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Dursley fell asleep quickly. She is a member of the Dursley family."
+    },
+    {
+      "name": "mr dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Dursley lay awake, turning it all over in his mind. He is a member of the Dursley family."
+    },
+    {
+      "name": "potters",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Potters are mentioned as being involved and knowing what Mr and Mrs Dursley do."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "potters",
+      "relationship_type": "concerned_about",
+      "description": "Mr Dursley is concerned about the Potters being involved. He thinks there's no reason for them to come near him and Mrs Dursley."
+    },
+    {
+      "entity_1": "mrs dursley",
+      "entity_2": "potters",
+      "relationship_type": "concerned_about",
+      "description": "Mrs Dursley is also concerned about the Potters being involved. She is a member of the Dursley family and shares Mr Dursley's concerns."
+    },
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "mrs dursley",
+      "relationship_type": "related_to",
+      "description": "Mr Dursley is related to Mrs Dursley. They are a married couple and members of the same family."
+    },
+    {
+      "entity_1": "potters",
+      "entity_2": "mr dursley",
+      "relationship_type": "known_by",
+      "description": "The Potters know Mr Dursley and his wife, Mrs Dursley."
+    },
+    {
+      "entity_1": "potters",
+      "entity_2": "mrs dursley",
+      "relationship_type": "known_by",
+      "description": "The Potters also know Mrs Dursley. She is a member of the Dursley family and shares Mr Dursley's concerns."
+    }
+  ]
+}

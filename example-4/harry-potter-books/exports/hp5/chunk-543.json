@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "detention",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Detention is mentioned as a consequence for giving out sweets. The text states 'No — come on, Hermione — we can’t tell them off for giving out sweets...'."
+    },
+    {
+      "name": "dolores",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores is the teacher who is standing up and looking furious. She says 'No, I’m sorry, they’ve gone too far.'"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the students who is trying to play for time. He says 'I — what?'"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is standing up and marching directly over to Fred and George. She is concerned about the students who are unconscious."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the twins who are holding clipboards and observing the situation."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is the other twin who is holding a clipboard and observing the situation."
+    },
+    {
+      "name": "nosebleed nougat",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Nosebleed Nougat is one of the sweets that Fred and George are giving out. Hermione mentions it as 'bits of Nosebleed Nougat or — or Puking Pastilles or —'"
+    },
+    {
+      "name": "puking pastilles",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Puking Pastilles is another type of sweet that Fred and George are giving out."
+    },
+    {
+      "name": "fainting fancies",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Fainting Fancies is a third type of sweet that Harry suggests might be the cause of the students' unconsciousness."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dolores",
+      "relationship_type": "scolded_by",
+      "description": "Hermione is scolded by Dolores for giving out sweets."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "follows",
+      "description": "Ron follows Hermione as she stands up and marches over to Fred and George."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "twin",
+      "description": "Fred and George are twins who are holding clipboards and observing the situation."
+    }
+  ]
+}

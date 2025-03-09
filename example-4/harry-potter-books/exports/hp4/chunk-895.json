@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story who is described as turning on and off the taps to enjoy the effect of the water."
+    },
+    {
+      "name": "water",
+      "entity_type": "liquid",
+      "singular": false,
+      "description": "The water in the pool that Harry is swimming in, described as hot and foamy with clouds of different-colored steam wafting around him."
+    },
+    {
+      "name": "clouds",
+      "entity_type": "weather_condition",
+      "singular": false,
+      "description": "Purplish le clouds hovering over the surface of the water, adding to the ambiance of Harry's experience."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An egg that Harry is staring at while treading water in the pool."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "water",
+      "relationship_type": "swims_in",
+      "description": "Harry swims in the hot and foamy water, enjoying the experience but not gaining any sudden understanding or brilliance."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "clouds",
+      "relationship_type": "observes",
+      "description": "Harry observes the purplish le clouds hovering over the surface of the water, adding to his enjoyment of the experience."
+    }
+  ]
+}

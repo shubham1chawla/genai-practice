@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "trapdoor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The entrance to the room where Hermione and Harry are standing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the seven people who will help or hinder Harry's progress."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is trying to navigate through the trapdoor."
+    },
+    {
+      "name": "nettle wine",
+      "entity_type": "drink",
+      "singular": false,
+      "description": "A drink that contains poison on its left side."
+    },
+    {
+      "name": "poison",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The substance that is hidden in the drinks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "trapdoor",
+      "relationship_type": "location",
+      "description": "Harry is standing near the trapdoor."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "nettle wine",
+      "relationship_type": "has",
+      "description": "Hermione is one of the people who holds nettle wine."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "poison",
+      "relationship_type": "contains",
+      "description": "The poison is hidden in the drinks, including nettle wine."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "nettle wine",
+      "relationship_type": "holds",
+      "description": "Hermione holds nettle wine."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "interacts_with",
+      "description": "Harry interacts with Hermione, who is smiling at him."
+    },
+    {
+      "entity_1": "nettle wine",
+      "entity_2": "poison",
+      "relationship_type": "contains",
+      "description": "Nettle wine contains poison on its left side."
+    }
+  ]
+}

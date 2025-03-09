@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who suspects that the parchment contains Dark Magic. He is described as having a rigid jaw with anger."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a teacher at Hogwarts who is trying to defend Harry and explain the parchment. He warns Harry not to interrupt."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the student who received the parchment. He doesn't understand what Snape is talking about."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is a person mentioned by Lupin as one of the manufacturers of Dark Magic items."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The parchment is described as being full of Dark Magic and insulting to read."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "disagreement",
+      "description": "Snape and Lupin disagree about the nature of the parchment."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "suspicion",
+      "description": "Snape suspects that Harry got the parchment from a manufacturer, possibly Wormtail."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "wormtail",
+      "relationship_type": "mention",
+      "description": "Lupin mentions Wormtail as one of the manufacturers of Dark Magic items."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "accusation",
+      "description": "Snape accuses Harry of getting the parchment from a manufacturer, possibly Wormtail."
+    }
+  ]
+}

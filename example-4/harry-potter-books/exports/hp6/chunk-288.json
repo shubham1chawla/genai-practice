@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master at Hogwarts school. He is described as standing back to allow Harry to pass him and is mentioned multiple times in the passage."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts school. He is described as having a new Patronus and is mentioned multiple times in the passage."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is present with Harry and Snape. She is described as looking shocked and angry when she sees Harry's new Patronus."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "Harry has a new Patronus which Snape thinks looks weak."
+    },
+    {
+      "name": "potions master",
+      "entity_type": "position",
+      "singular": true,
+      "description": "Snape is the Potions master at Hogwarts school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "has",
+      "description": "Harry has a new Patronus which Snape thinks looks weak."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "patronus",
+      "relationship_type": "opinion_of",
+      "description": "Snape thinks Harry's new Patronus looks weak."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being addressed by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry, who is known for being strict and having a grudge against Harry."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "addressed_by",
+      "description": "Snape addresses Harry in class."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "affiliated_with",
+      "description": "Harry is a member of Gryffindor house."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being lost, covered in soot, and wearing broken glasses. He is trying to get out of the shop quickly."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is mentioned as a place that Harry recognizes, but the current location he is in is not it."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is described as someone Harry does not want to meet when he is in his current state."
+    },
+    {
+      "name": "mr. malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Malfoy is described as having a pale, pointed face and cold grey eyes, making him identical to Draco Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "location",
+      "description": "Harry recognizes Diagon Alley but is currently not in it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "draco malfoy",
+      "relationship_type": "encounter",
+      "description": "Draco Malfoy appears on the other side of the glass, and Harry tries to avoid him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. malfoy",
+      "relationship_type": "relation",
+      "description": "Mr. Malfoy is described as Draco's father."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is strict and cares about Harry's safety."
+    },
+    {
+      "name": "wood",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is talking to Harry about the Firebolt."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student at Hogwarts who has a Nimbus Two Thousand and One broomstick."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broomstick",
+      "singular": true,
+      "description": "A broomstick that Harry is trying to use for the match."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that needs to be caught during the match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry and Professor McGonagall have a conversation about the Firebolt."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wood",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry and Wood have a conversation about the Firebolt."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "is_upset_with",
+      "description": "Professor McGonagall is upset with Harry for prioritizing winning the Cup over his safety."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "is_opposed_to",
+      "description": "Harry is opposed to buying anything that Malfoy thinks is good."
+    }
+  ]
+}

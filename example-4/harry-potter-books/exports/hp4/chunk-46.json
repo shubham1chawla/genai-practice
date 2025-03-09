@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, a wizard who has received letters from his godfather Sirius."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is Harry's godfather, a wizard who is innocent and in hiding."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hedwig is Harry's owl, who disapproves of the tropical birds that deliver Sirius' letters."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Privet Drive is Harry's home address, where he receives letters from Sirius."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "Dementors are dark creatures that survive in darkness and cold, but not in bright sunlight."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "godfather",
+      "description": "Harry's godfather is Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owner",
+      "description": "Harry owns Hedwig, his owl."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "godson",
+      "description": "Sirius is Harry's godfather."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "privet drive",
+      "relationship_type": "recipient",
+      "description": "Sirius sends letters to Privet Drive, where they are received by Harry."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "sunlight",
+      "relationship_type": "incompatible",
+      "description": "Dementors do not survive in bright sunlight."
+    }
+  ]
+}

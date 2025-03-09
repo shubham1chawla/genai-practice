@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who ignored her (presumably Hermione) in the first line of the text."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is invited by Ron to come and stay for the Quidditch World Cup. He is also mentioned as having done something to Aunt Marge, which made the Dursleys pleased to let him come."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is invited by Ron to come and stay for the Quidditch World Cup. She is also mentioned as peering over Harry's shoulder to look at something outside his window."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as being pleased to let Harry come after what he did to Aunt Marge."
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "relative",
+      "singular": true,
+      "description": "Aunt Marge is mentioned as someone who was affected by Harry's actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "invited",
+      "description": "Ron invited Harry to come and stay for the Quidditch World Cup."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "concerned",
+      "description": "Hermione was concerned about something outside Harry's window, which prompted her to ask him what it was."
+    },
+    {
+      "entity_1": "dursleys",
+      "entity_2": "harry",
+      "relationship_type": "allowed",
+      "description": "The Dursleys allowed Harry to come after what he did to Aunt Marge."
+    }
+  ]
+}

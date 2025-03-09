@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who might have told the Death Eaters the address of the headquarters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group that Snape might have informed about the address."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is mentioned as a person who set up curses against Snape to protect the headquarters."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as a person that Harry asked about Mad-Eye."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as a person who was sitting beside Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is mentioned throughout the passage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "death eaters",
+      "relationship_type": "inform",
+      "description": "Snape might have informed the Death Eaters about the address."
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "snape",
+      "relationship_type": "protect",
+      "description": "Mad-Eye set up curses against Snape to protect the headquarters."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "harry",
+      "relationship_type": "inform",
+      "description": "Harry asked Bill about Mad-Eye."
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "snape",
+      "relationship_type": "bind",
+      "description": "The curses set up by Mad-Eye would bind Snape's tongue if he tries to talk about the place."
+    }
+  ]
+}

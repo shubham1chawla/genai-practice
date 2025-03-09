@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ollivander is mentioned as someone who has studied wandlore and understands the relationship between wands and wizards."
+    },
+    {
+      "name": "harry",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Harry is mentioned as a person who can use a wand that hasn't chosen them."
+    },
+    {
+      "name": "wandlore",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "Wandlore is mentioned as the study of wands and their relationship with wizards."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "occupation",
+      "singular": true,
+      "description": "Wizard is mentioned as a profession that can use a wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ollivander",
+      "entity_2": "wandlore",
+      "relationship_type": "study_of",
+      "description": "Ollivander has studied wandlore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizard",
+      "relationship_type": "can_use",
+      "description": "Harry can use a wand that hasn't chosen him."
+    }
+  ]
+}

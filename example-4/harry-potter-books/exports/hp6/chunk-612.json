@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "half-blood prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Half-Blood Prince is someone who used to go to Hogwarts and invented spells, including Levicorpus. He wrote spells all over his old Potions book."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry has the Half-Blood Prince's old Potions book and is trying to learn more about him."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin knew of the Half-Blood Prince and remembered his spells being used at Hogwarts."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape was targeted by Harry's father using Levicorpus spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "half-blood prince",
+      "relationship_type": "owned_by",
+      "description": "Harry has the Half-Blood Prince's old Potions book."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "half-blood prince",
+      "relationship_type": "knew_of",
+      "description": "Lupin knew of the Half-Blood Prince and remembered his spells being used at Hogwarts."
+    },
+    {
+      "entity_1": "harry's father",
+      "entity_2": "snape",
+      "relationship_type": "targeted_by",
+      "description": "Snape was targeted by Harry's father using Levicorpus spell."
+    }
+  ]
+}

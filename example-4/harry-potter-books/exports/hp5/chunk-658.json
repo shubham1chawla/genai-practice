@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone who should not be recognized by Malfoy."
+    },
+    {
+      "name": "padfoot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Padfoot is mentioned as someone who should not be recognized by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is the one who might recognize Percy and Padfoot."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who has an idea to get together with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who does not want to be recognized by Malfoy and sent back to Azkaban."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as Harry's father."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a location where Harry does not want to be sent back."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher is someone who is coming down the stairs and might recognize Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "risk_of_being_sent_to",
+      "description": "Harry does not want to be sent back to Azkaban."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "kreacher",
+      "relationship_type": "being_recognized_by",
+      "description": "Sirius is worried that Kreacher might recognize him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "being_recognized_by",
+      "description": "Harry does not want to be recognized by Malfoy."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "planning_to_meet",
+      "description": "Sirius has an idea to get together with Harry."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "harry",
+      "relationship_type": "being_like",
+      "description": "Sirius says that Harry is less like his father than he thought."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who will be giving an autograph. (\"Yeah, she’ll be wanting your autograph, Harry\")."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as the one who is tired and yawns. (\"Blimey , I’m tired,’ yawned Fred\")."
+    },
+    {
+      "name": "mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother is mentioned as the one whose eye he caught to avoid giving an autograph. (\"but he caught his mother’s eye and bent his face over his plate without another word.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "gives_attention_to",
+      "description": "Fred gives attention to Harry by catching his eye. (\"but he caught his mother’s eye and bent his face over his plate without another word.\")"
+    },
+    {
+      "entity_1": "mother",
+      "entity_2": "harry",
+      "relationship_type": "parent_of",
+      "description": "Harry's mother is mentioned as the parent of Harry. (\"his mother’s eye\")."
+    }
+  ]
+}

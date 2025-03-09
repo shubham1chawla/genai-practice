@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Headmaster of Hogwarts School of Witchcraft and Wizardry. He is calm but stern when discussing Harry's concerns."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student at Hogwarts School of Witchcraft and Wizardry. He is concerned about Snape and Malfoy's activities."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Teacher at Hogwarts School of Witchcraft and Wizardry. Harry suspects him of being involved in something with Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student at Hogwarts School of Witchcraft and Wizardry. He is suspected by Harry to be involved in something dangerous with Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerns",
+      "description": "Harry expresses his concerns about Snape and Malfoy's activities to Dumbledore."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "involved_in_something_dangerous",
+      "description": "Harry suspects that Snape is involved in something dangerous with Malfoy."
+    }
+  ]
+}

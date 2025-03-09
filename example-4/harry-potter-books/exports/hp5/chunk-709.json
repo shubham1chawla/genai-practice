@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, feeling ashamed and outbursting after smashing a bowl."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who tries to calm him down and suggests thinking about his actions."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who gets up from the table and leaves after Hermione does."
+    },
+    {
+      "name": "murtlap essence",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A bowl of potion that Harry smashed with his wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "calms_down",
+      "description": "Hermione tries to calm down Harry after he outbursts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "leaves_with",
+      "description": "Ron leaves the room with Hermione, while Harry stays behind to clean up the mess."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "murtlap essence",
+      "relationship_type": "damages",
+      "description": "Harry accidentally smashes the bowl of murtlap essence with his wand."
+    }
+  ]
+}

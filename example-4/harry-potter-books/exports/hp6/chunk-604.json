@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is hesitant to share information with Mr. Weasley."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and Harry's acquaintance, who has searched the Malfoys' house."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of a wealthy pure-blood family, mentioned as having a conversation with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A potions master at Hogwarts, who is involved in a conversation with Malfoy."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A werewolf and teacher at Hogwarts, who is listening to Harry's conversation with Mr. Weasley."
+    },
+    {
+      "name": "celestina warbeck",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A singer, whose ballad is playing in the background during Harry's conversation with Mr. Weasley."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "book_series",
+      "singular": false,
+      "description": "The book series that this story is a part of."
+    },
+    {
+      "name": "prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper that has reported on Mr. Weasley's search of the Malfoys' house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "told",
+      "description": "Harry shares information with Mr. Weasley about his conversation with Malfoy and Snape."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "malfoy",
+      "relationship_type": "searched",
+      "description": "Mr. Weasley has searched the Malfoys' house, but found nothing out of place."
+    }
+  ]
+}

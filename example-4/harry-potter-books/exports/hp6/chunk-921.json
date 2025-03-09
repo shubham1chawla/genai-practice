@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrides",
+      "entity_type": "people",
+      "singular": true,
+      "description": "The narrator who is desperately injured and has found a Horcrux."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "people",
+      "singular": true,
+      "description": "The main antagonist of the story, who created the Horcruxes."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school for magic where the narrator is injured."
+    },
+    {
+      "name": "gaunts house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The place where the Horcrux was hidden by Voldemort."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for wizards and witches where Morfin Gaunt is being held."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrides",
+      "entity_2": "hogwarts",
+      "relationship_type": "injured_at",
+      "description": "The narrator was injured at Hogwarts."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gaunts house",
+      "relationship_type": "hid_horcrux_in",
+      "description": "Voldemort hid a Horcrux in the Gaunt's house."
+    },
+    {
+      "entity_1": "hagrides",
+      "entity_2": "gaunts house",
+      "relationship_type": "found_horcrux_at",
+      "description": "The narrator found the Horcrux at the Gaunt's house."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "azkaban",
+      "relationship_type": "sent_family_member_to",
+      "description": "Voldemort sent his family member Morfin to Azkaban."
+    }
+  ]
+}

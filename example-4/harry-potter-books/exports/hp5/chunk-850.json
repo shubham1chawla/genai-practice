@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a teacher who blew his whistle to stop the students from practicing spells. (Excerpt: 'He blew his whistle; everybody stopped shouting...')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the students who was practicing spells with his friends. (Excerpt: 'Well, that was pretty good,' said Harry...)"
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean Thomas is a student who enthusiastically agreed to meet again next week. (Excerpt: 'Sooner!' said Dean Thomas eagerly...)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "stopped_by",
+      "description": "Harry was stopped by Filch from continuing to practice spells. (Excerpt: 'He blew his whistle; everybody stopped shouting...')"
+    },
+    {
+      "entity_1": "dean thomas",
+      "entity_2": "harry",
+      "relationship_type": "agreed_with",
+      "description": "Dean Thomas agreed with Harry's suggestion to meet again next week. (Excerpt: 'Sooner!' said Dean Thomas eagerly and many people nodded in agreement.)"
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "harry",
+      "relationship_type": "disagreed_with",
+      "description": "Angelina disagreed with Harry's suggestion to meet again next week. (Excerpt: 'The Quidditch season’s about to start, we need team practices too!' said Angelina.)"
+    }
+  ]
+}

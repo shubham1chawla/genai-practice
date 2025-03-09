@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist, mentioned as the one who killed Harry's father and wants to kill Harry. (\"I killed your father first and he put up a courageous fight... Now give me the Stone, unless you want her to have died in vain.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The protagonist, mentioned as the one who is being threatened by Voldemort. (\"Harry sprang towards the flame door... 'NEVER!' Harry sprang towards the flame door...\")"
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is possessed by Voldemort and is trying to seize Harry. (\"Quirrell's hand close on his wrist.\")"
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Voldemort wants from Harry. (\"Now give me the Stone...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Voldemort is threatening to kill Harry if he doesn't get the Stone. (\"Now give me the Stone, unless you want her to have died in vain.\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "quirrell",
+      "relationship_type": "possesses",
+      "description": "Voldemort possesses Quirrell and is using him to try and seize Harry. (\"Quirrell's hand close on his wrist.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "has",
+      "description": "Harry has the Stone, which Voldemort wants. (\"Now give me the Stone...\")"
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "voldemort",
+      "relationship_type": "controlled_by",
+      "description": "Quirrell is controlled by Voldemort and is trying to seize Harry on his behalf. (\"Voldemort screamed, 'SEIZE HIM!'...\")"
+    }
+  ]
+}

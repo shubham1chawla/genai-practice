@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who seized Ron's wrist and tried to use the Summoning Charm on his cloak. He is also referred to by name when a Death Eater tries to locate him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as having his wrist seized by Harry and being part of the group trying to escape from the Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being part of the group trying to escape from the Death Eaters along with Harry and Ron."
+    },
+    {
+      "name": "ron's wrist",
+      "entity_type": "body_part",
+      "singular": false,
+      "description": "Ron's wrist is mentioned as being seized by Harry."
+    },
+    {
+      "name": "the missing mirror",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Missing Mirror is mentioned in the title of the story and does not seem to play a significant role in the current scene."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being present in the scene, trying to locate Harry and his friends. They are also referred to by name when they try to use magic spells."
+    },
+    {
+      "name": "the scream",
+      "entity_type": "sound",
+      "singular": true,
+      "description": "The scream is mentioned as being stopped by one of the Death Eaters raising his wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron's wrist",
+      "relationship_type": "seized",
+      "description": "Harry seized Ron's wrist as he raised his wand to try and escape from the Death Eaters."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry",
+      "relationship_type": "trying_to_locate",
+      "description": "The Death Eaters are trying to locate Harry, as mentioned when one of them tries to use the Summoning Charm on his cloak."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "ron's wrist",
+      "relationship_type": "trying_to_locate",
+      "description": "The Death Eaters are also trying to locate Ron, as mentioned when one of them tries to use the Summoning Charm on his cloak."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "hermione",
+      "relationship_type": "trying_to_locate",
+      "description": "The Death Eaters are also trying to locate Hermione, as mentioned when one of them tries to use the Summoning Charm on her."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "the scream",
+      "relationship_type": "stopped",
+      "description": "One of the Death Eaters raised his wand and stopped the scream, which was still echoing around the distant mountains."
+    }
+  ]
+}

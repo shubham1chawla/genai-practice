@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, wearing magenta staff robes."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "One of the Weasley twins, referred to as 'Mr. Weasley'."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other Weasley twin, also referred to as 'Mr. Weasley'."
+    },
+    {
+      "name": "verity",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A customer looking for a joke cauldron."
+    },
+    {
+      "name": "decod detonators",
+      "entity_type": "item",
+      "singular": true,
+      "description": "A product being purchased by Harry."
+    },
+    {
+      "name": "money-bag",
+      "entity_type": "item",
+      "singular": true,
+      "description": "A bag of gold coins used by Harry to pay for items."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "decod detonators",
+      "relationship_type": "purchased",
+      "description": "Harry is purchasing the Decoy Detonators."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "money-bag",
+      "relationship_type": "used",
+      "description": "Harry is using a money-bag to pay for items."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "harry",
+      "relationship_type": "rejected_payment",
+      "description": "Fred is rejecting Harry's payment."
+    }
+  ]
+}

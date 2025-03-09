@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who whispers to Ron and Harry about their plan."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is tasked by Hermione to head off Umbridge."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is asked by Hermione to move people out of the corridor."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is also asked by Hermione to help move people out of the corridor."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry and Hermione will get the cloak on and wait until it's safe."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is someone Ron needs to head off."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the one who has hurt Harry's scar."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is someone Voldemort may have dealt a fatal blow to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "tasked_by",
+      "description": "Hermione tasks Ron with heading off Umbridge."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ginny",
+      "relationship_type": "asked_to_help",
+      "description": "Hermione asks Ginny to move people out of the corridor."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "luna",
+      "relationship_type": "asked_to_help",
+      "description": "Hermione also asks Luna to help move people out of the corridor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "affected_by",
+      "description": "Harry's scar is affected by Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "sirius",
+      "relationship_type": "potentially_harmed",
+      "description": "Voldemort may have dealt a fatal blow to Sirius."
+    }
+  ]
+}

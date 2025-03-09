@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having muttered."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person with dark powers, mentioned as having wheedled information from the Gray Lady and retrieved a diadem."
+    },
+    {
+      "name": "gray lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who had lost the diadem and was tricked by Voldemort into revealing its location."
+    },
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that was hidden in a forest and retrieved by Voldemort."
+    },
+    {
+      "name": "borgin and burkes",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A place where Voldemort worked after leaving Hogwarts."
+    },
+    {
+      "name": "albanian woods",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A secluded forest that served as a refuge for Voldemort."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A school where students learn magic and where Voldemort worked before leaving."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gray lady",
+      "relationship_type": "tricked",
+      "description": "Voldemort tricked the Gray Lady into revealing the location of the diadem."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "diadem",
+      "relationship_type": "retrieved",
+      "description": "Voldemort retrieved the diadem from its hiding place in the forest."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "albanian woods",
+      "relationship_type": "refuge",
+      "description": "The Albanian woods served as a refuge for Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "borgin and burkes",
+      "relationship_type": "worked at",
+      "description": "Voldemort worked at Borgin and Burkes after leaving Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "mentioned",
+      "description": "Harry mentioned Voldemort in his muttering."
+    }
+  ]
+}

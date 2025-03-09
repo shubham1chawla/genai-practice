@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is part of Harry's group. He is described as wrenched the chain from over his head and cast the locket into a nearby chair."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is part of Harry's group. She is described as looking anguished and sobbing when Ron leaves."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is part of the group. He is described as standing still and silent, listening to Hermione's sobbing."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Horcrux is an object that Harry picks up and places around his own neck. It is described as being on Ron's bunk."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "left",
+      "description": "Ron leaves Hermione behind when he Disapparates. This is described in the text as 'He stormed into the night' and 'She was impeded by her own Shield charm; by the time she had removed it he had already stormed into the night'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "possesses",
+      "description": "Harry possesses the Horcrux. This is described in the text as 'He stooped, picked up the Horcrux, and placed it around his own neck'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "horcrux",
+      "relationship_type": "left_behind",
+      "description": "Ron leaves the Horcrux behind when he Disapparates. This is described in the text as 'He dragged blankets oﬀ Ron’s bunk and threw them over Hermione' which implies that the Horcrux was on Ron's bunk."
+    }
+  ]
+}

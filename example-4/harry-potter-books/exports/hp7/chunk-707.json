@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as needing a new wand."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is dead and whose wand Voldemort wants to borrow."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who hands over her wand to Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gregorovitch",
+      "relationship_type": "wants_to_borrow_from",
+      "description": "Voldemort wants to borrow Gregorovitch's wand because he is dead and can't find a new one."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "voldemort",
+      "relationship_type": "hands_over_wand_to",
+      "description": "Hermione hands over her wand to Voldemort, who wants to borrow it."
+    }
+  ]
+}

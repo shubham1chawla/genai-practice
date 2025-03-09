@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a powerful wizard who has lost his body."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, mentioned as being present in a circle listening to him."
+    },
+    {
+      "name": "aurors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of law enforcement officials who are searching for Voldemort."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where the narrator settled and waited to be found by one of his Death Eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "follower_of",
+      "description": "Voldemort has followers, specifically mentioned as being present in a circle listening to him."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "aurors",
+      "relationship_type": "enemy_of",
+      "description": "Voldemort knows that the Aurors are searching for him and therefore dares not go where they are plentiful."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "forest",
+      "relationship_type": "located_in",
+      "description": "The narrator settled in a faraway place, specifically mentioned as being in a forest."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "loyal_to",
+      "description": "Voldemort expects one of his faithful Death Eaters to come and perform magic to restore him to a body."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "port keys",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "Port keys are objects that can be anything, but are unobtrusive so Muggles don't pick them up."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Muggles are people who do not know about magic and would think port keys are litter."
+    },
+    {
+      "name": "stoatshead hill",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Stoatshead Hill is a location where Harry and Mr. Weasley climb."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "port keys",
+      "entity_2": "muggles",
+      "relationship_type": "are_not_visible_to",
+      "description": "Port keys are not visible to Muggles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stoatshead hill",
+      "relationship_type": "is_climbing",
+      "description": "Harry is climbing Stoatshead Hill."
+    }
+  ]
+}

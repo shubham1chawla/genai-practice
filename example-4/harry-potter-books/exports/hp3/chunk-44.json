@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as the authority that would take action if there was any more magic in Privet Drive."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts and is facing expulsion due to potential magic in his home."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Privet Drive is Harry's home address where the Ministry would be monitoring for any more magic."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a school that Harry attends and faces expulsion from."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's cruel and neglectful relatives who live with him at Privet Drive."
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is a relative of the Dursleys and is visiting them during the story."
+    },
+    {
+      "name": "handbook of do-it-yourself broomcare",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Handbook of Do-It-Yourself Broomcare is an object that Harry uses to distract himself from his aunt's criticism."
+    },
+    {
+      "name": "grunnings",
+      "entity_type": "company",
+      "singular": true,
+      "description": "Grunnings is a drill-making company owned by Uncle Vernon."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is the wife of Uncle Vernon and Harry's aunt."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is the husband of Aunt Petunia and Harry's uncle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "privet drive",
+      "relationship_type": "monitors",
+      "description": "The Ministry monitors Privet Drive for any magic activity."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student",
+      "description": "Harry is a student at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "relative",
+      "description": "Harry lives with his cruel and neglectful relatives, the Dursleys."
+    },
+    {
+      "entity_1": "aunt marge",
+      "entity_2": "grunnings",
+      "relationship_type": "owner",
+      "description": "Aunt Marge is not related to Grunnings but Uncle Vernon owns it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "handbook of do-it-yourself broomcare",
+      "relationship_type": "uses",
+      "description": "Harry uses the Handbook of Do-It-Yourself Broomcare to distract himself from his aunt's criticism."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "grunnings",
+      "relationship_type": "owner",
+      "description": "Aunt Petunia is not related to Grunnings but Uncle Vernon owns it."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "grunnings",
+      "relationship_type": "owns",
+      "description": "Uncle Vernon owns Grunnings, his drill-making company."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt marge",
+      "relationship_type": "is criticized by",
+      "description": "Aunt Marge criticizes Harry during her visit."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "lives with",
+      "description": "Harry lives with his relatives, the Dursleys."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "coffee",
+      "relationship_type": "makes",
+      "description": "Aunt Petunia makes coffee during the dinner."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "brandy",
+      "relationship_type": "brings out",
+      "description": "Uncle Vernon brings out a bottle of brandy during the dinner."
+    }
+  ]
+}

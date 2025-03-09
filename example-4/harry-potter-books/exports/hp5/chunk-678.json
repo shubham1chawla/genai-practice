@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "cassandra trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cassandra Trelawney is mentioned as a celebrated Seer, implying she has the ability to see into the future. She is also mentioned as being a great-great-grandmother of Professor Trelawney."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as the great-great-granddaughter of Cassandra Trelawney and has second sight, implying she also has the ability to see into the future."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as making notes and asking Professor Trelawney to make a prediction for her, implying she is interested in the ability of others to see into the future."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cassandra trelawney",
+      "entity_2": "professor trelawney",
+      "relationship_type": "ancestor",
+      "description": "Cassandra Trelawney is mentioned as being the great-great-grandmother of Professor Trelawney, establishing a familial relationship between them."
+    },
+    {
+      "entity_1": "cassandra trelawney",
+      "entity_2": "professor umbridge",
+      "relationship_type": "ancestor_of_interest",
+      "description": "Professor Umbridge is interested in the ability of others to see into the future, specifically mentioning that Professor Trelawney's great-great-grandmother had this ability. This implies a relationship between Cassandra Trelawney and Professor Umbridge as an ancestor of interest."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "cassandra trelawney",
+      "relationship_type": "descendant",
+      "description": "Professor Trelawney is mentioned as being the great-great-granddaughter of Cassandra Trelawney, establishing a familial relationship between them."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "professor trelawney",
+      "relationship_type": "requester_of_prediction",
+      "description": "Professor Umbridge asks Professor Trelawney to make a prediction for her, establishing a relationship between them as requester and predictor."
+    }
+  ]
+}

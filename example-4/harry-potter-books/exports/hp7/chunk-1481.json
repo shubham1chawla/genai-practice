@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being hidden beneath an Invisibility Cloak."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is battling Voldemort, mentioned alongside Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as being battled by Neville and Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is shouting for Harry, mentioned in a state of panic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "neville",
+      "relationship_type": "battles",
+      "description": "Voldemort is battling Neville, as described by the text: 'Hagrid's yell came loudest of all / “HARRY!” Hagrid shouted. “HARRY — WHERE’S HARRY?”'"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "battles",
+      "description": "Voldemort is battling Harry, as described by the text: 'Hagrid's yell came loudest of all / “HARRY!” Hagrid shouted. “HARRY — WHERE’S HARRY?”'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "is_battled_by",
+      "description": "Harry is being battled by Voldemort, as described by the text: 'Hidden beneath the Invisibility Cloak, Harry cast a Shield Charm between Neville and Voldemort / before the latter could raise his wand.'"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "calls_out_to",
+      "description": "Hagrid is calling out to Harry, as described by the text: '“HARRY!” Hagrid shouted. “HARRY — WHERE’S HARRY?”'"
+    }
+  ]
+}

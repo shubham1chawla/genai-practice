@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as having already delivered Christmas trees to the Great Hall. (\"Hagrid had already single-handedly delivered the usual twelve Christmas trees for the Great Hall;\")"
+    },
+    {
+      "name": "christmas",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "Christmas is mentioned as approaching fast. (\"Christmas was approaching fast.\")"
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is mentioned as having received Christmas trees from Hagrid. (\"Hagrid had already single-handedly delivered the usual twelve Christmas trees for the Great Hall;\")"
+    },
+    {
+      "name": "mistletoe",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Mistletoe bunches are mentioned as being hung along the corridors. (\"great bunches of mistletoe had been hung at intervals along the corridors.\")"
+    },
+    {
+      "name": "corridors",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The corridors are mentioned as having mistletoe bunches hung along them. (\"great bunches of mistletoe had been hung at intervals along the corridors.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as navigating through secret passageways to avoid the mistletoe. (\"he was able, without too much difficulty, to navigate mistletoe-free routes between classes.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as finding Harry's detours amusing. (\"Ron, who might once have found the necessity of these detours a cause for jealousy rather than hilarity,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "great hall",
+      "relationship_type": "delivered_to",
+      "description": "Hagrid delivered Christmas trees to the Great Hall. (\"Hagrid had already single-handedly delivered the usual twelve Christmas trees for the Great Hall;\")"
+    },
+    {
+      "entity_1": "mistletoe",
+      "entity_2": "corridors",
+      "relationship_type": "hung_in",
+      "description": "Mistletoe bunches were hung along the corridors. (\"great bunches of mistletoe had been hung at intervals along the corridors.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "secret passageways",
+      "relationship_type": "navigated_through",
+      "description": "Harry navigated through secret passageways to avoid the mistletoe. (\"he was able, without too much difficulty, to navigate mistletoe-free routes between classes.\")"
+    }
+  ]
+}

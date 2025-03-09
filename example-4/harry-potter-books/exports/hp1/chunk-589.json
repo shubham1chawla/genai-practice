@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as saying 'Yes, yes, well done, Slytherin' and 'I have a few last-minute points to dish out.'"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "A house at Hogwarts, mentioned as having students who are cheering and stamping."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student, mentioned as banging his goblet on the table."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor student, mentioned as seeing Draco Malfoy banging his goblet on the table."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "A house at Hogwarts, mentioned as receiving fifty points for the best-played game of chess."
+    },
+    {
+      "name": "ronald weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor student, mentioned as being awarded fifty points for the best-played game of chess."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as having a giant chess set."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "slytherin",
+      "relationship_type": "addressed",
+      "description": "Dumbledore is addressing the Slytherin table."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "gryffindor",
+      "relationship_type": "awarded_points_to",
+      "description": "Dumbledore awards fifty points to Gryffindor house."
+    },
+    {
+      "entity_1": "ronald weasley",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Ron Weasley is a member of Gryffindor house."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who feels anxious about how rude the Dursleys might be to the Weasleys. He knows that Mr. and Mrs. Weasley usually wear long robes in varying states of shabbiness."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who wears long robes in varying states of shabbiness."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a person who wears long robes in varying states of shabbiness."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is a person who puts on his best suit to look impressive and intimidating."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is a person who looks diminished due to the diet not taking effect."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about how rude the Dursleys might be to Mr. Weasley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs weasley",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about how rude the Dursleys might be to Mrs. Weasley."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "opposite_of",
+      "description": "Mr. Weasley and Uncle Vernon have opposite styles of dressing, with Mr. Weasley wearing long robes in varying states of shabbiness and Uncle Vernon wearing a suit."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "opposite_of",
+      "description": "Mrs. Weasley and Uncle Vernon have opposite styles of dressing, with Mrs. Weasley wearing long robes in varying states of shabbiness and Uncle Vernon wearing a suit."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "diet",
+      "relationship_type": "affected_by",
+      "description": "Dudley is affected by the diet not taking effect, making him look diminished."
+    }
+  ]
+}

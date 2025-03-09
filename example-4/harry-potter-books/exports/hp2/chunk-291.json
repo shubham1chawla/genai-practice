@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as sitting next to Ron and wanting to read Hermione's composition."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as sitting next to Harry and trying to finish his composition."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as wanting to read up on the legend of the Chamber of Secrets and refusing to let Ron read her composition."
+    },
+    {
+      "name": "hogwarts: a history",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book 'Hogwarts: A History' is mentioned as being taken out by many students and having a two-week waiting list."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "legend",
+      "singular": true,
+      "description": "The legend of the Chamber of Secrets is mentioned as something everyone wants to read about."
+    },
+    {
+      "name": "lockhart books",
+      "entity_type": "book",
+      "singular": false,
+      "description": "Lockhart's books are mentioned as being too heavy for Hermione to fit in her trunk."
+    },
+    {
+      "name": "history of magic",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "History of Magic is mentioned as the dullest subject on their timetable."
+    },
+    {
+      "name": "professor binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Binns is mentioned as being their only ghost teacher."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "wants_to_read",
+      "description": "Harry wants to read Hermione's composition."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "tries_to_finish_composition",
+      "description": "Ron tries to finish his composition and asks Hermione to let him read it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts: a history",
+      "relationship_type": "wants_to_read",
+      "description": "Harry wants to read the book 'Hogwarts: A History'."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "interested_in",
+      "description": "Hermione is interested in reading about the legend of the Chamber of Secrets."
+    }
+  ]
+}

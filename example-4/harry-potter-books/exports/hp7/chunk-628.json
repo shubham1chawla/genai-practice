@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The name of the location where the sword is hidden, mentioned in the text as 'Gryﬃndor's sword'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person who might have hidden the sword, mentioned in the text as 'Dumbledore'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person who is part of Harry's group and has been right about Dumbledore's plan."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of the main character in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "gryffindor",
+      "relationship_type": "hid_something_in",
+      "description": "Dumbledore might have hidden something in Gryﬃndor's location."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "was_right_about_dumbledore_plan",
+      "description": "Ron was right about Dumbledore's plan."
+    }
+  ]
+}

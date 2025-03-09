@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is using the Deluminator and trying to restore the lights in the drawing room. He is also bickering with Harry about what he should be doing."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as slipping out of the room unnoticed by Ron and heading downstairs to the kitchen. He seems to be avoiding the bickering between Ron and himself."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as leaving a book for Ron, which suggests that he had some kind of significance or importance in Ron's life. He also left the Deluminator for Ron to use."
+    },
+    {
+      "name": "deluminator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Deluminator is mentioned as an object that Dumbledore left for Ron, which has the ability to restore lights. Ron uses it to light up the drawing room."
+    },
+    {
+      "name": "drawing room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The drawing room is mentioned as a location where Ron and Harry are bickering, and where Ron uses the Deluminator to restore the lights."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "deluminator",
+      "relationship_type": "uses",
+      "description": "Ron is using the Deluminator to restore the lights in the drawing room. This relationship is described as Ron clicking the Deluminator and restoring the lights."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ron",
+      "relationship_type": "left_for",
+      "description": "Dumbledore left a book for Ron, which suggests that he had some kind of significance or importance in Ron's life. He also left the Deluminator for Ron to use."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "deluminator",
+      "relationship_type": "left_for",
+      "description": "Dumbledore left the Deluminator for Ron to use, which has the ability to restore lights."
+    }
+  ]
+}

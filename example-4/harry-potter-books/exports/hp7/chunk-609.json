@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas Nigellus is a person who appears in the picture and interacts with Harry Potter. He is described as having a blindfolded head."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is a person mentioned by Phineas Nigellus as having more important things on his mind than the eccentricities of Albus Dumbledore."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is a person whose eccentricities are mentioned by Phineas Nigellus and Professor Snape."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who interacts with Phineas Nigellus. He is called out by Hermione when he punches the air in excitement."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who calls out to Harry Potter when she sees him punching the air."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "snape",
+      "relationship_type": "mentioned",
+      "description": "Phineas Nigellus mentions Professor Snape as having more important things on his mind than Albus Dumbledore's eccentricities."
+    },
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "related_to",
+      "description": "Phineas Nigellus talks about the many eccentricities of Albus Dumbledore."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "phineas nigellus",
+      "relationship_type": "interacted_with",
+      "description": "Harry Potter interacts with Phineas Nigellus in the picture."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "called_out_to",
+      "description": "Hermione calls out to Harry Potter when she sees him punching the air."
+    }
+  ]
+}

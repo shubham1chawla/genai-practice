@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as a person who has a wand and recognizes it when Mr. Diggory brandishes it."
+    },
+    {
+      "name": "mr. diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Diggory is introduced as a person who finds Harry with a wand in his hand and recognizes the wand."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is introduced as a person who intervenes on behalf of Harry, defending him against Mr. Diggory's accusations."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr. diggory",
+      "relationship_type": "accused_by",
+      "description": "Mr. Diggory accuses Harry of conjuring the Dark Mark, as evidenced by Mr. Diggory's incredulous tone and questions."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr. weasley",
+      "relationship_type": "defended_by",
+      "description": "Mr. Weasley defends Harry against Mr. Diggory's accusations, as evidenced by his angry tone and words of support for Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr. diggory",
+      "relationship_type": "owned_by",
+      "description": "Harry claims ownership of the wand that Mr. Diggory is holding, as evidenced by his statement 'That's my wand!'"
+    }
+  ]
+}

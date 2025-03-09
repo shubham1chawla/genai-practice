@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one turning pages and reading aloud from 'Muggleborn Register'. She has a distaste expression similar to when she handled 'Secrets of the Darkest Art'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as saying 'People won't let this happen' in response to Hermione's reading."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as saying 'It is happening, Ron' and stating that Muggleborns are being rounded up."
+    },
+    {
+      "name": "muggleborn register",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The 'Muggleborn Register' is a document mentioned as the source of information about Muggleborns and their magical power."
+    },
+    {
+      "name": "secrets of the darkest art",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Hermione mentions handling 'Secrets of the Darkest Art' with a similar distaste expression as when she was reading from the 'Muggleborn Register'."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Department of Mysteries is mentioned as undertaking research that reveals magic can only be passed from person to person when Wizards reproduce."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as undertaking a survey of Muggleborns and issuing an invitation for them to present themselves for interview by the Muggleborn Registration Commission."
+    },
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Muggleborn Registration Commission is mentioned as being newly appointed and responsible for interviewing Muggleborns."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "muggleborn register",
+      "relationship_type": "reads",
+      "description": "Hermione reads aloud from the 'Muggleborn Register'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "lupin",
+      "relationship_type": "responds_to",
+      "description": "Ron responds to Lupin's statement that Muggleborns are being rounded up."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "muggleborns",
+      "relationship_type": "round_up",
+      "description": "Lupin states that Muggleborns are being rounded up as we speak."
+    }
+  ]
+}

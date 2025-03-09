@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Dursleys are Harry's cruel and neglectful Muggle relatives who live in Little Whinging."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist of the story, a young wizard who lives with his Muggle relatives, the Dursleys."
+    },
+    {
+      "name": "kitchen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The kitchen is a location in the house where Harry hears voices and people moving around."
+    },
+    {
+      "name": "bedroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry's bedroom is where he initially stays when he hears noises coming from downstairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "family_relationship",
+      "description": "The Dursleys are Harry's family, but they treat him poorly and neglect his magical heritage."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "kitchen",
+      "relationship_type": "location_visited",
+      "description": "Harry moves from his bedroom to the kitchen in response to hearing voices and people moving around."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bedroom",
+      "relationship_type": "origin_location",
+      "description": "Harry initially stays in his bedroom when he hears noises coming from downstairs."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "halloween",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "Halloween is mentioned as the time when the Goblet of Fire will return the names of the three most worthy students. (Excerpt: 'night, Halloween, the go blet will return...')"
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Goblet of Fire is a magical object that will be placed in the entrance hall and will choose the champions for the tournament. (Excerpt: 'The goblet will be placed in the entrance hall...')"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned as saying that he will draw an Age Line around the Goblet of Fire to prevent underage students from competing. (Excerpt: '“To ensure that no underage student yields to temptation,” said Dumbledore...')"
+    },
+    {
+      "name": "age line",
+      "entity_type": "magical_boundary",
+      "singular": true,
+      "description": "The Age Line is a magical boundary drawn by Dumbledore to prevent underage students from competing. (Excerpt: 'I will be drawing an Age Line around the Goblet of Fire...')"
+    },
+    {
+      "name": "champion",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A champion is a person who has been selected by the Goblet of Fire to compete in the tournament. (Excerpt: 'Once a champion has been selected by the Goblet of Fire...')"
+    },
+    {
+      "name": "tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The tournament is an event that will be held, and students who are chosen as champions must participate in it. (Excerpt: 'This tournament is not to be entered into lightly...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "goblet of fire",
+      "entity_2": "champion",
+      "relationship_type": "selects",
+      "description": "The Goblet of Fire selects the champions for the tournament. (Excerpt: 'Once a champion has been selected by the Goblet of Fire...')"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "age line",
+      "relationship_type": "draws",
+      "description": "Dumbledore draws the Age Line around the Goblet of Fire. (Excerpt: 'I will be drawing an Age Line around the Goblet of Fire...')"
+    },
+    {
+      "entity_1": "champion",
+      "entity_2": "tournament",
+      "relationship_type": "participates_in",
+      "description": "Champions must participate in the tournament. (Excerpt: 'Once a champion has been selected by the Goblet of Fire, he or she is obliged to see the tournament through to the end...')"
+    }
+  ]
+}

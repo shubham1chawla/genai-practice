@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "sign",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The document on which people are putting their signatures. (Excerpt: 'Fred reached out for the parchment and cheerfully put down his signature...')"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge, a person that Harry is trying to keep secrets from. (Excerpt: 'you said yourself, if Umbridge finds out...')"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred, one of the people signing the document. (Excerpt: 'Fred reached out for the parchment and cheerfully put down his signature...')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry, the person who is trying to keep secrets from Umbridge. (Excerpt: 'you said yourself, if Umbridge finds out...')"
+    },
+    {
+      "name": "ernie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie, a prefect who is hesitant to sign the document. (Excerpt: 'But Ernie was looking rather hesitant about signing too.')"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George, one of the people signing the document. (Excerpt: 'Fred reached out for the parchment and cheerfully put down his signature...')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione, a prefect who is raising her eyebrows at Ernie's hesitation. (Excerpt: 'But Ernie was looking rather hesitant about signing too.')"
+    },
+    {
+      "name": "zacharias",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zacharias, a person who is hesitant to sign the document. (Excerpt: '"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Umbridge finding out about the group. (Excerpt: 'you said yourself, if Umbridge finds out...')"
+    },
+    {
+      "entity_1": "ernie",
+      "entity_2": "umbridge",
+      "relationship_type": "concerned_about",
+      "description": "Ernie is also concerned about Umbridge finding out about the group. (Excerpt: 'I — well, we are prefects... And if this list was found . . . well, I mean to say . . . you said yourself, if Umbridge finds out . . .')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ernie",
+      "relationship_type": "reminded",
+      "description": "Harry reminded Ernie about the importance of the group. (Excerpt: 'You just said this group was the most important thing you’d do this year')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "passed_document_to",
+      "description": "Harry passed a document to George. (Excerpt: 'George was trying to pass him the parchment')"
+    }
+  ]
+}

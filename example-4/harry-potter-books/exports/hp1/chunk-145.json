@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a bag full of money and being nervous."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is driving Harry in a cart and seems to be feeling sick."
+    },
+    {
+      "name": "madam malkin",
+      "entity_type": "business_owner",
+      "singular": true,
+      "description": "The owner of Robes for All Occasions, mentioned as being dressed in mauve."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": false,
+      "description": "A bank that Harry and Hagrid visited after their cart ride."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "accompanying",
+      "description": "Harry is accompanying Hagrid in the cart."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gringotts",
+      "relationship_type": "visited",
+      "description": "Hagrid and Harry visited Gringotts bank."
+    }
+  ]
+}

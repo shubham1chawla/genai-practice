@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is described as the location where the Sorting Hat finished and the students are gathered."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sings a different song every year to sort the students into their respective houses."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as one of the students who is clapping along with everyone else when the Sorting Hat finishes."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as one of Harry's friends who comments on the Sorting Hat's song."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is described as the person unrolling a large scroll of parchment and explaining the sorting process to the first-year students."
+    },
+    {
+      "name": "stewart ackerley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stewart Ackerley is mentioned as one of the first-year students who is sorted into Ravenclaw house by the Sorting Hat."
+    },
+    {
+      "name": "cho chang",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho Chang is mentioned as the Ravenclaw Seeker who cheers Stewart Ackerley when he is sorted into Ravenclaw house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "stewart ackerley",
+      "relationship_type": "sorts_into",
+      "description": "The Sorting Hat sorts Stewart Ackerley into Ravenclaw house."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "first year students",
+      "relationship_type": "explains_sorting_process_to",
+      "description": "Professor McGonagall explains the sorting process to the first-year students."
+    }
+  ]
+}

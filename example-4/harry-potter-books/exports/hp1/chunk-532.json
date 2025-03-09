@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is about to go through the trapdoor."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who is given a flute to play and put the dog asleep."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is left behind at the top of the trapdoor."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard, to whom Hedwig will be sent if anything happens to Harry."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's owl, who is tasked with delivering a message to Dumbledore."
+    },
+    {
+      "name": "the dog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A dog that is put asleep by Hermione playing the flute."
+    },
+    {
+      "name": "hermione's flute",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The flute given to Hermione to play and put the dog asleep."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "gave",
+      "description": "Harry handed the flute over to Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "warned",
+      "description": "Harry warned Ron not to follow him if anything happens."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the dog",
+      "relationship_type": "put_asleep",
+      "description": "Hermione put the dog asleep by playing the flute."
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "dumbledore",
+      "relationship_type": "will_deliver_message_to",
+      "description": "Hedwig will deliver a message to Dumbledore if anything happens to Harry."
+    }
+  ]
+}

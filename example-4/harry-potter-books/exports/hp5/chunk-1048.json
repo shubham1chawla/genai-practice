@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "broderick bode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Broderick Bode is mentioned as a patient who has been addled and thinks he's a teapot. This is described by the Welcome Witch in response to an old wizard's inquiry about seeing him."
+    },
+    {
+      "name": "welcome witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Welcome Witch is mentioned as someone who will help those who are unsure where to go, incapable of normal speech, or unable to remember why they are here. She is also described as dismissively telling an old wizard that Broderick Bode is wasting his time."
+    },
+    {
+      "name": "old wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The old wizard is mentioned as someone who has shuffled to the front of the queue and inquired about seeing Broderick Bode. He is described as having a hearing trumpet and wheezing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "old wizard",
+      "entity_2": "welcome witch",
+      "relationship_type": "interacts_with",
+      "description": "The old wizard interacts with the Welcome Witch by inquiring about seeing Broderick Bode and being dismissed by her."
+    },
+    {
+      "entity_1": "welcome witch",
+      "entity_2": "broderick bode",
+      "relationship_type": "has_information_about",
+      "description": "The Welcome Witch has information about Broderick Bode, which she shares with the old wizard when he inquires about seeing him."
+    }
+  ]
+}

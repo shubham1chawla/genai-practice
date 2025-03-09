@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the one giving orders to take someone, specifically Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the person who is being taken by Fudge."
+    },
+    {
+      "name": "bowler",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Fudge is fidgeting with his bowler."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "hagrid",
+      "relationship_type": "ordered_to_be_taken",
+      "description": "Fudge orders Hagrid to be taken somewhere."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "bowler",
+      "relationship_type": "possesses",
+      "description": "Fudge is fidgeting with his bowler, indicating possession."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Mentioned as a place where weekends are held, described in the text as 'Hogsmeade weekends'."
+    },
+    {
+      "name": "high inquisitor of hogwarts",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A position mentioned in the text, described as having a highly official-looking seal and signature."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned in the text as the High Inquisitor who has the power to grant permission for student organizations to re-form."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "high inquisitor of hogwarts",
+      "entity_2": "professor umbridge",
+      "relationship_type": "is_held_by",
+      "description": "The High Inquisitor is held by Professor Umbridge, as mentioned in the text."
+    },
+    {
+      "entity_1": "high inquisitor of hogwarts",
+      "entity_2": "student organizations",
+      "relationship_type": "has_authority_over",
+      "description": "The High Inquisitor has authority over student organizations, as stated in the text that no organization may exist without their knowledge and approval."
+    }
+  ]
+}

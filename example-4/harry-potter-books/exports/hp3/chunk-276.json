@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster of the castle who has to inform the dementors when their search is complete."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is Dumbledore's son and a student at Hogwarts."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the headmaster of Hogwarts who has an expression of deep resentment on his face when watching Dumbledore."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are creatures that are mentioned as being informed by Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who glances sideways at Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and a student at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dementors",
+      "relationship_type": "inform",
+      "description": "Dumbledore has to inform the dementors when their search is complete."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "percy",
+      "relationship_type": "parent_child",
+      "description": "Percy is Dumbledore's son."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "lovegoods",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Lovegood family is mentioned as living in a location that Ron's parents can point to. The exact location is not specified."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who knows the location of the Lovegoods' home."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another friend of Harry's who returns to her bunk after a conversation about finding the Lovegoods."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of Ron's friends who wants to get back in Luna's good books."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is a friend of Harry's who will be home for the Christmas holidays."
+    },
+    {
+      "name": "ottery st. cachpole",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village of Ottery St. Cachpole is mentioned as having a good view from a breezy hillside."
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is the Weasley family home that Ron's parents can point to when mentioning the Lovegoods."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "lovegoods",
+      "relationship_type": "knows_location",
+      "description": "Ron knows where the Lovegoods live."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "trying_to_get_back_in_good_books",
+      "description": "Harry is trying to get back in Luna's good books."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "burrow",
+      "relationship_type": "family_home",
+      "description": "The Burrow is Ron's family home."
+    },
+    {
+      "entity_1": "ottery st. cachpole",
+      "entity_2": "burrow",
+      "relationship_type": "visible_from_location",
+      "description": "The Burrow can be seen from the village of Ottery St. Cachpole."
+    }
+  ]
+}

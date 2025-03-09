@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge bumped her large jaw against Aunt Petunia's bony cheekbone. She is described as having a large jaw and being jovial."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia has a bony cheekbone and hates animals. She wincs slightly when Ripper drools on her floor."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as smiling jovially and asking about tea for Aunt Marge. He also asks who is looking after the other dogs."
+    },
+    {
+      "name": "ripper",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Ripper is an animal that lapping noisily in the corner and drools on Aunt Petunia's floor. He is given tea out of Aunt Marge's saucer."
+    },
+    {
+      "name": "colonel fubster",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colonel Fubster is a retired person who is managing the other dogs for Aunt Marge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aunt marge",
+      "entity_2": "colonel fubster",
+      "relationship_type": "employs",
+      "description": "Aunt Marge has Colonel Fubster managing the other dogs for her."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "aunt marge",
+      "relationship_type": "asks_after",
+      "description": "Uncle Vernon asks Aunt Marge about tea and who is looking after the other dogs."
+    }
+  ]
+}

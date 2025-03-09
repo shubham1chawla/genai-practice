@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who knows about protective charms and spells."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one searching for a locket behind Umbridge's desk."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch's filing cabinets at Hogwarts are mentioned as similar to the one Harry is searching."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Mr. Weasley's file is found in the bottommost drawer of the filing cabinet."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Order of the Phoenix is mentioned as an organization that Mr. Weasley is a member of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching behind Umbridge's desk."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weasley",
+      "relationship_type": "found_file_of",
+      "description": "Harry found Mr. Weasley's file in the bottommost drawer of the filing cabinet."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as receiving a parcel from Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who gave him Chocolate Frogs and Every-Flavour Beans."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who recognizes the Invisibility Cloak and suggests Harry try it on."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A rare and valuable object that makes the wearer invisible, described as being made of a silvery grey material."
+    },
+    {
+      "name": "chocolate frogs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Treats given to Harry by Hermione."
+    },
+    {
+      "name": "every-flavour beans",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Treats given to Ron by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "received_from",
+      "description": "Harry received the parcel from Hermione."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "recognized",
+      "description": "Ron recognized the Invisibility Cloak."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wore",
+      "description": "Harry wore the Invisibility Cloak."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "peverell coat of arms",
+      "entity_type": "coat_of_arms",
+      "singular": true,
+      "description": "The Peverell coat of arms is engraved on the stone. (line 1)"
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is a person who is being questioned by Gaunt. (lines 2-3)"
+    },
+    {
+      "name": "gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gaunt is a person who is angry and upset. He has a son and a daughter. (lines 4-6)"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Gaunt's son. (line 5)"
+    },
+    {
+      "name": "merope",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merove is Gaunt's daughter. (lines 4-6)"
+    },
+    {
+      "name": "salazar slytherin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Salazar Slytherin is a person who has descendants. (line 9)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gaunt",
+      "entity_2": "ogden",
+      "relationship_type": "questioned_by",
+      "description": "Gaunt questions Ogden about his son's actions. (lines 2-3)"
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "harry",
+      "relationship_type": "parent_child",
+      "description": "Gaunt is Harry's father. (line 5)"
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "merope",
+      "relationship_type": "parent_child",
+      "description": "Gaunt is Merove's father. (lines 4-6)"
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "peverell coat of arms",
+      "relationship_type": "related_to",
+      "description": "Ogden sees the Peverell coat of arms on the stone. (line 1)"
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "salazar slytherin",
+      "relationship_type": "descendant_of",
+      "description": "Gaunt claims to be a descendant of Salazar Slytherin. (line 9)"
+    }
+  ]
+}

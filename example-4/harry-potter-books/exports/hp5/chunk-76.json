@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dementors are creatures that guard a prison. They have arrived in Little Whinging and are near Harry."
+    },
+    {
+      "name": "little whinging",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Little Whinging is the location where dementors have arrived."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being guarded by dementors and has thoughts about them."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic may have lost control of the dementors."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison guarded by dementors."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort may have joined forces with the dementors."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore predicted that the dementors would join Voldemort."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is a person who has thoughts about Harry and the dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "dementors",
+      "relationship_type": "control",
+      "description": "The Ministry of Magic may have lost control of the dementors."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dementors",
+      "relationship_type": "join",
+      "description": "Voldemort may have joined forces with the dementors."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "prediction",
+      "description": "Dumbledore predicted that Voldemort would join the dementors."
+    }
+  ]
+}

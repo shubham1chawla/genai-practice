@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "umbrella stand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The umbrella stand is mentioned as a cause of tripping over. It is described as 'stupid'."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist who trips over the umbrella stand and sees the life-size portrait."
+    },
+    {
+      "name": "old woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The old woman is depicted in a life-size portrait as screaming and being tortured. She is wearing a black cap."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "umbrella stand",
+      "relationship_type": "tripped_over",
+      "description": "Harry tripped over the umbrella stand."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "old woman",
+      "relationship_type": "saw",
+      "description": "Harry saw the old woman in the life-size portrait screaming."
+    },
+    {
+      "entity_1": "old woman",
+      "entity_2": "portrait",
+      "relationship_type": "depicted_in",
+      "description": "The old woman was depicted in a life-size portrait."
+    },
+    {
+      "entity_1": "portrait",
+      "entity_2": "hall",
+      "relationship_type": "located_along",
+      "description": "The portraits were located along the hall behind Harry."
+    }
+  ]
+}

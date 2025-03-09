@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who will be executed at sunset."
+    },
+    {
+      "name": "executioner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The executioner is mentioned as the one who will carry out Hagrid's execution."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is hesitant to go down and see Hagrid being executed."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who wants to save Hagrid from execution."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who helps Harry come up with a plan to save Hagrid."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who will be angry if he sees Harry near the place where the Invisibility Cloak is kept."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as something that could help Harry and his friends save Hagrid."
+    },
+    {
+      "name": "fat lady's portrait",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Fat Lady's portrait is mentioned as a way to access the place where the Invisibility Cloak is kept."
+    },
+    {
+      "name": "one-eyed witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one-eyed witch is mentioned as someone who has a hump that can be opened with a password."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "has",
+      "description": "Harry wants to use the Invisibility Cloak to save Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "fat lady's portrait",
+      "relationship_type": "opened",
+      "description": "Hermione opens the Fat Lady's portrait to access the place where the Invisibility Cloak is kept."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "one-eyed witch",
+      "relationship_type": "left",
+      "description": "Harry left the Invisibility Cloak in the passageway under the one-eyed witch."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "sees",
+      "description": "Snape will see Harry if he goes near the place where the Invisibility Cloak is kept."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "found",
+      "description": "Hermione finds the Invisibility Cloak in the passageway under the one-eyed witch."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as sneering and making threats. He is also mentioned as moving towards Borgin and blocking the view of Harry, Ron, and Hermione."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is described as looking very frightened and being blocked from view by Malfoy."
+    },
+    {
+      "name": "fenrir greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fenrir Greyback is mentioned as a family friend of Malfoy's who will be dropping in to make sure Harry, Ron, and Hermione are giving the problem their full attention."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as trying to keep Malfoy in sight along with Ron and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "blocks_view",
+      "description": "Malfoy moves towards Borgin, blocking the view of Harry, Ron, and Hermione."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "fenrir greyback",
+      "relationship_type": "family_friend",
+      "description": "Fenrir Greyback is mentioned as a family friend of Malfoy's."
+    }
+  ]
+}

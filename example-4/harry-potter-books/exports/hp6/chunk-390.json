@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. He is described as saying 'I think that will do for tonight' and 'Very important, I think'. (Excerpt: 'I think that will do for toni ght, Harry ,’ said Dumbledore')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts School of Witchcraft and Wizardry. He is described as responding to Dumbledore's statements with 'Yes, sir' and asking questions about Voldemort's past. (Excerpt: ‘Yes, sir,’ said Harry .)"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a dark wizard who has a significant role in the story. He is mentioned by Dumbledore as having a 'past' that is important to know about. (Excerpt: ‘Sir ... is it important to kn ow all this about Voldemort’s past?’)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned by Harry as someone he wants to tell about Dumbledore's statements. (Excerpt: ‘Sir, am I allowed to tell Ron and Hermione everything you’ve told me?’)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and a student at Hogwarts School of Witchcraft and Wizardry. She is mentioned by Harry as someone he wants to tell about Dumbledore's statements. (Excerpt: ‘Sir, am I allowed to tell Ron and Hermione everything you’ve told me?’)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "told_to",
+      "description": "Dumbledore tells Harry about Voldemort's past. (Excerpt: 'I think that will do for toni ght, Harry ,’ said Dumbledore)"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "related_to",
+      "description": "Dumbledore talks about Voldemort's past and its importance. (Excerpt: ‘Sir ... is it important to kn ow all this about Voldemort’s past?’)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry has a friend named Ron. (Excerpt: ‘Sir, am I allowed to tell Ron and Hermione everything you’ve told me?’)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry has a friend named Hermione. (Excerpt: ‘Sir, am I allowed to tell Ron and Hermione everything you’ve told me?’)"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "related_to",
+      "description": "Dumbledore talks about Voldemort's past and its importance. (Excerpt: ‘It has everything to do with the prophecy .’)"
+    }
+  ]
+}

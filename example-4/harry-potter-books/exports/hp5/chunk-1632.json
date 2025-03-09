@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who feels powerless without his own wand. He watches Umbridge with concern."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a professor who is forcing Harry to do something against his will. She mentions that she has no choice and that the Minister will understand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another student who tries to stop Umbridge from using the Cruciatus Curse. She reminds Umbridge that it's illegal."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is watching Umbridge with a hungry expression on his face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "force",
+      "description": "Umbridge is forcing Harry to do something against his will."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "stop",
+      "description": "Hermione tries to stop Umbridge from using the Cruciatus Curse."
+    }
+  ]
+}

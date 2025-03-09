@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is yelling and casting spells."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to stop Harry from doing something."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Creatures that are advancing towards Harry and Hermione."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "beast",
+      "singular": true,
+      "description": "A blind dragon that is being freed by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblins",
+      "relationship_type": "attacks",
+      "description": "Harry is shooting Stunning Spells at the advancing goblins."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dragon",
+      "relationship_type": "helps",
+      "description": "Harry is freeing the blind dragon by breaking its cuffs."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "stops",
+      "description": "Hermione is trying to stop Harry from doing something."
+    }
+  ]
+}

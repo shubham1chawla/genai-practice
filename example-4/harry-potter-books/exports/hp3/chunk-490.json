@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione receives a letter from Hagrid informing her about Buckbeak's execution date."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is a hippogriff who is sentenced to death by the Committee of Magic."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione receives a letter from Hagrid and is worried about Buckbeak's execution date."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron offers to help Hermione with the appeal process."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy's dad is mentioned as being responsible for scaring the Committee into executing Buckbeak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "buckbeak",
+      "relationship_type": "sentenced_to_death",
+      "description": "Hagrid informs Hermione about Buckbeak's execution date."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "buckbeak",
+      "relationship_type": "concerned_about_execution",
+      "description": "Hermione is worried about Buckbeak's execution date."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "offering_help",
+      "description": "Ron offers to help Hermione with the appeal process."
+    }
+  ]
+}

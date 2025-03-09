@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is present in the scene, holding a tiny golden key and a letter from Professor Dumbledore."
+    },
+    {
+      "name": "goblin",
+      "entity_type": "goblin",
+      "singular": false,
+      "description": "Goblins are a group of creatures that are present in the scene, one of whom is weighing rubies and another who is named Griphook."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a specific goblin who is called by the other goblin to take Hagrid and Harry down to the vaults."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned in the letter that Hagrid has, which is about the You-Know-What in vault seven hundred and thirteen."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present in the scene, following Griphook towards one of the doors leading off the hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "goblin",
+      "relationship_type": "has_key",
+      "description": "Hagrid has a tiny golden key, which he is holding up for the goblin to see."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "received_letter_from",
+      "description": "Hagrid received a letter from Professor Dumbledore about the You-Know-What in vault seven hundred and thirteen."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "harry",
+      "relationship_type": "is_leading",
+      "description": "Griphook is leading Hagrid and Harry towards one of the doors leading off the hall."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a teacher who has been assigned to the class. She is described as having her hands clasped neatly in front of her."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an organization that approves curricula for teaching defensive magic. It is mentioned as a source of authority and standardization."
+    },
+    {
+      "name": "ow.l.",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "O.W.L. stands for Ordinary Wizarding Level, which is an exam taken by students in their fifth year. It is mentioned as a benchmark for measuring student performance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "ministry",
+      "relationship_type": "approved_by",
+      "description": "Professor Umbridge's course is approved by the Ministry, indicating that it follows their curriculum standards."
+    },
+    {
+      "entity_1": "class",
+      "entity_2": "ow.l.",
+      "relationship_type": "targeted_for",
+      "description": "The class is targeted for improvement in preparation for the O.W.L. exam, which suggests that Professor Umbridge's course is designed to help students meet this goal."
+    }
+  ]
+}

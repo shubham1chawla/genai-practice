@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as asking a question about Harry's broom."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is described as being nervous but excited for the Quidditch match."
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindor team is mentioned as setting off for the locker rooms."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hufflepuff is mentioned as a school that the Gryffindor team played against in a previous match."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is mentioned as possibly being in the crowd watching the Quidditch match."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broom",
+      "singular": true,
+      "description": "The Firebolt broom is mentioned as Harry's broom."
+    },
+    {
+      "name": "quidditch robes",
+      "entity_type": "clothing",
+      "singular": false,
+      "description": "Quidditch robes are mentioned as the clothing that Harry will wear for the match."
+    },
+    {
+      "name": "stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The stadium is mentioned as where the Quidditch match will take place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "owns",
+      "description": "Harry owns the Firebolt broom."
+    },
+    {
+      "entity_1": "gryffindor team",
+      "entity_2": "stadium",
+      "relationship_type": "will_play_at",
+      "description": "The Gryffindor team will play at the stadium."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor lupin",
+      "relationship_type": "wonders_about",
+      "description": "Harry wonders whether Professor Lupin is in the crowd watching the match."
+    }
+  ]
+}

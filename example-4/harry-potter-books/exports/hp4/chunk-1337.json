@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha Jorkins is a person who heard Winky talking to the narrator and came to investigate."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Winky is a house-elf who was talking to the narrator under an Invisibility Cloak."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who asks Winky about the Quidditch World Cup."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is a person who talks to Dumbledore and mentions that Winky persuaded his father into attending the Quidditch World Cup."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is an object used by the narrator to hide under."
+    },
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is an event that Winky persuaded Crouch's father to attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bertha jorkins",
+      "entity_2": "winky",
+      "relationship_type": "heard_talking_to",
+      "description": "Bertha Jorkins heard Winky talking to the narrator under an Invisibility Cloak."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "crouch",
+      "relationship_type": "asked_about_quidditch_world_cup",
+      "description": "Dumbledore asked Crouch about the Quidditch World Cup."
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "persuaded_attendance",
+      "description": "Winky persuaded Crouch's father to attend the Quidditch World Cup."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "used_for_hiding",
+      "description": "Crouch used an Invisibility Cloak to hide."
+    },
+    {
+      "entity_1": "bertha jorkins",
+      "entity_2": "memory charm",
+      "relationship_type": "affected_by",
+      "description": "Bertha Jorkins was affected by a Memory Charm cast by Crouch's father."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "attended_with_family",
+      "description": "Crouch attended the Quidditch World Cup with his family."
+    }
+  ]
+}

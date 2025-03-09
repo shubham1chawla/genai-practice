@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is being addressed by Hermione and Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is trying to calm him down."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who is also trying to calm him down."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story who is being mentioned as someone who was sent after Hermione."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is accused of betraying Hermione and sending Voldemort after her."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who made a statement about Black not being affected by Azkaban like normal people are."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who knows something and said it to Harry in Potions class."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A prison where Black is supposed to go back to."
+    },
+    {
+      "name": "potions",
+      "entity_type": "class",
+      "singular": true,
+      "description": "A subject that Harry and Malfoy have in school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Black's freedom."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "black",
+      "relationship_type": "opposed_to",
+      "description": "Hermione is opposed to Black's freedom and thinks he should go back to Azkaban."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "black",
+      "relationship_type": "opposed_to",
+      "description": "Ron is also opposed to Black's freedom and thinks he should go back to Azkaban."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "informed_harry",
+      "description": "Malfoy informed Harry about something in Potions class."
+    }
+  ]
+}

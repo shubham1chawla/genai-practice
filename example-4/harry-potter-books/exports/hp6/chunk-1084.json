@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who has the power and mercy. He is described as being at Malfoy's mercy but then asserts that it is his own mercy that matters."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a person who has managed to get this far despite the odds against him. He is described as having the wand and being in power over Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who observes Malfoy's reaction and sees his wand hand trembling."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_power_over",
+      "description": "Malfoy has power over Dumbledore, but Dumbledore asserts that it is his own mercy that matters."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "observes",
+      "description": "Harry observes Malfoy's reaction and sees his wand hand trembling."
+    }
+  ]
+}

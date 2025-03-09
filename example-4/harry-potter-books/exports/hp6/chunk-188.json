@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is considering a career as an Auror."
+    },
+    {
+      "name": "auror",
+      "entity_type": "career",
+      "singular": false,
+      "description": "A highly trained wizard whose job it is to find and kill Voldemort."
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A subject that Harry needs to pass in order to become an Auror."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of wizards who are followers of Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "auror",
+      "relationship_type": "consideration",
+      "description": "Harry is considering a career as an Auror."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "potions",
+      "relationship_type": "requirement",
+      "description": "Harry needs to pass Potions in order to become an Auror."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eater",
+      "relationship_type": "membership",
+      "description": "Death Eaters are followers of Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "opposition",
+      "description": "Harry is opposed to Voldemort and wants to join the Aurors in order to kill him."
+    }
+  ]
+}

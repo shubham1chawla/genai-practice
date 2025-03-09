@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is able to use magic and summon brooms."
+    },
+    {
+      "name": "Rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who owns a pub and has brooms that can be summoned by Harry."
+    },
+    {
+      "name": "the Ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An organization that is mentioned as needing to receive a message from Rosmerta."
+    },
+    {
+      "name": "brooms",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Magical objects that can be summoned by Harry and are owned by Rosmerta."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Rosmerta's brooms",
+      "relationship_type": "owns",
+      "description": "Harry is able to summon Rosmerta's brooms using the spell 'Accio'."
+    },
+    {
+      "entity_1": "Rosmerta",
+      "entity_2": "the Ministry",
+      "relationship_type": "will send a message to",
+      "description": "Rosmerta is instructed by Harry to send a message to the Ministry."
+    }
+  ]
+}

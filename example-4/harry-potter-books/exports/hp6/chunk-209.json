@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "d raco's detour 113",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry, Ron, and Mrs. Weasley are currently at."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and Ron on their journey."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and Mrs. Weasley on their journey."
+    },
+    {
+      "name": "fred and george's windows",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The shop front of Fred and George Weasley, where they are displaying their products."
+    },
+    {
+      "name": "u-no-poo",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A product that is being advertised on the right-hand window of Fred and George's shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "d raco's detour 113",
+      "relationship_type": "at_location",
+      "description": "Mrs. Weasley is at D Raco's Detour 113."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "d raco's detour 113",
+      "relationship_type": "at_location",
+      "description": "Ron is at D Raco's Detour 113."
+    },
+    {
+      "entity_1": "fred and george's windows",
+      "entity_2": "d raco's detour 113",
+      "relationship_type": "located_at_location",
+      "description": "Fred and George's shop is located at D Raco's Detour 113."
+    },
+    {
+      "entity_1": "u-no-poo",
+      "entity_2": "fred and george's windows",
+      "relationship_type": "advertised_at_location",
+      "description": "U-NO-Poo is being advertised at Fred and George's shop."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The real Dumbledore was killed by the horror-figure."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a character who is checking for human presence with her wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a character who is trying to comfort Hermione after she cast a spell that didn't work."
+    },
+    {
+      "name": "dusty",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Dusty refers to the corpse-figure that rose from the carpet patch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "killed_by",
+      "description": "Hermione is not directly related to Dumbledore's death, but it is mentioned that the horror-figure killed him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "comforted",
+      "description": "Ron tries to comfort Hermione after she cast a spell that didn't work."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dusty",
+      "relationship_type": "related_to",
+      "description": "Hermione is related to Dusty as she is aware of the corpse-figure's presence and is frightened by it."
+    }
+  ]
+}

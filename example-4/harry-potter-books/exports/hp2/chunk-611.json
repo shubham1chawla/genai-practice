@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is talking to Tom Riddle."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A former student at Hogwarts, who is now a memory preserved in a diary."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where Harry and Tom Riddle studied."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who left a diary in the bathroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "tom riddle",
+      "relationship_type": "interaction",
+      "description": "Harry is talking to Tom Riddle."
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "hogwarts",
+      "relationship_type": "alumni",
+      "description": "Tom Riddle was a student at Hogwarts fifty years ago."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "connection",
+      "description": "Harry found the diary that belonged to Moaning Myrtle in her bathroom."
+    }
+  ]
+}

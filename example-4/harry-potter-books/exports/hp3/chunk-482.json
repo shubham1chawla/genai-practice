@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a location mentioned in the text as a place Harry wants to get into."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "Dementors are entities that block Harry's path to Hogsmeade."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "hogsmeade",
+      "relationship_type": "has_access_to",
+      "description": "Snape has access to Hogsmeade, as he is able to reveal the secret path on the map."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dementors",
+      "relationship_type": "can_defeat",
+      "description": "Snape can defeat Dementors, as he is able to command them to yield information."
+    }
+  ]
+}

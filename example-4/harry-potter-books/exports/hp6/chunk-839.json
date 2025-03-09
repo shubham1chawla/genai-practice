@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character of the story, introduced as he enters the classroom late."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts, mentioned as being cold and strict."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts, mentioned as losing points due to Harry's tardiness."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry's, sitting beside him in class."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are creatures that are mentioned as being the subject of an essay assignment."
+    },
+    {
+      "name": "inferius",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Inferius is a creature mentioned in conversation between Snape and Seamus Finnigan."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus Finnigan is a student who asks a question about Inferius."
+    },
+    {
+      "name": "imperius curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Imperius Curse is mentioned as the subject of an essay assignment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "loses_points",
+      "description": "Harry's tardiness results in Gryffindor losing points."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dementors",
+      "relationship_type": "assigns_essay",
+      "description": "Snape assigns an essay on Dementors."
+    }
+  ]
+}

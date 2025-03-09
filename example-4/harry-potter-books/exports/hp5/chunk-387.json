@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, returning to Hogwarts for another year."
+    },
+    {
+      "name": "platform nine and three quarters",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A platform at King's Cross Station where students board the Hogwarts Express. It is hidden from the non-magical world by a magical archway."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The train that takes students from King's Cross Station to Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother figure, who is anxious about the others making it in time for the train."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy with dreadlocks who greets Harry and his dog Sirius on the platform."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's dog, who is excited to be going back to Hogwarts."
+    },
+    {
+      "name": "alastor (moody)",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard with a prosthetic eye and a gruff demeanor, who is tasked with bringing the luggage onto the train."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Metamorphmagus who is helping Mrs. Weasley and Alastor Moody on the platform."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "platform nine and three quarters",
+      "relationship_type": "arrived_at",
+      "description": "Harry arrived at Platform Nine and Three Quarters, where he boarded the Hogwarts Express."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts express",
+      "relationship_type": "boarded",
+      "description": "Harry boarded the Hogwarts Express on Platform Nine and Three Quarters."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "alastor (moody)",
+      "relationship_type": "accompanying",
+      "description": "Mrs. Weasley is accompanying Alastor Moody, who is bringing the luggage onto the train."
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "harry",
+      "relationship_type": "greeted",
+      "description": "Lee greeted Harry on the platform, calling out to him and his dog Sirius."
+    }
+  ]
+}

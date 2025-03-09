@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin is a student who says goodbye to Harry before being swept away by the crowd."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is being talked about by Colin and his friends."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend who wonders what Colin said about him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who expresses disgust at the rumors spreading about Harry."
+    },
+    {
+      "name": "justin finch-fletchley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Justin Finch-Fletchley is a student who ran away from Harry during lunchtime."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who couldn't cure Mrs. Norris."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs. Norris is a cat that was attacked and couldn't be cured by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "colin",
+      "relationship_type": "said_goodbye_to",
+      "description": "Colin says goodbye to Harry before being swept away by the crowd."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "was_cured_by",
+      "description": "Dumbledore couldn't cure Mrs. Norris, which makes Hermione think that whatever attacked her might not be human."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "justin finch-fletchley",
+      "relationship_type": "ran_away_from",
+      "description": "Justin Finch-Fletchley ran away from Harry during lunchtime, which makes Harry remember this when he hears the rumors about him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "believed_rumors_about",
+      "description": "Ron believes the rumors spreading about Harry and expresses disgust at them."
+    }
+  ]
+}

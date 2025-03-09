@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having gone to the Potters' and met his downfall there."
+    },
+    {
+      "name": "potters",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family that Voldemort went to, resulting in his downfall."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison where some of Voldemort's supporters ended up."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is being questioned by Lupin and claims to be innocent."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The one questioning Pettigrew and expressing difficulty in understanding why an innocent man would spend 12 years as a rat."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A spy who was put in Azkaban by Pettigrew."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "potters",
+      "relationship_type": "visited",
+      "description": "Voldemort went to the Potters' and met his downfall there."
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "azkaban",
+      "relationship_type": "sent_to",
+      "description": "Pettigrew claims that he put one of Voldemort's best men in Azkaban."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "pettigrew",
+      "relationship_type": "questioned",
+      "description": "Lupin is questioning Pettigrew about his actions."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "azkaban",
+      "relationship_type": "imprisoned_in",
+      "description": "Pettigrew claims that he put Sirius Black in Azkaban."
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "voldemort",
+      "relationship_type": "betrayed",
+      "description": "Pettigrew is being accused of betraying Voldemort by putting one of his best men in Azkaban."
+    }
+  ]
+}

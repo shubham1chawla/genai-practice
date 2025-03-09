@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts and is proud of his magical creatures. He points to the cow carcass on the ground."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is trying to understand the mystery of the horses. Hagrid nods at him in approval."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville is another student at Hogwarts who is also able to see the invisible creatures."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts who is skeptical and asks what they are supposed to be seeing."
+    },
+    {
+      "name": "parvati",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Parvati is a student at Hogwarts who gasps in terror when she sees the invisible creatures stripping flesh from bones."
+    },
+    {
+      "name": "cow carcass",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cow carcass on the ground is what Hagrid points to for everyone to see."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "cow carcass",
+      "relationship_type": "points_to",
+      "description": "Hagrid points at the cow carcass on the ground."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "nods_at",
+      "description": "Hagrid nods at Harry in approval."
+    },
+    {
+      "entity_1": "parvati",
+      "entity_2": "cow carcass",
+      "relationship_type": "reacts_to",
+      "description": "Parvati gasps and squeals when she sees the invisible creatures stripping flesh from bones."
+    }
+  ]
+}

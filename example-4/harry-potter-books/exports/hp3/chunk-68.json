@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is a bus driver who is in charge of transporting Harry and other wizards and witches. He is mentioned as remembering that Harry had paid for hot chocolate (\"while, Stan remembered that Harry had paid for hot chocolate\")."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a wizard who is being transported by the Knight Bus. He is mentioned as having paid for hot chocolate and spilling it on his pillow (\"but poured it all over Harry’s pillow when the bus moved abruptly from Anglesey to Aberdeen\")."
+    },
+    {
+      "name": "anglesey",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Anglesey is a location that the Knight Bus was moving from. It is mentioned as the bus moving \"from Anglesey to Aberdeen\"."
+    },
+    {
+      "name": "aberdeen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Aberdeen is a location that the Knight Bus was moving towards. It is mentioned as the bus moving \"from Anglesey to Aberdeen\"."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is a location in London where Harry wants to go. He tells Stan that he wants to go there (\"‘Diagon Alley,’ said Harry\")."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is a wizarding bank where Harry plans to go after it opens. He mentions going there in the morning (\"He would lie low for a couple of hours, go to Gringotts the moment it opened\")."
+    },
+    {
+      "name": "charing cross road",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Charing Cross Road is a location where the Knight Bus is currently traveling. It is mentioned as Harry watching buildings and benches \"squeezing themselves out of the Knight Bus’s way\"."
+    },
+    {
+      "name": "knight bus",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The Knight Bus is a magical vehicle that is transporting Harry and other wizards and witches. It is mentioned as moving from Anglesey to Aberdeen and later thundering along Charing Cross Road."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "stan",
+      "entity_2": "harry",
+      "relationship_type": "driver_passenger",
+      "description": "Stan is the driver of the Knight Bus, while Harry is a passenger. This relationship is established when Stan asks Neville where they are going and Harry responds."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "destination",
+      "description": "Harry wants to go to Diagon Alley, which he tells Stan (\"‘Diagon Alley,’ said Harry\")."
+    },
+    {
+      "entity_1": "stan",
+      "entity_2": "gringotts",
+      "relationship_type": "unrelated",
+      "description": "Stan is not related to Gringotts, but rather Harry plans to go there after it opens."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "destination",
+      "description": "Harry plans to go to Gringotts after it opens (\"He would lie low for a couple of hours, go to Gringotts the moment it opened\")."
+    },
+    {
+      "entity_1": "knight bus",
+      "entity_2": "charing cross road",
+      "relationship_type": "location",
+      "description": "The Knight Bus is currently traveling along Charing Cross Road (\"They were thundering along Charing Cross Road\")."
+    }
+  ]
+}

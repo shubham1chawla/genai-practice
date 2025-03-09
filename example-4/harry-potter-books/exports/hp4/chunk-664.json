@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "professor lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lockhart's day is described in the text, where his pictures are plastered on the walls."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin had lived in the office and was known for procuring fascinating new Dark creatures."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody's objects are described as being used by him when he was an Auror."
+    },
+    {
+      "name": "sneakoscope",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Sneakoscope is described as a device that detects hidden dangers."
+    },
+    {
+      "name": "auror",
+      "entity_type": "job_title",
+      "singular": false,
+      "description": "Moody's past job title is mentioned in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "auror",
+      "relationship_type": "was_an",
+      "description": "Moody was an Auror in his past."
+    },
+    {
+      "entity_1": "professor lockhart",
+      "entity_2": "walls",
+      "relationship_type": "is_plastered_on",
+      "description": "Professor Lockhart's pictures are plastered on the walls."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "office",
+      "relationship_type": "had_lived_in",
+      "description": "Lupin had lived in the office."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "objects",
+      "relationship_type": "used_by",
+      "description": "Moody's objects were used by him when he was an Auror."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sneakoscope",
+      "relationship_type": "owned",
+      "description": "Harry owned a Sneakoscope, which is similar to Moody's one."
+    }
+  ]
+}

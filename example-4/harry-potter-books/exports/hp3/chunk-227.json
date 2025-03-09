@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is the student who is about to face Professor Snape. He is described as looking pale and frightened, but he has pushed up his sleeves and is holding his wand ready."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Lupin is the teacher who is helping Neville. He is described as pointing his own wand at the handle of the wardrobe and giving a countdown to Neville."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Snape is the teacher who steps out of the wardrobe. He is described as hook-nosed and menacing, with flashing eyes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "professor lupin",
+      "relationship_type": "helped_by",
+      "description": "Professor Lupin helps Neville by giving him a countdown and pointing his wand at the handle of the wardrobe."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "professor snape",
+      "relationship_type": "faced_by",
+      "description": "Neville faces Professor Snape, who steps out of the wardrobe and bears down upon him."
+    }
+  ]
+}

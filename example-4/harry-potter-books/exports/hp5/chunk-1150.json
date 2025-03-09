@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the main character of the story. He is being taught Occlumency by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape, a teacher at Hogwarts and the one teaching Harry Occlumency."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore, the headmaster of Hogwarts. He has asked Snape to teach Harry Occlumency."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The main antagonist of the story, a powerful wizard who is skilled at Legilimency."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the main character of the story. He is being taught Occlumency by Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "teacher_student",
+      "description": "Snape is teaching Harry Occlumency, as requested by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "requester_recipient",
+      "description": "Dumbledore has asked Snape to teach Harry Occlumency."
+    }
+  ]
+}

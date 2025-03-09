@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is introduced as a house-elf who has been helping Harry Potter and Kreacher."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is introduced as a house-elf who is working with Dobby to tail Malfoy."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the person that Dobby and Kreacher are helping."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is introduced as a character who is shocked by the sudden appearances of Dobby and Kreacher."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the person that Dobby and Kreacher are tasked with tailing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "kreacher",
+      "relationship_type": "collaborator",
+      "description": "Dobby and Kreacher are working together to make reports."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "helper",
+      "description": "Dobby is helping Harry Potter."
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "dobby",
+      "relationship_type": "collaborator",
+      "description": "Kreacher and Dobby are working together to make reports."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "target",
+      "description": "Dobby and Kreacher have been tasked with tailing Malfoy on behalf of Harry Potter."
+    }
+  ]
+}

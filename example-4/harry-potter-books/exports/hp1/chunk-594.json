@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, boarding the Hogwarts Express."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "train",
+      "singular": true,
+      "description": "A magical train that takes students from King's Cross Station to Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "king’s cross station",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The London railway station where the Hogwarts Express departs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts express",
+      "relationship_type": "boarded",
+      "description": "Harry Potter boards the Hogwarts Express at King's Cross Station."
+    },
+    {
+      "entity_1": "hogwarts express",
+      "entity_2": "king’s cross station",
+      "relationship_type": "departs_from",
+      "description": "The Hogwarts Express departs from King's Cross Station."
+    }
+  ]
+}

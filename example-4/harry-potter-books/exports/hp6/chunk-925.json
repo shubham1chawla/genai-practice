@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is also Harry's mentor."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, a dark wizard."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A snake that is also one of Voldemort's Horcruxes."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Objects that contain a piece of Voldemort's soul."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "nagini",
+      "relationship_type": "has_horcrux",
+      "description": "Nagini is one of Voldemort's Horcruxes, as revealed by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horcruxes",
+      "relationship_type": "knows_about",
+      "description": "Dumbledore knows about the Horcruxes and their behavior."
+    }
+  ]
+}

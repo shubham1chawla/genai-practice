@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, a dark wizard. He is mentioned as someone who might know about the Deathly Hallows, but it's unlikely because he would have sought them if he knew."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story. He is mentioned as someone who has heard The Tales of Beedle the Bard, but it's not clear how this relates to the Deathly Hallows."
+    },
+    {
+      "name": "the tales of beedle the bard",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book mentioned as something that Harry has heard. It's not clear what its significance is in relation to the Deathly Hallows."
+    },
+    {
+      "name": "deathly hallows",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Three objects that make the possessor master of Death. They are mentioned as something Voldemort might know about, but it's unlikely because he would have sought them if he knew."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Objects created by Voldemort to house pieces of his soul. They are mentioned as something that might not be necessary if Voldemort knew about the Deathly Hallows."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "One of the three Deathly Hallows, a powerful wand. It is mentioned as something Voldemort sought without realizing its full power."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "deathly hallows",
+      "relationship_type": "knowledge_of",
+      "description": "It's unlikely that Voldemort knew about the Deathly Hallows because he would have sought them if he knew."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "sought",
+      "description": "Voldemort sought the Elder Wand without realizing its full power, and it's mentioned as one of the three Deathly Hallows."
+    }
+  ]
+}

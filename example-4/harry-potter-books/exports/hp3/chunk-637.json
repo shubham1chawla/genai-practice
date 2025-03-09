@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being part of a stranger group."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "A cat that is leading the way down the stairs."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of the group and has a wand pointed at Pettigrew."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being covered by Lupin's wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of the group and looks like an entrant in a six-legged race."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is being made to drift along by Sirius's wand."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is making Professor Snape drift along with his wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character's friend, mentioned as bringing up the rear."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "professor snape",
+      "relationship_type": "controls",
+      "description": "Sirius is making Professor Snape drift along with his wand."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "pettigrew",
+      "relationship_type": "covers",
+      "description": "Lupin has Pettigrew covered with his wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "follows",
+      "description": "Harry is following Black in the tunnel."
+    }
+  ]
+}

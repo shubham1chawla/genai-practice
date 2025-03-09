@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a source of information for Fred."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is one of the characters in the conversation and is being questioned by Fred."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the characters in the conversation and is questioning Ginny."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean Thomas is a boy that Ginny is currently going out with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "ron",
+      "relationship_type": "source_of_information",
+      "description": "Fred mentions Ron as the source of information for his claim about Ginny."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "dean thomas",
+      "relationship_type": "romantic_partner",
+      "description": "Ginny confirms that she is currently going out with Dean Thomas."
+    }
+  ]
+}

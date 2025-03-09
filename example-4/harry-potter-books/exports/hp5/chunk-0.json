@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dudley demented",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of the book, mentioned at the beginning of Chapter One."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A street where the inhabitants are living, described as having large, square houses and parched lawns due to drought."
+    },
+    {
+      "name": "hosepipes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object that has been banned due to drought, used for car-washing and lawn-mowing."
+    },
+    {
+      "name": "dudley demented (character)",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teen age boy who is lying flat on his back in a flower bed outside number four, Privet Drive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hosepipes",
+      "entity_2": "dudley demented (character)",
+      "relationship_type": "used_by",
+      "description": "The character is deprived of using hosepipes due to drought."
+    },
+    {
+      "entity_1": "privet drive",
+      "entity_2": "hosepipes",
+      "relationship_type": "location_of_ban",
+      "description": "Hosepipes have been banned in Privet Drive due to drought."
+    }
+  ]
+}

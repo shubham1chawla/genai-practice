@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "norbert",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Norbert is a Norwegian Ridgeback dragon that Hagrid has been taking care of. He was mentioned as an option for Charlie to take care of in Romania."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who helped Hagrid with Norbert and suggested sending an owl to Charlie."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts who has been taking care of Norbert. He agreed to send an owl to Charlie."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is Ron's brother who is studying dragons in Romania and was suggested as someone to take care of Norbert."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "helped",
+      "description": "Ron helped Hagrid with feeding Norbert."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "charlie",
+      "relationship_type": "suggested",
+      "description": "Ron suggested sending an owl to Charlie to ask him to take care of Norbert."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "norbert",
+      "relationship_type": "cared_for",
+      "description": "Hagrid has been taking care of Norbert."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "norbert",
+      "relationship_type": "injured_by",
+      "description": "Ron was bitten by Norbert."
+    }
+  ]
+}

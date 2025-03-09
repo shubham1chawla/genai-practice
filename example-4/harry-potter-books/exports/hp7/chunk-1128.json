@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "stag",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "A Patronus mentioned by a Death Eater, initially thought to be a stag but later corrected to a goat."
+    },
+    {
+      "name": "goat",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "The correct animal that the Death Eaters were referring to, mentioned by the barman."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_concept",
+      "singular": true,
+      "description": "A magical creature that can take on various forms, mentioned as a stag and later corrected to a goat."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group_name",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are enemies of Harry Potter, mentioned in the text."
+    },
+    {
+      "name": "high street",
+      "entity_type": "location_name",
+      "singular": true,
+      "description": "A location where the Death Eaters were heading after leaving the bar."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "One of Harry Potter's friends, mentioned as moaning with relief and sitting down on a chair."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as drawing curtains and pulling off the Cloak."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "One of Harry Potter's friends, mentioned as having the Cloak pulled off by Harry."
+    },
+    {
+      "name": "barman",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "A person working at a bar where the Death Eaters were present, mentioned as correcting the Death Eater's mistake about the Patronus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eater",
+      "entity_2": "high street",
+      "relationship_type": "headed_towards",
+      "description": "The Death Eaters were heading towards the High Street after leaving the bar, as mentioned in the text."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "pulled_off_cloak",
+      "description": "Harry pulled off the Cloak from Ron, as mentioned in the text."
+    },
+    {
+      "entity_1": "barman",
+      "entity_2": "death eater",
+      "relationship_type": "corrected_mistake",
+      "description": "The barman corrected a mistake made by one of the Death Eaters about the Patronus, as mentioned in the text."
+    }
+  ]
+}

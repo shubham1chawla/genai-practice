@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts School of Witchcraft and Wizardry. He is given homework by Snape to write an essay on the correct composition of a potion."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape, a potions master at Hogwarts School of Witchcraft and Wizardry. He gives homework to Harry Potter to write an essay on the correct composition of a potion."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts School of Witchcraft and Wizardry. He is given homework by Snape to write an essay on the correct composition of a potion."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger, a student at Hogwarts School of Witchcraft and Wizardry. She tells Harry that he cannot skip Divination class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "assigns_homework",
+      "description": "Snape assigns homework to Potter, which is to write an essay on the correct composition of a potion."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "potter",
+      "relationship_type": "prevents_skiving",
+      "description": "Hermione prevents Potter from skipping Divination class by telling him that he cannot do so."
+    }
+  ]
+}

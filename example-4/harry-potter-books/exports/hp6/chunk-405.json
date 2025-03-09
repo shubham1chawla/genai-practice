@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as sitting at the edge of the pitch."
+    },
+    {
+      "name": "mc laggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McLaggen is mentioned as being in the hospital wing and eating Doxy eggs for a bet."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as pointing to the edge of the pitch where Hermione was sitting."
+    },
+    {
+      "name": "doxy eggs",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Doxy eggs are mentioned as being eaten by McLaggen for a bet."
+    },
+    {
+      "name": "pitch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pitch is mentioned as the location where Harry and the applicants were testing their flying skills."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mc laggen",
+      "relationship_type": "pointed_to",
+      "description": "Harry pointed to the edge of the pitch, close to where Hermione was sitting."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "nearby",
+      "description": "Hermione was sitting at the edge of the pitch, near Harry."
+    },
+    {
+      "entity_1": "mc laggen",
+      "entity_2": "doxy eggs",
+      "relationship_type": "ate",
+      "description": "McLaggen ate a pound of Doxy eggs for a bet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pitch",
+      "relationship_type": "tested_on",
+      "description": "Harry tested the applicants' flying skills on the pitch."
+    }
+  ]
+}

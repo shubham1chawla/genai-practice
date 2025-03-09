@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being comforted by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is trying to comfort him and share information with him."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A famous wizard mentioned in the book that Hermione has found."
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old woman who had a sitting room where the book was found."
+    },
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the note as having given the book to Bathilda."
+    },
+    {
+      "name": "the life and lies of albus dumbledore",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book that Hermione has found, which contains information about Albus Dumbledore."
+    },
+    {
+      "name": "bathilda's sitting room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where the book was found."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "comforted_by",
+      "description": "Hermione is trying to comfort Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the life and lies of albus dumbledore",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in the book because it contains information about Albus Dumbledore."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the life and lies of albus dumbledore",
+      "relationship_type": "found",
+      "description": "Hermione has found the book."
+    },
+    {
+      "entity_1": "rita",
+      "entity_2": "bathilda",
+      "relationship_type": "gave_book_to",
+      "description": "Rita gave a copy of the book to Bathilda."
+    },
+    {
+      "entity_1": "the life and lies of albus dumbledore",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "about",
+      "description": "The book is about Albus Dumbledore."
+    }
+  ]
+}

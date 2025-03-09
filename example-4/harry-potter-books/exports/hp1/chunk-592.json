@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts who has never won a point for Gryffindor before."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate, mentioned as being nudged by Harry in the ribs."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who looks stunned and horrified after Gryffindor wins."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as calling over the storm of applause to make a comment about needing a change of decoration."
+    },
+    {
+      "name": "ravenclaw and hufflepuff",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Two houses at Hogwarts that are celebrating Gryffindor's victory, mentioned as being part of the storm of applause."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that has been defeated by Gryffindor, mentioned as having its decorations changed."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The winning house in the story, mentioned as having its decorations changed and being celebrated by students from other houses."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is shaking Professor McGonagall's hand with a forced smile, indicating that his feelings towards Harry have not changed."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is being shaken hands by Snape, mentioned as having a friendly relationship with him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor house, mentioned as being part of the winning team."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin",
+      "relationship_type": "member_of",
+      "description": "Malfoy is a member of Slytherin house, mentioned as looking stunned and horrified after Gryffindor wins."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "authority_over",
+      "description": "Dumbledore has authority over Harry, mentioned as calling over the storm of applause to make a comment about needing a change of decoration."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "friend_of",
+      "description": "Snape and Professor McGonagall are friends, mentioned as shaking hands with a forced smile."
+    }
+  ]
+}

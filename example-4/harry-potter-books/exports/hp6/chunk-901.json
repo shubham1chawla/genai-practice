@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "nearly headless nick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A ghost who is a member of the Hogwarts staff. He is described as gliding towards Harry with his head wobbling on his ruff."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is excited to tell Dumbledore that he has secured a memory."
+    },
+    {
+      "name": "bloody baron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who saw someone arrive and reported it to Nearly Headless Nick."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The headmaster of Hogwarts. He is in his office attending to business."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is guarding the corridor and tries to stop Harry from leaving."
+    },
+    {
+      "name": "harry's memory",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The memory that Harry has secured."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "bloody baron",
+      "relationship_type": "informant",
+      "description": "Nearly Headless Nick received information from the Bloody Baron about someone's arrival."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "informant",
+      "description": "Harry wants to tell Dumbledore that he has secured a memory."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "harry",
+      "relationship_type": "informer",
+      "description": "Nearly Headless Nick informs Harry about the Bloody Baron's information."
+    },
+    {
+      "entity_1": "fat lady",
+      "entity_2": "harry",
+      "relationship_type": "obstacle",
+      "description": "The Fat Lady tries to stop Harry from leaving."
+    }
+  ]
+}

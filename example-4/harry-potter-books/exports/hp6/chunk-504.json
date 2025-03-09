@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the conversation, mentioned by name and referred to as 'him'. (e.g. 'said Harry', 'looking around')"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person of authority, mentioned by name and described with a title ('beamed at him'). (e.g. 'Dumbledore beamed at him')"
+    },
+    {
+      "name": "mouth-organ",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The mouth-organ is an object mentioned in the conversation, described as a specific item ('the mouth-organ'). (e.g. 'I thought you might have the mouth-organ')"
+    },
+    {
+      "name": "ring",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ring is an object mentioned in the conversation, described as something that has gone missing ('the ring's gone'). (e.g. 'The ring’s gone')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mouth-organ",
+      "relationship_type": "has",
+      "description": "Harry is looking for the mouth-organ, implying that he has it or is supposed to have it. (e.g. 'I thought you might have the mouth-organ')"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mouth-organ",
+      "relationship_type": "has",
+      "description": "Dumbledore implies that he has the mouth-organ, but also says it's just a 'mouth-organ'. (e.g. 'the mouth-organ was only ever a mouth-organ')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ring",
+      "relationship_type": "lost",
+      "description": "Harry mentions that the ring is gone, implying that he has lost it or is responsible for its disappearance. (e.g. 'The ring’s gone')"
+    }
+  ]
+}

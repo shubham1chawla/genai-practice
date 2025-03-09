@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "cornelius oswald fudge",
+      "entity_type": "minister_of_magic",
+      "singular": true,
+      "description": "Minister of Magic. He is one of the interrogators."
+    },
+    {
+      "name": "amelia susan bones",
+      "entity_type": "head_of_department_of_magical_law_enforcement",
+      "singular": true,
+      "description": "Head of the Department of Magical Law Enforcement. She is one of the interrogators."
+    },
+    {
+      "name": "interrogators",
+      "entity_type": "interrogators",
+      "singular": false,
+      "description": "A group consisting of Cornelius Oswald Fudge and Amelia Susan Bones."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cornelius oswald fudge",
+      "entity_2": "amelia susan bones",
+      "relationship_type": "colleague",
+      "description": "Both are interrogators, indicating they work together."
+    },
+    {
+      "entity_1": "interrogators",
+      "entity_2": "cornelius oswald fudge",
+      "relationship_type": "member_of",
+      "description": "Cornelius Oswald Fudge is a member of the group of interrogators."
+    }
+  ]
+}

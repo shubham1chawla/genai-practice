@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one being asked by someone about what he's up to. He is also referred to as 'you' in the conversation."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as giving a serious response to Ron's question. He explains that learning to peel sprouts without magic is character-building and helps appreciate how difficult it is for Muggles and Squibs."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as adding to Fred's explanation. He also mentions that he's going to the village because there's a pretty girl working in the paper shop who thinks his card tricks are marvellous."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Muggles are mentioned as people who don't have magic. Fred explains that learning to peel sprouts without magic helps appreciate how difficult it is for Muggles."
+    },
+    {
+      "name": "squibs",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Squibs are mentioned as people who don't have magic. Fred explains that learning to peel sprouts without magic helps appreciate how difficult it is for Squibs."
+    },
+    {
+      "name": "paper shop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The paper shop is mentioned as a location where George meets a pretty girl who thinks his card tricks are marvellous."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "helped_by",
+      "description": "Ron asks Fred for help with peeling sprouts, but Fred refuses because it's character-building to do it without magic."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "paper shop",
+      "relationship_type": "visited",
+      "description": "George is going to the village to visit the paper shop where he meets a pretty girl who thinks his card tricks are marvellous."
+    }
+  ]
+}

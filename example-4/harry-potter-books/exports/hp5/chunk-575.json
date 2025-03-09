@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is the one watching Harry from outside her window."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being watched by Umbridge and is cutting his hand with a quill."
+    },
+    {
+      "name": "quill",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Quill is the object Harry uses to cut his hand."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Parchment is the surface where Harry writes with his quill."
+    },
+    {
+      "name": "hand",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Harry's hand is the one being cut and healed repeatedly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "watching",
+      "description": "Umbridge is watching Harry from outside her window."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quill",
+      "relationship_type": "using",
+      "description": "Harry uses the quill to cut his hand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "parchment",
+      "relationship_type": "writing_on",
+      "description": "Harry writes on the parchment with his quill."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hand",
+      "relationship_type": "cutting",
+      "description": "Harry cuts his hand with a quill."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "touching",
+      "description": "Umbridge touches Harry's hand with her fingers."
+    }
+  ]
+}

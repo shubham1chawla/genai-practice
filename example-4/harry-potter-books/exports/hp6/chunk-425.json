@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who has opened the newspaper and is scanning the inside pages. She is also described as helping Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who has told Ron about Malfoy and something he was trying to get fixed. He is also described as being searched when he arrived at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who looked around in alarm when Hermione showed him the newspaper."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who was trying to get something fixed by Borgin. He is also described as having a house that was searched by the Death Eaters."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is mentioned as someone who was supposed to fix something for Malfoy."
+    },
+    {
+      "name": "arthur weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur Weasley is mentioned as the head of the Office for the Detection and Confiscation of Counterfeit Defensive Spells and Protective Objects. He is also described as saying that his team had been acting upon a confidential tip-off."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as people who have searched Malfoy's house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "connection",
+      "description": "Harry has a connection to Malfoy because he told Ron about something Malfoy was trying to get fixed."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "newspaper",
+      "relationship_type": "possession",
+      "description": "Hermione is in possession of the newspaper that contains information about Malfoy's house being searched."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron and Harry are friends because Ron looked around in alarm when Hermione showed him the newspaper."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "connection",
+      "description": "Malfoy has a connection to Borgin because he was trying to get something fixed by him."
+    },
+    {
+      "entity_1": "arthur weasley",
+      "entity_2": "death eater",
+      "relationship_type": "affiliation",
+      "description": "Arthur Weasley is affiliated with the Death Eaters because his team had been acting upon a confidential tip-off from them."
+    }
+  ]
+}

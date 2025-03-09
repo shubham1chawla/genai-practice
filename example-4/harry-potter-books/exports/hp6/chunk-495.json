@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned in the title"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as speaking to Riddle"
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The student who is being spoken to by Dumbledore"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "speaks_to",
+      "description": "Dumbledore speaks to Harry Potter"
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "dumbledore",
+      "relationship_type": "is_spoken_to_by",
+      "description": "Riddle is spoken to by Dumbledore"
+    }
+  ]
+}

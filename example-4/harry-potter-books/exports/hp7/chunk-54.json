@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being in an unhealthy relationship with Potter, and it's also mentioned that he dabbled in the Dark Arts in his youth. This suggests that Dumbledore has a complex past."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is mentioned as being in an unhealthy relationship with Dumbledore, which is described as sinister by Rita Skeeter."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who has access to a source that most journalists would want. She's writing about the unhealthy relationship between Dumbledore and Potter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is reacting to Rita Skeeter's article by bellowing 'Lies!' and thinking about Dumbledore and the lies with which Rita Skeeter is defaming him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "dumbledore",
+      "relationship_type": "source_of_information",
+      "description": "Rita Skeeter has access to a source that most journalists would want, and she's using this information to write about Dumbledore."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "potter",
+      "relationship_type": "defamer",
+      "description": "Rita Skeeter is defaming Potter by writing about his unhealthy relationship with Dumbledore."
+    }
+  ]
+}

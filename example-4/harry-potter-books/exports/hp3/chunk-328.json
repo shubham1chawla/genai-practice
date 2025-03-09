@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by his name."
+    },
+    {
+      "name": "jelly slugs",
+      "entity_type": "product",
+      "singular": false,
+      "description": "A product sold at Honeydukes, mentioned as being nearly cleaned out."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "jelly slugs",
+      "relationship_type": "purchase",
+      "description": "Harry is purchasing Jelly Slugs, as the woman's voice mentions getting another box of them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "honeydukes",
+      "relationship_type": "customer",
+      "description": "Harry is a customer at Honeydukes, as he slips through the door and finds himself behind the counter."
+    },
+    {
+      "entity_1": "honeydukes",
+      "entity_2": "harry",
+      "relationship_type": "seller",
+      "description": "Honeydukes sells products to Harry, including Jelly Slugs."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a student at Hogwarts School of Witchcraft and Wizardry. He is listening to the shouting next door and wondering why he doesn't feel more scared."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who had murdered thirteen people with one curse, and is believed to be Voldemort's right-hand man. He is the reason for Harry's fear."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry, who is believed to be the only person Lord Voldemort has ever been afraid of. Harry thinks that being near Dumbledore would make him feel safer."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, a dark wizard who is believed to be afraid of Albus Dumbledore. He has a right-hand man in Sirius Black."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Harry's friend and the husband of Mrs. Weasley, who thinks that Harry would be panic-stricken if he knew the truth about Sirius Black."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Mr. Weasley and a friend of Harry's, who agrees with Harry that being near Dumbledore would make him feel safer."
+    },
+    {
+      "name": "azkaban guards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are stationed around the school to prevent Sirius Black from getting inside. They seem to scare most people senseless."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius black",
+      "relationship_type": "fear_of",
+      "description": "Harry is afraid of Sirius Black, who had murdered thirteen people with one curse and is believed to be Voldemort's right-hand man."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "feeling_of_safety_with",
+      "description": "Harry thinks that being near Dumbledore would make him feel safer, as Dumbledore is believed to be the only person Lord Voldemort has ever been afraid of."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "lord voldemort",
+      "relationship_type": "right_hand_man_of",
+      "description": "Sirius Black is believed to be Voldemort's right-hand man, which makes Harry even more scared of him."
+    },
+    {
+      "entity_1": "azkaban guards",
+      "entity_2": "sirius black",
+      "relationship_type": "obstacle_to",
+      "description": "The Azkaban guards are stationed around the school to prevent Sirius Black from getting inside, which makes his chances of getting in very remote."
+    }
+  ]
+}

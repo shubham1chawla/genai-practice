@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "poison",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The poison in the snake's fangs that keeps wounds open."
+    },
+    {
+      "name": "antidote",
+      "entity_type": "treatment",
+      "singular": true,
+      "description": "A cure for the poison, which they are confident will be found."
+    },
+    {
+      "name": "blood-replenishing potion",
+      "entity_type": "treatment",
+      "singular": true,
+      "description": "A treatment that needs to be taken every hour to counteract the effects of the poison."
+    },
+    {
+      "name": "werewolf",
+      "entity_type": "condition",
+      "singular": true,
+      "description": "A condition where a person transforms into a wolf-like creature during full moon."
+    },
+    {
+      "name": "healers",
+      "entity_type": "profession",
+      "singular": false,
+      "description": "Medical professionals who are trying to help the werewolf patient."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is talking about a werewolf he knows personally."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of Mr. Weasley, who asks what the werewolf patient said in response to Mr. Weasley's words."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "poison",
+      "entity_2": "antidote",
+      "relationship_type": "cure_for",
+      "description": "The antidote is a cure for the poison."
+    },
+    {
+      "entity_1": "poison",
+      "entity_2": "blood-replenishing potion",
+      "relationship_type": "treatment_for",
+      "description": "The blood-replenishing potion is a treatment for the effects of the poison."
+    },
+    {
+      "entity_1": "werewolf",
+      "entity_2": "healers",
+      "relationship_type": "being_treated_by",
+      "description": "The werewolf patient is being treated by the healers."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "werewolf",
+      "relationship_type": "knows_personally",
+      "description": "Mr. Weasley knows a werewolf personally."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "mr. weasley",
+      "relationship_type": "son_of",
+      "description": "George is the son of Mr. Weasley."
+    },
+    {
+      "entity_1": "healers",
+      "entity_2": "werewolf",
+      "relationship_type": "treating_patient",
+      "description": "The healers are treating the werewolf patient."
+    }
+  ]
+}

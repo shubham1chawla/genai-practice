@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is a portrait that guards the entrance to the Gryffindor common room. She is described as looking sternly back at Harry and refusing him entrance without a password."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is trying to enter the Gryffindor common room. He is described as glumly staring up at the Fat Lady."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who helps Harry by guessing the password and remembering it for once."
+    },
+    {
+      "name": "mimbulus mimbletonia",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "Mimbulus mimbletonia is a type of plant that Neville shows to Harry on the train. It is also the correct password to enter the Gryffindor common room."
+    },
+    {
+      "name": "gryffindor common room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Gryffindor common room is a cozy circular tower room that Harry and Neville enter after giving the correct password."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fat lady",
+      "relationship_type": "refused_entry",
+      "description": "Harry tries to enter the Gryffindor common room but is refused by the Fat Lady without a password."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "mimbulus mimbletonia",
+      "relationship_type": "remembered_password",
+      "description": "Neville remembers the correct password, Mimbulus mimbletonia, which he had shown to Harry on the train."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "helped_friend",
+      "description": "Neville helps Harry by guessing the correct password and remembering it for once."
+    },
+    {
+      "entity_1": "mimbulus mimbletonia",
+      "entity_2": "gryffindor common room",
+      "relationship_type": "password_for_entry",
+      "description": "Mimbulus mimbletonia is the correct password to enter the Gryffindor common room."
+    }
+  ]
+}

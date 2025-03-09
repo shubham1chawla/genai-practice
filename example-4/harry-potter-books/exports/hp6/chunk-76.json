@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "family members",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Refers to all family members who need to be aware of emergency measures."
+    },
+    {
+      "name": "Shield Charms",
+      "entity_type": "spells",
+      "singular": true,
+      "description": "A type of charm that provides protection."
+    },
+    {
+      "name": "Disillusionment Charms",
+      "entity_type": "spells",
+      "singular": true,
+      "description": "A type of charm that helps to disguise or conceal something."
+    },
+    {
+      "name": "Side-Along Apparition",
+      "entity_type": "spells",
+      "singular": true,
+      "description": "A spell that allows a wizard to accompany another person on an apparition."
+    },
+    {
+      "name": "close friends and family",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Refers to people who are close to the speaker and need to be aware of security questions."
+    },
+    {
+      "name": "Death Eaters",
+      "entity_type": "groups",
+      "singular": true,
+      "description": "A group of followers of Lord Voldemort."
+    },
+    {
+      "name": "Polyjuice Potion",
+      "entity_type": "potions",
+      "singular": true,
+      "description": "A potion that allows a person to take on the appearance of another."
+    },
+    {
+      "name": "Magical Law Enforcement Squad",
+      "entity_type": "organizations",
+      "singular": true,
+      "description": "An organization responsible for enforcing magical laws."
+    },
+    {
+      "name": "colleagues",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Refers to people who work with the speaker."
+    },
+    {
+      "name": "friends",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Refers to people who are friends of the speaker."
+    },
+    {
+      "name": "neighbours",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Refers to people who live nearby."
+    },
+    {
+      "name": "Dark Mark",
+      "entity_type": "symbols",
+      "singular": true,
+      "description": "A symbol associated with Lord Voldemort and his followers."
+    },
+    {
+      "name": "Imperius Curse",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "A curse that allows a person to control another's actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "family members",
+      "entity_2": "Shield Charms",
+      "relationship_type": "aware_of",
+      "description": "Family members need to be aware of Shield Charms."
+    },
+    {
+      "entity_1": "family members",
+      "entity_2": "Disillusionment Charms",
+      "relationship_type": "aware_of",
+      "description": "Family members need to be aware of Disillusionment Charms."
+    },
+    {
+      "entity_1": "close friends and family",
+      "entity_2": "security questions",
+      "relationship_type": "agree_on",
+      "description": "Close friends and family need to agree on security questions."
+    },
+    {
+      "entity_1": "family member",
+      "entity_2": "Polyjuice Potion",
+      "relationship_type": "vulnerable_to",
+      "description": "A family member may be vulnerable to Polyjuice Potion if they are under-age."
+    },
+    {
+      "entity_1": "person acting strangely",
+      "entity_2": "Magical Law Enforcement Squad",
+      "relationship_type": "should_contact",
+      "description": "If someone is acting strangely, contact the Magical Law Enforcement Squad."
+    },
+    {
+      "entity_1": "person under Imperius Curse",
+      "entity_2": "Magical Law Enforcement Squad",
+      "relationship_type": "may_be_helped_by",
+      "description": "The Magical Law Enforcement Squad may be able to help a person who has been put under the Imperius Curse."
+    },
+    {
+      "entity_1": "Dark Mark",
+      "entity_2": "dwelling place",
+      "relationship_type": "associated_with",
+      "description": "The Dark Mark is associated with any dwelling place where it appears."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is described as a short, plump woman with a very kind face, though her eyes are presently narrowed with suspicion."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being spotted by Mrs. Weasley and smiling at her."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are mentioned as Harry's brothers, with whom he is angry."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is described as hesitating when asked by Mrs. Weasley what had happened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "harry",
+      "relationship_type": "greeted",
+      "description": "Mrs. Weasley greets Harry."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "spoke_to",
+      "description": "Mr. Weasley spoke to Mrs. Weasley, answering her question about what had happened."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred and george",
+      "relationship_type": "angry_with",
+      "description": "Harry is angry with Fred and George."
+    }
+  ]
+}

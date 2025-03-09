@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The name of the tournament mentioned in the text."
+    },
+    {
+      "name": "leprechauns",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A team participating in the Quidditch World Cup, mentioned as forming the words 'HEE, HEE, HE E'."
+    },
+    {
+      "name": "bulgarians",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A team participating in the Quidditch World Cup, mentioned as having arguments with Mostafa."
+    },
+    {
+      "name": "mostafa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person who is a referee or official at the Quidditch World Cup, mentioned as giving penalties to Ireland and telling Bulgarians to get flying again."
+    },
+    {
+      "name": "ireland",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A team participating in the Quidditch World Cup, mentioned as receiving two penalties."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person who is announcing the game and giving updates on the play."
+    },
+    {
+      "name": "volkov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Beater for Bulgaria, mentioned as swinging his club violently through the air."
+    },
+    {
+      "name": "vulchanov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Beater for Bulgaria, mentioned as swinging his club violently through the air."
+    },
+    {
+      "name": "di mitrov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A player for Bulgaria, mentioned as shooting straight at Moran."
+    },
+    {
+      "name": "moran",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person who has the Quaffle and is being shot at by Di Mitrov."
+    },
+    {
+      "name": "troy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A player mentioned as taking the Quaffle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mostafa",
+      "entity_2": "bulgarians",
+      "relationship_type": "scolded",
+      "description": "Mostafa scolds Bulgarians for not flying again."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "ireland",
+      "relationship_type": "announced_penalty",
+      "description": "Bagman announces that Ireland received two penalties."
+    },
+    {
+      "entity_1": "volkov",
+      "entity_2": "bludger",
+      "relationship_type": "attacked",
+      "description": "Volkov attacks the Bludger with his club."
+    },
+    {
+      "entity_1": "vulchanov",
+      "entity_2": "human",
+      "relationship_type": "attacked",
+      "description": "Vulchanov attacks a human with his club."
+    },
+    {
+      "entity_1": "di mitrov",
+      "entity_2": "moran",
+      "relationship_type": "shot_at",
+      "description": "Di Mitrov shoots straight at Moran, nearly knocking her off her broom."
+    },
+    {
+      "entity_1": "troy",
+      "entity_2": "quaffle",
+      "relationship_type": "possesses",
+      "description": "Troy takes the Quaffle."
+    }
+  ]
+}

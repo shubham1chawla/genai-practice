@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "saturday",
+      "entity_type": "day_of_week",
+      "singular": true,
+      "description": "A day of the week mentioned in the context of Harry waking up early"
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "A sport played by wizards and witches, mentioned as a match that is coming up"
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The coach of Gryffindor house, mentioned as someone Harry is nervous about facing criticism from"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts school, mentioned as being coached by Wood and facing a match against Slytherin"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Another house at Hogwarts school, mentioned as being the opponent in the Quidditch match"
+    },
+    {
+      "name": "broom",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "A type of vehicle used for flying, mentioned as being fast and expensive"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about the upcoming Quidditch match"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wood",
+      "relationship_type": "afraid_of_criticism_from",
+      "description": "Harry is nervous about what Wood will say if Gryffindor loses"
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "slytherin",
+      "relationship_type": "opponent_in_match",
+      "description": "Gryffindor and Slytherin are opponents in the Quidditch match"
+    }
+  ]
+}

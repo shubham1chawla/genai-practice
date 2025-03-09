@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as a reason for Ginny's ban. She says that she will be banned as long as Umbridge is in the school."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ginny is one of the students who is talking to another student about being banned from a certain activity."
+    },
+    {
+      "name": "chaser",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Chaser is mentioned as a position that Ginny might try out for when she returns."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Angelina is one of the students who are leaving next year and currently holds the position of Chaser."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Alicia is another student who is leaving next year and currently holds a position in the Quidditch team."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "ginny",
+      "relationship_type": "ban",
+      "description": "Umbridge's presence at the school results in Ginny being banned from an activity."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "chaser",
+      "relationship_type": "try_out_for",
+      "description": "Ginny plans to try out for the position of Chaser when she returns."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "alicia",
+      "relationship_type": "leave_together",
+      "description": "Angelina and Alicia are both leaving next year."
+    }
+  ]
+}

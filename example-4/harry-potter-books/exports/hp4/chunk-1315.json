@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as trying to get up and asking questions about a Death Eater."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is helping Harry, pushing him back down and providing information about the Death Eater."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater who fled when he felt the Dark Mark burn upon his arm."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "helped_by",
+      "description": "Moody is helping Harry by pushing him back down and providing information about the Death Eater."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "harry",
+      "relationship_type": "target_of",
+      "description": "Karkaroff is a target of Harry's investigation, as he is suspected to be a Death Eater."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "karkaroff",
+      "relationship_type": "informed_about",
+      "description": "Moody has information about Karkaroff fleeing when he felt the Dark Mark burn upon his arm."
+    }
+  ]
+}

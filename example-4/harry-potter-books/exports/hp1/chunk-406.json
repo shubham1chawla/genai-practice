@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is part of the conversation and discussion with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is part of the conversation and discussion with Ron."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Mrs Norris is a cat that appears in the corridor and has luminous eyes."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who might be alerted by Mrs Norris."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who Ron suggests visiting."
+    },
+    {
+      "name": "the cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Cloak is an object that Ron throws over Harry and himself to hide from Mrs Norris."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron and Harry are friends who have a conversation and discussion."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the cloak",
+      "relationship_type": "possession",
+      "description": "Ron has possession of the Cloak, which he uses to hide from Mrs Norris."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the cloak",
+      "relationship_type": "use",
+      "description": "Harry uses the Cloak to hide from Mrs Norris."
+    },
+    {
+      "entity_1": "mrs norris",
+      "entity_2": "filch",
+      "relationship_type": "alerted",
+      "description": "Mrs Norris alerts Filch, who might be alerted by her presence."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "suggestion",
+      "description": "Ron suggests visiting Hagrid to Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the mirror",
+      "relationship_type": "mention",
+      "description": "Ron mentions the mirror, which is something that Harry is thinking about."
+    }
+  ]
+}

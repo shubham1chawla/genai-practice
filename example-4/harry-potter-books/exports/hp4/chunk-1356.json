@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is being questioned by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is questioning Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard who has overcome a barrier."
+    },
+    {
+      "name": "harry's mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, whose protection is mentioned in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "has_overcome_barrier",
+      "description": "Dumbledore mentions that Voldemort has overcome a particular barrier."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "is_related_to",
+      "description": "Harry's blood makes Voldemort stronger, and Harry's mother left protection in him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "is_questioning",
+      "description": "Dumbledore is questioning Harry about Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "has_touched",
+      "description": "Voldemort touched Harry's face without hurting himself."
+    }
+  ]
+}

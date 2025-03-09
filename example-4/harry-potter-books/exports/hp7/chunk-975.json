@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "muriel",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Muriel's is a location where Harry and his family are being moved to for protection."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who know Ron's location and will target the family."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend whose location is known to Death Eaters."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who needs to talk to Ollivander and Griphook."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ollivander is a person who is injured and will be moved to Muriel's."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Griphook is a person who is injured and will be moved to Muriel's."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is a person who has given Skele-Gro to Griphook."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is Harry's family member who looks startled when Harry says 'No'."
+    },
+    {
+      "name": "dads secret-keeper",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Dad's Secret-Keeper is a position held by someone in the family."
+    },
+    {
+      "name": "fidelius charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Fidelius Charm is a spell that protects Harry and his family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "targeted_by",
+      "description": "Death Eaters will target the family because they know Ron's location."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "harry",
+      "relationship_type": "family_member_of",
+      "description": "Bill is Harry's family member."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "griphook",
+      "relationship_type": "helped",
+      "description": "Fleur has given Skele-Gro to Griphook."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ollivander",
+      "relationship_type": "needs_to_talk_to",
+      "description": "Harry needs to talk to Ollivander."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "needs_to_talk_to",
+      "description": "Harry needs to talk to Griphook."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "dads secret-keeper",
+      "relationship_type": "held_position_of",
+      "description": "Bill is the one who holds the position of Dad's Secret-Keeper."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fidelius charm",
+      "relationship_type": "protected_by",
+      "description": "Fidelius Charm protects Harry and his family."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "muriel's",
+      "relationship_type": "moved_to",
+      "description": "Bill is moved to Muriel's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "needs_protected_with",
+      "description": "Harry needs Griphook and Ollivander to be protected with him."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "muriel's",
+      "relationship_type": "moved_to",
+      "description": "Ollivander will be moved to Muriel's."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "muriel's",
+      "relationship_type": "moved_to",
+      "description": "Griphook will be moved to Muriel's."
+    }
+  ]
+}

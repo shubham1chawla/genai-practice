@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as thinking longingly of the train."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is driving the vehicle and trying to get onto platform nine and three-quarters."
+    },
+    {
+      "name": "pumpkin juice",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A drink that can be bought from a trolley on the train."
+    },
+    {
+      "name": "platform nine and three-quarters",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A platform where Harry and Ron are trying to get onto."
+    },
+    {
+      "name": "train",
+      "entity_type": "vehicle",
+      "singular": false,
+      "description": "The train that is below them, which they can see from their cloud."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "platform nine and three-quarters",
+      "relationship_type": "trying to get onto",
+      "description": "Harry is trying to get onto platform nine and three-quarters."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "train",
+      "relationship_type": "driving",
+      "description": "Ron is driving the train."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as 'he' and 'Harry'. He is walking with Mr. Weasley to the Underground station."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is accompanying Harry to the Underground station. He has a wand in his jacket."
+    },
+    {
+      "name": "sirius's mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius's mother, mentioned as grunting in her sleep behind curtains."
+    },
+    {
+      "name": "underground station",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A run-down and miserable little station where Harry and Mr. Weasley arrive to catch a non-magical transportation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "accompanying",
+      "description": "Harry is walking with Mr. Weasley to the Underground station, as mentioned in the text: 'He followed Mr. Weasley upstairs and along the hall.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "underground station",
+      "relationship_type": "arriving_at",
+      "description": "Harry arrives at the Underground station with Mr. Weasley, as mentioned in the text: 'when they arri ved at the miserable little Under-ground station'."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "underground station",
+      "relationship_type": "arriving_at",
+      "description": "Mr. Weasley also arrives at the Underground station with Harry, as mentioned in the text: 'when they arri ved at the miserable little Under-ground station'."
+    }
+  ]
+}

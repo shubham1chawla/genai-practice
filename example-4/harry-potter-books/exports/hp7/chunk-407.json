@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are followers of Lord Voldemort. They are mentioned as being able to penetrate every defensive spell cast against them."
+    },
+    {
+      "name": "dedalus diggle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose house was burned down by the Death Eaters. He is not present at his house when it happens."
+    },
+    {
+      "name": "tonks's family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family of Tonks, who were subjected to the Cruciatus Curse by the Death Eaters."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic, which is mentioned as being on the side of the Death Eaters. They have given them power to perform brutal spells without fear of identification or arrest."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is explaining the situation to Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being informed about the actions of the Death Eaters."
+    },
+    {
+      "name": "cruciatus curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that was used by the Death Eaters on Tonks's family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "dedalus diggle",
+      "relationship_type": "attacked",
+      "description": "The Death Eaters burned down Dedalus Diggle's house."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "tonks's family",
+      "relationship_type": "subjected_to_cruciaturs_curse",
+      "description": "The Death Eaters used the Cruciatus Curse on Tonks's family."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "death eaters",
+      "relationship_type": "supports",
+      "description": "The Ministry is giving power to the Death Eaters to perform brutal spells without fear of identification or arrest."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry potter",
+      "relationship_type": "informing",
+      "description": "Lupin is explaining the situation to Harry Potter."
+    }
+  ]
+}

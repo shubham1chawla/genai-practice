@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is introduced as a student in Professor McGonagall's class. He is mentioned as receiving a talking-to from the professor."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is introduced as the teacher of Transfiguration class. She is described as giving a warning to her students and demonstrating complex magic."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as being able to successfully transform a match into a needle in Professor McGonagall's class."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Quirrell is introduced as the teacher of Defence Against the Dark Arts class. His lessons are described as disappointing to the students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "received_talking_to",
+      "description": "Professor McGonagall gave Harry Potter a talking-to in her class."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "match",
+      "relationship_type": "transformed",
+      "description": "Hermione Granger successfully transformed a match into a needle in Professor McGonagall's class."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "gave_warning",
+      "description": "Professor McGonagall gave Harry Potter a warning about messing around in her class."
+    }
+  ]
+}

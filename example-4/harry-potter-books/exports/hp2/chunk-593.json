@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by name and referred to as 'my dear boy'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's sister, mentioned in a question by Ron."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Defence Against the Dark Arts teacher, who is running away from his job."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lockhart",
+      "relationship_type": "teacher_student",
+      "description": "Harry is a student of Lockhart's, as he mentions that Lockhart is the Defence Against the Dark Arts teacher."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lockhart",
+      "relationship_type": "accuser_accused",
+      "description": "Harry accuses Lockhart of running away from his job and being dishonest about his past."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "sibling",
+      "description": "Ron is Harry's sister, mentioned in a question by Ron."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "books",
+      "relationship_type": "author_work",
+      "description": "Lockhart wrote the books that Harry mentions."
+    }
+  ]
+}

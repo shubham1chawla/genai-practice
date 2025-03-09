@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as having a conversation with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being in a conversation with Ron."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are mentioned as being right by Ron."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as knowing his stuff."
+    },
+    {
+      "name": "avada kedavra",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Avada Kedavra is mentioned as a spell that Moody knows."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney's predictions are mentioned as needing to be made tonight."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as eating furiously fast during dinner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Ron and Harry are having a conversation."
+    },
+    {
+      "entity_1": "fred and george",
+      "entity_2": "ron",
+      "relationship_type": "agreement",
+      "description": "Fred and George agree with Ron."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "avada kedavra",
+      "relationship_type": "knowledge",
+      "description": "Moody knows Avada Kedavra."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "prediction",
+      "description": "Harry and Professor Trelawney are making predictions."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "library",
+      "relationship_type": "location",
+      "description": "Hermione is going to the library."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor trelawney",
+      "relationship_type": "prediction",
+      "description": "Ron and Professor Trelawney are making predictions."
+    }
+  ]
+}

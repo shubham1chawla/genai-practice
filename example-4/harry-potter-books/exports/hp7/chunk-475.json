@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who cried 'You simply can't go to work like this!' and was repulsed by the wizard's behavior. She holds up her skirts to avoid puddles of sick."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Hermione's companion who helps her deal with the situation. He suggests that they should have Stunned the wizard instead of using a Reductor Curse."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wizard is the one who was affected by Ron's Reductor Curse and vomited. He seems to be keen on his job, as Ron notes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "wizard",
+      "relationship_type": "repulsed_by",
+      "description": "Hermione was repulsed by the wizard's behavior and used him to claw her way back into a standing position."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "wizard",
+      "relationship_type": "affected_by_reductor_curse",
+      "description": "Ron's Reductor Curse affected the wizard, causing him to vomit and disappear."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "companion_of",
+      "description": "Hermione and Ron are companions who work together to deal with the situation."
+    }
+  ]
+}

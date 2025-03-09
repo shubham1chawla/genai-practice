@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as the wife of Mr. Weasley and is associated with robes that contain gold."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's favorite boy who has been accused of being expelled."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's favorite and is mentioned as having a favorite boy."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister who has business to discuss with Lucius."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is mentioned as being called by Fudge and is associated with Mr. Weasley."
+    },
+    {
+      "name": "courtsroom",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where the outcome of Harry's expulsion would be determined."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "favorite_of",
+      "description": "Harry is mentioned as Dumbledore's favorite boy."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "lucius",
+      "relationship_type": "associated_with",
+      "description": "Fudge and Lucius are associated with each other as they have business to discuss."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "courtsroom",
+      "relationship_type": "outcome_of_expulsion_determined_at",
+      "description": "The outcome of Harry's expulsion would be determined at the courtsroom."
+    },
+    {
+      "entity_1": "lucius",
+      "entity_2": "mrs weasley",
+      "relationship_type": "associated_with",
+      "description": "Lucius is associated with Mr. Weasley, who is married to Mrs. Weasley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "accomplice_of",
+      "description": "Harry and Mr. Weasley are together in the lift when they see Fudge and Lucius walking away."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "courtsroom",
+      "relationship_type": "associated_with",
+      "description": "Fudge is associated with the courtsroom as he has business to discuss."
+    }
+  ]
+}

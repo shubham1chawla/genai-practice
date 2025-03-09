@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a second-year student who asks Harry why Black ran away."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who tells a story about Black and then wonders why he ran away."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is an adult who has a history of murdering innocent people and is facing five unarmed boys in the castle."
+    },
+    {
+      "name": "the group of second-year girls",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of second-year students who listen to Harry's story and then leave."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "ron",
+      "relationship_type": "looked_at",
+      "description": "Black looked at Ron before running away."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "yelled_at",
+      "description": "Harry yelled, which woke up people in the castle and made it difficult for Black to escape."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "the group of second-year girls",
+      "relationship_type": "was_listened_to_by",
+      "description": "Black's actions were listened to by a group of second-year students."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "a group of people who are enemies of the main characters"
+    },
+    {
+      "name": "st mungo's",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "a hospital where the boy died"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "the main character of the story"
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "one of harry's friends"
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "one of harry's friends"
+    },
+    {
+      "name": "fenrir greyback",
+      "entity_type": "werewolf",
+      "singular": true,
+      "description": "a werewolf who is a suspect in the boy's death"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "enemy_of",
+      "description": "harry and his friends are enemies of the death eaters"
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "hermione granger",
+      "relationship_type": "friend_of",
+      "description": "ron and hermione are friends with harry"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "fenrir greyback",
+      "relationship_type": "suspect_of_crime",
+      "description": "harry suspects fenrir of being responsible for the boy's death"
+    }
+  ]
+}

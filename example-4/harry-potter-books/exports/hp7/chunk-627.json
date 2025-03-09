@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'himself'. The text states that he is waiting for Ron's return."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who has gone missing. His labeled dot on a map is expected to reappear in the Hogwarts corridors."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Ron and Harry are students. The text mentions 'the corridors of Hogwarts'."
+    },
+    {
+      "name": "wandlight",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used for examining something, possibly a magical tool."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "waiting_for",
+      "description": "Harry is waiting for Ron's return to Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wandlight",
+      "relationship_type": "using",
+      "description": "Harry takes out the wandlight simply to stare at it, implying he is using it."
+    }
+  ]
+}

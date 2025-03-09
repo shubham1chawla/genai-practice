@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a place where Bellatrix's face has been hollowed by. (\"Azkaban had hollowed Bellat rix Lestrange’s face\")"
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is the main antagonist in this scene, described as having a gaunt and skull-like face with a feverish glow. (\"Azkaban had hollowed Bellat rix Lestrange’s face\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being beside Bellatrix, and are ordered to take the smallest one. (\"Very well — take the sm allest one,\" she ordered the Death Eaters beside her.)"
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as being surrounded by others, and Harry steps in front of her to protect her. (\"Harry felt the others close in around Ginny.\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main protagonist in this scene, who tries to protect Ginny from Bellatrix and her Death Eaters."
+    },
+    {
+      "name": "prophecy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The prophecy is mentioned as being held up by Harry, and is described as something that needs to be smashed if they want to attack any of them. (\"You’ll have to smash this if you wa nt to attack any of us\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "death eaters",
+      "relationship_type": "has_followers",
+      "description": "Bellatrix has followers, who are the Death Eaters. (\"Very well — take the sm allest one,\" she ordered the Death Eaters beside her.)"
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "ginny weasley",
+      "relationship_type": "target",
+      "description": "Bellatrix is targeting Ginny, and wants to torture her. (\"Let him watch w hile we torture the little girl.\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bellatrix lestrange",
+      "relationship_type": "opponent",
+      "description": "Harry is an opponent of Bellatrix, and tries to protect Ginny from her. (\"You’ll have to smash this if you wa nt to attack any of us\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ginny weasley",
+      "relationship_type": "protector",
+      "description": "Harry is protecting Ginny, and steps in front of her to shield her from Bellatrix. (\"Harry felt the others close in around Ginny.\")"
+    }
+  ]
+}

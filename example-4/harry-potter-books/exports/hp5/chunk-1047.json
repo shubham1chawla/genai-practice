@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "spell damage",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Spell Damage is located, as indicated by the floor guide. (\"You want Spell Damage, fourth floor.\")"
+    },
+    {
+      "name": "floor guide",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A sign or document that provides information about the locations and hazards in the building. (\"Just like it says on the floor guide.\")"
+    },
+    {
+      "name": "artifacts accidents",
+      "entity_type": "location",
+      "singular": false,
+      "description": "An area where accidents involving artifacts occur, as indicated by the floor guide. (\"ARTIFACT ACCIDENTS... Ground Floor\")"
+    },
+    {
+      "name": "cauldron explosion",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of accident that can occur in the Artifacts Accidents area, as indicated by the floor guide. (\"Cauldron explosion\")"
+    },
+    {
+      "name": "wand backfiring",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of accident that can occur in the Artifacts Accidents area, as indicated by the floor guide. (\"wand backfiring\")"
+    },
+    {
+      "name": "broom crashes",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of accident that can occur in the Artifacts Accidents area, as indicated by the floor guide. (\"broom crashes\")"
+    },
+    {
+      "name": "creature-induced injuries",
+      "entity_type": "location",
+      "singular": false,
+      "description": "An area where injuries caused by creatures occur, as indicated by the floor guide. (\"CREATURE-INDUCED INJURIES... First Floor\")"
+    },
+    {
+      "name": "bites",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of injury that can occur in the Creature-Induced Injuries area, as indicated by the floor guide. (\"Bites\")"
+    },
+    {
+      "name": "stings",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of injury that can occur in the Creature-Induced Injuries area, as indicated by the floor guide. (\"stings\")"
+    },
+    {
+      "name": "burns",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of injury that can occur in the Creature-Induced Injuries area, as indicated by the floor guide. (\"burns\")"
+    },
+    {
+      "name": "embedded spines",
+      "entity_type": "hazard",
+      "singular": true,
+      "description": "A type of injury that can occur in the Creature-Induced Injuries area, as indicated by the floor guide. (\"embedded spines\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "spell damage",
+      "entity_2": "floor guide",
+      "relationship_type": "located_at",
+      "description": "The location of Spell Damage is indicated on the floor guide. (\"You want Spell Damage, fourth floor.\")"
+    }
+  ]
+}

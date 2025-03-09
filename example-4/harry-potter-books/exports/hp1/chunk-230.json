@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The sorting hat suggests that Harry could be great and that Slytherin will help him on his way to greatness. The hat also shouts 'Gryffindor' when it decides where Harry should sit."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The sorting hat suggests that Harry could be great and that Gryffindor will help him on his way to greatness. The hat shouts 'Gryffindor' when it decides where Harry should sit."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is the main character in the story and is being sorted into a house by the sorting hat."
+    },
+    {
+      "name": "percy the prefect",
+      "entity_type": "prefect",
+      "singular": true,
+      "description": "Percy is a prefect who shakes Harry's hand when he is sorted into Gryffindor."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "students",
+      "singular": false,
+      "description": "The Weasley twins yell 'We got Potter!' when Harry is sorted into Gryffindor."
+    },
+    {
+      "name": "high table",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry can see the High Table properly now that he has been sorted into a house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slytherin",
+      "entity_2": "harry potter",
+      "relationship_type": "suggests_potential",
+      "description": "The sorting hat suggests that Harry could be great and that Slytherin will help him on his way to greatness."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry potter",
+      "relationship_type": "assigns_to",
+      "description": "The sorting hat shouts 'Gryffindor' when it decides where Harry should sit."
+    },
+    {
+      "entity_1": "percy the prefect",
+      "entity_2": "harry potter",
+      "relationship_type": "shakes_hands_with",
+      "description": "Percy shakes Harry's hand when he is sorted into Gryffindor."
+    },
+    {
+      "entity_1": "weasley twins",
+      "entity_2": "harry potter",
+      "relationship_type": "celebrates_with",
+      "description": "The Weasley twins yell 'We got Potter!' when Harry is sorted into Gryffindor."
+    }
+  ]
+}

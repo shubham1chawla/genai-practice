@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as a person who is being addressed by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the one addressing Severus and giving instructions."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is mentioned as a person who is being instructed by Voldemort to sit beside Dolohov."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolohov is the one Yaxley is sitting beside."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a person who is being moved by the Order of the Phoenix."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Order of the Phoenix is an organization that intends to move Harry Potter from his current place of safety."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus",
+      "relationship_type": "addressed_by",
+      "description": "Voldemort addresses Severus."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "yaxley",
+      "relationship_type": "instructed_to_sit_beside",
+      "description": "Voldemort instructs Yaxley to sit beside Dolohov."
+    },
+    {
+      "entity_1": "order of the phoenix",
+      "entity_2": "harry potter",
+      "relationship_type": "intends_to_move",
+      "description": "The Order of the Phoenix intends to move Harry Potter from his current place of safety."
+    }
+  ]
+}

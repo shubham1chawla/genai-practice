@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Minister is mentioned as the one who saw what really happened and is discussing the situation with the Prime Minister. (\"saw what really happened, we’ve got most of the Department for the Regulation and Control of Magical Creatures running around Somerset, but we can’t find the giant – it’s been a disaster.\")"
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as being furious with the situation. (\"You don’t say!’ said the Prime Minister furiously.\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as a person who is discussing the situation with the Prime Minister and mentions that morale is low at the Ministry. (\"I won’t deny that morale is pretty low at the Ministry,\")"
+    },
+    {
+      "name": "somerset",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Somerset is mentioned as a location where most of the Department for the Regulation and Control of Magical Creatures are running around. (\"we’ve got most of the Department for the Regulation and Control of Magical Creatures running around Somerset,\")"
+    },
+    {
+      "name": "department for the regulation and control of magical creatures",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department is mentioned as being involved in the situation. (\"we’ve got most of the Department for the Regulation and Control of Magical Creatures running around Somerset,\")"
+    },
+    {
+      "name": "giant",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "The giant is mentioned as being missing. (\"but we can’t find the giant – it’s been a disaster.\")"
+    },
+    {
+      "name": "amelia bones",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Amelia Bones is mentioned as the Head of the Department of Magical Law Enforcement who was murdered by He Who Must Not Be Named. (\"We think He Who Must Not Be Named may have murdered her in person,\")"
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He Who Must Not Be Named is mentioned as the one who may have murdered Amelia Bones. (\"We think He Who Must Not Be Named may have murdered her in person,\")"
+    },
+    {
+      "name": "department of magical law enforcement",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department is mentioned as being involved in the situation. (\"Head of the Department of Magical Law Enforcement.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "minister",
+      "relationship_type": "colleague",
+      "description": "Fudge and the Minister are colleagues who are discussing the situation together. (\"I won’t deny that morale is pretty low at the Ministry,\")"
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "fudge",
+      "relationship_type": "colleague",
+      "description": "The Prime Minister and Fudge are colleagues who are discussing the situation together. (\"You don’t say!’ said the Prime Minister furiously.\")"
+    },
+    {
+      "entity_1": "he who must not be named",
+      "entity_2": "amelia bones",
+      "relationship_type": "murderer",
+      "description": "He Who Must Not Be Named is mentioned as the one who may have murdered Amelia Bones. (\"We think He Who Must Not Be Named may have murdered her in person,\")"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as one of the students who lagged behind the others to talk out of earshot. He suggests using the Invisibility Cloak again."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as Harry's friend and companion who lagged behind the others to talk out of earshot. He is suggested to use the Invisibility Cloak again."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as an object that Harry suggests using again in their Defence Against the Dark Arts lesson."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is mentioned as Hagrid's dog who might be some help to them in the Forest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "has_suggestion",
+      "description": "Harry suggests using the Invisibility Cloak again."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "has_suggestion",
+      "description": "Ron is also suggested to use the Invisibility Cloak again by Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fang",
+      "relationship_type": "might_be_helpful",
+      "description": "Harry suggests taking Fang with them, as he might be some help in the Forest."
+    }
+  ]
+}

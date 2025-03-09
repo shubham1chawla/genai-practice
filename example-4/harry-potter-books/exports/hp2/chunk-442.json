@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as handing a cutting to Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is being sarcastic and mocking the Weasleys."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The husband of Mrs. Weasley, mentioned as unavailable for comment."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Mr. Weasley, who told reporters to clear off or set the family ghoul on them."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as having a stomach ache."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's friend, who is also Crabbe."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A wizarding newspaper that has not reported the attacks yet."
+    },
+    {
+      "name": "muggle protection act",
+      "entity_type": "law",
+      "singular": true,
+      "description": "A law mentioned as ridiculous and needing to be scrapped immediately."
+    },
+    {
+      "name": "ghoul",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "The Weasleys' family ghoul."
+    },
+    {
+      "name": "mudbloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people mentioned as being attacked by Malfoy and Crabbe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "sarcasm",
+      "description": "Malfoy is being sarcastic towards Harry Potter."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "mr weasley",
+      "relationship_type": "mocking",
+      "description": "Malfoy is mocking Mr. Weasley's love for Muggles."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Crabbe and Ron are friends."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "daily prophet",
+      "relationship_type": "criticism",
+      "description": "Malfoy is criticizing the Daily Prophet for not reporting the attacks yet."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is on a mission with Luna."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person accompanying Harry on his mission."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows Harry and Luna to become invisible."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical map that helps Harry locate himself and others in the castle."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is moving away from Harry and Luna."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the story takes place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "accompany",
+      "description": "Harry and Luna are on a mission together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "use",
+      "description": "Harry uses the Invisibility Cloak to become invisible with Luna."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "use",
+      "description": "Harry uses the Marauder's Map to locate himself and others in the castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "avoid",
+      "description": "Harry and Luna are trying to avoid Filch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "castle",
+      "relationship_type": "navigate",
+      "description": "Harry is navigating through the castle with Luna."
+    }
+  ]
+}

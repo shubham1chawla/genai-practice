@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who is firm and strict. She does not permit people to talk when she is talking."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is an interrupting student who is being reprimanded by Professor McGonagall."
+    },
+    {
+      "name": "vanishing spell",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Vanishing Spell is a difficult magic spell that becomes more complex with the animal to be vanished."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor umbridge",
+      "relationship_type": "reprimands",
+      "description": "Professor McGonagall reprimands Professor Umbridge for interrupting her."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "vanishing spell",
+      "relationship_type": "teaches",
+      "description": "Professor McGonagall teaches the Vanishing Spell to her students."
+    }
+  ]
+}

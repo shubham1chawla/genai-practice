@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where they plan to hide, mentioned by Harry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and a person that the trio is trying to avoid, mentioned by Ron."
+    },
+    {
+      "name": "ron's dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's father, who has put up jinxes against Snape, mentioned by Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the trio members, who is arguing with Harry and trying to come up with an alternative plan."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the trio members, who is clicking the Deluminator to release the café's light."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is planning to hide at Grimmauld Place and trying to convince Hermione to go along with it."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people that Snape is a part of, mentioned by Ron."
+    },
+    {
+      "name": "waitress",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is working at the café and is affected by the trio's spells."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmauld place",
+      "relationship_type": "hide_at",
+      "description": "Harry plans to hide at Grimmauld Place, as mentioned in the text: 'Hermione, where else is there? It's the best chance we've got. Snape's only one Death Eater. If I've still got the Trace on me, we'll have whole crowds of them on us wherever else we go.'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "deluminator",
+      "relationship_type": "use",
+      "description": "Ron clicks the Deluminator to release the café's light, as mentioned in the text: 'While she unlocked the café door, Ron clicked the Deluminator to release the café’s light.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "avoid",
+      "description": "Harry and his friends are trying to avoid Snape, as mentioned in the text: 'I swear, I'd like nothing better than to meet Snape!'"
+    },
+    {
+      "entity_1": "ron's dad",
+      "entity_2": "snape",
+      "relationship_type": "jinxed",
+      "description": "Ron's dad has put up jinxes against Snape, as mentioned in the text: 'Ron’s dad said they’ve put up jinxes against him — and even if they haven’t worked,'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argue_with",
+      "description": "Harry and Hermione are arguing, as mentioned in the text: '“But — “ “Hermione, where else is there? It’s the best chance we’ve got.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "plan_with",
+      "description": "Harry and Ron are planning to hide at Grimmauld Place together, as mentioned in the text: 'Hermione, where else is there? It’s the best chance we’ve got.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "act_together",
+      "description": "Harry and Ron are acting together to reverse the spells on their victims, as mentioned in the text: 'Then, on Harry’s count of three, they reversed the spells upon their three victims,'"
+    }
+  ]
+}

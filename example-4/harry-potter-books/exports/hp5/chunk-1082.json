@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to by name and pronoun."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is talking to him about his behavior."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "A mysterious entity that has possessed Ginny."
+    },
+    {
+      "name": "extendable ears",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry overheard something on the previous night."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "has_known",
+      "description": "Harry knows Ginny, who has been possessed by You-Know-Who."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "you-know-who",
+      "relationship_type": "has_affecting_entity",
+      "description": "You-Know-Who has affected Harry's friend Ginny."
+    }
+  ]
+}

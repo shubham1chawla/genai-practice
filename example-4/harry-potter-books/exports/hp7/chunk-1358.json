@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall called Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Sorting Hat sorted Snape to Slytherin and he moved away from Lily."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily was arguing with Snape in the castle courtyard."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry walked with Snape to the stool and watched him place the hat upon his head."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy patted Snape on the back as he sat down beside him."
+    },
+    {
+      "name": "avery",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Lily detests Avery and Mulciber."
+    },
+    {
+      "name": "mulciber",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily detests Avery and Mulciber."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "The Sorting Hat sorted Snape to Slytherin."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat sorted Snape to Slytherin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "slytherin",
+      "relationship_type": "sorted_to",
+      "description": "The Sorting Hat sorted Snape to Slytherin."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "avery",
+      "relationship_type": "dislikes",
+      "description": "Lily detests Avery and Mulciber."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "mulciber",
+      "relationship_type": "dislikes",
+      "description": "Lily detests Avery and Mulciber."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "avery",
+      "relationship_type": "associates_with",
+      "description": "Snape was hanging around with Avery."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "mulciber",
+      "relationship_type": "associates_with",
+      "description": "Snape was hanging around with Mulciber."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "snape",
+      "relationship_type": "argues_with",
+      "description": "Lily and Snape were arguing in the castle courtyard."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "walks_with",
+      "description": "Harry walked with Snape to the stool."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "snape",
+      "relationship_type": "pats_on_back",
+      "description": "Lucius Malfoy patted Snape on the back."
+    }
+  ]
+}

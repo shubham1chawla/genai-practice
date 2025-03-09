@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as catching Ron's eye and thinking the same thing about Professor Trelawney."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as thinking exactly the same thing as Harry about Professor Trelawney."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Trelawney is introduced as a character who points a shaking finger at Professor Umbridge and warns her of danger."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Umbridge is introduced as a character who continues to smile blandly at Professor Trelawney's warning."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "shared_thoughts",
+      "description": "Harry and Ron share the same thoughts about Professor Trelawney, thinking she is an old fraud."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "dislikes",
+      "description": "Harry dislikes Professor Trelawney, as evidenced by his shared thoughts with Ron about her being a fraud."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor trelawney",
+      "relationship_type": "dislikes",
+      "description": "Ron also dislikes Professor Trelawney, as he shares the same thoughts as Harry about her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "dislikes",
+      "description": "Harry dislikes Professor Umbridge, as evidenced by his shared thoughts with Ron about her being worse than Professor Trelawney."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor umbridge",
+      "relationship_type": "dislikes",
+      "description": "Ron also dislikes Professor Umbridge, as he shares the same thoughts as Harry about her."
+    }
+  ]
+}

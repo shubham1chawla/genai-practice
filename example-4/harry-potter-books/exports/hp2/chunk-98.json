@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "nimbus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nimbus is mentioned as a person who played for Gryffindor last year with special permission from Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who gave Nimbus special permission to play for Gryffindor."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is mentioned as a team that Nimbus played for last year with special permission from Dumbledore."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the one who is examining a shelf full of skulls and talking about Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the hero who made the Dark Lord disappear and has a scar on his forehead."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as someone who was defeated by Harry Potter."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is mentioned as a stooping man with greasy hair who appeared behind the counter and greeted Malfoy."
+    },
+    {
+      "name": "skulls",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Skulls are mentioned as something that Malfoy is examining on a shelf."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "nimbus",
+      "relationship_type": "gave_permission",
+      "description": "Dumbledore gave Nimbus special permission to play for Gryffindor last year."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "customer_and_salesperson",
+      "description": "Malfoy is a customer and Borgin is the salesperson at the shop where they are talking."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dark lord",
+      "relationship_type": "defeated",
+      "description": "Harry Potter defeated the Dark Lord."
+    }
+  ]
+}

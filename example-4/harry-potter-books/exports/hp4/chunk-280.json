@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley woke them after only a few hours sleep. He used magic to pack up the tents, and they left the campsite as quickly as possible..."
+    },
+    {
+      "name": "roberts",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Roberts had a strange, dazed look about him, and he waved them off with a vague “Merry Christmas.”"
+    },
+    {
+      "name": "basil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "They found a great number of witches and wizards gathered around Basil, the keeper of the Portkeys..."
+    },
+    {
+      "name": "portkeys",
+      "entity_type": "object",
+      "singular": false,
+      "description": "all clamoring to get away from the campsite as quickly as possible. Mr. Weasley had a hurried discussion with Basil; they joined the queue, and were able to take an old rubber tire back"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasley",
+      "entity_2": "roberts",
+      "relationship_type": "interaction",
+      "description": "Mr. Weasley waved goodbye to Mr. Roberts as they left the campsite."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "basil",
+      "relationship_type": "communication",
+      "description": "Mr. Weasley had a hurried discussion with Basil;"
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "portkeys",
+      "relationship_type": "use",
+      "description": "they joined the queue, and were able to take an old rubber tire back"
+    }
+  ]
+}

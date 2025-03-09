@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who picked up a magazine and pointed her wand at Mr. Lovegood."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who strode to Hermione through all the clutter."
+    },
+    {
+      "name": "mr lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Lovegood is mentioned as the one who was being pointed at by Hermione's wand."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as Xenophilius' daughter who was taken away by the Ministry."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is mentioned as Luna's father who is worried about his daughter."
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "The Quibbler is mentioned as a magazine that carries Harry's picture and has the words Undesirable Number One on it."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that took Luna away from Xenophilius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "luna",
+      "relationship_type": "parent_of",
+      "description": "Xenophilius is worried about his daughter Luna who was taken away by the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the quibbler",
+      "relationship_type": "featured_in",
+      "description": "Harry's picture is featured in The Quibbler magazine."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mr lovegood",
+      "relationship_type": "pointing_at",
+      "description": "Hermione pointed her wand at Mr. Lovegood."
+    },
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "ministry",
+      "relationship_type": "interacted_with",
+      "description": "Xenophilius interacted with the Ministry by sending an owl to them."
+    }
+  ]
+}

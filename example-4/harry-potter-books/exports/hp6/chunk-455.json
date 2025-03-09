@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'H ARRY  POTTER' in the text."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who touched an object that was cursed, according to Leanne."
+    },
+    {
+      "name": "leanne",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is arguing with Hermione and is shaken by the news about Katie."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is comforting Leanne and trying to figure out what happened to Katie."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "katie",
+      "relationship_type": "knows",
+      "description": "Harry Potter knows that Katie was holding the cursed object."
+    },
+    {
+      "entity_1": "leanne",
+      "entity_2": "katie",
+      "relationship_type": "argued_with",
+      "description": "Leanne argued with Katie about taking the object to school."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "leanne",
+      "relationship_type": "comforted",
+      "description": "Hermione comforted Leanne after she found out what happened to Katie."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "katie",
+      "relationship_type": "affected_by",
+      "description": "Harry Potter is affected by the news about Katie, as he hesitates for a moment before pulling his scarf from around his neck."
+    }
+  ]
+}

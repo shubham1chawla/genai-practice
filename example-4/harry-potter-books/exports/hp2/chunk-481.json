@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is writing a letter."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is replying to Harry Potter's letter, and is mentioned as having caught the person who opened the Chamber of Secrets in his fifth year."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A mysterious location that was said to be a legend, but was actually real and had been opened before."
+    },
+    {
+      "name": "professor dippet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts who forbade Riddle from telling the truth about the Chamber of Secrets."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Harry Potter."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school where Riddle and Professor Dippet worked."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "knows about",
+      "description": "Harry Potter knows about the Chamber of Secrets, as he is writing a letter to someone who is asking him about it."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "experienced",
+      "description": "Riddle experienced the Chamber of Secrets being opened in his fifth year."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "professor dippet",
+      "relationship_type": "was forbidden by",
+      "description": "Professor Dippet forbade Riddle from telling the truth about the Chamber of Secrets."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "is concerned about",
+      "description": "Harry Potter is concerned that the monster from the Chamber of Secrets could happen again."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "hogwarts",
+      "relationship_type": "worked at",
+      "description": "Riddle worked at Hogwarts."
+    }
+  ]
+}

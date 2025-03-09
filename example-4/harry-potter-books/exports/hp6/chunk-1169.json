@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a fake Horcrux and attending the funeral."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as someone Harry looked for a loophole to bring back."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as someone Harry looked for a way to come back."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, mentioned as not being able to face breakfast after the funeral."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, mentioned as having his place filled by Rufus Scrimgeour."
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The new person who took Snape's place at the staff table."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, mentioned as leaving Dumbledore's chair empty."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "sirius",
+      "relationship_type": "looked_for_loophole",
+      "description": "Harry looked for a way to bring back Sirius."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "looked_for_loophole",
+      "description": "Harry looked for a way to bring back Dumbledore."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mcgonagall",
+      "relationship_type": "left_empty_chair",
+      "description": "McGonagall left Dumbledore's chair empty."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "replaced_by",
+      "description": "Rufus Scrimgeour replaced Snape at the staff table."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "funeral",
+      "relationship_type": "affected_by",
+      "description": "Hagrid was affected by the funeral and couldn't face breakfast."
+    }
+  ]
+}

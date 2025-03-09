@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of a book mentioned in the text."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house_name",
+      "singular": true,
+      "description": "A house name at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "gryffindor",
+      "relationship_type": "belongs_to",
+      "description": "Slughorn is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "felix felicis",
+      "relationship_type": "created",
+      "description": "Slughorn created the Felix Felicis potion."
+    }
+  ]
+}

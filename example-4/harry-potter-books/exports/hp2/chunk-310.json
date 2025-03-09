@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one asking a question. He is described as saying 'said Harry'."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Myrtle is mentioned as the one responding to Harry's question. She is described as saying 'said Myrtle dramatically'."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is mentioned as someone who upset Myrtle. He is described as causing her distress."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one providing a helpful comment to Myrtle's story. He is described as saying 'said Ron helpfully'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "myrtle",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Myrtle a question, which is described as 'Did you see anyone near here that night?'"
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "myrtle",
+      "relationship_type": "caused_distress",
+      "description": "Peeves caused distress to Myrtle, which is described as 'upset me so much'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "myrtle",
+      "relationship_type": "provided_comment",
+      "description": "Ron provided a comment to Myrtle's story, which is described as 'said Ron helpfully'."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having found a diary."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is skeptical about the diary's powers."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is enthusiastic about the diary's potential powers."
+    },
+    {
+      "name": "vauxhall road",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A street in London where a newsagent's shop is located."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The city where Vauxhall Road is located."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose nose is mentioned as a target for the diary."
+    },
+    {
+      "name": "t. m. riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The author of the diary, who received an award for special services."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "vauxhall road",
+      "relationship_type": "located_near",
+      "description": "Harry saw the printed name of a newsagent's in Vauxhall Road."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "myrtle",
+      "relationship_type": "targeted_by_diary",
+      "description": "Ron suggested that Harry try to get the diary through Myrtle's nose."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "t. m. riddle",
+      "relationship_type": "found_property_of",
+      "description": "Harry found T.M.Riddle's diary."
+    }
+  ]
+}

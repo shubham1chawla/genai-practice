@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where students buy their school supplies."
+    },
+    {
+      "name": "newt scamander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Author of the book 'Fantastic Beasts and Where to Find Them'."
+    },
+    {
+      "name": "quentin trimble",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Author of the book 'The Dark Forces: A Guide to Self-Protection'."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is helping Harry buy school supplies and knows where to find things in London."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The city where Harry and Hagrid are buying school supplies."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is buying school supplies with Hagrid's help."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "diagon alley",
+      "entity_2": "newt scamander",
+      "relationship_type": "located_at",
+      "description": "Diagon Alley is located at the place where Newt Scamander sells his books."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "london",
+      "relationship_type": "knows_where_to_go",
+      "description": "Hagrid knows where to go in London to buy school supplies."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "visits",
+      "description": "Harry visits Diagon Alley with Hagrid's help."
+    }
+  ]
+}

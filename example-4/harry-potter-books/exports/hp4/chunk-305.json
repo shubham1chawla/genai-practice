@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is described as getting dressed in jeans and a sweatshirt (\"He got dressed in je ans and a sweat-shirt\")."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, also a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being present with Harry on their way down to breakfast (\"He, Ron, Fred, and George had just reached the first-floor landing\")."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, also a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being present with Harry on their way down to breakfast (\"He, Ron, Fred, and George had just reached the first-floor landing\")."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, also a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being present with Harry on their way down to breakfast (\"He, Ron, Fred, and George had just reached the first-floor landing\")."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The husband of Mrs. Weasley, a wizard who receives an urgent message from the Ministry (\"Arthur! Urgent message from the Ministry!\"). He is described as coming clattering past with his robes on back-to-front."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Mr. Weasley, a witch who is rummaging anxiously in the drawers for a quill (\"I've got a quill here somewhere!\")."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "train",
+      "singular": true,
+      "description": "A train that takes students from Platform 9 3/4 to Hogwarts School of Witchcraft and Wizardry. It is mentioned as the destination where Harry and his friends will change into their school robes."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government-like organization that sends an urgent message to Mr. Weasley (\"Urgent message from the Ministry!\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ministry",
+      "relationship_type": "received_message_from",
+      "description": "Mr. Weasley receives an urgent message from the Ministry, which is described as him coming clattering past with his robes on back-to-front and hurrying out of sight."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts express",
+      "relationship_type": "will_travel_on",
+      "description": "Harry will travel on the Hogwarts Express, which is mentioned as the destination where he and his friends will change into their school robes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry is a friend of Ron's, who is mentioned as being present with Harry on their way down to breakfast."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "friend_of",
+      "description": "Harry is a friend of Fred's, who is mentioned as being present with Harry on their way down to breakfast."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "friend_of",
+      "description": "Harry is a friend of George's, who is mentioned as being present with Harry on their way down to breakfast."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being targeted by someone."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is trying to protect him and others from danger."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who is also trying to help them."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's girlfriend, whom he is worried about."
+    },
+    {
+      "name": "tottenham court road",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location in London where the story takes place."
+    },
+    {
+      "name": "the order",
+      "entity_type": "group",
+      "singular": true,
+      "description": "A group of people who are trying to protect Harry and others from danger."
+    },
+    {
+      "name": "muggle world",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "The non-magical world that is separate from the magical world."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "helping",
+      "description": "Hermione is trying to protect Harry and others from danger."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "supporting",
+      "description": "Ron is also trying to help Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "tottenham court road",
+      "relationship_type": "choosing_location",
+      "description": "Hermione suggests going to Tottenham Court Road as a safer location."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "concerned_about",
+      "description": "Harry is worried about Ginny's safety."
+    }
+  ]
+}

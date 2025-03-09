@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is helping Harry. She is mentioned as saying 'You'd better put that Cloak back on'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in this scene. He is mentioned as swinging the Cloak back over himself."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Cloak is an object that Harry and Tonks are using to travel. It is mentioned as being put back on by Harry."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A Patronus is a magical creature that can be used for communication. It is mentioned as being sent by Tonks."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned as sending messages like the Patronus."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is a location where Tonks is sending word to. It is mentioned as being worried about Harry's safety."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "helping",
+      "description": "Tonks is helping Harry by sending a Patronus to the castle."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "castle",
+      "relationship_type": "informing",
+      "description": "Tonks is informing the castle that she has found Harry."
+    }
+  ]
+}

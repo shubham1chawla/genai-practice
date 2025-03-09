@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is being accused by his uncle Vernon of doing something to Dudley."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Harry's uncle and is accusing him of doing something to Dudley. He has a menacing growl and narrowed eyes."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin and is the one who got sick. Aunt Petunia is sponging sick from his leather jacket."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Harry's aunt and is trying to figure out what happened to Dudley. She has a quavering voice."
+    },
+    {
+      "name": "diddy",
+      "entity_type": "nickname",
+      "singular": true,
+      "description": "Diddy is a nickname for Dudley, used by Aunt Petunia."
+    },
+    {
+      "name": "screech owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A screech owl swooped in through the kitchen window and dropped an envelope at Harry's feet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "accusation",
+      "description": "Uncle Vernon is accusing Harry of doing something to Dudley. He says 'What have you done to my son?'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "involvement",
+      "description": "Harry is being accused of doing something to Dudley, but he denies it."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry",
+      "relationship_type": "concern",
+      "description": "Aunt Petunia is concerned about what happened to Dudley and is trying to figure out if Harry was involved."
+    },
+    {
+      "entity_1": "screech owl",
+      "entity_2": "harry",
+      "relationship_type": "delivery",
+      "description": "The screech owl delivered an envelope to Harry's feet, which suggests that it may be a message or a package for him."
+    }
+  ]
+}

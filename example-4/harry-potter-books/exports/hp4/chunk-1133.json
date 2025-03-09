@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the person who found Mr. Crouch on the grounds."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alastor Moody is introduced as a person who greets Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore's office is mentioned, and his desk has Cornelius Fudge standing beside it."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius Fudge is introduced as a person who greets Harry."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is mentioned as the person who turned up on the grounds."
+    },
+    {
+      "name": "harry potter's office",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Dumbledore's office is described as a beautiful, circular room."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school where Mr. Crouch turned up on the grounds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "crouch",
+      "relationship_type": "found",
+      "description": "Harry found Mr. Crouch on the grounds."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "potter",
+      "relationship_type": "greeted",
+      "description": "Alastor Moody greeted Harry."
+    }
+  ]
+}

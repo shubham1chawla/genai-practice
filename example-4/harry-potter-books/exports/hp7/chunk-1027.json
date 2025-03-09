@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "sword",
+      "entity_type": "weapon",
+      "singular": true,
+      "description": "The sword is described as the one indispensable weapon against the Horcruxes."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "enemy",
+      "singular": false,
+      "description": "Horcruxes are mentioned as the enemies that the sword is used to fight against."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is described as a house that has been proud of its values and history."
+    },
+    {
+      "name": "muggleborns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggleborns are mentioned as a group that Gryffindor has championed."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is described as a house that loves purebloods and clashes with Gryffindor."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who is questioning whether Gryffindor stole the sword."
+    },
+    {
+      "name": "grip-507",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Grip-507 is mentioned as an object that Harry is holding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "has_doubt",
+      "description": "Harry has doubt about whether Gryffindor stole the sword."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "muggleborns",
+      "relationship_type": "champion_of",
+      "description": "Gryffindor is champion of Muggleborns."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "slytherin",
+      "relationship_type": "clashes_with",
+      "description": "Gryffindor clashes with Slytherin."
+    }
+  ]
+}

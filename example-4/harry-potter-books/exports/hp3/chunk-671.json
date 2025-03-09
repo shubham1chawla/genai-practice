@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is wearing the Invisibility Cloak."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who is also wearing the Invisibility Cloak."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, who is trying to keep Buckbeak from being stolen."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "hippogriﬀ",
+      "singular": true,
+      "description": "A nervous hippogriff that Hagrid has been taking care of."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "rat",
+      "singular": true,
+      "description": "Hermione's pet rat."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that allows Harry and Hermione to become invisible."
+    },
+    {
+      "name": "committee people",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are trying to catch Buckbeak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wearing",
+      "description": "Harry is wearing the Invisibility Cloak."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wearing",
+      "description": "Hermione is also wearing the Invisibility Cloak."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "buckbeak",
+      "relationship_type": "caring_for",
+      "description": "Hagrid has been taking care of Buckbeak."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "scabbers",
+      "relationship_type": "owning",
+      "description": "Hermione owns Scabbers."
+    },
+    {
+      "entity_1": "committee people",
+      "entity_2": "buckbeak",
+      "relationship_type": "trying_to_catch",
+      "description": "The Committee People are trying to catch Buckbeak."
+    }
+  ]
+}

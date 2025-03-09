@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as looking back at Charity with an impassive expression."
+    },
+    {
+      "name": "charity",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charity is the one who falls onto the table after being hit by Avada Kedavra."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as saying 'Dinner, Nagini' and having a great snake on his shoulders."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "snake",
+      "singular": true,
+      "description": "Nagini is the great snake that Voldemort has on his shoulders and sways and slithers onto the polished wood."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco falls out of his chair after Charity's fall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "nagini",
+      "relationship_type": "has",
+      "description": "Voldemort has Nagini on his shoulders, as described in the text: 'Dinner, Nagini'."
+    },
+    {
+      "entity_1": "charity",
+      "entity_2": "table",
+      "relationship_type": "fell_on",
+      "description": "Charity falls onto the table below after being hit by Avada Kedavra."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "floor",
+      "relationship_type": "fell_on",
+      "description": "Draco falls out of his chair and lands on the floor."
+    }
+  ]
+}

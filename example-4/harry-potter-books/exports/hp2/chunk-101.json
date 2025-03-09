@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the son of Mr. Malfoy and Hermione Granger is mentioned as beating him in every exam."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as being beaten by Hermione Granger in every exam and looking abashed and angry."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as beating Harry Potter in every exam."
+    },
+    {
+      "name": "mr borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Borgin is mentioned as having an oily voice and being a friend of thieves and plunderers."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Malfoy is mentioned as being coldly spoken to Harry Potter and his son Draco."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "beat_in_exam",
+      "description": "Hermione Granger beats Harry Potter in every exam."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "hermione granger",
+      "relationship_type": "beaten_by",
+      "description": "Draco Malfoy is beaten by Hermione Granger in every exam."
+    },
+    {
+      "entity_1": "mr borgin",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Mr. Borgin is a friend of Harry Potter's family, as he is mentioned as being a friend of thieves and plunderers."
+    },
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "draco malfoy",
+      "relationship_type": "parent_of",
+      "description": "Mr. Malfoy is the parent of Draco Malfoy."
+    }
+  ]
+}

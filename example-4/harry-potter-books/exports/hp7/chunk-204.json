@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who laughed and remembered stabbing the diary."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a character who explained how Horcruxes work."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Horcrux is mentioned as a magical object that contains a fragment of soul."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is mentioned as a Horcrux that was destroyed by Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's soul is mentioned as being trapped in the diary."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as a character who tried to get rid of the diary before Harry did."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a character who asked how the bit of soul in the diary worked."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "diary",
+      "entity_2": "voldemort",
+      "relationship_type": "contains",
+      "description": "The diary contains a fragment of Voldemort's soul."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "diary",
+      "relationship_type": "possessed_by",
+      "description": "Ginny was possessed by the bit of soul in the diary."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diary",
+      "relationship_type": "destroyed",
+      "description": "Harry destroyed the diary, which caused the bit of soul trapped in it to cease existing."
+    },
+    {
+      "entity_1": "horcrux",
+      "entity_2": "soul",
+      "relationship_type": "contains",
+      "description": "A Horcrux contains a fragment of soul."
+    }
+  ]
+}

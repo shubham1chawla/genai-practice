@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who would nag Harry about using Umbridge's office again."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Umbridge is described as sitting in McGonagall's office with a clipboard and a smug smile."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "McGonagall is mentioned as having an appointment with Harry and is described as being in a bad mood."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as asking Harry why he wasn't in McGonagall's office."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is the main character and is described as being in a bad mood and forgetting his appointment with McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mcgonagall",
+      "relationship_type": "appointment",
+      "description": "Harry had an appointment with Professor McGonagall that he forgot."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "reminder",
+      "description": "Ron reminded Harry about his appointment with McGonagall."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mcgonagall",
+      "relationship_type": "presence",
+      "description": "Umbridge was present in McGonagall's office during Harry's appointment."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "avoidance",
+      "description": "Harry tried to avoid Umbridge by sitting with his back to her."
+    }
+  ]
+}

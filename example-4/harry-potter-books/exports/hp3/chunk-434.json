@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "penelope",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Penelope is a member of the Gryffindor team. She is mentioned as 'Penny' by Percy."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a member of the Gryffindor team and is on the Quidditch match."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a member of the Gryffindor team. He is mentioned as being in urgent need of Harry to win the match."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is a Slytherin student who arrives for a closer look at the Firebolt broomstick."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is a member of the Slytherin team and is mentioned as being present with Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a member of the Slytherin team and is mentioned as being present with Crabbe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "penelope",
+      "relationship_type": "has_bet_with",
+      "description": "Harry has a bet with Penelope on the outcome of the match."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "harry",
+      "relationship_type": "depends_on",
+      "description": "Percy depends on Harry to win the match so that he can pay off his debt."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "nurmengard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Nurmengard is described as a prison built by Grindelwald to hold his opponents. It is also mentioned that Dumbledore ended up in there himself."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grindelwald is described as the one who built Nurmengard and was caught by Dumbledore. He is also mentioned to have risen to power with the help of Dumbledore's ideas."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as the one who caught Grindelwald and ended up in Nurmengard. His ideas are also mentioned to have helped Grindelwald rise to power."
+    },
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita is mentioned as someone who can't pretend that Dumbledore and Grindelwald knew each other for more than a few months when they were young."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who says 'They were young' in response to Rita's statement."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are mentioned as the ones over whom Grindelwald and Dumbledore plotted their rise to power."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "grindelwald",
+      "entity_2": "nurmengard",
+      "relationship_type": "built",
+      "description": "Grindelwald built Nurmengard as a prison to hold his opponents."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grindelwald",
+      "relationship_type": "caught",
+      "description": "Dumbledore caught Grindelwald and ended up in Nurmengard."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grindelwald",
+      "relationship_type": "helped_rise_to_power",
+      "description": "Dumbledore's ideas helped Grindelwald rise to power."
+    },
+    {
+      "entity_1": "rita",
+      "entity_2": "dumbledore",
+      "relationship_type": "knew",
+      "description": "Rita knew Dumbledore for a few months when they were young."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rita",
+      "relationship_type": "responded_to",
+      "description": "Harry responded to Rita's statement by saying 'They were young'."
+    },
+    {
+      "entity_1": "grindelwald",
+      "entity_2": "muggles",
+      "relationship_type": "plotted_against",
+      "description": "Grindelwald and Dumbledore plotted their rise to power over the Muggles."
+    }
+  ]
+}

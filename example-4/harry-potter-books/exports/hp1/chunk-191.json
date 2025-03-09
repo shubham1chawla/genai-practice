@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The woman who sold Harry and Ron food at the station. She is described as having a lot of strange things to sell."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, who buys food from the woman at the station."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of the main characters in the story, who also buys food from the woman at the station."
+    },
+    {
+      "name": "bertie bott's every-flavour beans",
+      "entity_type": "food",
+      "singular": false,
+      "description": "A type of candy that the woman sells to Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "woman",
+      "relationship_type": "bought_from",
+      "description": "Harry bought food from the woman at the station."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "woman",
+      "relationship_type": "bought_from",
+      "description": "Ron also bought food from the woman at the station."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pumpkin pasty",
+      "relationship_type": "ate",
+      "description": "Harry ate a pumpkin pasty that he bought from the woman."
+    }
+  ]
+}

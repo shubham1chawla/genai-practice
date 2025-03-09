@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard. He is mentioned as someone who would have known if he was in on the plan."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, a young wizard. He is trying to explain how Voldemort caught up with him."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is questioning Harry about his encounter with Voldemort."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts and a friend of Harry's. He is mentioned as someone who was with Harry when they were being chased by Death Eaters."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of the sanctuary where Harry and Hagrid took refuge."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A conductor on the Knight Bus who is mentioned as someone that Harry saw during his journey."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are followers of Voldemort. They are mentioned as being the ones who were chasing Harry and Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "caught_up_with",
+      "description": "Voldemort caught up with Harry during his journey, but only towards the end. He didn't know which one Harry was in the beginning."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry",
+      "relationship_type": "chased",
+      "description": "The Death Eaters were chasing Harry and Hagrid during their journey, but they seemed to recognize Harry as the true Harry and abandoned the chase."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "summoned_by",
+      "description": "Voldemort was summoned by the Death Eaters after they recognized Harry."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as having a muffled voice and being squashed against the wall."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is trying to think of what to do and is mentioned as saying 'Boys, boys . . .'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry retreated to the sofa when Mr. Weasley told him to stand back."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon moved forward and bellowed at the fire."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia shrieked and fell backward over the coffee table."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as having bright red hair."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being expelled from the fireplace along with Mr. Weasley and his brothers."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are mentioned as having bright red hair."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "told_to_stand_back",
+      "description": "Mr. Weasley told Harry to stand back."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "fire",
+      "relationship_type": "bellowed_at",
+      "description": "Uncle Vernon bellowed at the fire."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "weasleys",
+      "relationship_type": "expelled_with",
+      "description": "Mr. Weasley was expelled from the fireplace along with his brothers, Fred and George."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sofa",
+      "relationship_type": "retracted_to",
+      "description": "Harry retreated to the sofa."
+    }
+  ]
+}

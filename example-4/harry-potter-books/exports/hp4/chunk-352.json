@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as looking down at her plate of food and refusing to eat another bite. She is also referred to by Ron as 'Er-my-knee'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as accidentally spraying Harry with bits of Yorkshire pudding while trying to get Hermione to eat."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is referred to by Ron and is the one who gets sprayed with bits of Yorkshire pudding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "tries_to_convince",
+      "description": "Ron tries to convince Hermione to eat her dinner."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "gets_sprayed_by",
+      "description": "Harry gets sprayed with bits of Yorkshire pudding by Ron."
+    }
+  ]
+}

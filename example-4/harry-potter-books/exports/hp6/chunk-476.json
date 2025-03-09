@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' in the text. He is described as bending over the Pensieve and falling through darkness."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is standing with Harry in a memory, mentioned as 'Dumbledore' in the text. He is described as pointing ahead of them to a tall figure."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A younger version of Dumbledore, mentioned in the text as 'Albus Dumbledo re'. He is described as having long hair and beard that are auburn."
+    },
+    {
+      "name": "london street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A bustling, old-fashioned London street where Harry and Dumbledore find themselves in a memory. It is described as having a horse-drawn milk cart."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "accompanying",
+      "description": "Harry and Dumbledore are standing together in a memory, as described in the text: 'he and Dumbledore were standing in a bustling, old-fashioned London street'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "ancestor",
+      "description": "Harry is looking at a younger version of Dumbledore, as described in the text: 'This younger Albus Dumbledo re's long hair and beard were auburn'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "ancestor",
+      "description": "Dumbledore is also looking at a younger version of himself, as described in the text: 'This younger Albus Dumbledo re's long hair and beard were auburn'."
+    }
+  ]
+}

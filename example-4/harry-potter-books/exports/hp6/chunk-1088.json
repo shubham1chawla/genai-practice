@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being ordered to kill Dumbledore. He looks terrified and hesitant."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old man with weaker resistance and slower reflexes. He is being threatened by the Death Eater."
+    },
+    {
+      "name": "amyus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater who is violent and impatient. He is threatening Dumbledore and ordering Draco to kill him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco",
+      "entity_2": "dumbledore",
+      "relationship_type": "ordered_to_kill",
+      "description": "Draco is being ordered by Amycus to kill Dumbledore."
+    },
+    {
+      "entity_1": "amyus",
+      "entity_2": "dumbledore",
+      "relationship_type": "threatening",
+      "description": "Amycus is threatening and intimidating Dumbledore."
+    },
+    {
+      "entity_1": "amyus",
+      "entity_2": "draco",
+      "relationship_type": "ordered_to_kill",
+      "description": "Amycus orders Draco to kill Dumbledore."
+    }
+  ]
+}

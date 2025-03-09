@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and is known for his patience and kindness. He is described as 'patiently' speaking to the students."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who raises her hand to answer Hagrid's question. She is described as 'beaming at her'."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Umbridge is a teacher at Hogwarts who arrives unexpectedly and is described as wearing her green hat and cloak."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is one of the four houses at Hogwarts. Hagrid awards ten points to Gryffindor for Hermione's correct answer."
+    },
+    {
+      "name": "thestral",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Thestral is a magical creature that can only be seen by people who have seen death. It is described as making a 'hem, hem' sound."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "awarded_points",
+      "description": "Hagrid awards ten points to Gryffindor for Hermione's correct answer."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gryffindor",
+      "relationship_type": "awarded_points",
+      "description": "Hagrid awards ten points to Gryffindor for Hermione's correct answer."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "thestral",
+      "relationship_type": "can_see",
+      "description": "Hermione can see thestral because she has seen death."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is the father of Dudley and Harry. He is mentioned as being in the kitchen with Aunt Petunia."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is the mother of Dudley and Harry. She is mentioned as being in the kitchen with Uncle Vernon."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who lives in the house with his family. He is thrown into the hall by Uncle Vernon."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's brother. He is also thrown into the hall by Uncle Vernon."
+    },
+    {
+      "name": "kitchen door",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The kitchen door is a location in the house where Uncle Vernon slams it behind Harry and Dudley."
+    },
+    {
+      "name": "hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hall is a location in the house where Harry and Dudley are thrown by Uncle Vernon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "kitchen door",
+      "relationship_type": "throws",
+      "description": "Uncle Vernon throws Harry and Dudley into the hall through the kitchen door."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "keyhole",
+      "relationship_type": "listens",
+      "description": "Harry listens at the keyhole to hear what is being discussed in the kitchen."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "keyhole",
+      "relationship_type": "listens",
+      "description": "Dudley wins the fight with Harry and gets to listen at the keyhole."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "aunt petunia",
+      "relationship_type": "speaks_to",
+      "description": "Uncle Vernon is speaking to Aunt Petunia in the kitchen."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "sees",
+      "description": "Harry can see Uncle Vernon's shiny black shoes pacing up and down the kitchen."
+    }
+  ]
+}

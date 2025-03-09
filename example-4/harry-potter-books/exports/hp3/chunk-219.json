@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is the teacher leading the class down a corridor to the staffroom."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is sitting in an armchair in the staffroom and looks around as the class files in."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville Longbottom is a student in Professor Lupin's class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "snape",
+      "relationship_type": "interaction",
+      "description": "Professor Lupin and Professor Snape have an interaction in the staffroom, with Snape looking around at the class and Lupin opening the door for them."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "neville longbottom",
+      "relationship_type": "teaching",
+      "description": "Professor Lupin is teaching a class that includes Neville Longbottom."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "interaction",
+      "description": "Professor Snape and Professor Lupin have an interaction in the staffroom, with Snape warning Lupin about Neville Longbottom being in the class."
+    }
+  ]
+}

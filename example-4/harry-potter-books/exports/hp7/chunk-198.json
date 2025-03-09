@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who had turned pink and was speaking with Harry and Ron. She mentioned that Dumbledore removed the books, but didn't destroy them (Chapter 6)."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who had taken the library books off the shelves. Hermione mentioned that he removed the books, but didn't destroy them (Chapter 6)."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who was sitting up straight and wide-eyed when Hermione spoke about Dumbledore taking the library books. He asked her to get to the point (Chapter 6)."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who was looking at Hermione with a mixture of admiration and incredulity when she spoke about using the Summoning Charm to retrieve the books (Chapter 6)."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Horcruxes are objects that contain pieces of Voldemort's soul. Hermione mentioned that she and her friends agreed to leave school and go look for the Horcruxes after Dumbledore's funeral (Chapter 6)."
+    },
+    {
+      "name": "library books",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The library books were taken by Dumbledore, but Hermione used a Summoning Charm to retrieve them. She mentioned that they were still library books even if Dumbledore took them off the shelves (Chapter 6)."
+    },
+    {
+      "name": "dumbledore's study window",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dumbledore's study window is a location where Hermione used the Summoning Charm to retrieve the library books. She said that they zoomed out of the window and into the girls' dormitory (Chapter 6)."
+    },
+    {
+      "name": "girls' dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The girls' dormitory is a location where Hermione used the Summoning Charm to retrieve the library books. She said that they zoomed out of Dumbledore's study window and into the dormitory (Chapter 6)."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "had_removed_books_from",
+      "description": "Hermione mentioned that Dumbledore removed all the library books, but didn't destroy them (Chapter 6)."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "library books",
+      "relationship_type": "retrieved_with_summoning_charm",
+      "description": "Hermione used the Summoning Charm to retrieve the library books from Dumbledore's study window (Chapter 6)."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "library books",
+      "relationship_type": "had_taken_off_shelves",
+      "description": "Dumbledore took the library books off the shelves, but didn't destroy them (Chapter 6)."
+    }
+  ]
+}

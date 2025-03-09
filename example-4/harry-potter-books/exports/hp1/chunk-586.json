@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'HARRY POTTER' in the first line."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, mentioned as 'HAGRID' in the text."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as giving Hagrid a day off to fix something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "gave_day_off",
+      "description": "Dumbledore gave Hagrid the day off to fix something."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry potter",
+      "relationship_type": "gifted_book",
+      "description": "Hagrid gifted Harry a book with photos of his parents."
+    }
+  ]
+}

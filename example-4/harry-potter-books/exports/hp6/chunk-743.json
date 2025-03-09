@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone that people do not know about yet. He is also the subject of Harry's relief."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being relieved and having been interrogated enough for the day. He is also mentioned as looking down into the dying embers."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as bidding Harry goodnight and setting off for the girls' dormitory."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having argued with Snape. He is also described as trusting Snape completely."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as being the subject of Dumbledore's argument and Harry's distrust. He is also described as not trying hard enough to investigate the Slytherins."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a single Slytherin that Snape may have been investigating."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Slytherins are mentioned as being investigated by Snape. They are also described as not being investigated hard enough by Snape."
+    },
+    {
+      "name": "girls' dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The girls' dormitory is mentioned as where Hermione sets off for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "knows",
+      "description": "Harry knows about Ron yet. This relationship is described in the text as 'it did not seem that people knew about Ron yet'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "argued_with",
+      "description": "Dumbledore and Snape argued with each other. This relationship is described in the text as 'So Dumbledore had argued with Snape'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "trusted",
+      "description": "Harry trusted Dumbledore completely. However, this relationship is not bidirectional because Harry did not trust Snape completely. This relationship is described in the text as 'in spite of his insistence that he trusted Snape completely'."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "slytherins",
+      "relationship_type": "investigated",
+      "description": "Snape investigated the Slytherins. However, this relationship is not bidirectional because Snape did not investigate them hard enough. This relationship is described in the text as 'he had lost his temper with him ... he did not think that Snape had tried hard enough to investigate the Slytherins'."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "investigated",
+      "description": "Snape investigated Malfoy. This relationship is described in the text as 'or, perhaps, to investigate a single Slytherin: Malfoy?'."
+    }
+  ]
+}

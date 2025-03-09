@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "june",
+      "entity_type": "month",
+      "singular": true,
+      "description": "A month mentioned in the text as the time when Harry's nerves are mounting."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, who sends him a good-luck card through a post owl."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and classmates at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "june",
+      "relationship_type": "has_nerves_about",
+      "description": "Harry's nerves are mounting as June 24th draws closer, indicating a relationship between Harry and the date."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "sent_good_luck_card_to",
+      "description": "Sirius sends Harry a good-luck card through a post owl, indicating a relationship between Sirius and Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "daily_prophet",
+      "relationship_type": "receives_news_from",
+      "description": "Hermione receives her morning copy of the Daily Prophet, indicating a relationship between Hermione and the newspaper."
+    }
+  ]
+}

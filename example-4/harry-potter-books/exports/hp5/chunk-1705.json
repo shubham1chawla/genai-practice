@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Potter'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for the main character, mentioned in the text."
+    },
+    {
+      "name": "glass ball",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry is holding and staring at."
+    },
+    {
+      "name": "shelf",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where the glass ball was previously stored."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "glass ball",
+      "relationship_type": "held_by",
+      "description": "Harry is holding the glass ball."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "shelf",
+      "relationship_type": "previously_stored_on",
+      "description": "The glass ball was previously stored on a shelf."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "others",
+      "relationship_type": "surrounded_by",
+      "description": "Others are moving in closer around Harry."
+    },
+    {
+      "entity_1": "voice",
+      "entity_2": "potter",
+      "relationship_type": "addressed_to",
+      "description": "A drawling voice is addressing Potter."
+    }
+  ]
+}

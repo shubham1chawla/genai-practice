@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "gall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gall is mentioned as the one who says 'Shoo!' to Mrs. Norris."
+    },
+    {
+      "name": "norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Norris is mentioned as the one who slunks away into the shadows."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's office is guarded by a stone gargoyle."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is mentioned as the one who says 'Fizzing Whizbee'."
+    },
+    {
+      "name": "stone gargoyle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stone gargoyle is guarding the entrance to Dumbledore's office."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gall",
+      "entity_2": "norris",
+      "relationship_type": "ordered_before",
+      "description": "Gall says 'Shoo!' before Norris slunks away into the shadows."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "whizbee",
+      "relationship_type": "mentioned_with",
+      "description": "McGonagall is mentioned as saying 'Fizzing Whizbee'."
+    }
+  ]
+}

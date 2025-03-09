@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as having red hair and a scar on his face. (Excerpt: 'Next to the tall kid with the red hair.' and 'Did you see his face?' and 'Did you see his scar?')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as having red hair and a scar on his face. (Excerpt: 'Next to the tall kid with the red hair.' and 'Did you see his face?' and 'Did you see his scar?')"
+    },
+    {
+      "name": "harry's dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The place where Harry lives. (Excerpt: 'W h i s p e r s  f o ll o w e d  H a r r y  f r o m  t h e  m o m e n t  h e  l e f t  h i s  d o r m i -tory')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school with many staircases and doors. (Excerpt: 'There were a hundred and forty-two staircases at Hogwarts:')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "people",
+      "entity_2": "harry",
+      "relationship_type": "stare_at",
+      "description": "People are staring at Harry as he walks through the corridors. (Excerpt: 'People queuing ou tside classrooms stood on tiptoe to get a look at him, or doubled back to pass him in the corridors again, staring.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "attend_school",
+      "description": "Harry is attending Hogwarts school. (Excerpt: 'There were a hundred and forty-two staircases at Hogwarts:')"
+    }
+  ]
+}

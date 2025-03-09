@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as being one of the best men at the Potters' wedding. A map on the wall shows a red pin indicating his location."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as giving Mr. Weasley a sheaf of parchment and asking for information about flying Muggle vehicles."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as receiving a sheaf of parchment from Kingsley and being asked to provide information about flying Muggle vehicles."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as receiving a wink and a whisper from Kingsley, asking him to give Mr. Weasley the magazine."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as possibly using his old motorcycle, according to information received by Kingsley and Mr. Weasley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kingsley",
+      "entity_2": "mr weasley",
+      "relationship_type": "gave_information_to",
+      "description": "Kingsley gave a sheaf of parchment to Mr. Weasley, asking for information about flying Muggle vehicles."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "harry",
+      "relationship_type": "asked_for_help_from",
+      "description": "Kingsley asked Harry to give the magazine to Mr. Weasley, saying 'he might find it interesting'."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "kingsley",
+      "relationship_type": "received_information_from",
+      "description": "Mr. Weasley received a sheaf of parchment from Kingsley and was asked to provide information about flying Muggle vehicles."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "kingsley",
+      "relationship_type": "suspected_of_using",
+      "description": "Kingsley and Mr. Weasley received information that Black might still be using his old motorcycle."
+    }
+  ]
+}

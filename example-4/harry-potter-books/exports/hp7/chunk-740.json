@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is on a mission in the forest."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A vast and mysterious place where Harry is located. (Excerpt: 'Every tiny movement seemed magniﬁed in the vastness of the forest.')"
+    },
+    {
+      "name": "creatures",
+      "entity_type": "living_being",
+      "singular": false,
+      "description": "Living beings that inhabit the forest, which Harry is trying to detect. (Excerpt: 'Harry knew that it must be full of living creatures...')"
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that makes a slithering sound over dead leaves, which Harry remembers from the past. (Excerpt: 'He remembered the sound of a cloak slithering over dead leaves many years ago...')"
+    },
+    {
+      "name": "tent",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A structure where Harry is resting, which he falls asleep against. (Excerpt: 'he had fallen asleep, slumped at an awkward angle against the side of the tent')"
+    },
+    {
+      "name": "disapparition",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A magical process where a person disappears from one location to another. (Excerpt: 'He had just held up a hand in front of his face to see whether he could make out his ﬁngers when it happened, and at once thought he was suspended in limbo between Disapparition and Apparition.')"
+    },
+    {
+      "name": "apparition",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A magical process where a person appears from one location to another. (Excerpt: 'He had just held up a hand in front of his face to see whether he could make out his ﬁngers when it happened, and at once thought he was suspended in limbo between Disapparition and Apparition.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "forest",
+      "relationship_type": "location_in",
+      "description": "Harry is located within the forest, where he is trying to detect living creatures. (Excerpt: 'Every tiny movement seemed magniﬁed in the vastness of the forest.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "creatures",
+      "relationship_type": "trying_to_detect",
+      "description": "Harry is trying to detect living creatures within the forest. (Excerpt: 'Harry knew that it must be full of living creatures...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cloak",
+      "relationship_type": "remembers_sound_of",
+      "description": "Harry remembers the sound of a cloak slithering over dead leaves from the past. (Excerpt: 'He remembered the sound of a cloak slithering over dead leaves many years ago...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tent",
+      "relationship_type": "resting_against",
+      "description": "Harry is resting against the side of the tent. (Excerpt: 'he had fallen asleep, slumped at an awkward angle against the side of the tent')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "disapparition",
+      "relationship_type": "suspended_between",
+      "description": "Harry is suspended between Disapparition and Apparition, as he holds up his hand to see if he can make out his fingers. (Excerpt: 'He had just held up a hand in front of his face to see whether he could make out his ﬁngers when it happened, and at once thought he was suspended in limbo between Disapparition and Apparition.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "apparition",
+      "relationship_type": "suspended_between",
+      "description": "Harry is suspended between Disapparition and Apparition, as he holds up his hand to see if he can make out his fingers. (Excerpt: 'He had just held up a hand in front of his face to see whether he could make out his ﬁngers when it happened, and at once thought he was suspended in limbo between Disapparition and Apparition.')"
+    }
+  ]
+}

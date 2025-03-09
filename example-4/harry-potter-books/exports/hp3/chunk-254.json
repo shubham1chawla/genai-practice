@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being addressed by Colin."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is addressing Harry."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady, a portrait that guards the entrance to Gryffindor Tower."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is suspicious of Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "colin",
+      "relationship_type": "addressed_by",
+      "description": "Colin addresses Harry."
+    },
+    {
+      "entity_1": "fat lady",
+      "entity_2": "harry",
+      "relationship_type": "spoke_to",
+      "description": "The Fat Lady speaks to Harry after he leaves the portrait hole."
+    }
+  ]
+}

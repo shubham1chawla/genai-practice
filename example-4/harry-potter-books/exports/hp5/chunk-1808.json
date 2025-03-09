@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as a person who discovered something about Harry's dreams."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who resumed talking and explained something to Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person who was obsessed with hearing the prophecy."
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rookwood is mentioned as a person who worked in the Department of Mysteries before his arrest."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who had been dreaming about the door to the Department of Mysteries."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Department of Mysteries is mentioned as a location where prophecies are kept."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as a location where prophecies are heavily protected."
+    },
+    {
+      "name": "occlumency",
+      "entity_type": "skill",
+      "singular": true,
+      "description": "Occlumency is mentioned as a skill that Harry needs to master."
+    },
+    {
+      "name": "prophecy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The prophecy is mentioned as an object that Voldemort and Harry are interested in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "prophecy",
+      "relationship_type": "interested_in",
+      "description": "Voldemort was obsessed with hearing the prophecy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "dreamed_about",
+      "description": "Harry had been dreaming about the door to the Department of Mysteries."
+    },
+    {
+      "entity_1": "rookwood",
+      "entity_2": "voldemort",
+      "relationship_type": "told",
+      "description": "Rookwood told Voldemort what they knew about the prophecies."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "advised",
+      "description": "Dumbledore advised Harry to master Occlumency."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "ministry of magic",
+      "relationship_type": "risked_revealing_himself_at_last",
+      "description": "Voldemort would have to enter the Ministry of Magic and risk revealing himself at last."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "occlumency",
+      "relationship_type": "needed_to_master",
+      "description": "Harry needed to master Occlumency."
+    }
+  ]
+}

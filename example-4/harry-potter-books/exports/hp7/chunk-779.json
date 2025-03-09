@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "you-know-who",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The snake that nearly killed Harry and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who saved his life by pulling the Deluminator out of his pocket."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who is concerned about their safety and wants to know how Ron found them."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character who was saved by Ron."
+    },
+    {
+      "name": "deluminator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A small silver object that can turn lights on and off."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "saved_by",
+      "description": "Ron saved Harry's life by pulling the Deluminator out of his pocket."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "deluminator",
+      "relationship_type": "interested_in",
+      "description": "Hermione is interested in knowing how Ron found them and wants to know more about the Deluminator."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "deluminator",
+      "relationship_type": "possesses",
+      "description": "Ron possesses the Deluminator, which he used to save Harry's life."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concerned_by",
+      "description": "Harry is concerned that Hermione did not hear him when he said Ron saved his life."
+    }
+  ]
+}

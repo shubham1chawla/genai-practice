@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is expected to be present and cheering for Ron during his trial. She is described as being in the stands."
+    },
+    {
+      "name": "lavender brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender Brown is mentioned as someone who is cheering for Ron during his trial. She is described as doing a moment later hiding her face in her hands."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is the one undergoing the trial and is mentioned multiple times throughout the passage. He is described as looking ready to pass out and then successfully saving penalties in a row."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone who is watching Ron's trial and cheering for him. He is also the one being spoken to by McLaggen at the end of the passage."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McLaggen is mentioned as someone who is competing against Ron during his trial and is described as having a red face. He is also the one speaking menacingly about Hermione's sister not trying."
+    },
+    {
+      "name": "clean-sweep eleven",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Clean-Sweep Eleven is mentioned as Ron's broomstick during his trial."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron weasley",
+      "relationship_type": "cheered_for",
+      "description": "Harry Potter is cheering for Ron Weasley during his trial. This can be inferred from the passage where Harry turns to watch Ron do his trial and then later cheers along with the crowd."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mclaggen",
+      "relationship_type": "spoke_to",
+      "description": "Harry Potter is spoken to by McLaggen at the end of the passage. This can be inferred from the passage where Harry turns to tell McLaggen that Ron had beaten him."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "beaten_by",
+      "description": "Ron Weasley beats Harry Potter during his trial. This can be inferred from the passage where it is mentioned that most unfortunately Ron had beaten him."
+    },
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "hermione",
+      "relationship_type": "spoke_about",
+      "description": "McLaggen speaks about Hermione's sister not trying during her trial. This can be inferred from the passage where McLaggen says 'His sister didn't really try'."
+    }
+  ]
+}

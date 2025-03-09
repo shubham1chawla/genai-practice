@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who noticed another photograph of a Hogwarts Quidditch team."
+    },
+    {
+      "name": "hogwarts quidditch team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The team is described as smiling and waving out of the frame."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as a house with snakes emblazoned on their chests."
+    },
+    {
+      "name": "regulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Regulus is described as the boy sitting in the middle of the front row."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as Regulus' brother."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's press clippings are being read by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts quidditch team",
+      "relationship_type": "observed",
+      "description": "Harry noticed the Hogwarts Quidditch team."
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "slytherins",
+      "relationship_type": "member_of",
+      "description": "Regulus is a member of Slytherin house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "related_to",
+      "description": "Harry is related to Voldemort through the press clippings being read by Hermione."
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "sirius",
+      "relationship_type": "brother_of",
+      "description": "Regulus and Sirius are brothers."
+    }
+  ]
+}

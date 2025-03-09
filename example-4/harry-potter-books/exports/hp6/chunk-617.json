@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as looking slightly more cheerful as he delves deeper into his stocking."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's presents are mentioned in the text."
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Golden Snitch is described as being worked on to the front of a sweater."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as having hand-knitted a sweater with a large Golden Snitch on it."
+    },
+    {
+      "name": "weasleys' wizard wheezes",
+      "entity_type": "product",
+      "singular": false,
+      "description": "Weasleys' Wizard Wheezes products are mentioned in the text."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher is mentioned as sending a package to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "has_presents_for",
+      "description": "Ron has presents for Harry."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "golden snitch",
+      "relationship_type": "created",
+      "description": "Mrs Weasley created the Golden Snitch sweater."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "kreacher",
+      "relationship_type": "received_package_from",
+      "description": "Harry received a package from Kreacher."
+    }
+  ]
+}

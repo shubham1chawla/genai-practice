@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "spell",
+      "entity_type": "magic_spell",
+      "singular": true,
+      "description": "A magical spell is described as 'ﬂew around the room' and caused destruction, including exploding a wardrobe mirror."
+    },
+    {
+      "name": "wardrobe",
+      "entity_type": "furniture_piece",
+      "singular": true,
+      "description": "The wardrobe is mentioned as being exploded by the magical spell."
+    },
+    {
+      "name": "mirror",
+      "entity_type": "decorative_item",
+      "singular": true,
+      "description": "The mirror on the wardrobe is also exploded by the magical spell."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as feeling the heat of the spell and getting injured, indicating he is present in the scene."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being pulled by Harry from bed to safety, indicating she is also present in the scene."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "villain",
+      "singular": true,
+      "description": "Voldemort is described as taking over Harry's body and running across the bedroom, indicating a possession or transformation of some sort."
+    },
+    {
+      "name": "bald man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A bald man is mentioned as being seen by Voldemort, but not further described in the text."
+    },
+    {
+      "name": "little woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A little woman is also mentioned as being seen by Voldemort, but not further described in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "spell",
+      "entity_2": "wardrobe",
+      "relationship_type": "damaged_by",
+      "description": "The spell damaged the wardrobe mirror, causing it to explode."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "spell",
+      "relationship_type": "affected_by",
+      "description": "Harry felt the heat of the spell and got injured by it."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "bald man",
+      "relationship_type": "saw",
+      "description": "Voldemort saw the bald man while in Harry's body, but did not interact with him further."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "little woman",
+      "relationship_type": "saw",
+      "description": "Voldemort also saw the little woman while in Harry's body, but did not interact with her further."
+    }
+  ]
+}

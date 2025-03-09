@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is introduced as a witch who has been accused of misusing her wand. She is described as using someone else's wand."
+    },
+    {
+      "name": "travers",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Travers is introduced as a person who is questioning Bellatrix about her wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is introduced as a person who has taken Bellatrix's wand and is holding it up."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as the next person Travers turns to after questioning Bellatrix."
+    },
+    {
+      "name": "bellatrix's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Bellatrix's wand is introduced as an object that has been taken by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "travers",
+      "entity_2": "bellatrix",
+      "relationship_type": "questioned",
+      "description": "Travers questions Bellatrix about her wand."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bellatrix's wand",
+      "relationship_type": "possesses",
+      "description": "Hermione is holding up Bellatrix's wand."
+    },
+    {
+      "entity_1": "travers",
+      "entity_2": "ron",
+      "relationship_type": "addressed",
+      "description": "Travers turns to Ron after questioning Bellatrix."
+    }
+  ]
+}

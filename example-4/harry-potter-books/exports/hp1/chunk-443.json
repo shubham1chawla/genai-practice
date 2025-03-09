@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "norbert",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Norbert is a dragon that Hagrid has been keeping in his hut."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is against the idea of keeping dragons."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of Ron's friends who is curious about Hagrid's activities."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who is also curious about Hagrid's activities."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts and has been keeping a dragon in his hut."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "norbert",
+      "relationship_type": "opposes",
+      "description": "Ron opposes the idea of keeping dragons, specifically Norbert."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "curious_about",
+      "description": "Harry is curious about Hagrid's activities with Norbert."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "curious_about",
+      "description": "Hermione is also curious about Hagrid's activities with Norbert."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "opposes",
+      "description": "Ron opposes the idea of keeping dragons, which Hagrid has been doing."
+    },
+    {
+      "entity_1": "ministry_of_magic",
+      "entity_2": "hagrid",
+      "relationship_type": "influences",
+      "description": "The Ministry of Magic influences Hagrid's actions by making him put spells on Muggles who have spotted dragons."
+    },
+    {
+      "entity_1": "muggles",
+      "entity_2": "ministry_of_magic",
+      "relationship_type": "interacts_with",
+      "description": "Muggles interact with the Ministry of Magic when they spot dragons."
+    }
+  ]
+}

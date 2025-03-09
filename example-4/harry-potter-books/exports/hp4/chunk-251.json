@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is being attacked by Ministry wizards."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, also a wizard who is being attacked."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, also a wizard who is being attacked."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur Weasley, Harry's father figure and a Ministry wizard who is trying to protect his son."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry wizard who is leading the attack on Harry and his friends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is Harry's father figure, trying to protect him from the Ministry wizards."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mr. weasley",
+      "relationship_type": "child_parent",
+      "description": "Ron is Mr. Weasley's son, being attacked by the Ministry wizards along with Harry and Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_friend",
+      "description": "Harry and Hermione are friends who are being attacked together."
+    },
+    {
+      "entity_1": "mr. crouch",
+      "entity_2": "harry",
+      "relationship_type": "attacker_victim",
+      "description": "Mr. Crouch is attacking Harry, accusing him of conjuring the Dark Mark."
+    }
+  ]
+}

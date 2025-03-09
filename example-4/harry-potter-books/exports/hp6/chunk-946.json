@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as taking a swig of Felix and trying to enter the Room of Requirement."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is advising him not to waste the potion, mentioned as putting down a copy of Spellman’s Syllabary."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Another friend of Harry's who suggests making more Felix, mentioned as looking in a book."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A potion that brings good luck, mentioned as being taken by Harry and needing to be made more."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A magical room that can only be accessed with the right key or combination, mentioned as something Harry is trying to enter."
+    },
+    {
+      "name": "spellman’s syllabary",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book of spells and incantations, mentioned as being put down by Hermione."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A teacher who is different from Dumbledore, mentioned as someone Harry can persuade with the right circumstances."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as possibly taking Harry along on a task."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "felix felicis",
+      "relationship_type": "consumes",
+      "description": "Harry is consuming Felix Felicis."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "spellman’s syllabary",
+      "relationship_type": "holds",
+      "description": "Hermione is holding a copy of Spellman’s Syllabary."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "book",
+      "relationship_type": "looks in",
+      "description": "Ron is looking in a book to see if they can make more Felix."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "room of requirement",
+      "relationship_type": "tries to enter",
+      "description": "Harry is trying to enter the Room of Requirement."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "felix felicis",
+      "relationship_type": "advises against wasting",
+      "description": "Hermione is advising Harry not to waste Felix Felicis."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as trying to save the speaker and referee a match."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is mentioned as saying that Snape was trying to make sure he didn't do something again."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as watching the speaker and preventing them from doing something."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is mentioned as a house that Snape was trying to stop winning."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the speaker and is being threatened by Quirrell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "quirrell",
+      "relationship_type": "trying_to_stop",
+      "description": "Snape was trying to stop Quirrell from doing something."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "watching",
+      "description": "Dumbledore was watching Harry Potter and preventing them from doing something."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "harry potter",
+      "relationship_type": "threatening",
+      "description": "Quirrell is threatening to kill Harry Potter."
+    }
+  ]
+}

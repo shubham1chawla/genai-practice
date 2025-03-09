@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as speaking to Sirius and Snape. (Excerpt: 'Dumbledore made sure that the door was closed...') "
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse at Hogwarts, mentioned as having footsteps that have died away. (Excerpt: 'Madam Pomfrey’s footsteps had died  away...') "
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and a member of Dumbledore's group, mentioned as being transformed back into his human form. (Excerpt: 'Sirius . . . if you could resume your usual form.') "
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A potions master at Hogwarts, mentioned as reacting with fury and horror to Sirius' presence. (Excerpt: 'Snape had not yelled or jumped backward...') "
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, mentioned as yelling at his mother and trying to calm the situation. (Excerpt: '“Mum, shut up!” Ron yelled.') "
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's mother, mentioned as screaming and leaping back from the bed. (Excerpt: '“Mrs. Weasley screamed and leapt back from the bed.') "
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius black",
+      "relationship_type": "invited",
+      "description": "Dumbledore invited Sirius to Hogwarts, as mentioned in the text. (Excerpt: 'He is here at my invitation...') "
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "trusted",
+      "description": "Dumbledore trusts Snape, as mentioned in the text. (Excerpt: 'I trust you both.') "
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "dumbledore",
+      "relationship_type": "invited_by",
+      "description": "Sirius was invited to Hogwarts by Dumbledore, as mentioned in the text. (Excerpt: 'He is here at my invitation...') "
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "sirius black",
+      "relationship_type": "dislikes",
+      "description": "Snape dislikes Sirius, as mentioned in the text. (Excerpt: '“Him!” he snarled, staring at Sirius...') "
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "separated_from",
+      "description": "Dumbledore made sure that Madam Pomfrey was separated from the scene, as mentioned in the text. (Excerpt: 'Madam Pomfrey’s footsteps had died  away...') "
+    }
+  ]
+}

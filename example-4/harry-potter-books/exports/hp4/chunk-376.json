@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An owl is described as having landed on Harry's shoulder, carrying sweets and cakes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, who has an owl landing on his shoulder."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hedwig is Harry's owl, which may have gone missing."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who may not have received a letter from Hedwig."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is the teacher in charge of the class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "owl",
+      "relationship_type": "carries",
+      "description": "The owl landed on Harry's shoulder and was carrying sweets and cakes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry owns Hedwig, which may have gone missing."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "letter",
+      "relationship_type": "has_not_received",
+      "description": "Sirius has not received a letter from Hedwig."
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "bubotubers",
+      "relationship_type": "teaches_about",
+      "description": "Professor Sprout is teaching the class about bubotubers."
+    }
+  ]
+}

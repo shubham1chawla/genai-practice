@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as a character who becomes interested in a bird on the windowsill, giving Harry time to dry his eyes. He is described as having twinkling eyes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the main character who has been crying and is now asking Dumbledore about the Invisibility Cloak."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as something that was sent to Harry by his father."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is introduced as a character who said Snape hates Harry because he hated Harry's father."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who was hated by Harry's father and now hates Harry in return."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who has a similar relationship with Harry as Snape does."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry and Dumbledore have a conversation about the Invisibility Cloak."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "snape",
+      "relationship_type": "said_about",
+      "description": "Quirrell said that Snape hates Harry because he hated Harry's father."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "is_hated_by",
+      "description": "Harry is hated by Snape in return for his father's actions."
+    }
+  ]
+}

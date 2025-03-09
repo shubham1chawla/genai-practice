@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as a person who has a boat to himself."
+    },
+    {
+      "name": "boat",
+      "entity_type": "vessel",
+      "singular": true,
+      "description": "Boats are mentioned as the mode of transportation for everyone."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The lake is described as a location where the boats sail."
+    },
+    {
+      "name": "castle",
+      "entity_type": "building",
+      "singular": true,
+      "description": "The castle is mentioned as a great structure that towers over the boats."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "boat",
+      "relationship_type": "owns",
+      "description": "Hagrid has a boat to himself."
+    },
+    {
+      "entity_1": "boats",
+      "entity_2": "lake",
+      "relationship_type": "sail_on",
+      "description": "The boats sail across the lake."
+    },
+    {
+      "entity_1": "boats",
+      "entity_2": "castle",
+      "relationship_type": "approach",
+      "description": "The boats approach the castle as they sail nearer and nearer to the cliff on which it stands."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "boats",
+      "relationship_type": "command",
+      "description": "Hagrid commands the boats to move forward and heads down."
+    }
+  ]
+}

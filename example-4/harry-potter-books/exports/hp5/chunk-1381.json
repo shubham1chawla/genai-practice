@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having a worst memory."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is introduced as the headmistress who shouts at Filch."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as a Squib and is shouted at by Umbridge."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is hiding behind the tapestry with George."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is hiding behind the tapestry with Fred."
+    },
+    {
+      "name": "dr. filibuster",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dr. Filibuster is mentioned as someone who might be put out of business by Fred and George."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "umbridge",
+      "relationship_type": "mentioned_with",
+      "description": "Snape is mentioned with Umbridge."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "filch",
+      "relationship_type": "shout_at",
+      "description": "Umbridge shouts at Filch."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "umbridge",
+      "relationship_type": "be_shouted_at",
+      "description": "Filch is shouted at by Umbridge."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "hide_with",
+      "description": "Fred and George are hiding together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "meet",
+      "description": "Harry meets Fred behind the tapestry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "meet",
+      "description": "Harry meets George behind the tapestry."
+    }
+  ]
+}

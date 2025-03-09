@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who made a statement about the Dark Magic."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as a person who reacted to Dumbledore's statement."
+    },
+    {
+      "name": "dark magic",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Dark Magic is mentioned as the type of magic that was used."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dark magic",
+      "relationship_type": "used",
+      "description": "Dumbledore mentions that it would take Dark Magic to accomplish what happened."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "dumbledore",
+      "relationship_type": "reacted_to",
+      "description": "Filch reacted to Dumbledore's statement by spitting and his face purpling."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as trying to get a weapon. (Excerpt: 'the w e a p o n  f o r  V o l d e m o r t')"
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who used to work at the department where Voldemort is trying to get a weapon. (Excerpt: 'Rookwood used to work there')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, who has seen something he shouldn't have and is being scolded by Hermione. (Excerpt: 'She gazed at Harry')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is trying to help him with his Occlumency skills. (Excerpt: 'Hermione nodded, apparently still lost in thought')"
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "place",
+      "singular": true,
+      "description": "A prison where people who have committed crimes against the wizarding world are sent. (Excerpt: '. . . and sent to Azkaban')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "rookwood",
+      "relationship_type": "used_to_work_with",
+      "description": "Rookwood used to work at the department where Voldemort is trying to get a weapon. (Excerpt: 'Rookwood used to work there')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "trying_to_get_weapon_from",
+      "description": "Voldemort is trying to get a weapon from Harry, but Harry didn't know about it. (Excerpt: 'And now Rookwood’s told Vold emort how to get the weapon?')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "being_scolded_by",
+      "description": "Hermione is scolding Harry for seeing something he shouldn't have. (Excerpt: 'But you shouldn’t have seen this at all, Harry')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "sent_to",
+      "description": "Harry was sent to Azkaban because he tried to get into the department to steal a weapon for Voldemort. (Excerpt: '. . . and sent to Azkaban')"
+    }
+  ]
+}

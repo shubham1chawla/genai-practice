@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as a person who has an opinion about Harry Potter. He is reading a book called Transfiguration Today."
+    },
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as someone Dumbledore is talking to."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is mentioned by Dumbledore for Snape to keep an eye on."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "severus",
+      "relationship_type": "speaking_to",
+      "description": "Dumbledore is speaking to Severus while reading a book."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "quirrell",
+      "relationship_type": "warning_snape",
+      "description": "Dumbledore warns Snape to keep an eye on Quirrell."
+    }
+  ]
+}

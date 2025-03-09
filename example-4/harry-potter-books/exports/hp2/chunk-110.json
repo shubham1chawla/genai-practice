@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who saw Malfoy and his father in Borgin and Burkes. He asks Ron and Hermione about it."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being asked by Harry about what he thinks of Malfoy and his father."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being asked by Harry about what she thinks of Malfoy and his father. She introduces her parents to Mr Weasley."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the one who was seen in Borgin and Burkes with his father. He is selling something."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as being worried and selling something in Borgin and Burkes. Mr Weasley wants to get him for something."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is mentioned as being sharp and having grim satisfaction when he finds out that Lucius Malfoy is selling something in Borgin and Burkes. He wants to get Lucius for something."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as being sharp and warning Mr Weasley not to go biting off more than he can chew when dealing with the Malfoy family."
+    },
+    {
+      "name": "borgin and burkes",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Borgin and Burkes is mentioned as a store where Harry saw Malfoy and his father. It is also where Lucius Malfoy is selling something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "wants_to_get",
+      "description": "Mr Weasley wants to get Lucius Malfoy for something."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "mr weasley",
+      "relationship_type": "warns",
+      "description": "Mrs Weasley warns Mr Weasley not to go biting off more than he can chew when dealing with the Malfoy family."
+    }
+  ]
+}

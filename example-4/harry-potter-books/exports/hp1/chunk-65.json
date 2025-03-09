@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who receives a letter for the first time in his life. The address on the envelope is written in emerald-green ink."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as someone who is being told to poke Harry with a Smeltings stick."
+    },
+    {
+      "name": "marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon's sister, who is holidaying on the Isle of Wight and sends a postcard to Harry."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, whose sister Marge is mentioned as sending a postcard."
+    },
+    {
+      "name": "smeltings stick",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A stick used by Smeltings, which Dudley is told to use on Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dudley",
+      "relationship_type": "target_of_threat",
+      "description": "Dudley is threatening to poke Harry with a Smeltings stick."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "marge",
+      "relationship_type": "recipient_of_postcard",
+      "description": "Marge sends a postcard to Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "relative",
+      "description": "Uncle Vernon is mentioned as the brother of Marge, who sent a postcard to Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "smeltings stick",
+      "relationship_type": "target_of_threat",
+      "description": "Dudley is threatening to poke Harry with a Smeltings stick."
+    }
+  ]
+}

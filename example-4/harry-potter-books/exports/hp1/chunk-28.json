@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as one of the people flying in the airship. He and Professor McGonagall are bending forward to look at something inside a bundle of blankets."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as one of the people flying in the airship. She and Dumbledore are bending forward to look at something inside a bundle of blankets."
+    },
+    {
+      "name": "baby boy",
+      "entity_type": "child",
+      "singular": true,
+      "description": "A baby boy is visible inside the bundle of blankets that Dumbledore and Professor McGonagall are looking at."
+    },
+    {
+      "name": "bristol",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Bristol is mentioned as a location that the airship is flying over."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Muggles are mentioned as people who will start swarming around when they see something unusual happening in the sky."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "bent_forward_together",
+      "description": "Dumbledore and Professor McGonagall are bending forward together to look at something inside a bundle of blankets."
+    },
+    {
+      "entity_1": "baby boy",
+      "entity_2": "dumbledore",
+      "relationship_type": "visible_to",
+      "description": "The baby boy is visible to Dumbledore as he looks into the bundle of blankets."
+    },
+    {
+      "entity_1": "baby boy",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "visible_to",
+      "description": "The baby boy is visible to Professor McGonagall as she looks into the bundle of blankets."
+    }
+  ]
+}

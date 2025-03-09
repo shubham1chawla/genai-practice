@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person of authority and power in the story, as he is able to whip around and cast spells. (\"He aimed a spell at her but she deflected it.\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who tries to stop Harry from attacking Bellatrix. (\"‘Harry — no!’ cried Lupin, but Harry had already ripped his arm from Lupin’s slackened grip.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is angry and vengeful after learning that Bellatrix killed Sirius. (\"‘SHE KILLED SIRIUS!’ bellowed Harry. ‘SHE KILLED HIM — I’LL KILL HER!’\")"
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a person who has killed Sirius and is being attacked by Harry. (\"‘SHE KILLED SIRIUS!’ bellowed Harry.\")"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who was killed by Bellatrix. (\"‘SHE KILLED SIRIUS!’ bellowed Harry.\")"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who is present in the scene but not actively involved. (\"He leapt over Luna, who was groaning on the floor, past Ginny,\")"
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is a person who is injured and lying on the floor. (\"He leapt over Luna, who was groaning on the floor,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bellatrix",
+      "relationship_type": "attack",
+      "description": "Harry attacks Bellatrix after learning that she killed Sirius. (\"‘SHE KILLED SIRIUS!’ bellowed Harry. ‘SHE KILLED HIM — I’LL KILL HER!’\")"
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "sirius",
+      "relationship_type": "kill",
+      "description": "Bellatrix killed Sirius, which leads to Harry's attack on her. (\"‘SHE KILLED SIRIUS!’ bellowed Harry.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "pass_by",
+      "description": "Harry passes by Luna who is lying on the floor. (\"He leapt over Luna, who was groaning on the floor,\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "pass_by",
+      "description": "Harry passes by Ginny who is present in the scene but not actively involved. (\"He leapt over Luna, who was groaning on the floor, past Ginny,\")"
+    }
+  ]
+}

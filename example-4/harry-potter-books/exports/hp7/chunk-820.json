@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The host of Harry and Hermione, who is offering them a drink."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A guest at Xenophilius' house, who has managed to balance the tea tray on a side table."
+    },
+    {
+      "name": "gurdyroots",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "The type of drink that Xenophilius is offering Harry and Hermione."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius' daughter, who is down beyond Bottom Bridge and has caught Plumpies to make soup."
+    },
+    {
+      "name": "bottom bridge",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Luna is currently at."
+    },
+    {
+      "name": "plumpies",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The type of animal that Luna has caught to make soup."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A guest at Xenophilius' house, who is asking about the symbol on Xenophilius' neck."
+    },
+    {
+      "name": "bill and fleur's wedding",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The event where Xenophilius was wearing a symbol around his neck."
+    },
+    {
+      "name": "deathly hallows",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "The symbol that Harry and Hermione are asking about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "gurdyroots",
+      "relationship_type": "offers",
+      "description": "Xenophilius is offering Harry and Hermione an infusion of Gurdyroots."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "plumpies",
+      "relationship_type": "catches",
+      "description": "Luna has caught Plumpies to make soup."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "deathly hallows",
+      "relationship_type": "asks_about",
+      "description": "Harry is asking Xenophilius about the symbol on his neck, which is the Deathly Hallows."
+    },
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "deathly hallows",
+      "relationship_type": "wears",
+      "description": "Xenophilius was wearing a symbol around his neck at Bill and Fleur's wedding, which is the Deathly Hallows."
+    }
+  ]
+}

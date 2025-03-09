@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character in the story, mentioned as the one who has to complete a task."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "An elf who is helping Harry Potter and knows about the second task."
+    },
+    {
+      "name": "wheezy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is giving Dobby his sweater and is also related to Harry Potter."
+    },
+    {
+      "name": "merpeople",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people living in the lake, mentioned as having Harry's Wheezy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "wheezy",
+      "relationship_type": "has",
+      "description": "Harry Potter has a relationship with Wheezy, who is giving Dobby his sweater."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "wheezy",
+      "relationship_type": "gives",
+      "description": "Dobby is receiving a sweater from Wheezy."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "merpeople",
+      "relationship_type": "has",
+      "description": "Harry Potter's Wheezy is with the merpeople."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "helps",
+      "description": "Dobby is helping Harry Potter by knowing about the second task."
+    }
+  ]
+}

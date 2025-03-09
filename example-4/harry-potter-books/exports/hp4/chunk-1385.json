@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who will be discussing the running of the school with Harry tomorrow."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as a place Dumbledore needs to return to."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the recipient of winnings from Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ministry",
+      "relationship_type": "destination",
+      "description": "Dumbledore needs to return to the Ministry, indicating it is his destination."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "giver",
+      "description": "Dumbledore gives Harry a large bag of gold as winnings."
+    }
+  ]
+}

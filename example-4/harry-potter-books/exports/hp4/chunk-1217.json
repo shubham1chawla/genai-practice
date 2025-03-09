@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is Harry's companion who screams ahead of him in the mist. (\"Her scream seemed to have come from somewhere ahead.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist who is hesitating whether to walk through the mist or not. (\"He was still hesitating when a scream shattered the silence.\" \"Harry yelled.\")"
+    },
+    {
+      "name": "mist",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The enchanted mist that Harry and Fleur are walking in. (\"What would happen if he walked through the mist?\" \"He took a deep breath and ran through the enchanted mist.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fleur",
+      "relationship_type": "yelled_at",
+      "description": "Harry yelled at Fleur when he heard her scream. (\"‘Fleur?’ Harry yelled.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mist",
+      "relationship_type": "walked_through",
+      "description": "Harry walked through the enchanted mist. (\"He took a deep breath and ran through the enchanted mist.\")"
+    }
+  ]
+}

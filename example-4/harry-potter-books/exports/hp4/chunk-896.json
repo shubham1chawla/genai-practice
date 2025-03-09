@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is described as stretching out his arms and lifting an egg in his wet hands."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry is holding and trying to open. It makes a loud screeching sound when opened."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned in the story as someone who might be attracted by the noise of the egg being opened."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned in the story as possibly planning to attract Filch with the noise of the egg being opened."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "The ghost of a girl who is usually heard sobbing in the S-bend of a toilet three floors below. She gives advice to Harry on how to deal with the egg."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "egg",
+      "relationship_type": "holds",
+      "description": "Harry is holding the egg in his wet hands."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "concerned about attracting",
+      "description": "Harry is worried that opening the egg might attract Filch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "speculates about plan of",
+      "description": "Harry wonders whether Cedric's plan was to attract Filch with the noise of the egg being opened."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "myrtle",
+      "relationship_type": "advised by",
+      "description": "Myrtle gives advice to Harry on how to deal with the egg."
+    }
+  ]
+}

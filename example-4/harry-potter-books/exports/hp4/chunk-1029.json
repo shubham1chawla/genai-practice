@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "barty",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty is mentioned as someone who received a nasty little shock. He is described as old and should have spent more time with his family."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is the one who found out information about Barty's son. He was in Azkaban when Barty's son was brought in."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry asks Sirius if Barty's son was a Death Eater."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione whispers to Harry about Crouch trying to get his son off."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as someone who tried to protect his reputation by letting his son off."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people that Barty's son was caught with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "barty",
+      "relationship_type": "found_information_about",
+      "description": "Sirius found out information about Barty's son."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "asked_question_to",
+      "description": "Harry asked Sirius if Barty's son was a Death Eater."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "crouch",
+      "relationship_type": "accused_of_protecting_reputation",
+      "description": "Hermione accused Crouch of trying to protect his reputation by letting his son off."
+    }
+  ]
+}

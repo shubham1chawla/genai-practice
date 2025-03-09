@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "holidays",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Harry mentioned holidays as something he doesn't want to go back to."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Privet Drive is Harry's home address, which he wants to leave behind."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who is worried about Harry's feelings towards his family."
+    },
+    {
+      "name": "family",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Harry's family is mentioned as something Fudge thinks he should be fond of."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Leaky Cauldron is a place where Harry can spend his last three weeks of vacation."
+    },
+    {
+      "name": "decree for the restriction of underage wizardry",
+      "entity_type": "law",
+      "singular": true,
+      "description": "Harry mentioned breaking this law as his punishment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "privet drive",
+      "relationship_type": "location_of_residence",
+      "description": "Harry lives at Privet Drive."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "family",
+      "relationship_type": "related_to",
+      "description": "Fudge is related to Harry's family."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "potential_residence",
+      "description": "Harry can potentially stay at the Leaky Cauldron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "decree for the restriction of underage wizardry",
+      "relationship_type": "violated_law",
+      "description": "Harry broke this law."
+    }
+  ]
+}

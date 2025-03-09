@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "death eater",
+      "entity_type": "death_eater",
+      "singular": true,
+      "description": "A follower of the Dark Lord, identified by a burned sign on their body."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "The leader of the Death Eaters, who has the power to summon them with his touch."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A former Death Eater who has returned and is feared by the Dark Lord."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Dumbledore's staff, with a burned sign on his arm."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the staff, who is being questioned by Fudge."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A government official who is skeptical of Dumbledore's staff."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dark lord",
+      "entity_2": "death eater",
+      "relationship_type": "summons",
+      "description": "The Dark Lord can summon Death Eaters with his touch."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "dark lord",
+      "relationship_type": "fears",
+      "description": "Karkaroff fears the Dark Lord's vengeance."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "member_of_staff",
+      "description": "Snape is a member of Dumbledore's staff."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "questions",
+      "description": "Fudge is questioning Dumbledore about his staff."
+    }
+  ]
+}

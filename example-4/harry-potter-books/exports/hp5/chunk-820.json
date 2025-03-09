@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a scar that hurts when Voldemort is near."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is surprised and impressed by Harry's ability to read Voldemort's mind."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as being able to be read by Harry through his mood."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hogwarts teacher who makes prophecies."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as having told Harry that he can sense Voldemort's mood when he is near."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A school where Harry and Ron are students."
+    },
+    {
+      "name": "grimmald place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry's home, mentioned as the location of his bedroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "can_read_mood",
+      "description": "Harry can sense Voldemort's mood when he is near."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "informed_harry",
+      "description": "Dumbledore told Harry that he can sense Voldemort's mood when he is near."
+    }
+  ]
+}

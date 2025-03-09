@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'he' and 'Harry'. The text describes him as being part of a plan with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who is also part of the plan. He suggests that Hermione pretend to be waiting for Professor Flitwick."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's and Ron's, who is tasked with watching out for Snape. She agrees to do this despite initially being hesitant."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A staff member at the school, who Hermione is tasked with keeping an eye on."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A staff member at the school, who Ron suggests that Hermione pretend to be waiting for."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A staff member at the school, who appears and scolds Harry, Ron, and Hermione for their plan."
+    },
+    {
+      "name": "fluffy",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A three-headed dog that is being kept in a separate area of the school."
+    },
+    {
+      "name": "the staff room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Snape is waiting, and Hermione is tasked with keeping an eye on him."
+    },
+    {
+      "name": "the third-floor corridor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location that Harry and Ron are trying to reach, but are thwarted by Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "is watching",
+      "description": "Hermione is tasked with keeping an eye on Snape for Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor flitwick",
+      "relationship_type": "is pretending to wait for",
+      "description": "Ron suggests that Hermione pretend to be waiting for Professor Flitwick."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "is with",
+      "description": "Harry and Ron are working together on a plan."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "is watching",
+      "description": "Hermione is tasked with keeping an eye on Snape."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "has scolded",
+      "description": "Professor McGonagall appears and scolds Harry for his plan."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "ron",
+      "relationship_type": "has scolded",
+      "description": "Professor McGonagall appears and scolds Ron for his plan."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hermione",
+      "relationship_type": "has scolded",
+      "description": "Professor McGonagall appears and scolds Hermione for her part in the plan."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is described as singing 'Odo the Hero' in a corner with another wizard. He is mentioned alongside a squat wizard in a purple porkpie hat."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's drunken uncle is unsure whether Harry is his son."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as spotting an old wizard sitting alone at a table. He is also mentioned as being disguised and the subject of conversation with Elphias Doge."
+    },
+    {
+      "name": "elphias doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Elphias Doge is described as an old wizard with white hair resembling an aged dandelion clock. He is a member of the Order of the Phoenix and wrote Dumbledore's obituary."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned in the context of Elphias Doge writing his obituary."
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur told Elphias Doge that Harry was at the gathering disguised."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "Elphias Doge is a member of the Order of the Phoenix."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "elphias doge",
+      "relationship_type": "met",
+      "description": "Harry approaches Elphias Doge and introduces himself."
+    },
+    {
+      "entity_1": "arthur",
+      "entity_2": "elphias doge",
+      "relationship_type": "told",
+      "description": "Arthur told Elphias Doge that Harry was at the gathering disguised."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "subject_of_obituary",
+      "description": "Elphias Doge wrote Dumbledore's obituary, and it is mentioned in the context of his conversation with Harry."
+    },
+    {
+      "entity_1": "elphias doge",
+      "entity_2": "harry potter",
+      "relationship_type": "knew_of_before_meeting",
+      "description": "Elphias Doge was familiar with Harry before meeting him."
+    }
+  ]
+}

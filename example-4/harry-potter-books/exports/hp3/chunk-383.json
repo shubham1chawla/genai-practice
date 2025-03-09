@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "chair",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The chair was drawn in midair with a wand. It revolved for a few seconds before falling between Professors Snape and McGonall."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is one of the professors at the table."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is one of the professors at the table. She is impatient and encourages Professor Trelawney to sit down."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a professor who believes that thirteen dining together will be unlucky."
+    },
+    {
+      "name": "headmaster",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Headmaster is the person in charge of the group. Professor McGonagall refers to him as 'Headmaster'."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is a professor who is missing from the table."
+    },
+    {
+      "name": "table",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The table is where the professors are dining."
+    },
+    {
+      "name": "turkey",
+      "entity_type": "food",
+      "singular": true,
+      "description": "The turkey is getting stone cold."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "table",
+      "relationship_type": "at",
+      "description": "Professor Trelawney is at the table."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "headmaster",
+      "relationship_type": "address",
+      "description": "Professor McGonagall addresses the Headmaster."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "professor lupin",
+      "relationship_type": "missing",
+      "description": "Professor Trelawney is looking for Professor Lupin."
+    },
+    {
+      "entity_1": "table",
+      "entity_2": "professor snape",
+      "relationship_type": "between",
+      "description": "The chair falls between Professors Snape and McGonall."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor trelawney",
+      "relationship_type": "encourage",
+      "description": "Professor McGonagall encourages Professor Trelawney to sit down."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "turkey",
+      "relationship_type": "ignore",
+      "description": "Professor Trelawney ignores the turkey."
+    }
+  ]
+}

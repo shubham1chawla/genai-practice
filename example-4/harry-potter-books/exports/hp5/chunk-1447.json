@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Potter' is mentioned as a student who needs to work hard and take Potions class. (\"Yes, Potter, Potions\")"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as someone who has a simpering laugh that Harry hates. (\"Oh no, thank you very much\", \"I just wondered whether I could make the teensiest in terruption, Minerva?\")"
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as someone who offers a cough drop to Professor Umbridge. (\"May I offer you a cough drop, Dolores?\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as someone who refuses to take students with anything less than 'Outstanding' in their O.W.L.s. (\"And I must tell you that Professor Snape absolutely refuses to take students who get anything othe r than ‘Outstanding’ in their O.W.L.s\")"
+    },
+    {
+      "name": "aurors",
+      "entity_type": "career",
+      "singular": false,
+      "description": "Aurors are mentioned as a career that requires studying poisons and antidotes. (\"Poisons and antidotes are essential study for Aurors.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "potions",
+      "relationship_type": "should_take_class",
+      "description": "Professor McGonagall advises Potter to take Potions class. (\"Then you ought to do Charms, always useful, and Potions.\")"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mcgonagall",
+      "relationship_type": "asked_for_help",
+      "description": "Professor Umbridge asks Professor McGonagall for help. (\"I just wondered whether I could make the teensiest in terruption, Minerva?\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "students",
+      "relationship_type": "refuses_to_accept",
+      "description": "Professor Snape refuses to accept students with anything less than 'Outstanding' in their O.W.L.s. (\"And I must tell you that Professor Snape absolutely refuses to take students who get anything othe r than ‘Outstanding’ in their O.W.L.s\")"
+    }
+  ]
+}

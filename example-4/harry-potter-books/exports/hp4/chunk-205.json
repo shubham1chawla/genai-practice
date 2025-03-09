@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "Quidditch is mentioned as a sport that Harry had never seen played before. (\"It was Quidditch as Ha rry had never seen it played before.\")"
+    },
+    {
+      "name": "omnioculars",
+      "entity_type": "device",
+      "singular": true,
+      "description": "Omnioculars are described as a device used to watch the Quidditch match in slow motion. (\"He was pressing his Om nioculars so hard to his glasses that they were cutting into the bridge of his nose.\")"
+    },
+    {
+      "name": "chasers",
+      "entity_type": "team_position",
+      "singular": false,
+      "description": "Chasers are mentioned as players who are throwing the Quaffle to each other at an incredible speed. (\"The Chasers were thro wing the Quaffle to one another so fast that Bagman on ly had time to say th eir names.\")"
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "ball",
+      "singular": true,
+      "description": "Quaffle is mentioned as a ball being thrown by the Chasers. (\"The Chasers were thro wing the Quaffle to one another so fast that Bagman on ly had time to say th eir names.\")"
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as a person who can only say the names of the Chasers due to their speed. (\"The Chasers were thro wing the Quaffle to one another so fast that Bagman on ly had time to say th eir names.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is watching the Quidditch match using his Omnioculars. (\"He was pressing his Om nioculars so hard to his glasses that they were cutting into the bridge of his nose.\")"
+    },
+    {
+      "name": "hawkshead",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Hawkshead is mentioned as a team attacking in formation. (\"HAWKSHEAD  ATTACKING  FORMATION , he read as he watched the three Irish Chasers zoom closely together.\")"
+    },
+    {
+      "name": "troy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Troy is mentioned as a person who is playing for Hawkshead and making a move to dart upward with the Quaffle. (\"PORSKOFF  PLOY  flashed up next, as Troy made as though to dart upward with the Quaffle.\")"
+    },
+    {
+      "name": "mullet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mullet is mentioned as a person who is playing for Hawkshead. (\"PORSKOFF  PLOY  flashed up next, as Troy made as though to dart upward with the Quaffle, drawing away the Bulgarian Chaser Mullet and Mo ran.\")"
+    },
+    {
+      "name": "moran",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moran is mentioned as a person who is playing for Hawkshead. (\"PORSKOFF  PLOY  flashed up next, as Troy made as though to dart upward with the Quaffle, drawing away the Bulgarian Chaser Mullet and Mo ran.\")"
+    },
+    {
+      "name": "porskoff",
+      "entity_type": "play",
+      "singular": true,
+      "description": "Porskoff is mentioned as a play being executed by Troy. (\"PORSKOFF  PLOY  flashed up next, as Troy made as though to dart upward with the Quaffle.\")"
+    },
+    {
+      "name": "bulgarians",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Bulgarians are mentioned as a team being attacked by Hawkshead. (\"HAWKSHEAD  ATTACKING  FORMATION , he read as he watched the three Irish Chasers zoom closely together, Troy in the center, slightly ahead of Mullet and Mo ran, bearing down upon the Bul-garians.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "omnioculars",
+      "relationship_type": "uses",
+      "description": "Harry is using his Omnioculars to watch the Quidditch match. (\"He was pressing his Om nioculars so hard to his glasses that they were cutting into the bridge of his nose.\")"
+    },
+    {
+      "entity_1": "chasers",
+      "entity_2": "quaffle",
+      "relationship_type": "throwing",
+      "description": "Chasers are throwing the Quaffle to each other at an incredible speed. (\"The Chasers were thro wing the Quaffle to one another so fast that Bagman on ly had time to say th eir names.\")"
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "chaser",
+      "relationship_type": "identifying",
+      "description": "Bagman is identifying the Chasers by their names due to their speed. (\"The Chasers were thro wing the Quaffle to one another so fast that Bagman on ly had time to say th eir names.\")"
+    },
+    {
+      "entity_1": "hawkshead",
+      "entity_2": "bulgarians",
+      "relationship_type": "attacking",
+      "description": "Hawkshead is attacking the Bulgarians. (\"HAWKSHEAD  ATTACKING  FORMATION , he read as he watched the three Irish Chasers zoom closely together, Troy in the center, slightly ahead of Mullet and Mo ran, bearing down upon the Bul-garians.\")"
+    },
+    {
+      "entity_1": "troy",
+      "entity_2": "quaffle",
+      "relationship_type": "maneuvering",
+      "description": "Troy is maneuvering the Quaffle to execute a play. (\"PORSKOFF  PLOY  flashed up next, as Troy made as though to dart upward with the Quaffle.\")"
+    }
+  ]
+}

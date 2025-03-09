@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by his first name."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An aged witch who is holding a tray of human fingernails and leering at Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Hogwarts gamekeeper with beetle-black eyes and a great bristling beard."
+    },
+    {
+      "name": "gringotts bank",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A snow-white marble building in the distance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "witch",
+      "relationship_type": "interacted_with",
+      "description": "Hagrid knocks the tray out of the witch's hands and pulls Harry away from her."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "rescued",
+      "description": "Hagrid rescues Harry from the witch."
+    }
+  ]
+}

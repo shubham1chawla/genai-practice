@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "young wizard",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The text describes a young wizard who has discovered control over magic."
+    },
+    {
+      "name": "parselmouth",
+      "entity_type": "parsecmouth",
+      "singular": true,
+      "description": "A rare ability to speak to serpents, supposedly connected with the Dark Arts."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The text mentions Dumbledore as a person who is present in the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who interjects into the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "young wizard",
+      "entity_2": "magic",
+      "relationship_type": "has_control_over",
+      "description": "The young wizard has control over magic."
+    },
+    {
+      "entity_1": "parselmouth",
+      "entity_2": "dark arts",
+      "relationship_type": "connected_with",
+      "description": "Parselmouths are supposedly connected with the Dark Arts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "conversation",
+      "relationship_type": "part_of",
+      "description": "Dumbledore is part of the conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "conversation",
+      "relationship_type": "part_of",
+      "description": "Harry is part of the conversation."
+    },
+    {
+      "entity_1": "young wizard",
+      "entity_2": "magic",
+      "relationship_type": "uses_consciously",
+      "description": "The young wizard uses magic consciously."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "parselmouth",
+      "relationship_type": "knows_about",
+      "description": "Harry knows about the Parselmouth ability."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, a student at Hogwarts School of Witchcraft and Wizardry. He is described as being on the edge of his seat and looking desperate to start proving that he isn't a dunderhead."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend, also a student at Hogwarts. He is described as being stumped along with Harry when asked by Snape about the powdered root of asphodel."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts and one of Harry's friends. She is described as being on the edge of her seat, looking desperate to start proving that she isn't a dunderhead."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts and is known for his sneering behavior. He asks Harry questions about the powdered root of asphodel and a bezoar."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts and is described as shaking with laughter along with Crabbe and Goyle when Harry doesn't know the answer to Snape's question."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is a student at Hogwarts and is described as shaking with laughter along with Malfoy and Goyle when Harry doesn't know the answer to Snape's question."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a student at Hogwarts and is described as shaking with laughter along with Malfoy and Crabbe when Harry doesn't know the answer to Snape's question."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "asks_question",
+      "description": "Snape asks Harry a series of questions about the powdered root of asphodel and a bezoar."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "snape",
+      "relationship_type": "tries_to_answer_question",
+      "description": "Hermione tries to answer Snape's question about the powdered root of asphodel, but Harry doesn't know the answer."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "is_unaware_of_answer",
+      "description": "Harry is unaware of the answer to Snape's question and looks at Malfoy, who is shaking with laughter along with Crabbe and Goyle."
+    }
+  ]
+}

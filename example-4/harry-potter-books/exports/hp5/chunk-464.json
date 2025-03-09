@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a person who is talking to Harry and avoiding his eyes. He is mentioned as saying 'she' which implies that he is referring to someone else."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is being talked about by Seamus and is feeling frustrated with the situation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned as being an old fool according to Mrs. Finnigan's beliefs."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is a newspaper that is mentioned as something that Mrs. Finnigan believes in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "believes_in",
+      "description": "Harry and Dumbledore are believed to be liars by Mrs. Finnigan, according to Seamus."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "harry",
+      "relationship_type": "talking_to",
+      "description": "Seamus is talking to Harry in the story."
+    }
+  ]
+}

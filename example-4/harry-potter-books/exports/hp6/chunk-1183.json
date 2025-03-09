@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The last and greatest of Harry's protectors who died."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is waiting for somebody else to get up and speak."
+    },
+    {
+      "name": "minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister who was expected to give a speech."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "protector_protected",
+      "description": "Dumbledore is Harry's protector."
+    },
+    {
+      "entity_1": "minister",
+      "entity_2": "harry",
+      "relationship_type": "speaker_audience",
+      "description": "The Minister was expected to give a speech to Harry."
+    }
+  ]
+}

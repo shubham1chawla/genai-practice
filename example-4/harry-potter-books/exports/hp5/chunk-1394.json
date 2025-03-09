@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as demanding to know how someone got into his office. He is described as turning and sweeping from his office."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being confused and needing a lesson tomorrow evening instead."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as mouthed 'Remedial Potions?' at Harry behind Snape's back."
+    },
+    {
+      "name": "remedial potions",
+      "entity_type": "course",
+      "singular": false,
+      "description": "Remedial Potions is mentioned as a course that Harry needs to take."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "teaches",
+      "description": "Professor Snape teaches Harry Potter."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "potter",
+      "relationship_type": "bullies",
+      "description": "Draco Malfoy bullies Harry Potter by telling the whole school that he needs Remedial Potions."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "remedial potions",
+      "relationship_type": "assigns",
+      "description": "Professor Snape assigns Harry Potter to take Remedial Potions."
+    }
+  ]
+}

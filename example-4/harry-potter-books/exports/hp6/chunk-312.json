@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a staff member who returns a cheery wave to the students."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a staff member who needs to confirm O.W.L. grades before distributing timetables."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who has achieved the necessary O.W.L. grades and can continue with various subjects."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville is a student who needs to sort out his application before Professor McGonagall can confirm his O.W.L. results."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout will be teaching Herbology."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "charms",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Charms."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "defence against the dark arts",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Defence Against the Dark Arts."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "transfiguration",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Transfiguration."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "herbology",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Herbology."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "arithmancy",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Arithmancy."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ancient runes",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Ancient Runes."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "potions",
+      "relationship_type": "continues_with_subject",
+      "description": "Hermione is cleared to continue with Potions."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "needs_confirmation_from_professor",
+      "description": "Neville needs Professor McGonagall's confirmation of his O.W.L. results."
+    }
+  ]
+}

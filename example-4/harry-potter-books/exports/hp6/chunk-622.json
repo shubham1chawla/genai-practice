@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who had seen Rufus Scrimgeour in the Daily Prophet. He is also referred to as 'he's' and 'the man Harry had seen'."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as a person who was with Rufus Scrimgeour and was limping slightly. He is also referred to as 'his mane of greying hair'."
+    },
+    {
+      "name": "minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister is mentioned as the position that Rufus Scrimgeour holds."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper where Harry had seen Rufus Scrimgeour."
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rufus Scrimgeour is mentioned as the Minister and is described as limping slightly. He is also referred to as 'the man Harry had seen'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "daily prophet",
+      "relationship_type": "mentioned_in",
+      "description": "Harry was mentioned in the Daily Prophet."
+    },
+    {
+      "entity_1": "rufus scrimgeour",
+      "entity_2": "minister",
+      "relationship_type": "holds_position",
+      "description": "Rufus Scrimgeour is the Minister."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "harry",
+      "relationship_type": "related_to",
+      "description": "Percy and Harry are related, but the exact nature of their relationship is not specified."
+    },
+    {
+      "entity_1": "rufus scrimgeour",
+      "entity_2": "percy",
+      "relationship_type": "colleague",
+      "description": "Rufus Scrimgeour and Percy were colleagues who were working together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "saw",
+      "description": "Harry saw Rufus Scrimgeour in the Daily Prophet."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "colleague",
+      "description": "Percy and Rufus Scrimgeour were colleagues who were working together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "percy",
+      "relationship_type": "related_to",
+      "description": "Harry and Percy are related, but the exact nature of their relationship is not specified."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "veritasers u m",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the events took place, mentioned as '673' and later described as a castle."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being helped by Mad-Eye Moody to walk back to the castle."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is helping Harry walk back to the castle and asking him questions about what happened."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was killed by Voldemort in a graveyard, mentioned by Harry as having been taken there with him on a Portkey."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as 'Lord Voldemort', who killed Cedric and is trying to get his body back."
+    },
+    {
+      "name": "durmstrang ship",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A ship that is located near the lake on the lawn, mentioned as being seen by Harry while he was being helped by Mad-Eye Moody."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mad-eye moody",
+      "relationship_type": "helped_by",
+      "description": "Mad-Eye Moody is helping Harry walk back to the castle, as described in the text: 'the man helping him walk'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "travelled_with",
+      "description": "Harry and Cedric were taken to a graveyard on a Portkey, as described in the text: 'Cup was a Portkey... Took me and Cedric to a graveyard'."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "cedric",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Cedric in the graveyard, as described by Harry: 'Killed Cedric... they killed Cedric'."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "duelled_with",
+      "description": "Harry dueled with Voldemort, as described in the text: 'And then we dueled... You dueled with the Dark Lord?'"
+    }
+  ]
+}

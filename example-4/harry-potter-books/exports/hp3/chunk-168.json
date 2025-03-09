@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "landing",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The landing is described as the place where most of the class was already assembled."
+    },
+    {
+      "name": "class",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The class is mentioned as being already assembled on the landing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as nudging Harry and pointing at the ceiling."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as reading the brass plaque on the trapdoor."
+    },
+    {
+      "name": "sibyll trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sibyll Trelawney is introduced as the Divination teacher."
+    },
+    {
+      "name": "trapdoor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The trapdoor is described as having a brass plaque on it."
+    },
+    {
+      "name": "ladder",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A silvery ladder descends from the trapdoor."
+    },
+    {
+      "name": "classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry emerges into a strange-looking classroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "nudged",
+      "description": "Ron nudges Harry and points at the ceiling."
+    },
+    {
+      "entity_1": "trapdoor",
+      "entity_2": "ladder",
+      "relationship_type": "descended_from",
+      "description": "A silvery ladder descends from the trapdoor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "classroom",
+      "relationship_type": "entered",
+      "description": "Harry emerges into the strangest-looking classroom he had ever seen."
+    }
+  ]
+}

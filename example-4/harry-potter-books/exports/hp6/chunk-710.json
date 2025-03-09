@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a student who is furious about the cancellation of the trip to Hogsmeade. He says it's on his birthday and he was looking forward to it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned alongside Ron as a student who is living proof that something has happened."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as saying it's not a big surprise that the trip to Hogsmeade was cancelled, given what happened to Katie."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is mentioned as someone who has still not returned from St Mungo's after something happened to her."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a location where the students were supposed to go on a trip."
+    },
+    {
+      "name": "st mungo's",
+      "entity_type": "location",
+      "singular": true,
+      "description": "St Mungo's is mentioned as a hospital where Katie has not returned from."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper that reported further disappearances including several relatives of students at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hogsmeade",
+      "relationship_type": "planned_to_visit",
+      "description": "Ron was looking forward to visiting Hogsmeade on his birthday."
+    },
+    {
+      "entity_1": "katie",
+      "entity_2": "st mungo's",
+      "relationship_type": "at_location",
+      "description": "Katie has not returned from St Mungo's."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "apparition",
+      "relationship_type": "has_to_look_forward_to",
+      "description": "Ron is now looking forward to learning Apparition."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron appears around the side of the archway."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is demanding to know if anyone else can hear the whispering and murmuring."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna joins Ron and Harry around the side of the archway and hears people in the veil."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "archway",
+      "relationship_type": "is_on",
+      "description": "Harry's foot is on the dais, which is part of the archway."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "archway",
+      "relationship_type": "is_near",
+      "description": "Luna joins Ron and Harry around the side of the archway."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "is_resisting",
+      "description": "Hermione is trying to pull Harry away from Luna."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "is_pulling",
+      "description": "Hermione is pulling Harry's arm."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "archway",
+      "relationship_type": "can_see",
+      "description": "Luna can see people in the veil."
+    }
+  ]
+}

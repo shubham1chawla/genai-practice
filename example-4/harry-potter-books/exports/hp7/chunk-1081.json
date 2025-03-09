@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to escape with his friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is helping him in their escape."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who is using her magical skills to help them."
+    },
+    {
+      "name": "bogrod",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who is being controlled by Harry through his wand."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose wand is used by Hermione to cast a spell."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who is leading Harry and his friends through the passage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bogrod",
+      "relationship_type": "control",
+      "description": "Harry has control over Bogrod's actions, as evidenced by Bogrod submitting to Harry's will."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bellatrix",
+      "relationship_type": "use_of_wand",
+      "description": "Hermione is using Bellatrix's wand to cast a spell."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "following",
+      "description": "Harry and his friends are following Griphook through the passage."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "leather_bag_of_metal_tools",
+      "relationship_type": "carrying",
+      "description": "Ron is carrying a leather bag of metal tools."
+    }
+  ]
+}

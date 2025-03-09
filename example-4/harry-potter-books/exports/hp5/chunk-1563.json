@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "hannah abbott",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A classmate of Harry's who had trouble with her exam."
+    },
+    {
+      "name": "iguana",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal that Harry was able to vanish in his practical exam."
+    },
+    {
+      "name": "ferrit",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A pet of Hannah Abbott's that multiplied into a flock of flamingos."
+    },
+    {
+      "name": "flamingos",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The result of Hannah Abbott's spell gone wrong."
+    },
+    {
+      "name": "fanged geranium",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "A plant that bit Harry during his Herbology exam."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "iguana",
+      "relationship_type": "vanished_by",
+      "description": "Harry was able to vanish the iguana in his practical exam."
+    },
+    {
+      "entity_1": "hannah abbott",
+      "entity_2": "ferrit",
+      "relationship_type": "multiplied_into",
+      "description": "Hannah Abbott's spell multiplied her ferret into a flock of flamingos."
+    },
+    {
+      "entity_1": "hannah abbott",
+      "entity_2": "flamingos",
+      "relationship_type": "created_by",
+      "description": "Hannah Abbott created the flamingos through her spell gone wrong."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fanged geranium",
+      "relationship_type": "bitten_by",
+      "description": "Harry was bitten by a Fanged Geranium during his Herbology exam."
+    }
+  ]
+}

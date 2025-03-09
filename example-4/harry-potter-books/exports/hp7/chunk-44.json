@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is a newspaper that Harry reads. It is mentioned as lying on the bed and having a headline about Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who is not mentioned in the current issue of the Daily Prophet, but Harry suspects that the Ministry is suppressing news about him."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who has a story coming out next week in the Daily Prophet. He is described as looking harried."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "daily prophet",
+      "entity_2": "voldemort",
+      "relationship_type": "suppresses_news_about",
+      "description": "The Ministry is leaning on the Daily Prophet to suppress news about Voldemort, according to Harry's suspicions."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "daily prophet",
+      "relationship_type": "featured_in_story",
+      "description": "Dumbledore has a story coming out next week in the Daily Prophet."
+    }
+  ]
+}

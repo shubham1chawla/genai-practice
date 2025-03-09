@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "potions master",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The potions master is mentioned as someone who favors the Slytherin house. The text does not provide further information about this person."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin house is mentioned as a house that the potions master favors. The text states 'They say he always favours them – we’ll be able to see if it’s true.'"
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the Head of Gryffindor house. The text states 'Professor McGonagall was Head of Gryffindor house, but it hadn’t stopped her giving them a huge pile of homework the day before.'"
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is mentioned as Harry's owl. The text states 'Hedwig hadn’t brought Harry anything so far.'"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor house is mentioned as the house that Professor McGonagall heads. The text states 'Professor McGonagall was Head of Gryffindor house, but it hadn’t stopped her giving them a huge pile of homework the day before.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potions master",
+      "entity_2": "slytherin",
+      "relationship_type": "favors",
+      "description": "The potions master favors the Slytherin house. The text states 'They say he always favours them – we’ll be able to see if it’s true.'"
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "head_of_house",
+      "description": "Professor McGonagall is the head of Gryffindor house. The text states 'Professor McGonagall was Head of Gryffindor house, but it hadn’t stopped her giving them a huge pile of homework the day before.'"
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "harry",
+      "relationship_type": "belong_to",
+      "description": "Hedwig is Harry's owl. The text states 'Hedwig hadn’t brought Harry anything so far.'"
+    }
+  ]
+}

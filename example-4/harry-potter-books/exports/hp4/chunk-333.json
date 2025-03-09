@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who gasped and massaged her throat."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a professor who barked at Peeves and straightened her hat."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is a poltergeist who cackled and lobbed water bombs."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is the location where students are present."
+    },
+    {
+      "name": "headmaster",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster is a person who will be called by Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "peeves",
+      "relationship_type": "scolded_by",
+      "description": "Professor McGonagall scolds Peeves for his behavior."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "great hall",
+      "relationship_type": "target_of_mischief",
+      "description": "Peeves targets the Great Hall with water bombs."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "headmaster",
+      "relationship_type": "will_call",
+      "description": "Professor McGonagall will call the headmaster due to Peeves' behavior."
+    }
+  ]
+}

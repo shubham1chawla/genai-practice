@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lacewings",
+      "entity_type": "organisms",
+      "singular": true,
+      "description": "Lacewings are mentioned as being on top of leeches."
+    },
+    {
+      "name": "leeches",
+      "entity_type": "organisms",
+      "singular": false,
+      "description": "Leeches are mentioned as having lacewings on top of them."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "characters",
+      "singular": true,
+      "description": "Dobby is a character who stopped Harry from getting on the train and broke his arm."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lacewings",
+      "entity_2": "leeches",
+      "relationship_type": "on_top_of",
+      "description": "Lacewings are mentioned as being on top of leeches."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry",
+      "relationship_type": "stopped_from_getting_on_train",
+      "description": "Dobby stopped Harry from getting on the train."
+    }
+  ]
+}

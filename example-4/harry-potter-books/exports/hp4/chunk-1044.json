@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking irritably to Harry. She is described as looking around for Winky."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as muttering about sending stuff to Snuffles and asking the elves for extra food."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as agreeing with Harry's idea of sending stuff to Snuffles and asking the elves for extra food."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is mentioned as quietly answering Hermione's question about Winky's whereabouts."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Winky is described as sitting by the fire, looking filthy and unwashed."
+    },
+    {
+      "name": "snuffles",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snuffles is mentioned as someone Harry wants to send stuff to."
+    },
+    {
+      "name": "pig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Pig is mentioned as something Ron suggests giving Winky to do."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snuffles",
+      "relationship_type": "has_plan_to_send_stuff",
+      "description": "Harry has a plan to send stuff to Snuffles, as mentioned in the conversation with Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "pig",
+      "relationship_type": "suggests_giving_task",
+      "description": "Ron suggests giving Pig something to do, which is a task for Winky."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "winky",
+      "relationship_type": "concerned_about_status",
+      "description": "Hermione is concerned about Winky's status and asks Dobby where she is."
+    }
+  ]
+}

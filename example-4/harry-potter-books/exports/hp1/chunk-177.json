@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "ticket box",
+      "entity_type": "physical object",
+      "singular": true,
+      "description": "The entity is described as something that can be smashed into. It is likely a container or enclosure for tickets."
+    },
+    {
+      "name": "trolley",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The entity is described as a vehicle used to transport things, and the person is leaning forward on it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "person",
+      "entity_2": "ticket box",
+      "relationship_type": "target of action",
+      "description": "The person is going to smash into the ticket box, indicating that the ticket box is the target of their action."
+    },
+    {
+      "entity_1": "person",
+      "entity_2": "trolley",
+      "relationship_type": "leaning on",
+      "description": "The person is leaning forward on the trolley, indicating a physical relationship between them."
+    }
+  ]
+}

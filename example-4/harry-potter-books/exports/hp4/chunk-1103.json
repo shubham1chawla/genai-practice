@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who held Harry up and prevented him from getting to somewhere on time. (\"If Snape hadn’t held me up,\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is having a conversation with Ron about what might have happened if Snape had not held him up."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry’s friend and is participating in the conversation about what might have happened if Snape had not held Harry up."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who wants to see Professor Moody to find out whether he found Mr. Crouch."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Moody is a person that Hermione wants to see in order to find out if he found Mr. Crouch."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is someone who Professor Moody might have found, according to Hermione’s statement."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who was with Harry and might have been able to get down to the forest faster than Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "obstacle",
+      "description": "Snape held Harry up, preventing him from getting somewhere on time."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "support",
+      "description": "Ron is supporting Harry in his conversation about what might have happened if Snape had not held him up."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moody",
+      "relationship_type": "request",
+      "description": "Hermione wants to see Professor Moody to find out whether he found Mr. Crouch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "comparative_speed",
+      "description": "Harry and Ron are discussing how fast Dumbledore might have been able to get down to the forest compared to Snape."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the one who told someone about a wizard. He is also referred to as having a conversation with the Prime Minister."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wizard is described as being feared above all others and having committed a thousand terrible crimes before his disappearance."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who won't explain properly about the wizard's status."
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Prime Minister is referred to as someone who doesn't know what to say to Fudge's statement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "wizard",
+      "relationship_type": "told_about",
+      "description": "Fudge told someone about the wizard."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wizard",
+      "relationship_type": "refused_to_explain",
+      "description": "Dumbledore refused to explain properly about the wizard's status."
+    }
+  ]
+}

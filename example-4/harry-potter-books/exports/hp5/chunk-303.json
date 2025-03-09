@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Dementors are mentioned as a threat to Harry and his cousin in Little Whinging. They are described as creatures that Muggles cannot see."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the one who smirks at Harry's story and suggests that dementors would make a good cover story."
+    },
+    {
+      "name": "madam bones",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Bones expresses surprise at the mention of dementors in Little Whinging."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who claims to have seen two dementors and is accused by Fudge of lying."
+    },
+    {
+      "name": "little whinging",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Little Whinging is mentioned as a location where dementors are supposedly present."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Wizengamot is the court that Harry and Fudge are speaking to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "accusation",
+      "description": "Fudge accuses Harry of lying about seeing dementors."
+    },
+    {
+      "entity_1": "madam bones",
+      "entity_2": "dementors",
+      "relationship_type": "surprise",
+      "description": "Madam Bones expresses surprise at the mention of dementors in Little Whinging."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dementors",
+      "relationship_type": "suggestion",
+      "description": "Fudge suggests that dementors would make a good cover story."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "encounter",
+      "description": "Harry claims to have seen two dementors."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, mentioned as thinking Harry would go to Ravenclaw Tower."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist, mentioned as possibly knowing the location of Voldemort's Horcrux."
+    },
+    {
+      "name": "ravenclaw tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in Hogwarts where Voldemort thinks Harry might go."
+    },
+    {
+      "name": "alecto carrow",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character stationed by Voldemort in the Ravenclaw common room."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts, mentioned as having a lost diadem."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Another house at Hogwarts, mentioned as Voldemort's affiliation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "fears",
+      "description": "Voldemort fears that Harry already knows the location of his Horcrux."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "ravenclaw tower",
+      "relationship_type": "thinks",
+      "description": "Voldemort thinks Harry might go to Ravenclaw Tower."
+    },
+    {
+      "entity_1": "alecto carrow",
+      "entity_2": "ravenclaw common room",
+      "relationship_type": "stationed_in",
+      "description": "Alecto Carrow is stationed in the Ravenclaw common room by Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "alecto carrow",
+      "relationship_type": "employs",
+      "description": "Voldemort employs Alecto Carrow to station her in the Ravenclaw common room."
+    }
+  ]
+}

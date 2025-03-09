@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as being in a conversation with Professor McGonagall, looking extremely grave."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is described as being in a conversation with Dumbledore, looking extremely grave."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is described as reading the front page of the Prophet with concentration."
+    },
+    {
+      "name": "the prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Prophet is described as being read by Professor Sprout."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is described as eating porridge and looking for misbehaving students."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as being shaken by the news in the newspaper."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as feeling jumpy and reacting to Hermione's reaction."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being present with Harry and receiving the newspaper from Hermione."
+    },
+    {
+      "name": "porridge",
+      "entity_type": "food",
+      "singular": true,
+      "description": "Porridge is described as being eaten by Professor Umbridge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "conversation",
+      "description": "Dumbledore and Professor McGonagall are in a conversation, looking extremely grave."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "reaction",
+      "description": "Hermione is reacting to the news in the newspaper, which affects Harry's mood."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "porridge",
+      "relationship_type": "consumption",
+      "description": "Professor Umbridge is eating porridge."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the prophet",
+      "relationship_type": "reading",
+      "description": "Hermione is reading the Prophet, which affects her mood."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "reaction",
+      "description": "Harry is reacting to Hermione's reaction to the news in the newspaper."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the prophet",
+      "relationship_type": "receiving",
+      "description": "Ron receives the newspaper from Hermione."
+    }
+  ]
+}

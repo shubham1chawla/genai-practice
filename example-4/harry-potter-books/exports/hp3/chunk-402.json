@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who is advising Harry."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Fearsome creatures that are mentioned as a threat to the Quidditch match."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that is competing against Gryffindor in the Quidditch match."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Harry's house at Hogwarts, which won the House Championship last year."
+    },
+    {
+      "name": "chocolate frog",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A treat that Harry is eating."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "threat",
+      "description": "Harry is concerned about the dementors showing up at the Quidditch match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ravenclaw",
+      "relationship_type": "competition",
+      "description": "Gryffindor and Ravenclaw are competing against each other in the Quidditch match."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry",
+      "relationship_type": "affiliation",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Lupin is advising Harry on how to concentrate."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chocolate frog",
+      "relationship_type": "consumption",
+      "description": "Harry is eating the Chocolate Frog."
+    }
+  ]
+}

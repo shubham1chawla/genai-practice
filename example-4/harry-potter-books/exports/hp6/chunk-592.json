@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person who was holding hands with Ron, and his left buttock is said to have never been the same since Dad's anger."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who was holding hands with Fred and witnessed Dad's anger."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad is mentioned as a person who got angry when he found Ron and Fred holding hands."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum is mentioned as someone Dad was as angry as, implying she has also been angry in the past."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "holding_hands_with",
+      "description": "Ron and Fred were holding hands when Dad found them, as mentioned by Ron."
+    },
+    {
+      "entity_1": "dad",
+      "entity_2": "ron",
+      "relationship_type": "found",
+      "description": "Dad found Ron and Fred holding hands, which made him angry."
+    },
+    {
+      "entity_1": "dad",
+      "entity_2": "fred",
+      "relationship_type": "angrily_reacted_to",
+      "description": "Dad got angry when he found Ron and Fred holding hands, as mentioned by Ron."
+    }
+  ]
+}

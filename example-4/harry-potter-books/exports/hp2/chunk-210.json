@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "bludgers",
+      "entity_type": "balls",
+      "singular": true,
+      "description": "Bludgers are balls used in Quidditch that Beaters try to beat away from their side. (From the text: 'They’re called Bludgers.')"
+    },
+    {
+      "name": "beaters",
+      "entity_type": "positions",
+      "singular": false,
+      "description": "Beaters are players on each team who carry clubs to beat the Bludgers away from their side. (From the text: 'There are two Beaters on each team... Fred and George Weasley are the Gryffindor Beaters.')"
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "balls",
+      "singular": true,
+      "description": "The Quaffle is a biggish red ball that scores goals in Quidditch. (From the text: 'Well, the Quaffle – that’s the biggish red one – is the one that scores goals.')"
+    },
+    {
+      "name": "chasers",
+      "entity_type": "positions",
+      "singular": false,
+      "description": "Chasers are players on each team who throw the Quaffle to each other and try to get it through the goalposts. (From the text: 'Three Chasers on each team throw the Quaffle...')"
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "balls",
+      "singular": true,
+      "description": "The Golden Snitch is a very small, fast ball that the Seeker must catch to end the game. (From the text: '– is the Golden Snitch...')"
+    },
+    {
+      "name": "seeker",
+      "entity_type": "positions",
+      "singular": false,
+      "description": "The Seeker is a player on each team who must catch the Golden Snitch to earn their team extra points. (From the text: 'But that’s what the Seeker’s got to do...')"
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Fred Weasley is a Beater on the Gryffindor team. (From the text: 'Fred and George Weasley are the Gryffindor Beaters.')"
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "people",
+      "singular": true,
+      "description": "George Weasley is a Beater on the Gryffindor team. (From the text: 'Fred and George Weasley are the Gryffindor Beaters.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "beaters",
+      "entity_2": "bludgers",
+      "relationship_type": "beat",
+      "description": "Beaters beat Bludgers away from their side. (From the text: 'There are two Beaters on each team, who carry clubs to beat the Bludgers away from their side.')"
+    },
+    {
+      "entity_1": "chasers",
+      "entity_2": "quaffle",
+      "relationship_type": "throw",
+      "description": "Chasers throw the Quaffle to each other. (From the text: 'Three Chasers on each team throw the Quaffle...')"
+    },
+    {
+      "entity_1": "seeker",
+      "entity_2": "golden snitch",
+      "relationship_type": "catch",
+      "description": "The Seeker must catch the Golden Snitch to end the game. (From the text: 'But that’s what the Seeker’s got to do, because a game of Quidditch doesn’t end until the Snitch has been caught.')"
+    },
+    {
+      "entity_1": "seeker",
+      "entity_2": "team",
+      "relationship_type": "earn_points_for",
+      "description": "The Seeker earns their team extra points when they catch the Golden Snitch. (From the text: 'And whichever team’s Seeker gets the Snitch earns his team an extra hundred and fifty points.')"
+    }
+  ]
+}

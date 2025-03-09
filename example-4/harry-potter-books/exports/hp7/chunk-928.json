@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is Lucius's wife and she is concerned about summoning the Dark Lord without being certain it is Harry Potter. She mentions that if they are mistaken, the Dark Lord will be angry."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is Narcissa's husband and he is also concerned about summoning the Dark Lord without being certain it is Harry Potter."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Greyback is a Snatcher who is forcing the prisoners to swivel around so that the light falls on Hermione."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one they are trying to confirm as the Dark Lord's target. They have a blackthorn wand that may or may not be his."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is a prisoner who is being forced to swivel around so that the light falls on her. Narcissa recognizes her from a picture in the Prophet."
+    },
+    {
+      "name": "madam malkin",
+      "entity_type": "business",
+      "singular": true,
+      "description": "Madam Malkin's is a business where Hermione and Harry bought their school robes."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is Lucius and Narcissa's son. He is unsure if the blackthorn wand belongs to Harry Potter or not."
+    },
+    {
+      "name": "rowle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rowle is someone who was punished by the Dark Lord for being mistaken."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolohov is someone who was punished by the Dark Lord for being mistaken."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Dark Lord is a powerful wizard who is feared by many. He will be summoned if they are certain it is Harry Potter."
+    },
+    {
+      "name": "olivander",
+      "entity_type": "business",
+      "singular": true,
+      "description": "Ollivander's is a business that sells wands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "narcissa",
+      "entity_2": "lucius",
+      "relationship_type": "spouse",
+      "description": "Narcissa and Lucius are married."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry potter",
+      "relationship_type": "opponent",
+      "description": "Greyback is forcing Harry Potter to swivel around so that the light falls on Hermione."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "dark lord",
+      "relationship_type": "invoker",
+      "description": "Narcissa wants to summon the Dark Lord if they are certain it is Harry Potter."
+    },
+    {
+      "entity_1": "lucius",
+      "entity_2": "dark lord",
+      "relationship_type": "invoker",
+      "description": "Lucius also wants to summon the Dark Lord if they are certain it is Harry Potter."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "hermione granger",
+      "relationship_type": "recognizer",
+      "description": "Narcissa recognizes Hermione Granger from a picture in the Prophet."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "doubter",
+      "description": "Draco Malfoy is unsure if the blackthorn wand belongs to Harry Potter or not."
+    }
+  ]
+}

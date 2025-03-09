@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is being yelled at by Uncle Vernon."
+    },
+    {
+      "name": "Uncle Vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is angry and yelling at Harry."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends from Hogwarts, who has gotten Harry into trouble by not calling him."
+    },
+    {
+      "name": "Hermione Granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other best friend from Hogwarts, who is clever and has Muggle parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Uncle Vernon",
+      "entity_2": "Harry",
+      "relationship_type": "angrily_yells_at",
+      "description": "Uncle Vernon is angrily yelling at Harry."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Harry",
+      "relationship_type": "got_into_trouble_with",
+      "description": "Ron has gotten Harry into trouble by not calling him."
+    },
+    {
+      "entity_1": "Hermione Granger",
+      "entity_2": "Harry",
+      "relationship_type": "has_not_contacted",
+      "description": "Hermione has not contacted Harry, likely because Ron warned her not to."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione Granger",
+      "relationship_type": "warned",
+      "description": "Ron has warned Hermione not to contact Harry."
+    }
+  ]
+}

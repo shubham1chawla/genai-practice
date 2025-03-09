@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as he sees something ahead."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose chimney is visible from a distance, indicating they are at home."
+    },
+    {
+      "name": "chimney",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where smoke is coming from, belonging to Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "can_see",
+      "description": "Harry can see the chimney of Hagrid's house."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "chimney",
+      "relationship_type": "owns",
+      "description": "Hagrid owns the chimney, which is part of his house."
+    }
+  ]
+}

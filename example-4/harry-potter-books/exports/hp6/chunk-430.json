@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, described as not usually lying in bed reading his textbooks."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is mentioned as saying that lying in bed reading textbooks is indecent except for Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's and Ron's who is described as being weird for liking to read textbooks in bed."
+    },
+    {
+      "name": "half-blood prince",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The owner of a copy of Advanced Potion-Making, mentioned as not qualifying as a textbook."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "advanced potion-making",
+      "relationship_type": "reads",
+      "description": "Harry is reading the book."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "comparing_to",
+      "description": "Ron compares Hermione's behavior to being weird."
+    }
+  ]
+}

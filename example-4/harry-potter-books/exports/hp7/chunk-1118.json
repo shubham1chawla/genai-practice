@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has been hoping to sleep and is now trying to get going. He is also referred to as 'he' in the text."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is scrambling to his feet and asking about the location of something in Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is trying to stop Harry and Ron from going somewhere without a plan."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who is being warned by someone about the ring and locket."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is mentioned as a location where Ron is asking about something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "warns",
+      "description": "Harry's actions are causing Snape to be warned by someone."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hogwarts",
+      "relationship_type": "searches",
+      "description": "Ron is searching for something in Hogwarts."
+    }
+  ]
+}

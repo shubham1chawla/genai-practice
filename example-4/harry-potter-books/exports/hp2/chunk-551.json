@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "spiders",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Spiders are described as being the size of carthorses, eight-eyed, eight-legged, black, hairy, and gigantic."
+    },
+    {
+      "name": "carthorse",
+      "entity_type": "animal_size",
+      "singular": true,
+      "description": "A carthorse is used as a comparison for the size of the spiders."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being carried by one of the massive spiders."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron falls to the ground next to Harry and Fang."
+    },
+    {
+      "name": "Fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is described as cowering silently on the spot."
+    },
+    {
+      "name": "misty domed web",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The massive spider carries Harry towards a misty domed web in the centre of the hollow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "spiders",
+      "entity_2": "Harry",
+      "relationship_type": "carries",
+      "description": "One of the spiders is carrying Harry."
+    },
+    {
+      "entity_1": "spiders",
+      "entity_2": "Ron",
+      "relationship_type": "are near to",
+      "description": "The spiders are closing in around Ron and Fang."
+    },
+    {
+      "entity_1": "spiders",
+      "entity_2": "Fang",
+      "relationship_type": "are near to",
+      "description": "The spiders are closing in around Ron and Fang."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "spider",
+      "relationship_type": "is carried by",
+      "description": "One of the massive spiders is carrying Harry."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Fang",
+      "relationship_type": "are near to",
+      "description": "Ron falls to the ground next to Harry and Fang."
+    }
+  ]
+}

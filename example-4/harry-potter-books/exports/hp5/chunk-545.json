@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is shocked to find his friends lying on the floor after eating Fainting Fancies. He is sure that Fred and George did not warn them about the sweets' effects."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of Harry's friends who created the Fainting Fancies sweets. He is defensive when Hermione scolds him for testing the sweets on others without warning them."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of Harry's friends who created the Fainting Fancies sweets. He is also defensive when Hermione scolds him for testing the sweets on others without warning them."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is concerned about the safety of her friends after they eat Fainting Fancies. She scolds Fred and George for testing the sweets on others without warning them."
+    },
+    {
+      "name": "fainting fancies",
+      "entity_type": "sweets",
+      "singular": true,
+      "description": "Fainting Fancies are a type of sweet created by Fred and George. They have the effect of making people faint or feel dizzy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "friendship",
+      "description": "Harry is friends with Fred, as evidenced by their conversation and banter in the text. They are both students who created Fainting Fancies together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "friendship",
+      "description": "Harry is friends with George, as evidenced by their conversation and banter in the text. They are both students who created Fainting Fancies together."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "friendship",
+      "description": "Fred is friends with George, as evidenced by their conversation and banter in the text. They are both students who created Fainting Fancies together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "fred",
+      "relationship_type": "disagreement",
+      "description": "Hermione disagrees with Fred about the safety of Fainting Fancies. She is concerned that they may cause harm to others, while Fred is more reckless and defensive."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "george",
+      "relationship_type": "disagreement",
+      "description": "Hermione disagrees with George about the safety of Fainting Fancies. She is concerned that they may cause harm to others, while George is more reckless and defensive."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "fainting fancies",
+      "relationship_type": "creation",
+      "description": "Fred created Fainting Fancies, as evidenced by the text. He and his brother George are responsible for making these sweets."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "fainting fancies",
+      "relationship_type": "creation",
+      "description": "George created Fainting Fancies, as evidenced by the text. He and his brother Fred are responsible for making these sweets."
+    }
+  ]
+}

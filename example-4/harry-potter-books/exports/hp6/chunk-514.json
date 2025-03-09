@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts."
+    },
+    {
+      "name": "butterbeer",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "A magical drink that has an effect on Harry."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is hosting a party."
+    },
+    {
+      "name": "katie bell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor student and Quidditch player who is injured."
+    },
+    {
+      "name": "st mungo's hospital",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A hospital for magical creatures."
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Quidditch team that Harry is training."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": true,
+      "description": "A rival Quidditch team."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A classmate of Harry's."
+    },
+    {
+      "name": "transfiguration",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A subject that Dean and Harry are taking in school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "butterbeer",
+      "relationship_type": "influence",
+      "description": "Harry is waiting to see how Butterbeer will affect him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "location",
+      "description": "The party is being held in Slughorn's dimly lit room."
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "st mungo's hospital",
+      "relationship_type": "location",
+      "description": "Katie Bell is currently at St Mungo's Hospital."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor team",
+      "relationship_type": "leader",
+      "description": "Harry is training the Gryffindor Quidditch team."
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "gryffindor team",
+      "relationship_type": "member",
+      "description": "Katie Bell was a member of the Gryffindor Quidditch team."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "opponent",
+      "description": "The Gryffindor team is facing off against Slytherin in their opening match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dean thomas",
+      "relationship_type": "friend",
+      "description": "Harry corners Dean Thomas after class to discuss the Quidditch tryouts."
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "gryffindor team",
+      "relationship_type": "replacement_needed",
+      "description": "Katie Bell's injury means that the Gryffindor team needs a replacement Chaser."
+    }
+  ]
+}

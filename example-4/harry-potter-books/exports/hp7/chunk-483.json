@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who gave a nervous laugh. He is also being addressed by Yaxley."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is the one who is interrogating Cattermole's wife and making threats to Ron."
+    },
+    {
+      "name": "cattermole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cattermole is being addressed by Yaxley and is related to Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione let out a little squeak of horror when she heard what Yaxley was saying."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "cattermole",
+      "relationship_type": "interrogates",
+      "description": "Yaxley is interrogating Cattermole's wife."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "ron",
+      "relationship_type": "threatens",
+      "description": "Yaxley is making threats to Ron."
+    },
+    {
+      "entity_1": "cattermole",
+      "entity_2": "ron",
+      "relationship_type": "related_to",
+      "description": "Cattermole is related to Ron."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "hermione",
+      "relationship_type": "addressed",
+      "description": "Yaxley addressed Hermione when she let out a little squeak of horror."
+    }
+  ]
+}

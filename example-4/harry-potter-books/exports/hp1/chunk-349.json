@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who tries to shut the door quietly but is caught by Snape. He is trying to get his book back."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher who is furious and drops his robes to hide his leg when Harry sees him. He tries to take points from Gryffindor."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who asks if he got the book back."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who doesn't believe Snape would try to steal something Dumbledore was keeping safe."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is a house at Hogwarts that Snape tries to take points from."
+    },
+    {
+      "name": "hallowe'en",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "Hallowe'en is the holiday when Harry and his friends saw someone trying to get past the three-headed dog."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "tries_to_take_points_from",
+      "description": "Snape tries to take points from Gryffindor when Harry sees him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "book",
+      "relationship_type": "trying_to_get_back",
+      "description": "Harry is trying to get his book back from Snape."
+    }
+  ]
+}

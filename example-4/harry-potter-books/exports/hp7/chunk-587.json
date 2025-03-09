@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The group of men clambering down the slope are likely Death Eaters, as they are making heavy scuﬄing and scraping noises."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is estimating the distance of the approaching group to be fewer than twenty feet away."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione snatches up the beaded bag and starts to rummage for Extendable Ears."
+    },
+    {
+      "name": "extendable ears",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hermione draws out three Extendable Ears from the beaded bag."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The enchantments cast around themselves are intended to shield them from the notice of Muggles."
+    },
+    {
+      "name": "normal witches and wizards",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The enchantments cast around themselves are intended to shield them from the notice of normal witches and wizards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry potter",
+      "relationship_type": "approach",
+      "description": "Death Eaters are approaching Harry, who is waiting with his wand drawn."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "extendable ears",
+      "relationship_type": "possession",
+      "description": "Hermione possesses the Extendable Ears."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "potential_target",
+      "description": "Death Eaters are approaching Harry, who is waiting with his wand drawn and may be their target."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "beaded bag",
+      "relationship_type": "possession",
+      "description": "Hermione possesses the beaded bag."
+    }
+  ]
+}

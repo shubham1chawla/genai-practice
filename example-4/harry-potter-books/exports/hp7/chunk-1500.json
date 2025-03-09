@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as the one who had never won anything from Voldemort"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as giving Potter the wand"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as stealing the wand and its power"
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as not understanding the concept of possessing a wand"
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as someone who explained that the wand chooses the wizard"
+    },
+    {
+      "name": "the elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "mentioned as recognizing a new master before Dumbledore died"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "stole_from",
+      "description": "Voldemort stole the wand from its last master's tomb"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "the elder wand",
+      "relationship_type": "possesses_power_of",
+      "description": "Voldemort claims that the power of the wand is his"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the elder wand",
+      "relationship_type": "had_control_over",
+      "description": "Dumbledore had control over the wand before it recognized a new master"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "the elder wand",
+      "relationship_type": "recognized_as_master_by",
+      "description": "The Elder Wand recognized Potter as its new master"
+    }
+  ]
+}

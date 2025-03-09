@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as receiving a task from Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who gives Potter a task."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is the target of Potter's task."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts mentioned by Malfoy as being in trouble."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is trying to repair the damage to a shrivelﬁg."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "task_assigner",
+      "description": "Snape assigns Potter a task, which is to skin Malfoy's shrivelﬁg."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "malfoy",
+      "relationship_type": "target",
+      "description": "Potter skins Malfoy's shrivelﬁg as part of the task assigned by Snape."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "shrivelﬁg",
+      "relationship_type": "repairer",
+      "description": "Ron is trying to repair the damage to the roots of a shrivelﬁg."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hagrid",
+      "relationship_type": "informant",
+      "description": "Malfoy mentions that Hagrid will not be a teacher much longer, implying he has some information about this."
+    }
+  ]
+}

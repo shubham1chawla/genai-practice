@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as having a door that the creature can stretch its wings in. The text states 'had room to stretch its wings'."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is mentioned as the location where the creature stagers into after forcing its way through metal doors. The text states 'staggered into Diagon Alley'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people clinging to the creature's back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people clinging to the creature's back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people clinging to the creature's back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    },
+    {
+      "name": "creature",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The creature is described as having a horned head and wings that it can stretch. The text states 'Turning its horned head toward the cool outside air...it took oﬀ'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "creature",
+      "entity_2": "diagon alley",
+      "relationship_type": "entered",
+      "description": "The creature enters Diagon Alley after forcing its way through metal doors. The text states 'staggered into Diagon Alley'."
+    },
+    {
+      "entity_1": "creature",
+      "entity_2": "room",
+      "relationship_type": "exited",
+      "description": "The creature exits the room by stretching its wings and taking off. The text states 'had room to stretch its wings: Turning its horned head toward the cool outside air it could smell beyond the entrance, it took oﬀ'."
+    },
+    {
+      "entity_1": "creature",
+      "entity_2": "harry",
+      "relationship_type": "carried",
+      "description": "The creature carries Harry on its back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    },
+    {
+      "entity_1": "creature",
+      "entity_2": "ron",
+      "relationship_type": "carried",
+      "description": "The creature carries Ron on its back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    },
+    {
+      "entity_1": "creature",
+      "entity_2": "hermione",
+      "relationship_type": "carried",
+      "description": "The creature carries Hermione on its back. The text states 'with Harry, Ron, and Hermione still clinging to its back'."
+    }
+  ]
+}

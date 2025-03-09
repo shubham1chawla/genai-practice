@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as a character who is watching Snape and Sirius leave. He is described as having a trace of apprehension on his face."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is introduced as a character who is leaving with Sirius. He is described as sweeping wordlessly."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is introduced as a character who is leaving with Snape."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the person to whom Dumbledore is speaking. He is instructed to take the rest of his potion."
+    },
+    {
+      "name": "diggorys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Diggorys are mentioned as people that Dumbledore needs to see downstairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "watched",
+      "description": "Dumbledore watched Snape leave with Sirius."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "watched",
+      "description": "Dumbledore watched Sirius leave with Snape."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "instructed",
+      "description": "Dumbledore instructed Harry to take the rest of his potion."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "diggorys",
+      "relationship_type": "must see",
+      "description": "Dumbledore must go downstairs to see the Diggorys."
+    }
+  ]
+}

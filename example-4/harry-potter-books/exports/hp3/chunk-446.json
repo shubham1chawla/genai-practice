@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a student who is reading a book and has an argument with Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a student who tries to intervene in the argument between Hermione and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a student who has an argument with Hermione over food."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat that was eaten."
+    },
+    {
+      "name": "fudge flies",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Fudge Flies are a type of food that Scabbers used to like."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "tries_to_intervene_in_argument",
+      "description": "Harry tries to intervene in the argument between Hermione and Ron."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "has_argument_with",
+      "description": "Hermione has an argument with Ron over food."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns_pet",
+      "description": "Ron owns Scabbers, his pet rat."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "book",
+      "relationship_type": "reading",
+      "description": "Hermione is reading a book."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fudge flies",
+      "relationship_type": "likes_food",
+      "description": "Ron likes Fudge Flies, a type of food."
+    }
+  ]
+}

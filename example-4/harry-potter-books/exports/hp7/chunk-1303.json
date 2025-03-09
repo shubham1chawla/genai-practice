@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "death eater",
+      "entity_type": "person_group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who follow Lord Voldemort. They are known for their black robes and masks."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom, a student at Hogwarts School of Witchcraft and Wizardry. He is described as emerging from nowhere with armfuls of Venomous Tentacula."
+    },
+    {
+      "name": "venomous tentacula",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "A type of plant that is used for defense. It loops itself around the nearest Death Eater and begins reeling him in."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts School of Witchcraft and Wizardry. He is described as speeding down the marble staircase with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley, a student at Hogwarts School of Witchcraft and Wizardry. He is described as speeding down the marble staircase with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger, a student at Hogwarts School of Witchcraft and Wizardry. She is described as speeding down the marble staircase with Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eater",
+      "entity_2": "venomous tentacula",
+      "relationship_type": "attacked_by",
+      "description": "The Venomous Tentacula loops itself around the nearest Death Eater and begins reeling him in."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "traveled_with",
+      "description": "Harry, Ron, and Hermione sped down the marble staircase together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "traveled_with",
+      "description": "Harry, Ron, and Hermione sped down the marble staircase together."
+    }
+  ]
+}

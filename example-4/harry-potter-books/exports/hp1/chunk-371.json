@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school that woke up to find itself covered in snow. (\"Hogwarts woke to find itself covered in several feet of snow.\")"
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Quirrell is mentioned as a teacher who was being followed by bouncing snowballs. (\"The Weasley twins were punished for bewitching several snowballs so that they followed Quirrell around, bouncing off the back of his turban.\")"
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "students",
+      "singular": false,
+      "description": "The Weasley twins are mentioned as students who were punished for bewitching snowballs. (\"The Weasley twins were punished for bewitching several snowballs so that they followed Quirrell around, bouncing off the back of his turban.\")"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Hagrid is mentioned as a teacher who nursed owls back to health. (\"The few owls that managed to battle their way through the stormy sky to deliver post had to be nursed back to health by Hagrid before they could fly off again.\")"
+    },
+    {
+      "name": "gryffindor common room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor common room is mentioned as a place with a roaring fire. (\"While the Gryffindor common room and the Great Hall had roaring fires,\")"
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is mentioned as a place with a roaring fire. (\"While the Gryffindor common room and the Great Hall had roaring fires,\")"
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Snape is mentioned as a teacher whose classes are in the dungeons. (\"Worst of all were Professor Snape’s classes down in the dungeons,\")"
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as a student who expressed sympathy for others. (‘I do feel so sorry ,’ said Draco Malfoy , one Potions class, ‘for all’)"
+    },
+    {
+      "name": "potions class",
+      "entity_type": "class",
+      "singular": false,
+      "description": "Potions class is mentioned as the context in which Draco Malfoy expressed sympathy. (‘I do feel so sorry ,’ said Draco Malfoy , one Potions class, ‘for all’)"
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The lake is mentioned as a place that froze solid due to the snow. (\"The lake froze solid and the Weasley twins were punished for bewitching several snowballs so that they followed Quirrell around, bouncing off the back of his turban.\")"
+    },
+    {
+      "name": "snow",
+      "entity_type": "weather condition",
+      "singular": false,
+      "description": "Snow is mentioned as a weather condition that covered Hogwarts. (\"Hogwarts woke to find itself covered in several feet of snow.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "owls",
+      "relationship_type": "cared for",
+      "description": "Hagrid cared for the owls that delivered post. (\"The few owls that managed to battle their way through the stormy sky to deliver post had to be nursed back to health by Hagrid before they could fly off again.\")"
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "snowballs",
+      "relationship_type": "followed by",
+      "description": "Snowballs followed Quirrell around. (\"The Weasley twins were punished for bewitching several snowballs so that they followed Quirrell around, bouncing off the back of his turban.\")"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "owls",
+      "relationship_type": "cared for",
+      "description": "Hagrid cared for the owls that delivered post. (\"The few owls that managed to battle their way through the stormy sky to deliver post had to be nursed back to health by Hagrid before they could fly off again.\")"
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "others",
+      "relationship_type": "felt sorry for",
+      "description": "Draco Malfoy expressed sympathy for others. (‘I do feel so sorry ,’ said Draco Malfoy , one Potions class, ‘for all’)"
+    }
+  ]
+}

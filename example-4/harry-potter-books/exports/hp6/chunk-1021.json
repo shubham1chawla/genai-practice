@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is described as examining the walls and ceiling with a wand held high."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts School of Witchcraft and Wizardry. He is described as whispering to Dumbledore and experiencing shivers due to enchantments."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story. He is mentioned by Dumbledore as having obstacles in his way."
+    },
+    {
+      "name": "the cave",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where magic is present and enchantments can be felt. It is described as an ante-chamber and entrance hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "is_with",
+      "description": "Dumbledore and Harry are together in the cave, with Dumbledore examining the walls and ceiling."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the cave",
+      "relationship_type": "is_in",
+      "description": "Dumbledore is inside the cave, examining its magic and enchantments."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the cave",
+      "relationship_type": "is_in",
+      "description": "Harry is also inside the cave, experiencing shivers due to enchantments."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lord voldemort",
+      "relationship_type": "has_obstacle",
+      "description": "Dumbledore mentions that Lord Voldemort has obstacles in his way."
+    }
+  ]
+}

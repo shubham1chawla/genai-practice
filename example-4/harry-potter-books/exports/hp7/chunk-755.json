@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who has returned after his departure. He is holding a sword and trying to explain how he found Harry and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being questioned by Ron about how he got there and how he found them."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's wand was picked up by Harry."
+    },
+    {
+      "name": "harry's life",
+      "entity_type": "event",
+      "singular": false,
+      "description": "Harry's life was saved by Ron."
+    },
+    {
+      "name": "ron's departure",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Ron's departure is the subject of conversation between Harry and Ron."
+    },
+    {
+      "name": "the sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword was found by Ron and shown to Harry."
+    },
+    {
+      "name": "the forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The forest is a big place where Ron has been searching for hours."
+    },
+    {
+      "name": "the deer",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A deer was seen by Ron which led him to Harry and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry's life",
+      "relationship_type": "saved",
+      "description": "Ron saved Harry's life."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione's wand",
+      "relationship_type": "picked_up",
+      "description": "Ron picked up Hermione's wand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the sword",
+      "relationship_type": "found",
+      "description": "Ron found the sword."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "questioned",
+      "description": "Ron questioned Harry about how he got there and how he found them."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the forest",
+      "relationship_type": "searching_in",
+      "description": "Ron was searching for Harry in the big forest."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the deer",
+      "relationship_type": "followed_by",
+      "description": "Ron followed a deer which led him to Harry and Hermione."
+    }
+  ]
+}

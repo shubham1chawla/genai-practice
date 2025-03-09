@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Mentioned as 'dear' by Madam Malkin, indicating its importance or significance."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, being fitted up with robes at Hogwarts."
+    },
+    {
+      "name": "madam malkin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch who is helping Harry get dressed in his robes."
+    },
+    {
+      "name": "hogwarts shop",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Madam Malkin works and where Harry is getting fitted up with robes."
+    },
+    {
+      "name": "boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another young man who is also being fitted up with robes at the same time as Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts shop",
+      "relationship_type": "located_at",
+      "description": "Harry is located at the Hogwarts shop, where he is getting fitted up with robes."
+    },
+    {
+      "entity_1": "madam malkin",
+      "entity_2": "hogwarts shop",
+      "relationship_type": "works_at",
+      "description": "Madam Malkin works at the Hogwarts shop, helping Harry get dressed in his robes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "boy",
+      "relationship_type": "similar_to",
+      "description": "Harry is similar to the boy, as they are both being fitted up with robes at the same time."
+    }
+  ]
+}

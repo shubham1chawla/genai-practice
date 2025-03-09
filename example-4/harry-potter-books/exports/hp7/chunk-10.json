@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard who is planning to take Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, a young boy who Voldemort is trying to kill."
+    },
+    {
+      "name": "the company around the table",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are watching Voldemort and Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "target",
+      "description": "Voldemort is planning to take Harry Potter."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "the company around the table",
+      "relationship_type": "speaker_audience",
+      "description": "Voldemort is speaking to the company around the table."
+    }
+  ]
+}

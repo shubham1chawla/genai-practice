@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry is consulting his booklist and purchasing new books."
+    },
+    {
+      "name": "intermediate transfiguration",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book that Harry needs to buy from Flourish and Blotts."
+    },
+    {
+      "name": "the standard book of spells, grade three",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Another book that Harry needs to buy from Flourish and Blotts."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "store",
+      "singular": false,
+      "description": "A store where Harry buys his new books."
+    },
+    {
+      "name": "the leaky cauldron",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A pub where Harry goes after buying his new books."
+    },
+    {
+      "name": "magnolia crescent",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry saw something that made him panic."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "street",
+      "singular": true,
+      "description": "A street in London where wizards and witches live and shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "intermediate transfiguration",
+      "relationship_type": "owns",
+      "description": "Harry needs to buy Intermediate Transfiguration from Flourish and Blotts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the standard book of spells, grade three",
+      "relationship_type": "owns",
+      "description": "Harry needs to buy The Standard Book of Spells, Grade Three from Flourish and Blotts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "flourish and blotts",
+      "relationship_type": "visited",
+      "description": "Harry visited Flourish and Blotts to buy his new books."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the leaky cauldron",
+      "relationship_type": "went_to",
+      "description": "After buying his new books, Harry went to The Leaky Cauldron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "magnolia crescent",
+      "relationship_type": "saw",
+      "description": "Harry saw something in Magnolia Crescent that made him panic."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "lives_in",
+      "description": "Harry lives in Diagon Alley, as evidenced by the sound of buses and crowd below his room."
+    }
+  ]
+}

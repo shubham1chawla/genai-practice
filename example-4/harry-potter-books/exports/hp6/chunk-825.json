@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "room 423",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room where the conversation is taking place. (\"T HE UNKNOWABLE ROOM 423\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy's name mentioned in the context of being followed by Kreacher and Dobby. (‘Well ... they’ve been following Malfoy for me’)"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher's name mentioned as a house-elf who has been following Malfoy. (‘Night and day ,’ croaked Kreacher)"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dobby's name mentioned as a house-elf who has not slept for a week. (‘Dobby has not slept for a week, Harry Potter!’ said Dobby)"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter's name mentioned in the context of being spoken to by Dobby. (‘Dobby has not slept for a week, Harry Potter!’ said Dobby)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's name mentioned as looking indignant. (Hermione looked indignant)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "malfoy",
+      "relationship_type": "follows",
+      "description": "Kreacher has been following Malfoy night and day. (‘Night and day ,’ croaked Kreacher)"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "malfoy",
+      "relationship_type": "follows",
+      "description": "Dobby has also been following Malfoy for Harry Potter. (‘Well ... they’ve been following Malfoy for me’)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "speaks_to",
+      "description": "Harry Potter is being spoken to by Dobby. (‘Dobby has not slept for a week, Harry Potter!’ said Dobby)"
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "malfoy",
+      "relationship_type": "describes",
+      "description": "Kreacher describes Malfoy's features and manners as being like those of his mistress. (‘Master Malfoy moves with a no bility that befits his pure blood,’ croaked Kreacher)"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "malfoy",
+      "relationship_type": "describes",
+      "description": "Dobby describes Malfoy as a bad boy. (‘Draco Malfoy is a bad boy!’ squeaked Dobby angrily)"
+    }
+  ]
+}

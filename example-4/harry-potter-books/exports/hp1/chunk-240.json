@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Quirrell is mentioned as someone who is being looked at by Harry and is also the subject of Snape's jealousy."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is introduced as a Potions teacher who is after Quirrell's job and has knowledge of Dark Arts."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as the one giving start-of-term notices to students."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Weasley twins are mentioned as being reminded by Dumbledore to follow rules."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Filch is introduced as the caretaker who has asked Dumbledore to remind students about no magic in corridors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "quirrell",
+      "relationship_type": "jealous_of",
+      "description": "Snape is jealous of Quirrell's job, as mentioned by the text: 'everyone knows he’s after Quirrell’s job'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "weasley twins",
+      "relationship_type": "reminding",
+      "description": "Dumbledore reminds the Weasley twins to follow rules, as mentioned in the text: 'Dumbledore’s twinkling eyes flashed in the direction of the Weasley twins'."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "dumbledore",
+      "relationship_type": "asked_reminder",
+      "description": "Filch asks Dumbledore to remind students about no magic in corridors, as mentioned in the text: 'I have also been asked by Mr Filch, the caretaker, to remind you all that no magic should be used between classes in the corri-dors'."
+    }
+  ]
+}

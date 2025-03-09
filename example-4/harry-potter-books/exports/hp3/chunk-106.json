@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who lives next door. He is mentioned as being involved in an argument with Percy over a missing Head Boy badge and Scabbers' rat tonic."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is the Head Boy and one of Harry's friends who lives next door. He is mentioned as being involved in an argument with Ron over a missing Head Boy badge."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat. He is mentioned as having a tonic that has gone missing."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who lives next door to Ron and Percy. He is mentioned as being involved in an argument with Percy over a missing Head Boy badge."
+    },
+    {
+      "name": "head boy badge",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Head Boy badge is a symbol of Percy's position as Head Boy. It has gone missing and is the subject of an argument between Percy and Ron."
+    },
+    {
+      "name": "rat tonic",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Scabbers' rat tonic is a product that has gone missing. It belongs to Scabbers and is mentioned as being related to the argument between Ron and Percy."
+    },
+    {
+      "name": "number twelve",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Number twelve refers to the room where Percy lives. The door of this room is ajar and Percy is shouting from inside."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "percy",
+      "entity_2": "head boy badge",
+      "relationship_type": "ownership",
+      "description": "Percy owns the Head Boy badge, which has gone missing."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "rat tonic",
+      "relationship_type": "possession",
+      "description": "Ron possesses Scabbers' rat tonic, which has also gone missing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "head boy badge",
+      "relationship_type": "suspect",
+      "description": "Harry is suspected by Percy of taking the Head Boy badge."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "head boy badge",
+      "relationship_type": "suspect",
+      "description": "Ron is also suspected by Percy of taking the Head Boy badge."
+    }
+  ]
+}

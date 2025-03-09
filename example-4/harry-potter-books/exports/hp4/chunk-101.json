@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as the ones who gave something to someone."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a member of the Weasley family and is upset about the behavior of his sons."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the Weasley brothers who gave something to someone."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is another Weasley brother who defended himself against Mr. Weasley's accusations."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a friend of the Weasleys and agrees with George that someone is a great bullying git."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are non-magical people who are being mistreated by wizards."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Wizards are magical people who are campaigning against the mistreatment of Muggles."
+    },
+    {
+      "name": "bully",
+      "entity_type": "noun",
+      "singular": true,
+      "description": "Someone is described as a great bullying git."
+    },
+    {
+      "name": "tongue",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "The tongue of someone is mentioned as being four feet long."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "weasleys",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is a member of the Weasley family."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "bully",
+      "relationship_type": "is",
+      "description": "George describes someone as a great bullying git."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bully",
+      "relationship_type": "agrees_with",
+      "description": "Harry agrees with George that someone is a great bullying git."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "muggle",
+      "relationship_type": "concerned_about",
+      "description": "Mr. Weasley is campaigning against the mistreatment of Muggles."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "tongue",
+      "relationship_type": "owns",
+      "description": "George has a tongue that was four feet long before it was shrunk."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "weasleys",
+      "relationship_type": "angry_with",
+      "description": "Mr. Weasley is angry with his sons for their behavior."
+    }
+  ]
+}

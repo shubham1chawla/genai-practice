@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being comforted by Lupin."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is trying to console Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who murdered Harry's mother."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "comforted_by",
+      "description": "Lupin is trying to comfort Harry after he hears Voldemort murdering his mother."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "murderer_of",
+      "description": "Voldemort murdered Harry's mother."
+    }
+  ]
+}

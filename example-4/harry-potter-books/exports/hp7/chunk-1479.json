@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student at Hogwarts who is being forced to demonstrate what happens to those who oppose Voldemort. He grows rigid and still when Voldemort points his wand at him."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story who is trying to take over Hogwarts. He uses his wand to force Neville to demonstrate what happens to those who oppose him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is watching the scene unfold and feels compelled to act when he sees Neville in danger."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is an object that is being used by Voldemort to demonstrate his power. It bursts into flames when Voldemort uses his wand on it."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of followers who support Voldemort and raise their wands in unison to hold the fighters of Hogwarts at bay."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a school that is being attacked by Voldemort and his followers. The students are fighting back with loud war cries."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "neville",
+      "relationship_type": "forces",
+      "description": "Voldemort uses his wand to force Neville to demonstrate what happens to those who oppose him."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry potter",
+      "relationship_type": "holds_at_bay",
+      "description": "The Death Eaters raise their wands in unison to hold the fighters of Hogwarts at bay."
+    }
+  ]
+}

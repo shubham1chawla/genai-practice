@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to keep a secret from Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is complaining about homework."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend who is also concerned about homework and Ron's behavior."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The teacher who is imposing a punishment on Harry that he does not want to discuss with his friends."
+    },
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Umbridge's room where the punishment is being imposed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "conflict",
+      "description": "Harry and Umbridge are engaged in a private battle of wills, with Harry trying to resist Umbridge's punishment."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "concern",
+      "description": "Ron is concerned about the amount of homework he has, and Hermione is also worried about it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "secret-keeping",
+      "description": "Harry is keeping a secret from Ron about what is happening in Umbridge's room."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "secret-keeping",
+      "description": "Harry is also keeping a secret from Hermione about what is happening in Umbridge's room."
+    }
+  ]
+}

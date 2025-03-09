@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "students",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The students are the main characters in the story who are observing Professor Lupin."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The witch is a minor character who pushes the food cart and has been seen by the students before."
+    },
+    {
+      "name": "stranger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The stranger is Professor Lupin, a wizard who looks ill and exhausted."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "occupation",
+      "singular": false,
+      "description": "Professor Lupin is wearing a set of wizard's robes, indicating that he is a wizard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "students",
+      "entity_2": "witch",
+      "relationship_type": "seen_before",
+      "description": "The students have seen the witch before."
+    },
+    {
+      "entity_1": "students",
+      "entity_2": "stranger",
+      "relationship_type": "observing",
+      "description": "The students are observing Professor Lupin, who is introduced as a stranger."
+    },
+    {
+      "entity_1": "witch",
+      "entity_2": "food_cart",
+      "relationship_type": "pushing",
+      "description": "The witch is pushing the food cart."
+    },
+    {
+      "entity_1": "stranger",
+      "entity_2": "wizard's robes",
+      "relationship_type": "wearing",
+      "description": "Professor Lupin is wearing a set of wizard's robes."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as the one who gave Harry a warning last Monday. She is described as having beady, square-framed eyes."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the student who lost his temper in Professor Umbridge's class again."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who is speaking to Harry and warning him about his behavior."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is mentioned as the house that will lose points due to Harry's behavior."
+    },
+    {
+      "name": "ravenclaws",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Ravenclaws are mentioned as a group of students who are curious about what Professor McGonagall and Harry are discussing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "warns",
+      "description": "Professor McGonagall warns Harry Potter about his behavior."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "punishes",
+      "description": "Professor McGonagall takes points away from Gryffindor house due to Harry's behavior."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor umbridge",
+      "relationship_type": "disobeys",
+      "description": "Harry Potter disobeys Professor Umbridge by losing his temper in her class again."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry potter",
+      "relationship_type": "affected_by",
+      "description": "Gryffindor house is affected by Harry's behavior, resulting in the loss of points."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having earned fifty points for Gryffindor in the House Cup. He is also referred to by Percy as 'Ron's friend'."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as talking to Harry and expressing concern about Ron being in a girls' toilet again."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned by Percy as 'Harry's friend' and is also referred to by Harry when he goes to look for him in the bathroom."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned by Percy as being with Ron and is also referred to by Harry when he goes to look for them in the bathroom."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as having taken the lead in the House Cup."
+    },
+    {
+      "name": "moaning myrtle’s bathroom",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Moaning Myrtle's bathroom is where Harry goes to look for Ron and Hermione."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as someone who might be around and catch Ron and Hermione in the bathroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "earned_points_for",
+      "description": "Harry earned fifty points for Gryffindor in the House Cup."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Percy is concerned about Ron being in a girls' toilet again."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moaning myrtle’s bathroom",
+      "relationship_type": "went_to",
+      "description": "Harry went to Moaning Myrtle's bathroom to look for Ron and Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Ron is with Hermione in the bathroom."
+    }
+  ]
+}

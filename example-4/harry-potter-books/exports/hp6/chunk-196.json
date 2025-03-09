@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being given top-grade security status."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is driving Harry and his family to a destination, mentioned as saying 'Don't get used to it'."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Mr. Weasley, mentioned as being in the front seat with her husband."
+    },
+    {
+      "name": "ministry driver",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is driving Harry and his family to a destination, mentioned as saying 'Here you are, then'."
+    },
+    {
+      "name": "harry's invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry has stowed in his backpack, mentioned as being good enough for Dumbledore."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where additional security will be joining up with Harry and his family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry driver",
+      "relationship_type": "is_being_driven_by",
+      "description": "The Ministry driver is driving Harry to a destination, as mentioned in the text."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "spouse",
+      "description": "Mr. Weasley and Mrs. Weasley are married, as implied by their being together in the front seat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "will_join_additional_security_at",
+      "description": "Harry will be joining up with additional security at the Leaky Cauldron, as mentioned by Mr. Weasley."
+    }
+  ]
+}

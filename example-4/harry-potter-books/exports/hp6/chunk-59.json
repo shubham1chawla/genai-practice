@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one who turned to Narcissa's sister. He is a person who can help Narcissa."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is Snape's sister and she has nowhere else to turn for help."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is Narcissa's husband who is in jail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "narcissa",
+      "relationship_type": "helped_by",
+      "description": "Snape can help Narcissa."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "lucius",
+      "relationship_type": "husband_of",
+      "description": "Narcissa is the wife of Lucius."
+    }
+  ]
+}

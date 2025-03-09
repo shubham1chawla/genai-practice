@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts and is present in the conversation with Rita."
+    },
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita is a journalist for the Daily Prophet and is having a conversation with Hermione."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as someone who is leaning on the Prophet, preventing them from printing certain stories."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned in the context of a story that shows him in a good light, which the Prophet won't print."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is a newspaper that exists to sell itself and tell people what they want to hear."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita",
+      "entity_2": "fudge",
+      "relationship_type": "influence",
+      "description": "Rita mentions that Fudge is leaning on the Prophet, preventing them from printing certain stories."
+    },
+    {
+      "entity_1": "daily prophet",
+      "entity_2": "rita",
+      "relationship_type": "employee",
+      "description": "Rita is a journalist for the Daily Prophet."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "rita",
+      "relationship_type": "conversation",
+      "description": "Hermione and Rita are having a conversation about the Prophet's willingness to print certain stories."
+    }
+  ]
+}

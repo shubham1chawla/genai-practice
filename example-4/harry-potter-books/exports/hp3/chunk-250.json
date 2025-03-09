@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who wants to go to Hogsmeade. He mentions that his aunt and uncle are Muggles who don't understand about Hogwarts forms."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who is egging him on to ask Professor McGonagall for permission to go to Hogsmeade."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student in the class who assumes an 'all-for-the-best' expression when Ron calls Professor McGonagall names."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who denies Harry's request to go to Hogsmeade without his parent or guardian's permission."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "request_denied",
+      "description": "Harry asks Professor McGonagall for permission to go to Hogsmeade, but she denies his request."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "anger_caused",
+      "description": "Ron's behavior causes anger in Hermione."
+    }
+  ]
+}

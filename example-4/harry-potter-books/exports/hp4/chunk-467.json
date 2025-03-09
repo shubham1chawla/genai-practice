@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who is giving instructions to first years."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is standing in the fourth row from the front."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and classmate."
+    },
+    {
+      "name": "dennis creevey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dennis Creevey is a first year student who is shivering with anticipation."
+    },
+    {
+      "name": "first years",
+      "entity_type": "group",
+      "singular": false,
+      "description": "First years are students in their first year of school."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is a building where the students are standing."
+    },
+    {
+      "name": "forbidden forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Forbidden Forest is a location outside the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "first years",
+      "relationship_type": "gives_instructions_to",
+      "description": "Professor McGonagall gives instructions to first years."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry and Ron are friends."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry and Hermione are friends."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron and Harry are friends."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Hermione and Harry are friends."
+    },
+    {
+      "entity_1": "dennis creevey",
+      "entity_2": "first years",
+      "relationship_type": "part_of",
+      "description": "Dennis Creevey is a part of the first year group."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "walls",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The walls are described as moving around a lot."
+    },
+    {
+      "name": "portraits",
+      "entity_type": "artwork",
+      "singular": false,
+      "description": "The portraits are mentioned as people who kept going to visit each other."
+    },
+    {
+      "name": "coats of armour",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "Harry is sure the coats of armour could walk."
+    },
+    {
+      "name": "ghosts",
+      "entity_type": "supernatural entity",
+      "singular": false,
+      "description": "The ghosts are mentioned as gliding through doors suddenly."
+    },
+    {
+      "name": "Nearly Headless Nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He is happy to point new Gryffindors in the right direction."
+    },
+    {
+      "name": "Peeves the poltergeist",
+      "entity_type": "supernatural entity",
+      "singular": true,
+      "description": "He is worth two locked doors and a trick staircase if you meet him when you are late for class."
+    },
+    {
+      "name": "Gryffindors",
+      "entity_type": "group of people",
+      "singular": false,
+      "description": "They are mentioned as being pointed in the right direction by Nearly Headless Nick."
+    },
+    {
+      "name": "class",
+      "entity_type": "event",
+      "singular": true,
+      "description": "You meeting Peeves when you are late for class is a bad experience."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Peeves the poltergeist",
+      "entity_2": "Gryffindors",
+      "relationship_type": "harms",
+      "description": "Peeves would drop waste-paper baskets on Gryffindors' heads, pull rugs from under their feet, pelt them with bits of chalk or sneak up behind them."
+    },
+    {
+      "entity_1": "Peeves the poltergeist",
+      "entity_2": "class",
+      "relationship_type": "interferes_with",
+      "description": "You meeting Peeves when you are late for class is a bad experience."
+    }
+  ]
+}

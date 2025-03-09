@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as speaking directly to Mr. Bagman."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is introduced as the person Percy is talking to."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are mentioned as Percy's brothers who were bothering Mr. Bagman."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who would be rushing to tell Mrs. Weasley about the situation."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as the person Harry would be telling about the situation."
+    },
+    {
+      "name": "zokos joke shop",
+      "entity_type": "business",
+      "singular": false,
+      "description": "Zonko's Joke Shop is introduced as a business where Bagman has contacts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "fred and george",
+      "relationship_type": "advised_by",
+      "description": "Bagman was advising Fred and George on the marketing of their fake wands."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "zokos joke shop",
+      "relationship_type": "has_contacts",
+      "description": "Bagman has contacts at Zonko's Joke Shop."
+    }
+  ]
+}

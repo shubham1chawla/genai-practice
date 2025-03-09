@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is riding on a broomstick."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A large dragon that is guarding eggs."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is watching the scene and commenting on it."
+    },
+    {
+      "name": "eggs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The eggs that Harry is trying to steal from the dragon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dragon",
+      "relationship_type": "attack",
+      "description": "Harry is attacking the dragon by diving towards it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "eggs",
+      "relationship_type": "steal",
+      "description": "Harry is stealing the eggs from the dragon."
+    },
+    {
+      "entity_1": "dragon",
+      "entity_2": "harry",
+      "relationship_type": "defend",
+      "description": "The dragon is defending its eggs against Harry's attack."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "harry",
+      "relationship_type": "watch",
+      "description": "Bagman is watching Harry as he steals the eggs."
+    }
+  ]
+}

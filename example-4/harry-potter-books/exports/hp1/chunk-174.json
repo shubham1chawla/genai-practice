@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as swinging round."
+    },
+    {
+      "name": "speaker",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A plump woman who is talking to four boys."
+    },
+    {
+      "name": "boys",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Four boys with flaming red hair, described as pushing trunks and having an owl."
+    },
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An owl that the four boys have."
+    },
+    {
+      "name": "trolley",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A trolley pushed by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "boys",
+      "relationship_type": "following",
+      "description": "Harry is following the four boys."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "boys",
+      "relationship_type": "talking_to",
+      "description": "The speaker is talking to the four boys."
+    }
+  ]
+}

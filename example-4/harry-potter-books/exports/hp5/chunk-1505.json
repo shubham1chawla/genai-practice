@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is having a conversation with Hermione and Hagrid. He asks if it was him who put the niffler in Umbridge's office."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is having a conversation with Harry and Hagrid. She tries to reassure Harry that he will be okay."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who is having a conversation with Harry and Hermione. He explains why he thinks Umbridge wants to get rid of him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as a person who has a niffler in her office. Hagrid suspects that she wants to get rid of him because of his past with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who Hagrid will be able to help once he explains the special circumstances."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is mentioned as a person who was fired by Umbridge in front of the whole school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbridge",
+      "relationship_type": "suspects",
+      "description": "Hagrid suspects that Umbridge wants to get rid of him because of his past with Dumbledore."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "will_help",
+      "description": "Hagrid will be able to help Dumbledore once he explains the special circumstances."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "trelawney",
+      "relationship_type": "fired",
+      "description": "Umbridge fired Trelawney in front of the whole school."
+    }
+  ]
+}

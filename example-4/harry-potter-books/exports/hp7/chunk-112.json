@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a young wizard. He is described as the one who is in control of the motorbike and sidecar."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are trying to avoid the deadly trail of flame. They are described as swerving out of sight."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is thrown flat onto his back by the surge of speed and tries to regain control of the motorbike and sidecar."
+    },
+    {
+      "name": "umbrella",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hagrid's flowery pink umbrella, which he uses in an attempt to repair the damage to the sidecar."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "avoidance",
+      "description": "Harry sees the Death Eaters swerve out of sight to avoid the deadly trail of flame."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbrella",
+      "relationship_type": "possession",
+      "description": "Hagrid pulls his flowery pink umbrella from inside his jacket pocket in an attempt to repair the damage to the sidecar."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sidecar",
+      "relationship_type": "control",
+      "description": "Harry is in control of the motorbike and sidecar, and tries to regain control after it breaks away from the bike."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hog's head",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Hog's Head is a pub where Harry, Ron, and Hermione are sitting. It is mentioned as 'IN THE HOG'S HEAD' at the beginning of the text."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who orders three butterbeers from the barman. She says 'Three butterbeers, please'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who quickly pays for the butterbeers and passes over six Sickles to the barman. The barman's eyes travel over Harry, resting on his scar."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who murmurs about ordering anything they liked in the pub and suggests trying firewhisky."
+    },
+    {
+      "name": "barman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The barman is a man with dirty gray bandages who serves Harry, Ron, and Hermione drinks. He receives money from Harry and gives him change."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "barman",
+      "relationship_type": "paid",
+      "description": "Harry pays the barman six Sickles for three butterbeers. The text states 'I’ll get them,' said Harry quickly, passing over the silver.'"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "barman",
+      "relationship_type": "ordered_from",
+      "description": "Hermione orders three butterbeers from the barman. The text states '“Three butterbeers, please,” said Hermione.'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "barman",
+      "relationship_type": "ordered_from",
+      "description": "Ron suggests ordering firewhisky from the barman. The text states 'You know what?’ Ron murmured, looking over at the bar with enthusiasm. ‘We could order anything we liked in here...’"
+    }
+  ]
+}

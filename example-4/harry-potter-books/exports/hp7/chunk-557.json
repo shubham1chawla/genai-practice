@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "kraacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is a house-elf who has been loyal to the Black family. He is expected home by Harry and Hermione but receives Yaxley instead."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Yaxley is a Death Eater who arrives at Grimmauld Place in place of Kreacher."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main character and is worried about Kreacher's safety."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "kraacher",
+      "relationship_type": "replaced_by",
+      "description": "Yaxley replaces Kreacher at Grimmauld Place."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "kraacher",
+      "relationship_type": "concerned_for",
+      "description": "Harry is concerned about Kreacher's safety and well-being."
+    }
+  ]
+}

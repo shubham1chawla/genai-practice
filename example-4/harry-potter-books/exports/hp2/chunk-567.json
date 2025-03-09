@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as looking as though he'd just been told he had to go and live in the Forbidden Forest."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being asked by Ron if he could imagine taking exams with him."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall makes an announcement at breakfast about Dumbledore's return and the revival of those who have been Petrified."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as returning."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout informs Professor McGonagall that the Mandrakes are ready for cutting."
+    },
+    {
+      "name": "mandrakes",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "The Mandrakes are mentioned as being ready for cutting and will be used to revive those who have been Petrified."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as the house of the heir."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is excited about the return of Quidditch matches."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "dumbledore",
+      "relationship_type": "returning_to_school",
+      "description": "Professor McGonagall announces that Dumbledore is returning to school."
+    },
+    {
+      "entity_1": "mandrakes",
+      "entity_2": "people",
+      "relationship_type": "used_for_revival",
+      "description": "The Mandrakes will be used to revive those who have been Petrified."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "mandrakes",
+      "relationship_type": "prepared_by",
+      "description": "Professor McGonagall mentions that Professor Sprout has informed her that the Mandrakes are ready for cutting."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "quidditch matches",
+      "relationship_type": "excited_about",
+      "description": "Wood is excited about the return of Quidditch matches."
+    },
+    {
+      "entity_1": "slytherin",
+      "entity_2": "heir",
+      "relationship_type": "house_of",
+      "description": "Slytherin is mentioned as the house of the heir."
+    }
+  ]
+}

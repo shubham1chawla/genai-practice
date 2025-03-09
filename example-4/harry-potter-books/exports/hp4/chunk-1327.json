@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, giving instructions to his professors."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, tasked with fetching a Truth Potion and Winky."
+    },
+    {
+      "name": "minerva mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, tasked with bringing up Hagrid's dog to Dumbledore's office."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, whose dog is being fetched by McGonagall."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who lives in the kitchens of Hogwarts."
+    },
+    {
+      "name": "truth potion",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A magical potion that reveals truth, requested by Dumbledore."
+    },
+    {
+      "name": "hagrid's dog",
+      "entity_type": "dog",
+      "singular": true,
+      "description": "A large black dog belonging to Hagrid."
+    },
+    {
+      "name": "kitchens",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The area where Winky lives and works."
+    },
+    {
+      "name": "pumpkin patch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in Hagrid's garden."
+    },
+    {
+      "name": "office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dumbledore's office, where he gives instructions to his professors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "severus snape",
+      "relationship_type": "task_assignment",
+      "description": "Dumbledore assigns Snape the task of fetching a Truth Potion and Winky."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "minerva mcgonagall",
+      "relationship_type": "task_assignment",
+      "description": "Dumbledore assigns McGonagall the task of bringing up Hagrid's dog to his office."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "truth potion",
+      "relationship_type": "possession",
+      "description": "Snape is tasked with fetching a Truth Potion."
+    },
+    {
+      "entity_1": "minerva mcgonagall",
+      "entity_2": "hagrid's dog",
+      "relationship_type": "transportation",
+      "description": "McGonagall is tasked with bringing up Hagrid's dog to Dumbledore's office."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "office",
+      "relationship_type": "location",
+      "description": "Dumbledore's office is where he gives instructions and receives the dog."
+    }
+  ]
+}

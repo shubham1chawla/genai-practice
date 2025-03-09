@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the Gryffindor players who will be playing in the Quidditch match. He is directly addressed by Professor McGonagall."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the Gryffindor players who will be playing in the Quidditch match. He is directly addressed by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who abstained from giving homework to Harry and Ron in order to give them extra time to practice for the Quidditch match. She is described as being 'loftily' spoken."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Snape is mentioned as someone who has been part of the Slytherin team and has booked the Quidditch pitch for their practice. He is also accused of turning a deaf ear to reports of Slytherin's attempts to hex Gryffindor players."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Alicia Spinnet is mentioned as one of the Gryffindor players who has been affected by Slytherin's hexing. She is described as having her eyebrows growing so thick and fast that they obscured her vision and obstructed her mouth."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin is mentioned as the opposing team in the Quidditch match. They are accused of attempting to hex Gryffindor players."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is mentioned as Harry and Ron's house. They are accused of being affected by Slytherin's hexing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "addressed",
+      "description": "Professor McGonagall directly addresses Harry in the text."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "ron",
+      "relationship_type": "addressed",
+      "description": "Professor McGonagall directly addresses Ron in the text."
+    },
+    {
+      "entity_1": "slytherin",
+      "entity_2": "gryffindor",
+      "relationship_type": "hexing",
+      "description": "Slytherin is accused of attempting to hex Gryffindor players."
+    }
+  ]
+}

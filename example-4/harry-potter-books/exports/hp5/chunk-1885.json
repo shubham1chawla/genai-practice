@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is talking about her sad experience and mentioning that she still has her dad."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is uncertain and doesn't know what to say or think about Luna's claim."
+    },
+    {
+      "name": "dad",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Luna mentions that she still has her dad, implying that he is alive."
+    },
+    {
+      "name": "mum",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Luna talks about not seeing her mum again, suggesting that her mum may be deceased."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "luna",
+      "entity_2": "dad",
+      "relationship_type": "has",
+      "description": "Luna has her dad."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "uncertain_about",
+      "description": "Harry is uncertain about Luna's claim that she heard voices behind the veil."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "mum",
+      "relationship_type": "did_not_see_again",
+      "description": "Luna talks about not seeing her mum again, implying a past relationship or interaction."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "heard_voices_with",
+      "description": "Harry and Luna both heard voices behind the veil."
+    }
+  ]
+}

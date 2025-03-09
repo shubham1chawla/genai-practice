@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character of the story who is trying to get closer to Voldemort. He is mentioned as being close to his goal but is thwarted by Malfoy."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who has run out of earshot with Hermione while searching for the diadem."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is another friend of Harry's who has run out of earshot with Ron while searching for the diadem."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is a character in the story who is being referred to by Harry. He is mentioned as someone that Harry and his friends are trying to get closer to."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Crabbe is one of Voldemort's followers who is speaking with Harry. He is described as being enormous but has a surprisingly soft voice."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is another follower of Voldemort who is thwarting Harry's plans to get closer to him."
+    },
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diadem is an object that Ron and Hermione are searching for. It is mentioned as something that they have run out of earshot to find."
+    },
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Potter is another name for Harry, the main character of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target",
+      "description": "Harry is trying to get closer to Voldemort."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "companion",
+      "description": "Ron and Hermione are searching for the diadem together."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "voldemort",
+      "relationship_type": "follower",
+      "description": "Crabbe is a follower of Voldemort."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "voldemort",
+      "relationship_type": "follower",
+      "description": "Malfoy is also a follower of Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crabbe",
+      "relationship_type": "interact",
+      "description": "Harry is interacting with Crabbe."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "obstacle",
+      "description": "Malfoy is thwarting Harry's plans."
+    }
+  ]
+}

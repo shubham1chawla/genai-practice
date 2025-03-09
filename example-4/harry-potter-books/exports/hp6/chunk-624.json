@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic who is trying to convince Harry that he doesn't know him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is being targeted by Scrimgeour."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's sister who has a clean plate."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is also at the table and has a clean plate."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another person at the table with a clean plate."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin who wants to look up his family."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person at the table who is trying to speak."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another person at the table who is trying to speak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "targeting",
+      "description": "Scrimgeour is targeting Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "scrimgeour",
+      "relationship_type": "being_targeted",
+      "description": "Harry is being targeted by Scrimgeour."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "family",
+      "relationship_type": "looking_up",
+      "description": "Percy wants to look up his family."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "speaking_to",
+      "description": "Scrimgeour is trying to speak to Harry alone."
+    }
+  ]
+}

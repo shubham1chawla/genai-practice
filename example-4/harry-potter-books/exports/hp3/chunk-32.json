@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are the family that Harry lives with. They are mentioned as having given Harry a pair of Uncle Vernon's old socks."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is one of the Dursleys and is mentioned as getting heavily to his feet to leave for the station."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is another member of the Dursley family and is mentioned as smoothing Dudley's hair and buying him a new bow tie."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "child",
+      "singular": true,
+      "description": "Dudley is Petunia's son and is mentioned as having his attention returned to the television after Uncle Vernon finished threatening Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who lives with the Dursleys. He is mentioned as sitting in a kind of horriﬁed trance and then following Uncle Vernon to the front door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "follows",
+      "description": "Harry follows Uncle Vernon to the front door."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "dudley",
+      "relationship_type": "mother_child",
+      "description": "Petunia is Dudley's mother and buys him a new bow tie."
+    }
+  ]
+}

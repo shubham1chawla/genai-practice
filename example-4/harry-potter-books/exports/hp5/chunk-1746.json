@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is mentioned as a Death Eater who has met Neville's parents and is now torturing him with the Crucio spell. She is described as having an evil smile and being 'transported' with excitement."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville is mentioned as a boy who has been captured by Bellatrix and her Death Eaters. He fights against his captor's grip and roars at Bellatrix to not give in to the prophecy."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as someone who has a prophecy that Bellatrix wants him to give her. Neville roars at Harry to not give in to the prophecy."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Longbottom is mentioned as Neville's parents' name and also as Neville himself who is being tortured by Bellatrix."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of dark wizards that Bellatrix is part of. They are mentioned as shouting for someone to stun Neville."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "neville",
+      "relationship_type": "tortures",
+      "description": "Bellatrix is torturing Neville with the Crucio spell, as described in the text: 'She raised her wand. “Crucio!”'."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_give_prophecy",
+      "description": "Bellatrix wants Harry to give her a prophecy, as described in the text: 'Unless Potter wants to give us the prophecy —'."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "bellatrix",
+      "relationship_type": "resists_torture",
+      "description": "Neville is resisting Bellatrix's torture, as described in the text: 'I DOE YOU HAB!' roared Neville, and he fought so hard against his captor’s encircling grip that the Death Eater shouted, “Someone Stun him!”'"
+    }
+  ]
+}

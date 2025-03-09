@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is being raised into the air and his wand is still connected to Harry's by a thread of shimmering golden light. (The text states: \"He and Voldemort were both being raised into the air, their wa nds still connected by that thread of shimmering golden light.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being raised into the air and his wand is still connected to Voldemort's by a thread of shimmering golden light. (The text states: \"He and Voldemort were both being raised into the air, their wa nds still connected by that thread of shimmering golden light.\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort who are shouting and asking for instructions. (The text states: \"The Death Eaters were shouting; they we re asking Voldemort fo r instructions;\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "connected_by_thread",
+      "description": "Harry and Voldemort are connected by a thread of shimmering golden light. (The text states: \"He and Voldemort were both being raised into the air, their wa nds still connected by that thread of shimmering golden light.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "surrounded_by",
+      "description": "Harry is surrounded by Death Eaters who are closing in and reforming the circle around him. (The text states: \"The Death Eaters were shouting; they we re asking Voldemort fo r instructions; they were closing in, reforming the circ le around Harry and Voldemort,\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "surrounded_by",
+      "description": "Voldemort is surrounded by Death Eaters who are closing in and reforming the circle around him. (The text states: \"The Death Eaters were shouting; they we re asking Voldemort fo r instructions; they were closing in, reforming the circ le around Harry and Voldemort,\")"
+    }
+  ]
+}

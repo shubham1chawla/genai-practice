@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley's hand had switched to travelling. 'He's coming!' And sure enough, a moment later there was a knock on the back door."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley jumped up and hurried to it; with one hand on the doorknob and her face pressed against the wood she called softly , ‘Arthur, is that you?’"
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "‘Yes,’ came Mr Weasley’s weary voice. ‘But I would say that even if I were a Death Eater, dear. Ask the question!’"
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "‘But I would say that even if I were a Death Eater, dear. Ask the question!’"
+    },
+    {
+      "name": "aeroplanes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "‘To find out how aeroplanes stay up.’"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "knock_on_door",
+      "description": "Mr Weasley’s hand had switched to travelling. ‘He’s coming!’ And sure enough, a moment later there was a knock on the back door."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "holding_door_knob",
+      "description": "Mrs Weasley nodded and turned the doorknob, but appar-ently Mr Weasley was holding tight to it on the other side,"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "calling_to_mrs_weasley",
+      "description": "‘Molly! I’ve got to ask you your question first!’"
+    }
+  ]
+}

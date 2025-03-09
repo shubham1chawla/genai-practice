@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "miss patil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Patil is a person being addressed by Harry Potter. She is mentioned in the context of being quiet."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who is being interrupted by Mr Weasley. He is also mentioned as having caught sight of him with Crabbe and Goyle."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is a person who interrupts Malfoy and tells Harry Potter to follow him."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in this context. He is being told by Mr Weasley to follow him."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is a person who is mentioned as being with Malfoy and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a person who is mentioned as being with Malfoy and Crabbe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "malfoy",
+      "relationship_type": "interrupted_by",
+      "description": "Mr Weasley interrupts Malfoy."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "ordered_to_follow",
+      "description": "Mr Weasley tells Harry Potter to follow him."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "associated_with",
+      "description": "Malfoy is associated with Crabbe and Goyle, as they are mentioned together in the context of being triumphant."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "associated_with",
+      "description": "Malfoy is associated with Crabbe and Goyle, as they are mentioned together in the context of being triumphant."
+    }
+  ]
+}

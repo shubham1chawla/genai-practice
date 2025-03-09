@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who is pointing a finger at Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts who is being questioned by Snape."
+    },
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Potter is a student at Hogwarts who attacked Malfoy."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Goyle is a student at Hogwarts who was hit by Potter."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who has been forced to show Snape her teeth."
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Pansy Parkinson is a student at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "questioned",
+      "description": "Snape is questioning Malfoy."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "malfoy",
+      "relationship_type": "attacked",
+      "description": "Potter attacked Malfoy."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "goyle",
+      "relationship_type": "hit",
+      "description": "Potter hit Goyle."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "hermione",
+      "relationship_type": "examined",
+      "description": "Snape examined Hermione's teeth."
+    }
+  ]
+}

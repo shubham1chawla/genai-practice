@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is riding a motorbike."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is riding with Harry on the motorbike."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl that has exploded."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are chasing Harry and Hagrid."
+    },
+    {
+      "name": "motorbike",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The vehicle that Harry and Hagrid are riding on."
+    },
+    {
+      "name": "sidecar",
+      "entity_type": "vehicle_part",
+      "singular": true,
+      "description": "A part of the motorbike that has exploded."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "motorbike",
+      "relationship_type": "riding_on",
+      "description": "Harry is riding on the motorbike."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "motorbike",
+      "relationship_type": "riding_with",
+      "description": "Hagrid is riding with Harry on the motorbike."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "hedwig",
+      "relationship_type": "attacking",
+      "description": "The Death Eaters are attacking Hedwig."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sidecar",
+      "relationship_type": "target_of_attack",
+      "description": "Harry is the target of an attack on the sidecar."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "motorbike",
+      "relationship_type": "chasing",
+      "description": "The Death Eaters are chasing Harry and Hagrid on the motorbike."
+    }
+  ]
+}

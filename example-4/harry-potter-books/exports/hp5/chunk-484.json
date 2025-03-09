@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "exams",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "Exams are mentioned as something that is coming up for the students."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a student who is reminiscing about past exams and his friends' breakdowns."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is also a student who is reminiscing with Fred about their past exams and experiences."
+    },
+    {
+      "name": "patricia stimpson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Patricia Stimpson is mentioned as someone who had minor breakdowns during the O.W.L.s exams."
+    },
+    {
+      "name": "kenneth towner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kenneth Towler is mentioned as someone who came out in boils due to Bulbadox Powder being put in his pajamas."
+    },
+    {
+      "name": "bulbadox powder",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Bulbadox Powder is a substance that caused Kenneth Towler's breakout of boils."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "friendship",
+      "description": "Fred and George are friends who are reminiscing about their past exams and experiences."
+    },
+    {
+      "entity_1": "patricia stimpson",
+      "entity_2": "exams",
+      "relationship_type": "affected_by",
+      "description": "Patricia Stimpson was affected by the O.W.L.s exams, having minor breakdowns during them."
+    },
+    {
+      "entity_1": "kenneth towner",
+      "entity_2": "bulbadox powder",
+      "relationship_type": "caused_by",
+      "description": "Kenneth Towler's breakout of boils was caused by Bulbadox Powder being put in his pajamas."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as someone who promised to go down and see Hagrid. He is also referred to as 'you' by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is staying behind with Hermione in the dormitory."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is staying behind with Ron in the dormitory and asks Harry to say hello to Hagrid for them."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who has just returned and Harry promised to go down and see him."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "You-Know-Who is a nickname for Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "visit",
+      "description": "Harry promised to go down and see Hagrid."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "stay_together",
+      "description": "Ron is staying behind with Hermione in the dormitory."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "avoidance",
+      "description": "Harry and his friends are trying to avoid You-Know-Who."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "ask_for_update",
+      "description": "Hermione asks Harry to ask Hagrid about his little friend."
+    }
+  ]
+}

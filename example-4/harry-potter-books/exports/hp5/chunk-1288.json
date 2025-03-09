@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher who has a Pensieve where he stores his thoughts. He is checking if the thoughts are still there."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Pensieve is an object used by Snape to store his thoughts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has broken into Snape's memories and seen scenes from Snape's childhood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "pensieve",
+      "relationship_type": "owns",
+      "description": "Snape owns the Pensieve where he stores his thoughts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "has_been_in_memory_of",
+      "description": "Harry has broken into Snape's memories and seen scenes from Snape's childhood."
+    }
+  ]
+}

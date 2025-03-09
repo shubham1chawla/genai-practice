@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, described as someone who is feared by others. (Excerpt: 'THE  ONLY  ONE HE  EVER FEARED')"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is being protected by Harry and Fawkes. (Excerpts: 'There was a burst of flame in midair above Dumbledore', 'Dumbledore brandished his wand')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A phoenix that saves Dumbledore from a jet of green light. (Excerpts: 'Fawkes swooped down in front of Dumbledore', 'He burst into flame and fell to the floor')"
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A snake that is attacking Dumbledore on Voldemort's orders. (Excerpt: 'The snake re ared from the floor, ready to strike —')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snake",
+      "relationship_type": "controls",
+      "description": "Voldemort is controlling the snake to attack Dumbledore. (Excerpt: 'the snake had been an instant from sinking its fangs into him, flew high into the air and vanished in a wisp of dark smoke;')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "threatens",
+      "description": "Voldemort is threatening Dumbledore with his wand. (Excerpt: 'one more jet of green light had flown at Dumbledore from Voldemort’s wand')"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "protects",
+      "description": "Fawkes is protecting Dumbledore from a jet of green light. (Excerpts: 'Fawkes swooped down in front of Dumbledore', 'He burst into flame and fell to the floor')"
+    },
+    {
+      "entity_1": "snake",
+      "entity_2": "dumbledore",
+      "relationship_type": "attacks",
+      "description": "The snake is attacking Dumbledore on Voldemort's orders. (Excerpt: 'the snake re ared from the floor, ready to strike —')"
+    }
+  ]
+}

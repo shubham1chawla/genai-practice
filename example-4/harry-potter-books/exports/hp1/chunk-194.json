@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is particularly famous for his defeat of the dark wizard Grindelwald in 1945, for the discovery of the twelve uses of dragon’s blood and his work on alchemy with his partner, Nicolas Flamel."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is particularly famous for his defeat of the dark wizard Grindelwald in 1945"
+    },
+    {
+      "name": "nicolas flamel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore enjoys chamber music and tenpin bowling. His partner in alchemy work is Nicolas Flamel."
+    },
+    {
+      "name": "morgana",
+      "entity_type": "card",
+      "singular": true,
+      "description": "Ron has Morgana card"
+    },
+    {
+      "name": "chocolate frogs",
+      "entity_type": "item",
+      "singular": false,
+      "description": "A pile of Chocolate Frogs waiting to be unwrapped."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grindelwald",
+      "relationship_type": "defeated_by",
+      "description": "Professor Dumbledore is particularly famous for his defeat of the dark wizard Grindelwald in 1945"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "nicolas flamel",
+      "relationship_type": "partner_in_alchemy_work",
+      "description": "His partner in alchemy work is Nicolas Flamel."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "morgana",
+      "relationship_type": "has_card",
+      "description": "Ron has Morgana card"
+    }
+  ]
+}

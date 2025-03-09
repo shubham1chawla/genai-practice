@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as the one whose office door Harry points his wand at to cast a spell, so that she would not come running. (\"Harry pointed his wand hastily at the door of Madam Pomfrey's office and muttered 'Muffliato!' so that she would not come running.\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who points his wand at Madam Pomfrey's office door and casts a spell. (\"Harry pointed his wand hastily at the door of Madam Pomfrey's office and muttered 'Muffliato!' so that she would not come running.\")"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is mentioned as one of the house-elves fighting in the dormitory. (\"Two house-elves were rolling around on the floor in the middle of the dormitory, one wearing a shrunken maroon jumper and several woolly hats, the other, a filthy old rag strung over his hips like a loincloth.\")"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is mentioned as defending Harry's name in front of Kreacher. (\"'Kreacher will not insult Harry Potter in front of Dobby, no he won't, or Dobby will shut Kreacher's mouth for him!' cried Dobby in a high-pitched voice.\")"
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is mentioned as appearing in midair above the wrestling elves. (\"Then there was another loud bang, and Peeves the poltergeist appeared in midair above the wrestling elves.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "dobby",
+      "relationship_type": "insulted_by",
+      "description": "Kreacher insults Harry Potter in front of Dobby, which makes Dobby defend Harry's name. (\"'Kreacher will not insult Harry Potter in front of Dobby, no he won't, or Dobby will shut Kreacher's mouth for him!' cried Dobby in a high-pitched voice.\")"
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "kreacher",
+      "relationship_type": "appeared_above",
+      "description": "Peeves appears in midair above the wrestling elves, which includes Kreacher. (\"Then there was another loud bang, and Peeves the poltergeist appeared in midair above the wrestling elves.\")"
+    }
+  ]
+}

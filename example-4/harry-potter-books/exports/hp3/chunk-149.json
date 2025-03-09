@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is a nurse who is trying to peer into Harry's eyes. She mentions that Professor Lupin gave Harry some chocolate."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has already had some chocolate given by Professor Lupin."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Lupin is a Defense Against the Dark Arts teacher who gave Harry and others some chocolate."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who asks Harry if he feels all right."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Miss Granger is a student whose course schedule Madam Pomfrey wants to discuss with her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry",
+      "relationship_type": "examines",
+      "description": "Madam Pomfrey tries to peer into Harry's eyes."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "harry",
+      "relationship_type": "gave chocolate",
+      "description": "Professor Lupin gave Harry some chocolate."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "miss granger",
+      "relationship_type": "discusses course schedule",
+      "description": "Madam Pomfrey wants to discuss Miss Granger's course schedule with her."
+    }
+  ]
+}

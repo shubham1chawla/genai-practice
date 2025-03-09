@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is the son of Vernon and Petunia Dursley. He is mentioned as having his hands jerked upward to cover his mouth when he sees Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a wizard who has been attacked by Death Eaters. He is mentioned as laughing at Dudley's question and warning him about the dangers of being found by wizards."
+    },
+    {
+      "name": "vernon dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vernon Dursley is Dudley's father. He is mentioned as blustering in response to Harry's warnings."
+    },
+    {
+      "name": "petunia dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia Dursley is Dudley's mother. She is mentioned as looking at her husband Uncle Vernon."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a wizard who is mentioned as smashing something down a wooden front door in the distant past."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of dark wizards who have attacked Harry. They are mentioned as being able to find and attack Dudley once he is seventeen."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Dementors are a group of dark creatures that feed on fear and despair. They are mentioned as being one of the dangers that Harry warns Dudley about."
+    },
+    {
+      "name": "inferi",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Inferi are dead bodies enchanted by a Dark Wizard. They are mentioned as being one of the dangers that Harry warns Dudley about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "can_be_attacked_by",
+      "description": "Harry is warning Dudley that Death Eaters will be able to find and attack him once he is seventeen."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "inferi",
+      "relationship_type": "will_be_attacked_by",
+      "description": "Dudley will be attacked by Inferi once he is seventeen, according to Harry's warning."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "can_be_attacked_by",
+      "description": "Harry warns Dudley that Dementors are one of the dangers that will be able to find and attack him once he is seventeen."
+    },
+    {
+      "entity_1": "vernon dursley",
+      "entity_2": "harry",
+      "relationship_type": "has_conflict_with",
+      "description": "Vernon Dursley has a conflict with Harry, as evidenced by his blustering response to Harry's warnings."
+    }
+  ]
+}

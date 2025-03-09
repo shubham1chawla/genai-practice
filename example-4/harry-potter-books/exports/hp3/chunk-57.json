@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "knight bus",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The Knight Bus is a magical vehicle that can take people anywhere on land. It has headlamps and was empty at the time of Harry's encounter."
+    },
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is a driver of the Knight Bus who is suspicious of Harry and asks him questions about his scar and identity."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is trying to avoid detection by the Ministry of Magic. He is on the run and uses Neville Longbottom as an alias."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is an organization that is looking for Harry, who has a scar on his forehead."
+    },
+    {
+      "name": "nevile longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom is a name used by Harry as an alias to avoid detection by the Ministry of Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "stan",
+      "entity_2": "knight bus",
+      "relationship_type": "driver_of",
+      "description": "Stan drives the Knight Bus."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "target_of_search",
+      "description": "The Ministry of Magic is looking for Harry, who has a scar on his forehead."
+    },
+    {
+      "entity_1": "stan",
+      "entity_2": "harry",
+      "relationship_type": "interrogator",
+      "description": "Stan asks Harry questions about his identity and scar."
+    }
+  ]
+}

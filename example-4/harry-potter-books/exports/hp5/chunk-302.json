@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as speaking in a testy voice and expressing his opinion about the magic performed by Harry."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle is mentioned as referring to non-magical people, specifically those who are present when Harry performs magic."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as nodding in agreement with Fudge's opinion."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who performs magic and explains his actions to the others."
+    },
+    {
+      "name": "madam bones",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Bones is mentioned as responding to Harry's explanation with a question about dementors."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Dementors are mentioned as the reason why Harry performed magic in plain view of Muggles."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fudge",
+      "relationship_type": "opinion",
+      "description": "Harry's actions and explanations are met with Fudge's opinion, which is expressed as a criticism."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "fudge",
+      "relationship_type": "agreement",
+      "description": "Percy nods in agreement with Fudge's opinion."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam bones",
+      "relationship_type": "explanation",
+      "description": "Harry explains his actions to Madam Bones, who responds with a question about dementors."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry",
+      "relationship_type": "cause",
+      "description": "Dementors are mentioned as the reason why Harry performed magic in plain view of Muggles."
+    }
+  ]
+}

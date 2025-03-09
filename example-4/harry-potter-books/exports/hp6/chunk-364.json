@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as having eyes that discerned the building amidst the trees."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who moved forwards quietly, mentioned alongside Harry."
+    },
+    {
+      "name": "the old trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Trees that cast deep shadows and block light from the valley below."
+    },
+    {
+      "name": "the building",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A house with mossy walls and a roof in disrepair, located amidst the trees."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ogden",
+      "relationship_type": "moved near",
+      "description": "Ogden moved forwards quietly, it seemed to Harry."
+    },
+    {
+      "entity_1": "the building",
+      "entity_2": "harry",
+      "relationship_type": "visible from",
+      "description": "Harry's eyes discerned the building amidst the trees."
+    }
+  ]
+}

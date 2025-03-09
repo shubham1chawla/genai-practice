@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Granger is being addressed by an icy voice behind her."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape glided over to their desk while they were talking."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is being mentioned as the house that lost points."
+    },
+    {
+      "name": "potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Potter is being mentioned in Rita Skeeter's article."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter wrote an article about Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "punished",
+      "description": "Snape took points from Gryffindor."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "rita skeeter",
+      "relationship_type": "mentioned_in_article",
+      "description": "Rita Skeeter wrote an article about Potter."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "miss granger",
+      "relationship_type": "addressed",
+      "description": "Snape addressed Miss Granger."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "punished",
+      "description": "Potter lost points for Gryffindor."
+    }
+  ]
+}

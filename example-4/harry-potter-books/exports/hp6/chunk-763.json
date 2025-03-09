@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is talking to Harry and expressing his opinion about Harry's obsession with Malfoy. He suggests that there is no rule saying only one person can be plotting something at a time."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is talking to Ron and expressing his frustration about not being able to catch Malfoy. He wants to know where Malfoy is going when he disappears off the map."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who is being talked about by Harry and Ron. Harry is obsessed with catching him at something."
+    },
+    {
+      "name": "hogsmeade village",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is a location that Ron suggests Malfoy might be going to when he disappears off the map."
+    },
+    {
+      "name": "secret passages",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Secret passages are locations on the map that Harry and Ron are talking about. They think they are being watched now."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "obsession",
+      "description": "Harry is obsessed with catching Malfoy at something."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hogsmeade village",
+      "relationship_type": "suggestion",
+      "description": "Ron suggests that Malfoy might be going to Hogsmeade when he disappears off the map."
+    }
+  ]
+}

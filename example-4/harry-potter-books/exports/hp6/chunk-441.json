@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who shivered at the warm air."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has missed three little suppers hosted by Professor Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Slughorn is a teacher who hosts little suppers and invites Harry to attend."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who loves the crystallised pineapple hosted by Professor Slughorn."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "invites",
+      "description": "Professor Slughorn invites Harry to attend his little suppers."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "ron",
+      "relationship_type": "invites",
+      "description": "Professor Slughorn also invites Ron to attend his little suppers."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch",
+      "relationship_type": "practices",
+      "description": "Harry has been practicing Quidditch, which is why he cannot attend Professor Slughorn's little supper."
+    }
+  ]
+}

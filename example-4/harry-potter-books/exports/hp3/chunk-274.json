@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor portrait hole",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Gryﬀindor portrait hole is a location where the Fat Lady is hiding. It is mentioned that Harry will be able to move them back in tomorrow."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is a person who refused to let Black in without the password and was attacked by him. She is still very distressed."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who tried to enter the Gryﬀindor portrait hole without the password and was refused by the Fat Lady."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who will restore the Fat Lady once she's calmed down."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who searched for Black on the third ﬂoor and in the dungeons."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is a professor whose room in the Astronomy tower has been searched."
+    },
+    {
+      "name": "argyllshire",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Argyllshire is a location where the Fat Lady is hiding in a map."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "fat lady",
+      "relationship_type": "attacked_by",
+      "description": "Black attacked the Fat Lady without the password."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "black",
+      "relationship_type": "searched_for",
+      "description": "Snape searched for Black on the third ﬂoor and in the dungeons."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "fat lady",
+      "relationship_type": "restored",
+      "description": "Filch will restore the Fat Lady once she's calmed down."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "black",
+      "relationship_type": "searched_for",
+      "description": "Trelawney's room in the Astronomy tower has been searched for Black."
+    }
+  ]
+}

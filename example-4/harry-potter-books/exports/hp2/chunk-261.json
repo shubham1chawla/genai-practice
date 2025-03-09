@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as wanting to warm up his feet and asking about Moaning Myrtle."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as being nervous and suggesting caution when walking through the ghosts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's, mentioned as stopping abruptly to avoid talking to Moaning Myrtle."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A ghost who haunts the girls' toilet on the first floor, mentioned by Hermione as someone they don't want to talk to."
+    },
+    {
+      "name": "fat friar",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A cheerful Hufflepuff ghost, mentioned as talking to a knight with an arrow sticking out of his forehead."
+    },
+    {
+      "name": "bloody baron",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A gaunt, staring Slytherin ghost covered in silver bloodstains, given a wide berth by the other ghosts."
+    },
+    {
+      "name": "knight",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A knight with an arrow sticking out of his forehead, mentioned as talking to the Fat Friar."
+    },
+    {
+      "name": "nuns",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of gloomy nuns, mentioned as being present on the dance floor."
+    },
+    {
+      "name": "ragged man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ragged man wearing chains, mentioned as being present on the dance floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "knows",
+      "description": "Harry is aware of Moaning Myrtle's presence and haunts."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "knows",
+      "description": "Hermione is also aware of Moaning Myrtle's presence and haunts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fat friar",
+      "relationship_type": "sees",
+      "description": "Harry sees the Fat Friar talking to a knight with an arrow sticking out of his forehead."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "fears",
+      "description": "Hermione is afraid of Moaning Myrtle and wants to avoid her."
+    },
+    {
+      "entity_1": "bloody baron",
+      "entity_2": "other ghosts",
+      "relationship_type": "is_given_a_wide_berth_by",
+      "description": "The Bloody Baron is given a wide berth by the other ghosts due to his intimidating appearance."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is expected to make a speech at the end-of-term feast."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard whose return was mentioned by Dumbledore last year."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist who is worried about Dumbledore's speech and finds a mysterious package in his trunk."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather who gave him the mysterious package with a note."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_about",
+      "description": "Harry is worried that Dumbledore will make some reference to him in his speech."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "mentioned_by",
+      "description": "Dumbledore mentioned Voldemort's return last year."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "given_package_to",
+      "description": "Sirius gave Harry the mysterious package with a note."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "received_help_from",
+      "description": "The note from Sirius says 'Use it if you need me'."
+    }
+  ]
+}

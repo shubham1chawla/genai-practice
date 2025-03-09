@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Goblet of Fire is a magical object that stands on a table in the Great Hall. It is tiny and has to be stood on a chair to see it properly."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. He is explaining the rules of the tournament to the champions."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who has examined the instructions for the tasks with Mr. Bagman."
+    },
+    {
+      "name": "mr bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Bagman is a person who has examined the instructions for the tasks with Mr. Crouch."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who places the Goblet of Fire on the table before Dumbledore."
+    },
+    {
+      "name": "ches t",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ches t is an object that Filch places carefully on the table before Dumbledore."
+    },
+    {
+      "name": "tasks",
+      "entity_type": "event",
+      "singular": false,
+      "description": "There will be three tasks in the tournament, spaced throughout the school year."
+    },
+    {
+      "name": "challenge",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The champions will face a challenge in each of the three tasks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "goblet of fire",
+      "relationship_type": "has",
+      "description": "Dumbledore is standing next to the Goblet of Fire, which has been placed on a table in the Great Hall."
+    },
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "tasks",
+      "relationship_type": "examined",
+      "description": "Mr. Crouch and Mr. Bagman have examined the instructions for the tasks."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "champions",
+      "relationship_type": "addressed",
+      "description": "Dumbledore is addressing the champions, explaining the rules of the tournament."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "goblet of fire",
+      "relationship_type": "placed",
+      "description": "Filch has placed the Goblet of Fire on the table before Dumbledore."
+    },
+    {
+      "entity_1": "tasks",
+      "entity_2": "champions",
+      "relationship_type": "will face",
+      "description": "The champions will face three tasks in the tournament."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor of Defense Against the Dark Arts who is teaching Harry, Ron, and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, a student at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends and classmates."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends and classmates."
+    },
+    {
+      "name": "binns",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The teacher who is teaching the subject of History of Magic."
+    },
+    {
+      "name": "owls",
+      "entity_type": "exam",
+      "singular": false,
+      "description": "A type of exam that students at Hogwarts take."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends and classmates."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Hermione is a friend of Harry's."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Hermione is also friends with Ron."
+    },
+    {
+      "entity_1": "binns",
+      "entity_2": "harry",
+      "relationship_type": "teacher_student",
+      "description": "Binns is the teacher of Harry's class."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "notes",
+      "relationship_type": "owner_notes",
+      "description": "Hermione owns the notes that Harry and Ron copy from."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "study_partner",
+      "description": "Harry and Ron study together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "owls",
+      "relationship_type": "consequence_of_refusing_notes",
+      "description": "If Hermione refuses to lend Harry her notes, he will fail his O.W.L.s."
+    }
+  ]
+}

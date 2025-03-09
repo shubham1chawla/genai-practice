@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person that Harry has a special connection with."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who is after Gregorovitch and Ollivander."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gregorovitch is a foreign wandmaker who made Krum's wand."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a person who has a wand made by Gregorovitch and thinks he is brilliant."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ollivander is a wandmaker who is locked up by Voldemort."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who has a special connection with Dumbledore and is trying to understand why Voldemort is after Gregorovitch."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who questions Harry about Voldemort's motives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_special_connection",
+      "description": "Harry has a special connection with Dumbledore."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gregorovitch",
+      "relationship_type": "is_after",
+      "description": "Voldemort is after Gregorovitch."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "ollivander",
+      "relationship_type": "has_locked_up",
+      "description": "Voldemort has locked up Ollivander."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "gregorovitch",
+      "relationship_type": "made_wand_by",
+      "description": "Gregorovitch made Krum's wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "trying_to_understand",
+      "description": "Harry is trying to understand why Voldemort is after Gregorovitch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend",
+      "description": "Ron is Harry's friend."
+    }
+  ]
+}

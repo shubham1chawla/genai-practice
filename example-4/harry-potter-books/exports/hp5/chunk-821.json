@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is talking to Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone Ron told about the situation last time."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who is watching the owls and fires."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone Harry has already told about the situation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is talking to Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "sirius",
+      "relationship_type": "told",
+      "description": "Ron told Sirius about the situation last time."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "told",
+      "description": "Harry has already told Dumbledore about the situation."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "owls",
+      "relationship_type": "watching",
+      "description": "Umbridge is watching the owls."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "knows",
+      "description": "Dumbledore already knows about the situation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dumbledore",
+      "relationship_type": "want_to_know",
+      "description": "Ron thinks Dumbledore would want to know about the situation."
+    }
+  ]
+}

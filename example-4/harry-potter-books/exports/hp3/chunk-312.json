@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is a character in the story who has read Harry's mind and is explaining why dementors affect him worse than others. He is described as having gray hairs and lines on his young face."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person being addressed by Professor Lupin, who has horrors in his past that make him more susceptible to dementors."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are foul creatures that infest dark and filthy places, draining peace, hope, and happiness from the air. They feed on good feelings and happy memories."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Muggles are people who can feel the presence of dementors, even though they cannot see them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "harry",
+      "relationship_type": "has_read_mind",
+      "description": "Professor Lupin has read Harry's mind and is explaining why dementors affect him worse than others."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "professor lupin",
+      "relationship_type": "affects_person",
+      "description": "Dementors affect Professor Lupin, who has horrors in his past that make him more susceptible to them."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry",
+      "relationship_type": "affects_person",
+      "description": "Dementors also affect Harry, draining peace, hope, and happiness from the air around him."
+    }
+  ]
+}

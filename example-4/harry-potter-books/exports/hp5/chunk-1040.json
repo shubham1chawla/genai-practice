@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is leading the way, as mentioned by Harry."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is following Tonks and has a concealed eye staring at Harry."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is being asked by Harry about the location of St. Mungo's."
+    },
+    {
+      "name": "st mungo’s",
+      "entity_type": "location",
+      "singular": true,
+      "description": "St. Mungo's is a hospital for sick wizards, as mentioned by Mad-Eye."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is a location in the wizarding world where they couldn't find a suitable location for St. Mungo's."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "moody",
+      "relationship_type": "follows",
+      "description": "Tonks is leading the way, and Moody is following her."
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "st mungo’s",
+      "relationship_type": "explains_location",
+      "description": "Mad-Eye explains to Harry that St. Mungo's is located nearby, and it was chosen because sick wizards can blend in with the crowd."
+    },
+    {
+      "entity_1": "diagon alley",
+      "entity_2": "st mungo’s",
+      "relationship_type": "alternative_location",
+      "description": "Diagon Alley was considered as a possible location for St. Mungo's, but it was deemed unsuitable."
+    }
+  ]
+}

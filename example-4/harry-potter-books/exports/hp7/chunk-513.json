@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is trying to conjure a Patronus."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who he thinks about for motivation."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who needs his help."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A magical creature that Harry is trying to conjure."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "thought_of",
+      "description": "Harry thinks about Hermione for motivation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "thought_of",
+      "description": "Harry thinks about Ron for motivation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "trying_to_conjure",
+      "description": "Harry is trying to conjure a Patronus."
+    }
+  ]
+}

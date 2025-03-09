@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is a person who is trying to get through the debris on the stairs, making noise and causing distractions. (\"Xenophilius gave a wail of fear and despair. There were scurryings and scrapings: Xenophilius was trying to get though the debris on the stairs.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is helping Ron escape from under the wreckage. (\"He stated to dig himself out under cover of all the noise Xenophilius was making on the staircase.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is buried deepest under the wreckage. (\"Ron was buried deepest: Harry and Hermione climbed, as quietly as they could, over all the wreckage to where he lay,\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who helps Ron escape from under the wreckage using a Hover Charm. (\"Hermione managed to free Ron with the use of a Hover Charm.\")"
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is an object that Hermione asks Harry to give her. (\"Okay then, Hermione whispered, 'give me the Invisibility Cloak.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "helps",
+      "description": "Harry helps Ron escape from under the wreckage. (\"He stated to dig himself out under cover of all the noise Xenophilius was making on the staircase.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "helps",
+      "description": "Hermione helps Ron escape from under the wreckage using a Hover Charm. (\"Hermione managed to free Ron with the use of a Hover Charm.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "trusts",
+      "description": "Hermione trusts Harry, as evidenced by her asking him for the Invisibility Cloak. (\"All right,\" breathed Hermione, \"Do you trust me, Harry?\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "gives",
+      "description": "Harry gives the Invisibility Cloak to Hermione. (\"Okay then,\" whispered Hermione, \"give me the Invisibility Cloak.\")"
+    }
+  ]
+}

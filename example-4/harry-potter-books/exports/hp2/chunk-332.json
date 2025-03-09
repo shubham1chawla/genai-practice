@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "adrian pucey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Adrian Pucey is mentioned as the direction of the Bludger, but it changes direction mid-air and targets Harry instead."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Bludger is a magical object that is being controlled by Adrian Pucey's direction, but it changes course multiple times to target Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is being targeted by the Bludger. He tries to avoid it multiple times and eventually has to fly off at full speed."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George hits the Bludger hard towards Malfoy, but it changes direction again and targets Harry's head."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the target of George's hit on the Bludger, but the Bludger ends up targeting Harry instead."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred Weasley waits for the Bludger at the other end and swings at it with all his might, knocking it off course. However, the Bludger still manages to target Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bludger",
+      "entity_2": "adrian pucey",
+      "relationship_type": "controlled_by",
+      "description": "The Bludger is being controlled by Adrian Pucey's direction, but it changes course multiple times to target Harry."
+    },
+    {
+      "entity_1": "bludger",
+      "entity_2": "harry",
+      "relationship_type": "targets",
+      "description": "The Bludger targets Harry multiple times throughout the passage, despite changing direction mid-air and being knocked off course by Fred Weasley."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "bludger",
+      "relationship_type": "hit",
+      "description": "George hits the Bludger hard towards Malfoy, but it changes direction again and targets Harry's head."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "bludger",
+      "relationship_type": "knocks_off_course",
+      "description": "Fred Weasley swings at the Bludger with all his might, knocking it off course. However, the Bludger still manages to target Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "evades",
+      "description": "Harry tries to avoid the Bludger multiple times throughout the passage, but it continues to target him despite his efforts."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is woken up by a loud noise. He is disoriented in the darkness and fumbles with his hangings."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is sleeping in the same dormitory as Harry. He asks what's going on when he hears a loud noise."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is also woken up by the loud noise. He claims that Sirius Black slashed his curtains."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is accused of slashing Ron's curtains and waking him up. His name is mentioned as a source of fear for Harry and his friends."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who lights his lamp to see what's going on in the dormitory."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "seamus finnigan",
+      "relationship_type": "heard_voice",
+      "description": "Harry hears Seamus Finnigan's voice from the other side of the room."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "sirius black",
+      "relationship_type": "accused_by",
+      "description": "Ron accuses Sirius Black of slashing his curtains and waking him up."
+    },
+    {
+      "entity_1": "dean thomas",
+      "entity_2": "harry",
+      "relationship_type": "lit_lamp_for",
+      "description": "Dean Thomas lights his lamp to help Harry see what's going on in the dormitory."
+    }
+  ]
+}

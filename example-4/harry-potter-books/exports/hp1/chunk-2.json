@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character's name is mentioned in the text, but it is not explicitly stated that he is present at this moment."
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Mr. Dursley's son and is described as having a tantrum."
+    },
+    {
+      "name": "mr dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Dursley is the father of Dudley and is described as leaving for work."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Dursley is Mr. Dursley's wife and is mentioned as being pecked on the cheek by her husband."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "mrs dursley",
+      "relationship_type": "kissed",
+      "description": "Mr. Dursley pecked Mrs. Dursley on the cheek."
+    },
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "dudley dursley",
+      "relationship_type": "left_child",
+      "description": "Mr. Dursley tried to kiss Dudley goodbye but missed."
+    }
+  ]
+}

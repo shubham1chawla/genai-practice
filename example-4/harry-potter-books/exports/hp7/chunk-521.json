@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dementors are waiting in the corners of a place."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is the one who lied and brought blood surging into Harry's brain."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who was affected by Umbridge's lie."
+    },
+    {
+      "name": "loket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket was taken as a bribe from a petty criminal."
+    },
+    {
+      "name": "cattermole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Cattermole's papers slid off Umbridge's lap."
+    },
+    {
+      "name": "balustrade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Umbridge hit the edge of the balustrade."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand was not even troubling to keep it concealed beneath the Invisibility Cloak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "affect",
+      "description": "Umbridge's lie brought blood surging into Harry's brain."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "loket",
+      "relationship_type": "possess",
+      "description": "The locket was taken as a bribe from a petty criminal and Umbridge had it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "use",
+      "description": "Harry's wand was not even troubling to keep it concealed beneath the Invisibility Cloak."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "balustrade",
+      "relationship_type": "hit",
+      "description": "Umbridge hit the edge of the balustrade."
+    },
+    {
+      "entity_1": "cattermole",
+      "entity_2": "papers",
+      "relationship_type": "own",
+      "description": "Mrs. Cattermole's papers slid off Umbridge's lap."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "credentials",
+      "relationship_type": "use",
+      "description": "The locket was being used to holster her own pureblood credentials."
+    }
+  ]
+}

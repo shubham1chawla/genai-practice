@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where Harry, Hermione, and Ron are heading. It is mentioned as the place they are going to meet others."
+    },
+    {
+      "name": "hog's head",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A pub in Hogsmeade that Hermione suggests meeting at instead of The Three Broomsticks. It is described as not being on the main road and a bit dodgy."
+    },
+    {
+      "name": "three broomsticks",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A pub in Hogsmeade that Hermione suggests avoiding because it's always packed and noisy. It is mentioned as an alternative to The Hog's Head."
+    },
+    {
+      "name": "zonko's joke shop",
+      "entity_type": "store",
+      "singular": true,
+      "description": "A joke shop in Hogsmeade where Fred, George, and Lee Jordan are seen. It is mentioned as they walk down the main street."
+    },
+    {
+      "name": "post office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The post office in Hogsmeade from which owls issue at regular intervals. It is mentioned as Harry, Hermione, and Ron pass by it while walking down the main street."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose name is mentioned in conversation between Harry, Hermione, and Ron. The context suggests that Malfoy might be a suspect or someone they are looking for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hog's head",
+      "entity_2": "three broomsticks",
+      "relationship_type": "alternative_to",
+      "description": "Hermione suggests meeting at The Hog's Head instead of The Three Broomsticks because it's not as crowded and noisy."
+    },
+    {
+      "entity_1": "hog's head",
+      "entity_2": "hogsmeade",
+      "relationship_type": "located_in",
+      "description": "The Hog's Head is located in Hogsmeade village, where Harry, Hermione, and Ron are heading to meet others."
+    },
+    {
+      "entity_1": "three broomsticks",
+      "entity_2": "hogsmeade",
+      "relationship_type": "located_in",
+      "description": "The Three Broomsticks is also located in Hogsmeade village, but Hermione suggests avoiding it because it's always packed and noisy."
+    },
+    {
+      "entity_1": "zonko's joke shop",
+      "entity_2": "hogsmeade",
+      "relationship_type": "located_in",
+      "description": "Zonko's Joke Shop is located in Hogsmeade village, where Harry, Hermione, and Ron are walking down the main street."
+    },
+    {
+      "entity_1": "post office",
+      "entity_2": "hogsmeade",
+      "relationship_type": "located_in",
+      "description": "The post office is located in Hogsmeade village, from which owls issue at regular intervals as Harry, Hermione, and Ron pass by it."
+    }
+  ]
+}

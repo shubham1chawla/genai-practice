@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "boat",
+      "entity_type": "watercraft",
+      "singular": true,
+      "description": "The boat is described as bumping gently into the harbour wall."
+    },
+    {
+      "name": "harbour wall",
+      "entity_type": "physical_structure",
+      "singular": true,
+      "description": "The harbour wall is mentioned as the location where the boat bumped into."
+    },
+    {
+      "name": "newspaper",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "Hagrid folded up his newspaper, indicating that it was something he had been reading."
+    },
+    {
+      "name": "stone steps",
+      "entity_type": "physical_structure",
+      "singular": false,
+      "description": "The stone steps are mentioned as the path Hagrid and others took to get from the harbour wall to the street."
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The street is mentioned as the destination where Hagrid and others arrived after leaving the harbour wall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "boat",
+      "entity_2": "harbour wall",
+      "relationship_type": "collision",
+      "description": "The boat bumped gently into the harbour wall, indicating a collision between the two entities."
+    },
+    {
+      "entity_1": "Hagrid",
+      "entity_2": "newspaper",
+      "relationship_type": "possession",
+      "description": "Hagrid folded up his newspaper, indicating that he was in possession of it."
+    }
+  ]
+}

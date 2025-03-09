@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "goblin",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "The goblin is a character in the story who breaks the silence. He is described as having slanting black eyes and a thin black beard."
+    },
+    {
+      "name": "elf",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "The elf is mentioned by the goblin as being buried. No further description of the elf is provided."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Harry Potter is a wizard who has rescued a goblin and dug a grave for Dobby. He is described as an unusual wizard by Griphook."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a goblin who is being helped by Harry Potter. He has black eyes and a thin black beard."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is mentioned as having been buried in a grave dug by Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "goblin",
+      "entity_2": "harry potter",
+      "relationship_type": "rescued_by",
+      "description": "Griphook was rescued by Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "elf",
+      "relationship_type": "buried",
+      "description": "Harry Potter buried an elf."
+    },
+    {
+      "entity_1": "goblin",
+      "entity_2": "dobby",
+      "relationship_type": "related_to",
+      "description": "Griphook is related to Dobby, as he was rescued by Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "goblin",
+      "relationship_type": "rescued",
+      "description": "Harry Potter rescued a goblin."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "buried",
+      "description": "Harry Potter buried Dobby in a grave."
+    }
+  ]
+}

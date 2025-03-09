@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, described as having red eyes and a serpentine face. He is holding the Elder Wand."
+    },
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is addressed by Voldemort, described as being blank and confused."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, whose scar begins to hurt when he hears Voldemort's tone."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical wand that is being held by Voldemort and described as not working for him."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sold a wand to Voldemort in the past."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus",
+      "relationship_type": "addressed_by",
+      "description": "Voldemort addresses Severus as 'my lord'."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "perceived_by",
+      "description": "Harry can see Voldemort and his appearance."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "held_by",
+      "description": "Voldemort is holding the Elder Wand."
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "voldemort",
+      "relationship_type": "addressed_to",
+      "description": "Severus is addressed by Voldemort as 'my lord'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "affected_by",
+      "description": "Harry's scar hurts when he hears Voldemort's tone."
+    }
+  ]
+}

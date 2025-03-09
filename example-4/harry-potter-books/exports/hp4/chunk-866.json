@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is a person who led Harry along the bar and congratulated him on his performance against the Horntail."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who was being congratulated by Bagman for his performance against the Horntail."
+    },
+    {
+      "name": "madam rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Rosmerta is a person who is located at the end of the bar furthest from Harry."
+    },
+    {
+      "name": "horntail",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "The Horntail is a dragon that Harry fought against and was congratulated for his performance by Bagman."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who was present with Harry but not included in the conversation between Bagman and Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who was present with Harry but not included in the conversation between Bagman and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "harry",
+      "relationship_type": "congratulated",
+      "description": "Bagman congratulated Harry on his performance against the Horntail."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "madam rosmerta",
+      "relationship_type": "located near",
+      "description": "Madam Rosmerta is located at the end of the bar furthest from Harry, where Bagman was standing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horntail",
+      "relationship_type": "fought against",
+      "description": "Harry fought against the Horntail and was congratulated for his performance by Bagman."
+    }
+  ]
+}

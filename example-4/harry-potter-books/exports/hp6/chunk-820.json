@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who expects to receive low marks on his O.W.L.s because he disagreed with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher who Harry disagrees with on the best way to tackle Dementors."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Slughorn's memory is the most important thing to Harry now."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who tries to advise Harry on how to get Slughorn's memory."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "disagreement",
+      "description": "Harry and Snape disagree on the best way to tackle Dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "importance",
+      "description": "Slughorn's memory is the most important thing to Harry now."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Hermione tries to advise Harry on how to get Slughorn's memory."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "veritaserum",
+      "relationship_type": "inhibition",
+      "description": "Dumbledore says Veritaserum won't do it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "persuasion",
+      "description": "Harry must persuade Slughorn where other people can't."
+    }
+  ]
+}

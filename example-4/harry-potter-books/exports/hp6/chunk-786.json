@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having top grades and being a prefect."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, feeling ashamed for failing in his task."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, examining a bottle and recounting Lord Voldemort's past."
+    },
+    {
+      "name": "hokey",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "An old house-elf whose memory is being examined by Dumbledore."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort's name before he became known as Voldemort."
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who expected great things from Tom Riddle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "harry",
+      "relationship_type": "failed_by",
+      "description": "Lord Voldemort's request made Harry feel ashamed for failing in his task."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hokey",
+      "relationship_type": "examining_memory_of",
+      "description": "Dumbledore is examining the memory of Hokey, an old house-elf."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "tom riddle",
+      "relationship_type": "same_person_as",
+      "description": "Lord Voldemort and Tom Riddle are the same person."
+    },
+    {
+      "entity_1": "professor slughorn",
+      "entity_2": "tom riddle",
+      "relationship_type": "expected_something_from",
+      "description": "Professor Slughorn expected great things from Tom Riddle."
+    }
+  ]
+}

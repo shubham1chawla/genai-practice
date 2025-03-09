@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being lectured by Wood."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is lecturing Harry and his team about Quidditch."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The team that Harry is a part of."
+    },
+    {
+      "name": "quidditch cup",
+      "entity_type": "award",
+      "singular": true,
+      "description": "A trophy or award given to the winning Quidditch team."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "harry potter",
+      "relationship_type": "lectures",
+      "description": "Wood is lecturing Harry about Quidditch."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "quidditch cup",
+      "relationship_type": "has_not_won",
+      "description": "Gryffindor has not won the Quidditch Cup."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_part_of",
+      "description": "Harry is a part of Gryffindor team."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "quidditch cup",
+      "relationship_type": "has_not_won",
+      "description": "Wood's team has not won the Quidditch Cup."
+    }
+  ]
+}

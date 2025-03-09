@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as flipping a paper over and holding it up to show a picture of Ron's parents. He also makes derogatory comments about Ron's mother."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as shaking with fury and being stared at by everyone. Harry and Hermione grab the back of his robes to stop him from attacking Malfoy."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as defending Ron and making a comment about Malfoy's mother."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as grabbing the back of Ron's robes to stop him from attacking Malfoy."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is mentioned as a surname for Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ron",
+      "relationship_type": "insulted_by",
+      "description": "Malfoy insults Ron's mother."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "defended_against_insult",
+      "description": "Harry defends Ron against Malfoy's insult."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "helped_to_prevent_attack",
+      "description": "Hermione helps to prevent Ron from attacking Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "insulted_back",
+      "description": "Harry insults Malfoy's mother in return."
+    }
+  ]
+}

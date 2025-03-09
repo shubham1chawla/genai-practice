@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as having reservations about Snape's trustworthiness."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned in relation to Dumbledore's reservations and Harry's question about hiding the sword."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Mentioned as a place where the sword might be hidden."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Responds to Harry's question and seems upset about something."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Looks perplexed and shakes her head when asked for help by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Asks Ron about his problem and tries to get him to talk about it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "has_reservation",
+      "description": "Dumbledore has reservations about Snape's trustworthiness, as mentioned in the text."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asks_question",
+      "description": "Harry asks Ron about his problem and tries to get him to talk about it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "seeks_help",
+      "description": "Harry looks to Hermione for help when trying to understand Ron's behavior."
+    }
+  ]
+}

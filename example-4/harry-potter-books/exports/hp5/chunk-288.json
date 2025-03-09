@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is breathless and feels like he has left his insides back at Perkins's desk."
+    },
+    {
+      "name": "auror cubicles",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Auror cubicles are a location where people work. They are mentioned as being passed by Harry and Mr. Weasley."
+    },
+    {
+      "name": "perkins’s desk",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Perkins's desk is a location where Harry left his insides. It is not clear what Perkins is or why Harry's insides are there."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a character in the story who is impatient and angry. He is trying to get to the courtrooms."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "auror cubicles",
+      "relationship_type": "passed_by",
+      "description": "Harry passed by the Auror cubicles as he hurtled past them."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "auror cubicles",
+      "relationship_type": "passed_by",
+      "description": "Mr. Weasley also passed by the Auror cubicles as they streaked past."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "perkins’s desk",
+      "relationship_type": "left_at",
+      "description": "Harry left his insides at Perkins's desk."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "lifts",
+      "relationship_type": "skidded_to_a_halt_beside",
+      "description": "Mr. Weasley skidded to a halt beside the lifts."
+    }
+  ]
+}

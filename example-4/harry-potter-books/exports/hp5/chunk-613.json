@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as being present with Padfoot in the Owlery."
+    },
+    {
+      "name": "padfoot",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Padfoot is mentioned as being present with Percy in the Owlery."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having a conversation with Cho about Dungbombs."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is mentioned as having a conversation with Harry about Dungbombs."
+    },
+    {
+      "name": "mrs. norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Norris is mentioned as following the caretaker down the stairs."
+    },
+    {
+      "name": "the caretaker",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker is mentioned as turning and shuffling back toward the door."
+    },
+    {
+      "name": "dungbomb",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Dungbombs are mentioned as something that the caretaker is threatening to use."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "conversation",
+      "description": "Harry and Cho have a conversation about Dungbombs in the Owlery."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dungbomb",
+      "relationship_type": "concern",
+      "description": "Harry is concerned that he might be suspected of ordering Dungbombs."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "concern",
+      "description": "Cho is also concerned about why the caretaker thought Harry was ordering Dungbombs."
+    },
+    {
+      "entity_1": "mrs. norris",
+      "entity_2": "the caretaker",
+      "relationship_type": "follow",
+      "description": "Mrs. Norris follows the caretaker down the stairs."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hall of prophecy",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry, Hermione, and Neville are currently at."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are enemies of Harry, Hermione, and Neville. They are described as 'ugly baby-headed'."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a wizard who is on the run from Death Eaters."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch and one of Harry's best friends. She tries to cast a spell but is interrupted by the Death Eaters."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another wizard and friend of Harry and Hermione. He gets thrown over a desk during the battle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eater",
+      "relationship_type": "enemy_of",
+      "description": "Harry is being chased by Death Eaters, who are trying to kill him."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "death eater",
+      "relationship_type": "enemy_of",
+      "description": "Hermione is also being chased by Death Eaters, who are trying to kill her."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "death eater",
+      "relationship_type": "enemy_of",
+      "description": "Neville is being chased by Death Eaters, who are trying to kill him."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "friend_of",
+      "description": "Harry and Hermione are friends and are working together to evade the Death Eaters."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "neville longbottom",
+      "relationship_type": "friend_of",
+      "description": "Harry and Neville are friends and are working together to evade the Death Eaters."
+    }
+  ]
+}

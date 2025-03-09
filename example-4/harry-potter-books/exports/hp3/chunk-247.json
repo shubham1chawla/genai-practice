@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lavender",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lavender is the one who is grieving the loss of her pet rabbit Binky. She is described as having 'streaming eyes' and sobbing loudly."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is trying to reason with Lavender about why she would be dreading the death of her pet rabbit Binky. She suggests that it's because Lavender just got the news today and it's a shock."
+    },
+    {
+      "name": "binky",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Binky is Lavender's pet rabbit who has died. He is described as being 'only a baby'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lavender",
+      "entity_2": "binky",
+      "relationship_type": "owns",
+      "description": "Lavender owns Binky, her pet rabbit."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "lavender",
+      "relationship_type": "tries_to_reason_with",
+      "description": "Hermione is trying to reason with Lavender about why she would be dreading the death of her pet rabbit Binky."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the teacher who assigns a lesson to divide students into pairs and attempt to jinx each other without speaking. He ignores Hermione's successful repel of Neville's Jelly-Legs Jinx."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who thinks that Hermione's feat would have earned her twenty points for Gryffindor from any reasonable teacher."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who successfully repels Neville's Jelly-Legs Jinx without speaking."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who attempts to jinx Hermione with the Jelly-Legs Jinx."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "neville",
+      "relationship_type": "repel_jinx",
+      "description": "Hermione successfully repels Neville's Jelly-Legs Jinx without speaking."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "observe",
+      "description": "Harry observes Hermione's successful feat of repelling the jinx."
+    }
+  ]
+}

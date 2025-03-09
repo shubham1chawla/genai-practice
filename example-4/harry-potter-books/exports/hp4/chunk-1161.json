@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison mentioned as a place where the boy's companions want to be sent. (\"Throw us in to Azkaban\")"
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who received applause from the crowd. (\"The crowd around the walls began to clap as it had for Bagman\")"
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person addressed by a woman with heavy-lidded eyes. (\"Crouch! Throw us in to Azkaban\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "crowd",
+      "relationship_type": "received_applause_from",
+      "description": "The crowd applauded for Bagman. (\"The crowd around the walls began to clap as it had for Bagman\")"
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "azkaban",
+      "relationship_type": "sent_to",
+      "description": "Crouch was addressed to send people to Azkaban. (\"Crouch! Throw us in to Azkaban\")"
+    },
+    {
+      "entity_1": "woman_with_heavy_lidded_eyes",
+      "entity_2": "crouch",
+      "relationship_type": "addressed",
+      "description": "The woman with heavy-lidded eyes addressed Crouch. (\"The woman with the heavy-lidded eyes looked up at Cr ouch and called\")"
+    },
+    {
+      "entity_1": "woman_with_heavy_lidded_eyes",
+      "entity_2": "azkaban",
+      "relationship_type": "sent_to",
+      "description": "The woman with heavy-lidded eyes wants to be sent to Azkaban. (\"Throw us in to Azkaban\")"
+    }
+  ]
+}

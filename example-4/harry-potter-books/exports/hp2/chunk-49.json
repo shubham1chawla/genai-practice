@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the person who is receiving something from Harry. He is described as being passed things out of a window."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as helping George and Harry with carrying a trunk up the stairs."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as helping Fred and Harry with carrying a trunk up the stairs."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in this passage. He is described as hearing Uncle Vernon cough and as being involved in carrying a trunk."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as coughing, indicating that he is present in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "pass_to",
+      "description": "Harry passes something out of a window to Ron."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "trunk",
+      "relationship_type": "carry",
+      "description": "Fred is carrying the trunk up the stairs with George and Harry."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "trunk",
+      "relationship_type": "carry",
+      "description": "George is carrying the trunk up the stairs with Fred and Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "trunk",
+      "relationship_type": "carry",
+      "description": "Harry is involved in carrying the trunk up the stairs with Fred and George."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "cough_heard_by",
+      "description": "Uncle Vernon coughs, which Harry hears."
+    }
+  ]
+}

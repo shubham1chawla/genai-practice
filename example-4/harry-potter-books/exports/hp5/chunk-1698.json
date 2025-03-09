@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Department of Mysteries is mentioned as a location that Harry and Ginny are trying to access."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is leading the group through the Department of Mysteries."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a member of the group who is following Harry through the Department of Mysteries."
+    },
+    {
+      "name": "hummingbird",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A hummingbird is mentioned as an object that is being observed by Ginny."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "location_accessed",
+      "description": "Harry is accessing the Department of Mysteries."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "department of mysteries",
+      "relationship_type": "location_accessed",
+      "description": "Ginny is also accessing the Department of Mysteries."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "led_by",
+      "description": "Harry is leading Ginny through the Department of Mysteries."
+    }
+  ]
+}

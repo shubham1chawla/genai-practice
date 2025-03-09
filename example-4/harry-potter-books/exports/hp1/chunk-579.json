@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as someone who couldn't bear being in debt to Harry's father and worked hard to protect Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who tries to understand Professor Snape's behavior and asks questions about getting the Stone out of the Mirror."
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Stone is mentioned as something that only one person can get from the Mirror without using it."
+    },
+    {
+      "name": "mirror",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Mirror is where the Stone is kept and can be retrieved by someone who wants to find it but not use it."
+    },
+    {
+      "name": "elixer of life",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Elixir of Life is mentioned as something that people might see themselves doing if they try to get the Stone for personal gain."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor snape",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Professor Snape worked hard to protect Harry this year because he felt it would make him and Harry's father quits."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "can_get",
+      "description": "Harry can get the Stone out of the Mirror because only one person who wants to find the Stone but not use it can do so."
+    }
+  ]
+}

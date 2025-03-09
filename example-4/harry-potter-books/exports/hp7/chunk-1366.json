@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as the one who has a message from Voldemort. He is described as wringing his hands and looking mad."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the one who has sent a message through Severus. He is described as wanting to hunt down Lily Evans."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who is being requested by Snape. He is described as flicking his wand and creating silence in the air."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who has come with a warning/request to Dumbledore. He is described as wringing his hands and looking mad."
+    },
+    {
+      "name": "lily evans",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily Evans is mentioned as the person that Voldemort wants to hunt down. She is described as being related to Snape."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is mentioned as the one who made a prophecy/prediction about a boy born at the end of July."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lord voldemort",
+      "relationship_type": "has_message_from",
+      "description": "Snape has come with a message from Voldemort. Snape is described as saying 'No — no message — I’m here on my own account!'"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "is_requested_by",
+      "description": "Dumbledore is being requested by Snape. Dumbledore is described as flicking his wand and creating silence in the air."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lily evans",
+      "relationship_type": "wants_to_hunt_down",
+      "description": "Voldemort wants to hunt down Lily Evans. He is described as thinking that she means something to Snape."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "lord voldemort",
+      "relationship_type": "made_prophecy_for",
+      "description": "Trelawney made a prophecy/prediction about a boy born at the end of July, which Voldemort is interested in."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lily evans",
+      "relationship_type": "is_related_to",
+      "description": "Snape is related to Lily Evans. He is described as saying 'he thinks it means her son'."
+    }
+  ]
+}

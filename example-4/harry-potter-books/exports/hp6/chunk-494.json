@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, also known as Tom Marvolo Riddle. He is described as hesitating and looking unnerved."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and experienced wizard who is guiding Riddle. He is described as asking questions and giving instructions."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator of the story, a young boy who is observing Riddle's actions."
+    },
+    {
+      "name": "wardrobe",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A piece of furniture in the room where the story takes place. It has a door that can be opened."
+    },
+    {
+      "name": "box",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A small cardboard box on the topmost shelf of the wardrobe. It is described as shaking and rattling."
+    },
+    {
+      "name": "clothes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Threadbare clothes hanging on a rail in the wardrobe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "question_answer",
+      "description": "Dumbledore asks Riddle if there is anything in the box that he ought not to have."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "instruction",
+      "description": "Dumbledore tells Riddle to open the box."
+    }
+  ]
+}

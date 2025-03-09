@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as a person who is trying to find someone, but is not taking it seriously."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch has been taking a personal interest in finding the missing person."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone who is trying to organize an event at the Department of International Magical Cooperation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is sitting at the end of the table with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is sitting at the end of the table with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is sitting at the end of the table with Ron and Harry."
+    },
+    {
+      "name": "department of international magical cooperation",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department of International Magical Cooperation is mentioned as a place where Percy works."
+    },
+    {
+      "name": "world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The World Cup is mentioned as an event that the Department of International Magical Cooperation is organizing."
+    },
+    {
+      "name": "albania",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Albania is mentioned as a location on a map."
+    },
+    {
+      "name": "australia",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Australia is mentioned as a possible location where the missing person might be."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "mr crouch",
+      "relationship_type": "has_interest_in",
+      "description": "Mr. Crouch has been taking a personal interest in finding the missing person, which Bagman is supposed to find."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "department of international magical cooperation",
+      "relationship_type": "works_at",
+      "description": "Percy works at the Department of International Magical Cooperation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "world cup",
+      "relationship_type": "related_to",
+      "description": "The World Cup is an event that the Department of International Magical Cooperation is organizing, which Harry is related to."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "world cup",
+      "relationship_type": "related_to",
+      "description": "The World Cup is an event that the Department of International Magical Cooperation is organizing, which Ron is related to."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "world cup",
+      "relationship_type": "related_to",
+      "description": "The World Cup is an event that the Department of International Magical Cooperation is organizing, which Hermione is related to."
+    },
+    {
+      "entity_1": "albania",
+      "entity_2": "australia",
+      "relationship_type": "opposite_of",
+      "description": "Albania and Australia are mentioned as opposite locations on a map."
+    }
+  ]
+}

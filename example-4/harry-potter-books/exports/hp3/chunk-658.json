@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as a person who needs to have a word with Mr. Potter and Miss Granger."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as someone who has been talking to Dumbledore, and has planted a story in Potter's mind."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as someone who is hysterical and insists that the room is a hospital wing."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Potter is mentioned as someone who has been told a story by Sirius Black."
+    },
+    {
+      "name": "granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Granger is mentioned as someone who needs to have a word with Dumbledore."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who is snarling and questioning the evidence of Sirius Black's story."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peter Pettigrew is mentioned as someone who was supposedly alive, according to Sirius Black's story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "needs_to_have_word_with",
+      "description": "Dumbledore needs to have a word with Potter, as mentioned in the conversation."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "granger",
+      "relationship_type": "needs_to_have_word_with",
+      "description": "Dumbledore also needs to have a word with Granger, as mentioned in the conversation."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "potter",
+      "relationship_type": "told_story_to",
+      "description": "Sirius Black has told a story to Potter, which is mentioned in the conversation."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "pettigrew",
+      "relationship_type": "did_not_see",
+      "description": "Snape did not see any sign of Pettigrew on the grounds, as he claims."
+    }
+  ]
+}

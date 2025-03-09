@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is trying to escape from the flames."
+    },
+    {
+      "name": "Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who grabs Goyle and drags him along while escaping from the flames."
+    },
+    {
+      "name": "Goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is Stunned by Malfoy and dragged along while escaping from the flames."
+    },
+    {
+      "name": "Crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who used a curse that created abnormal-sized flames."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is trying to escape from the flames."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is trying to escape from the flames."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Malfoy",
+      "relationship_type": "follows",
+      "description": "Malfoy grabs Goyle and drags him along, while Harry follows them."
+    },
+    {
+      "entity_1": "Crabbe",
+      "entity_2": "Harry",
+      "relationship_type": "created_problem_for",
+      "description": "Crabbe used a curse that created abnormal-sized flames which are pursuing Harry."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione",
+      "relationship_type": "travels_with",
+      "description": "Harry, Ron, and Hermione pelted along in Crabbe's wake while trying to escape from the flames."
+    },
+    {
+      "entity_1": "Crabbe",
+      "entity_2": "fire",
+      "relationship_type": "created",
+      "description": "Crabbe used a curse that created abnormal-sized flames."
+    }
+  ]
+}

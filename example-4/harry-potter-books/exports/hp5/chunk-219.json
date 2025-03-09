@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "skiving snackboxes",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A range of sweets that can make you ill enough to get out of class, but also have a purple half that restores you to full fitness."
+    },
+    {
+      "name": "puking pastilles",
+      "entity_type": "product",
+      "singular": true,
+      "description": "Double-ended, color-coded chews where eating the orange half makes you throw up and swallowing the purple half restores you to full fitness."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George's brother who has been developing Skiving Snackboxes with him this summer."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who whispered about the effects of Skiving Snackboxes and is George's brother."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose back George is keeping a wary eye on, possibly a teacher or authority figure."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "fred",
+      "relationship_type": "brother_of",
+      "description": "George and Fred are brothers who have been developing Skiving Snackboxes together this summer."
+    },
+    {
+      "entity_1": "skiving snackboxes",
+      "entity_2": "puking pastilles",
+      "relationship_type": "component_of",
+      "description": "Puking Pastilles is a component of the Skiving Snackboxes product, as mentioned in the conversation between George and Fred."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "skiving snackboxes",
+      "relationship_type": "developer_of",
+      "description": "Fred has been developing Skiving Snackboxes with his brother George this summer, as mentioned in the conversation."
+    }
+  ]
+}

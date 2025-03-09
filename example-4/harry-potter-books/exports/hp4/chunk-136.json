@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object used for transportation, described as small and needing to be found."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the group, described as panting and wearing glasses."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the group, described as coming over a hill last and clutching her side."
+    },
+    {
+      "name": "amos diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who works with Mr. Weasley, described as having a ruddy face and scrubby brown beard."
+    },
+    {
+      "name": "hilltop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the group is searching for the Portkey."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "portkey",
+      "relationship_type": "searching_for",
+      "description": "Mr. Weasley and his group are searching for the Portkey, described as needing to find it."
+    },
+    {
+      "entity_1": "amos diggory",
+      "entity_2": "portkey",
+      "relationship_type": "found",
+      "description": "Amos Diggory finds the Portkey, described as shouting 'Over here!'"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "amos diggory",
+      "relationship_type": "shaking_hands_with",
+      "description": "Mr. Weasley shakes hands with Amos Diggory, described as smiling and introducing him to the group."
+    }
+  ]
+}

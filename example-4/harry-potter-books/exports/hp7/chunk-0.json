@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "thetwomen",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people appeared out of nowhere in the narrow, moonlit lane."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape replied to a question with 'The best'."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley mentioned that he might be late and hoped someone would be satisfied."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus snape",
+      "entity_2": "thetwomen",
+      "relationship_type": "directed_wands_at_each_other",
+      "description": "Severus Snape and the group of people stood with wands directed at each other's chests."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "severus snape",
+      "relationship_type": "spoke_to",
+      "description": "Yaxley spoke to Severus Snape, asking if he was late and hoping someone would be satisfied."
+    },
+    {
+      "entity_1": "thetwomen",
+      "entity_2": "yaxley",
+      "relationship_type": "recognized_each_other",
+      "description": "The group of people recognized Yaxley when they met."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "yaxley",
+      "relationship_type": "spoke_to",
+      "description": "Severus Snape replied to a question from Yaxley."
+    }
+  ]
+}

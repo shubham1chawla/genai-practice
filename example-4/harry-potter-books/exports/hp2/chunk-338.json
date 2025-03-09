@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is being chased by the Bludger and trying to catch the Golden Snitch."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A rival student of Harry's, who is laughing at him as he tries to dodge the Bludger. He doesn't see the Golden Snitch hovering above his ear."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A ball used in Quidditch that is being thrown by the Beaters. It hits Harry's elbow and breaks it."
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object of the game, a small golden ball that must be caught to win points for one's team."
+    },
+    {
+      "name": "harry's arm",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Harry's arm is broken by the Bludger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bludger",
+      "entity_2": "harry",
+      "relationship_type": "hit",
+      "description": "The Bludger hits Harry's elbow and breaks his arm."
+    },
+    {
+      "entity_1": "golden snitch",
+      "entity_2": "malfoy",
+      "relationship_type": "near",
+      "description": "The Golden Snitch is hovering inches above Malfoy's left ear, but he doesn't see it."
+    }
+  ]
+}

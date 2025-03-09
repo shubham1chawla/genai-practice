@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a startling thought and being frustrated."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is skeptical about Malfoy joining Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is concerned about Harry's scar and the possibility of Malfoy joining Death Eaters."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, whose father is a Death Eater and is mentioned as possibly seeking revenge."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A prison for wizards, where Malfoy's father is being held."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are loyal to Voldemort, with Malfoy's father and possibly Malfoy as members."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as being referred to by a nickname."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "suspects",
+      "description": "Harry suspects that Malfoy is up to something and thinks they should take it seriously."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "believes_member_of",
+      "description": "Harry believes that Malfoy's father is a Death Eater, and possibly Malfoy as well."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "doubts",
+      "description": "Ron doubts the possibility of Malfoy joining Death Eaters."
+    }
+  ]
+}

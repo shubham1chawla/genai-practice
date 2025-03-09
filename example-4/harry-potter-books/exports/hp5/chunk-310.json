@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "madam bones",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Bones is described as looking down at Mrs. Figg in silence. She is also mentioned to have a booming voice."
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Figg is described as being frightened and casting a look from Fudge to Dumbledore. She is also mentioned to be a witness."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is described as not looking at Madam Bones, fidgeting with his papers, and being aggressive in his questioning of Mrs. Figg."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned to be the one that Mrs. Figg casts a frightened look at."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are described as being able to attack and cause effects on people."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam bones",
+      "entity_2": "mrs figg",
+      "relationship_type": "looked_at",
+      "description": "Madam Bones looked down at Mrs. Figg in silence."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "cast_look",
+      "description": "Mrs. Figg casts a frightened look from Fudge to Dumbledore."
+    },
+    {
+      "entity_1": "madam bones",
+      "entity_2": "mrs figg",
+      "relationship_type": "questioned",
+      "description": "Fudge questioned Mrs. Figg, and Madam Bones defended her."
+    }
+  ]
+}

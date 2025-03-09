@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The cold and drawling voice of Draco Malfoy is introduced as he asks how to open the books."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid responds to Draco's question with a confused expression."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the owner of one of the books."
+    },
+    {
+      "name": "the monster book of monsters",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Monster Book of Monsters is introduced as a book that needs to be opened."
+    },
+    {
+      "name": "spellotape",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Spellotape is used to bind the books shut."
+    },
+    {
+      "name": "binder clips",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Some students use binder clips to clamp their books together."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "the monster book of monsters",
+      "relationship_type": "opens",
+      "description": "Hagrid shows how to open the Monster Book of Monsters by stroking it."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "the monster book of monsters",
+      "relationship_type": "tries_to_open",
+      "description": "Draco Malfoy tries to open his copy of The Monster Book of Monsters."
+    }
+  ]
+}

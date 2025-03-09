@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who thought the effect was good. The text does not provide any further information about Harry."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is the potions master who is offering a prize in this lesson. He shows the students a minuscule glass bottle of Felix Felicis and explains its effects."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Felix Felicis is a potion that gives the drinker luck for twelve hours. It is banned in organised competitions, but can be used on an ordinary day to make it extraordinary."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "felix felicis",
+      "relationship_type": "possession",
+      "description": "Slughorn has a minuscule glass bottle of Felix Felicis in his pocket."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "offer",
+      "description": "Slughorn is offering the prize of Felix Felicis to Harry and the other students."
+    }
+  ]
+}

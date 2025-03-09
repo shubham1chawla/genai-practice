@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore had left, implying he is no longer present at Hogwarts."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone Harry is meeting with, suggesting a formal or official interaction."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and protagonist of the story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who keeps asking Harry what's wrong when he tries to practice Occlumency."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a person who interrupts Harry on his way to meet Snape."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor's hourglass is mentioned as being almost empty, indicating the house's points are low."
+    },
+    {
+      "name": "snape's office",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Snape's office is a location where Harry meets with Snape."
+    },
+    {
+      "name": "the entrance hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The entrance hall is a location where Cho interrupts Harry on his way to meet Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "meeting",
+      "description": "Harry is meeting with Snape in his office."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "interrupting",
+      "description": "Cho interrupts Harry on his way to meet Snape."
+    }
+  ]
+}

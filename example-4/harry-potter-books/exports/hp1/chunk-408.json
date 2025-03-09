@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is sitting on a desk by the wall, and Harry didn't notice him at first. He is smiling when he talks to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is desperate to get to the mirror and doesn't notice Dumbledore at first. He is relieved to see that Dumbledore is smiling."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is shown in the Mirror of Erised as Head Boy."
+    },
+    {
+      "name": "mirror of erised",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Mirror of Erised shows Harry his family and Ron as Head Boy. It also shows what people desire or wish for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mirror of erised",
+      "relationship_type": "shows",
+      "description": "The Mirror of Erised shows Harry his family."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mirror of erised",
+      "relationship_type": "shows",
+      "description": "The Mirror of Erised shows Ron as Head Boy."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "knows",
+      "description": "Dumbledore knows that the Mirror of Erised shows what people desire or wish for."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ron",
+      "relationship_type": "knows",
+      "description": "Dumbledore knows that Ron is shown in the Mirror of Erised as Head Boy."
+    }
+  ]
+}

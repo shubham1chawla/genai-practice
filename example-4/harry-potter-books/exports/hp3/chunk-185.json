@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "meat",
+      "entity_type": "food",
+      "singular": true,
+      "description": "Meat is mentioned as something that flew everywhere."
+    },
+    {
+      "name": "carrot",
+      "entity_type": "food",
+      "singular": true,
+      "description": "Carrot is mentioned as something that flew everywhere."
+    },
+    {
+      "name": "Divination",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Divination is a subject being studied by Hermione, and she's not sure if she'll continue studying it because of the lesson on tea leaves."
+    },
+    {
+      "name": "Arithmancy",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Arithmancy is a class that Hermione enjoys more than Divination."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who's studying Divination and Arithmancy."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Hermione's friend and classmate."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Ron's friend and classmate."
+    },
+    {
+      "name": "Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a Slytherin student who's also in the Care of Magical Creatures class with Harry, Ron, and Hermione."
+    },
+    {
+      "name": "Slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherins are a group of students from Slytherin house that include Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Divination",
+      "relationship_type": "studies",
+      "description": "Hermione is studying Divination."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Arithmancy",
+      "relationship_type": "enjoys",
+      "description": "Hermione enjoys Arithmancy more than Divination."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione",
+      "relationship_type": "friend",
+      "description": "Ron is friends with Hermione."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron",
+      "relationship_type": "friend",
+      "description": "Harry is friends with Ron."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hermione",
+      "relationship_type": "classmate",
+      "description": "Harry, Ron, and Hermione are classmates in the Care of Magical Creatures class."
+    },
+    {
+      "entity_1": "Malfoy",
+      "entity_2": "Slytherins",
+      "relationship_type": "member",
+      "description": "Malfoy is a member of Slytherin house."
+    }
+  ]
+}

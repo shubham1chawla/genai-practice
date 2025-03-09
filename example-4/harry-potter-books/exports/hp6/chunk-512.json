@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story. He is described as having awoken Ron and Hermione to his presence."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is also on an adventure with him. He looks sheepish but pleased with himself."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Another friend of Harry's who is described as looking flustered and immediately starting to fuss about finding information in a book."
+    },
+    {
+      "name": "flesh-eating trees of the world",
+      "entity_type": "book",
+      "singular": false,
+      "description": "A book that Hermione uses to find out how to handle Snargaluff pods. It is described as having information on how to puncture them with something sharp."
+    },
+    {
+      "name": "snargaluff pods",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Pods that Harry and his friends are trying to handle. They need to be punctured with something sharp according to the book."
+    },
+    {
+      "name": "stump",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry and his friends are diving for the Snargaluff pods."
+    },
+    {
+      "name": "vine",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A thorny vine that is trying to throttle Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends who are on an adventure together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are also friends who are on this adventure with Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snargaluff pods",
+      "relationship_type": "interaction",
+      "description": "Ron is interacting with the Snargaluff pods, trying to handle them."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "flesh-eating trees of the world",
+      "relationship_type": "reference",
+      "description": "Hermione is referencing the book 'Flesh-Eating Trees of the World' for information on how to handle Snargaluff pods."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "vine",
+      "relationship_type": "interaction",
+      "description": "Harry is interacting with a thorny vine that is trying to throttle him."
+    }
+  ]
+}

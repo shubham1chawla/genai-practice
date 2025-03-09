@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The title of a popular book series."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The newly reinstated Chief Warlock of the Wizengamot and a prominent figure in the wizarding community."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A governing body in the wizarding world."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The newly appointed Minister for Magic."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A governing body in the wizarding world."
+    },
+    {
+      "name": "hogwarts school of witchcraft and wizardry",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A prestigious school for young wizards and witches."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "dumbledore",
+      "relationship_type": "met_with",
+      "description": "Scrimgeour met with Dumbledore upon taking office."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "hogwarts school of witchcraft and wizardry",
+      "relationship_type": "ensures_safety",
+      "description": "The Ministry guarantees the safety of students returning to Hogwarts School of Witchcraft and Wizardry this autumn."
+    }
+  ]
+}

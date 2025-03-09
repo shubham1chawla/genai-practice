@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "veritas",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The name of a book mentioned in the text"
+    },
+    {
+      "name": "winky",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A house-elf who is bound to Harry Potter's family and tries to protect him from the Death Eaters"
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_name",
+      "singular": false,
+      "description": "A group of non-magical people that Winky and Harry's father are trying to free"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group_name",
+      "singular": false,
+      "description": "A group of dark wizards who follow the Dark Lord Voldemort"
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title_name",
+      "singular": true,
+      "description": "The title given to Voldemort by his followers"
+    },
+    {
+      "name": "ministry wizards",
+      "entity_type": "group_name",
+      "singular": false,
+      "description": "A group of wizards who work for the Ministry of Magic and are trying to stop the Death Eaters"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "harry potter",
+      "relationship_type": "protects",
+      "description": "Winky tries to protect Harry from the Death Eaters by binding him with her magic"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "dark lord",
+      "relationship_type": "follows",
+      "description": "The Death Eaters are followers of the Dark Lord Voldemort"
+    },
+    {
+      "entity_1": "ministry wizards",
+      "entity_2": "muggles",
+      "relationship_type": "helping",
+      "description": "The Ministry wizards are trying to free the Muggles from the Death Eaters"
+    }
+  ]
+}

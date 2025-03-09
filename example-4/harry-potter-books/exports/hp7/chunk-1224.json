@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as a person who will be staying in the room and not participating in the fighting."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as a person giving orders to Ginny."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a person heading off with Mr. and Mrs. Weasley."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as asking about Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who has gone up to the Great Hall with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who has gone up to the Great Hall with Ron."
+    },
+    {
+      "name": "mr weasley’s wife (not explicitly mentioned but implied)",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is implied as being present and heading off with Mr. Weasley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ginny",
+      "entity_2": "mr weasley",
+      "relationship_type": "ordered_by",
+      "description": "Ginny is ordered by Mr. Weasley to stay in the room."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "lupin",
+      "relationship_type": "headed_with",
+      "description": "Mr. Weasley heads off with Lupin."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asked_about",
+      "description": "Harry asks about Ron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "asked_about",
+      "description": "Harry asks about Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "went_with",
+      "description": "Ron and Hermione went up to the Great Hall together."
+    }
+  ]
+}

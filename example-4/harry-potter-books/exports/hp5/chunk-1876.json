@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "second war",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The second war is mentioned at the beginning of the text."
+    },
+    {
+      "name": "dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry is sprinting out of the dormitory to go somewhere else."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is a person who calls after Harry as he runs by."
+    },
+    {
+      "name": "feast",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The feast is mentioned as an event that is about to start."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry thinks that everyone must be in the Great Hall for the feast."
+    },
+    {
+      "name": "charms classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry comes to a halt outside his Charms classroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "feast",
+      "relationship_type": "not attending",
+      "description": "Harry has no intention of going to the feast."
+    },
+    {
+      "entity_1": "fat lady",
+      "entity_2": "feast",
+      "relationship_type": "related_to",
+      "description": "The Fat Lady mentions that the feast is about to start."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "thinking_of",
+      "description": "Harry thinks that everyone must be in the Great Hall for the feast."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as eagerly awaiting her Daily Prophet. She is described as not the only person waiting for news about the escaped Death Eaters."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a source of news about the escaped Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as having escaped and being eagerly awaited to be caught."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as helping himself to orange juice and receiving a note from the owl."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is mentioned as the location where Harry and Hermione are having breakfast."
+    },
+    {
+      "name": "hogwarts school",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts School is mentioned as the institution that Harry attends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "daily prophet",
+      "relationship_type": "has",
+      "description": "Harry has a Daily Prophet."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "daily prophet",
+      "relationship_type": "has",
+      "description": "Hermione also has a Daily Prophet."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "concerned about",
+      "description": "Harry is concerned about the escaped Death Eaters."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eaters",
+      "relationship_type": "concerned about",
+      "description": "Hermione is also concerned about the escaped Death Eaters."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "great hall",
+      "relationship_type": "located in",
+      "description": "Harry is located in the Great Hall."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "great hall",
+      "relationship_type": "located in",
+      "description": "Hermione is also located in the Great Hall."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts school",
+      "relationship_type": "student of",
+      "description": "Harry is a student at Hogwarts School."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogwarts school",
+      "relationship_type": "student of",
+      "description": "Hermione is also a student at Hogwarts School."
+    }
+  ]
+}

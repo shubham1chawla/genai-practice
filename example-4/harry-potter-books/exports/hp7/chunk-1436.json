@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, described as a powerful wizard who has never accepted the possibility of death."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, described as having courage and accepting the possibility of death."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is associated with Voldemort, but not a main character in this context."
+    },
+    {
+      "name": "voldemort's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Voldemort's wand, described as powerful and containing some of Voldemort's qualities."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand, described as having imbibed some of the power and qualities of Voldemort's wand."
+    },
+    {
+      "name": "lucius's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Lucius's wand, described as not being able to perform powerful magic compared to Harry's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry's wand",
+      "entity_2": "voldemort's wand",
+      "relationship_type": "imbibed_power",
+      "description": "Harry's wand imbibed some of the power and qualities of Voldemort's wand that night."
+    },
+    {
+      "entity_1": "harry's wand",
+      "entity_2": "lucius's wand",
+      "relationship_type": "more_powerful_than",
+      "description": "Your wand now contained the power of your enormous courage and of Voldemort’s own deadly skill, making it more powerful than Lucius's wand."
+    },
+    {
+      "entity_1": "harry's wand",
+      "entity_2": "lord voldemort",
+      "relationship_type": "recognized_enemy",
+      "description": "Your wand recognized him when he pursued you, recognized a man who was both kin and mortal enemy."
+    }
+  ]
+}

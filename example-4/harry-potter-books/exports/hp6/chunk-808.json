@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned in the text as a person who is present in the room. He is referred to by Dumbledore as 'Harry' and also as 'Tom Riddle', which is Voldemort's real name."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned in the text as a person who is present in the room. He is referred to by Harry as 'Dumbledore' and also as 'Tom Riddle', which is Voldemort's real name."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned in the text as a person who is present in the room. He is referred to by Dumbledore and Harry as 'Tom Riddle', which is his real name."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "refusal_to_use_chosen_name",
+      "description": "Dumbledore refuses to use Voldemort's chosen name, which is a refusal to allow Voldemort to dictate the terms of the meeting."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "mentor_student_relationship",
+      "description": "Dumbledore and Harry Potter have a mentor-student relationship, as Dumbledore is an old teacher who never quite forgets his charges' youthful beginnings."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "hostage_taker_hostage_relationship",
+      "description": "Voldemort takes Dumbledore and Harry Potter as hostages, as he is dictating the terms of the meeting."
+    }
+  ]
+}

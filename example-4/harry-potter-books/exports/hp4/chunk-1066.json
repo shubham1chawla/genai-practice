@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is attending a Defense Against the Dark Arts lesson. He has Twitchy Ears and is holding his hands over them as he walks away from the class."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is attending a Defense Against the Dark Arts lesson. She is angry and wants to know how Rita is listening into private conversations when she's supposed to be banned from the grounds."
+    },
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita is a person who is suspected of using an Invisibility Cloak to listen into private conversations. She is not seen near the judges' table at the second task or anywhere near the lake."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a professor who teaches Defense Against the Dark Arts. He gives the class a rigorous test of hex-deflection and says he didn't see Rita anywhere near the judges' table or lake."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned in the title 'The Madness of Mr. Crouch'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "rita",
+      "relationship_type": "suspicion",
+      "description": "Hermione suspects Rita of using an Invisibility Cloak to listen into private conversations."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "rita",
+      "relationship_type": "denial",
+      "description": "Moody denies seeing Rita anywhere near the judges' table or lake, suggesting that she may not be using an Invisibility Cloak after all."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "interaction",
+      "description": "Harry interacts with Moody in class and receives a bad case of Twitchy Ears from the rigorous test of hex-deflection."
+    }
+  ]
+}

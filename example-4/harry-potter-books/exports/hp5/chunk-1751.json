@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, who is being attacked by Dolohov."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is attacking Harry with magic spells."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who intervenes to save him from Dolohov's attack."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was previously attacked by Dolohov with the same slashing movement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dolohov",
+      "relationship_type": "attacked_by",
+      "description": "Dolohov is attacking Harry with magic spells, as described in the text: 'He made the same slashing movement with his wand that he had used on Hermione just as Harry yelled, “Protego!”'"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "dolohov",
+      "relationship_type": "interrupted_attack",
+      "description": "Sirius intervenes to save Harry from Dolohov's attack, as described in the text: 'Sirius hurtled out of nowhere, rammed Dolohov with his shoulder, and sent him flying out of the way.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dolohov",
+      "relationship_type": "defended_against",
+      "description": "Harry defends himself against Dolohov's attack using magic spells, as described in the text: 'Once again, Dolohov’s arms and legs snapped together and he keeled over backward, landing with a crash on his back.'"
+    }
+  ]
+}

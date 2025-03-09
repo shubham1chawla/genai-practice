@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is trying to convince Harry to move."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who needs to be convinced by Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is trying to reason with Harry."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as the one who is debating with George about how Dumbledore might stop people under 17 from entering the tournament."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as the one who is being debated by Fred."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who knows that Harry and his friends are not of age."
+    },
+    {
+      "name": "tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The tournament is mentioned as the event that people under 17 are trying to enter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "convinced_by",
+      "description": "Hermione convinces Harry to move."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "debating_with",
+      "description": "Fred and George are debating about how Dumbledore might stop people under 17 from entering the tournament."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "knows_age_of",
+      "description": "Dumbledore knows that Harry is not of age."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "suggesting_to",
+      "description": "Fred suggests to George that they use a couple of drops of Aging Potion."
+    }
+  ]
+}

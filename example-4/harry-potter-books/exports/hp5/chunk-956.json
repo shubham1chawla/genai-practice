@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "the eye of the snake",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "The eye of the snake is described as looking around at the class for a few seconds before tearing flesh from the dead cow with its pointed fangs. (Excerpt: 'It looked around at the class for a few seconds, swishing its long black tail...')"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is described as knowing about the creatures and is present in the scene. (Excerpt: 'He looked eagerly at Ron, but Ron was still staring around into the trees...')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as being confused and nervously expectant, and is unable to see the creatures. (Excerpt: 'He looked eagerly at Ron, but Ron was still staring around into the trees...')"
+    },
+    {
+      "name": "the class",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The class is described as being confused and nervously expectant, and are unable to see the creatures. (Excerpt: 'Most of the rest of the class were wearing expressions as confused and nervously expectant...')"
+    },
+    {
+      "name": "the horse",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The horse is described as standing feet from them and eating. (Excerpt: 'There were only two other people who seemed to be able to see them: a stringy Slytherin boy...')"
+    },
+    {
+      "name": "the dead cow",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The dead cow is described as being eaten by the snake. (Excerpt: 'It looked around at the class for a few seconds, swishing its long black tail, then bowed its head and began to tear flesh from the dead cow...')"
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is described as being able to see the creatures and is watching the snake's progress. (Excerpt: 'There were only two other people who seemed to be able to see them...')"
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is described as being present in the scene and standing behind Neville. (Excerpt: 'a stringy Slytherin boy standing just behind Goyle was watching the horse eating...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "the eye of the snake",
+      "relationship_type": "knows about",
+      "description": "Hagrid is described as knowing about the creatures, and is present in the scene. (Excerpt: 'He looked eagerly at Ron, but Ron was still staring around into the trees...')"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "looks to for guidance",
+      "description": "Ron looks to Hagrid for guidance and is eager to see him. (Excerpt: 'He looked eagerly at Ron, but Ron was still staring around into the trees...')"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "the eye of the snake",
+      "relationship_type": "sees",
+      "description": "Neville is described as being able to see the creatures and is watching the snake's progress. (Excerpt: 'There were only two other people who seemed to be able to see them...')"
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "the horse",
+      "relationship_type": "watches",
+      "description": "Goyle is described as watching the horse eating. (Excerpt: 'a stringy Slytherin boy standing just behind Goyle was watching the horse eating...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the eye of the snake",
+      "relationship_type": "sees proof of existence",
+      "description": "Harry is described as seeing proof that the creatures are real. (Excerpt: 'A great wave of relief broke over Harry...')"
+    }
+  ]
+}

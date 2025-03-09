@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a main character in the story who asks Hermione about the box."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a main character in the story who explains the Society for the Promotion of Elfish Welfare to Harry and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a main character in the story who is skeptical about Hermione's new organization."
+    },
+    {
+      "name": "society for the promotion of elfish welfare (spew)",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "SPEW is an organization founded by Hermione to promote the welfare of magical creatures."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "asked about",
+      "description": "Harry asks Hermione about the box."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "society for the promotion of elfish welfare (spew)",
+      "relationship_type": "founded",
+      "description": "Hermione founded SPEW, an organization to promote the welfare of magical creatures."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "skeptical about",
+      "description": "Ron is skeptical about Hermione's new organization, SPEW."
+    }
+  ]
+}

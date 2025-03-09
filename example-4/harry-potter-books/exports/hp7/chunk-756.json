@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as speaking and hesitating, indicating he is a person present in the scene. (\"No,\" said Ron, \"I — \")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as already hurrying to the place Ron indicated, indicating he is a person present in the scene. (\"Harry was already hurrying to the place Ron had indicated.\")"
+    },
+    {
+      "name": "trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Trees are mentioned as growing close together some yards away, indicating they are a location in the scene. (\"But he hesitated, glancing at two trees growing close together some yards away.\")"
+    },
+    {
+      "name": "pool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Pool is mentioned as Harry was running to it, indicating it is a location in the scene. (\"I did think I saw something move over there, but I was running to the pool at the time...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "trees",
+      "relationship_type": "glanced_at",
+      "description": "Ron glanced at two trees growing close together some yards away. (\"But he hesitated, glancing at two trees growing close together some yards away.\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "pool",
+      "relationship_type": "mentioned_running_to",
+      "description": "Ron mentioned that he was running to the pool. (\"I did think I saw something move over there, but I was running to the pool at the time...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "trees",
+      "relationship_type": "hurried_to",
+      "description": "Harry hurried to the place Ron had indicated, which is near two trees. (\"Harry was already hurrying to the place Ron had indicated.\")"
+    }
+  ]
+}

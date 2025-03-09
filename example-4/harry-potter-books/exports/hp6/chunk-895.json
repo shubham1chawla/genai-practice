@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'the Chosen One'. He is trying to get a memory from Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Potions master who has a tear-filled eye and seems unable to look away. Harry is trying to get a memory from him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "trying_to_get_memory_from",
+      "description": "Harry is trying to get a memory from Slughorn, who has the information that Dumbledore needs."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "needs_information_from",
+      "description": "Dumbledore needs information, which Harry also needs. This is why Harry is trying to get a memory from Slughorn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "has_to_kill",
+      "description": "Harry has to kill Slughorn because he is the Chosen One."
+    }
+  ]
+}

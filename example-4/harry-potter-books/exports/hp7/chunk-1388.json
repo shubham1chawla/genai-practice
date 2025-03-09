@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who has been watching others die and is now being used by Dumbledore. He is asked to keep Harry alive so that he can die at the right moment."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who must kill Harry for his own death to be meaningful."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who has been keeping Harry alive so that he can die at the right moment. He is trying to teach Harry and let him try his strength."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is a person for whom Snape thought they were protecting Harry all those years."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who must die at the right moment so that Voldemort's death can be meaningful."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "must_die",
+      "description": "Voldemort must kill Harry for his own death to be meaningful."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "used_snape",
+      "description": "Dumbledore has used Snape to keep Harry alive so that he can die at the right moment."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "kept_alive",
+      "description": "Dumbledore has been keeping Harry alive so that he can die at the right moment."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "thought_protected_for",
+      "description": "Snape thought they were protecting Harry for Lily all those years."
+    }
+  ]
+}

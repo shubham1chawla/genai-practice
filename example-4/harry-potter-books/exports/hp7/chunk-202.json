@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as attempting to destroy Horcruxes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, mentioned in conversation with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, mentioned in conversation with Ron and Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, mentioned in conversation with Ron and Hermione."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Objects that contain pieces of Voldemort's soul, mentioned as needing to be destroyed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "has_horcruxes",
+      "description": "Voldemort has Horcruxes that need to be destroyed."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "riddle's diary",
+      "relationship_type": "destroyed_horcrux",
+      "description": "Harry destroyed one of Voldemort's Horcruxes, Riddle's diary."
+    }
+  ]
+}

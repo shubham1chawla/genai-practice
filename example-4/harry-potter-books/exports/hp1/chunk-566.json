@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard with multiple faces."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is possessed by Voldemort."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The protagonist of the story, a young wizard."
+    },
+    {
+      "name": "unicorn blood",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A substance that has strengthened Voldemort."
+    },
+    {
+      "name": "elixir of life",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A potion that will allow Voldemort to create a body of his own."
+    },
+    {
+      "name": "stone in your pocket",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object that Harry possesses and Voldemort wants."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "quirrell",
+      "relationship_type": "possession",
+      "description": "Voldemort is possessing Quirrell's body."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "unicorn blood",
+      "relationship_type": "strengthened_by",
+      "description": "Unicorn blood has strengthened Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elixir of life",
+      "relationship_type": "requires",
+      "description": "Voldemort needs the Elixir of Life to create a body of his own."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone in your pocket",
+      "relationship_type": "possesses",
+      "description": "Harry possesses the Stone in his pocket."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Voldemort is threatening Harry's life."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry's parents",
+      "relationship_type": "killed",
+      "description": "Voldemort killed Harry's parents."
+    }
+  ]
+}

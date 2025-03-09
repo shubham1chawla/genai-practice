@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having an Invisibility Cloak."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who got bitten by Norbert and had to go to Madam Pomfrey."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who rushed up to the hospital wing with Harry."
+    },
+    {
+      "name": "norbert",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "A dragon that bit Ron and is mentioned as being covered by the Invisibility Cloak."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The nurse who treats Ron's bite."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who told Madam Pomfrey that he wanted to borrow one of Ron's books."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "norbert",
+      "relationship_type": "has_covered",
+      "description": "Harry mentioned that the Invisibility Cloak is big enough to cover two of them and Norbert."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "visited",
+      "description": "Ron had to go to Madam Pomfrey because his hand was swollen and looked green."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanied",
+      "description": "Harry rushed up to the hospital wing with Hermione."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "informed",
+      "description": "Malfoy told Madam Pomfrey that he wanted to borrow one of Ron's books."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "norbert",
+      "relationship_type": "bitten_by",
+      "description": "Ron got bitten by Norbert."
+    }
+  ]
+}

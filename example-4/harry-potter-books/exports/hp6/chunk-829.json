@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "room 425",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room where the conversation is taking place. It is described as 'the unknowable room' and has a ceiling that Kreacher can hear."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is pretending not to hear Harry's conversation with Dobby. He makes a deep bow and Disapparates when told to leave."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is being spoken to by Harry. He thanks Harry and then vanishes."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, who is speaking to Kreacher and Dobby. He tells them to leave and then turns to Ron and Hermione to discuss their plan."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, who is attempting to mop up a mess of ink on the floor. He is described as 'glum' when discussing their plan."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, who helps Ron with the ink and then discusses the plan with Harry."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is going up to a location with 'a variety of students'. Hermione is concerned about how many people are in on his plan."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kraecher",
+      "relationship_type": "speaks_to",
+      "description": "Harry tells Kreacher to pretend he cannot hear."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "speaks_to",
+      "description": "Harry speaks to Dobby and tells him to leave."
+    },
+    {
+      "entity_1": "kraecher",
+      "entity_2": "harry potter",
+      "relationship_type": "listens_to",
+      "description": "Kreacher listens to Harry's conversation with Dobby."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "thanks",
+      "description": "Dobby thanks Harry for telling him to leave."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "helps",
+      "description": "Ron is helped by Hermione when she pulls the sodden essay towards her and begins siphoning off the ink with her wand."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "discusses_plan_with",
+      "description": "Harry discusses his plan with Ron and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about Malfoy's plan to go up to a location with 'a variety of students'."
+    }
+  ]
+}

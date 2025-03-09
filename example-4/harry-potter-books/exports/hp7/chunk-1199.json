@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is mentioned as giving orders to Professor McGonagall."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "A dark wizard who is the main antagonist of the story. He is mentioned as a threat to Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry. She is mentioned as being confident in the school's ability to defend against He-Who-Must-Not-Be-Named."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry. He is mentioned as a potential problem in the school's defense against He-Who-Must-Not-Be-Named."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main protagonist of the story. He is mentioned as searching for an object, but his name is not explicitly stated in this passage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "dumbledore",
+      "relationship_type": "gives_orders",
+      "description": "Professor McGonagall is acting on Dumbledore's orders, as mentioned in the passage."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "he-who-must-not-be-named",
+      "relationship_type": "defends_against",
+      "description": "Professor McGonagall is confident that she and her colleagues can defend Hogwarts against He-Who-Must-Not-Be-Named."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "snape",
+      "relationship_type": "concerned_about",
+      "description": "Professor McGonagall mentions that something will have to be done about Professor Snape in the context of defending against He-Who-Must-Not-Be-Named."
+    }
+  ]
+}

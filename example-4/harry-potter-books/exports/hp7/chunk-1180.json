@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diadem is mentioned as an object that Ravenclaw's statue is wearing. It is described as something Harry wants to see and has a lead on its location."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ravenclaw is mentioned as the one who is wearing the diadem in her statue. She is not physically present but is represented by her statue."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who wants to see the diadem and has a lead on its location. He is also experiencing visions of Voldemort flying."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone who is flying again, whether it's to an underground lake or the castle. Harry sees him in a vision."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of Harry's friends who he tells about Voldemort being on the move."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of Harry's friends who he tells about Voldemort being on the move."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is mentioned as someone who gets up to go with Harry but then sits back down when Ginny suggests Luna take his place."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as someone who suggests that Luna take Harry's place in going to see the statue."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as someone who agrees to go with Harry to see the statue."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "diadem",
+      "relationship_type": "has_lead",
+      "description": "Harry has a lead on the location of the diadem and wants to see it."
+    },
+    {
+      "entity_1": "ravenclaw",
+      "entity_2": "diadem",
+      "relationship_type": "wears",
+      "description": "Ravenclaw's statue is wearing the diadem."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "sees_in_vision",
+      "description": "Harry sees Voldemort flying in a vision."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "luna",
+      "relationship_type": "suggests",
+      "description": "Ginny suggests that Luna take Harry's place in going to see the statue."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_go_with",
+      "description": "Cho wants to go with Harry but then sits back down when Ginny suggests Luna take his place."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "diadem",
+      "relationship_type": "will_see",
+      "description": "Luna agrees to go with Harry to see the statue and the diadem."
+    }
+  ]
+}

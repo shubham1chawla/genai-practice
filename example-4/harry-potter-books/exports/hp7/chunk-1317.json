@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a skilled wizard who is trying to find Harry Potter for Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the one who is giving orders to Snape and is confident that they will succeed in their mission."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "snake",
+      "singular": true,
+      "description": "Nagini is a snake that is being protected by some sort of spell, and Harry is trying to think of a way to penetrate the protection surrounding her."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one who is hiding in midair and is being sought by Snape for Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "working_for",
+      "description": "Snape is working for Voldemort, as evident from the conversation between them where Snape is trying to find Harry Potter for his lord."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "seeking",
+      "description": "Snape is seeking Harry Potter, as he is trying to find him for Voldemort."
+    }
+  ]
+}

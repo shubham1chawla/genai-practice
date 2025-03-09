@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "draco",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Draco is mentioned as someone Harry doesn't take orders from."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character and is being threatened by Crabbe."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as shouting for Harry from another room."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Crabbe is the one who casts a curse at Harry and is restrained by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is trying to restrain Crabbe from killing Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as casting a Stunning Spell at Crabbe's head."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crabbe",
+      "entity_2": "harry",
+      "relationship_type": "attack",
+      "description": "Crabbe casts a curse at Harry, but it misses him."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "restrain",
+      "description": "Malfoy tries to restrain Crabbe from killing Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "crabbe",
+      "relationship_type": "attack",
+      "description": "Hermione casts a Stunning Spell at Crabbe's head, but it misses because Malfoy pulls him out of the way."
+    }
+  ]
+}

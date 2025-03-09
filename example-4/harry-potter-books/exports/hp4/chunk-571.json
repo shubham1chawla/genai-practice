@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts. He is mentioned as grunting and believing Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore believes Harry's innocence."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character. He is mentioned as being bitter and assuming Hagrid was talking about the skrewts."
+    },
+    {
+      "name": "skrewts",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Skrewts are magical creatures that have developed armor and become powerful."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "believes",
+      "description": "Hagrid believes Dumbledore believes Harry's innocence."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "believes",
+      "description": "Hagrid believes Harry's innocence."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "believes",
+      "description": "Dumbledore believes Harry's innocence."
+    }
+  ]
+}

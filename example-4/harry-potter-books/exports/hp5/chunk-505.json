@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, a student at Hogwarts. He is mentioned as having a least favorite class, Potions."
+    },
+    {
+      "name": "potions",
+      "entity_type": "class",
+      "singular": true,
+      "description": "Potions is Harry's second least favorite class after Divination. It is mentioned that he has to take this class."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Trelawney is the teacher of Divination. She is described as a thin woman with a habit of predicting Harry's premature death."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends and classmates. He emerges from the trapdoor to join Harry in the Divination class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "potions",
+      "relationship_type": "least_favorite_class_of",
+      "description": "Harry has Potions as his second least favorite class after Divination."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "harry",
+      "relationship_type": "predicts_death_of",
+      "description": "Professor Trelawney predicts Harry's premature death in her classes."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "joins_in_class_with",
+      "description": "Ron joins Harry in the Divination class."
+    }
+  ]
+}

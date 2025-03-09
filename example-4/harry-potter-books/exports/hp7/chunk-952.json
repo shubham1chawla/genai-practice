@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is being strangled by the silver hand. He was reaping his reward for his hesitation and moment of pity."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail's throat is being crushed by the metal fingers, he is turning blue and eventually dies."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry tries to pull the metal fingers from around Wormtail's throat with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron tries to pull the metal fingers from around Wormtail's throat with Harry and attempts to cast a spell on Pettigrew."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione gives a dreadful scream from overhead, but no description of her action is given in the provided text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "harry",
+      "relationship_type": "victim_of",
+      "description": "Pettigrew is being strangled by the silver hand, which Harry and Ron are trying to remove."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "pettigrew",
+      "relationship_type": "killed_by",
+      "description": "Wormtail's death is caused by Pettigrew being strangled, but it seems that Wormtail was already dying when he was killed."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wormtail",
+      "relationship_type": "attempted_rescuer_of",
+      "description": "Harry tries to pull the metal fingers from around Wormtail's throat with Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "pettigrew",
+      "relationship_type": "attempted_attacker_of",
+      "description": "Ron attempts to cast a spell on Pettigrew, but it does not work."
+    }
+  ]
+}

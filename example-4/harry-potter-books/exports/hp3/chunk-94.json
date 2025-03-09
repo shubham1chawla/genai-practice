@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who has 10 Galleons and wants to get an owl. She is also being teased by Harry and Ron about eating or sleeping."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having Hedwig, an owl, and teasing Hermione about eating or sleeping."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as having Scabbers, a pet rat, and teasing Hermione about eating or sleeping. He also wants to get his pet checked over."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is mentioned as Harry's owl."
+    },
+    {
+      "name": "errol",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Errol is mentioned as a family owl and Ron says he hasn't got him."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet_rat",
+      "singular": true,
+      "description": "Scabbers is mentioned as Ron's pet rat. He looks thinner than usual and has a droop to his whiskers."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "Galleons are mentioned as the currency Hermione has."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "hedwig",
+      "relationship_type": "has",
+      "description": "Hermione wants to get an owl like Harry's Hedwig."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "has",
+      "description": "Harry has Hedwig, the owl."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "errol",
+      "relationship_type": "family_owl",
+      "description": "Ron mentions that Errol is a family owl."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "has",
+      "description": "Ron has Scabbers, the pet rat."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "galleons",
+      "relationship_type": "has",
+      "description": "Hermione has 10 Galleons."
+    }
+  ]
+}

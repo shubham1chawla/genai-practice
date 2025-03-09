@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a student who begins the conversation with Harry, Ron, and Hermione. He asks if Harry has a wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who turns to Harry and says that they can help find what they are looking for."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is being asked by Seamus if he has a wand. He is also the one who is trying to decide whether or not to trust others with their mission."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who stands between Ron and Harry, and is able to hear Ron's whispered conversation. She agrees with Ron that they need the help of others."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a character who is mentioned as having warned Harry against telling anyone about the Horcruxes. He also trusted Snape, which led to tragic consequences."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a character who was trusted by Dumbledore, but ultimately betrayed him and committed murder."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Ron helps Harry decide whether or not to trust others with their mission. Ron says that they can help find what they are looking for."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "agreed_with",
+      "description": "Hermione agrees with Ron that they need the help of others. She says 'I think Ron's right'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "trusted",
+      "description": "Dumbledore trusted Snape, but this ultimately led to tragic consequences."
+    }
+  ]
+}

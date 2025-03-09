@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who has never seen Aunt Petunia look at him in a certain way before. His eyes are opened to the fact that Aunt Petunia is his mother's sister, and he realizes she is fearful of Lord Voldemort's return."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is described as someone who has never looked at Harry in a certain way before. She is shown to be fearful of Lord Voldemort's return, and her usual pretense of disliking magic is dropped."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as someone who has returned, causing fear in Aunt Petunia. Harry has seen him and knows he came back a month ago."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as the person whose massive leather-clad shoulders Aunt Petunia clutched in fear."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt petunia",
+      "relationship_type": "has_realization",
+      "description": "Harry has a realization that Aunt Petunia is his mother's sister, and he sees her fear of Lord Voldemort's return."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "has_encountered",
+      "description": "Harry has encountered Lord Voldemort and knows he came back a month ago."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "lord voldemort",
+      "relationship_type": "is_afraid_of",
+      "description": "Aunt Petunia is afraid of Lord Voldemort's return, as shown by her fearful expression and behavior."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dudley",
+      "relationship_type": "is_clutching",
+      "description": "Aunt Petunia is clutching Dudley's massive leather-clad shoulders in fear."
+    }
+  ]
+}

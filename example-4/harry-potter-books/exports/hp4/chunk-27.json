@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Frank is the main character in this conversation, who is speaking to someone he refers to as 'Lord Voldemort'. He is trying to assert his courage and bravery."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is a powerful and intimidating figure, referred to by Frank. He is described as knowing everything."
+    },
+    {
+      "name": "police",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The police are mentioned as being interested in the conversation between Frank and Lord Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "frank",
+      "entity_2": "lord voldemort",
+      "relationship_type": "speaking_to",
+      "description": "Frank is speaking to Lord Voldemort, who responds with a cold voice."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "police",
+      "relationship_type": "informing",
+      "description": "Frank mentions that he has heard enough to interest the police."
+    }
+  ]
+}

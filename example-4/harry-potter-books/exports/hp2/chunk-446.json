@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The chamber is mentioned as the place where someone was caught and expelled."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is described as a wizard prison."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the one who expelled someone from the chamber and has valuable Dark Arts stuff."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being puzzled by Azkaban and having a conversation with Malfoy."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as someone who is dull and has a conversation with Harry."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as the house that Malfoy's father wants to get rid of all Mudblood filth from."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic raided Malfoy's Manor last week."
+    },
+    {
+      "name": "manor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Malfoy's Manor was raided by the Ministry of Magic."
+    },
+    {
+      "name": "drawing-room floor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "There is a secret chamber under the drawing-room floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "chamber",
+      "relationship_type": "caught_in",
+      "description": "Malfoy expelled someone from the chamber."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "puzzled_by",
+      "description": "Harry was puzzled by Azkaban."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ministry of magic",
+      "relationship_type": "raided_by",
+      "description": "The Ministry of Magic raided Malfoy's Manor."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "manor",
+      "relationship_type": "owned_by",
+      "description": "Malfoy owns the Manor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "drawing-room floor",
+      "relationship_type": "aware_of_secret_chamber",
+      "description": "Harry is aware of a secret chamber under the drawing-room floor."
+    }
+  ]
+}

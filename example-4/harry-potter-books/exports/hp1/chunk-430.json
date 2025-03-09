@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master who is watching the Quidditch game from his broomstick. He sees something scarlet shoot past him and misses it by inches."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is playing Quidditch on his broomstick. He catches the Snitch in his hand and wins the game."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is excited about Harry's win. She is dancing up and down on her seat and hugging Parvati Patil in the row in front."
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Parvati Patil is a student at Hogwarts who is being hugged by Hermione in celebration of Harry's win."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who congratulates Harry on his win. He says 'Well done' to Harry quietly so that only he can hear it."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is a house at Hogwarts that is in the lead after Harry's win."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "missed_by",
+      "description": "Snape misses something scarlet shoot past him, which is caught by Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "parvati patil",
+      "relationship_type": "hugging",
+      "description": "Hermione hugs Parvati Patil in celebration of Harry's win."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "congratulated_by",
+      "description": "Dumbledore congratulates Harry on his win."
+    }
+  ]
+}

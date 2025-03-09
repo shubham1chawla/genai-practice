@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "masked",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The event of masked has created confusion, uncertainty, and fear."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being referred to as the Boy Who Lived."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is the main antagonist and enemy of Harry."
+    },
+    {
+      "name": "Lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a friend and ally to Harry."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The old hero who has died, and whose death is being used by Voldemort to create doubt and fear."
+    },
+    {
+      "name": "Ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of the Wizarding world that is now moving against Muggleborns."
+    },
+    {
+      "name": "Muggleborns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are born to non-magical parents but possess magical abilities."
+    },
+    {
+      "name": "Daily Prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The newspaper that is being pointed at by Lupin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Voldemort",
+      "relationship_type": "enemy_of",
+      "description": "Harry and Voldemort are enemies, as stated in the text: 'the Boy Who Lived —were sure to be the symbol and rallying point for any resistance to Voldemort'."
+    },
+    {
+      "entity_1": "Lupin",
+      "entity_2": "Daily Prophet",
+      "relationship_type": "pointing_at",
+      "description": "Lupin is pointing at the Daily Prophet, as stated in the text: 'Lupin pointed at the Daily Prophet'."
+    },
+    {
+      "entity_1": "Ministry",
+      "entity_2": "Muggleborns",
+      "relationship_type": "moving_against",
+      "description": "The Ministry is moving against Muggleborns, as stated in the text: 'Meanwhile, the Ministry has started moving against Muggleborns'."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "Dumbledore",
+      "relationship_type": "used_death_of",
+      "description": "Voldemort is using Dumbledore's death to create doubt and fear, as stated in the text: 'But by suggesting that you had a hand in the old hero’s death, Voldemort has not only set a price upon your head, but sown doubt and fear amongst many who would have defended you'."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Ravenclaws are a group of students mentioned in the text as being followed by Harry, Ron, and Hermione into the Great Hall."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is a location where students gather for meals. It has an enchanted ceiling that echoes Harry's mood."
+    },
+    {
+      "name": "professor grubbly-plank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is a teacher who is chatting with Professor Sinistra at the staff table. She is mentioned as being temporary."
+    },
+    {
+      "name": "professor sinistra",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sinistra is an Astronomy teacher who is chatting with Professor Grubbly-Plank at the staff table."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and Care of Magical Creatures teacher who is absent from the Great Hall. His absence is noticed by Harry, Ron, and Hermione."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who did not mention Professor Grubbly-Plank's temporary status."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor table is a location where students from the Gryffindor house sit during meals."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who makes an insightful comment about Dumbledore's silence on Professor Grubbly-Plank's temporary status."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who is present in the Great Hall and notices Hagrid's absence."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a tall black girl with long, braided hair who greets Harry briefly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor grubbly-plank",
+      "relationship_type": "mentioned_by",
+      "description": "Dumbledore did not mention Professor Grubbly-Plank's temporary status, which is noted by Harry and Ron."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "absent_from_meeting_due_to",
+      "description": "Hagrid's absence from the Great Hall is implied to be due to Dumbledore's decision not to mention it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "made_insightful_comment_about",
+      "description": "Hermione makes an insightful comment about Dumbledore's silence on Professor Grubbly-Plank's temporary status."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "noticed_absence_of",
+      "description": "Ron notices Hagrid's absence from the Great Hall."
+    }
+  ]
+}

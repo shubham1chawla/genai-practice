@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being behind Harry."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is sitting in a place where Dumbledore can see him."
+    },
+    {
+      "name": "ludovic bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is accused of passing information to Lord Voldemort's supporters."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one whose supporters Bagman was passing information to."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is the one accusing Bagman of passing information."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "behind",
+      "description": "Dumbledore is behind Harry and can see Moody sitting there."
+    },
+    {
+      "entity_1": "ludovic bagman",
+      "entity_2": "lord voldemort",
+      "relationship_type": "supporter_of",
+      "description": "Bagman was passing information to Voldemort's supporters."
+    },
+    {
+      "entity_1": "mr. crouch",
+      "entity_2": "ludovic bagman",
+      "relationship_type": "accuser_of",
+      "description": "Crouch is accusing Bagman of passing information to Voldemort's supporters."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "rookwood",
+      "relationship_type": "friend_of_family_member",
+      "description": "Bagman claims that Rookwood was a friend of his dad's."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is mentioned as someone who has found out everything he needs and has gotten Dumbledore out of the way. He is also mentioned as sending a note to the Ministry of Magic."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being out of the way by Snape."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic is mentioned as receiving a note from Snape."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor house is mentioned as being unable to afford losing more points."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone who has been warned by Snape."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as gasping in response to Snape's warning."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as someone who has been warned by Snape along with Harry and Hermione."
+    },
+    {
+      "name": "staff room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The staff room is mentioned as a location where Snape is heading."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_gotten_out_of_the_way",
+      "description": "Snape has gotten Dumbledore out of the way."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ministry of magic",
+      "relationship_type": "sent_note_to",
+      "description": "Snape sent a note to the Ministry of Magic."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_concerned_about_points_of",
+      "description": "Snape is concerned about Gryffindor losing points."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "has_warned",
+      "description": "Snape has warned Harry Potter."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "was_gasped_at_by",
+      "description": "Hermione gasped at Snape."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snape",
+      "relationship_type": "was_warned_by",
+      "description": "Ron was warned by Snape."
+    },
+    {
+      "entity_1": "staff room",
+      "entity_2": "snape",
+      "relationship_type": "is_heading_to",
+      "description": "Snape is heading to the staff room."
+    }
+  ]
+}

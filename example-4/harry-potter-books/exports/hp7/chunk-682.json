@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'he'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person in the room with Harry, referred to as 'she'."
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An older woman who is helping Harry, referred to as 'she'."
+    },
+    {
+      "name": "the thief",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose photograph is being hidden by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "unseen_by",
+      "description": "Harry walks out of the room without Hermione seeing him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bathilda",
+      "relationship_type": "unseen_by",
+      "description": "Harry slips a photograph into his jacket while Bathilda is not looking at him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the thief",
+      "relationship_type": "has_photograph_of",
+      "description": "Harry hides the silver-framed photograph of the unknown thief inside his jacket."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being more than six feet tall and powerfully built, with a beard. He is also wearing new robes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron looks up at Harry in awe, describing him as 'scary'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione tells Harry to take one of Mafalda's tokens and they should go. She is nervous."
+    },
+    {
+      "name": "mafalda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mafalda is mentioned as having tokens that Hermione suggests Harry take."
+    },
+    {
+      "name": "reg",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Reg is a wizard who greets another wizard in navy blue robes with 'Morning'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "taller_than",
+      "description": "Harry towers over Ron, making him look up at Harry in awe."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "accompanies",
+      "description": "Hermione tells Harry to take one of Mafalda's tokens and they should go together."
+    },
+    {
+      "entity_1": "reg",
+      "entity_2": "wizard_in_navy_blue_robes",
+      "relationship_type": "greeted_by",
+      "description": "Reg greets another wizard in navy blue robes with 'Morning'."
+    }
+  ]
+}

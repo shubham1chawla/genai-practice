@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "euphoria",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Euphoria is mentioned as a possible effect of the potion. It is described as something that Harry's mother might have come up with."
+    },
+    {
+      "name": "peppermint",
+      "entity_type": "ingredient",
+      "singular": true,
+      "description": "Peppermint is mentioned as an ingredient added to the potion by Harry."
+    },
+    {
+      "name": "half-blood prince",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Half-Blood Prince's book is mentioned as something that Harry has in his bag."
+    },
+    {
+      "name": "hiccoughing solution",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "Hiccoughing Solution is a potion created by Malfoy and pronounced 'passable' by Slughorn."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who has created the Hiccoughing Solution."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is mentioned as someone who pronounced Malfoy's potion 'passable'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "half-blood prince",
+      "relationship_type": "possession",
+      "description": "Harry has the Half-Blood Prince's book in his bag."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hiccoughing solution",
+      "relationship_type": "creation",
+      "description": "Malfoy created the Hiccoughing Solution."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "hiccoughing solution",
+      "relationship_type": "evaluation",
+      "description": "Slughorn evaluated Malfoy's potion as 'passable'."
+    }
+  ]
+}

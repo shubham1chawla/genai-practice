@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned at the beginning of the text."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is introduced as a character who is with Harry in the lift."
+    },
+    {
+      "name": "bode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bode is introduced as a sallow-skinned wizard with a mournful face."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who is with Mr. Weasley in the lift."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Atrium is mentioned as a location that the lift goes to."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Department of Mysteries is mentioned as a location that the lift goes to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "accompanying",
+      "description": "Mr. Weasley and Harry are in the lift together."
+    },
+    {
+      "entity_1": "bode",
+      "entity_2": "mr weasley",
+      "relationship_type": "knowing",
+      "description": "Bode knows Mr. Weasley, as they exchange greetings."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "destination",
+      "description": "The lift is going to the Department of Mysteries, which Harry is presumably visiting."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "department of mysteries",
+      "relationship_type": "destination",
+      "description": "The lift is going to the Department of Mysteries, which Mr. Weasley is presumably visiting."
+    }
+  ]
+}

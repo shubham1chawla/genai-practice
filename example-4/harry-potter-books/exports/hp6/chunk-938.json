@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is exhausted but delighted with his night's work and shares it with Ron and Hermione in the next morning's Charms lesson."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who is impressed by Harry's accomplishments and wand movements."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's other friend who is also impressed by Harry's accomplishments and helps Ron to stop making it snow."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is a teacher at Hogwarts who had given Harry information about Voldemort's Horcruxes."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story and has Horcruxes that need to be destroyed."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a teacher at Hogwarts who promises to take Harry along if he finds another Horcrux."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "had_memory_of",
+      "description": "Harry had wheedled the memory out of Slughorn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_horcruxes_of",
+      "description": "Voldemort has Horcruxes that need to be destroyed."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "will_take_along",
+      "description": "Dumbledore promises to take Harry along if he finds another Horcrux."
+    }
+  ]
+}

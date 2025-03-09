@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as writing a letter to someone, expressing her plans to go to London with Harry and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as responding in horror to Hermione's busy schedule, emphasizing that they are on holiday."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as going to London with Ron and Hermione."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is suggested by Hermione as a meeting place for her, Harry, and Ron."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "London is mentioned as the destination of Harry, Ron, and Hermione's trip."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as clearing the table and asking about the plans of Harry, Ron, Fred, and George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Fred is mentioned as one of the people planning to go up the hill with George."
+    },
+    {
+      "name": "george",
+      "entity_type": "character",
+      "singular": true,
+      "description": "George is mentioned as one of the people planning to go up the hill with Fred."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are mentioned as owning a small paddock where Harry, Ron, Fred, and George plan to practice Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "diagon alley",
+      "relationship_type": "suggested_meeting_place",
+      "description": "Hermione suggests meeting in Diagon Alley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "london",
+      "relationship_type": "destination",
+      "description": "Harry is going to London with Ron and Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "diagon alley",
+      "relationship_type": "suggested_meeting_place",
+      "description": "Ron agrees to meet in Diagon Alley."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "harry",
+      "relationship_type": "concerned_parent",
+      "description": "Mrs Weasley is concerned about Harry's plans."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "friend",
+      "description": "Fred and George are friends planning to go up the hill together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry and Ron are friends planning to go to London together."
+    }
+  ]
+}

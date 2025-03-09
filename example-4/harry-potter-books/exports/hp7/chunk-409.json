@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A group of dark wizards and witches who serve Lord Voldemort. They have taken over the Daily Prophet."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A wizarding newspaper that has been taken over by Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts and is furious about the situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "daily prophet",
+      "relationship_type": "taken_over_by",
+      "description": "Death Eaters have taken over the Daily Prophet, as mentioned by Hermione and Lupin."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eaters",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about the actions of Death Eaters."
+    }
+  ]
+}

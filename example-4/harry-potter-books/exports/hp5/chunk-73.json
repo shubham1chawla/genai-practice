@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as someone who gets angry and frustrated when he sees owls in the house. He roars at Harry and pulls out clumps of hair from his mustache."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who receives a letter from Sirius and is disappointed to see it's not from Dumbledore. He reads the message from Sirius despite Uncle Vernon's rant about owls."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the one who sent the letter to Harry. His handwriting is recognized by Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who might explain everything that's happening. Harry expects a letter from him but instead gets one from Sirius."
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur is mentioned as the one who told Sirius what happened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "received_message_from",
+      "description": "Harry receives a message from Sirius. The message is read by Harry despite Uncle Vernon's rant about owls."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "expected_letter_from",
+      "description": "Harry expects a letter from Dumbledore but instead gets one from Sirius."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as not answering at once and pretending to read a book."
+    },
+    {
+      "name": "asiatic anti-venoms",
+      "entity_type": "book",
+      "singular": false,
+      "description": "A book that Harry is pretending to read, mentioned in the text as 'a page of Asiatic Anti-Venoms'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, described as proposing an idea on a previous night."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned in the text as looking up at Ron and seeming keener to join in the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "asiatic anti-venoms",
+      "relationship_type": "reading",
+      "description": "Harry is pretending to read a page of Asiatic Anti-Venoms."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "idea",
+      "relationship_type": "proposed",
+      "description": "Hermione proposed an idea on a previous night, which Harry has been thinking about."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "looking_up_at",
+      "description": "Harry looked up at Ron during the conversation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "conversation",
+      "relationship_type": "joining_in",
+      "description": "Ron seemed keener to join in the conversation now that he was sure Harry had thought about it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "idea",
+      "relationship_type": "thinking_about",
+      "description": "Harry has been thinking about an idea, which Hermione proposed."
+    }
+  ]
+}

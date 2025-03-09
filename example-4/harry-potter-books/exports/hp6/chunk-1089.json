@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having a leaping heart."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person being targeted by Greyback, described as being protected by others."
+    },
+    {
+      "name": "Greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A werewolf who is trying to attack Dumbledore, but is blasted away by the brutal-faced man."
+    },
+    {
+      "name": "Draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person being ordered by the brutal-faced man to do something, but his hand is shaking badly."
+    },
+    {
+      "name": "Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The same person as Draco, mentioned as having a shaking hand."
+    },
+    {
+      "name": "the brutal-faced man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is giving orders and blasting away Greyback with magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Greyback",
+      "entity_2": "Dumbledore",
+      "relationship_type": "targeted_by",
+      "description": "Greyback is trying to attack Dumbledore, but is blasted away by the brutal-faced man."
+    },
+    {
+      "entity_1": "Draco",
+      "entity_2": "the brutal-faced man",
+      "relationship_type": "ordered_by",
+      "description": "The brutal-faced man is ordering Draco to do something, but his hand is shaking badly."
+    },
+    {
+      "entity_1": "Greyback",
+      "entity_2": "the brutal-faced man",
+      "relationship_type": "blasted_by",
+      "description": "The brutal-faced man blasts Greyback away with magic."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and is being watched by the Ministry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a wizard who knows where the giants are and has given instructions to Hagrid."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends and is asking questions about the journey to see the giants."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is watching Dumbledore and anyone they think is in league with him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "knows_where_giants_are",
+      "description": "Hagrid knows where the giants are because Dumbledore told him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "asks_questions",
+      "description": "Ron is asking Hagrid questions about the journey to see the giants."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "dumbledore",
+      "relationship_type": "watches",
+      "description": "The Ministry is watching Dumbledore and anyone they think is in league with him."
+    }
+  ]
+}

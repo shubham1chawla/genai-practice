@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is being addressed by Harry and Ron. She is described as a witch."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who is speaking to Hermione and using derogatory language towards her."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is defending Hermione against Malfoy's insults."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is defending Hermione and getting angry at Malfoy's language."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are mentioned as a group of people that the speaker (Malfoy) is referring to."
+    },
+    {
+      "name": "campsite",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The campsite is mentioned as the location where a blast and flash of green light occurred."
+    },
+    {
+      "name": "trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The trees are mentioned as being around the campsite where the blast and flash of green light occurred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hermione",
+      "relationship_type": "insulting_language",
+      "description": "Malfoy uses derogatory language towards Hermione, calling her a 'Mudblood'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "defending",
+      "description": "Harry defends Hermione against Malfoy's insults."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "angry_at",
+      "description": "Ron gets angry at Malfoy for using derogatory language towards Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "campsite",
+      "relationship_type": "present_at",
+      "description": "Hermione is present at the campsite where a blast and flash of green light occurred."
+    }
+  ]
+}

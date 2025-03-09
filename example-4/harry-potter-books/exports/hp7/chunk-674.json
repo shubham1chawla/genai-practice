@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "bathildas secret",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of a book or story"
+    },
+    {
+      "name": "harry",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'he'"
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "An old woman who lives in a house"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bathilda",
+      "relationship_type": "meets",
+      "description": "Harry and Bathilda meet at her house"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bathildas secret",
+      "relationship_type": "reads",
+      "description": "Harry is reading or has read the book 'Bathilda's Secret'"
+    },
+    {
+      "entity_1": "bathilda",
+      "entity_2": "harry",
+      "relationship_type": "recognizes",
+      "description": "Bathilda recognizes Harry, but does not know his true identity"
+    }
+  ]
+}

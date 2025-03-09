@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as a person who needs to be followed through the door. The text states 'he stopped again and said loudly , ’An’ someone’ll need ter feed Fudge while I’m away .’"
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is mentioned as an animal that needs to be fed. The text states 'someone’ll need ter feed Fang while I’m away.'"
+    },
+    {
+      "name": "overcoat",
+      "entity_type": "article_of_clothing",
+      "singular": true,
+      "description": "Overcoat is mentioned in the beginning of the sentence but it does not have any relevance to the rest of the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "fang",
+      "relationship_type": "needs_to_be_fed_by",
+      "description": "Fudge needs someone to feed Fang while Fudge is away. The text states 'someone’ll need ter feed Fang while I’m away.'"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "overcoat",
+      "relationship_type": "wore",
+      "description": "Fudge wore an overcoat but it does not have any relevance to the rest of the text."
+    }
+  ]
+}

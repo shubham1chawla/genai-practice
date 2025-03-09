@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who follow Lord Voldemort, mentioned as those he had once counted friends."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, also known as Tom Riddle, mentioned as the master of Wormtail."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has a curious affinity with rats and is a follower of Lord Voldemort."
+    },
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch from the Ministry of Magic who meets Wormtail at an inn."
+    },
+    {
+      "name": "albanian forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where small animals have met their deaths by a dark shadow that possesses them."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An organization mentioned as the workplace of Bertha Jorkins."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "lord voldemort",
+      "relationship_type": "follower_of",
+      "description": "Wormtail is a follower of Lord Voldemort, mentioned as his master."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "bertha jorkins",
+      "relationship_type": "met_at_inn",
+      "description": "Wormtail meets Bertha Jorkins at an inn."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "leader_of",
+      "description": "Lord Voldemort is the leader of the Death Eaters, mentioned as those he had once counted friends."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "rats",
+      "relationship_type": "affinity_with",
+      "description": "Wormtail has a curious affinity with rats."
+    }
+  ]
+}

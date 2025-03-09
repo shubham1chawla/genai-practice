@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, who is being held paralyzed against a wall."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who tells Harry to leave quickly and forces Malfoy through the door."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Death Eater who is forced by Snape to leave the Tower top."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Death Eater who follows Malfoy and the brother and sister through the door."
+    },
+    {
+      "name": "the squat brother and sister",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Two individuals who are described as being short in stature."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are fighting against Harry and his friends."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows the wearer to become invisible."
+    },
+    {
+      "name": "petrificus totalus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell cast by Harry to immobilize a Death Eater."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wore",
+      "description": "Harry throws the Invisibility Cloak aside as he is running down the staircase."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "forced",
+      "description": "Snape forces Malfoy through the door ahead of the rest."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "petrificus totalus",
+      "relationship_type": "cast",
+      "description": "Harry casts the Petrificus Totalus spell to immobilize a Death Eater."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "petrificus totalus",
+      "relationship_type": "affected_by",
+      "description": "The Death Eater is affected by the Petrificus Totalus spell and falls to the ground."
+    }
+  ]
+}

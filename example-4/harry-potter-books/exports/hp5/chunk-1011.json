@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a character who is observing the stream of smoke without surprise. He is also shown to be interacting with an instrument and giving it gentle taps with his wand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who is wondering whether the instrument was confirming his story and looking eagerly at Dumbledore for a sign that he was right."
+    },
+    {
+      "name": "instrument",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The instrument is described as being played by Dumbledore and producing smoke serpents. It is also mentioned as being tapped with a wand to slow down the clinking noise."
+    },
+    {
+      "name": "smoke serpent",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Smoke serpents are produced by the instrument and split into two snakes when Dumbledore asks if they are divided. They grow faint and vanish after being tapped with a wand."
+    },
+    {
+      "name": "stream of smoke",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stream of smoke is mentioned as being observed by Dumbledore without surprise. It produces smoke serpents when the instrument is played."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "instrument",
+      "relationship_type": "interacts_with",
+      "description": "Dumbledore interacts with the instrument, playing it and giving it gentle taps with his wand to produce smoke serpents."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "observes",
+      "description": "Harry observes Dumbledore interacting with the instrument and producing smoke serpents."
+    },
+    {
+      "entity_1": "instrument",
+      "entity_2": "smoke serpent",
+      "relationship_type": "produces",
+      "description": "The instrument produces smoke serpents when played by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "smoke serpent",
+      "relationship_type": "manipulates",
+      "description": "Dumbledore manipulates the smoke serpents, tapping them with his wand to slow down the clinking noise and make them grow faint and vanish."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "old headmasters",
+      "relationship_type": "follows_with_eyes",
+      "description": "Dumbledore is followed by old headmasters in portraits with their eyes, then they realize Harry is watching them and hastily look away."
+    }
+  ]
+}

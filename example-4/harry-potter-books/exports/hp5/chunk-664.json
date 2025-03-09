@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is described as a school by Madam Marchbanks."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius Fudge's office is mentioned as being involved in the discredit of Albus Dumbledore."
+    },
+    {
+      "name": "madam marchbanks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Marchbanks is quoted as saying that Hogwarts is not an outpost of Cornelius Fudge's office."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is mentioned as being discredited by Cornelius Fudge."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is quoted as saying that she knows how they ended up with Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as being given the power to inspect other teachers by Cornelius Fudge."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is mentioned as being someone that Ron wants to see inspected by Umbridge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cornelius fudge",
+      "entity_2": "umbridge",
+      "relationship_type": "gave_power_to",
+      "description": "Cornelius Fudge gave the power to inspect other teachers to Umbridge."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mcgonagall",
+      "relationship_type": "will_inspect",
+      "description": "Umbridge will inspect McGonagall."
+    }
+  ]
+}

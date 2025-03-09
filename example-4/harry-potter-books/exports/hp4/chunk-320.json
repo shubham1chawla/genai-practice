@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as having a conversation with Hermione and Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as having a conversation with Harry and Ron. She is described as being knowledgeable about magic schools."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as having a conversation with Hermione and Harry."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A magic school mentioned by Hermione as being one of the schools that conceals its whereabouts. It is described as being similar in size to Hogwarts."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A magic school mentioned by Hermione as being one of the schools that conceals its whereabouts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The main magic school in the story, described as being hidden and having a history book written about it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "durmstrang",
+      "relationship_type": "mentioned_by",
+      "description": "Hermione mentions Durmstrang as one of the schools that conceals its whereabouts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hogwarts",
+      "relationship_type": "questioned_about",
+      "description": "Ron asks about Hogwarts, specifically how it is hidden."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogwarts",
+      "relationship_type": "mentioned_by",
+      "description": "Hermione mentions Hogwarts as an example of a school that is hidden."
+    }
+  ]
+}

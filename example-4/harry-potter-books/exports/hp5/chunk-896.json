@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a character in the story who has supreme authority over punishments and removal of privileges. She mentions that she contacted the Minister at once to agree with her on this matter."
+    },
+    {
+      "name": "minerva",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Minerva is a character in the story who is being addressed by Umbridge. She is mentioned as having taken a case to Dumbledore regarding the Gryffindor Quidditch team."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a character in the story who is mentioned as insisting that the Gryffindor Quidditch team be allowed to play."
+    },
+    {
+      "name": "gryffindor quidditch team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindor Quidditch team is a group of students who are trying to re-form. Umbridge mentions that she was unwilling to allow them to play."
+    },
+    {
+      "name": "minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister is a character in the story who is mentioned as agreeing with Umbridge on giving her supreme authority over punishments and removal of privileges."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "minerva",
+      "relationship_type": "addressed",
+      "description": "Umbridge addresses Minerva in the conversation."
+    },
+    {
+      "entity_1": "minerva",
+      "entity_2": "dumbledore",
+      "relationship_type": "took_case_to",
+      "description": "Minerva took a case to Dumbledore regarding the Gryffindor Quidditch team."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "minister",
+      "relationship_type": "agreed_with",
+      "description": "Umbridge contacted the Minister and they agreed on giving her supreme authority over punishments and removal of privileges."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The fat lady is a person who guards the entrance to the common room. She asks for the password before allowing entry."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a person who shouts out the new password from behind the crowd."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom is a person who has trouble remembering passwords and expresses sadness when he forgets one."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is glad to be back in the common room and feels at home."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fat lady",
+      "entity_2": "percy",
+      "relationship_type": "called_out_password_to",
+      "description": "The fat lady asks for the password, and Percy responds by shouting out the new password."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "passwords",
+      "relationship_type": "has_trouble_remembering",
+      "description": "Neville Longbottom has trouble remembering passwords, which is evident from his sad expression when he forgets one."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "common room",
+      "relationship_type": "feels_at_home_in",
+      "description": "Harry feels at home in the common room and is glad to be back there."
+    }
+  ]
+}

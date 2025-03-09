@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who casts a spell that causes blood to spurt from Malfoy's face and chest."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is attacked by Harry's spell and falls to the ground, bleeding heavily."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The potions master who bursts into the room, pushes Harry aside, and kneels over Malfoy."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A ghost who is present in the bathroom and lets out a deafening scream when she sees Malfoy bleeding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "attacks",
+      "description": "Harry casts a spell that causes blood to spurt from Malfoy's face and chest, indicating an attack."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "pushes",
+      "description": "Snape pushes Harry roughly aside when he bursts into the room."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "tends_to",
+      "description": "Snape kneels over Malfoy and draws his wand, indicating that he is tending to Malfoy's injuries."
+    }
+  ]
+}

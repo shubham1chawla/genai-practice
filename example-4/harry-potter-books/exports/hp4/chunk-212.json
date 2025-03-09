@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is the referee of the game. He informed the spectators about a penalty to Ireland and was concerned about Hassan Mostafa's behavior."
+    },
+    {
+      "name": "ireland",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Ireland is the team that received a penalty in the game."
+    },
+    {
+      "name": "mullet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mullet was fouled by an opponent and rose into the air like a swarm of glittering hornets."
+    },
+    {
+      "name": "hassan mostafa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hassan Mostafa is a referee who landed in front of the dancing veela and was acting oddly."
+    },
+    {
+      "name": "weasley boys",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Weasley boys are a group of wizards who stuffed their fingers into their ears to block out the noise."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a wizard who was playing in the game and had his fingers in his ears."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a witch who was watching the game and noticed Hassan Mostafa's behavior."
+    },
+    {
+      "name": "veela",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The veela are a group of female wizards who leapt to their feet, tossed their hair angrily, and started dancing again."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "ireland",
+      "relationship_type": "penalty",
+      "description": "Bagman informed the spectators about a penalty to Ireland."
+    },
+    {
+      "entity_1": "hassan mostafa",
+      "entity_2": "veela",
+      "relationship_type": "interaction",
+      "description": "Hassan Mostafa landed in front of the dancing veela and was acting oddly."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bagman",
+      "relationship_type": "observation",
+      "description": "Hermione noticed Hassan Mostafa's behavior and pointed it out to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "interaction",
+      "description": "Harry was with Hermione when she pointed out Hassan Mostafa's behavior."
+    }
+  ]
+}

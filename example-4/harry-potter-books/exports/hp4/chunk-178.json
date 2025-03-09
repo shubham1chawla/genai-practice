@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the location where something is happening. It is described as the place where Fred and his family are at."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a person who is asking about what's happening at Hogwarts. He is described as saying 'What's happening at Hogwarts, Dad?'"
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad is mentioned as the father of Fred. He is not explicitly named but referred to by his relationship with Fred."
+    },
+    {
+      "name": "mr.weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who is smiling and saying 'You'll find out soon enough'. He is described as being in the company of Fred and Percy."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a person who is stiffly saying that Mr. Crouch was right not to disclose classified information. He is described as being in the company of Mr. Weasley and Fred."
+    },
+    {
+      "name": "mr.crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who is mentioned as being right not to disclose classified information. He is described as having been involved in some way with the Ministry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an organization that is mentioned as deciding when to release classified information. It is described as being involved with Mr. Crouch."
+    },
+    {
+      "name": "weatherby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weatherby is a person who is being told by Fred to 'shut up'. He is not explicitly named but referred to by his relationship with Fred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "hogwarts",
+      "relationship_type": "location_of",
+      "description": "Fred is at Hogwarts, as indicated by the question 'What's happening at Hogwarts, Dad?'"
+    },
+    {
+      "entity_1": "mr.weasley",
+      "entity_2": "fred",
+      "relationship_type": "parent_of",
+      "description": "Mr. Weasley is Fred's father, as indicated by the term 'Dad' used by Fred."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "ministry",
+      "relationship_type": "involved_with",
+      "description": "Percy is involved with the Ministry, as indicated by his stiffly saying that Mr. Crouch was right not to disclose classified information."
+    },
+    {
+      "entity_1": "mr.crouch",
+      "entity_2": "ministry",
+      "relationship_type": "involved_with",
+      "description": "Mr. Crouch is involved with the Ministry, as indicated by Percy's stiffly saying that Mr. Crouch was right not to disclose classified information."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "weatherby",
+      "relationship_type": "parent_of",
+      "description": "Fred is Weatherby's son, as indicated by the term 'Dad' used by Fred in relation to Weatherby."
+    },
+    {
+      "entity_1": "mr.weasley",
+      "entity_2": "percy",
+      "relationship_type": "colleague_of",
+      "description": "Mr. Weasley and Percy are colleagues, as indicated by their being together with Fred."
+    }
+  ]
+}

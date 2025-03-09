@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being present in the scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts, mentioned as being absent from Hogwarts and having a good job on Harry Potter."
+    },
+    {
+      "name": "scrimgour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is questioning Harry Potter about Dumbledore's activities."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The former Minister who tried to interfere at Hogwarts and is no longer in the position."
+    },
+    {
+      "name": "rhododendron bush",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where a gnome is leaning against."
+    },
+    {
+      "name": "gnome",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that has managed to extricate its worm and is sucking on it happily."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgour",
+      "entity_2": "dumbledore",
+      "relationship_type": "questioning",
+      "description": "Scrimgeour is questioning Dumbledore's activities."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "has good job on",
+      "description": "Dumbledore has done a very good job on Harry Potter."
+    },
+    {
+      "entity_1": "scrimgour",
+      "entity_2": "fudge",
+      "relationship_type": "similar to",
+      "description": "Scrimgeour is similar to Fudge in that he tried interfering at Hogwarts."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gnome",
+      "relationship_type": "nearby",
+      "description": "Harry Potter is nearby the gnome which is sucking on its worm."
+    }
+  ]
+}

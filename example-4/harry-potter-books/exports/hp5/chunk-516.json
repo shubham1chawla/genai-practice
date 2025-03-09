@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the one who seems to decide that she can ignore the situation no longer. She asks Hermione if she wants to ask something about the chapter, and later responds to Hermione's query about course aims."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who has a query about Professor Umbridge's course aims. She asks about the use of defensive spells in the course, and responds to Professor Umbridge's questions."
+    },
+    {
+      "name": "chapter",
+      "entity_type": "textbook chapter",
+      "singular": true,
+      "description": "The chapter is mentioned as something that Hermione might want to ask a question about. However, she clarifies that her query is actually about the course aims."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "hermione granger",
+      "relationship_type": "question_answered",
+      "description": "Professor Umbridge asks Hermione if she wants to ask a question about the chapter, and later responds to her query about course aims."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "professor umbridge",
+      "relationship_type": "queried",
+      "description": "Hermione asks Professor Umbridge a question about the use of defensive spells in her course, and also clarifies that she is not asking about the chapter."
+    }
+  ]
+}

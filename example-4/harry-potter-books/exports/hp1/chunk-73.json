@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who is being treated poorly by his relatives."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is spoiled and mean."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cruel and abusive uncle."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who is equally cruel and abusive as her husband."
+    },
+    {
+      "name": "mr h. potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The recipient of the letter that was delivered to Harry's house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "has_abusive_relationship_with",
+      "description": "Uncle Vernon is treating Harry poorly and abusively."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "is_protected_by",
+      "description": "Uncle Vernon is protecting Dudley from Harry's anger."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr h. potter",
+      "relationship_type": "is_recipient_of_letter_to",
+      "description": "The letter that was delivered to Harry's house is addressed to Mr. H. Potter."
+    }
+  ]
+}

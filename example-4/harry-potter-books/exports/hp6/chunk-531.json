@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is having breakfast with Ron and Hermione. He is described as concentrating on handing Ron a glass of pumpkin juice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is also having breakfast with Harry and Hermione. He is described as taking a moody bite of toast."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who has become tired of Ron's recent unpleasant behaviour and is now speaking sharply to him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "gave_drink_to",
+      "description": "Harry handed Ron a glass of pumpkin juice."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "warned_against_drink",
+      "description": "Hermione warned Ron not to drink the pumpkin juice that Harry had given him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accused_by",
+      "description": "Hermione accused Harry of putting something in Ron's drink."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "was_given_drink_by",
+      "description": "Ron was given a glass of pumpkin juice by Harry."
+    }
+  ]
+}

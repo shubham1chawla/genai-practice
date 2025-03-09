@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The voice of the person inside the office is described as Dumbledore's."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius Fudge is mentioned as the Minister of Magic."
+    },
+    {
+      "name": "ludo",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ludo is mentioned as someone who agrees with Cornelius Fudge."
+    },
+    {
+      "name": "bertha",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha's disappearance is being discussed by Dumbledore and Cornelius Fudge."
+    },
+    {
+      "name": "barty crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty Crouch's name is mentioned in the context of Bertha's disappearance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "conversation_participant",
+      "description": "Dumbledore and Cornelius Fudge are having a conversation."
+    },
+    {
+      "entity_1": "ludo",
+      "entity_2": "bertha",
+      "relationship_type": "opinion_holder_subject",
+      "description": "Ludo has an opinion about Bertha's ability to get lost."
+    },
+    {
+      "entity_1": "cornelius fudge",
+      "entity_2": "barty crouch",
+      "relationship_type": "connection_denier",
+      "description": "Cornelius Fudge denies any connection between Bertha's disappearance and Barty Crouch."
+    }
+  ]
+}

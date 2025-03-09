@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present in the scene and interacting with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is speaking to Harry and nodding in approval."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is a person who is being spoken about by Harry."
+    },
+    {
+      "name": "parseltongue",
+      "entity_type": "language",
+      "singular": false,
+      "description": "Parseltongue is a language that Dumbledore and the man in rags are speaking."
+    },
+    {
+      "name": "man in rags",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The man in rags is a person who is advancing on Ogden with a knife and wand."
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A dead snake is lying on the door, which Harry sees and suddenly understands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "understands",
+      "description": "Harry understands Dumbledore's explanation of Parseltongue."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ogden",
+      "relationship_type": "concerned about",
+      "description": "Harry is concerned about Ogden and wants to know why he can't speak Parseltongue."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "parseltongue",
+      "relationship_type": "speaking",
+      "description": "Dumbledore is speaking Parseltongue with the man in rags."
+    },
+    {
+      "entity_1": "man in rags",
+      "entity_2": "ogden",
+      "relationship_type": "advancing on",
+      "description": "The man in rags is advancing on Ogden with a knife and wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snake",
+      "relationship_type": "sees",
+      "description": "Harry sees the dead snake on the door."
+    }
+  ]
+}

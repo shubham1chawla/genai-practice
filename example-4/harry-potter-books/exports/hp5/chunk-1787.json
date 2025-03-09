@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts and a powerful wizard. He is described as walking back to Harry carrying the head, wearing half-moon spectacles."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the Minister of Magic. He is described as being in a position of authority and trying to stop Dumbledore from using a Portkey."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts. He is mentioned as the one who Dumbledore is carrying the head back to."
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores Umbridge is a teacher at Hogwarts and an Auror. She is mentioned as someone that Dumbledore wants Fudge to remove from the school."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts is the school where Harry, Dumbledore, and Umbridge work or attend. It is mentioned as a place that Dumbledore needs to return to after meeting with Fudge."
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Portkey is an object that allows wizards to travel quickly from one place to another. It is mentioned as something that Dumbledore used without authorization."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "orders",
+      "description": "Dumbledore orders Fudge to remove Dolores Umbridge from Hogwarts and stop searching for his Care of Magical Creatures teacher."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "carries",
+      "description": "Dumbledore carries the head back to Harry."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "stops",
+      "description": "Fudge tries to stop Dumbledore from using a Portkey in front of him."
+    }
+  ]
+}

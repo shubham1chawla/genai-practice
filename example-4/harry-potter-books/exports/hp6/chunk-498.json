@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name mentioned by Riddle as his own and his father's."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is asking Dumbledore questions about his past."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is answering Riddle's questions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "tom",
+      "relationship_type": "is_named_after",
+      "description": "Riddle mentions that he and his father share the same name."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter (implied)",
+      "relationship_type": "advises",
+      "description": "Dumbledore is providing advice to Riddle about attending Hogwarts."
+    }
+  ]
+}

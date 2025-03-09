@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as a group that doesn't need another kid injured."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the Weasleys and is being scolded by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is intervening in a conversation between Ron and Harry."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill Weasley has already been scarred."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley has lost an ear."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being defensive about his parents and is yelling at Ron."
+    },
+    {
+      "name": "spattergroit",
+      "entity_type": "disease",
+      "singular": true,
+      "description": "Spattergroit is a disease that Harry claims to have."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "weasleys",
+      "relationship_type": "member_of",
+      "description": "Ron is a member of the Weasley family."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "intervener_in_conversation",
+      "description": "Hermione is intervening in a conversation between Ron and Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bill",
+      "relationship_type": "brother_of",
+      "description": "Harry is the brother of Bill Weasley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "brother_of",
+      "description": "Harry is the brother of George Weasley."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "spattergroit",
+      "relationship_type": "sufferer_from",
+      "description": "Ron claims to be suffering from Spattergroit."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "spattergroit",
+      "relationship_type": "sufferer_from",
+      "description": "Harry claims to be suffering from Spattergroit."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron and Harry are friends."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "protector_of",
+      "description": "Hermione is protecting Ron from Harry's anger."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weasleys",
+      "relationship_type": "brother_in_law_of",
+      "description": "Harry is the brother-in-law of the Weasley family."
+    }
+  ]
+}

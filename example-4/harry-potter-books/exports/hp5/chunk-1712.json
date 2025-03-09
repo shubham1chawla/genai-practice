@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a half-blood, indicating he has both magical and non-magical ancestry. This is described in the text by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as giving a little moan to Harry's reckless statement about Voldemort being a half-blood."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as making a reckless statement about Voldemort being a half-blood, and also as having a spell deflected by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as deflecting a spell from Bellatrix Lestrange's wand, causing it to hit the shelf near Harry."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix Lestrange is mentioned as casting a spell that was deflected by Malfoy."
+    },
+    {
+      "name": "voldemort's mother",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Voldemort's mother is mentioned as being a witch, indicating she had magical ancestry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "bellatrix lestrange",
+      "relationship_type": "deflected_spell",
+      "description": "Malfoy deflected Bellatrix Lestrange's spell, causing it to hit the shelf near Harry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "hermione",
+      "relationship_type": "mentioned_by",
+      "description": "Hermione mentioned Voldemort as a half-blood in response to Harry's reckless statement."
+    }
+  ]
+}

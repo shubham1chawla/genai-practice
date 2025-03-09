@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "cauldron",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cauldron is mentioned as a part of the scene where Voldemort's speech is being recounted."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist and is described as giving a speech to the Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as being present when Voldemort gives his speech."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is described as trying to remember Voldemort's speech."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being present when Harry tries to recount Voldemort's speech."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as emerging from Voldemort's wand."
+    },
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha Jorkins is mentioned as an old man who was affected by Voldemort's actions."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius breaks the silence and asks a question about the wands connecting."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "addressed",
+      "description": "Voldemort addresses the Death Eaters in his speech."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "present_with",
+      "description": "Harry and Dumbledore are present when Harry tries to recount Voldemort's speech."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "duelled",
+      "description": "Voldemort and Harry duel each other."
+    }
+  ]
+}

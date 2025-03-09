@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is introduced as someone who comes sprinting into the hall."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is instructed by James to take Harry and go."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is told by Lily to be taken away by her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "james",
+      "entity_2": "lily",
+      "relationship_type": "instructed",
+      "description": "James instructs Lily to take Harry and go."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "harry",
+      "relationship_type": "target_of_instruction",
+      "description": "Harry is the target of James' instruction through Lily."
+    }
+  ]
+}

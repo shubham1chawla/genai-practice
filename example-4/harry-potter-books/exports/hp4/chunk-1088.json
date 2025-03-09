@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story. He is shouting and trying to get a message to Dumbledore."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is denying Harry's request to see Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts. He is being summoned by Mr. Crouch."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person from the Ministry who is ill and wants to see Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "wants_to_see",
+      "description": "Harry wants to tell Dumbledore something, but Snape is denying him access."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "dumbledore",
+      "relationship_type": "wants_to_warn",
+      "description": "Mr. Crouch is in the forest and wants to warn Dumbledore about something."
+    }
+  ]
+}

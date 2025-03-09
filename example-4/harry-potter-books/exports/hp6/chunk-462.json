@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is trying to tell Professor McGonagall something."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is being interrupted by Harry."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is the owner of the shop where Malfoy bought something."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student who bought something from Borgin's shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "borgin",
+      "relationship_type": "visited",
+      "description": "Harry visited Borgin's shop."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "bought_from",
+      "description": "Malfoy bought something from Borgin's shop."
+    }
+  ]
+}

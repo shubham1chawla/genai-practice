@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione screamed in response to an event."
+    },
+    {
+      "name": "black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Black leapt to his feet."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry felt as though he’d received a huge electric shock."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape was slightly breathless, but his face was full of suppressed triumph."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lupin was accused by Snape of helping Black into the castle."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The cloak was found at the base of the Whomping Willow."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "This chapter is titled 'The Servant of Lord Voldemort'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "accused",
+      "description": "Snape accused Lupin of helping Black into the castle."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "black",
+      "relationship_type": "helped_into_castle",
+      "description": "Lupin was accused by Snape of helping Black into the castle."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "black",
+      "relationship_type": "helping",
+      "description": "Snape accused Lupin of helping Black into the castle."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "servant",
+      "description": "This chapter is titled 'The Servant of Lord Voldemort'."
+    }
+  ]
+}

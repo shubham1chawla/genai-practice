@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is struggling to cast his Patronus."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, who is trying to get food."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend and companion, who is concerned about Harry's well-being."
+    },
+    {
+      "name": "perkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old person whose armchairs are being used by Harry."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Malevolent creatures that are attacking the Muggles."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Non-magical people who are being attacked by the dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "attacked_by",
+      "description": "Harry is being attacked by the dementors."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "talking_to",
+      "description": "Ron is talking to Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "perkins",
+      "relationship_type": "sitting_in",
+      "description": "Harry is sitting in one of Perkins's old armchairs."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "talking_to",
+      "description": "Hermione is talking to Ron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "failed_to_cast",
+      "description": "Harry failed to cast his Patronus."
+    }
+  ]
+}

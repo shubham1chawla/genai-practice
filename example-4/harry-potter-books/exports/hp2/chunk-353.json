@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a young wizard who has defeated the Dark Lord. (Excerpt: 'Harry Potter survived...')"
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as Voldemort. (Excerpt: 'He Who Must Not Be Named')"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is loyal to Harry Potter and tries to protect him from harm. (Excerpt: 'Dobby... cannot let Harry Potter stay here now that history is to repeat itself')"
+    },
+    {
+      "name": "harry's water jug",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object in the story that Dobby uses to crack over his own head. (Excerpt: 'Dobby froze... then grabbed Harry’s water jug from his bedside table and cracked it over his own head')"
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A mysterious location at Hogwarts that has been opened before. (Excerpt: 'now that the Chamber of Secrets is open once more –’)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "he who must not be named",
+      "relationship_type": "defeated_by",
+      "description": "Harry Potter has defeated He Who Must Not Be Named. (Excerpt: 'Harry Potter survived, and the Dark Lord’s power was broken')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "related_to",
+      "description": "The Chamber of Secrets is related to Harry Potter as it has been opened before. (Excerpt: 'So there is a Chamber of Secrets? And – did you say it’s been opened before?')"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "protects",
+      "description": "Dobby tries to protect Harry Potter from harm. (Excerpt: 'Dobby cannot let Harry Potter stay here now that history is to repeat itself')"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "related_to",
+      "description": "The Chamber of Secrets is related to Dobby as he tries to prevent Harry from staying at Hogwarts where the Chamber has been opened. (Excerpt: 'now that history is to repeat itself, now that the Chamber of Secrets is open once more –’)"
+    }
+  ]
+}

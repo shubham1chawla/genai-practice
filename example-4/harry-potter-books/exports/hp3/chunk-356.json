@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is described as looking terrible and not having slept until daybreak."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "A type of dark creature that draws near to Harry, causing him to hear a voice in his head."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is eating a Peppermint Toad and massaging his stomach. He reminds Harry that it's the first day of holidays."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is concerned about his well-being and suggests he must be upset about something."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "A ginger cat that is spread out in front of the fire."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "heard_inside_head",
+      "description": "Harry hears a voice inside his head whenever dementors draw near."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "reminded_harry_of_holidays",
+      "description": "Ron reminds Harry that it's the first day of holidays."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about_harry",
+      "description": "Hermione is concerned about Harry's well-being and suggests he must be upset about something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crookshanks",
+      "relationship_type": "near_fire",
+      "description": "Crookshanks is spread out in front of the fire near Harry."
+    }
+  ]
+}

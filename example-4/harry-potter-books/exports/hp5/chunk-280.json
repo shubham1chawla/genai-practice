@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "aurors",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A group of wizards and witches who work for the Ministry of Magic to enforce magical law. They are described as having covered their cubicles with various items such as pictures, photos, posters, and articles."
+    },
+    {
+      "name": "kingsley shacklebolt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch who is talking over the top of her cubicle wall to Mr. Weasley. She has a patch over her eye."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being talked to by Kingsley. He has a hurry and stands on Harry's foot."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is observing the conversation between Kingsley and Mr. Weasley."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose face is blinking down at Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kingsley shacklebolt",
+      "entity_2": "mr weasley",
+      "relationship_type": "conversation",
+      "description": "Kingsley is talking to Mr. Weasley, and they are discussing something in a hurry."
+    },
+    {
+      "entity_1": "kingsley shacklebolt",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Kingsley is talking to Harry, but Mr. Weasley stands on his foot."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "physical_interaction",
+      "description": "Mr. Weasley stands on Harry's foot."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "observation",
+      "description": "Harry receives a shock seeing Sirius's face blinking down at him."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is in charge of Care of Magical Creatures."
+    },
+    {
+      "name": "monster book of monsters",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A required book for the Care of Magical Creatures class."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "store",
+      "singular": false,
+      "description": "A bookstore where students can buy their school supplies."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry attends."
+    },
+    {
+      "name": "care of magical creatures",
+      "entity_type": "class",
+      "singular": false,
+      "description": "A class taught by Hagrid at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "monster book of monsters",
+      "relationship_type": "has_book",
+      "description": "Harry has the Monster Book of Monsters as a required book for his Care of Magical Creatures class."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "care of magical creatures",
+      "relationship_type": "teaches_class",
+      "description": "Hagrid teaches the Care of Magical Creatures class at Hogwarts."
+    }
+  ]
+}

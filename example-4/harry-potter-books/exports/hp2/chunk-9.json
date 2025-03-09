@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "mason",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr and Mrs Mason are the hosts of Harry Potter. They are mentioned as being introduced to guests."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Uncle Vernon's sister and Harry's aunt. She is enthusiastic about meeting Mr Mason."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Aunt Petunia's husband and Harry's uncle. He is planning the evening's events."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Uncle Vernon and Aunt Petunia's son. He is mentioned as being involved in introducing guests to Mr Mason."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character of the story. He is trying to avoid meeting his relatives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "mason",
+      "relationship_type": "host_guest",
+      "description": "Uncle Vernon is hosting Mr Mason and his wife."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "mason",
+      "relationship_type": "host_guest",
+      "description": "Aunt Petunia is also involved in introducing Mr Mason to guests."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "mason",
+      "relationship_type": "introducer",
+      "description": "Dudley is helping to introduce Mr Mason to guests."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "host_guest",
+      "description": "Harry Potter is a guest at Uncle Vernon's house."
+    }
+  ]
+}

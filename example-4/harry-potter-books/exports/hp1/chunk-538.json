@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "trapdoor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The trapdoor is mentioned as a passage or entrance to another room."
+    },
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as being full of small birds and having a heavy wooden door on the opposite side."
+    },
+    {
+      "name": "birds",
+      "entity_type": "living_thing",
+      "singular": false,
+      "description": "The birds are described as being small, jewel-bright, and fluttering around the room."
+    },
+    {
+      "name": "door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The door is mentioned as being heavy and wooden, with a handle that can be pulled."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the characters who is trying to cross the room."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is another character who is trying to cross the room."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a third character who is trying to cross the room and help her friends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "accompanying",
+      "description": "Ron and Harry are accompanying each other as they try to cross the room."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "helping",
+      "description": "Hermione is helping Ron by trying her Alohomora Charm on the door."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "door",
+      "relationship_type": "interacting_with",
+      "description": "Harry is interacting with the door by pulling its handle."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "door",
+      "relationship_type": "trying_to_open",
+      "description": "Hermione is trying to open the door using her Alohomora Charm."
+    }
+  ]
+}

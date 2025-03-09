@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "cold",
+      "entity_type": "disease",
+      "singular": true,
+      "description": "The cold is mentioned as something that has been experienced by someone in the past, specifically on a broom only once before. This implies that it's not a common occurrence for them."
+    },
+    {
+      "name": "broom",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The broom is mentioned as something that someone has used to fly, specifically on one occasion when they had the cold. This implies that the broom is a tool or vehicle for flying."
+    },
+    {
+      "name": "Quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "The Quidditch is mentioned as something that takes place during which someone has had the cold. This implies that Quidditch is a significant event or activity in this context."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cold",
+      "entity_2": "broom",
+      "relationship_type": "experienced_on",
+      "description": "The cold was experienced on the broom, implying that the person had the cold while flying on the broom."
+    },
+    {
+      "entity_1": "cold",
+      "entity_2": "Quidditch",
+      "relationship_type": "occurred_during",
+      "description": "The cold occurred during Quidditch, implying that the person had the cold while participating in or watching Quidditch."
+    }
+  ]
+}

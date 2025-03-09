@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of students that Harry is tasked with looking after."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A follower of Lord Voldemort who was killed by a Killing Curse."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts."
+    },
+    {
+      "name": "felix potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A potion that Harry had taken which helped protect him and his friends from harm."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is lying in a bed in the hospital wing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is gathered around another bed near the far end of the ward."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who ran to hug him when he arrived."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is gathered around another bed near the far end of the ward."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror who is gathered around another bed near the far end of the ward."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who moved forwards to greet Harry when he arrived."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ravenclaws",
+      "relationship_type": "task",
+      "description": "Harry is tasked with looking after the Ravenclaws."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "killing curse",
+      "relationship_type": "victim",
+      "description": "A Death Eater was killed by a Killing Curse."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "felix potion",
+      "relationship_type": "benefit",
+      "description": "Harry's Felix potion helped protect him and his friends from harm."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "hospital wing",
+      "relationship_type": "location",
+      "description": "Neville is lying in a bed in the hospital wing."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bed",
+      "relationship_type": "location",
+      "description": "Ron is gathered around another bed near the far end of the ward."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "greeting",
+      "description": "Hermione ran to hug Harry when he arrived."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "greeting",
+      "description": "Lupin moved forwards to greet Harry when he arrived."
+    }
+  ]
+}

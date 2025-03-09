@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is a character in the story who is snarling and speaking to someone. She mentions that half of the Order has been joined."
+    },
+    {
+      "name": "order",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Order is an organization mentioned by Bellatrix as being joined by half of its members."
+    },
+    {
+      "name": "emmeline vance",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Emmeline Vance is a person who was captured and murdered due to information passed on by Snape."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person who was killed, with Snape giving credit to the other person for finishing him off."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person mentioned by Bellatrix as someone Snape could have killed but didn’t."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a character in the story who is being questioned by Bellatrix about Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "order",
+      "relationship_type": "has_member",
+      "description": "Bellatrix mentions that half of the Order has been joined."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "emmeline vance",
+      "relationship_type": "caused_death",
+      "description": "Snape passed on information that led to Emmeline Vance's capture and murder."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "sirius black",
+      "relationship_type": "contributed_to_death",
+      "description": "Snape gave credit to the other person for finishing off Sirius Black."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry potter",
+      "relationship_type": "target_of_plot",
+      "description": "Bellatrix mentions that Snape could have killed Harry Potter but didn’t."
+    }
+  ]
+}

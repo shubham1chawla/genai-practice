@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as 'Potter' by Professor McGonagall."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as a threat to the school."
+    },
+    {
+      "name": "death_eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, mentioned as being concentrated on the school boundaries."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "The Head of Gryffindor House, who is advising Harry and helping to deal with the situation."
+    },
+    {
+      "name": "carrows",
+      "entity_type": "people",
+      "singular": false,
+      "description": "A group of Death Eaters, mentioned as being bound by Professor McGonagall's spell."
+    },
+    {
+      "name": "hog's head",
+      "entity_type": "location",
+      "singular": true,
+      "description": "An inn where Harry mentions a passageway leading into the school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hog's head",
+      "relationship_type": "location_of",
+      "description": "Harry explains that there is a passageway leading from Hog's Head into the school."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "carrows",
+      "relationship_type": "restrained_by",
+      "description": "Professor McGonagall uses her wand to restrain the Carrows with a silver net."
+    }
+  ]
+}

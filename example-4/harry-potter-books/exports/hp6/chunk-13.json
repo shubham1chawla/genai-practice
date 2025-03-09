@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "Serious Black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A man named 'Serious' Black mentioned by Fudge as a known Muggle killer. (Excerpt: 'Black's a known Muggle killer...')"
+    },
+    {
+      "name": "Fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic who visited the Prime Minister to inform him about the breakout at Azkaban and the potential threat posed by Serious Black. (Excerpt: 'Fudge had panted...')"
+    },
+    {
+      "name": "Azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison located in the middle of the North Sea, mentioned as being in uproar due to a breakout. (Excerpt: 'I've just come from Azkaban...')"
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school that sounds similar to Azkaban and is mentioned by Fudge as something he has heard of. (Excerpt: 'something that sounded like Hogwarts...')"
+    },
+    {
+      "name": "Harry Potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy who is mentioned by Fudge in the context of being associated with Serious Black and You-Know-Who. (Excerpt: 'a boy called Harry Potter...')"
+    },
+    {
+      "name": "You-Know-Who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person or entity that is mentioned by Fudge as someone Serious Black may be planning to rejoin. (Excerpt: 'but of course, you don’t even know who You-Know-Who is!')"
+    },
+    {
+      "name": "Dementors",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A group of entities that are in uproar at Azkaban due to a breakout. (Excerpt: 'the Dementors are in uproar...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Fudge",
+      "entity_2": "Serious Black",
+      "relationship_type": "informant",
+      "description": "Fudge informed the Prime Minister about Serious Black's potential threat. (Excerpt: 'I had to come to you, Prime Minister...')"
+    },
+    {
+      "entity_1": "Fudge",
+      "entity_2": "Azkaban",
+      "relationship_type": "visited",
+      "description": "Fudge visited Azkaban and informed the Prime Minister about the breakout. (Excerpt: 'I've just come from Azkaban...')"
+    },
+    {
+      "entity_1": "Serious Black",
+      "entity_2": "You-Know-Who",
+      "relationship_type": "planning_to_rejoin",
+      "description": "Fudge mentioned that Serious Black may be planning to rejoin You-Know-Who. (Excerpt: 'but of course, you don’t even know who You-Know-Who is!')"
+    },
+    {
+      "entity_1": "Dementors",
+      "entity_2": "Azkaban",
+      "relationship_type": "in_uproar_at",
+      "description": "The Dementors are in uproar at Azkaban due to a breakout. (Excerpt: 'the Dementors are in uproar...')"
+    }
+  ]
+}

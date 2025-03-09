@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "minister of magic",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The person in charge of the Ministry of Magic, trying to keep Harry Potter safe."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to harm Harry Potter, according to the Minister of Magic."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main character in the story, known for being famous and lawless."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is trying to provoke Harry Potter into telling the truth."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "minister of magic",
+      "entity_2": "sirius black",
+      "relationship_type": "trying_to_protect",
+      "description": "The Minister of Magic is trying to keep Sirius Black away from Harry Potter."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "harry potter",
+      "relationship_type": "trying_to_provoking",
+      "description": "Severus Snape is trying to provoke Harry Potter into telling the truth."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "harry potter",
+      "relationship_type": "trying_to_harm",
+      "description": "Sirius Black is trying to harm Harry Potter, according to the Minister of Magic."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "sirius black",
+      "relationship_type": "trying_to_protect",
+      "description": "Severus Snape is also trying to protect Sirius Black from being harmed by others."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "severus snape",
+      "relationship_type": "being_provoked",
+      "description": "Harry Potter is being provoked by Severus Snape into telling the truth."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "sirius black",
+      "relationship_type": "target_of_harm",
+      "description": "Sirius Black is trying to harm Harry Potter."
+    }
+  ]
+}

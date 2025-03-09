@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sorts students into their respective houses. It is described as being present in the scene and is mentioned to be about to sort the new students."
+    },
+    {
+      "name": "first-years",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The first-years are a group of new students who are about to be sorted into their respective houses. They are described as being present in the scene and are mentioned to be nodding mutely when asked if they hope to see each other in Hufflepuff."
+    },
+    {
+      "name": "fat friar",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Friar is a ghost who is one of the house spirits. He is described as smiling around at the first-years and saying 'Hope to see you in Hufflepuff!'"
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Hufflepuff is a house that the Fat Friar mentions he used to be a part of. It is described as being one of the four houses present in the scene."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a person who returns and tells the first-years to form a line and follow her. She is described as having a sharp voice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who walks out of the chamber behind him. He is not mentioned by name until later in the scene."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who gets into line behind a boy with sandy hair and walks out of the chamber with Ron. He is described as feeling oddly as though his legs had turned to lead."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "first-years",
+      "relationship_type": "sorts_into",
+      "description": "The Sorting Hat sorts the first-years into their respective houses. This is described in the scene where it says 'About to be sorted, I suppose?' and later when Professor McGonagall tells them to form a line and follow her."
+    },
+    {
+      "entity_1": "fat friar",
+      "entity_2": "hufflepuff",
+      "relationship_type": "alumni_of",
+      "description": "The Fat Friar is an alumnus of Hufflepuff. This is described in the scene where he says 'Hope to see you in Hufflepuff!'"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "first-years",
+      "relationship_type": "supervises",
+      "description": "Professor McGonagall supervises the first-years during the Sorting Ceremony. This is described in the scene where she tells them to form a line and follow her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry and Ron are friends who walk out of the chamber together. This is described in the scene where it says 'Feeling oddly as though his legs had turned to lead, Harry got into line behind a boy with sandy hair, with Ron behind him'."
+    }
+  ]
+}

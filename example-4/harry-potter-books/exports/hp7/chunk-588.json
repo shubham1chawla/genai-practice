@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people who inserted the ends of the strings into their ears. He is also referred to as 'he' in the text."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people who inserted the ends of the strings into their ears."
+    },
+    {
+      "name": "salmon",
+      "entity_type": "fish",
+      "singular": true,
+      "description": "Salmon is mentioned as a type of fish that Harry tries to summon using the spell 'Accio'."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Goblins are mentioned as the speakers who are speaking in an unknown language."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "salmon",
+      "relationship_type": "summons",
+      "description": "Harry tries to summon salmon using the spell 'Accio'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goblins",
+      "relationship_type": "listens_to",
+      "description": "Harry can hear the goblins speaking in an unknown language."
+    }
+  ]
+}

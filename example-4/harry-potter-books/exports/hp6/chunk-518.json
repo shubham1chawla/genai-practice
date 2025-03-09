@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as someone who called Ron a prat and was reprimanded by Harry. She is described as not being the captain of the team."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who was called a prat by Ginny and was defended by Harry. He is described as having nerves during the practice."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who defended Ron and encouraged him during the practice. He is also described as not feeling that honesty is the best policy when they are close to a match."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Slytherin is mentioned as the team that Harry's team will be playing against. They are described as being something that can be 'flattened' by Harry's team."
+    },
+    {
+      "name": "chasers",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Chasers are mentioned as a position on the team and are described as leaving the changing room looking happy with themselves."
+    },
+    {
+      "name": "beaters",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Beaters are mentioned as a position on the team and are described as leaving the changing room looking happy with themselves."
+    },
+    {
+      "name": "dragon dung",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "Dragon dung is mentioned as something that Ron compared his playing to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "defended_by",
+      "description": "Harry defended Ron against Ginny's criticism."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "reprimanded",
+      "description": "Harry reprimanded Ginny for calling Ron a prat."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dragon dung",
+      "relationship_type": "compared_to",
+      "description": "Ron compared his playing to dragon dung."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "will_play_against",
+      "description": "Harry's team will be playing against Slytherin in a match."
+    },
+    {
+      "entity_1": "chasers",
+      "entity_2": "beaters",
+      "relationship_type": "team_members",
+      "description": "Chasers and Beaters are members of the same team."
+    }
+  ]
+}

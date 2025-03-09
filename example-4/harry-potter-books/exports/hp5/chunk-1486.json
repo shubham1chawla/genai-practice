@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is mentioned as a location where premises are being planned for. It is described as a place in Harry Potter's world where wizards and witches shop."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": true,
+      "description": "Galleons are mentioned as the currency needed to afford rent on a place in Diagon Alley."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is mentioned as someone who might be involved in selling stolen goods or something awful."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who knows that Mundungus hasn't persuaded them to sell stolen goods."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is concerned about how they got premises in Diagon Alley."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is also concerned about how they got premises in Diagon Alley and wonders if Mundungus has persuaded them to sell stolen goods or something awful."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mundungus",
+      "relationship_type": "knows",
+      "description": "Harry knows that Mundungus hasn't persuaded them to sell stolen goods."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "diagon alley",
+      "relationship_type": "concerned about",
+      "description": "Ron is concerned about how they got premises in Diagon Alley."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mundungus",
+      "relationship_type": "suspects",
+      "description": "Hermione suspects that Mundungus has persuaded them to sell stolen goods or something awful."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diagon alley",
+      "relationship_type": "concerned about",
+      "description": "Harry is concerned about how they got premises in Diagon Alley."
+    }
+  ]
+}

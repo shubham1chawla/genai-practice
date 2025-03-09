@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "conversation",
+      "entity_type": "conversation",
+      "singular": true,
+      "description": "A whispered conversation is mentioned in the text as an action that occurred when the door opened."
+    },
+    {
+      "name": "door",
+      "entity_type": "door",
+      "singular": true,
+      "description": "The door is mentioned as opening and causing a reaction from the people present."
+    },
+    {
+      "name": "they",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "They are referred to as a group of people who looked around hastily when the door opened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "conversation",
+      "entity_2": "door",
+      "relationship_type": "caused_by",
+      "description": "The conversation was caused by the opening of the door, as it is mentioned that all of them fell silent after looking around hastily when the door opened."
+    }
+  ]
+}

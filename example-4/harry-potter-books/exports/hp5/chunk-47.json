@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is being carried by Mrs. Figg."
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Squib who was tasked with keeping an eye on Harry but not telling him about his status."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry, whose orders Mrs. Figg followed."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who was supposed to be on duty until midnight but left unexpectedly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs figg",
+      "relationship_type": "carries",
+      "description": "Mrs. Figg is carrying Harry on her shoulder."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mundungus",
+      "relationship_type": "supervisor_of",
+      "description": "Dumbledore was supposed to be in charge of Mundungus's duties."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs figg",
+      "relationship_type": "concerned_for",
+      "description": "Harry is concerned about Mrs. Figg's situation and offers her his owl."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mundungus",
+      "relationship_type": "affected_by",
+      "description": "Dumbledore will be affected by Mundungus's absence."
+    }
+  ]
+}

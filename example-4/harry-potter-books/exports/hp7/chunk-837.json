@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "deathly hallows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Deathly Hallows are mentioned as a sign on Ignotus's grave, indicating that the three brothers in the story were actually the original owners of the Hallows."
+    },
+    {
+      "name": "ignotus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ignotus is mentioned as having a grave with the sign of the Deathly Hallows, and he is also one of the Peverell brothers."
+    },
+    {
+      "name": "antioch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Antioch is mentioned as one of the Peverell brothers, along with Ignotus and Cadmus."
+    },
+    {
+      "name": "cadmus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cadmus is mentioned as one of the Peverell brothers, along with Antioch and Ignotus."
+    },
+    {
+      "name": "peverell brothers",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Peverell brothers are mentioned as being the original owners of the Hallows, consisting of Antioch, Cadmus, and Ignotus."
+    },
+    {
+      "name": "hallows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Hallows are mentioned as being owned by the Peverell brothers, and are also referred to as the Deathly Hallows."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ignotus",
+      "entity_2": "deathly hallows",
+      "relationship_type": "has_sign",
+      "description": "The sign of the Deathly Hallows is on Ignotus's grave, indicating a connection between the two."
+    },
+    {
+      "entity_1": "antioch",
+      "entity_2": "peverell brothers",
+      "relationship_type": "member_of",
+      "description": "Antioch is one of the Peverell brothers, indicating that he is a member of the group."
+    },
+    {
+      "entity_1": "cadmus",
+      "entity_2": "peverell brothers",
+      "relationship_type": "member_of",
+      "description": "Cadmus is one of the Peverell brothers, indicating that he is a member of the group."
+    },
+    {
+      "entity_1": "ignotus",
+      "entity_2": "peverell brothers",
+      "relationship_type": "member_of",
+      "description": "Ignotus is one of the Peverell brothers, indicating that he is a member of the group."
+    }
+  ]
+}

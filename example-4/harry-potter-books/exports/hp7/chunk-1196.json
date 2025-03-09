@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'Potter'. He is assured by Professor McGonagall that Voldemort is on his way. (\"Yeah, I do,\" Harry assured her.)"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, referred to as 'Voldemort'. He is said to be on his way by Professor McGonagall. (\"Professor McGonagall, Voldemort’s on the way.\")"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, who is trying to protect Harry from Voldemort. She tells Harry to flee and says that Voldemort's arrival makes no difference in what they call him. (\"Professor McGonagall, Voldemort’s on the way.\" \"You must flee,\" whispered Professor McGonagall.)"
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is interested in saying Voldemort's name. She pulls off the Invisibility Cloak and asks if they are allowed to say his name now. (\"Oh, are we allowed to say the name now? asked Luna with an air of interest\")"
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts, mentioned in relation to the diadem. (\"Professor, do you know where the diadem of Ravenclaw is?\")"
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Luna pulls off and uses to reveal herself. (\"This appearance of a second outlaw seemed to overwhelm Professor McGonagall, who staggered backward and fell into a nearby chair, clutching at the neck of her old tartan dressing gown.\")"
+    },
+    {
+      "name": "tartan dressing gown",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Professor McGonagall's clothing that she clutches when overwhelmed. (\"This appearance of a second outlaw seemed to overwhelm Professor McGonagall, who staggered backward and fell into a nearby chair, clutching at the neck of her old tartan dressing gown.\")"
+    },
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry asks Professor McGonagall about. (\"Professor, do you know where the diadem of Ravenclaw is?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of",
+      "description": "Harry is aware that Voldemort knows his location. (\"He already knows where I am.\")"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "adviser",
+      "description": "Professor McGonagall advises Harry to flee from Voldemort. (\"You must flee,\" whispered Professor McGonagall.)"
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "user_of",
+      "description": "Luna uses the Invisibility Cloak to reveal herself. (\"This appearance of a second outlaw seemed to overwhelm Professor McGonagall, who staggered backward and fell into a nearby chair, clutching at the neck of her old tartan dressing gown.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diadem",
+      "relationship_type": "seeker_of",
+      "description": "Harry asks Professor McGonagall about the diadem. (\"Professor, do you know where the diadem of Ravenclaw is?\")"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as asking a question to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as responding to Ron's question."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as owning the house and being watched by Death Eaters."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as leaving his place to Harry in a will."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Grimmauld Place is mentioned as the location where the characters are waiting."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as watching Harry and his friends."
+    },
+    {
+      "name": "krebacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is mentioned as being absent."
+    },
+    {
+      "name": "deluminator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Deluminator is mentioned as an object that Ron is playing with."
+    },
+    {
+      "name": "the tales of beedle the bard",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Tales of Beedle the Bard is mentioned as a book that Hermione is reading."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "deluminator",
+      "relationship_type": "possesses",
+      "description": "Ron has the Deluminator in his pocket."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the tales of beedle the bard",
+      "relationship_type": "reading",
+      "description": "Hermione is reading The Tales of Beedle the Bard."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmauld place",
+      "relationship_type": "owns",
+      "description": "Harry owns Grimmauld Place."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "left_in_will",
+      "description": "Sirius left his place to Harry in a will."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "grimmauld place",
+      "relationship_type": "watching",
+      "description": "Death Eaters are watching Grimmauld Place."
+    }
+  ]
+}

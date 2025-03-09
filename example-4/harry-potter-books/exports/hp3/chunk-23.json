@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The recipient of the letter from Hogwarts and Hagrid's card."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hogwarts gamekeeper who sent a birthday card to Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend whose birthday card is mentioned."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend whose birthday card is mentioned."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main character of the story who receives a letter from Hogwarts."
+    },
+    {
+      "name": "professor m. mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who sends a letter to Harry."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "train",
+      "singular": true,
+      "description": "The train that takes students from King's Cross station to Hogwarts."
+    },
+    {
+      "name": "king’s cross station",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where the Hogwarts Express leaves."
+    },
+    {
+      "name": "platform nine and three-quarters",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The platform from which the Hogwarts Express departs."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "village",
+      "singular": true,
+      "description": "A village that third years are permitted to visit on certain weekends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_card_to",
+      "description": "Hagrid sent a birthday card to Harry, as mentioned in the text: 'Hagrid’s card up next to Ron’s and Hermione’s'."
+    },
+    {
+      "entity_1": "professor m. mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_letter_to",
+      "description": "Professor McGonagall sent a letter to Harry, as mentioned in the text: 'A list of books for next year is enclosed.'"
+    }
+  ]
+}

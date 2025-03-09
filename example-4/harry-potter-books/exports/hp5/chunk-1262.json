@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a location mentioned as a place where Harry went on a trip. (\"Last Hogsmeade weekend\")"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is a house at Hogwarts school that lost 50 points due to Harry's actions. (\"Fifty points from Gryffindor\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the person who was caught with The Quibbler magazine and got in trouble. (\"There will be no more Hogsmead e trips for you, Mr. Potter\")"
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "The Quibbler is a magazine that Harry was caught with and got in trouble for having. (\"Any student found in possession of the magazine The Quibbler will be expelled\")"
+    },
+    {
+      "name": "the high inquisitor of hogwarts",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The High Inquisitor of Hogwarts is a position that issued the order to expel students caught with The Quibbler. (\"—   by order of  —  The High Inquisitor of Hogwarts\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "the quibbler",
+      "relationship_type": "possession",
+      "description": "Harry Potter was caught with The Quibbler magazine. (\"Any student found in possession of the magazine The Quibbler will be expelled\")"
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry potter",
+      "relationship_type": "punishment",
+      "description": "Gryffindor house lost 50 points due to Harry's actions. (\"Fifty points from Gryffindor\")"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a character in the story who suggests using decoys and Polyjuice Potion to the Order of the Phoenix. He wants Harry to present this idea as his own."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mundungus is a character in the story who understands Snape's plan and agrees to it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a main character in the story who is flying alongside Snape on a broomstick. He is accompanied by other Death Eaters and ahead of them are Lupin and another Harry (who is really George)."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lupin is a character in the story who is being targeted by a Death Eater with a wand."
+    },
+    {
+      "name": "george",
+      "entity_type": "character",
+      "singular": true,
+      "description": "George is a character in the story who is impersonated by another Harry using Polyjuice Potion."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Order of the Phoenix is an organization that Snape suggests using decoys and Polyjuice Potion to."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Polyjuice Potion is a magical object used in the story to impersonate George."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "order of the phoenix",
+      "relationship_type": "suggests_to",
+      "description": "Snape suggests using decoys and Polyjuice Potion to the Order of the Phoenix."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "uses",
+      "description": "Harry uses Polyjuice Potion to impersonate George."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "mundungus",
+      "relationship_type": "orders",
+      "description": "Snape orders Mundungus to present his idea as his own."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "lupin",
+      "relationship_type": "targets",
+      "description": "A Death Eater targets Lupin with a wand."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "flies_with",
+      "description": "Snape flies alongside Harry on a broomstick."
+    }
+  ]
+}

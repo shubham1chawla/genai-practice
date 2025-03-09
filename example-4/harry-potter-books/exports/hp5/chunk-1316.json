@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, called by Firenze."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "A centaur who is banished and warns Harry about Hagrid's attempt."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who hesitates to stay with Firenze."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "A gamekeeper who is trying something that Firenze warns Harry about."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Hagrid has troubles."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "firenze",
+      "entity_2": "hagrid",
+      "relationship_type": "warns",
+      "description": "Firenze warns Harry about Hagrid's attempt."
+    },
+    {
+      "entity_1": "firenze",
+      "entity_2": "forest",
+      "relationship_type": "avoidance",
+      "description": "Firenze is banished and avoids going near the forest."
+    }
+  ]
+}

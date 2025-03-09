@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is the speaker who explains his theory about how Potter's name was submitted under a fourth school."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is the person who responds to Moody's theory with skepticism."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is a student whose name was submitted under a fourth school."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The goblet is a magical object that was hoodwinked by Moody's theory."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "potter",
+      "relationship_type": "suspect",
+      "description": "Moody suspects that Potter's name was submitted under a fourth school."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "moody",
+      "relationship_type": "respond_to",
+      "description": "Karkaroff responds to Moody's theory with skepticism."
+    }
+  ]
+}

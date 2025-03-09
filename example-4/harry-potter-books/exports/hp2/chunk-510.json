@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as 'Potter' by Professor McGonagall."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and fellow student, who comes running up to them when they set off towards the castle. He is mentioned as 'Weasley' by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry, who is in charge of the students. She is mentioned as shouting through a megaphone to give instructions."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, which Harry is a part of. It is mentioned as 'Gryffindor' by Professor McGonagall."
+    },
+    {
+      "name": "harry's heads of house",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The teachers in charge of the students at Hogwarts School of Witchcraft and Wizardry. They are mentioned as giving further information to the students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "follows",
+      "description": "Harry and Ron follow Professor McGonagall back into the school."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "accompanies",
+      "description": "Ron accompanies Harry when they set off towards the castle with Professor McGonagall."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is mentioned as someone who gave a long talk."
+    },
+    {
+      "name": "quidditch pitch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Quidditch pitch is where the narrator and others are playing Quidditch."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the players in the game of Quidditch."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is another player in the game of Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "spoke_at",
+      "description": "Wood spoke at the Quidditch pitch, but this relationship is not explicitly mentioned. However, it can be inferred that Wood gave a talk on the Quidditch pitch."
+    },
+    {
+      "entity_1": "narrator",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "played_on",
+      "description": "The narrator played Quidditch on the Quidditch pitch. This is mentioned in the first sentence of the text: 'It felt wonderful to be back on the Quidditch pitch.'"
+    },
+    {
+      "entity_1": "narrator",
+      "entity_2": "fred",
+      "relationship_type": "raced_with",
+      "description": "The narrator and Fred were racing each other around the stadium. This is mentioned in the sentence: 'He soared right around the stadium at full speed, racing Fred and George.'"
+    },
+    {
+      "entity_1": "narrator",
+      "entity_2": "george",
+      "relationship_type": "raced_with",
+      "description": "The narrator was also racing with George. This is mentioned in the same sentence as above."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "played_on",
+      "description": "Fred played Quidditch on the Quidditch pitch, which can be inferred from the context of the text."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "played_on",
+      "description": "George also played Quidditch on the Quidditch pitch. This relationship is similar to the one mentioned above for Fred."
+    }
+  ]
+}

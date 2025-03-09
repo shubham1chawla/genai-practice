@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbrid ge gave a very tiny cough, as though she was trying to see how quietly she could do it."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall ignored her. Professor McGonagall closed her eyes for a moment, opened them again, and continued as though nothing had happened."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yes, said Harry."
+    },
+    {
+      "name": "defense against the dark arts",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "You’ll want to know which subjects you ought to take, I suppose? ‘Naturally,’ said Professor McGo nagall crisply. ‘I would also advise —’"
+    },
+    {
+      "name": "transfiguration",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "I would also advise Transfiguration, because Aurors frequently need to Transfigure or Untransfigure in their work."
+    },
+    {
+      "name": "aurors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "And I ought to tell you now, Potter, that I do not a ccept students into my N.E.W.T. because Aurors frequently need to Transfigure or Untransfigure in their work."
+    },
+    {
+      "name": "n.e.w.t.",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "And I ought to tell you now, Potter, that I do not a ccept students into my N.E.W.T."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor umbridge",
+      "relationship_type": "ignores",
+      "description": "Professor McGonagall ignored her."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "advises",
+      "description": "You’ll want to know which subjects you ought to take, I suppose? ‘Naturally,’ said Professor McGo nagall crisply. ‘I would also advise —’"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "defense against the dark arts",
+      "relationship_type": "teaches",
+      "description": "You’ll want to know which subjects you ought to take, I suppose? ‘Naturally,’ said Professor McGo nagall crisply. ‘I would also advise —’"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "transfiguration",
+      "relationship_type": "teaches",
+      "description": "I would also advise Transfiguration, because Aurors frequently need to Transfigure or Untransfigure in their work."
+    },
+    {
+      "entity_1": "aurors",
+      "entity_2": "n.e.w.t.",
+      "relationship_type": "requires",
+      "description": "And I ought to tell you now, Potter, that I do not a ccept students into my N.E.W.T. because Aurors frequently need to Transfigure or Untransfigure in their work."
+    }
+  ]
+}

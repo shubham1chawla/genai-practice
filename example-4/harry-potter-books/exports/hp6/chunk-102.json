@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard, mentioned as 'Dumbledore'. He is waving his wand to make things disappear."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that makes the wearer invisible. Harry extracts it from his trunk."
+    },
+    {
+      "name": "trunk",
+      "entity_type": "container",
+      "singular": true,
+      "description": "A container where Harry keeps his belongings. It is mentioned as being messy."
+    },
+    {
+      "name": "cage",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that holds Hedwig, a bird. It disappears with the trunk."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A bird that is being held in a cage. It disappears with the trunk."
+    },
+    {
+      "name": "front door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The entrance to a building. It opens onto cool, misty darkness."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "has",
+      "description": "Harry extracts the Invisibility Cloak from his trunk."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "trunk",
+      "relationship_type": "vanished_by_wand",
+      "description": "Dumbledore waves his wand and the trunk disappears."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cage",
+      "relationship_type": "vanished_by_wand",
+      "description": "Dumbledore waves his wand again, and the cage disappears with the trunk."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hedwig",
+      "relationship_type": "vanished_by_wand",
+      "description": "Hedwig disappears with the trunk when Dumbledore waves his wand."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "front door",
+      "relationship_type": "opened_by_wand",
+      "description": "Dumbledore waves his wand and the front door opens onto cool, misty darkness."
+    }
+  ]
+}

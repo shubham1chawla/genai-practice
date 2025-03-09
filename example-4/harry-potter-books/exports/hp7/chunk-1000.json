@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who practices magic, introduced in the context of their relationship with wands."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by wizards to channel their magic, described as having a complex connection with its master."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was defeated by Harry and had his wand taken from him."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who took Draco's wand by force."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who handed his own wand to Ollivander for examination."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose wand was taken by Ron."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wandmaker who examined the wands of Harry and Ron."
+    },
+    {
+      "name": "peter pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person for whom Ollivander made a wand under duress."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizard",
+      "entity_2": "wand",
+      "relationship_type": "connection",
+      "description": "The text describes a complex connection between wizards and their wands."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "draco malfoy",
+      "relationship_type": "defeated_by",
+      "description": "Harry took Draco's wand by force, indicating that Harry defeated Draco."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "wormtail",
+      "relationship_type": "took_from",
+      "description": "Ron handed Wormtail's wand to Ollivander for examination."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ollivander",
+      "relationship_type": "asked_question_to",
+      "description": "Harry asked Ollivander questions about wands."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "ollivander",
+      "relationship_type": "handed_wand_to",
+      "description": "Ron handed his wand to Ollivander for examination."
+    },
+    {
+      "entity_1": "peter pettigrew",
+      "entity_2": "ollivander",
+      "relationship_type": "made_for",
+      "description": "Ollivander made a wand for Peter Pettigrew under duress."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a Gryffindor student at Hogwarts."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students from Gryffindor house at Hogwarts."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and a teacher at Hogwarts who is trying to fix Harry's arm."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is taking a photo of Harry."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Seeker and a teacher at Hogwarts."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A rogue Bludger that is being wrestled by Fred and George Weasley."
+    },
+    {
+      "name": "hospita wing",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The hospital wing at Hogwarts where Harry wants to go."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Lockhart is trying to fix Harry's arm."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "concerned",
+      "description": "Wood is concerned about Harry's injury and thinks he should go to the hospital wing."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "bludger",
+      "relationship_type": "wrestling",
+      "description": "Fred Weasley is wrestling the rogue Bludger with George Weasley."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "bludger",
+      "relationship_type": "wrestling",
+      "description": "George Weasley is wrestling the rogue Bludger with Fred Weasley."
+    }
+  ]
+}

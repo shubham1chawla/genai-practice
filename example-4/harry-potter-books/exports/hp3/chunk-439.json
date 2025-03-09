@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The team that is currently leading by eighty points to zero."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The opposing team that is pulling back and has scored three goals."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor supporter who vented his feelings by hitting the second Bludger directly at the offending Beater."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that was hit by George Weasley."
+    },
+    {
+      "name": "beater",
+      "entity_type": "position",
+      "singular": true,
+      "description": "A position in the Quidditch team that is being targeted by George Weasley."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry Potter's broomstick that is being praised for its precision-balance."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The player who is riding the Firebolt and putting it through its paces."
+    },
+    {
+      "name": "chang's comet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A broomstick that is being compared to Harry Potter's Firebolt."
+    },
+    {
+      "name": "jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The commentator who is being scolded for advertising Firebolts."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A player from Ravenclaw who has a chance to win the game if she gets the Snitch before Harry Potter."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that Cho needs to get in order for Ravenclaw to win."
+    },
+    {
+      "name": "ravenclaw chaser",
+      "entity_type": "position",
+      "singular": false,
+      "description": "A position in the Quidditch team that is being narrowly avoided by Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george weasley",
+      "entity_2": "beater",
+      "relationship_type": "targeted",
+      "description": "George Weasley targeted the Beater with a Bludger."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "firebolt",
+      "relationship_type": "riding",
+      "description": "Harry Potter is riding the Firebolt."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "snitch",
+      "relationship_type": "chasing",
+      "description": "Cho is chasing the Snitch."
+    },
+    {
+      "entity_1": "ravenclaw chaser",
+      "entity_2": "harry potter",
+      "relationship_type": "narrowly avoided",
+      "description": "A Ravenclaw Chaser narrowly avoided Harry Potter."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is trying to get something from Hermione's hand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose hand Harry is trying to free, described as having a tight grip on a paper."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the context of being blocked from view by Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is keeping watch while Harry tries to free the paper from Hermione's hand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "tries_to_free",
+      "description": "Harry is trying to get something (the paper) from Hermione's hand, as described in the text: 'While Ron kept watch he tugged and twisted, and at last, after several tense minutes, the paper came free'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "blocks_view",
+      "description": "Harry is blocking Madam Pomfrey's view, as described in the text: 'blocked Harry from Madam Pomfrey’s view'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "keeps_watch",
+      "description": "Ron is keeping watch while Harry tries to free the paper, as described in the text: 'While Ron kept watch he tugged and twisted...'."
+    }
+  ]
+}

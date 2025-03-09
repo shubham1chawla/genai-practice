@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist who is being attacked by a snake."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is calling out to Harry from below."
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The snake that is attacking Harry."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A circle of ice that is being pressed into Harry's chest."
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The title of a secret, possibly referring to Bathilda Bagman."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "call",
+      "description": "Hermione is calling out to Harry from below."
+    },
+    {
+      "entity_1": "snake",
+      "entity_2": "harry",
+      "relationship_type": "attack",
+      "description": "The snake is attacking Harry."
+    },
+    {
+      "entity_1": "horcrux",
+      "entity_2": "harry",
+      "relationship_type": "press",
+      "description": "The Horcrux is being pressed into Harry's chest by the snake."
+    },
+    {
+      "entity_1": "bathilda",
+      "entity_2": "secret",
+      "relationship_type": "title",
+      "description": "Bathilda is possibly referring to a secret."
+    }
+  ]
+}

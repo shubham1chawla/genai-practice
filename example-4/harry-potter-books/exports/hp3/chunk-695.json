@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to keep a lookout."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who is concerned about his actions."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hermione's dragon, which she is dragging behind her."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who is being watched by Harry and Hermione."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Dark creatures that are being driven away by Harry's Patronus."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_entity",
+      "singular": true,
+      "description": "A magical creature conjured up by Harry to drive away the dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "drives_away",
+      "description": "Harry's Patronus drove away all the dementors."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "buckbeak",
+      "relationship_type": "dragging",
+      "description": "Hermione is dragging Buckbeak behind her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "watching",
+      "description": "Harry and Hermione are watching Snape from behind a bush."
+    },
+    {
+      "entity_1": "patronus",
+      "entity_2": "dementors",
+      "relationship_type": "drives_away",
+      "description": "The Patronus conjured up by Harry drove away the dementors."
+    }
+  ]
+}

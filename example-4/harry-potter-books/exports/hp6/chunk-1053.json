@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is trying to get water for Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story. He had planned the situation so that Harry would have to get water from the lake."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character in the story who needs water. Harry is trying to help him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "planned_by",
+      "description": "Voldemort had planned the situation so that Harry would have to get water from the lake. (Text: 'because Voldemort had planned it so')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "helped_by",
+      "description": "Harry is trying to help Dumbledore by getting him water. (Text: 'He flung himself over to the edge of the rock and plunged the goblet into the lake, bringing it up full to the brim of icy water that did not vanish. ... He yelled, and lunging forwards he tipped the water clumsily over Dumbledore’s face.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "affected_by",
+      "description": "Harry is being affected by Voldemort's plan. (Text: 'A slimy white hand had gripped his wrist, and the creature to whom it belonged was pulling him, slowly, backwards across the rock.')"
+    }
+  ]
+}

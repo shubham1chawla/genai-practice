@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Potter is the one who ran to get Dumbledore and was seen bringing him out of the castle."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is a character in the story who was visited by Potter and later told to look for his father."
+    },
+    {
+      "name": "krum",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Krum was stunned by Potter."
+    },
+    {
+      "name": "winky",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Winky wailed in response to the news of her master's death."
+    },
+    {
+      "name": "barty",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Barty is Winky's master."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape told Barty where to come."
+    },
+    {
+      "name": "father",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The father of the speaker was killed by Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "visited",
+      "description": "Potter ran to get Dumbledore and later brought him out of the castle."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "krum",
+      "relationship_type": "stunned",
+      "description": "Potter stunned Krum."
+    },
+    {
+      "entity_1": "barty",
+      "entity_2": "snape",
+      "relationship_type": "informed",
+      "description": "Snape told Barty where to come."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "told_to_look_for_something",
+      "description": "Dumbledore told Potter to look for his father."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "father",
+      "relationship_type": "killed_by",
+      "description": "The speaker's father was killed by Potter."
+    }
+  ]
+}

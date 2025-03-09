@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who needs food and sleep."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one speaking to Harry and suggesting he go down to the feast."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall's desk has a drawer that Dumbledore opens."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dumbledore needs to write to Azkaban to get the gamekeeper back."
+    },
+    {
+      "name": "the daily",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "An advertisement for The Daily is being drafted by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "suggests",
+      "description": "Dumbledore suggests Harry go down to the feast and get some food and sleep."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "azkaban",
+      "relationship_type": "writes_to",
+      "description": "Dumbledore needs to write to Azkaban to get the gamekeeper back."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the daily",
+      "relationship_type": "drafts_advertisement_for",
+      "description": "An advertisement for The Daily is being drafted by Dumbledore."
+    }
+  ]
+}

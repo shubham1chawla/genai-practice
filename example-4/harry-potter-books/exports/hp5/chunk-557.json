@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "bowtruckles",
+      "entity_type": "species",
+      "singular": true,
+      "description": "Bowtruckles are tree-guardians that live in wand-trees. They eat wood lice and fairy eggs."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Granger is a student who correctly identifies the creatures as bowtruckles."
+    },
+    {
+      "name": "professor grubly-plank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is a teacher who agrees with Miss Granger's identification of the creatures and awards Gryffindor house points."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who observes the bowtruckles eating wood lice."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bowtruckles",
+      "entity_2": "miss granger",
+      "relationship_type": "identified_by",
+      "description": "Miss Granger correctly identifies the creatures as bowtruckles."
+    },
+    {
+      "entity_1": "professor grubly-plank",
+      "entity_2": "gryffindor house",
+      "relationship_type": "awarded_points_to",
+      "description": "Professor Grubbly-Plank awards Gryffindor house points for Miss Granger's correct identification of the creatures."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bowtruckles",
+      "relationship_type": "observed_eating",
+      "description": "Harry observes the bowtruckles eating wood lice."
+    }
+  ]
+}

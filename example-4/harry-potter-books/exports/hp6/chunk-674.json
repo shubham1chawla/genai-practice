@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, recognized by his appearance."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy who is wearing Marvolo's gold and black ring, indicating that he has already killed his father."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The professor who is being questioned by Riddle."
+    },
+    {
+      "name": "marvolo",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle's father, whose gold and black ring he is wearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "riddle",
+      "relationship_type": "recognized",
+      "description": "Harry recognized Riddle at once."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "riddle",
+      "relationship_type": "questioned_by",
+      "description": "Slughorn is being questioned by Riddle."
+    },
+    {
+      "entity_1": "marvolo",
+      "entity_2": "riddle",
+      "relationship_type": "father_of",
+      "description": "Riddle has already killed his father, Marvolo."
+    }
+  ]
+}

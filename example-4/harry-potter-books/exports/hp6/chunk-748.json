@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has interactions with others in the text. He is described as someone who found McLaggen's Quidditch lectures almost more wearing than Ron being in the hospital wing (line 1). Harry is also shown to be surprised when Lavender says that Ron is always asleep when she goes to see him (lines 13-14)."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is in the hospital wing and has interactions with others in the text. He is described as someone who is always asleep when Lavender goes to see him (lines 10-11)."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender is mentioned as a person who has interactions with others in the text. She is described as someone who is annoyed that nobody told her Ron was in the hospital wing (line 3). Lavender is also shown to be keen on having in-depth chats with Harry about Ron's feelings (lines 5-6)."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mclaggen is mentioned as a person who gives Quidditch lectures that Harry finds almost more wearing than Ron being in the hospital wing (line 1)."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lavender",
+      "relationship_type": "has_interaction_with",
+      "description": "Harry and Lavender have interactions with each other, as shown by their conversations about Ron's feelings (lines 7-10)."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "knows",
+      "description": "Harry knows that Ron is in the hospital wing and has interactions with him (line 1, lines 13-14)."
+    },
+    {
+      "entity_1": "lavender",
+      "entity_2": "harry",
+      "relationship_type": "has_interaction_with",
+      "description": "Lavender and Harry have interactions with each other, as shown by their conversations about Ron's feelings (lines 7-10)."
+    },
+    {
+      "entity_1": "lavender",
+      "entity_2": "ron",
+      "relationship_type": "is_in_relationship_with",
+      "description": "Lavender is in a relationship with Ron and has interactions with him (line 3, lines 5-6)."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mclaggen",
+      "relationship_type": "has_experience_with",
+      "description": "Harry has an experience with Mclaggen's Quidditch lectures that he finds almost more wearing than Ron being in the hospital wing (line 1)."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's soul is mentioned as being shattered."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being held by the Inferi and is in danger of being drowned."
+    },
+    {
+      "name": "inferi",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "The Inferi are described as holding Harry tightly."
+    },
+    {
+      "name": "rock",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A ring of fire erupts around the rock."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "inferi",
+      "relationship_type": "held_by",
+      "description": "The Inferi are holding Harry tightly."
+    },
+    {
+      "entity_1": "inferi",
+      "entity_2": "water",
+      "relationship_type": "carrying_to",
+      "description": "The Inferi are carrying Harry back to the water."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "connected_to",
+      "description": "Harry will become one more dead guardian of a fragment of Voldemort's shattered soul."
+    }
+  ]
+}

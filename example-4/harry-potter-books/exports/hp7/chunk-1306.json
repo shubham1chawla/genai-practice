@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is being called out for. He is not visible at first but later seen to be buried in spiders."
+    },
+    {
+      "name": "spiders",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Spiders are swarming and retreating under the onslaught of spells. They have Hagrid buried in their midst."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who hears someone calling his name and sprints down the front steps into the dark grounds to help Hagrid."
+    },
+    {
+      "name": "giant",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A giant stands before Harry, twenty feet high, its head hidden in shadow. Its treelike, hairy shins are illuminated by the light."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "spiders",
+      "relationship_type": "buried_in",
+      "description": "Hagrid is buried in the midst of spiders, who are swarming and retreating under the onslaught of spells."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "helping",
+      "description": "Harry sprints down the front steps into the dark grounds to help Hagrid, who is being attacked by spiders."
+    },
+    {
+      "entity_1": "giant",
+      "entity_2": "harry",
+      "relationship_type": "blocking",
+      "description": "A giant stands before Harry, blocking his way and impeding his ability to chase after the spider swarm."
+    }
+  ]
+}

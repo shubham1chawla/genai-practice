@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "crowd",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The crowd is described as being made up mostly of witches around Mrs Weasley’s age. This suggests that the crowd is a diverse group of people, but with a majority of witches."
+    },
+    {
+      "name": "witches",
+      "entity_type": "group_of_witches",
+      "singular": false,
+      "description": "Witches are mentioned as making up most of the crowd. They are described in relation to Mrs Weasley’s age, implying that they are likely middle-aged women."
+    },
+    {
+      "name": "Mrs Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as being around the same age as the majority of witches in the crowd. This suggests that she is a respected and possibly older member of the community."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard is described as looking harassed and standing at the door. He is trying to maintain order in the crowd."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crowd",
+      "entity_2": "witches",
+      "relationship_type": "contains",
+      "description": "The crowd contains a majority of witches, as described in the text."
+    },
+    {
+      "entity_1": "crowd",
+      "entity_2": "Mrs Weasley",
+      "relationship_type": "includes",
+      "description": "The crowd includes people around Mrs Weasley’s age, implying that she is part of the crowd."
+    },
+    {
+      "entity_1": "wizard",
+      "entity_2": "crowd",
+      "relationship_type": "regulates",
+      "description": "The wizard is trying to regulate and maintain order in the crowd."
+    }
+  ]
+}

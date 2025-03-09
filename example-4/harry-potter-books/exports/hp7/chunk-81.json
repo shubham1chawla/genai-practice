@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "she",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The woman in the story who is leaving the room."
+    },
+    {
+      "name": "her husband",
+      "entity_type": "husband",
+      "singular": true,
+      "description": "The man married to 'she'."
+    },
+    {
+      "name": "son",
+      "entity_type": "child",
+      "singular": true,
+      "description": "The child of 'she' and her husband."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "she",
+      "entity_2": "her husband",
+      "relationship_type": "spouse_of",
+      "description": "She is leaving the room with her husband."
+    },
+    {
+      "entity_1": "she",
+      "entity_2": "son",
+      "relationship_type": "parent_of",
+      "description": "She is leaving the room with her son."
+    }
+  ]
+}

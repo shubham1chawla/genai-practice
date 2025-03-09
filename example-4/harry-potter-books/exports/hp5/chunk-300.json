@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as a person who is questioning Harry about his use of magic. He is described as looking at Harry over the top of his parchment."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has received an official warning from the Ministry for using illegal magic three years ago. He is described as conjuring a Patronus on the night of August 2nd."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that has given Harry an official warning for using illegal magic three years ago."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A Patronus is mentioned as a spell that Harry conjured on the night of August 2nd."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "questioning",
+      "description": "Fudge is questioning Harry about his use of magic."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "harry",
+      "relationship_type": "punishment",
+      "description": "The Ministry has given Harry an official warning for using illegal magic three years ago."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "conjured",
+      "description": "Harry conjured a Patronus on the night of August 2nd."
+    }
+  ]
+}

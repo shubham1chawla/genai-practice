@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who is on a mission with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, also a wizard."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Ron's pet dog that is accompanying them on their mission."
+    },
+    {
+      "name": "spiders",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "The creatures they are following in the forest to find signs of danger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "accompanying",
+      "description": "Harry and Ron are walking together in the forest, with Fang by their side."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fang",
+      "relationship_type": "accompanying",
+      "description": "Harry is accompanied by Ron's dog, Fang."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fang",
+      "relationship_type": "owning",
+      "description": "Ron owns the dog, Fang."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "spiders",
+      "relationship_type": "following",
+      "description": "Harry is following the spiders in the forest to find signs of danger."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "spiders",
+      "relationship_type": "following",
+      "description": "Ron is also following the spiders with Harry."
+    }
+  ]
+}

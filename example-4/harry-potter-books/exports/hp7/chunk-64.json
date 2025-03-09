@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as a person who is protecting the Prime Minister. He is described as being able to dress like a Muggle and having a reassuring voice."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is being protected by Kingsley."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as a Dursley who has spotted Kingsley on the news."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kingsley",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Kingsley is protecting Harry, as mentioned by Uncle Vernon."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "kingsley",
+      "relationship_type": "has_seen_on_news",
+      "description": "Uncle Vernon has seen Kingsley on the news."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The forest is mentioned as a place where Hagrid looks after something."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper and is described as looking after the creatures in the forest."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is a professor who is flattering Hagrid and is also bringing drinks to the table."
+    },
+    {
+      "name": "bowtruckle",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Bowtruckles are creatures that Hagrid is explaining how to care for."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Felix Felicis is a magical drink that gives Harry a nudge and helps him notice the emptying bottles."
+    },
+    {
+      "name": "dragon eggs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Dragon eggs are mentioned as being part of an illegal trade."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "forest",
+      "relationship_type": "care_for",
+      "description": "Hagrid looks after the creatures in the forest."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "hagrid",
+      "relationship_type": "flatter",
+      "description": "Slughorn is flattering Hagrid."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "felix felicis",
+      "relationship_type": "influence",
+      "description": "Felix Felicis gives Harry a nudge and helps him notice the emptying bottles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bottles",
+      "relationship_type": "refill",
+      "description": "Harry uses magic to refill the emptying bottles."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "dragon eggs",
+      "relationship_type": "involved_in_illegal_trade",
+      "description": "Slughorn is involved in an illegal trade of dragon eggs."
+    }
+  ]
+}

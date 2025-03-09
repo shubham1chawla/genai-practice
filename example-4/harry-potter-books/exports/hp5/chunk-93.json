@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "the advanced guard",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group mentioned in the story, but no further details are provided."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who is being addressed by his uncle."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is mentioned as wearing a suit and having an expression of smugness."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Uncle Vernon's wife, mentioned in the conversation with Harry."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, mentioned as going out with Uncle Vernon and Aunt."
+    },
+    {
+      "name": "fridge",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A household appliance where food is stored."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "addressed_by",
+      "description": "Uncle Vernon addresses Harry in the conversation."
+    },
+    {
+      "entity_1": "aunt",
+      "entity_2": "dudley",
+      "relationship_type": "related_to",
+      "description": "Aunt is related to Dudley, as mentioned in the conversation with Harry."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "ordered_by",
+      "description": "Uncle Vernon orders Harry not to leave his bedroom while they are away."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "fridge",
+      "relationship_type": "forbidden_to_touch",
+      "description": "Uncle Vernon forbids Harry from touching the fridge."
+    }
+  ]
+}

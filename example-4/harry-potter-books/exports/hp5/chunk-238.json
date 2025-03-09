@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, asking questions about Regulus."
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is talking to Harry and providing information about Regulus."
+    },
+    {
+      "name": "Regulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was murdered by Voldemort or on his orders."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who ordered the murder of Regulus."
+    },
+    {
+      "name": "Mrs. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is holding a tray with food and talking to others."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "Regulus",
+      "relationship_type": "murdered_by",
+      "description": "Voldemort or on his orders murdered Regulus."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Sirius",
+      "relationship_type": "talking_to",
+      "description": "Harry is talking to Sirius about Regulus."
+    }
+  ]
+}

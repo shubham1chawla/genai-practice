@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "joke shop",
+      "entity_type": "business",
+      "singular": true,
+      "description": "The goal of Fred and George to open a business selling jokes."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who wants to open a joke shop."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who wants to open a joke shop."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Fred and George who does not think running a joke shop is suitable for her sons."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs. Weasley's cat who is sniffing the dead rats."
+    },
+    {
+      "name": "dead rats",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The object that Mrs. Weasley sat on and was disgusted by."
+    },
+    {
+      "name": "curtains",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The curtains in the room that were buzzing with doxies."
+    },
+    {
+      "name": "doxes",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The animals that were buzzing in the curtains."
+    },
+    {
+      "name": "black eggs",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that was next to the bucket of dead doxies."
+    },
+    {
+      "name": "bag",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The bag that Mrs. Weasley sat on and was disgusted by."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "joke shop",
+      "relationship_type": "goal",
+      "description": "Fred wants to open a joke shop."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "joke shop",
+      "relationship_type": "goal",
+      "description": "George wants to open a joke shop."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "fred",
+      "relationship_type": "disapproval",
+      "description": "Mrs. Weasley does not think it is suitable for Fred to run a joke shop."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "george",
+      "relationship_type": "disapproval",
+      "description": "Mrs. Weasley does not think it is suitable for George to run a joke shop."
+    },
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "dead rats",
+      "relationship_type": "interest",
+      "description": "Crookshanks is interested in the dead rats."
+    }
+  ]
+}

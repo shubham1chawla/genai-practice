@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to see something moving in the shadows."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's cat, who can see a dog moving in the shadows."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is initially asleep and later joins Harry in the Great Hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "crookshanks",
+      "relationship_type": "can_see",
+      "description": "Harry can see Crookshanks seeing a dog moving in the shadows."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "awakened_by",
+      "description": "Harry awakens Ron from sleep to ask if he can see something."
+    },
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "dog",
+      "relationship_type": "can_see",
+      "description": "Crookshanks can see a dog moving in the shadows."
+    }
+  ]
+}

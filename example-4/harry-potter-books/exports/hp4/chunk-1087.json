@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the person who needs to see Professor Dumbledore and is running back up the corridor."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as the person Harry wants to see, but he is not present in the current location."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Snape is mentioned as the person who is blocking Harry's path and is questioning him about his presence."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is mentioned as a person who has turned up in the forest and is asking something, but it is unclear what he is asking for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "wants_to_see",
+      "description": "Harry wants to see Professor Dumbledore, as mentioned in the conversation between Harry and Snape."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "questioning",
+      "description": "Professor Snape is questioning Harry about his presence, as mentioned in the conversation between Harry and Snape."
+    }
+  ]
+}

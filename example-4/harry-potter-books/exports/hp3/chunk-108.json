@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and protagonist of the story. He is mentioned as someone who ran away from home and was picked up by the Knight Bus."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and companion. He is mentioned as wandering off with Harry into the Forbidden Forest."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person who escaped from Azkaban prison. His escape is mentioned as a significant event in the story."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly is someone who is talking to another character about Sirius Black and Harry's safety."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who is mentioned as telling the Daily Prophet that they are no nearer catching Sirius Black."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is a school where Harry will be perfectly safe. It is also mentioned as a place where Sirius Black might break in."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison from which Sirius Black escaped."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": false,
+      "description": "The Daily Prophet is a newspaper that publishes Fudge's statements about the search for Sirius Black."
+    },
+    {
+      "name": "knight bus",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The Knight Bus is a vehicle that picked up Harry after he ran away from home."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius black",
+      "entity_2": "azkaban",
+      "relationship_type": "escaped_from",
+      "description": "Sirius Black escaped from Azkaban prison, which is mentioned as a significant event in the story."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "will_be_safe_at",
+      "description": "Harry will be perfectly safe at Hogwarts, according to Molly."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "hogwarts",
+      "relationship_type": "might_break_into",
+      "description": "Sirius Black might break into Hogwarts, which is mentioned as a possibility by the speaker."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "daily prophet",
+      "relationship_type": "publishes_statements_in",
+      "description": "Fudge's statements about the search for Sirius Black are published in the Daily Prophet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "knight bus",
+      "relationship_type": "was_picked_up_by",
+      "description": "Harry was picked up by the Knight Bus after he ran away from home."
+    }
+  ]
+}

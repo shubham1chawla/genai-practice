@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is being dragged backward through the flames by Professor Umbridge."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who has placed Stealth Sensoring Spells around her doorway to prevent creatures from entering her office. She is dragging Harry backward out of the fire by his hair."
+    },
+    {
+      "name": "nifflers",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A type of animal that Professor Umbridge has previously encountered in her office, leading her to take precautions against future intruders."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "dragged_by",
+      "description": "Professor Umbridge is dragging Harry backward out of the fire by his hair. This is described in the text as 'she was staring up into the wide, pallid face of Professor Umbridge, who had dragged him backward out of the fire by the hair'."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "harry",
+      "relationship_type": "dragging",
+      "description": "This is a reverse relationship to 'dragged_by', indicating that Professor Umbridge is actively dragging Harry backward out of the fire."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "nifflers",
+      "relationship_type": "encountered_before",
+      "description": "Professor Umbridge has previously encountered nifflers in her office, leading her to take precautions against future intruders. This is described in the text as 'after two nifflers I was going to let one more foul, scavenging little creature enter my office without my knowledge?'"
+    }
+  ]
+}

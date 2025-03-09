@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is a wizard who is staring at Harry and talking about Muggles being held by some people at the campsite."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is frowning and making a comment about Bagman's behavior."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who is leading the way off the path into a small clearing and sitting down on dry grass."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a wizard who is being referred to as a great Beater and whose model figure is being watched by Ron."
+    },
+    {
+      "name": "wimbourne wasps",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Wimbourne Wasps are a Quidditch team that won the league three times in a row while Bagman was with them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "muggles",
+      "relationship_type": "has_held",
+      "description": "Bagman is talking about some people having got hold of a family of Muggles at the campsite."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bagman",
+      "relationship_type": "commented_on",
+      "description": "Hermione makes a comment about Bagman's behavior, saying he is not exactly on top of things."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "krum",
+      "relationship_type": "admired",
+      "description": "Ron is watching the model figure of Krum and admiring him as a great Beater."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "wimbourne wasps",
+      "relationship_type": "was_with",
+      "description": "Bagman was with the Wimbourne Wasps Quidditch team."
+    }
+  ]
+}

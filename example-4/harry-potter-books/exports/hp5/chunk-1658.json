@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is watching Grawp and is concerned about their safety."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Grawp is giving a roar of fury and chasing after Harry, Ron, and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is listening to the sounds of the centaurs and the giant, and his scar is throbbing with pain."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is not mentioned by name in this passage, but he is implied to be present with Harry and Hermione."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is the person that Harry had a vision of rescuing."
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Centaurs are mentioned as galloping and making noise in the background."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is where Hermione suggests they should go to get back to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "had_vision_of",
+      "description": "Harry had a vision of rescuing Sirius."
+    },
+    {
+      "entity_1": "grawp",
+      "entity_2": "harry",
+      "relationship_type": "chasing",
+      "description": "Grawp is chasing after Harry, Ron, and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "castle",
+      "relationship_type": "suggesting_destination",
+      "description": "Hermione suggests that they should go back to the castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "centaurs",
+      "relationship_type": "listening_to",
+      "description": "Harry is listening to the sounds of the centaurs."
+    }
+  ]
+}

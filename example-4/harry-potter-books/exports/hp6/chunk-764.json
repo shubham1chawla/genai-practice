@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as having been brought to the hospital wing multiple times due to Quidditch injuries."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, mentioned as sleeping and having a snore."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The nurse at Hogwarts, mentioned as coming out of her office and waving her wand to dim the lamps."
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character mentioned as having power, but not further described."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Slytherin student, mentioned as someone Harry would have liked to set a tail upon if he had more power."
+    },
+    {
+      "name": "aurors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of wizards mentioned as being at Rufus Scrimgeour's command."
+    },
+    {
+      "name": "da",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Dumbledore's Army, mentioned as an organization that Harry thought about joining to set up something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "visited_by",
+      "description": "Harry was visited by Madam Pomfrey in her office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "roommate",
+      "description": "Harry and Ron share the same room, as evidenced by Ron's snore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "da",
+      "relationship_type": "considered_joining",
+      "description": "Harry thought about joining the DA to set up something."
+    }
+  ]
+}

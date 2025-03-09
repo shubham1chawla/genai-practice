@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being held captive by the Dursleys."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is helping Harry escape."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is where Ron will explain the situation to the authorities."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are keeping Harry captive."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is concerned about Harry's magic use."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Muggles are the people Harry lives with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "held_captive_by",
+      "description": "The Dursleys are holding Harry captive."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "helping_escape",
+      "description": "Ron is helping Harry escape."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "will_explain_situation_to",
+      "description": "Harry will explain the situation to the authorities at Hogwarts."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about_magic_use",
+      "description": "The Ministry is concerned about Harry's magic use."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "muggles",
+      "relationship_type": "lives_with",
+      "description": "Ron lives with Muggles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "will_be_seen_as_misuse_of_magic",
+      "description": "The Ministry will see Harry's magic use as a misuse of magic."
+    }
+  ]
+}

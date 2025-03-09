@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being addressed by a mysterious voice. (Excerpt: 'Harry , what’re you –?')"
+    },
+    {
+      "name": "lockhart's office",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry had previously heard the same voice. (Excerpt: 'It was the same voice, the same cold, murderous voice he had / heard in Lockhart’s office.')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is present with him. (Excerpt: 'Ron and Hermione froze, watching him.')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is present with him. (Excerpt: 'Ron and Hermione froze, watching him.')"
+    },
+    {
+      "name": "entrance hall",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where the story takes place. (Excerpt: 'He began to run, up the stairs, into / the Entrance Hall.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart's office",
+      "relationship_type": "heard_voice_in",
+      "description": "Harry had previously heard the same voice in Lockhart's office. (Excerpt: 'It was the same voice, the same cold, murderous voice he had / heard in Lockhart’s office.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "with",
+      "description": "Harry is with Ron. (Excerpt: 'Ron and Hermione froze, watching him.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Harry is with Hermione. (Excerpt: 'Ron and Hermione froze, watching him.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "entrance hall",
+      "relationship_type": "went_to",
+      "description": "Harry went to the Entrance Hall. (Excerpt: 'He began to run, up the stairs, into / the Entrance Hall.')"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as the recipient of the newspaper and is described as sleeping on the sofa."
+    },
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The owl is introduced as delivering the newspaper to Hagrid."
+    },
+    {
+      "name": "newspaper",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The newspaper is described as being delivered by the owl and placed on top of Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "owl",
+      "entity_2": "hagrid",
+      "relationship_type": "delivers_to",
+      "description": "The owl delivers the newspaper to Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "newspaper",
+      "relationship_type": "receives",
+      "description": "Hagrid receives the newspaper from the owl."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being angry with Hermione because his Firebolt was taken away for anti-jinx tests."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as trying to do what's best, but her actions have consequences."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is furious with Hermione for stripping down his brand-new Firebolt."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is described as a brand-new broom that was taken away for anti-jinx tests."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is mentioned as becoming crowded and noisy again after the rest of the school returned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "owns",
+      "description": "Harry was the owner of the Firebolt for a few short hours."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "firebolt",
+      "relationship_type": "interferes_with",
+      "description": "Hermione's actions led to Harry losing his Firebolt."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "firebolt",
+      "relationship_type": "owns",
+      "description": "Ron was also the owner of a brand-new Firebolt that Hermione stripped down."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "angry_with",
+      "description": "Harry is angry with Hermione for taking his Firebolt away."
+    }
+  ]
+}

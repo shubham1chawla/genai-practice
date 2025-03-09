@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is experiencing a situation where he can't see."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin who is whimping and trying to tell their father."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley's father, mentioned by Dudley in his whimpering."
+    },
+    {
+      "name": "little whinging",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry and others are present."
+    },
+    {
+      "name": "alleyway",
+      "entity_type": "location",
+      "singular": true,
+      "description": "An alleyway in Little Whinging where something is present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "interaction",
+      "description": "Harry and Dudley are interacting with each other."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dad",
+      "relationship_type": "mention",
+      "description": "Harry is mentioned by Dudley in his whimpering, but there's no direct interaction between Harry and Dad."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "little whinging",
+      "relationship_type": "location",
+      "description": "Harry is present in Little Whinging."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "alleyway",
+      "relationship_type": "presence",
+      "description": "Something is present in the alleyway, which Harry can sense."
+    }
+  ]
+}

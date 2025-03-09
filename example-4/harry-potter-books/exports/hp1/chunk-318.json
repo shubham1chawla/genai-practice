@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. (\"I’m just going to teach you the rules this evening, then you’ll be joining team practice three times a week.\")"
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry. (\"McGonagall meant ... you really are a natural.\")"
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Quidditch coach. (\"Right, said Wood.\")"
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "A sport played on broomsticks at Hogwarts School of Witchcraft and Wizardry. (\"Now, Quidditch is easy enough to understand, even if it’s not too easy to play.\")"
+    },
+    {
+      "name": "chasers",
+      "entity_type": "position",
+      "singular": false,
+      "description": "A position in the Quidditch team. (\"Three of them are called Chasers.\")"
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "ball",
+      "singular": true,
+      "description": "The ball used in Quidditch. (\"This ball’s called the Quaffle.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "wood",
+      "relationship_type": "teaches",
+      "description": "Wood is teaching Harry Potter about Quidditch. (\"I’m just going to teach you the rules this evening, then you’ll be joining team practice three times a week.\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "quidditch",
+      "relationship_type": "plays",
+      "description": "Harry Potter is playing Quidditch. (\"Now, Quidditch is easy enough to understand, even if it’s not too easy to play.\")"
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "quaffle",
+      "relationship_type": "uses",
+      "description": "Wood uses the Quaffle in teaching Harry Potter about Quidditch. (\"This ball’s called the Quaffle.\")"
+    }
+  ]
+}

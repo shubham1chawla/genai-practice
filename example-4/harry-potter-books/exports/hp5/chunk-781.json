@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor at Hogwarts, mentioned as having an unfathomable expression"
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Student at Hogwarts, adding drops to his potion"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Government organization that would prefer the Strengthening Solution removed from the syllabus"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor at Hogwarts, asking questions to Snape"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "snape",
+      "relationship_type": "disapproval",
+      "description": "The Ministry would prefer it if the Strengthening Solution was removed from the syllabus"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "questioning",
+      "description": "Professor Umbridge is questioning Snape about his qualifications"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione mentioned Hagrid's wooden house. He was humming merrily as he stoked the fire."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "She expressed her disapproval of Hagrid's actions and made revision timetables for Harry and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He sighed about having a peaceful life and wanted to skip Herbology to go see the dragon hatching."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "She brought Harry another note from Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He received a note from Hagrid and was interested in seeing the dragon hatching."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "disagrees_with",
+      "description": "Ron wanted to skip Herbology, but Hermione wouldn't hear of it."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hedwig",
+      "relationship_type": "sent_note_to",
+      "description": "Hedwig brought Harry a note from Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "made_revision_timetables_for",
+      "description": "Hermione made revision timetables for Ron and Harry."
+    }
+  ]
+}

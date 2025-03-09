@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is still on the train and has been frozen in place."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who helps Harry escape from the train by pulling away his Invisibility Cloak and telling him to jump."
+    },
+    {
+      "name": "the express",
+      "entity_type": "train",
+      "singular": true,
+      "description": "The train that Harry is on, which is leaving the station."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows Harry to become invisible, but flies off him when he needs it most."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "tonks",
+      "relationship_type": "helped_by",
+      "description": "Tonks helps Harry escape from the train by pulling away his Invisibility Cloak and telling him to jump."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "helped",
+      "description": "Harry is helped by Tonks in escaping from the train."
+    }
+  ]
+}

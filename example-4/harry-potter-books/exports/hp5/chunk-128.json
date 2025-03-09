@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "grimmald place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is staying. It is mentioned as 'NUMBER  TWELVE' in the address."
+    },
+    {
+      "name": "ron's mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley, Ron's mother, who welcomes Harry at Grimmald Place."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who has arrived at Grimmald Place."
+    },
+    {
+      "name": "the gang of wizards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of wizards behind Harry, who are attending a meeting."
+    },
+    {
+      "name": "dinner",
+      "entity_type": "event",
+      "singular": true,
+      "description": "An event mentioned by Mrs. Weasley as something that will happen later."
+    },
+    {
+      "name": "the meeting",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A meeting attended by the gang of wizards, which has already started."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmald place",
+      "relationship_type": "location_of",
+      "description": "Harry is at Grimmald Place."
+    },
+    {
+      "entity_1": "ron's mother",
+      "entity_2": "harry",
+      "relationship_type": "welcomed_by",
+      "description": "Mrs. Weasley welcomes Harry at Grimmald Place."
+    },
+    {
+      "entity_1": "the gang of wizards",
+      "entity_2": "the meeting",
+      "relationship_type": "attending",
+      "description": "The gang of wizards are attending the meeting."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dinner",
+      "relationship_type": "will_eat_at",
+      "description": "Harry will eat dinner later."
+    }
+  ]
+}

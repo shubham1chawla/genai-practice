@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is swimming through the water."
+    },
+    {
+      "name": "grindylows",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Creatures that chase Harry when he gets too close to them. (Mentioned in the text as 'they always chase me...')"
+    },
+    {
+      "name": "merpeople",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Creatures with mermaid-like features, carrying spears and chasing a giant squid. (Mentioned in the text as 'paintings of merpeople on it')"
+    },
+    {
+      "name": "giant squid",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A large sea creature being chased by merpeople, according to the paintings on the rock."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grindylows",
+      "relationship_type": "chase",
+      "description": "Harry mentions that grindylows always chase him when he gets too close to them. (Mentioned in the text as 'they always chase me...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "merpeople",
+      "relationship_type": "follow",
+      "description": "Harry swims past a rock with paintings of merpeople and follows their mersong. (Mentioned in the text as 'he swam on past the rock, following the mersong')"
+    },
+    {
+      "entity_1": "merpeople",
+      "entity_2": "giant squid",
+      "relationship_type": "chase",
+      "description": "According to the paintings on the rock, merpeople are chasing a giant squid. (Mentioned in the text as 'they were carrying spears and chasing what looked like the gi ant squid')"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "Dementors are mentioned as having attacked again. The text does not provide further details about the attacks."
+    },
+    {
+      "name": "igor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Igor Karkaroff's body was found in a shack up north with the Dark Mark set over it."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as an organization that Igor Karkaroff deserted."
+    },
+    {
+      "name": "sirius's brother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius's brother Regulus is mentioned as having been a Death Eater who only managed to stay alive for a few days after deserting the group."
+    },
+    {
+      "name": "regulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Regulus is mentioned as Sirius's brother and a former member of the Death Eaters."
+    },
+    {
+      "name": "dark mark",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "The Dark Mark is mentioned as being set over Igor Karkaroff's body."
+    },
+    {
+      "name": "north",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A shack was found in the north where Igor Karkaroff's body was discovered."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as passing a large slice of birthday cake to someone."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as having a brother named Regulus who was a Death Eater."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "igor karkaroff",
+      "entity_2": "death eaters",
+      "relationship_type": "member_of",
+      "description": "Igor Karkaroff deserted the Death Eaters."
+    },
+    {
+      "entity_1": "igor karkaroff",
+      "entity_2": "dark mark",
+      "relationship_type": "associated_with",
+      "description": "The Dark Mark was set over Igor Karkaroff's body."
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "death eaters",
+      "relationship_type": "member_of",
+      "description": "Regulus was a member of the Death Eaters."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "regulus",
+      "relationship_type": "brother_of",
+      "description": "Sirius has a brother named Regulus."
+    },
+    {
+      "entity_1": "igor karkaroff",
+      "entity_2": "north",
+      "relationship_type": "found_in",
+      "description": "Igor Karkaroff's body was found in a shack up north."
+    }
+  ]
+}

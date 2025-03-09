@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is mentioned as the one who has been avoiding Snape and is being scolded by him. He is referred to as 'you' throughout the conversation."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who has been trying to help Harry and is making an Unbreakable Vow to protect him. He is referred to as 'I' throughout the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is not directly involved in this conversation but is mentioned by Snape as someone he has sworn to protect."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "draco",
+      "relationship_type": "scolded_by",
+      "description": "Snape scolds Draco for avoiding him and not coming to his office."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "sworn_to_protect",
+      "description": "Snape has sworn an Unbreakable Vow to protect Harry, as mentioned by Snape in the conversation."
+    }
+  ]
+}

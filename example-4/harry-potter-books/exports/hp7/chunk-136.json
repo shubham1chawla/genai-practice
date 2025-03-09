@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by name."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is having a conversation with Harry, referred to by name."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the context of a previous event."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is entering the room, referred to by name."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having a specific job."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are present in the room and have witnessed or heard about previous events."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "conversation",
+      "description": "Harry is having a conversation with Lupin, discussing his actions and the expectations of others."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry",
+      "relationship_type": "expectation",
+      "description": "The Death Eaters expect Harry to attack back in certain situations, as it is seen as his signature move."
+    }
+  ]
+}

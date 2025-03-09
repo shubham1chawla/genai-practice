@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is Harry's dog. He bounded happily out of the house behind them."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who said 'C'mon, Fang, we're going for a walk.'"
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Forest is where they went for a walk. Harry took out his wand and cast a spell to light their path."
+    },
+    {
+      "name": "sycamore tree",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Fang lifted his leg against a large sycamore tree."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fang",
+      "relationship_type": "accompanies",
+      "description": "Harry and Fang went for a walk together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "forest",
+      "relationship_type": "visited",
+      "description": "They visited the Forest during their walk."
+    },
+    {
+      "entity_1": "fang",
+      "entity_2": "sycamore tree",
+      "relationship_type": "urinated_on",
+      "description": "Fang lifted his leg against a large sycamore tree."
+    }
+  ]
+}

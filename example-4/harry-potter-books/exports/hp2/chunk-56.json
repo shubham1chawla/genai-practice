@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "main character of the story"
+    },
+    {
+      "name": "gnomes",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "living in the garden"
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "come with big old manors and castles"
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "rich wizard with a large manor house"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "sent by Malfoy to stop Harry going back to Hogwarts"
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "friend of Harry and worried about him not answering letters"
+    },
+    {
+      "name": "errol",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Ron's owl that collapsed on a delivery"
+    },
+    {
+      "name": "hermes",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Percy's owl bought by his parents"
+    },
+    {
+      "name": "percy weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "made prefect and has an owl named Hermes"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "has_enemies",
+      "description": "Malfoy is described as having the best of everything, implying he is a rival to Harry"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_by",
+      "description": "Dobby is sent by Malfoy to stop Harry going back to Hogwarts"
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "errol",
+      "relationship_type": "owns",
+      "description": "Ron owns Errol, his owl that collapsed on a delivery"
+    },
+    {
+      "entity_1": "percy weasley",
+      "entity_2": "hermes",
+      "relationship_type": "owns",
+      "description": "Percy has an owl named Hermes bought by his parents"
+    }
+  ]
+}

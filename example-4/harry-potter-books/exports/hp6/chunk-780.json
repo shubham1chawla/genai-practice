@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' in conversation with Dumbledore."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is teaching Divination, mentioned by Dumbledore as having made a prophecy about Harry and Voldemort."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A centaur who is teaching Divination in place of Professor Trelawney, mentioned by Dumbledore as being an outcast in the Forest."
+    },
+    {
+      "name": "sybill trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney's first name, mentioned by Dumbledore as not knowing about the danger she would be in outside the castle."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned by Dumbledore as being the subject of a prophecy made by Professor Trelawney."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned in conversation with Harry about his staff problems and the task he set for Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "subject_of_prophecy",
+      "description": "Professor Trelawney made a prophecy about Harry and Voldemort, mentioned by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "firenze",
+      "relationship_type": "employer_employee",
+      "description": "Dumbledore is Firenze's employer, as he is teaching Divination at Hogwarts in place of Professor Trelawney."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sybill trelawney",
+      "relationship_type": "employer_employee",
+      "description": "Dumbledore is Sybill Trelawney's employer, as she is a teacher at Hogwarts."
+    }
+  ]
+}

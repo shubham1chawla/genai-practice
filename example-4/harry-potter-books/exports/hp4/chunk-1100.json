@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is discussing the possibility of Mr. Crouch attacking Viktor."
+    },
+    {
+      "name": "viktor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor is a person who was attacked by either Mr. Crouch or someone else."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who may have attacked Viktor or been attacked himself."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and a student at Hogwarts who is discussing the possibility of Mr. Crouch attacking Viktor."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is discussing the possibility of Mr. Crouch attacking Viktor."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is Harry's headmaster and a person who was present when Harry arrived at the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr crouch",
+      "relationship_type": "disagrees_with",
+      "description": "Harry disagrees with Ron's theory that Mr. Crouch attacked Viktor."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mr crouch",
+      "relationship_type": "suggests_theory",
+      "description": "Ron suggests a theory that Krum attacked Crouch and then Stunned himself."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "viktor",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about Viktor's safety and the possibility of him being attacked."
+    }
+  ]
+}

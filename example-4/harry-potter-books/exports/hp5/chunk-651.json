@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "girl",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A girl who might have seen Sirius earlier. She is described as looking like a first-year student."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is trying to answer Harry's letter without using a code."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is worried about Sirius taking a risk."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who turns to stare at Harry when he mentions his letter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who wrote a letter to Sirius and forgot about it."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly is someone that Hermione sounds like when she worries about Sirius taking a risk."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is the one Harry met in the Owlery and forgot about his letter to Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "girl",
+      "relationship_type": "saw",
+      "description": "Sirius thinks a girl might have seen him earlier."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "wrote_to",
+      "description": "Harry wrote a letter to Sirius."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "sirius",
+      "relationship_type": "worried_about",
+      "description": "Hermione is worried about Sirius taking a risk."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "stared_at",
+      "description": "Ron turns to stare at Harry when he mentions his letter."
+    }
+  ]
+}

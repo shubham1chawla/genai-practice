@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as the one who wants to stop Harry Potter for his own safety. He is described as having a voice of forced calm."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone who has an unfortunate habit of wandering around after hours."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Moody is mentioned as the one who is questioning Snape's intentions and trying to get an egg from Filch."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Argus Filch is mentioned as someone who is clutching an egg tightly and refusing to give it to Moody."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is mentioned as the one who stole an egg from the champion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "filch",
+      "relationship_type": "request",
+      "description": "Moody asks Filch to hand over an egg."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "concern",
+      "description": "Snape is concerned about Potter's safety and wants him stopped."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as a suspect who could have put a curse on someone. He is described as being at the Ministry and possibly trying to sneak down to find out what happened in Harry's hearing."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having had a hearing and being suspicious of Lucius Malfoy. He also mentions that Sturgis Podmore was arrested for trying to get through a door."
+    },
+    {
+      "name": "sturgis podmore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sturgis Podmore is mentioned as having been arrested for trying to get through a door. It is suggested that Lucius Malfoy may have put the curse on him."
+    },
+    {
+      "name": "moody's invisibility cloak",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Moody's Invisibility Cloak is mentioned as being possessed by Sturgis Podmore."
+    },
+    {
+      "name": "department of mysteries corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Department of Mysteries corridor is mentioned as a location where Lucius Malfoy was seen by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "sturgis podmore",
+      "relationship_type": "suspect_of_crime",
+      "description": "Lucius Malfoy is suspected of putting a curse on Sturgis Podmore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries corridor",
+      "relationship_type": "witness_to_event",
+      "description": "Harry witnessed Lucius Malfoy in the Department of Mysteries corridor."
+    },
+    {
+      "entity_1": "sturgis podmore",
+      "entity_2": "moody's invisibility cloak",
+      "relationship_type": "possessor_of_object",
+      "description": "Sturgis Podmore possessed Moody's Invisibility Cloak."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "department of mysteries corridor",
+      "relationship_type": "presence_at_location",
+      "description": "Lucius Malfoy was present in the Department of Mysteries corridor."
+    }
+  ]
+}

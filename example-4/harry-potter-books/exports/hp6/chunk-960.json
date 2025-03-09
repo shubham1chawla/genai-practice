@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who asked Harry to bring his schoolbag and books. He is described as speaking softly but firmly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is described as being drenched in water and blood after splashing out of the bathroom."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is mentioned as a location where Harry runs towards after leaving the bathroom."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is mentioned as someone Snape might tell about Harry's good results in Potions."
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "Potions is a subject that Harry has been achieving good results in all year."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "asked_for",
+      "description": "Snape asked Harry to bring his schoolbag and books."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "ran_towards",
+      "description": "Harry ran towards Gryffindor Tower after leaving the bathroom."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "slughorn",
+      "relationship_type": "might_tell",
+      "description": "Snape might tell Slughorn about Harry's good results in Potions."
+    }
+  ]
+}

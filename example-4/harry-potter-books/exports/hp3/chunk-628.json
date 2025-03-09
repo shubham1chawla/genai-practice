@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is the one who kicked out Pettigrew and was addressed by Lupin as 'Padfoot'. He is described as having a gaunt face."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew recoiled after being kicked out by Black and was addressed by Lupin as 'Remus'."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is the one who was addressed by Pettigrew as 'Remus' and by Black as 'Padfoot'. He rolled up his sleeves to help Black."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone who would not have told Lupin that he was the spy, and whose plan had been changed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "pettigrew",
+      "relationship_type": "kicked_out",
+      "description": "Black kicked out Pettigrew."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "sirius",
+      "relationship_type": "believed_to_be_spy",
+      "description": "Lupin believed Sirius to be the spy, as mentioned by Pettigrew."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "lupin",
+      "relationship_type": "friendship",
+      "description": "Black and Lupin are old friends, as referred to in their conversation."
+    }
+  ]
+}

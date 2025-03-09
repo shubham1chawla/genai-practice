@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by name."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being addressed by Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The host of the gathering and a professor at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "slughorn",
+      "relationship_type": "addressed",
+      "description": "Dumbledore is addressing Slughorn."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry potter",
+      "relationship_type": "hosting",
+      "description": "Slughorn is hosting Harry Potter at his home."
+    }
+  ]
+}

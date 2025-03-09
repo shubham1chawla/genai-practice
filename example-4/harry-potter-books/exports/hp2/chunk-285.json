@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart's office is mentioned as being one floor up from where they are hiding."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is having a conversation with Ron about hearing voices."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and is trying to reassure him that he believes him."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as possibly being the one who told Ron a story about a secret chamber at Hogwarts."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Chamber has been opened and is mentioned in writing on the wall."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as being the place where a secret chamber might exist."
+    },
+    {
+      "name": "squib",
+      "entity_type": "term",
+      "singular": false,
+      "description": "A Squib is mentioned by Harry and Ron stifles a snigger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "conversation",
+      "description": "Harry and Ron are having a conversation about hearing voices."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart",
+      "relationship_type": "location",
+      "description": "Lockhart's office is one floor up from where Harry and Ron are hiding."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bill",
+      "relationship_type": "information_source",
+      "description": "Ron might have learned about a secret chamber at Hogwarts from Bill."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "connection",
+      "description": "Harry is trying to understand the connection between the writing on the wall and the Chamber being opened."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "squib",
+      "relationship_type": "definition",
+      "description": "Ron knows what a Squib is and stifles a snigger when Harry asks about it."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is being bid farewell by his relatives and friends."
+    },
+    {
+      "name": "hestia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hestia is a person who is also bidding farewell to Harry."
+    },
+    {
+      "name": "diggle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Diggle is a person who is leaving the room and waving goodbye to Harry."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Harry's aunt. She is present in the scene but does not interact much with Harry."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin. He is being bid farewell by Harry and his mother."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hestia",
+      "relationship_type": "bid_farewell",
+      "description": "Hestia bids farewell to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diggle",
+      "relationship_type": "watched_leave",
+      "description": "Harry watches Diggle leave the room."
+    },
+    {
+      "entity_1": "hestia",
+      "entity_2": "harry",
+      "relationship_type": "bid_farewell",
+      "description": "Hestia bids farewell to Harry (inverse of previous relationship)."
+    },
+    {
+      "entity_1": "diggle",
+      "entity_2": "harry",
+      "relationship_type": "watched_by",
+      "description": "Harry watches Diggle leave the room."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "aunt petunia",
+      "relationship_type": "held_by",
+      "description": "Dudley is being held by his mother, Aunt Petunia."
+    }
+  ]
+}

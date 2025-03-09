@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is the one whispering to Snape, showing her curiosity and eagerness for information. (\"Really?\", \"And will it really come by owl?\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one responding to Lily's questions, showing his confidence and authority. (\"Deﬁnitely\", \"Normally\") He is described as having poorly cut hair and odd clothes, but still strikes an impressive figure."
+    },
+    {
+      "name": "muggleborn",
+      "entity_type": "term",
+      "singular": false,
+      "description": "Muggleborn refers to people born to non-magical parents. It is mentioned as a reason why someone from the school will have to come and explain to Lily's parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "responds_to",
+      "description": "Snape responds to Lily's questions, showing his confidence and authority. (\"Deﬁnitely\", \"Normally\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "muggleborn",
+      "relationship_type": "applies_to",
+      "description": "Snape mentions that Lily is Muggleborn, which affects how her parents will be informed about the letter. (\"But you're Muggleborn\")"
+    }
+  ]
+}

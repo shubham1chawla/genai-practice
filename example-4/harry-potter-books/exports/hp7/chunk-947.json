@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, being tortured by unknown forces."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Being tortured in the cellar, her scream is heard by Harry."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "A house-elf who can Disapparate and help Harry escape."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the people Dobby is supposed to take with him to Bill and Fleur's."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another person Dobby is supposed to take with him to Bill and Fleur's."
+    },
+    {
+      "name": "mr. ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wandmaker who appears to be barely conscious."
+    },
+    {
+      "name": "bill and fleur",
+      "entity_type": "people",
+      "singular": false,
+      "description": "The couple whose cottage Dobby is supposed to take the others to."
+    },
+    {
+      "name": "tinworth",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Bill and Fleur's cottage is located."
+    },
+    {
+      "name": "shell cottage",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The specific cottage of Bill and Fleur that Dobby is supposed to take the others to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "can_disappear_with",
+      "description": "Harry asks Dobby if he can Disapparate with humans, and Dobby nods."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "luna",
+      "relationship_type": "asked_to_escape_with",
+      "description": "Harry tells Luna to go with Dobby to Bill and Fleur's."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dean",
+      "relationship_type": "asked_to_escape_with",
+      "description": "Harry tells Dean to go with Dobby to Bill and Fleur's."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "mr. ollivander",
+      "relationship_type": "helping",
+      "description": "Dobby takes Mr. Ollivander's hand as he prepares to Disapparate."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bill and fleur",
+      "relationship_type": "destination",
+      "description": "Harry tells Dobby to take the others to Bill and Fleur's cottage."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "shell cottage",
+      "relationship_type": "destination",
+      "description": "Dobby is supposed to take the others to Shell Cottage on the outskirts of Tinworth."
+    }
+  ]
+}

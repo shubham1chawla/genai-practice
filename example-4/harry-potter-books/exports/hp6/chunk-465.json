@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is discussing the delivery of a parcel with Hermione."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is mentioned as someone who would have delivered the parcel to Harry if she had been in front of him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is discussing the delivery of a parcel with Harry and Ron."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who told Katie to take the parcel into the castle."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a Hogwarts staff member who searches students entering and leaving the castle."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as one of Malfoy's potential accomplices."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as another of Malfoy's potential accomplices."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts who is discussing the delivery of a parcel with Harry and Hermione."
+    },
+    {
+      "name": "the fat lady",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Fat Lady is a portrait that guards the entrance to the common room."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is a village near Hogwarts where students often go on weekends."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is the school that Harry, Hermione, and Ron attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "katie",
+      "relationship_type": "behind",
+      "description": "Harry was behind Katie as they left the Three Broomsticks."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "katie",
+      "relationship_type": "told",
+      "description": "Malfoy told Katie to take the parcel into the castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "would_have_been_searched_by",
+      "description": "Harry would have been searched by Filch if he had taken the parcel into the castle."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "accomplice_of",
+      "description": "Malfoy is suspected of using Crabbe as an accomplice."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "discussing_with",
+      "description": "Harry and Hermione are discussing the delivery of a parcel."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "exchanging_looks_with",
+      "description": "Ron and Hermione exchange looks while discussing the delivery of a parcel with Harry."
+    }
+  ]
+}

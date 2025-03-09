@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "diddy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Diddy is Harry's nickname, mentioned by Aunt Petunia in her agitated state. (\"DIDDY! Diddy, what’s the matter with you?\")"
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vernon is Harry's uncle, who comes out of the living room to help Aunt Petunia and Dudley. (\"Harry’s uncle came galumphing out of the living room...\")"
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Harry's aunt, who is worried about Dudley being ill. (\"He hurried forward to help Aunt Petunia negotiate a weak-kneed Dudley over the threshold...\")"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin, who is described as weak-kneed and being helped by Uncle Vernon. (\"He hurried forward to help Aunt Petunia negotiate a weak-kneed Dudley over the threshold...\")"
+    },
+    {
+      "name": "polkiss",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Polkiss is mentioned as possibly giving something foreign for tea to Harry. (\"Did Mrs. Polkiss give you something foreign for tea?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "vernon",
+      "entity_2": "petunia",
+      "relationship_type": "helped_by",
+      "description": "Uncle Vernon helps Aunt Petunia negotiate Dudley over the threshold. (\"He hurried forward to help Aunt Petunia negotiate a weak-kneed Dudley over the threshold...\")"
+    },
+    {
+      "entity_1": "vernon",
+      "entity_2": "dudley",
+      "relationship_type": "helped_by",
+      "description": "Uncle Vernon helps Dudley, who is described as weak-kneed. (\"He hurried forward to help Aunt Petunia negotiate a weak-kneed Dudley over the threshold...\")"
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "dudley",
+      "relationship_type": "cared_for",
+      "description": "Aunt Petunia is worried about Dudley being ill. (\"He’s ill, Vernon!\")"
+    },
+    {
+      "entity_1": "vernon",
+      "entity_2": "polkiss",
+      "relationship_type": "suspected_of_giving_foreign_food",
+      "description": "Uncle Vernon suspects Mrs. Polkiss of giving something foreign for tea to Harry. (\"Did Mrs. Polkiss give you something foreign for tea?\")"
+    }
+  ]
+}

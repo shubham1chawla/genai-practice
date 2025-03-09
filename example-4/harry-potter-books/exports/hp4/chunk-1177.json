@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is watching the contents of the Pensieve."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical device that stores thoughts and memories."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has been mentioned in the context of Dark activity."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is speaking to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "pensieve",
+      "relationship_type": "observing",
+      "description": "Harry is watching the contents of the Pensieve."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "bagman",
+      "relationship_type": "mentioning_dark_activity",
+      "description": "Dumbledore mentions that Bagman has never been accused of any Dark activity."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "loss",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Loss is described as something that had snuffed out Harry's sleep."
+    },
+    {
+      "name": "fear",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Fear is described as something that had snuffed out Harry's sleep."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is described as being slapped awake by loss and fear."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone who had been present in Nurmengard and had killed someone in a cell."
+    },
+    {
+      "name": "Nurmengard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Nurmengard is described as the location where Voldemort was present and had committed a murder."
+    },
+    {
+      "name": "Wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is mentioned as someone who had been killed by Voldemort due to an unconscious impulse of mercy."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who had foreseen Wormtail's death and knew more about it."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being ill and taken care of by Fleur."
+    },
+    {
+      "name": "Fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is described as taking care of Hermione."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being present with Harry and Dean in the grave."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "loss",
+      "relationship_type": "experienced_by",
+      "description": "Harry experienced loss."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "fear",
+      "relationship_type": "experienced_by",
+      "description": "Harry experienced fear."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "Nurmengard",
+      "relationship_type": "present_in",
+      "description": "Voldemort was present in Nurmengard."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "Wormtail",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Wormtail due to an unconscious impulse of mercy."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Wormtail's death",
+      "relationship_type": "foreseen_by",
+      "description": "Dumbledore foreseen Wormtail's death."
+    }
+  ]
+}

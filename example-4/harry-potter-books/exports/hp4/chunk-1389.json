@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, mentioned as thinking about Dumbledore's request."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is asking for a near miracle and trying to settle for a lack of open hostility."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is eyeing Snape with loathing and shaking hands with him."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is being eyed by Sirius with loathing and shaking hands with him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "request",
+      "description": "Dumbledore is asking for a near miracle from Sirius."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "request",
+      "description": "Dumbledore is asking for a lack of open hostility from Snape."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "hostility",
+      "description": "Sirius and Snape are eyeing each other with loathing."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Dumbledore is giving advice to Harry about the importance of unity in the face of danger."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "shaking_hands",
+      "description": "Sirius and Snape are shaking hands as per Dumbledore's request."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "approval",
+      "description": "Dumbledore is approving of Sirius' actions in shaking hands with Snape."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "approval",
+      "description": "Dumbledore is also approving of Snape's actions in shaking hands with Sirius."
+    }
+  ]
+}

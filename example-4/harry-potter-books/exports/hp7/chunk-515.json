@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dementors are described as 'casting their freezing aura over the place' and standing like 'faceless sentinels'. They are also mentioned as being in the courtroom with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is described as seeing Hermione shudder and slipping into the courtroom behind her. He is also mentioned as having been interrogated for improper use of magic in a different room."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Hermione is described as being white-faced and sitting on one side of Umbridge on the high raised platform. She is also mentioned as shuddering when she sees something."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Umbridge is described as sitting on a high raised platform with Yaxley and Hermione on either side of her."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Yaxley is described as sitting next to Umbridge on the high raised platform."
+    },
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organizations",
+      "singular": false,
+      "description": "The Muggleborn Registration Commission is mentioned as sitting behind a balustrade on the high raised platform."
+    },
+    {
+      "name": "cattermole",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Mrs. Cattermole is described as being white-faced and sitting in the courtroom."
+    },
+    {
+      "name": "dungeon",
+      "entity_type": "locations",
+      "singular": false,
+      "description": "The dungeon is mentioned as a place where Hermione walks alone into."
+    },
+    {
+      "name": "courtroom",
+      "entity_type": "locations",
+      "singular": true,
+      "description": "The courtroom is described as being much smaller than the one Harry was interrogated in. It also gives a claustrophobic sense of being stuck at the bottom of a deep well."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "follows",
+      "description": "Harry slips into the courtroom behind Hermione."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "yaxley",
+      "relationship_type": "adjacent_to",
+      "description": "Umbridge sits next to Yaxley on the high raised platform."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "hermione",
+      "relationship_type": "adjacent_to",
+      "description": "Umbridge sits next to Hermione on the high raised platform."
+    }
+  ]
+}

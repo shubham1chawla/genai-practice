@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who has just done serious magic."
+    },
+    {
+      "name": "magnolia crescent",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A street where Harry collapses onto a low wall."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of the wizarding world."
+    },
+    {
+      "name": "ron and hermione",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Harry's friends who are also wizards."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for young wizards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "magnolia crescent",
+      "relationship_type": "location_of",
+      "description": "Harry is located in Magnolia Crescent."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "target_of_action",
+      "description": "The Ministry of Magic representatives are likely to swoop down on Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron and hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry thinks about his friends Ron and Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_of",
+      "description": "Harry is a student at Hogwarts."
+    }
+  ]
+}

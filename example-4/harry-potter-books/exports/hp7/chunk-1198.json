@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "carrows",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Carrows are bound by a shimmering silver rope."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall addresses Harry Potter."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as turning to face Harry again."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "He-Who-Must-Not-Be-Named is mentioned as a name known by Voldemort."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry experiences physical pain and sees his scar on fire."
+    },
+    {
+      "name": "luna",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Luna's shoulder is being held by Harry to steady himself."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "Dumbledore's orders are mentioned as the reason for Harry's actions."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "Voldemort is mentioned as getting nearer and wanting to kill Harry."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Harry is attacking Horcruxes."
+    },
+    {
+      "name": "basin",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A basin whose potion has turned clear is mentioned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "mcgonagall",
+      "relationship_type": "addressed_by",
+      "description": "Professor McGonagall addresses Harry Potter."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "holding",
+      "description": "Harry is holding Luna's shoulder to steady himself."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "acting_on_orders_of",
+      "description": "Harry is acting on Dumbledore's orders."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "targeting",
+      "description": "Voldemort is targeting Horcruxes."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "voldemort",
+      "relationship_type": "wanted_by",
+      "description": "Voldemort wants Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcruxes",
+      "relationship_type": "attacking",
+      "description": "Harry is attacking Horcruxes."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is in a Quidditch final."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who helps Harry and is also in the Quidditch final."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A magical room that can change its appearance to suit the needs of those inside it."
+    },
+    {
+      "name": "carrows",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are chasing Neville and trying to harm him."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "room of requirement",
+      "relationship_type": "is_in",
+      "description": "Harry is currently inside the Room of Requirement."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "carrows",
+      "relationship_type": "being_chased_by",
+      "description": "Neville is being chased by the Carrows."
+    }
+  ]
+}

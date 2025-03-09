@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "cattermole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cattermole is a Ministry worker who is being addressed by Yaxley. He is requested to sort out Yaxley's office."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "death eater",
+      "singular": true,
+      "description": "Yaxley is a Death Eater who witnessed Dumbledore's death and is now addressing Cattermole."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the Ministry workers who are present when Yaxley approaches them. He feels fear rippling through them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "cattermole",
+      "relationship_type": "addressed_by",
+      "description": "Yaxley addresses Cattermole and requests him to sort out his office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "yaxley",
+      "relationship_type": "fear_of",
+      "description": "Harry feels fear when Yaxley approaches them."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is being accused by the school."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in the school where a monster is believed to dwell."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper who is suspected of being involved with the monster."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "dwells_in",
+      "description": "Harry Potter is believed to be the monster that dwells in the Chamber of Secrets."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "involved_with",
+      "description": "Hagrid is suspected of being involved with the monster in the Chamber of Secrets."
+    }
+  ]
+}

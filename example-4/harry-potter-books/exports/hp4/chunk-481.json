@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking loftily and defensively in the text. She is described as passing by girls squabbling over lipstick and later sitting at a table with Ron and Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as trying to get Krum's autograph and taking care to sit on the side facing the doorway. He is also described as making space for others at the table."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as not having a quill and needing to go upstairs to get one from his bag. He is also sitting at the Gryffindor table with Ron and Hermione."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as being gathered around the doorway with his fellow Durmstrang students. Ron tries to get his autograph."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is described as where the students are sitting and looking around with glum expressions."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Ron, Harry, and Hermione sit at the Gryffindor table."
+    },
+    {
+      "name": "ravenclaw table",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The students from Beaux-batons have chosen seats at the Ravenclaw table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "krum",
+      "relationship_type": "tries_to_get_autograph_from",
+      "description": "Ron tries to get Krum's autograph."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quill",
+      "relationship_type": "needs",
+      "description": "Harry needs a quill, which is upstairs in his bag."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "beaux-batons students",
+      "relationship_type": "defends_against",
+      "description": "Hermione defends against the criticism that it's cold and Beaux-batons students didn't bring cloaks."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "asks_to_move",
+      "description": "Ron asks Hermione to move so he can sit down."
+    }
+  ]
+}

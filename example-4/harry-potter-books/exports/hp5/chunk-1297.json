@@ -1,0 +1,24 @@
+{
+  "entities": [
+    {
+      "name": "authority",
+      "entity_type": "authority",
+      "singular": true,
+      "description": "The speaker is asking the person to provide evidence or proof for their statement. The word 'authority' refers to a source of power, expertise, or credibility that can be used to support an argument."
+    },
+    {
+      "name": "statement",
+      "entity_type": "statement",
+      "singular": true,
+      "description": "The speaker is referring to the previous statement made by the person. The word 'statement' refers to a declaration or assertion made by someone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "authority",
+      "entity_2": "statement",
+      "relationship_type": "supports",
+      "description": "The authority is being used to support the statement. The speaker is asking for evidence that supports the previous statement made by the person."
+    }
+  ]
+}

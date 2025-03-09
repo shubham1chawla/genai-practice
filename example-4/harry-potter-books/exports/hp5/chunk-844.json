@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore's army",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of students that Harry is leading in practicing disarming spells."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is teaching the others how to disarm their opponents with a wand."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's students who is struggling to disarm his opponent."
+    },
+    {
+      "name": "expelliarmus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The spell that the students are practicing to disarm their opponents."
+    },
+    {
+      "name": "wands",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The objects used by the students to cast spells and disarm their opponents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "teaches",
+      "description": "Harry is teaching Neville how to disarm his opponent with a wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "expelliarmus",
+      "relationship_type": "uses",
+      "description": "Harry uses the Expelliarmus spell to disarm his opponents."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "wands",
+      "relationship_type": "loses_control_of",
+      "description": "Neville loses control of his wand and it flies out of his hand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "expelliarmus",
+      "relationship_type": "teaches_use_of",
+      "description": "Harry teaches the others how to use the Expelliarmus spell."
+    }
+  ]
+}

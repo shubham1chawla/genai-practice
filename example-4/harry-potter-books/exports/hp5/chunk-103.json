@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as they are being ushered onstage."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of Harry's guard and seems to have a connection with Harry's thoughts."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Harry's guard who speaks in a dark tone."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch who is part of Harry's guard and comments on the cleanliness of Muggles."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "guardian_guardee",
+      "description": "Lupin is part of Harry's guard."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "guardian_guardee",
+      "description": "Moody is also part of Harry's guard."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "muggles",
+      "relationship_type": "observer_observed",
+      "description": "Tonks is observing the Muggles in the kitchen."
+    }
+  ]
+}

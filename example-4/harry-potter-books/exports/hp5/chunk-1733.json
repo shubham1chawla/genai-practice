@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, who is helping Neville and taking charge of the situation."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's wand was taken by Harry from the floor. She is not present in this scene but her wand is mentioned."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is injured and his dad's old wand was broken. He is being helped by Harry."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The baby-headed Death Eater is causing chaos in the room, toppling grandfather clocks and overturning desks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "possession",
+      "description": "Harry took Hermione's wand from the floor and gave it to Neville."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "helping",
+      "description": "Harry is helping Neville, who is injured, by taking charge of the situation and guiding him through the room."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "room",
+      "relationship_type": "causing_damage",
+      "description": "The baby-headed Death Eater is causing chaos in the room, toppling grandfather clocks and overturning desks."
+    }
+  ]
+}

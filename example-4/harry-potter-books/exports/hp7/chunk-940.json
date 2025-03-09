@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "malfoy manor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry and his friends are being held captive. (\"Malfoy Manor\")"
+    },
+    {
+      "name": "deluminator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that can suck light from lamps. (\"the Deluminator had sucked from the lamps in the tent\")"
+    },
+    {
+      "name": "luna lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a fellow prisoner with Harry and his friends. (\"Harry saw Luna, all eyes in her white face\")"
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wandmaker who is curled up on the floor in the corner. (\"the motionless figure of Ollivander the wandmaker\")"
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a fellow prisoner with Harry and his friends. (\"Craning around, he caught sight of their fellow prisoners: Dean and Griphook\")"
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who is a fellow prisoner with Harry and his friends. (\"Griphook the goblin\")"
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is shouting at Luna from above. (\"From above came Bellatrix’s voice\")"
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Bellatrix has a vault. (\"You have been inside my vault at Gringotts!\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "luna lovegood",
+      "entity_2": "deluminator",
+      "relationship_type": "has",
+      "description": "Luna is using the Deluminator to suck light from lamps. (\"Oh, that’s much easier, thanks, Ron,” said Luna, and she began hacking at their bindings again.\")"
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "gringotts",
+      "relationship_type": "has_vault",
+      "description": "Bellatrix has a vault at Gringotts. (\"You have been inside my vault at Gringotts!\")"
+    }
+  ]
+}

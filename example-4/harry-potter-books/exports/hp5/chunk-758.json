@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "people",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The text mentions 'people' as those who were listening in the pub, implying a group of individuals."
+    },
+    {
+      "name": "Zacharias Smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zacharias Smith is mentioned by Ron as someone he suspects might be untrustworthy."
+    },
+    {
+      "name": "Michael Corner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Michael Corner is also mentioned by Ron as having a 'shifty look', implying he may not be trustworthy."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who mentions Zacharias Smith and Michael Corner, indicating he is also present in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Ron",
+      "entity_2": "Zacharias Smith",
+      "relationship_type": "suspects",
+      "description": "Ron suspects Zacharias Smith of being untrustworthy, as indicated by his mention of 'shifty look'."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Michael Corner",
+      "relationship_type": "suspects",
+      "description": "Similarly, Ron also suspects Michael Corner of being untrustworthy."
+    }
+  ]
+}

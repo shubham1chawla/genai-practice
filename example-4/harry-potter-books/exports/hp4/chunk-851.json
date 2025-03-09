@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of the school who secured a job for Hagrid as gamekeeper and turned a blind eye to his actions."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at the school who used his mysterious influence over Dumbledore to secure an additional post as Care of Magical Creatures teacher."
+    },
+    {
+      "name": "vincent crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A fourth-year student who got a bad bite from a flobberworm during Hagrid's lessons."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A fourth-year student who was attacked by a hippogriff and expressed hatred for Hagrid."
+    },
+    {
+      "name": "hippogriff",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A creature that attacked Draco Malfoy during Hagrid's lessons."
+    },
+    {
+      "name": "flobberworm",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A creature that bit Vincent Crabbe during Hagrid's lessons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "influence",
+      "description": "Hagrid used his mysterious influence over Dumbledore to secure an additional post as Care of Magical Creatures teacher."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hippogriff",
+      "relationship_type": "attack",
+      "description": "A hippogriff attacked Draco Malfoy during Hagrid's lessons."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "flobberworm",
+      "relationship_type": "bite",
+      "description": "A flobberworm bit Vincent Crabbe during Hagrid's lessons."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "hagrid",
+      "relationship_type": "hatred",
+      "description": "Draco Malfoy expressed hatred for Hagrid."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as having a quickened pulse due to the accusations. The text states 'The Prime Minister’s pulse quickened at the very thought of these accusations...'"
+    },
+    {
+      "name": "accusations",
+      "entity_type": "allegation",
+      "singular": true,
+      "description": "Accusations are mentioned as being unfair and untrue. The text states 'for they were neither fair nor true'"
+    },
+    {
+      "name": "government",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The government is mentioned as being responsible for stopping the bridge from collapsing. The text states 'How on earth was his government supposed to have stopped that bridge collapsing?'"
+    },
+    {
+      "name": "bridge",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "The bridge is mentioned as having collapsed and being less than ten years old. The text states 'It was outr ageous for any body to suggest that they were not spending enough on bridges. The bridge was less than ten years old...'"
+    },
+    {
+      "name": "experts",
+      "entity_type": "professional",
+      "singular": true,
+      "description": "Experts are mentioned as being at a loss to explain why the bridge collapsed. The text states 'The best experts were at a loss to explain why it had snapped cleanly in two'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "prime minister",
+      "entity_2": "accusations",
+      "relationship_type": "concerned_about",
+      "description": "The Prime Minister is concerned about the accusations. The text states 'The Prime Minister’s pulse quickened at the very thought of these accusations...'"
+    },
+    {
+      "entity_1": "government",
+      "entity_2": "bridge",
+      "relationship_type": "responsible_for",
+      "description": "The government is responsible for stopping the bridge from collapsing. The text states 'How on earth was his government supposed to have stopped that bridge collapsing?'"
+    },
+    {
+      "entity_1": "experts",
+      "entity_2": "bridge",
+      "relationship_type": "baffled_by",
+      "description": "Experts are baffled by the collapse of the bridge. The text states 'The best experts were at a loss to explain why it had snapped cleanly in two'"
+    }
+  ]
+}

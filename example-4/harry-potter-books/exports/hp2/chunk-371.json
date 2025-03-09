@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "duelling club",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The duelling club is mentioned in the context of a location where an incident occurred."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is mentioned as being involved in the incident and making threats to expel someone."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a person who has a cauldron that was affected by the firework."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is suspected of throwing the firework and is being threatened by Snape."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is helping Harry with a potion in Moaning Myrtle’s bathroom."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is reassuring Harry that Snape cannot prove it was him who threw the firework."
+    },
+    {
+      "name": "moaning myrtle's bathroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Moaning Myrtle’s bathroom is mentioned as a location where Hermione and Ron are helping Harry with a potion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Snape threatens to expel Harry if he finds out who threw the firework."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moaning myrtle's bathroom",
+      "relationship_type": "location",
+      "description": "Hermione is in Moaning Myrtle’s bathroom, helping Harry with a potion."
+    }
+  ]
+}

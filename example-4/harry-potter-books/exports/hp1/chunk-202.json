@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who is wondering what to do after finishing school."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who tells Harry about Gringotts and the attempted robbery."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's brother, who is studying dragons in Romania."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's brother, who is doing something for Gringotts in Africa."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "A wizarding bank that was robbed, according to the Daily Prophet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as evidenced by Ron telling Harry about Gringotts."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "romania",
+      "relationship_type": "location",
+      "description": "Charlie is in Romania studying dragons."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "africa",
+      "relationship_type": "location",
+      "description": "Bill is in Africa doing something for Gringotts."
+    },
+    {
+      "entity_1": "gringotts",
+      "entity_2": "daily prophet",
+      "relationship_type": "source_of_news",
+      "description": "Gringotts was mentioned in the Daily Prophet as being robbed."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "divination exam",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "The divination exam is mentioned as an event where Professor Trelawney's behavior was unusual."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Trelawney is the teacher who went strange during the divination exam. She made a prediction about Voldemort's servant returning to him before midnight."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who was present during the divination exam and seemed mildly impressed by Professor Trelawney's prediction."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is a character mentioned in the context of Professor Trelawney's prediction about his servant returning to him before midnight."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_impression",
+      "description": "Dumbledore was mildly impressed by Professor Trelawney's prediction."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "voldemort",
+      "relationship_type": "makes_prediction_about",
+      "description": "Professor Trelawney made a prediction about Voldemort's servant returning to him before midnight."
+    }
+  ]
+}

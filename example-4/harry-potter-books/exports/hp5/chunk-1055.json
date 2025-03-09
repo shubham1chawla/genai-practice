@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "st mungo's hospital",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "The name of the hospital where Mr. Weasley is being treated."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A patient at St. Mungo's Hospital who was bitten by an unknown creature."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley's son who is visiting him at the hospital."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the conversation between Mr. Weasley and his sons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "fred",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is Fred's father."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "acquaintance",
+      "description": "Mr. Weasley knows Harry."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "mr weasley",
+      "relationship_type": "child_parent",
+      "description": "Fred is Mr. Weasley's son."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "acquaintance",
+      "description": "Harry knows Mr. Weasley."
+    },
+    {
+      "entity_1": "st mungo's hospital",
+      "entity_2": "mr weasley",
+      "relationship_type": "patient_hospital",
+      "description": "Mr. Weasley is a patient at St. Mungo's Hospital."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "st mungo's hospital",
+      "relationship_type": "visitor_hospital",
+      "description": "Fred visited Mr. Weasley at the hospital."
+    }
+  ]
+}

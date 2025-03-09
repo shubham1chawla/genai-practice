@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a person who is in charge of the team. He is mentioned as having no criticisms to make, which is a first according to George Weasley."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley is a person who points out that Wood has no criticisms to make."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is part of the team. He is mentioned as having a dementor problem and wishing his Patronus were stronger."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a person who confidently says that Dumbledore would go ballistic if the dementors came back."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned as someone who would be upset if the dementors came back."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is a person who has fallen asleep in her seat."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who wants to ride the Firebolt."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is an object that Ron wants to ride."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Dementors are things that Harry has a problem with and Fred mentions would make Dumbledore go ballistic if they came back."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "george weasley",
+      "relationship_type": "commented_on",
+      "description": "Wood is commented on by George Weasley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerns",
+      "description": "Harry's dementor problem concerns Dumbledore."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "dumbledore",
+      "relationship_type": "mentioned_concern_for",
+      "description": "Fred mentions that Dumbledore would be concerned if the dementors came back."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "firebolt",
+      "relationship_type": "wants_to_use",
+      "description": "Ron wants to use the Firebolt."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam hooch",
+      "relationship_type": "ignored",
+      "description": "Harry ignores Madam Hooch who has fallen asleep in her seat."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "firebolt",
+      "relationship_type": "uses",
+      "description": "Ron uses the Firebolt."
+    }
+  ]
+}

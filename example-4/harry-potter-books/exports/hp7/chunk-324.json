@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as a person who lunged across the table. He was hit by a spell from his companion."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being pushed sideways onto her bench by Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a person who cast spells to defend himself and others."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as a group of people who were casting spells."
+    },
+    {
+      "name": "waitress",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A waitress is mentioned as screaming and running for the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "pushed",
+      "description": "Ron pushed Hermione sideways onto her bench."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "defended_against",
+      "description": "Harry defended himself against the Death Eaters' spells."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "ron",
+      "relationship_type": "attacked",
+      "description": "The Death Eater attacked Ron with a spell."
+    }
+  ]
+}

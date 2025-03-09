@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as murmuring a phrase to himself and searching for Malfoy."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person passing by Harry's bed, who is trying not to be heard."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as enthusiastically waving a pair of Quidditch Keeper gloves and unwrapping presents."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student that Harry is searching for in the dormitory."
+    },
+    {
+      "name": "quidditch keeper gloves",
+      "entity_type": "item",
+      "singular": false,
+      "description": "A pair of gloves given to Ron by Harry, used for Quidditch Keeper."
+    },
+    {
+      "name": "slytherin dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is searching for Malfoy and where Ron is unwrapping presents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for Malfoy in the Slytherin dormitory, as mentioned by Harry's statement 'Hey ... I don’t think he’s in his bed …'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "given_item",
+      "description": "Harry gave Ron a pair of Quidditch Keeper gloves, as mentioned by Ron's enthusiastic reaction 'Nice one, Harry!'"
+    }
+  ]
+}

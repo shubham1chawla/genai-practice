@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person being addressed by Fudge. (\"No, I’m sorry, Harry...\", \"If you’ll follow me, Mr. Potter\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is introduced as the Minister of Magic who is denying Harry's request to visit Hogsmeade. (\"No, I’m sorry, Harry...\", \"Enjoy your stay, Harry.\")"
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a place that Harry wants to visit but is denied permission. (\"Perhaps you’ll be able to visit Hogsmeade next year.\")"
+    },
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom is introduced as the person who helps Harry with his belongings and shows him to his new room. (\"If you’ll follow me, Mr. Potter\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fudge",
+      "relationship_type": "addressed_by",
+      "description": "Fudge addresses Harry directly in the conversation."
+    },
+    {
+      "entity_1": "tom",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Tom helps Harry with his belongings and shows him to his new room."
+    }
+  ]
+}

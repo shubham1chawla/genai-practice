@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as someone who is being listened to by Harry through a keyhole."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, suspected of making a mistake and having an enemy that no one knows about."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt of Draco Malfoy, who has been teaching him Occlumency."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, towards whom Draco had always shown respect and liking."
+    },
+    {
+      "name": "bell girl",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Someone who is suspected of having an enemy that no one knows about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "draco malfoy",
+      "relationship_type": "respect",
+      "description": "Draco Malfoy shows respect towards Snape, even liking him."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "draco malfoy",
+      "relationship_type": "teacher_student",
+      "description": "Bellatrix is teaching Occlumency to Draco Malfoy."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "draco malfoy",
+      "relationship_type": "listener_suspect",
+      "description": "Harry Potter is listening to a conversation between Snape and Draco Malfoy, where Harry suspects that Draco might be involved in something."
+    }
+  ]
+}

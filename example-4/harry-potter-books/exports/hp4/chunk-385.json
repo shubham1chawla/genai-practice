@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned in the text as a person, but not directly related to the story. The text does not provide any information about him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as setting off for North Tower with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as setting off for North Tower with Harry."
+    },
+    {
+      "name": "north tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry and Ron set off to, described as having a silver stepladder leading to Professor Trelawney's room."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who lives in the North Tower, mentioned as having a misty voice and being peered at by Harry."
+    },
+    {
+      "name": "tightly spiraling staircase",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location described as leading to Professor Trelawney's room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "north tower",
+      "relationship_type": "visited",
+      "description": "Harry visited North Tower with Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "north tower",
+      "relationship_type": "visited",
+      "description": "Ron visited North Tower with Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "met",
+      "description": "Harry met Professor Trelawney in her room."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor trelawney",
+      "relationship_type": "met",
+      "description": "Ron met Professor Trelawney in her room."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tightly spiraling staircase",
+      "relationship_type": "led_to",
+      "description": "The tightly spiraling staircase led to Professor Trelawney's room, which Harry visited."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as reacting to Ron's comment with a frown."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as making a comment about the service."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is introduced as having been dismissed and seeking a new position."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as asking Dobby about his length of stay."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as the reason for Dobby's visit."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "commented_on",
+      "description": "Ron commented on the service, which Hermione reacted to with a frown."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "asked",
+      "description": "Harry Potter asked Dobby about his length of stay."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "visited",
+      "description": "Dobby visited Professor Dumbledore, which is the reason for his current situation."
+    }
+  ]
+}

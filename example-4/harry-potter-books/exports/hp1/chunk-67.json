@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as the one who reads the first line of the letter and seems to faint. She is described as making a choking noise and clutching her throat."
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as holding the letter high out of Harry's reach and trying to prevent him from reading it. He seems to be shocked by what he reads in the letter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as wanting to read the letter because it belongs to him. He shouts at his uncle and refuses to leave the room when told to do so."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as trying to grab the letter from his uncle and wanting to read it. He also gives his father a sharp tap on the head with his Smeltings stick when ignored."
+    },
+    {
+      "name": "smeltings",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Smeltings is mentioned as the school that Dudley attends, indicated by the fact that he has a stick from it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "vernon",
+      "entity_2": "petunia",
+      "relationship_type": "reaction_to_letter",
+      "description": "Uncle Vernon and Aunt Petunia react to the letter in shock, with Uncle Vernon trying to prevent Harry from reading it and Aunt Petunia seeming to faint."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "vernon",
+      "relationship_type": "conflict_with",
+      "description": "Harry is in conflict with his uncle, Uncle Vernon, as he tries to read the letter that belongs to him. Harry refuses to leave the room when told to do so."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "vernon",
+      "relationship_type": "conflict_with",
+      "description": "Dudley is also in conflict with his uncle, Uncle Vernon, as he tries to grab the letter from him and wants to read it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "conflict_with",
+      "description": "Harry is in conflict with Dudley, who also wants to read the letter. Harry shouts at his uncle when told to leave the room."
+    }
+  ]
+}

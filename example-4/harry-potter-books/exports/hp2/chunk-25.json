@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is bound to serve a wizarding family."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The person Harry is talking to Dobby."
+    },
+    {
+      "name": "family",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The family that Dobby serves and is bound to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "family",
+      "relationship_type": "servant_to",
+      "description": "Dobby is a house-elf who is bound to serve the family until he dies."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "interacts_with",
+      "description": "Harry is interacting with Dobby, trying to understand why Dobby won't leave the family."
+    }
+  ]
+}

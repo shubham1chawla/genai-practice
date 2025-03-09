@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as still being asleep at the moment, but not for long. He is described as waking up with a start due to his aunt's shrill voice."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as being awake and making the first noise of the day with her shrill voice. She is described as rapping on the door and screeching at Harry to get up."
+    },
+    {
+      "name": "bacon",
+      "entity_type": "food",
+      "singular": true,
+      "description": "Bacon is mentioned as something that needs to be looked after by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "aunt petunia",
+      "relationship_type": "woke_up_by",
+      "description": "Harry Potter woke up due to his aunt Petunia's shrill voice."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bacon",
+      "relationship_type": "has_to_look_after",
+      "description": "Harry Potter has to look after the bacon."
+    }
+  ]
+}

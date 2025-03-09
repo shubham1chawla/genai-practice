@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A powerful wizard and the main antagonist"
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A werewolf who works for Voldemort"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character in the story who is a werewolf"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "voldemort",
+      "relationship_type": "works_for",
+      "description": "Greyback works for Voldemort and receives prey in return"
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry potter",
+      "relationship_type": "attacked",
+      "description": "Greyback bit Harry Potter when he was a kid"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "greyback",
+      "relationship_type": "was_attacked_by",
+      "description": "Lupin was bitten by Greyback as a child"
+    }
+  ]
+}

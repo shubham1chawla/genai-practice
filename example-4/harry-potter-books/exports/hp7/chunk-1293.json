@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Mentioned as a group of people who are fighting."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's concern for Ginny's safety is mentioned."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "She is one of the people fighting and has a plan to reach the snake."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is holding onto Ron tightly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry needs to find out where Voldemort is."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He has the snake with him."
+    },
+    {
+      "name": "snake",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The snake is mentioned as being with Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_with",
+      "description": "Harry needs to find out where Voldemort is because he has the snake with him."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "holding",
+      "description": "Hermione is holding onto Ron tightly."
+    }
+  ]
+}

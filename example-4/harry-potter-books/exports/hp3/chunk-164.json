@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the people walking through the hall with George."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as one of the people walking through the hall with Fred."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as making an impression at the Slytherin table."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as walking into the entrance hall with laughter following him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as panting and suggesting a shortcut to North Tower."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as peering down the empty passage to suggest a direction."
+    },
+    {
+      "name": "north tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "North Tower is mentioned as the destination of their journey through the castle."
+    },
+    {
+      "name": "slytherin table",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Slytherin table is mentioned as a location where Malfoy made an impression."
+    },
+    {
+      "name": "entrance hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Entrance hall is mentioned as the place where Harry walked in with laughter following him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "accompanying",
+      "description": "Fred and George are walking together through the hall."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin table",
+      "relationship_type": "associated_with",
+      "description": "Malfoy is making an impression at the Slytherin table."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "entrance hall",
+      "relationship_type": "entered",
+      "description": "Harry walked into the entrance hall with laughter following him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "north tower",
+      "relationship_type": "headed_towards",
+      "description": "Ron is suggesting a shortcut to North Tower."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "passage",
+      "relationship_type": "pointed_to",
+      "description": "Hermione is peering down the empty passage to suggest a direction."
+    }
+  ]
+}

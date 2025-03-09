@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having his face removed from a paper."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being spoken to by Harry, suggesting that he should read more papers."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An infamous prisoner who is still at large and being pursued by the Ministry of Magic."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic who is trying to recapture Sirius Black and has been criticized for informing the Muggle Prime Minister about the crisis."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization that is working to recapture Sirius Black."
+    },
+    {
+      "name": "international federation of warlocks",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "A group that has criticized Cornelius Fudge for informing the Muggle Prime Minister about the crisis."
+    },
+    {
+      "name": "muggle prime minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the non-magical community who has been informed by Cornelius Fudge about the crisis."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "advice",
+      "description": "Harry is giving advice to Neville, suggesting that he should read more papers."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "sirius black",
+      "relationship_type": "pursuit",
+      "description": "The Ministry of Magic is trying to recapture Sirius Black."
+    },
+    {
+      "entity_1": "cornelius fudge",
+      "entity_2": "muggle prime minister",
+      "relationship_type": "notification",
+      "description": "Cornelius Fudge has informed the Muggle Prime Minister about the crisis."
+    },
+    {
+      "entity_1": "international federation of warlocks",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "criticism",
+      "description": "The International Federation of Warlocks has criticized Cornelius Fudge for informing the Muggle Prime Minister about the crisis."
+    }
+  ]
+}

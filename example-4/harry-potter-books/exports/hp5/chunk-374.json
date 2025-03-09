@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to find out what happened to Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has been killed and turned into Bill by Mrs. Weasley's spell."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Bill and a close family friend of Harry's who is trying to cast a spell to turn Ron back to life."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley's son who has been turned into by Mrs. Weasley's spell after it failed to revive Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Ron's death and tries to find out what happened."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron",
+      "relationship_type": "trying_to_revive",
+      "description": "Mrs. Weasley is trying to cast a spell to revive Ron, but it fails and turns him into Bill instead."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "bill",
+      "relationship_type": "transformed_into",
+      "description": "Mrs. Weasley's spell transforms Ron into Bill."
+    }
+  ]
+}

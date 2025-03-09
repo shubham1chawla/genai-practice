@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "main character of the story"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "friend of harry and ron, mentioned as trying to help ginny with her guilt"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "friend of harry and hermione"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as having survivor's guilt and trouble with metamorphosing"
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "villain mentioned in the conversation"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as having been killed by bellatrix"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned as trying to talk ginny round"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "mentioned at the end of the conversation"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ginny",
+      "entity_2": "bellatrix lestrange",
+      "relationship_type": "killed_by",
+      "description": "ginny feels that if she had finished off bellatrix, sirius wouldn't have been killed"
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "sirius",
+      "relationship_type": "lost",
+      "description": "ginny feels responsible for sirius' death"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ginny",
+      "relationship_type": "concerned_for",
+      "description": "harry is concerned about ginny's guilt and depression"
+    }
+  ]
+}

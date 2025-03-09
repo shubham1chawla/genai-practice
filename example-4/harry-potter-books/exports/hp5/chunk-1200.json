@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as teaching others the Shield Charm and Occlumency. His face is 'plump' and his expression is 'indifferent to injuries or accidents'. He is improving fast at magic."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione mastered the Shield Charm faster than Neville. She is not mentioned as having any other notable characteristics in this text."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is making progress at Occlumency during D.A. meetings. He mastered the Shield Charm slower than Hermione."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's thoughts and moods are experienced by Harry as 'strange flashes'. His presence is felt through Harry's scar."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "mastered_shield_charm_faster_than",
+      "description": "Hermione mastered the Shield Charm faster than Neville."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "made_progress_at_occlumency_while_harry_did_not",
+      "description": "Neville is making progress at Occlumency during D.A. meetings, while Harry's sessions with Snape are not improving."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "affects_through_thoughts_and_moods",
+      "description": "Voldemort's thoughts and moods are experienced by Harry as 'strange flashes'. His presence is felt through Harry's scar."
+    }
+  ]
+}

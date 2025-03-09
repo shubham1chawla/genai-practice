@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where students stayed awake at night."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black, the person being searched for."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The professor who came back to tell students that Sirius Black had escaped."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The professor teaching the front doors to recognize a picture of Sirius Black."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being searched for."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was bustling up and down the corridors."
+    },
+    {
+      "name": "sir cadogan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who had been fired."
+    },
+    {
+      "name": "the fat lady",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A portrait that was back in its place."
+    },
+    {
+      "name": "security trolls",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of surly security trolls hired to guard the Fat Lady."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "black",
+      "relationship_type": "reported_on",
+      "description": "Professor McGonagall came back to tell students that Sirius Black had escaped."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "black",
+      "relationship_type": "taught_to_recognize",
+      "description": "Professor Flitwick was teaching the front doors to recognize a picture of Sirius Black."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "corridors",
+      "relationship_type": "bustled_up_and_down",
+      "description": "Filch was bustling up and down the corridors."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "security",
+      "relationship_type": "escaped_from",
+      "description": "Sirius Black had escaped from security."
+    },
+    {
+      "entity_1": "the fat lady",
+      "entity_2": "security trolls",
+      "relationship_type": "guarded_by",
+      "description": "The Fat Lady was guarded by a bunch of surly security trolls."
+    },
+    {
+      "entity_1": "sir cadogan",
+      "entity_2": "job",
+      "relationship_type": "fired_from",
+      "description": "Sir Cadogan had been fired from his job."
+    }
+  ]
+}

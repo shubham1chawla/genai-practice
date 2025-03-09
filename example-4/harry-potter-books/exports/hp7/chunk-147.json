@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who sounds almost angry at Tonks. He asks her what kept her and what happened."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who was attacked by Bellatrix. She mentions that she wishes she had killed Bellatrix."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a person who wants Tonks as much as she wants Harry and Remus. She tried to kill Tonks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person whom Bellatrix wants."
+    },
+    {
+      "name": "remus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Remus is a person whom Bellatrix wants."
+    },
+    {
+      "name": "ron's auntie muriel",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Ron's Auntie Muriel's house is where they went after getting injured."
+    },
+    {
+      "name": "rodolphus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rodolphus is a person who was injured by them."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the owner of Auntie Muriel."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "tonks",
+      "relationship_type": "wants",
+      "description": "Bellatrix wants Tonks as much as she wants Harry and Remus."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "wants",
+      "description": "Bellatrix wants Harry."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "remus",
+      "relationship_type": "wants",
+      "description": "Bellatrix wants Remus."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "bellatrix",
+      "relationship_type": "owe",
+      "description": "Tonks owes Bellatrix."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "tonks",
+      "relationship_type": "angry_at",
+      "description": "Lupin sounds almost angry at Tonks."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "rodolphus",
+      "relationship_type": "tried_to_kill",
+      "description": "Bellatrix tried to kill Rodolphus."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "bellatrix",
+      "relationship_type": "attacked_by",
+      "description": "Tonks was attacked by Bellatrix."
+    },
+    {
+      "entity_1": "ron's auntie muriel",
+      "entity_2": "ron",
+      "relationship_type": "owned_by",
+      "description": "Ron's Auntie Muriel is owned by Ron."
+    }
+  ]
+}

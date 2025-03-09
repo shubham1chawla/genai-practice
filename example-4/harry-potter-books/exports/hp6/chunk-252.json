@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as entering the compartment with Hermione and talking to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as entering the compartment with Ron and sitting next to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as sitting in the compartment with Ron and Hermione."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as being greeted by Ron."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as being greeted by Ron."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as not doing prefect duty and sitting with the other Slytherins."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of Slytherins is mentioned as sitting in their compartment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "talk_to",
+      "description": "Ron talks to Harry about Malfoy not doing prefect duty."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "neville",
+      "relationship_type": "greet",
+      "description": "Ron greets Neville."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "luna",
+      "relationship_type": "greet",
+      "description": "Ron greets Luna."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherins",
+      "relationship_type": "sit_with",
+      "description": "Malfoy sits with the other Slytherins in their compartment."
+    }
+  ]
+}

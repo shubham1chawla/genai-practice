@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story who is dealing with a Bludger. He is determined to continue playing and not give up."
+    },
+    {
+      "name": "oliver",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Oliver is mentioned as someone who needs to be told to leave Harry alone."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the twins and is angry with Wood for telling Harry to get the Snitch or die trying."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a teacher who is being scolded by George for his instructions to Harry."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is a teacher who joins the group and asks Wood if they are ready to resume play."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is a team that Harry's team does not want to lose to."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Bludger is an object that is causing trouble for Harry and his team."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wood",
+      "relationship_type": "scolded_by",
+      "description": "George scolds Wood for telling Harry to get the Snitch or die trying."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "wood",
+      "relationship_type": "scolded",
+      "description": "George is angry with Wood and scolds him."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "wood",
+      "relationship_type": "asked",
+      "description": "Madam Hooch asks Wood if they are ready to resume play."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "dealing_with",
+      "description": "Harry is dealing with the Bludger and trying to get rid of it."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "slytherin",
+      "relationship_type": "concerned_about",
+      "description": "Wood is concerned that they will lose to Slytherin if they stop playing."
+    }
+  ]
+}

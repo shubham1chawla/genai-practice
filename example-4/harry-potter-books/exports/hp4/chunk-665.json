@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student who is being watched by Moody."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is watching Harry closely and seems to be in trouble."
+    },
+    {
+      "name": "dark detectors",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Devices that are similar to Moody's Secrecy Sensor."
+    },
+    {
+      "name": "secrecy sensor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A device that vibrates when it detects concealment and lies."
+    },
+    {
+      "name": "sneakoscope",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A device that is extra-sensitive and picks up stuff about a mile around."
+    },
+    {
+      "name": "foe-glass",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A mirror-like object that shows shadowy figures moving around inside it."
+    },
+    {
+      "name": "wall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the Foe-Glass is hung."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "watching",
+      "description": "Moody is watching Harry closely."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "foe-glass",
+      "relationship_type": "using",
+      "description": "Moody is using the Foe-Glass to see shadowy figures moving around inside it."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather and a wizard. He is unhappy with the headmaster (Dumbledore) and has been trying to make Hogwarts habitable."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who Sirius is unhappy with."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather (Sirius) and the headmaster (Dumbledore)."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who appears to have not paid attention to the conversation between Harry and Sirius."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who gives reports to Dumbledore and hints that Sirius is in danger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "dumbledore",
+      "relationship_type": "dislike",
+      "description": "Sirius is unhappy with the headmaster (Dumbledore)."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "dislike",
+      "description": "Sirius dislikes Snape and feels he is not being helpful."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "affection",
+      "description": "Harry has a lot of affection for his godfather (Sirius)."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "conversation",
+      "relationship_type": "inattention",
+      "description": "Mundungus did not pay attention to the conversation between Harry and Sirius."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is introduced as the entity that Mr. Weasley and Harry are interacting with through the telephone box."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is introduced as the person who is using the telephone box to contact the Ministry of Magic."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the person who has been asked to attend a disciplinary hearing."
+    },
+    {
+      "name": "muggle artifacts office",
+      "entity_type": "department",
+      "singular": true,
+      "description": "The Muggle Artifacts Office is introduced as the department within the Ministry of Magic that Mr. Weasley works in."
+    },
+    {
+      "name": "disciplinary hearing",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A disciplinary hearing is mentioned as the reason why Harry Potter has been asked to attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "mr weasley",
+      "relationship_type": "contacted_by",
+      "description": "The Ministry of Magic is contacting Mr. Weasley through the telephone box."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "harry potter",
+      "relationship_type": "has_disciplinary_hearing_with",
+      "description": "The Ministry of Magic has scheduled a disciplinary hearing with Harry Potter."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "muggle artifacts office",
+      "relationship_type": "works_in",
+      "description": "Mr. Weasley works in the Muggle Artifacts Office within the Ministry of Magic."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "disciplinary hearing",
+      "relationship_type": "has_to_attend",
+      "description": "Harry Potter has been asked to attend a disciplinary hearing."
+    }
+  ]
+}

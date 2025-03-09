@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is a magical creature that needs to be flown up to Sirius's window. It is being held by Hermione with a rope."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is someone who will be at his window in a couple of hours, and Buckbeak needs to be flown up there. No further information about him is provided."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Whomping Willow is a location in the forest that Harry and his friends need to be able to see in order to know what's going on."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is someone who has been spotted by Harry, but no further information about him is provided."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "buckbeak",
+      "entity_2": "sirius",
+      "relationship_type": "destination",
+      "description": "Buckbeak needs to be flown up to Sirius's window, indicating that Sirius is the destination of Buckbeak's flight."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "whomping willow",
+      "relationship_type": "visibility",
+      "description": "Harry and his friends need to be able to see the Whomping Willow in order to know what's going on, indicating that Harry has a relationship of visibility with the Whomping Willow."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sighting",
+      "description": "Harry suddenly spots Ron, indicating that Harry has a relationship of sighting with Ron."
+    }
+  ]
+}

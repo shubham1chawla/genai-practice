@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as having a lightning scar on his forehead and being able to see himself reflected in others' eyes."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wand maker who is introduced as an expert in wands, described as having a long white finger that touches Harry's lightning scar."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, described as having a good wand made of oak wood that was snapped in half when he got expelled."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ollivander",
+      "entity_2": "harry",
+      "relationship_type": "owned_wand",
+      "description": "Mr. Ollivander sold the wand that was used to cast a spell on Harry, which is described as being very powerful but in the wrong hands."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "hagrid",
+      "relationship_type": "made_wand",
+      "description": "Mr. Ollivander made a wand for Hagrid, which is described as being good but snapped in half when Hagrid got expelled."
+    }
+  ]
+}

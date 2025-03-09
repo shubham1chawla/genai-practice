@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, mentioned as being involved in something with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, mentioned as being involved in something with Malfoy."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, whose party is the setting for Harry's discovery of Snape and Malfoy's conversation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who listens to Harry's story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "involved_with",
+      "description": "Harry overheard Malfoy and Snape talking during Professor Slughorn's party."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "overheard_talking_to",
+      "description": "Harry overheard Snape talking to Malfoy during Professor Slughorn's party."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "listened_to_story_of",
+      "description": "Dumbledore listened to Harry's story about what he overheard."
+    }
+  ]
+}

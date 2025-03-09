@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who corrected Harry and is trying to figure out where they are. He says 'I was going to ask you that' indicating he doesn't know but is trying to be polite."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is alive and has clean hands. He is trying to figure out where they are."
+    },
+    {
+      "name": "king's cross station",
+      "entity_type": "location",
+      "singular": false,
+      "description": "King's Cross station is a location that Harry thinks they might be at. It is described as 'a lot cleaner and empty'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation",
+      "description": "Harry and Dumbledore are having a conversation about where they are."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "king's cross station",
+      "relationship_type": "location_guess",
+      "description": "Harry thinks that King's Cross station might be their location."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being attacked by a giant."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who is trying to cast a spell on the giant."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's and Hermione's, who is trying to stop Hermione from casting a spell."
+    },
+    {
+      "name": "haggar",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "The giant that is attacking the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "stops",
+      "description": "Ron grabs Hermione's hand to stop her from casting a spell on the giant."
+    },
+    {
+      "entity_1": "haggar",
+      "entity_2": "castle",
+      "relationship_type": "attacks",
+      "description": "The giant is trying to seize people through the window above the castle."
+    }
+  ]
+}

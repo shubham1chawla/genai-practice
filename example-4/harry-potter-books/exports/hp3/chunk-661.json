@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is mentioned as a werewolf and the one who turned into a werewolf, allowing Harry to escape."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is mentioned as being attacked by Sirius, and his front paw (finger) was cut off by Black."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as cutting off Pettigrew's front paw (finger)."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as being accused of murdering Pettigrew, and it is revealed that he was the Potters' Secret-Keeper."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as trying to explain things to Dumbledore, but being interrupted."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as holding up his hand to stop the explanations and explaining that there is no proof to support Black's story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "pettigrew",
+      "relationship_type": "attacked_by",
+      "description": "Black cut off Pettigrew's front paw (finger)."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "pettigrew",
+      "relationship_type": "accused_of_murdering",
+      "description": "Sirius was accused of murdering Pettigrew, but it is revealed that he was the Potters' Secret-Keeper."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "black",
+      "relationship_type": "gave_evidence_against",
+      "description": "Dumbledore gave evidence to the Ministry that Sirius had been the Potters' Secret-Keeper, which implies he also gave evidence against Black."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "sirius",
+      "relationship_type": "related_to",
+      "description": "Professor Lupin is mentioned as being related to Sirius, but the exact nature of their relationship is not specified."
+    }
+  ]
+}

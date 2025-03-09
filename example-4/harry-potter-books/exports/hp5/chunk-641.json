@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "tomorrow",
+      "entity_type": "day",
+      "singular": true,
+      "description": "The day after the current day"
+    },
+    {
+      "name": "wind",
+      "entity_type": "weather_condition",
+      "singular": true,
+      "description": "A natural phenomenon that causes air to move from high pressure areas to low pressure areas"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by the writer"
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts School of Witchcraft and Wizardry"
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "institution",
+      "singular": true,
+      "description": "The governing body of the wizarding world"
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry of Magic employee and Hogwarts High Inquisitor"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "potter",
+      "relationship_type": "association",
+      "description": "Ron is associated with Potter"
+    },
+    {
+      "entity_1": "writer",
+      "entity_2": "tomorrow",
+      "relationship_type": "prediction",
+      "description": "The writer predicts that tomorrow will provide a good idea of the wind's behavior"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "potter",
+      "relationship_type": "advisory",
+      "description": "The writer advises Ron to speak to Dolores Umbridge about his concerns regarding Potter"
+    }
+  ]
+}

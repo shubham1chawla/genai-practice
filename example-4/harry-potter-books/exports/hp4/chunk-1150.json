@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a character in the story who is questioning Karkaroff about his accusations."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a character in the story who is accusing others of being Death Eaters."
+    },
+    {
+      "name": "travers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Travers is a person accused by Karkaroff of helping to murder the McKinnons."
+    },
+    {
+      "name": "mulciber",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mulciber is a person accused by Karkaroff of specializing in the Imperius Curse and forcing people to do horrific things."
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rookwood is a spy who passed information from inside the Ministry to He-Who-Must-Not-Be-Named."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "travers",
+      "relationship_type": "accused_of_crime",
+      "description": "Karkaroff accuses Travers of helping to murder the McKinnons."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "mulciber",
+      "relationship_type": "accused_of_crime",
+      "description": "Karkaroff accuses Mulciber of specializing in the Imperius Curse and forcing people to do horrific things."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "rookwood",
+      "relationship_type": "accused_of_crime",
+      "description": "Karkaroff accuses Rookwood of being a spy who passed information from inside the Ministry to He-Who-Must-Not-Be-Named."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "karkaroff",
+      "relationship_type": "interrogating",
+      "description": "Mr. Crouch is interrogating Karkaroff about his accusations."
+    }
+  ]
+}

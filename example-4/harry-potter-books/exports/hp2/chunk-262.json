@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "tantrums",
+      "entity_type": "emotions",
+      "singular": true,
+      "description": "Tantrums are mentioned as something that happens in the place, causing disturbance."
+    },
+    {
+      "name": "flooding",
+      "entity_type": "actions",
+      "singular": true,
+      "description": "Flooding is mentioned as an action that occurs in the place, making it unpleasant to be there."
+    },
+    {
+      "name": "place",
+      "entity_type": "locations",
+      "singular": true,
+      "description": "The place is described as a location where tantrums and flooding occur."
+    },
+    {
+      "name": "loo",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "The loo is mentioned as an object that exists in the place, but it's unpleasant to use due to the wailing of someone."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Ron is introduced as a person who says something to distract from the unpleasant situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tantrums",
+      "entity_2": "flooding",
+      "relationship_type": "cooccurrence",
+      "description": "Tantrums and flooding occur together in the place, causing disturbance."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "place",
+      "relationship_type": "presence",
+      "description": "Ron is present in the place where tantrums and flooding are occurring."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "school",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school is mentioned as the place where the person goes to study. It is described as having robes and textbooks."
+    },
+    {
+      "name": "quidditch robes",
+      "entity_type": "clothing",
+      "singular": false,
+      "description": "Quidditch robes are mentioned as being stored in a pile, indicating they are something the person needs for Quidditch. The text does not provide further description."
+    },
+    {
+      "name": "cauldron",
+      "entity_type": "equipment",
+      "singular": true,
+      "description": "The cauldron is mentioned as an item that was stored in the trunk, indicating it is something the person needs for their studies or activities. The text does not provide further description."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "material",
+      "singular": true,
+      "description": "Parchment is mentioned as an item that was stored in the trunk, indicating it is something the person needs for their studies. The text does not provide further description."
+    },
+    {
+      "name": "quills",
+      "entity_type": "equipment",
+      "singular": false,
+      "description": "Quills are mentioned as an item that was stored in the trunk, indicating they are something the person needs for writing or studying. The text does not provide further description."
+    },
+    {
+      "name": "textbooks",
+      "entity_type": "material",
+      "singular": false,
+      "description": "Textbooks are mentioned as an item that was stored in the trunk, indicating they are something the person needs for their studies. The text does not provide further description."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "school",
+      "entity_2": "quidditch robes",
+      "relationship_type": "has_equipment",
+      "description": "The school has quidditch robes, as they are stored in a pile with the person's textbooks and other items."
+    },
+    {
+      "entity_1": "school",
+      "entity_2": "cauldron",
+      "relationship_type": "has_equipment",
+      "description": "The school has a cauldron, as it is stored in the trunk along with other items."
+    },
+    {
+      "entity_1": "school",
+      "entity_2": "parchment",
+      "relationship_type": "has_material",
+      "description": "The school has parchment, as it is stored in the trunk along with other items."
+    },
+    {
+      "entity_1": "school",
+      "entity_2": "quills",
+      "relationship_type": "has_equipment",
+      "description": "The school has quills, as they are stored in the trunk along with other items."
+    },
+    {
+      "entity_1": "school",
+      "entity_2": "textbooks",
+      "relationship_type": "has_material",
+      "description": "The school has textbooks, as they are stored in a pile with the person's quidditch robes and other items."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is experiencing stabbing pains in his forehead and having nightmares."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville thinks Harry has a bad case of exam nerves."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron and Hermione don't seem as worried about the Stone as Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione doesn't seem as worried about the Stone as Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a scary idea to Ron and Hermione."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape might be up to something that worries Harry."
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Stone is a concern for Harry, but not as much for Ron and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "visited_in_dreams",
+      "description": "Harry's nightmares feature Voldemort."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "stone",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about the Stone, but not as much as Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "stone",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about the Stone, but not as much as Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "worried_about",
+      "description": "Harry worries that Snape might be up to something."
+    }
+  ]
+}

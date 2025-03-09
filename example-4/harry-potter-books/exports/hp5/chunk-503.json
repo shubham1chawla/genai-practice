@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who has an opinion about Dumbledore trusting Snape. He is described as 'sagely' which means he is speaking with wisdom."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who is trusted by Harry and Hermione. He is accused of being 'cracked' for trusting Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who works for You-Know-Who. Dumbledore is accused of trusting him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who has an opinion about Dumbledore trusting Snape. She is described as 'snapped' which means she is speaking with anger."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is frustrated by the argument between Ron and Hermione. He leaves them sitting there because of their constant arguing."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as an organization that Snape works for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "frustrated_by",
+      "description": "Harry is frustrated by Ron's constant arguing with Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "frustrated_by",
+      "description": "Harry is also frustrated by Hermione's constant arguing with Ron."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "trusted",
+      "description": "Dumbledore trusts Snape, which is questioned by Harry and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "argued_with",
+      "description": "Hermione argues with Ron about Dumbledore trusting Snape."
+    }
+  ]
+}

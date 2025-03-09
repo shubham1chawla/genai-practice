@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sneaked off his ship to find out what the first task was going to be."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was heading off around the forest with Hagrid."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the champions who would be facing the unknown on Tuesday."
+    },
+    {
+      "name": "dragons",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Creatures that are being referred to in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "karkaroff",
+      "relationship_type": "sneaked_after",
+      "description": "Karkaroff sneaked off his ship to follow Harry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "heading_together",
+      "description": "Hagrid and Madame Maxime were heading off around the forest together."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "dragons",
+      "relationship_type": "looking_for",
+      "description": "Karkaroff was looking for information about the dragons."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "different_from",
+      "description": "Harry and Cedric are different from each other, as Harry is the only one who knows what the task is."
+    }
+  ]
+}

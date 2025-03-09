@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is a government official who has noticed Fudge's frequent visits and is concerned about the implications."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "minister_for_magic",
+      "singular": true,
+      "description": "Fudge is the Minister for Magic who has been visiting the Prime Minister frequently, causing concern and fluster."
+    },
+    {
+      "name": "the other minister",
+      "entity_type": "minister_for_magic",
+      "singular": true,
+      "description": "The Other Minister is a nickname used by the Prime Minister to refer to Fudge in his head."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "prime minister",
+      "entity_2": "fudge",
+      "relationship_type": "concerned_about",
+      "description": "The Prime Minister is concerned about Fudge's frequent visits and their implications."
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "the other minister",
+      "relationship_type": "nickname_for",
+      "description": "The Prime Minister uses the nickname 'The Other Minister' to refer to Fudge in his head."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "prime minister",
+      "relationship_type": "visits",
+      "description": "Fudge has been visiting the Prime Minister frequently, causing concern and fluster."
+    }
+  ]
+}

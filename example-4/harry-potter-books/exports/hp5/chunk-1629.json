@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a character in the story who is angry and wants to interrogate Harry. She is described as having a 'furiously quivering face'. (Excerpt: 'I wish to interrogate him!' shouted Umbridge angrily, and Snape looked away from Harry back into her furiously quivering face.)"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a character in the story who is smooth-talking and has no further stocks of Veritaserum. He looks away from Harry to Umbridge's face. (Excerpt: 'I wish you to provide me with a potion  that will force him to tell me the truth!' ... Snape looked back at Harry, who stared at him, frantic to communicate without words.)"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a character in the story who is trying to communicate with Snape without words. He thinks desperately about Voldemort having Sirius in the Department of Mysteries. (Excerpt: 'Voldemort’s got Sirius in the Department of Mysteries, he thought desperately.')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a character in the story who has Sirius in the Department of Mysteries. Harry thinks about this desperately. (Excerpt: 'Voldemort’s got Sirius in the Department of Mysteries, he thought desperately.')"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a character in the story who is being held by Voldemort in the Department of Mysteries. Harry thinks about this desperately. (Excerpt: 'Voldemort’s got Sirius in the Department of Mysteries, he thought desperately.')"
+    },
+    {
+      "name": "veritaserum",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "Veritaserum is a potion that Snape has no further stocks of. Umbridge wants him to provide her with it. (Excerpt: 'I wish you to provide me with a potion  that will force him to tell me the truth!' ... Snape said he had no further stocks of Veritaserum.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "looks_at",
+      "description": "Snape looks at Harry. (Excerpt: Snape looked back at Harry, who stared at him, frantic to communicate without words.)"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "yells_at",
+      "description": "Umbridge yells at Snape. (Excerpt: 'I wish to interrogate him!' shouted Umbridge angrily, and Snape looked away from Harry back into her furiously quivering face.)"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "sirius",
+      "relationship_type": "has",
+      "description": "Voldemort has Sirius in the Department of Mysteries. (Excerpt: 'Voldemort’s got Sirius in the Department of Mysteries, he thought desperately.')"
+    }
+  ]
+}

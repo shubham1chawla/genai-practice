@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape appeared at the dungeon door and scolded Harry, Ron, and Neville for fighting."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry was wrestling with Neville when Snape intervened."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron was also involved in the fight and received a warning from Snape."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville was fighting with Harry when Snape intervened."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "The Gryffindor line was being scolded by Snape for their behavior."
+    },
+    {
+      "name": "st. mungo's",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "Neville is highly distressed by the subject of people in St. Mungo's due to magical damage to their brains."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "scolded",
+      "description": "Snape scolded the Gryffindor line for fighting."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "fought_with",
+      "description": "Harry was wrestling with Neville when Snape intervened."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor",
+      "relationship_type": "involved_in_fight",
+      "description": "Ron was also involved in the fight and received a warning from Snape."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "st. mungo's",
+      "relationship_type": "distressed_by",
+      "description": "Neville is highly distressed by the subject of people in St. Mungo's due to magical damage to their brains."
+    }
+  ]
+}

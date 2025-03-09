@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "the dark mark",
+      "entity_type": "physical_object",
+      "singular": true,
+      "description": "The Dark Mark is a symbol associated with Voldemort's followers. It is mentioned that the Death Eaters would have been pleased to see it."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story. His name is avoided by most people in the wizarding world."
+    },
+    {
+      "name": "the weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are a family that avoids saying Voldemort's name. Mr. Weasley is mentioned as speaking about You-Know-Who."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main protagonist of the story. He asks questions about the Death Eaters and their actions."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is Harry's friend. He asks a question about why the Death Eaters would Disapparate when they saw the Dark Mark."
+    },
+    {
+      "name": "bill weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill Weasley is mentioned as saying 'Use your brains, Ron' and explaining that if the Death Eaters were really working for Voldemort, they would have been caught by now."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are followers of Voldemort. They are mentioned as having worked hard to keep out of Azkaban when You-Know-Who lost power."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison for wizards and witches. The Death Eaters tried to avoid being caught by hiding there."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is Voldemort's name that most people in the wizarding world use instead of saying his actual name."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "the weasleys",
+      "relationship_type": "associated_with",
+      "description": "Harry Potter asks questions about You-Know-Who's supporters, and Mr. Weasley is mentioned as speaking about them."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "bill weasley",
+      "relationship_type": "brother_of",
+      "description": "Ron Weasley is Bill Weasley's brother."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "followers_of",
+      "description": "The Death Eaters are followers of Voldemort."
+    },
+    {
+      "entity_1": "azkaban",
+      "entity_2": "death eaters",
+      "relationship_type": "prison_for",
+      "description": "The Death Eaters tried to avoid being caught by hiding in Azkaban."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "voldemort",
+      "relationship_type": "same_person",
+      "description": "You-Know-Who is Voldemort's name that most people use instead of saying his actual name."
+    }
+  ]
+}

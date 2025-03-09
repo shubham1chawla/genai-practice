@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who drank from the goblet and expressed his disgust. He mentioned that he needs to get back to work."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who was present with Lupin and Ron in the common room. He received sweets from Ron and asked about their trip to Hogsmeade."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who went to Hogsmeade with Hermione and brought back sweets for Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who went to Hogsmeade with Ron and brought back sweets for Harry."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a location where Ron, Hermione, and others went shopping."
+    },
+    {
+      "name": "dervish and bangs",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Dervish and Banges is a wizarding equipment shop in Hogsmeade."
+    },
+    {
+      "name": "zonko's joke shop",
+      "entity_type": "store",
+      "singular": true,
+      "description": "Zonko's Joke Shop is a store in Hogsmeade where Ron and Hermione went."
+    },
+    {
+      "name": "three broomsticks",
+      "entity_type": "store",
+      "singular": true,
+      "description": "The Three Broomsticks is a store in Hogsmeade where Ron and Hermione had hot butterbeer."
+    },
+    {
+      "name": "pepper imps",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Pepper Imps are tiny black sweets that Harry received from Ron."
+    },
+    {
+      "name": "post office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The post office is a location in Hogsmeade where owls are kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "gave",
+      "description": "Ron gave sweets to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "gave",
+      "description": "Hermione also gave sweets to Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hogsmeade",
+      "relationship_type": "visited",
+      "description": "Ron visited Hogsmeade with Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogsmeade",
+      "relationship_type": "visited",
+      "description": "Hermione also visited Hogsmeade with Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dervish and bangs",
+      "relationship_type": "shopped at",
+      "description": "Ron shopped at Dervish and Banges in Hogsmeade."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "zonko's joke shop",
+      "relationship_type": "visited",
+      "description": "Hermione visited Zonko's Joke Shop in Hogsmeade."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "three broomsticks",
+      "relationship_type": "visited",
+      "description": "Ron also visited The Three Broomsticks in Hogsmeade."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pepper imps",
+      "relationship_type": "received",
+      "description": "Harry received Pepper Imps from Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "post office",
+      "relationship_type": "visited",
+      "description": "Ron visited the post office in Hogsmeade."
+    }
+  ]
+}

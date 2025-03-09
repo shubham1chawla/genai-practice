@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "portkey office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Portkey Office is mentioned as a location where people are getting in and out of. It is described as the place where the lift doors opened."
+    },
+    {
+      "name": "apparation test center",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Apparition Test Center is mentioned as a location where people are getting in and out of. It is not clear if it is the same as the Portkey Office or a different place."
+    },
+    {
+      "name": "witches",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Witches are mentioned as one of the groups of people who got out of the lift. They are described as four or five in number."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "portkey office",
+      "entity_2": "witches",
+      "relationship_type": "exit_from",
+      "description": "The witches exited from the Portkey Office, as indicated by the phrase 'got out'."
+    },
+    {
+      "entity_1": "apparation test center",
+      "entity_2": "witches",
+      "relationship_type": "exit_from",
+      "description": "The witches also exited from the Apparition Test Center, although it is not clear if this is a different location or the same as the Portkey Office."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is about to start at Hogwarts School of Witchcraft and Wizardry. He is described as being on his way to a wizards' school and has a ticket with platform 9 and three-quarters written on it."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who gave Harry the ticket for the train. He is not physically present in this scene but his actions have an impact on the story."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, a Muggle (non-magical person) who is skeptical of magic and wizards. He is described as being dismissive and disbelieving of Harry's story."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, a Muggle who shares Uncle Vernon's skepticism and disbelief in magic."
+    },
+    {
+      "name": "kings cross",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A train station in London where Harry will be taking the train to Hogwarts. It is mentioned as a place that Harry's aunt and uncle are already planning to visit."
+    },
+    {
+      "name": "platform nine and three-quarters",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The platform at King's Cross station where Harry will be taking the train to Hogwarts. It is written on his ticket and mentioned as a place that does not exist according to Uncle Vernon."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A city in England where Harry's aunt and uncle are already planning to visit. They will be taking Harry with them to King's Cross station."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "platform nine and three-quarters",
+      "relationship_type": "location_of",
+      "description": "Harry is going to take the train from platform 9 and three-quarters, as written on his ticket. This is mentioned in the text: 'I just take the train from platform nine and three-quarters at eleven o'clock,' he read."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kings cross",
+      "relationship_type": "location_of",
+      "description": "Harry will be taking the train to Hogwarts from King's Cross station. This is mentioned in the text: 'We're going up to London tomorrow anyway, or I wouldn't bother.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "london",
+      "relationship_type": "location_of",
+      "description": "Harry will be taking the train to Hogwarts from King's Cross station in London. This is mentioned in the text: 'We're going up to London tomorrow anyway, or I wouldn't bother.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "related_to",
+      "description": "Harry's uncle Vernon is related to him and is skeptical of his story. This is mentioned in the text: 'Don't talk rubbish,' said Uncle Vernon, 'there is no platform nine and three-quarters.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "aunt",
+      "relationship_type": "related_to",
+      "description": "Harry's aunt is related to him and shares her husband's skepticism of his story. This is mentioned in the text: 'His aunt and uncle stared.'"
+    }
+  ]
+}

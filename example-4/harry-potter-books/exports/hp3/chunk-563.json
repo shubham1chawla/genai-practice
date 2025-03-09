@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is being attacked by the dog. (\"Harry reached for his wand...\", \"he keeled over backward in a whirl of hair...\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who tries to protect him from the dog. (\"Ron was on his feet.\", \"the dog’s jaws fastened instead around Ron’s outstretched arm.\")"
+    },
+    {
+      "name": "dog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A gigantic, pale-eyed, jet-black dog that is attacking Harry and Ron. (\"an enormous, pale-eyed, jet-black dog.\", \"the force of its leap had carried it too far...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dog",
+      "relationship_type": "attacked_by",
+      "description": "The dog is attacking Harry. (\"Something was bounding toward them, quiet as a shadow — an enormous, pale-eyed, jet-black dog.\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dog",
+      "relationship_type": "attacked_by",
+      "description": "The dog is also attacking Ron. (\"the dog’s jaws fastened instead around Ron’s outstretched arm.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "protected",
+      "description": "Ron tries to protect Harry from the dog. (\"Ron was on his feet.\", \"he pushed Harry aside...\")"
+    }
+  ]
+}

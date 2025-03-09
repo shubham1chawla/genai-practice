@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is one of the characters who stood shoulder to shoulder with Lupin and was about to kill Pettigrew. He is described as snarling at Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is one of the characters who stood shoulder to shoulder with Black and was about to kill Pettigrew. He is described as saying 'if Voldemort didn't kill you, we would'."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is the person who Harry is trying to protect from being killed by Black and Lupin. He is described as a 'piece of vermin', 'cringing bit of filth'."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who could have killed Harry instead of Black and Lupin."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person who is trying to protect Pettigrew from being killed by Black and Lupin. He is described as yelling 'You can't kill him'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "pettigrew",
+      "relationship_type": "would_kill",
+      "description": "Black would have killed Pettigrew if Voldemort hadn't done it first."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "pettigrew",
+      "relationship_type": "would_kill",
+      "description": "Lupin would have killed Pettigrew if Voldemort hadn't done it first."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pettigrew",
+      "relationship_type": "protects",
+      "description": "Harry is trying to protect Pettigrew from being killed by Black and Lupin."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being in a new house."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, comparing his old room to Harry's new one."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of non-magical people, mentioned as having a room that is larger than Ron's current one."
+    },
+    {
+      "name": "ghoul",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A supernatural creature living in the attic, causing noise and disturbance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as evidenced by their conversation about Harry's new house."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "muggles",
+      "relationship_type": "comparison",
+      "description": "Harry compares his new house to a room he had with the Muggles."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "ghoul",
+      "relationship_type": "proximity",
+      "description": "Ron is located underneath the ghoul in the attic, which causes disturbance and noise."
+    }
+  ]
+}

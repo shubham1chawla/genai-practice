@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "pudding",
+      "entity_type": "food_item",
+      "singular": true,
+      "description": "Pudding is mentioned as something that might not be finished yet."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is leading the way towards the steps to the Entrance Hall."
+    },
+    {
+      "name": "entrance hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Entrance Hall is mentioned as a location that Ron is leading Harry towards."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who hears something ominous."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "entrance hall",
+      "relationship_type": "leads_to",
+      "description": "Ron is leading Harry towards the Entrance Hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pudding",
+      "relationship_type": "has_heard",
+      "description": "Harry heard something ominous, which might be related to pudding not being finished yet."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "accompanies",
+      "description": "Ron is accompanying Harry towards the Entrance Hall."
+    }
+  ]
+}

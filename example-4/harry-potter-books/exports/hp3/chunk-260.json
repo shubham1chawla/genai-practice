@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as being spoken to by Lupin, indicating that Severus is present in the scene."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as speaking to Severus and showing him something, indicating that Lupin is present in the scene."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being spoken to by Snape and looking curiously at a goblet, indicating that Harry is present in the scene."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as speaking to Lupin and Harry, indicating that Snape is present in the scene."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The goblet is described as being smoked by Snape and later picked up by Lupin, indicating that it is a physical object in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "gave_potion",
+      "description": "Snape gave a potion to Lupin, as indicated by Snape's statement 'I made an entire cauldronful'."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "snape",
+      "relationship_type": "received_potion",
+      "description": "Lupin received a potion from Snape, as indicated by Lupin's statement 'Professor Snape has very kindly concocted a potion for me'."
+    }
+  ]
+}

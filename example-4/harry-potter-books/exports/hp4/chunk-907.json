@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who is moving around the trophy room on the floor above Gryffindor Tower."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is a location in Hogwarts where Harry had taken his first step back towards."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character who is observing Peeves and Bartemius Crouch on the map."
+    },
+    {
+      "name": "snape's office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Snape's office is a location in Hogwarts where a single dot was flitting around."
+    },
+    {
+      "name": "bartemius crouch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bartemius Crouch is a character who is supposed to be too ill to go to work or come to the Yule Ball, but is sneaking into Hogwarts at one o'clock in the morning."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is a school where Harry and other characters are attending."
+    },
+    {
+      "name": "yule ball",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Yule Ball is an event that Bartemius Crouch is supposed to attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "observation",
+      "description": "Harry is observing Peeves moving around the trophy room."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bartemius crouch",
+      "relationship_type": "suspicion",
+      "description": "Harry is suspicious of Bartemius Crouch sneaking into Hogwarts at one o'clock in the morning."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location",
+      "description": "Peeves is moving around the trophy room on the floor above Gryffindor Tower."
+    },
+    {
+      "entity_1": "bartemius crouch",
+      "entity_2": "snape's office",
+      "relationship_type": "presence",
+      "description": "Bartemius Crouch is present in Snape's office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendance",
+      "description": "Harry is attending Hogwarts where Bartemius Crouch is sneaking into."
+    },
+    {
+      "entity_1": "bartemius crouch",
+      "entity_2": "yule ball",
+      "relationship_type": "attendance",
+      "description": "Bartemius Crouch is supposed to attend the Yule Ball."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is hit by a spell cast by 'two', but still manages to point his wand at Malfoy and shout 'Rictusempra!'"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character in the story who is targeted by Harry's spell. His name is mentioned as the target of Harry's wand."
+    },
+    {
+      "name": "two",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The person who cast a spell that hit Harry so hard. The text does not provide more information about 'two'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "targeted_by_spell",
+      "description": "Harry's spell is directed at Malfoy, as mentioned in the text: 'Harry pointed his wand straight at Malfoy and shouted, ‘Rictusempra!’'"
+    },
+    {
+      "entity_1": "two",
+      "entity_2": "harry",
+      "relationship_type": "cast_spell_on",
+      "description": "The person known as 'two' cast a spell that hit Harry so hard. This is mentioned in the text: 'his spell hit Harry so hard he felt as though he’d been hit over the head with a saucepan'."
+    }
+  ]
+}

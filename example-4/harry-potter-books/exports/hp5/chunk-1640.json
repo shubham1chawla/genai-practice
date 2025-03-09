@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character in the story, mentioned as walking behind Hermione and having no idea what she's planning."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a character in the story, leading Harry down the corridor and making plans without telling him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Umbridge is a character in the story, walking behind Harry and Hermione and breathing heavily."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "follows",
+      "description": "Harry follows Hermione down the corridor, trying not to appear suspicious."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "is_followed_by",
+      "description": "Hermione is followed by Umbridge as they walk down the corridor."
+    }
+  ]
+}

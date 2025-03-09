@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who is known to cause trouble in the school. He is described as catching sight of the students and giving a squeal of delight (\"It was Peeves. He caught sight of them and gave a squeal of delight.\")."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of the students who is trying to sneak out of the classroom at midnight. He is described as taking a swipe at Peeves (\"Ron, taking a swipe at Peeves - this was a big mistake.\")."
+    },
+    {
+      "name": "filch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Filch is the caretaker of the school who is known to be strict. He is described as running as fast as he can towards the students (\"They could hear footsteps, Filch running as fast as he could\")."
+    },
+    {
+      "name": "firsties",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The first years are a group of students who are being referred to by Peeves. He is described as saying \"Wandering around at midnight, ickle firsties?\" (\"Wandering around at midnight, ickle firsties? T ut, tut, tut.\")."
+    },
+    {
+      "name": "charms corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The charms corridor is a location in the school where the students are trying to escape. It is described as being down which Peeves bellowed for the students to go (\"STUDENTS OUT OF BED DOWN THE CHARMS CORRIDOR!\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "ron",
+      "relationship_type": "interacted_with",
+      "description": "Peeves interacted with Ron by catching sight of him and giving a squeal of delight, as well as by bellowing for the students to go down the charms corridor."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "filch",
+      "relationship_type": "informed",
+      "description": "Peeves informed Filch about the students' actions by saying \"Should tell Filch, I should,\""
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "peeves",
+      "relationship_type": "attacked",
+      "description": "Ron attacked Peeves by taking a swipe at him."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "firsties",
+      "relationship_type": "addressed",
+      "description": "Peeves addressed the first years by saying \"Wandering around at midnight, ickle firsties?\""
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "charms corridor",
+      "relationship_type": "directed",
+      "description": "Peeves directed the students to go down the charms corridor by bellowing for them to do so."
+    }
+  ]
+}

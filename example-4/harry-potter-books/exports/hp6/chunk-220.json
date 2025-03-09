@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": true,
+      "description": "Galleons are a type of currency mentioned in the conversation between Ron and Mrs. Weasley."
+    },
+    {
+      "name": "sickles",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "Sickles are a type of currency mentioned in the conversation between Ron and Mrs. Weasley."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends, mentioned as dropping boxes and making a rude hand gesture at Fred."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is Ron's twin brother, mentioned as being the target of Ron's rude hand gesture."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a character who appears in the scene and scolds Ron for his behavior."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is Harry's sister, mentioned as asking her mother if she can have a Pygmy Puff."
+    },
+    {
+      "name": "pygmy puffs",
+      "entity_type": "pet",
+      "singular": false,
+      "description": "Pygmy Puffs are a type of pet mentioned in the conversation between Ginny and Mrs. Weasley."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is a character who appears at the end of the scene, hurrying up the street alone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "target_of_rude_hand_gesture",
+      "description": "Ron makes a rude hand gesture at Fred, which is spotted by Mrs. Weasley."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron",
+      "relationship_type": "scolded_by",
+      "description": "Mrs. Weasley scolds Ron for his behavior and threatens to jinx his fingers together."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "mrs weasley",
+      "relationship_type": "asked_permission_from",
+      "description": "Ginny asks her mother if she can have a Pygmy Puff, and Mrs. Weasley responds warily."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "weasleys' wizard wheezes",
+      "relationship_type": "passed_by",
+      "description": "Draco Malfoy is seen hurrying up the street alone and passing by Weasleys' Wizard Wheezes."
+    }
+  ]
+}

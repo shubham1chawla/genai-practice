@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who is checking Harry's list and offering him a birthday present. He is described as someone who has not gotten Harry a present yet."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one whose list Hagrid is checking. He feels embarrassed when Hagrid offers to get him a birthday present."
+    },
+    {
+      "name": "apothecary's",
+      "entity_type": "store",
+      "singular": false,
+      "description": "The apothecary's store is where Harry and Hagrid are located. It is mentioned as the place where Harry's list is being checked."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "apothecary's",
+      "relationship_type": "location",
+      "description": "Hagrid and Harry are at the apothecary's store."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "giver",
+      "description": "Hagrid is offering to get a birthday present for Harry."
+    }
+  ]
+}

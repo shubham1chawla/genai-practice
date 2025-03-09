@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is navigating through the maze."
+    },
+    {
+      "name": "maze",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A complex puzzle that Harry is trying to solve by finding its 'heart'."
+    },
+    {
+      "name": "sphinx",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A mythical creature with the body of a lion and the head of a woman, encountered by Harry in the maze."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "maze",
+      "relationship_type": "navigation",
+      "description": "Harry is navigating through the maze to find its 'heart'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sphinx",
+      "relationship_type": "encounter",
+      "description": "Harry encounters a sphinx while navigating through the maze."
+    }
+  ]
+}

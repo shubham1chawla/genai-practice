@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "medieval times",
+      "entity_type": "time_period",
+      "singular": true,
+      "description": "The time period being referred to in the text."
+    },
+    {
+      "name": "magic",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A supernatural power or phenomenon that is feared by people in medieval times."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who practices magic and is often associated with evil deeds."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who practices magic and is often associated with good deeds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "medieval times",
+      "entity_2": "magic",
+      "relationship_type": "fear_of",
+      "description": "People in medieval times were afraid of magic."
+    },
+    {
+      "entity_1": "witch",
+      "entity_2": "wizard",
+      "relationship_type": "opposite",
+      "description": "Witches and wizards are opposite types of people who practice magic."
+    }
+  ]
+}

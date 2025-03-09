@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts. He stopped talking suddenly and sat back down after Professor Umbridge interrupted him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a new teacher at Hogwarts who interrupted Dumbledore's speech. She stood up to make a speech and was met with surprise from the staff and students."
+    },
+    {
+      "name": "sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is a member of the Hogwarts staff who showed her surprise at Professor Umbridge's interruption by raising an eyebrow, which got lost in her hair."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a member of the Hogwarts staff who showed her surprise at Professor Umbridge's interruption by thinning her mouth."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "umbridge",
+      "relationship_type": "interrupted_by",
+      "description": "Professor Umbridge interrupted Dumbledore's speech, causing him to stop talking and sit back down."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "dumbledore",
+      "relationship_type": "interrupted",
+      "description": "Dumbledore was interrupted by Professor Umbridge while he was speaking."
+    }
+  ]
+}

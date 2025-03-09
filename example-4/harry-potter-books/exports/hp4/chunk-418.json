@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a teacher who sweeps the dead spider off the desk onto the floor."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is one of the students who stifled cries when the spider skidded toward him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who felt his face redden as Moody's eyes looked into his own."
+    },
+    {
+      "name": "spider",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The spider is an object that was killed by the flash of blinding green light."
+    },
+    {
+      "name": "students",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Several students stifled cries when the spider skidded toward them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "spider",
+      "relationship_type": "killed_by",
+      "description": "Moody swept the dead spider off the desk onto the floor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "spider",
+      "relationship_type": "survived",
+      "description": "Harry is sitting right in front of Moody, who has survived the same spell that killed the spider."
+    }
+  ]
+}

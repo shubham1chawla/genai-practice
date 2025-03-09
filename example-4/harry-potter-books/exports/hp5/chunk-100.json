@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is introduced as a person who shakes hands with Harry and asks him how he's doing. He is described as looking at Harry closely."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the one being asked by Lupin about his well-being. He is described as feeling conscious of not having combed his hair for four days."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as being out due to a letter sent by the violet-haired woman. They think they have been short-listed for a competition."
+    },
+    {
+      "name": "violet-haired woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "She is introduced as the one who lured the Dursleys out of the way by sending them a letter about a competition. She has violet hair."
+    },
+    {
+      "name": "muggle post",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Muggle post is mentioned as the method used to send the letter to the Dursleys."
+    },
+    {
+      "name": "all-england best-kept suburban lawn competition",
+      "entity_type": "event",
+      "singular": true,
+      "description": "This is a competition that the Dursleys think they have been short-listed for. It's mentioned as a way to lure them out of the house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "shakes_hands_with",
+      "description": "Lupin shakes hands with Harry, showing a friendly gesture."
+    },
+    {
+      "entity_1": "violet-haired woman",
+      "entity_2": "dursleys",
+      "relationship_type": "lures_out",
+      "description": "The violet-haired woman lured the Dursleys out of the house by sending them a letter about a competition."
+    },
+    {
+      "entity_1": "violet-haired woman",
+      "entity_2": "muggle post",
+      "relationship_type": "uses",
+      "description": "The violet-haired woman used Muggle post to send the letter to the Dursleys."
+    },
+    {
+      "entity_1": "dursleys",
+      "entity_2": "all-england best-kept suburban lawn competition",
+      "relationship_type": "thinks_shortlisted_for",
+      "description": "The Dursleys think they have been short-listed for this competition."
+    }
+  ]
+}

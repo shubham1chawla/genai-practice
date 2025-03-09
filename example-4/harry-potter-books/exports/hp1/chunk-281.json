@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, whose broomstick is seen rising towards the Forbidden Forest."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is tending to Neville's injury and taking him to the hospital wing."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student in Harry's class who has broken his wrist during a flying lesson."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Slytherin student who is laughing at Neville's misfortune."
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Gryffindor student who tells Malfoy to shut up."
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Slytherin girl who teases Parvati for sticking up for Neville."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "neville longbottom",
+      "relationship_type": "caregiver_care_receiver",
+      "description": "Madam Hooch is taking care of Neville's injury and helping him to the hospital wing."
+    },
+    {
+      "entity_1": "parvati patil",
+      "entity_2": "malfoy",
+      "relationship_type": "defender_attacker",
+      "description": "Parvati is defending Neville from Malfoy's teasing."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "harry potter",
+      "relationship_type": "authority_subordinate",
+      "description": "Madam Hooch is in charge of the class and Harry is a student under her authority."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "madam hooch",
+      "relationship_type": "patient_caregiver",
+      "description": "Neville is receiving care from Madam Hooch."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "parvati patil",
+      "relationship_type": "attacker_defender",
+      "description": "Malfoy is attacking Parvati for sticking up for Neville."
+    },
+    {
+      "entity_1": "pansy parkinson",
+      "entity_2": "parvati patil",
+      "relationship_type": "teaser_teased",
+      "description": "Pansy is teasing Parvati for defending Neville."
+    }
+  ]
+}

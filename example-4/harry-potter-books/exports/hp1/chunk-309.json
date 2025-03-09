@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as saying that Gringotts is the safest place in the world for something you want to hide, except perhaps Hogwarts."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is mentioned as a safe place to hide something, and it's also the location of vault 713."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as thinking about what Hagrid said, and he realizes that he might have found out where the package from vault 713 was hidden."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as giving Harry something to think about while he's in bed."
+    },
+    {
+      "name": "vault seven hundred and thirteen",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Vault 713 is mentioned as the location of a package that Harry thinks he might have found out where it was hidden."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gringotts",
+      "relationship_type": "mentioned_with",
+      "description": "Hagrid is mentioned as saying that Gringotts is the safest place in the world for something you want to hide, except perhaps Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "vault seven hundred and thirteen",
+      "relationship_type": "found_out_about",
+      "description": "Harry thinks he might have found out where the package from vault 713 was hidden."
+    }
+  ]
+}

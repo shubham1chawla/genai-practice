@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'Harry'. The text describes him walking with Hermione in a village on Christmas Eve."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is walking with Harry in the village. She mentions that it's Christmas Eve."
+    },
+    {
+      "name": "fidelius charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A magical spell mentioned in the text as something that happens when its subjects die. The exact nature of the spell is not described, but it seems to be related to secrecy or protection."
+    },
+    {
+      "name": "village",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where Harry and Hermione are walking on Christmas Eve. It has a square with shops, a post office, a pub, and a church."
+    },
+    {
+      "name": "pub",
+      "entity_type": "building",
+      "singular": true,
+      "description": "A building in the village where people can drink and socialize. The text mentions that it's open on Christmas Eve and has music playing inside."
+    },
+    {
+      "name": "church",
+      "entity_type": "building",
+      "singular": true,
+      "description": "A building in the village with stained-glass windows. It's mentioned as having a carol being sung inside on Christmas Eve."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "village",
+      "relationship_type": "location_in",
+      "description": "Harry is walking in the village with Hermione. The text describes the village as they walk through it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "accompanying",
+      "description": "Hermione is walking with Harry in the village, and she mentions that it's Christmas Eve."
+    }
+  ]
+}

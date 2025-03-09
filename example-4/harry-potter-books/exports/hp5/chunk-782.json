@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the one who is questioning Snape about his application for the Defense Against the Dark Arts post. She is described as scribbling on her clipboard and having a sweet smile."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one who is being questioned by Professor Umbridge about his application for the Defense Against the Dark Arts post. He is described as looking very angry and having black eyes."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who has consistently refused to appoint Snape to the Defense Against the Dark Arts post. He is not physically present in the scene but is referred to by Professor Umbridge."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being present in the scene and having his eyes meet Snape's for a second. He is described as hastily dropping his gaze to his potion after meeting Snape's eyes."
+    },
+    {
+      "name": "pansey parkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pansy Parkinson is mentioned as being questioned by Professor Umbridge about the lessons. She is not described in detail but is referred to as a person who is being questioned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "questioning",
+      "description": "Professor Umbridge is questioning Snape about his application for the Defense Against the Dark Arts post. This relationship is described in the text as Professor Umbridge asking Snape questions and Snape responding to her."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "dumbledore",
+      "relationship_type": "reference",
+      "description": "Professor Umbridge mentions Dumbledore as the one who has consistently refused to appoint Snape to the Defense Against the Dark Arts post. This relationship is described in the text as Professor Umbridge referring to Dumbledore's decision."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "appointment_refusal",
+      "description": "Snape has been consistently refused appointment by Dumbledore. This relationship is described in the text as Snape being asked about his application and him suggesting that Professor Umbridge ask Dumbledore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "eye_contact",
+      "description": "Harry's eyes meet Snape's for a second. This relationship is described in the text as Harry and Snape having their eyes meet briefly."
+    }
+  ]
+}

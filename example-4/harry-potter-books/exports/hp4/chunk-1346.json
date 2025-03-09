@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who saw Draco stealing ingredients from Snape's office and believed his father was after Snape."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as asking about a map that Harry Potter had."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is the narrator and mentions his father's escape and his master's instructions to stop him at all costs."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having an office where Draco stole ingredients for a Polyjuice Potion."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as arriving at Hogwarts along with Harry Potter."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Polyjuice Potion is a potion that Draco mentions stealing ingredients for."
+    },
+    {
+      "name": "harry potter's map of hogwarts",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry Potter's map of Hogwarts is used by Draco to track his father's escape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "saw",
+      "description": "Draco mentions that Harry Potter saw him stealing ingredients from Snape's office."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "snape",
+      "relationship_type": "stole_from",
+      "description": "Draco stole ingredients for the Polyjuice Potion from Snape's office."
+    }
+  ]
+}

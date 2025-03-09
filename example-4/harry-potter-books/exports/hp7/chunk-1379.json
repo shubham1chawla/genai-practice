@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape gave a stiff nod. He is the one giving instructions."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is the person Snape wants to help and guide."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius's position has been usurped by someone."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is the one whose wrath Draco fears."
+    },
+    {
+      "name": "you",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You are the person who should offer help and guidance to Draco."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "draco",
+      "relationship_type": "concerned_about",
+      "description": "Snape is concerned about Draco's safety."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lucius",
+      "relationship_type": "replaced_by",
+      "description": "Lucius's position has been usurped by Snape."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "lord voldemort",
+      "relationship_type": "afraid_of",
+      "description": "Draco fears Lord Voldemort's wrath."
+    },
+    {
+      "entity_1": "you",
+      "entity_2": "draco",
+      "relationship_type": "should_help",
+      "description": "You should offer help and guidance to Draco."
+    }
+  ]
+}

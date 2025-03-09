@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who is questioning Mrs. Figg about her story. He has raised his eyebrows in surprise."
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Figg is the one telling the story to Fudge and Madam Bones. She seems nervous and fumbles with her words."
+    },
+    {
+      "name": "madam bones",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Bones is a person who is questioning Mrs. Figg about what she saw in the alleyway. She has a monocle and is very sharp-eyed."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are creatures that Mrs. Figg claims to have seen gliding down the alleyway. Madam Bones corrects her saying they don't run but glide."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs figg",
+      "entity_2": "fudge",
+      "relationship_type": "telling_story",
+      "description": "Mrs. Figg is telling a story to Fudge and Madam Bones."
+    },
+    {
+      "entity_1": "madam bones",
+      "entity_2": "mrs figg",
+      "relationship_type": "questioning",
+      "description": "Madam Bones is questioning Mrs. Figg about what she saw in the alleyway."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "madam bones",
+      "relationship_type": "listening",
+      "description": "Fudge is listening to Mrs. Figg's story and asking her questions."
+    }
+  ]
+}

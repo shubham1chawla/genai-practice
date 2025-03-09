@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a person who is part of the Gryffindor team and is asking what is going on."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a member of the Weasley twins and was 20 feet above Angelina when another Bludger stopped her from scoring."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is a member of the Weasley twins and was 20 feet above Angelina when another Bludger stopped her from scoring."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a person who was being targeted by a Bludger that stopped her from scoring."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Bludger is an object used in Quidditch that is trying to stop Angelina from scoring."
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindor team is a group of people who are huddled together and being targeted by the Bludger."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Slytherins are a group of people in the crowd who are jeering at the Gryffindor team."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "gryffindor team",
+      "relationship_type": "part_of",
+      "description": "Wood is part of the Gryffindor team that is being targeted by the Bludger."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "bludger",
+      "relationship_type": "involved_with",
+      "description": "Fred was involved with a Bludger when it stopped Angelina from scoring."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "bludger",
+      "relationship_type": "involved_with",
+      "description": "George was also involved with a Bludger when it stopped Angelina from scoring."
+    },
+    {
+      "entity_1": "gryffindor team",
+      "entity_2": "slytherins",
+      "relationship_type": "opposite_of",
+      "description": "The Gryffindor team is being targeted by the Bludger and jeered at by Slytherins."
+    },
+    {
+      "entity_1": "bludger",
+      "entity_2": "angelina",
+      "relationship_type": "targeted",
+      "description": "A Bludger was targeting Angelina when it stopped her from scoring."
+    }
+  ]
+}

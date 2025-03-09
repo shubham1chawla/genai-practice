@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "occlumency",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "The subject of the homework planner that Harry is scribbling down."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is scribbling down Umbridge's homework and feeling sick."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose homework Harry is scribbling down."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The character who beamed at the book."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who tried to put a Headless Hat on him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "scribbled_homework_for",
+      "description": "Harry is scribbling down Umbridge's homework."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "beamed_at",
+      "description": "Hermione beamed at the book that Harry was scribbling down."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "tried_to_put_hat_on",
+      "description": "George tried to put a Headless Hat on Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fire",
+      "relationship_type": "planned_to_drop_homework_in",
+      "description": "Harry made a mental note to drop the homework planner in the fire."
+    }
+  ]
+}

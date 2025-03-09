@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The parchment is mentioned as something that is rolled up and looked at by the subject, indicating its importance or relevance to the scene."
+    },
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as being cleaned up, with all the usual detritus gone, suggesting that it has been tidied up for some reason."
+    },
+    {
+      "name": "gobstones",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Gobstones are mentioned as something that is usually found in the room, but is now absent, indicating that they have been removed or cleaned up."
+    },
+    {
+      "name": "ingredient jars",
+      "entity_type": "container",
+      "singular": false,
+      "description": "Ingredient jars are mentioned as being empty and usually found in the room, suggesting that they have been used or cleaned out."
+    },
+    {
+      "name": "candy wrappers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Candy wrappers are mentioned as something that is usually found in the room, but is now absent, indicating that they have been removed or cleaned up."
+    },
+    {
+      "name": "Hermione's elf hats",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Hermione's elf hats are mentioned as being gone, suggesting that they have been taken away or cleaned out."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "room",
+      "entity_2": "parchment",
+      "relationship_type": "contains",
+      "description": "The room contains the parchment, as indicated by the subject looking around the room and finding it rolled up."
+    },
+    {
+      "entity_1": "room",
+      "entity_2": "gobstones",
+      "relationship_type": "lacks",
+      "description": "The room lacks gobstones, as they are usually found in the room but are now absent."
+    },
+    {
+      "entity_1": "room",
+      "entity_2": "ingredient jars",
+      "relationship_type": "contains",
+      "description": "The room contains ingredient jars, as indicated by them being empty and usually found in the room."
+    },
+    {
+      "entity_1": "room",
+      "entity_2": "candy wrappers",
+      "relationship_type": "lacks",
+      "description": "The room lacks candy wrappers, as they are usually found in the room but are now absent."
+    },
+    {
+      "entity_1": "Hermione's elf hats",
+      "entity_2": "room",
+      "relationship_type": "located_in",
+      "description": "Hermione's elf hats were located in the room, as they have been taken away or cleaned out."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "winky",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Winky is described as keeping her master's secrets and being a good house-elf who keeps her silence."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is described as angrily defending Harry Potter and stating that he is brave and noble."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being accused of nosing into his master's private and secret matters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "winky",
+      "relationship_type": "defended_by",
+      "description": "Dobby defends Winky from Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "winky",
+      "relationship_type": "accused_of_nosing_into_secrets",
+      "description": "Harry Potter is accused of nosing into Winky's master's private and secret matters."
+    }
+  ]
+}

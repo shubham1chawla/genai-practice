@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "probation",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Probation is mentioned as a possible consequence for teachers who are not performing up to standard. (\"probation, and sack any teacher she — that is to say, I — feel is not performing up to the standard required by the Minis try  of Magic.\")"
+    },
+    {
+      "name": "sack",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Sacking is mentioned as a possible consequence for teachers who are not performing up to standard. (\"probation, and sack any teacher she — that is to say, I — feel is not performing up to the standard required by the Minis try  of Magic.\")"
+    },
+    {
+      "name": "Ministry of Magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as the authority that sets the standards for teachers. (\"the standard required by the Minis try  of Magic.\")"
+    },
+    {
+      "name": "Professor Trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as a teacher who has been dismissed. (\"I have decided that Professor Trelawney is not up to scratch.\")"
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster of Hogwarts who has the authority to decide whether teachers can be sent away from the castle. (\"You do not, however, have the authority to send them away from the castle. I am afraid,\" he we nt on, with a courteous little bow, \"that the power to do that still resi des with the headmaster, and it is my wish that Professor Trelawney continue to live at Hogwarts.\")"
+    },
+    {
+      "name": "Professor Umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as the High Inquisitor who has the right to dismiss teachers. (\"You are quite right, of course, Professor Umbridge.\")"
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school where Professor Trelawney lives and works. (\"I am afraid,\" he we nt on, with a courteous little bow, \"that the power to do that still resi des with the headmaster, and it is my wish that Professor Trelawney continue to live at Hogwarts.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Professor Umbridge",
+      "entity_2": "Professor Trelawney",
+      "relationship_type": "dismissed_by",
+      "description": "Professor Umbridge has the right to dismiss teachers, and she has dismissed Professor Trelawney. (\"You are quite right, of course, Professor Umbridge. As High Inquisitor you have every right to dismiss my teachers.\")"
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Professor Trelawney",
+      "relationship_type": "allowed_to_stay",
+      "description": "Dumbledore has the authority to decide whether teachers can be sent away from the castle, and he wants Professor Trelawney to continue living at Hogwarts. (\"I am afraid,\" he we nt on, with a courteous little bow, \"that the power to do that still resi des with the headmaster, and it is my wish that Professor Trelawney continue to live at Hogwarts.\")"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as sitting on an empty bed beside Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as sitting on an empty bed beside Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as sitting on an empty bed beside Ron and Harry."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wandmaker who is being disturbed by Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as having a goal that Harry needs to thwart."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is being spoken to by Harry before speaking to Ollivander."
+    },
+    {
+      "name": "voldemort's goal",
+      "entity_type": "goal",
+      "singular": false,
+      "description": "The objective that Voldemort is trying to achieve."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ollivander",
+      "relationship_type": "helped_by",
+      "description": "Harry asks Ollivander for help in mending his wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "opponent_of",
+      "description": "Harry is trying to thwart Voldemort's goal."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "spoke_to_before",
+      "description": "Harry spoke to Griphook before speaking to Ollivander."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "opposed_by",
+      "description": "Voldemort is being opposed by Harry."
+    }
+  ]
+}

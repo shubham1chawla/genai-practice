@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is having a conversation with Ron about giants."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is struggling to describe the problem with giants."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is being discussed by Harry and Ron."
+    },
+    {
+      "name": "giants",
+      "entity_type": "species",
+      "singular": false,
+      "description": "Giants are a species that are being described as vicious and dangerous."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "conversation",
+      "description": "Harry is having a conversation with Ron about giants."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "giants",
+      "relationship_type": "opinion",
+      "description": "Ron has an opinion that giants are vicious and dangerous."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "giants",
+      "relationship_type": "association",
+      "description": "Hagrid is associated with being a giant, although he is not dangerous."
+    }
+  ]
+}

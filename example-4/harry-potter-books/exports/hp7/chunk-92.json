@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "you-know-who",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist, also known as Voldemort. He is mentioned as a powerful and dangerous entity who has Death Eaters patrolling the skies."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government-like institution that governs the wizarding world. They are mentioned as being deceived by a fake trail left by Harry's protectors."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who serve You-Know-Who. They are mentioned as patrolling the skies in this general area."
+    },
+    {
+      "name": "kingsley's place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Kingsley Shacklebolt's home, which is one of several houses that have been given protection by Harry's protectors."
+    },
+    {
+      "name": "molly auntie muriel's",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Molly Weasley's aunt Muriel's home, which is one of several houses that have been given protection by Harry's protectors."
+    },
+    {
+      "name": "tonks's parents",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The home of Nymphadora Tonks's parents, where Harry will be hiding once he is within the boundaries of the protective enchantments."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "death eaters",
+      "relationship_type": "has_patrols",
+      "description": "You-Know-Who has Death Eaters patrolling the skies in this general area."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "you-know-who",
+      "relationship_type": "is_deceived_by",
+      "description": "The Ministry is being deceived by a fake trail left by Harry's protectors, which they think will make You-Know-Who believe that Harry is not leaving until the thirtieth."
+    },
+    {
+      "entity_1": "kingsley's place",
+      "entity_2": "you-know-who",
+      "relationship_type": "has_protection_from",
+      "description": "Kingsley's home has been given protection by Harry's protectors, which will prevent You-Know-Who from finding Harry there."
+    },
+    {
+      "entity_1": "molly auntie muriel's",
+      "entity_2": "you-know-who",
+      "relationship_type": "has_protection_from",
+      "description": "Molly Weasley's aunt Muriel's home has been given protection by Harry's protectors, which will prevent You-Know-Who from finding Harry there."
+    },
+    {
+      "entity_1": "tonks's parents",
+      "entity_2": "you-know-who",
+      "relationship_type": "has_protection_from",
+      "description": "Tonks's parents' home has been given protection by Harry's protectors, which will prevent You-Know-Who from finding Harry there."
+    }
+  ]
+}

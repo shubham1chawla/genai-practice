@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the main subject of hate mail and Howlers. She is also mentioned as being in a supposed triangle with Harry and Krum."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid advises Hermione to stop opening hate mail."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being in a supposed triangle with Hermione and Krum. He also tells people that Hermione isn't his girlfriend."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as being in a supposed triangle with Harry and Hermione."
+    },
+    {
+      "name": "witch weekly",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "Witch Weekly magazine publishes stories about the supposed Harry-Krum-Hermione triangle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "denies_relationship",
+      "description": "Harry tells people that Hermione isn't his girlfriend."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "hermione",
+      "relationship_type": "involved_in_triangle",
+      "description": "Hermione is mentioned as being in a supposed triangle with Harry and Krum."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "advises",
+      "description": "Hagrid advises Hermione to stop opening hate mail."
+    },
+    {
+      "entity_1": "witch weekly",
+      "entity_2": "supposed_triangle",
+      "relationship_type": "publishes_story_about",
+      "description": "Witch Weekly magazine publishes stories about the supposed Harry-Krum-Hermione triangle."
+    }
+  ]
+}

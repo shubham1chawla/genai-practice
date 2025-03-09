@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor house is mentioned as the group that Harry clapped with when Euan Abercrombie was sorted into it."
+    },
+    {
+      "name": "euan abercrombie",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Euan Abercrombie is a student who was sorted into Gryffindor house during the sorting ceremony."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who participated in the sorting ceremony and clapped with the rest of Gryffindor house when Euan Abercrombie was sorted into it."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron's stomach is mentioned as being hungry during the sorting ceremony."
+    },
+    {
+      "name": "zeller",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Zeller is a student who was sorted into Hufflepuff house during the sorting ceremony."
+    },
+    {
+      "name": "rose",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Rose is a student who was sorted into Hufflepuff house along with Zeller."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Hufflepuff house is mentioned as the group that Zeller and Rose were sorted into during the sorting ceremony."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who picked up the hat and stool to march away with Zeller and Rose after they were sorted into Hufflepuff house."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Dumbledore is a teacher who rose to his feet during the sorting ceremony."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "euan abercrombie",
+      "relationship_type": "sorted_into",
+      "description": "Euan Abercrombie was sorted into Gryffindor house during the sorting ceremony."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron is Harry's friend, as indicated by the fact that they are together during the sorting ceremony."
+    },
+    {
+      "entity_1": "zeller",
+      "entity_2": "hufflepuff",
+      "relationship_type": "sorted_into",
+      "description": "Zeller was sorted into Hufflepuff house during the sorting ceremony."
+    },
+    {
+      "entity_1": "rose",
+      "entity_2": "hufflepuff",
+      "relationship_type": "sorted_into",
+      "description": "Rose was sorted into Hufflepuff house along with Zeller."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "zeller",
+      "relationship_type": "supervisor_of",
+      "description": "Professor McGonagall is the supervisor of Zeller, as indicated by her picking up the hat and stool to march away with him after he was sorted into Hufflepuff house."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "rose",
+      "relationship_type": "supervisor_of",
+      "description": "Professor McGonagall is also the supervisor of Rose, as indicated by her picking up the hat and stool to march away with her after she was sorted into Hufflepuff house."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "headmaster_of",
+      "description": "Professor Dumbledore is Harry's headmaster."
+    }
+  ]
+}

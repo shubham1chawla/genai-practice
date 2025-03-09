@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who has removed his coat and is wearing an odd smock in the half light. He is talking to two children about magic outside school."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is a child who is sitting with Snape and another boy. She picks up a twig and imagines sparks trailing from it."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Lily's sister who does not believe in magic or Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a child who is sitting with Snape and Lily. He knows that Lily is imagining sparks trailing from the twig."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "has_letter",
+      "description": "Snape tells Harry that they will get a letter when they are eleven."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "has_letter",
+      "description": "Snape also tells Lily that they will get a letter when they are eleven."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "lily",
+      "relationship_type": "disbelieves_magic",
+      "description": "Petunia does not believe in magic or Hogwarts, and she says Snape is lying to Lily."
+    }
+  ]
+}

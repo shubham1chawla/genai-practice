@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaw tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location mentioned in the conversation where a ghost is present."
+    },
+    {
+      "name": "lost diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that has been lost and the protagonist wants information about it."
+    },
+    {
+      "name": "ghost of ravenclaw tower",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "A supernatural entity present in Ravenclaw Tower."
+    },
+    {
+      "name": "protagonist",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is asking for help and information about the lost diadem."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "protagonist",
+      "entity_2": "lost diadem",
+      "relationship_type": "seeking_information",
+      "description": "The protagonist is seeking information about the lost diadem from the person they are talking to."
+    },
+    {
+      "entity_1": "person",
+      "entity_2": "ravenclaw tower",
+      "relationship_type": "presence",
+      "description": "The person is present in Ravenclaw Tower where a ghost is also present."
+    },
+    {
+      "entity_1": "protagonist",
+      "entity_2": "ghost of ravenclaw tower",
+      "relationship_type": "concerned_about",
+      "description": "The protagonist seems to be concerned about the ghost of Ravenclaw Tower."
+    },
+    {
+      "entity_1": "person",
+      "entity_2": "lost diadem",
+      "relationship_type": "cannot_help_with",
+      "description": "The person they are talking to cannot help with information about the lost diadem."
+    }
+  ]
+}

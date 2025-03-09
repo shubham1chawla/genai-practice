@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is described as being in total disgrace and receiving punishments from Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is described as being furious with Neville and giving him punishments."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a place where Neville was banned from visiting."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black's break-in is mentioned as an event that led to Neville's punishments."
+    },
+    {
+      "name": "neville's grandmother",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Neville's grandmother is described as sending him a Howler."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as sitting opposite Neville and recognizing the letter as a Howler."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as giving advice to Neville and having received a Howler from his mother before."
+    },
+    {
+      "name": "harry's mother",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Harry's mother is mentioned as sending Ron a Howler the year before."
+    },
+    {
+      "name": "the great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is mentioned as the place where the school owls deliver mail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "punished_by",
+      "description": "Neville was punished by Professor McGonagall for his actions."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "hogsmeade",
+      "relationship_type": "banned_from",
+      "description": "Neville was banned from visiting Hogsmeade by Professor McGonagall."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "neville",
+      "relationship_type": "affected_by_break_in",
+      "description": "Black's break-in affected Neville and led to his punishments."
+    },
+    {
+      "entity_1": "neville's grandmother",
+      "entity_2": "neville",
+      "relationship_type": "sent_howler_to",
+      "description": "Neville's grandmother sent him a Howler."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry's mother",
+      "relationship_type": "received_howler_from",
+      "description": "Ron received a Howler from Harry's mother the year before."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "the great hall",
+      "relationship_type": "visited_by_mail_delivery",
+      "description": "Neville visited The Great Hall where mail is delivered."
+    }
+  ]
+}

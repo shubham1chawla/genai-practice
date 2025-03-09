@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The text refers to 'Muggles' as a group of people who are not wizards or witches. The term is used in the context of ruling and being ruled."
+    },
+    {
+      "name": "power",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The power given to wizards and witches is described as a right to rule, but also comes with responsibilities."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is mentioned in the text as having once dreamed of overthrowing the Statute of Secrecy and establishing Wizard rule over Muggles."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "power",
+      "entity_2": "muggles",
+      "relationship_type": "gives_right_to_rule",
+      "description": "The power given to wizards and witches gives them the right to rule over Muggles."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "statute_of_secrecy",
+      "relationship_type": "wanted_to_overthrow",
+      "description": "Albus Dumbledore once dreamed of overthrowing the Statute of Secrecy."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who knows who Undesirable Number One is and has a poster of himself on the wall."
+    },
+    {
+      "name": "weasley family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as having hosted Undesirable Number One previously."
+    },
+    {
+      "name": "ministry inspectors",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "Ministry inspectors are mentioned as confirming that the youngest son of the family is seriously ill."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as writing a note to be punished on Harry's poster."
+    },
+    {
+      "name": "harry's youngest son",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's youngest son is mentioned as being seriously ill and at home."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "punishment",
+      "description": "Umbridge has written a note to punish Harry, indicating that she has authority over him."
+    },
+    {
+      "entity_1": "ministry inspectors",
+      "entity_2": "harry's youngest son",
+      "relationship_type": "monitoring",
+      "description": "Ministry inspectors are monitoring the health of Harry's youngest son."
+    }
+  ]
+}

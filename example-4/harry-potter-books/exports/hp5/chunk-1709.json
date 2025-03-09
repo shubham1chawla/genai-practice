@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is referred to as 'Potter' by the Death Eater."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is a character who intervenes in the scene and tries to protect the prophecy."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of dark wizards and witches who are trying to obtain the prophecy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "intervene",
+      "description": "Lucius Malfoy intervenes in the scene to try and protect the prophecy from being smashed by the Death Eater."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "harry",
+      "relationship_type": "attack",
+      "description": "The Death Eater tries to attack Harry with a spell, but he is able to defend himself."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "death eater",
+      "relationship_type": "restrain",
+      "description": "Lucius Malfoy restrains the Death Eater from smashing the prophecy."
+    }
+  ]
+}

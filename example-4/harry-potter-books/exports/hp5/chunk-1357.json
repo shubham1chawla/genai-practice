@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "time",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Time is mentioned as something that has passed. The text states 'n o  t i m e  h a s  p a s s e d', indicating that time has elapsed."
+    },
+    {
+      "name": "they",
+      "entity_type": "group",
+      "singular": false,
+      "description": "They refers to the people who were knocked to the ground. The text states 'a s  t h o u g h  t h e y  w e r e  m e r e l y  k n o c k e d', indicating that they are still alive."
+    },
+    {
+      "name": "ground",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The ground is mentioned as the place where they were knocked. The text states 't o  t h e  g r o u n d', indicating a physical location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "time",
+      "entity_2": "they",
+      "relationship_type": "elapsed_for",
+      "description": "Time has passed for them. The text states 'n o  t i m e  h a s  p a s s e d', indicating that time has elapsed since they were knocked to the ground."
+    }
+  ]
+}

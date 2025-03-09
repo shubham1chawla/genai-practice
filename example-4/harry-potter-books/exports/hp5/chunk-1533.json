@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "students",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of students moving up the sloping lawns from the pitch."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as suggesting to get in before meeting Slytherins."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of students from Slytherin house that the trio has to meet."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is mentioned as someone who can save anything and never leaves a single ring."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "slytherins",
+      "relationship_type": "has_to_meet",
+      "description": "Hermione suggests getting in before they have to meet the Slytherins."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "gryffindors",
+      "relationship_type": "is_king_of",
+      "description": "Gryffindors sing a song that says Weasley is their King."
+    }
+  ]
+}

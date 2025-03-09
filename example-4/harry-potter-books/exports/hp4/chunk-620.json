@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The only all-wizard village in Britain."
+    },
+    {
+      "name": "britain",
+      "entity_type": "country",
+      "singular": true,
+      "description": "Mentioned as the country where Hogsmeade is located."
+    },
+    {
+      "name": "hags",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of creatures that are not adept at disguising themselves."
+    },
+    {
+      "name": "wizards",
+      "entity_type": "group_of_people",
+      "singular": true,
+      "description": "People who are adept at disguising themselves."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend sitting with Fred, George, and Lee Jordan."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other Weasley twin."
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Ron's."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who went to buy drinks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hogsmeade",
+      "entity_2": "britain",
+      "relationship_type": "location_in",
+      "description": "Hogsmeade is located in Britain."
+    },
+    {
+      "entity_1": "hags",
+      "entity_2": "wizards",
+      "relationship_type": "opposite_of",
+      "description": "Hags are not adept at disguising themselves like wizards."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "friend_of",
+      "description": "Ron is friends with Fred."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "george",
+      "relationship_type": "friend_of",
+      "description": "Ron is friends with George."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "lee jordan",
+      "relationship_type": "friend_of",
+      "description": "Ron is friends with Lee Jordan."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry and Hermione are friends."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry is friends with Ron."
+    }
+  ]
+}

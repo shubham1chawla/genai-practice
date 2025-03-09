@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is a champion and has a task to complete tonight. He is also referred to by his last name, Potter."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and is mentioned as being present with him at the Gryffindor table."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGo-nagall is a teacher who comes to speak to Harry and informs him about the champions' gathering."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor table is mentioned as the location where Harry and Ron are sitting when Professor McGo-nagall approaches them."
+    },
+    {
+      "name": "champions' families",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The champions' families are invited to watch the final task, according to Professor McGo-nagall."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Dursleys are Harry's family and are mentioned as being unlikely to attend the gathering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "informing",
+      "description": "Professor McGo-nagall informs Harry about the champions' gathering and the reason for it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as indicated by their conversation at the Gryffindor table."
+    }
+  ]
+}

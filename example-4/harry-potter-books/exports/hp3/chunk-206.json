@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is mentioned as a person who is being spoken to by Professor Snape and is involved in the activity of cutting up roots."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a person whose roots are being cut up by Weasley and who is complaining about it to Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Snape is mentioned as the professor who is giving instructions to Weasley and Malfoy, and who is observing their activity."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasley",
+      "entity_2": "malfoy",
+      "relationship_type": "has_roots_cut_by",
+      "description": "Weasley cuts up Malfoy's roots at the instruction of Professor Snape."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "weasley",
+      "relationship_type": "gives_instruction_to",
+      "description": "Professor Snape gives instructions to Weasley to cut up Malfoy's roots."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snape",
+      "relationship_type": "complains_to",
+      "description": "Malfoy complains to Professor Snape about Weasley cutting up his roots."
+    }
+  ]
+}

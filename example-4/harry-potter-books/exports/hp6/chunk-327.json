@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having just recognized something."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as leaving with him and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as leaving with Ron and Harry."
+    },
+    {
+      "name": "sloper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who is being spoken to by Harry, but he interrupts them."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at the school, mentioned as writing a letter to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sloper",
+      "relationship_type": "interrupted_by",
+      "description": "Harry interrupts Sloper while he is speaking."
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "invited_to_private_lesson",
+      "description": "Dumbledore invites Harry to a private lesson on Saturday."
+    }
+  ]
+}

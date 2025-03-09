@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. He is in detention again due to his cut on the back of his hand bleeding."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Defense Against the Dark Arts teacher at Hogwarts who is imposing harsh punishments on Harry. She is mentioned as someone Harry does not want to give satisfaction to."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, a member of Dumbledore's Army and the Weasley family. He predicted that Angelina would react badly to Harry's detention."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is mentioned as being upset with Harry for getting into detention again. She corners him in the Great Hall and shouts loudly, causing Professor McGonagall to intervene."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hogwarts teacher who is mentioned as intervening when Angelina starts shouting in the Great Hall. She gives five points from Gryffindor to Angelina."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, known for bravery and daring. Harry is a member of this house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "has_detention_from",
+      "description": "Harry is in detention again due to his cut on the back of his hand bleeding, and Umbridge is imposing harsh punishments on him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "has_prediction_from",
+      "description": "George predicted that Angelina would react badly to Harry's detention."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "harry",
+      "relationship_type": "is_upset_with",
+      "description": "Angelina is upset with Harry for getting into detention again and corners him in the Great Hall, shouting loudly."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "angelina",
+      "relationship_type": "gives_points_to",
+      "description": "Professor McGonagall gives five points from Gryffindor to Angelina for making a racket in the Great Hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_in_detention_with",
+      "description": "Harry is in detention again, and Professor McGonagall intervenes when Angelina starts shouting in the Great Hall."
+    }
+  ]
+}

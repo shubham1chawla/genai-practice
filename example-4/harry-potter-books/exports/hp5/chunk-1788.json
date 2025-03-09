@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'he' and 'Harry'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is the headmaster of Hogwarts. He is referred to as 'Dumbledore' and is described as turning his back on Fudge."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic, who is goggle-eyed and speechless in the presence of Dumbledore. He is referred to as 'Fudge'."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school for magic, where Dumbledore is the headmaster. It is mentioned that letters addressed to the headmaster will find Harry."
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Dumbledore to transport Harry away from Fudge and Hogwarts. It is described as a golden head of a statue."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "gives_portkey",
+      "description": "Dumbledore gives Harry the Portkey, which is used to transport him away from Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "dismisses",
+      "description": "Dumbledore dismisses Fudge by turning his back on him and ignoring his attempts to speak."
+    }
+  ]
+}

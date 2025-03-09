@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as someone who must not know a secret until the last moment."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person talking to Dumbledore, asking questions about what Harry must do."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, mentioned as someone who will seem to fear for the life of his snake."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "snake",
+      "singular": true,
+      "description": "Lord Voldemort's snake, mentioned as a key factor in determining when it is safe to tell Harry a secret."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, mentioned as someone who cast her own life between Harry and Lord Voldemort."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person talking to Severus Snape, explaining a secret that must be kept from Harry until the last moment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "nagini",
+      "relationship_type": "owns",
+      "description": "Lord Voldemort owns Nagini, his snake."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "must_not_tell_secret_to",
+      "description": "Dumbledore must not tell Harry a secret until the last moment."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lily",
+      "relationship_type": "killed_by",
+      "description": "Lord Voldemort tried to kill Lily, but she cast her own life between him and Harry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "talking_to",
+      "description": "Dumbledore is talking to Severus Snape."
+    }
+  ]
+}

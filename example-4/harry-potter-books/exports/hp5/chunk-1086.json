@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "Mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Mundungus' is mentioned as a person who decorated the house with live fairies, blocking Sirius's family tree from view. (Excerpt: 'by Mundungus and decorated with live fairies...')"
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Sirius' is mentioned as a person whose family tree was blocked from view. (Excerpt: 'blocked Sirius’s family tree from view;')"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Harry' is mentioned as the recipient of presents and books. (Excerpts: 'Harry awoke on Christmas morning...'; 'Thanks for the Broom Compass, it’s excellent...')"
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Ron' is mentioned as someone who received presents and was already opening them. (Excerpt: 'Harry awoke on Christmas morning to find a stack of presents at the foot of his bed and Ron already halfway through opening his own...')"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Hermione' is mentioned as someone who gave Harry a homework planner. (Excerpt: 'she’s got me a homework planner —')"
+    },
+    {
+      "name": "Lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'Lupin' is mentioned as someone who, along with Sirius, gave Harry books. (Excerpt: 'Sirius and Lupin had given Harry a set of excellent books...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Mundungus",
+      "entity_2": "Sirius",
+      "relationship_type": "blocked_view",
+      "description": "Mundungus blocked Sirius's family tree from view. (Excerpt: 'by Mundungus and decorated with live fairies, blocked Sirius’s family tree from view;')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron",
+      "relationship_type": "received_presents",
+      "description": "Harry received presents alongside Ron. (Excerpt: 'Harry awoke on Christmas morning to find a stack of presents at the foot of his bed and Ron already halfway through opening his own...')"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Harry",
+      "relationship_type": "gave_presents",
+      "description": "Hermione gave Harry a homework planner. (Excerpt: 'she’s got me a homework planner —')"
+    },
+    {
+      "entity_1": "Sirius",
+      "entity_2": "Lupin",
+      "relationship_type": "gave_books",
+      "description": "Sirius and Lupin gave Harry books together. (Excerpt: 'Sirius and Lupin had given Harry a set of excellent books...')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hermione",
+      "relationship_type": "received_book",
+      "description": "Harry received a book from Hermione. (Excerpt: 'She had given him too a book that resembled a diary...')"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "kevin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kevin is mentioned as a little boy who yells at the giant slug. He is referred to by name and age (barely older than Kevin) in the text."
+    },
+    {
+      "name": "daddy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Daddy's wand is mentioned in the text, indicating that Daddy is a person who owns a wand."
+    },
+    {
+      "name": "slug",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The giant slug is trodden on by Kevin's mother and bursts. It is referred to as 'it' in the text."
+    },
+    {
+      "name": "ministry wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry wizard is mentioned who has spotted the little witches riding toy broomsticks. He is referred to by his occupation and is muttering distractedly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kevin",
+      "entity_2": "slug",
+      "relationship_type": "trod_on",
+      "description": "Kevin's mother trod on the giant slug, causing it to burst. This relationship is described in the text as 'She had trodden on the giant slug'."
+    },
+    {
+      "entity_1": "ministry wizard",
+      "entity_2": "little witches",
+      "relationship_type": "spotted",
+      "description": "The Ministry wizard spotted the little witches riding toy broomsticks. This relationship is described in the text as 'A Ministry wizard had already spotted them;'."
+    },
+    {
+      "entity_1": "kevin's mother",
+      "entity_2": "slug",
+      "relationship_type": "trod_on",
+      "description": "Kevin's mother trod on the giant slug, causing it to burst. This relationship is described in the text as 'She had trodden on the giant slug'."
+    },
+    {
+      "entity_1": "ministry wizard",
+      "entity_2": "parents",
+      "relationship_type": "commented_on",
+      "description": "The Ministry wizard commented on the parents having a lie-in, referring to them as 'Parents having a lie-in, I suppose —'. This relationship is described in the text as the wizard's muttering."
+    }
+  ]
+}

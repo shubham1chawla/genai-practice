@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "faithful",
+      "entity_type": "song_title",
+      "singular": true,
+      "description": "A song sung by an empty helmet."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker who had to extract Peeves from inside the armor."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A ghost who took refuge in the armor and filled in the gaps of the song with his own lyrics."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters who hadn't asked Cho to the ball."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who was getting nervous about not having a partner for the dance."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person Harry hadn't asked to the ball."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "The ghost who haunted the girls' toilets on the second floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "peeves",
+      "relationship_type": "extracted_from",
+      "description": "Filch had to extract Peeves from inside the armor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "hasnt_asked_to_ball",
+      "description": "Harry hadn't asked Cho to the ball."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "is_friend_of",
+      "description": "Ron was Harry's friend."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "considered_as_partner",
+      "description": "Harry considered Moaning Myrtle as a potential partner for the dance."
+    }
+  ]
+}

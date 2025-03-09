@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "slytherins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Slytherin students are described as being tall. They are part of the group of onlookers who have formed a great ring in the entrance hall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is standing directly opposite Harry on the other side of the hall. She looks as though what she is watching makes her feel faintly sick."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is standing in the middle of the entrance hall with her wand and an empty sherry bottle. She looks utterly mad, with her hair sticking up on end, lopsided glasses, and trailing shawls."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is watching the scene unfold in front of him. He can see Professor Trelawney's reaction to something that seems to be standing in front of her, but he cannot see what it is."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "opposite_of",
+      "description": "Professor McGonagall and Harry are standing on opposite sides of the hall."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "something unseen by harry",
+      "relationship_type": "stares_at",
+      "description": "Professor Trelawney is staring at something that seems to be standing in front of her, but Harry cannot see what it is."
+    }
+  ]
+}

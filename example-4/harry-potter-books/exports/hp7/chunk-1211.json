@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that Harry is searching for. It is described as something that has been lost in living memory."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location within the castle where meetings and gatherings take place. It is mentioned as a place where people will meet with Professor McGonagall."
+    },
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students at Hogwarts. They are mentioned as being summoned to the Great Hall by Professor McGonagall."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students at Hogwarts. They are also mentioned as being summoned to the Great Hall by Professor McGonagall."
+    },
+    {
+      "name": "minerva mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who is in charge of the resistance against the unknown threat. She is described as a person who will duel to kill if anyone attempts to sabotage their efforts."
+    },
+    {
+      "name": "horace slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who expresses concerns about the safety of delaying Harry's progress. He is mentioned as someone who may be forced to duel Professor McGonagall if he attempts to sabotage their efforts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "minerva mcgonagall",
+      "entity_2": "horace slughorn",
+      "relationship_type": "duel_to_kill",
+      "description": "Professor McGonagall threatens to duel Professor Slughorn if he attempts to sabotage their efforts."
+    },
+    {
+      "entity_1": "minerva mcgonagall",
+      "entity_2": "slytherins",
+      "relationship_type": "summoned",
+      "description": "Professor McGonagall summons the Slytherin students to the Great Hall."
+    },
+    {
+      "entity_1": "minerva mcgonagall",
+      "entity_2": "ravenclaws",
+      "relationship_type": "summoned",
+      "description": "Professor McGonagall summons the Ravenclaw students to the Great Hall."
+    }
+  ]
+}

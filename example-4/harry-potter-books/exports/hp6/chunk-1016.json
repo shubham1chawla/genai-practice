@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, standing on an outcrop of rock."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and experienced wizard who is with Harry."
+    },
+    {
+      "name": "cliff",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A towering cliff behind Harry and Dumbledore."
+    },
+    {
+      "name": "rock",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Large chunks of rock that have broken away from the cliff face."
+    },
+    {
+      "name": "sea",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The moonlit sea below Harry and Dumbledore."
+    },
+    {
+      "name": "village",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A village where the kids from the orphanage are brought."
+    },
+    {
+      "name": "orphanage",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An institution that cares for children without parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "accompanying",
+      "description": "Harry and Dumbledore are standing together on the outcrop of rock."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cliff",
+      "relationship_type": "behind",
+      "description": "The cliff is behind Harry and Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "village",
+      "relationship_type": "related_to",
+      "description": "Dumbledore mentions a village where the kids from the orphanage are brought."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "orphanage",
+      "relationship_type": "connected_to",
+      "description": "Harry is connected to the orphanage through his relationship with Dumbledore."
+    }
+  ]
+}

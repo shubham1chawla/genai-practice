@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "the eye of the snake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where snow is untouched and can be melted easily. (Excerpt: 'she could melt them an easier path through the untouched snow between them and the greenhouses.')"
+    },
+    {
+      "name": "snow",
+      "entity_type": "weather_condition",
+      "singular": false,
+      "description": "A weather condition that has arrived in December. (Excerpt: 'December arrived, bringing with it more snow...')"
+    },
+    {
+      "name": "greenhouses",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where plants are kept warm and safe from the cold. (Excerpt: 'between them and the greenhouses.')"
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the prefects who is helping with the decoration of the castle. (Excerpt: 'Ron and Hermione’s prefect duties...')"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the prefects who is helping with the decoration of the castle. (Excerpt: 'Ron and Hermione’s prefect duties...')"
+    },
+    {
+      "name": "Peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is causing trouble by trying to strangle Ron with tinsel. (Excerpt: 'You try putting up tinsel when Peeves has got the other end...')"
+    },
+    {
+      "name": "tinsel",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object used for decoration that is being put up by Ron and Hermione. (Excerpt: 'You try putting up tinsel when Peeves has got the other end...')"
+    },
+    {
+      "name": "first years",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who are spending their break times inside because of the cold. (Excerpt: 'watch over first and second years spending their break times inside...')"
+    },
+    {
+      "name": "second years",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who are spending their break times inside because of the cold. (Excerpt: 'watch over first and second years spending their break times inside...')"
+    },
+    {
+      "name": "Argus Filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is suspicious that the holiday spirit might show itself in an outbreak of wizard duels. (Excerpt: 'patrol the corridors in shifts with Argus Filch...')"
+    },
+    {
+      "name": "holiday spirit",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A concept that might show itself in an outbreak of wizard duels. (Excerpt: 'the holiday spirit might show itself in an outbreak of wizard duels...')"
+    },
+    {
+      "name": "wizard duels",
+      "entity_type": "event",
+      "singular": false,
+      "description": "An event that Argus Filch is suspicious might happen during the holidays. (Excerpt: 'the holiday spirit might show itself in an outbreak of wizard duels...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione",
+      "relationship_type": "collaboration",
+      "description": "Ron and Hermione are working together as prefects. (Excerpt: 'Ron and Hermione’s prefect duties...')"
+    },
+    {
+      "entity_1": "Peeves",
+      "entity_2": "tinsel",
+      "relationship_type": "obstruction",
+      "description": "Peeves is causing trouble by trying to strangle Ron with tinsel. (Excerpt: 'You try putting up tinsel when Peeves has got the other end...')"
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "first years",
+      "relationship_type": "supervision",
+      "description": "Ron is watching over first years who are spending their break times inside. (Excerpt: 'watch over first and second years spending their break times inside...')"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "second years",
+      "relationship_type": "supervision",
+      "description": "Hermione is watching over second years who are spending their break times inside. (Excerpt: 'watch over first and second years spending their break times inside...')"
+    },
+    {
+      "entity_1": "Argus Filch",
+      "entity_2": "wizard duels",
+      "relationship_type": "prediction",
+      "description": "Argus Filch is suspicious that the holiday spirit might show itself in an outbreak of wizard duels. (Excerpt: 'the holiday spirit might show itself in an outbreak of wizard duels...')"
+    }
+  ]
+}

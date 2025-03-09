@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dementors are described as entities that guard the wizard prison, Azkaban. They are mentioned in the context of people who do really bad stuff."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is described as a wizard prison guarded by dementors."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is mentioned as hiding behind 667."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being spoken to by another person."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dementors",
+      "entity_2": "azkaban",
+      "relationship_type": "guard",
+      "description": "Dementors guard Azkaban, as mentioned in the text."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "harry",
+      "relationship_type": "behind",
+      "description": "Petunia is hiding behind Harry."
+    }
+  ]
+}

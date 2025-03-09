@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being drawn to this spot by Harry."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The doe is described as a Patronus, which is a guardian of the pool."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is mentioned as being placed in the pool for Harry to find."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is searching for and trying to retrieve the sword."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "trying_to_retrieve",
+      "description": "Harry is trying to retrieve the sword from the pool."
+    },
+    {
+      "entity_1": "patronus",
+      "entity_2": "pool",
+      "relationship_type": "guardian_of",
+      "description": "The Patronus (doe) is a guardian of the pool."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "related_to",
+      "description": "Hermione is related to Harry, as she was drawn to this spot by him."
+    }
+  ]
+}

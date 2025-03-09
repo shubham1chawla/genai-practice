@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to save a small glass ball from being smashed. (Excerpt: 'Harry with his left arm held up in the air to try and save the small glass ball...')"
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is trying to get a prophecy from Harry. (Excerpt: 'Lucius Malfoy’s voice in his ear, and Harry felt the tip of Malfoy’s wand pressing hard between his ribs.')"
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who helps Harry by catching a small glass ball. (Excerpt: 'Neville spun himself around on his back and scooped the ball to his chest.')"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is dueling with Bellatrix. (Excerpt: 'Sirius and Bellatrix were now dueling')"
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is dueling with Sirius. (Excerpt: 'Sirius and Bellatrix were now dueling')"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who jumps between Harry and Malfoy to protect them. (Excerpt: 'Lupin had jumped between them')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "attack",
+      "description": "Lucius Malfoy is trying to get a prophecy from Harry, and is using his wand to press between Harry's ribs. (Excerpt: 'The prophecy, give me the prophecy, Potter!’ snarled Lucius Malfoy’s voice in his ear...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "help",
+      "description": "Harry throws a small glass ball to Neville, who catches it. (Excerpt: 'No — get — off — me . . . Neville — catch it!’')"
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "neville",
+      "relationship_type": "attack",
+      "description": "Lucius Malfoy points his wand at Neville after Harry throws the prophecy. (Excerpt: 'Malfoy pointed the wand instead at Neville...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "defend",
+      "description": "Harry uses his own wand to blast Lucius Malfoy off his back. (Excerpt: 'Harry jabbed his own wand back over his shoulder and yelled, “Impedimenta!”')"
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "sirius",
+      "relationship_type": "duel",
+      "description": "Lucius Malfoy smashes into the dais where Sirius is dueling with Bellatrix. (Excerpt: 'Malfoy aimed his wand at Harry and Neville again, but before he could draw breath to strike...')"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "protect",
+      "description": "Lupin jumps between Harry and Lucius Malfoy to protect them. (Excerpt: 'Lupin had jumped between them')"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "charm breakers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group that called Harry 'a long-haired pillock'"
+    },
+    {
+      "name": "mr s weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, who gently told Harry to let him cut his hair"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who was immersed in The Standard Book of Spells, Grade 4"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who also received a copy of The Standard Book of Spells, Grade 4"
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's brother, who was darning a fireproof balaclava"
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry's brothers, who were sitting in a far corner, quills out, talking in whispers"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who was polishing his Firebolt"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, who bought copies of The Standard Book of Spells, Grade 4 for her children"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr s weasley",
+      "entity_2": "harry",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is Harry's father"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "hermione",
+      "relationship_type": "giver_receiver",
+      "description": "Mrs. Weasley gave Hermione a copy of The Standard Book of Spells, Grade 4"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron",
+      "relationship_type": "giver_receiver",
+      "description": "Mrs. Weasley gave Ron a copy of The Standard Book of Spells, Grade 4"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "owner_object",
+      "description": "Harry owns the Firebolt"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the standard book of spells, grade 4",
+      "relationship_type": "reader_book",
+      "description": "Hermione is reading The Standard Book of Spells, Grade 4"
+    }
+  ]
+}

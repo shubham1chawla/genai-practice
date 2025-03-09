@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "phineas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas is a person who is being addressed by Dumbledore and is the subject of portraits in the room. He is described as pretending to be asleep and then giving a theatrical jerk to open his eyes."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a wizard who is trying to rouse Phineas from sleep and needs him to visit another portrait. He is described as shouting Phineas's name along with the other portraits in the room."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is watching the scene unfold in the room. His eyes are focused on Phineas and he seems to recognize something about Phineas's voice."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "phineas",
+      "relationship_type": "requests_help",
+      "description": "Dumbledore requests Phineas's help by asking him to visit another portrait."
+    },
+    {
+      "entity_1": "phineas",
+      "entity_2": "harry",
+      "relationship_type": "is_known_to",
+      "description": "Phineas is known to Harry, who seems to recognize something about Phineas's voice."
+    }
+  ]
+}

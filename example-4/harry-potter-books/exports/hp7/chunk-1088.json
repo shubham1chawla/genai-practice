@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the main characters in the story. He accidentally nudged a goblet with his foot, causing more explosions."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another main character who tries to calm Ron down and direct their search."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the third main character who gives instructions on what to look for in the vault."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A goblet that Ron accidentally nudged with his foot, causing more explosions."
+    },
+    {
+      "name": "ravenclaw's symbol",
+      "entity_type": "symbol",
+      "singular": false,
+      "description": "The eagle symbol of Ravenclaw house."
+    },
+    {
+      "name": "badger",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "A badger engraved on the cup that Harry and his friends are searching for."
+    },
+    {
+      "name": "cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The small, gold cup with a badger engraved on it that Harry and his friends are searching for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "goblet",
+      "relationship_type": "accidentally_nudged",
+      "description": "Ron accidentally nudged the goblet with his foot, causing more explosions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cup",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for the small, gold cup with a badger engraved on it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "trying_to_calm_down",
+      "description": "Hermione tries to calm Ron down and direct their search."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ravenclaw's symbol",
+      "relationship_type": "looking_for",
+      "description": "Harry is also looking for Ravenclaw's symbol, the eagle."
+    }
+  ]
+}

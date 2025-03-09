@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts School of Witchcraft and Wizardry. He is mentioned as asking Harry, Ron, and Hermione about their holidays."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the main characters in the story. She is mentioned as reminding Harry and Ron to go to the library before lunch."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the main characters in the story. He is mentioned as being distracted by Professor Flitwick's wand."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick is a teacher at Hogwarts School of Witchcraft and Wizardry. He is mentioned as having golden bubbles coming out of his wand."
+    },
+    {
+      "name": "nicolas flamel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nicolas Flamel is a historical figure who is being guarded by something. Harry, Ron, and Hermione are trying to find out more about him."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The library at Hogwarts School of Witchcraft and Wizardry where Harry, Ron, and Hermione go to research Nicolas Flamel."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "nicolas flamel",
+      "relationship_type": "guards",
+      "description": "Hagrid is guarding something related to Nicolas Flamel."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "library",
+      "relationship_type": "visits",
+      "description": "Hermione goes to the library with Harry and Ron to research Nicolas Flamel."
+    }
+  ]
+}

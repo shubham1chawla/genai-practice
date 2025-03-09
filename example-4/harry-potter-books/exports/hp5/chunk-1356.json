@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who spoke first in the scene. He said 'Unfortunately, I had to hex Kingsley too...' indicating that he was involved in the events leading up to this point."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as getting up and dragging Harry and Marietta with her. This shows that she is taking action in response to Dumbledore's words."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being dragged by Professor McGonagall, indicating that he was involved in the events leading up to this point."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is also being dragged by Professor McGonagall, showing that she was present at the scene."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as one of the people who lay motionless on the floor. This shows that he was affected by Dumbledore's actions."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is also mentioned as being among those who were affected by Dumbledore's actions."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as someone who was hexed by Dumbledore. This shows that he played a role in the events leading up to this point."
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fawkes is described as soaring above the scene, singing softly. This shows that he was present and observing the events."
+    },
+    {
+      "name": "minerva",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Minerva is mentioned as someone who should be thanked by McGonagall for Kingsley's actions."
+    },
+    {
+      "name": "edgecombe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Edgecombe is mentioned as having her memory modified by Kingsley. This shows that she was involved in the events leading up to this point."
+    },
+    {
+      "name": "office",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The office is described as being wrecked, with Dumbledore's desk overturned and tables knocked over."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "kingsley",
+      "relationship_type": "hexed",
+      "description": "Dumbledore hexed Kingsley, indicating that he was taking action against him."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "dragged",
+      "description": "Professor McGonagall dragged Harry with her, showing that she was taking care of him in response to Dumbledore's words."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "marietta",
+      "relationship_type": "dragged",
+      "description": "Professor McGonagall also dragged Marietta with her, indicating that she was taking care of both Harry and Marietta."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "edgecombe",
+      "relationship_type": "modified_memory",
+      "description": "Dumbledore mentioned that Kingsley modified Miss Edgecombe's memory, showing that he was aware of the events leading up to this point."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "minerva",
+      "relationship_type": "thanks",
+      "description": "Professor McGonagall was asked by Dumbledore to thank Minerva for Kingsley's actions, indicating that there is a connection between them."
+    }
+  ]
+}

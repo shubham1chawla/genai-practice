@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who has just fallen into a playground. He is described as diving headlong into sunlight."
+    },
+    {
+      "name": "playground",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A nearly deserted playground where Harry finds himself. It is dominated by a single huge chimney in the distant skyline."
+    },
+    {
+      "name": "chimney",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "A huge chimney that dominates the distant skyline of the playground."
+    },
+    {
+      "name": "girls",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Two girls who are swinging backward and forward in the playground. One is younger than the other."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A skinny boy with black hair, watching the girls from behind a clump of bushes. He looks no more than nine or ten years old and has undisguised greed in his thin face."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the two girls who are swinging in the playground. She is younger than her sister and lets go of the swing at its highest arc."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "playground",
+      "relationship_type": "location_of",
+      "description": "Harry finds himself in the playground, which he has just fallen into."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "girls",
+      "relationship_type": "watching",
+      "description": "Snape is watching the two girls swinging in the playground with undisguised greed in his thin face."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "swing",
+      "relationship_type": "on",
+      "description": "Lily is on the swing, which she lets go of at its highest arc."
+    }
+  ]
+}

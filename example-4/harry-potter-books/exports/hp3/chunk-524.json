@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "slytherin keeper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Slytherin Keeper is mentioned as someone who the other players were going to block. The text does not provide more information about this person."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a player on Gryffindor team, riding the Firebolt and trying to score points. He is described as 'lying flat along the handle' and kicking the Firebolt forward."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is a broomstick ridden by Harry, described as 'zooming toward the Slytherins'."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is a team that is being played against Gryffindor. The text mentions 'the Slytherins' and 'Malfoy', indicating that this team has multiple players."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is the team that Harry is playing for. The text mentions 'Gryﬀindor leads by eighty points to twenty', indicating that this team has multiple players and is in the lead."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a player on Gryffindor team, whose way was clear after Harry zoomed past the Slytherins."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a player on Slytherin team, described as 'diving' and trying to score points. He has a look of triumph on his face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "rides",
+      "description": "Harry is riding the Firebolt, described as 'lying flat along the handle' and kicking it forward."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "opponent",
+      "description": "Harry is playing against Slytherin team, trying to score points and described as 'zooming toward the Slytherins'."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "slytherin",
+      "relationship_type": "opponent",
+      "description": "Gryffindor team is playing against Slytherin team, with Gryﬀindor leading by eighty points to twenty."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin",
+      "relationship_type": "member",
+      "description": "Malfoy is a player on Slytherin team, described as 'diving' and trying to score points."
+    }
+  ]
+}

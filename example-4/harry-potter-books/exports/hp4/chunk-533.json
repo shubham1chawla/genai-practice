@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The text mentions Potter as the one who is breaking rules and causing trouble. (\"He has been crossing lines ever since he arrived here \")"
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is mentioned as someone who is blaming Dumbledore for Potter's actions. (\"It’s no one’s fault but Potter’s, Karkaroff\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster of Hogwarts and is being blamed by Snape for Potter's actions. (\"Don’t go blaming Dumbledore for Potter’s determination to break rules.\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher at Hogwarts who is showing malice towards Potter and is being firm with Dumbledore. (\"His black eyes were alight with malice.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story and is being questioned by Dumbledore about his involvement in the Goblet of Fire. (\"Did you put your name into the Goblet of Fire, Harry?\")"
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Goblet of Fire is a magical object that is being used to select participants for a tournament. (\"Did you put your name into the Goblet of Fire, Harry?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "blame",
+      "description": "Snape is blaming Dumbledore for Potter's actions. (\"It’s no one’s fault but Potter’s, Karkaroff\")"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "rules",
+      "relationship_type": "break",
+      "description": "Potter has been breaking rules since he arrived at Hogwarts. (\"He has been crossing lines ever since he arrived here \")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "defend",
+      "description": "Dumbledore is defending Potter and saying it's not his fault. (\"Thank you, Severus\")"
+    }
+  ]
+}

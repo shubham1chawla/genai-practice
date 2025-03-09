@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "snitches",
+      "entity_type": "snitches",
+      "singular": false,
+      "description": "Snitches are magical balls that carry an enchantment to identify the first human to lay hands upon it. They cannot be touched by bare skin before they are released."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is a student who is being considered for taking the Snitch with his bare hand in front of the Minister."
+    },
+    {
+      "name": "ron",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate who considers Hermione's Quidditch knowledge negligible."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Hermione is a student with extensive Quidditch knowledge that Ron and others consider negligible."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Scrimgeour is the Minister who suggests that Dumbledore might have enchanted the Snitch to open only for Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Dumbledore is a former headmaster with prodigious magical skill who might have enchanted the Snitch."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sports",
+      "singular": true,
+      "description": "Quidditch is a sport played by students at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snitches",
+      "relationship_type": "can_be_touched_by",
+      "description": "Harry can touch the Snitch with his bare hand, but only after it has been released."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "dumbledore",
+      "relationship_type": "might_have_enchanted",
+      "description": "Scrimgeour suggests that Dumbledore might have enchanted the Snitch to open only for Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "considers_negligible",
+      "description": "Ron considers Hermione's Quidditch knowledge negligible."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "has_concern_for",
+      "description": "Scrimgeour is concerned about Harry taking the Snitch with his bare hand in front of him."
+    }
+  ]
+}

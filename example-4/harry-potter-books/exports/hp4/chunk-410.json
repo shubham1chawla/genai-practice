@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "Lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in the class who is being addressed by Moody."
+    },
+    {
+      "name": "Moody",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard with a magical eye who is teaching the class."
+    },
+    {
+      "name": "Parvati",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in the class who is being shown something by Lavender."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in the class who raises his hand to answer Moody's question."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in the class who raises her hand to answer Moody's question."
+    },
+    {
+      "name": "Miss Brown",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher of the class who is being addressed by Moody."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Moody",
+      "entity_2": "Lavender",
+      "relationship_type": "has_magical_eye",
+      "description": "Moody's magical eye can see through solid wood, as well as out of the back of his head."
+    },
+    {
+      "entity_1": "Moody",
+      "entity_2": "Parvati",
+      "relationship_type": "is_watching",
+      "description": "Moody is watching Parvati while he talks to Lavender."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Moody",
+      "relationship_type": "is_answering_question",
+      "description": "Ron is answering Moody's question about curses."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Moody",
+      "relationship_type": "is_answering_question",
+      "description": "Hermione is also answering Moody's question about curses."
+    }
+  ]
+}

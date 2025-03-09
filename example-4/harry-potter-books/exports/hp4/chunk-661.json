@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is the person to whom Harry is speaking and trying to convince of the presence of dragons."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person who has seen the dragons and is trying to inform Cedric about them."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick is a teacher at Hogwarts who might be looking for Cedric."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts and has knowledge about the dragons."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is a person who will know about the dragons along with Krum."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a person who will know about the dragons along with Fleur."
+    },
+    {
+      "name": "maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Maxime is a person who saw the dragons and will inform Karkaroff."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a person who saw the dragons and will be informed by Maxime."
+    },
+    {
+      "name": "dragons",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Dragons are the creatures that Harry has seen and Cedric needs to get past."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "informing",
+      "description": "Harry is informing Cedric about the presence of dragons."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "knows",
+      "description": "Hagrid has knowledge about the dragons, which Harry knows."
+    },
+    {
+      "entity_1": "maxime",
+      "entity_2": "karkaroff",
+      "relationship_type": "informing",
+      "description": "Maxime will inform Karkaroff about the presence of dragons."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "krum",
+      "relationship_type": "knows",
+      "description": "Fleur and Krum both know about the presence of dragons."
+    }
+  ]
+}

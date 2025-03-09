@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as 'exceptionally angry' indicating his emotional state."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who witnessed Snape's anger and left to tell Ron and Hermione about it."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone Harry wants to tell about what he saw."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is also someone Harry wants to tell about what he saw."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius told them to bring food."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is the location where they arrived."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "anger_directed_at",
+      "description": "Snape's anger was directed at Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "told",
+      "description": "Harry told Ron about what he saw."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "told",
+      "description": "Harry also told Hermione about what he saw."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "ron and hermione",
+      "relationship_type": "instructed",
+      "description": "Sirius instructed Ron and Hermione to bring food."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who has broken his arm."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is trying to help Harry but ends up making things worse."
+    },
+    {
+      "name": "colin creevey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is taking pictures of the scene."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The nurse at Hogwarts who will help Harry with his injury."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry",
+      "relationship_type": "causes_injury",
+      "description": "Lockhart's spell causes harm to Harry's arm."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry",
+      "relationship_type": "will_help",
+      "description": "Madam Pomfrey will help Harry with his injury."
+    }
+  ]
+}

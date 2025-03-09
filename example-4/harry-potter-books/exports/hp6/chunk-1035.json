@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "rope",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The rope is being pulled towards the light in the centre of the cavern."
+    },
+    {
+      "name": "light",
+      "entity_type": "object",
+      "singular": true,
+      "description": "There is a light at the centre of the cavern."
+    },
+    {
+      "name": "walls",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The walls of the cavern are no longer visible to Harry and his companions."
+    },
+    {
+      "name": "boat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A boat is being used by Harry and his companions."
+    },
+    {
+      "name": "water",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The group is floating on the water."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people in the boat."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is another person in the boat."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "water",
+      "relationship_type": "is-floating-on",
+      "description": "Harry and his companions are floating on the water."
+    },
+    {
+      "entity_1": "boat",
+      "entity_2": "water",
+      "relationship_type": "is-moving-across",
+      "description": "The boat is carving deep ripples upon the glassy surface of the water."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "light",
+      "relationship_type": "can-see",
+      "description": "Harry can see the light at the centre of the cavern."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "water",
+      "relationship_type": "is-floating-on",
+      "description": "Dumbledore is also floating on the water."
+    },
+    {
+      "entity_1": "hand",
+      "entity_2": "water",
+      "relationship_type": "is-floating-in",
+      "description": "A human hand was seen floating in the water by Harry."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Dumbledore",
+      "relationship_type": "can-hear",
+      "description": "Harry can hear Dumbledore's voice."
+    }
+  ]
+}

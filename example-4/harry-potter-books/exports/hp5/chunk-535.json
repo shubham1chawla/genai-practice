@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is described as sitting in the Great Hall and eating between Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, also a student at Hogwarts. He is mentioned as sitting next to Harry in the Great Hall."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend, also a student at Hogwarts. She is mentioned as sitting next to Ron and Harry in the Great Hall."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who had a shouting match with Harry. The news of this incident has traveled fast around the school."
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who was murdered. Harry claims to have seen him being killed."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as Voldemort. He is mentioned as someone that Harry dueled with."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large hall at Hogwarts where students eat their meals."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school attended by Harry and his friends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "had_shouting_match_with",
+      "description": "Harry had a shouting match with Umbridge, which has become the talk of the school."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric diggory",
+      "relationship_type": "saw_being_murdered_by",
+      "description": "Harry claims to have seen Cedric Diggory being murdered."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "you-know-who",
+      "relationship_type": "dueled_with",
+      "description": "Harry dueled with You-Know-Who, also known as Voldemort."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "sat_next_to",
+      "description": "Ron sat next to Harry in the Great Hall."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "sat_next_to",
+      "description": "Hermione sat next to Ron and Harry in the Great Hall."
+    },
+    {
+      "entity_1": "great hall",
+      "entity_2": "hogwarts",
+      "relationship_type": "located_in",
+      "description": "The Great Hall is located within Hogwarts."
+    }
+  ]
+}

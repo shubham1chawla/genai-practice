@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons students",
+      "entity_type": "group_of_students",
+      "singular": false,
+      "description": "The group of students from Beauxbatons Academy who are participating in the tournament."
+    },
+    {
+      "name": "age line",
+      "entity_type": "tournament_boundary",
+      "singular": true,
+      "description": "A boundary that separates the participants from the rest of the crowd."
+    },
+    {
+      "name": "parchment slips",
+      "entity_type": "documents",
+      "singular": false,
+      "description": "The documents containing the names of the students participating in the tournament."
+    },
+    {
+      "name": "blue-white flames",
+      "entity_type": "fire",
+      "singular": true,
+      "description": "The fire that is used to burn the parchment slips and reveal the names."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student",
+      "singular": true,
+      "description": "One of Harry's friends who is participating in the tournament."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main protagonist of the story who is participating in the tournament."
+    },
+    {
+      "name": "ve ela-girl",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A female student from Beauxbatons Academy who is participating in the tournament."
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "tournament_equipment",
+      "singular": true,
+      "description": "The equipment used to hold the parchment slips and reveal the names."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher from Beauxbatons Academy who is staying to judge the tournament."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "beauxbatons students",
+      "entity_2": "age line",
+      "relationship_type": "crossed_boundary",
+      "description": "The Beauxbatons students stepped across the Age Line."
+    },
+    {
+      "entity_1": "ve ela-girl",
+      "entity_2": "goblet of fire",
+      "relationship_type": "dropped_parchment",
+      "description": "The ve ela-girl dropped her parchment into the Goblet of Fire."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "muttered_to",
+      "description": "Ron muttered to Harry as they watched the tournament."
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "tournament",
+      "relationship_type": "staying_to_judge",
+      "description": "Madame Maxime is staying to judge the tournament."
+    }
+  ]
+}

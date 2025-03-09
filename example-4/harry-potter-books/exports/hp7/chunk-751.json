@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is trying to dive into a pool and retrieve a sword."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that has tightened around Harry's neck, constricting his windpipe."
+    },
+    {
+      "name": "water weeds",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Water plants that Harry initially thinks are constricting his neck, but turns out to be the Horcrux chain."
+    },
+    {
+      "name": "pool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A body of water where Harry is trying to dive and retrieve a sword."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that Harry is trying to retrieve from the bottom of the pool."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "constriction",
+      "description": "The Horcrux chain has tightened around Harry's neck, constricting his windpipe."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pool",
+      "relationship_type": "location",
+      "description": "Harry is trying to dive into the pool and retrieve a sword from its bottom."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "possession",
+      "description": "Harry is trying to retrieve the sword from the bottom of the pool."
+    }
+  ]
+}

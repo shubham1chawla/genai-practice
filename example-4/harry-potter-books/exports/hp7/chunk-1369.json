@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as a person who has a conversation with Dumbledore. He is referred to as 'he' and 'him'. (\"And what will you give me in return, Severus?\", \"In — in return?\" Snape gaped at Dumbledore, and Harry expected him to protest...\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who has a conversation with Severus. He is referred to as 'he' and 'him'. (\"The hilltop faded, and Harry stood in Dumbledore’s oﬃce...\", \"Rather like you, Severus. Weren’t you hoping that Lord Voldemort would spare her?\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person who is referred to by name. (\"Rather like you, Severus. Waren’t you hoping that Lord Voldemort would spare her?\")"
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as a person who put his faith in the wrong person. (\"She and James put their faith in the wrong person\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation",
+      "description": "Severus has a conversation with Dumbledore about keeping someone safe. (\"And what will you give me in return, Severus?\", \"Rather like you, Severus.\")"
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "voldemort",
+      "relationship_type": "hope",
+      "description": "Severus hopes that Voldemort would spare someone. (\"Rather like you, Severus. Weren’t you hoping that Lord Voldemort would spare her?\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "severus",
+      "relationship_type": "accusation",
+      "description": "Dumbledore accuses Severus of putting his faith in the wrong person. (\"Rather like you, Severus.\")"
+    }
+  ]
+}

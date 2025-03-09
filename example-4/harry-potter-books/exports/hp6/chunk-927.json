@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is the headmaster of Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that contains a piece of Voldemort's soul."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux that contains a piece of Voldemort's soul."
+    },
+    {
+      "name": "ring",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux that contains a piece of Voldemort's soul."
+    },
+    {
+      "name": "cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux that contains a piece of Voldemort's soul."
+    },
+    {
+      "name": "locket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux that contains a piece of Voldemort's soul."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "horcrux",
+      "relationship_type": "has_potential_to_destroy",
+      "description": "Harry has the potential to destroy another Horcrux, as indicated by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horcrux",
+      "relationship_type": "is_searching_for",
+      "description": "Dumbledore is searching for another Horcrux."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "will_assist",
+      "description": "Harry will assist Dumbledore in destroying the next Horcrux."
+    },
+    {
+      "entity_1": "horcrux",
+      "entity_2": "voldemort",
+      "relationship_type": "contains_piece_of_soul",
+      "description": "A Horcrux contains a piece of Voldemort's soul."
+    }
+  ]
+}

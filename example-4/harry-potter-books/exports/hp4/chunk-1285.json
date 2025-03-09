@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being held captive by Voldemort and his Death Eaters. (Excerpt: 'ormtail approached Harry...')"
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Voldemort's followers, who helps to free Harry from his bonds. (Excerpt: 'Wormtail raised his new silver hand...')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who is leading the Death Eaters and holding Harry captive. (Excerpt: 'You have been taught how to duel, Harry Potter? said Volde-')"
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose body lies nearby, and whose wand is later retrieved by Wormtail for Harry. (Excerpt: 'Wormtail walked out of the circle to the place where Cedric’s body lay...')"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers who are loyal to Voldemort and are surrounding Harry. (Excerpt: 'the Death Eaters closed ranks...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "harry potter",
+      "relationship_type": "helps",
+      "description": "Wormtail helps Harry by freeing him from his bonds. (Excerpt: 'Wormtail raised his new silver hand...')"
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "voldemort",
+      "relationship_type": "follower",
+      "description": "Wormtail is a follower of Voldemort, who is leading the Death Eaters. (Excerpt: 'You have been taught how to duel, Harry Potter? said Volde-')"
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "cedric",
+      "relationship_type": "retrieves_wand_from",
+      "description": "Wormtail retrieves Cedric's wand for Harry. (Excerpt: 'Wormtail walked out of the circle to the place where Cedric’s body lay...')"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "loyal_to",
+      "description": "The Death Eaters are loyal followers of Voldemort. (Excerpt: 'the Death Eaters closed ranks...')"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as a student who has to deal with Muggle business and is good at Quidditch."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is Harry's brother who chose Care of Magical Creatures as his subject."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry's who chose the same new subjects as him."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts that Harry is a part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron is a friend of Harry's."
+    }
+  ]
+}

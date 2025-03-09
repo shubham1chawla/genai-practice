@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who might tell others about Harry's actions. He is described as a person who would believe what he saw and potentially inform teachers."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, mentioned as someone who needs to run away from Malfoy. He is described as having an Invisibility Cloak and trying to avoid detection."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the only person who knows about the Invisibility Cloak. Harry believes that Dumbledore would know what happened if Malfoy told anyone."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a location where Harry and Malfoy are interacting. It is described as a place that Harry needs to get back to quickly."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as an object that only Dumbledore knows about. Harry uses it to hide and then hides it in a shadowy corner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "believes",
+      "description": "Malfoy believes what he saw, which is that Harry was using the Invisibility Cloak. This relationship is described in the text as 'Would Malfoy believe what he had seen?'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "trusts",
+      "description": "Harry trusts Dumbledore to know what happened if Malfoy tells anyone. This relationship is described in the text as 'Dumbledore would know exactly what had happened, if Malfoy said anything —'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "uses",
+      "description": "Harry uses the Invisibility Cloak to hide and then hides it in a shadowy corner. This relationship is described in the text as 'He pulled off the cloak, tucked it under his arm, and ran...'"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "teacher",
+      "relationship_type": "informs",
+      "description": "Malfoy informs a teacher about what he saw. This relationship is described in the text as 'how long would it take him to find a teacher?'"
+    }
+  ]
+}

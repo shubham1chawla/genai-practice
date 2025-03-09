@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is a Ministry official who was attacked by Morfin Gaunt with a nasty yellowish goo."
+    },
+    {
+      "name": "morfin gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin Gaunt is an elderly man who attacked Ogden with a knife and squirted a nasty yellowish goo from his fingers."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is the organization that Ogden works for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "morfin gaunt",
+      "relationship_type": "attacked_by",
+      "description": "Ogden was attacked by Morfin Gaunt with a nasty yellowish goo."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "ministry",
+      "relationship_type": "employee_of",
+      "description": "Ogden works for the Ministry."
+    }
+  ]
+}

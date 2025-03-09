@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snakes",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The narrator sometimes inhabits snakes as their preferred animal to inhabit."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A young, foolish, and gullible wizard who wandered across the narrator's path in the forest."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The head of a school that the wizard was teaching at."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who thwarted the narrator's plan to steal the Sorcerer's Stone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizard",
+      "entity_2": "dumbledore",
+      "relationship_type": "teacher_student",
+      "description": "The wizard was a teacher at Dumbledore's school."
+    },
+    {
+      "entity_1": "narrator",
+      "entity_2": "wizard",
+      "relationship_type": "host_hostee",
+      "description": "The narrator took possession of the wizard's body to supervise him closely as he carried out their orders."
+    },
+    {
+      "entity_1": "narrator",
+      "entity_2": "harry potter",
+      "relationship_type": "thwarted_by",
+      "description": "Harry Potter thwarted the narrator's plan to steal the Sorcerer's Stone."
+    }
+  ]
+}

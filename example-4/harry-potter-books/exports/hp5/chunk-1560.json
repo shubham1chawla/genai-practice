@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "o.w.l.s",
+      "entity_type": "exam_name",
+      "singular": true,
+      "description": "The name of the exam that Harry and Ron are taking. (Excerpt: 'O.W.L.S')"
+    },
+    {
+      "name": "anthony goldstein",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "A student who had already been tested for O.W.L.S. (Excerpt: 'Anthony Goldstein, Gregory Goyle, and Daphne Greengrass.')"
+    },
+    {
+      "name": "gregory goyle",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "A student who had already been tested for O.W.L.S. (Excerpt: 'Anthony Goldstein, Gregory Goyle, and Daphne Greengrass.')"
+    },
+    {
+      "name": "daphne greengrass",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "A student who had already been tested for O.W.L.S. (Excerpt: 'Anthony Goldstein, Gregory Goyle, and Daphne Greengrass.')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "Harry's friend who is also taking the exam. (Excerpt: 'Students who had already been tested did not return afterward...')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "The main character of the story and a student taking the O.W.L.S. exam. (Excerpt: 'Potter, Harry.')"
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "Harry's friend who is also taking the exam. (Excerpt: 'Harry and Ron had no idea how Hermione had done...')"
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher_name",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is calling out students for their exams. (Excerpt: 'Professor Flitwick called, “Parkinson, Pansy — Patil, Padma — Patil, Parvati — Potter, Harry.”')"
+    },
+    {
+      "name": "professor tofty",
+      "entity_type": "teacher_name",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is conducting the O.W.L.S. exam. (Excerpt: 'Professor Tofty is free, Potter...')"
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "A student who is also taking the exam and being tested by Professor Marchbanks. (Excerpt: 'who was halfway through testing Draco Malfoy.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor tofty",
+      "relationship_type": "exam_conducted_by",
+      "description": "Professor Tofty is conducting Harry's O.W.L.S. exam. (Excerpt: 'Professor Tofty is free, Potter...')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "exam_peer",
+      "description": "Harry and Hermione are taking the same exam. (Excerpt: 'Students who had already been tested did not return afterward...')"
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "exam_peer",
+      "description": "Ron and Harry are taking the same exam. (Excerpt: 'Harry and Ron had no idea how Hermione had done...')"
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "harry potter",
+      "relationship_type": "exam_called_by",
+      "description": "Professor Flitwick is calling out students for their exams, including Harry. (Excerpt: 'Professor Flitwick called, “Parkinson, Pansy — Patil, Padma — Patil, Parvati — Potter, Harry.”')"
+    },
+    {
+      "entity_1": "professor marchbanks",
+      "entity_2": "draco malfoy",
+      "relationship_type": "exam_conducted_by",
+      "description": "Professor Marchbanks is conducting Draco's O.W.L.S. exam. (Excerpt: 'who was halfway through testing Draco Malfoy.')"
+    }
+  ]
+}

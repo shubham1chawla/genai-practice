@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking and expressing her concerns about their search for Horcruxes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as not answering Hermione's question and wanting to go to Godric's Hollow."
+    },
+    {
+      "name": "godric’s hollow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Godric's Hollow is mentioned as a place Harry wants to visit."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as having easily found them the previous day."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned in relation to Muriel's comments at the wedding."
+    },
+    {
+      "name": "muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Muriel is mentioned as having said something about Dumbledore at the wedding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "godric’s hollow",
+      "relationship_type": "want_to_visit",
+      "description": "Harry wants to visit Godric's Hollow."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "hermione and harry",
+      "relationship_type": "found",
+      "description": "Death Eaters found Hermione and Harry the previous day."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "want_to_know_truth_about",
+      "description": "Harry wants to know the truth about Dumbledore."
+    },
+    {
+      "entity_1": "muriel",
+      "entity_2": "dumbledore",
+      "relationship_type": "said_something_about",
+      "description": "Muriel said something about Dumbledore at the wedding."
+    }
+  ]
+}

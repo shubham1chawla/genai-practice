@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by the speaker."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Supernatural creatures that are present at the end of the train, described as 'down'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "dementors",
+      "relationship_type": "presence",
+      "description": "Fred is aware of the presence of dementors at the end of the train."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "train",
+      "relationship_type": "location",
+      "description": "Dementors are present at the end of the train."
+    }
+  ]
+}

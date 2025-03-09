@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's colleague and friend who is excited to share something special with the class."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in Hagrid's class who is cautious and wants to avoid trouble with Professor Umbridge."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The strict teacher who will be inspecting Hagrid's lesson plan."
+    },
+    {
+      "name": "porlocks",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A type of creature that Hermione suggests Hagrid teach the class about to pass Umbridge's inspection."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Hermione and Hagrid are colleagues and friends who have a conversation about what to teach the class."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor umbridge",
+      "relationship_type": "authority",
+      "description": "Hagrid is aware of Professor Umbridge's authority and wants to pass her inspection by teaching something safe."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "porlocks",
+      "relationship_type": "suggestion",
+      "description": "Hermione suggests that Hagrid teach the class about porlocks, which are a type of creature."
+    }
+  ]
+}

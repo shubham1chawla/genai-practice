@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist of the story who feels scared to see Voldemort walking along without a shield."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the antagonist of the story who is being attacked by Dumbledore's magic."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a powerful wizard who is fighting against Voldemort."
+    },
+    {
+      "name": "centaur",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A one-armed centaur is being attacked by the green light and shattered into pieces."
+    },
+    {
+      "name": "wall",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wall is blocking Harry's attempt to get out."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "attack",
+      "description": "Dumbledore attacks Voldemort with a long thin flame from his wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "centaur",
+      "relationship_type": "victim",
+      "description": "Voldemort is being attacked by the green light and hits the centaur."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wall",
+      "relationship_type": "obstacle",
+      "description": "Harry's headless guard blocks him from getting out from behind the wall."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is asking a question about Mr. Crouch's absence."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is not well and has been affected by the World Cup and his house-elf Blinky."
+    },
+    {
+      "name": "world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The World Cup had a negative impact on Mr. Crouch."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry was affected by the World Cup."
+    },
+    {
+      "name": "blinky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Blinky is Mr. Crouch's house-elf who misbehaved."
+    },
+    {
+      "name": "skeeter woman",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The Skeeter woman is buzzing around and causing trouble."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr crouch",
+      "relationship_type": "question",
+      "description": "Harry asks a question about Mr. Crouch's absence."
+    },
+    {
+      "entity_1": "world cup",
+      "entity_2": "mr crouch",
+      "relationship_type": "affect",
+      "description": "The World Cup had a negative impact on Mr. Crouch."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "world cup",
+      "relationship_type": "affect",
+      "description": "The Ministry was affected by the World Cup."
+    },
+    {
+      "entity_1": "blinky",
+      "entity_2": "mr crouch",
+      "relationship_type": "belong_to",
+      "description": "Blinky is Mr. Crouch's house-elf."
+    },
+    {
+      "entity_1": "skeeter woman",
+      "entity_2": "world cup",
+      "relationship_type": "cause_trouble",
+      "description": "The Skeeter woman is buzzing around and causing trouble after the World Cup."
+    }
+  ]
+}

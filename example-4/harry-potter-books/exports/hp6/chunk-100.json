@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as one of the people sitting between Uncle Vernon and Dudley. She looks around instinctively, expecting someone else to be squeezed between them."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as one of the people sitting between Aunt Petunia and Dudley. He looks around instinctively, expecting someone else to be squeezed between them."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as the boy sitting between Uncle Vernon and Aunt Petunia."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who raises his finger for silence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "uncle vernon",
+      "relationship_type": "sitting_together",
+      "description": "Aunt Petunia and Uncle Vernon are sitting together, with Dudley squeezed between them."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "aunt petunia",
+      "relationship_type": "silencing",
+      "description": "Dumbledore raises his finger to silence Aunt Petunia."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "uncle vernon",
+      "relationship_type": "silencing",
+      "description": "Dumbledore raises his finger to silence Uncle Vernon."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry potter",
+      "relationship_type": "allowing_houseroom",
+      "description": "Aunt Petunia has allowed Harry Potter to have houseroom, despite him being unwelcome and badly treated."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry potter",
+      "relationship_type": "allowing_houseroom",
+      "description": "Uncle Vernon has also allowed Harry Potter to have houseroom, despite him being unwelcome and badly treated."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "aunt petunia",
+      "relationship_type": "requesting_permission",
+      "description": "Dumbledore asks Aunt Petunia for permission to allow Harry Potter to stay in the house."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "uncle vernon",
+      "relationship_type": "requesting_permission",
+      "description": "Dumbledore also asks Uncle Vernon for permission to allow Harry Potter to stay in the house."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is trying to leave the house, but Uncle Vernon is blocking his way. Harry has a wand and threatens to jinx Uncle Vernon if he doesn't move."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is yelling at Harry and trying to block his way out of the house. He knows that Harry's wand is not allowed outside of Hogwarts."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia screams when Uncle Vernon ducks due to a loud noise in the kitchen."
+    },
+    {
+      "name": "harry's school",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Harry mentions that he has been expelled from Hogwarts, which is referred to as a 'madhouse' by Uncle Vernon."
+    },
+    {
+      "name": "barn owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A barn owl collides with the kitchen window and causes a disturbance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "conflict",
+      "description": "Harry is trying to leave the house, but Uncle Vernon is blocking his way."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt petunia",
+      "relationship_type": "indirect_conflict",
+      "description": "Aunt Petunia screams when Uncle Vernon ducks due to a loud noise in the kitchen."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry's school",
+      "relationship_type": "disapproval",
+      "description": "Uncle Vernon refers to Hogwarts as a 'madhouse' and is disapproving of Harry's behavior."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is the one Harry wants to talk to more than anyone else. He is described as someone Harry couldn't remember wanting to talk to more."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who ran into Karkaroff and hit him. He is described as being very still and silent after hitting Karkaroff."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a wizard with a goatee that Harry recognized. He is described as being suspicious and looking around in the darkness."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "wanted_to_talk_to",
+      "description": "Harry wants to talk to Sirius more than anyone else."
+    },
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "harry",
+      "relationship_type": "hit_by",
+      "description": "Karkaroff was hit by Harry without warning."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "karkaroff",
+      "relationship_type": "hit",
+      "description": "Harry hit Karkaroff without warning."
+    }
+  ]
+}

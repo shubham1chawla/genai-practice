@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "east wing",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The east wing is a part of the school that has been causing trouble for Umbridge and Filch."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is trying to remove the east wing but is unsuccessful."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is also trying to remove the east wing and is given the task of punting students across it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is certain that Umbridge and Filch are struggling with the east wing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "east wing",
+      "relationship_type": "struggle",
+      "description": "Umbridge is trying to remove the east wing but is unsuccessful."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "east wing",
+      "relationship_type": "struggle",
+      "description": "Filch is also trying to remove the east wing and is given the task of punting students across it."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "filch",
+      "relationship_type": "collaboration",
+      "description": "Umbridge and Filch are working together to try and remove the east wing."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "east wing",
+      "relationship_type": "obstacle",
+      "description": "Filch is given the task of punting students across the east wing, indicating that it is an obstacle for him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "knowledge",
+      "description": "Harry is certain that Umbridge and Filch are struggling with the east wing."
+    }
+  ]
+}

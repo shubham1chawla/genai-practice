@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Weasleys are a family of wizards mentioned in the text. They are known for trying to send a lavatory seat to someone, which they thought would be amusing."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is a person who works as a healer in the wizarding world. She confiscates the lavatory seat because she thinks it might not be very hygienic."
+    },
+    {
+      "name": "lavatory seat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The lavatory seat is an object that the Weasleys tried to send. It was confiscated by Madam Pomfrey because of hygiene concerns."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasley",
+      "entity_2": "lavatory seat",
+      "relationship_type": "attempted_to_send",
+      "description": "The Weasleys tried to send the lavatory seat, but it was confiscated by Madam Pomfrey."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "lavatory seat",
+      "relationship_type": "confiscated",
+      "description": "Madam Pomfrey confiscated the lavatory seat because she thought it might not be very hygienic."
+    }
+  ]
+}

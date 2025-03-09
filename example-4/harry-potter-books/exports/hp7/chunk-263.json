@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "inﬂections",
+      "entity_type": "text_passage",
+      "singular": false,
+      "description": "A passage in the text where the author is discussing the meaning of some inscriptions."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is trying to understand the meaning of the Snitch's inscription. (Excerpt: '“And the sword,” said Ron ﬁnally...')"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is trying to understand why Dumbledore wanted him to have the sword. (Excerpt: '“Why did he want Harry to have the sword?”')"
+    },
+    {
+      "name": "the Snitch’s inscription",
+      "entity_type": "text_passage",
+      "singular": true,
+      "description": "A passage in the text where the author is discussing an inscription on a Snitch. (Excerpt: '...divine meaning in the Snitch’s inscription')"
+    },
+    {
+      "name": "the sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Dumbledore wanted Harry to have, but didn't give it to him directly. (Excerpt: '“Why did he want Harry to have the sword?”')"
+    },
+    {
+      "name": "Dumbledore’s oﬃce",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Dumbledore had a conversation with Harry last year. (Excerpt: 'I was there it was right there on the wall of his oﬃce during all our talks last year!')"
+    },
+    {
+      "name": "the Will of Albus Dumbledore",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A document that is being referred to in the text. (Excerpt: 'The Will of Albus Dumbledore')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Harry",
+      "relationship_type": "wanted_to_give_object",
+      "description": "Dumbledore wanted Harry to have the sword, but didn't give it to him directly. (Excerpt: '“Why did he want Harry to have the sword?”')"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "the sword",
+      "relationship_type": "has_object",
+      "description": "Harry is supposed to have the sword, but it was not given to him directly. (Excerpt: '“Why did he want Harry to have the sword?”')"
+    },
+    {
+      "entity_1": "Dumbledore’s oﬃce",
+      "entity_2": "Harry",
+      "relationship_type": "visited_location",
+      "description": "Harry visited Dumbledore's office last year. (Excerpt: 'I was there it was right there on the wall of his oﬃce during all our talks last year!')"
+    }
+  ]
+}

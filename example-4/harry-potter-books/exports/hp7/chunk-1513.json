@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who received Ignotus's present and is holding the Elder Wand."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as nodding his satisfaction at Harry's decision to keep Ignotus's present."
+    },
+    {
+      "name": "ignotus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ignotus is mentioned as the one who gave a present to Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as looking at the Elder Wand with reverence and questioning Harry's decision not to want it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as looking at the Elder Wand with reverence."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as a powerful object that Harry does not want to keep."
+    },
+    {
+      "name": "ignotus's present",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Ignotus's present is mentioned as something that Harry wants to keep."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_satisfaction",
+      "description": "Dumbledore shows satisfaction at Harry's decision to keep Ignotus's present."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ignotus",
+      "relationship_type": "received_present_from",
+      "description": "Harry received a present from Ignotus."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "questioned_decision_of",
+      "description": "Ron questions Harry's decision not to want the Elder Wand."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "elder wand",
+      "relationship_type": "showed_reverence_for",
+      "description": "Hermione shows reverence for the Elder Wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ignotus's present",
+      "relationship_type": "wants_to_keep",
+      "description": "Harry wants to keep Ignotus's present."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "elder wand",
+      "relationship_type": "does_not_want",
+      "description": "Harry does not want the Elder Wand."
+    }
+  ]
+}

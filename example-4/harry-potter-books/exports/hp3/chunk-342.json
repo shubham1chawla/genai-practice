@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge dropped his voice and proceeded in a sort of low rumble."
+    },
+    {
+      "name": "potters",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Potters knew You-Know-Who was after them."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore, who was of course working tirelessly against You-Know-Who..."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "You-Know-Who was after the Potters."
+    },
+    {
+      "name": "james and lily",
+      "entity_type": "family",
+      "singular": false,
+      "description": "James and Lily were advised by Dumbledore to go into hiding."
+    },
+    {
+      "name": "madam rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Rosmerta was breathless with interest."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick explained the Fidelius Charm."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potters",
+      "relationship_type": "alerted",
+      "description": "Dumbledore alerted James and Lily to go into hiding."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "james and lily",
+      "relationship_type": "advised",
+      "description": "Dumbledore advised them to go into hiding."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "fidelius charm",
+      "relationship_type": "explained",
+      "description": "Professor Flitwick explained the Fidelius Charm."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "potters",
+      "relationship_type": "targeted",
+      "description": "You-Know-Who was after the Potters."
+    }
+  ]
+}

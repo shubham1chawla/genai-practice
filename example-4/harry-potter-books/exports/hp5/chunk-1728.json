@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who smashed into a bookcase and was deluged in a cascade of heavy books. She also used the spell 'Silencio' to extinguish the Death Eater's voice."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who was hit by a bookcase and had tiny lights burst in front of his eyes. He also used the spell 'Petrificus Totalus' to immobilize the second Death Eater."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of dark wizards who are trying to capture Harry. They are using spells and wands to try and defeat him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eater",
+      "relationship_type": "immobilized_by_spell",
+      "description": "Hermione used the spell 'Silencio' to immobilize one of the Death Eaters, making him unable to speak."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "immobilized_by_spell",
+      "description": "Harry used the spell 'Petrificus Totalus' to immobilize one of the Death Eaters, making him unable to move."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eater",
+      "relationship_type": "attacked_with_spell",
+      "description": "One of the Death Eaters made a slashing movement with his wand and cast a purple flame spell that passed across Hermione's chest."
+    }
+  ]
+}

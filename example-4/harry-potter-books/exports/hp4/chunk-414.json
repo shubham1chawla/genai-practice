@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Moody is a wizard who teaches Defense Against the Dark Arts. He has a magical eye that can see things clearly."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville Longbottom is a student in Professor Moody's class. He speaks in a small but distinct voice."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "family_name",
+      "singular": true,
+      "description": "Longbottom is Neville's family name."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "neville",
+      "relationship_type": "teaches",
+      "description": "Professor Moody teaches Defense Against the Dark Arts to Neville and his classmates."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "longbottom",
+      "relationship_type": "instructor_student",
+      "description": "Professor Moody is teaching Neville Longbottom in class."
+    }
+  ]
+}

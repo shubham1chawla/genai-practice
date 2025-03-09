@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as a person who is amused by Horace's situation. He is mentioned as having a chin that is higher than Horace's head."
+    },
+    {
+      "name": "horace",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Horace is described as a person who has been pretending to be an armchair and is un-abashed about it. He is also mentioned as having a shiny pate, prominent eyes, and a silver walrus-like moustache."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "horace",
+      "entity_2": "dumbledore",
+      "relationship_type": "is_amused_by",
+      "description": "Dumbledore is amused by Horace's situation of pretending to be an armchair."
+    },
+    {
+      "entity_1": "horace",
+      "entity_2": "armchair",
+      "relationship_type": "pretends_to_be",
+      "description": "Horace pretends to be an armchair, as discovered by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horace",
+      "relationship_type": "discovered_pretending",
+      "description": "Dumbledore discovers Horace pretending to be an armchair."
+    }
+  ]
+}

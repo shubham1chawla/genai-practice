@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The owner of the house, mentioned as 'he' and 'Harry'. The text states that he paid someone to fit bars on Harry's window."
+    },
+    {
+      "name": "man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person hired by Harry to fit bars on his window. He is referred to as 'a man' in the text."
+    },
+    {
+      "name": "cat-flap",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object installed in the bedroom door, allowing small amounts of food to be pushed inside three times a day."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "man",
+      "relationship_type": "paid",
+      "description": "Harry paid the man to fit bars on his window. The text states 'he paid a man...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cat-flap",
+      "relationship_type": "installed",
+      "description": "Harry installed the cat-flap in the bedroom door, allowing small amounts of food to be pushed inside three times a day. The text states 'He himself fitted the cat-flap...'"
+    },
+    {
+      "entity_1": "man",
+      "entity_2": "harry",
+      "relationship_type": "served",
+      "description": "The man served Harry by fitting bars on his window. This relationship is inferred from the context, as the man was hired to perform a task for Harry."
+    },
+    {
+      "entity_1": "cat-flap",
+      "entity_2": "food",
+      "relationship_type": "allowed",
+      "description": "The cat-flap allowed food to be pushed inside three times a day. This relationship is inferred from the context, as the cat-flap was installed to facilitate this process."
+    }
+  ]
+}

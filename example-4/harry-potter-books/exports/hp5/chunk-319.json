@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry, who is defending Harry in the Wizengamot."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic, who is present at the Wizengamot and seems to be incensed by Dumbledore's words."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who has been charged with a specific offense in the Wizengamot."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "A group of wizards and witches that serves as a court to try magical crimes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "defending",
+      "description": "Dumbledore is defending Harry in the Wizengamot, stating that there is no law to punish him for every bit of magic he has ever performed."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "disapproving",
+      "description": "Fudge seems to be disapproving of Dumbledore's words in the Wizengamot."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizengamot",
+      "relationship_type": "being_charged",
+      "description": "Harry has been charged with a specific offense in the Wizengamot."
+    }
+  ]
+}

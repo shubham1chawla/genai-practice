@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by his last name 'Potter'. He is being accused of lying and is trying to defend himself. (Excerpt: \"YOU'VE GOT IT, POTTER, AND YOU WILL GIVE IT TO ME\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for the main character 'Potter'. He is laughing and trying to distract the accuser. (Excerpt: \"Harry laughed again because he knew it would incense her\")"
+    },
+    {
+      "name": "prophecy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A mysterious object that Potter has in his possession. The accuser is demanding that Potter give it to her. (Excerpt: \"Accio Prophecy!\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "prophecy",
+      "relationship_type": "has",
+      "description": "Potter has the prophecy in his possession, as demanded by the accuser. (Excerpt: \"YOU'VE GOT IT, POTTER, AND YOU WILL GIVE IT TO ME\")"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "accuser",
+      "relationship_type": "is_being_accused_by",
+      "description": "The accuser is accusing Potter of lying and demanding that he give her the prophecy. (Excerpt: \"LIAR!\" she shrieked, but he could hear the terror behind the anger now.)"
+    },
+    {
+      "entity_1": "accuser",
+      "entity_2": "potter",
+      "relationship_type": "is_being_defended_by",
+      "description": "Potter is defending himself against the accuser's accusations. (Excerpt: \"Don't waste your breath!\" yelled Harry, his eyes screwed up against the pain in his scar.)"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore's army",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Dumbledore's Army is a group of students who were formed to learn defensive magic and fight against the Dark Arts. It was mentioned that everyone in this room has been fighting and has proven their loyalty to Dumbledore."
+    },
+    {
+      "name": "carrows",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Carrows are a family of Death Eaters who were hunting down people in the room. They were mentioned as the reason why everyone was driven into this place."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a member of Dumbledore's Army and has been keeping it going while Harry, Ron, and Hermione have been off on their own. He sent for Luna using the fake Galleon."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is a member of Dumbledore's Army who was sent for by Neville using the fake Galleon. She arrived with Dean and was greeted by Seamus."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a member of Dumbledore's Army who was excited to see Luna arrive. He gave a great roar of delight and ran to hug his best friend."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a member of Dumbledore's Army who has been fighting against the Carrows. He mentioned that it hasn't exactly been a picnic for them."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a member of Dumbledore's Army who was initially hesitant to trust Ron and Hermione. However, he eventually welcomed Luna and Dean into the group."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is a member of Dumbledore's Army who arrived with Luna. He was greeted by Seamus and the others."
+    },
+    {
+      "name": "galleon",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Galleon is an object that Neville used to send for Luna. It was a fake one, but it worked in sending the message."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "luna",
+      "relationship_type": "sent_for",
+      "description": "Neville sent for Luna using the fake Galleon. This is mentioned in the text as 'I sent for her,' said Neville, holding up the fake Galleon."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "luna",
+      "relationship_type": "greeted",
+      "description": "Seamus greeted Luna when she arrived with Dean. This is mentioned in the text as 'It was Luna and Dean. Seamus gave a great roar of delight and ran to hug his best friend.'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "fought_with",
+      "description": "Ron has been fighting with Harry against the Carrows. This is mentioned in the text as 'It hasn’t exactly been a picnic, mate,’ said Ron.'"
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "dean",
+      "relationship_type": "arrived_with",
+      "description": "Luna arrived with Dean. This is mentioned in the text as 'We got your message, Neville! Hello, you three, I thought you must be here!' It was Luna and Dean."
+    }
+  ]
+}

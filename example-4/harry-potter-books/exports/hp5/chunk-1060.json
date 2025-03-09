@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "st mungo's hospital for magical maladies and injuries",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "The hospital where Harry is being treated."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the twins who helps Harry."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is talking to Harry through a magical string."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is providing his opinion on the situation."
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was attacked by a snake."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "st mungo's hospital for magical maladies and injuries",
+      "relationship_type": "patient_of",
+      "description": "Harry is a patient at St. Mungo's Hospital."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "helper_of",
+      "description": "Fred helps Harry with the magical string."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "communicator_with",
+      "description": "Tonks communicates with Harry through a magical string."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "voldemort",
+      "relationship_type": "suspect_of",
+      "description": "Moody suspects that Voldemort is behind the attack on Arthur."
+    },
+    {
+      "entity_1": "arthur",
+      "entity_2": "snake",
+      "relationship_type": "victim_of",
+      "description": "Arthur was attacked by a snake."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snake",
+      "relationship_type": "sender_of",
+      "description": "Voldemort sent the snake as a lookout."
+    }
+  ]
+}

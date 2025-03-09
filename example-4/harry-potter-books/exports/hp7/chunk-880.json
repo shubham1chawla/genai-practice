@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who has a strong longing for the Hallows."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is determined and interested in locating Horcruxes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend, who has persistent doubts about the Hallows."
+    },
+    {
+      "name": "hallow",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry longs for."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Multiple objects that Hermione and Ron are obsessed with locating."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hallow",
+      "relationship_type": "longing",
+      "description": "Harry has a strong longing for the Hallows."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "horcruxes",
+      "relationship_type": "interest",
+      "description": "Hermione is interested in locating Horcruxes."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "horcruxes",
+      "relationship_type": "obsession",
+      "description": "Ron is obsessed with locating Horcruxes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "blame",
+      "description": "Harry blames Hermione for her lack of interest in the Hallows."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "blame",
+      "description": "Harry also blames Ron for his doubts about the Hallows."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "anger",
+      "description": "Hermione is angry with Harry for calling her obsession an 'obsession'."
+    }
+  ]
+}

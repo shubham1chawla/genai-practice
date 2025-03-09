@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a person who has complained to the school governors and Ministry of Magic about his injury. He is described as having a lot of influence due to his father's position."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is talking to Malfoy and threatening him with a real injury if he continues to complain."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is accusing Malfoy of trying to get Hagrid fired by putting on an injury."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who might be fired due to Malfoy's actions."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic is mentioned as an organization that Malfoy has complained to about his injury."
+    },
+    {
+      "name": "school governors",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The school governors are mentioned as an organization that Malfoy has complained to about his injury."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as a person who is struggling in Potions lessons and is afraid of Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who is teaching Potions and is feared by Neville."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Weasley is mentioned as a person who is helping Malfoy with his caterpillars."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ministry of magic",
+      "relationship_type": "complained_to",
+      "description": "Malfoy complained to the Ministry of Magic about his injury."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "school governors",
+      "relationship_type": "complained_to",
+      "description": "Malfoy complained to the school governors about his injury."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "accused_of",
+      "description": "Harry accused Malfoy of trying to get Hagrid fired by putting on an injury."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "snape",
+      "relationship_type": "afraid_of",
+      "description": "Neville is afraid of Professor Snape."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "malfoy",
+      "relationship_type": "helped",
+      "description": "Weasley helped Malfoy with his caterpillars."
+    }
+  ]
+}

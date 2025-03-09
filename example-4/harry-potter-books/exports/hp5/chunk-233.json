@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "clea",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is pretending to be cleaning and sneaking something off to their room."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is loyal to the Master's family and is trying to protect a tapestry."
+    },
+    {
+      "name": "master",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who owns the house where Kreacher is working."
+    },
+    {
+      "name": "mistress",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mistress of the house, who would never forgive Kreacher if the tapestry was thrown out."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to get rid of a Permanent Sticking Charm on the back of the tapestry."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "place",
+      "singular": true,
+      "description": "A place where people are imprisoned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "tapestry",
+      "relationship_type": "trying_to_get_rid_of",
+      "description": "Sirius is trying to get rid of the Permanent Sticking Charm on the back of the tapestry."
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "tapestry",
+      "relationship_type": "protecting",
+      "description": "Kreacher is trying to protect the tapestry."
+    },
+    {
+      "entity_1": "master",
+      "entity_2": "kreacher",
+      "relationship_type": "employer_employee",
+      "description": "The Master is Kreacher's employer."
+    },
+    {
+      "entity_1": "mistress",
+      "entity_2": "kreacher",
+      "relationship_type": "authority_subordinate",
+      "description": "The Mistress has authority over Kreacher."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "azkaban",
+      "relationship_type": "comes_from",
+      "description": "Sirius comes from Azkaban."
+    }
+  ]
+}

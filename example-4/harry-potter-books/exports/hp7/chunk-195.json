@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "magical theory",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The text mentions 'Magical Theory' as something that is being discarded without a second glance."
+    },
+    {
+      "name": "an appraisal of magical education in europe",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book 'An Appraisal of Magical Education in Europe' is mentioned as the next destination after leaving the current location."
+    },
+    {
+      "name": "godric’s hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Godric's Hollow is a location that Harry wants to visit first, and it holds significance for him due to his parents' graves and his own survival of Voldemort's Killing Curse."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "The Horcruxes are mentioned as a priority that Harry and Hermione should focus on, but they don't know where any of them are located."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who wants to visit Godric's Hollow and understand its significance."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is a friend of Harry's who suggests prioritizing the Horcruxes over visiting Godric's Hollow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "godric’s hollow",
+      "relationship_type": "wants_to_visit",
+      "description": "Harry wants to visit Godric's Hollow due to its significance and his desire to understand it."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "horcruxes",
+      "relationship_type": "suggests_priority",
+      "description": "Hermione suggests prioritizing the Horcruxes over visiting Godric's Hollow."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "horcruxes",
+      "relationship_type": "agrees_with_hermione",
+      "description": "Harry agrees with Hermione that finding the Horcruxes should be a priority, but only if they knew where any of them were located."
+    }
+  ]
+}

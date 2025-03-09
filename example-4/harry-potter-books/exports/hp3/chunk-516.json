@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flint is a person who is involved in a Quidditch match and gets hit by Fred Weasley's Beater's club. He bleeds from his nose."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred Weasley is a person who hits Flint with his Beater's club, causing him to bleed."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is a person who intervenes in the Quidditch match and gives penalty shots to both Gryffindor and Slytherin."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia is a person who takes the penalty shot for Gryffindor and successfully beats the keeper."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee is a person who cheers on Alicia during her penalty shot."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is the team that gets a penalty shot due to Flint's unprovoked attack on their Chaser."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is the team that gets a penalty shot due to deliberate damage to their Chaser."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "flint",
+      "relationship_type": "attacked",
+      "description": "Fred Weasley hits Flint with his Beater's club, causing him to bleed."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "gryffindor",
+      "relationship_type": "penalty_shot_given",
+      "description": "Madam Hooch gives a penalty shot to Gryffindor due to Flint's unprovoked attack on their Chaser."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "slytherin",
+      "relationship_type": "penalty_shot_given",
+      "description": "Madam Hooch gives a penalty shot to Slytherin due to deliberate damage to their Chaser."
+    },
+    {
+      "entity_1": "alicia",
+      "entity_2": "gryffindor",
+      "relationship_type": "representative",
+      "description": "Alicia represents Gryffindor during the penalty shot and successfully beats the keeper."
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "alicia",
+      "relationship_type": "cheerleader",
+      "description": "Lee cheers on Alicia during her penalty shot."
+    }
+  ]
+}

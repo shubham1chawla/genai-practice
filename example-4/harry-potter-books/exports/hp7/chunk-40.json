@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dragon's blood",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "A substance with twelve uses discovered by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The Chief Warlock of the Wizengamot and a renowned wizard who defeated Grindelwald in 1945."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard who engaged in a duel with Dumbledore in 1945."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization that Dumbledore was the Chief Warlock of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grindelwald",
+      "relationship_type": "duel",
+      "description": "Dumbledore and Grindelwald engaged in a duel in 1945."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wizengamot",
+      "relationship_type": "chief_warlock",
+      "description": "Dumbledore was the Chief Warlock of the Wizengamot."
+    }
+  ]
+}

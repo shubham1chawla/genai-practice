@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry Potter. He is described as running up to his bedroom and then making his way back downstairs."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, mentioned in the context of picking up her cage."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that Harry lives with. They are described as leaving the house in a car."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Dursleys, mentioned in the context of being in the backseat of the car."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of Aunt Petunia and Uncle Vernon. He is mentioned as being in the backseat of the car."
+    },
+    {
+      "name": "dedalus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose top hat was visible between Aunt Petunia and Dudley in the backseat of the car."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The street where Harry lives with the Dursleys. The car turned right at the end of Privet Drive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry is described as picking up Hedwig's cage, indicating that he owns her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "lives_with",
+      "description": "The text states that Harry lives with the Dursleys."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dudley",
+      "relationship_type": "parent_child",
+      "description": "Aunt Petunia is mentioned as being in the backseat of the car with her son Dudley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "privet drive",
+      "relationship_type": "resides_at",
+      "description": "The text states that Harry lives at Privet Drive."
+    }
+  ]
+}

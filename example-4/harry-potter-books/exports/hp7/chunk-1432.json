@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a being present at King's Cross. He is described as having a conversation with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who had his blood taken by Voldemort and rebuilt into a Horcrux."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who took Harry's blood and created a Horcrux."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is mentioned as the mother of Harry and the one whose protection is inside both Harry and Voldemort."
+    },
+    {
+      "name": "king’s cross",
+      "entity_type": "location",
+      "singular": true,
+      "description": "King's Cross is mentioned as a location where Dumbledore and Harry are present."
+    },
+    {
+      "name": "the creature",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "The creature is mentioned as an agonized being that is behind Dumbledore and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "created_horcrux_from",
+      "description": "Voldemort created a Horcrux from Harry's blood."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "harry",
+      "relationship_type": "protection_inside",
+      "description": "Lily's protection is inside both Harry and Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "tethered_to_life",
+      "description": "Voldemort was tethered to life by Dumbledore's living body."
+    }
+  ]
+}

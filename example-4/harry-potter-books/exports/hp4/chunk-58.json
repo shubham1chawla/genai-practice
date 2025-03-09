@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mr dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The recipient of the letter, a person who has not been introduced to the sender."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Mr. Dursley and also the recipient of the letter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has been mentioned by Ron, and is being invited to a Quidditch match."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of the sender, who has mentioned Harry to Mr. and Mrs. Dursley."
+    },
+    {
+      "name": "arthur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The husband of the sender, who has managed to get prime tickets for the Quidditch match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "mentioned_by",
+      "description": "Harry is mentioned by Ron in a conversation with Mr. and Mrs. Dursley."
+    },
+    {
+      "entity_1": "arthur",
+      "entity_2": "department of magical games and sports",
+      "relationship_type": "connected_to",
+      "description": "Arthur has connections at the Department of Magical Games and Sports, which helped him get prime tickets for the Quidditch match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr dursley",
+      "relationship_type": "invited_by",
+      "description": "Harry is invited to a Quidditch match by Mr. Dursley and his family."
+    }
+  ]
+}

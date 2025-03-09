@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as speaking to someone."
+    },
+    {
+      "name": "the diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A book that is described as a Horcrux and having a fragment of soul inside it."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The owner of the diary, mentioned as wanting to possess someone else."
+    },
+    {
+      "name": "slytherin's monster",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that is unleashed when a piece of soul inhabits or possesses someone else."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "the diary",
+      "relationship_type": "created",
+      "description": "The diary was created by Riddle as a Horcrux."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry potter",
+      "relationship_type": "wanted_to_possess",
+      "description": "Riddle wanted to possess Harry Potter, so that Slytherin's monster would be unleashed again."
+    },
+    {
+      "entity_1": "the diary",
+      "entity_2": "riddle",
+      "relationship_type": "belonged_to",
+      "description": "The diary belonged to Riddle and contained a fragment of his soul."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "slytherin's monster",
+      "relationship_type": "would_be_unleashed_by",
+      "description": "Slytherin's monster would be unleashed again if Harry Potter was possessed by Riddle's piece of soul."
+    }
+  ]
+}

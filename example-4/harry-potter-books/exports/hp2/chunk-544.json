@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who advised Harry not to leave the Forest path."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a location where Hagrid is probably sitting in a cell."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is mentioned as an animal that touches Harry's hand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is with Harry in the Forest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "azkaban",
+      "relationship_type": "location_of",
+      "description": "Hagrid is probably sitting in a cell in Azkaban."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "accompanying",
+      "description": "Ron is with Harry in the Forest."
+    },
+    {
+      "entity_1": "fang",
+      "entity_2": "harry",
+      "relationship_type": "touching",
+      "description": "Fang touches Harry's hand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "talking_to",
+      "description": "Ron is talking to Harry."
+    }
+  ]
+}

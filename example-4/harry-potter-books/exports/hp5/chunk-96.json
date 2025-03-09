@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy with a wand."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and Auror who is being impersonated by an impostor."
+    },
+    {
+      "name": "the impostor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is pretending to be Mad-Eye Moody."
+    },
+    {
+      "name": "streetlight",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A source of light that illuminates the scene."
+    },
+    {
+      "name": "glass door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The entrance to a building or room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mad-eye moody",
+      "relationship_type": "impersonated_by",
+      "description": "Harry has recently spent time with someone who claimed to be Mad-Eye Moody, but was actually an impostor."
+    },
+    {
+      "entity_1": "the impostor",
+      "entity_2": "harry",
+      "relationship_type": "tried_to_kill",
+      "description": "The impostor tried to kill Harry before being discovered."
+    },
+    {
+      "entity_1": "mad-eye moody",
+      "entity_2": "the impostor",
+      "relationship_type": "impersonated_by",
+      "description": "The impostor was pretending to be Mad-Eye Moody."
+    }
+  ]
+}

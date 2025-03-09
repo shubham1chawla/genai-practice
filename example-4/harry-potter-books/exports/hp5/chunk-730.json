@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who ordered the butterbeers and handed them out to the group."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the group who is watching Fred hand out the beers and seems concerned about what's happening."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the group who Harry suspects might have been telling people something that led to this gathering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "ordered_from",
+      "description": "Fred ordered butterbeers from the barman, and Harry received one of them."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "hermione",
+      "relationship_type": "involved_with",
+      "description": "Harry suspects that Hermione might have been involved in telling people something that led to this gathering, which Fred is now handling."
+    }
+  ]
+}

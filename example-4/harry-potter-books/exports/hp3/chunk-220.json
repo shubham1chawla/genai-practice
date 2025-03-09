@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is the student who is being bullied by Snape. He is described as going scarlet and having his face go redder when Professor Lupin speaks up for him."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is the teacher who bullies Neville in front of other teachers. He is described as leaving the room after being spoken to by Professor Lupin."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Miss Granger is mentioned as someone who gives instructions to Harry, but she is not directly involved in the scene."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who glares at Snape for bullying Neville. He is not directly involved in the rest of the scene."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Lupin is the teacher who speaks up for Neville and tries to reassure him that there is nothing to worry about."
+    },
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "The boggart is a monster that is hiding in the old wardrobe. It is described as causing a sudden wobble and banging off the wall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "neville",
+      "relationship_type": "bullies",
+      "description": "Snape bullies Neville in front of other teachers."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "boggart",
+      "relationship_type": "has",
+      "description": "Professor Lupin has a boggart hiding in the old wardrobe."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "operation",
+      "relationship_type": "will assist with",
+      "description": "Neville is expected to assist Professor Lupin with the operation."
+    }
+  ]
+}

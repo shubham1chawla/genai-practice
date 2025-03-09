@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fidelius chard",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Fidelius Charm is a spell that conceals the location of an object or person. It is mentioned in the text as stopping working at a certain point."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character of the story. He is able to Disapparate with the help of the Fidelius Charm."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a goblin who helps Harry Potter and Hermione Granger in their mission. He climbs onto Harry's back to Disapparate."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is a friend of Harry Potter and helps him in his mission. She pulls out the Invisibility Cloak to help them Disapparate."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "inn",
+      "singular": true,
+      "description": "The Leaky Cauldron is an inn that serves as the entrance to Diagon Alley. Harry concentrates on it to Disapparate."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is a hidden street in London where wizards and witches can buy magical items. It is accessible through the Leaky Cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "griphook",
+      "relationship_type": "carries",
+      "description": "Harry Potter carries Griphook on his back to Disapparate."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "possesses",
+      "description": "Hermione Granger possesses the Invisibility Cloak, which she uses to help Harry and Griphook Disapparate."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "concentrates_on",
+      "description": "Harry Potter concentrates on the Leaky Cauldron to Disapparate."
+    }
+  ]
+}

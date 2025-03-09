@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, mentioned as 'it's a start, Harry' and 'he opened the door and slid inside'. He is also referred to by Professor Sprout as 'Ten points to Gryffindor'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being between Harry and Hermione in the greenhouse."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as raising her hand to answer Professor Sprout's question about Mandrake properties."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout is the teacher in charge of the greenhouse lesson. She is described as standing behind a trestle bench and giving instructions to Harry, Ron, and Hermione."
+    },
+    {
+      "name": "mandrake",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "Mandrake is mentioned as being used for re-potting in the greenhouse lesson. Professor Sprout asks about its properties."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as receiving ten points from Professor Sprout after Hermione answers her question correctly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor sprout",
+      "relationship_type": "received_points_from",
+      "description": "Harry receives points from Professor Sprout for Gryffindor house."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mandrake",
+      "relationship_type": "answered_question_about",
+      "description": "Hermione answers Professor Sprout's question about Mandrake properties."
+    }
+  ]
+}

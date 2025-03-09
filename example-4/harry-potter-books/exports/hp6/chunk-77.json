@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as sleeping and having an alarm clock beside him."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards, mentioned as possibly using Inferi."
+    },
+    {
+      "name": "inferi",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Undead creatures, mentioned as possibly being used by the Death Eaters."
+    },
+    {
+      "name": "auror office",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government agency responsible for dealing with dark magic, mentioned as needing to be contacted immediately."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of the wizarding world, mentioned as needing to be informed about any encounters with Inferi."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A street address where Harry lives, mentioned as being visited by someone."
+    },
+    {
+      "name": "the auror office",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The same organization as above, but with the full name."
+    },
+    {
+      "name": "infinius",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A specific type of Inferi, mentioned as needing to be reported to the Ministry immediately."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "auror office",
+      "relationship_type": "contact",
+      "description": "Harry is advised to contact the Auror Office in case of any issues."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "inferi",
+      "relationship_type": "use",
+      "description": "The Death Eaters are suspected to be using Inferi."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "privet drive",
+      "relationship_type": "residence",
+      "description": "Harry lives at Privet Drive."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "infinius",
+      "relationship_type": "report_to",
+      "description": "Any encounters with Inferi should be reported to the Ministry immediately."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "the auror office",
+      "relationship_type": "visit",
+      "description": "Someone will visit Harry at Privet Drive and escort him to The Auror Office."
+    }
+  ]
+}

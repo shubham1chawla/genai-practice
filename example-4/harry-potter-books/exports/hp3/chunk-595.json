@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore became Headmaster and was sympathetic towards Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin told Harry that the Whomping Willow was planted for his use."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry listened to Lupin's story raptly."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Whomping Willow was planted for Lupin's use."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Scabbers was frightened and squeaking."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "whomping willow",
+      "relationship_type": "was_planted_for",
+      "description": "The Whomping Willow was planted for Lupin's use."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "was_sympathetic_towards",
+      "description": "Dumbledore was sympathetic towards Harry."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "scabbers",
+      "relationship_type": "owned",
+      "description": "Lupin had Scabbers as a pet."
+    }
+  ]
+}

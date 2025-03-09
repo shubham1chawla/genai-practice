@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as someone who needs to be cheered up by Hermione. He is also shown to be worried about Harry seeing a Grim."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as someone who tries to cheer up Ron and calm him down when he gets angry."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as a source of information that Hermione refers to in order to try to calm Ron down."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who has seen a Grim and is not aware of the significance of this event."
+    },
+    {
+      "name": "bilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bilius is mentioned as Ron's uncle who saw a Grim and died 24 hours later."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Harry seeing a Grim."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "trying_to_calm_down",
+      "description": "Hermione tries to calm down Ron when he gets angry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "grim",
+      "relationship_type": "seen",
+      "description": "Harry has seen a Grim."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bilius",
+      "relationship_type": "related_to",
+      "description": "Ron is related to Bilius, who saw a Grim and died 24 hours later."
+    }
+  ]
+}

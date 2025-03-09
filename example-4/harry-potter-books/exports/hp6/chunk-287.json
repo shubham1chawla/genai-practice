@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry uses an invisibility cloak to go unseen."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is a teacher at Hogwarts who recognizes Harry and sneers at him."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story."
+    },
+    {
+      "name": "nymphadora",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nymphadora Tonks is a person who is mentioned in the conversation."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a teacher at Hogwarts who was late for the start-of-term feast."
+    },
+    {
+      "name": "padlock",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Severus Snape uses his wand to unlock a padlock."
+    },
+    {
+      "name": "gates",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The gates of Hogwarts are unlocked by Severus Snape."
+    },
+    {
+      "name": "school robes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry Potter is wearing school robes."
+    },
+    {
+      "name": "feast",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The start-of-term feast at Hogwarts has started."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus snape",
+      "entity_2": "potter",
+      "relationship_type": "recognition",
+      "description": "Severus Snape recognizes Harry Potter."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "padlock",
+      "relationship_type": "unlocking",
+      "description": "Severus Snape unlocks the padlock with his wand."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "school robes",
+      "relationship_type": "wearing",
+      "description": "Harry Potter is wearing school robes."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "feast",
+      "relationship_type": "lateness",
+      "description": "Hagrid was late for the start-of-term feast."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "feast",
+      "relationship_type": "lateness",
+      "description": "Harry Potter was also late for the start-of-term feast."
+    }
+  ]
+}

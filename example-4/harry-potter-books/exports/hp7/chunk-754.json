@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was near-strangulation and had his life saved by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who saved Harry's life by casting a Patronus Charm."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The owner of the pouch that was put back around Harry's neck."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A magical charm cast by Ron to save Harry's life."
+    },
+    {
+      "name": "pool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Ron saved Harry's life."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "patronus",
+      "relationship_type": "cast",
+      "description": "Ron cast the Patronus Charm to save Harry's life."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pool",
+      "relationship_type": "near_strangulation_location",
+      "description": "Harry was near-strangulation in the pool."
+    }
+  ]
+}

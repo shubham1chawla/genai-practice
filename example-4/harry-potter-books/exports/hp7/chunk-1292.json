@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Percy is a character in the story. He lets out a bull-like roar and sprints off in the direction of a tall man."
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Rookwood is a location mentioned in the story. Percy roars 'ROOKWOOD!' as he sprints off towards it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character in the story. He thinks that Hermione and Ron are embracing, but then realizes she's trying to restrain him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a character in the story. She tries to restrain Ron from running after Percy."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a character in the story. He's shaking with rage and grief, and wants to fight Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who have killed Fred. Ron and Harry want to punish them."
+    },
+    {
+      "name": "fred",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Fred is a character in the story. He was killed by Death Eaters."
+    },
+    {
+      "name": "snake",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The snake is an object mentioned in the story. Hermione and Harry need to kill it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "death eaters",
+      "relationship_type": "wants_to_punish",
+      "description": "Ron wants to punish Death Eaters for killing Fred."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snake",
+      "relationship_type": "needs_to_kill",
+      "description": "Harry needs to kill the snake with Hermione's help."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "trying_to_restrain",
+      "description": "Hermione is trying to restrain Ron from running after Percy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "wants_to_punish",
+      "description": "Harry also wants to punish Death Eaters for killing Fred."
+    }
+  ]
+}

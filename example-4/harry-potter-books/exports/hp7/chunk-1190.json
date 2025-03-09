@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Ravenclaws were all backing away, and some of the most frightened began scampering back up the staircase to their beds."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry was wondering whether he ought not to blast the door open and Stun Amycus before the Death Eater could do anything else"
+    },
+    {
+      "name": "amykus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Amycus shouted 'Trying — to get — through this damned — door!' and asked Professor McGonagall to get Flitwick."
+    },
+    {
+      "name": "professor carrow",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A second, most familiar voice rang out beyond the door. 'May I ask what you are doing, Professor Carrow?'"
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall suggested that Flitwick could open the door for Amycus."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall asked if Amycus's sister was in the room and offered to get Flitwick to open the door."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry was wondering whether he ought not to blast the door open and Stun Amycus before the Death Eater could do anything else"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "amykus",
+      "entity_2": "flitwick",
+      "relationship_type": "asked_for_help",
+      "description": "Amycus shouted 'Go and get Flitwick! Get him to open it, now!'"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "flitwick",
+      "relationship_type": "suggested_for_help",
+      "description": "Professor McGonagall suggested that Flitwick could open the door for Amycus."
+    },
+    {
+      "entity_1": "amykus",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "asked_to_get_flitwick",
+      "description": "Amycus shouted 'Go and get Flitwick! Get him to open it, now!'"
+    },
+    {
+      "entity_1": "professor carrow",
+      "entity_2": "amykus",
+      "relationship_type": "questioned_action",
+      "description": "'May I ask what you are doing, Professor Carrow?'"
+    }
+  ]
+}

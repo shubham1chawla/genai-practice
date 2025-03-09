@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as standing still along with Buckbeak."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is mentioned as standing still along with Hermione."
+    },
+    {
+      "name": "hippogriﬀ",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hippogriff seems to be listening intently."
+    },
+    {
+      "name": "committee member",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A committee member is mentioned as asking for the location of the beast."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as responding to the committee member's question with amusement in his voice."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as calling out for Buckbeak and then sobbing after swinging an axe into a fence."
+    },
+    {
+      "name": "executioner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The executioner is mentioned as being furious about the location of the beast."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "buckbeak",
+      "relationship_type": "call",
+      "description": "Hagrid calls out for Buckbeak."
+    },
+    {
+      "entity_1": "committee member",
+      "entity_2": "executioner",
+      "relationship_type": "question",
+      "description": "The committee member asks the executioner about the location of the beast."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "committee member",
+      "relationship_type": "response",
+      "description": "Dumbledore responds to the committee member's question."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "executioner",
+      "relationship_type": "anger",
+      "description": "Hagrid swings an axe into a fence in anger."
+    },
+    {
+      "entity_1": "committee member",
+      "entity_2": "beast",
+      "relationship_type": "search",
+      "description": "The committee member is searching for the beast."
+    },
+    {
+      "entity_1": "executioner",
+      "entity_2": "beast",
+      "relationship_type": "anger",
+      "description": "The executioner is angry about the location of the beast."
+    }
+  ]
+}

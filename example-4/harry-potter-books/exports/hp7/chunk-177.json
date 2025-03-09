@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator's friend, who is angry and wants someone to stand up against the Ministry."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person at the Ministry who is afraid of being next to disappear or having their children attacked, and does not believe the Muggle Studies professor resigned."
+    },
+    {
+      "name": "the Ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The government department that is being referred to in the conversation."
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school where Ron and Mr. Weasley are associated with, and has a Muggle Studies professor who resigned."
+    },
+    {
+      "name": "the Muggle Studies professor",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A teacher at Hogwarts who is believed to have resigned by some people, but not by Mr. Weasley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Ron",
+      "entity_2": "the Ministry",
+      "relationship_type": "angrily_questions",
+      "description": "Ron asks a question angrily about the Ministry being prepared to stand up against someone."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "the Ministry",
+      "relationship_type": "is_afraid_of_being_next_to_disappear",
+      "description": "Mr. Weasley is afraid of being next to disappear or having his children attacked, and is associated with the Ministry."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "the Muggle Studies professor",
+      "relationship_type": "does_not_believe_resigned",
+      "description": "Mr. Weasley does not believe that the Muggle Studies professor resigned, and is associated with this person."
+    }
+  ]
+}

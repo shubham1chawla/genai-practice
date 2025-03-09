@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as he is getting ready for bed."
+    },
+    {
+      "name": "picture",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A painting or photograph on the wall, described as having an invisible occupant."
+    },
+    {
+      "name": "wall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the picture is hanging."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "picture",
+      "relationship_type": "is_observing",
+      "description": "Harry is observing the picture on the wall, noticing that it appears to be breathing slowly and deeply."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wall",
+      "relationship_type": "is_adjacent_to",
+      "description": "Harry is adjacent to the wall where the picture is hanging."
+    }
+  ]
+}

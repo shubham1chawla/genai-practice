@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is mentioned as a significant event."
+    },
+    {
+      "name": "skower's all-purpose magical mess remover",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A product advertisement for Skower's All-Purpose Magical Mess Remover is shown."
+    },
+    {
+      "name": "gladrags wizardwear",
+      "entity_type": "store",
+      "singular": true,
+      "description": "Gladrags Wizardwear is mentioned as a store with locations in London and Paris."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as one of the locations for Gladrags Wizardwear."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who was set free by Harry."
+    },
+    {
+      "name": "malfoy family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Malfoy family is mentioned as the previous owners of Dobby."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "set_free",
+      "description": "Harry set Dobby free from his old owners, the Malfoy family."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy family",
+      "relationship_type": "previous_owner",
+      "description": "The Malfoy family was the previous owner of Dobby."
+    }
+  ]
+}

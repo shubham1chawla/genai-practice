@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a Gryffindor student who is angry and frustrated with the situation. He booked the pitch for practice time but finds out that Slytherin team has taken it over. (\"Flint! This is our practice time! We got up specially! You can clear off now!\")"
+    },
+    {
+      "name": "flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flint is the Slytherin captain who is larger than Wood and has a cunning look on his face. He has a note from Professor Snape that allows the Slytherin team to practice on the Quidditch pitch. (\"Plenty of room for all of us, Wood.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a Gryffindor student who follows Wood and Fred and George to the Quidditch pitch. (\"Harry, Fred and George followed.\")"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a Gryffindor student who follows Harry and George to the Quidditch pitch. (\"Harry, Fred and George followed.\")"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is a Gryffindor student who follows Harry and Fred to the Quidditch pitch. (\"Harry, Fred and George followed.\")"
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a Gryffindor student who comes over with Alicia and Katie to join the practice session. (\"Angelina, Alicia and Katie had come over, too.\")"
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia is a Gryffindor student who comes over with Angelina and Katie to join the practice session. (\"Angelina, Alicia and Katie had come over, too.\")"
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is a Gryffindor student who comes over with Angelina and Alicia to join the practice session. (\"Angelina, Alicia and Katie had come over, too.\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Snape is a professor at Hogwarts who gives permission for the Slytherin team to practice on the Quidditch pitch. (\"I, Professor S. Snape, give the Slytherin team permission to practise today on the Quidditch pitch...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "flint",
+      "relationship_type": "conflict",
+      "description": "Wood and Flint have a conflict over who should use the Quidditch pitch for practice. (\"Flint! This is our practice time! We got up specially! You can clear off now!\")"
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "snape",
+      "relationship_type": "authority",
+      "description": "Wood has a note from Professor Snape that allows the Slytherin team to practice on the Quidditch pitch. (\"I, Professor S. Snape, give the Slytherin team permission to practise today on the Quidditch pitch...\")"
+    },
+    {
+      "entity_1": "flint",
+      "entity_2": "snape",
+      "relationship_type": "support",
+      "description": "Flint has a note from Professor Snape that allows the Slytherin team to practice on the Quidditch pitch. (\"I, Professor S. Snape, give the Slytherin team permission to practise today on the Quidditch pitch...\")"
+    }
+  ]
+}

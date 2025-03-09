@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is concerned about Mr. Crouch's well-being."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has fallen to his knees and appears to be ill or injured."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is looking down at Mr. Crouch in alarm."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being called for to assist with Mr. Crouch's situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "crouch",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Mr. Crouch's well-being and asks if he is all right."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "crouch",
+      "relationship_type": "looking_at_in_alarm",
+      "description": "Krum is looking down at Mr. Crouch in alarm, indicating that he is also concerned about his well-being."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "krum",
+      "relationship_type": "with",
+      "description": "Harry and Krum are together in the trees, with Harry looking at Mr. Crouch and Krum looking down at him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "crouch",
+      "relationship_type": "being_called_for",
+      "description": "Dumbledore is being called for to assist with Mr. Crouch's situation, indicating that he has some expertise or authority in this area."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by name. (\"I want a word with you, Harry.\")"
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as having given advice that is now being referenced. (\"You heard Slughorn, it's illegal.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, referred to by name. (\"What are you going to do, turn us in? demanded Ron.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, referred to by name. (\"You know perfectly well what we're talking about! said Hermione shrilly.)"
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A magical potion mentioned as being used by Harry. (\"Hermione shrilly. You spiked Ron's juice with lucky potion at breakfast! Felix Felicis!\")"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house in the school that is mentioned as having players missing. (\"there were Slytherin players missing and Ron saved everything!\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "felix felicis",
+      "relationship_type": "used",
+      "description": "Harry used the Felix Felicis potion, which is why everything went right. (\"You spiked Ron's juice with lucky potion at breakfast! Felix Felicis!\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "spiked drink of",
+      "description": "Harry spiked Ron's drink with the Felix Felicis potion. (\"You spiked Ron's juice with lucky potion at breakfast! Felix Felicis!\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "heard advice from",
+      "description": "Harry heard advice from Slughorn, which is now being referenced. (\"You heard Slughorn, it's illegal.\")"
+    }
+  ]
+}

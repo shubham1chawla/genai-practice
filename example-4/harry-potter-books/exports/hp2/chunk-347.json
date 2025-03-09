@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a Gryffindor student who is injured and recovering in the hospital wing. (Excerpt: 'Filthy and soaking wet, the rest of the Gryffindor team had arrived to see Harry.')"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Gryffindor team who praises Harry's flying skills. (Excerpt: ‘Unbelievable flying, Harry,’ said George.)"
+    },
+    {
+      "name": "marcus flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is yelling at Malfoy about having the Snitch on top of his head. (Excerpt: 'Something about having the Snitch on top of his head and not noticing.')"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being yelled at by Marcus Flint for having the Snitch on top of his head. (Excerpt: 'Something about having the Snitch on top of his head and not noticing.')"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse who is taking care of Harry in the hospital wing and orders him to rest. (Excerpt: 'This boy needs rest, he’s got thirty-three bones to regrow! Out! OUT!’)"
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A group of students from Gryffindor house who arrive at the hospital wing to visit Harry. (Excerpt: 'Filthy and soaking wet, the rest of the Gryffindor team had arrived to see Harry.')"
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is on top of Malfoy's head, causing Marcus Flint to yell at him. (Excerpt: 'Something about having the Snitch on top of his head and not noticing.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "praise",
+      "description": "George praises Harry's flying skills. (Excerpt: ‘Unbelievable flying, Harry,’ said George.)"
+    },
+    {
+      "entity_1": "marcus flint",
+      "entity_2": "malfoy",
+      "relationship_type": "yell_at",
+      "description": "Marcus Flint yells at Malfoy for having the Snitch on top of his head. (Excerpt: 'Something about having the Snitch on top of his head and not noticing.')"
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry",
+      "relationship_type": "order_to_rest",
+      "description": "Madam Pomfrey orders Harry to rest due to his injuries. (Excerpt: 'This boy needs rest, he’s got thirty-three bones to regrow! Out! OUT!’)"
+    },
+    {
+      "entity_1": "gryffindor team",
+      "entity_2": "harry",
+      "relationship_type": "visit",
+      "description": "The Gryffindor team visits Harry in the hospital wing. (Excerpt: 'Filthy and soaking wet, the rest of the Gryffindor team had arrived to see Harry.')"
+    }
+  ]
+}

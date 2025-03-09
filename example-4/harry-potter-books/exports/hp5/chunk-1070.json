@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "christmas",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The event being referred to in the text"
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people from Slytherin house"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is speaking to Harry"
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sent a message to Harry"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherins",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of the Slytherin group"
+    },
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "messenger_for",
+      "description": "Phineas Nigellus is delivering a message from Albus Dumbledore to Harry"
+    }
+  ]
+}

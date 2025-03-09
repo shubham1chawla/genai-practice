@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as having pus-filled sores on her hands, which are painful. She tries to rub them off with a napkin but it's difficult due to the thickness of the sores."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as telling Hermione to go up to the hospital wing and that they will tell Professor Sprout where she has gone."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as reading out a letter from Rita Skeeter, warning Hermione not to annoy her. He also mentions that he warned Hermione about Rita Skeeter's curse."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is described as sending a curse to Hermione, warning her not to play Harry Potter false and that he has had enough hardship."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is mentioned as the person who will be told where Hermione has gone by Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "hermione",
+      "relationship_type": "sent_curse",
+      "description": "Rita Skeeter is sending a curse to Hermione, warning her not to play Harry Potter false and that he has had enough hardship."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "rita skeeter",
+      "relationship_type": "warned_about",
+      "description": "Ron warned Hermione about Rita Skeeter's curse, but she didn't listen."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being displayed like a freak by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who has decided to display him like a freak."
+    },
+    {
+      "name": "zacharias smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is present at the gathering and is gazing intently at Harry."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A magical creature that can be produced by wizards to defend against Dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "blame",
+      "description": "Harry feels that Hermione is responsible for displaying him like a freak."
+    },
+    {
+      "entity_1": "zacharias smith",
+      "entity_2": "harry",
+      "relationship_type": "gaze",
+      "description": "Zacharias Smith is gazing intently at Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "patronus",
+      "relationship_type": "mention",
+      "description": "Hermione mentions the Patronus in her explanation of defense classes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "produce",
+      "description": "Harry is able to produce a Patronus."
+    }
+  ]
+}

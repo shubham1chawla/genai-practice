@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is waiting for the sorting hat to declare his house."
+    },
+    {
+      "name": "finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy in Harry's line, who was sorted into Gryffindor house."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The sandy-haired boy next to Harry in the line."
+    },
+    {
+      "name": "granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's last name, which is called out by the sorting hat."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A girl who was sorted into Gryffindor house quickly."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who groaned when the hat shouted out Hermione's name."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "The professor who is in charge of the sorting ceremony."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy who kept losing his toad and was called by the sorting hat."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "finnigan",
+      "relationship_type": "sorted_with",
+      "description": "The sorting hat sorted Finnigan into Gryffindor house before Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "granger",
+      "relationship_type": "has_last_name",
+      "description": "Hermione's last name is Granger, which was called out by the sorting hat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mcgonagall",
+      "relationship_type": "will_be_sorted_by",
+      "description": "Harry will be sorted into a house by Professor McGonagall."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "mcgonagall",
+      "relationship_type": "will_be_sorted_by",
+      "description": "Neville Longbottom will also be sorted into a house by Professor McGonagall."
+    }
+  ]
+}

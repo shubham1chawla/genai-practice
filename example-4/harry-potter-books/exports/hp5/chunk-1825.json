@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "refuge",
+      "entity_type": "place",
+      "singular": true,
+      "description": "Harry's home where he is safe from his uncle"
+    },
+    {
+      "name": "aunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt who knows the pact and allows Harry to stay with her"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who sent the Howler to remind Harry's aunt of the pact"
+    },
+    {
+      "name": "howler",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that conveys a message from Dumbledore to Harry's aunt"
+    },
+    {
+      "name": "pact",
+      "entity_type": "agreement",
+      "singular": true,
+      "description": "An agreement between Harry's aunt and Dumbledore to protect Harry"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "aunt",
+      "relationship_type": "sent_reminder",
+      "description": "Dumbledore sent a Howler to remind Harry's aunt of the pact"
+    },
+    {
+      "entity_1": "howler",
+      "entity_2": "aunt",
+      "relationship_type": "conveyed_message",
+      "description": "The Howler conveyed Dumbledore's message to Harry's aunt"
+    },
+    {
+      "entity_1": "pact",
+      "entity_2": "dumbledore",
+      "relationship_type": "made_with",
+      "description": "Dumbledore was a part of the pact with Harry's aunt"
+    },
+    {
+      "entity_1": "pact",
+      "entity_2": "aunt",
+      "relationship_type": "made_with",
+      "description": "Harry's aunt was a part of the pact with Dumbledore"
+    }
+  ]
+}

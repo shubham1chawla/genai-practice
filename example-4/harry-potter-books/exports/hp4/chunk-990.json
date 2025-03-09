@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts students often visit Hogsmeade on weekends, and Harry is planning to go there next time. (\"Next time he was in Hogsmeade...\")"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who has been helping Harry, and Harry wants to buy him socks. (\"he was going to buy Dobby a pair of socks...\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character in the story, and he has just finished his exams. (\"he had got through...he didn't have to worry about anything now until June the twenty-fourth.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "helped_by",
+      "description": "Harry has been helped by Dobby, and now he wants to repay him by buying him socks. (\"he was going to buy Dobby a pair of socks...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "planning_to_visit",
+      "description": "Harry is planning to visit Hogsmeade next time. (\"Next time he was in Hogsmeade...\")"
+    }
+  ]
+}

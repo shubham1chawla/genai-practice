@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned throughout the passage."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as having given Harry a mission, described as going badly."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who is being persuaded by Harry to hand over a memory."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The train that takes students from Platform 9 3/4 to Hogwarts, mentioned as the place where Harry boasted about his mission."
+    },
+    {
+      "name": "advanced potion-making",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book that Harry is reading, which contains a heavily corrected version of An Elixir to Induce Euphoria."
+    },
+    {
+      "name": "half-blood prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The author of the heavily corrected version of An Elixir to Induce Euphoria in Advanced Potion-Making."
+    },
+    {
+      "name": "an elixir to induce euphoria",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "A potion that Harry is trying to create, which might put Slughorn into a good mood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "mission_given_by",
+      "description": "Harry believes that Voldemort gave him a mission, but it is going badly."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "slughorn",
+      "relationship_type": "trying_to_persuade",
+      "description": "Harry is trying to persuade Slughorn to hand over a memory by offering him the potion."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "half-blood prince",
+      "relationship_type": "created_by",
+      "description": "The heavily corrected version of An Elixir to Induce Euphoria in Advanced Potion-Making was created by the Half-Blood Prince."
+    }
+  ]
+}

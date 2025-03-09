@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry. He has to balance his homework with Quidditch practice and discussions with Wood."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Quidditch coach of Gryffindor House. He is constantly reminding Harry that he needs to catch the Snitch only if they are more than 50 points up."
+    },
+    {
+      "name": "gryffindor house",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry. They are obsessed with winning the Quidditch Cup."
+    },
+    {
+      "name": "slytherin house",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry. They are leading the tournament by exactly 200 points."
+    },
+    {
+      "name": "quidditch cup",
+      "entity_type": "trophy",
+      "singular": true,
+      "description": "The trophy that Gryffindor House is trying to win. It has not been won by Gryffindor since Charlie Weasley's time."
+    },
+    {
+      "name": "charlie weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A legendary Quidditch player who played for Gryffindor House. He is Ron's second oldest brother."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor house",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor House."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "gryffindor house",
+      "relationship_type": "coach_of",
+      "description": "Wood is the Quidditch coach of Gryffindor House."
+    },
+    {
+      "entity_1": "slytherin house",
+      "entity_2": "quidditch cup",
+      "relationship_type": "leader_in_tournament",
+      "description": "Slytherin House is leading the tournament by exactly 200 points."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "must_catch",
+      "description": "Harry must catch the Snitch only if Gryffindor House is more than 50 points up."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone close to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone close to Harry."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Gryffindor Tower is a location where students are not supposed to leave after hours."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is the one who wrote the letter to Harry."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is someone that Harry cannot do anything about."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who received the letter from Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "wrote_letter_to",
+      "description": "Sirius wrote a letter to Harry."
+    },
+    {
+      "entity_1": "gryffindor tower",
+      "entity_2": "harry",
+      "relationship_type": "restricted_area_for",
+      "description": "Gryffindor Tower is restricted for Harry after hours."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "harry",
+      "relationship_type": "cannot_control",
+      "description": "Harry cannot do anything about Crouch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of_friend",
+      "description": "Ron and Hermione are friends of Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "recipient_of_letter",
+      "description": "Harry received a letter from Sirius."
+    }
+  ]
+}

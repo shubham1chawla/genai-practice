@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as speaking to Harry in the Great Hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is mentioned throughout the passage."
+    },
+    {
+      "name": "binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Binns is a teacher who Harry is late for."
+    },
+    {
+      "name": "fleur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur Delacour is mentioned as getting up from the Ra venclaw table and joining Cedric."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as being with Fleur Delacour and later inviting Harry to join them."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as slouching off to join Cedric and Fleur."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as possibly being at the school, but it is later revealed that they are not."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is mentioned as joining Cedric and Fleur."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "binns",
+      "relationship_type": "is_late_for",
+      "description": "Harry is late for Binns, as mentioned in the passage."
+    },
+    {
+      "entity_1": "fleur delacour",
+      "entity_2": "cedric",
+      "relationship_type": "is_with",
+      "description": "Fleur Delacour and Cedric are together at the Ra venclaw table."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "cedric",
+      "relationship_type": "is_with",
+      "description": "Krum joins Cedric and Fleur in the side chamber."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "has_family",
+      "description": "Harry mentions that he has no family who would turn up to see him."
+    },
+    {
+      "entity_1": "cedric",
+      "entity_2": "viktor krum",
+      "relationship_type": "is_with",
+      "description": "Cedric and Viktor Krum are together in the side chamber."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "is_invited_by",
+      "description": "Cedric invites Harry to join them in the side chamber."
+    }
+  ]
+}

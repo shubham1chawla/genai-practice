@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is a wizard and is talking to Harry about dealings between wizards and goblins. He mentions that there has been fault on both sides but also says that some goblins believe wizards cannot be trusted in matters of gold and treasure."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Goblins are a breed of being that have had dealings with wizards for centuries. They believe that the rightful owner of an object is its maker, not the purchaser."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is a place where goblins work and are prone to believing that wizards cannot be trusted in matters of gold and treasure."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is talking to Bill about dealings between wizards and goblins. He tries to argue that the object was bought but Bill explains the goblin perspective."
+    },
+    {
+      "name": "wizards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Wizards have had dealings with goblins for centuries and are accused of not being able to be trusted in matters of gold and treasure."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "goblins",
+      "relationship_type": "has_belief",
+      "description": "Bill explains the belief among some goblins that wizards cannot be trusted in matters of gold and treasure."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizards",
+      "relationship_type": "is_part_of",
+      "description": "Harry is a wizard and is talking to Bill about dealings between wizards and goblins."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who seized the branch Lupin had used to freeze the tree. He prodded the knot and vanished from view as he put on the cloak."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who had used the branch to freeze the tree. Snape seized this branch."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who said 'So that's it, we're all down there... and now we've just got to wait until we come back up again.' She took the end of Buckbeak's rope and tied it securely around the nearest tree."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is an animal whose rope Hermione tied securely around the nearest tree."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who was not caught by the dementors, despite their large number. Hermione wonders why this happened."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who sat down next to Hermione and explained what he'd seen: how a large silver something came galloping across the lake and forced the dementors to retreat."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "Dementors are monsters that were coming towards Sirius, but were forced to retreat by a large silver something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "used_by",
+      "description": "Snape seized the branch Lupin had used to freeze the tree."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "buckbeak",
+      "relationship_type": "tied_rope_to",
+      "description": "Hermione tied Buckbeak's rope securely around the nearest tree."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "defeated_by",
+      "description": "Harry explained that a large silver something came galloping across the lake and forced the dementors to retreat."
+    }
+  ]
+}

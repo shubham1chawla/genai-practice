@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A village mentioned in the bulletin board notice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who read the new notice on the bulletin board."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is planning to go to Hogsmeade again."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher or staff member at Hogwarts who hasn't done anything about the passage into Honeydukes."
+    },
+    {
+      "name": "honeydukes",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A shop in Hogsmeade village where Harry and Ron went previously."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is sitting behind him and threatening to tell Professor McGonagall about the map."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who Hermione threatens to tell about Harry's map."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as someone who nearly did something bad to Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "planned_visit",
+      "description": "Harry is planning to go to Hogsmeade again."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "threatened_to_tell",
+      "description": "Hermione threatens to tell Professor McGonagall about Harry's map."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "sirius black",
+      "relationship_type": "victim_of_nearly_harm",
+      "description": "Ron was nearly harmed by Sirius Black."
+    }
+  ]
+}

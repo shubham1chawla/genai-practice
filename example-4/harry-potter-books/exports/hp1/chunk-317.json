@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Oliver Wood, mentioned as 'Potter' in the text."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Oliver Wood, a person who has arrived and is addressing Harry Potter."
+    },
+    {
+      "name": "nimbus two thousand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Nimbus Two Thousand broomstick, mentioned as being controlled by Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person controlling the Nimbus Two Thousand broomstick and being addressed by Oliver Wood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "wood",
+      "relationship_type": "addressed_by",
+      "description": "Oliver Wood is addressing Harry Potter, as seen in the text: 'Hey, Potter, come down!'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "nimbus two thousand",
+      "relationship_type": "controls",
+      "description": "Harry Potter is controlling the Nimbus Two Thousand broomstick, as mentioned in the text: 'The Nimbus T wo Thousand turned wherever he wanted at his lightest touch.'"
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "potter",
+      "relationship_type": "addressed_to",
+      "description": "Oliver Wood is addressing Harry Potter, as seen in the text: 'Hey, Potter, come down!' (inverse relationship of addressed_by)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "wood",
+      "relationship_type": "spoken_to",
+      "description": "Harry Potter is being spoken to by Oliver Wood, as mentioned in the text: 'Hey, Potter, come down!'"
+    }
+  ]
+}

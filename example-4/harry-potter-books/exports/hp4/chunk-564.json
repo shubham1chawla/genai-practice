@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one giving Harry a piece of parchment and a quill to write his letter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one writing his letter to Sirius."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the recipient of Harry's letter and is also mentioned in the context of the Triwizard Tournament."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "recipient_of_letter",
+      "description": "Harry is writing a letter to Sirius, as mentioned in the text: 'Dear Sirius...'"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "assistant_to_harry",
+      "description": "Hermione is assisting Harry by giving him a piece of parchment and a quill to write his letter, as mentioned in the text: 'Hermione gave Harry a piece of parchment, a quill, and a bottle of ink...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "triwizard_tournament",
+      "relationship_type": "participant_in",
+      "description": "Harry is participating in the Triwizard Tournament, as mentioned in the text: 'I don’t know if you’ve heard, but the Tri-wizard Tournament’s happening this year and on Saturday night I got picked as a fourth champion.'"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "informant_to_harry",
+      "description": "Sirius is mentioned as someone who told Harry to keep him posted on what’s happening at Hogwarts, as mentioned in the text: 'You told me to keep you posted on what’s happening at Hogwarts...'"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is mentioned as the event that everyone is attending. (Excerpt: 'THE QUIDDITCH WORLD CUP')"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who is leading the group and making decisions. (Excerpt: 'Mr. Weasley in the lead')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is attending the Quidditch World Cup and is excited about it. (Excerpt: 'Harry couldn’t stop grinning')"
+    },
+    {
+      "name": "ministry task force",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry Task Force is an organization that has been working on the stadium. (Excerpt: 'Ministry task force of five hundred have been working on it all year')"
+    },
+    {
+      "name": "muggle repelling charms",
+      "entity_type": "technology",
+      "singular": false,
+      "description": "Muggle Repelling Charms are a technology that has been used to protect the stadium. (Excerpt: 'Muggle Re pelling Charms on every inch of it')"
+    },
+    {
+      "name": "stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The stadium is a location where the Quidditch World Cup is being held. (Excerpt: 'They emerged on the other side and found themselves in the shadow of a gigantic stadium')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "attendee",
+      "description": "Mr. Weasley is attending the Quidditch World Cup. (Excerpt: 'THE QUIDDITCH WORLD CUP')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "attendee",
+      "description": "Harry is attending the Quidditch World Cup. (Excerpt: 'THE QUIDDITCH WORLD CUP')"
+    },
+    {
+      "entity_1": "ministry task force",
+      "entity_2": "stadium",
+      "relationship_type": "builder",
+      "description": "The Ministry Task Force has been working on the stadium. (Excerpt: 'Ministry task force of five hundred have been working on it all year')"
+    },
+    {
+      "entity_1": "muggle repelling charms",
+      "entity_2": "stadium",
+      "relationship_type": "installed_on",
+      "description": "Muggle Repelling Charms have been installed on the stadium. (Excerpt: 'Muggle Re pelling Charms on every inch of it')"
+    }
+  ]
+}

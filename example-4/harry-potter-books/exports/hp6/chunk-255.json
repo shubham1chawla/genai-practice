@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "potter",
+      "entity_type": "family_name",
+      "singular": true,
+      "description": "Harry's family name."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is being watched by Harry."
+    },
+    {
+      "name": "cho chang",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who avoids looking at Harry."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that makes the wearer invisible."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "is_watching",
+      "description": "Harry is watching Malfoy on his way."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho chang",
+      "relationship_type": "is_being_avoided_by",
+      "description": "Cho Chang avoids looking at Harry."
+    }
+  ]
+}

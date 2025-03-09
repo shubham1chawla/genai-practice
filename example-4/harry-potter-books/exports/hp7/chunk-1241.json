@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is not interested in wearing the diadem. He wants to defeat Voldemort and finish him."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a wizard who calls himself Lord. Harry wants to defeat him."
+    },
+    {
+      "name": "lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Lord is a title given to Voldemort by himself."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "enemy_of",
+      "description": "Harry wants to defeat Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diadem",
+      "relationship_type": "interested_in",
+      "description": "Harry is not interested in wearing the diadem, but he wants information about it."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard with a lightning scar."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who works at Gringotts bank and is offended by the idea of its defenses being breached."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, a wizard."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, a witch."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for wizards and witches where Harry studied."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry is talking to Griphook about breaking into a Gringotts vault."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "griphook",
+      "relationship_type": "contradicts",
+      "description": "Ron contradicts Griphook's statement that it is impossible to break into a Gringotts vault."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "has_memory_of",
+      "description": "Harry has a memory of Hogwarts, which he sees when he touches his lightning scar."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is brooding over what to do next about Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Potions master at Hogwarts who has information about Horcruxes."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Objects that contain pieces of Voldemort's soul. Harry is trying to get more information about them from Slughorn."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "has_information_about",
+      "description": "Harry wants to get more information about Horcruxes from Slughorn, but is trying not to make it obvious."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcruxes",
+      "relationship_type": "is_searching_for",
+      "description": "Harry is searching for more information about Horcruxes."
+    }
+  ]
+}

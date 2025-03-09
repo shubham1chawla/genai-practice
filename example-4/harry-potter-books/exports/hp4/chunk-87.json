@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, a wizard who has been living with his Muggle relatives, the Dursleys. He is mentioned as being ready to get his trunk and is greeted by Mr. Weasley."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a wizard who has come to help Harry. He is described as 'brightly' greeting Harry and asking about his trunk."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the twins who are helping Harry. He is mentioned as winking at Harry and offering to get his trunk."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is a Muggle relative of Harry's who is hiding behind Uncle Vernon. She is described as staggering upright again after being startled by Mr. Weasley."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is a Muggle relative of Harry's who is hiding behind Aunt Petunia. He is described as being 'understruck' by Mr. Weasley."
+    },
+    {
+      "name": "floo network",
+      "entity_type": "system",
+      "singular": false,
+      "description": "The Floo Network is a magical system that allows wizards to travel through fireplaces. It is mentioned as being connected to the Dursleys' fireplace by Mrs. Weasley."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's Muggle relatives who do not understand magic. They are described as 'gaping' at Mr. Weasley and hiding behind each other."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "greeting",
+      "description": "Mr. Weasley greets Harry brightly."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "helping",
+      "description": "Fred offers to help Harry by getting his trunk."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "uncle vernon",
+      "relationship_type": "hiding_behind",
+      "description": "Aunt Petunia hides behind Uncle Vernon after being startled by Mr. Weasley."
+    }
+  ]
+}

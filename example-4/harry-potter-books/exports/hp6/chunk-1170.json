@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is mentioned as someone who was looking for Harry. He has an entourage."
+    },
+    {
+      "name": "percy weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy Weasley is described with red hair and horn-rimmed glasses. He is part of Scrimgeour's entourage."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who gave no sign that he was aware of Percy."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Crabbe and Goyle are described as hulking boys muttering together at the Slytherin table."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": false,
+      "description": "See Crabbe."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as a tall, pale figure who was bossing Crabbe and Goyle around. He had fear in his voice on the Tower top."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone Harry has animosity towards."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who was killed."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as making Malfoy do something under threat."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is mentioned throughout the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "malfoy",
+      "relationship_type": "threatens",
+      "description": "Voldemort is making Malfoy do something under threat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_about",
+      "description": "Harry did not believe that Malfoy would have killed Dumbledore."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "bosses",
+      "description": "Malfoy was bossing Crabbe and Goyle around."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "bosses",
+      "description": "See Malfoy-Crabbe relationship."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "animosity_towards",
+      "description": "Harry has animosity towards Snape."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "killed_by",
+      "description": "Dumbledore was killed."
+    }
+  ]
+}

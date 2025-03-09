@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Minister of Magic, mentioned in the letter signed by him"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student who received a ban from playing Quidditch"
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student who received a ban from playing Quidditch"
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Teacher who imposed the ban on Harry and George"
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "game",
+      "singular": false,
+      "description": "Sport that Harry and George were banned from playing"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dolores umbridge",
+      "entity_2": "harry potter",
+      "relationship_type": "imposed_ban",
+      "description": "Dolores Umbridge imposed a ban on Harry Potter from playing Quidditch"
+    },
+    {
+      "entity_1": "dolores umbridge",
+      "entity_2": "george weasley",
+      "relationship_type": "imposed_ban",
+      "description": "Dolores Umbridge imposed a ban on George Weasley from playing Quidditch"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "quidditch",
+      "relationship_type": "banned_from_playing",
+      "description": "Harry Potter was banned from playing Quidditch by Dolores Umbridge"
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "quidditch",
+      "relationship_type": "banned_from_playing",
+      "description": "George Weasley was banned from playing Quidditch by Dolores Umbridge"
+    }
+  ]
+}

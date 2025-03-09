@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "prophecy",
+      "entity_type": "prophecy",
+      "singular": true,
+      "description": "The prophecy is mentioned as something whose whereabouts are unknown."
+    },
+    {
+      "name": "newspaper",
+      "entity_type": "newspaper",
+      "singular": false,
+      "description": "Newspapers are mentioned as being beside each other."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rufus Scrimgeour is introduced as the new Minister for Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "prophecy",
+      "entity_2": "newspaper",
+      "relationship_type": "unrelated_to",
+      "description": "The prophecy's whereabouts are unknown, and it does not seem to be related to the newspapers."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "fudge",
+      "relationship_type": "succeeded",
+      "description": "Rufus Scrimgeour has succeeded Cornelius Fudge as Minister for Magic."
+    }
+  ]
+}

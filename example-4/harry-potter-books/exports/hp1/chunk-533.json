@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is introduced as one of Harry's friends who follows him straight away."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the main character who lands sprawled next to Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is introduced as one of Harry's friends who jumps and lands on his other side."
+    },
+    {
+      "name": "plant thing",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The plant thing is described as a 'soft landing' that breaks the fall. It has snake-like tendrils that bind Ron and Harry's legs."
+    },
+    {
+      "name": "dog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A dog is mentioned in the background, barking loudly."
+    },
+    {
+      "name": "school",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school is mentioned as being above them, with Hermione saying 'We must be miles under the school'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "landed_next_to",
+      "description": "Hermione landed on Harry's other side."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "plant thing",
+      "relationship_type": "bound_by",
+      "description": "The plant had started to twist snake-like tendrils around Ron's ankles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "plant thing",
+      "relationship_type": "bound_by",
+      "description": "The plant had already bound Harry's legs tightly in long creepers without his noticing."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "wall",
+      "relationship_type": "struggled_towards",
+      "description": "Hermione leapt up and struggled towards a damp wall."
+    },
+    {
+      "entity_1": "plant thing",
+      "entity_2": "hermione",
+      "relationship_type": "tried_to_bind",
+      "description": "The plant had started to twist snake-like tendrils around Hermione's ankles."
+    }
+  ]
+}

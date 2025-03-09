@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "yule ball",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Yule Ball is mentioned as an event where students are attending, and it seems to be a formal gathering with music and dancing."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who stands up and asks the students to do the same. He then conjures a raised platform into existence for the Weird Sisters to perform on."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the champions who is attending the Yule Ball and is watching the Weird Sisters perform. He seems to be interested in their music."
+    },
+    {
+      "name": "weird sisters",
+      "entity_type": "band",
+      "singular": false,
+      "description": "The Weird Sisters are a band that performs at the Yule Ball. They are described as being extremely hairy and dressed in black robes with ripped and torn edges."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "yule ball",
+      "relationship_type": "host",
+      "description": "Dumbledore is hosting the Yule Ball, as he stands up to ask the students to do the same and conjures a raised platform for the Weird Sisters to perform on."
+    },
+    {
+      "entity_1": "weird sisters",
+      "entity_2": "yule ball",
+      "relationship_type": "performer",
+      "description": "The Weird Sisters are performing at the Yule Ball, as they trooped up onto the stage and started playing their instruments."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weird sisters",
+      "relationship_type": "audience_member",
+      "description": "Harry is watching the Weird Sisters perform at the Yule Ball, as he seems to be interested in their music and almost forgot what was coming."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is a person who is speaking to Voldemort and seems to be involved in the conversation about the boy's transfer."
+    },
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dawlish is a person mentioned by Yaxley as believing an entire party of Aurors will be used to transfer the boy."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who is being addressed by Yaxley and seems to be in charge."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is speaking to Voldemort about the boy's transfer."
+    },
+    {
+      "name": "boy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The boy is an object being referred to in the conversation about his transfer."
+    },
+    {
+      "name": "order of the order of the phoenix",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Order of the Phoenix is an organization mentioned by Snape as providing protection for the boy's hiding place."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is an organization mentioned by Snape and Voldemort as being involved in the conversation about the boy's transfer."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "voldemort",
+      "relationship_type": "speaking_to",
+      "description": "Yaxley is speaking to Voldemort."
+    },
+    {
+      "entity_1": "dawlish",
+      "entity_2": "boy",
+      "relationship_type": "believes_transferring",
+      "description": "Dawlish believes an entire party of Aurors will be used to transfer the boy."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "speaking_to",
+      "description": "Voldemort is speaking to Snape."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "ministry of magic",
+      "relationship_type": "questioning",
+      "description": "Yaxley is questioning the Ministry of Magic about whether they will have fallen by next Saturday."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "ministry of magic",
+      "relationship_type": "involvement",
+      "description": "Voldemort is involved in the conversation with the Ministry of Magic about the boy's transfer."
+    }
+  ]
+}

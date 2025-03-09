@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who is trying to defeat Lord Voldemort."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard who created Horcruxes to become immortal."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects that contain pieces of Voldemort's soul, making him immortal."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lord voldemort",
+      "relationship_type": "enemy",
+      "description": "Harry Potter is trying to defeat Lord Voldemort."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "horcruxes",
+      "relationship_type": "target",
+      "description": "Harry Potter needs to find and destroy the Horcruxes to defeat Voldemort."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "creation",
+      "description": "Lord Voldemort created the Horcruxes to become immortal."
+    }
+  ]
+}

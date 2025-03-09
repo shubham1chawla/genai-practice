@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, Harry Potter, is mentioned as he walks through the Slytherin desks and heads for the door."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin is a friend of Harry's who speaks to him about his being champion."
+    },
+    {
+      "name": "potter stinks",
+      "entity_type": "phrase",
+      "singular": false,
+      "description": "The phrase 'POTTER STINKS' is written on the Slytherin desks and is mentioned as a derogatory term for Harry."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as the newspaper that wants photos of Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "potter stinks",
+      "relationship_type": "target_of_derogatory_term",
+      "description": "The phrase 'POTTER STINKS' is directed at Harry, indicating that he is the target of this derogatory term."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "daily prophet",
+      "relationship_type": "target_of_publicity",
+      "description": "The Daily Prophet wants photos of Harry, indicating that he is the target of their publicity efforts."
+    }
+  ]
+}

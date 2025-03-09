@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "department of mysteries",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The department where Potter is being summoned by Snape. (\"There are many things in the De partment of Mysteries...\")"
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts. (\"Potter, few of which you would understand and none of which concern you...\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape, a teacher at Hogwarts. (\"do I make myself plain?\", \"You are to rid your mind of all emotion every night before sleep...\")"
+    },
+    {
+      "name": "ron and hermione",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry's friends Ron and Hermione. (\"find Ron and Hermione.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "department of mysteries",
+      "relationship_type": "is summoned by",
+      "description": "Potter is being summoned to the Department of Mysteries. (\"I want you back here same time on Wednesday, and we will continue work then.\")"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "is instructed by",
+      "description": "Snape is instructing Potter to rid his mind of all emotion every night before sleep. (\"You are to rid your mind of all emotion every night before sleep...\")"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "is warned by",
+      "description": "Snape is warning Potter that he will know if Potter has not practiced. (\"And be warned, Potter . . . I shall know if you have not practiced...\")"
+    }
+  ]
+}

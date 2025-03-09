@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "scabbers",
+      "entity_type": "rat",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat who escapes from the shop and takes refuge under a wastepaper bin."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Crookshanks is a huge and orange cat that attacks Scabbers."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the owner of Scabbers who gets attacked by Crookshanks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Ron's friend who follows him to catch Scabbers."
+    },
+    {
+      "name": "quality quidditch supplies",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Quality Quidditch Supplies is a shop where Ron and Harry go to buy things related to Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crookshanks",
+      "entity_2": "scabbers",
+      "relationship_type": "attack",
+      "description": "Crookshanks attacks Scabbers."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "own",
+      "description": "Ron owns Scabbers."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "scabbers",
+      "relationship_type": "help",
+      "description": "Harry helps Ron to catch Scabbers."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "quality quidditch supplies",
+      "relationship_type": "visit",
+      "description": "Ron visits Quality Quidditch Supplies with Harry."
+    }
+  ]
+}

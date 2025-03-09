@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'you' by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is sternly telling him to inform someone about his participation in a tournament."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, mentioned as someone who would rather hear the news from Harry himself."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who has an owl that Harry might be able to borrow."
+    },
+    {
+      "name": "tournaments",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The tournament in which Harry is participating."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "A newspaper that might publish news about Harry's participation in the tournament."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl who is not to be used again."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A person or entity that Harry is famous for being associated with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "informing",
+      "description": "Hermione is telling Harry to inform someone about his participation in the tournament."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "preferring",
+      "description": "Sirius would rather hear the news from Harry himself."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "borrowing_from",
+      "description": "Harry might be able to borrow Ron's owl."
+    },
+    {
+      "entity_1": "daily prophet",
+      "entity_2": "harry",
+      "relationship_type": "publishing_news_about",
+      "description": "The Daily Prophet might publish news about Harry's participation in the tournament."
+    }
+  ]
+}

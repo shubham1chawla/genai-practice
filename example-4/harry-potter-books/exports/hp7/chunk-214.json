@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "men",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to the people arriving to put up the tent for the wedding. (Excerpt: \"men arrive tomorrow . . . to put up the tent for the wedding\")"
+    },
+    {
+      "name": "tent",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A structure that will be set up for the wedding. (Excerpt: \"put up the tent for the wedding\")"
+    },
+    {
+      "name": "wedding",
+      "entity_type": "event",
+      "singular": true,
+      "description": "An event being organized by Mrs. Weasley. (Excerpt: \"the wedding\")"
+    },
+    {
+      "name": "Millamant's Magic Marquees",
+      "entity_type": "company",
+      "singular": true,
+      "description": "A company providing services for the wedding. (Excerpt: \"Millamant’s Magic Marquees . . . they’re very good.\")"
+    },
+    {
+      "name": "Bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley's son who is escorting the people from Millamant's Magic Marquees. (Excerpt: \"Bill’s escorting them.\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being spoken to by Mrs. Weasley. (Excerpt: \"You’d better stay inside while they’re here, Harry.\")"
+    },
+    {
+      "name": "Mrs. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is organizing the wedding and talking to Harry. (Excerpt: \"I didn’t mean — well, your safety’s much more important!\")"
+    },
+    {
+      "name": "Remus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone Mrs. Weasley invites to celebrate Harry's birthday. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    },
+    {
+      "name": "Tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone Mrs. Weasley invites to celebrate Harry's birthday. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    },
+    {
+      "name": "Hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone Mrs. Weasley asks if she should invite to celebrate Harry's birthday. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "wedding",
+      "relationship_type": "involved_in",
+      "description": "Harry is involved in the wedding. (Excerpt: \"It’s the day before the wedding.\")"
+    },
+    {
+      "entity_1": "Bill",
+      "entity_2": "Millamant's Magic Marquees",
+      "relationship_type": "employee_of",
+      "description": "Bill works for Millamant's Magic Marquees. (Excerpt: \"Bill’s escorting them.\")"
+    },
+    {
+      "entity_1": "Mrs. Weasley",
+      "entity_2": "wedding",
+      "relationship_type": "organizer_of",
+      "description": "Mrs. Weasley is organizing the wedding. (Excerpt: \"I didn’t mean — well, your safety’s much more important!\")"
+    },
+    {
+      "entity_1": "Remus",
+      "entity_2": "Harry's birthday celebration",
+      "relationship_type": "guest_at",
+      "description": "Remus will be a guest at Harry's birthday celebration. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    },
+    {
+      "entity_1": "Tonks",
+      "entity_2": "Harry's birthday celebration",
+      "relationship_type": "guest_at",
+      "description": "Tonks will be a guest at Harry's birthday celebration. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    },
+    {
+      "entity_1": "Hagrid",
+      "entity_2": "Harry's birthday celebration",
+      "relationship_type": "guest_at",
+      "description": "Hagrid will be a guest at Harry's birthday celebration. (Excerpt: \"And how about Hagrid? And how about Remus and Tonks?\")"
+    }
+  ]
+}

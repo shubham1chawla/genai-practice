@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is furious and perplexed. He is referred to as 'he' in the text."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is delirious but then becomes clear-headed. He is referred to as 'he' in the text."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who has a plan to have someone murder Dumbledore. He is referred to as 'him' in the text."
+    },
+    {
+      "name": "malfoy boy",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The Malfoy boy is a person who is involved in Voldemort's plan to murder Dumbledore. He is referred to as 'the poor Malfoy boy' in the text."
+    },
+    {
+      "name": "ring",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ring is an object that has been broken. It is referred to as 'the broken ring' in the text."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is an object that is mentioned alongside the broken ring. It is referred to as 'the sword' in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "malfoy boy",
+      "relationship_type": "has_plan",
+      "description": "Voldemort has a plan for the Malfoy boy to murder Dumbledore. This is mentioned in the sentence 'His plan to have the poor Malfoy boy murder me.'"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "target_of_plan",
+      "description": "Dumbledore is the target of Voldemort's plan, which involves having someone else murder him. This is mentioned in the sentence 'His plan to have the poor Malfoy boy murder me.'"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_for",
+      "description": "Snape is concerned for Dumbledore's safety, as evidenced by his reaction to Voldemort's plan. This is mentioned in the sentence 'I refer to the plan Lord Voldemort is revolving around me.'"
+    }
+  ]
+}

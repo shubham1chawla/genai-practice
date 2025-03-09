@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "albus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus is Harry's son who is about to start at Hogwarts. He has inherited Lily's eyes and is named after two headmasters of Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Albus's father and a former student of Hogwarts. He is giving advice to his son before he leaves for school."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is Harry's wife and Albus's mother. She is waving goodbye to Rose on the train."
+    },
+    {
+      "name": "peevs",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Peeves is a mischievous ghost who lives in Hogwarts. Harry warns Albus not to mess with him."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is likely James Potter, Harry's father and a former student of Hogwarts. Harry warns Albus not to let him wind him up."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "Hagrid has invited Albus to tea next Friday. He is a gamekeeper at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "albus",
+      "entity_2": "harry",
+      "relationship_type": "parent_child",
+      "description": "Albus is Harry's son."
+    },
+    {
+      "entity_1": "albus",
+      "entity_2": "ginny",
+      "relationship_type": "parent_child",
+      "description": "Albus is Ginny's son."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "james",
+      "relationship_type": "ancestor_descendant",
+      "description": "Harry is James's son."
+    },
+    {
+      "entity_1": "albus",
+      "entity_2": "peevs",
+      "relationship_type": "avoidance",
+      "description": "Albus should avoid Peeves, a mischievous ghost at Hogwarts."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "albus",
+      "relationship_type": "inviter_invitee",
+      "description": "Hagrid has invited Albus to tea next Friday."
+    }
+  ]
+}

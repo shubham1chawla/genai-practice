@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "pigwidgeon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Pigwidgeon is Ron's owl, described as hooting happily and soaring through the air."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a third-year student at Hogwarts, described as snapping at the third-year girls and waving his fist with Pigwidgeon on it."
+    },
+    {
+      "name": "pigwidgeon's leg",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Pigwidgeon's leg is where Sirius's reply was attached."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who sent a reply to Harry through Pigwidgeon."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is where Ron, Harry, and Hermione went to read Sirius's reply."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who received a letter from Sirius through Pigwidgeon."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who sat with Ron and Harry in the common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "pigwidgeon",
+      "relationship_type": "owns",
+      "description": "Ron owns Pigwidgeon, as evidenced by him waving his fist with Pigwidgeon on it."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "sent_letter_to",
+      "description": "Sirius sent a letter to Harry through Pigwidgeon."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "went_to",
+      "description": "Ron went to Gryffindor Tower with Harry and Hermione to read Sirius's reply."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "received_letter_from",
+      "description": "Harry received a letter from Sirius through Pigwidgeon."
+    }
+  ]
+}

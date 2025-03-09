@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the potions master who is teaching the class. He is described as ignoring Hermione's quivering hand and being displeased with Harry's response."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student in Snape's class who is trying to answer his question about monkshood and wolfsbane. She stands up and stretches her hand towards the dungeon ceiling."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student in Snape's class who is being questioned by Snape about the difference between monkshood and wolfsbane. He quietly says that he doesn't know the answer."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Seamus is a student in Snape's class who is laughing at Harry's response to Snape's question."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "hermione",
+      "relationship_type": "ignores",
+      "description": "Snape ignores Hermione's quivering hand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "seamus",
+      "relationship_type": "communicates_with",
+      "description": "Harry catches Seamus's eye and they share a wink."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "punishes",
+      "description": "Snape says that a point will be taken from Gryffindor house."
+    }
+  ]
+}

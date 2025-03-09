@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is described as glancing back and thinking about their actions."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who disguised herself as Bellatrix. She is mentioned as shrieking something after the cart crash."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Death Eater whose wand was stolen. Hermione disguised herself as her."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A goblin who shouted 'No!' before the cart crashed."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A bank in the wizarding world where Harry and his friends went. It is described as having deeper passages than they had ever seen."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who knew about Hermione's disguise."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "visited",
+      "description": "Harry and his friends visited Gringotts bank."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bellatrix",
+      "relationship_type": "disguised_as",
+      "description": "Hermione disguised herself as Bellatrix."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "harry",
+      "relationship_type": "shouted_at",
+      "description": "Griphook shouted 'No!' at Harry."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "bellatrix's wand",
+      "relationship_type": "knew_about",
+      "description": "The Death Eaters knew about the stolen wand."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as disordered and dusty with paper peeling from the walls and stains on the floor."
+    },
+    {
+      "name": "furniture",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The furniture in the room is broken, suggesting that it was smashed."
+    },
+    {
+      "name": "windows",
+      "entity_type": "feature",
+      "singular": true,
+      "description": "The windows are boarded up."
+    },
+    {
+      "name": "hallway",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A shadowy hallway is visible through an open door to the right of Harry and Hermione."
+    },
+    {
+      "name": "Shrieking Shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hermione thinks they are in the Shrieking Shack."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as looking around and noticing the broken furniture."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is frightened but nods at Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "room",
+      "relationship_type": "is_in",
+      "description": "Harry is in the room."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "room",
+      "relationship_type": "is_in",
+      "description": "Hermione is also in the room."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "hallway",
+      "relationship_type": "can_see",
+      "description": "Harry can see the hallway through an open door."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Shrieking Shack",
+      "relationship_type": "thinks_is_in",
+      "description": "Hermione thinks they are in the Shrieking Shack."
+    }
+  ]
+}

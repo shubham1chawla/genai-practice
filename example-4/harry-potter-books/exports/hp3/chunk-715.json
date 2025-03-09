@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "merlin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merlin is mentioned as someone who hit Harry hard."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and a student at Hogwarts."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a teacher at Hogwarts and a werewolf."
+    },
+    {
+      "name": "owls",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Owls are mentioned as the mode of transportation for letters from parents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "teach",
+      "description": "Harry is a student in Lupin's Defense Against the Dark Arts class."
+    },
+    {
+      "entity_1": "parents",
+      "entity_2": "owls",
+      "relationship_type": "transport",
+      "description": "Parents send letters to Hogwarts via owls."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "friend",
+      "description": "Harry and Lupin have a close relationship, as evidenced by Harry's desire for Lupin to stay at Hogwarts."
+    },
+    {
+      "entity_1": "headmaster",
+      "entity_2": "harry",
+      "relationship_type": "inform",
+      "description": "The headmaster informs Lupin about Harry's heroic actions the previous night."
+    }
+  ]
+}

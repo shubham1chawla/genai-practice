@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who watched the Ministry entrance for seven hours."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who received news about his dad from Harry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as a place where Mr. Weasley works and can be seen walking in and out of."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as Ron's dad who looks strained and anxious."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who uses the Floo Network to get to work."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "watched",
+      "description": "Harry watched the Ministry entrance for seven hours."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mr weasley",
+      "relationship_type": "received news about",
+      "description": "Ron received news about his dad from Harry."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "floo network",
+      "relationship_type": "uses",
+      "description": "Umbridge uses the Floo Network to get to work."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ministry",
+      "relationship_type": "works at",
+      "description": "Mr. Weasley works at the Ministry."
+    }
+  ]
+}

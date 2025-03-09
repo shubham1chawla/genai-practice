@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a person who is bringing a dragon to the scene. He is described as being 'enraptured' by the dragons and is having a romantic date with someone."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as a person who is frowning at Hagrid's actions. He is described as being concerned about the champions knowing what's coming."
+    },
+    {
+      "name": "horntail",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "The Horntail is described as a vicious dragon with spikes on its back end. It is mentioned as one of the dragons that the champions will have to get past."
+    },
+    {
+      "name": "champions",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The champions are mentioned as a group of people who are participating in some kind of competition or challenge. They are described as not knowing what's coming and being concerned about the dragons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "horntail",
+      "relationship_type": "has_interest_in",
+      "description": "Hagrid is shown to be interested in the Horntail, as he is described as being 'enraptured' by it."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "hagrid",
+      "relationship_type": "criticizes",
+      "description": "Charlie criticizes Hagrid's actions, saying that they are a 'romantic date'. He also expresses concern about the champions knowing what's coming."
+    },
+    {
+      "entity_1": "champions",
+      "entity_2": "horntail",
+      "relationship_type": "must_get_past",
+      "description": "The champions must get past the Horntail as part of their challenge or competition."
+    }
+  ]
+}

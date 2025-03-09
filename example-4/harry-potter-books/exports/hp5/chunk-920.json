@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who asks Hagrid questions about their encounter with the giants."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and has experience dealing with giants."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who gave Hagrid instructions on how to deal with the giants."
+    },
+    {
+      "name": "karkus",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Karkus is a giant whom Hagrid and his group encountered."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who corrects Ron and Harry about the Gubraithian fire."
+    },
+    {
+      "name": "gubraithian fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Gubraithian fire is an everlasting fire that Hagrid's group gave to Karkus as a gift."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick is a teacher at Hogwarts who has mentioned the Gubraithian fire in class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "karkus",
+      "relationship_type": "gave_gift_to",
+      "description": "Hagrid and his group gave Karkus a branch of Gubraithian fire as a gift."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "instructed",
+      "description": "Dumbledore instructed Hagrid on how to deal with the giants."
+    }
+  ]
+}

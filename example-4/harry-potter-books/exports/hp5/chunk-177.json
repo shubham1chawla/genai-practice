@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly Weasley's husband, mentioned as having a wooden expression"
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy's brother, mentioned as not needing to apparate every few feet"
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy's brother, mentioned as not charming everything he met"
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly Weasley's son, mentioned in the context of his brothers"
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator and Bill's wife"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A guest at the dinner party, mentioned as ladling stew onto a plate for Molly"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A guest at the dinner party, mentioned in conversation with Mrs. Weasley"
+    },
+    {
+      "name": "twins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The twins are Percy's brothers, Bill and Charlie"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasley",
+      "entity_2": "percy",
+      "relationship_type": "parent_child",
+      "description": "Molly Weasley is Percy's mother"
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "molly",
+      "relationship_type": "spouse_spouse",
+      "description": "Bill is Molly's husband"
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "molly",
+      "relationship_type": "spouse_spouse",
+      "description": "Charlie is Molly's husband"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "molly",
+      "relationship_type": "guest_guest",
+      "description": "Lupin is a guest at the dinner party and serves food to Molly"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "weasley",
+      "relationship_type": "guest_host",
+      "description": "Sirius is a guest at the dinner party and has a conversation with Mrs. Weasley"
+    }
+  ]
+}

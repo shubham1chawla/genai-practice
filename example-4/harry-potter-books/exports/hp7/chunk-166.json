@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Main character of the story, expecting to see Mad-Eye's ghost and feeling guilty about not being able to do anything about Horcruxes yet."
+    },
+    {
+      "name": "Mad-Eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Order who has died, with a ghost that Harry expects to see."
+    },
+    {
+      "name": "Horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Objects created by Voldemort to house pieces of his soul, which Harry needs to find and destroy."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is trying to reassure him that they can plan their next move together."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has been doing research on Horcruxes and will share her findings with Harry when he is ready."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Horcruxes",
+      "relationship_type": "concerned_about",
+      "description": "Harry feels guilty about not being able to do anything about Horcruxes yet."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione",
+      "relationship_type": "aware_of",
+      "description": "Ron is aware that Hermione has been doing research on Horcruxes and will share her findings with Harry when he is ready."
+    }
+  ]
+}

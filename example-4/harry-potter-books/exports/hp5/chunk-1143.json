@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "madam marsh",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Marsh is a passenger on the Knight Bus who is not feeling well. She retches and makes a horrible spattering sound, indicating she is ill."
+    },
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is the driver of the Knight Bus who helps Madam Marsh out of the bus."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a passenger on the Knight Bus who catches a glimpse of the Hog's Head in Hogsmeade."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin helps Harry and others off the bus with their luggage."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks helps Harry and others off the bus with their luggage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "stan",
+      "entity_2": "madam marsh",
+      "relationship_type": "helped",
+      "description": "Stan helped Madam Marsh out of the bus."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "helped",
+      "description": "Lupin helped Harry off the bus with his luggage."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "helped",
+      "description": "Tonks helped Harry off the bus with his luggage."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "tonks",
+      "relationship_type": "colleague",
+      "description": "Lupin and Tonks are colleagues who work together to help passengers off the bus."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "arrival",
+      "description": "Harry arrives at Hogwarts with the Knight Bus."
+    }
+  ]
+}

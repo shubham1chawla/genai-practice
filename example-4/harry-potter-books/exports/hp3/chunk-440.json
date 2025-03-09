@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is described as circling the Gryffindor goal post and vanishing again. It's a small, golden object that Harry and Cho are trying to catch."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is introduced as appearing out of thin air, blocking Harry's path. She's described as grinning and following Harry on her broomstick."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, accelerating towards the Snitch with his eyes fixed on it. He's instructed by Wood to knock Cho off her broom if necessary."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is introduced as roaring at Harry to be more aggressive and knock Cho off her broom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "follows",
+      "description": "Cho decides to mark Harry rather than search for the Snitch herself, so she follows him on her broomstick."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "pursues",
+      "description": "Harry is trying to catch the Snitch, accelerating towards it and diving to get a better look."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "snitch",
+      "relationship_type": "searches_for",
+      "description": "Cho initially decides to search for the Snitch herself rather than mark Harry."
+    }
+  ]
+}

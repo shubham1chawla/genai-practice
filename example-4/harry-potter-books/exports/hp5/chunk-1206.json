@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who receives mail from an owl."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who arrives at breakfast with him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student and one of Harry's friends, who receives a letter from an owl."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's owl, which is not present at breakfast."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A girl who Harry might be spending the day with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "met",
+      "description": "Harry and Hermione meet at breakfast."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owner",
+      "description": "Harry owns Hedwig, his owl."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "letter",
+      "relationship_type": "recipient",
+      "description": "Hermione receives a letter from an owl."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "planned_to_spend_time_with",
+      "description": "Harry and Cho planned to spend the day together."
+    }
+  ]
+}

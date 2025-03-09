@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "mr gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Gaunt is introduced as a character who is being spoken to by Ogden. He is described as snapping at Ogden and imitating his voice."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is introduced as the one speaking to Mr. Gaunt. He is described as sternly stating that Morfin has broken wizarding law."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is mentioned as having broken wizarding law and taught a Muggle a lesson."
+    },
+    {
+      "name": "the ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is introduced as the one that has issued a summons to Mr. Gaunt for a hearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "mr gaunt",
+      "relationship_type": "speaks_to",
+      "description": "Ogden speaks to Mr. Gaunt about Morfin breaking wizarding law."
+    },
+    {
+      "entity_1": "morfin",
+      "entity_2": "the ministry",
+      "relationship_type": "has_summons_from",
+      "description": "The Ministry has issued a summons to Morfin for a hearing."
+    }
+  ]
+}

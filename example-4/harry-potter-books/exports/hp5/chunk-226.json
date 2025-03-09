@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The noble and most ancient house of Black is mentioned as a proper noun."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person who loves hearing his mother shout at someone else."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are mentioned as a family with Mrs. Weasley being part of it."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as a person who is shouting at someone else."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as a person who is shaking his head and commenting on Mrs. Weasley's behavior."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is mentioned as a person who sneaked off when he was supposed to be following Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius's mum is mentioned as a reference to his mother."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who was being followed by Mundungus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "mundungus",
+      "relationship_type": "shout_at",
+      "description": "Mrs. Weasley is shouting at Mundungus."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "mrs weasley",
+      "relationship_type": "comment_on",
+      "description": "George is commenting on Mrs. Weasley's behavior."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "mrs weasley",
+      "relationship_type": "enjoy_listening_to",
+      "description": "Fred enjoys listening to his mother shout at someone else."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "harry",
+      "relationship_type": "follow",
+      "description": "Mundungus was supposed to be following Harry."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "mrs weasley",
+      "relationship_type": "be_target_of_shout",
+      "description": "Mrs. Weasley is shouting at Sirius's mum again."
+    }
+  ]
+}

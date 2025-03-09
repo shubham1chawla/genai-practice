@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita is a journalist who is interviewing Harry. She is described as shooting a sideways look at him and adding in a rough whisper, indicating that she is trying to provoke a reaction from him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is being interviewed by Rita. He is described as feeling angry and betrayed."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who speaks up in his defense. She is described as having a hard, clear voice."
+    },
+    {
+      "name": "minister of magic",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister of Magic is the head of the Ministry of Magic. He is described as being an idiot who doesn't believe Harry's story."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He-Who-Must-Not-Be-Named is a reference to Voldemort, the main antagonist of the series. He is described as being back and Harry being the sole witness."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a character who has been telling people that Voldemort is returning and Harry is the sole witness. He is not present in this scene but is mentioned by Rita."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of followers of Voldemort who were present at the event where Harry witnessed Voldemort's return. They are described as being there along with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita",
+      "entity_2": "harry",
+      "relationship_type": "interviews",
+      "description": "Rita is interviewing Harry, and she is trying to provoke a reaction from him by asking him about his feelings."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "rita",
+      "relationship_type": "defends",
+      "description": "Hermione speaks up in defense of Harry, saying that the Minister of Magic is an idiot who doesn't believe him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "he-who-must-not-be-named",
+      "relationship_type": "witnesses",
+      "description": "Harry witnessed Voldemort's return, and he is being questioned by Rita about it."
+    }
+  ]
+}

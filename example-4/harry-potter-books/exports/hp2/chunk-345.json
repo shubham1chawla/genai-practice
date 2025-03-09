@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and classmates."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Hogwarts nurse who is treating Harry's injuries."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and classmates."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Quidditch player who is mentioned as having a angry expression."
+    },
+    {
+      "name": "skele-gro",
+      "entity_type": "medicine",
+      "singular": true,
+      "description": "A potion that Madam Pomfrey gives to Harry to help him recover from his injuries."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used in the Quidditch game."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "skele-gro",
+      "relationship_type": "takes",
+      "description": "Harry is given Skele-Gro by Madam Pomfrey to help him recover from his injuries."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Ron helps Harry drink water after he takes the Skele-Gro."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bludger",
+      "relationship_type": "questions",
+      "description": "Hermione wants to know how someone fixed a Bludger, which is related to the Quidditch game."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "affected",
+      "description": "Harry's catch in the Quidditch game affected Malfoy's expression."
+    }
+  ]
+}

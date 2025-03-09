@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who whispers to Harry and Ron to stay behind. She then ducks out from under the Cloak and enters a shop."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is with Harry and Hermione, and he feeds the Extendable Ears back under the door."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is with Ron and Hermione, and he receives a string from Ron."
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Borgin is the one who does not answer Hermione's greeting but casts her a suspicious look."
+    },
+    {
+      "name": "extendable ears",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Extendable Ears are objects that Ron feeds back under the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "borgin",
+      "relationship_type": "greeted",
+      "description": "Hermione greets Borgin, but he does not answer."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "extendable ears",
+      "relationship_type": "fed",
+      "description": "Ron feeds the Extendable Ears back under the door."
+    }
+  ]
+}

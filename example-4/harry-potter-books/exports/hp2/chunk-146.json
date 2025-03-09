@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being in Ron's lap."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is driving the car and trying to escape from a tree."
+    },
+    {
+      "name": "car",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The vehicle that Ron is driving, which is being attacked by a tree."
+    },
+    {
+      "name": "tree",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A large tree that is attacking the car and trying to hit Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "car",
+      "relationship_type": "driving",
+      "description": "Ron is driving the car, as mentioned in the text: 'Run for it!' Ron shouted, throwing his full weight against his door..."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "supporting",
+      "description": "Harry is supporting Ron after he was knocked backwards into Harry's lap by a branch."
+    },
+    {
+      "entity_1": "car",
+      "entity_2": "tree",
+      "relationship_type": "attacking",
+      "description": "The car is being attacked by the tree, as mentioned in the text: 'the windscreen was now trembling under a hail of blows from knuckle-like twigs...'}"
+    },
+    {
+      "entity_1": "car",
+      "entity_2": "tree",
+      "relationship_type": "escaping",
+      "description": "Harry and Ron are trying to escape from the tree, as mentioned in the text: 'Reverse!' Harry yelled, and the car shot backwards.'"
+    }
+  ]
+}

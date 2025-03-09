@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who sat down with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who was talking to Ron."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as a person who stormed in."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who was too busy with the trunks."
+    },
+    {
+      "name": "trunks",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Trunks are mentioned as objects that were being carried."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sat_down_with",
+      "description": "Harry and Ron sat down together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "percy",
+      "relationship_type": "stormed_in_after",
+      "description": "Percy stormed in after Harry was talking to Ron."
+    }
+  ]
+}

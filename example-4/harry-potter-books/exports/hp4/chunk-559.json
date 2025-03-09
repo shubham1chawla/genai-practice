@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a conversation with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is also present in the scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as having read out Harry's name in a chamber off the Great Hall."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as being right about something related to Harry."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry was present the night before."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large hall in a school that is mentioned as being nearby."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "conversation",
+      "description": "Harry and Hermione are having a conversation about what happened the night before."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "read_out_name",
+      "description": "Dumbledore read out Harry's name in a chamber off the Great Hall."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "agreement",
+      "description": "Moody is right about something related to Harry, but the exact nature of their relationship is not specified."
+    }
+  ]
+}

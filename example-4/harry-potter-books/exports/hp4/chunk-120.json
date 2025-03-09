@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who rolled his eyes and muttered to Harry and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of Ron's friends."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of Ron's friends."
+    },
+    {
+      "name": "harry and hermione",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry and Hermione are mentioned together as Ron's friends."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as Mrs. Weasley's son."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as Bill's mother."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as Bill's sister."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry and hermione",
+      "relationship_type": "spoke_to",
+      "description": "Ron spoke to Harry and Hermione."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "mrs weasley",
+      "relationship_type": "argued_with",
+      "description": "Bill argued with Mrs. Weasley about his earring."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "bill",
+      "relationship_type": "advised",
+      "description": "Mrs. Weasley advised Bill to let her give him a trim."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "bill",
+      "relationship_type": "defended",
+      "description": "Ginny defended Bill's hair."
+    }
+  ]
+}

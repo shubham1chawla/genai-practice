@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as an entity that will punish law-breakers."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is a person who is being questioned by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is interacting with Riddle."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the location of a fund for those who require assistance to buy books and robes."
+    },
+    {
+      "name": "galleon",
+      "entity_type": "currency",
+      "singular": true,
+      "description": "Galleons are a type of currency."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "riddle",
+      "relationship_type": "punishes",
+      "description": "The Ministry of Magic will punish law-breakers, including Riddle."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "assists",
+      "description": "Dumbledore is assisting Riddle by providing him with money from a fund at Hogwarts."
+    },
+    {
+      "entity_1": "hogwarts",
+      "entity_2": "riddle",
+      "relationship_type": "provides assistance to",
+      "description": "Hogwarts provides assistance to those who require it, including Riddle."
+    }
+  ]
+}

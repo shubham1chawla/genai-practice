@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' multiple times. (e.g. 'because it’s taking about five hours for the public to get to their gold at the moment, the goblins have tightened security so much.')"
+    },
+    {
+      "name": "arkie philpott",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who had a Probity Probe stuck up his ... well, trust me, this way’s easier.' (e.g. 'T wo days ago Arkie Philpott had a Probity Probe stuck up his ... well, trust me, this way’s easier.’)"
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being thanked by Harry for getting them gold. (e.g. 'Thanks, Bill,’ said Harry , pocketing his gold.)"
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is adoringly stroking Bill’s nose. (e.g. ‘’E is always so thoughtful,’ purred Fleur adoringly , strok- ing Bill’s nose.)"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is miming vomiting into her cereal behind Fleur. (e.g. Ginny mimed vomiting into her cereal behind Fleur.)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is appreciative of their dad getting them these Ministry of Magic cars again. (e.g. ‘It’s good Dad can get us these again,’ said Ron appreciat-ively , stretching luxuriously as the car moved smoothly away from The Burrow.)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is sitting in the Ministry of Magic car with Harry, Ginny, and Ron. (e.g. He, Harry , Hermione and Ginny were all sitting in)"
+    },
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The house where Bill and Fleur are waving from the kitchen window. (e.g. Bill and Fleur waving from the kitchen win- dow . He, Harry , Hermione and Ginny were all sitting in)"
+    },
+    {
+      "name": "the ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The organization that provides Ministry of Magic cars for Harry and his friends. (e.g. One of the special Ministry of Magic cars, in which Harry had ridden once before, was awaiting them in the front yard when they emerged from the house pulling on their cloaks.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bill",
+      "relationship_type": "got_gold_from",
+      "description": "Harry got gold from Bill. (e.g. ‘Thanks, Bill,’ said Harry , pocketing his gold.)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the burrow",
+      "relationship_type": "left_from",
+      "description": "Ron left from The Burrow in the Ministry of Magic car with Harry, Hermione, and Ginny. (e.g. He, Harry , Hermione and Ginny were all sitting in)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the ministry of magic",
+      "relationship_type": "used_service_of",
+      "description": "Harry used the service of The Ministry of Magic to get gold. (e.g. One of the special Ministry of Magic cars, in which Harry had ridden once before, was awaiting them in the front yard when they emerged from the house pulling on their cloaks.)"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, mentioned in the context of their leader's punishment."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Voldemort's followers who has paid some of his debt and is being punished by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the Death Eaters, punishing one of his followers."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Voldemort's title, used to refer to him with respect or fear."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "punisher_punished",
+      "description": "Voldemort is punishing Wormtail for his past actions."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "voldemort",
+      "relationship_type": "helper_helper",
+      "description": "Wormtail helped Voldemort return to his body, and as a result, Voldemort rewards him."
+    }
+  ]
+}

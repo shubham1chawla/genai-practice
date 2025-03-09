@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who used something during the first task of the Triwizard Tournament."
+    },
+    {
+      "name": "professor binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Binns is described as a teacher who continues to teach even after his own death."
+    },
+    {
+      "name": "goblin rebellions",
+      "entity_type": "event",
+      "singular": false,
+      "description": "Goblin rebellions are mentioned as something that Professor Binns teaches about."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone who gives a cauldron-bottom report."
+    },
+    {
+      "name": "professors mcgonagall and moody",
+      "entity_type": "teachers",
+      "singular": false,
+      "description": "Professors McGonagall and Moody are described as teachers who keep students working until the last second of their classes."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher who would not let students play games in class."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The Triwizard Tournament is mentioned as an event that Harry participated in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "triwizard tournament",
+      "relationship_type": "participated_in",
+      "description": "Harry participated in the Triwizard Tournament."
+    },
+    {
+      "entity_1": "professor binns",
+      "entity_2": "goblin rebellions",
+      "relationship_type": "teaches_about",
+      "description": "Professor Binns teaches about goblin rebellions."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "would_not_allow_to_play_games_in_class",
+      "description": "Snape would not allow Harry to play games in class."
+    },
+    {
+      "entity_1": "professors mcgonagall and moody",
+      "entity_2": "students",
+      "relationship_type": "kept_working_until_last_second",
+      "description": "Professors McGonagall and Moody kept students working until the last second of their classes."
+    }
+  ]
+}

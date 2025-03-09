@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as showing Harry a symbol beneath it. She also lit her wand to read the name on the headstone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being shown the symbol by Hermione and trying to find his parents in the graveyard."
+    },
+    {
+      "name": "ignotus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ignotus is mentioned as a name on the headstone that Hermione reads with her wand."
+    },
+    {
+      "name": "abbott",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Abbott is mentioned as a surname of a Wizarding family represented in the graveyard."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Godric's Hollow is mentioned as the location where Harry is searching for his parents and where there are graves of Wizarding families."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "showed_symbol",
+      "description": "Hermione showed Harry a symbol beneath it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ignotus",
+      "relationship_type": "related_to",
+      "description": "Harry is related to Ignotus through the headstone where Hermione reads the name."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "abbott",
+      "relationship_type": "mentioned_with",
+      "description": "Hermione mentions Abbott as a surname of a Wizarding family represented in the graveyard."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "godric's hollow",
+      "relationship_type": "searched_in",
+      "description": "Harry is searching for his parents in Godric's Hollow."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is being attacked by a Bludger."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who helps Harry and manages to pin down the Bludger."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is attacking Harry and Wood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "attacked_by",
+      "description": "The Bludger is attacking Harry."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "bludger",
+      "relationship_type": "pinned_down",
+      "description": "Wood manages to pin down the Bludger."
+    }
+  ]
+}

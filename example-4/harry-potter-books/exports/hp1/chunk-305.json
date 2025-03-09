@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who is being shouted at by Hermione. He has an annoying sing-song voice and refuses to tell Filch where Harry and his friends went unless he says please."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione snarled at Peeves and grabbed Harry's wand to unlock the door. She whispered 'Alohomora!' to open the lock."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry had his wand taken by Hermione and was trying to get off Neville's sleeve. He thought they would be okay because Filch thinks this door is locked."
+    },
+    {
+      "name": "filch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Filch was saying 'Quick, tell me' where Harry and his friends went. He cursed in rage when Peeves whooshed away."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville had been tugging on the sleeve of Harry's dressing-gown for the last minute."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "filch",
+      "relationship_type": "interacts_with",
+      "description": "Peeves was being shouted at by Filch and refused to tell him where Harry and his friends went unless he said please."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "takes_wand_from",
+      "description": "Hermione grabbed Harry's wand to unlock the door."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "peeves",
+      "relationship_type": "tries_to_get_information_from",
+      "description": "Filch was trying to get information from Peeves about where Harry and his friends went."
+    }
+  ]
+}

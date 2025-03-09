@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being asked about what happened."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's pale face suggests he might be involved in or affected by what happened."
+    },
+    {
+      "name": "you lot",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "You lot refers to a group of people, likely the ones who are not allowed out at weekends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Ron's pale face and wants to know what happened."
+    },
+    {
+      "entity_1": "you lot",
+      "entity_2": "harry",
+      "relationship_type": "restricted_access",
+      "description": "You lot are restricted from buying stuff at weekends, affecting Harry."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Goblet is a magical object that can detect cheating in the Triwizard Tournament."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a wise and powerful wizard who is the headmaster of Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is Harry's best friend and a student at Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main protagonist of the story and a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is Harry's other best friend and a student at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblet",
+      "relationship_type": "can_fool",
+      "description": "The Goblet can detect cheating, implying that it can fool people who try to cheat."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "goblet",
+      "relationship_type": "has_control_over",
+      "description": "Dumbledore has control over the Goblet, as he is the one who sets up the tournament."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as they attend Hogwarts together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Hermione is also a friend of Harry's, as she attends Hogwarts with him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "jealousy",
+      "description": "Ron is jealous of Harry because he always gets attention from the school."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "accuses_of_jealousy",
+      "description": "Hermione accuses Ron of being jealous of Harry."
+    }
+  ]
+}

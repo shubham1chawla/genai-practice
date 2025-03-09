@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The Black family's noble and ancient house is mentioned as a place of significance."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Privet Drive is the location where Harry lives with his relatives."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a member of the Black family and is mentioned as having a connection to Privet Drive."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the Secret-Keeper for the Order and has added protection to Privet Drive."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as showing a note from Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "black",
+      "relationship_type": "family_member_of",
+      "description": "Sirius is a member of the Black family."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "privet drive",
+      "relationship_type": "added_protection_to",
+      "description": "Dumbledore has added protection to Privet Drive."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "dumbledore",
+      "relationship_type": "showed_note_from",
+      "description": "Moody showed a note from Dumbledore."
+    }
+  ]
+}

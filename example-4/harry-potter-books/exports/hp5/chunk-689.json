@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having his hand sliced open every night."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, mentioned as being strict and taking points off Gryffindor."
+    },
+    {
+      "name": "miss johnson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The team captain of the Quidditch pitch, mentioned as having shouting matches with Harry Potter."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who gave Harry a look of disgust and stalked away."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as sympathizing with him."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as reading the Daily Prophet and not saying anything."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose picture is obscuring Hermione's face."
+    },
+    {
+      "name": "hogwarts high inquisitor",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The position held by Professor McGonagall."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "A house at Hogwarts that lost points due to Harry's behavior."
+    },
+    {
+      "name": "quidditch pitch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Miss Johnson has shouting matches with Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "punished",
+      "description": "Professor McGonagall took points off Gryffindor because of Harry's behavior."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "disapproved_by",
+      "description": "Harry was disapproved by Professor McGonagall for his behavior."
+    }
+  ]
+}

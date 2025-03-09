@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who might turn into a frog by tomorrow morning. He is also mentioned in conversation with Ron and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is trying to register herself and Harry with the Improper Use of Magic Office. She is also mentioned in conversation with Ron and Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being summoned by Professor McGonagall, along with Hermione. He is also mentioned in conversation with Harry and Hermione."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who told Harry and his friends to register themselves with the Improper Use of Magic Office. She also wants Ron and Hermione to come to her."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred Weasley is mentioned as making a joke about growing his nose hair into ringlets. He is also mentioned as emerging from behind bookshelves with George."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley is mentioned as emerging from behind bookshelves with Fred. He also mentions that Professor McGonagall wants Ron and Hermione to come to her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "conversation_participant",
+      "description": "Harry and Hermione are mentioned as being in conversation with each other, discussing the task of registering themselves with the Improper Use of Magic Office."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "conversation_participant",
+      "description": "Harry and Ron are mentioned as being in conversation with each other, discussing the task of registering themselves with the Improper Use of Magic Office."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "conversation_participant",
+      "description": "Hermione and Ron are mentioned as being in conversation with each other, discussing the task of registering themselves with the Improper Use of Magic Office."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "ron",
+      "relationship_type": "summons",
+      "description": "Professor McGonagall is mentioned as summoning Ron to her, along with Hermione."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hermione",
+      "relationship_type": "summons",
+      "description": "Professor McGonagall is mentioned as summoning Hermione to her, along with Ron."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "george weasley",
+      "relationship_type": "co-conspirator",
+      "description": "Fred and George are mentioned as emerging from behind bookshelves together, suggesting that they are co-conspirators."
+    }
+  ]
+}

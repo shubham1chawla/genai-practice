@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "padfoot",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "The name of the character mentioned in the text."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A wizard and Harry's godfather."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "The main protagonist of the story."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location_name",
+      "singular": true,
+      "description": "A wizarding prison where Sirius was held."
+    },
+    {
+      "name": "barty crouch",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "An important Ministry member who died in Azkaban."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "azkaban",
+      "relationship_type": "imprisoned_in",
+      "description": "Sirius was held in Azkaban."
+    },
+    {
+      "entity_1": "barty crouch",
+      "entity_2": "azkaban",
+      "relationship_type": "died_in",
+      "description": "Barty Crouch died in Azkaban."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "godfather_of",
+      "description": "Sirius is Harry's godfather."
+    }
+  ]
+}

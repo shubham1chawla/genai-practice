@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "horcrux",
+      "entity_type": "horcruxes",
+      "singular": true,
+      "description": "The object that contains a piece of Voldemort's soul. Mentioned in the text as something that needs to be found and eliminated."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, mentioned in the text as someone who can only be killed after all Horcruxes are eliminated."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, mentioned in the text as someone who is on a journey to find and eliminate Horcruxes."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned in the text as someone who had set out on the path with Harry."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, mentioned in the text as possibly being associated with one of the Horcruxes."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, mentioned in the text as possibly being associated with one of the Horcruxes."
+    },
+    {
+      "name": "loket",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "A specific Horcrux mentioned in the text as something that needs to be found and eliminated."
+    },
+    {
+      "name": "cup",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "A specific Horcrux mentioned in the text as something that needs to be found and eliminated."
+    },
+    {
+      "name": "snake",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "A specific Horcrux mentioned in the text as something that needs to be found and eliminated."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of_action",
+      "description": "Harry is on a journey to find and eliminate Horcruxes, which will ultimately lead to Voldemort's death."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "horcrux",
+      "relationship_type": "seeker",
+      "description": "Harry is seeking out the Horcruxes in order to eliminate them."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcrux",
+      "relationship_type": "creator",
+      "description": "Voldemort created the Horcruxes, which are now obstacles for Harry to overcome."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "collaborator",
+      "description": "Harry and Dumbledore had set out on this path together."
+    }
+  ]
+}

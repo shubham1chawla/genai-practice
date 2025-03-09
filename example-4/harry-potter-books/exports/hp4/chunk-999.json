@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who got annoyed with Rita Skeeter's article. He is described as having red ears when his mum's term 'scarlet woman' is mentioned."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who got annoyed with Rita Skeeter's article. She is described as laughing and giggling at Ron's mum's term 'scarlet woman'."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is mentioned as the journalist who wrote an article about Hermione. She is described as making Hermione out to be a 'scarlet woman'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being present with Ron and Hermione, unpacking ingredients for their Wit-Sharpening Potion."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherins are mentioned as a group of students who were watching Harry, Ron, and Hermione closely across the room to see if they had been upset by the article."
+    },
+    {
+      "name": "witch weekly",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "Witch Weekly is mentioned as a magazine that published Rita Skeeter's article about Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "hermione",
+      "relationship_type": "defamation",
+      "description": "Rita Skeeter made Hermione out to be a 'scarlet woman' in her article, which is an example of defamation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "rita skeeter",
+      "relationship_type": "victim_of_defamation",
+      "description": "Ron was also affected by Rita Skeeter's article, as his mum's term 'scarlet woman' was used to describe Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "witch weekly",
+      "relationship_type": "subject_of_article",
+      "description": "Hermione was the subject of Rita Skeeter's article in Witch Weekly."
+    }
+  ]
+}

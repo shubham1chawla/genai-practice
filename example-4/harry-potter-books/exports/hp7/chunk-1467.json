@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is a character who wants to enter Hogwarts and find her son. She no longer cares whether Voldemort wins."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist who claims Harry Potter is dead by his hand."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a character who has been killed by Voldemort."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is the school where Narcissa wants to enter and find her son."
+    },
+    {
+      "name": "conquering army",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The conquering army is a group that will allow Narcissa to enter Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "killed_by",
+      "description": "Voldemort claims he killed Harry Potter."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "hogwarts",
+      "relationship_type": "wants_to_enter",
+      "description": "Narcissa wants to enter Hogwarts."
+    }
+  ]
+}

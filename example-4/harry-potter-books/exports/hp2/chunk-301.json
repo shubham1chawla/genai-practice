@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Sorting Hat",
+      "entity_type": "sorting_hat",
+      "singular": true,
+      "description": "The Sorting Hat is a magical hat that sorts students into their respective houses at Hogwarts."
+    },
+    {
+      "name": "Slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is one of the four houses at Hogwarts, known for its ambition and cunning."
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a magical school where students are sorted into their respective houses."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Sorting Hat",
+      "entity_2": "Slytherin",
+      "relationship_type": "sorts_into",
+      "description": "The Sorting Hat sorts students into their respective houses, and it would have put the speaker in Slytherin if they had tried to."
+    },
+    {
+      "entity_1": "Sorting Hat",
+      "entity_2": "Hogwarts",
+      "relationship_type": "located_at",
+      "description": "The Sorting Hat is located at Hogwarts, where it sorts students into their respective houses."
+    }
+  ]
+}

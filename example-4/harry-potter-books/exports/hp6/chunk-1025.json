@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as smiling and making a cut in his arm to heal it instantly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being kind and having blood worth more than Dumbledore's."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as healing Malfoy's wounds."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as having his wounds healed by Snape."
+    },
+    {
+      "name": "rock face",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The rock face is peppered with dark, glistening drops after Dumbledore's cut."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "worth_more_than",
+      "description": "Dumbledore says Harry's blood is worth more than his own."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "healed_wounds_of",
+      "description": "Snape heals Malfoy's wounds."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is introduced as someone who has taken a few steps down a new corridor when the window breaks open."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gigantic bearded figure who arrives at Harry's location. He is introduced as someone who clambered to his feet after hitting the opposite wall."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is Hagrid's boarhound, which attacks Harry when it sees him. Fang is introduced as something large and furry that detached itself from the new arrival."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "meets",
+      "description": "Harry meets Hagrid when he arrives at Harry's location. This is described in the text as 'Hagrid stooped down, bestowed upon Harry a cursory and rib-618'."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "meets",
+      "description": "The relationship is bidirectional, so we also have Hagrid meeting Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fang",
+      "relationship_type": "attacked_by",
+      "description": "Harry is attacked by Fang when it sees him. This is described in the text as 'Fang the boarhound's attentions as the enormous bearded figure clambered to his feet'."
+    }
+  ]
+}

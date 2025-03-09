@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a trusting person who believes in second chances."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who is being accused of searching his office without orders from Dumbledore."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as a person who believes in the idea that some spots never come off."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "trusts",
+      "description": "Dumbledore trusts Snape, according to Moody."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "snape",
+      "relationship_type": "accuses",
+      "description": "Moody accuses Snape of searching his office without orders from Dumbledore."
+    }
+  ]
+}

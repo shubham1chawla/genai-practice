@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who knows about the map being confiscated by Mr. Filch. He is looking at Harry more seriously than ever before."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has possession of the map. Lupin is talking to him and is concerned about his actions."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who confiscated the map many years ago."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who thinks Harry got the map from the manufacturers."
+    },
+    {
+      "name": "mapmakers",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "Mapmakers are an organization that would want to lure Harry out of school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Lupin is concerned about Harry's actions regarding the map."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "suspects",
+      "description": "Snape suspects that Harry got the map from the manufacturers."
+    },
+    {
+      "entity_1": "mapmakers",
+      "entity_2": "harry",
+      "relationship_type": "targeted_by",
+      "description": "Mapmakers would want to lure Harry out of school."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "map",
+      "relationship_type": "confiscated",
+      "description": "Filch confiscated the map many years ago."
+    }
+  ]
+}

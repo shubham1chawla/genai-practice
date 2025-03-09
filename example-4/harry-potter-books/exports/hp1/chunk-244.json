@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as being tired and full of food."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is leading Harry through doorways hidden behind sliding panels and hanging tapestries."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "A mischievous spirit that is causing trouble in the corridors."
+    },
+    {
+      "name": "bloody baron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as a possible solution to deal with Peeves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "percy",
+      "relationship_type": "accompanies",
+      "description": "Harry is being led by Percy through the corridors."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "bloody baron",
+      "relationship_type": "threatened_by",
+      "description": "Percy mentions that he can call the Bloody Baron to deal with Peeves."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "affected_by",
+      "description": "Harry is affected by Peeves' mischievous behavior, as evidenced by the walking sticks floating in mid-air."
+    }
+  ]
+}

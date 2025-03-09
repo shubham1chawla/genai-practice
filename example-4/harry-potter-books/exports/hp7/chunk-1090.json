@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as fumbling in her robes and trying to retrieve a beaded bag. She is also mentioned as having terror in her face."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as seizing the sword, touching its tip to a silver flagon, and struggling to think of a way up to the cup. He is also mentioned as looking at Ron and Hermione with terror in their faces."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as being the tallest among them and unable to reach the shelf where the cup reposed."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is described as shining and having a rubied hilt. It is also mentioned as being used by Harry to touch its tip to a silver flagon."
+    },
+    {
+      "name": "cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cup is described as reposing on a shelf that is out of reach for any of them."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The dragon is mentioned as roaring on the other side of the vault door."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A horde of goblins is described as approaching on the other side of the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "holds",
+      "description": "Harry seized the sword by its rubied hilt and touched the tip of the blade to a silver flagon nearby."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cup",
+      "relationship_type": "wants_to_reach",
+      "description": "Harry struggled to think of a way up to the cup."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "goblins",
+      "relationship_type": "is_afraid_of",
+      "description": "Hermione had terror in her face as she saw Harry looking at Ron and Hermione with terror in their faces."
+    }
+  ]
+}

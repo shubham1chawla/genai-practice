@@ -1,0 +1,24 @@
+{
+  "entities": [
+    {
+      "name": "office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The speaker will store the items in their office."
+    },
+    {
+      "name": "items",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The items that were confiscated are being stored by the speaker."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "office",
+      "entity_2": "items",
+      "relationship_type": "contains",
+      "description": "The office contains the items that were confiscated."
+    }
+  ]
+}

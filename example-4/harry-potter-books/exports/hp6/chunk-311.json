@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a student who had an embarrassing conversation with Hagrid about continuing Care of Magical Creatures."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate who also had the conversation with Hagrid."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a student who was told about the conversation by Harry and Ron."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Hagrid is their teacher for Care of Magical Creatures."
+    },
+    {
+      "name": "care of magical creatures",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A subject taught by Hagrid that Harry, Ron, and Hermione are not enthusiastic about."
+    },
+    {
+      "name": "n.e.w.t.",
+      "entity_type": "qualification",
+      "singular": true,
+      "description": "A qualification that students in their year may be interested in pursuing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "care of magical creatures",
+      "relationship_type": "teaches",
+      "description": "Hagrid teaches Care of Magical Creatures."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "had conversation with",
+      "description": "Harry had an embarrassing conversation with Hagrid about continuing Care of Magical Creatures."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "had conversation with",
+      "description": "Ron also had the conversation with Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "care of magical creatures",
+      "relationship_type": "is not enthusiastic about",
+      "description": "Hermione is not enthusiastic about Care of Magical Creatures."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "n.e.w.t.",
+      "relationship_type": "may pursue",
+      "description": "Harry may be interested in pursuing N.E.W.T."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "n.e.w.t.",
+      "relationship_type": "may pursue",
+      "description": "Ron may also be interested in pursuing N.E.W.T."
+    }
+  ]
+}

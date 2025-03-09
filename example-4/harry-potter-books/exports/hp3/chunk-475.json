@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to avoid trouble."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, known for being strict and having a dark past."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "follows",
+      "description": "Harry is following Snape downstairs to the dungeons."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "commands",
+      "description": "Snape is commanding Harry to come with him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape's office",
+      "relationship_type": "enters",
+      "description": "Harry enters Snape's office in the dungeons."
+    }
+  ]
+}

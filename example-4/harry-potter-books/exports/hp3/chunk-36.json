@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "errol",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Errol is a bird that soared out of the window with Hedwig. (Text: 'Ten minutes later, Errol and Hedwig...')"
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hedwig is a bird that soared out of the window with Errol. (Text: 'Errol and Hedwig...')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron has a note bound to Hedwig's leg. (Text: 'who had a note to Ron bound to her leg')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is feeling miserable and has to welcome their guest. (Text: 'But Harry didn’t have long to brood...')"
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Harry's aunt who is shrieking for him to come down and get ready. (Text: 'Aunt Petunia was shrieking up the stairs...')"
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is Harry's aunt who loves criticizing him and is large, beefy, and purple-faced. (Text: 'On the threshold stood Aunt Marge. She was very like Uncle Vernon...')"
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Harry's uncle who has a car that pulled back into the driveway. (Text: 'All too soon, there was a crunch of gravel outside as Uncle Vernon’s car...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt petunia",
+      "relationship_type": "has_guest",
+      "description": "Harry has to welcome their guest, which is Aunt Petunia. (Text: 'Aunt Petunia was shrieking up the stairs for Harry to come down and get ready...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt marge",
+      "relationship_type": "has_guest",
+      "description": "Harry has to welcome their guest, which is Aunt Marge. (Text: 'Aunt Petunia was shrieking up the stairs for Harry to come down and get ready...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "has_guest",
+      "description": "Harry has to welcome their guest, which is Uncle Vernon. (Text: 'Aunt Petunia was shrieking up the stairs for Harry to come down and get ready...')"
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry",
+      "relationship_type": "is_hosted_by",
+      "description": "Aunt Petunia is hosted by Harry. (Text: 'Aunt Petunia was shrieking up the stairs for Harry to come down and get ready...')"
+    },
+    {
+      "entity_1": "aunt marge",
+      "entity_2": "harry",
+      "relationship_type": "is_hosted_by",
+      "description": "Aunt Marge is hosted by Harry. (Text: 'On the threshold stood Aunt Marge. She was very like Uncle Vernon...')"
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "is_hosted_by",
+      "description": "Uncle Vernon is hosted by Harry. (Text: 'All too soon, there was a crunch of gravel outside as Uncle Vernon’s car...')"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hedwig",
+      "relationship_type": "has_note_bound_to_leg",
+      "description": "Ron has a note bound to Hedwig's leg. (Text: 'who had a note to Ron bound to her leg')"
+    }
+  ]
+}

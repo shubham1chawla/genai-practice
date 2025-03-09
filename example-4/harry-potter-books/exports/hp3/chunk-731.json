@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "gringotts vault",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts vault is mentioned as a place where Harry's godfather wants him to take gold from."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the recipient of the letter and is referred to by name."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is Harry's godfather and is writing the letter."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place where Harry will be attending school."
+    },
+    {
+      "name": "uncle's house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Uncle's house is the location where Harry left and was frightened by Sirius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius black",
+      "entity_2": "harry potter",
+      "relationship_type": "godfather_to_child",
+      "description": "Sirius Black is referred to as Harry's godfather."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "gringotts vault",
+      "relationship_type": "owner_of_location",
+      "description": "Gringotts vault is mentioned as a location owned by Sirius Black."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_at_school",
+      "description": "Hogwarts is mentioned as the school that Harry will be attending."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "uncle's house",
+      "relationship_type": "location_of_event",
+      "description": "Uncle's house is the location where an event involving Sirius Black and Harry Potter occurred."
+    }
+  ]
+}

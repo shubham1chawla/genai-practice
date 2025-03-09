@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is whispering desperately to someone else."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is the government of the magical world and is responsible for maintaining law and order."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a maximum-security prison in the wizarding world."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius Fudge is the Minister of Magic and is speaking to reporters about the breakout from Azkaban."
+    },
+    {
+      "name": "muggle prime minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Muggle Prime Minister is a non-magical government official who has been informed by Cornelius Fudge about the danger posed by the escaped prisoners."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "azkaban",
+      "relationship_type": "has_prison",
+      "description": "The Ministry of Magic is responsible for maintaining Azkaban, a maximum-security prison."
+    },
+    {
+      "entity_1": "cornelius fudge",
+      "entity_2": "muggle prime minister",
+      "relationship_type": "informed",
+      "description": "Cornelius Fudge has informed the Muggle Prime Minister about the danger posed by the escaped prisoners."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "employs",
+      "description": "The Ministry of Magic employs Cornelius Fudge as its Minister."
+    }
+  ]
+}

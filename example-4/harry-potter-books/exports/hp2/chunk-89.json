@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having seen Percy at meal-times."
+    },
+    {
+      "name": "percy weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as being busy and not himself, his exam results are also mentioned."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as frowning and wishing he knew what Percy was up to."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as explaining the meaning of O.W.L.s and worrying about having another Head Boy in the family."
+    },
+    {
+      "name": "bill weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as being the oldest Weasley brother and working for Gringotts."
+    },
+    {
+      "name": "charlie weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as studying dragons in Romania."
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as needing robes and a wand for school."
+    },
+    {
+      "name": "lockhart books",
+      "entity_type": "book",
+      "singular": false,
+      "description": "Lockhart's books are mentioned as being expensive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "percy weasley",
+      "relationship_type": "has_seen",
+      "description": "Harry has seen Percy at meal-times."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "percy weasley",
+      "relationship_type": "is_concerned_about",
+      "description": "Fred is concerned about what Percy is up to."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "bill weasley",
+      "relationship_type": "has_same_exam_results",
+      "description": "George mentions that Bill got the same number of O.W.L.s as him."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "ginny weasley",
+      "relationship_type": "is_responsible_for_school_expenses",
+      "description": "George is worried about affording Ginny's school expenses."
+    }
+  ]
+}

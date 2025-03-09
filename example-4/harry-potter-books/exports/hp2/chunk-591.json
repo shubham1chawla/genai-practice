@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who knocked on the door and spoke to Lockhart."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is introduced as the one who answers the door and seems uncomfortable about something."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is mentioned alongside Harry when Lockhart answers the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart",
+      "relationship_type": "knocks_on_door",
+      "description": "Harry knocks on the door and Lockhart answers it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weasley",
+      "relationship_type": "is_with",
+      "description": "Harry is with Weasley when they visit Lockhart."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "office",
+      "relationship_type": "owns",
+      "description": "Lockhart's office has been almost completely stripped, suggesting that he owns the items in it."
+    }
+  ]
+}

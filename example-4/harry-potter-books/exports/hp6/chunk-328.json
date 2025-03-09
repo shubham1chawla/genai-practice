@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "acid pops",
+      "entity_type": "password",
+      "singular": true,
+      "description": "The password to get past the gargoyle outside Harry's study."
+    },
+    {
+      "name": "gargoyle",
+      "entity_type": "obstacle",
+      "singular": true,
+      "description": "A stone creature that guards the entrance to Harry's study."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Harry's potions teacher who is not pleased with Harry's password."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who wants to teach Harry advanced defensive magic."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry's best friend and a Gryffindor student."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Gryffindor student who is good at magic and thinks Dumbledore wants to teach Harry advanced defensive magic."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main character of the story who is a Gryffindor student."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "acid pops",
+      "relationship_type": "displeased_by",
+      "description": "Snape is not pleased with Harry's password, Acid Pops."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_teach",
+      "description": "Dumbledore wants to teach Harry advanced defensive magic."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "thinks_dumbledore_wants_to_teach",
+      "description": "Hermione thinks Dumbledore wants to teach Harry advanced defensive magic."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "acid pops",
+      "relationship_type": "does_not_understand",
+      "description": "Ron does not understand why Acid Pops is the password."
+    }
+  ]
+}

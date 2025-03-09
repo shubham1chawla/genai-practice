@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts and one of Harry's best friends. He is sharing his story about the events that happened down in the lake with everyone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts and Ron's best friend. His limelight is shared by Ron for once."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts who put all the hostages into a bewitched sleep in Professor McGonagall's office."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall has an office where Dumbledore put the hostages to sleep."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts and one of Harry's best friends. Her story about the events that happened down in the lake tallies with Ron's initial version."
+    },
+    {
+      "name": "padma",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Padma is someone who is listening to Ron's story."
+    },
+    {
+      "name": "merpeople",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Merpole people who are heavily armed and kidnap Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron and Harry are best friends."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mcgonagall",
+      "relationship_type": "authority_over",
+      "description": "Dumbledore has authority over McGonagall's office where he put the hostages to sleep."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "merpeople",
+      "relationship_type": "victim_of",
+      "description": "Ron is a victim of merpeople who kidnap him."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "witness_to",
+      "description": "Hermione witnesses Ron's story about the events that happened down in the lake."
+    },
+    {
+      "entity_1": "padma",
+      "entity_2": "ron",
+      "relationship_type": "listener_of",
+      "description": "Padma listens to Ron's story."
+    }
+  ]
+}

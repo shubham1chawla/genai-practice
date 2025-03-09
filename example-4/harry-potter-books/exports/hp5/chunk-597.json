@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, as indicated by his name being mentioned multiple times."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's and is mentioned as being concerned about writing letters."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is someone that Harry wants to tell about something, but Hermione advises against it."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a character who previously advised Harry and his friends to be careful what they put in writing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another friend of Harry's, whom Hermione asks to tell about something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "considered_telling",
+      "description": "Harry wants to write and tell Sirius about something."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moody",
+      "relationship_type": "reminded_by",
+      "description": "Hermione reminds Harry of Moody's previous advice to be careful what they put in writing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asked_to_tell",
+      "description": "Harry asks Ron to tell Sirius about something on his behalf."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "advised_against",
+      "description": "Hermione advises Harry against telling Sirius about something."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "asked_to_tell",
+      "description": "Hermione asks Ron to tell Harry's secret on her behalf."
+    }
+  ]
+}

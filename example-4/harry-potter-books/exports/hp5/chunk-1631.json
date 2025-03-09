@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master who has been coldly responding to Potter's outburst. He mentions giving Potter a 'Babbling Beverage' and warns Crabbe about suffocating Longbottom, which would lead to tedious paperwork."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is the student who has been shouting nonsense at Snape. He seems to be in a state of turmoil after Snape's response."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is one of Potter's friends, and Snape warns him about suffocating Longbottom, which would lead to paperwork."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Longbottom is a student who might be in danger of being suffocated by Crabbe's hold."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge seems to be feeling the same way as Potter, and she is talking herself into taking action against him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "scolded",
+      "description": "Snape scolds Potter for shouting nonsense at him. Snape mentions giving Potter a 'Babbling Beverage' if he continues to shout."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "crabbe",
+      "relationship_type": "warned",
+      "description": "Snape warns Crabbe about suffocating Longbottom, which would lead to paperwork."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "potter",
+      "relationship_type": "confronted",
+      "description": "Umbridge seems to be confronting Potter, and she is talking herself into taking action against him."
+    }
+  ]
+}

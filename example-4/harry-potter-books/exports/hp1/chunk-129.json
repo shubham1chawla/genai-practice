@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts and a close friend of Harry."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A magical school that Harry attends."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A hidden pub that is only visible to certain people."
+    },
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The barman at the Leaky Cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hogwarts",
+      "relationship_type": "affiliation",
+      "description": "Hagrid is affiliated with Hogwarts as a gamekeeper."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "ownership",
+      "description": "Hagrid has some connection to the Leaky Cauldron, but it's not clear what that is."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student",
+      "description": "Harry is a student at Hogwarts."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "tom",
+      "relationship_type": "acquaintance",
+      "description": "Hagrid knows Tom, the barman at the Leaky Cauldron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "friendship",
+      "description": "Harry and Hagrid are friends."
+    }
+  ]
+}

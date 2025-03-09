@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has remembered something about his dad."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is present and reacting to Harry's statement."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is present and reacting to Harry's statement."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a person who told Harry something about his dad."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who was affected by the spell used by Harry's father."
+    },
+    {
+      "name": "the half-blood prince",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Half-Blood Prince is mentioned as a possible identity of the person who wrote notes in an old potions textbook."
+    },
+    {
+      "name": "dads",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Harry's dad is mentioned as someone who used a spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "told",
+      "description": "Lupin told Harry something about his dad."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "affected_by_spell",
+      "description": "Harry's father used the spell on Snape."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dads",
+      "relationship_type": "possibility",
+      "description": "Hermione suggests that Harry's dad might have used the spell."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the half-blood prince",
+      "relationship_type": "possible_identity",
+      "description": "Harry thinks that the Half-Blood Prince might be the person who wrote notes in an old potions textbook."
+    }
+  ]
+}

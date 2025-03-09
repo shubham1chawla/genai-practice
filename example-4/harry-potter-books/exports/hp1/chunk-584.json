@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is feeling nearly back to normal after a good night's sleep."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse at Hogwarts who is taking care of Harry."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who has given permission for Harry to attend the feast."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is feeling guilty about a recent event."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "allowed_to_go",
+      "description": "Professor Dumbledore has given permission for Harry to attend the feast."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry",
+      "relationship_type": "caring_for",
+      "description": "Madam Pomfrey is taking care of Harry and straightening his sweet-boxes."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "feeling_guilty_about",
+      "description": "Hagrid feels guilty about a recent event that could have put Harry in danger."
+    }
+  ]
+}

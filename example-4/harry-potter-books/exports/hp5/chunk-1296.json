@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "trunks",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "Professor Trelawney is rocking back and forward on her trunk in paroxysms of grief."
+    },
+    {
+      "name": "minister of magic",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister of Magic countersigned the order for Professor Trelawney's dismissal."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is being dismissed from Hogwarts and is reacting with grief."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is trying to calm down Professor Trelawney and telling her she won't have to leave Hogwarts."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is questioning Professor McGonagall's statement that Professor Trelawney won't have to leave Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor trelawney",
+      "relationship_type": "comforted",
+      "description": "Professor McGonagall is trying to calm down Professor Trelawney."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "questioned",
+      "description": "Umbridge is questioning Professor McGonagall's statement that Professor Trelawney won't have to leave Hogwarts."
+    }
+  ]
+}

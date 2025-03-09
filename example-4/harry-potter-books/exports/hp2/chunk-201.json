@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "gilderoy lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gilderoy Lockhart is a person mentioned in the text as he is talking to Seamus Finnigan about freshly caught Cornish pixies. He is described as dramatic and waggling his finger at Seamus."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus Finnigan is a person mentioned in the text as he is talking to Gilderoy Lockhart about freshly caught Cornish pixies. He lets out a snort of laughter and is described as choking."
+    },
+    {
+      "name": "cornish pixies",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Cornish pixies are creatures mentioned in the text as they are being talked about by Gilderoy Lockhart and Seamus Finnigan. They are described as electric blue, eight inches high, with pointed faces and shrill voices."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gilderoy lockhart",
+      "entity_2": "cornish pixies",
+      "relationship_type": "has",
+      "description": "Gilderoy Lockhart has freshly caught Cornish pixies as he is talking to Seamus Finnigan."
+    },
+    {
+      "entity_1": "seamus finnigan",
+      "entity_2": "gilderoy lockhart",
+      "relationship_type": "is_talking_to",
+      "description": "Seamus Finnigan is talking to Gilderoy Lockhart about freshly caught Cornish pixies."
+    }
+  ]
+}

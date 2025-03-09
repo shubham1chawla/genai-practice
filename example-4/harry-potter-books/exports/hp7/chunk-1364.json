@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group that Harry and others are accused of wanting to join. (\"You and your precious little Death Eater friends\")"
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person or entity that the Death Eaters aim to join, but not explicitly stated who it is. (\"You-Know-Who\")"
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The adult version of Snape, a teacher at Hogwarts. (\"Severus\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being accused by Snape and others. (\"Harry\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eater",
+      "entity_2": "you-know-who",
+      "relationship_type": "aim_to_join",
+      "description": "The Death Eaters aim to join You-Know-Who. (\"You can’t wait to join You-Know-Who, can you?\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "accused_of_being",
+      "description": "Harry is accused by Snape and others of being a Death Eater. (\"You and your precious little Death Eater friends\")"
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "harry",
+      "relationship_type": "accuser",
+      "description": "Snape accuses Harry of being a Death Eater. (\"You and your precious little Death Eater friends\")"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a man who is driving his car and observing strange people in town. He is described as being annoyed by their unusual clothing (\"He couldn't bear people who dressed in funny clothes\")."
+    },
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A cat that Mr Dursley sees in his mirror while driving. It is mentioned that cats cannot read maps or signs."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A street sign that the cat is looking at in Mr Dursley's mirror."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dursley",
+      "entity_2": "cat",
+      "relationship_type": "observed_by",
+      "description": "Mr Dursley observes the cat in his mirror while driving."
+    },
+    {
+      "entity_1": "dursley",
+      "entity_2": "privet drive",
+      "relationship_type": "seen_through_reflection",
+      "description": "The cat is looking at the sign for Privet Drive through Mr Dursley's car mirror."
+    }
+  ]
+}

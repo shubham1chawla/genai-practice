@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a person who is dead and has chosen to remain behind in the world of the living."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is alive and is interacting with Nick."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Department of Mysteries is a place where learned wizards study the secrets of death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nick",
+      "entity_2": "harry",
+      "relationship_type": "interact_with",
+      "description": "Nick and Harry are interacting with each other, with Nick trying to explain his situation to Harry."
+    },
+    {
+      "entity_1": "nick",
+      "entity_2": "department of mysteries",
+      "relationship_type": "related_to",
+      "description": "Nick mentions that the Department of Mysteries is a place where learned wizards study the secrets of death."
+    }
+  ]
+}

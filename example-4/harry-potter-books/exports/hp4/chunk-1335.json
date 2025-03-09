@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator's mother died in Azkaban and was buried under the narrator's name."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "substance",
+      "singular": false,
+      "description": "A potion that allows one to take on another person's appearance."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison where the narrator's mother died."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is questioning the narrator."
+    },
+    {
+      "name": "father",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator's father who staged their mother's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "father",
+      "entity_2": "mother",
+      "relationship_type": "staged_death",
+      "description": "The father staged the mother's death."
+    },
+    {
+      "entity_1": "house-elf",
+      "entity_2": "narrator",
+      "relationship_type": "cared_for",
+      "description": "The house-elf nursed the narrator back to health."
+    },
+    {
+      "entity_1": "father",
+      "entity_2": "narrator",
+      "relationship_type": "controlled",
+      "description": "The father had to control the narrator after they were concealed."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "narrator",
+      "relationship_type": "questioned",
+      "description": "Dumbledore is questioning the narrator."
+    }
+  ]
+}

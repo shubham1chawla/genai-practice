@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'HARRY POTTER' in all caps."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "A giant who is Hagrid's half-brother and has a boulder-like head."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid, a person who is sitting next to Grawp and is mentioned as having a chair that sinks into the ground when patted by Grawp."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has passed away, mentioned as being eulogized by a little tufty-haired man in plain black robes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "grawp",
+      "relationship_type": "family_member",
+      "description": "Hagrid is mentioned as Grawp's half-brother, indicating a familial relationship between the two."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "knew",
+      "description": "Harry Potter had known Dumbledore in life and is reflecting on his memory during the eulogy."
+    }
+  ]
+}

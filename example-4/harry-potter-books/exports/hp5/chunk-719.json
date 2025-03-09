@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "homework",
+      "entity_type": "assignment",
+      "singular": true,
+      "description": "Harry and Ron are struggling with their homework, but Hermione is doing better."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Umbridge was in charge of detention, which Harry had to attend every evening."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is struggling with his work and has prefect duties on top of Quidditch practices."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is also struggling with his work but is doing better than Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is excelling in her studies and has time to knit elf clothes."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "Harry and Ron have Quidditch practices twice a week."
+    },
+    {
+      "name": "prefect duties",
+      "entity_type": "responsibility",
+      "singular": false,
+      "description": "Ron has prefect duties on top of his schoolwork."
+    },
+    {
+      "name": "hogsmeade visit",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The students are going on a trip to Hogsmeade village."
+    },
+    {
+      "name": "filch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Filch is in charge of checking the list of students who have permission to visit Hogsmeade."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "family member",
+      "singular": true,
+      "description": "Sirius would not be alive if it weren't for him, Harry wouldn't be going on the trip."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "detention",
+      "description": "Harry had to attend detention every evening because of Umbridge."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "quidditch",
+      "relationship_type": "participation",
+      "description": "Ron has Quidditch practices twice a week."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "knitting",
+      "relationship_type": "activity",
+      "description": "Hermione is knitting elf clothes in her free time."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "family connection",
+      "description": "Harry wouldn't be going on the trip if Sirius were not alive."
+    }
+  ]
+}

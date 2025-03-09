@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as the one who is trying to stop Harry from writing to Sirius. He has a 'would-be calm voice' and his pupils contract with fear when he thinks about it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is writing to Sirius. He is casual and tries to enjoy the effect of his words on Uncle Vernon."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is Harry's friend whom he writes to. If Uncle Vernon stops Harry from writing to him, Sirius will think that Harry is being mistreated."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "trying_to_stop",
+      "description": "Uncle Vernon tries to stop Harry from writing to Sirius. He thinks that if he does, Sirius will think that Harry is being mistreated."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "sirius",
+      "relationship_type": "concerned_about_impact_on_friend",
+      "description": "Uncle Vernon is concerned about the impact of his actions on Sirius, as he thinks that if Harry doesn't write to him, Sirius will think that Harry is being mistreated."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "writing_to_friend",
+      "description": "Harry writes to his friend Sirius. He wants to keep in touch with him and make sure he knows what's going on."
+    }
+  ]
+}

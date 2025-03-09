@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is described as having changed with colourful and glittering window displays hidden behind Ministry of Magic posters."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as pasting over the window displays in Diagon Alley with their posters."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix Lestrange is described as sneering from the front of an apothecary in Diagon Alley."
+    },
+    {
+      "name": "florean fortescue’s ice-cream parlour",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Florean Fortescue's Ice-Cream Parlour is mentioned as having its windows boarded up."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Flourish and Blotts is mentioned as having a stall erected outside it."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being on the loose with black-and-white photographs of them displayed in Diagon Alley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "diagon alley",
+      "entity_2": "ministry of magic",
+      "relationship_type": "has_posters_over",
+      "description": "The Ministry of Magic posters are pasted over the window displays in Diagon Alley."
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "apothecary",
+      "relationship_type": "is_sneering_from",
+      "description": "Bellatrix Lestrange is sneering from the front of an apothecary in Diagon Alley."
+    },
+    {
+      "entity_1": "florean fortescue’s ice-cream parlour",
+      "entity_2": "death eaters",
+      "relationship_type": "has_windows_boarded_up_due_to",
+      "description": "Florean Fortescue's Ice-Cream Parlour has its windows boarded up due to the presence of Death Eaters."
+    },
+    {
+      "entity_1": "flourish and blotts",
+      "entity_2": "death eaters",
+      "relationship_type": "has_stall_due_to",
+      "description": "Flourish and Blotts has a stall erected outside it due to the presence of Death Eaters."
+    }
+  ]
+}

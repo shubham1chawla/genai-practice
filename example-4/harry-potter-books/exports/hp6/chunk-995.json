@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a student who was in Professor Trelawney's classes. He is described as 'the Object' of her predictions, indicating that he has been the subject of her divinations."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a teacher who specializes in divination. She is described as having made predictions about Harry Potter, and she seems to have a fondness for him."
+    },
+    {
+      "name": "the nag",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The Nag is mentioned as a centaur who knows nothing of cartomancy. It is described as finding Professor Trelawney's questions comical."
+    },
+    {
+      "name": "the centaur",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The Centaur is another name for the Nag, and it is mentioned in a similar context. It is described as not knowing anything about cartomancy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor trelawney",
+      "relationship_type": "predicted_by",
+      "description": "Professor Trelawney has made predictions about Harry Potter, indicating that she is the one who has predicted his future."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor trelawney",
+      "relationship_type": "object_of_predictions",
+      "description": "Harry Potter is described as 'the Object' of Professor Trelawney's predictions, indicating that he has been the subject of her divinations."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "the nag/the centaur",
+      "relationship_type": "asked_by",
+      "description": "Professor Trelawney asked the Nag/Centaur if it had sensed any coming catastrophe, indicating that she is seeking information from this entity."
+    }
+  ]
+}

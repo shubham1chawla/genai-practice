@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a conversation with Colin Creevey."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is nodding fervently in agreement."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has not been told about the Sorting Hat's consideration of putting him in Slytherin."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that is known for turning out dark wizards."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that the Sorting Hat ultimately chose Harry to be a part of."
+    },
+    {
+      "name": "colin creevey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy in Harry's class who is trying to get his attention."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "considered_by",
+      "description": "The Sorting Hat considered putting Harry in Slytherin, but he ultimately chose Gryffindor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "chose_by",
+      "description": "The Sorting Hat chose Harry to be a part of Gryffindor house."
+    },
+    {
+      "entity_1": "colin creevey",
+      "entity_2": "harry",
+      "relationship_type": "addressed_to",
+      "description": "Colin Creevey is trying to get Harry's attention."
+    }
+  ]
+}

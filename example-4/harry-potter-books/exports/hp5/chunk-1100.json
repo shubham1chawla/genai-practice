@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "christmas",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "The holiday being referred to in the context"
+    },
+    {
+      "name": "muggle remedies",
+      "entity_type": "treatment_method",
+      "singular": false,
+      "description": "Old Muggle treatments that Mr. Weasley is using"
+    },
+    {
+      "name": "stitches",
+      "entity_type": "medical_term",
+      "singular": true,
+      "description": "A type of wound treatment mentioned by Mr. Weasley"
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley's name"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin's name"
+    },
+    {
+      "name": "werewolf",
+      "entity_type": "species",
+      "singular": true,
+      "description": "The species of the patient being treated by Mr. Weasley"
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley's son's name"
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Mr. Weasley's twin sons' names"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to in the context"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "molly",
+      "entity_2": "muggle remedies",
+      "relationship_type": "used",
+      "description": "Mrs. Weasley is reacting to Mr. Weasley's use of Muggle remedies"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "muggle remedies",
+      "relationship_type": "used",
+      "description": "Mr. Weasley is using Muggle remedies"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "stitches",
+      "relationship_type": "mentioned",
+      "description": "Mr. Weasley mentions stitches as a type of wound treatment"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "werewolf",
+      "relationship_type": "treated",
+      "description": "Professor Lupin is treating the werewolf patient"
+    }
+  ]
+}

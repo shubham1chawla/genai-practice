@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is described as a witch who is wearing a monocle and looking forbidding. He is the one conducting the disciplinary hearing."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Another witch is mentioned but her face is in shadow, so no further description is provided."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the accused being present at the disciplinary hearing. He is described as someone who is eager to begin."
+    },
+    {
+      "name": "ron's brother percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is Ron's brother and is sitting at the end of the front bench taking notes during the hearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry potter",
+      "relationship_type": "accused_by",
+      "description": "Fudge is conducting a disciplinary hearing against Harry Potter, indicating that Fudge is accusing Harry of offenses."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "harry potter",
+      "relationship_type": "taking_notes_about",
+      "description": "Percy is taking notes about the offenses committed by Harry Potter during the disciplinary hearing."
+    }
+  ]
+}

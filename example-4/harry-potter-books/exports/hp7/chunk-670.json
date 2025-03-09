@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry wherever you are' in a message on the sign. The text describes him as someone who is being supported by others."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and expresses indignation at the messages on the sign. She is described as saying 'They shouldn’t have written on the sign!'"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name mentioned in a message on the sign, indicating that it is likely referring to the main character of the story."
+    },
+    {
+      "name": "the sign",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A sign where messages have been written. The text describes it as having 'magical graﬃti' and mentions that people are expressing support for Harry on it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the sign",
+      "relationship_type": "has_support_message",
+      "description": "The text describes messages of support for Harry on the sign, indicating a relationship between Harry and the sign."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "expresses_indignation_towards",
+      "description": "Hermione expresses indignation at messages on the sign that mention 'Harry Potter', indicating a relationship between Hermione and Harry."
+    },
+    {
+      "entity_1": "the sign",
+      "entity_2": "harry potter",
+      "relationship_type": "has_reference_to",
+      "description": "The text describes the sign as having messages that refer to 'Harry Potter', indicating a relationship between the sign and Harry."
+    }
+  ]
+}

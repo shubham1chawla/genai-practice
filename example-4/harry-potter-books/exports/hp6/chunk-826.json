@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who is struggling to speak ill of his old masters. He is being held by Harry Potter and is trying to convey a message about Draco Malfoy's treatment of him."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Harry Potter is the one who is holding Dobby and listening to his message. He is trying to get information out of Kreacher about Draco Malfoy's activities."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Kreacher is a house-elf who is being questioned by Harry Potter. He is trying to provide information about Draco Malfoy's activities, but is being defiant and uncooperative."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Draco Malfoy is the one who is being discussed by Dobby and Kreacher. He is a master to house-elves, but is not treating them well."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "held_by",
+      "description": "Dobby is being held by Harry Potter. This relationship is described in the text as 'him around the middle and held him fast'."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "kreacher",
+      "relationship_type": "defiant_towards",
+      "description": "Dobby is being defiant towards Kreacher. This relationship is described in the text as 'said defiantly to Kreacher'."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kreacher",
+      "relationship_type": "questioning",
+      "description": "Harry Potter is questioning Kreacher about Draco Malfoy's activities. This relationship is described in the text as 'said Harry, cutting across Kreacher'."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "dobby",
+      "relationship_type": "master_to_house_elf",
+      "description": "Draco Malfoy is a master to Dobby. This relationship is described in the text as 'Dobby still finds it difficult to speak ill of his old masters ...'."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "kreacher",
+      "relationship_type": "master_to_house_elf",
+      "description": "Draco Malfoy is a master to Kreacher. This relationship is described in the text as 'Dobby still finds it difficult to speak ill of his old masters ...'."
+    }
+  ]
+}

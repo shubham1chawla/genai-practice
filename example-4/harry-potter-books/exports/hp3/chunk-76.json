@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the Minister of Magic who has come to keep an eye on Harry Potter. He is described as wanting to punish Harry for his actions and is concerned about losing him again."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a wizard who has been involved in underage magic. Fudge has come to keep an eye on him and wants him to stay within Diagon Alley."
+    },
+    {
+      "name": "tom the innkeeper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom is the innkeeper of the Leaky Cauldron who is accompanying Fudge in keeping an eye on Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry potter",
+      "relationship_type": "is_watching_over",
+      "description": "Fudge has come to keep an eye on Harry Potter and wants him to stay within Diagon Alley."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "tom the innkeeper",
+      "relationship_type": "is_accompanied_by",
+      "description": "Fudge is accompanied by Tom the innkeeper in keeping an eye on Harry Potter."
+    }
+  ]
+}

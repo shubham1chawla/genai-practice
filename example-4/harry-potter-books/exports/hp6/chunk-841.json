@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "room 431",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room where the conversation is taking place. (\"T HE UNKNOWABLE ROOM 431\")"
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter's name mentioned by Professor Snape. (\"Potter.\")"
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who lets out a high-pitched giggle at Harry's comment. (\"Pansy Parkinson let out a high-pitched giggle.\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape who is sneering at Harry's comment. (\"‘A five-year-old could have told us as much,’ sneered Snape.\")"
+    },
+    {
+      "name": "inferi",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Dead bodies reanimated by a Dark wizard's spells. (\"The Inferius is a corpse that has been reanimated by a Dark wizard’s spells.\")"
+    },
+    {
+      "name": "ghosts",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Imprint of a departed soul left upon the earth. (\"A ghost, as I trust that you are all aware by now , is the imprint of a departed soul left upon the earth ... and of course, as Potter so wisely tells us, transparent.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who comments on Harry's statement. (\"‘Well, what Harry said is the most useful if we’re trying to tell them apart!’ said Ron.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "inferi",
+      "relationship_type": "is_solid",
+      "description": "Harry Potter explains that Inferi are solid because they are dead bodies. (\"Yeah, ghosts are transparent, but Inferi are dead bodies, aren’t they? So they’d be solid –\")"
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "ghosts",
+      "relationship_type": "is_transparent",
+      "description": "Harry Potter explains that ghosts are transparent. (\"Yeah, ghosts are transparent,\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "inferi",
+      "relationship_type": "is_not_alive",
+      "description": "Professor Snape explains that Inferi are not alive but used like a puppet. (\"The Inferius is a corpse that has been reanimated by a Dark wizard’s spells. It is not alive, it is merely used like a puppet to do the wizard’s bidding.\")"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ghosts",
+      "relationship_type": "is_imprint_of_departed_soul",
+      "description": "Professor Snape explains that ghosts are the imprint of a departed soul. (\"A ghost, as I trust that you are all aware by now , is the imprint of a departed soul left upon the earth ... and of course, as Potter so wisely tells us, transparent.\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "potter",
+      "relationship_type": "agrees_with",
+      "description": "Ron agrees with Harry's statement. (\"‘Well, what Harry said is the most useful if we’re trying to tell them apart!’ said Ron.\")"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "pettigrew",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Pettigrew is described as someone who is being threatened by Black and is trying to get help from Remus. He is mentioned as having been waiting for 12 years for this moment."
+    },
+    {
+      "name": "black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Black is described as someone who has come to try and kill Pettigrew again, and is mentioned as having killed Lily and James. He is also described as having fathomless eyes."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lupin is described as someone who is trying to calm down Pettigrew and help him, and is mentioned as being skeptical of Pettigrew's claims about Black."
+    },
+    {
+      "name": "remus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Remus is described as someone who Pettigrew is trying to get help from, but Lupin corrects him and says it's actually Sirius (Black) he needs to talk to."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a prison where Sirius was being held, but somehow managed to break out of with the help of dark powers."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "character",
+      "singular": true,
+      "description": "He-Who-Must-Not-Be-Named is mentioned as someone who taught Sirius some tricks to help him break out of Azkaban."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is mentioned as the one who broke out of Azkaban with the help of dark powers, and is also referred to by his nickname 'Black'."
+    },
+    {
+      "name": "james",
+      "entity_type": "character",
+      "singular": true,
+      "description": "James is mentioned as someone who was killed by Black along with Lily."
+    },
+    {
+      "name": "lily",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lily is mentioned as someone who was killed by Black along with James."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "black",
+      "relationship_type": "target_of_threat",
+      "description": "Pettigrew is being threatened by Black, who has come to try and kill him again."
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "remus",
+      "relationship_type": "seeking_help",
+      "description": "Pettigrew is trying to get help from Remus, but Lupin corrects him and says it's actually Sirius (Black) he needs to talk to."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "azkaban",
+      "relationship_type": "escaped_from",
+      "description": "Black broke out of Azkaban with the help of dark powers."
+    },
+    {
+      "entity_1": "he-who-must-not-be-named",
+      "entity_2": "sirius",
+      "relationship_type": "taught_tricks",
+      "description": "He-Who-Must-Not-Be-Named taught Sirius some tricks to help him break out of Azkaban."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "james",
+      "relationship_type": "killed",
+      "description": "Black killed James along with Lily."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "lily",
+      "relationship_type": "killed",
+      "description": "Black killed Lily along with James."
+    }
+  ]
+}

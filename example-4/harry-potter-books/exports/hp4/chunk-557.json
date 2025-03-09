@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's best friend, also a student at Hogwarts."
+    },
+    {
+      "name": "sunday",
+      "entity_type": "day_of_week",
+      "singular": true,
+      "description": "The day of the week when Harry wakes up."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large hall at Hogwarts where students have meals."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts, known for bravery and daring."
+    },
+    {
+      "name": "creevey brothers",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of twins who are students at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are best friends."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "location_visited",
+      "description": "Harry goes to the Great Hall for breakfast."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindors",
+      "relationship_type": "membership",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "creevey brothers",
+      "relationship_type": "acquaintance",
+      "description": "Harry knows the Creevey brothers."
+    }
+  ]
+}

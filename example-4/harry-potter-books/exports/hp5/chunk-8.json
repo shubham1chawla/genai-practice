@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "window",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The window is described as 'open' which allows hands to reach through it."
+    },
+    {
+      "name": "hands",
+      "entity_type": "body_part",
+      "singular": false,
+      "description": "Hands are mentioned as reaching through the open window and closing around his throat."
+    },
+    {
+      "name": "throat",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "The throat is described as being closed tightly by hands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hands",
+      "entity_2": "window",
+      "relationship_type": "reaches_through",
+      "description": "Hands reach through the open window."
+    },
+    {
+      "entity_1": "hands",
+      "entity_2": "throat",
+      "relationship_type": "closes_around",
+      "description": "Hands close around his throat."
+    }
+  ]
+}

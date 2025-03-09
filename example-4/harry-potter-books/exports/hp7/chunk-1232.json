@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who hurried over to the Weasleys. He asks about Ron and Hermione."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are sitting together at the Gryﬃndor table."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of those who Harry asks about."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of those who Harry asks about."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is worried and tries to answer Harry's question."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley steps forward on the raised platform to address those who had remained behind."
+    },
+    {
+      "name": "professors flitwick",
+      "entity_type": "teacher",
+      "singular": false,
+      "description": "Professors Flitwick is one of the teachers who will take groups of ﬁghters up to the three highest towers."
+    },
+    {
+      "name": "sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout is one of the teachers who will take groups of ﬁghters up to the three highest towers."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is one of the teachers who will take groups of ﬁghters up to the three highest towers."
+    },
+    {
+      "name": "remus lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Remus Lupin is mentioned as someone who will take groups into the grounds."
+    },
+    {
+      "name": "arthur weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur Weasley is sitting at the Gryﬃndor table and will take groups into the grounds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "weasleys",
+      "relationship_type": "related_to",
+      "description": "Harry hurried over to the Weasleys."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "arthur weasley",
+      "relationship_type": "same_family",
+      "description": "Mr. Weasley and Arthur Weasley are mentioned as being at the Gryﬃndor table."
+    },
+    {
+      "entity_1": "remus lupin",
+      "entity_2": "mr. weasley",
+      "relationship_type": "related_to",
+      "description": "Remus Lupin is indicated by Kingsley to be someone who will take groups into the grounds, along with Mr. Weasley."
+    },
+    {
+      "entity_1": "professors flitwick",
+      "entity_2": "sprout",
+      "relationship_type": "colleague",
+      "description": "Professors Flitwick and Sprout are mentioned as being part of a group of teachers who will take groups of ﬁghters up to the three highest towers."
+    },
+    {
+      "entity_1": "professors flitwick",
+      "entity_2": "mcgonagall",
+      "relationship_type": "colleague",
+      "description": "Professors Flitwick and McGonagall are mentioned as being part of a group of teachers who will take groups of ﬁghters up to the three highest towers."
+    },
+    {
+      "entity_1": "remus lupin",
+      "entity_2": "grounds",
+      "relationship_type": "located_in",
+      "description": "Remus Lupin is taking groups into the grounds."
+    },
+    {
+      "entity_1": "arthur weasley",
+      "entity_2": "gryﬃndor table",
+      "relationship_type": "located_at",
+      "description": "Arthur Weasley is sitting at the Gryﬃndor table."
+    },
+    {
+      "entity_1": "professors flitwick",
+      "entity_2": "ravenclaw tower",
+      "relationship_type": "located_in",
+      "description": "Professors Flitwick will take groups of ﬁghters up to the Ravenclaw Tower."
+    },
+    {
+      "entity_1": "sprout",
+      "entity_2": "tower",
+      "relationship_type": "located_in",
+      "description": "Professor Sprout will take groups of ﬁghters up to one of the three highest towers."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "tower",
+      "relationship_type": "located_in",
+      "description": "Professor McGonagall will take groups of ﬁghters up to one of the three highest towers."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who writes for the Daily Prophet. She is mentioned in the context of her article."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts. He is mentioned as being able to still be gamekeeper despite the changes in Care of Magical Creatures."
+    },
+    {
+      "name": "parvati",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Parvati is a student who has been cool toward Harry since the ball. She mentions meeting someone from Beauxbatons in Hogsmeade."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is a student who is mentioned as being angry about Hagrid's job and having paid too little attention to Parvati at the ball."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger is a student who praises Professor Grubbly-Plank's lesson and mentions reading about unicorns in the Daily Prophet article."
+    },
+    {
+      "name": "professor grubbly-plank",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is a teacher who gives a good lesson on Care of Magical Creatures."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Beauxbatons is a school that Parvati mentions meeting someone from in Hogsmeade."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a location where Parvati plans to meet someone from Beauxbatons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "parvati",
+      "entity_2": "harry potter",
+      "relationship_type": "had_cool_relationship",
+      "description": "Parvati has been cool toward Harry since the ball."
+    },
+    {
+      "entity_1": "parvati",
+      "entity_2": "beauxbatons",
+      "relationship_type": "planned_meeting",
+      "description": "Parvati plans to meet someone from Beauxbatons in Hogsmeade."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hagrid",
+      "relationship_type": "defended_job",
+      "description": "Harry defends Hagrid's job as gamekeeper."
+    }
+  ]
+}

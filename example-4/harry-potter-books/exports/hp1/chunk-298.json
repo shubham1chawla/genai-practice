@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is the person in charge of discipline at Hogwarts. He is mentioned as someone who might catch Harry and his friends if they get caught."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends. He is mentioned as being loud and speaking out of turn."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is mentioned as being sharp and telling Ron to shut up."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is one of Harry's friends. He is mentioned as being asleep on the floor and having trouble remembering his password."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs Norris is Filch's cat. She is mentioned as making a snuffling noise."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is the Hogwarts nurse. She is mentioned as having mended Neville's arm in a minute."
+    },
+    {
+      "name": "the fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is the person who guards the entrance to Gryffindor Tower. She is mentioned as being gone somewhere."
+    },
+    {
+      "name": "neville's password",
+      "entity_type": "password",
+      "singular": false,
+      "description": "Neville's password is 'Pig snout'. It is mentioned as not helping him get into bed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "has_concern",
+      "description": "Harry is concerned about getting caught by Filch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "speaks_to",
+      "description": "Ron speaks to Harry."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "has_been_treated_by",
+      "description": "Neville has been treated by Madam Pomfrey for his arm."
+    }
+  ]
+}

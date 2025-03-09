@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Stone refers to the Philosopher's Stone, which has been destroyed. It is described as something that can grant 'as much money and life as you could want'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a young person who seems amazed by the idea of death being like going to bed. He is addressed directly in the conversation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is an older person who has had a chat with Nicolas Flamel and agrees that it's all for the best. He sounds delighted when Harry mentions knowing about Nicolas."
+    },
+    {
+      "name": "nicolas flamel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nicolas Flamel is a friend of Dumbledore's who has had a chat with him about the Stone. He and his wife will die soon."
+    },
+    {
+      "name": "perenelle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Perenelle is Nicolas Flamel's wife who will also die soon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "nicolas flamel",
+      "relationship_type": "had_chat_with",
+      "description": "Dumbledore and Nicolas Flamel had a chat about the Stone, and they agreed it's all for the best."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "knew_about",
+      "description": "Harry knew about the Stone, which has been destroyed."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "perenelle",
+      "relationship_type": "will_die_with_spouse",
+      "description": "Dumbledore mentions that Nicolas and Perenelle will die soon."
+    },
+    {
+      "entity_1": "nicolas flamel",
+      "entity_2": "stone",
+      "relationship_type": "related_to",
+      "description": "Nicolas Flamel is related to the Stone, as he has had a chat with Dumbledore about it."
+    }
+  ]
+}

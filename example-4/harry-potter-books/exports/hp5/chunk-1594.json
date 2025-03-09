@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The high, cold voice is described as empty of any human kindness and is said to be Lord Voldemort's."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as hearing the high, cold voice and seeing a long-fingered white hand clutching a wand rise on the end of his own arm."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is described as whispering 'You'll have to kill me'."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as the one who will fetch something for Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "sirius",
+      "relationship_type": "waiting_for",
+      "description": "Voldemort is waiting for Sirius to fetch something for him."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "voldemort",
+      "relationship_type": "fetching_for",
+      "description": "Black will fetch something for Voldemort."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as the one who saved them with his warning. (\"Well, Kingsley saved us\")"
+    },
+    {
+      "name": "ron's dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's dad is mentioned as the one who told them that the family was safe. (\"Ron's dad told us the family were safe\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as the one who said Kingsley saved them. (\"Well, Kingsley saved us,\" said Lupin)"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a possible group that could have been involved. (\"Were they Death Eaters or Ministry people?\")"
+    },
+    {
+      "name": "ministry people",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Ministry people are mentioned as another possible group that could have been involved. (\"Were they Death Eaters or Ministry people?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kingsley",
+      "entity_2": "death eaters",
+      "relationship_type": "saved_from",
+      "description": "Kingsley saved them from the Death Eaters. (\"Well, Kingsley saved us\")"
+    },
+    {
+      "entity_1": "ron's dad",
+      "entity_2": "family",
+      "relationship_type": "told_safe_to",
+      "description": "Ron's dad told them that the family was safe. (\"Ron's dad told us the family were safe\")"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "kingsley",
+      "relationship_type": "mentioned_with",
+      "description": "Lupin mentioned Kingsley as the one who saved them. (\"Well, Kingsley saved us,\" said Lupin)"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "ministry people",
+      "relationship_type": "alternative_to",
+      "description": "Death Eaters or Ministry people could have been involved. (\"Were they Death Eaters or Ministry people?\")"
+    }
+  ]
+}

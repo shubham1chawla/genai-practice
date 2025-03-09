@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dark stone tunnel",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The dark stone tunnel is described as large enough to stand in. It has slimy walls and the floor is wet."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is described as getting to his feet a little way away, covered in slime and white as a ghost."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as standing aside as Ron comes out of the pipe, and later he lights his wand with 'Lumos!' to illuminate their path."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as coming whizzing out of the pipe, covered in slime, and later stepping on something that makes a loud crunch sound."
+    },
+    {
+      "name": "pipe",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pipe is mentioned as an entrance to the dark stone tunnel."
+    },
+    {
+      "name": "school",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The school is mentioned as being above them, with Harry saying 'We must be miles under the school'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart",
+      "relationship_type": "proximity",
+      "description": "Harry and Lockhart are standing near each other in the dark stone tunnel."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "proximity",
+      "description": "Harry and Ron are walking together in the dark stone tunnel, with Harry lighting their path with his wand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "pipe",
+      "relationship_type": "exit",
+      "description": "Ron comes out of the pipe into the dark stone tunnel."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "school",
+      "relationship_type": "location",
+      "description": "Harry mentions that they must be miles under the school."
+    }
+  ]
+}

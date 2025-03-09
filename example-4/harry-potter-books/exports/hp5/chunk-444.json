@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sorts students into houses at Hogwarts. It is described as giving warnings before times of great danger for the school."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who asks the ghost about the Sorting Hat's warnings."
+    },
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a ghost who seems glad to turn away from Ron and explains that the Sorting Hat gives warnings before times of great danger for the school."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who eats roast potatoes with enthusiasm and asks how the Sorting Hat can know if the school is in danger."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is the school where the students are attending."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "hermione",
+      "relationship_type": "gives_warnings_to",
+      "description": "The Sorting Hat gives warnings to Hermione and other students before times of great danger for the school."
+    },
+    {
+      "entity_1": "nick",
+      "entity_2": "ron",
+      "relationship_type": "turns_away_from",
+      "description": "Nick turns away from Ron, who is eating roast potatoes with enthusiasm."
+    },
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "hogwarts",
+      "relationship_type": "protects",
+      "description": "The Sorting Hat gives warnings before times of great danger for Hogwarts school."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "speaks_to",
+      "description": "Ron speaks to Hermione and asks how the Sorting Hat can know if the school is in danger."
+    }
+  ]
+}

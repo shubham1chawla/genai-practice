@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the conversation. He is being scolded by Hermione for letting Voldemort's connection happen."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry and is trying to convince him to use Occlumency."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a wise and powerful wizard who thought the connection between Harry and Voldemort was dangerous."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist in the conversation. He has a connection with Harry that Dumbledore thought was dangerous."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "thought_connection",
+      "description": "Dumbledore thought the connection between Harry and Voldemort was dangerous."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "connection",
+      "description": "Voldemort has a connection with Harry that Dumbledore thought was dangerous."
+    }
+  ]
+}

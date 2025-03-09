@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "candlelight",
+      "entity_type": "source_of_light",
+      "singular": true,
+      "description": "The text describes the candlelight as making Harry's head look like it was moving when he moved his head."
+    },
+    {
+      "name": "tap",
+      "entity_type": "fixture",
+      "singular": true,
+      "description": "The tap glowed with a brilliant white light and began to spin after a strange hissing sound escaped from Harry."
+    },
+    {
+      "name": "sink",
+      "entity_type": "fixture",
+      "singular": true,
+      "description": "The sink moved and then sank out of sight, leaving a large pipe exposed."
+    },
+    {
+      "name": "pipe",
+      "entity_type": "structure",
+      "singular": false,
+      "description": "A large pipe was left exposed after the sink sank out of sight."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The text describes Harry's actions and thoughts throughout the passage."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as gasping in response to the events unfolding."
+    },
+    {
+      "name": "Lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart tries to leave but is stopped by Ron and Harry pointing their wands at him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "tap",
+      "relationship_type": "interacted_with",
+      "description": "The text describes how Harry's actions caused the tap to glow with a brilliant white light."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Lockhart",
+      "relationship_type": "confronted",
+      "description": "Ron and Harry point their wands at Lockhart, preventing him from leaving."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "pipe",
+      "relationship_type": "accessed",
+      "description": "The text describes how Harry is going to slide into the pipe."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "pipe",
+      "relationship_type": "accessed",
+      "description": "Ron also intends to slide into the pipe."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is described as a giant, almost twice as tall and five times as wide as a normal man. He has long tangles of bushy black hair and beard, large hands, and feet like baby dolphins."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as the professor who is relieved to see Hagrid arrive."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as lending his motorbike to Hagrid."
+    },
+    {
+      "name": "motorbike",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The motorbike is described as huge and borrowed by Hagrid from Sirius Black."
+    },
+    {
+      "name": "house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hagrid mentions that the house was almost destroyed while he rescued Sirius Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "motorbike",
+      "relationship_type": "ridden_on",
+      "description": "Hagrid is riding on the motorbike when it lands in front of Dumbledore and Hagrid."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "met",
+      "description": "Dumbledore meets Hagrid upon his arrival, sounding relieved to see him."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "motorbike",
+      "relationship_type": "owned_by",
+      "description": "Sirius Black owns the motorbike that he lent to Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "house",
+      "relationship_type": "rescued_from",
+      "description": "Hagrid rescued Sirius Black from a house that was almost destroyed."
+    }
+  ]
+}

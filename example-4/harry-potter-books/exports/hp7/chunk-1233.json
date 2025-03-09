@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the leaders who will divide up the troops. He indicates himself and George as part of this leadership."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the leaders who will divide up the troops. Fred indicates him as part of this leadership."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley nods his approval for Fred and George to lead the division of troops."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who gives instructions to students. She hurries up to Harry to remind him about his task."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who has forgotten about the Horcrux. Professor McGonagall reminds him of this task."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "leader_of",
+      "description": "Fred and George are leaders who will divide up the troops."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "reminds",
+      "description": "Professor McGonagall reminds Harry about his task of looking for the Horcrux."
+    }
+  ]
+}

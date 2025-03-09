@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a person mentioned in the text as 189."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is looking over his shoulder and trying to catch the voice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is wide-eyed and trying to understand what Hermione understands."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who clapped a hand to her forehead and understood something, then sprinted away to the library."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where Hermione needs to go to understand what she has understood."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place from which people are emerging and talking loudly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voice",
+      "relationship_type": "heard",
+      "description": "Harry heard the voice."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "understands_less_than",
+      "description": "Ron understands less than Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "library",
+      "relationship_type": "needs_to_go_to",
+      "description": "Harry needs to go to the library, but he is irresolute."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "library",
+      "relationship_type": "advises_hermione_to_go_to",
+      "description": "Ron advises Hermione to go to the library."
+    }
+  ]
+}

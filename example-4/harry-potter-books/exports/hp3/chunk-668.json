@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione mentions walking down to Hagrid's three hours ago."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the characters in the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the characters in the conversation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as giving instructions to Harry and Hermione."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is mentioned as an animal that can be used for rescue."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as being locked up and needing to be rescued."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "buckbeak",
+      "relationship_type": "can_rescue_with",
+      "description": "Harry plans to use Buckbeak to rescue Sirius."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "has_instructions_for",
+      "description": "Dumbledore gives instructions for rescuing Sirius."
+    }
+  ]
+}

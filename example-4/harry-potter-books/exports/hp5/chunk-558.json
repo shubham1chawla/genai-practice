@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "wood lice",
+      "entity_type": "organisms",
+      "singular": false,
+      "description": "The students are asked to gather wood lice and a bowtruckle for study."
+    },
+    {
+      "name": "bowtruckle",
+      "entity_type": "organisms",
+      "singular": true,
+      "description": "The students are asked to gather wood lice and a bowtruckle for study."
+    },
+    {
+      "name": "Professor Grubbly-Plank",
+      "entity_type": "professors",
+      "singular": true,
+      "description": "She is teaching the class and is mentioned as being at the trestle table with Harry."
+    },
+    {
+      "name": "Hagrid",
+      "entity_type": "teachers",
+      "singular": true,
+      "description": "He is absent from the class, which has happened before according to Professor Grubbly-Plank's attitude."
+    },
+    {
+      "name": "Draco Malfoy",
+      "entity_type": "students",
+      "singular": true,
+      "description": "He is mentioned as leaning across Harry and seizing a bowtruckle."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "students",
+      "singular": true,
+      "description": "He is the main character in this passage, asking Professor Grubbly-Plank about Hagrid's absence and responding to Malfoy's comment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Professor Grubbly-Plank",
+      "relationship_type": "asked_question",
+      "description": "Harry asks Professor Grubbly-Plank about Hagrid's absence."
+    },
+    {
+      "entity_1": "Malfoy",
+      "entity_2": "Harry",
+      "relationship_type": "made_comment",
+      "description": "Malfoy makes a comment to Harry, suggesting that Hagrid might be injured."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Malfoy",
+      "relationship_type": "responded_to_comment",
+      "description": "Harry responds to Malfoy's comment by telling him to shut up."
+    }
+  ]
+}

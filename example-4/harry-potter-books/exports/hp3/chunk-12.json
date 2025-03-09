@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is recognized by his ability to identify Errol and Hedwig."
+    },
+    {
+      "name": "errol",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "An owl that belongs to the Weasley family. Harry recognizes him immediately."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's own owl. She is carrying a parcel and looks pleased with herself."
+    },
+    {
+      "name": "weasley family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that Errol belongs to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "errol",
+      "relationship_type": "owns",
+      "description": "Harry recognizes Errol as belonging to the Weasley family."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry owns Hedwig, his own owl."
+    },
+    {
+      "entity_1": "errol",
+      "entity_2": "weasley family",
+      "relationship_type": "belongs_to",
+      "description": "Errol belongs to the Weasley family."
+    }
+  ]
+}

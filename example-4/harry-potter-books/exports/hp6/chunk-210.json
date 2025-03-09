@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is laughing and looking around at the shop."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A woman who is gazing in shock at a poster, mouthing the name 'U-No-Poo'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is laughing and leading the way into the shop."
+    },
+    {
+      "name": "u-no-poo",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A product that Mrs Weasley is shocked by and mouthing its name."
+    },
+    {
+      "name": "skiving snackboxes",
+      "entity_type": "product",
+      "singular": false,
+      "description": "A product that the twins had perfected during their last year at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs weasley",
+      "relationship_type": "nearby",
+      "description": "Harry and Mrs Weasley are standing next to each other."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "together",
+      "description": "Harry and Ron are laughing together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "u-no-poo",
+      "relationship_type": "seen",
+      "description": "Harry has seen the product U-No-Poo."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "u-no-poo",
+      "relationship_type": "seen",
+      "description": "Ron has seen the product U-No-Poo."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "skiving snackboxes",
+      "relationship_type": "seen",
+      "description": "Harry has seen the product Skiving Snackboxes."
+    }
+  ]
+}

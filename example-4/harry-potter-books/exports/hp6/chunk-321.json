@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "cruciatus curse",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "a type of curse that causes intense pain, as described by Professor Snape"
+    },
+    {
+      "name": "dementor's kiss",
+      "entity_type": "effect",
+      "singular": true,
+      "description": "a feeling of intense sadness and despair, as described by Professor Snape"
+    },
+    {
+      "name": "inferius",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "a type of creature that is used for aggression, as described by Professor Snape"
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "student",
+      "singular": true,
+      "description": "a student in the class who asks a question about an Inferius being seen"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cruciatus curse",
+      "entity_2": "inferius",
+      "relationship_type": "used_by",
+      "description": "The Dark Lord has used Inferi in the past, which means he might use them again"
+    },
+    {
+      "entity_1": "dementor's kiss",
+      "entity_2": "dark lord",
+      "relationship_type": "causes",
+      "description": "The Dementor's Kiss is a feeling that the Dark Lord causes"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a student who is attending Professor McGonagall's Transfiguration lesson. He is mentioned to be sitting at the back of the room and feeling like he is under a spotlight."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is not described in detail, but he is mentioned as one of Harry's friends who descended Professor Trelawney's ladder and the winding stair with him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as a student who descended Professor Trelawney's ladder and the winding stair with Harry and Ron."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as the teacher of Divination, from which Harry, Ron, and Hermione descended her ladder and the winding stair."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is described as the teacher of Transfiguration. She is mentioned to be teaching about Animagi and transforming herself into a tabby cat."
+    },
+    {
+      "name": "animagi",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Animagi are wizards who can transform at will into animals, as described by Professor McGonagall in her Transfiguration lesson."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "attended_class",
+      "description": "Harry attended Professor McGonagall's Transfiguration lesson, where she taught about Animagi and transformed herself into a tabby cat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "animagi",
+      "relationship_type": "learned_about",
+      "description": "Harry learned about Animagi in Professor McGonagall's Transfiguration lesson, where she described them as wizards who can transform at will into animals."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "animagi",
+      "relationship_type": "taught_about",
+      "description": "Professor McGonagall taught about Animagi in her Transfiguration lesson, where she described them as wizards who can transform at will into animals."
+    }
+  ]
+}

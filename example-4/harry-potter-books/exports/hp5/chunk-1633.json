@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being attacked by dementors."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sent dementors after Harry and is trying to expel him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who tries to stop Umbridge from casting a crucio spell on Harry."
+    },
+    {
+      "name": "millcent bulstrode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being present in the scene."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Harry."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Creatures that are sent after Harry and try to suck out his soul."
+    },
+    {
+      "name": "airplane",
+      "entity_type": "airplane",
+      "singular": true,
+      "description": "An airplane mentioned in the title of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "sent_dementors_after",
+      "description": "Umbridge sent dementors after Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "tried_to_stop_crucio_spell",
+      "description": "Hermione tried to stop Umbridge from casting a crucio spell on Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "attacked_by",
+      "description": "Harry was attacked by dementors."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "potter",
+      "relationship_type": "sent_dementors_after",
+      "description": "Umbridge sent dementors after Potter (which is another name for Harry)."
+    }
+  ]
+}

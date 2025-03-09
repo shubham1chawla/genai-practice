@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic who is mentioned in the context of being informed about the attacks on students."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry who informs the students about the situation."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry that is mentioned in the context of being affected by the attacks."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry that is mentioned in the context of being affected by the attacks."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry that is mentioned in the context of being affected by the attacks."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Two students who are friends with Ron Weasley and are mentioned in the context of making a comment about the situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindors",
+      "relationship_type": "informing",
+      "description": "Professor McGonagall informs the Gryffindor students about the situation and the measures that need to be taken."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "cornelius fudge",
+      "relationship_type": "informed",
+      "description": "Professor McGonagall is informed by someone (not specified) about the situation and the attacks on students, which she then shares with the Gryffindor students."
+    },
+    {
+      "entity_1": "weasley twins",
+      "entity_2": "gryffindors",
+      "relationship_type": "commenting",
+      "description": "The Weasley twins make a comment about the situation to the Gryffindor students."
+    }
+  ]
+}

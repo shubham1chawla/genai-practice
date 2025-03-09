@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object used to travel between locations. It is mentioned that Harry will use a Portkey to get to the Burrow."
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The home of the Weasley family, located in the countryside. It is mentioned as the destination for the Portkey."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a wizard who is on the run from Death Eaters. He is mentioned as one of the seven Harry Potters flying through the skies tonight."
+    },
+    {
+      "name": "tonks's parents",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The home of Tonks's parents, which is one of the safe houses that the group will be heading to. It is mentioned as a possible destination for the group."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are enemies of Harry Potter. They are mentioned as being after Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "burrow",
+      "relationship_type": "destination",
+      "description": "Harry will use a Portkey to get to the Burrow, which is his destination."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "portkey",
+      "relationship_type": "use",
+      "description": "Harry will use a Portkey to travel to the Burrow."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "target",
+      "description": "Death Eaters are after Harry, making him their target."
+    },
+    {
+      "entity_1": "tonks's parents",
+      "entity_2": "seven harry potters",
+      "relationship_type": "destination",
+      "description": "Tonks's parents' home is one of the safe houses that the group will be heading to."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "tonks's parents",
+      "relationship_type": "related_to",
+      "description": "Harry is related to Tonks, whose parents live in a safe house."
+    }
+  ]
+}

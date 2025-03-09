@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a character in the conversation. He is described as giving piercing looks to Harry on other occasions."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character in the conversation. He is described as having seen the back of Voldemort's chair."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a character in the conversation. It is discussed whether he has a body or not."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Pensieve is described as an object where Dumbledore adds thoughts to it."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A wand is mentioned in the conversation as something that Voldemort could have held."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "pensieve",
+      "relationship_type": "uses",
+      "description": "Dumbledore uses the Pensieve to add thoughts to it."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wand",
+      "relationship_type": "held",
+      "description": "It is discussed whether Voldemort could have held a wand."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "looks_at",
+      "description": "Dumbledore gives piercing looks to Harry on other occasions."
+    }
+  ]
+}

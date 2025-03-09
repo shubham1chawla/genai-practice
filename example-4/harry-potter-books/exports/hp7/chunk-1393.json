@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The portrait of Dumbledore is described as speaking and giving advice to Snape. The text states \"cried the portrait of Dumbledore behind the headmaster’s chair\" indicating that it is a portrait of the person."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as receiving instructions from the portrait of Dumbledore and taking the sword. The text states \"Now, Severus, the sword! Do not forget that it must be taken under conditions of need and valor — and he must not know that you give it!\" indicating that Snape is being given a task."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone who might read Harry's mind and see Snape acting for him. The text states \"If Voldemort should read Harry’s mind and see you acting for him —\" indicating that Voldemort has the ability to read minds."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone whose mind Voldemort might read. The text states \"If Voldemort should read Harry’s mind and see you acting for him —\" indicating that Harry's thoughts are being considered."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "advice_given_to",
+      "description": "The portrait of Dumbledore gives advice to Snape. The text states \"Now, Severus, the sword! Do not forget that it must be taken under conditions of need and valor — and he must not know that you give it!\" indicating that Dumbledore is giving instructions to Snape."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "sword_of_gryffindor",
+      "relationship_type": "possession_acquired",
+      "description": "Snape takes the sword of Gryﬃndor from behind the portrait of Dumbledore. The text states \"He approached the portrait of Dumbledore and pulled at its side. It swung forward, revealing a hidden cavity behind it from which he took the sword of Gryﬃndor.\" indicating that Snape is acquiring possession of the sword."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "mind_reading_ability",
+      "description": "Voldemort has the ability to read Harry's mind. The text states \"If Voldemort should read Harry’s mind and see you acting for him —\" indicating that Voldemort can access Harry's thoughts."
+    }
+  ]
+}

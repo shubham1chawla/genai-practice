@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "christmas",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "The holiday being celebrated on the closed ward. (Excerpt: 'CHRISTMAS ON THE CLOSED WARD')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is lying in bed, feeling desperate and hungry. (Excerpts: 'Harry opened his eyes', 'He doesn’t want to be on his own with me, Harry thought')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to avoid being alone with Harry. (Excerpts: '“Harry,” said Ron’s voice', 'He doesn’t want to be on his own with me, Harry thought')"
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has made a statement that has affected the others. (Excerpt: 'Not after what he heard Moody say')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "avoidance",
+      "description": "Harry and Ron are trying to avoid being alone with each other. (Excerpt: 'He doesn’t want to be on his own with me, Harry thought')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "influence",
+      "description": "Harry's presence is influenced by Moody's statement. (Excerpt: 'Not after what he heard Moody say')"
+    }
+  ]
+}

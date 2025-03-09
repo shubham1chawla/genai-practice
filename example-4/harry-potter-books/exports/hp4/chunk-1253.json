@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "flesh",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Mentioned as one of the three essential components for a potion, along with blood and bone."
+    },
+    {
+      "name": "blood",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Mentioned as one of the three essential components for a potion, along with flesh and bone."
+    },
+    {
+      "name": "bone",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Mentioned as one of the three essential components for a potion, along with blood and flesh."
+    },
+    {
+      "name": "cauldron",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A container used to brew potions, from which sparks and steam emanate."
+    },
+    {
+      "name": "steam",
+      "entity_type": "substance",
+      "singular": false,
+      "description": "Billows thickly from the cauldron, obliterating everything in front of Harry."
+    },
+    {
+      "name": "sparks",
+      "entity_type": "substance",
+      "singular": false,
+      "description": "Emanate from the cauldron before being extinguished."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is unable to see Wormtail or Cedric due to the steam emanating from the cauldron."
+    },
+    {
+      "name": "Wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is sobbing and moaning while cradling his mutilated arm."
+    },
+    {
+      "name": "Cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose presence Harry cannot see due to the steam emanating from the cauldron."
+    },
+    {
+      "name": "man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rises slowly from inside the cauldron and is described as tall and skeletally thin."
+    },
+    {
+      "name": "robe",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Black robes that Wormtail picks up to robe his master."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "man",
+      "entity_2": "Harry",
+      "relationship_type": "gaze",
+      "description": "The man stares at Harry with an icy surge of terror."
+    },
+    {
+      "entity_1": "Wormtail",
+      "entity_2": "master",
+      "relationship_type": "servant",
+      "description": "Wormtail is sobbing and moaning while cradling his mutilated arm, indicating that he is a servant to the thin man."
+    },
+    {
+      "entity_1": "Wormtail",
+      "entity_2": "robe",
+      "relationship_type": "possessor",
+      "description": "Wormtail picks up the black robes from the ground and puts them on his master."
+    },
+    {
+      "entity_1": "man",
+      "entity_2": "cauldron",
+      "relationship_type": "emergence",
+      "description": "The man rises slowly from inside the cauldron."
+    }
+  ]
+}

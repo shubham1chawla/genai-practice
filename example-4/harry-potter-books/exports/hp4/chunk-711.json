@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as taking a jam tart and asking Fred about getting something from the kitchens."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as responding to Hermione's question and imitating a house-elf."
+    },
+    {
+      "name": "house-elf",
+      "entity_type": "job_title",
+      "singular": false,
+      "description": "House-elf is mentioned as an entity that Fred imitates."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "fred",
+      "relationship_type": "asked_question",
+      "description": "Hermione asks Fred about getting something from the kitchens."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "house-elf",
+      "relationship_type": "imitated",
+      "description": "Fred imitates a house-elf."
+    }
+  ]
+}

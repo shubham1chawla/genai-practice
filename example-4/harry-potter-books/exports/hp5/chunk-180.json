@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Bagman business is a topic of discussion and controversy."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is accused by Bill of doing a cover-up regarding the Bagman business."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Goblins are mentioned as being involved in the Bagman business, but it's unclear what their role is."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is one of the people discussing the Bagman business and accusing the Ministry of a cover-up."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is laughing along with the others at Mundungus's story."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is also laughing and enjoying the story."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is laughing so hard he's slumping forward on to the table."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is telling a story about his business dealings with Will, including selling him back his own stolen toads for twice the price."
+    },
+    {
+      "name": "will",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Will is the person who bought the toads from Mundungus and then had them stolen, leading to a comedic exchange between him and Mundungus."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is interrupting the story to tell Mundungus that they don't need to hear any more about his business dealings."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "ministry",
+      "relationship_type": "accused_of_cover_up",
+      "description": "Bill accuses the Ministry of doing a cover-up regarding the Bagman business."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "will",
+      "relationship_type": "seller_buyer",
+      "description": "Mundungus sold toads to Will, who then had them stolen and bought them back from Mundungus for twice the price."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "will",
+      "relationship_type": "seller_buyer_inverse",
+      "description": "This is the inverse relationship of seller_buyer, where Will buys toads back from Mundungus for twice the price."
+    }
+  ]
+}

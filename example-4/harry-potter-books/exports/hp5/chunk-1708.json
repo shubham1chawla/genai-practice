@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as Potter."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and a rival of Harry's, mentioned by name."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is believed to be in danger."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a member of Dumbledore's Army."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a member of Dumbledore's Army."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a member of Dumbledore's Army."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a member of Dumbledore's Army."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of Dumbledore's Army and a friend of Harry's."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are enemies of Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "malfoy",
+      "relationship_type": "enemy",
+      "description": "Malfoy is an enemy of Potter's and is trying to intimidate him into giving up the prophecy."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "death eaters",
+      "relationship_type": "target",
+      "description": "The Death Eaters are targeting Potter and his friends."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "potter",
+      "relationship_type": "opponent",
+      "description": "Malfoy is an opponent of Potter's, trying to get the prophecy from him."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "potter",
+      "relationship_type": "ally",
+      "description": "Sirius is a friend and ally of Potter's."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "luna lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna Lovegood is mentioned in the text as a person who handed Mr. Weasley something."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is reading The Quibbler magazine."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley handed Mr. Weasley something which was later found to be The Quibbler magazine."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is the main character of the article in The Quibbler and is accused of mass murder."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley received something from Kingsley which was later found to be The Quibbler magazine."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison where Sirius Black escaped two years ago."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius black",
+      "relationship_type": "read_about",
+      "description": "Harry read about Sirius Black in The Quibbler magazine."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "mr. weasley",
+      "relationship_type": "gave_to",
+      "description": "Kingsley handed Mr. Weasley something which was later found to be The Quibbler magazine."
+    }
+  ]
+}

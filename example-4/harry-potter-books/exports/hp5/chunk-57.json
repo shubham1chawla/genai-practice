@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having received an official warning and being expelled from Hogwarts."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, mentioned as talking in the vicinity while Harry reads the letter."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, mentioned as talking in the vicinity while Harry reads the letter."
+    },
+    {
+      "name": "hawgwarts school of witchcraft and wizardry",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry is expelled from."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The organization responsible for issuing warnings and expelling students."
+    },
+    {
+      "name": "international confederation of wizards",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An international organization mentioned in the context of the Statute of Secrecy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hawgwarts school of witchcraft and wizardry",
+      "relationship_type": "expelled_from",
+      "description": "Harry is expelled from Hogwarts, as stated in the letter."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "harry",
+      "relationship_type": "issued_warning_to",
+      "description": "The Ministry of Magic issued a warning to Harry for his previous offense under section 13 of the International Confederation of Wizards' Statute of Secrecy."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "harry",
+      "relationship_type": "requiring_disciplinary_hearing",
+      "description": "The Ministry of Magic requires Harry to attend a disciplinary hearing at 9 a.m. on August 12th."
+    }
+  ]
+}

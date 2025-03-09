@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "stone cold",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stone Cold is mentioned as the one who drank half of the soup in one gulp."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hedwig is Harry's owl, and she ruffled her feathers and gave him a look of deep disgust when he offered her soggy vegetables."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who drank half of the soup, offered Hedwig soggy vegetables, and was worried about not turning up at Hogwarts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place where Harry should turn up, but he is worried that someone might be sent to see why he hadn't come back."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as people who might not let Harry go, and someone might need to be sent to persuade them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "offered_food",
+      "description": "Harry offered Hedwig soggy vegetables, but she refused them with a look of deep disgust."
+    },
+    {
+      "entity_1": "stone cold",
+      "entity_2": "soup",
+      "relationship_type": "drank",
+      "description": "Stone Cold drank half of the soup in one gulp."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "concerned_about_attendance",
+      "description": "Harry is worried about not turning up at Hogwarts, and he wonders what would happen if he didn't go back."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "concerned_about_release",
+      "description": "Harry is worried that the Dursleys might not let him go, and someone might need to be sent to persuade them."
+    }
+  ]
+}

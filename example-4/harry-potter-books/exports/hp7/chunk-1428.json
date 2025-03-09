@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore was walking toward Harry, wearing sweeping robes of midnight blue. His long silver hair and beard, the piercingly blue eyes behind half-moon spectacles, the crooked nose: Everything was as he had remembered it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry followed Dumbledore as he strode away from where the flayed child lay whimpering. Harry stared at his old headmaster's face."
+    },
+    {
+      "name": "child",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A flayed child lay whimpering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "walk_with",
+      "description": "Dumbledore led Harry to two seats and they sat down together."
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "child",
+      "relationship_type": "leave_behind",
+      "description": "Dumbledore strode away from where the flayed child lay whimpering."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "follow",
+      "description": "Harry followed Dumbledore as he strode away from where the flayed child lay whimpering."
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "talk_to",
+      "description": "Dumbledore spoke to Harry, saying 'You wonderful boy. You brave, brave man.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "ask_question",
+      "description": "Harry asked Dumbledore 'But you're dead.'"
+    }
+  ]
+}

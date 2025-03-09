@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as one of the Slytherin students who are reacting negatively to Harry. He is described as whispering something malevolent to Crabbe."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as one of the Slytherin students who are reacting negatively to Harry."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as one of the Slytherin students who are reacting negatively to Harry. He cracked his knuckles threateningly at Harry."
+    },
+    {
+      "name": "theodore nott",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Theodore Nott is mentioned as a weedy-looking boy who was with Malfoy and Crabbe in the library."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as having named all of their fathers as Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as whispering to Harry about Theodore Nott and laughing gleefully when they leave the library."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as telling Harry over dinner that no copy of The Quibbler had ever sold out faster."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad is mentioned as reprinting The Quibbler because people are interested in it more than the Crumple-Horned Snorkacks."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being named by Harry."
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "The Quibbler is mentioned as selling out faster than ever before."
+    },
+    {
+      "name": "crumple-horned snorkacks",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Crumple-Horned Snorkacks are mentioned as being less interesting to people than The Quibbler."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "named_as",
+      "description": "Harry named all of their fathers as Death Eaters."
+    },
+    {
+      "entity_1": "dad",
+      "entity_2": "the quibbler",
+      "relationship_type": "reprinted",
+      "description": "Dad is reprinting The Quibbler because people are interested in it more than the Crumple-Horned Snorkacks."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crabbe",
+      "relationship_type": "target_of_negative_reaction",
+      "description": "Crabbe and Malfoy were reacting negatively to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goyle",
+      "relationship_type": "target_of_negative_reaction",
+      "description": "Goyle cracked his knuckles threateningly at Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "theodore nott",
+      "relationship_type": "mentioned_with",
+      "description": "Hermione whispered to Harry about Theodore Nott."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "the quibbler",
+      "relationship_type": "related_to",
+      "description": "Luna told Harry that no copy of The Quibbler had ever sold out faster."
+    }
+  ]
+}

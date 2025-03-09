@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "madam pince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pince is introduced as a person who extinguishes lamps and chivvies Harry out of the library. She is described as coming to chivvy Harry out of the library by eight o'clock."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as a person who is searching for something in the library. He is described as staggering under the weight of many books and returning to the Gryffindor common room."
+    },
+    {
+      "name": "gryffindor common room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Gryffindor common room is introduced as a location where Harry returns with his books. It is described as emptying slowly around Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "madam pince",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacted with Madam Pince when she came to chivvy him out of the library."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor common room",
+      "relationship_type": "returned_to",
+      "description": "Harry returned to the Gryffindor common room with his books."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "sorcerer's stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object being guarded by Harry Potter in his first year."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who helped him and Hermione with the Sorcerer's Stone."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who helped him and Ron with the Sorcerer's Stone."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is helping Harry Potter with his task."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard."
+    },
+    {
+      "name": "durmstrang ship",
+      "entity_type": "ship",
+      "singular": true,
+      "description": "A ship from Durmstrang that is visible through the window."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "potter",
+      "relationship_type": "advises",
+      "description": "Moody advises Potter on how to handle his task."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "ron",
+      "relationship_type": "cautions",
+      "description": "Moody cautions Ron and Hermione to stick close to Potter."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "hermione",
+      "relationship_type": "cautions",
+      "description": "Moody cautions Ron and Hermione to stick close to Potter."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "durmstrang ship",
+      "relationship_type": "is watching",
+      "description": "Potter is watching the Durmstrang ship through the window."
+    }
+  ]
+}

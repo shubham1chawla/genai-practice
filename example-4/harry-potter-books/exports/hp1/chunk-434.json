@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who interrupted Quirrell and spoke about keeping the Philosopher's Stone private."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is mentioned as the one who was mumbling something."
+    },
+    {
+      "name": "philosopher’s stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Philosopher's Stone is mentioned as a secret that students aren’t supposed to know about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "quirrell",
+      "relationship_type": "interrupted",
+      "description": "Snape interrupted Quirrell while he was mumbling something."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "mentioned",
+      "description": "Snape mentioned the Philosopher's Stone as a secret that students aren’t supposed to know about."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "snape",
+      "relationship_type": "interrupted_by",
+      "description": "Quirrell was interrupted by Snape while he was mumbling something."
+    }
+  ]
+}

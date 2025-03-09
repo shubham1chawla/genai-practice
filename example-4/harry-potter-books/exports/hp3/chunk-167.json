@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "knight",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The knight is described as yelling and popping his head into paintings. He is also mentioned to be running through pictures ahead."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people climbing the spiral staircase with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people climbing the spiral staircase with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people climbing the spiral staircase with Harry and Ron."
+    },
+    {
+      "name": "sir cadogan",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sir Cadogan is mentioned as a knight who appears in paintings and gives advice to his comrades-in-arms."
+    },
+    {
+      "name": "monks",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The monks are described as sinister-looking and appear in a painting."
+    },
+    {
+      "name": "women",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of women in crinolines is mentioned to be alarmed by the knight's appearance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "knight",
+      "entity_2": "monks",
+      "relationship_type": "appears_in_painting",
+      "description": "The knight appears in a painting with sinister-looking monks."
+    },
+    {
+      "entity_1": "knight",
+      "entity_2": "women",
+      "relationship_type": "interacts_with",
+      "description": "The knight interacts with a group of women in crinolines, causing them to be alarmed."
+    }
+  ]
+}

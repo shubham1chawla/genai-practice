@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is described as a superb Keeper, indicating his role in the game. (\"’Course, Wood’s a superb Keeper!\")"
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee Jordan is described as providing commentary for the crowd, highlighting his role as a commentator. (\"’Course, Wood’s a superb Keeper! Lee Jordan told the crowd...\")"
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is described as blowing her whistle to signal the start of play. (\"Madam Hooch’s whistle rang out again...\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as zooming away and gazing around for the Snitch, indicating his role in the game. (\"Relieved, Harry zoomed away...\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as someone that Harry needs to hold off from getting the Snitch. (\"It was essential that he hold Malfoy oﬀ the Snitch...\")"
+    },
+    {
+      "name": "katie bell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie Bell is described as playing for Gryffindor and attempting to score with the Quaffle. (\"Gryﬀindor back in possession... Katie Bell, Katie Bell for Gryﬀindor with the Quaﬄe...\")"
+    },
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Montague is described as a Slytherin Chaser who swerved in front of Katie Bell. (\"Montague, a Slytherin Chaser, had swerved in front of Katie...\")"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is described as the team that Wood is keeping for and that Harry needs to hold a lead over. (\"’Course, Wood’s a superb Keeper! Gryﬀindor in possession...\")"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is described as the opposing team to Gryffindor. (\"Gryﬀindor in possession, no, Slytherin in possession—no!—\")"
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is described as something that Harry needs to find and hold off Malfoy from getting. (\"It was essential that he hold Malfoy oﬀ the Snitch...\")"
+    },
+    {
+      "name": "quaﬄe",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is described as something that Katie Bell is attempting to score with. (\"Katie Bell, Katie Bell for Gryﬀindor with the Quaﬄe...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "gryffindor",
+      "relationship_type": "keeps_for",
+      "description": "Wood is described as keeping for Gryffindor, indicating his role in the game. (\"’Course, Wood’s a superb Keeper! Gryﬀindor in possession...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "seeks_to_find",
+      "description": "Harry is described as needing to find the Snitch, indicating his role in the game. (\"It was essential that he hold Malfoy oﬀ the Snitch...\")"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snitch",
+      "relationship_type": "seeks_to_get",
+      "description": "Malfoy is described as someone that Harry needs to hold off from getting the Snitch. (\"It was essential that he hold Malfoy oﬀ the Snitch...\")"
+    },
+    {
+      "entity_1": "katie bell",
+      "entity_2": "quaﬄe",
+      "relationship_type": "attempts_to_score_with",
+      "description": "Katie Bell is described as attempting to score with the Quaffle, indicating her role in the game. (\"Gryﬀindor back in possession... Katie Bell, Katie Bell for Gryﬀindor with the Quaﬄe...\")"
+    },
+    {
+      "entity_1": "montague",
+      "entity_2": "katie bell",
+      "relationship_type": "interferes_with",
+      "description": "Montague is described as swerving in front of Katie Bell, indicating his interference with her play. (\"Montague, a Slytherin Chaser, had swerved in front of Katie...\")"
+    }
+  ]
+}

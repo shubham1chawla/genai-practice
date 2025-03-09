@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as getting up, dressed and going for a last look at his Firebolt. He is also mentioned to be wondering where he'd have lunch."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is mentioned as an object that Harry looks at before leaving."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as looking incredibly freckly and waving frantically at Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as being very brown and waving frantically at Harry."
+    },
+    {
+      "name": "florean fortescue's ice cream parlor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Florean Fortescue's Ice Cream Parlor is mentioned as a location where Ron and Hermione are sitting."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Leaky Cauldron is mentioned as a location that Ron and Hermione visited to look for Harry."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Flourish and Blotts is mentioned as a location that Ron and Hermione visited to look for Harry."
+    },
+    {
+      "name": "madam malkin's",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Madam Malkin's is mentioned as a location that Ron and Hermione visited to look for Harry."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as Mr. Weasley's workplace."
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is mentioned in the context of what happened to her."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is described as working at the Ministry of Magic and knowing about Aunt Marge's situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "owned_by",
+      "description": "Harry owns or has possession of the Firebolt."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "visited",
+      "description": "Ron visited the Leaky Cauldron with Hermione to look for Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "visited",
+      "description": "Hermione visited the Leaky Cauldron with Ron to look for Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "left",
+      "description": "Harry left the Leaky Cauldron before Ron and Hermione arrived."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Ron is with Hermione at Florean Fortescue's Ice Cream Parlor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "stayed_at",
+      "description": "Harry stayed at the Leaky Cauldron."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "ministry of magic",
+      "relationship_type": "works_at",
+      "description": "Mr. Weasley works at the Ministry of Magic."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "aunt marge",
+      "relationship_type": "knows_about",
+      "description": "Mr. Weasley knows about Aunt Marge's situation."
+    }
+  ]
+}

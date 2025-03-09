@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is speaking to Harry Potter. He is described as having a 'silkily' tone and sneering at Harry."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Dark Lord is a title given to Voldemort, but it is not explicitly mentioned in the text. However, Snape mentions speaking to him, implying that he is referring to Voldemort."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is a person who is present with Harry Potter and Snape. He is described as hesitating and then leaving the room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dark lord",
+      "relationship_type": "speaks_to",
+      "description": "Snape mentions speaking to the Dark Lord, implying that he has a relationship with him."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "snape",
+      "relationship_type": "brings_drinks_for",
+      "description": "Wormtail is instructed by Snape to bring drinks, indicating that Wormtail is subordinate to Snape."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's dad is mentioned, implying Ron is a person of interest."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who thinks Malfoy is planning something."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being tricked by Snape and suspected of planning something."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is pretending to offer help to Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "suspects",
+      "description": "Harry suspects that Malfoy is planning something."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "collaborates_with",
+      "description": "Harry believes Snape and Malfoy are working together."
+    },
+    {
+      "entity_1": "ron's dad",
+      "entity_2": "malfoy",
+      "relationship_type": "suspects",
+      "description": "Ron's dad suspects that Malfoy is planning something."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "malfoy",
+      "relationship_type": "suspects",
+      "description": "Lupin suspects that Malfoy is planning something."
+    }
+  ]
+}

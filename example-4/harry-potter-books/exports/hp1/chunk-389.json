@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "cannon",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cannon is described as the source of the blast that engulfed everyone in a cloud of blue smoke."
+    },
+    {
+      "name": "rear-admiral's hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The rear-admiral's hat is mentioned as exploding from inside the blast."
+    },
+    {
+      "name": "live, white mice",
+      "entity_type": "living_thing",
+      "singular": false,
+      "description": "Several live, white mice are mentioned as being part of the explosion."
+    },
+    {
+      "name": "High Street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The High Street is mentioned as a location where the blast occurred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cannon",
+      "entity_2": "rear-admiral's hat",
+      "relationship_type": "exploded_from",
+      "description": "The rear-admiral's hat exploded from inside the cannon."
+    },
+    {
+      "entity_1": "cannon",
+      "entity_2": "live, white mice",
+      "relationship_type": "engulfed",
+      "description": "The live, white mice were engulfed by the blast from the cannon."
+    }
+  ]
+}

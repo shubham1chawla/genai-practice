@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is trying to decide what spell to cast on his birthday cake. He is mentioned as saying 'I'm trying to decide what would be the best spell to set it on fire'."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin who is scared of magic and tries to stop Harry from casting a spell. He is mentioned as saying 'You c-can't – Dad told you you're not to do m-magic'."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Harry's aunt who tries to stop him from casting a spell. She is mentioned as saying 'As neither Dudley nor the hedge was in any way hurt, Aunt Petunia knew he hadn't really done magic'."
+    },
+    {
+      "name": "the hedge",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The hedge is an object that is not affected by Harry's spell. It is mentioned as being 'in any way hurt'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "conflict",
+      "description": "Harry and Dudley have a conflict when Harry tries to cast a spell on his birthday cake. Dudley is scared of magic and tries to stop Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt petunia",
+      "relationship_type": "conflict",
+      "description": "Harry and Aunt Petunia have a conflict when Harry tries to cast a spell on his birthday cake. Aunt Petunia is trying to stop him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the hedge",
+      "relationship_type": "no_effect",
+      "description": "Harry's spell has no effect on the hedge."
+    }
+  ]
+}

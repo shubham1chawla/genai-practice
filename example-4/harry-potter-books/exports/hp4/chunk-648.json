@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius hesitated, indicating that he was uncertain or unsure about something."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters seem to be a bit more active than usual lately, suggesting they are involved in some suspicious activity."
+    },
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "They showed themselves at the Quidditch World Cup, indicating that the Death Eaters were present at this event."
+    },
+    {
+      "name": "dark mark",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "Someone set off the Dark Mark, suggesting that it was used in a ritual or ceremony."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A Ministry of Magic witch who’s gone missing, indicating that there is a problem within this organization."
+    },
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha Jorkins disappeared in Albania, and that’s definitely where Voldemort was rumored to be last."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort was rumored to be in the same location as Bertha Jorkins, suggesting a connection between them."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Triwizard Tournament was coming up, and Bertha Jorkins would have known about it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "death eaters",
+      "relationship_type": "involved_with",
+      "description": "Sirius is concerned about the Death Eaters being more active than usual."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "present_at",
+      "description": "The Death Eaters showed themselves at the Quidditch World Cup."
+    },
+    {
+      "entity_1": "dark mark",
+      "entity_2": "sirius",
+      "relationship_type": "used_by",
+      "description": "Someone set off the Dark Mark, and Sirius is aware of this event."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "bertha jorkins",
+      "relationship_type": "missing_from",
+      "description": "A Ministry of Magic witch who’s gone missing, specifically Bertha Jorkins."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "albania",
+      "relationship_type": "present_in",
+      "description": "Voldemort was rumored to be in the same location as Bertha Jorkins."
+    },
+    {
+      "entity_1": "bertha jorkins",
+      "entity_2": "triwizard tournament",
+      "relationship_type": "aware_of",
+      "description": "Bertha Jorkins would have known about the Triwizard Tournament."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bertha jorkins",
+      "relationship_type": "mentioned_by",
+      "description": "Harry mentions Bertha Jorkins in his conversation with Sirius."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "voldemort",
+      "relationship_type": "connected_to",
+      "description": "Sirius is concerned about the connection between Voldemort and Bertha Jorkins."
+    }
+  ]
+}

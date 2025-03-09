@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, described as feeling like he is recuperating from an illness."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being solicitous of Harry's well-being."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where the characters had a narrow escape from Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, described as being more threatening than before."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose dot is being watched on the Marauder's Map."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows Harry to watch Ginny's location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "caregiver_care_receiver",
+      "description": "Hermione is being solicitous of Harry's well-being."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "godric's hollow",
+      "relationship_type": "threat_location",
+      "description": "Voldemort seems more threatening after the narrow escape from Godric's Hollow."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "watcher_watched",
+      "description": "Harry is watching Ginny's location on the Marauder's Map."
+    }
+  ]
+}

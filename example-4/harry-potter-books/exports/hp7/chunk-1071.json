@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is described as a place of wonder and an enchanted repository of gold. It is also referred to as the bank."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is introduced as one of the characters who is visiting Gringotts, and she steps forward after Travers."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being with Hermione and Travers at Gringotts, and Hermione explains features of the hall to him."
+    },
+    {
+      "name": "travers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Travers is introduced as a character who is visiting Gringotts, and he passes over a tiny golden key to the goblin."
+    },
+    {
+      "name": "madam lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Lestrange is mentioned by the goblin as being present at Gringotts, and she steps forward after Travers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gringotts",
+      "entity_2": "hermione",
+      "relationship_type": "visited_by",
+      "description": "Hermione visits Gringotts along with Ron and Travers."
+    },
+    {
+      "entity_1": "travers",
+      "entity_2": "goblin",
+      "relationship_type": "interacted_with",
+      "description": "Travers interacts with the goblin at Gringotts, passing over a tiny golden key to him."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "madam lestrange",
+      "relationship_type": "met",
+      "description": "Hermione meets Madam Lestrange at Gringotts, as introduced by the goblin."
+    }
+  ]
+}

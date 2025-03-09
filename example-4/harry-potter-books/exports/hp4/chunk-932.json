@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters in the story, described as sitting at the back of the Charms class with Ron and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another main character in the story, described as being indignant about Harry's egg clue."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a main character in the story, described as sitting at the back of the Charms class with Harry and Hermione."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student in the Charms class, described as having poor aim."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Flitwick is the teacher of the Charms class, described as giving each student a stack of cushions to practice with."
+    },
+    {
+      "name": "egg clue",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The egg clue is an object that Harry is working on, described as being fine-tuned by him."
+    },
+    {
+      "name": "summoning charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Summoning Charm is a spell that the students are supposed to be practicing against."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "egg clue",
+      "relationship_type": "working_on",
+      "description": "Harry is working on fine-tuning the egg clue, as described in the text: 'He, Ron, and Hermione were sitting at the very back of the Charms class with a table to themselves. They were supposed to be practicing the opposite of the Summoning Charm today — the Banishing Charm... Harry hissed as Professor Flitwick approached.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "talking_to",
+      "description": "Harry is talking to Hermione, as described in the text: 'ou said you’d already worked out that egg clue!” said Hermione indignantly. ‘Keep your voice down!’ said Harry crossly.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sitting_with",
+      "description": "Harry is sitting with Ron, as described in the text: 'He, Ron, and Hermione were sitting at the very back of the Charms class with a table to themselves.'"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "professor flitwick",
+      "relationship_type": "hitting",
+      "description": "Neville is hitting Professor Flitwick with an object, as described in the text: 'Neville’s aim was so poor that he kept accidentally sending much heavier things flying across the room — Professor Flitwick, for instance.'"
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "neville",
+      "relationship_type": "being_hit_by",
+      "description": "Professor Flitwick is being hit by Neville with an object, as described in the text: 'Neville’s aim was so poor that he kept accidentally sending much heavier things flying across the room — Professor Flitwick, for instance.'"
+    }
+  ]
+}

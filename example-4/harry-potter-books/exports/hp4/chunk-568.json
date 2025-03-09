@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as making forced conversation with Harry and Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the champion of Triwizard tournament."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned in conversation with Hermione and Harry."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout is described as being distant with Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone Harry would have liked to see under normal circumstances."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as arriving at Hagrid's cabin with a sneer on his face."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned in conversation with Malfoy and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned in conversation with Malfoy and Crabbe."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin house is mentioned as one of the houses that Harry has to see during Care of Magical Creatures class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherins",
+      "relationship_type": "has_to_see",
+      "description": "Harry has to see Slytherin students during Care of Magical Creatures class."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "friend",
+      "description": "Malfoy is friends with Crabbe, as they are mentioned together in conversation."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "friend",
+      "description": "Malfoy is friends with Goyle, as they are mentioned together in conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor sprout",
+      "relationship_type": "distant",
+      "description": "Harry and Professor Sprout seem distant from each other."
+    }
+  ]
+}

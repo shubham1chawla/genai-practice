@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid came striding towards them, his hair rain-flecked, his bear skin coat flapping behind him, a crossbow in his hand."
+    },
+    {
+      "name": "aragog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Aragog's worse, I bin readin' to him"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "How is he? 'Not bad,' said Harry. 'They say he'll be OK.'"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "No more than six visitors at a time! said Madam Pomfrey, hurrying out of her office."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid makes six,' George pointed out."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout told me abou' Ron!"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "How is he? 'Not bad,' said Harry. 'They say he'll be OK.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "aragog",
+      "relationship_type": "read_to",
+      "description": "Aragog's worse, I bin readin' to him"
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "ron",
+      "relationship_type": "visited",
+      "description": "How is he? 'Not bad,' said Harry. 'They say he'll be OK.'"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "visited",
+      "description": "Hagrid makes six,' George pointed out."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "hagrid",
+      "relationship_type": "counted_as_multiple_people",
+      "description": "Oh ... yes ...' said Madam Pomfrey, who seemed to have been counting Hagrid as several people due to his vastness."
+    }
+  ]
+}

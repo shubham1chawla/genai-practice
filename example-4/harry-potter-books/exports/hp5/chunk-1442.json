@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "invigoration draught",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The new approach was able to concoct an Invigoration Draught quite easily."
+    },
+    {
+      "name": "lesson",
+      "entity_type": "event",
+      "singular": true,
+      "description": "At the end of the lesson he scooped some of the draught."
+    },
+    {
+      "name": "draught",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The new approach was able to concoct an Invigoration Draught quite easily. At the end of the lesson he scooped some of the draught."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "invigoration draught",
+      "entity_2": "lesson",
+      "relationship_type": "created during",
+      "description": "The new approach was able to concoct an Invigoration Draught quite easily, which happened at the end of the lesson."
+    },
+    {
+      "entity_1": "draught",
+      "entity_2": "lesson",
+      "relationship_type": "scooped from",
+      "description": "At the end of the lesson he scooped some of the draught."
+    }
+  ]
+}

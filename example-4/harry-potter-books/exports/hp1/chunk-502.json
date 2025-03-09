@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as being in danger and having a conversation with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who is trying to keep Voldemort's name secret."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as being feared by Dumbledore and having a connection with Harry."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A centaur who saved Harry from Bane."
+    },
+    {
+      "name": "bane",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Someone who is angry with Firenze for saving Harry and thinks Voldemort should have killed him."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A person who will steal the Stone, allowing Voldemort to come back."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is feared by Voldemort."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who tries to comfort him."
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of beings that are mentioned as being right about something."
+    },
+    {
+      "name": "stars",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Something that is mentioned as having a connection with what will happen."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "connection",
+      "description": "Harry has a connection with Voldemort, who is trying to come back and kill him."
+    },
+    {
+      "entity_1": "firenze",
+      "entity_2": "bane",
+      "relationship_type": "conflict",
+      "description": "Firenze saved Harry from Bane, who was angry with him for interfering with what the planets say will happen."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "protection",
+      "description": "Dumbledore is feared by Voldemort and will protect Harry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "collaboration",
+      "description": "Snape will steal the Stone, allowing Voldemort to come back."
+    }
+  ]
+}

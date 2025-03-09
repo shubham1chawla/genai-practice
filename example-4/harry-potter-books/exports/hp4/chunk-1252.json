@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hand",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "The hand is described as the source of pain and injury for Harry Potter. It is mentioned that a point penetrated the crook of his right arm, causing blood to seep down the sleeve of his torn robes."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Wormtail is described as someone who is still panting with pain and fumbles in his pocket for a glass vial. He is also mentioned to be holding the vial to Harry's cut, allowing blood to fall into it."
+    },
+    {
+      "name": "cauldron",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cauldron is described as a container that is being used for some sort of dark magic ritual. It is mentioned that Wormtail poured Harry's blood into it, causing the liquid within to turn white."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is described as someone who has been injured and whose blood is being used for some sort of dark magic ritual. He is mentioned to be thinking that the ritual may have gone wrong."
+    },
+    {
+      "name": "blood",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Blood is described as a substance that is being drawn from Harry Potter's hand and used for some sort of dark magic ritual. It is mentioned to be poured into the cauldron, causing it to turn white."
+    },
+    {
+      "name": "glass vial",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The glass vial is described as a container that Wormtail uses to hold Harry's blood. It is mentioned to be used to allow the blood to fall into it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "glass vial",
+      "relationship_type": "holds",
+      "description": "Wormtail is described as holding a glass vial, which he uses to hold Harry's blood."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "cauldron",
+      "relationship_type": "pours_into",
+      "description": "Wormtail is described as pouring Harry's blood into the cauldron, causing it to turn white."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hand",
+      "relationship_type": "has_injury",
+      "description": "Harry Potter is described as having an injury on his hand, which is the source of pain and blood for him."
+    }
+  ]
+}

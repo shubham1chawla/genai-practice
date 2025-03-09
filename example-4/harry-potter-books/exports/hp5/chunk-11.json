@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt of Harry and wife of Vernon. She is described as exchanging looks of outrage with her husband when Harry says he was listening to the news."
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle of Harry and husband of Petunia. He is described as exchanging looks of outrage with his wife when Harry says he was listening to the news."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nephew of Vernon and Petunia, and son of James and Lily Potter. He is described as saying he was listening to the news when questioned by his aunt and uncle."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Same as Petunia, mentioned separately in the text. She is described as breathing a warning to her husband Vernon when he starts to get angry with Harry."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Same as Vernon, mentioned separately in the text. He is described as lowering his voice so that Harry can barely hear him when he says something about Harry's lot not getting on their news."
+    },
+    {
+      "name": "the dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family of Vernon and Petunia, consisting of themselves and possibly other relatives. They are described as goggling at Harry for a few seconds when he says something that offends them."
+    },
+    {
+      "name": "the owls",
+      "entity_type": "animals",
+      "singular": false,
+      "description": "A group of owls mentioned in the text, which are said to be bringing news to Harry. They are described as being present at the Dursleys' house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "petunia",
+      "entity_2": "vernon",
+      "relationship_type": "spouse",
+      "description": "Petunia and Vernon are married, as indicated by their exchange of looks of outrage when Harry says something that offends them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "petunia",
+      "relationship_type": "nephew",
+      "description": "Harry is the nephew of Petunia and Vernon, as indicated by their conversation about Harry's behavior."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "vernon",
+      "relationship_type": "nephew",
+      "description": "Same as above, but with Vernon instead of Petunia."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "the owls",
+      "relationship_type": "presence",
+      "description": "Petunia is present when the owls are mentioned in the text, and she seems to be aware of their presence at her house."
+    },
+    {
+      "entity_1": "vernon",
+      "entity_2": "the owls",
+      "relationship_type": "presence",
+      "description": "Same as above, but with Vernon instead of Petunia."
+    }
+  ]
+}

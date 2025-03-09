@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The Divination teacher who is rarely seen outside her tower room."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "villain",
+      "singular": true,
+      "description": "The main antagonist of the story."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student and rival of Harry."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "has_encounter",
+      "description": "Harry sees Professor Trelawney sitting on Hagrid's other side."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "has_connection_through_prediction",
+      "description": "Harry's parents were killed and he was attacked by Lord Voldemort due to a prediction made by Professor Trelawney."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "draco malfoy",
+      "relationship_type": "has_rivalry",
+      "description": "Harry is a rival of Draco Malfoy."
+    }
+  ]
+}

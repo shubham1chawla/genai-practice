@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is where Harry faces after turning around. (\"Then he turned to face the room again\")"
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand is used for magic spells. (\"raised his wand\")"
+    },
+    {
+      "name": "locket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket is the object that Harry summons with his spell. (\"Accio Locket.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wand",
+      "entity_2": "room",
+      "relationship_type": "used_for",
+      "description": "Harry uses his wand to face the room again. (\"Then he turned to face the room again, raised his wand\")"
+    },
+    {
+      "entity_1": "locket",
+      "entity_2": "wand",
+      "relationship_type": "summoned_with",
+      "description": "The locket is summoned with Harry's spell \"Accio Locket.\""
+    }
+  ]
+}

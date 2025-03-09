@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a confident and concerned character who tries to help Harry. He is described as saying 'What musta happened was, Dumbledore musta told Snape ter go with them Death Eaters,' which suggests that he has some knowledge about the events unfolding."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned by Hagrid as someone who might have given orders to Snape. He is not physically present in the scene but his influence is felt through Hagrid's words."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned by Hagrid as someone who was sent with Death Eaters. His presence and actions are implied to be part of the events unfolding."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group that has infiltrated the school. They are described as being inside the castle, moving from room to room and spreading news about their presence."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is shaken and unable to argue or explain what has happened. He is described as being directed back towards the castle by Hagrid."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is mentioned as a location where Death Eaters have infiltrated. It is described as having many lit windows and people moving from room to room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "influenced",
+      "description": "Hagrid implies that Dumbledore might have given orders to Snape, suggesting a relationship of influence between the two characters."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "death eaters",
+      "relationship_type": "associated_with",
+      "description": "Snape is mentioned as being sent with Death Eaters, indicating an association or connection between the two entities."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "snape",
+      "relationship_type": "informed_about",
+      "description": "Hagrid seems to have some knowledge about Snape's actions and involvement with Death Eaters, suggesting that he is informed about Snape's activities."
+    }
+  ]
+}

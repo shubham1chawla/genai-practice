@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "erin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Erin is the one leading the chant against Gryffindor. She has set up a chant saying 'Gryffindor are losers'."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is being targeted by Erin's chant."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina blows her whistle to stop the training session."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is flying on his broom and has spotted the Snitch."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia is nearest to Harry and responds to his question."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie has been injured during the training session."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is flying towards Katie along with Angelina and George."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is flying towards Katie along with Angelina and Fred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "erin",
+      "entity_2": "gryffindor",
+      "relationship_type": "targeted_by_chant",
+      "description": "Erin's chant targets Gryffindor."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "katie",
+      "relationship_type": "stopped_training_for_injured_person",
+      "description": "Angelina stopped the training session because Katie was injured."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "katie",
+      "relationship_type": "flew_towards_injured_person",
+      "description": "Fred flew towards Katie along with Angelina and George to help her."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "katie",
+      "relationship_type": "flew_towards_injured_person",
+      "description": "George flew towards Katie along with Angelina and Fred to help her."
+    }
+  ]
+}

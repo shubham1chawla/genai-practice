@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to as 'You-Know-Who' is not explicitly mentioned in the text, but it is likely referring to Lord Voldemort."
+    },
+    {
+      "name": "bulgarian wizard",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A Bulgarian wizard who recognizes Harry's scar and reacts excitedly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter, a student at Hogwarts."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "minister",
+      "singular": true,
+      "description": "Rufus Fudge, the Minister of Magic."
+    },
+    {
+      "name": "barty crouch",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Barty Crouch, a wizard who is needed for translating languages."
+    },
+    {
+      "name": "house-elf",
+      "entity_type": "house_elf",
+      "singular": false,
+      "description": "A house-elf who is saving Harry a seat."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Lucius Malfoy, a wizard and the father of Draco."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Draco Malfoy, a student at Hogwarts and the son of Lucius."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger, a student at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron Weasley, a student at Hogwarts."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Arthur Weasley, a wizard and the father of Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bulgarian wizard",
+      "entity_2": "harry",
+      "relationship_type": "recognizes",
+      "description": "The Bulgarian wizard recognizes Harry's scar."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "speaks_to",
+      "description": "Fudge speaks to Harry."
+    },
+    {
+      "entity_1": "barty crouch",
+      "entity_2": "fudge",
+      "relationship_type": "needed_by",
+      "description": "Barty Crouch is needed by Fudge for translating languages."
+    },
+    {
+      "entity_1": "house-elf",
+      "entity_2": "harry",
+      "relationship_type": "saves_seat_for",
+      "description": "The house-elf saves Harry a seat."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "draco malfoy",
+      "relationship_type": "parent_of",
+      "description": "Lucius Malfoy is the father of Draco."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "draco malfoy",
+      "relationship_type": "enemies_with",
+      "description": "Harry and Draco have been enemies since their first journey to Hogwarts."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "mr. weasley",
+      "relationship_type": "seated_near",
+      "description": "Lucius Malfoy is seated near Mr. Weasley."
+    }
+  ]
+}

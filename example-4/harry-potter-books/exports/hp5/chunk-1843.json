@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as a place where many subjects for study reside."
+    },
+    {
+      "name": "power",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The power held within the room is mentioned as something that the speaker possesses in quantities."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "room",
+      "entity_2": "power",
+      "relationship_type": "contains",
+      "description": "The room contains or holds the power."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "power",
+      "relationship_type": "possesses",
+      "description": "The speaker possesses the power in quantities, implying a relationship between the speaker and the power."
+    }
+  ]
+}

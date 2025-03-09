@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is defending Dobby, the house-elf."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who picked up a wand off the ground."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who is asking about the skull thing."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "dark_lord",
+      "singular": true,
+      "description": "You-Know-Who is a dark lord whose symbol is being discussed."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a wizard who has a house-elf."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who mentions that You-Know-Who's symbol hasn't been seen for thirteen years."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dobby",
+      "relationship_type": "defended_by",
+      "description": "Hermione defends Dobby, the house-elf."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "you-know-who",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about You-Know-Who's symbol."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "you-know-who",
+      "relationship_type": "informed_about",
+      "description": "Hermione has read about You-Know-Who in a book."
+    }
+  ]
+}

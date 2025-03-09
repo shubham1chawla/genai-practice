@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of Harry's cousins who lives in the Burrow."
+    },
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is George and Ron's home, where they live with their family."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's cousins who lives in the Burrow."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a wizard and the father of George and Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who lives with his cruel relatives, the Dursleys."
+    },
+    {
+      "name": "the dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's cruel and neglectful relatives who live in a house on Privet Drive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the burrow",
+      "relationship_type": "visited",
+      "description": "Harry has visited the Burrow before."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "the burrow",
+      "relationship_type": "resides_in",
+      "description": "George lives in the Burrow with his family."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the burrow",
+      "relationship_type": "resides_in",
+      "description": "Ron also lives in the Burrow with his family."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "harry",
+      "relationship_type": "caring_for",
+      "description": "Mr. Weasley is looking out for Harry's well-being and trying to get him to say goodbye to the Dursleys."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "the dursleys",
+      "relationship_type": "disapproving_of",
+      "description": "Mr. Weasley disapproves of the way the Dursleys treat Harry."
+    }
+  ]
+}

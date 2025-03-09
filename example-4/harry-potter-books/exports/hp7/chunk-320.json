@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is looking around and expressing concern about being exposed. (\"True,\" said Ron, looking around, \"but don't you feel a bit — exposed?\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is cringing at the wolf-whistling of men on the other side of the road. (\"Where else is there?\" asked Hermione, cringing as the men on the other side of the road started wolf-whistling at her.)"
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Leaky Cauldron is mentioned as a location where they can't book rooms. (\"We can hardly book rooms at the Leaky Cauldron, can we?\")"
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Grimmauld Place is mentioned as a location that they can't use because Snape might get in there. (\"And Grimmauld Place is out if Snape can get in there.\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who might be able to get into Grimmauld Place. (\"And Grimmauld Place is out if Snape can get in there.\")"
+    },
+    {
+      "name": "hermione's parents' home",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hermione's parents' home is mentioned as a possible location where they could stay. (\"I suppose we could try my parents’ home, though I think there’s a chance they might check there.\")"
+    },
+    {
+      "name": "men on the other side of the road",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The men on the other side of the road are mentioned as wolf-whistling at Hermione. (\"Where else is there?\" asked Hermione, cringing as the men on the other side of the road started wolf-whistling at her.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "men on the other side of the road",
+      "relationship_type": "is_target_of",
+      "description": "Hermione is being wolf-whistled at by the men on the other side of the road. (\"Where else is there?\" asked Hermione, cringing as the men on the other side of the road started wolf-whistling at her.)"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "cannot_book_rooms_at",
+      "description": "Hermione and possibly Ron cannot book rooms at the Leaky Cauldron. (\"We can hardly book rooms at the Leaky Cauldron, can we?\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "grimmauld place",
+      "relationship_type": "cannot_use",
+      "description": "Hermione and possibly Ron cannot use Grimmauld Place because Snape might get in there. (\"And Grimmauld Place is out if Snape can get in there.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "is_blocked_by",
+      "description": "Hermione and possibly Ron are blocked from using Grimmauld Place by Snape. (\"And Grimmauld Place is out if Snape can get in there.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hermione's parents' home",
+      "relationship_type": "can_try_to_stay_at",
+      "description": "Hermione and possibly Ron can try to stay at Hermione's parents' home. (\"I suppose we could try my parents’ home, though I think there’s a chance they might check there.\")"
+    }
+  ]
+}

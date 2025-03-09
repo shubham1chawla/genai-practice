@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as someone who the beggars are afraid of, and she is looking after them curiously. She is also the one being addressed by the man with the bloodied bandage."
+    },
+    {
+      "name": "beggars",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The beggars are described as people who are afraid of Hermione and are trying to melt away from her."
+    },
+    {
+      "name": "man with the bloodied bandage",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The man is described as someone who is distraught, has a bloodied bandage, and is looking for his children. He addresses Hermione and accuses her of knowing something."
+    },
+    {
+      "name": "children",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The man's children are mentioned as being missing, and he is accusing Hermione of knowing what happened to them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "beggars",
+      "relationship_type": "frightens",
+      "description": "The beggars are afraid of Hermione, as described in the text: 'They seemed to melt away before her...'"
+    },
+    {
+      "entity_1": "man with the bloodied bandage",
+      "entity_2": "hermione",
+      "relationship_type": "accuses",
+      "description": "The man addresses Hermione and accuses her of knowing something about his missing children: 'You know, you know !'"
+    },
+    {
+      "entity_1": "man with the bloodied bandage",
+      "entity_2": "children",
+      "relationship_type": "missing_child_of",
+      "description": "The man is looking for his missing children and accuses Hermione of knowing what happened to them."
+    }
+  ]
+}

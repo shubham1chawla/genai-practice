@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is an elf who died and was being remembered and mourned by his friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a friend of Dobby's who is present at the funeral."
+    },
+    {
+      "name": "dean",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dean is a friend of Dobby's who is present at the funeral and says 'thanks' to Dobby."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a friend of Dobby's who is present at the funeral and says goodbye to Dobby."
+    },
+    {
+      "name": "luna",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Luna is a friend of Dobby's who speaks on behalf of Harry when he can't say anything else."
+    },
+    {
+      "name": "bill",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bill is a friend of Dobby's who casts a spell to cover the grave with earth."
+    },
+    {
+      "name": "the cottage",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The cottage is where Harry and his friends are staying."
+    },
+    {
+      "name": "dobby's grave",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dobby's grave is the location of the funeral."
+    },
+    {
+      "name": "the wandmaker",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Wandmaker is a place that Harry looks around at the end of the passage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "said_goodbye_to",
+      "description": "Harry says goodbye to Dobby."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dobby",
+      "relationship_type": "remembered",
+      "description": "Ron remembers and mourns Dobby's death."
+    },
+    {
+      "entity_1": "dean",
+      "entity_2": "dobby",
+      "relationship_type": "said_thanks_to",
+      "description": "Dean says thanks to Dobby."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "dobby's_grave",
+      "relationship_type": "covered_with_earth",
+      "description": "Bill casts a spell to cover Dobby's grave with earth."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "harry",
+      "relationship_type": "spoke_on_behalf_of",
+      "description": "Luna speaks on behalf of Harry when he can't say anything else."
+    }
+  ]
+}

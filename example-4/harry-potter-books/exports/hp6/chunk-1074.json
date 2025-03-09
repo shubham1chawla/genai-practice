@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being smuggled into a place."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to smuggle others into a place and is having trouble with it."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as being the target of Malfoy's wand."
+    },
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who got lost in a Vanishing Cabinet last year."
+    },
+    {
+      "name": "borgin and burkes",
+      "entity_type": "store",
+      "singular": false,
+      "description": "A store where one of the Vanishing Cabinets is located."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Montague was attending when he got lost in a Vanishing Cabinet."
+    },
+    {
+      "name": "vanishing cabinet",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical object that can transport people from one place to another."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dumbledore",
+      "relationship_type": "target",
+      "description": "Malfoy's wand is pointed directly at Dumbledore's heart."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "connection",
+      "description": "Malfoy smuggled Harry Potter into a place."
+    },
+    {
+      "entity_1": "montague",
+      "entity_2": "hogwarts",
+      "relationship_type": "location",
+      "description": "Montague was attending Hogwarts when he got lost in a Vanishing Cabinet."
+    },
+    {
+      "entity_1": "borgin and burkes",
+      "entity_2": "vanishing cabinet",
+      "relationship_type": "location",
+      "description": "One of the Vanishing Cabinets is located at Borgin and Burkes."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "connection",
+      "description": "Harry Potter was smuggled into a place, possibly Hogwarts."
+    }
+  ]
+}

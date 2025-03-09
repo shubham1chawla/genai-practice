@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is mentioned as the speaker of the conversation. He talks about his father's actions and how he was locked up in Azkaban."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison for wizards and witches that is mentioned as the place where Aberforth's father was locked up."
+    },
+    {
+      "name": "ariana",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ariana is Aberforth's sister who has become unbalanced with magic exploding out of her. She would have been locked up in St. Mungo's if the Ministry had known about it."
+    },
+    {
+      "name": "st mungo's",
+      "entity_type": "location",
+      "singular": true,
+      "description": "St. Mungo's is a hospital for wizards and witches that is mentioned as the place where Ariana would have been locked up if the Ministry had known about her condition."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aberforth",
+      "entity_2": "azkaban",
+      "relationship_type": "was_locked_up_in",
+      "description": "Aberforth's father was locked up in Azkaban for attacking the people who did something to Ariana."
+    },
+    {
+      "entity_1": "ariana",
+      "entity_2": "st mungo's",
+      "relationship_type": "would_have_been_locked_up_in",
+      "description": "If the Ministry had known about Ariana's condition, she would have been locked up in St. Mungo's."
+    }
+  ]
+}

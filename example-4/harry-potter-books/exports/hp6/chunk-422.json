@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a prefect and her behavior is described when she snaps at someone."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as reappearing in the doorway to the Great Hall and looking suspicious."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being hungry and having a stomach ache due to the smell of roast beef."
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Slughorn is mentioned as appearing in front of Harry and Hermione, blocking their path."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "together",
+      "description": "Harry and Hermione are together when they respond to Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "demanded",
+      "description": "Ron demands to know what Harry and Hermione are doing."
+    },
+    {
+      "entity_1": "professor slughorn",
+      "entity_2": "harry",
+      "relationship_type": "blocking",
+      "description": "Professor Slughorn blocks the path of Harry."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as someone who is being referred to in a conversation."
+    },
+    {
+      "name": "squib",
+      "entity_type": "term",
+      "singular": true,
+      "description": "A Squib is defined as someone born into a wizarding family without magic powers."
+    },
+    {
+      "name": "muggle-born wizards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle-born wizards are mentioned as the opposite of Squibs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "squib",
+      "relationship_type": "definition",
+      "description": "Filch is explaining what a Squib is."
+    },
+    {
+      "entity_1": "muggle-born wizards",
+      "entity_2": "squib",
+      "relationship_type": "opposite",
+      "description": "Muggle-born wizards are described as the opposite of Squibs."
+    }
+  ]
+}

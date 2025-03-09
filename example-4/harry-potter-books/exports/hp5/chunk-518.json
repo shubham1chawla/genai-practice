@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dark arts",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "The subject of the conversation, mentioned as a topic to be practiced."
+    },
+    {
+      "name": "defensive spells",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A type of magic that is being taught in class."
+    },
+    {
+      "name": "ministry-trained educational expert",
+      "entity_type": "job_title",
+      "singular": false,
+      "description": "A person with a specific job title and qualifications."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a student in the class."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher in the class with a specific personality."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of a student in the class."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose name is mentioned in the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "miss granger",
+      "relationship_type": "questioned",
+      "description": "Professor Umbridge asks Miss Granger if she is a Ministry-trained educational expert."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor umbridge",
+      "relationship_type": "disagreed_with",
+      "description": "Harry Potter disagrees with Professor Umbridge's statement about defensive spells."
+    },
+    {
+      "entity_1": "dean",
+      "entity_2": "professor umbridge",
+      "relationship_type": "addressed_by",
+      "description": "Professor Umbridge addresses Dean by asking for his name."
+    }
+  ]
+}

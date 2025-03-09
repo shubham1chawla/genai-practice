@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "kraacher",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Kreacher is a house-elf who lives in the house. He has a life's ambition to have his head cut off and stuck up on a plaque just like his mother."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who thinks that Harry, Ron, and Hermione should be kind to Kreacher."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who asks about Kreacher and has anger towards Dumbledore."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who talks about Kreacher's life's ambition and is irritated by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who defends Kreacher and mentions that Dumbledore thinks they should be kind to him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "kraacher",
+      "relationship_type": "has_life_ambition",
+      "description": "Ron talks about Kreacher's life's ambition to have his head cut off and stuck up on a plaque just like his mother."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "shared_belief",
+      "description": "Hermione mentions that Dumbledore thinks they should be kind to Kreacher."
+    }
+  ]
+}

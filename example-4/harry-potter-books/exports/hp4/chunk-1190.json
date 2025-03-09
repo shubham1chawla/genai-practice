@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as trying to shove the paper out of sight."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as grabbing the paper and staring at the headline."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as asking if it's about him."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is mentioned as the author of an article."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as shouting across the Great Hall."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as the newspaper that contains the article."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "has_article_about",
+      "description": "Ron has an article about Harry in the paper."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "daily prophet",
+      "relationship_type": "holds_newspaper_with_article",
+      "description": "Draco Malfoy is holding a copy of the Daily Prophet with an article."
+    }
+  ]
+}

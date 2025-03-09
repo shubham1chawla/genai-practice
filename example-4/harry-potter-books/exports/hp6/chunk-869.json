@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ernie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie is mentioned as leaving the room along with Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as leaving the room along with Ernie."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Slughorn is mentioned as hurrying away when he sees that the room is empty."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is mentioned throughout the passage, trying to get Slughorn's attention and talking to Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is mentioned as failing his exam and coming into the common room looking morose."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is mentioned as returning to the common room with Ron and congratulating Harry on passing his exam."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "tried_to_get_attention_from",
+      "description": "Harry tried to get Slughorn's attention, but he hurried away."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "returned_with",
+      "description": "Ron and Hermione returned to the common room together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "failed_to_impress",
+      "description": "Harry failed to impress Slughorn, as he hurried away without talking to him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "exam",
+      "relationship_type": "failed",
+      "description": "Ron failed his exam due to a tiny mistake."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "tried_to_get_taste_from",
+      "description": "Harry tried to get Slughorn's taste, but he hurried away."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "looked_morose_with",
+      "description": "Ron looked morose when he came into the common room with Hermione."
+    }
+  ]
+}

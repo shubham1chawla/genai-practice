@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is a person who has a wild happiness on his face when he found out that he was a wizard. He leaves the scene after saying 'I won't say a word, sir'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who had glimpsed Riddle's face and thanked Dumbledore for letting him go."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who was already sitting down behind his desk when Harry landed back on the office floor. He has been working on a theory that got confirmed by this piece of evidence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "riddle",
+      "relationship_type": "saw_face",
+      "description": "Harry had glimpsed Riddle's face before he left."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "let_go",
+      "description": "Dumbledore let Harry go after thanking him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "has_evidence",
+      "description": "Dumbledore has been hoping for this piece of evidence that confirms his theory."
+    }
+  ]
+}

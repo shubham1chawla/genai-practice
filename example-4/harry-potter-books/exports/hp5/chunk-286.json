@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who is reading aloud from a letter."
+    },
+    {
+      "name": "bethnal green",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Bethnal Green is a location where a regurgitating public toilet has been reported."
+    },
+    {
+      "name": "wimbledon",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Wimbledon is a location where a regurgitating public toilet was reported last week."
+    },
+    {
+      "name": "elephant and castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Elephant and Castle is a location where a regurgitating public toilet was reported last week."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are people who are pulling the flush on the toilets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "bethnal green",
+      "relationship_type": "reported_in",
+      "description": "Mr. Weasley is reporting a regurgitating public toilet in Bethnal Green."
+    },
+    {
+      "entity_1": "muggles",
+      "entity_2": "toilets",
+      "relationship_type": "pulling_flush",
+      "description": "Muggles are pulling the flush on the toilets."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "wimbledon",
+      "relationship_type": "reported_in",
+      "description": "Mr. Weasley is reporting a regurgitating public toilet in Wimbledon."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "elephant and castle",
+      "relationship_type": "reported_in",
+      "description": "Mr. Weasley is reporting a regurgitating public toilet in Elephant and Castle."
+    }
+  ]
+}

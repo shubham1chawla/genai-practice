@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story. He is being chased by a serpent and trying to reach the door."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has vanished along with Hermione and Goyle."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has vanished along with Ron and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is unconscious on the floor."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist in the story. He is screaming and holding Harry tightly."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has been killed, as mentioned by Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "held_by",
+      "description": "Malfoy is holding Harry tightly, which hurts him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crabbe",
+      "relationship_type": "killed_by",
+      "description": "Harry's friend Ron mentions that Crabbe is dead, implying that Harry may have killed him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "crabbe",
+      "relationship_type": "mentioned_death_of",
+      "description": "Ron harshly tells Malfoy that Crabbe is dead."
+    }
+  ]
+}

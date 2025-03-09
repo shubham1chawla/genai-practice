@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as a possible suspect who could have hidden in Snape's office"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor at Hogwarts mentioned as having an office where Black could have hidden"
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Poltergeist who woke Harry up by blowing in his ear"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Protagonist of the story who was woken up by Peeves"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "harry",
+      "relationship_type": "woke_up_by",
+      "description": "Peeves woke Harry up by blowing in his ear"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch_field",
+      "relationship_type": "will_be_on",
+      "description": "Harry will be on the Quidditch field in a few hours"
+    }
+  ]
+}

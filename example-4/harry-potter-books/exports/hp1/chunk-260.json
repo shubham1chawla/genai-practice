@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned in the title '102 H ARRY POTTER'."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry, described as having cold and empty eyes."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts School of Witchcraft and Wizardry, mentioned as having warmth in his eyes."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry, mentioned as having the gift of keeping a class silent without effort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "hagrid",
+      "relationship_type": "has_warmth",
+      "description": "Snape's eyes are described as cold and empty, unlike Hagrid's warm eyes."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "shares_gift",
+      "description": "Both Snape and Professor McGonagall have the gift of keeping a class silent without effort."
+    }
+  ]
+}

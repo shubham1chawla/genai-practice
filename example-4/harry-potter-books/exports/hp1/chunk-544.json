@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a main character in the story who is playing chess with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a main character in the story who is playing chess with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a main character in the story who is playing chess with Ron and Harry."
+    },
+    {
+      "name": "bishop",
+      "entity_type": "chess_piece",
+      "singular": true,
+      "description": "The bishop is a type of chess piece that is being replaced by Harry."
+    },
+    {
+      "name": "knight",
+      "entity_type": "chess_piece",
+      "singular": true,
+      "description": "The knight is a type of chess piece that is being played by Ron and taken by the white queen."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bishop",
+      "relationship_type": "replaces",
+      "description": "Harry takes the place of the bishop in the game of chess."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "knight",
+      "relationship_type": "plays",
+      "description": "Ron plays the knight in the game of chess."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "castle",
+      "relationship_type": "replaces",
+      "description": "Hermione takes the place of the castle in the game of chess."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "white pawn",
+      "relationship_type": "opposes",
+      "description": "Ron's black pieces oppose the white pawn that has moved forward two squares."
+    },
+    {
+      "entity_1": "knight",
+      "entity_2": "queen",
+      "relationship_type": "taken_by",
+      "description": "The white queen takes Ron's knight in the game of chess."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "white pieces",
+      "relationship_type": "opposes",
+      "description": "Harry's black pieces oppose the white pieces on the board."
+    }
+  ]
+}

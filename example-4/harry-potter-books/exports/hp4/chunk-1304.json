@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "headstones",
+      "entity_type": "locations",
+      "singular": true,
+      "description": "Headstones are mentioned as obstacles that Harry is dodging while running towards Cedric's body."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Cedric is the person whose body Harry is trying to reach. He is described as being on the ground and is the target of Voldemort's spell."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who is screaming for Harry to stun Cedric."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is the protagonist of the story and is trying to reach Cedric's body. He is described as being in pain but focused on his goal."
+    },
+    {
+      "name": "marble angel",
+      "entity_type": "locations",
+      "singular": true,
+      "description": "The marble angel is a location where Harry takes cover from the spells cast by the Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "groups",
+      "singular": false,
+      "description": "Death Eaters are a group of people who are working with Voldemort and are trying to stop Harry. They are described as running at Harry with red light jets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "target_of_spell",
+      "description": "Harry is trying to reach Cedric's body, which is the target of Voldemort's spell."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "cedric",
+      "relationship_type": "caster_of_spell",
+      "description": "Voldemort is casting a spell on Cedric's body."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marble angel",
+      "relationship_type": "takes_cover_in",
+      "description": "Harry takes cover behind the marble angel from the spells cast by the Death Eaters."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry",
+      "relationship_type": "attacking",
+      "description": "Death Eaters are attacking Harry with red light jets."
+    }
+  ]
+}

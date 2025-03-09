@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is a person who shouts instructions to Harry and the others as they fly on broomsticks. (\"Bearing south!\" shouted Mad-Eye.)"
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is flying with Harry and the others on broomsticks. She is angry at Mad-Eye's suggestion to fly through clouds. (\"We're not going through clouds!\" shouted Tonks angrily.)"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is flying on the Firebolt broomstick with Mad-Eye and Tonks. He is relieved to hear Tonks' suggestion not to fly through clouds. (\"Harry was relieved to hear her say this; his hands were growing numb on the Firebolt's handle.\")"
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broomstick",
+      "singular": true,
+      "description": "The Firebolt is a broomstick that Harry is flying on. (\"his hands were growing numb on the Firebolt's handle.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "harry",
+      "relationship_type": "instructs",
+      "description": "Mad-Eye gives instructions to Harry as they fly on broomsticks. (\"Bearing south!\" shouted Mad-Eye.)"
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "mad-eye",
+      "relationship_type": "disagrees_with",
+      "description": "Tonks disagrees with Mad-Eye's suggestion to fly through clouds. (\"We're not going through clouds!\" shouted Tonks angrily.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "rides",
+      "description": "Harry is riding the Firebolt broomstick as they fly through the air. (\"his hands were growing numb on the Firebolt's handle.\")"
+    }
+  ]
+}

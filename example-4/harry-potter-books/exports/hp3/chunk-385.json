@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the headmaster who is concerned about Professor Lupin's safety and offers him a potion. He is also described as cheerful but slightly raised voice."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as having a conversation with Professor Trelawney about crystal gazing. She is described as dryly saying 'Imagine that'."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as having a conversation with Professor McGonagall about crystal gazing. She is described as shrieking loudly at the end of Christmas dinner."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is mentioned as being in no immediate danger according to Dumbledore. Snape has made a potion for him again."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having made the potion for Professor Lupin again. He responds to Dumbledore's question with 'Yes, Headmaster'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as getting up from the table first along with Ron after Christmas dinner. He is described as going furiously red on being addressed directly by Dumbledore."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as getting up from the table first along with Harry after Christmas dinner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lupin",
+      "relationship_type": "concerned_about",
+      "description": "Dumbledore is concerned about Professor Lupin's safety and offers him a potion."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "made_potion_for",
+      "description": "Snape has made the potion for Professor Lupin again."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "got_up_together",
+      "description": "Harry and Ron got up from the table first along with each other after Christmas dinner."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person that Harry wants to know where he is going. She is kneeling beside an injured girl and holding her hand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is trying to get Ginny's attention by passing nearby without speaking or looking back."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person that Harry has visited many times. He is described as having a great bearded face and being fond of rock cakes and giant grubs."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who vomited slugs during one of Hagrid's visits."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who helped Hagrid save Norbert."
+    },
+    {
+      "name": "norbert",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "Norbert is a dragon that Hermione and Hagrid saved."
+    },
+    {
+      "name": "fang",
+      "entity_type": "dog",
+      "singular": true,
+      "description": "Fang is Hagrid's dog."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Dementors are a group of dark creatures that Harry can feel the chill of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "wants_to_be_seen_by",
+      "description": "Harry wants Ginny to know where he is going."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "norbert",
+      "relationship_type": "saved",
+      "description": "Hermione and Hagrid saved Norbert."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "norbert",
+      "relationship_type": "saved",
+      "description": "Hermione and Hagrid saved Norbert."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "can_feel_chill_of",
+      "description": "Harry can feel the chill of Dementors."
+    }
+  ]
+}

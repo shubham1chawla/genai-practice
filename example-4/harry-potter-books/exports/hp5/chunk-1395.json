@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Department of Mysteries is a location in the story where Harry walks through. It is described as having silvery lights on the wall."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Pensieve is an object that contains Snape's thoughts and memories. It is sitting on Snape's desk."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who has thoughts and memories stored in the Pensieve. He does not want Harry to see them."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is curious about Snape's thoughts and memories stored in the Pensieve."
+    },
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Montague is a person who is being released from the toilet by Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "pensieve",
+      "relationship_type": "contains",
+      "description": "The Pensieve contains Snape's thoughts and memories."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "visited",
+      "description": "Harry walked through the Department of Mysteries."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "montague",
+      "relationship_type": "released",
+      "description": "Snape is releasing Montague from the toilet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pensieve",
+      "relationship_type": "interested_in",
+      "description": "Harry is curious about Snape's thoughts and memories stored in the Pensieve."
+    }
+  ]
+}

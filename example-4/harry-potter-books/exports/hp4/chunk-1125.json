@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is mentioned as the one who is being threatened by Voldemort's cold voice. The text states 'Now, Wormtail,' which indicates that Wormtail is a specific individual."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who is speaking to Wormtail in a cold voice. The text states 'The cold vo ice, \\u201cperhaps one more little reminder why I will not tolerate another blunder from you\\u2026\\u201d', which indicates that Voldemort is the speaker."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is experiencing pain in his scar. The text states 'The screaming filled Ha rry's ears as the scar on his fore-head seared with pain; he was yelling too\\u2026', which indicates that Harry is present and reacting to the situation."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as the one who has a room where Harry is lying on the floor. The text states 'He was ly ing on the floor of Professor Trelawney's room', which indicates that Trelawney is associated with the location."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is kneeling next to Harry and looking terrified. The text states 'Ron was kneel-ing next to him, looking terrified', which indicates that Ron is present and reacting to the situation."
+    },
+    {
+      "name": "crucio",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Crucio is mentioned as a spell that Voldemort casts on Wormtail. The text states '\\u201cCrucio!\\u201d said the cold voice', which indicates that Crucio is a specific spell being used."
+    },
+    {
+      "name": "chair",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A chair is mentioned as the object from which the wand emerges. The text states 'The tip of a wand emerged from around the back of the chair', which indicates that the chair is present in the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "threatens",
+      "description": "Voldemort threatens Wormtail with a cold voice. The text states 'Now, Wormtail,' which indicates that Voldemort is the one doing the threatening."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "is_known_by",
+      "description": "Harry knows that Voldemort is present and reacting to his pain. The text states 'Voldemort would hear him, would know he was there', which indicates that Harry has knowledge of Voldemort's presence."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wormtail",
+      "relationship_type": "is_related_to",
+      "description": "Harry is related to Wormtail through the shared experience of pain. The text states 'The screaming filled Ha rry's ears as the scar on his fore-head seared with pain; he was yelling too\\u2026', which indicates that Harry and Wormtail are connected through their reactions."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "is_concerned_for",
+      "description": "Ron is concerned for Harry's well-being. The text states 'You all right?' he said', which indicates that Ron is showing concern for Harry."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is cradling Harry in his arms, indicating a close relationship between them. (\"Hagrid cradled Harry in his arms\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is giving orders to Hagrid, showing his authority over him. (\"Move,\" said Voldemort)"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is lying unconscious in the forest, and Hagrid is trying to protect him. (\"Harry did not dare, by movement or word, to intimate to Hagrid that all was not, yet, lost\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of people who are following Voldemort's orders. (\"The two giants crashed along behind the Death Eaters\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry potter",
+      "relationship_type": "caring_for",
+      "description": "Hagrid is cradling Harry in his arms, indicating a caring relationship between them. (\"Hagrid cradled Harry in his arms\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "hagrid",
+      "relationship_type": "ordering",
+      "description": "Voldemort is giving orders to Hagrid, showing his authority over him. (\"Move,\" said Voldemort)"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "following",
+      "description": "The Death Eaters are a group of people who are following Voldemort's orders. (\"The two giants crashed along behind the Death Eaters\")"
+    }
+  ]
+}

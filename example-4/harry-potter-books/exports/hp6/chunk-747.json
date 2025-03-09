@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person that Harry sometimes makes detours to find, but he hasn't done anything out of the ordinary yet. He also vanishes from the map at times."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has Quidditch practice, homework, and is being followed by Cormac McLaggen and Lavender Brown."
+    },
+    {
+      "name": "cormac mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cormac McLaggen is a person who keeps up a constant stream of hints that he would make a better permanent Keeper for the team than Ron, and provides Harry with detailed training schemes."
+    },
+    {
+      "name": "lavender brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender Brown is a person who keeps sidling up to Harry to discuss something."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone that Cormac McLaggen thinks would be replaced by him as the Keeper for the team."
+    },
+    {
+      "name": "map",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The map is a location where Malfoy sometimes vanishes from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "follows",
+      "description": "Harry makes detours to find Malfoy."
+    },
+    {
+      "entity_1": "cormac mclaggen",
+      "entity_2": "harry",
+      "relationship_type": "follows",
+      "description": "Cormac McLaggen follows Harry wherever he goes."
+    },
+    {
+      "entity_1": "lavender brown",
+      "entity_2": "harry",
+      "relationship_type": "follows",
+      "description": "Lavender Brown also follows Harry."
+    }
+  ]
+}

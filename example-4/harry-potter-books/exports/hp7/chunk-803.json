@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who suggests talking to Mr. Lovegood about the symbol."
+    },
+    {
+      "name": "lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Lovegood is mentioned as someone they should talk to about the symbol."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is linked to the symbol and is a significant figure in the story."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grindelwald is also linked to the symbol and has a connection to Dumbledore."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Godric's Hollow is mentioned as a location connected to the symbol."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts who suggests voting on whether to talk to Mr. Lovegood."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is outvoted by Ron and agrees to see Mr. Lovegood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "lovegood",
+      "relationship_type": "suggests_talking_to",
+      "description": "Hermione suggests talking to Mr. Lovegood about the symbol."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "outvotes",
+      "description": "Ron outvotes Harry and decides they should see Mr. Lovegood."
+    }
+  ]
+}

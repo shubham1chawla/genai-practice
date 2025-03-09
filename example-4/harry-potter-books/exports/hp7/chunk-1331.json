@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, addressed directly by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist who is trying to capture Harry Potter."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who tries to dissuade him from going with Voldemort."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who suggests a new plan to escape Voldemort."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character whose body is found by Harry and his friends."
+    },
+    {
+      "name": "forbidden forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Voldemort has gone to wait for Harry."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows the wearer to become invisible."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Harry and his friends are trying to escape Voldemort."
+    },
+    {
+      "name": "tunnel entrance",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A passage that leads out of the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "addressed_by",
+      "description": "Voldemort is directly addressing Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "forbidden forest",
+      "relationship_type": "location_of_enemy",
+      "description": "Harry knows that Voldemort has gone to the Forbidden Forest to wait for him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "friend",
+      "description": "Ron is a friend of Harry's who tries to dissuade him from going with Voldemort."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "friend",
+      "description": "Hermione is a friend of Harry's who suggests a new plan to escape Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "killed_by",
+      "description": "Voldemort has killed Snape, whose body is found by Harry and his friends."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mafalda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A small, ferrety-looking wizard who appeared before Hermione and Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is talking to Mafalda and trying to stop him from reaching the street."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is creeping along behind Hermione and Mafalda."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is also creeping along behind Hermione and Mafalda."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "mafalda",
+      "relationship_type": "interact_with",
+      "description": "Hermione is talking to Mafalda."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mafalda",
+      "relationship_type": "follow",
+      "description": "Harry is creeping along behind Hermione and Mafalda."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mafalda",
+      "relationship_type": "follow",
+      "description": "Ron is also creeping along behind Hermione and Mafalda."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mafalda",
+      "relationship_type": "manipulate",
+      "description": "Hermione yanked a handful of hairs from the top of Mafalda's head."
+    }
+  ]
+}

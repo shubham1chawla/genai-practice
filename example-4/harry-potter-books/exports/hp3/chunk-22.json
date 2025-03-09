@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to catch a book that has escaped."
+    },
+    {
+      "name": "the book",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A magical book that has escaped from Harry's grasp and is hiding under his desk. It is described as 'The Monster Book'."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has sent a card to Harry, which he needs to use the book."
+    },
+    {
+      "name": "hedwig and errol",
+      "entity_type": "owl",
+      "singular": false,
+      "description": "Harry's owls, who are watching him as he tries to catch the book."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's relatives, who is sleeping in the room next door and gives a loud, sleepy grunt when the book flaps past him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the book",
+      "relationship_type": "chase",
+      "description": "Harry is chasing after the book as it escapes from under his desk and scuttles across the room."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig and errol",
+      "relationship_type": "observation",
+      "description": "Hedwig and Errol are watching Harry as he tries to catch the book."
+    },
+    {
+      "entity_1": "the book",
+      "entity_2": "harry",
+      "relationship_type": "attack",
+      "description": "The book is attacking Harry by snapping shut on his hand and flapping past him."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who receives a jumper from someone every year. The text states that his jumper is always maroon."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who tries the fudge and comments on how nice it is to receive presents."
+    },
+    {
+      "name": "someone",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Someone is mentioned as the person who makes a jumper for Ron every year."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "someone",
+      "relationship_type": "makes_jumper_for",
+      "description": "Ron receives a jumper from someone every year."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "someone",
+      "relationship_type": "receives_present_from",
+      "description": "Harry receives presents from someone, including fudge and sweets."
+    }
+  ]
+}

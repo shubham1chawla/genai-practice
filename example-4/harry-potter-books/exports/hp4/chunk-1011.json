@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "padfoot",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Padfoot is mentioned as a character who returns, but no further description is provided."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is described as a teacher who is strict and has black eyes. He is also shown to be agitated and snarling at Karkaroff."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Karkaroff is described as a teacher who is worried and angry. He shows Snape something on his inner forearm, but it is not clear what it is."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is mentioned as a student who is clearing up his armadillo bile. He shows Snape the sodden rag he was holding, trying to appear innocent."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "snape",
+      "relationship_type": "showed_something_to",
+      "description": "Karkaroff shows Snape something on his inner forearm, but it is not clear what it is."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "karkaroff",
+      "relationship_type": "told_to_put_it_away",
+      "description": "Snape tells Karkaroff to put whatever he showed him away."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "questioned",
+      "description": "Snape questions Harry about what he is doing, implying that he does not believe Harry's innocent explanation."
+    }
+  ]
+}

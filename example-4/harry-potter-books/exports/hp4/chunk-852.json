@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the one who has created new breeds of magical creatures, specifically 'Blast-Ended Skrewts'. He considers himself to be above restrictions from the Department for the Regulation and Control of Magical Creatures."
+    },
+    {
+      "name": "blast-ended skrewts",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Blast-Ended Skrewts are highly dangerous creatures created by Hagrid as a cross between manticores and fire-crabs."
+    },
+    {
+      "name": "manticores",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Manticores are mentioned as one of the parents of the 'Blast-Ended Skrewts'."
+    },
+    {
+      "name": "fire-crabs",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Fire-crabs are mentioned as the other parent of the 'Blast-Ended Skrewts'."
+    },
+    {
+      "name": "department for the regulation and control of magical creatures",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Department is mentioned as an organization that usually closely observes the creation of new breeds of magical creatures."
+    },
+    {
+      "name": "blast-ended skrewts",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Blast-Ended Skrewts are highly dangerous creatures created by Hagrid as a cross between manticores and fire-crabs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "blast-ended skrewts",
+      "relationship_type": "created",
+      "description": "Hagrid has created the 'Blast-Ended Skrewts'."
+    },
+    {
+      "entity_1": "department for the regulation and control of magical creatures",
+      "entity_2": "blast-ended skrewts",
+      "relationship_type": "monitors",
+      "description": "The Department usually closely observes the creation of new breeds of magical creatures, including 'Blast-Ended Skrewts'."
+    }
+  ]
+}

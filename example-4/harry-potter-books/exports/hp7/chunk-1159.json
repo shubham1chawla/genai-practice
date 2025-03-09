@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is speaking to him."
+    },
+    {
+      "name": "xeno lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old person who was getting too outspoken in The Quibbler."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xeno Lovegood's daughter who was taken hostage."
+    },
+    {
+      "name": "dumbledore's army",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students led by Dumbledore that Harry is a part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "friendship",
+      "description": "Harry and Neville are friends."
+    },
+    {
+      "entity_1": "xeno lovegood",
+      "entity_2": "luna",
+      "relationship_type": "parent-child",
+      "description": "Xeno Lovegood is Luna's father."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore's army",
+      "relationship_type": "membership",
+      "description": "Harry is a member of Dumbledore's Army."
+    }
+  ]
+}

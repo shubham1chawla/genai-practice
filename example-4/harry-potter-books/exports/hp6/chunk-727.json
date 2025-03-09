@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is mentioned as the one who took a stone from Harry in Potions class."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who was given the bezoar by Harry to save his life."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who found the bezoar and gave it to Ron to save his life."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "took_from",
+      "description": "Slughorn took a stone from Harry in Potions class, as mentioned in the text: 'the shrivelled kidney-like stone Slughorn had taken from him'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "saved",
+      "description": "Harry saved Ron's life by giving him the bezoar, as mentioned in the text: 'He hurtled back to Ron’s side, wrenched open his jaw and thrust the bezoar into his mouth'."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, recognized by his voice."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard and a teacher at Hogwarts, known for his wisdom."
+    },
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The home of the Weasley family."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother figure and a member of the Weasley family."
+    },
+    {
+      "name": "nymphadora",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in passing by Dumbledore."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who was persuaded by Harry and Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "accompanying",
+      "description": "Dumbledore is bringing Harry to The Burrow."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "slughorn",
+      "relationship_type": "persuading",
+      "description": "Dumbledore and Harry persuaded Slughorn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the burrow",
+      "relationship_type": "visiting",
+      "description": "Harry is visiting The Burrow with Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mrs weasley",
+      "relationship_type": "greeting",
+      "description": "Dumbledore greets Mrs Weasley upon arrival."
+    }
+  ]
+}

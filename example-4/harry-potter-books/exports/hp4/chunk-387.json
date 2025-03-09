@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "stars",
+      "entity_type": "celestial_bodies",
+      "singular": true,
+      "description": "The stars are mentioned as a way to understand human destiny and decipher planetary movements. (\"My dears, it is time for us to consider the stars,\" she said.)"
+    },
+    {
+      "name": "planets",
+      "entity_type": "celestial_bodies",
+      "singular": false,
+      "description": "The planets are mentioned as having mysterious portents that only reveal themselves to those who understand their movements. (\"The movements of the planets and the mysterious portents they reveal...\")"
+    },
+    {
+      "name": "human destiny",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Human destiny is mentioned as being decipherable by planetary rays. (\"Human destiny may be deciphered by the planetary rays...\")"
+    },
+    {
+      "name": "Professor Trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a fortune-teller who claims to understand human destiny and decipher planetary movements. (\"My dears, it is time for us to consider the stars,\" she said.)"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is skeptical of Professor Trelawney's claims and thinks she is an old fraud. (\"But Hermione was right, Harry thought irritably, Professor Trelawney really was an old fraud.\")"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who agrees with Harry that Professor Trelawney is an old fraud. (\"But Hermione was right, Harry thought irritably...\")"
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who has been caught and is the subject of Harry's fears. (\"...but what did Professor Trelawney know? He had long since come to the conclusion that her brand of fortune-telling was useless, especially when it came to things like Sirius being caught.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Professor Trelawney",
+      "entity_2": "stars",
+      "relationship_type": "claims_to_understand",
+      "description": "Professor Trelawney claims to understand the stars and their movements. (\"My dears, it is time for us to consider the stars,\" she said.)"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Sirius",
+      "relationship_type": "has_fears_about",
+      "description": "Harry has fears about Sirius being caught. (\"...but what did Professor Trelawney know? He had long since come to the conclusion that her brand of fortune-telling was useless, especially when it came to things like Sirius being caught.\")"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Professor Trelawney",
+      "relationship_type": "agrees_with",
+      "description": "Hermione agrees with Harry that Professor Trelawney is an old fraud. (\"But Hermione was right, Harry thought irritably...\")"
+    }
+  ]
+}

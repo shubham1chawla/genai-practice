@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who is trying to get a prophecy from someone."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is mentioned as being warm and possibly dead."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is fiercely telling Harry not to give the prophecy to someone."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Death Eater who looks over his shoulder at something."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are enemies of Harry and his friends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concern",
+      "description": "Harry is concerned about Hermione's safety and doesn't want her to be dead."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Neville is advising Harry not to give the prophecy to someone."
+    },
+    {
+      "entity_1": "dolohov",
+      "entity_2": "death eater",
+      "relationship_type": "membership",
+      "description": "Dolohov is a member of the Death Eaters."
+    }
+  ]
+}

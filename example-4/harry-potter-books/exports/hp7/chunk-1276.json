@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a student at Hogwarts who loses his wand and tries to retrieve it."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy jumps out of range of Hermione's Stunning Spell."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron shoots a Body-Bind Curse at Crabbe and appears suddenly at the end of the aisle."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe screams 'Avada Kedavra!' again and runs up the aisle toward Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione charges toward Malfoy and Goyle with a Stunning Spell."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry points at the pile of junk where the old tiara had fallen and yells for Hermione to look for it while he goes to help Ron."
+    },
+    {
+      "name": "r",
+      "entity_type": "person",
+      "singular": true,
+      "description": "R is someone Harry wants to go and help."
+    },
+    {
+      "name": "avada kedavra",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "Avada Kedavra is a spell cast by Crabbe."
+    },
+    {
+      "name": "body-bind curse",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "Ron shoots a Body-Bind Curse at Crabbe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "r",
+      "relationship_type": "help",
+      "description": "Harry wants to go and help R."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "crabbe",
+      "relationship_type": "target",
+      "description": "Ron shoots a Body-Bind Curse at Crabbe."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "attack",
+      "description": "Hermione charges toward Malfoy with a Stunning Spell."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goyle",
+      "relationship_type": "help",
+      "description": "Harry yells for Hermione to look for the old tiara while he goes to help Ron and Goyle."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "ron",
+      "relationship_type": "target",
+      "description": "Crabbe runs up the aisle toward Harry, who is with Ron."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "goyle",
+      "relationship_type": "attack",
+      "description": "Hermione hits Goyle with a Stunning Spell."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "sibyll trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sibyll Trelawney is a person who has the ability to speak in an ethereal, mystic voice. However, in this instance, she speaks in harsh, hoarse tones that Harry had heard her use once before."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who has seen Sibyll Trelawney speak in both ethereal and harsh voices."
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "dark lord",
+      "singular": true,
+      "description": "The Dark Lord is an entity that will mark the one with power as his equal, but the one with power has abilities that the Dark Lord does not know."
+    },
+    {
+      "name": "the one with the power to vanquish the dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The One with Power is a person who will be born as the seventh month dies and has the ability to vanquish the Dark Lord."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sibyll trelawney",
+      "entity_2": "harry",
+      "relationship_type": "has_seen_speak",
+      "description": "Sibyll Trelawney has spoken to Harry in both ethereal and harsh tones."
+    },
+    {
+      "entity_1": "the dark lord",
+      "entity_2": "the one with the power to vanquish the dark lord",
+      "relationship_type": "will_mark_as_equal",
+      "description": "The Dark Lord will mark The One with Power as his equal, but The One with Power has abilities that The Dark Lord does not know."
+    },
+    {
+      "entity_1": "the one with the power to vanquish the dark lord",
+      "entity_2": "the dark lord",
+      "relationship_type": "will_vanquish",
+      "description": "The One with Power will be able to vanquish The Dark Lord."
+    }
+  ]
+}

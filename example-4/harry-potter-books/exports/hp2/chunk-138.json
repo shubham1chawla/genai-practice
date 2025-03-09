@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as having a thought."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as being jealous."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as being jealous."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as having nothing to drink."
+    },
+    {
+      "name": "hogwarts castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry and his friends are heading."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A city that is left behind as they travel north."
+    },
+    {
+      "name": "hagwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where Harry and his friends are heading."
+    },
+    {
+      "name": "toffees",
+      "entity_type": "food",
+      "singular": false,
+      "description": "A type of candy that the characters have in the car."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts castle",
+      "relationship_type": "destination",
+      "description": "Harry is heading to Hogwarts Castle."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "jealous_of",
+      "description": "Fred and George are jealous of Harry's arrival at Hogwarts Castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, mentioned as having nothing to drink together."
+    }
+  ]
+}

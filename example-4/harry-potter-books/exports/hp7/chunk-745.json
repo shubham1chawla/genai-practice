@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "silver cross",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A great silver cross is mentioned as an object of significance."
+    },
+    {
+      "name": "pool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pool is the location where the sword is found."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A wand is used to flood the bottom of the pool with light."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword of Gryffindor is a significant object in the story."
+    },
+    {
+      "name": "Gryffindor",
+      "entity_type": "group",
+      "singular": true,
+      "description": "Gryffindor is mentioned as the group associated with the sword."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The forest is the location where the pool and the sword are found."
+    },
+    {
+      "name": "camping place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The camping place is mentioned as a nearby location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pool",
+      "entity_2": "sword",
+      "relationship_type": "contains",
+      "description": "The sword is lying at the bottom of the pool."
+    },
+    {
+      "entity_1": "wand",
+      "entity_2": "pool",
+      "relationship_type": "used_on",
+      "description": "A wand is used to flood the bottom of the pool with light."
+    },
+    {
+      "entity_1": "Gryffindor",
+      "entity_2": "sword",
+      "relationship_type": "associated_with",
+      "description": "The sword of Gryffindor is mentioned as a significant object in the story."
+    },
+    {
+      "entity_1": "forest",
+      "entity_2": "pool",
+      "relationship_type": "contains",
+      "description": "The pool is located within the forest."
+    },
+    {
+      "entity_1": "camping place",
+      "entity_2": "pool",
+      "relationship_type": "nearby",
+      "description": "The camping place is mentioned as a nearby location to the pool."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is mentioned as the one who is disappointed in the student."
+    },
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is a location within Hogwarts School of Witchcraft and Wizardry where students from Gryffindor house reside. It is mentioned as the place where students are finishing their feast."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts School of Witchcraft and Wizardry. She is mentioned as leaving Gryffindor Tower."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location_of",
+      "description": "Professor McGonagall tells the student to get off to Gryffindor Tower, indicating that it is a location where students reside."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "departure_from",
+      "description": "Hermione leaves Gryffindor Tower, indicating her departure from the location."
+    }
+  ]
+}

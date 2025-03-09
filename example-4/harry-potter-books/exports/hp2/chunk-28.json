@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by name."
+    },
+    {
+      "name": "term",
+      "entity_type": "academic_term",
+      "singular": true,
+      "description": "A period of time in an academic year, mentioned as a reason for Harry's return."
+    },
+    {
+      "name": "september",
+      "entity_type": "month",
+      "singular": true,
+      "description": "A specific month mentioned as the start date of the term."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "term",
+      "relationship_type": "belongs_to",
+      "description": "Harry mentions that his return is motivated by the start of the term, implying a sense of belonging to it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "september",
+      "relationship_type": "associated_with_start_date",
+      "description": "Harry's return is tied to the start date of September, which is associated with the beginning of the term."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A team in the wizarding school, Harry is the Keeper for this team."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The teacher who is explaining the game to Harry."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "ball",
+      "singular": false,
+      "description": "A ball used in the game, described as red and larger than the Bludgers."
+    },
+    {
+      "name": "bludgers",
+      "entity_type": "balls",
+      "singular": false,
+      "description": "Two identical balls that are smaller than the Quaffle and jet black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Harry is the Keeper for Gryffindor team."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "quaffle",
+      "relationship_type": "related_to",
+      "description": "Wood is explaining how to play with the Quaffle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludgers",
+      "relationship_type": "related_to",
+      "description": "Harry is being shown what the Bludgers do by Wood."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "bludgers",
+      "relationship_type": "owns",
+      "description": "Wood owns or has control over the Bludgers."
+    }
+  ]
+}

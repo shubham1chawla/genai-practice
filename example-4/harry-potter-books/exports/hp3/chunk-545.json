@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is sitting in the room with Professor Trelawney. He seems to be concerned about her health."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a teacher who appears to be having some sort of seizure or fit. She speaks in a harsh voice, unlike her usual self."
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is a powerful and evil being who has been abandoned by his followers. He will rise again with the aid of his servant."
+    },
+    {
+      "name": "the servant",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The servant is a person who has been chained for twelve years and will break free tonight to rejoin his master, the Dark Lord."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Professor Trelawney's health and seems to be worried that she might have a seizure."
+    },
+    {
+      "entity_1": "the servant",
+      "entity_2": "the dark lord",
+      "relationship_type": "rejoin",
+      "description": "The servant will break free tonight to rejoin his master, the Dark Lord."
+    }
+  ]
+}

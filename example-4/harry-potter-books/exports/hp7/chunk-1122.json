@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who is being pursued by Death Eaters."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and companion, also a wizard."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend and companion, also a witch."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are loyal to the Dark Lord Voldemort."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Foul creatures that feed on human happiness and can kill with a touch."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for the Dark Lord."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "pursued_by",
+      "description": "The Death Eaters are pursuing Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron is a friend of Harry's."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Hermione is a friend of Harry's."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "dark lord",
+      "relationship_type": "loyal_to",
+      "description": "The Death Eaters are loyal to the Dark Lord."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry",
+      "relationship_type": "threaten",
+      "description": "The Dementors threaten Harry."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "voldemort",
+      "relationship_type": "same_person",
+      "description": "The Dark Lord and Voldemort are the same person."
+    }
+  ]
+}

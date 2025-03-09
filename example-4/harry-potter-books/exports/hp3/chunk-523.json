@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is described as not telling someone oﬀ and shaking her ﬁnger in Malfoy’s direction. She was also shouting furiously."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as committing a foul on Harry, which delighted the Slytherins and spurred them on to greater heights."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia took Gryﬀindor’s penalty but missed by several feet due to her anger."
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryﬀindor team is described as losing concentration and being behind in the game."
+    },
+    {
+      "name": "slytherin team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Slytherins are described as being spurred on to greater heights by Malfoy’s foul on Harry."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as marking Malfoy closely and blocking him from getting near the Snitch."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee is described as groaning at the score of 70-20 in favor of Gryﬀindor."
+    },
+    {
+      "name": "angelina johnson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina Johnson gets the Quaﬄe for Gryﬀindor and is encouraged by her teammates."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is described as something Harry is trying to protect from Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "blocks",
+      "description": "Harry blocks Malfoy from getting near the Snitch."
+    },
+    {
+      "entity_1": "alicia",
+      "entity_2": "gryffindor team",
+      "relationship_type": "represents",
+      "description": "Alicia takes Gryﬀindor’s penalty."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin team",
+      "relationship_type": "spurs",
+      "description": "Malfoy’s foul on Harry spurs the Slytherins to greater heights."
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "gryffindor team",
+      "relationship_type": "supports",
+      "description": "Lee is a part of the Gryﬀindor team and groans at their score."
+    },
+    {
+      "entity_1": "angelina johnson",
+      "entity_2": "gryffindor team",
+      "relationship_type": "represents",
+      "description": "Angelina Johnson gets the Quaﬄe for Gryﬀindor."
+    }
+  ]
+}

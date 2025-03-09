@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "madam bones",
+      "entity_type": "witch",
+      "singular": true,
+      "description": "Madam Bones is a great witch who has passed away, as mentioned by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry, known for his wisdom and kindness."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of dark wizards and witches who follow Lord Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "knows",
+      "description": "Harry knows Dumbledore as his headmaster at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "entity_1": "madam bones",
+      "entity_2": "dumbledore",
+      "relationship_type": "was_known_to",
+      "description": "Dumbledore knew Madam Bones, who was a great witch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "is_target_of",
+      "description": "Harry is targeted by the Death Eaters due to his connection with Dumbledore and the wizarding world."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "death eaters",
+      "relationship_type": "is_targeted_by",
+      "description": "Dumbledore is also targeted by the Death Eaters, as mentioned in the Ministry of Magic leaflet."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "mafalda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mafalda is a person who works for the Ministry, specifically in record-keeping. She is mentioned as being able to be spared for this task."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a person who is part of the Muggleborn Registration Commission, and she speaks with the Minister. She has a clipboard and is in charge of record-keeping."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is sent by Travers, and she speaks with Umbridge. She is mentioned as being able to do the task well."
+    },
+    {
+      "name": "travers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Travers is a person who sends Hermione to speak with Umbridge. He is not physically present in the scene, but his name is mentioned as being involved in the task."
+    },
+    {
+      "name": "minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister is a person who speaks with Umbridge over the phone. He is not physically present in the scene, but his name is mentioned as being involved in the task."
+    },
+    {
+      "name": "runcorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Runcorn is a person who has a deep voice and is impersonated by Harry. He is not physically present in the scene, but his name is mentioned as being involved in the task."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who impersonates Runcorn's voice and steps out of the lift. He is not directly involved in the conversation, but his presence is mentioned."
+    },
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Muggleborn Registration Commission is an organization that Umbridge and others are part of. It is mentioned as being involved in record-keeping and other tasks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mafalda",
+      "relationship_type": "speaks_to",
+      "description": "Umbridge speaks to Mafalda, instructing her on what to do. This is mentioned in the line 'We’ll go straight down, Mafalda, and you’ll find everything you need in the courtroom.'"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "minister",
+      "relationship_type": "speaks_to",
+      "description": "Umbridge speaks to the Minister over the phone. This is mentioned in the line 'Travers sent you, did he?'"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "hermione",
+      "relationship_type": "speaks_to",
+      "description": "Umbridge speaks to Hermione, asking her if Travers sent her. This is mentioned in the line 'Ah,Mafalda!’ said Umbridge, looking at Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "runcorn",
+      "relationship_type": "impersonates",
+      "description": "Harry impersonates Runcorn's voice. This is mentioned in the line 'Yes, of course,’ said Harry in Runcorn’s deep voice.'"
+    }
+  ]
+}

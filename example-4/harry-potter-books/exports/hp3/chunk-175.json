@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "unfogging the future",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "A book that provides guidance and interpretation of omens and signs. It is consulted by Ron to understand Harry's future."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley, a friend of Harry's who uses the teacup reading method to interpret omens and signs from Unfogging the Future."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the main character whose future is being interpreted by Ron using the teacup reading method."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney, a teacher at Hogwarts who is known for her ability to interpret omens and signs. She is mentioned as someone who can test Harry's Inner Eye."
+    },
+    {
+      "name": "inner eye",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "A concept that refers to the ability to see and understand omens and signs. Professor Trelawney suggests that Harry needs his Inner Eye tested."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "unfogging the future",
+      "relationship_type": "uses",
+      "description": "Ron uses Unfogging the Future to interpret omens and signs for Harry's future."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "interprets_future_for",
+      "description": "Ron interprets omens and signs from Unfogging the Future to understand Harry's future."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "inner eye",
+      "relationship_type": "tests",
+      "description": "Professor Trelawney suggests that she can test Harry's Inner Eye, implying that she has the ability to assess and develop this concept."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher and headmaster of Hogwarts, whose body is suspected to be lying on the ground."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is accompanying Harry."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hagrid's dog, which is following him and Harry."
+    },
+    {
+      "name": "hogwarts castle front doors",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The entrance to the Hogwarts school."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are fleeing into the night."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "suspects_death",
+      "description": "Harry suspects that Dumbledore's body is lying on the ground."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "death eaters",
+      "relationship_type": "pursuing",
+      "description": "Hagrid and Harry are approaching the castle front, where Death Eaters have fled into the night."
+    }
+  ]
+}

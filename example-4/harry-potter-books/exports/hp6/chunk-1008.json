@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the conversation"
+    },
+    {
+      "name": "sir",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title used to address someone with authority"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sir",
+      "relationship_type": "addressed_as",
+      "description": "Harry is being addressed as 'sir' by the speaker"
+    },
+    {
+      "entity_1": "sir",
+      "entity_2": "harry",
+      "relationship_type": "addressing",
+      "description": "The speaker is addressing Harry as 'sir'"
+    }
+  ]
+}

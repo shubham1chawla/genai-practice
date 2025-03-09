@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as being present in the scene, reacting to Harry's question."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being present in the scene and having a conversation with Professor Snape."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as being part of the group that owes money to McGonagall."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom is mentioned as being part of the group that owes money to McGonagall."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as being part of the group that owes money to McGonagall."
+    },
+    {
+      "name": "lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna Lovegood is mentioned as owing money to McGonagall."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as being present in the scene and collecting debts from students."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as being part of the group that owes money to McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "potter",
+      "relationship_type": "owes_money",
+      "description": "Professor McGonagall mentions that Harry Potter owes her fifty Galleons."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "weasleys",
+      "relationship_type": "owes_money",
+      "description": "Professor McGonagall mentions that the Weasley family owes her money."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "longbottom",
+      "relationship_type": "owes_money",
+      "description": "Professor McGonagall mentions that Neville Longbottom owes her money."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "granger",
+      "relationship_type": "owes_money",
+      "description": "Professor McGonagall mentions that Hermione Granger owes her money."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "lovegood",
+      "relationship_type": "owes_money",
+      "description": "Professor McGonagall mentions that Luna Lovegood owes her money."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "has_conflict",
+      "description": "Professor Snape has a conflict with Harry Potter, as evidenced by his reaction to Harry's question."
+    }
+  ]
+}

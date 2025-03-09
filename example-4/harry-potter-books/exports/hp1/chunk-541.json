@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, described as calling out to Ron and Hermione to close in on the key."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends, described as diving towards the key from above."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends, described as rocketing upwards to stop the key from going down."
+    },
+    {
+      "name": "key",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The key is a damaged winged object that Harry and his friends are trying to catch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "key",
+      "relationship_type": "pursuit",
+      "description": "Harry is pursuing the key, described as streaking after it and eventually catching it against the stone wall."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "key",
+      "relationship_type": "pursuit",
+      "description": "Ron is also trying to catch the key, described as diving towards it from above."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "key",
+      "relationship_type": "obstruction",
+      "description": "Hermione is trying to stop the key from going down, described as rocketing upwards to intercept it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "collaboration",
+      "description": "Harry and Ron are working together to catch the key, with Harry calling out instructions to Ron."
+    }
+  ]
+}

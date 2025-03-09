@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "golden cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The golden cup is mentioned as a secret treasure of Lord Voldemort. It is described as being stolen and its loss is causing him great distress."
+    },
+    {
+      "name": "Elder Wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is a powerful magical object that is used by Lord Voldemort to kill the goblin and other wizards who are trying to escape."
+    },
+    {
+      "name": "goblin",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A goblin is mentioned as being killed by the Elder Wand. It is described as kneeling and then rolling over dead."
+    },
+    {
+      "name": "Bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a wizard who is trying to escape from Lord Voldemort's wrath. She is mentioned as throwing others behind her in her race for the door."
+    },
+    {
+      "name": "Lucius Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is a wizard who is also trying to escape from Lord Voldemort's wrath. He is mentioned as throwing others behind him in his race for the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Lord Voldemort",
+      "entity_2": "golden cup",
+      "relationship_type": "owns",
+      "description": "The golden cup is a secret treasure of Lord Voldemort, and its loss is causing him great distress."
+    },
+    {
+      "entity_1": "Elder Wand",
+      "entity_2": "goblin",
+      "relationship_type": "kills",
+      "description": "The Elder Wand is used by Lord Voldemort to kill the goblin."
+    },
+    {
+      "entity_1": "Bellatrix",
+      "entity_2": "others",
+      "relationship_type": "throws",
+      "description": "Bellatrix throws others behind her in her race for the door."
+    },
+    {
+      "entity_1": "Lucius Malfoy",
+      "entity_2": "others",
+      "relationship_type": "throws",
+      "description": "Lucius Malfoy throws others behind him in his race for the door."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who needs to answer a letter quickly and is being urged by Harry to come with him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is asking Hermione if she will come with him and is also talking to Ron about his team's performance."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as not wanting to go into Hogsmeade because he needs to train with Angelina."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Angelina is mentioned as the one who wants Ron to have a full day's training."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is mentioned as a place where Harry and Hermione are planning to go."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is mentioned as the place from which Hermione hurried out with a letter."
+    },
+    {
+      "name": "letter",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A letter is mentioned as something that Hermione needs to answer quickly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "asked_to_go_with",
+      "description": "Harry asks Hermione if she will come with him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "angelina",
+      "relationship_type": "training_under",
+      "description": "Ron is training under Angelina."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sympathetic_towards",
+      "description": "Harry tries to be sympathetic towards Ron's plight."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "ron",
+      "relationship_type": "team_leader_of",
+      "description": "Angelina is the team leader of Ron."
+    }
+  ]
+}

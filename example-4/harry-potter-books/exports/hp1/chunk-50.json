@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The family that Harry Potter lives with."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is the son of the Dursleys and is known for being spoiled and mean to Harry."
+    },
+    {
+      "name": "piers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Piers is a friend of Dudley's who is also mean to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dursleys",
+      "entity_2": "dudley",
+      "relationship_type": "parent_child",
+      "description": "The Dursleys are the parents of Dudley."
+    },
+    {
+      "entity_1": "dursleys",
+      "entity_2": "piers",
+      "relationship_type": "acquaintance",
+      "description": "The Dursleys know Piers, who is a friend of their son Dudley's."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "piers",
+      "relationship_type": "friendship",
+      "description": "Dudley and Piers are friends."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "dursleys",
+      "relationship_type": "child_parent",
+      "description": "Dudley is the child of the Dursleys."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "wands",
+      "entity_type": "objects",
+      "singular": false,
+      "description": "Wands are described as a desirable object that arouses passions in wizards. They are also mentioned to be immensely powerful and dangerous in the wrong hands."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Mr. Ollivander is introduced as a character who has knowledge about wands and their history."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Gregorovitch is mentioned to have the Elder Wand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "The Elder Wand is described as an object of incredible fascination and immense power."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "people",
+      "singular": true,
+      "description": "You-Know-Who is mentioned to be the one who had knowledge about Gregorovitch having the Elder Wand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is introduced as a character who has knowledge about wands and their history. He also asks Mr. Ollivander questions about the Elder Wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "you-know-who",
+      "relationship_type": "told",
+      "description": "Mr. Ollivander told You-Know-Who that Gregorovitch had the Elder Wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr ollivander",
+      "relationship_type": "asked",
+      "description": "Harry asked Mr. Ollivander questions about the Elder Wand."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "gregorovitch",
+      "relationship_type": "had",
+      "description": "You-Know-Who had knowledge that Gregorovitch had the Elder Wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gregorovitch",
+      "relationship_type": "knew",
+      "description": "Harry knew that Gregorovitch had the Elder Wand."
+    }
+  ]
+}

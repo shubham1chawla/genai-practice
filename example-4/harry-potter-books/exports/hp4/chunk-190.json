@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is mentioned as the event where Winky and Harry are present."
+    },
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is a house-elf who is sent by her master to save him a seat at the Top Box."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present at the Quidditch World Cup."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dobby is a person who is mentioned as being weirder than house-elves."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is present at the Quidditch World Cup and is testing his Omnioculars."
+    },
+    {
+      "name": "omnioculars",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Omnioculars are an object used by Ron to test."
+    },
+    {
+      "name": "top box",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Top Box is a location where Winky is sent by her master to save him a seat."
+    },
+    {
+      "name": "master",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Master is a person who sent Winky to the Top Box."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group",
+      "singular": false,
+      "description": "House-elves are a group of people who do what they are told."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "master",
+      "relationship_type": "sent_by",
+      "description": "Winky is sent by her master to save him a seat at the Top Box."
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "top box",
+      "relationship_type": "at_location",
+      "description": "Winky is at the Top Box."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "omnioculars",
+      "relationship_type": "using",
+      "description": "Ron is using his Omnioculars."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "comparing_to",
+      "description": "Harry is comparing Dobby to house-elves."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "present_with",
+      "description": "Ron and Harry are present at the Quidditch World Cup."
+    }
+  ]
+}

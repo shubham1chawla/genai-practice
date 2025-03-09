@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by name and referred to as 'Harry'."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who yells out a warning to Harry from the Gryﬀindor goal posts."
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as pelting up the ﬁeld and playing Quidditch with Harry."
+    },
+    {
+      "name": "nimbus",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick, referred to as 'his Nimbus'."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A golden ball that is the goal of Quidditch, mentioned as shimmering in the air between Harry and Cedric."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Foul creatures that are standing beneath Harry on the ﬁeld."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nimbus",
+      "relationship_type": "controlled_by",
+      "description": "Harry is controlling his broomstick, referred to as 'his Nimbus'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "targeting",
+      "description": "Harry is trying to catch the Snitch, which is shimmering in the air between him and Cedric."
+    }
+  ]
+}

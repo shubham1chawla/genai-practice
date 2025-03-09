@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The heir of Slytherin is mentioned as a title or position that someone can hold. The text does not provide further information about what it means to be the heir of Slytherin."
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fawkes is introduced as a phoenix and a companion of Harry Potter. It is mentioned that Fawkes would not be much good in a duel."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as someone whose life is dwindling out due to Riddle's presence."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character and is being addressed by Riddle. He has Fawkes and the Sorting Hat as companions."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is introduced as a person who is laughing at Harry Potter and trying to intimidate him. He has a wand and is trying to kill Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who sends his defender (Harry Potter) with a songbird (Fawkes) and an old hat (the Sorting Hat)."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry potter",
+      "relationship_type": "tries_to_kill",
+      "description": "Riddle is trying to kill Harry Potter, as mentioned in the text: 'And twice I failed to kill you.'"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "defeated_by",
+      "description": "Dumbledore has defeated Riddle twice, as mentioned in the text: 'T wice – in your past, in my future – we have met. And twice I failed to kill you.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "fawkes",
+      "relationship_type": "has",
+      "description": "Harry Potter has Fawkes as a companion, as mentioned in the text: 'He, Harry , had Fawkes an d the Sorting Hat, neither of which would be much good in a duel.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ginny",
+      "relationship_type": "concerned_for",
+      "description": "Harry Potter is concerned for Ginny's life, as mentioned in the text: 'the longer Riddle stood there, the more life was dwindling out of Ginny ...'"
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "ginny",
+      "relationship_type": "endangers_life_of",
+      "description": "Riddle is endangering Ginny's life by standing near her."
+    }
+  ]
+}

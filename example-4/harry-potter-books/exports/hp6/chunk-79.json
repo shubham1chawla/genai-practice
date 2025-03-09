@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is waiting to be rescued from the Dursleys."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who has sent a letter to Harry with instructions for his rescue."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's snowy owl, which he has safely shut in its cage in preparation for the possibility of a journey."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The street where Harry lives with his cruel relatives, the Dursleys."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "rescuer_rescuee",
+      "description": "Dumbledore is rescuing Harry from the Dursleys, as indicated by Dumbledore's letter."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owner_pet",
+      "description": "Harry owns Hedwig, his snowy owl."
+    }
+  ]
+}

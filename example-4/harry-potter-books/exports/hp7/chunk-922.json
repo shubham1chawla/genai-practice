@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "scabior",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scabior is introduced as the one who thrusts the blackthorn wand at her. The text states 'Scabior thrust the blackthorn wand at her'."
+    },
+    {
+      "name": "blackthorn wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The blackthorn wand is introduced as an object that Scabior uses to attack her. The text states 'Scabior thrust the blackthorn wand at her'."
+    },
+    {
+      "name": "her",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being attacked is referred to as 'her', but no specific name is mentioned. The text states 'Scabior thrust the blackthorn wand at her'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as one of the people who are shoved and kicked up the stone steps. The text states 'Harry and the others were shoved and kicked up broad stone steps'."
+    },
+    {
+      "name": "others",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The others refer to a group of people who are being shoved and kicked up the stone steps. The text states 'Harry and the others were shoved and kicked up broad stone steps'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scabior",
+      "entity_2": "blackthorn wand",
+      "relationship_type": "used_by",
+      "description": "Scabior uses the blackthorn wand to attack her. The text states 'Scabior thrust the blackthorn wand at her'."
+    },
+    {
+      "entity_1": "scabior",
+      "entity_2": "her",
+      "relationship_type": "attacked",
+      "description": "Scabior attacks her with the blackthorn wand. The text states 'Scabior thrust the blackthorn wand at her'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "others",
+      "relationship_type": "with",
+      "description": "Harry is with a group of others who are being shoved and kicked up the stone steps. The text states 'Harry and the others were shoved and kicked up broad stone steps'."
+    }
+  ]
+}

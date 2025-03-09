@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is described as having a plan fully formed in his mind and writing a letter to Sirius."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who is still asleep in the dormitory."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character mentioned in Harry's letter, implying that he is a close friend or family member."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A mischievous poltergeist who tries to overturn a large E (possibly an easel) in the castle."
+    },
+    {
+      "name": "beauxbatons academy of magic",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A school of magic mentioned as being located near Durmstrang. It is not clear if this is a real place or just a name used to describe a location."
+    },
+    {
+      "name": "durmstrang institute",
+      "entity_type": "school",
+      "singular": false,
+      "description": "A school of magic mentioned as being located near Beauxbatons Academy of Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "sent_letter",
+      "description": "Harry writes a letter to Sirius, trying to reassure him that everything is fine."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "easel",
+      "relationship_type": "tried_to_overturn",
+      "description": "Peeves tries to overturn a large E (possibly an easel) in the castle."
+    }
+  ]
+}

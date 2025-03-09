@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is late for a hearing."
+    },
+    {
+      "name": "dumbledore's pensieve",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where memories are stored and can be accessed."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for wizards and witches."
+    },
+    {
+      "name": "lestranges",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The people who were sentenced to life imprisonment in Azkaban."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A group of wizards and witches that govern the magical community."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore's pensieve",
+      "relationship_type": "visited",
+      "description": "Harry has visited Dumbledore's Pensieve before."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "watched",
+      "description": "Harry watched the Lestranges being sentenced to life imprisonment in Azkaban from inside Dumbledore's Pensieve."
+    },
+    {
+      "entity_1": "wizengamot",
+      "entity_2": "harry",
+      "relationship_type": "sent_notification",
+      "description": "The Wizengamot sent a notification to Harry about the hearing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lestranges",
+      "relationship_type": "related_to",
+      "description": "Harry is related to the Lestranges, as he watched them being sentenced in Azkaban."
+    }
+  ]
+}

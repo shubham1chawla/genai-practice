@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is possessed by Voldemort."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A potions master at Hogwarts who suspects Harry of being involved in the theft of the Stone."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry, mentioned as being in London."
+    },
+    {
+      "name": "the mirror of erised",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical mirror that shows the viewer their heart's desire."
+    },
+    {
+      "name": "the stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object of the story, a powerful magical artifact."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "quirrell",
+      "relationship_type": "is_behind",
+      "description": "Quirrell is standing behind Harry Potter when he examines the Mirror of Erised."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "the mirror of erised",
+      "relationship_type": "has",
+      "description": "Quirrell has possession of the Mirror of Erised and is examining it."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "suspects",
+      "description": "Snape suspects Harry Potter of being involved in the theft of the Stone."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "london",
+      "relationship_type": "is_in",
+      "description": "Dumbledore is currently in London, mentioned as a fact by Quirrell."
+    }
+  ]
+}

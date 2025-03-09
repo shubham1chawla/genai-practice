@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as the person who received a retort from Ron, and later used his wand to turn a knife into a paper aeroplane. He is described as someone who can think of creative ways to respond."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the person who gave a retort to Fred, and later threw a knife at him. He is described as someone who can be impulsive and act on instinct."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley enters the room just in time to see Ron throw a knife at Fred. She is described as someone who can intervene in situations and prevent harm."
+    },
+    {
+      "name": "sprouts knife",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sprouts knife is mentioned as an object that Ron throws at Fred, but it is later transformed into a paper aeroplane by Fred's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "attacked",
+      "description": "Ron threw the sprouts knife at Fred, indicating that Ron attacked Fred. This is described in the text as 'Ron throw the sprouts knife at Fred'."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ron",
+      "relationship_type": "defended",
+      "description": "Fred used his wand to turn the knife into a paper aeroplane, indicating that he defended himself against Ron's attack. This is described in the text as 'who turned it into a paper aeroplane with one lazy flick of his wand'."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron and fred",
+      "relationship_type": "intervened",
+      "description": "Mrs Weasley entered the room just in time to see Ron throw a knife at Fred, indicating that she intervened in the situation. This is described in the text as 'Mrs Weasley entered the room just in time'."
+    }
+  ]
+}

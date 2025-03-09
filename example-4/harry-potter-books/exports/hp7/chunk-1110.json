@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "goblin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The goblin is speaking to someone, addressing them as 'Lord' and expressing terror. The text describes the goblin's black eyes being wide with terror."
+    },
+    {
+      "name": "lord",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The lord is being addressed by the goblin, who is stammering and trying to explain something."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is mentioned as having ways of revealing impostors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lord",
+      "entity_2": "goblin",
+      "relationship_type": "speaking_to",
+      "description": "The lord is being addressed by the goblin, who is stammering and trying to explain something."
+    },
+    {
+      "entity_1": "lord",
+      "entity_2": "gringotts",
+      "relationship_type": "has_ways_of_revealing_impostors",
+      "description": "Gringotts is mentioned as having ways of revealing impostors."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin who was attacked by dementors."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who used a Patronus to defend Dudley."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Harry's uncle who does not understand what is happening."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are dark creatures that suck the happiness out of people."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "defended_by",
+      "description": "Harry defended Dudley from the dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "used",
+      "description": "Harry used a Patronus to defend against the dementors."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is trying to catch up with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and a teacher at Hogwarts, being chased by Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper of Hogwarts, who is fighting off the blond Death Eater."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts and a member of the Malfoy family, running away with Snape."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy's son, who is being told to run by Snape."
+    },
+    {
+      "name": "giantess mother",
+      "entity_type": "ancestor",
+      "singular": false,
+      "description": "Hagrid's mother, who was a giantess and gave him his strength and toughened skin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "chasing",
+      "description": "Harry is chasing Snape."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "draco",
+      "relationship_type": "ordering",
+      "description": "Snape is ordering Draco to run."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "blond death eater",
+      "relationship_type": "fighting",
+      "description": "Hagrid is fighting the blond Death Eater."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "running_with",
+      "description": "Snape and Malfoy are running together."
+    }
+  ]
+}

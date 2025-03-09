@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sorts students into their respective houses. It is mentioned as 'Sorting Hat 95' in the text."
+    },
+    {
+      "name": "corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A corridor on the right-hand side of the room is out of bounds for everyone who does not wish to die a very painful death. It is mentioned as being off-limits due to unknown reasons."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the few students who wishes to go through the corridor on the right-hand side. He laughs at Dumbledore's warning and mutters to Percy that he doesn't think Dumbledore is serious."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a student who is also present in the room. He frowns at Dumbledore and thinks that he might have given them a reason for not going through the corridor."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School. He warns the students about the corridor on the right-hand side and then leads them in singing the school song."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The forest is full of dangerous beasts, as mentioned by Percy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "corridor",
+      "relationship_type": "forbids",
+      "description": "Dumbledore warns the students about the corridor on the right-hand side and says that it is out of bounds for everyone who does not wish to die a very painful death."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "warns",
+      "description": "Dumbledore warns Harry about the corridor on the right-hand side, but Harry seems unconcerned."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "dumbledore",
+      "relationship_type": "questions",
+      "description": "Percy questions Dumbledore's decision to keep the corridor off-limits without giving a reason."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is described as a student who is trying to avoid Malfoy and Snape. He is hiding under a cloak on the floor."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is described as someone who bursts into the room and then strides away down the corridor."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Slughorn's office door is open, indicating that he may be present in the area."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape emerges slowly from the classroom and returns to the party."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "avoided_by",
+      "description": "Harry heard Malfoy's footsteps on the other side of the door and flung himself out of the way just as it burst open."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "hid_from",
+      "description": "Harry remained crouched down as Snape emerged slowly from the classroom."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is concerned about the hidden passageway and Ron's celebrity status."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who has become an instant celebrity after the night's events. He is happy to tell anyone what happened, with a wealth of detail."
+    },
+    {
+      "name": "honeyduke's",
+      "entity_type": "shop",
+      "singular": false,
+      "description": "A shop in Hogsmeade village that has not been broken into, according to Ron."
+    },
+    {
+      "name": "hogsemeade",
+      "entity_type": "village",
+      "singular": true,
+      "description": "A village where Harry and Ron live. The one-eyed witch's shop is boarded up, which would prevent Harry from going there again."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about the hidden passageway and Ron's celebrity status. He asks Ron if they should tell someone about it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsemeade",
+      "relationship_type": "restricted_access",
+      "description": "If the one-eyed witch's shop is boarded up, Harry would never be able to go into Hogsmeade again."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "honeyduke's",
+      "relationship_type": "unbroken_into",
+      "description": "According to Ron, Honeyduke's shop has not been broken into."
+    }
+  ]
+}

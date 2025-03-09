@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a young wizard who is trying to cast spells."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Death Eater and a teacher at Hogwarts, who is blocking Harry's spells."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, whose house is on fire."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "blocks_spells",
+      "description": "Snape blocks Harry's spells with his wand."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "house",
+      "relationship_type": "owns",
+      "description": "Hagrid owns the house that is on fire."
+    }
+  ]
+}

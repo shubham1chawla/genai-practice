@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "the prince",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The Prince is mentioned in the context of his tale, but no further information is provided about him. (\"The Prince's Tale\")"
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is mentioned as the mother of Harry Potter, and her death is referenced by Snape. (\"You know how and why she died.\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being in danger due to the return of the Dark Lord. (\"The Dark Lord will return, and Harry Potter will be in terrible danger when he does.\")"
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Severus Snape is mentioned as having a secret with Dumbledore, and his emotions are described. (\"At last he said, 'Very well.'\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being in a conversation with Snape, and he gives his word to keep a secret. (\"My word, Severus, that I shall never reveal the best of you?')"
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as returning and putting Harry Potter in danger. (\"The Dark Lord will return, and Harry Potter will be in terrible danger when he does.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "secret_keeper",
+      "description": "Snape asks Dumbledore to keep a secret from the rest of the world. (\"This must be between us! Swear it!\")"
+    },
+    {
+      "entity_1": "the dark lord",
+      "entity_2": "harry potter",
+      "relationship_type": "threat",
+      "description": "The Dark Lord is mentioned as returning and putting Harry Potter in danger. (\"The Dark Lord will return, and Harry Potter will be in terrible danger when he does.\")"
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "lily's son",
+      "relationship_type": "protector",
+      "description": "Snape asks Dumbledore to help protect Lily's son. (\"Help me protect Lily's son.\")"
+    }
+  ]
+}

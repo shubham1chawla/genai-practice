@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is not wearing his glasses and has an injury to his eye."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is concerned about Harry's injury."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is part of the team and leaves through the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Harry's injury."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "alicia",
+      "relationship_type": "unrelated_to",
+      "description": "Harry and Alicia are not related to each other in this context."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "alicia",
+      "relationship_type": "unrelated_to",
+      "description": "Ron and Alicia are not related to each other in this context."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "scar",
+      "relationship_type": "associated_with",
+      "description": "Harry's injury is associated with his scar."
+    }
+  ]
+}

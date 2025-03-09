@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a key player in the plan."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends who is part of the plan."
+    },
+    {
+      "name": "harry's mum",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Harry's mother, mentioned as a way to make the plan believable."
+    },
+    {
+      "name": "harry's dad",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Harry's father, also mentioned in the plan."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": true,
+      "description": "A group of dark wizards and witches who are enemies of Harry and his friends."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and his friends attend."
+    },
+    {
+      "name": "spattergroit",
+      "entity_type": "disease",
+      "singular": true,
+      "description": "A fictional disease mentioned in the plan as a way to explain Ron's absence from school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron and Harry are friends, as evidenced by their conversation and plan."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Hermione is also a friend of Harry's, involved in the plan to protect him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "spattergroit",
+      "relationship_type": "affliction",
+      "description": "Ron will be afflicted with spattergroit as part of the plan."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry's family",
+      "relationship_type": "target",
+      "description": "The Death Eaters are planning to target Harry's family in an attempt to find him."
+    }
+  ]
+}

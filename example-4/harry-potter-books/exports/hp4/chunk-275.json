@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "people",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to those who panicked when they saw the Dark Mark in the sky."
+    },
+    {
+      "name": "You-Know-Who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as Voldemort. Mentioned by Mr. Weasley as having sent the Dark Mark into the air whenever he killed."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is confused about the significance of the Dark Mark."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An adult who explains to Ron and others why the Dark Mark is significant."
+    },
+    {
+      "name": "Bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another of Harry's friends who comments on how the Dark Mark scared away the Death Eaters."
+    },
+    {
+      "name": "Death Eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of followers of You-Know-Who who were trying to attack but were scared away by the Dark Mark."
+    },
+    {
+      "name": "Robertses",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Two people whose memories are being modified."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "You-Know-Who",
+      "entity_2": "Death Eaters",
+      "relationship_type": "leader_of",
+      "description": "You-Know-Who is the leader of the Death Eaters."
+    },
+    {
+      "entity_1": "Dark Mark",
+      "entity_2": "people",
+      "relationship_type": "inspired_fear_in",
+      "description": "The Dark Mark inspired fear in people when it appeared in the sky."
+    },
+    {
+      "entity_1": "Death Eaters",
+      "entity_2": "Robertses",
+      "relationship_type": "attempted_to_attack",
+      "description": "The Death Eaters attempted to attack the Robertses but were scared away by the Dark Mark."
+    },
+    {
+      "entity_1": "Dark Mark",
+      "entity_2": "Death Eaters",
+      "relationship_type": "scared_away",
+      "description": "The Dark Mark scared away the Death Eaters."
+    }
+  ]
+}

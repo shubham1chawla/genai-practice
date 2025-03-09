@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is being scolded by Malfoy and is upset."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is blamed for insulting the hippogriﬀs."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is trying to calm down Hagrid and is firm with him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is supporting Hagrid and backing him up."
+    },
+    {
+      "name": "hippogriﬀs",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The hippogriﬀs are being insulted by Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hippogriﬀs",
+      "relationship_type": "insulted",
+      "description": "Malfoy is insulting the hippogriﬀs."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "supported_by",
+      "description": "Hermione is supporting Hagrid and trying to calm him down."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "supports",
+      "description": "Ron is backing up Hagrid."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the Weasley twins and a friend of Harry Potter. He is mentioned as looking flabbergasted when Harry offers him the Triwizard winnings."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the Weasley twins and a friend of Harry Potter. He is mentioned as trying to push the sack back at Harry and weighing the money bag in his hands."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and a friend of the Weasley twins. He is mentioned as pulling out his Triwizard winnings and offering them to George."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Weasley twins are Fred and George, who are friends of Harry Potter. They are mentioned as turning towards Harry when he says 'wait a moment'."
+    },
+    {
+      "name": "joke shop",
+      "entity_type": "business",
+      "singular": true,
+      "description": "The joke shop is where the Weasley twins plan to use the Triwizard winnings. It is mentioned as being for the joke shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "offer",
+      "description": "Harry offers the Triwizard winnings to George, who is hesitant to take it."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "disagreement",
+      "description": "Fred disagrees with Harry's decision to give the Triwizard winnings to George."
+    }
+  ]
+}

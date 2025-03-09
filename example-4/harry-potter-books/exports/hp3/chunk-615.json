@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who yells at Black."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who is accused by Harry and Lupin."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is the mother of James and Peter."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is the son of Lily and a person who was persuaded by Black."
+    },
+    {
+      "name": "peter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peter is the son of Lily and James, who became the Secret-Keeper."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who gives his rat to Lupin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "accusation",
+      "description": "Harry accuses Black of lying."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "lily",
+      "relationship_type": "persuasion",
+      "description": "Black persuaded Lily and James to change the Secret-Keeper to Peter."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "james",
+      "relationship_type": "persuasion",
+      "description": "Black persuaded Lily and James to change the Secret-Keeper to Peter."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "peter",
+      "relationship_type": "secret_keeper",
+      "description": "Peter became the Secret-Keeper due to Black's persuasion."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "ron",
+      "relationship_type": "request",
+      "description": "Lupin asks Ron for his rat."
+    }
+  ]
+}

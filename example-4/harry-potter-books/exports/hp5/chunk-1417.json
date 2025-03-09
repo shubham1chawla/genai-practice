@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is the one who is speaking and has a conversation with James."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is the other person in the conversation with Lily."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone James wants to apologize to."
+    },
+    {
+      "name": "evans",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Evans is the person James wants Lily to apologize to."
+    },
+    {
+      "name": "snivellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snivellus is someone Lily mentions in her conversation with James."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "james",
+      "entity_2": "snape",
+      "relationship_type": "wants_to_apologize_to",
+      "description": "James wants Snape to apologize, as mentioned by the text: 'Apologize to Evans!' James roared at Snape."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "james",
+      "relationship_type": "scolds",
+      "description": "Lily scolds James for his behavior, as described in the text: 'You make me SICK.'"
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "evans",
+      "relationship_type": "wants_to_apologize_to",
+      "description": "James wants Evans to apologize, as mentioned by the text: 'Evans!' James shouted after her."
+    }
+  ]
+}

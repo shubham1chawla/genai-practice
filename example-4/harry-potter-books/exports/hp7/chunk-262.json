@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to catch the Snitch."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who helps him decipher the message on the Snitch."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who is also trying to understand the message on the Snitch."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who wrote the message on the Snitch."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A golden sphere that Harry is trying to catch, which has a mysterious message engraved on it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "has",
+      "description": "Harry is trying to catch the Snitch."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snitch",
+      "relationship_type": "helps_to_decipher",
+      "description": "Hermione helps Harry decipher the message on the Snitch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snitch",
+      "relationship_type": "helps_to_decipher",
+      "description": "Ron also helps Harry understand the message on the Snitch."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snitch",
+      "relationship_type": "wrote_message_on",
+      "description": "Dumbledore wrote the mysterious message on the Snitch."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is being addressed by Magorian. He is accompanied by students from the school."
+    },
+    {
+      "name": "magorian",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Magorian is a centaur who is in charge of the group. He is calm and smooth-talking."
+    },
+    {
+      "name": "bane",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Bane is a contemptuous centaur who interrupts Magorian."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Firenze is a person who has been called a traitor by Bane. He was helped to escape by Hagrid."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student from the school who is trying to calm down Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "firenze",
+      "relationship_type": "helped",
+      "description": "Hagrid helped Firenze escape."
+    },
+    {
+      "entity_1": "magorian",
+      "entity_2": "hagrid",
+      "relationship_type": "let_pass",
+      "description": "Magorian lets Hagrid pass today."
+    },
+    {
+      "entity_1": "bane",
+      "entity_2": "firenze",
+      "relationship_type": "called_traitor",
+      "description": "Bane calls Firenze a traitor."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "magorian",
+      "relationship_type": "threatened",
+      "description": "Hagrid threatens Magorian with his crossbow."
+    }
+  ]
+}

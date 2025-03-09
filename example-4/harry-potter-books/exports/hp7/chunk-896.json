@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "rodent",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "A name suggested by an unknown correspondent"
+    },
+    {
+      "name": "rapier",
+      "entity_type": "weapon_name",
+      "singular": true,
+      "description": "A name chosen by Fred instead of 'Rodent'"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "One of the Weasley twins, identified by his voice"
+    },
+    {
+      "name": "george",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "The other Weasley twin, initially mistaken for Fred"
+    },
+    {
+      "name": "river",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "A name used by the host to address Fred"
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "A person participating in the conversation"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "rapier",
+      "relationship_type": "chosen_by",
+      "description": "Fred chose 'Rapier' as his name instead of 'Rodent'"
+    },
+    {
+      "entity_1": "river",
+      "entity_2": "fred",
+      "relationship_type": "addressed_to",
+      "description": "The host addressed Fred as 'River'"
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "you-know-who",
+      "relationship_type": "commenting_on",
+      "description": "Kingsley commented on You-Know-Who's strategy"
+    }
+  ]
+}

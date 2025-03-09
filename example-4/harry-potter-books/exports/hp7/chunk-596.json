@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "she",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who got into Snape's office with a couple of friends to steal the sword."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Potions master who caught the group trying to smuggle the sword down the staircase. He sent the sword to London to be kept in Gringotts after getting permission from You-Know-Who."
+    },
+    {
+      "name": "ted",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend who was with she and another couple of friends when they got into Snape's office. He didn't understand the joke about the sword being a fake."
+    },
+    {
+      "name": "dirk",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who mentioned that Snape sent the sword to London after getting permission from You-Know-Who."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who laughed at the joke about the sword being a fake. He revealed that it was indeed a copy, made by wizards."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is referred to as 'You-Know-Who', but whose name is not mentioned. Snape got permission from this person to send the sword to London."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": true,
+      "description": "A bank where the sword was sent to be kept after being deemed unsafe in Snape's office."
+    },
+    {
+      "name": "london",
+      "entity_type": "city",
+      "singular": true,
+      "description": "The city where Gringotts is located, and where the sword was sent to be kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "she",
+      "entity_2": "snape",
+      "relationship_type": "caught_by",
+      "description": "Snape caught she and her friends trying to smuggle the sword down the staircase."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "you-know-who",
+      "relationship_type": "got_permission_from",
+      "description": "Snape got permission from You-Know-Who to send the sword to London."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "gringotts",
+      "relationship_type": "sent_to",
+      "description": "Snape sent the sword to Gringotts in London after getting permission from You-Know-Who."
+    }
+  ]
+}

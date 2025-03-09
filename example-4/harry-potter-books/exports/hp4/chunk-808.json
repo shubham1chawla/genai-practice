@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is mentioned as wanting to ask Mr. Crouch a question and looking around for waiters."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who has been calling Percy 'Weatherby'. Harry wants to ask him if he has stopped doing this."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a person who has been called 'Weatherby' by Mr. Crouch."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who uses magic to order food for himself and the others at the table."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is mentioned as not seeming to be concerned about the new method of dining."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "House-elves are people who work in the household and are likely to be affected by the new method of dining."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "pork_chops",
+      "relationship_type": "ordered",
+      "description": "Dumbledore uses magic to order pork chops for himself."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "menu",
+      "relationship_type": "picked_up",
+      "description": "Harry picks up his menu and looks around for waiters."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "plate",
+      "relationship_type": "spoke_to",
+      "description": "Dumbledore speaks to his plate to order food."
+    }
+  ]
+}

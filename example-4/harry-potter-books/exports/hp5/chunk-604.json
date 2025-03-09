@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "nearly headless nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ghost who is a former student of Hogwarts. He is mentioned as having a bored voice and being able to see Peeves's lack of subtlety."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "A poltergeist who lacks subtlety according to Nearly Headless Nick. He is not physically present in the scene but his behavior is described by Nick."
+    },
+    {
+      "name": "bloody baron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as someone Harry might be able to find and ask for help."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The main character of the story who is walking up to the Owlery. He has training later on the Quidditch pitch."
+    },
+    {
+      "name": "owlery",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where owls are kept. Harry is walking towards it."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "The caretaker's cat who brushes against Harry's ankles and disappears behind a statue of Wilfred the Wistful."
+    },
+    {
+      "name": "wilfred the wistful",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being depicted in a statue. Mrs Norris disappears behind this statue."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "peeves",
+      "relationship_type": "has_lack_of_subtlety",
+      "description": "Nick mentions that Peeves lacks subtlety."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bloody baron",
+      "relationship_type": "might_find_help_from",
+      "description": "Harry is trying to find the Bloody Baron who might be able to put a stop to something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "owlery",
+      "relationship_type": "is_walking_towards",
+      "description": "Harry is walking up to the Owlery."
+    },
+    {
+      "entity_1": "mrs norris",
+      "entity_2": "wilfred the wistful",
+      "relationship_type": "disappears_behind",
+      "description": "Mrs Norris disappears behind a statue of Wilfred the Wistful."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch pitch",
+      "relationship_type": "will_be_back_on",
+      "description": "Harry will be back on the Quidditch pitch for training later."
+    }
+  ]
+}

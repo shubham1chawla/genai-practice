@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as 'Harry'."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, mentioned alongside Harry."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "book_character",
+      "singular": true,
+      "description": "The main character of the book series, not explicitly stated but implied by the context."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A magical school where Harry and Professor McGonagall are located, mentioned as 'behind the wall'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "accompanying",
+      "description": "Harry and Professor McGonagall stepped onto the spiral staircase together, indicating a relationship of accompaniment."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "location",
+      "description": "Harry is located at Hogwarts, as indicated by the context of being 'behind the wall'."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hogwarts",
+      "relationship_type": "location",
+      "description": "Professor McGonagall is also located at Hogwarts, similar to Harry."
+    }
+  ]
+}

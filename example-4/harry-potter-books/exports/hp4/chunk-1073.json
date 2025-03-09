@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is examining the hedges in the field."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ludo Bagman is a person standing in the middle of the field with Krum and Fleur."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a person standing in the middle of the field with Ludo Bagman and Fleur."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is a person standing in the middle of the field with Krum and Ludo Bagman."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is a person who is climbing over the hedges with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fleur",
+      "relationship_type": "changed_attitude_toward",
+      "description": "Harry's attitude toward Fleur has changed completely since he saved her sister from the lake."
+    },
+    {
+      "entity_1": "ludo bagman",
+      "entity_2": "krum",
+      "relationship_type": "standing_together",
+      "description": "Ludo Bagman is standing in the middle of the field with Krum and Fleur."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "climbing_over_hedges_with",
+      "description": "Harry and Cedric are climbing over the hedges together."
+    }
+  ]
+}

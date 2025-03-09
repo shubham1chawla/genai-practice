@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaw",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Ravenclaw is mentioned as the source of the lost diadem. The text states 'the lost diadem of Ravenclaw'."
+    },
+    {
+      "name": "billywig wings",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Billywig wings are mentioned as an element that made a difference in re-creating the lost diadem. The text states 'Adding the billywig wings really made a diﬀerence'."
+    },
+    {
+      "name": "remus john lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Remus John Lupin is mentioned as the person at the door. The text states 'It is I, Remus John Lupin!'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "door",
+      "relationship_type": "points_at",
+      "description": "Bill jumped to his feet and pointed his wand at the door. The text states 'Bill jumped to his feed, his wand pointing at the door'."
+    },
+    {
+      "entity_1": "remus john lupin",
+      "entity_2": "door",
+      "relationship_type": "at",
+      "description": "Remus John Lupin is standing at the door. The text states 'It is I, Remus John Lupin!'"
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "remus john lupin",
+      "relationship_type": "knows",
+      "description": "Bill recognizes Remus John Lupin at the door. The text states 'Who is it?' and then 'It is I, Remus John Lupin!'"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione mentioned Hagrid as someone Dumbledore trusted."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the one who was helped by someone."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is talking to Harry and Ron about Dumbledore."
+    },
+    {
+      "name": "fluffy",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fluffy is a creature borrowed by Dumbledore from Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "borrowed_from",
+      "description": "Dumbledore borrowed Fluffy from Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "helped_by",
+      "description": "Hermione is talking about Dumbledore, implying that he was helped by someone."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student at Hogwarts who receives a Howler from his grandmother."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is Harry's owl that nips him on the wrist to get his attention."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who receives a letter from an unknown sender."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts who receives a letter from an unknown sender."
+    },
+    {
+      "name": "slytherin table",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherin table is a group of students that laugh at Neville's misfortune."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "slytherin table",
+      "relationship_type": "laughed_at_by",
+      "description": "Neville was laughed at by the Slytherin table."
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "harry",
+      "relationship_type": "nipped",
+      "description": "Hedwig nipped Harry on the wrist to get his attention."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "howler",
+      "relationship_type": "received",
+      "description": "Neville received a Howler from his grandmother."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "disarmed",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The event of being disarmed is mentioned as a past action of Voldemort's wand. (\"Does the wand in your hand know its last master was Disarmed?\")"
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as an object that has a history of being mastered by previous owners. (\"Because if it does . . . I am the true master of the Elder Wand.\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person who has been disarmed in the past. (\"Does the wand in your hand know its last master was Disarmed?\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is trying to cast a spell against Voldemort. (\"The light hit both of their faces at the same time, so that Voldemort’s was suddenly a ﬂaming blur.\")"
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is mentioned as the owner of a wand. (\"Harry heard the high voice shriek as he too yelled his best hope to the heavens, pointing Draco’s wand:\")"
+    },
+    {
+      "name": "avada kedavra",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Avada Kedavra is mentioned as a spell cast by Harry. (\"Harry heard the high voice shriek as he too yelled his best hope to the heavens, pointing Draco’s wand:\")"
+    },
+    {
+      "name": "expelliarmus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Expelliarmus is mentioned as a spell cast by Harry. (\"Harry heard the high voice shriek as he too yelled his best hope to the heavens, pointing Draco’s wand:\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "master_of",
+      "description": "Voldemort is mentioned as the previous master of the Elder Wand. (\"Because if it does . . . I am the true master of the Elder Wand.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "avada kedavra",
+      "relationship_type": "cast",
+      "description": "Harry is mentioned as casting the Avada Kedavra spell. (\"Harry heard the high voice shriek as he too yelled his best hope to the heavens, pointing Draco’s wand:\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "expelliarmus",
+      "relationship_type": "cast",
+      "description": "Harry is mentioned as casting the Expelliarmus spell. (\"Harry heard the high voice shriek as he too yelled his best hope to the heavens, pointing Draco’s wand:\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "avada kedavra",
+      "relationship_type": "target_of",
+      "description": "Voldemort is mentioned as being targeted by Harry's Avada Kedavra spell. (\"The light hit both of their faces at the same time, so that Voldemort’s was suddenly a ﬂaming blur.\")"
+    }
+  ]
+}

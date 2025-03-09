@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where Harry and Hermione go to visit. (Introduced in the text as a place where students are permitted to visit.)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who suggests they visit Hogsmeade. (Introduced in the text as someone who tells Harry it would be good for him to get away from the castle.)"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is permitted to visit Hogsmeade. (Introduced in the text as someone who is being persuaded by Hermione to go to Hogsmeade.)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who Hermione suggests they meet up with in Hogsmeade. (Introduced in the text as someone Harry is hesitant to meet up with.)"
+    },
+    {
+      "name": "three broomsticks",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where Hermione and Harry plan to meet Ron. (Introduced in the text as a location where they might meet up with Ron.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Harry and Hermione go to Hogsmeade together. (Introduced in the text as they set off for Hogsmeade.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "visiting",
+      "description": "Harry is visiting Hogsmeade. (Introduced in the text as a place where students are permitted to visit.)"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogsmeade",
+      "relationship_type": "visiting",
+      "description": "Hermione is visiting Hogsmeade. (Introduced in the text as a place where students are permitted to visit.)"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "three broomsticks",
+      "relationship_type": "planning_to_meet",
+      "description": "Hermione plans to meet Ron at the Three Broomsticks. (Introduced in the text as a location where they might meet up with Ron.)"
+    }
+  ]
+}

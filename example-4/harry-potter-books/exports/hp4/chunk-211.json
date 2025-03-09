@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "lynch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lynch is a person who was revived in the game."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is an object that Lynch is looking for."
+    },
+    {
+      "name": "ireland",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Ireland is a team participating in the game."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is watching the game."
+    },
+    {
+      "name": "mostafa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mostafa is a person who is refereeing the game."
+    },
+    {
+      "name": "bulgaria",
+      "entity_type": "country",
+      "singular": false,
+      "description": "Bulgaria is a country whose team is participating in the game."
+    },
+    {
+      "name": "mullet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mullet is a person who is playing for Ireland."
+    },
+    {
+      "name": "zograf",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zograf is the Bulgarian Keeper."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Firebolt is Lynch's broomstick."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Quaffle is a ball used in the game."
+    },
+    {
+      "name": "chasers",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Chasers are a team participating in the game."
+    },
+    {
+      "name": "harr y",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is watching the game."
+    },
+    {
+      "name": "goal posts",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The goal posts are part of the game setup."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lynch",
+      "entity_2": "snitch",
+      "relationship_type": "searching_for",
+      "description": "Lynch is looking for the Snitch without interference."
+    },
+    {
+      "entity_1": "ireland",
+      "entity_2": "harry",
+      "relationship_type": "leading_against",
+      "description": "Ireland is leading against Harry's team."
+    },
+    {
+      "entity_1": "mostafa",
+      "entity_2": "zograf",
+      "relationship_type": "taking_to_task",
+      "description": "Mostafa takes the Bulgarian Keeper to task for cobbing."
+    },
+    {
+      "entity_1": "mullet",
+      "entity_2": "goal_posts",
+      "relationship_type": "shooting_toward",
+      "description": "Mullet is shooting toward the goal posts."
+    },
+    {
+      "entity_1": "zograf",
+      "entity_2": "mullet",
+      "relationship_type": "meeting",
+      "description": "Zograf flew out to meet Mullet."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "honeydukes",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Honeydukes is a shop that they have used many times. It is located right outside this room."
+    },
+    {
+      "name": "moony",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moony is one of the names mentioned on the map, along with Wormtail, Padfoot, and Prongs."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is one of the names mentioned on the map, along with Moony, Padfoot, and Prongs."
+    },
+    {
+      "name": "padfoot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Padfoot is one of the names mentioned on the map, along with Moony, Wormtail, and Prongs."
+    },
+    {
+      "name": "prongs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Prongs is one of the names mentioned on the map, along with Moony, Wormtail, and Padfoot."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is a member of Harry's group and is mentioned as saying 'We owe them so much'."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a member of Harry's group and is mentioned as saying 'Noble men, working tirelessly to help a new generation of law-breakers'."
+    },
+    {
+      "name": "mrs. norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs. Norris is the cat that Filch owns and is being controlled by the map."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a teacher at Hogwarts who is mentioned as owning Mrs. Norris."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a member of Harry's group and is being impersonated by Fred."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story and is mentioned as watching the map."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "moony",
+      "relationship_type": "owe",
+      "description": "George says 'We owe them so much' which implies that they are grateful to Moony, Wormtail, Padfoot, and Prongs."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "mrs. norris",
+      "relationship_type": "control",
+      "description": "Fred is controlling Mrs. Norris through the map."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "map",
+      "relationship_type": "watch",
+      "description": "Harry is watching the map as it moves and shows him different locations."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "mrs. norris",
+      "relationship_type": "own",
+      "description": "Filch owns Mrs. Norris, which implies that he has control over her."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "percy",
+      "relationship_type": "impersonate",
+      "description": "Fred is impersonating Percy in order to tease Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "honeydukes",
+      "relationship_type": "visit",
+      "description": "Harry and George are planning to visit Honeydukes, as mentioned by George when he says 'See you in Honeydukes'."
+    }
+  ]
+}

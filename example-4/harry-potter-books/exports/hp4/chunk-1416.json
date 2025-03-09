@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who has been listening in on private conversations without permission."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who found out how Rita was listening in on private conversations."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who is surprised to learn that Hermione knew about Rita's actions."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who has been listening in on private conversations without permission."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is curious about how Rita was listening in on private conversations."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "rita skeeter",
+      "relationship_type": "found_out_about",
+      "description": "Hermione found out that Rita Skeeter was listening in on private conversations without permission."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rita skeeter",
+      "relationship_type": "curious_about",
+      "description": "Harry is curious about how Rita Skeeter was listening in on private conversations."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "told",
+      "description": "Hermione told Ron that she found out about Rita's actions."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "harry",
+      "relationship_type": "listened_in_on",
+      "description": "Rita Skeeter was listening in on Harry's private conversations without permission."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Quidditch coach who is still torturing over their last defeat."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is jealous of Ron and Hermione's breakfast."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is having breakfast with Hermione in the stands."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is having breakfast with Ron in the stands."
+    },
+    {
+      "name": "the changing rooms",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The place where Wood and his team were getting ready for Quidditch practice."
+    },
+    {
+      "name": "the stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location of the Quidditch pitch where Harry is about to play."
+    },
+    {
+      "name": "the great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place in Hogwarts where students have breakfast."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "teaches",
+      "description": "Wood is teaching Harry new Quidditch moves."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Ron and Hermione are having breakfast together in the stands."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "jealous_of",
+      "description": "Harry is jealous of Ron's breakfast."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "jealous_of",
+      "description": "Harry is also jealous of Hermione's breakfast."
+    }
+  ]
+}

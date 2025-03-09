@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "venomous tentacula seeds",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The substance needed for the Skiving Snackboxes, described as a Class C Non-Tradeable Substance."
+    },
+    {
+      "name": "skiving snackboxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The object that requires the Venomous Tentacula seeds, mentioned as needing them for some purpose."
+    },
+    {
+      "name": "class c non-tradeable substance",
+      "entity_type": "classification",
+      "singular": true,
+      "description": "A classification given to the Venomous Tentacula seeds, indicating they are difficult to obtain."
+    },
+    {
+      "name": "ten galleons",
+      "entity_type": "amount",
+      "singular": false,
+      "description": "The amount of money that Mundungus is asking for the Venomous Tentacula seeds."
+    },
+    {
+      "name": "dung",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus, a person who is trying to sell the Venomous Tentacula seeds."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to sell the Venomous Tentacula seeds, also referred to as 'Dung'."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned in conversation with Mundungus."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as warning his friends about a potential threat."
+    },
+    {
+      "name": "prefect ron",
+      "entity_type": "position",
+      "singular": false,
+      "description": "A position held by Ron Weasley, mentioned as being the focus of attention from their mother."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a potential threat to Harry and his friends, mentioned as possibly having an eye on them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "conversation_participant",
+      "description": "Harry is in conversation with Fred about Mundungus's price for the Venomous Tentacula seeds."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mundungus",
+      "relationship_type": "customer_supplier",
+      "description": "Harry and his friends are trying to buy the Venomous Tentacula seeds from Mundungus, but he is being difficult about the price."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "conversation_participant",
+      "description": "Fred is in conversation with Harry about Mundungus's price for the Venomous Tentacula seeds."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "fred",
+      "relationship_type": "seller_customer",
+      "description": "Mundungus is trying to sell the Venomous Tentacula seeds to Fred, but he is being difficult about the price."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "potential_threat",
+      "description": "Harry warns his friends that Moody could be a potential threat to them."
+    }
+  ]
+}

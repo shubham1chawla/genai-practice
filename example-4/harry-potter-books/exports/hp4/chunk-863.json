@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a character who has an opinion about the cold weather. She says it's colder where someone comes from."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a character who talks about the giant squid and seems hopeful. He also hasn't mentioned Viktor Krum since the ball."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is mentioned as someone from Durmstrang who likes it better in Harry's school. Ron hasn't talked about him since the ball."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who looks for signs of Hagrid and suggests visiting the Three Broomsticks."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Durmstrang is mentioned as Viktor Krum's school."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone Harry looks for and checks if he's in the shops before visiting the Three Broomsticks."
+    },
+    {
+      "name": "three broomsticks",
+      "entity_type": "pub",
+      "singular": false,
+      "description": "The Three Broomsticks is mentioned as a pub that Harry suggests visiting with Ron."
+    },
+    {
+      "name": "bulgarian quidditch robes",
+      "entity_type": "clothing",
+      "singular": false,
+      "description": "Bulgarian Quidditch robes are mentioned as the type of clothing on the miniature arm under Harry's bed."
+    },
+    {
+      "name": "giant squid",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The giant squid is mentioned as something Ron talks about and seems hopeful about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "searching_for",
+      "description": "Harry looks for signs of Hagrid all the way down the slushy High Street."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "viktor krum",
+      "relationship_type": "avoiding_talking_about",
+      "description": "Ron hasn't mentioned Viktor Krum since the ball."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "three broomsticks",
+      "relationship_type": "suggesting_visit_to",
+      "description": "Harry suggests visiting the Three Broomsticks with Ron."
+    }
+  ]
+}

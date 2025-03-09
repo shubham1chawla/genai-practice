@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being spoken to by Minister, and is trying to discipline Harry. He is mentioned as 'Minister' in the text."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "The student who has been given special treatment and is being disciplined by Snape. He is described as having led his friends into danger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "disciplines",
+      "description": "Snape is trying to discipline Harry for breaking school rules and putting himself in danger."
+    },
+    {
+      "entity_1": "minister",
+      "entity_2": "snape",
+      "relationship_type": "speaks_to",
+      "description": "The Minister is speaking to Snape about the behavior of Harry."
+    }
+  ]
+}

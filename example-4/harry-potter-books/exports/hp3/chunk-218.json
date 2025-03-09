@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who is being targeted by Mr. Filch and is also being addressed by Professor Lupin."
+    },
+    {
+      "name": "filch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Filch is the Hogwarts caretaker who is trying to get into his brooms but is unable due to the gum in the keyhole."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Lupin is a teacher at Hogwarts who is trying to help Peeves and also teaches a class."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dean Thomas is a student in Professor Lupin's class who is amazed by the spell used to remove the gum from the keyhole."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "peeves",
+      "relationship_type": "targeted_by",
+      "description": "Professor Lupin is trying to help Peeves, who is being targeted by Mr. Filch."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "filch",
+      "relationship_type": "opposite_of",
+      "description": "Professor Lupin and Filch are on opposite sides in their treatment of Peeves."
+    },
+    {
+      "entity_1": "dean thomas",
+      "entity_2": "professor lupin",
+      "relationship_type": "admires",
+      "description": "Dean Thomas admires the spell used by Professor Lupin to remove the gum from the keyhole."
+    }
+  ]
+}

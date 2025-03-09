@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hippogriﬀ",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The hippogriff that attacked Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who was attacked by the hippogriff."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts who intervened to save Malfoy."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hagrid's hippogriff, which was involved in the incident."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hippogriﬀ",
+      "entity_2": "malfoy",
+      "relationship_type": "attacked",
+      "description": "The hippogriff attacked Malfoy, causing him to be injured."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "buckbeak",
+      "relationship_type": "owned",
+      "description": "Hagrid owns Buckbeak, the hippogriff that was involved in the incident."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "malfoy",
+      "relationship_type": "saved",
+      "description": "Hagrid intervened to save Malfoy from the hippogriff's attack."
+    }
+  ]
+}

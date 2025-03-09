@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "d.a. meetings",
+      "entity_type": "meeting",
+      "singular": true,
+      "description": "The D.A. meetings were scheduled for a week."
+    },
+    {
+      "name": "quidditch teams",
+      "entity_type": "team",
+      "singular": false,
+      "description": "There were three separate Quidditch teams practicing."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry was not sorry about the meetings being rearranged."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "quidditch teams",
+      "entity_2": "d.a. meetings",
+      "relationship_type": "practices_at",
+      "description": "The Quidditch teams practiced at the time of D.A. meetings."
+    },
+    {
+      "entity_1": "weather conditions",
+      "entity_2": "quidditch teams",
+      "relationship_type": "affects",
+      "description": "The weather conditions affected the Quidditch teams' practices."
+    }
+  ]
+}

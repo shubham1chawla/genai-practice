@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Smith is a person who is being glared at by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is glaring at Smith."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being spoken to by Cho and Hermione."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a person who is speaking to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is dragging Ron away."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "smith",
+      "relationship_type": "glared_at",
+      "description": "Ron glares at Smith."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "spoken_to",
+      "description": "Cho speaks to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "dragged_away_by",
+      "description": "Hermione drags Ron away."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "spoke_to",
+      "description": "Cho speaks to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "dragged_away",
+      "description": "Hermione drags Ron away."
+    }
+  ]
+}

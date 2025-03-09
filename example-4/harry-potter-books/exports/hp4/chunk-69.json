@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who wrote the note to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the recipient of Ron's note."
+    },
+    {
+      "name": "pig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Pig is mentioned as a carrier of the note from Ron to Harry."
+    },
+    {
+      "name": "ireland",
+      "entity_type": "country",
+      "singular": true,
+      "description": "Ireland is mentioned as one of the teams playing against Bulgaria."
+    },
+    {
+      "name": "bulgaria",
+      "entity_type": "country",
+      "singular": true,
+      "description": "Bulgaria is mentioned as one of the teams playing against Ireland."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum is mentioned as someone who will ask the Muggles to let Harry stay."
+    },
+    {
+      "name": "the muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Muggles are mentioned as a group of people that Mum will contact."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "sent_note",
+      "description": "Ron sent a note to Harry."
+    },
+    {
+      "entity_1": "mum",
+      "entity_2": "the muggles",
+      "relationship_type": "will_contact",
+      "description": "Mum will contact the Muggles."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ireland vs bulgaria",
+      "relationship_type": "will_watch_match",
+      "description": "Harry will watch the match between Ireland and Bulgaria."
+    },
+    {
+      "entity_1": "pig",
+      "entity_2": "ron",
+      "relationship_type": "carried_note",
+      "description": "Pig carried Ron's note to Harry."
+    }
+  ]
+}

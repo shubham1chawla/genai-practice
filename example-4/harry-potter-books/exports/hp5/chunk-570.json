@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "detention",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The detention room where Harry is being held. It has been decorated with lacy covers and cloths, vases of dried flowers, and ornamental plates."
+    },
+    {
+      "name": "dolores",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dolores Umbridge, the Hogwarts High Inquisitor. She is wearing a luridly flowered set of robes that blend in with the tablecloth on her desk."
+    },
+    {
+      "name": "moody's",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The detention room in Moody's days, which was used for detecting wrongdoing and concealment."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the main character. He is being held in detention by Professor Umbridge."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dolores Umbridge, the Hogwarts High Inquisitor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "detention",
+      "entity_2": "dolores",
+      "relationship_type": "held_in",
+      "description": "Harry is being held in detention by Professor Umbridge."
+    },
+    {
+      "entity_1": "moody's",
+      "entity_2": "detention",
+      "relationship_type": "used_for",
+      "description": "The detention room was used for detecting wrongdoing and concealment in Moody's days."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story who is being attacked by the Basilisk."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts School of Witchcraft and Wizardry where the Basilisk is located."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who is controlling the Basilisk and ordering it to kill Harry."
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A giant serpent that is attacking Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "location_of",
+      "description": "The Basilisk is located in Slytherin's mouth."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "basilisk",
+      "relationship_type": "controller_of",
+      "description": "Riddle is controlling the Basilisk and ordering it to kill Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "basilisk",
+      "relationship_type": "target_of_attack",
+      "description": "The Basilisk is attacking Harry."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry",
+      "relationship_type": "orderer_of_attack",
+      "description": "Riddle is ordering the Basilisk to attack Harry."
+    }
+  ]
+}

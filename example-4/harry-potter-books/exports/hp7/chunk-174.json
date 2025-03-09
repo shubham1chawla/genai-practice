@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is described as having an expression with something more than shock in it. She is also mentioned as being alone with Harry for the first time since their stolen hours on the Hogwarts grounds."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as becoming aware that he was alone with Ginny for the first time since their stolen hours on the Hogwarts grounds."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as explaining the reason behind the Burrow being used as the headquarters instead of Grimmauld Place."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is mentioned as walking into the room along with Mr. Weasley and Bill."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as walking into the room along with Mr. Weasley and Kingsley."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having died and being the Secret-Keeper of Grimmauld Place."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Grimmauld Place is described as the former headquarters and is mentioned as being replaced by the Burrow."
+    },
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is described as the current headquarters of the Order."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as being a threat to the secret of Grimmauld Place."
+    },
+    {
+      "name": "the order",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Order is mentioned as having members who join Mr. Weasley for dinner at the Burrow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "shared_secret",
+      "description": "Harry and Ginny are described as being alone together for the first time since their stolen hours on the Hogwarts grounds, suggesting they share a secret."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "grimmauld place",
+      "relationship_type": "former_owner",
+      "description": "Mr. Weasley is mentioned as explaining that Dumbledore was the Secret-Keeper of Grimmauld Place, implying he had a relationship with it."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grimmauld place",
+      "relationship_type": "secret_keeper",
+      "description": "Dumbledore is described as being the Secret-Keeper of Grimmauld Place."
+    },
+    {
+      "entity_1": "the order",
+      "entity_2": "the burrow",
+      "relationship_type": "current_headquarters",
+      "description": "The Order is mentioned as using the Burrow as their current headquarters."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "grimmauld place",
+      "relationship_type": "threat",
+      "description": "Death Eaters are described as being a threat to the secret of Grimmauld Place."
+    }
+  ]
+}

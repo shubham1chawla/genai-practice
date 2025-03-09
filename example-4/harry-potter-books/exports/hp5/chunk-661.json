@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "defense against the dark arts",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "The subject being discussed in the context of Hogwarts."
+    },
+    {
+      "name": "minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The position responsible for providing on-the-ground feedback about what's really happening at Hogwarts."
+    },
+    {
+      "name": "hogwarts high inquisitor",
+      "entity_type": "position",
+      "singular": true,
+      "description": "A new position created by the Ministry to inspect educators and ensure they are meeting standards."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who has been offered the position of Hogwarts High Inquisitor in addition to her teaching post."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts being subjected to fair and objective evaluation by the Ministry."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Defense Against the Dark Arts is taught and where the Minister's new moves have received enthusiastic support from parents."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A parent of students at Hogwarts who feels easier in his mind now that Dumbledore is being subjected to fair and objective evaluation by the Ministry."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The person who said this is an exciting new phase in the Minister's plan to get to grips with what some are calling the 'falling standards' at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "minister",
+      "entity_2": "hogwarts high inquisitor",
+      "relationship_type": "appoints",
+      "description": "The Ministry has formalized the position of Hogwarts High Inquisitor and appointed Professor Umbridge to this role."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "minister",
+      "relationship_type": "supports",
+      "description": "Weasley said that this is an exciting new phase in the Minister's plan to get to grips with what some are calling the 'falling standards' at Hogwarts."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "minister",
+      "relationship_type": "supports",
+      "description": "Lucius Malfoy said that he feels much easier in his mind now that he knows Dumbledore is being subjected to fair and objective evaluation by the Ministry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts high inquisitor",
+      "relationship_type": "evaluated_by",
+      "description": "Dumbledore is being subjected to fair and objective evaluation by the Hogwarts High Inquisitor, Professor Umbridge."
+    }
+  ]
+}

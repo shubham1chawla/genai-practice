@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to is Harry Potter, as mentioned in the conversation."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord Voldemort is being discussed in the context of a prophecy."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as the one who made Harry come to get the prophecy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "voldemort",
+      "relationship_type": "made_prophecy_about",
+      "description": "A prophecy was made about both Potter and Voldemort, suggesting a connection between them."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "potter",
+      "relationship_type": "ordered_to_get_prophecy",
+      "description": "Lucius Malfoy ordered Harry to get the prophecy for him."
+    }
+  ]
+}

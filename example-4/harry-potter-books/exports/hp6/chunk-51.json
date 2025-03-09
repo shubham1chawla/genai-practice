@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who stayed in his comfortable job instead of going to Azkaban. He is described as having a hint of impatience for the first time."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is mentioned as a person who shows signs of interrupting Snape and seems to be questioning his actions."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who protected Snape from going to Azkaban. He is also described as having a stooge."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as someone who did not know whether he could trust Snape and was in a pitiful condition."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Azkaban is mentioned as the place where Death Eaters were being rounded up."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group that was being rounded up by the Ministry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "protected_by",
+      "description": "Snape is protected by Dumbledore from going to Azkaban."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "snape",
+      "relationship_type": "did_not_trust",
+      "description": "The Dark Lord did not trust Snape and thought he had turned into a stooge for Dumbledore."
+    }
+  ]
+}

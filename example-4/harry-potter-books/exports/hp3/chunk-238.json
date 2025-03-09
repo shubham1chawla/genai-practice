@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "seeker",
+      "entity_type": "job_title",
+      "singular": true,
+      "description": "The person responsible for catching the Golden Snitch. (Excerpt: \"Seeker, who had the hardest job of all...\")"
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A tiny, winged, walnut-sized ball that ends the game and earns 150 points for the Seeker's team. (Excerpt: \"a tiny, winged, walnut-sized ball...\")"
+    },
+    {
+      "name": "oliver wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A burly seventeen-year-old student at Hogwarts who is the Seeker of Gryffindor team. (Excerpt: \"Oliver Wood was a burly seventeen-year-old...\")"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "A Quidditch team at Hogwarts that has not won the Cup for seven years. (Excerpt: \"Gryﬀindor hasn’t won for seven years now...\")"
+    },
+    {
+      "name": "quidditch cup",
+      "entity_type": "trophy",
+      "singular": true,
+      "description": "A trophy awarded to the winning team of Quidditch tournament. (Excerpt: \"This is our last chance — my last chance — to win the Quidditch Cup...\")"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school where Oliver Wood and his teammates are students. (Excerpt: \"Oliver Wood was a burly seventeen-year-old, now in his seventh and ﬁnal year at Hogwarts...\")"
+    },
+    {
+      "name": "quidditch field",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Quidditch games are played. (Excerpt: \"There was a quiet sort of desperation in his voice as he addressed his six fellow team members in the chilly locker rooms on the edge of the darkening Quidditch ﬁeld...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "oliver wood",
+      "entity_2": "gryffindor",
+      "relationship_type": "team_member",
+      "description": "Oliver Wood is a member of Gryffindor team. (Excerpt: \"Oliver Wood was a burly seventeen-year-old, now in his seventh and ﬁnal year at Hogwarts...\")"
+    },
+    {
+      "entity_1": "oliver wood",
+      "entity_2": "quidditch cup",
+      "relationship_type": "goal",
+      "description": "Oliver Wood's goal is to win the Quidditch Cup. (Excerpt: \"This is our last chance — my last chance — to win the Quidditch Cup...\")"
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "quidditch cup",
+      "relationship_type": "target",
+      "description": "Gryffindor team's target is to win the Quidditch Cup. (Excerpt: \"This is our last chance — my last chance — to win the Quidditch Cup...\")"
+    }
+  ]
+}

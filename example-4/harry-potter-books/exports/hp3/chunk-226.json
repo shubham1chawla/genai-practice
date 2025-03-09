@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard and Harry's arch-nemesis."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's best friend."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "A type of dark creature that feeds on human happiness."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An eight-legged arachnid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "fear_of",
+      "description": "Harry is afraid of Voldemort."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "spider",
+      "relationship_type": "fear_of",
+      "description": "Ron is afraid of spiders."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "fear_of",
+      "description": "Harry is afraid of Dementors."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "dementor",
+      "relationship_type": "control_over",
+      "description": "Professor Lupin has control over the Dementors."
+    }
+  ]
+}

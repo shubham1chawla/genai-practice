@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "budleigh babberton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where they are currently located."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A colleague and friend of Harry's."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Dumbledore works."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "colleague_of",
+      "description": "Dumbledore is a colleague of Harry's."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts",
+      "relationship_type": "works_at",
+      "description": "Dumbledore works at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "budleigh babberton",
+      "relationship_type": "current_location",
+      "description": "Harry is currently located in Budleigh Babberton."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "asks_for_help",
+      "description": "Dumbledore asks Harry for help."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as a person who has done something secret, but his name is not specified until later in the text."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who knows Neville's secret and is sitting in class with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of Harry's friends who is sitting in class with him and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of Harry's friends who is sitting in class with him and Ron."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher who is present in the class and is gesturing towards Professor Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Umbridge is mentioned as a guest teacher who is sitting in the dim corner of the dungeon with a clipboard on her knee."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "knows_secret",
+      "description": "Harry knows Neville's secret, as mentioned at the beginning of the text."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "umbridge",
+      "relationship_type": "accompanies",
+      "description": "Snape is accompanying Umbridge in the class, as indicated by his gesture towards her."
+    }
+  ]
+}

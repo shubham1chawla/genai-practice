@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "vo ldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name mentioned as rising again, described by Harry's prediction"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster who believed Harry's trance was genuine"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The student being addressed by Professor Trelawney and Ron"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who muttered his name"
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The divination teacher making a prediction about Harry"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "vo ldemort",
+      "relationship_type": "predicted_by",
+      "description": "Harry predicted that Voldemort would rise again"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "believed_in",
+      "description": "Dumbledore believed Harry's trance was genuine"
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "harry",
+      "relationship_type": "made_prediction_about",
+      "description": "Professor Trelawney made a prediction about Harry being born under the baleful influence of Saturn"
+    }
+  ]
+}

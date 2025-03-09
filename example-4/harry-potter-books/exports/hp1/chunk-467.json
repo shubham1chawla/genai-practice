@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as a house in Hogwarts that has lost 150 points and is now in last place."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a student who is feeling ashamed of Gryffindor's loss."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville is mentioned as a student who is sobbing into his pillow after the loss."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as a teacher who is breathing heavily and scolding Gryffindor students."
+    },
+    {
+      "name": "house cup",
+      "entity_type": "award",
+      "singular": true,
+      "description": "The House Cup is mentioned as an award that Gryffindor had a chance to win but lost due to the 150 points."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry potter",
+      "relationship_type": "has_student",
+      "description": "Gryffindor has Harry Potter as a student."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "neville",
+      "relationship_type": "has_student",
+      "description": "Gryffindor has Neville as a student."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_part_of",
+      "description": "Harry Potter is part of Gryffindor house."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_part_of",
+      "description": "Neville is part of Gryffindor house."
+    }
+  ]
+}

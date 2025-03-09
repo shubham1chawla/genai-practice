@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "tentacula",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "Tentacula is mentioned as a plant that the Death Eaters are fighting. It is described as 'Devil's Snare'."
+    },
+    {
+      "name": "devil's snare",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "Devil's Snare is mentioned as a plant that the Death Eaters are fighting. It is also referred to as Tentacula."
+    },
+    {
+      "name": "snargaluﬀ pod",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Snargaluﬀ pod is mentioned as an object that the Death Eaters are fighting."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who are fighting Tentacula, Devil's Snare, and Snargaluﬀ pod."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flitwick is the Charms master who is helping Harry Potter. He is able to cast complex spells from a distance."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story. He is concerned about the location of the diadem of Ravenclaw and asks Flitwick for help."
+    },
+    {
+      "name": "diadem of ravenclaw",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diadem of Ravenclaw is an object that Harry Potter is looking for. It is mentioned as being valuable but not useful in the current situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "tentacula",
+      "relationship_type": "fighting",
+      "description": "The Death Eaters are fighting Tentacula, Devil's Snare, and Snargaluﬀ pod."
+    },
+    {
+      "entity_1": "flitwick",
+      "entity_2": "harry potter",
+      "relationship_type": "helping",
+      "description": "Flitwick is helping Harry Potter by casting complex spells from a distance."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "diadem of ravenclaw",
+      "relationship_type": "looking_for",
+      "description": "Harry Potter is looking for the diadem of Ravenclaw."
+    }
+  ]
+}

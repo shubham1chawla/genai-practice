@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who elbowed Ron to make him shut up."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who was being elbowed by Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as having gone pale and sweaty, and is being accused of attacking Muggle-borns."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who has full confidence in Hagrid, and is defending him against Fudge's accusations."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the Minister of Magic who is accusing Hagrid of attacking Muggle-borns, and is being defended by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "elbowed",
+      "description": "Harry elbowed Ron to make him shut up."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "defended",
+      "description": "Dumbledore is defending Hagrid against Fudge's accusations."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "muggle-borns",
+      "relationship_type": "attacked",
+      "description": "Hagrid is accused of attacking Muggle-borns by Fudge."
+    }
+  ]
+}

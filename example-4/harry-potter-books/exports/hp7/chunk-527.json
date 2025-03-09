@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "patronuses",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "The Patronuses are silver creatures that glided out of the dungeon, described as 'silver stag' and 'otter'. They were able to scatter the dementors and protect Harry and the Muggleborns."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "The Dementors are dark creatures that were falling back on both sides of Harry and the Patronuses, scattering before them."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an official organization that Harry advises people to get away from, as it has been decided that they should go into hiding with their families."
+    },
+    {
+      "name": "muggleborns",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The Muggleborns are a group of people who were waiting outside the dungeon, described as 'dazzled by the light of the Patronuses and still cowering slightly'."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Atrium is a location where Harry and the Muggleborns will be able to leave, as advised by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "patronuses",
+      "entity_2": "dementors",
+      "relationship_type": "scattered_before",
+      "description": "The Patronuses scattered the Dementors, protecting Harry and the Muggleborns."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "people",
+      "relationship_type": "advised_to_get_away_from",
+      "description": "Harry advises people to get away from the Ministry, as it has been decided that they should go into hiding with their families."
+    },
+    {
+      "entity_1": "patronuses",
+      "entity_2": "atrium",
+      "relationship_type": "led_to",
+      "description": "The Patronuses led Harry and the Muggleborns to the Atrium, where they will be able to leave."
+    }
+  ]
+}

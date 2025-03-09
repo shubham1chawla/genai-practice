@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being attacked by an unknown entity."
+    },
+    {
+      "name": "moody",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry, who is trying to protect Harry."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student at Hogwarts, who was standing in the entrance hall before being attacked by Moody's wand."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used for magic, which is wielded by both Harry and Professor Moody."
+    },
+    {
+      "name": "ferret",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A pure white ferret that was attacked by Professor Moody's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "malfoy",
+      "relationship_type": "attacked",
+      "description": "Professor Moody's wand attacked Malfoy, who was standing in the entrance hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "possesses",
+      "description": "Harry has a wand that he tries to grab when he feels something white-hot graze his face."
+    }
+  ]
+}

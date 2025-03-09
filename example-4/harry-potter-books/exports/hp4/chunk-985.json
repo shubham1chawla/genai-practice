@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "merpeople",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The merpeople are described as making screechy noises when they were above water."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is able to speak Mermish, indicating his ability to communicate with the merpeople."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey rescues Ron from Percy's clutches and tends to Fleur's injuries."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is rescued by Madam Pomfrey from Percy's clutches."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy has Ron in his clutches."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is injured and refuses to let Madam Pomfrey clean her wounds."
+    },
+    {
+      "name": "gabrielle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gabrielle is Fleur's sister and is being taken care of by someone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry saved Gabrielle from danger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "merpeople",
+      "relationship_type": "can_speak_language",
+      "description": "Dumbledore is able to speak Mermish, indicating his ability to communicate with the merpeople."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "ron",
+      "relationship_type": "rescued_by",
+      "description": "Madam Pomfrey rescues Ron from Percy's clutches."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gabrielle",
+      "relationship_type": "saved",
+      "description": "Harry saved Gabrielle from danger."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "fleur",
+      "relationship_type": "tended_to_injuries",
+      "description": "Madam Pomfrey tends to Fleur's injuries."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "ron",
+      "relationship_type": "had_in_clutches",
+      "description": "Percy has Ron in his clutches."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "gabrielle",
+      "relationship_type": "sister_of",
+      "description": "Fleur is Gabrielle's sister."
+    }
+  ]
+}

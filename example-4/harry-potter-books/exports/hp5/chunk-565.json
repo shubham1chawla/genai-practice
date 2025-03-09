@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as Potter."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who can see winged horses, mentioned in the same context as Harry."
+    },
+    {
+      "name": "erine macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who supports Harry and believes in Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being supported by Ernie's family."
+    },
+    {
+      "name": "lavender brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student whose face is wiped of a smile by Ernie's words."
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "A publication mentioned as being run by someone who is Harry's father."
+    },
+    {
+      "name": "the quibblers readers/supporters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who support Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "can_see_winged_horses",
+      "description": "Luna can see winged horses, just like Harry."
+    },
+    {
+      "entity_1": "erine macmillan",
+      "entity_2": "dumbledore",
+      "relationship_type": "support",
+      "description": "Ernie's family supports Dumbledore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "erine macmillan",
+      "relationship_type": "has_support",
+      "description": "Ernie believes in Harry and gives him a vote of confidence."
+    },
+    {
+      "entity_1": "lavender brown",
+      "entity_2": "erine macmillan",
+      "relationship_type": "is_influenced_by",
+      "description": "Lavender's face is wiped off a smile by Ernie's words."
+    }
+  ]
+}

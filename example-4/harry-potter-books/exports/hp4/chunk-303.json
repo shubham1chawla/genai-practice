@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is looking at Harry's robes and expressing dissatisfaction with his own robes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one wearing the dress robes that Ron is looking at."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as the one who bought Harry's secondhand robes and is explaining why she couldn't get Ron some like them."
+    },
+    {
+      "name": "lace",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Lace is mentioned as something that Mrs. Weasley's dress robes did not have."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "comparing_robes",
+      "description": "Ron is comparing his robes to Harry's, expressing dissatisfaction with his own."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "lace",
+      "relationship_type": "lacking_object",
+      "description": "Mrs. Weasley's dress robes are described as lacking lace."
+    }
+  ]
+}

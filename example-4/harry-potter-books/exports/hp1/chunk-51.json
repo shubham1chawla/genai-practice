@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who was allowed to finish his glass of drink."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as Harry's uncle and the father of Dudley."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as Uncle Vernon's son and Harry's cousin."
+    },
+    {
+      "name": "piers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Piers is mentioned as a friend of Dudley's who wanted to see huge snakes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dudley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "parent_child",
+      "description": "Dudley is Uncle Vernon's son."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "cousin_cousin",
+      "description": "Harry is Uncle Vernon's nephew."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "refers to non-magical people"
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a person who has never done an honest day's work in his life and is taking advantage of the fear of others"
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "a group of people who are involved in dark magic"
+    },
+    {
+      "name": "sneakoscopes",
+      "entity_type": "object",
+      "singular": true,
+      "description": "cursed objects that were almost certainly planted by a Death Eater"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mundungus fletcher",
+      "entity_2": "death eater",
+      "relationship_type": "member_of",
+      "description": "Mundungus Fletcher is a member of the Death Eaters"
+    },
+    {
+      "entity_1": "sneakoscopes",
+      "entity_2": "death eater",
+      "relationship_type": "created_by",
+      "description": "The Sneakoscopes were almost certainly planted by a Death Eater"
+    }
+  ]
+}

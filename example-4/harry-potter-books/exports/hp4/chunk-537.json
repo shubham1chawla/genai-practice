@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Durmstrang is mentioned as a school that will not be competing. It is introduced as the opposite of Hogwarts in this context."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a person who is upset about Durmstrang not being able to compete. He is described as making empty threats and trying to sound disdainful."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who enters the room and has a conversation with Karkaroff about Durmstrang not being able to compete. He is described as having a binding magical contract."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone whose name was put in the goblet by someone knowing he'd have to compete."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "durmstrang",
+      "relationship_type": "opposite_of",
+      "description": "Karkaroff is upset about Durmstrang not being able to compete, indicating that they are opposite in this context."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "karkaroff",
+      "relationship_type": "arguing_with",
+      "description": "Moody and Karkaroff have a conversation where Moody is trying to convince Karkaroff about the binding magical contract."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "harry potter",
+      "relationship_type": "involved_in_contract",
+      "description": "Moody mentions that Harry Potter's name was put in the goblet by someone knowing he'd have to compete, indicating that Moody is involved in a contract related to Harry Potter."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "st mungo's hospital for magical maladies and injuries",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "The hospital is mentioned as the place where portraits of wizards are located."
+    },
+    {
+      "name": "phineas",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Phineas is a wizard whose portrait is in St. Mungo's Hospital for Magical Maladies and Injuries."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "Dumbledore is the current Headmaster of Hogwarts."
+    },
+    {
+      "name": "armando dippet",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Armando Dippet is Dumbledore's predecessor as Headmaster of Hogwarts."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Sirius is a wizard who knows not to destroy Phineas's portrait."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is the school where Dumbledore and Armando Dippet were Headmasters."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who recognizes Armando Dippet's portrait."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "phineas",
+      "entity_2": "dumbledore",
+      "relationship_type": "knows",
+      "description": "Phineas knows Dumbledore."
+    },
+    {
+      "entity_1": "armando dippet",
+      "entity_2": "hogwarts",
+      "relationship_type": "predecessor_of",
+      "description": "Armando Dippet was the predecessor of Dumbledore as Headmaster of Hogwarts."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "phineas",
+      "relationship_type": "knows_not_to_destroy_portrait",
+      "description": "Sirius knows not to destroy Phineas's portrait."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts",
+      "relationship_type": "headmaster_of",
+      "description": "Dumbledore is the current Headmaster of Hogwarts."
+    }
+  ]
+}

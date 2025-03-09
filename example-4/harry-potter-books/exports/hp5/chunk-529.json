@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as the one who sent a note to Harry Potter."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is described as a poltergeist who slid down the banister and cackled gleefully."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall emerges from her office looking grim and slightly harassed."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who has been sent to see Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_note",
+      "description": "Professor Umbridge sent a note to Harry Potter."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "disturbed",
+      "description": "Peeves' behavior disturbed Professor McGonagall."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "visited",
+      "description": "Harry Potter visited Professor McGonagall in her office."
+    }
+  ]
+}

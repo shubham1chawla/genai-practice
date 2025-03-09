@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as the one who slammed the kitchen window shut and bellowed 'OWLS!' when he saw Harry's owl flying in."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who received a letter from the Ministry of Magic."
+    },
+    {
+      "name": "the ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as the sender of the letter to Harry Potter."
+    },
+    {
+      "name": "owls",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Owls are mentioned as flying in and out of the house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry potter",
+      "relationship_type": "angrily_reacted_to",
+      "description": "Uncle Vernon reacted angrily to Harry's owl flying into the house."
+    },
+    {
+      "entity_1": "the ministry of magic",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_letter_to",
+      "description": "The Ministry of Magic sent a letter to Harry Potter regarding his breach of the Decree for the Reasonable Restriction of Unseasonable Charm Use."
+    }
+  ]
+}

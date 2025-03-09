@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is playing a game."
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "commentator",
+      "singular": true,
+      "description": "A commentator who is announcing the game."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The team that is leading in the game."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A mad Bludger that is attacking Harry."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who are playing in the game."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other Weasley twin who is playing in the game."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is refereeing the game."
+    },
+    {
+      "name": "wood",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher in charge of the game."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "attacked_by",
+      "description": "The Bludger is attacking Harry."
+    },
+    {
+      "entity_1": "lee jordan",
+      "entity_2": "slytherin",
+      "relationship_type": "commenting_on",
+      "description": "Lee Jordan is commenting on the game, specifically Slytherin's lead."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "bludger",
+      "relationship_type": "attacking",
+      "description": "Fred is attacking the Bludger with his bat."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "wood",
+      "relationship_type": "signaling_to",
+      "description": "George is signaling to Wood to stop the game."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "harry",
+      "relationship_type": "protecting",
+      "description": "Madam Hooch's whistle indicates that she is protecting Harry from the Bludger."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "george",
+      "relationship_type": "responding_to",
+      "description": "Wood responds to George's signal by stopping the game."
+    }
+  ]
+}

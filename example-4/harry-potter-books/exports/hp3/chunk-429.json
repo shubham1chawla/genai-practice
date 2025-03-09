@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a Quidditch player. He is described as performing impressive dives and catching the Snitch."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Quidditch player who screams when Harry turns sharply on his broomstick."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The coach of the team, who calls out to Harry and lets the Snitch out."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A small golden ball that is the goal of Quidditch. It is described as being let out by Wood and caught by Harry."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A heavy ball used in Quidditch to try and knock players off their broomsticks. Harry races towards the goal posts with it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "catches",
+      "description": "Harry catches the Snitch in his hand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "races_towards",
+      "description": "Harry races towards the goal posts with a Bludger."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "snitch",
+      "relationship_type": "lets_out",
+      "description": "Wood lets the Snitch out."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "katie bell",
+      "relationship_type": "loops",
+      "description": "Harry loops around Katie Bell to catch the Snitch."
+    }
+  ]
+}

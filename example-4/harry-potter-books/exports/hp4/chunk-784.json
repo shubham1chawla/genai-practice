@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who is being asked about someone asking to the ball. She frowns and refuses to answer."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is the one who mocks Hermione for not answering his question. He is described as 'twitchy little ferret' by Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is present in the scene and reacts to Malfoy's comment along with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is present in the scene and reacts to Malfoy's comment along with Harry."
+    },
+    {
+      "name": "professor moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Moody is mentioned as being at the staff table, finishing his stew. Hermione waves to him when she sees Malfoy behind her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hermione",
+      "relationship_type": "mocks",
+      "description": "Malfoy mocks Hermione for not answering his question."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "reacts_together",
+      "description": "Harry and Ron react to Malfoy's comment together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor moody",
+      "relationship_type": "waves_to",
+      "description": "Hermione waves to Professor Moody when she sees Malfoy behind her."
+    }
+  ]
+}

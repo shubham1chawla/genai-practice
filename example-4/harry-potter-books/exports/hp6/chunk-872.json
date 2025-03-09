@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and classmates, known for her intelligence and resourcefulness."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend and classmate, often depicted as loyal but also a bit dim-witted."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "A Hogwarts professor who is somehow connected to the memory Harry wants to retrieve."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, known for his size and gentle nature."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "has_memory",
+      "description": "Harry wants to retrieve a memory from Slughorn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "plans_to_visit",
+      "description": "Harry decides to go visit Hagrid, despite his friends' objections."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "slughorn",
+      "relationship_type": "reminds_harry",
+      "description": "Hermione reminds Harry that he needs to see Slughorn."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "is_affect_by_harry's_decision",
+      "description": "Ron is aghast when Harry decides to go visit Hagrid instead of seeing Slughorn."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is frowning and noticing that the article does not mention the fact that they were doing all the ridiculing and slandering. (\"I notice they don't mention the fact that it was them doing all the ridiculing and slandering, though.\")"
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolohov is a person who cast a curse on Hermione. (\"The curse Dolohov had used on her...\")"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is a person who described the damage caused by the curse as \"quite enough damage to be going on with.\" (\"in Madam Pomfrey's words, 'quite enough damage to be going on with'\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person who was interviewed for the article. (\"Exclusive Interview with Harry Potter\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dolohov",
+      "relationship_type": "victim_of_curse",
+      "description": "Hermione was a victim of Dolohov's curse. (\"The curse Dolohov had used on her...\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "patient_of_medical_professional",
+      "description": "Hermione was a patient of Madam Pomfrey. (\"Madam Pomfrey's words, 'quite enough damage to be going on with'\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "interviewee_and_interviewer",
+      "description": "Hermione was an interviewee in the exclusive interview with Harry Potter. (\"Exclusive Interview with Harry Potter\")"
+    }
+  ]
+}

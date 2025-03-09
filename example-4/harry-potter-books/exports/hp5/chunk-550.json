@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hats",
+      "entity_type": "items",
+      "singular": false,
+      "description": "The hats are mentioned as being gone, implying that they were previously present."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "groups",
+      "singular": false,
+      "description": "House-elves are mentioned as wanting freedom, indicating a desire for autonomy."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as making a comment about the hats not looking like clothes."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being upset with Ron and not speaking to him all morning."
+    },
+    {
+      "name": "Professor Flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Flitwick is mentioned as lecturing the class on the importance of O.W.L.s."
+    },
+    {
+      "name": "Professor McGonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as lecturing the class on the importance of O.W.L.s."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "house-elves",
+      "entity_2": "hats",
+      "relationship_type": "have_gone",
+      "description": "The house-elves are implied to have taken or removed the hats."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hermione",
+      "relationship_type": "has_upset",
+      "description": "Ron's comment about the hats has upset Hermione."
+    },
+    {
+      "entity_1": "Professor Flitwick",
+      "entity_2": "O.W.L.s",
+      "relationship_type": "teaches_importance_of",
+      "description": "Professor Flitwick is lecturing on the importance of O.W.L.s."
+    },
+    {
+      "entity_1": "Professor McGonagall",
+      "entity_2": "O.W.L.s",
+      "relationship_type": "teaches_importance_of",
+      "description": "Professor McGonagall is also lecturing on the importance of O.W.L.s."
+    }
+  ]
+}

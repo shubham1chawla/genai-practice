@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "sound",
+      "entity_type": "sound",
+      "singular": true,
+      "description": "The sound described as a long, wailing shriek that filled the room."
+    },
+    {
+      "name": "riddikulus",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell shouted by Seamus and Dean to counteract the banshee's scream."
+    },
+    {
+      "name": "banshee",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A supernatural creature that is described as making a rasping noise and turning into different forms."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who shouts 'Riddikulus!' to counteract the banshee's scream."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who shouts that the banshee is confused and they are getting there."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who hurries forward to help counteract the banshee's scream."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sound",
+      "entity_2": "banshee",
+      "relationship_type": "causes",
+      "description": "The sound causes the banshee to make a rasping noise and turn into different forms."
+    },
+    {
+      "entity_1": "riddikulus",
+      "entity_2": "banshee",
+      "relationship_type": "affects",
+      "description": "The spell 'Riddikulus' affects the banshee, causing it to become confused."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "riddikulus",
+      "relationship_type": "uses",
+      "description": "Seamus uses the spell 'Riddikulus' to counteract the banshee's scream."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "banshee",
+      "relationship_type": "describes",
+      "description": "Lupin describes the banshee as being confused."
+    },
+    {
+      "entity_1": "dean",
+      "entity_2": "riddikulus",
+      "relationship_type": "uses",
+      "description": "Dean uses the spell 'Riddikulus' to counteract the banshee's scream."
+    }
+  ]
+}

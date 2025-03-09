@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as being on the sofa and reacting to the news of Sirius's death. He is described as having a glass of mead knocking on his head."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as not looking at Uncle Vernon and not knowing what to say when Dumbledore breaks the news about Sirius's death."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as explaining the legacy of Sirius's possessions to Harry and trying to continue with his explanation despite Uncle Vernon's interruption."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as being dead and leaving behind a legacy for Harry. He is also referred to as Harry's godfather."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": false,
+      "description": "Gringotts is mentioned as the bank where Harry needs to add gold to his account in order to inherit Sirius's possessions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "explains_to",
+      "description": "Dumbledore explains the legacy of Sirius's possessions to Harry."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "left_legacy_for",
+      "description": "Sirius left behind a legacy for Harry, including his personal possessions and number twelve, Grimmauld Place."
+    }
+  ]
+}

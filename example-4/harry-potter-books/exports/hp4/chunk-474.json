@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Beauxbatons is mentioned as a school that has horses, which require special care. It is introduced by Madame Maxime."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Durmstrang is mentioned alongside Beauxbatons, implying it is another school with magical creatures or horses that require special care."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Madame Maxime is introduced as the teacher from Beauxbatons who brings her students and horses to Hogwarts. She is described as confident in her ability to care for the horses."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Hagrid is mentioned by Dumbledore as the Care of Magical Creatures teacher who will take care of Madame Maxime's horses. He is described as being 'well up to the job'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Dumbledore is introduced as a wise and experienced teacher who is confident in Hagrid's ability to care for Madame Maxime's horses."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "beauxbatons",
+      "relationship_type": "affiliation",
+      "description": "Madame Maxime is affiliated with Beauxbatons, as she brings her students and horses to Hogwarts."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "caregiver",
+      "description": "Hagrid will care for Madame Maxime's horses at Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "endorsement",
+      "description": "Dumbledore endorses Hagrid as the teacher who can take care of Madame Maxime's horses."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry recognized the symptoms of one who had just had his memory modified."
+    },
+    {
+      "name": "mr roberts",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Roberts said placidly to Mr. Weasley, 'A map of the campsite for you,'"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley received a map and change from Mr. Roberts."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wizard in plus-fours mentioned that Ludo Bagman was not helping with anti-Muggle security."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr roberts",
+      "entity_2": "mr weasley",
+      "relationship_type": "gave",
+      "description": "Mr. Roberts gave a map and change to Mr. Weasley."
+    },
+    {
+      "entity_1": "ludo bagman",
+      "entity_2": "mr roberts",
+      "relationship_type": "not helping",
+      "description": "The wizard in plus-fours mentioned that Ludo Bagman was not helping with anti-Muggle security."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "recognized",
+      "description": "Harry recognized the symptoms of one who had just had his memory modified, referring to Mr. Weasley."
+    },
+    {
+      "entity_1": "ludo bagman",
+      "entity_2": "anti-muggle security",
+      "relationship_type": "neglecting",
+      "description": "The wizard in plus-fours mentioned that Ludo Bagman was not helping with anti-Muggle security."
+    }
+  ]
+}

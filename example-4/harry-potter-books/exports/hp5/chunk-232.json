@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is an elf who lives to serve the noble house of Black. He is described as cleaning and serving Master (Sirius)."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is a member of the noble house of Black and is referred to as 'Master' by Kreacher. He is described as having a mother who kept herself alive out of pure spite."
+    },
+    {
+      "name": "black",
+      "entity_type": "family_name",
+      "singular": true,
+      "description": "The Black family is a noble house that Kreacher serves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "sirius",
+      "relationship_type": "serve",
+      "description": "Kreacher serves Sirius, who is referred to as 'Master' by Kreacher."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "black",
+      "relationship_type": "belong_to",
+      "description": "Sirius belongs to the noble house of Black."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as speaking and ignoring Snape. He is described as being polite."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as shaking his head and having his lip curling. He is ignored by Professor Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as saying 'No' vehemently. He is accused of lying by Madame Maxime."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is mentioned as accusing Harry of lying and suggesting that Dumbledore made a mistake with the Age Line."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as saying that Harry could not have crossed the Age Line."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "ignore",
+      "description": "Dumbledore ignores Snape."
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "harry",
+      "relationship_type": "accuse",
+      "description": "Madame Maxime accuses Harry of lying."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "assert",
+      "description": "McGonagall asserts that Harry could not have crossed the Age Line."
+    }
+  ]
+}

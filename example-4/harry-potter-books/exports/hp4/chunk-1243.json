@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is experiencing pain and shock."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is lying on the ground next to Harry and has been killed by a curse."
+    },
+    {
+      "name": "avada kedavra",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "A powerful killing curse that was cast by someone in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "victim_of_curse",
+      "description": "Harry is a victim of the Avada Kedavra curse, which killed Cedric."
+    },
+    {
+      "entity_1": "avada kedavra",
+      "entity_2": "cedric",
+      "relationship_type": "killed_by",
+      "description": "Cedric was killed by the Avada Kedavra curse."
+    }
+  ]
+}

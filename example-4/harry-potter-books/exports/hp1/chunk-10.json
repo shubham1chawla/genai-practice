@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Jim McGuffin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The weatherman who is reporting on the unusual weather."
+    },
+    {
+      "name": "Ted",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person asking Jim about the owls."
+    },
+    {
+      "name": "Kent",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A county in England where viewers have been reporting unusual weather."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Jim McGuffin",
+      "entity_2": "Ted",
+      "relationship_type": "report_to",
+      "description": "Jim is reporting to Ted."
+    },
+    {
+      "entity_1": "Kent",
+      "entity_2": "Dundee",
+      "relationship_type": "apart_from",
+      "description": "Kent and Dundee are apart from each other in terms of location."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "cocktail",
+      "entity_type": "ingredient",
+      "singular": true,
+      "description": "A type of drink mentioned in the text, described as being paired with an onion."
+    },
+    {
+      "name": "onion",
+      "entity_type": "ingredient",
+      "singular": true,
+      "description": "An ingredient mentioned in the text, specifically a cocktail onion on a stick."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cocktail",
+      "entity_2": "onion",
+      "relationship_type": "contains",
+      "description": "The cocktail contains an onion, as described by being paired with it on a stick."
+    },
+    {
+      "entity_1": "onion",
+      "entity_2": "stick",
+      "relationship_type": "is_on",
+      "description": "The onion is placed on a stick, as mentioned in the text."
+    }
+  ]
+}

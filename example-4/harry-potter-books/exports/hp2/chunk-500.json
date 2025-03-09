@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "defence against the dark arts",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "The subject being discussed by Hermione, Ron, and Neville."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is teaching Defence Against the Dark Arts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is shocked by Ron's statement."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who has not learned anything from Lockhart."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is confused and worried about choosing a subject."
+    },
+    {
+      "name": "pixies",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Creatures that Ron mentions Lockhart taught him not to set loose."
+    },
+    {
+      "name": "family of longbottoms",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The family of Neville Longbottom who sent him letters with advice on what subject to choose."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "defence against the dark arts",
+      "relationship_type": "teaches",
+      "description": "Lockhart is teaching Defence Against the Dark Arts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "pixies",
+      "relationship_type": "knows what not to do",
+      "description": "Ron knows that Lockhart taught him not to set pixies loose."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "family of longbottoms",
+      "relationship_type": "has received letters from",
+      "description": "Neville Longbottom has received letters with advice on what subject to choose from his family."
+    }
+  ]
+}

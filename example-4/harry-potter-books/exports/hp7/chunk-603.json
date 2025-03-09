@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas Nigellus is a professor who is being addressed by Hermione. He is described as having 'clever, dark eyes'. (\"Phineas Nigellus?\" said Hermione again. \"Professor Black? Please could we talk to you? Please?\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who is trying to talk to Phineas Nigellus. She uses polite language and tries to explain the situation. (\"Phineas Nigellus?\" said Hermione again. \"Professor Black? Please could we talk to you? Please?\")"
+    },
+    {
+      "name": "obscura",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Obscura is a magical object that Hermione uses to blindfold Phineas Nigellus. (\"At once, Hermione cried: ‘Obscura!’\")"
+    },
+    {
+      "name": "black blindfold",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The black blindfold is a magical object that appears over Phineas Nigellus's eyes. (A black blindfold appeared over Phineas Nigellus’s clever, dark eyes, causing him to bump into the frame and shriek with pain.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "phineas nigellus",
+      "relationship_type": "tries_to_talk_to",
+      "description": "Hermione tries to talk to Phineas Nigellus, who is initially reluctant. (\"Phineas Nigellus?\" said Hermione again. \"Professor Black? Please could we talk to you? Please?\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "obscura",
+      "relationship_type": "uses",
+      "description": "Hermione uses the magical object Obscura to blindfold Phineas Nigellus. (\"At once, Hermione cried: ‘Obscura!’\")"
+    },
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "black blindfold",
+      "relationship_type": "is_blindfolded_by",
+      "description": "Phineas Nigellus is blindfolded by the black blindfold, which appears over his eyes. (A black blindfold appeared over Phineas Nigellus’s clever, dark eyes, causing him to bump into the frame and shriek with pain.)"
+    }
+  ]
+}

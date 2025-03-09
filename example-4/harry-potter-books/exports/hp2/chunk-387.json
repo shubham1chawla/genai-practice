@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is referred to as a Parselmouth and is able to talk to snakes. He mentions an incident at the zoo where he accidentally set a boa constrictor free after it told him it had never seen Brazil."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is present during Harry's conversation and reacts with surprise when Harry talks about talking to snakes."
+    },
+    {
+      "name": "parselmouth",
+      "entity_type": "condition",
+      "singular": true,
+      "description": "Parselmouth is a condition that allows individuals to talk to snakes. It is mentioned as a rare gift."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "parselmouth",
+      "relationship_type": "has_condition",
+      "description": "Harry has the Parselmouth condition, which allows him to talk to snakes."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "knows_person",
+      "description": "Ron knows Harry and is present during his conversation about talking to snakes."
+    }
+  ]
+}

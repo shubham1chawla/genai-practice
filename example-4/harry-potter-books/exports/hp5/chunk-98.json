@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as looking like James Potter."
+    },
+    {
+      "name": "remus",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A bald black wizard who comments on Harry's resemblance to James."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, mentioned as the person Harry resembles."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, mentioned as having eyes similar to Harry's."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard with mismatched eyes and a missing chunk from his nose."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard who is asked if he is sure it's Harry."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The witch who comments on Harry's resemblance to James."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "remus",
+      "entity_2": "harry",
+      "relationship_type": "commented_on",
+      "description": "Remus comments on Harry's resemblance to James."
+    },
+    {
+      "entity_1": "mad-eye moody",
+      "entity_2": "harry",
+      "relationship_type": "suspicious_of",
+      "description": "Mad-Eye Moody is suspicious of Harry."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "questioned_about_identity",
+      "description": "Lupin is asked if he is sure it's Harry."
+    },
+    {
+      "entity_1": "witch",
+      "entity_2": "harry",
+      "relationship_type": "commented_on",
+      "description": "The witch comments on Harry's resemblance to James."
+    }
+  ]
+}

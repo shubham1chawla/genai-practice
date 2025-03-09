@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having died, and Harry has an idea that started with Dumbledore's death."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has a feeling to go somewhere and track down Horcruxes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as asking Harry what he plans to do next."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Horcruxes are objects that contain pieces of Voldemort's soul and need to be destroyed."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist who has a piece of his soul in his body."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is mentioned as someone Harry might meet on his quest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "inspiration",
+      "description": "Harry's idea started with Dumbledore's death."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcruxes",
+      "relationship_type": "target",
+      "description": "Harry needs to track down and destroy the Horcruxes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "goal",
+      "description": "Harry's ultimate goal is to kill Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "severus snape",
+      "relationship_type": "potential_encounter",
+      "description": "Harry might meet Severus Snape on his quest."
+    }
+  ]
+}

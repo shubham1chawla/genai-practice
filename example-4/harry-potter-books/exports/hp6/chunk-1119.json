@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character in the story. He has forgotten about the inert figures he left behind and is worried about Ginny."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ginny is a character who is with Harry. She tells him that none of them are dead, but there is something in her voice that suggests otherwise."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who stepped over a body, which is revealed to be Bill."
+    },
+    {
+      "name": "bill",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bill is a character who was attacked by Greyback and left in a 'bit of a mess'. He won't look the same anymore."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Greyback is a werewolf who attacked Bill."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Madam Pomfrey is a character who is taking care of the injured characters. She thinks Neville will make a full recovery and Professor Flitwick is just shaken up."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville is a character who was knocked out but is expected to recover fully."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Flitwick is a character who was knocked out but is all right, just shaken up."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Ginny's tone and what it might mean."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "bill",
+      "relationship_type": "involved_in_attack",
+      "description": "Malfoy stepped over Bill's body, indicating that he was involved in the attack."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "bill",
+      "relationship_type": "attacked",
+      "description": "Greyback attacked Bill."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "neville",
+      "relationship_type": "treating_injury",
+      "description": "Madam Pomfrey is treating Neville's injury."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "professor flitwick",
+      "relationship_type": "treating_injury",
+      "description": "Madam Pomfrey is also taking care of Professor Flitwick, who was knocked out."
+    }
+  ]
+}

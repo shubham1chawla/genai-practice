@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a young wizard."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's best friend and a member of Dumbledore's Army."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's other best friend and a member of Dumbledore's Army."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is being hunted by the authorities, possibly Sirius Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "target_of_warning",
+      "description": "Ron and Hermione are warning Harry not to go after Black."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "shared_concern",
+      "description": "Ron and Hermione share a concern for Harry's safety when it comes to going after Black."
+    }
+  ]
+}

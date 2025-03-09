@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a character in the conversation, mentioned as speaking and having an opinion."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who invented something and left his will to Harry, Ron, and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a character in the conversation, mentioned as receiving an old Snitch from Dumbledore's will."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a character in the conversation, mentioned as speaking and questioning Dumbledore's actions."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an organization that has conﬁscated Dumbledore's will and is examining its contents."
+    },
+    {
+      "name": "the tales of beedle the bard",
+      "entity_type": "book",
+      "singular": false,
+      "description": "The Tales of Beedle the Bard is a book mentioned in the conversation, being ﬂicked through by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "left_will_to",
+      "description": "Dumbledore left his will to Harry, which includes an old Snitch and other important items."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ministry",
+      "relationship_type": "confiscated_by",
+      "description": "The Ministry conﬁscated Dumbledore's will and is examining its contents."
+    }
+  ]
+}

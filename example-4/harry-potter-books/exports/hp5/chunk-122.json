@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is asking where they are. He is mentioned as the one asking the question."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who is quiet and calm, answering Harry's question about their location."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who is rummaging in his cloak for something. He is mentioned as having gnarled hands and being cold."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person from whom Moody borrowed the Put-Outer device. He is not physically present in the scene but is mentioned as having lent something to Moody."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "answer_question",
+      "description": "Lupin answers Harry's question about their location, saying 'In a minute'."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "dumbledore",
+      "relationship_type": "borrowed_from",
+      "description": "Moody borrowed the Put-Outer device from Dumbledore."
+    }
+  ]
+}

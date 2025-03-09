@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a person who has an ambition to become an Auror. He is also referred to as 'the Chosen One'. (Excerpt: 'Dolores Umbridge has told me that you cherish an ambition to become an Auror... The “Chosen One”, you know ...')"
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is mentioned as the Minister of Magic. He wants Harry Potter to give the impression that he is working for the Ministry. (Excerpt: 'Oh, well, nothing at all onerous, I assure you... If you were to be seen popping in and out of the Ministry from time to time...')"
+    },
+    {
+      "name": "gawain robards",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gawain Robards is mentioned as Harry Potter's potential contact at the Auror Office. (Excerpt: 'And of course, while you were there, you would have ample opportunity to speak to Gawain Robards...')"
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores Umbridge is mentioned as the person who told Scrimgeour about Harry Potter's ambition to become an Auror. She is also still at the Ministry. (Excerpt: 'Dolores Umbridge has told me that you cherish an ambition to become an Auror... Well, that could be arranged very easily ...')"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as the organization where Scrimgeour wants Harry Potter to give the impression of working. (Excerpt: 'If you were to be seen popping in and out of the Ministry from time to time...')"
+    },
+    {
+      "name": "auror office",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Auror Office is mentioned as the organization where Gawain Robards works. (Excerpt: 'And of course, while you were there, you would have ample opportunity to speak to Gawain Robards...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry potter",
+      "relationship_type": "wants_to_give_impression",
+      "description": "Scrimgeour wants Harry Potter to give the impression that he is working for the Ministry. (Excerpt: 'Oh, well, nothing at all onerous, I assure you... If you were to be seen popping in and out of the Ministry from time to time...')"
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "gawain robards",
+      "relationship_type": "has_successor",
+      "description": "Scrimgeour has Gawain Robards as his successor at the Auror Office. (Excerpt: 'And of course, while you were there, you would have ample opportunity to speak to Gawain Robards...')"
+    },
+    {
+      "entity_1": "dolores umbridge",
+      "entity_2": "harry potter",
+      "relationship_type": "has_informed",
+      "description": "Dolores Umbridge has informed Scrimgeour about Harry Potter's ambition to become an Auror. (Excerpt: 'Dolores Umbridge has told me that you cherish an ambition to become an Auror...')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "auror office",
+      "relationship_type": "has_potential_contact",
+      "description": "Harry Potter has Gawain Robards as his potential contact at the Auror Office. (Excerpt: 'And of course, while you were there, you would have ample opportunity to speak to Gawain Robards...')"
+    }
+  ]
+}

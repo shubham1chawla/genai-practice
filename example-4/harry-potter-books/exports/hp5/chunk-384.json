@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, mentioned multiple times in the text. He is being called to leave with Mrs. Weasley and Tonks."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who jumps out of the room when Mrs. Weasley shouts at her. She is mentioned as leaving with Harry."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is Harry's owl, which he stuffs into his cage before leaving downstairs."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a person who shouts at Harry and Hermione to leave the room. She is in charge of getting them ready to go."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is mentioned as leaving with Mrs. Weasley and Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is mentioned as being told by Dumbledore not to deal with the luggage."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned as having given instructions about the luggage."
+    },
+    {
+      "name": "alastor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alastor is a person who is mentioned as dealing with the luggage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "left_with",
+      "description": "Harry and Hermione are leaving together, as mentioned in the text: '...and set off downstairs after Hermione'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry owns Hedwig, his owl, which he stuffs into her cage before leaving."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "harry",
+      "relationship_type": "in_charge_of",
+      "description": "Mrs. Weasley is in charge of getting Harry ready to leave, as mentioned in the text: 'Harry, you’re to come with me and Tonks'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "gave_instructions_to",
+      "description": "Dumbledore gave instructions to Sirius about the luggage, as mentioned in the text: 'Oh, for heaven’s sake, Sirius, Dumbledore said no!'"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is mentioned as replying to Harry's question and offering to show him something. He is described as someone who can take Harry inside his memory of the night when he caught 'him'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, asking questions and hesitating about what Riddle means. He is described as having a quill suspended over the diary."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is mentioned as something that Harry has been writing in, with fresh words forming on its pages. It is also described as something that can be used to show memories."
+    },
+    {
+      "name": "night",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The night when Riddle caught 'him' is mentioned as a specific event that he remembers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "harry",
+      "relationship_type": "show_memory_to",
+      "description": "Riddle offers to show Harry something, specifically his memory of the night when he caught 'him'."
+    },
+    {
+      "entity_1": "diary",
+      "entity_2": "harry",
+      "relationship_type": "used_by",
+      "description": "The diary is used by Harry to write in and also to see memories."
+    }
+  ]
+}

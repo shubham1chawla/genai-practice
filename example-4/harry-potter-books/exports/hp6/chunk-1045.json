@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a professor who has been lowered to the empty glass by Harry. He shakes his head, closes his eyes, and drinks from the goblet again."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is watching Dumbledore anxiously, wondering if he's in pain. He grips the rim of the basin tightly."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The goblet is being drained by Dumbledore and refilled with liquid from the basin."
+    },
+    {
+      "name": "basin",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The basin contains liquid that is used to refill the goblet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "goblet",
+      "relationship_type": "drinks_from",
+      "description": "Dumbledore drinks from the goblet, which is being drained and refilled by him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "basin",
+      "relationship_type": "grasps",
+      "description": "Harry grips the rim of the basin tightly with his hands."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "basin",
+      "relationship_type": "uses",
+      "description": "Dumbledore uses the basin to refill the goblet with liquid."
+    }
+  ]
+}

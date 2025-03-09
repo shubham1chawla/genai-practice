@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who was convinced that Harry was harmless."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is described as a tame werewolf and is restrained by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape uses his wand to restrain Lupin and threatens Black."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is enraged by Snape's actions and tries to attack him."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Azkaban is mentioned as a place where an innocent man was put back inside."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Scabbers is described as struggling and being held by Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is paralyzed and unsure of what to do or whom to believe."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron looks confused and tries to hold onto Scabbers."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione takes an uncertain step towards Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "restrained_by",
+      "description": "Snape uses his wand to restrain Lupin."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "snape",
+      "relationship_type": "threatened_by",
+      "description": "Black is threatened by Snape's actions."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "approached",
+      "description": "Hermione takes an uncertain step towards Snape."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "holding",
+      "description": "Ron tries to hold onto Scabbers."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is trying to get on a train to Hogwarts."
+    },
+    {
+      "name": "guard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person working at the station who is being unhelpful to Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a gamekeeper at Hogwarts, who has forgotten to tell Harry something important."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for magic where Harry is trying to get on the train to."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Non-magical people who are present in large numbers at the station."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "trying_to_get_on_train",
+      "description": "Harry is trying to get on a train to Hogwarts."
+    },
+    {
+      "entity_1": "guard",
+      "entity_2": "harry",
+      "relationship_type": "being_unhelpful",
+      "description": "The guard is being unhelpful to Harry."
+    }
+  ]
+}

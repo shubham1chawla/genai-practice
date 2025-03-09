@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is mentioned as the location where the Marauder's Map is being used to find out what Malfoy was doing."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Marauder's Map is a magical object that allows Harry to see what Malfoy was doing."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who was being watched by Harry using the Marauder's Map."
+    },
+    {
+      "name": "smith of hufflepuff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Smith of Hufflepuff is a commentator who is being described by the dreamy voice."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is an object that Smith of Hufflepuff lost to Ginny Weasley."
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny Weasley is a person who took the Quaffle from Smith of Hufflepuff and is described as being very nice."
+    },
+    {
+      "name": "luna lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna Lovegood is a commentator who is described by Harry as having long, dirty-blonde hair and wearing a necklace of Butterbeer corks."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as being beside Luna Lovegood at the commentator's podium."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "used",
+      "description": "Harry used the Marauder's Map to find out what Malfoy was doing."
+    },
+    {
+      "entity_1": "smith of hufflepuff",
+      "entity_2": "quaffle",
+      "relationship_type": "lost",
+      "description": "Smith of Hufflepuff lost the Quaffle to Ginny Weasley."
+    },
+    {
+      "entity_1": "ginny weasley",
+      "entity_2": "quaffle",
+      "relationship_type": "took",
+      "description": "Ginny Weasley took the Quaffle from Smith of Hufflepuff."
+    },
+    {
+      "entity_1": "luna lovegood",
+      "entity_2": "commentator's podium",
+      "relationship_type": "at",
+      "description": "Luna Lovegood was at the commentator's podium."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "commentator's podium",
+      "relationship_type": "beside",
+      "description": "Professor McGonagall was beside Luna Lovegood at the commentator's podium."
+    }
+  ]
+}

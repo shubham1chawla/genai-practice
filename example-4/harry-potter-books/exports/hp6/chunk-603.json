@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "death eater",
+      "entity_type": "death_eater",
+      "singular": true,
+      "description": "A group of people who are loyal to Lord Voldemort. They are mentioned as being suspected of holding Stan Shunpike captive."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being held captive by the Death Eaters. He is mentioned as being interviewed by Scrimgeour."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is mentioned as trying to appeal directly to Scrimgeour about Stan Shunpike."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has interviewed Stan Shunpike. He is mentioned as being involved in the decision to keep Stan captive."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story. He is mentioned as asking if Stan Shunpike is still being held captive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "stan shunpike",
+      "relationship_type": "interviewed",
+      "description": "Scrimgeour has interviewed Stan Shunpike, but the interview did not reveal any evidence of Stan being a Death Eater."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "scrimgeour",
+      "relationship_type": "appealed_to",
+      "description": "Dumbledore has appealed directly to Scrimgeour about Stan Shunpike, but the outcome is not mentioned."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stan shunpike",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Stan Shunpike's well-being and asks if he is still being held captive."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "scrimgeour",
+      "relationship_type": "informed",
+      "description": "Mr Weasley has informed Harry that Scrimgeour is involved in the decision to keep Stan Shunpike captive."
+    }
+  ]
+}

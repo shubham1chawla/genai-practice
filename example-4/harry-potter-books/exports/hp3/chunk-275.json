@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a professor at Hogwarts school. He is mentioned as having a conversation with Dumbledore before the start of term."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts school. He is mentioned as having a conversation with Snape before the start of term."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who is suspected to have entered the school without inside help."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a student at Hogwarts school. He is mentioned as being rapt with attention during the conversation between Snape and Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation",
+      "description": "Snape and Dumbledore had a conversation before the start of term, where Snape expressed his concerns about Black entering the school without inside help."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "snape",
+      "relationship_type": "suspect",
+      "description": "Black is suspected to have entered the school without inside help, as mentioned by Snape during the conversation with Dumbledore."
+    }
+  ]
+}

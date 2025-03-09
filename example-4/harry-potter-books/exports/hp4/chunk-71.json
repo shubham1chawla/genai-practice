@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hedwig is Harry's owl and is described as looking coldly up at the other owl."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one writing a letter to Ron and has permission from Muggles to come."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the recipient of Harry's letter and will see him tomorrow at five o'clock."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Muggles are a group of people who have given Harry permission to come."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "recipient",
+      "description": "Harry is writing a letter to Ron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "muggles",
+      "relationship_type": "has_permission_from",
+      "description": "Harry has permission from Muggles to come."
+    }
+  ]
+}

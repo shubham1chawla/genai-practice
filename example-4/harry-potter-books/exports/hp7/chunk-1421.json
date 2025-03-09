@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "rowle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rowle shouted to silence Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid was silenced by Rowle's wand."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix leapt to her feet and looked eagerly from Voldemort to Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort was being watched by Bellatrix."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's wand was against his chest."
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The snake was coiling and uncoiling in the glittering cage behind Voldemort's head."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rowle",
+      "entity_2": "hagrid",
+      "relationship_type": "silenced_by",
+      "description": "Rowle silenced Hagrid with his wand."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "voldemort",
+      "relationship_type": "watching",
+      "description": "Bellatrix was watching Voldemort."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "watching",
+      "description": "Bellatrix was also watching Harry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snake",
+      "relationship_type": "has_protected",
+      "description": "Voldemort's snake was well protected."
+    }
+  ]
+}

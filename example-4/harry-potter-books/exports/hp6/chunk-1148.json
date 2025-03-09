@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school in question where the Headmaster was killed."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school mentioned as having a terrible stain upon its history."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster who was killed by one of the colleagues."
+    },
+    {
+      "name": "sprout",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Sprout who believes that Dumbledore would have wanted the school to remain open."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Slughorn who thinks parents will want to keep their children at home."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hogwarts",
+      "entity_2": "dumbledore",
+      "relationship_type": "had_headmaster",
+      "description": "Hogwarts had Dumbledore as its Headmaster."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "located_at",
+      "description": "The school in question is located at Hogwarts."
+    },
+    {
+      "entity_1": "sprout",
+      "entity_2": "dumbledore",
+      "relationship_type": "believed_would_have_wanted",
+      "description": "Professor Sprout believes Dumbledore would have wanted the school to remain open."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "parents",
+      "relationship_type": "thought_parents_will",
+      "description": "Professor Slughorn thinks parents will want to keep their children at home."
+    }
+  ]
+}

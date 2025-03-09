@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is a gift to Harry, described as 'perfectly smooth, streamlined birch twigs' that make up its tail. It is wrapped in wrappings that Ron rips apart."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the recipient of the Firebolt gift, described as feeling 'stunned' when he receives it. He mentions that Dumbledore sent him the Invisibility Cloak anonymously."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who helps him unwrap the Firebolt and speculates about who might have sent it to Harry. He thinks Dumbledore is a likely candidate."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a possible sender of the Firebolt gift, but he denies sending it anonymously in case it would be seen as favoritism. He had previously sent Harry the Invisibility Cloak."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is a gift from Dumbledore to Harry, described as being passed on to him by his father. It was sent anonymously to avoid favoritism accusations."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who might accuse Dumbledore of favoritism if he were to send gifts to students. Ron uses his name in a derogatory manner, calling him a 'git'."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's cruel and neglectful Muggle relatives who are unlikely to have sent the Firebolt gift. Harry mentions that it wasn't them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "sent_gift",
+      "description": "Dumbledore is described as sending the Invisibility Cloak to Harry anonymously, and Ron speculates that he might have sent the Firebolt gift as well."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "sent_gift",
+      "description": "Dumbledore is described as sending the Invisibility Cloak to Harry, passing it on from his father."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "received_gift",
+      "description": "Harry receives the Firebolt gift, which is described as being sent to him by an unknown sender."
+    }
+  ]
+}

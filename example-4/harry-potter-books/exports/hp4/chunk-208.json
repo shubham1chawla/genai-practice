@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ivanova",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ivanova is a player who managed to break through the opposing team's ranks and score Bulgaria's first goal."
+    },
+    {
+      "name": "ryan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ryan is the Keeper of the opposing team."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is one of the Seekers who plummeted through the center of the Chasers."
+    },
+    {
+      "name": "lynch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lynch is the other Seeker who plummeted through the center of the Chasers."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is a commentator who is excitedly shouting names of players."
+    },
+    {
+      "name": "dimitrov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dimitrov is a player whose name is being shouted by Bagman."
+    },
+    {
+      "name": "levski",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Levski is another player whose name is being shouted by Bagman."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ivanova",
+      "entity_2": "ryan",
+      "relationship_type": "dodge",
+      "description": "Ivanova managed to dodge the Keeper, Ryan."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "lynch",
+      "relationship_type": "plummet_through",
+      "description": "Krum and Lynch plummeted through the center of the Chasers."
+    },
+    {
+      "entity_1": "ivanova",
+      "entity_2": "bulgaria",
+      "relationship_type": "score_goal_for",
+      "description": "Ivanova scored Bulgaria's first goal."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "snitch",
+      "relationship_type": "chase",
+      "description": "Krum is chasing the Snitch."
+    },
+    {
+      "entity_1": "lynch",
+      "entity_2": "snitch",
+      "relationship_type": "chase",
+      "description": "Lynch is also chasing the Snitch."
+    }
+  ]
+}

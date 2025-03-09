@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a location where someone was able to slip Katie something."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is mentioned as the person who received something from someone in Hogsmeade."
+    },
+    {
+      "name": "rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rosmerta is mentioned as a person under the Imperius Curse, forced to lurk in her bathroom and pass a necklace to students."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as taunting Dumbledore about finally understanding Rosmerta's situation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as questioning Malfoy about his communication with Rosmerta."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is mentioned as receiving a poisoned mead from Rosmerta, believing it to be Dumbledore's Christmas present."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as not checking a bottle of Rosmerta's due to his position."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dumbledore",
+      "relationship_type": "communication",
+      "description": "Malfoy and Dumbledore are communicating about Rosmerta's situation, with Malfoy taunting Dumbledore about finally understanding."
+    },
+    {
+      "entity_1": "rosmerta",
+      "entity_2": "slughorn",
+      "relationship_type": "poisoning",
+      "description": "Rosmerta poisoned the mead and sent it to Slughorn, believing it to be Dumbledore's Christmas present."
+    },
+    {
+      "entity_1": "rosmerta",
+      "entity_2": "filch",
+      "relationship_type": "influence",
+      "description": "Rosmerta was able to influence Filch not to check a bottle of hers due to his position."
+    }
+  ]
+}

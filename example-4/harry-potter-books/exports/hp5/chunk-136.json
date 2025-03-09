@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is described as dank and dark with peeling walls. It has a blank stretch of canvas in an ornate picture frame."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is trying to keep his voice casual while asking Ron and Hermione about Dumbledore."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person of authority who has been keeping Harry in the dark. He is busy and only seen twice since they came here."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is trying to tell him what was going on but couldn't because Dumbledore was too busy."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another friend of Harry's who is also trying to tell him about Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Dumbledore",
+      "relationship_type": "kept_in_dark",
+      "description": "Harry is kept in the dark by Dumbledore, as he doesn't know what's going on."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Dumbledore",
+      "relationship_type": "communicated_with",
+      "description": "Ron and Hermione tried to tell Harry about Dumbledore but couldn't because Dumbledore was too busy."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Ron why Dumbledore kept him in the dark."
+    }
+  ]
+}

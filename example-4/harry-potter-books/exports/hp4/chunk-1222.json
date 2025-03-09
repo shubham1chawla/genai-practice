@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ce dric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric's voice is heard yelling in response to Harry's actions. He is the one who is being yelled at by Harry."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum's voice is heard shouting 'Crucio!' which causes Cedric to yell in pain."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is trying to find a way into Cedric's house and is using magic to try and get through the hedge."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is the one whose house Harry is trying to get into. He is also the one who is being yelled at by Harry."
+    },
+    {
+      "name": "reductor curse",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "The Reductor Curse is a spell that Harry uses in an attempt to break through the hedge."
+    },
+    {
+      "name": "hedge",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The hedge is an obstacle that Harry has to get through to reach Cedric's house."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "trying_to_get_into_house",
+      "description": "Harry is trying to find a way into Cedric's house, but the hedge is blocking his path. He uses magic to try and get through it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "reductor curse",
+      "relationship_type": "used_spell",
+      "description": "Harry uses the Reductor Curse in an attempt to break through the hedge, but it is not very effective."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "cedric",
+      "relationship_type": "causing_pain",
+      "description": "Krum's voice shouting 'Crucio!' causes Cedric to yell in pain."
+    }
+  ]
+}

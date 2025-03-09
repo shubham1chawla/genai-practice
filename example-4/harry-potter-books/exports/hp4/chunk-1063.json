@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry was worried about his wand going missing."
+    },
+    {
+      "name": "steps",
+      "entity_type": "location",
+      "singular": true,
+      "description": "They climbed the steps into the entrance hall."
+    },
+    {
+      "name": "entrance hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "They went into the entrance hall and then into the Great Hall for lunch."
+    },
+    {
+      "name": "Great Hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "They went into the Great Hall for lunch."
+    },
+    {
+      "name": "lunch",
+      "entity_type": "event",
+      "singular": true,
+      "description": "They went into the Great Hall for lunch."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron was present at lunch."
+    },
+    {
+      "name": "Galleons",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "A pocketful of Galleons went missing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "wand",
+      "relationship_type": "concerned_about",
+      "description": "Harry was worried about his wand going missing."
+    },
+    {
+      "entity_1": "They",
+      "entity_2": "steps",
+      "relationship_type": "climbed",
+      "description": "They climbed the steps into the entrance hall."
+    }
+  ]
+}

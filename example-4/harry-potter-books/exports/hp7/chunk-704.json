@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character in the story who needs sleep and is worried about his wand. He asks Hermione to mend it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a character in the story who tries to convince Harry to rest, but eventually agrees to help him mend his wand."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wand is an object that belongs to Harry and is nearly severed in two. It is made of holly and phoenix feather."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "owns",
+      "description": "Harry owns the wand, which he asks Hermione to mend when it is broken."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "wand",
+      "relationship_type": "helps_mend",
+      "description": "Hermione helps Harry mend his wand by casting the 'Reparo' spell."
+    }
+  ]
+}

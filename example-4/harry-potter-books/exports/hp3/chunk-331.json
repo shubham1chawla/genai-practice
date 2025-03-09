@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who has found a map. He is hesitant to hand it in to Professor McGonagall."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who is trying to convince Harry to hand the map in to Professor McGonagall."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts who is surprised by Hermione's suggestion that Harry should hand the map in."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who is mentioned as someone to whom Harry might hand the map."
+    },
+    {
+      "name": "filch",
+      "entity_type": "staff_member",
+      "singular": true,
+      "description": "Filch is a staff member at Hogwarts who is mentioned as someone who would know if Fred and George had nicked something."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are students at Hogwarts who have nicked something that Harry has found."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person mentioned as someone who might be using the map to get into the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "hand_in",
+      "description": "Hermione suggests that Harry should hand the map in to Professor McGonagall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "knows",
+      "description": "Harry is worried that if he hands the map in, Filch will know that Fred and George nicked it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "sirius black",
+      "relationship_type": "concern",
+      "description": "Hermione is concerned that Sirius Black might be using the map to get into the castle."
+    }
+  ]
+}

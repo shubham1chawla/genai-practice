@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who nodded but did not elaborate. He is described as a character in the story."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is a person who drew his wand and pointed it over his companion's head. He is described as a character in the story."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is a person mentioned by Yaxley as having done well for himself. He is not physically present in the scene but is referenced by another character."
+    },
+    {
+      "name": "peacock",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The peacock is an animal that struts along the top of the hedge. It is described as pure-white and majestic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "yaxley",
+      "relationship_type": "accompanying",
+      "description": "Snape and Yaxley are accompanying each other on their journey, as they walk together in silence."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "peacock",
+      "relationship_type": "encountering",
+      "description": "Yaxley encounters the peacock while walking along the hedge. He draws his wand to investigate but finds it is just a harmless animal."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "candles",
+      "entity_type": "objects",
+      "singular": false,
+      "description": "The candles in the hall went out at once."
+    },
+    {
+      "name": "silvery ghosts",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "They were drifting about talking seriously to the prefects and the enchanted ceiling."
+    },
+    {
+      "name": "prefects",
+      "entity_type": "people",
+      "singular": false,
+      "description": "The silvery ghosts were talking seriously to them."
+    },
+    {
+      "name": "enchanterd ceiling",
+      "entity_type": "objects",
+      "singular": true,
+      "description": "It was scattered with stars like the sky outside."
+    },
+    {
+      "name": "sky",
+      "entity_type": "environment",
+      "singular": true,
+      "description": "The enchanted ceiling was scattered with stars like it."
+    },
+    {
+      "name": "teacher",
+      "entity_type": "people",
+      "singular": true,
+      "description": "A teacher would reappear in the hall to check that everything was quiet."
+    },
+    {
+      "name": "Professor Dumbledore",
+      "entity_type": "people",
+      "singular": true,
+      "description": "He came into the hall around three in the morning."
+    },
+    {
+      "name": "Percy",
+      "entity_type": "people",
+      "singular": true,
+      "description": "He was prowling between the sleeping bags telling people off for talking."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "He watched Professor Dumbledore looking around for Percy."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "people",
+      "singular": true,
+      "description": "He was sleeping next to Harry and Hermione."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "She was sleeping next to Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Professor Dumbledore",
+      "entity_2": "Percy",
+      "relationship_type": "searching_for",
+      "description": "He came into the hall looking around for Percy."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron and Hermione",
+      "relationship_type": "nearby",
+      "description": "They were sleeping next to him."
+    },
+    {
+      "entity_1": "Professor Dumbledore",
+      "entity_2": "silvery ghosts",
+      "relationship_type": "talking_to",
+      "description": "The silvery ghosts were talking seriously to the prefects and the enchanted ceiling."
+    },
+    {
+      "entity_1": "Percy",
+      "entity_2": "people",
+      "relationship_type": "telling_off",
+      "description": "He was telling people off for talking."
+    }
+  ]
+}

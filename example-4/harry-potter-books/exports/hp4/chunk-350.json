@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who seems hacked off about something. He wreaks havoc and mayhem in the kitchens, causing pots and pans to be everywhere and the house-elves to be terrified."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a student who expresses his concern about Peeves' behavior."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Nearly Headless Nick is a ghost and a house-elf who seems to be in charge of the house-elves at Hogwarts. He describes Peeves' behavior as 'the usual'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a student who expresses horror and surprise upon learning that there are house-elves at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "interacts_with",
+      "description": "Peeves wreaks havoc and mayhem in the kitchens, causing pots and pans to be everywhere and the house-elves to be terrified. Nearly Headless Nick describes Peeves' behavior as 'the usual'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "peeves",
+      "relationship_type": "expresses_concern_about",
+      "description": "Ron expresses his concern about Peeves' behavior, saying that he seems hacked off about something."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "learns_from",
+      "description": "Hermione learns from Nearly Headless Nick that there are house-elves at Hogwarts, and she expresses horror and surprise."
+    }
+  ]
+}

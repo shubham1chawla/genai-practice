@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is the one they are trying to bewitch and extract information from. She is described as sitting in a crowded court."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is trying to leave the Ministry with Ron. He is described as jumping into the lift and pulling off his Invisibility Cloak."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who Harry needs to find first before they can work out a way of extracting Hermione from the courtroom. He is described as being soaking-wet and wild-eyed when he gets into the lift."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who has to go down to the courtrooms with Umbridge. She is not present in the lift with Harry and Ron."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Ministry is where Harry and Ron are trying to leave before they are exposed."
+    },
+    {
+      "name": "courtroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The courtroom is where Hermione has to go with Umbridge."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Mr. Weasley walks into the lift and talks to an elderly witch."
+    },
+    {
+      "name": "elderly_witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The elderly witch is described as having blonde hair teased so high that it resembles an anthill."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as they are trying to leave the Ministry together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "acquaintance",
+      "description": "Harry is acquainted with Hermione, but she is not present in the lift with him and Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron is friends with Harry, as they are trying to leave the Ministry together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "association",
+      "description": "Hermione has to go down to the courtrooms with Umbridge."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "location",
+      "description": "Harry and Ron are trying to leave the Ministry before they are exposed."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "courtroom",
+      "relationship_type": "location",
+      "description": "Hermione has to go down to the courtrooms with Umbridge."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "elderly_witch",
+      "relationship_type": "interaction",
+      "description": "Mr. Weasley walks into the lift and talks to an elderly witch."
+    }
+  ]
+}

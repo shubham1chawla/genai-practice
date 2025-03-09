@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as following suit and continuing a conversation with Harry and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as making a mock puzzlement about who thinks Muggle-borns are scum."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the one who said 'You'll be next, Mudbloods!' and has a foul rat face."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as closing his books to look at Malfoy's family."
+    },
+    {
+      "name": "muggle-borns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle-borns are mentioned as being targeted by the person who thinks they are scum."
+    },
+    {
+      "name": "squibs",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Squibs are mentioned as being targeted by the person who thinks Muggle-borns are scum."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the place where the Squibs and Muggle-borns are being targeted."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber of Secrets is mentioned as a possible location where the key has been hidden for centuries."
+    },
+    {
+      "name": "slitherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as the house that Malfoy's family is associated with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "suspect",
+      "description": "Ron suspects Malfoy of being the one who thinks Muggle-borns are scum."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "investigate",
+      "description": "Harry investigates Malfoy's family to see if they could be associated with Slytherin house."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "doubt",
+      "description": "Hermione doubts that Malfoy is the one who thinks Muggle-borns are scum."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "agree",
+      "description": "Ron agrees with Harry that Malfoy's family could be associated with Slytherin house."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "connection",
+      "description": "Malfoy is connected to the Chamber of Secrets through his family's association with Slytherin house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slitherin",
+      "relationship_type": "association",
+      "description": "Harry associates Malfoy's family with Slytherin house."
+    }
+  ]
+}

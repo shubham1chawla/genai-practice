@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "kitchen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The kitchen is mentioned as the location where Kreacher speaks to Harry. (\"It's the Potter boy's head in the fire,\" Kreacher informed the empty kitchen...)"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher is a house-elf who speaks to Harry and informs him about Sirius. (\"It's the Potter boy's head in the fire,\" Kreacher informed the empty kitchen...)"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who is talking to Kreacher. (\"Where's Sirius, Kreacher?\" Harry demanded.)"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as a person who has gone out. (\"Master has gone out, Harry Potter,\" said Kreacher.)"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a person who might be present in the house. (\"What about Lupin? Mad-Eye? Any of them, are any of them here?\" Harry asked.)"
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is mentioned as a person who might be present in the house. (\"What about Lupin? Mad-Eye? Any of them, are any of them here?\" Harry asked.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "harry potter",
+      "relationship_type": "speaks_to",
+      "description": "Kreacher speaks to Harry, informing him about Sirius. (\"It's the Potter boy's head in the fire,\" Kreacher informed the empty kitchen...)"
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "sirius",
+      "relationship_type": "informed_about",
+      "description": "Kreacher informs Harry about Sirius. (\"Master has gone out, Harry Potter,\" said Kreacher.)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kreacher",
+      "relationship_type": "questions",
+      "description": "Harry asks Kreacher questions about Sirius and others. (\"Where's Sirius, Kreacher?\" Harry demanded.)"
+    }
+  ]
+}

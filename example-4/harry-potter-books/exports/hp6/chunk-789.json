@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "recruiting ground",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where an army can be built."
+    },
+    {
+      "name": "army",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people that can be recruited and trained."
+    },
+    {
+      "name": "job",
+      "entity_type": "position",
+      "singular": true,
+      "description": "A position or role that someone can apply for."
+    },
+    {
+      "name": "Professor Dippet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The professor who rejected Voldemort's job application."
+    },
+    {
+      "name": "Harry Potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person asking Dumbledore questions about Voldemort."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of the school who advised against Voldemort's appointment."
+    },
+    {
+      "name": "Armando",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was advised by Dumbledore against appointing Voldemort."
+    },
+    {
+      "name": "Lord Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who applied for the job and was rejected."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Voldemort",
+      "relationship_type": "advised_against",
+      "description": "Dumbledore advised against Voldemort's appointment."
+    },
+    {
+      "entity_1": "Professor Dippet",
+      "entity_2": "Voldemort",
+      "relationship_type": "rejected_job_application",
+      "description": "Professor Dippet rejected Voldemort's job application."
+    }
+  ]
+}

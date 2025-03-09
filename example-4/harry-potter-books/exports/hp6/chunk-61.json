@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story is not mentioned in this text but Harry Potter is a famous wizard. The mention of 'Harry Potter' might be referring to the book or movie series."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being spoken to by Narcissa and seems to have some connection with Draco."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as saying something about Draco."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa's son and the one being talked about in this conversation."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Draco who is worried about her son."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa's husband and the one whose mistake might be the reason for Draco being chosen by the Dark Lord."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A powerful entity that is granting an honour to Draco."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "narcissa",
+      "entity_2": "draco",
+      "relationship_type": "parent_child",
+      "description": "Narcissa is the mother of Draco."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "draco",
+      "relationship_type": "commentator_subject",
+      "description": "Bellatrix is talking about Draco and his actions."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "lucius",
+      "relationship_type": "connection_mistake",
+      "description": "Severus Snape seems to have some connection with Lucius, possibly due to a mistake made by him."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "draco",
+      "relationship_type": "granter_honour",
+      "description": "The Dark Lord is granting an honour to Draco."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "narcissa",
+      "relationship_type": "listener_speaker",
+      "description": "Severus Snape is listening to Narcissa's words and seems to be aware of her emotions."
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "lucius",
+      "relationship_type": "punisher_mistake",
+      "description": "The Dark Lord might be punishing Lucius for his mistake by choosing Draco."
+    }
+  ]
+}

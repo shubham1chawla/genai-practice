@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who finds work at Hogwarts and negotiates his salary with Professor Dumbledore."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Winky is another house-elf who works with Dobby at Hogwarts."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the headmaster of Hogwarts who hires Dobby and Winky to work at the school."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who overhears Dobby's conversation with Professor Dumbledore and expresses her opinion on his salary."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "employs",
+      "description": "Dobby works for Professor Dumbledore at Hogwarts."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "winky",
+      "relationship_type": "colleague",
+      "description": "Dobby and Winky work together at Hogwarts."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "hermione",
+      "relationship_type": "overheard_by",
+      "description": "Professor Dumbledore's conversation with Dobby is overheard by Hermione."
+    }
+  ]
+}

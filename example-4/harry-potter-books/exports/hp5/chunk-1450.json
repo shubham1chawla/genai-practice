@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is mentioned as pulling a sheet of pink parchment from between the leaves of Harry's folder."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a Ministry-appointed teacher at Hogwarts School of Witchcraft and Wizardry. He is mentioned as asking Professor McGonagall if she understood his note."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as having achieved high marks in all his Defense Against the Dark Arts tests."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is a teacher at Hogwarts School of Witchcraft and Wizardry. He is mentioned as thinking Harry Potter showed a pronounced aptitude for the subject."
+    },
+    {
+      "name": "defense against the dark arts",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "Defense Against the Dark Arts is a subject taught at Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "has_high_marks",
+      "description": "Professor McGonagall mentions that Harry Potter has achieved high marks in all his Defense Against the Dark Arts tests."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_confused_with",
+      "description": "Professor Umbridge is confused with Professor McGonagall about giving Harry Potter false hope."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "harry potter",
+      "relationship_type": "thinks_is_aptitude_for_subject",
+      "description": "Professor Lupin thinks that Harry Potter has a pronounced aptitude for the subject of Defense Against the Dark Arts."
+    }
+  ]
+}

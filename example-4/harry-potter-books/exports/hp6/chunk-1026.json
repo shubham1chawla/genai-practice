@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is guiding Harry through a mysterious place."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A great black lake that Harry and Dumbledore are standing on the edge of."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object used by wizards to cast spells, mentioned as being lit by both Harry and Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "accompanying",
+      "description": "Harry is following closely behind Dumbledore as they walk around the lake."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lake",
+      "relationship_type": "standing_on",
+      "description": "Harry and Dumbledore are standing on the edge of the lake."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wand",
+      "relationship_type": "holding",
+      "description": "Dumbledore is holding a wand, which he uses to light his way."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "holding",
+      "description": "Harry is also holding a wand, which he uses to light his way."
+    }
+  ]
+}

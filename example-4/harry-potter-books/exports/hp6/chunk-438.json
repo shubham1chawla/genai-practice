@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who is being targeted by Death Eaters."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a character who has family members that are considered 'blood traitors' by Death Eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a character who is stubbornly arguing against the idea of being a Death Eater."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group that Harry and his friends are concerned about."
+    },
+    {
+      "name": "muggle-borns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle-borns are mentioned as a group that Death Eaters hate."
+    },
+    {
+      "name": "ernie macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie Macmillan is mentioned as a character who gets hit by Ron's flying sausage."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as a distraction that arrives in the form of her presence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry",
+      "relationship_type": "target",
+      "description": "Death Eaters are targeting Harry, as mentioned by Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "death eaters",
+      "relationship_type": "opponent",
+      "description": "Ron is opposed to being a Death Eater, as he considers his family members 'blood traitors'."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eaters",
+      "relationship_type": "opponent",
+      "description": "Hermione is also opposed to being a Death Eater, as she argues against the idea."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry and Ron are friends, as evidenced by their conversation and banter."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ginny",
+      "relationship_type": "acquaintance",
+      "description": "Hermione is acquainted with Ginny, but the nature of their relationship is not specified in this passage."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "ernie macmillan",
+      "relationship_type": "accidental harm",
+      "description": "Ron accidentally hits Ernie Macmillan with his flying sausage."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a student who is tempted by a model of the galaxy and a new broom."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where Harry stays after arriving in Diagon Alley."
+    },
+    {
+      "name": "quality quidditch supplies",
+      "entity_type": "store",
+      "singular": true,
+      "description": "A shop that sells Quidditch equipment, including the new broom."
+    },
+    {
+      "name": "irish international side",
+      "entity_type": "team",
+      "singular": true,
+      "description": "A team of wizards who have ordered seven of the new brooms."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "leaky cauldron",
+      "relationship_type": "visited",
+      "description": "Harry arrived at the Leaky Cauldron after his arrival in Diagon Alley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quality quidditch supplies",
+      "relationship_type": "visited",
+      "description": "Harry visited Quality Quidditch Supplies to see what the crowd was staring at."
+    },
+    {
+      "entity_1": "irish international side",
+      "entity_2": "quality quidditch supplies",
+      "relationship_type": "ordered_from",
+      "description": "The Irish International Side ordered seven of the new brooms from Quality Quidditch Supplies."
+    }
+  ]
+}

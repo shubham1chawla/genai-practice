@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "protego",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that creates an invisible shield. (\"Protego! she cried, and an invisible shield expanded between her and Harry on the one side and Ron on the other;\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story. (\"Harry felt a corrosive hatred toward Ron: Something had broken between them.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story. (\"Harry felt a corrosive hatred toward Ron: Something had broken between them.\")"
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is being referred to as something that Harry wants Ron to leave behind. (\"Leave the Horcrux,\" Harry said.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "hatred",
+      "description": "Harry feels a corrosive hatred toward Ron. (\"Harry felt a corrosive hatred toward Ron: Something had broken between them.\")"
+    },
+    {
+      "entity_1": "protego",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "The Protego spell protects Harry from something. (\"Protego! she cried, and an invisible shield expanded between her and Harry on the one side and Ron on the other;\")"
+    },
+    {
+      "entity_1": "protego",
+      "entity_2": "ron",
+      "relationship_type": "protects",
+      "description": "The Protego spell protects Ron from something. (\"Protego! she cried, and an invisible shield expanded between her and Harry on the one side and Ron on the other;\")"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a character in the story. She is mentioned as having a conversation with Snape."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people that Professor McGonagall mentions. They have their own private means of communication."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a character in the story. He is mentioned as having a conversation with Professor McGonagall and pretending not to hear her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "death eaters",
+      "relationship_type": "has private means of communication",
+      "description": "Professor McGonagall mentions that Death Eaters have their own private means of communication, as stated in the text: 'You Death Eaters have you own private means of communication, I forgot.'"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has conversation with",
+      "description": "Snape is mentioned to be having a conversation with Professor McGonagall, as stated in the text: 'said Professor McGonagall.  You Death Eaters have you own private means of communication, I forgot.'"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "snape",
+      "relationship_type": "is being watched by",
+      "description": "Professor McGonagall is mentioned to be being watched by Snape, as stated in the text: 'His eyes were still probing the air all about her, and he was moving gradually closer,'"
+    }
+  ]
+}

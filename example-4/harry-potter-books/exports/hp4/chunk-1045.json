@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is described as a house-elf who is hiccuping and being watched by others."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is described as a house-elf who is whispering to Harry Potter about Winky."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is described as the person being whispered to by Dobby."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "winky",
+      "relationship_type": "concerned_about",
+      "description": "Dobby is concerned about Winky's well-being, as evidenced by his sad whispering and shaking of head."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "being_whispered_to",
+      "description": "Harry Potter is being whispered to by Dobby."
+    }
+  ]
+}

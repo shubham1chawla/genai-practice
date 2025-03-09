@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as someone to inform about the students' lack of knowledge."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who speaks out of turn and gets points deducted from Gryffindor."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is the teacher who deducts points from Gryffindor for Hermione's behavior."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is a student who calls Hermione a know-it-all."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindor",
+      "relationship_type": "deducts_points_from",
+      "description": "Snape deducts points from Gryffindor for Hermione's behavior."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "gets_deducted_points_by",
+      "description": "Hermione gets her points deducted by Snape."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Quirrell is a wizard who has served Lord Voldemort faithfully. He is described as being weak and having been punished by Voldemort for his mistakes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is gasping in shock at Quirrell's revelation about serving Voldemort."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is a powerful wizard who has been served by Quirrell. He is described as being unforgiving and having punished Quirrell for his mistakes."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Gringotts is a location where the Stone was kept and where Quirrell failed to steal it."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is a location where Harry met Quirrell and shook hands with him."
+    },
+    {
+      "name": "the stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Stone is an object that was kept at Gringotts and was the target of Quirrell's failed attempt to steal it."
+    },
+    {
+      "name": "the leaky cauldron",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Leaky Cauldron is a location where Harry shook hands with Quirrell in Diagon Alley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "quirrell",
+      "entity_2": "lord voldemort",
+      "relationship_type": "serves",
+      "description": "Quirrell serves Lord Voldemort faithfully, although he has let him down many times."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "gringotts",
+      "relationship_type": "failed_to_steal_from",
+      "description": "Quirrell failed to steal the Stone from Gringotts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quirrell",
+      "relationship_type": "met",
+      "description": "Harry met Quirrell in Diagon Alley and shook hands with him at The Leaky Cauldron."
+    }
+  ]
+}

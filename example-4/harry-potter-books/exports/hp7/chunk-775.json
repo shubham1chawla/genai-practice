@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being looked for by others."
+    },
+    {
+      "name": "prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper that has rumors and stories about Harry."
+    },
+    {
+      "name": "radio",
+      "entity_type": "medium",
+      "singular": true,
+      "description": "A medium through which rumors and stories are spread."
+    },
+    {
+      "name": "snatchers",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who Harry encountered after Disapparating."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned in the conversation."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who seized an opportunity to speak after Hermione was temporarily speechless."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "prophet",
+      "relationship_type": "mentioned_in",
+      "description": "The Prophet newspaper has rumors and stories about Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "radio",
+      "relationship_type": "mentioned_in",
+      "description": "Rumors and stories about Harry are spread through the radio."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snatchers",
+      "relationship_type": "encountered",
+      "description": "Hermione's friend Harry encountered a gang of Snatchers after Disapparating."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron is one of Harry's friends, who seized an opportunity to speak in the conversation."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Hermione is one of Harry's friends, mentioned in the conversation."
+    }
+  ]
+}

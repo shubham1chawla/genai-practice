@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is mentioned as the teacher who will be handing out detentions to students with D's. He is described as smirking and sniggering at Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Malfoy is mentioned as one of the students who is laughing and making fun of others who got D's. He is described as sniggering along with Snape."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is mentioned as a student who is trying to keep his grade private and avoid getting in trouble with Snape. He is described as reading the instructions carefully and making sure his solution is correct."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is mentioned as a student who is looking at Harry's grade and trying to see what he got. She is described as having a clear turquoise solution."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville is mentioned as a student who has a pink solution, which is different from Harry's and Hermione's solutions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "associated_with",
+      "description": "Snape and Malfoy are associated with each other as they are both laughing and making fun of others who got D's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "afraid_of",
+      "description": "Harry is afraid of Snape because he does not want to get in trouble with him. He is trying to keep his grade private and avoid getting a detention."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "compared_to",
+      "description": "Harry's solution is compared to Hermione's solution, which is described as clear turquoise. Harry's solution is at least blue rather than pink like Neville's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "compared_to",
+      "description": "Harry's solution is compared to Neville's solution, which is described as pink. Harry's solution is at least blue rather than pink."
+    }
+  ]
+}

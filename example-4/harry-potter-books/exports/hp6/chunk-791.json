@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hepzibah smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A very old and rich witch."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as tapping a bottle with his wand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Told to go first by Dumbledore and then tumbled through dark nothingness."
+    },
+    {
+      "name": "hokey",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "The smallest and oldest house-elf Harry had ever seen."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A container where Dumbledore stored memories."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hepzibah smith",
+      "relationship_type": "visited",
+      "description": "Dumbledore visited Hepzibah Smith."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pensieve",
+      "relationship_type": "used",
+      "description": "Harry used the Pensieve to travel through memories."
+    },
+    {
+      "entity_1": "hepzibah smith",
+      "entity_2": "hokey",
+      "relationship_type": "interacted_with",
+      "description": "Hepzibah Smith interacted with Hokey, her house-elf."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "instructed",
+      "description": "Dumbledore instructed Harry to go first."
+    }
+  ]
+}

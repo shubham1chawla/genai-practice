@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'him'. The text describes Harry's actions and thoughts throughout the passage."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person that Harry misses. No further information is provided about Sirius in this passage."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper of Hogwarts, mentioned as 'Hagrid'. The text describes Hagrid's actions and interactions with Madame Maxime."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is on a moonlit stroll with Hagrid. No further information is provided about her in this passage."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry and others are walking away from. The text mentions that the castle is 'out of sight'."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location near the castle, mentioned as being 'out of sight'. No further information is provided about the lake in this passage."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Harry and others are walking. The text describes the forest as having a perimeter that they walked around."
+    },
+    {
+      "name": "bonfires",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects mentioned in the passage as being seen by Harry. No further information is provided about the bonfires."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "misses",
+      "description": "Harry is missing Sirius, which is mentioned at the beginning of the passage."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "accompanies",
+      "description": "Hagrid and Madame Maxime are walking together in the forest. The text describes Hagrid leading Madame Maxime around a clump of trees."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "castle",
+      "relationship_type": "leaving",
+      "description": "Harry is leaving the castle, which is mentioned as being 'out of sight'. The text also mentions Harry's intention to turn back and leave Hagrid with Madame Maxime."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bonfires",
+      "relationship_type": "sees",
+      "description": "Harry sees bonfires in the distance, which is mentioned as a split-second thought. The text describes Harry's reaction to seeing the bonfires."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "accompanies",
+      "description": "Hagrid and Madame Maxime are walking together in the forest. The text describes Hagrid leading Madame Maxime around a clump of trees."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dragons",
+      "relationship_type": "sees",
+      "description": "Harry sees dragons, which is mentioned as a surprising and exciting discovery. The text describes the dragons as 'roaring' and 'dashing around'. "
+    }
+  ]
+}

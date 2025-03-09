@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "greyback",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Greyback is the one who roared 'Who's in charge here?' and is in charge of the group. He is described as covering his moment of inadequacy."
+    },
+    {
+      "name": "potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Potter is mentioned by Greyback as being worth 200,000 Galleons due to him plus his wand."
+    },
+    {
+      "name": "scabior",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Scabior is the one who says 'All right! All right, we're in!' and asks Greyback what they should do with the rest of them."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione's breathing is described as fast and terrified."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry can hear Hermione's breathing."
+    },
+    {
+      "name": "mudbloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The prisoners are referred to as 'Mudbloods'."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Greyback wants the sword if its rubies are worth a small fortune."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Potter's wand is mentioned as being worth 200,000 Galleons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "potter",
+      "relationship_type": "in_charge_of",
+      "description": "Greyback is in charge of Potter."
+    },
+    {
+      "entity_1": "scabior",
+      "entity_2": "greyback",
+      "relationship_type": "asked_for_instruction",
+      "description": "Scabior asks Greyback for instructions on what to do with the rest of them."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "mudbloods",
+      "relationship_type": "in_charge_of",
+      "description": "Greyback is in charge of the Mudbloods."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "sword",
+      "relationship_type": "wanted",
+      "description": "Greyback wants the sword."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "wand",
+      "relationship_type": "possesses",
+      "description": "Potter possesses his wand."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry",
+      "relationship_type": "has_information_about",
+      "description": "Greyback has information about Harry."
+    },
+    {
+      "entity_1": "scabior",
+      "entity_2": "greyback",
+      "relationship_type": "obeyed",
+      "description": "Scabior obeys Greyback's instructions."
+    }
+  ]
+}

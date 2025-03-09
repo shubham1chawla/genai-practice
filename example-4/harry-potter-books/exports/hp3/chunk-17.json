@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who receives gifts from his friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who wrote to Hermione about Harry's situation and sent him a Pocket Sneakoscope."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is on holiday in France and received news from Ron about Harry's situation."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's brother, who thinks the Pocket Sneakoscope is rubbish sold for wizard tourists."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Ron's brothers, who put beetles in Bill's soup."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's other brother, who also put beetles in Bill's soup."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, who brought him a present from Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sent_gift",
+      "description": "Ron sent Harry a Pocket Sneakoscope."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "informed_friend",
+      "description": "Ron informed Hermione about his phone call to Uncle Vernon and Harry's situation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "received_gift_from",
+      "description": "Hedwig brought Harry a present from Hermione."
+    }
+  ]
+}

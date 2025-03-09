@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as playing in a match and having a Nimbus broom."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as laughing at the thought of Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A rival character, mentioned as being laughed at by Ron and Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is a friend of Harry's, mentioned as possibly buying the Firebolt broom for him."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broom",
+      "singular": true,
+      "description": "An international standard broom, mentioned as being bought by someone for Harry."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location in the wizarding world where magical goods are sold."
+    },
+    {
+      "name": "nimbus",
+      "entity_type": "broom",
+      "singular": true,
+      "description": "Harry's previous broom, mentioned as being smashed."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is mentioned as giving detention to Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "laughter_at",
+      "description": "Ron laughs at the thought of Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "possibility_of_gift_from",
+      "description": "Harry's friend Lupin might have bought him the Firebolt broom as a gift."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snape",
+      "relationship_type": "detention_by",
+      "description": "Ron received detention from Snape."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "friendship_with",
+      "description": "Harry and Lupin are friends."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is the one who picked up a fallen flower from the bush behind which Snape lurked. She waited until Petunia was near enough to have a clear view, then held out her palm and showed the flower to Petunia."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Lily's sister. She advanced towards Lily, evidently torn between curiosity and disapproval. She shrieked when Snape jumped out from behind the bushes."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who was lurking behind the bushes. He seemed to regret his appearance and had been trying to contain himself."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lily",
+      "entity_2": "petunia",
+      "relationship_type": "sister_of",
+      "description": "Lily and Petunia are sisters, as mentioned in the text. This relationship is not explicitly stated but can be inferred from their interaction."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "snape",
+      "relationship_type": "interacted_with",
+      "description": "Lily and Snape interacted with each other when Lily showed the flower to Petunia, and Snape jumped out from behind the bushes."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "snape",
+      "relationship_type": "interacted_with",
+      "description": "Petunia and Snape interacted with each other when Snape jumped out from behind the bushes, causing Petunia to shriek and run backward."
+    }
+  ]
+}

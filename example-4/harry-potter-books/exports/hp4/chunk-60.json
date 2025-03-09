@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as the sender of the letter to Harry's address. She had squeezed the Dursleys' address in minute writing."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the recipient of the letter from Mrs. Weasley. He tries to sound as though Mrs. Weasley's mistake was anyone could make."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as Harry's uncle and the Dursleys' father. He is touchy about anything even slightly out of the ordinary."
+    },
+    {
+      "name": "the dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as a family that lives with Harry. They are touchy about anything even slightly out of the ordinary."
+    },
+    {
+      "name": "the postman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The postman is mentioned as someone who noticed the extra stamps on the letter and rang the doorbell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "the dursleys",
+      "relationship_type": "connection",
+      "description": "Mrs. Weasley is connected to the Dursleys, although it's a distant connection."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "family_member",
+      "description": "Harry is a family member of Uncle Vernon."
+    }
+  ]
+}

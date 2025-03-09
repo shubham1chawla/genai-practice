@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "champions",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The four champions are mentioned as being part of a competition."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The goblet is mentioned as the source from which names come out."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a participant in the competition."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as entering the room."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is mentioned as entering the room."
+    },
+    {
+      "name": "professor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Karkaroff is mentioned as entering the room."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is mentioned as entering the room and speaking to Fleur."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as closing the door."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as entering the room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblet",
+      "relationship_type": "selected_by",
+      "description": "Harry's name comes out of the goblet."
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "fleur",
+      "relationship_type": "spoke_to",
+      "description": "Madame Maxime speaks to Fleur."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hundreds of students",
+      "relationship_type": "closed_door_for",
+      "description": "Professor McGonagall closes the door for hundreds of students."
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "harry",
+      "relationship_type": "addressed_as",
+      "description": "Madame Maxime addresses Harry as 'little boy'."
+    }
+  ]
+}

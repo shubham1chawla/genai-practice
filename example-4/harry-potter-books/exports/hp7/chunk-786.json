@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as speaking and holding out his hand. He is also referred to as the one who received a new wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as reacting to Hermione getting up and looking apprehensive again. He is also referred to as passing Harry the new wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as getting up from her bed, putting a vanquished Horcrux into a beaded bag, and climbing back into her bed."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux is mentioned as being vanquished and put into a beaded bag by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "gave",
+      "description": "Ron passed Harry the new wand, indicating that Ron gave something to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "horcrux",
+      "relationship_type": "put_into_bag",
+      "description": "Hermione put the vanquished Horcrux into a beaded bag, indicating that she put something into a container."
+    }
+  ]
+}

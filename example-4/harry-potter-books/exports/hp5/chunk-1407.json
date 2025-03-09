@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'he' and 'Harry'. He is trying to follow James in a different direction."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who has a Golden Snitch. He is mentioned as having excellent reflexes."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who thinks he will get an Outstanding grade on the paper."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is following James and his friends. He seems to be unaware of where he is going."
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that James has in his pocket and is playing with."
+    },
+    {
+      "name": "paper",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A piece of paper that Sirius thinks was easy to complete. He believes he will get an Outstanding grade on it."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where James and his friends are heading towards."
+    },
+    {
+      "name": "lawn",
+      "entity_type": "location",
+      "singular": false,
+      "description": "An area of grass where James and his friends are walking."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "james",
+      "relationship_type": "follows",
+      "description": "Harry is trying to follow James in a different direction."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "james",
+      "relationship_type": "follows",
+      "description": "Snape is following James and his friends."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "golden snitch",
+      "relationship_type": "has",
+      "description": "James has a Golden Snitch in his pocket."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "paper",
+      "relationship_type": "related to",
+      "description": "Sirius is related to the paper, as he thinks it was easy to complete and believes he will get an Outstanding grade on it."
+    }
+  ]
+}

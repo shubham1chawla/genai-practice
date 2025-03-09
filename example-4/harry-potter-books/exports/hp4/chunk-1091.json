@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Beauxbatons is a school mentioned as being nearby."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is a person who was shouted for by Harry."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one shouting for Viktor Krum."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who was with Harry and helped him find Viktor Krum."
+    },
+    {
+      "name": "beauxbatons carriage",
+      "entity_type": "vehicle",
+      "singular": false,
+      "description": "Beauxbatons Carriage is a vehicle that passed by the location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "viktor krum",
+      "relationship_type": "searching_for",
+      "description": "Harry was searching for Viktor Krum."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "viktor krum",
+      "relationship_type": "helped_find",
+      "description": "Dumbledore helped Harry find Viktor Krum."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "beauxbatons carriage",
+      "relationship_type": "passed_by",
+      "description": "Beauxbatons Carriage passed by the location where Harry and Dumbledore were."
+    }
+  ]
+}

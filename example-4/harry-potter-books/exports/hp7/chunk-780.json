@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "radio",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The device that was playing music on Christmas morning."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one whose voice was heard coming out of Ron's pocket."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who heard Hermione's voice on the radio."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "heard_voice_of",
+      "description": "Ron heard Hermione's voice coming out of his pocket."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "radio",
+      "relationship_type": "listened_to",
+      "description": "Ron was listening to the radio on Christmas morning."
+    }
+  ]
+}

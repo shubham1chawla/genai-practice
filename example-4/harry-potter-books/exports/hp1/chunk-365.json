@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are trying to help Harry by flying up on their brooms. They try to pull him onto one of their brooms, but it's no good."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is in danger and the Weasleys are trying to help him by flying up on their brooms."
+    },
+    {
+      "name": "marcus flint",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Marcus Flint is playing Quidditch and scores five times without anyone noticing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione fights her way across the stand to get to Snape, knocks Professor Quirrell into the row in front, and then casts a spell on Snape."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is desperate and mutters for Hermione to come on."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is standing in the stand, and Hermione casts a spell on him that sets his robes on fire."
+    },
+    {
+      "name": "professor quirrell",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Quirrell is knocked into the row in front by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasleys",
+      "entity_2": "harry",
+      "relationship_type": "trying_to_help",
+      "description": "The Weasleys are trying to help Harry by flying up on their brooms."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "cast_spell_on",
+      "description": "Hermione casts a spell on Snape that sets his robes on fire."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "calling_for_help",
+      "description": "Ron is desperate and mutters for Hermione to come on."
+    },
+    {
+      "entity_1": "marcus flint",
+      "entity_2": "quaffle",
+      "relationship_type": "playing_with",
+      "description": "Marcus Flint is playing Quidditch with the Quaffle."
+    }
+  ]
+}

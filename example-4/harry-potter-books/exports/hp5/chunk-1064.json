@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, who is feeling unwell and has thoughts of Voldemort inside him."
+    },
+    {
+      "name": "volde-mort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a dark wizard who is trying to use Harry as his weapon."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is one of the adults watching over Harry, whom Harry attacked the previous night."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is another adult who is concerned about Harry's well-being and is trying to comfort him."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a member of the Weasley family, sitting next to Mrs. Weasley on the train."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "volde-mort",
+      "relationship_type": "has_inside",
+      "description": "Voldemort is inside Harry's mind, controlling his thoughts and actions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "attacked",
+      "description": "Harry attacked Mr. Weasley the previous night, under Voldemort's influence."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "toffee",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that is causing the chaos in the Dursley's house."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter's son who is a real practical joker."
+    },
+    {
+      "name": "engorgement charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that is being cast on the toffee, causing it to grow in size."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley's mother who is sobbing hysterically and tugging his tongue."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia's son who appears to be suffocating under the pressure of his mother and his tongue."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley's father who has lost control completely and is throwing a china figure at Mr. Weasley."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to help the situation with his wand."
+    },
+    {
+      "name": "china figure",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An ornament that Uncle Vernon threw at Mr. Weasley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "engorgement charm",
+      "entity_2": "toffee",
+      "relationship_type": "causes",
+      "description": "The Engorgement Charm is causing the toffee to grow in size."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dudley",
+      "relationship_type": "tugs",
+      "description": "Aunt Petunia is tugging Dudley's tongue."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "china figure",
+      "relationship_type": "throws",
+      "description": "Uncle Vernon threw the china figure at Mr. Weasley."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "mr weasley",
+      "relationship_type": "attacks",
+      "description": "Uncle Vernon attacked Mr. Weasley with a china figure."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "china figure",
+      "relationship_type": "ducks",
+      "description": "Mr. Weasley ducked the china figure that Uncle Vernon threw at him."
+    },
+    {
+      "entity_1": "engorgement charm",
+      "entity_2": "fred",
+      "relationship_type": "is associated with",
+      "description": "The Engorgement Charm is associated with Fred, who is a real practical joker."
+    }
+  ]
+}

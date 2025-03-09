@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as being happy about the circulation being well up."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as finding seats and hurrying inside an empty compartment."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as being stared at because he was at the Ministry with Harry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Ministry is mentioned as a place where Neville and Harry were involved in an adventure."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a publication that covered the adventure at the Ministry."
+    },
+    {
+      "name": "gran",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gran is mentioned as being pleased with Neville's involvement in the adventure and buying him a new wand."
+    },
+    {
+      "name": "train",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The train is mentioned as a place where Harry, Luna, and Neville are traveling."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "visited",
+      "description": "Harry was at the Ministry with Neville."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "ministry",
+      "relationship_type": "visited",
+      "description": "Neville was at the Ministry with Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "daily prophet",
+      "relationship_type": "mentioned_in",
+      "description": "Harry's adventure at the Ministry was covered in the Daily Prophet."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "gran",
+      "relationship_type": "related_to",
+      "description": "Neville is related to Gran, who bought him a new wand."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "harry",
+      "relationship_type": "traveling_with",
+      "description": "Luna and Harry are traveling together on the train."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "traveling_with",
+      "description": "Neville and Harry are also traveling together on the train."
+    },
+    {
+      "entity_1": "train",
+      "entity_2": "location",
+      "relationship_type": "located_in",
+      "description": "The train is a location where Harry, Luna, and Neville are traveling."
+    }
+  ]
+}

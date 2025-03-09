@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, referred to by name. (e.g. 'Harry, you look dead on your feet.')"
+    },
+    {
+      "name": "miss marjorie dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt of Harry's, who was involved in an incident that required the Accidental Magic Reversal Squad to intervene. (e.g. 'the unfortunate blowing-up of Miss Marjorie Dursley')"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person, possibly a Ministry official, who is speaking to Harry. (e.g. 'Fudge smiled at Harry over the rim of his teacup') "
+    },
+    {
+      "name": "accidental magic reversal squad",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "A group that deals with magical accidents, mentioned as having been dispatched to Privet Drive. (e.g. 'Two members of the Accidental Magic Reversal Squad were dispatched to Privet Drive')"
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Miss Dursley lives, mentioned as being visited by the Accidental Magic Reversal Squad. (e.g. 'Two members of the Accidental Magic Reversal Squad were dispatched to Privet Drive')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A school that Harry attends, mentioned as a place where he will stay during holidays. (e.g. 'I always stay at Hogwarts for the Christmas and Easter holidays')"
+    },
+    {
+      "name": "christmas",
+      "entity_type": "holiday",
+      "singular": false,
+      "description": "A holiday mentioned as one of the times when Harry stays at Hogwarts. (e.g. 'I always stay at Hogwarts for the Christmas and Easter holidays')"
+    },
+    {
+      "name": "easter",
+      "entity_type": "holiday",
+      "singular": false,
+      "description": "A holiday mentioned as one of the times when Harry stays at Hogwarts. (e.g. 'I always stay at Hogwarts for the Christmas and Easter holidays')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "miss marjorie dursley",
+      "relationship_type": "victim_of_magic",
+      "description": "Harry's aunt, Miss Dursley, was involved in an incident that required the Accidental Magic Reversal Squad to intervene. (e.g. 'the unfortunate blowing-up of Miss Marjorie Dursley')"
+    },
+    {
+      "entity_1": "accidental magic reversal squad",
+      "entity_2": "privet drive",
+      "relationship_type": "visited_location",
+      "description": "The Accidental Magic Reversal Squad was dispatched to Privet Drive. (e.g. 'Two members of the Accidental Magic Reversal Squad were dispatched to Privet Drive')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_of",
+      "description": "Harry attends Hogwarts school. (e.g. 'I always stay at Hogwarts for the Christmas and Easter holidays')"
+    }
+  ]
+}

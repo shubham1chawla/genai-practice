@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "my kind",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The speaker refers to their family or genetic lineage."
+    },
+    {
+      "name": "me",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker is referring to themselves."
+    },
+    {
+      "name": "the child",
+      "entity_type": "child",
+      "singular": true,
+      "description": "An innocent child who may inherit the speaker's condition."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "me",
+      "entity_2": "my kind",
+      "relationship_type": "has_condition",
+      "description": "The speaker has a condition that they are concerned about passing on to their family or genetic lineage."
+    },
+    {
+      "entity_1": "me",
+      "entity_2": "the child",
+      "relationship_type": "may_inherit_condition",
+      "description": "The speaker is worried that they may pass on their condition to the child."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "the riddle house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the story takes place."
+    },
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story who is trying to escape from a snake."
+    },
+    {
+      "name": "the snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A snake that is chasing Frank and making hissing noises."
+    },
+    {
+      "name": "the cold voice",
+      "entity_type": "sound",
+      "singular": true,
+      "description": "A mysterious voice beyond the door that is making hissing noises."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "frank",
+      "entity_2": "the snake",
+      "relationship_type": "chased_by",
+      "description": "The snake is chasing Frank."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "the cold voice",
+      "relationship_type": "related_to",
+      "description": "Frank is related to the cold voice, possibly as a victim or witness."
+    },
+    {
+      "entity_1": "the snake",
+      "entity_2": "the cold voice",
+      "relationship_type": "following",
+      "description": "The snake is following the hissing noises made by the cold voice."
+    }
+  ]
+}

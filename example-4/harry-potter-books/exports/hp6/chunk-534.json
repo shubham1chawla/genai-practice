@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "Quidditch is mentioned as the sport that Malfoy was supposed to play in. The text states 'robes his mind was far from Quidditch' indicating that Quidditch is on his mind."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a Slytherin student who is not playing in the match. The text states 'Why was he now happy to let a substitute go on? Was he really ill, or was he faking?' indicating that Malfoy's absence from the game is suspicious."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as Harry's friend who is surprised by Malfoy's absence. The text states '‘Fishy , isn’t it?’ he said in an undertone to Ron.' indicating that Ron is being spoken to by someone else."
+    },
+    {
+      "name": "vaisey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vaisey is mentioned as the Slytherins' best goal-scorer who is also absent from the match. The text states 'And Vaisey off too...' indicating that Vaisey's absence is notable."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as Ron's friend who is being stared at by Ron. The text states '‘What?’ ‘I ... you ...’ Ron had dropped his voice; he looked both' indicating that Harry is the subject of Ron's attention."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "quidditch",
+      "relationship_type": "absence_from_sport",
+      "description": "Malfoy is absent from Quidditch, which is suspicious given his previous claims of injury."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "staring_at",
+      "description": "Ron is staring at Harry, indicating that Ron's attention is focused on Harry."
+    }
+  ]
+}

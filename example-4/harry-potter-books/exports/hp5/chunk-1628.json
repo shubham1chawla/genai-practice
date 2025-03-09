@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being interrogated by Umbridge. Potter is mentioned as someone who uses the fire to communicate with unknown persons."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry-appointed teacher at Hogwarts who is furious and wants Snape to make more potion for her immediately."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Potions master at Hogwarts who is calm and collected. He mentions that it takes a full moon cycle to mature the potion Umbridge needs."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is being looked at by Snape with cold, dark eyes. Harry is mentioned as someone who uses the fire to communicate with unknown persons."
+    },
+    {
+      "name": "fire",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The object that Potter and possibly others are using to communicate with each other."
+    },
+    {
+      "name": "potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A potion that Umbridge needs for her work. It takes a full moon cycle to mature."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "request",
+      "description": "Umbridge requests Snape to make more potion for her immediately, as she needs it this evening."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "fire",
+      "relationship_type": "use",
+      "description": "Potter is using the fire to communicate with a person or persons unknown."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "potion",
+      "relationship_type": "need",
+      "description": "Umbridge needs the potion for her work, which takes a full moon cycle to mature."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Harry'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is also present in the conversation."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who is suspected to be part of the Order."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is also present in the conversation and has her own opinion about Snape."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, who is involved in some kind of activity that Snape wants to know about."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, whose party Hermione attended before disappearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "conversation_participant",
+      "description": "Harry and Ron are having a conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "suspect",
+      "description": "Harry suspects that Snape is part of the Order."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "target_of_investigation",
+      "description": "Hermione thinks that Malfoy is being tricked by Snape."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "host",
+      "description": "Slughorn hosted a party where Hermione was present before disappearing."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "target_of_investigation",
+      "description": "Hermione thinks that Snape is pretending to offer help in order to trick Malfoy."
+    }
+  ]
+}

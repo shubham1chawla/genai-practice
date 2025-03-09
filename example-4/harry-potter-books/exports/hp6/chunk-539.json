@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts. He is described as racing after Harper and trying to catch the Snitch."
+    },
+    {
+      "name": "harper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who spots the Snitch before Harry. He is described as speeding off and being ahead of Harry in the chase."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The flying instructor at Hogwarts. She is mentioned as having her back turned to the students during the Quidditch match."
+    },
+    {
+      "name": "zacharias smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who uses a megaphone to commentate on the Quidditch match. He is described as saying that Harper has seen the Snitch and Harry hasn't."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts. It is mentioned as being represented by Harper."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "harper",
+      "relationship_type": "chase",
+      "description": "Harry is chasing after Harper, who has spotted the Snitch before him."
+    },
+    {
+      "entity_1": "zacharias smith",
+      "entity_2": "harry",
+      "relationship_type": "commentary",
+      "description": "Zacharias Smith is commentating on the Quidditch match and pointing out that Harry hasn't seen the Snitch."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Department of Mysteries is mentioned as a location where Harry and others are trying to find their way."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is leading the group through the Department of Mysteries. He is described as pushing open a door and raising his wand."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Wizengamot is an organization that tried Harry in the past, and its courtroom is mentioned as similar to the current location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "location_visited",
+      "description": "Harry is visiting the Department of Mysteries, trying to find his way through it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizengamot",
+      "relationship_type": "tried_by",
+      "description": "Harry was tried by the Wizengamot in the past, and its courtroom is mentioned as similar to the current location."
+    }
+  ]
+}

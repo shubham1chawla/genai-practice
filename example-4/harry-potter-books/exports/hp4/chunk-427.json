@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is the person being spoken to by Harry. He has red eyes and is reading a book."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person asking Neville if he's all right. He thinks that telling Neville about Professor Sprout's comment was a tactful way of cheering him up."
+    },
+    {
+      "name": "professor moody",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Moody lent Neville the book 'Magical Water Plants of the Mediterranean'. Harry is concerned about his appearance at the end of the lesson."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Sprout told Professor Moody that Neville is really good at Herbology. This comment was passed on to Neville by Harry as a way of cheering him up."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Neville's appearance at the end of the lesson."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor sprout",
+      "relationship_type": "passed_on_comment",
+      "description": "Harry passed on Professor Sprout's comment to Neville as a way of cheering him up."
+    }
+  ]
+}

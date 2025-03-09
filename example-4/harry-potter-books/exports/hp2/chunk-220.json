@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flint is mentioned as the one who said 'A pitch invasion.'"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as asking Harry what's happening and why he isn't playing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as crossing the grass to see what's going on with Ron."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as not playing and being asked by Ron why he isn't playing."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is introduced as the new Slytherin Seeker, wearing Slytherin Quidditch robes."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin team is mentioned as having a new Seeker and buying brooms for their team."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor team is mentioned as being able to raise gold and get new brooms, unlike Slytherin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin",
+      "relationship_type": "member_of",
+      "description": "Malfoy is introduced as the new Slytherin Seeker, indicating he is a member of the Slytherin team."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin",
+      "relationship_type": "representative_of",
+      "description": "Malfoy is talking on behalf of the Slytherin team, indicating he represents them."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of the Gryffindor team, as mentioned by Ron's question to him about why he isn't playing."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Hermione is a member of the Gryffindor team, as mentioned by Malfoy's comment about Gryffindor getting in on pure talent."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "weasley",
+      "relationship_type": "family_member_of",
+      "description": "Malfoy mentions his father buying brooms for the Slytherin team, indicating he is a family member of Weasley."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as a student who has poor memory and gets his foot stuck in a step on the staircase."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of Neville's friends who helps pull him out of the staircase."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of Neville's friends who helps pull him out of the staircase and talks to a suit of armor."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school where Neville, Harry, and Ron are students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Harry helps pull Neville out of the staircase."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "ron",
+      "relationship_type": "helped_by",
+      "description": "Ron helps pull Neville out of the staircase."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "helped",
+      "description": "Neville is helped by Harry when he gets his foot stuck in a step on the staircase."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "neville",
+      "relationship_type": "helped",
+      "description": "Neville is helped by Ron when he gets his foot stuck in a step on the staircase."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "headed_together_with",
+      "description": "Harry and Neville head together to Gryffindor Tower."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "headed_together_with",
+      "description": "Ron and Neville head together to Gryffindor Tower."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "headed_together_with",
+      "description": "Neville heads with Harry and Ron to Gryffindor Tower."
+    }
+  ]
+}

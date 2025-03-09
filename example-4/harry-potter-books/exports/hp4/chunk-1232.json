@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to cast spells on a spider."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A large and magical spider that is attacking Harry."
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry compares his spell to."
+    },
+    {
+      "name": "legs",
+      "entity_type": "body_part",
+      "singular": false,
+      "description": "The legs of the spider that are lifting Harry into the air."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "spider",
+      "relationship_type": "attack",
+      "description": "The spider is attacking Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "comparison",
+      "description": "Harry compares his spell to throwing a stone at the spider."
+    },
+    {
+      "entity_1": "spider",
+      "entity_2": "legs",
+      "relationship_type": "possession",
+      "description": "The spider has legs that are lifting Harry into the air."
+    }
+  ]
+}

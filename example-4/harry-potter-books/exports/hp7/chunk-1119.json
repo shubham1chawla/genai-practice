@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts horcrux",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Hogwarts Horcrux is mentioned as a place that isn't safe enough. The text states 'Hogwarts Horcrux, decides it isn’t safe enough?'"
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is mentioned as a location where Harry suggests they go to try and work something out. The text states 'We’ll go to Hogsmeade,'"
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Cloak is mentioned as an object that Hermione gets under. The text states 'Get under the Cloak, Hermione'"
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The dragon is mentioned as a creature that has drunk its fill and risen into the air. The text states 'The dragon had drunk its ﬁll and risen into the air.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanies",
+      "description": "Harry suggests that Hermione gets under the Cloak. The text states 'Get under the Cloak, Hermione'"
+    },
+    {
+      "entity_1": "hogwarts horcrux",
+      "entity_2": "hogsmeade",
+      "relationship_type": "nearby",
+      "description": "The Hogwarts Horcrux is mentioned as a place that isn't safe enough and Hogsmeade is suggested as an alternative. The text states 'We’ll go to Hogsmeade,'"
+    },
+    {
+      "entity_1": "dragon",
+      "entity_2": "mountain",
+      "relationship_type": "above",
+      "description": "The dragon is mentioned as a creature that has risen into the air and vanished over a nearby mountain. The text states 'until it vanished over a nearby mountain.'"
+    }
+  ]
+}

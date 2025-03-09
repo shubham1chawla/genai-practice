@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, being targeted by a rogue Bludger."
+    },
+    {
+      "name": "oliver",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is also being targeted by the rogue Bludger."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins, accusing someone of fixing the Bludgers."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher in charge of Quidditch practice, mentioned as having locked away the Bludgers."
+    },
+    {
+      "name": "wood",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The Quidditch coach, expressing anxiety and concern for Harry's safety."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A rival team in the Quidditch game, suspected of tampering with the Bludgers."
+    },
+    {
+      "name": "bludgers",
+      "entity_type": "equipment",
+      "singular": false,
+      "description": "The balls used in Quidditch, mentioned as being locked away by Madam Hooch."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family of wizards, including Fred and George, who are part of the Gryffindor team."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins, warning Harry about the rogue Bludger."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Gryffindor team, expressing anger and frustration at the situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bludgers",
+      "relationship_type": "targeted_by",
+      "description": "The rogue Bludger is targeting Harry."
+    },
+    {
+      "entity_1": "oliver",
+      "entity_2": "bludgers",
+      "relationship_type": "targeted_by",
+      "description": "The rogue Bludger is also targeting Oliver."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "slytherins",
+      "relationship_type": "suspected_of_tampering_with_bludgers",
+      "description": "George suspects the Slytherin team of tampering with the Bludgers."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "madam hooch",
+      "relationship_type": "reported_to",
+      "description": "Wood reports to Madam Hooch about the situation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "weasleys",
+      "relationship_type": "advised_by",
+      "description": "Harry is advised by Fred and George, who are part of the Weasley family."
+    }
+  ]
+}

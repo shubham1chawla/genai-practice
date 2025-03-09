@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who left the Burrow, indicating that he is a key character in the story. (\"Let’s go downstairs, there’s a lot to tell you, and I want to know what’s happened after you left the Burrow.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the person who points her wand at the gate, indicating that she has magical abilities. (\"They descended into the kitchen, where Hermione pointed her wand at the gate.\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as the person who pulls butterbeers from beneath his traveling cloak, indicating that he has a role in the story. (\"Lupin pulled a few butterbeers from beneath his traveling cloak and they sat down.\")"
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is mentioned as Harry's home, indicating that it is an important location in the story. (\"Let’s go downstairs, there’s a lot to tell you, and I want to know what’s happened after you left the Burrow.\")"
+    },
+    {
+      "name": "gate",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The gate is mentioned as the location where Hermione points her wand, indicating that it is a key location in the story. (\"They descended into the kitchen, where Hermione pointed her wand at the gate.\")"
+    },
+    {
+      "name": "kitchen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The kitchen is mentioned as the location where Harry and others are gathered, indicating that it is an important location in the story. (\"They descended into the kitchen...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "burrow",
+      "relationship_type": "left",
+      "description": "Harry left the Burrow, indicating that he departed from this location. (\"Let’s go downstairs, there’s a lot to tell you, and I want to know what’s happened after you left the Burrow.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gate",
+      "relationship_type": "pointed_wand_at",
+      "description": "Hermione pointed her wand at the gate, indicating that she has magical abilities and is interacting with this location. (\"They descended into the kitchen, where Hermione pointed her wand at the gate.\")"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "butterbeers",
+      "relationship_type": "pulled_from_cloak",
+      "description": "Lupin pulled butterbeers from beneath his traveling cloak, indicating that he has a role in the story and is interacting with this object. (\"Lupin pulled a few butterbeers from beneath his traveling cloak and they sat down.\")"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who has come to warn Harry Potter. He is described as being small and fragile, with eight hats on his head."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the person that Dobby has come to warn. He is described as having experience of Dobby's habits of self-punishment."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group",
+      "singular": false,
+      "description": "House-elves are a group of elves that serve the wizarding families. They are mentioned as being warned not to tell Harry Potter about Dobby's warning."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "warns",
+      "description": "Dobby has come to warn Harry Potter, as mentioned in the text: 'Dobby has come to warn you...'"
+    },
+    {
+      "entity_1": "house-elves",
+      "entity_2": "harry potter",
+      "relationship_type": "warned not to tell",
+      "description": "House-elves have been warned not to tell Harry Potter about Dobby's warning, as mentioned in the text: 'but the house-elves have been warn ed not to tell...'"
+    }
+  ]
+}

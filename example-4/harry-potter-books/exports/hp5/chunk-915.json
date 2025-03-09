@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is telling a story to Harry and Ron. He is described as being careful because he and Olympe stick out a bit."
+    },
+    {
+      "name": "olympé",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Olympé is Hagrid's companion who is also trying to avoid the Ministry. She has a school in France."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is listening to Hagrid's story and asking questions."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an organization that is watching Dumbledore and trying to follow Hagrid and Olympe."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is being watched by the Ministry."
+    },
+    {
+      "name": "france",
+      "entity_type": "location",
+      "singular": true,
+      "description": "France is a location where Olympe's school is located."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "olympé",
+      "relationship_type": "accompanying",
+      "description": "Hagrid and Olympe are traveling together to avoid the Ministry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ministry",
+      "relationship_type": "being_tailed_by",
+      "description": "The Ministry is following Hagrid and Olympe."
+    },
+    {
+      "entity_1": "olympé",
+      "entity_2": "school",
+      "relationship_type": "has_school",
+      "description": "Olympe has a school in France that the Ministry is trying to reach."
+    }
+  ]
+}

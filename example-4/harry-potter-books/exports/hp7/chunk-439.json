@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "cupboard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cupboard is mentioned as a place where the locket was found. (\"There was a locket there.\")"
+    },
+    {
+      "name": "locket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket is mentioned as an object that was found in the cupboard. (\"There was a locket there.\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who can sense Ron and Hermione's tensions and excitement. (\"He could sense Ron and Hermione’s tensions and excitement too.\")"
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone whose tension and excitement Harry can sense. (\"He could sense Ron and Hermione’s tensions and excitement too.\")"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone whose tension and excitement Harry can sense. (\"He could sense Ron and Hermione’s tensions and excitement too.\")"
+    },
+    {
+      "name": "Mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is mentioned as someone who asks questions about the locket. (\"Why? asked Mundungus, “Is it valuable?”\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "locket",
+      "relationship_type": "has_concern",
+      "description": "Harry is concerned about the locket. (\"Harry’s mouth was suddenly dry.\")"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Mundungus",
+      "relationship_type": "accuses",
+      "description": "Hermione accuses Mundungus of still having the locket. (\"You’ve still got it!\" cried Hermione.)"
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Mundungus",
+      "relationship_type": "accuses",
+      "description": "Ron also accuses Mundungus of still having the locket. (\"No, he hasn’t,\" said Ron shrewdly.)"
+    },
+    {
+      "entity_1": "Mundungus",
+      "entity_2": "locket",
+      "relationship_type": "has_given_away",
+      "description": "Mundungus claims to have given the locket away. (\"Bleedin’ gave it away, di’n’ I? No choice.\")"
+    }
+  ]
+}

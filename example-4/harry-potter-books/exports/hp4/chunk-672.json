@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is the poltergeist of Hogwarts who started chucking chairs across the room."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who was being targeted by Peeves."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and classmate who helped him with the Summoning Charm."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a Hogwarts staff member who would have been attracted to the noise if Peeves hadn't stopped."
+    },
+    {
+      "name": "trevor",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Trevor is Neville's pet toad that was left in the Gryffindor common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "harry",
+      "relationship_type": "targeted_by",
+      "description": "Peeves started chucking chairs across the room, pretending to think that Harry wanted things thrown at him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "helped_by",
+      "description": "Hermione helped Harry with the Summoning Charm."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as he walks up the marble staircase and interacts with Ron and Neville. He is described as calling out to Ron and hurrying up to the third floor."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as Harry calls out to him and grins at him."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as he comes around the corner and interacts with Harry. He is described as forgetting that Harry wasn't going to Hogsmeade."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Marauder's Map is mentioned as Harry pulls it out of his pocket and uses it to track Neville's location."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is mentioned as a place where Ron and Neville are going, but not Harry."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The library is mentioned as a place where Harry plans to go."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "greeted",
+      "description": "Harry calls out to Ron and says 'Bye!'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville longbottom",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacts with Neville, including talking to him and using the Marauder's Map to track his location."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "used",
+      "description": "Harry uses the Marauder's Map to track Neville's location."
+    }
+  ]
+}

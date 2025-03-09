@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'Harry'. The text describes Harry's actions and thoughts."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as 'Ron'. Ron is described as reacting to Harry's idea."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, mentioned in the text. Hagrid's roosters are said to have been killed."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as 'Hermione'. Hermione is credited with scribbling a note on the page."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ghost at Hogwarts, mentioned in the text. Myrtle's bathroom is suggested as a possible location of the Chamber."
+    },
+    {
+      "name": "slytherin heir",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who opened the Chamber and killed Hagrid's roosters."
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A monster that flees from the crowing of a rooster. It is fatal to it."
+    },
+    {
+      "name": "rooster",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A bird whose crowing is fatal to the Basilisk."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "basilisk",
+      "relationship_type": "uses",
+      "description": "Harry suggests that the Basilisk has been using the plumbing system."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "reacts_to",
+      "description": "Ron reacts to Harry's idea about the location of the Chamber."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "rooster",
+      "relationship_type": "owns",
+      "description": "Hagrid owns roosters that were killed by the Slytherin heir."
+    },
+    {
+      "entity_1": "slytherin heir",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "opened",
+      "description": "The Slytherin heir opened the Chamber."
+    },
+    {
+      "entity_1": "basilisk",
+      "entity_2": "rooster",
+      "relationship_type": "flees_from",
+      "description": "The Basilisk flees from the crowing of a rooster."
+    },
+    {
+      "entity_1": "spider",
+      "entity_2": "basilisk",
+      "relationship_type": "flees_from",
+      "description": "Spiders flee before the Basilisk."
+    }
+  ]
+}

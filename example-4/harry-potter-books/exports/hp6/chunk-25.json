@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "police",
+      "entity_type": "law_enforcement_agency",
+      "singular": true,
+      "description": "The police are mentioned as being baffled by a crime."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the one who knows exactly who committed the crime."
+    },
+    {
+      "name": "emmeline vance",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Emmeline Vance is a person who was involved in another crime."
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as being aware of the Emmeline Vance case."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "police",
+      "relationship_type": "knows",
+      "description": "Fudge knows exactly who committed the crime, but the police do not."
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "emmeline vance",
+      "relationship_type": "aware_of",
+      "description": "The Prime Minister is aware of the Emmeline Vance case."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "goblins",
+      "entity_type": "goblin_group",
+      "singular": false,
+      "description": "Goblins are mentioned as running for cover in the hallway. (\"Goblins and wizards shrieked and ran for cover\")"
+    },
+    {
+      "name": "wizards",
+      "entity_type": "wizard_group",
+      "singular": false,
+      "description": "Wizards are mentioned as running for cover in the hallway. (\"Goblins and wizards shrieked and ran for cover\")"
+    },
+    {
+      "name": "dragon",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "The dragon is mentioned as being present in the hallway, blasting its way out of a passage. (\"had blasted their way out of the passage into the marble hallway.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "goblins",
+      "entity_2": "wizards",
+      "relationship_type": "coexist_in_same_location",
+      "description": "Goblins and wizards are mentioned as being in the same location, running for cover. (\"Goblins and wizards shrieked and ran for cover\")"
+    },
+    {
+      "entity_1": "dragon",
+      "entity_2": "goblins",
+      "relationship_type": "cause_fear_or_distress",
+      "description": "The dragon is mentioned as causing fear or distress to the goblins, who are running for cover. (\"had blasted their way out of the passage into the marble hallway.\")"
+    },
+    {
+      "entity_1": "dragon",
+      "entity_2": "wizards",
+      "relationship_type": "cause_fear_or_distress",
+      "description": "The dragon is mentioned as causing fear or distress to the wizards, who are running for cover. (\"had blasted their way out of the passage into the marble hallway.\")"
+    }
+  ]
+}

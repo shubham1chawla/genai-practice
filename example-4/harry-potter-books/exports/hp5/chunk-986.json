@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is concerned about his kissing skills."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is unsure if he is bad at kissing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is scribbling a letter and thinks Harry is not bad at kissing."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is crying frequently according to Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Harry's kissing skills."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "cho",
+      "relationship_type": "has_information_about",
+      "description": "Hermione has information about Cho's crying habits."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "cho",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Cho's crying habits."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "has_opinion_from",
+      "description": "Harry has an opinion based on Hermione's statement."
+    }
+  ]
+}

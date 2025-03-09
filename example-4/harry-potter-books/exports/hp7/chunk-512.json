@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Muggleborn Registration Commission is mentioned as a entity in the text. It is described as an organization that deals with the questioning of Muggleborns."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are creatures that feed on human happiness and are known to cause despair and hopelessness. They are mentioned in the text as being present in the dark passage outside the courtrooms."
+    },
+    {
+      "name": "muggleborns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggleborns are a group of people who are born to non-magical parents but possess magical abilities. They are mentioned in the text as being brought in for questioning by the Muggleborn Registration Commission."
+    },
+    {
+      "name": "courtrooms",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The courtrooms are a location where the Muggleborns are brought in for questioning. They are described as being outside the dark passage where the dementors are present."
+    },
+    {
+      "name": "families",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Families of Muggleborns are mentioned in the text as accompanying their loved ones during the questioning process."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dementors",
+      "entity_2": "muggleborns",
+      "relationship_type": "feed_on",
+      "description": "Dementors feed on human happiness, and they are described in the text as gliding up and down in front of the Muggleborns, causing them to feel despair and hopelessness."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "courtrooms",
+      "relationship_type": "presence_in",
+      "description": "Dementors are present in the dark passage outside the courtrooms, where they are feeding on the happiness of the Muggleborns."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who felt angry at the reception of his confidences. (\"Harry did not say anything to this; he still felt angry at the reception his confidences had received...\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who spoke in a ringing voice and warned Tom Riddle against continued thievery. (\"So,' said Dumbledore, 'we meet this evening to continue the tale of Tom Riddle... You will remember how excited he was to hear that he was a wizard, that he refused my company on a trip to Diagon Alley and that I, in turn, warned him ag ainst continued thievery when he arrived at school.\")"
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle is mentioned as a person who was excited to hear that he was a wizard and refused Dumbledore's company on a trip to Diagon Alley. (\"You will remember how excited he was to hear that he was a wizard, that he refused my company on a trip to Diagon Alley...\")"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as the school where Tom Riddle arrived and was warned against continued thievery. (\"that I, in turn, warned him ag ainst continued thievery when he arrived at school.\")"
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is mentioned as the location where Tom Riddle refused Dumbledore's company. (\"that he refused my company on a trip to Diagon Alley...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "tom riddle",
+      "relationship_type": "warned_against_thievery",
+      "description": "Dumbledore warned Tom Riddle against continued thievery. (\"that I, in turn, warned him ag ainst continued thievery when he arrived at school.\")"
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "harry",
+      "relationship_type": "refused_company",
+      "description": "Tom Riddle refused Harry's company on a trip to Diagon Alley. (\"that he refused my company on a trip to Diagon Alley...\")"
+    }
+  ]
+}

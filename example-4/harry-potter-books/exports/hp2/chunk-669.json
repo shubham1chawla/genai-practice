@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is a mysterious object that Harry and Dumbledore discuss. It is mentioned as being given to Ginny by Lucius Malfoy."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is a person who gave the diary to Ginny. He is described as having white hands and is accused of giving out Lord Voldemort's old school things."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who is present in the scene. He is punished by twisting his ears when Harry nods at him."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person who understands something and nods at Dobby. He accuses Lucius Malfoy of giving the diary to Ginny."
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny Weasley is a person who got hold of the diary. She is mentioned as being given the diary by Lucius Malfoy."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who smiles at Harry and advises Lucius Malfoy not to give out Lord Voldemort's old school things."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the owner of the diary. He is also referred to in relation to his old school things."
+    },
+    {
+      "name": "arthur weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arthur Weasley is a person who will make sure that Lord Voldemort's old school things are traced back to Lucius Malfoy if they find their way into innocent hands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "diary",
+      "relationship_type": "gave",
+      "description": "Lucius Malfoy gave the diary to Ginny, as accused by Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "nodded_at",
+      "description": "Harry nodded at Dobby, which caused Dobby to twist his ears in punishment."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "lord voldemort",
+      "relationship_type": "belonged_to",
+      "description": "Lucius Malfoy is accused of giving out Lord Voldemort's old school things."
+    }
+  ]
+}

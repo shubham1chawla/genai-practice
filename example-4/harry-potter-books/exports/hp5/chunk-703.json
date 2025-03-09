@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is suddenly alight with fervor and is discussing preparing themselves for what's waiting out there. She is also mentioned as agreeing that they need a proper teacher to show them how to use spells."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who said in Umbridge's first lesson about preparing themselves for what's waiting out there. He is also mentioned as beginning to talk about Lupin."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as saying that they can't do much by themselves and agreeing with Hermione that they need a proper teacher."
+    },
+    {
+      "name": "s.p.e.w.",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "S.P.E.W. is mentioned as the organization that usually inspires fervor in Hermione."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as the one whose first lesson Harry said something about preparing themselves for what's waiting out there."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as the one Hermione is not talking about and whom Harry begins to talk about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "s.p.e.w.",
+      "relationship_type": "inspires",
+      "description": "Hermione's face was suddenly alight with the kind of fervor that S.P.E.W. usually inspires in her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "mentioned_in_lesson",
+      "description": "Harry said something about preparing themselves for what's waiting out there in Umbridge's first lesson."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "agrees_with",
+      "description": "Ron agrees with Hermione that they need a proper teacher."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "begins_to_talk_about",
+      "description": "Harry begins to talk about Lupin."
+    }
+  ]
+}

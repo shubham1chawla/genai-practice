@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is sitting in the Great Hall and is being stared at by everyone."
+    },
+    {
+      "name": "eve ry",
+      "entity_type": "none",
+      "singular": false,
+      "description": "An adjective used to describe the heads in the Great Hall."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is sitting and everyone is staring at him."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who gets up from her seat to whisper something to Professor Dumbledore."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person sitting at the top table with Professor Karkaroff."
+    },
+    {
+      "name": "professor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is sitting at the top table with Ludo Bagman."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who is being whispered to by Professor McGonagall."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is sitting next to him in the Great Hall."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend, who is sitting next to Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "located_in",
+      "description": "Harry is sitting in the Great Hall."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "whispered_to",
+      "description": "Professor McGonagall whispers something to Professor Dumbledore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "sitting_next_to",
+      "description": "Harry is sitting next to Ron in the Great Hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "sitting_next_to",
+      "description": "Harry is also sitting next to Hermione."
+    }
+  ]
+}

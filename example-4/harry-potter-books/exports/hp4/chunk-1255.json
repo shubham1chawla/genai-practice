@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as being tied to a headstone."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, described as having long white fingers and red eyes."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is mentioned as lying twitching and bleeding on the ground."
+    },
+    {
+      "name": "the death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are not explicitly described in this passage but are mentioned as being associated with Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "attack",
+      "description": "Voldemort points his wand at Wormtail, lifting him off the ground and throwing him against a headstone."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "ignore",
+      "description": "Voldemort ignores Harry while examining his own body and interacting with Wormtail."
+    }
+  ]
+}

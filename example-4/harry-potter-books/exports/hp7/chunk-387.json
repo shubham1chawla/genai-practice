@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "regulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Regulus is mentioned as Harry's beloved, indicating a close relationship. (\"this time it was his beloved Regulus who sailed with him to the island\")"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is mentioned as being ordered by Regulus, indicating a master-slave relationship. (\"Master Regulus took from his pocket a locket... And he told Kreacher to take it\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is disgusted by the idea of drinking poison. (\"And he made you drink the poison? said Harry, disgusted.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's hands are mentioned as leaping to her mouth in surprise. (\"Hermione’s hands leapt to her mouth: She seemed to have understood something.\")"
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as having a locket similar to the one Regulus took. (\"Master Regulus took from his pocket a locket like the one the Dark Lord had\")"
+    },
+    {
+      "name": "basin of poison",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The basin of poison is mentioned as being on the island. (\"with its basin of poison.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "regulus",
+      "entity_2": "kreacher",
+      "relationship_type": "ordered",
+      "description": "Regulus ordered Kreacher to take a locket and switch it with the one in the basin. (\"And he told Kreacher to take it and, when the basin was empty, to switch the lockets\")"
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "basin of poison",
+      "relationship_type": "drank_from",
+      "description": "Regulus drank all the potion from the basin. (\"And he drank — all the potion — and Kreacher swapped the lockets\")"
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "basin of poison",
+      "relationship_type": "swapped_lockets_with",
+      "description": "Kreacher swapped the lockets with the one in the basin. (\"And he drank — all the potion — and Kreacher swapped the lockets\")"
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "dark lord",
+      "relationship_type": "similar_to",
+      "description": "Regulus took a locket similar to the one the Dark Lord had. (\"Master Regulus took from his pocket a locket like the one the Dark Lord had\")"
+    }
+  ]
+}

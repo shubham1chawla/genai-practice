@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat who has been knocked out and later goes back to sleep."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is picking up Scabbers by his tail and talking to Harry about Malfoy."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being talked to by Ron and has met Malfoy before."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "family",
+      "singular": true,
+      "description": "Malfoy's family is mentioned as one of the first to come back to the side after You-Know-Who disappeared."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is asking Ron and Harry if they need help with something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns",
+      "description": "Ron owns Scabbers, his pet rat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "met_before",
+      "description": "Harry has met Malfoy before in Diagon Alley."
+    }
+  ]
+}

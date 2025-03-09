@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "common room",
+      "entity_type": "room",
+      "singular": true,
+      "description": "A cosy, round room full of squashy armchairs. This is where Percy directed the girls and boys to go."
+    },
+    {
+      "name": "dormitory",
+      "entity_type": "dormitory",
+      "singular": true,
+      "description": "Percy directed the girls through one door to their dormitory, indicating it's a place for sleeping."
+    },
+    {
+      "name": "spirals staircase",
+      "entity_type": "staircase",
+      "singular": true,
+      "description": "At the top of a spiral staircase, they found their beds. This is how one gets to the dormitory or other rooms in the tower."
+    },
+    {
+      "name": "towers",
+      "entity_type": "tower",
+      "singular": false,
+      "description": "They were obviously in one of the towers, indicating that there are multiple towers and this is just one of them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "common room",
+      "entity_2": "dormitory",
+      "relationship_type": "location_of",
+      "description": "Percy directed the girls through one door to their dormitory from the common room, indicating that the dormitory is located in or near the common room."
+    },
+    {
+      "entity_1": "common room",
+      "entity_2": "spirals staircase",
+      "relationship_type": "location_of",
+      "description": "At the top of a spiral staircase, they found their beds. This indicates that the spiral staircase is located in or near the common room."
+    },
+    {
+      "entity_1": "dormitory",
+      "entity_2": "spirals staircase",
+      "relationship_type": "location_of",
+      "description": "Percy directed the girls through one door to their dormitory, and at the top of a spiral staircase, they found their beds. This indicates that the spiral staircase is located in or near the dormitory."
+    },
+    {
+      "entity_1": "spirals staircase",
+      "entity_2": "towers",
+      "relationship_type": "part_of",
+      "description": "They were obviously in one of the towers, and at the top of a spiral staircase, they found their beds. This indicates that the spiral staircase is part of or located within one of the towers."
+    }
+  ]
+}

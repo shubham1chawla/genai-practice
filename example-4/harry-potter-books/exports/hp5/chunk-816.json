@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is experiencing pain from his scar."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "coach",
+      "singular": true,
+      "description": "A coach who is leading a team in practice. She insists that the practice was not a waste of time despite her lack of conviction."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is experiencing pain from his bandaged legs."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who is also experiencing pain from his bandaged legs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "complains_with",
+      "description": "Harry can hear Fred complaining in low voices as he toweled his hair dry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "complains_with",
+      "description": "Harry can also hear George complaining in low voices as he toweled his hair dry."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry",
+      "relationship_type": "has_pain_comparable_to",
+      "description": "Fred says that a few of Harry's team members have ruptured, implying that their pain is comparable to his own."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "has_pain_comparable_to",
+      "description": "George also says that his pain is similar to Harry's, as his legs are throbbing and feeling bigger than usual."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "harry",
+      "relationship_type": "has_pain_comparable_to",
+      "description": "Angelina insists that the practice was not a waste of time, despite Harry's pain and discomfort."
+    }
+  ]
+}

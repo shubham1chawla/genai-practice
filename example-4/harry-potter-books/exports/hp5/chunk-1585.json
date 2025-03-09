@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who has been lost and is the subject of a sack by Umbridge. He is described as being a good teacher this year."
+    },
+    {
+      "name": "gryffindor common room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor common room is mentioned as a place where Harry, Ron, and Hermione went to find it full of people."
+    },
+    {
+      "name": "astronomy tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Astronomy Tower is mentioned as the place from which Seamus and Dean heard something that they were telling everyone in the Gryffindor common room."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who hates part-humans and is trying to sack Hagrid. She is also described as thinking that Hagrid was putting nifflers in her office."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is bitter about Umbridge's actions and thinks she always wanted to sack Hagrid."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is mentioned as one of the people who arrived ahead of Harry, Ron, and Hermione in the Gryffindor common room."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is mentioned as someone who arrived ahead of Harry, Ron, and Hermione in the Gryffindor common room."
+    },
+    {
+      "name": "angelina johnson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina Johnson is mentioned as someone who asked why Hagrid was being sacked."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is mentioned as someone whose teaching has been better than usual this year."
+    },
+    {
+      "name": "katie bell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie Bell is mentioned as someone who piped up with the information that Umbridge thought Hagrid was putting nifflers in her office."
+    },
+    {
+      "name": "lee jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee Jordan is mentioned as someone who said 'Oh blimey' when he heard about the nifflers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "hagrid",
+      "relationship_type": "sacked_by",
+      "description": "Umbridge is trying to sack Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "opposed_to",
+      "description": "Hermione is opposed to Umbridge's actions and thinks she always wanted to sack Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbridge",
+      "relationship_type": "target_of_sacking",
+      "description": "Hagrid is the target of Umbridge's sacking."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "hagrid",
+      "relationship_type": "teaches_better_than",
+      "description": "Trelawney teaches better than Hagrid this year."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is mentioned as being confused and wrong-footed, indicating that he is not sure what is going on."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts. She is mentioned as being serious and warning Harry to be careful."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "He-Who-Must-Not-Be-Named is a mysterious figure that Professor McGonagall mentions. It is likely a reference to Voldemort."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as having sent a note to Professor McGonagall, which she sets down."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "warning",
+      "description": "Professor McGonagall warns Harry to be careful. This is indicated by her serious tone of voice and the fact that she tells him to be careful."
+    },
+    {
+      "entity_1": "he-who-must-not-be-named",
+      "entity_2": "harry",
+      "relationship_type": "connection",
+      "description": "Professor McGonagall mentions He-Who-Must-Not-Be-Named in relation to Harry, indicating that there is a connection between the two."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor umbridge",
+      "relationship_type": "communication",
+      "description": "Professor McGonagall sets down Professor Umbridge's note, indicating that there is some form of communication between the two."
+    }
+  ]
+}

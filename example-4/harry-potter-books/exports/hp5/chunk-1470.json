@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as a person who bursts into the office, looking delighted and talking to himself feverishly. He is described as hobbling along faster than Harry had ever seen him go."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who dived for the Invisibility Cloak and followed Filch out of the office. He is described as making sure that he had his bag and the Invisibility Cloak was completely covering him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge's desk is mentioned, indicating that she is a person who has some kind of authority or power. However, her name is not explicitly mentioned in the context of being described as a person."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as an object that Harry dived for and used to cover himself. It is described as allowing him to move around undetected."
+    },
+    {
+      "name": "office door",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The office door is mentioned as a location where Filch bursts in and Harry follows him out of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "umbridge's desk",
+      "relationship_type": "accessed",
+      "description": "Filch is described as pulling open a drawer in Umbridge's desk and rifling through the papers inside it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "used",
+      "description": "Harry is described as using the Invisibility Cloak to cover himself before following Filch out of the office."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "office door",
+      "relationship_type": "burst_through",
+      "description": "Filch is described as bursting into the office through the door, looking delighted and talking to himself feverishly."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "office door",
+      "relationship_type": "followed",
+      "description": "Harry is described as following Filch out of the office after he burst through the door."
+    }
+  ]
+}

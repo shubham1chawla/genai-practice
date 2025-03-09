@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A potions teacher at Hogwarts who is known to be horrible to Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a student at Hogwarts."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is sitting next to Ron and Hermione in the stands."
+    },
+    {
+      "name": "philosopher’s stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry and his friends are trying to protect."
+    },
+    {
+      "name": "nimbus two thousand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick."
+    },
+    {
+      "name": "wood",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The Quidditch coach at Hogwarts who gives Harry a pep talk before the game."
+    },
+    {
+      "name": "harry’s friends",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students that includes Ron and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "follows",
+      "description": "Snape seems to be following Harry wherever he goes."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Ron and Hermione are friends of Harry's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "nimbus two thousand",
+      "relationship_type": "owns",
+      "description": "Harry owns the Nimbus Two Thousand broomstick."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "neville",
+      "relationship_type": "proximity",
+      "description": "Ron and Neville are sitting next to each other in the stands."
+    },
+    {
+      "entity_1": "harry’s friends",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "protects",
+      "description": "Harry's friends, including Ron and Hermione, are trying to protect the Philosopher's Stone."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "mentorship",
+      "description": "Wood is giving Harry a pep talk before the game."
+    }
+  ]
+}

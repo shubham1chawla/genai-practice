@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to cast spells with his new wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is afraid of spiders and tries to help Harry with his spellcasting."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A respected wizard mentioned by Ron as being young (although this is later revealed to be an error)."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a skilled witch who tries to help Harry with his spellcasting."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A creature that Ron is afraid of and Harry is trying to cast spells on."
+    },
+    {
+      "name": "blackthorn wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's new wand, which he is having trouble getting used to."
+    },
+    {
+      "name": "phoenix wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A wand that Harry has previously used and finds more powerful than his blackthorn wand."
+    },
+    {
+      "name": "dumbledore's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hermione's wand, which she broke earlier in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "blackthorn wand",
+      "relationship_type": "uses",
+      "description": "Harry is trying to cast spells with his new blackthorn wand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "spider",
+      "relationship_type": "afraid_of",
+      "description": "Ron is afraid of the spider that Harry is trying to cast spells on."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore's wand",
+      "relationship_type": "owns",
+      "description": "Hermione owns Dumbledore's wand, which she broke earlier in the story."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "phoenix wand",
+      "relationship_type": "prefers",
+      "description": "Harry prefers to use his phoenix wand over his blackthorn wand."
+    }
+  ]
+}

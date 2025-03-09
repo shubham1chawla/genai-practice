@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has never flown before and is nervous about it."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who is also nervous about flying and has had many accidents even on the ground."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is almost as nervous as Neville about flying and has tried to learn from books."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a Slytherin student who receives packages of sweets from home."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid sent Harry a note."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "similar_nervousness",
+      "description": "Both Harry and Neville are nervous about flying."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "neville",
+      "relationship_type": "helping",
+      "description": "Hermione is trying to help Neville with his flying skills."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "sent_note",
+      "description": "Hagrid sent Harry a note."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "home",
+      "relationship_type": "receives_packages",
+      "description": "Malfoy receives packages of sweets from home."
+    }
+  ]
+}

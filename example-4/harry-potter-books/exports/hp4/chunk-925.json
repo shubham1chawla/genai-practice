@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who has a magical eye that can whizz over the map. He is alarmed and interested in something on the map."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is a person who is being questioned by Moody about Crouch's whereabouts."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is a person whose absence has alarmed Moody and Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "potter",
+      "relationship_type": "questioning",
+      "description": "Moody asks Potter if he is sure that Crouch is not there."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "crouch",
+      "relationship_type": "concerned_about",
+      "description": "Moody is concerned about the absence of Crouch and finds it interesting."
+    }
+  ]
+}

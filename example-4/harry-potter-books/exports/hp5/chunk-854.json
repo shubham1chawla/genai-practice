@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as devising a method of communicating the time and date of the next meeting to all members. She is also mentioned as giving each member of the D.A. a fake Galleon."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as becoming excited when he saw the basket of fake Galleons."
+    },
+    {
+      "name": "d.a.",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The D.A. is mentioned as a group that Hermione and Ron are part of."
+    },
+    {
+      "name": "goblin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goblins are mentioned as being responsible for casting real Galleons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "d.a.",
+      "relationship_type": "member_of",
+      "description": "Hermione is a member of the D.A. group."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "d.a.",
+      "relationship_type": "member_of",
+      "description": "Ron is also a member of the D.A. group."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "goblin",
+      "relationship_type": "related_to",
+      "description": "Hermione mentions that real Galleons are cast by goblins."
+    }
+  ]
+}

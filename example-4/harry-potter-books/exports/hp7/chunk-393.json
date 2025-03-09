@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone Harry glances at for assistance. She is described as smiling encouragingly in response to a change in Harry's tone."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is the house-elf who is tasked with finding Mundungus Fletcher and bringing him to Grimmauld Place. He is described as dropping his fists and looking up at Harry when asked to perform this task."
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus Fletcher is a person who needs to be found by Kreacher in order for the work of Master Regulus to be finished. He is mentioned as someone who has information about the locket."
+    },
+    {
+      "name": "master regulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Master Regulus is a person whose work needs to be finished by Harry and his friends. He is mentioned as having placed a note in the locket for Voldemort."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid's purse contains a fake Horcrux, which is used by Harry to trick Kreacher into bringing Mundungus Fletcher to Grimmauld Place."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the person who has been deceived by Master Regulus's note in the locket."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "mundungus fletcher",
+      "relationship_type": "task_assignment",
+      "description": "Kreacher is tasked with finding Mundungus Fletcher and bringing him to Grimmauld Place."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "deception",
+      "description": "Harry uses a fake Horcrux to deceive Voldemort, who has been deceived by Master Regulus's note in the locket."
+    }
+  ]
+}

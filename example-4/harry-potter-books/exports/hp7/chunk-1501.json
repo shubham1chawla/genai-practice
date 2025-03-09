@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the previous owner of the wand. The text states that he never realized what he had done or that the world's most dangerous wand had given him its allegiance."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the current possessor of the Elder Wand. He is described as having a chest rise and fall rapidly, indicating that he is about to cast a curse."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who has taken the wand from Draco Malfoy. He is described as having overpowered Draco weeks ago and taken the wand."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as the previous possessor of the Elder Wand. Harry Potter has taken the wand from him."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is described as the world's most dangerous wand and is said to have given its allegiance to Dumbledore."
+    },
+    {
+      "name": "phoenix wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Phoenix Wand is mentioned as a separate wand that Harry Potter no longer has."
+    },
+    {
+      "name": "hawthorn wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Hawthorn Wand is described as the wand that Harry Potter is using to duel Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "possession",
+      "description": "Voldemort has possession of the Elder Wand, which he believes will give him power over Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "draco malfoy",
+      "relationship_type": "overpowered",
+      "description": "Harry Potter has overpowered Draco Malfoy and taken the wand from him."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "phoenix wand",
+      "relationship_type": "possession",
+      "description": "Voldemort believes that he will be able to attend to Draco Malfoy after he has killed Harry Potter, implying that he has possession of the Phoenix Wand."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hawthorn wand",
+      "relationship_type": "possession",
+      "description": "Harry Potter is using the Hawthorn Wand to duel Voldemort."
+    }
+  ]
+}

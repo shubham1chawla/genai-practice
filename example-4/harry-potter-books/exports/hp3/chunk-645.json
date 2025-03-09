@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who cannot be helped at the moment. (\"He had a moment’s indecision, but there was nothing they could do for Ron at the moment\")"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is in trouble and possibly injured. (\"by the sound of it, Black was in trouble —\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry sets off at a run to help Ron and Black. (\"Harry set oﬀ at a run, Hermione right behind him.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is running behind Harry to help them. (\"Hermione right behind him\")"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius has turned back into a man and is crouched on all fours, his hands over his head. (\"They saw why — Sirius had turned back into a man.\")"
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are mentioned as a group of creatures that are encircling Harry and Hermione. (\"at least a hundred of them, gliding in a black mass around the lake toward them.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "helping",
+      "description": "Harry is helping Ron by running to his aid. (\"He had a moment’s indecision, but there was nothing they could do for Ron at the moment\")"
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "harry",
+      "relationship_type": "injured_by",
+      "description": "Black is in trouble and possibly injured by something. (\"by the sound of it, Black was in trouble —\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "helping",
+      "description": "Harry is helping Hermione by running to her aid. (\"Hermione right behind him\")"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "dementors",
+      "relationship_type": "attacked_by",
+      "description": "Sirius has been attacked by Dementors and turned back into a man. (\"The yelping stopped abruptly. As they reached the lakeshore, they saw why — Sirius had turned back into a man.\")"
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry",
+      "relationship_type": "encircling",
+      "description": "Dementors are encircling Harry and Hermione. (\"at least a hundred of them, gliding in a black mass around the lake toward them.\")"
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "hermione",
+      "relationship_type": "encircling",
+      "description": "Dementors are encircling Harry and Hermione. (\"at least a hundred of them, gliding in a black mass around the lake toward them.\")"
+    }
+  ]
+}

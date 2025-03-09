@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "polyjuice potion",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "The Polyjuice Potion is mentioned as 161 in the text. It is a magical potion that allows the drinker to take on the appearance of someone else."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle's forehead and hairs are stolen by Harry and Ron. He has large feet."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron pulled out several of Crabbe's hairs and stole their shoes with Harry."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe's hairs are stolen by Harry and Ron. He has large feet."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry and Ron sprinted up to Moaning Myrtle's bathroom."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is stirring the cauldron in the cubicle. She is shiny-faced and looking anxious."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry knocked softly on the door with Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "polyjuice potion",
+      "entity_2": "crabbe",
+      "relationship_type": "target_of_transformation",
+      "description": "The Polyjuice Potion is used to transform Harry and Ron into Crabbe and Goyle."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "goyle",
+      "relationship_type": "transformation_target",
+      "description": "Harry drinks the Polyjuice Potion to become Goyle."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "crabbe",
+      "relationship_type": "transformation_target",
+      "description": "Ron drinks the Polyjuice Potion to become Crabbe."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "collaborator",
+      "description": "Harry and Hermione are working together to use the Polyjuice Potion."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "hermione granger",
+      "relationship_type": "collaborator",
+      "description": "Ron and Hermione are working together to use the Polyjuice Potion."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is called out by name and responds to Harry's question."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Cloak is mentioned as something that Luna needs to get under."
+    },
+    {
+      "name": "ravenclaws",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Ravenclaws are mentioned as a group of students who flood into the common room."
+    },
+    {
+      "name": "alecto",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alecto is lying unconscious in the common room and is prodded by a first-year student."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as closing his eyes and sinking into Voldemort's mind."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "luna",
+      "entity_2": "cloak",
+      "relationship_type": "has",
+      "description": "Luna needs to get under the Cloak."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "is_in_mind_of",
+      "description": "Harry is in Voldemort's mind."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is mentioned as a person who is pleased to report that the Mandrakes are becoming moody and secretive. (Text: 'Nick, and Madam Pomfrey was pleased to report...')"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as a person who is pleased to report that the Mandrakes are becoming moody and secretive. (Text: 'Nick, and Madam Pomfrey was pleased to report...')"
+    },
+    {
+      "name": "mandrakes",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "Mandrakes are mentioned as plants that are becoming moody and secretive. (Text: 'The Mandrakes were becoming moody and secretive...')"
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as a person who is being spoken to by Madam Pomfrey. (Text: 'her telling Filch kindly one afternoon')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the heir of Slytherin and a suspect in the Chamber of Secrets mystery. (Text: 'Perhaps the heir of Slytherin had lost his or her nerve...')"
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as a house at Hogwarts School. (Text: 'Perhaps the heir of Slytherin had lost his or her nerve...')"
+    },
+    {
+      "name": "ernie macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie Macmillan is mentioned as a person who believes Harry is guilty. (Text: 'Ernie Macmillan of Hufflepuff didn’t take this cheerful view...')"
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Hufflepuff is mentioned as a house at Hogwarts School. (Text: 'Ernie Macmillan of Hufflepuff didn’t take this cheerful view...')"
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is mentioned as a person who is causing trouble. (Text: 'Peeves wasn’t helping matters: he kept popping up in the crowded corridors...')"
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Norris is mentioned as a person who will be returned to normal after the Mandrakes are stewed. (Text: 'You’ll have Mrs Norris back in no time')"
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber of Secrets is mentioned as a mysterious location at Hogwarts School. (Text: 'It must be getting riskier and riskier to open the Chamber of Secrets...')"
+    },
+    {
+      "name": "monster",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "The monster is mentioned as an unknown creature that is causing trouble at Hogwarts School. (Text: 'Perhaps the monster, whatever it was, was even now settling itself down to hibernate...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "mandrakes",
+      "relationship_type": "care_for",
+      "description": "Madam Pomfrey is caring for the Mandrakes. (Text: 'Nick, and Madam Pomfrey was pleased to report that the Mandrakes were becoming moody and secretive')"
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "filch",
+      "relationship_type": "speak_to",
+      "description": "Madam Pomfrey is speaking to Filch. (Text: 'her telling Filch kindly one afternoon')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "belong_to",
+      "description": "Harry belongs to Slytherin house. (Text: 'Perhaps the heir of Slytherin had lost his or her nerve...')"
+    },
+    {
+      "entity_1": "ernie macmillan",
+      "entity_2": "hufflepuff",
+      "relationship_type": "belong_to",
+      "description": "Ernie Macmillan belongs to Hufflepuff house. (Text: 'Ernie Macmillan of Hufflepuff didn’t take this cheerful view...')"
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "harry",
+      "relationship_type": "cause_trouble_for",
+      "description": "Peeves is causing trouble for Harry. (Text: 'Peeves wasn’t helping matters: he kept popping up in the crowded corridors...')"
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "mrs norris",
+      "relationship_type": "care_for",
+      "description": "Madam Pomfrey is caring for Mrs Norris. (Text: 'You’ll have Mrs Norris back in no time')"
+    }
+  ]
+}

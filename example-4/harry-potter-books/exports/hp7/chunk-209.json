@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is the home of the Weasley family. It is mentioned that it was placed upon the Burrow by both the Order and the Ministry."
+    },
+    {
+      "name": "order",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Order is an organization that has placed something upon the Burrow."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is another organization that has placed something upon the Burrow."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Mr. Weasley is a member of the Weasley family. He is mentioned as going to meet the Delacours on top of a nearby hill."
+    },
+    {
+      "name": "delacour",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Delacours are a family that Mr. Weasley has gone to meet."
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Portkey is an object used for traveling by magic."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who has gone to meet the Delacours on top of a nearby hill."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "burrow",
+      "entity_2": "order",
+      "relationship_type": "placed_by",
+      "description": "The Order placed something upon the Burrow."
+    },
+    {
+      "entity_1": "burrow",
+      "entity_2": "ministry",
+      "relationship_type": "placed_by",
+      "description": "The Ministry also placed something upon the Burrow."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "delacour",
+      "relationship_type": "met",
+      "description": "Mr. Weasley has gone to meet the Delacours."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "portkey",
+      "relationship_type": "used_with",
+      "description": "A Portkey is used by Mr. Weasley for traveling by magic."
+    }
+  ]
+}

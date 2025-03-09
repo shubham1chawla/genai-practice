@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is trying to remember how to kill the Devil's Snare. He is struggling with the plant curling around his chest."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is trying to stop the plant from curling around his neck and is getting frustrated with Hermione's delay in killing it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is trying to remember how to kill the Devil's Snare, but is taking too long and causing Ron and Harry to struggle with the plant."
+    },
+    {
+      "name": "devil's snare",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "The Devil's Snare is a magical plant that likes the dark and damp, and is attacking Ron, Harry, and Hermione."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout taught her students about the Devil's Snare in class, including its preference for dark and damp environments."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione used bluebell flames to defend herself against Snape earlier, and is now using the same spell to kill the Devil's Snare."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "devil's snare",
+      "relationship_type": "attacked_by",
+      "description": "The Devil's Snare is attacking Harry, curling around his chest and making it hard for him to breathe."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "devil's snare",
+      "relationship_type": "attacked_by",
+      "description": "The Devil's Snare is also attacking Ron, curling around his neck and causing him to struggle."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "devil's snare",
+      "relationship_type": "defending_against",
+      "description": "Hermione is using her wand to defend against the Devil's Snare, sending a jet of bluebell flames at it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "helped_by",
+      "description": "Hermione is helping Harry by trying to remember how to kill the Devil's Snare, and eventually succeeds in killing it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "helped_by",
+      "description": "Hermione is also helping Ron by trying to remember how to kill the Devil's Snare, and eventually succeeds in killing it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor sprout",
+      "relationship_type": "informed_by",
+      "description": "Harry is informed about the Devil's Snare by Professor Sprout's teachings, which he remembers when trying to kill it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "defended_against",
+      "description": "Hermione defended herself against Snape earlier using bluebell flames, and is now using the same spell to kill the Devil's Snare."
+    }
+  ]
+}

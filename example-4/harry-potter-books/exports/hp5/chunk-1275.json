@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who asked if someone was attacked again and pulled Harry to his feet."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person who was attacked and has a scar on his forehead."
+    },
+    {
+      "name": "avery",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Avery is in trouble because he gave Rookwood the wrong information."
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rookwood is helping Avery and has told him that Bode couldn't have done it."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "entity",
+      "singular": true,
+      "description": "You-Know-Who is a Death Eater who escaped from Azkaban and was with Rookwood."
+    },
+    {
+      "name": "bode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bode couldn't have done it, according to Rookwood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rookwood",
+      "entity_2": "avery",
+      "relationship_type": "helps",
+      "description": "Rookwood is helping Avery because he gave him the wrong information."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "rookwood",
+      "relationship_type": "with",
+      "description": "You-Know-Who was with Rookwood, who is one of the Death Eaters who escaped from Azkaban."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "you-know-who",
+      "relationship_type": "was",
+      "description": "Harry was You-Know-Who, a Death Eater who escaped from Azkaban."
+    }
+  ]
+}

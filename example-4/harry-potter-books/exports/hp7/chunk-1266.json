@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "north battlements",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the giants are brought."
+    },
+    {
+      "name": "remus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is dueling Dolohov."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person being duelled by Remus."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is searching for Remus."
+    },
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has seen Dolohov duelling with Remus."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to reassure Tonks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to reassure Ginny and keep her safe."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is running back with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is running back with Ron and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "remus",
+      "relationship_type": "searching_for",
+      "description": "Tonks is searching for Remus."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "dolohov",
+      "relationship_type": "duelling_with",
+      "description": "Aberforth has seen Dolohov duelling with Remus."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "tonks",
+      "relationship_type": "reassuring",
+      "description": "Ginny is trying to reassure Tonks."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "reassuring",
+      "description": "Harry is trying to reassure Ginny."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "running_with",
+      "description": "Ron, Harry and Hermione are running back together."
+    }
+  ]
+}

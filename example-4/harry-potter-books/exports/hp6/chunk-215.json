@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being impressed by the Decoy Detonators."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is enthusiastic about their business and shows Harry the Instant Darkness Powder."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who points out the Decoy Detonators to Harry."
+    },
+    {
+      "name": "peru",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The country from which they are importing Instant Darkness Powder."
+    },
+    {
+      "name": "decody detonators",
+      "entity_type": "product",
+      "singular": false,
+      "description": "A product that makes a loud noise out of sight, giving the user a diversion."
+    },
+    {
+      "name": "instant darkness powder",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A product that creates instant darkness, useful for making a quick escape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "decody detonators",
+      "relationship_type": "has",
+      "description": "Harry is impressed by the Decoy Detonators and George shows them to him."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "instant darkness powder",
+      "relationship_type": "sells",
+      "description": "George shows Harry the Instant Darkness Powder, which they are importing from Peru."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "decody detonators",
+      "relationship_type": "shows",
+      "description": "Fred points out the Decoy Detonators to Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "george",
+      "relationship_type": "receives",
+      "description": "George throws the Decoy Detonators to Harry."
+    }
+  ]
+}

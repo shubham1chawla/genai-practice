@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is introducing a new Divination teacher."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry official who is questioning Dumbledore's decision to appoint a new Divination teacher."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of magic in the wizarding world. They have issued Educational Decree Twenty-two."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "umbridge",
+      "relationship_type": "disagreement",
+      "description": "Dumbledore and Umbridge are disagreeing about the appointment of a new Divination teacher."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ministry",
+      "relationship_type": "compliance",
+      "description": "Dumbledore is complying with Educational Decree Twenty-two by appointing a suitable candidate."
+    }
+  ]
+}

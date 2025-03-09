@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as a character who has access to a mysterious trunk. He is described as closing and opening the trunk multiple times, revealing different contents each time."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as a character who is watching Dumbledore open the trunk. He is described as being astounded by what he sees."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye Moody is introduced as a character who is lying on the floor of an underground room, apparently fast asleep and thin in appearance."
+    },
+    {
+      "name": "snakoscope",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Snakescopes are mentioned as being broken and contained in one of the compartments of the trunk."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An Invisibility Cloak is mentioned as looking like a silvery object contained in one of the compartments of the trunk."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "trunk",
+      "relationship_type": "has_access_to",
+      "description": "Dumbledore has access to the mysterious trunk, as he is able to close and open it multiple times."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "watches",
+      "description": "Harry watches Dumbledore as he opens the trunk and reveals its contents."
+    },
+    {
+      "entity_1": "mad-eye moody",
+      "entity_2": "underground_room",
+      "relationship_type": "is_in",
+      "description": "Mad-Eye Moody is lying on the floor of an underground room."
+    }
+  ]
+}

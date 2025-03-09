@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dark mark",
+      "entity_type": "physical_object",
+      "singular": true,
+      "description": "The Dark Mark is a symbol of the Death Eaters' allegiance to Voldemort. It is mentioned that it has been growing stronger for months."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are followers of Voldemort. They know that Harry Potter must be about to return."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a person who escaped like the narrator wants to do."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person that the Dark Lord thought was the narrator's man."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the Dark Lord who has been displeased with the narrator's lateness."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a person who sneers at the narrator and asks for useful information."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who conveys information directly to Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "follows",
+      "description": "The Death Eaters follow Voldemort."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "informs",
+      "description": "Snape conveys information directly to Voldemort."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "voldemort",
+      "relationship_type": "loyal_to",
+      "description": "Bellatrix is considered loyal to Voldemort by him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "thought_to_be_man_of",
+      "description": "Voldemort thought Dumbledore was the narrator's man."
+    }
+  ]
+}

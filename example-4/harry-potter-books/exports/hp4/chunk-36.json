@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a dark wizard who is mentioned as being close to Harry's scar in the past."
+    },
+    {
+      "name": "hogwarts school of witchcraft and wizardry",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts School of Witchcraft and Wizardry is a magical school that Harry attends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_connection_through_scar",
+      "description": "Harry's scar hurts when Voldemort is close by, indicating a connection between the two."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts school of witchcraft and wizardry",
+      "relationship_type": "student_of",
+      "description": "Harry attends Hogwarts School of Witchcraft and Wizardry."
+    }
+  ]
+}

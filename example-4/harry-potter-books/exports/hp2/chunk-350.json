@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "A house-elf who is bound to serve Harry's family."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and his friends attend."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, a student at Hogwarts."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object used in the sport of Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "master_servant",
+      "description": "Dobby is bound to serve Harry's family."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_school",
+      "description": "Harry attends Hogwarts as a student."
+    }
+  ]
+}

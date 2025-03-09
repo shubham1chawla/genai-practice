@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dawlish is mentioned as a person who seemed quite certain about something."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is mentioned as a person who is being assured by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who is assuring Yaxley."
+    },
+    {
+      "name": "auror office",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Auror Office is mentioned as an organization that will play no further part in the protection of Harry Potter."
+    },
+    {
+      "name": "order",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Order is mentioned as a group that believes they have infiltrated the Ministry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that has been infiltrated by The Order."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a person who is being protected by the Auror Office."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person who does not laugh at something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "yaxley",
+      "relationship_type": "assure",
+      "description": "Snape assures Yaxley that the Auror Office will play no further part in the protection of Harry Potter."
+    },
+    {
+      "entity_1": "order",
+      "entity_2": "ministry",
+      "relationship_type": "infiltrate",
+      "description": "The Order believes they have infiltrated the Ministry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "laughter",
+      "relationship_type": "not participate in",
+      "description": "Voldemort does not laugh at something."
+    }
+  ]
+}

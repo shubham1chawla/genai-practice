@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is looking for Professor Grubbly-Plank because his owl, Hedwig, is injured. He explains the situation to the second gargoyle."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is Harry's owl that has been injured and turned up after other post owls. Professor Grubbly-Plank examines her wing to determine the cause of injury."
+    },
+    {
+      "name": "professor grubbly-plank",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is a professor who appears at Professor McGonagall's shoulder, smoking a pipe and holding the Daily Prophet. She examines Hedwig's wing to determine the cause of injury."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is watching as Professor Grubbly-Plank examines Hedwig's wing. She appears at the shoulder of the second gargoyle."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "Hagrid has trained the Hogwarts thestrals not to touch owls, which is mentioned by Professor Grubbly-Plank as a possible explanation for Hedwig's injury."
+    },
+    {
+      "name": "thestrals",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Thestrals are creatures that may attack birds, but Hagrid has trained the Hogwarts thestrals not to touch owls."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owns",
+      "description": "Harry owns Hedwig, his owl that has been injured."
+    },
+    {
+      "entity_1": "professor grubbly-plank",
+      "entity_2": "hedwig",
+      "relationship_type": "examines",
+      "description": "Professor Grubbly-Plank examines Hedwig's wing to determine the cause of injury."
+    }
+  ]
+}

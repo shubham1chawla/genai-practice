@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who wears the Hocrux and has a scar that pricksles when Voldemort is thinking about something."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who asks Harry what he saw when Harry winces in pain."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a wizard who is thinking about an unknown youth with a gleeful face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_thoughts_of",
+      "description": "Voldemort's thoughts are affecting Harry's scar, causing it to prickles."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "asks_about",
+      "description": "Ron is asking Harry about what he saw when Harry winces in pain."
+    }
+  ]
+}

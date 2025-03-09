@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having sent a brown owl to Sirius."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is being teased by others about Viktor Krum missing her."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as someone Hermione is worried about missing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, whose ears turn red when he gets embarrassed."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who receives a letter from Harry via owl post."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "viktor krum",
+      "relationship_type": "missed_by",
+      "description": "Hermione is worried that Viktor Krum will miss her, implying a relationship between them."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "viktor krum",
+      "relationship_type": "worried_about_being_missed_by",
+      "description": "Hermione is worried that Viktor Krum will miss her, implying a relationship between them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "sent_letter_to",
+      "description": "Harry sent a letter to Sirius via owl post."
+    }
+  ]
+}

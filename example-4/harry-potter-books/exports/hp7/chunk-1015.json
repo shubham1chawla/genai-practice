@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's body is described as being in a tomb, with his spectacles still on his nose. His hands are folded over his chest, and the wand is clutched beneath them."
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as someone who would not be scared to violate Dumbledore's tomb and take the wand for themselves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the dark lord",
+      "relationship_type": "target_of_violation",
+      "description": "The Dark Lord is described as someone who would violate Dumbledore's tomb and take the wand for themselves."
+    },
+    {
+      "entity_1": "the dark lord",
+      "entity_2": "dumbledore",
+      "relationship_type": "violator",
+      "description": "The Dark Lord is described as someone who would violate Dumbledore's tomb and take the wand for themselves. This relationship is bidirectional, so we also have a 'violator' relationship from Dumbledore to the Dark Lord."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the wand",
+      "relationship_type": "owner",
+      "description": "Dumbledore's body is described as having the wand clutched beneath his hands, indicating that he was the owner of the wand."
+    },
+    {
+      "entity_1": "the dark lord",
+      "entity_2": "the wand",
+      "relationship_type": "target_of_desire",
+      "description": "The Dark Lord is described as someone who would take the wand for themselves, indicating that they desire to possess it."
+    }
+  ]
+}

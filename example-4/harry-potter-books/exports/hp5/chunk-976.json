@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is discussing his expulsion from a team."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the conversation, who is talking about the Beaters."
+    },
+    {
+      "name": "andrew kirke",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Beaters, mentioned by Alicia."
+    },
+    {
+      "name": "jack sloper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of the Beaters, mentioned by Alicia."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who arrives with Hermione and Neville, bringing an end to the discussion."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who arrives with Ron and Neville, bringing an end to the discussion."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who arrives with Ron and Hermione, bringing an end to the discussion."
+    },
+    {
+      "name": "the team",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group that Harry was expelled from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the team",
+      "relationship_type": "expelled_from",
+      "description": "Harry was expelled from the team."
+    },
+    {
+      "entity_1": "alicia",
+      "entity_2": "andrew kirke",
+      "relationship_type": "mentioned_with",
+      "description": "Alicia mentions Andrew Kirke in her conversation."
+    },
+    {
+      "entity_1": "alicia",
+      "entity_2": "jack sloper",
+      "relationship_type": "mentioned_with",
+      "description": "Alicia mentions Jack Sloper in her conversation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "arrived_with",
+      "description": "Ron arrives with Harry, Hermione, and Neville."
+    }
+  ]
+}

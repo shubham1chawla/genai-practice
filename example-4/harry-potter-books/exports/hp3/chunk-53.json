@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "trunk",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The trunk is a container that stores Harry's belongings. It is mentioned as being stored in a vault at Gringotts Wizarding Bank in London."
+    },
+    {
+      "name": "gringotts wizarding bank",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts Wizarding Bank is a financial institution that stores Harry's fortune. It is located in London."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "London is the location of Gringotts Wizarding Bank where Harry's vault is stored."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is an object that Harry has inherited from his father. It is used to make him invisible."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character of the story. He is trying to get his money out of his vault at Gringotts Wizarding Bank in London."
+    },
+    {
+      "name": "muggle police",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Muggle Police are a group of non-magical law enforcement officers. Harry is worried about explaining himself to them if he gets caught with his broomstick and spellbooks."
+    },
+    {
+      "name": "vault",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The vault is a secure storage facility at Gringotts Wizarding Bank where Harry's fortune is stored."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "trunk",
+      "relationship_type": "owns",
+      "description": "Harry owns the trunk, which contains his belongings and spellbooks."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "possesses",
+      "description": "Harry possesses the Invisibility Cloak, which he has inherited from his father."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "vault",
+      "relationship_type": "has_account_at",
+      "description": "Harry has an account at Gringotts Wizarding Bank where his vault is stored."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a student who is trying to locate someone. He points out a young woman with long hair to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is being pointed out to by Nick. He sees the Gray Lady and tries to talk to her."
+    },
+    {
+      "name": "gray lady",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "The Gray Lady is a ghost that Harry recognizes from passing in the corridor several times. She has long hair and a floor-length cloak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nick",
+      "entity_2": "gray lady",
+      "relationship_type": "pointed_out_to",
+      "description": "Nick points out the Gray Lady to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gray lady",
+      "relationship_type": "saw",
+      "description": "Harry sees the Gray Lady and tries to talk to her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gray lady",
+      "relationship_type": "recognized",
+      "description": "Harry recognizes the Gray Lady from passing in the corridor several times."
+    }
+  ]
+}

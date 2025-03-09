@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as receiving a note from Hagrid."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as reading the note and reacting to its contents."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as reading the note and reacting to its contents."
+    },
+    {
+      "name": "aragog",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A special creature that died last night, mentioned in Hagrid's note."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, who wrote the note to Harry and his friends."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character mentioned in the context of writing a letter that is difficult for Harry to read."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry and his friends to travel at night."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "aragog",
+      "relationship_type": "owned",
+      "description": "Hagrid mentions that Aragog died last night."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "cloak",
+      "relationship_type": "used_by",
+      "description": "Hagrid suggests using the Cloak to travel at night for the burial."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aragog",
+      "relationship_type": "knew",
+      "description": "Harry and Ron met Aragog, as mentioned in Hagrid's note."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "aragog",
+      "relationship_type": "would_have_known",
+      "description": "Hermione would have liked Aragog, according to Hagrid's note."
+    }
+  ]
+}

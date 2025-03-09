@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "septumsempra",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The spell is mentioned in the context of a homework assignment that Harry has to complete."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "Quidditch is being played outside, and Harry is unable to hear it while he's in the dungeons with Snape."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people walking down to the Quidditch pitch with Harry and Ginny."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as one of the people walking down to the Quidditch pitch with Harry and Ron."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is mentioned as the teacher who has assigned Harry a homework task related to the Septumsempra spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "septumsempra",
+      "entity_2": "snape",
+      "relationship_type": "assigned_by",
+      "description": "Snape has assigned Harry a homework task related to the Septumsempra spell."
+    },
+    {
+      "entity_1": "quidditch",
+      "entity_2": "harry",
+      "relationship_type": "unheard_by",
+      "description": "Harry is unable to hear the Quidditch game being played outside while he's in the dungeons with Snape."
+    }
+  ]
+}

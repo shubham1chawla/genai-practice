@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is one of the people in the room, described as getting into bed and falling silent."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is another person in the room, gazing fondly at his moonlit cactus."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people in the room, feeling shaken by an argument with Seamus."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another person in the room, putting his things away."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a person who had an argument with Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who believed Harry and announced his version of events to the whole school and wider Wizarding community."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Wizengamot is an organization that threw Dumbledore from their ranks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "seamus",
+      "relationship_type": "argument",
+      "description": "Harry had an argument with Seamus, who suggested Harry was lying or unhinged."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wizengamot",
+      "relationship_type": "exclusion",
+      "description": "The Wizengamot threw Dumbledore from their ranks."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "collaboration",
+      "description": "Dumbledore believed Harry and announced his version of events to the whole school and wider Wizarding community."
+    },
+    {
+      "entity_1": "wizengamot",
+      "entity_2": "dumbledore",
+      "relationship_type": "exclusion",
+      "description": "The Wizengamot threw Dumbledore from their ranks."
+    }
+  ]
+}

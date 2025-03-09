@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is described as a thin, balding, red-haired man who wears horn-rimmed glasses. He is the husband of Mrs. Weasley and has an eldest son named Bill."
+    },
+    {
+      "name": "bill weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is described as Mr. Weasley's eldest son, who still wears his long hair in a ponytail."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is mentioned as someone who might have made Harry come via Greenland, but it is not clear if he is present at the meeting."
+    },
+    {
+      "name": "greenland",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Greenland is mentioned as a possible route that Mad-Eye might have made Harry take."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "bill weasley",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is described as the husband of Mrs. Weasley and has an eldest son named Bill, indicating a parent-child relationship."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mad-eye",
+      "relationship_type": "acquaintance",
+      "description": "Mr. Weasley is mentioned as talking quietly with Mad-Eye at the end of the table, indicating an acquaintance relationship."
+    },
+    {
+      "entity_1": "bill weasley",
+      "entity_2": "mr weasley",
+      "relationship_type": "child_parent",
+      "description": "Bill is described as Mr. Weasley's eldest son, indicating a child-parent relationship in the reverse direction."
+    }
+  ]
+}

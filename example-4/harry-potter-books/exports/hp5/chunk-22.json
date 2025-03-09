@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is sitting on a swing and thinking about Sirius and Voldemort."
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is telling Harry to sit tight and be good, implying that he has some authority over Harry."
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who has returned."
+    },
+    {
+      "name": "Daily Prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper that Harry is tempted to write to and point out Voldemort's return."
+    },
+    {
+      "name": "park railings",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The boundaries of the park where Harry is sitting."
+    },
+    {
+      "name": "road beyond the park railings",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location outside the park where traffic can be heard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Sirius",
+      "relationship_type": "authority_over",
+      "description": "Sirius has authority over Harry, as evidenced by Sirius telling him to sit tight and be good."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Voldemort",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Voldemort's return, as evidenced by his thoughts about writing to the Daily Prophet."
+    }
+  ]
+}

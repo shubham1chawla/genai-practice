@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as having a window where Macnair's face appeared."
+    },
+    {
+      "name": "macnair",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Macnair is mentioned as having a face that appeared at Hagrid's window and is supposed to listen to the official notice of execution."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is mentioned as being in the pumpkin patch and is referred to as the condemned hippogriﬀ."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as reading the official notice of execution and giving instructions to Hagrid and Macnair."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being with Harry and told to wait there by him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "macnair",
+      "relationship_type": "supervision",
+      "description": "Macnair is supposed to listen to the official notice of execution as per procedure, indicating that Hagrid is supervising Macnair."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "hagrid",
+      "relationship_type": "instruction",
+      "description": "Fudge gives instructions to Hagrid regarding the official notice of execution and signing it."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "macnair",
+      "relationship_type": "instruction",
+      "description": "Fudge also gives instructions to Macnair regarding listening to the official notice of execution."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "buckbeak",
+      "relationship_type": "rescue",
+      "description": "Harry is trying to rescue Buckbeak by untying it from the fence."
+    }
+  ]
+}

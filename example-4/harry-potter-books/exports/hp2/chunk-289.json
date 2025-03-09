@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'him'. The text describes Harry's actions and interactions with other characters."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as being in the library. Ron is described as being measured by someone else."
+    },
+    {
+      "name": "justin finch-fletchley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hufflepuff boy from Herbology class, who catches sight of Harry and speeds off in the opposite direction."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Ron is found measuring something, and where Harry meets Justin."
+    },
+    {
+      "name": "herbology",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "A class that Justin Finch-Fletchley attends, mentioned as his affiliation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "met",
+      "description": "Harry meets Ron in the library. The text states 'Harry found Ron at the back of the library'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "justin finch-fletchley",
+      "relationship_type": "saw",
+      "description": "Harry sees Justin Finch-Fletchley coming towards him, but before he can say hello, Justin speeds off in the opposite direction."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "library",
+      "relationship_type": "located_in",
+      "description": "Ron is found measuring something at the back of the library."
+    },
+    {
+      "entity_1": "justin finch-fletchley",
+      "entity_2": "harry",
+      "relationship_type": "saw",
+      "description": "Justin Finch-Fletchley catches sight of Harry and speeds off in the opposite direction."
+    },
+    {
+      "entity_1": "justin finch-fletchley",
+      "entity_2": "herbology",
+      "relationship_type": "student_of",
+      "description": "Justin Finch-Fletchley is described as a Hufflepuff boy from Herbology class."
+    }
+  ]
+}

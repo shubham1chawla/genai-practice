@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "priori incantatem",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "a spell that conjures the spirits of Voldemort's past victims"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "a group of dark wizards and witches who follow Voldemort"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "the main antagonist of the story, a dark wizard"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "the protagonist of the story, a young wizard"
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a character who was killed by Voldemort in the past"
+    },
+    {
+      "name": "bertha",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a woman whose ghost appears to Harry"
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, mentioned by his mother's ghost"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "priori incantatem",
+      "entity_2": "voldemort",
+      "relationship_type": "conjured_by",
+      "description": "Priori Incantatem conjures the spirits of Voldemort's past victims"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "voldemort",
+      "relationship_type": "followers_of",
+      "description": "Death Eaters follow and support Voldemort"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "priori incantatem",
+      "relationship_type": "affected_by",
+      "description": "Harry is affected by the Priori Incantatem spell"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "cedric",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Cedric in the past"
+    },
+    {
+      "entity_1": "bertha",
+      "entity_2": "harry potter",
+      "relationship_type": "appeared_to",
+      "description": "Bertha's ghost appears to Harry"
+    },
+    {
+      "entity_1": "james potter",
+      "entity_2": "harry potter",
+      "relationship_type": "father_of",
+      "description": "James is the father of Harry"
+    }
+  ]
+}

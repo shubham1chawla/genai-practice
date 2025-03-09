@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is the daughter of Mr. Lovegood. She was bitten by a gnome."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry bid farewell to the wizards and turned to his daughter Luna."
+    },
+    {
+      "name": "mr lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Lovegood examined Luna's finger and said that gnome saliva is beneficial."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is Luna's father."
+    },
+    {
+      "name": "gnomes",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Gnomes bit Harry and Luna."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "parent_child",
+      "description": "Harry is the parent of Luna."
+    },
+    {
+      "entity_1": "mr lovegood",
+      "entity_2": "luna",
+      "relationship_type": "father_daughter",
+      "description": "Mr. Lovegood is the father of Luna."
+    },
+    {
+      "entity_1": "gnomes",
+      "entity_2": "harry",
+      "relationship_type": "attacker_defender",
+      "description": "Gnomes attacked Harry."
+    },
+    {
+      "entity_1": "gnomes",
+      "entity_2": "luna",
+      "relationship_type": "attacker_defender",
+      "description": "Gnomes attacked Luna."
+    },
+    {
+      "entity_1": "mr lovegood",
+      "entity_2": "gnome saliva",
+      "relationship_type": "beneficiary",
+      "description": "Mr. Lovegood said that gnome saliva is beneficial."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "gernumblies",
+      "relationship_type": "gifted_by",
+      "description": "Luna may have been gifted by the Gernumblies."
+    }
+  ]
+}

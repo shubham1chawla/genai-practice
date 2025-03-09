@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having a worst memory. The text does not provide further information about this memory."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is introduced as the new Headmistress of Hogwarts. She has asked the Minister to sign an order for the expulsion of Peeves."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Peeves is mentioned as a ghost who is being expelled by Umbridge."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is mentioned as someone who has been won over by Umbridge. He has knowledge of the school's secret passages and hiding places."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is introduced as a student who is visiting Professor Umbridge."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "students",
+      "singular": false,
+      "description": "The Weasley twins are mentioned as having knowledge of the school's secret passages and hiding places."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's Firebolt is mentioned as being in Umbridge's office."
+    },
+    {
+      "name": "fred and george weasley",
+      "entity_type": "students",
+      "singular": false,
+      "description": "Fred and George Weasley are mentioned as having a Clean Sweep."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "peeves",
+      "relationship_type": "expulsion",
+      "description": "Umbridge has asked the Minister to sign an order for the expulsion of Peeves."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "umbridge",
+      "relationship_type": "alliance",
+      "description": "Filch has been won over by Umbridge and will probably prove an important weapon in her plans."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "umbridge",
+      "relationship_type": "visit",
+      "description": "Harry Potter is visiting Professor Umbridge."
+    },
+    {
+      "entity_1": "weasley twins",
+      "entity_2": "filch",
+      "relationship_type": "similarity",
+      "description": "The Weasley twins have knowledge of the school's secret passages and hiding places, just like Filch."
+    }
+  ]
+}

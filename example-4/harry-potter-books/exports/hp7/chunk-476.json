@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "reg cattermole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Reg Cattermole is mentioned on a label in the back."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is under the Invisibility Cloak and has to wait for Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron reappears with Hermione after waiting for ten minutes."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who tells Harry to wait and later returns with Ron."
+    },
+    {
+      "name": "mafalda",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Mafalda is described as Stunned."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher laundered old robes for Harry, Ron, and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "wait_for",
+      "description": "Harry has to wait for Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "return_with",
+      "description": "Ron returns with Hermione after waiting for ten minutes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "kreacher",
+      "relationship_type": "receive_robes_from",
+      "description": "Harry receives robes from Kreacher."
+    }
+  ]
+}

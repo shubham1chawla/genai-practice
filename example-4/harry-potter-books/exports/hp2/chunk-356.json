@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "rogue bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The rogue Bludger is described as wearing a long woolly dressing gown and a nightcap, suggesting it has taken on human-like appearance. It was carrying one end of what looked like a statue."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as whispering to Professor McGonagall and Madam Pomfrey, indicating he is in charge or has knowledge about the situation. He says 'Another attack' and 'Minerva found him on the stairs.'"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as being called by Dumbledore and arriving at Harry's bedside. She asks 'What happened?' and bends over the statue on the bed."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as appearing with Professor Dumbledore and carrying one end of what looked like a statue. She says 'There was a bunch of grapes next to him'."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as lying on his bed, pretending to be asleep. He hears urgent voices and sees Madam Pomfrey arriving at his bedside."
+    },
+    {
+      "name": "minerva",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Minerva is mentioned by Dumbledore as the one who found Harry on the stairs."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is mentioned by Professor McGonagall as the person the rogue Bludger was trying to sneak up to visit."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rogue bludger",
+      "entity_2": "harry potter",
+      "relationship_type": "targeted_by",
+      "description": "The rogue Bludger is described as being targeted at Harry Potter, with Professor McGonagall saying 'We think he was trying to sneak up here to visit Potter.'"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "informed",
+      "description": "Dumbledore is described as informing Madam Pomfrey about the situation, with Madam Pomfrey asking 'What happened?'"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "dumbledore",
+      "relationship_type": "informed_by",
+      "description": "Professor McGonagall is described as being informed by Dumbledore about the situation."
+    }
+  ]
+}

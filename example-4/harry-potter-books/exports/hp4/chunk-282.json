@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ottery st catchpole",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The lane where Harry and his friends are walking towards the Burrow."
+    },
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry's home, located in the countryside."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "A wizarding newspaper that reports on current events and news."
+    },
+    {
+      "name": "dark mark",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "A symbol of the Dark Arts, used by Lord Voldemort to intimidate and terrorize others."
+    },
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "An international Quidditch tournament that has been disrupted by dark magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ottery st catchpole",
+      "entity_2": "burrow",
+      "relationship_type": "location_of",
+      "description": "The lane where Harry and his friends are walking towards the Burrow, which is located in that area."
+    },
+    {
+      "entity_1": "daily prophet",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "reported_on",
+      "description": "The Daily Prophet newspaper reports on the scenes of terror at the Quidditch World Cup, as seen in its headline and photograph."
+    },
+    {
+      "entity_1": "dark mark",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "associated_with",
+      "description": "The Dark Mark is associated with the disruption of the Quidditch World Cup, as seen in the newspaper headline and photograph."
+    }
+  ]
+}

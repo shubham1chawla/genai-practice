@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "daily prophet",
+      "entity_type": "news_source",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a news source that reported on the events surrounding Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being voted out of the Chairmanship of the International Confederation of Wizards and demoted from Chief Warlock. He also has an Order of Merlin, First Class."
+    },
+    {
+      "name": "ministry wizards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Ministry wizards are mentioned as voting Dumbledore out of the Chairmanship of the International Confederation of Wizards."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as being announced to return by Dumbledore in a speech."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as making a joke about Dumbledore not wanting to be taken off the Chocolate Frog cards."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as being serious and concerned about the situation with Dumbledore."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a possible place where Dumbledore could end up if he continues to defy the Ministry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ministry wizards",
+      "relationship_type": "voted_out_by",
+      "description": "Dumbledore was voted out of the Chairmanship of the International Confederation of Wizards by the Ministry wizards."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "chief warlock",
+      "relationship_type": "demoted_from",
+      "description": "Dumbledore was demoted from Chief Warlock on the Wizen-gamot."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "announced_return_by",
+      "description": "Voldemort's return was announced by Dumbledore in a speech."
+    },
+    {
+      "entity_1": "azkaban",
+      "entity_2": "dumbledore",
+      "relationship_type": "possible_imprisonment_of",
+      "description": "Dumbledore could end up in Azkaban if he continues to defy the Ministry."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned in the context of revenging himself upon his father."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is having a conversation with someone else about Morfin's confession and memory."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The uncle of Harry Potter, who confessed to the crime but had a real memory in him all the time."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "morfin",
+      "relationship_type": "visited",
+      "description": "Dumbledore visited Morfin in the last weeks of his life."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "morfin",
+      "relationship_type": "extracted_memory",
+      "description": "Dumbledore extracted a memory from Morfin with difficulty."
+    }
+  ]
+}

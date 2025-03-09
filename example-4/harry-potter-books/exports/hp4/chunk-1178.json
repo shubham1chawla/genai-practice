@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape's face is mentioned as being on the surface again."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore glances down into Snape's face and then up at Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as looking into Dumbledore's eyes and asking a question."
+    },
+    {
+      "name": "volde-mort",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Volde-mort is mentioned as the one Snape supposedly stopped supporting."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville's parents are mentioned by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "interaction",
+      "description": "Dumbledore glances down into Snape's face."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "volde-mort",
+      "relationship_type": "inquiry",
+      "description": "Harry asks Dumbledore why he thinks Snape stopped supporting Volde-mort."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "neville",
+      "relationship_type": "advice",
+      "description": "Dumbledore advises Harry not to speak about Neville's parents."
+    }
+  ]
+}

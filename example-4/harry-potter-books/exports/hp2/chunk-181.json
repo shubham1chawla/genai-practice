@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's hand narrowly missed Harry's glasses as it shot up again."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's hand narrowly missed Harry's glasses as it shot up again."
+    },
+    {
+      "name": "mandrake",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "The cry of the Mandrake is fatal to anyone who hears it,"
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "‘Precisely . Take another ten points,’ said Professor Sprout."
+    },
+    {
+      "name": "earmuffs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Everyone take a pair of earmuffs,"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "almost_hit",
+      "description": "Hermione’s hand narrowly missed Harry’s glasses as it shot up again."
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "mandrake",
+      "relationship_type": "has",
+      "description": "‘The Mandrakes we have here are still very young.’"
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "earmuffs",
+      "relationship_type": "distributes",
+      "description": "Everyone take a pair of earmuffs,"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mandrake",
+      "relationship_type": "unaware_of",
+      "description": "They looked quite unremarkable to Harry , who didn’t have the slightest idea what Hermione meant by the ‘cry’ of the Mandrake."
+    }
+  ]
+}

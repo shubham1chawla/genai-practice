@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "homework",
+      "entity_type": "assignment",
+      "singular": true,
+      "description": "The speaker mentions having loads of homework to do."
+    },
+    {
+      "name": "boys",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of boys are mentioned as the speaker leaves them."
+    },
+    {
+      "name": "stairs",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the speaker goes is described as the boys' stairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "homework",
+      "entity_2": "speaker",
+      "relationship_type": "has",
+      "description": "The speaker has loads of homework to do."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "boys",
+      "relationship_type": "leaves",
+      "description": "The speaker leaves the boys behind."
+    }
+  ]
+}

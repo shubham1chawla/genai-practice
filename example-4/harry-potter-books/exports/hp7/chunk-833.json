@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends."
+    },
+    {
+      "name": "She",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends (Hermione)."
+    },
+    {
+      "name": "Xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is describing a cloak."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends (also referred to as 'she')."
+    },
+    {
+      "name": "Mr. Lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being questioned by Xenophilius."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Xenophilius",
+      "relationship_type": "glanced_at",
+      "description": "Harry glanced at Xenophilius."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Xenophilius",
+      "relationship_type": "glanced_at",
+      "description": "Ron glanced at Xenophilius."
+    },
+    {
+      "entity_1": "She",
+      "entity_2": "Xenophilius",
+      "relationship_type": "glanced_at",
+      "description": "Hermione (referred to as 'she') glanced at Xenophilius."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron",
+      "relationship_type": "shared_thought",
+      "description": "Harry and Ron shared the same thought."
+    },
+    {
+      "entity_1": "Xenophilius",
+      "entity_2": "Hermione",
+      "relationship_type": "questioned",
+      "description": "Xenophilius questioned Hermione."
+    },
+    {
+      "entity_1": "Mr. Lovegood",
+      "entity_2": "Xenophilius",
+      "relationship_type": "responded_to_question",
+      "description": "Mr. Lovegood responded to Xenophilius's question."
+    }
+  ]
+}

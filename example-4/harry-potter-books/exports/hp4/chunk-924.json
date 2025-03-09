@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a professor who is helping Harry with his problem. He is described as drawing the Marauders Map out of his pocket and unfolding it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is in pain due to a trick step. He is trying to get help from Professor Moody."
+    },
+    {
+      "name": "marauders map",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Marauders Map is a magical object that shows the layout of Hogwarts. It is described as being unfolded by Professor Moody."
+    },
+    {
+      "name": "harr y",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harr y is another person who is present in the scene and is hoping to get pulled out of the staircase soon."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a professor whose office was broken into. His name is mentioned by Professor Moody."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is the person who broke into Snape's office. His name is mentioned by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "marauders map",
+      "relationship_type": "has",
+      "description": "Moody has the Marauders Map, which he unfolds to examine it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crouch",
+      "relationship_type": "saw",
+      "description": "Harry saw Crouch break into Snape's office on the Marauders Map."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "snape",
+      "relationship_type": "concerned about",
+      "description": "Moody is concerned about Snape's office being broken into, as mentioned by him to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "helped by",
+      "description": "Harry gets help from Moody in getting his leg free from the trick step."
+    }
+  ]
+}

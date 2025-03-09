@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is mentioned as speaking and giving orders."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is described as gazing at Voldemort breathless and imploring."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy's wand is mentioned."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is asked by Voldemort if he recognizes the guest."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as a group."
+    },
+    {
+      "name": "the dark lord ascending",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book 'The Dark Lord Ascending' is mentioned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "bellatrix",
+      "relationship_type": "gaze_at",
+      "description": "Bellatrix gazes at Voldemort breathless and imploring."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "own",
+      "description": "Voldemort raises Lucius Malfoy's wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus snape",
+      "relationship_type": "ask",
+      "description": "Voldemort asks Snape if he recognizes the guest."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "lead",
+      "description": "The Death Eaters are mentioned as a group led by Voldemort."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "voldemort",
+      "relationship_type": "look_up_to",
+      "description": "Bellatrix looks up to Voldemort with gratitude."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "voldemort",
+      "relationship_type": "belong_to",
+      "description": "Lucius Malfoy's wand is mentioned as belonging to Voldemort."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "death eaters",
+      "relationship_type": "part_of",
+      "description": "Snape is part of the Death Eaters group."
+    }
+  ]
+}

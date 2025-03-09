@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "wall",
+      "entity_type": "wall",
+      "singular": true,
+      "description": "The wall above the dustbin where Harry is counting bricks."
+    },
+    {
+      "name": "bricks",
+      "entity_type": "bricks",
+      "singular": false,
+      "description": "Bricks in the wall that Harry is counting."
+    },
+    {
+      "name": "umbrella",
+      "entity_type": "umbrella",
+      "singular": true,
+      "description": "Harry's umbrella used to tap the wall."
+    },
+    {
+      "name": "dustbin",
+      "entity_type": "dustbin",
+      "singular": true,
+      "description": "A dustbin below the wall where Harry is counting bricks."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is counting bricks in the wall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wall",
+      "entity_2": "bricks",
+      "relationship_type": "contains",
+      "description": "The wall contains the bricks that Harry is counting."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbrella",
+      "relationship_type": "uses",
+      "description": "Harry uses his umbrella to tap the wall."
+    },
+    {
+      "entity_1": "wall",
+      "entity_2": "dustbin",
+      "relationship_type": "above",
+      "description": "The wall is above the dustbin."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wall",
+      "relationship_type": "is_counting_bricks_in",
+      "description": "Harry is counting bricks in the wall."
+    }
+  ]
+}

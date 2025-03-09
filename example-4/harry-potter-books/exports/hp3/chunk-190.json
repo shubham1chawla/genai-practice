@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who can see what Hagrid means and approaches the fence cautiously."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper who explains about hippogriffs and their behavior."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who approaches the fence cautiously along with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who approaches the fence cautiously along with Ron and Harry."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student who is talking in an undertone with Crabbe and Goyle."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is a student who is talking in an undertone with Malfoy and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a student who is talking in an undertone with Malfoy and Crabbe."
+    },
+    {
+      "name": "hippogriffs",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Hippogriffs are half horse, half bird creatures that Hagrid explains about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "understands",
+      "description": "Harry can see what Hagrid means and understands his explanation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hippogriffs",
+      "relationship_type": "approaches",
+      "description": "Ron approaches the fence cautiously along with Harry and Hermione, towards the hippogriffs."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hippogriffs",
+      "relationship_type": "approaches",
+      "description": "Hermione approaches the fence cautiously along with Ron and Harry, towards the hippogriffs."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hippogriffs",
+      "relationship_type": "teaches",
+      "description": "Hagrid explains about hippogriffs and their behavior to the students."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "talks_to",
+      "description": "Malfoy is talking in an undertone with Crabbe and Goyle."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "talks_to",
+      "description": "Malfoy is talking in an undertone with Crabbe and Goyle."
+    }
+  ]
+}

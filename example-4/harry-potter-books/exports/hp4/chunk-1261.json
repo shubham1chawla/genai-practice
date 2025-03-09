@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who follow Voldemort, described as 'hardly believ[ing] their eyes' when they see him standing in silence."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, described as standing in silence and waiting for the Death Eaters."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as having a grave that is enclosed by the circle of Death Eaters."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as being present in the circle with Voldemort and Wormtail."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Described as a 'sobbing and twitching heap' that is part of the circle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "leader_followers",
+      "description": "Voldemort is the leader of the Death Eaters, who follow him and show their loyalty by kissing his robes."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "tom riddle",
+      "relationship_type": "followers_grave_of_leader",
+      "description": "The Death Eaters form a circle around Tom Riddle's grave, showing their respect for their leader."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "enemy_enemy",
+      "description": "Voldemort and Harry are enemies, as indicated by the presence of both in the same circle."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "wormtail",
+      "relationship_type": "followers_comrade_in_crime",
+      "description": "The Death Eaters form a circle around Wormtail, who is described as part of their group."
+    }
+  ]
+}

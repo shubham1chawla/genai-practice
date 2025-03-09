@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as sitting around Mr. Weasley and having a conversation."
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who tried to put a hex on Harry Potter when he had his back turned."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is having tea with Harry Potter and his friends."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Mr. Weasley's sons, eager to know if he found anything."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Mr. Weasley's sons, asking a question about the shrinking door-keys."
+    },
+    {
+      "name": "mortlake",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who was taken away for questioning about some extremely odd ferrets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "conversation_participant",
+      "description": "Mr. Weasley and Harry Potter are having a conversation with each other."
+    },
+    {
+      "entity_1": "mundungus fletcher",
+      "entity_2": "harry potter",
+      "relationship_type": "attempted_hex",
+      "description": "Mundungus Fletcher tried to put a hex on Harry Potter."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "fred",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is the parent of Fred."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "george",
+      "relationship_type": "parent_child",
+      "description": "Mr. Weasley is the parent of George."
+    },
+    {
+      "entity_1": "mortlake",
+      "entity_2": "committee_on_experimental_charms",
+      "relationship_type": "involved_in",
+      "description": "Mortlake was involved in something with the Committee on Experimental Charms."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "committee_on_experimental_charms",
+      "relationship_type": "related_to",
+      "description": "Mr. Weasley is related to the Committee on Experimental Charms through Mortlake's involvement."
+    }
+  ]
+}

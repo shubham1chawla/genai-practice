@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is described as having a desk with a potion on it. He is also mentioned to be smiling at Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being in the class and reacting to Slughorn's question."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as letting out an audible gasp when she hears about Felix Felicis."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned to be giving Slughorn his full attention."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "Felix Felicis is described as a potion that makes you lucky."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "has_attention_of",
+      "description": "Slughorn has the attention of Harry."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "hermione",
+      "relationship_type": "is_talking_to",
+      "description": "Slughorn is talking to Hermione about Felix Felicis."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "has_attention_of",
+      "description": "Harry has the attention of Malfoy."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "felix felicis",
+      "relationship_type": "has",
+      "description": "Slughorn has Felix Felicis."
+    }
+  ]
+}

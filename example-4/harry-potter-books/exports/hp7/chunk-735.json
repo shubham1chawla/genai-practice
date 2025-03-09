@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "she",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being spoken to by him."
+    },
+    {
+      "name": "him",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is speaking and dismissing her."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the conversation as someone who cared."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "him",
+      "entity_2": "she",
+      "relationship_type": "dismissal",
+      "description": "He dismisses her by telling her to get back into the tent."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "him",
+      "relationship_type": "cared_for",
+      "description": "Him wishes that Dumbledore had really cared for him."
+    }
+  ]
+}

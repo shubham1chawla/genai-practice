@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is described as taking over the watch at midnight. She is also mentioned as reading a book by the light of a wand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's dreams are confused and disturbing, and he wakes up repeatedly thinking that someone has called out to him."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Nagini is mentioned as weaving in and out of Harry's dreams."
+    },
+    {
+      "name": "sneakoscope",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sneakoscope is described as silent and motionless on the table."
+    },
+    {
+      "name": "a history of magic",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Hermione is reading this book by the light of a wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nagini",
+      "relationship_type": "dreams_about",
+      "description": "Nagini weaves in and out of Harry's dreams."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "a history of magic",
+      "relationship_type": "reading",
+      "description": "Hermione is reading this book by the light of a wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sneakoscope",
+      "relationship_type": "observes",
+      "description": "Harry glances at the silent, motionless Sneakoscope on the table."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Hermione greets Harry's suggestion of packing up early and moving on with relief."
+    }
+  ]
+}

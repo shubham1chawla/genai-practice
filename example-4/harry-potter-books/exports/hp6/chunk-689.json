@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is rummaging through a cupboard for Bezoars."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is overseeing the task and calling out to students."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who is trying to finish her antidote before Slughorn reaches her."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who has given up on the task and is trying to avoid breathing in the fumes from his cauldron."
+    },
+    {
+      "name": "bezoars",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A type of antidote that Harry is searching for."
+    },
+    {
+      "name": "unicorn horns",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects that Harry pushes aside while rummaging through the cupboard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bezoars",
+      "relationship_type": "searches_for",
+      "description": "Harry is searching for Bezoars in the cupboard."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "slughorn",
+      "relationship_type": "interacts_with",
+      "description": "Harry is interacting with Slughorn as he calls out to students."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "slughorn",
+      "relationship_type": "interacts_with",
+      "description": "Hermione is interacting with Slughorn as he approaches her."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "cauldron",
+      "relationship_type": "has_problem_with",
+      "description": "Ron has a problem with his cauldron, which is emitting putrid fumes."
+    }
+  ]
+}

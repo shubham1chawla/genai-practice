@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who has come to the conclusion about Hokey's involvement in the death."
+    },
+    {
+      "name": "hokey",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Hokey is a house-elf who is accused of putting poison in her mistress's cocoa."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who modified Hokey's memory to take the blame for the death."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is a person whose memory was also modified by Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hokey",
+      "relationship_type": "conclusion",
+      "description": "Dumbledore concludes that Hokey's memory was modified by Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "hokey",
+      "relationship_type": "modification",
+      "description": "Voldemort modified Hokey's memory to take the blame for the death."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "morfin",
+      "relationship_type": "comparison",
+      "description": "Dumbledore compares Hokey's case with Morfin's, where Voldemort also modified their memories."
+    }
+  ]
+}

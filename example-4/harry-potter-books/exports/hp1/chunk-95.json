@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as a character in the story, specifically mentioned as being hungry and not knowing who Hagrid is. (\"He passed the sausages to Harry, who was so hungry he had never tasted anything so wonderful... Finally, as nobody seemed about to explain anything, he said, 'I'm sorry, but I still don't really know who you are.'\")"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as a giant and the Keeper of Keys at Hogwarts. (\"Call me Hagrid,' he said, 'everyone does. An' like I told yeh, I'm Keeper of Keys at Hogwarts - yeh'll know all about Hogwarts, o' course.')"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as Uncle Vernon's son. (\"Uncle Vernon said sharply, 'Don't touch anything he gives you, Dudley.'\")"
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vernon is introduced as Harry's uncle. (\"Uncle Vernon said sharply, 'Don't touch anything he gives you, Dudley.')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts is mentioned as a school that Hagrid is the Keeper of Keys for. (\"An' like I told yeh, I'm Keeper of Keys at Hogwarts - yeh'll know all about Hogwarts, o' course.')"
+    },
+    {
+      "name": "keys",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The keys are mentioned as something that Hagrid is the Keeper of. (\"Call me Hagrid,' he said, 'everyone does. An' like I told yeh, I'm Keeper of Keys at Hogwarts - yeh'll know all about Hogwarts, o' course.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "keys",
+      "relationship_type": "keeper_of",
+      "description": "Hagrid is the Keeper of Keys. (\"Call me Hagrid,' he said, 'everyone does. An' like I told yeh, I'm Keeper of Keys at Hogwarts - yeh'll know all about Hogwarts, o' course.')"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hogwarts",
+      "relationship_type": "keeper_of",
+      "description": "Hagrid is the Keeper of Keys at Hogwarts. (\"Call me Hagrid,' he said, 'everyone does. An' like I told yeh, I'm Keeper of Keys at Hogwarts - yeh'll know all about Hogwarts, o' course.')"
+    },
+    {
+      "entity_1": "vernon",
+      "entity_2": "dudley",
+      "relationship_type": "parent_of",
+      "description": "Vernon is Dudley's parent. (\"Uncle Vernon said sharply, 'Don't touch anything he gives you, Dudley.'\")"
+    }
+  ]
+}

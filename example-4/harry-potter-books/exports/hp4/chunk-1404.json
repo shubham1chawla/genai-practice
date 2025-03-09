@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who had previously stated that Snape was their spy. He stands up at the staff table and addresses the students."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a person who had been a spy for Dumbledore and had turned against Voldemort. Harry wonders if he has made contact with the Death Eaters again."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a student who is thinking about Snape's actions and motivations."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the main antagonist who had been defeated by Dumbledore and his allies."
+    },
+    {
+      "name": "hufflepuff table",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Hufflepuff table is mentioned as a group of students who are subdued and sad."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "had_spy",
+      "description": "Dumbledore had stated that Snape was their spy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "was_thinking_about",
+      "description": "Harry is thinking about Snape's actions and motivations."
+    }
+  ]
+}

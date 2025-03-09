@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a character who has been mentioned throughout the story. He is talking to Harry and then later to Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character who is being discussed by Snape and Dumbledore. He is leaving his aunt and uncle's house."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is a character who is giving instructions to Snape. He wants Snape to give Voldemort the correct date of Harry's departure."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "gives_instructions",
+      "description": "Dumbledore gives instructions to Snape on how to handle Voldemort and ensure Harry's safety."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "informs",
+      "description": "Snape is informed by Dumbledore that he needs to give Voldemort the correct date of Harry's departure."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Minister is mentioned as speaking to the Prime Minister about bringing highly dangerous creatures into the country. (\"and Control of Magical Creatures tells me that it’s down in the rulebook that we have to notify you if we’re bringing highly dangerous creatures into the country.\")"
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as being surprised by the news of dragons and a sphinx being brought into the country. (\"‘I – what – dragons?’ spluttered the Prime Minister.\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "Fudge is mentioned as the Minister who brings news of highly dangerous creatures and a mass breakout from Azkaban. (\"‘Yes, three,’ said Fudge. ‘And a sphinx. Well, good day to you.’\")"
+    },
+    {
+      "name": "dragons",
+      "entity_type": "magical_creature",
+      "singular": false,
+      "description": "Dragons are mentioned as being brought into the country by Fudge. (\"‘Yes, three,’ said Fudge. ‘And a sphinx. Well, good day to you.’\")"
+    },
+    {
+      "name": "sphinx",
+      "entity_type": "magical_creature",
+      "singular": true,
+      "description": "A sphinx is mentioned as being brought into the country by Fudge. (\"‘Yes, three,’ said Fudge. ‘And a sphinx. Well, good day to you.’\")"
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "prison",
+      "singular": true,
+      "description": "Azkaban is mentioned as being the location of a mass breakout. (\"this time with the news that there had been a mass breakout from Azkaban.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "dragons",
+      "relationship_type": "brought_into_country",
+      "description": "Fudge brings dragons into the country. (\"‘Yes, three,’ said Fudge. ‘And a sphinx. Well, good day to you.’\")"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "sphinx",
+      "relationship_type": "brought_into_country",
+      "description": "Fudge brings a sphinx into the country. (\"‘Yes, three,’ said Fudge. ‘And a sphinx. Well, good day to you.’\")"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "azkaban",
+      "relationship_type": "reported_mass_breakout_from",
+      "description": "Fudge reports a mass breakout from Azkaban. (\"this time with the news that there had been a mass breakout from Azkaban.\")"
+    }
+  ]
+}

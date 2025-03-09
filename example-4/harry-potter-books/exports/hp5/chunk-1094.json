@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as a character who is tied to his family's house."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a character who contradicts Sirius."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is mentioned as a house-elf who left the Malfoys' to give Harry warnings."
+    },
+    {
+      "name": "malfoys'",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Malfoys are mentioned as Sirius's family and Dobby's former owners."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "malfoys'",
+      "relationship_type": "former_owner",
+      "description": "Dobby was a house-elf of the Malfoys'."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry",
+      "relationship_type": "helper",
+      "description": "Dobby gave Harry warnings."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "malfoys'",
+      "relationship_type": "family_member",
+      "description": "Sirius is tied to his family's house, implying he is a member of the Malfoys' family."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "beneficiary",
+      "description": "Harry received warnings from Dobby."
+    }
+  ]
+}

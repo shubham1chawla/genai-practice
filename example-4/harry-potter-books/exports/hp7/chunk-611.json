@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as resuming his pacing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, suggesting places where the object might be left."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A village near Hogwarts, suggested by Hermione as a possible location."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and his friends attend, ruled out as a possible location."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as knowing how to get into the Shrieking Shack."
+    },
+    {
+      "name": "shrieking shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in Hogsmeade that is rarely visited, but Snape knows how to enter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "exclusion",
+      "description": "Harry rules out Hogwarts as a possible location for the object."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hogsmeade",
+      "relationship_type": "suggestion",
+      "description": "Hermione suggests Hogsmeade as a possible location for the object."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "shrieking shack",
+      "relationship_type": "accessibility",
+      "description": "Snape knows how to get into the Shrieking Shack."
+    }
+  ]
+}

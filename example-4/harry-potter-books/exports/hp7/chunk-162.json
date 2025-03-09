@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is described as stopping at the gate and staring out at the garden."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A wise and knowledgeable character who would have believed Harry's story. He is mentioned as having explained the connection between Harry's wand and Voldemort's."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who, like Dumbledore, Sirius, and Harry's parents, is gone where Harry can never talk to them again."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who, like Dumbledore, Mad-Eye, and Harry's parents, is gone where Harry can never talk to them again."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The antagonist of the story. He has a connection with Harry's wand."
+    },
+    {
+      "name": "harry's parents",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry's parents are mentioned as being gone where he can never talk to them again."
+    },
+    {
+      "name": "voldemort's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wand of the antagonist Voldemort."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand is mentioned as acting independently and having a connection with Voldemort's wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "would_believe",
+      "description": "Dumbledore would have believed Harry's story. This is described in the text as 'he knew it'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "explained_connection",
+      "description": "Dumbledore explained the connection between Harry's wand and Voldemort's wand to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "connected_by_wand",
+      "description": "Harry's wand is connected with Voldemort's wand. This is described in the text as 'the strange connection that existed between his wand and Voldemort's'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "missed",
+      "description": "Harry missed Dumbledore, who is gone where he can never talk to him again. This is described in the text as 'But Dumbledore, like Mad-Eye, like Sirius, like his parents, like his poor owl, all were gone'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mad-eye",
+      "relationship_type": "missed",
+      "description": "Harry missed Mad-Eye, who is gone where he can never talk to him again. This is described in the text as 'But Dumbledore, like Mad-Eye, like Sirius, like his parents, like his poor owl, all were gone'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "missed",
+      "description": "Harry missed Sirius, who is gone where he can never talk to him again. This is described in the text as 'But Dumbledore, like Mad-Eye, like Sirius, like his parents, like his poor owl, all were gone'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "opponent",
+      "description": "Harry and Voldemort are opponents. This is implied by the context of the story."
+    }
+  ]
+}

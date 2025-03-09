@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story"
+    },
+    {
+      "name": "Hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry and gives a yell"
+    },
+    {
+      "name": "Order members",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Members of an organization called the Order"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hagrid",
+      "relationship_type": "accompanying",
+      "description": "Harry is with Hagrid when they are surrounded by hooded figures"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Order members",
+      "relationship_type": "surrounded_by",
+      "description": "Harry and others are surrounded by Order members"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "ministry",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The place where Harry and his friends are considering going, described as a dangerous location."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, who suggests going to the Ministry tomorrow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "harry",
+      "relationship_type": "location_visited_by",
+      "description": "Harry is planning to visit the Ministry, which is described as a dangerous location."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "visited_by",
+      "description": "Inverse relationship of 'location_visited_by', indicating that Harry will be visiting the Ministry."
+    }
+  ]
+}

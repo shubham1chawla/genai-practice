@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is discussing the possibility of Harry being in Hogsmeade."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as a character who is skeptical about Harry's whereabouts and has been informed by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who has notified the Ministry about Crouch's disappearance."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as someone who has gone missing and the Ministry will be looking for him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as an investigator and someone who has managed to get through difficult tasks before."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as someone Harry left the maze with the previous night."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is mentioned as a possible location where Harry might be."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "dumbledore",
+      "relationship_type": "informed_by",
+      "description": "Moody has been informed by Dumbledore about Crouch's disappearance."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "krum",
+      "relationship_type": "left_with",
+      "description": "Harry left the maze with Krum the previous night."
+    }
+  ]
+}

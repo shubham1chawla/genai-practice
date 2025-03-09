@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid's bag was being carried by Harry."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall stopped outside a classroom and interacted with other characters."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Flitwick was teaching a class when Professor McGonagall asked to borrow Wood for a moment."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is a burly fifth-year boy who was being sought out by Professor McGonagall as a Seeker."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves was writing rude words on the blackboard and was asked to leave the classroom by Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "flitwick",
+      "relationship_type": "asked_to_borrow",
+      "description": "Professor McGonagall asked to borrow Wood from Professor Flitwick's class."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "wood",
+      "relationship_type": "found_seeker",
+      "description": "Professor McGonagall found Oliver Wood as a Seeker."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "peeves",
+      "relationship_type": "asked_to_leave",
+      "description": "Professor McGonagall asked Peeves to leave the classroom."
+    }
+  ]
+}

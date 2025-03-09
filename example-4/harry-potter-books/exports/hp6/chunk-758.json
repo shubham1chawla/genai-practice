@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hufflepuff",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Mentioned as one of the teams playing Quidditch. (‘Seventy–forty to Hufflepuff!’)"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Mentioned as one of the teams playing Quidditch. (‘Oh, look! The Gryffindor Keeper’s got hold of one of the Beater’s bats.’)"
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as using a megaphone to communicate with Professor McGonagall. (‘Seventy–forty to Hufflepuff!’ barked Professor McGonagall into Luna’s megaphone.)"
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as a professor who is communicating with the teams playing Quidditch. (‘Seventy–forty to Hufflepuff!’ barked Professor McGonagall into Luna’s megaphone.)"
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as taking a bat from Peakes and demonstrating how to hit a Bludger. (Harry spun round in midair. Sure enough, McLaggen, for reasons best known to himself, had pulled Peakes’s bat from him and appeared to be demonstrating how to hit a Bludger towards an oncoming Cadwallader.)"
+    },
+    {
+      "name": "peakes",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as having his bat taken by McLaggen. (Harry spun round in midair. Sure enough, McLaggen, for reasons best known to himself, had pulled Peakes’s bat from him and appeared to be demonstrating how to hit a Bludger towards an oncoming Cadwallader.)"
+    },
+    {
+      "name": "cadwallader",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as being the target of McLaggen's demonstration. (Harry spun round in midair. Sure enough, McLaggen, for reasons best known to himself, had pulled Peakes’s bat from him and appeared to be demonstrating how to hit a Bludger towards an oncoming Cadwallader.)"
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Mentioned as being hit by McLaggen. (McLaggen took a ferocious swipe at the Bludger and mis-hit it.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "peakes",
+      "relationship_type": "took_bat_from",
+      "description": "Mentioned as taking Peakes's bat. (Harry spun round in midair. Sure enough, McLaggen, for reasons best known to himself, had pulled Peakes’s bat from him and appeared to be demonstrating how to hit a Bludger towards an oncoming Cadwallader.)"
+    },
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "cadwallader",
+      "relationship_type": "demonstrated_on",
+      "description": "Mentioned as demonstrating how to hit a Bludger on Cadwallader. (Harry spun round in midair. Sure enough, McLaggen, for reasons best known to himself, had pulled Peakes’s bat from him and appeared to be demonstrating how to hit a Bludger towards an oncoming Cadwallader.)"
+    },
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "bludger",
+      "relationship_type": "hit",
+      "description": "Mentioned as hitting the Bludger. (McLaggen took a ferocious swipe at the Bludger and mis-hit it.)"
+    }
+  ]
+}

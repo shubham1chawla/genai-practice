@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who is gesturing in the kitchen."
+    },
+    {
+      "name": "kitchen",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The kitchen is a location where Moody is gesturing."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Aunt is a person who will be going separate ways with Harry and uncle."
+    },
+    {
+      "name": "uncle",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Uncle is a person who will be going separate ways with Harry and aunt."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is nodding in agreement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "kitchen",
+      "relationship_type": "located_in",
+      "description": "Moody is located in the kitchen."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt",
+      "relationship_type": "related_to",
+      "description": "Harry and his aunt are related to each other."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle",
+      "relationship_type": "related_to",
+      "description": "Harry and his uncle are related to each other."
+    }
+  ]
+}

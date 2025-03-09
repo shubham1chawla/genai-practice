@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "the beetle at bay",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of the story being told."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "The main character in the story, a young wizard."
+    },
+    {
+      "name": "galleon",
+      "entity_type": "currency",
+      "singular": true,
+      "description": "A type of currency used by wizards."
+    },
+    {
+      "name": "cho",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A female character in the story, a friend of Harry's."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A male character in the story, mentioned as being discussed by Cho."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A female character in the story, a friend of Harry's."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, a large and friendly man."
+    },
+    {
+      "name": "the three broomsticks",
+      "entity_type": "pub_name",
+      "singular": true,
+      "description": "A pub in the wizarding world where Harry meets Hagrid."
+    },
+    {
+      "name": "women",
+      "entity_type": "group_name",
+      "singular": false,
+      "description": "A general term for female characters in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "left_with",
+      "description": "Harry and Cho were together at some point before she left him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "mentioned_together",
+      "description": "Cho mentioned Cedric to Harry, causing tension between them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "planned_to_meet",
+      "description": "Harry was planning to meet Hermione at the Three Broomsticks."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "met_at_pub",
+      "description": "Harry met Hagrid at the Three Broomsticks."
+    }
+  ]
+}

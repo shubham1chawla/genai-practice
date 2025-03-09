@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "skelegro",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "a potion mentioned in the text as something Harry might have swallowed when he was young"
+    },
+    {
+      "name": "professor grubbly-plank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "the professor who is teaching a lesson to the students and talking about the unicorn's magical properties"
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a student in the class who expresses hope that Professor Grubbly-Plank stays"
+    },
+    {
+      "name": "unicorn",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "a magical creature being described by Professor Grubbly-Plank"
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "a newspaper article that Harry is holding and staring at unseeingly"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "skelegro",
+      "relationship_type": "consumed",
+      "description": "Harry might have swallowed Skele-Gro when he was young, as mentioned in the text"
+    },
+    {
+      "entity_1": "professor grubbly-plank",
+      "entity_2": "unicorn",
+      "relationship_type": "describing",
+      "description": "Professor Grubbly-Plank is describing the unicorn's magical properties to the students"
+    },
+    {
+      "entity_1": "parvati patil",
+      "entity_2": "professor grubbly-plank",
+      "relationship_type": "expressing hope for",
+      "description": "Parvati Patil expresses hope that Professor Grubbly-Plank stays"
+    }
+  ]
+}

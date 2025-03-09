@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "house of gaunt",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The House of Gaunt is mentioned as the residence of Mr. Gaunt and his son Morfin. It is described as a place where Ogden visits to see someone."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is introduced as the son of Mr. Gaunt. He is described as having an odd rolling gait and slamming the front door behind him when he leaves the house."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is introduced as a visitor to the House of Gaunt. He is described as being pure-blood and having a certain respect for Ogden."
+    },
+    {
+      "name": "mr gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Gaunt is introduced as the father of Morfin. He is described as an old man who seems to be aggressive towards Ogden."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "house of gaunt",
+      "relationship_type": "visited",
+      "description": "Ogden visits the House of Gaunt."
+    },
+    {
+      "entity_1": "morfin",
+      "entity_2": "house of gaunt",
+      "relationship_type": "resides",
+      "description": "Morfin resides in the House of Gaunt."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "mr gaunt",
+      "relationship_type": "visited",
+      "description": "Ogden visits Mr. Gaunt at his residence, the House of Gaunt."
+    },
+    {
+      "entity_1": "mr gaunt",
+      "entity_2": "morfin",
+      "relationship_type": "parent_of",
+      "description": "Mr. Gaunt is the parent of Morfin."
+    }
+  ]
+}

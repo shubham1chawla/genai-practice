@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Umbridge, mentioned as 'Potter' in the text."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as backing up Umbridge's actions, described as having 'the might' behind her."
+    },
+    {
+      "name": "floos",
+      "entity_type": "magical_network",
+      "singular": false,
+      "description": "The Floo Network Regulator is monitoring the fireplaces in Hogwarts, except for Umbridge's own."
+    },
+    {
+      "name": "inquisitorial_squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Umbridge mentions her Inquisitorial Squad opening and reading all owl post entering and leaving the castle."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Filch is observing secret passages in and out of the castle, mentioned by Umbridge."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator of the story, who takes advantage of the distraction to empty his tea cup into a vase."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person speaking in the text, mentioned as having an Inquisitorial Squad and monitoring communication channels."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "umbridge",
+      "relationship_type": "support",
+      "description": "The Ministry stands behind Umbridge, backing up her actions."
+    },
+    {
+      "entity_1": "floos",
+      "entity_2": "harry",
+      "relationship_type": "monitoring",
+      "description": "The Floo Network Regulator is monitoring the fireplaces in Hogwarts, except for Umbridge's own (implied to be related to Harry)."
+    },
+    {
+      "entity_1": "inquisitorial_squad",
+      "entity_2": "umbridge",
+      "relationship_type": "affiliation",
+      "description": "Umbridge mentions her Inquisitorial Squad, implying they are affiliated with her."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "umbridge",
+      "relationship_type": "collaboration",
+      "description": "Mr. Filch is observing secret passages in and out of the castle at Umbridge's behest."
+    }
+  ]
+}

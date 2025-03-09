@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the main character who threw her book aside. She is described as still being pink in the face."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person mentioned in the text, standing up and facing Hermione deﬁantly."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a person who agrees with Hermione's opinion about the broom."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is a person mentioned in the text as possibly sending the broom to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who received the broom."
+    },
+    {
+      "name": "broom",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The broom is an object that was sent to Harry by Sirius Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "agree",
+      "description": "Hermione and Professor McGonagall agree on the opinion about the broom."
+    },
+    {
+      "entity_1": "sirius black",
+      "entity_2": "harry",
+      "relationship_type": "send",
+      "description": "Sirius Black sent the broom to Harry."
+    }
+  ]
+}

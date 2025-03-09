@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story"
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist and a powerful wizard"
+    },
+    {
+      "name": "Dark Mark",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A symbol or mark that is associated with Voldemort"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Voldemort",
+      "relationship_type": "has_connection_through_dark_mark",
+      "description": "The Dark Mark has a connection to both Harry and Voldemort, as it causes Harry's scar to react when touched."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Dark Mark",
+      "relationship_type": "is_connected_to",
+      "description": "The Dark Mark is connected to Harry through his scar."
+    },
+    {
+      "entity_1": "Voldemort",
+      "entity_2": "Dark Mark",
+      "relationship_type": "is_associated_with",
+      "description": "The Dark Mark is associated with Voldemort, as it causes him to feel a summons when touched."
+    }
+  ]
+}

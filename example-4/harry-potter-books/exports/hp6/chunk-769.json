@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry Potter' multiple times. (Excerpt: 'Dobby will do it, Harry Potter!')"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Hogwarts staff member, mentioned as being in her office and having a spell cast to prevent her from hearing the commotion. (Excerpt: 'glancing towards Madam Pomfrey’s office door')"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is bound to serve Harry's family, mentioned as being ashamed of his master. (Excerpt: 'Kreacher will do whatever Master wants')"
+    },
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is eager to help Harry Potter and is willing to take on a task for him. (Excerpt: 'Dobby would be honoured to help Harry Potter!')"
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Hogwarts student mentioned as being the target of Harry's request to be tailed. (Excerpt: 'I want you to tail Draco Malfoy.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "has_office",
+      "description": "Harry checks if Madam Pomfrey's office is still working, implying that she has an office. (Excerpt: 'glancing towards Madam Pomfrey’s office door')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kreacher",
+      "relationship_type": "has_slave",
+      "description": "Kreacher is bound to serve Harry's family, implying that Harry has a slave-like relationship with Kreacher. (Excerpt: 'Kreacher will do whatever Master wants')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "has_helper",
+      "description": "Dobby is eager to help Harry and is willing to take on a task for him, implying that Dobby is a helper of Harry. (Excerpt: 'Dobby will do it, Harry Potter!')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "draco malfoy",
+      "relationship_type": "is_target_of_surveillance",
+      "description": "Harry asks Kreacher and Dobby to tail Draco Malfoy, implying that Draco is the target of surveillance. (Excerpt: 'I want you to tail Draco Malfoy.')"
+    }
+  ]
+}

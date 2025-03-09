@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is part of the conversation about where they might commence their search. She is referred to by name in the text."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is having difficulty gathering his thoughts due to his scar. He is referred to by name in the text."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who left a job for Harry, Hermione, and another person (not specified). He is referred to by name in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "left_job_for",
+      "description": "Dumbledore left a job for Harry. This relationship is described in the text as Dumbledore leaving 'a job' for the three of them, and Harry specifically mentions that it was for him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "shared_job_with",
+      "description": "Harry and Hermione share a job left by Dumbledore. This relationship is described in the text as Dumbledore leaving 'a job' for the three of them, and Harry specifically mentions that they were supposed to do it together."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as having a birthday party and being the recipient of gifts from Aunt Marge. He is also described as watching Harry being bullied by Uncle Vernon."
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is mentioned as attending Dudley's birthday party and giving him a computerized robot. She is also described as having a favorite dog named Ripper."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being beaten by Aunt Marge with her walking stick at his fifth birthday party. He is also described as accidentally trodding on the tail of Aunt Marge's favorite dog and being chased out into the garden."
+    },
+    {
+      "name": "ripper",
+      "entity_type": "dog",
+      "singular": true,
+      "description": "Ripper is mentioned as Aunt Marge's favorite dog that chases Harry out into the garden."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as threatening to get things straight with Harry before collecting Aunt Marge. He is also described as bullying Harry in front of Dudley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aunt marge",
+      "entity_2": "dudley",
+      "relationship_type": "gifted",
+      "description": "Aunt Marge gives a computerized robot to Dudley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ripper",
+      "relationship_type": "chased_by",
+      "description": "Ripper chases Harry out into the garden."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "bullied",
+      "description": "Uncle Vernon bullies Harry in front of Dudley."
+    }
+  ]
+}

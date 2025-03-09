@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "scarhead",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Malfoy is standing, described as 'there'."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student, mentioned by name and action (shooting underneath Scarhead)."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned by name and action (avoiding a Bludger)."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A heavy black ball used in Quidditch, described as 'pelt[ing] towards him'."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's brother, mentioned by name and action (streaking past Harry with a club)."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A Quidditch team, mentioned as the target of George's actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "bludger",
+      "relationship_type": "hit",
+      "description": "George hits the Bludger with his club to knock it back towards Slytherin."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "scarhead",
+      "relationship_type": "location",
+      "description": "Malfoy is standing at Scarhead, as indicated by Malfoy's action of shooting underneath it."
+    }
+  ]
+}

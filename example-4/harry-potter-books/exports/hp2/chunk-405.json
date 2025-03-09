@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a poltergeist who zoomed away backwards with his tongue out at Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character in the story."
+    },
+    {
+      "name": "justin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Justin was carried up to the hospital wing by Professor Flitwick and Professor Sinistra."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Flitwick is a professor who helped carry Justin to the hospital wing."
+    },
+    {
+      "name": "professor sinistra",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Sinistra is a professor from the Astronomy department who helped carry Justin to the hospital wing."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Nearly Headless Nick was being fanned up the stairs by Ernie."
+    },
+    {
+      "name": "ernie",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ernie was given a fan by Professor McGonagall to waft Nearly Headless Nick up the stairs."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor McGonagall is a professor who gave Ernie a fan and led Harry around a corner."
+    },
+    {
+      "name": "sherbet lemon",
+      "entity_type": "password",
+      "singular": true,
+      "description": "Sherbet lemon was the password to unlock the gargoyle."
+    },
+    {
+      "name": "gargoyle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The gargoyle sprang to life and hopped aside when Professor McGonagall said 'sherbet lemon'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "zoomed_away_from",
+      "description": "Peeves zoomed away backwards with his tongue out at Harry."
+    },
+    {
+      "entity_1": "justin",
+      "entity_2": "professor flitwick",
+      "relationship_type": "carried_by",
+      "description": "Justin was carried up to the hospital wing by Professor Flitwick and Professor Sinistra."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "ernie",
+      "relationship_type": "being_fanned_up_the_stairs_by",
+      "description": "Ernie was given a fan by Professor McGonagall to waft Nearly Headless Nick up the stairs."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "led_by",
+      "description": "Professor McGonagall led Harry around a corner."
+    },
+    {
+      "entity_1": "sherbet lemon",
+      "entity_2": "gargoyle",
+      "relationship_type": "unlocked_with_password",
+      "description": "Sherbet lemon was the password to unlock the gargoyle."
+    }
+  ]
+}

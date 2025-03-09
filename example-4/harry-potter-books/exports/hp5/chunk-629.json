@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is a student at Hogwarts who is playing Quidditch. She has her hands outstretched to catch the ball but it hits her in the face instead."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts who is playing Quidditch and passes the ball to Katie, hitting her in the face."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a teacher or coach of the team that Katie and Ron are playing for. She gives instructions to the players."
+    },
+    {
+      "name": "bludgers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Bludgers are objects used in Quidditch that can knock players off their brooms."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "katie",
+      "relationship_type": "hit",
+      "description": "Ron hits Katie with the ball, causing her to bleed from the nose."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "ron",
+      "relationship_type": "order",
+      "description": "Angelina orders Ron to get back in position and not knock Katie off her broom."
+    }
+  ]
+}

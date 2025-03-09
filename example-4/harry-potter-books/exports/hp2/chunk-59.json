@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is described as the home of the Weasley family, where Fred and George are currently located."
+    },
+    {
+      "name": "perkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Perkins is an old warlock who works with Mr. Weasley in the office."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad refers to Mr. Weasley, who is described as being frantic and having a tendency to take apart Muggle objects and put spells on them."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the Weasley twins, who is laughing about his dad's antics with Muggles."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is another Weasley twin, who is peering down through the windscreen and commenting on their location."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a character in the story, who is observing the scene from the car."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum refers to Mrs. Weasley, who is driven mad by her husband's antics with Muggle objects."
+    },
+    {
+      "name": "the teapot",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The teapot is described as going berserk and squirting boiling tea."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dad",
+      "entity_2": "perkins",
+      "relationship_type": "works_with",
+      "description": "Mr. Weasley works with Perkins in the office, as described by Fred."
+    },
+    {
+      "entity_1": "dad",
+      "entity_2": "the teapot",
+      "relationship_type": "interacted_with",
+      "description": "Mr. Weasley had to deal with the consequences of the teapot's malfunction."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "dad",
+      "relationship_type": "related_to",
+      "description": "Fred is one of Mr. Weasley's children, as described by his own statement."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "dad",
+      "relationship_type": "related_to",
+      "description": "George is another of Mr. Weasley's children, as described by his own statement."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "acquainted_with",
+      "description": "Harry is acquainted with Fred, as they are both in the car together."
+    }
+  ]
+}

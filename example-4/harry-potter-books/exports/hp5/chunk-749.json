@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "bottle",
+      "entity_type": "container",
+      "singular": true,
+      "description": "A bottle is used to spray butterbeer."
+    },
+    {
+      "name": "gagged",
+      "entity_type": "action",
+      "singular": false,
+      "description": "The action of gagging is mentioned in relation to the spraying of butterbeer."
+    },
+    {
+      "name": "butterbeer",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "Butterbeer is a drink that was sprayed from a bottle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bottle",
+      "entity_2": "butterbeer",
+      "relationship_type": "contains",
+      "description": "The bottle contains butterbeer, which is then sprayed out."
+    },
+    {
+      "entity_1": "gagged",
+      "entity_2": "bottle",
+      "relationship_type": "causes",
+      "description": "Gagging causes the spraying of butterbeer from the bottle."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "doloreshigh",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where Harry is a student. The text mentions 'DETENTION WITH DOLORES' and the staff table in the Great Hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as having a conversation with Ron and trying to get help from Dumbledore."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate. He tries to advise Harry to go to Dumbledore for help."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. Harry mentions that she has power over someone."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. Harry does not want to go to him for help because he has not spoken to him since last June."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is a portrait that guards the entrance to Gryffindor Tower. She interrupts Harry and Ron's conversation to ask for the password."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_not_spoken_to",
+      "description": "Harry has not spoken to Dumbledore since last June, which is why he does not want to go to him for help."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "advises",
+      "description": "Ron tries to advise Harry to go to Dumbledore for help."
+    },
+    {
+      "entity_1": "fat lady",
+      "entity_2": "harry",
+      "relationship_type": "interrupts",
+      "description": "The Fat Lady interrupts Harry and Ron's conversation to ask for the password."
+    }
+  ]
+}

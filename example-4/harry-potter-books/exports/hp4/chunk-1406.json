@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as a calm and authoritative figure who has come to inform the students about Cedric's death. He mentions that he values fair play and believes in telling the truth."
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as a person who was murdered by Lord Voldemort. His death has affected everyone in the Great Hall."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as a person responsible for Cedric's murder. Dumbledore mentions that he has returned and that the Ministry of Magic does not want this information to be shared with the students."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic is mentioned as an organization that does not want Dumbledore to share the truth about Voldemort's return with the students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cedric diggory",
+      "relationship_type": "killed_by",
+      "description": "Dumbledore informs the students that Cedric was murdered by Lord Voldemort."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "dumbledore",
+      "relationship_type": "does_not_want_to_share_info_with",
+      "description": "The Ministry of Magic does not want Dumbledore to share the truth about Voldemort's return with the students."
+    }
+  ]
+}

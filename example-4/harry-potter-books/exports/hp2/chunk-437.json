@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as the subject of a conversation between Percy and Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is part of the conversation with Percy and is mentioned as being in the Great Hall."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a Prefect and is sternly telling Ron to get off to his dormitories."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being with Ron and is pleased to see Draco Malfoy."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is strolling towards Harry and Ron and wants to show them something funny."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Great Hall is mentioned as the place where Ron and Harry were eating."
+    },
+    {
+      "name": "dormitories",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Percy tells Ron to get off to his dormitories."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "percy",
+      "entity_2": "ron",
+      "relationship_type": "tells",
+      "description": "Percy is telling Ron to get off to his dormitories."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry",
+      "relationship_type": "approaches",
+      "description": "Draco Malfoy is strolling towards Harry."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "malfoy",
+      "relationship_type": "disagrees_with",
+      "description": "Percy and Malfoy have a disagreement about respect."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry",
+      "relationship_type": "invites",
+      "description": "Draco Malfoy invites Harry to follow him."
+    }
+  ]
+}

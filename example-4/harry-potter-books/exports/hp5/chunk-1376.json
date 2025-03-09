@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having the worst memory."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is introduced as a character who is looking displeased and trying to get information from Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the conversation with Umbridge."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as a criminal who was meeting Harry and was almost caught by Umbridge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "sirius black",
+      "relationship_type": "almost_caught",
+      "description": "Umbridge almost caught Sirius Black in the Gryffindor fire."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "knows_about_meeting",
+      "description": "Umbridge knows that Harry was meeting Sirius Black."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "has_memory_issue",
+      "description": "Snape has a memory issue, which is mentioned as his worst memory."
+    }
+  ]
+}

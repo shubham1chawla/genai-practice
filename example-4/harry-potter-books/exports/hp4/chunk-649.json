@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha Jorkins was a student at Hogwarts when Sirius was there. She is described as 'very nosy' but 'no brains'. Sirius thinks she would be easy to lure into a trap."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius knew Bertha Jorkins and attended Hogwarts with her. He is described as grim when talking about her."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is being targeted by the tournament. Sirius thinks it's a good plan to attack Harry through the tournament."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone who could be powerful enough to protect Karkaroff. Sirius thinks Voldemort might be behind the plot."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a suspect in the plot. Sirius doesn't think he would go back to Voldemort unless he knew Voldemort was powerful enough to protect him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "bertha jorkins",
+      "relationship_type": "knew",
+      "description": "Sirius knew Bertha Jorkins when they were at Hogwarts."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "karkaroff",
+      "relationship_type": "protected_by",
+      "description": "Voldemort might be powerful enough to protect Karkaroff, according to Sirius."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tournament",
+      "relationship_type": "targeted_by",
+      "description": "Harry is being targeted by the tournament, according to Sirius's plan."
+    }
+  ]
+}

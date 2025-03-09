@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts, mentioned as being spoken to by Lucius. He is described as having a fire in his blue eyes."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A governor at Hogwarts, who has come to speak with Dumbledore about suspending him."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one who is presenting the Order of Suspension to Dumbledore. He is described as being lazy and taking out a long roll of parchment."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is alarmed by the idea of Dumbledore being suspended. He is mentioned as saying that it's not what they want right now."
+    },
+    {
+      "name": "headmaster_of_hogwarts",
+      "entity_type": "position",
+      "singular": false,
+      "description": "The position held by Dumbledore at Hogwarts."
+    },
+    {
+      "name": "order_of_suspension",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A document presented to Dumbledore by Malfoy, which contains the signatures of twelve governors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lucius",
+      "relationship_type": "conversation_participant",
+      "description": "Dumbledore and Lucius are having a conversation about Dumbledore's suspension."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "order_of_suspension",
+      "relationship_type": "document_presenter",
+      "description": "Malfoy is presenting the Order of Suspension to Dumbledore."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "opponent",
+      "description": "Fudge is opposing Dumbledore's suspension, as he thinks it's not what they want right now."
+    },
+    {
+      "entity_1": "lucius",
+      "entity_2": "governors",
+      "relationship_type": "representative",
+      "description": "Lucius is representing the governors in their decision to suspend Dumbledore."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the students in the class."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the students in the class."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the students in the class and looks startled at Professor Trelawney's words."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Trelawney is introduced as the teacher who will be teaching Divination."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as one of the students in the class and has a conversation with Professor Trelawney."
+    },
+    {
+      "name": "nervous face",
+      "entity_type": "expression",
+      "singular": false,
+      "description": "The phrase 'nervous face' is used to describe the faces of the students in the class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "glanced_at",
+      "description": "Harry and Ron glanced at Hermione, who looked startled."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "neville",
+      "relationship_type": "spoke_to",
+      "description": "Professor Trelawney spoke to Neville."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "nervous face",
+      "relationship_type": "addressed",
+      "description": "Professor Trelawney addressed the nervous faces of the students in the class."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "professor trelawney",
+      "relationship_type": "listened_to",
+      "description": "Neville listened to Professor Trelawney's words."
+    }
+  ]
+}

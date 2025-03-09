@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black, a suspect in the murder of James and Lily Potter, is described as having waxy white skin and being scary-looking."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is reading about Sirius Black's past crimes and is shocked by the number of people he murdered."
+    },
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is watching Harry read and comments on how scary-looking Sirius Black is."
+    },
+    {
+      "name": "ern",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ern is also present and agrees with Stan that Sirius Black's actions were big trouble."
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James Potter was murdered by Sirius Black."
+    },
+    {
+      "name": "lily potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily Potter was also murdered by Sirius Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "reads_about",
+      "description": "Harry is reading about Sirius Black's past crimes."
+    },
+    {
+      "entity_1": "stan",
+      "entity_2": "black",
+      "relationship_type": "comments_on",
+      "description": "Stan comments on how scary-looking Sirius Black is."
+    },
+    {
+      "entity_1": "ern",
+      "entity_2": "black",
+      "relationship_type": "agrees_with_comments",
+      "description": "Ern agrees with Stan that Sirius Black's actions were big trouble."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "james potter",
+      "relationship_type": "murdered",
+      "description": "Sirius Black murdered James Potter."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "lily potter",
+      "relationship_type": "murdered",
+      "description": "Sirius Black also murdered Lily Potter."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is mentioned as a character in the text who has anger and contempt in his voice."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is mentioned as a character in the text who is being addressed by Charity Burbage."
+    },
+    {
+      "name": "charity burbage",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Charity Burbage is mentioned as a character in the text who is defending Mudbloods and writing an impassioned defense in the Daily Prophet."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Malfoy's wand is being used by Voldemort to silence Charity Burbage."
+    },
+    {
+      "name": "mudbloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Mudbloods are mentioned as a group that Professor Burbage is defending in the text."
+    },
+    {
+      "name": "purebloods",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Purebloods are mentioned as a group whose dwindling is considered desirable by Professor Burbage."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are mentioned as a group that Wizards must accept and learn from according to Professor Burbage."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "publication",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as the publication where Professor Burbage wrote an impassioned defense of Mudbloods."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "addressed",
+      "description": "Voldemort addresses Snape in the text."
+    },
+    {
+      "entity_1": "charity burbage",
+      "entity_2": "snape",
+      "relationship_type": "addressed",
+      "description": "Charity Burbage addresses Snape in the text."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "malfoy",
+      "relationship_type": "used",
+      "description": "Voldemort uses Malfoy's wand to silence Charity Burbage."
+    },
+    {
+      "entity_1": "charity burbage",
+      "entity_2": "mudbloods",
+      "relationship_type": "defended",
+      "description": "Charity Burbage defends Mudbloods in the text."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "purebloods",
+      "relationship_type": "opposed",
+      "description": "Voldemort opposes the dwindling of purebloods according to the text."
+    },
+    {
+      "entity_1": "charity burbage",
+      "entity_2": "daily prophet",
+      "relationship_type": "published_in",
+      "description": "Charity Burbage's defense of Mudbloods is published in the Daily Prophet."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a boy who is remembering his last meeting with someone and is waiting for Hedwig to return. (Excerpt: 'Harry had come face-to-face with him at Hogwarts.' and 'He scanned the starry sky for a sign of Hedwig...') "
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's owl, which is expected to return with a dead mouse. (Excerpt: 'He scanned the starry sky for a sign of Hedwig...') "
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school where Harry had met someone before. (Excerpt: 'Harry had come face-to-face with him at Hogwarts.')"
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "street",
+      "singular": true,
+      "description": "The street where Harry is standing, and the owls are flying over a lamp. (Excerpt: 'But then the bizarre creature soared over one of the street lamps of Privet Drive...')"
+    },
+    {
+      "name": "the creature",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A large, lopsided creature that is flying towards Harry. (Excerpt: 'Silhouetted against the golden moon, and growing larger every moment, was a large, strangely lopsided creature...')"
+    },
+    {
+      "name": "the owls",
+      "entity_type": "owls",
+      "singular": false,
+      "description": "Three owls that are flying towards Harry, two of them holding up the third. (Excerpt: 'Through the window soared three owls, two of them holding up the third...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "waiting_for",
+      "description": "Harry is waiting for Hedwig to return with a dead mouse. (Excerpt: 'He scanned the starry sky for a sign of Hedwig...') "
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "met_at",
+      "description": "Harry had met someone at Hogwarts. (Excerpt: 'Harry had come face-to-face with him at Hogwarts.')"
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "harry",
+      "relationship_type": "belonging_to",
+      "description": "Hedwig belongs to Harry. (Implicit, as Hedwig is expected to return to Harry.) "
+    },
+    {
+      "entity_1": "the creature",
+      "entity_2": "harry",
+      "relationship_type": "flying_towards",
+      "description": "The creature is flying towards Harry. (Excerpt: 'Silhouetted against the golden moon, and growing larger every moment, was a large, strangely lopsided creature...')"
+    },
+    {
+      "entity_1": "the owls",
+      "entity_2": "harry",
+      "relationship_type": "flying_towards",
+      "description": "The owls are flying towards Harry. (Excerpt: 'Through the window soared three owls, two of them holding up the third...')"
+    }
+  ]
+}

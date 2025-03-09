@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Doge is a person who is heartbroken and has a reaction to the mention of Aberforth breaking Albus' nose. (\"Yes I was,\" said Doge, through trembling lips, \"and a more desperately sad occasion I cannot remember.\")"
+    },
+    {
+      "name": "albus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus is a person who has his nose broken by Aberforth. (\"Didn't Aberforth break Albus' nose halfway through the service?\" )"
+    },
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is a person who breaks Albus' nose during a service. (\"Didn't Aberforth break Albus' nose halfway through the service?\")"
+    },
+    {
+      "name": "muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Muriel is a person who reacts to Doge's reaction with laughter and champagne. (If Doge had looked horriﬁed before this, it was nothing to how he looked now. Muriel might have stabbed him.)"
+    },
+    {
+      "name": "bathilda bagshot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bathilda Bagshot is a person who is mentioned as being friendly with Auntie's mother. (\"My mother was friendly with old Bathilda Bagshot,\" said Auntie)"
+    },
+    {
+      "name": "auntie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Auntie is a person who mentions her mother's friendship with Bathilda Bagshot. (\"My mother was friendly with old Bathilda Bagshot,\" said Auntie)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "doge",
+      "entity_2": "aberforth",
+      "relationship_type": "was_broken_by",
+      "description": "Aberforth breaks Albus' nose, which makes Doge heartbroken. (\"Didn't Aberforth break Albus' nose halfway through the service?\")"
+    },
+    {
+      "entity_1": "auntie",
+      "entity_2": "bathilda bagshot",
+      "relationship_type": "was_friendly_with",
+      "description": "Auntie's mother was friendly with Bathilda Bagshot. (\"My mother was friendly with old Bathilda Bagshot,\" said Auntie)"
+    }
+  ]
+}

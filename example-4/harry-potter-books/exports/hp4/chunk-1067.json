@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who wants to know how someone heard her talking and found out about Hagrid's mum. She is described as stubborn."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who is being told by Hermione to drop something. He is also described as blankly responding to Harry's explanation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who explains about hidden microphones and recording equipment to Ron."
+    },
+    {
+      "name": "viktor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor is mentioned as someone Hermione heard talking to her."
+    },
+    {
+      "name": "hagrid's mum",
+      "entity_type": "event",
+      "singular": false,
+      "description": "Hagrid's mum is mentioned as something that Hermione found out about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "viktor",
+      "relationship_type": "heard_talking_to",
+      "description": "Hermione heard Viktor talking to her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "explained_to",
+      "description": "Harry explained something to Ron about hidden microphones and recording equipment."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid's mum",
+      "relationship_type": "found_out_about",
+      "description": "Hermione found out about Hagrid's mum."
+    }
+  ]
+}

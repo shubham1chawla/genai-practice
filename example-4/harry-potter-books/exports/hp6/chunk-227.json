@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard. (Introduced as 'H ARRY  POTTER' in the first line.)"
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A shopkeeper who is being spoken to by Harry Potter. (Introduced as 'Borgin made a bow...' in the second paragraph.)"
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as someone Borgin has given a bow to before. (Mentioned in the third line of the second paragraph.)"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of Lucius Malfoy, who is seen leaving the shop looking pleased with himself. (Introduced as 'Malfoy stalked out...' in the fourth paragraph.)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is present when Malfoy leaves the shop. (Mentioned in the fifth line of the fourth paragraph.)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, who is also present when Malfoy leaves the shop. (Mentioned in the same line as Ron.)"
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical cloak that is being worn by Harry, Ron, and Hermione. (Introduced as 'the Cloak flutter around their knees...' in the fifth paragraph.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "borgin",
+      "relationship_type": "interaction",
+      "description": "Harry Potter is interacting with Borgin, who is being spoken to by Harry. (Described as 'No, of course I wouldn’t, you stupid little man...' in the first paragraph.)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "proximity",
+      "description": "Harry Potter is standing close to Malfoy when he leaves the shop. (Described as 'He passed so close to Harry, Ron and Hermione...' in the fourth paragraph.)"
+    },
+    {
+      "entity_1": "borgin",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "association",
+      "description": "Borgin has given a bow to Lucius Malfoy before. (Mentioned as 'the one Harry had once seen him give Lucius Malfoy' in the second paragraph.)"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "interaction",
+      "description": "Malfoy is interacting with Borgin, who looks worried after their conversation. (Described as 'Borgin remained frozen; his unctuous smile had vanished; he looked worried' in the fourth paragraph.)"
+    }
+  ]
+}

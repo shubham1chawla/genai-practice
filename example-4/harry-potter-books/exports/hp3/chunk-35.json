@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is hiding his presents and birthday cards under the loose floorboard."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Harry's owl, who is being asked to leave with Errol for a week."
+    },
+    {
+      "name": "errol",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Another owl in Harry's care, who seems to have recovered from an illness."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who will look after Hedwig while Harry is away."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who will accompany Ron to Hogsmeade."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A village where Harry wants to visit with Ron and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "asked_to_leave",
+      "description": "Harry is asking Hedwig to leave with Errol for a week."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry and Ron are friends, and Ron will look after Hedwig while Harry is away."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend",
+      "description": "Harry and Hermione are friends, and she will accompany Ron to Hogsmeade."
+    },
+    {
+      "entity_1": "hedwig",
+      "entity_2": "errol",
+      "relationship_type": "traveling_with",
+      "description": "Hedwig is traveling with Errol for a week."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "want_to_visit",
+      "description": "Harry wants to visit Hogsmeade with Ron and Hermione."
+    }
+  ]
+}

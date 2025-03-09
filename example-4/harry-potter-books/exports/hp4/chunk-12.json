@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "the riddle house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The main location where the story is taking place. It is mentioned as 'THE RIDDLE HOUSE' in all capital letters."
+    },
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is present in the house and can hear voices from another room. He is described as having sparse hairs on his neck stand up when he hears a cold voice."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A man with a high-pitched and cold voice who is present in the house. He is addressed by Frank as 'My Lord'."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A snake that belongs to Wormtail. It has set out to explore the house."
+    },
+    {
+      "name": "bottle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object being put down on a hard surface."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "nagini",
+      "relationship_type": "owns",
+      "description": "Wormtail owns Nagini, as mentioned in the text: 'You will milk her before we retire'."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "wormtail",
+      "relationship_type": "hears",
+      "description": "Frank can hear Wormtail's voice from another room."
+    }
+  ]
+}

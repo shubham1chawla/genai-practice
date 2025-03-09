@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is mentioned as the location where Harry's wand was made."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Griphook is a goblin who whispers to Harry and helps him cast the Imperious Curse."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character who casts the Imperious Curse on Travers."
+    },
+    {
+      "name": "imperio",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Imperio spell is cast by Harry to control Travers."
+    },
+    {
+      "name": "travers",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Travers is a character who is controlled by the Imperious Curse cast by Harry."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix's wand is examined by Griphook and Travers."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione denies that the new wand belongs to her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "imperio",
+      "relationship_type": "casts",
+      "description": "Harry casts the Imperious Curse on Travers."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "travers",
+      "relationship_type": "controls",
+      "description": "Harry controls Travers using the Imperious Curse."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "gringotts",
+      "relationship_type": "associated_with",
+      "description": "Griphook is associated with Gringotts, where Harry's wand was made."
+    },
+    {
+      "entity_1": "travers",
+      "entity_2": "bellatrix",
+      "relationship_type": "owns",
+      "description": "Travers owns Bellatrix's wand."
+    }
+  ]
+}

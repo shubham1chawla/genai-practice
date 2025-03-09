@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the main antagonist who singled out Harry as a threat to him. (\"Voldemort singled you out as the person who would be most dangerous to him\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a wise and experienced wizard who corrects Harry's understanding of the prophecy. (\"Pointing at Harry with his black, withered hand, he said, 'You are setting too much store by the prophecy!')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the main protagonist who is confused about the prophecy. (\"'But,' spluttered Harry , 'but you said the prophecy means --')"
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as a seer who provided information to Voldemort that led to his grave error. (\"If Voldemort had never heard of the prophecy , would it have been fulfilled? Would it have meant anything? Of course not! Do you think every prophecy in the Hall of Prophecy has been fulfilled?')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Voldemort singled out Harry as a threat to him. (\"Voldemort singled you out as the person who would be most dangerous to him\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "corrects",
+      "description": "Dumbledore corrected Harry's understanding of the prophecy, implying that Voldemort made a grave error. (\"'Harry , Harry , only because Voldemort made a grave error, and acted on Professor Trelawney’s words!')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "trelawney",
+      "relationship_type": "acted_upon",
+      "description": "Voldemort acted upon Professor Trelawney's words. (\"If Voldemort had never heard of the prophecy , would it have been fulfilled? Would it have meant anything? Of course not! Do you think every prophecy in the Hall of Prophecy has been fulfilled?')"
+    }
+  ]
+}

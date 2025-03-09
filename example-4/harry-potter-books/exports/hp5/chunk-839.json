@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, Hermione, is performing an action (carefully marked her page) and has a specific task in mind (Jinxes)."
+    },
+    {
+      "name": "jinxes",
+      "entity_type": "book",
+      "singular": false,
+      "description": "Hermione is marking her page for 'Jinxed', which implies that Jinxes is the book she is reading."
+    },
+    {
+      "name": "jinxed",
+      "entity_type": "chapter_or_section",
+      "singular": true,
+      "description": "The chapter or section in the book that Hermione is marking her page for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "jinxes",
+      "relationship_type": "reading",
+      "description": "Hermione is reading Jinxes, as indicated by the context of marking her page."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "jinxed",
+      "relationship_type": "marking_page_for",
+      "description": "Hermione is marking her page for 'Jinxed', which implies that she is specifically looking at this chapter or section."
+    }
+  ]
+}

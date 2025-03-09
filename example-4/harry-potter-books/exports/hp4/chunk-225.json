@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person who has been gambling with his mother's money."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as a person who has been gambling with his mother's money."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is the father of Fred and George, and he is concerned about their gambling."
+    },
+    {
+      "name": "mother",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Fred and George's mother is mentioned as someone who has been gambled with by her sons."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "mother",
+      "relationship_type": "has_been_gambled_with",
+      "description": "Fred has been gambling with his mother's money."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "mother",
+      "relationship_type": "has_been_gambled_with",
+      "description": "George has been gambling with his mother's money."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "fred",
+      "relationship_type": "is_concerned_about",
+      "description": "Mr. Weasley is concerned about Fred's and George's gambling."
+    }
+  ]
+}

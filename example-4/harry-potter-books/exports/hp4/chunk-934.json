@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who had his office searched by Moody, and is also being kept an eye on by Dumbledore. (\"Snape said Moody's searched his office as well?\", \"Moody said Dumbledore only lets Snape stay here because he's giving him a second chance or something.\")"
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as someone who searched Snape's office and is keeping an eye on both Karkaroff and Snape. (\"Snape said Moody's searched his office as well?\", \"What . . . d'you reckon Moody's here to keep an eye on Snape as well as Karkaroff?\")"
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is mentioned as someone who Moody is keeping an eye on. (\"What . . . d'you reckon Moody's here to keep an eye on Snape as well as Karkaroff?\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who asked Moody to come and keep an eye on both Snape and Karkaroff. (\"Well, I dunno if that's what Dumbledore asked him to do, but he's definitely doing it\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "snape",
+      "relationship_type": "searched_office",
+      "description": "Moody searched Snape's office. (\"Snape said Moody's searched his office as well?\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "asked_to_keep_eye_on",
+      "description": "Dumbledore asked Moody to keep an eye on Snape. (\"Well, I dunno if that's what Dumbledore asked him to do, but he's definitely doing it\")"
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "karkaroff",
+      "relationship_type": "keeping_eye_on",
+      "description": "Moody is keeping an eye on Karkaroff. (\"What . . . d'you reckon Moody's here to keep an eye on Snape as well as Karkaroff?\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "giving_second_chance",
+      "description": "Dumbledore is giving Snape a second chance. (\"Moody said Dumbledore only lets Snape stay here because he's giving him a second chance or something.\")"
+    }
+  ]
+}

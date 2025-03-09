@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is feeling tired and scared. He is mentioned as having a conversation with Dumbledore and being approached by Cho Chang under the mistletoe."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has given Harry advice to stay. He is thanked by Harry for nothing."
+    },
+    {
+      "name": "cho chang",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who approached Harry under the mistletoe less than twenty-four hours ago."
+    },
+    {
+      "name": "mistletone",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Cho Chang approached Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "thanks",
+      "description": "Harry thanks Dumbledore for nothing."
+    },
+    {
+      "entity_1": "cho chang",
+      "entity_2": "harry",
+      "relationship_type": "approached",
+      "description": "Cho Chang approached Harry under the mistletoe."
+    }
+  ]
+}

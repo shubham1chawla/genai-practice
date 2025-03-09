@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is introduced as the one who opens a door and looks at Harry and Ron. The text describes him as 'coldly' and 'softly', indicating his personality."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as 'the famous Harry Potter' by Snape, indicating that he is a well-known person in the wizarding world."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Weasley is referred to as Harry's 'faithful sidekick', indicating that he is associated with Harry."
+    },
+    {
+      "name": "king’s cross",
+      "entity_type": "location",
+      "singular": true,
+      "description": "King’s Cross is mentioned as the location of a barrier that caused problems for Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "scolded_by",
+      "description": "Snape scolds Harry for arriving at King’s Cross in a way that caused attention."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "weasley",
+      "relationship_type": "scolded_by",
+      "description": "Snape also scolds Weasley, indicating that he is not just targeting Harry."
+    }
+  ]
+}

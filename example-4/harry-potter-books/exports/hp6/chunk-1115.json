@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the owner of the locket. The text states 'had fallen out of Dumbledore’s pocket.'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who picks up the locket and finds something wrong with it. The text states 'He turned the locket over in his hands... Harry knew...'"
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Pensieve is mentioned as a place where Harry remembers seeing a different locket. The text states 'This was neither as large as the locket he remembered seeing in the Pensieve...'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "owned_by",
+      "description": "Harry finds a locket that belongs to Dumbledore. The text states 'had fallen out of Dumbledore’s pocket.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pensieve",
+      "relationship_type": "remembered_in",
+      "description": "Harry remembers seeing a different locket in the Pensieve. The text states 'This was neither as large as the locket he remembered seeing in the Pensieve...'"
+    }
+  ]
+}

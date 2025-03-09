@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having an argument with his Keeper."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is present at the scene and comments on Harry's argument."
+    },
+    {
+      "name": "cadwallader",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hufflepuff player who scores a goal."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Keeper who is being criticized by Harry and Ginny."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who allows the Quaffle to be taken out of her possession."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who corrects Luna's mistake about Cadwallader's name."
+    },
+    {
+      "name": "hufflepuffs",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The team that Cadwallader is a part of."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A ball used in the game being played."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A ball that is supposed to be found by Harry."
+    },
+    {
+      "name": "keeper",
+      "entity_type": "position",
+      "singular": false,
+      "description": "The position held by McLaggen in the game."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mclaggen",
+      "relationship_type": "argument",
+      "description": "Harry is having an argument with his Keeper, McLaggen."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "cadwallader",
+      "relationship_type": "correction",
+      "description": "Luna is corrected by Professor McGonagall about Cadwallader's name."
+    },
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "ginny",
+      "relationship_type": "criticism",
+      "description": "McLaggen is criticizing Ginny for allowing the Quaffle to be taken out of her possession."
+    },
+    {
+      "entity_1": "cadwallader",
+      "entity_2": "hufflepuffs",
+      "relationship_type": "membership",
+      "description": "Cadwallader is a member of the Hufflepuff team."
+    },
+    {
+      "entity_1": "mclaggen",
+      "entity_2": "keeper",
+      "relationship_type": "position",
+      "description": "McLaggen holds the position of Keeper in the game."
+    }
+  ]
+}

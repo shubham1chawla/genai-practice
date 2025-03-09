@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin is described as sitting in one of the highest seats with a camera, taking pictures."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned by Harry when he asks who Colin is."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is described as frowning and skimming through the air towards Harry and Fred."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned throughout the passage, looking into the stands, talking to Colin, and trying to get away from him."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is described as pointing out several people in green robes walking onto the pitch."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin is mentioned by Wood as a possible spy trying to find out about their new training programme."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is mentioned by Harry when he says Colin is in Gryffindor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "colin",
+      "relationship_type": "concerned_about",
+      "description": "Wood is concerned about Colin taking pictures."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "colin",
+      "relationship_type": "avoiding",
+      "description": "Harry tries to get away from Colin."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "slytherin",
+      "relationship_type": "suspecting_spy",
+      "description": "Wood suspects Slytherin of being a spy."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "slytherin",
+      "relationship_type": "knowing_presence",
+      "description": "George knows that several people in green robes are walking onto the pitch, which is a sign of Slytherin's presence."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "colin",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Colin is also a member of Gryffindor house."
+    }
+  ]
+}

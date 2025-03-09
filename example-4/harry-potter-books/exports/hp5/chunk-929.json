@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "macnair",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Macnair is mentioned as one of the giants sneaking around the mountains looking for Hagrid and Olympe."
+    },
+    {
+      "name": "olympé",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Olympe is described as a fierce person who wants to attack Macnair and the other giant."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the one who was with Olympe when they were sneaking around the mountains."
+    },
+    {
+      "name": "karkus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkus is mentioned as a giant who was killed."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned in the conversation between Hagrid and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "olympé",
+      "relationship_type": "accompanying",
+      "description": "Hagrid was with Olympe when they were sneaking around the mountains."
+    },
+    {
+      "entity_1": "macnair",
+      "entity_2": "hagrid",
+      "relationship_type": "sneaking",
+      "description": "Macnair and another giant were sneaking around the mountains looking for Hagrid and Olympe."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "macnair",
+      "relationship_type": "related_by_killing",
+      "description": "Karkus was killed by Macnair."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "talking_to",
+      "description": "Hagrid and Ron were talking to each other."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as he gets up from the ground."
+    },
+    {
+      "name": "quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is giving instructions to Harry, described as repeating a command."
+    },
+    {
+      "name": "mirror",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry is instructed to look into."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "quirrell",
+      "entity_2": "harry",
+      "relationship_type": "command",
+      "description": "Quirrell gives a command to Harry, telling him to come and look in the Mirror."
+    },
+    {
+      "entity_1": "quirrell",
+      "entity_2": "mirror",
+      "relationship_type": "reference",
+      "description": "Quirrell refers to an object called the Mirror, instructing Harry to look into it."
+    }
+  ]
+}

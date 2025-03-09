@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lockhart is a wizard who taught Harry and Ron a spell that went wrong. He is described as 'weedy' and is being held at wandpoint by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who caught Lockhart's wand and is now holding him at wandpoint. He seems to be in charge of the situation."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape taught Harry and Ron a spell that went wrong, which led to this situation with Lockhart."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Moaning Myrtle is sitting on the cistern of the end toilet in the bathroom. She seems to be a presence in the scene but does not interact with Harry and Ron."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber of Secrets is where Harry and Ron think they know it is located. They are trying to find out what's inside it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lockhart",
+      "relationship_type": "holding_at_wandpoint",
+      "description": "Harry is holding Lockhart at wandpoint, forcing him to his feet. This shows that Harry has control over the situation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "trying_to_find",
+      "description": "Harry and Ron are trying to find out where the Chamber of Secrets is located, which suggests they have a goal or mission in mind."
+    }
+  ]
+}

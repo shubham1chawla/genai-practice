@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is a person who was attacked by Krum. He is lying on the ground, twitching and jerking."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a person who attacked Cedric from behind with his wand. He was stopped by Harry's spell."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who saved Cedric from Krum's attack. He cast the 'Stupefy' spell on Krum."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "krum",
+      "relationship_type": "attacked_by",
+      "description": "Harry attacked Krum with his wand, casting the 'Stupefy' spell on him."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "cedric",
+      "relationship_type": "attacked",
+      "description": "Krum attacked Cedric from behind with his wand."
+    }
+  ]
+}

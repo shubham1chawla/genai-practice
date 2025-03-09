@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is leading a long line of first years up to the top of the Hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry was wet, but it was nothing compared to how the first years looked."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron was wet, but it was nothing compared to how the first years looked."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione was wet, but it was nothing compared to how the first years looked."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry recognized Hagrid's moleskin overcoat on a boy with mousy hair."
+    },
+    {
+      "name": "the smallest of the lot",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The smallest of the first years was wearing Hagrid's moleskin overcoat."
+    },
+    {
+      "name": "the great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Professor McGonagall led the first years up to the top of the Great Hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "the great hall",
+      "relationship_type": "leads_to",
+      "description": "Professor McGonagall was leading a long line of first years up to the top of the Great Hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "recognizes",
+      "description": "Harry recognized Hagrid's moleskin overcoat on a boy with mousy hair."
+    },
+    {
+      "entity_1": "the smallest of the lot",
+      "entity_2": "hagrid",
+      "relationship_type": "wears",
+      "description": "The smallest of the first years was wearing Hagrid's moleskin overcoat."
+    }
+  ]
+}

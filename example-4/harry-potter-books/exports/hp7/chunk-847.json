@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is a person who is shaking hands with Harry. He is described as having his hands shake, indicating that he might be nervous or anxious."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is a person who has been missing for weeks. Her clothes are gone and her bed hasn't been slept in, indicating that she might have left the house."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is concerned about Luna's disappearance. He is described as saying 'Where is she?' and 'And why do you keep looking out of the window?'"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is present with Harry and Hermione. He draws his wand when Xenophilius drops the tray."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is present with Harry and Ron. She draws her wand when Xenophilius drops the tray."
+    },
+    {
+      "name": "quibblers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Quibblers are objects that come streaming across the floor from underneath the tablecloth after the printing press gives a huge bang."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "luna",
+      "relationship_type": "concerned_about",
+      "description": "Xenophilius is concerned about Luna's disappearance. He says 'I don't think Luna's been here for weeks' and looks out of the window."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "xenophilius",
+      "relationship_type": "questioning",
+      "description": "Harry is questioning Xenophilius about Luna's disappearance. He says 'Where is she?' and 'And why do you keep looking out of the window?'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Luna's disappearance. He asks Xenophilius where she is."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "xenophilius",
+      "relationship_type": "reacting_to",
+      "description": "Ron reacts to Xenophilius dropping the tray by drawing his wand."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "xenophilius",
+      "relationship_type": "reacting_to",
+      "description": "Hermione reacts to Xenophilius dropping the tray by drawing her wand."
+    }
+  ]
+}

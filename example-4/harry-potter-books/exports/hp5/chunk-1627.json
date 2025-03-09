@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is described as turning steadily more purple in the face while tugging at Crabbe's arms. This indicates that Neville is struggling and trying to free himself from his captor."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as being held by Neville, indicating that Crabbe is also a captive in the scene."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as attempting vainly to throw Millicent Bulstrode off her. This indicates that Hermione is trying to defend herself against another student."
+    },
+    {
+      "name": "millicent bulstrode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Millicent Bulstrode is mentioned as being thrown by Hermione, indicating that she is also a participant in the struggle."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is described as standing limply by the side of her captor, gazing vaguely out of the window. This indicates that Luna is not actively participating in the struggle."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as looking back at Umbridge, indicating that he is observing the scene and possibly planning his next move."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is described as watching Harry closely, indicating that she is monitoring his behavior and possibly trying to intimidate him."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as coming back into the room, holding open the door for Snape. This indicates that Draco is assisting Snape in some way."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as looking around at all the pairs of struggling students with an expression of complete indifference. This indicates that Snape is observing the scene but not actively participating."
+    },
+    {
+      "name": "veritaserum",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Veritaserum is mentioned as being requested by Umbridge, indicating that it is a substance used for some purpose in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "observes",
+      "description": "Harry is looking back at Umbridge, indicating that he is observing her behavior and possibly planning his next move."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "watches",
+      "description": "Umbridge is watching Harry closely, indicating that she is monitoring his behavior and possibly trying to intimidate him. (Inverse of the previous relationship)"
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "snape",
+      "relationship_type": "assists",
+      "description": "Draco Malfoy is coming back into the room, holding open the door for Snape. This indicates that Draco is assisting Snape in some way."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "veritaserum",
+      "relationship_type": "requests",
+      "description": "Umbridge is requesting a bottle of Veritaserum, indicating that she needs it for some purpose."
+    }
+  ]
+}

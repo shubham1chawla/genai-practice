@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a wand that conquered Voldemort's borrowed wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist, mentioned as being pursued by Harry across the skies."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wandmaker, mentioned as not anticipating or understanding the abilities of Harry's wand."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wandmaker, mentioned as possibly knowing secrets of wands that Ollivander does not."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An international Quidditch player, mentioned as being attracted to Ginny."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A relative of Harry's, mentioned as being seen with someone by Krum."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as joining Ginny."
+    },
+    {
+      "name": "voldemort's borrowed wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A wand that Voldemort used and was conquered by Harry's wand."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand, which is able to conquer other wands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "pursued_by",
+      "description": "Voldemort was pursued by Harry across the skies."
+    },
+    {
+      "entity_1": "harry's wand",
+      "entity_2": "voldemort's borrowed wand",
+      "relationship_type": "conquered",
+      "description": "Harry's wand conquered Voldemort's borrowed wand."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "ginny",
+      "relationship_type": "attracted_to",
+      "description": "Krum was attracted to Ginny, as mentioned by his comment about her being 'very nice-looking'."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is using a wand and trying to contact Sirius through the Floo network."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is expected to be at Grimmauld Place but is not present."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry tries to contact Sirius through the Floo network."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "contacted_through_floo_network",
+      "description": "Harry is trying to contact Sirius through the Floo network, but there is no answer."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmauld place",
+      "relationship_type": "visited_location",
+      "description": "Harry visits Grimmauld Place through the Floo network."
+    }
+  ]
+}

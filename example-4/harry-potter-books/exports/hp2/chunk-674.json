@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is an elf who has been set free by Harry Potter. He is described as having 'orb-like eyes' and an 'ugly brown face'. (Excerpt: 'Harry Potter freed Dobby!')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the one who set Dobby free. He is described as grinning and having a conversation with Dobby. (Excerpts: 'Least I could do, Dobby', 'You told me all this had nothing to do with He Who Must Not Be Named')"
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lucius Malfoy is a character who has no choice but to leave. He is described as having an 'incensed stare' at Harry and Dobby. (Excerpt: 'With a last, incensed stare at the pair of them')"
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "He Who Must Not Be Named is a concept that is mentioned as being related to Dobby's clue. (Excerpt: 'You told me all this had nothing to do with He Who Must Not Be Named')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "set_free",
+      "description": "Harry Potter set Dobby free. (Excerpt: 'Harry Potter freed Dobby!')"
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "he who must not be named",
+      "relationship_type": "related_to",
+      "description": "Dobby's clue is related to He Who Must Not Be Named. (Excerpt: 'The Dark Lord, before he changed his name, could be freely named')"
+    }
+  ]
+}

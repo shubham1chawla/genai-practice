@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore had died knowing that three people still knew about the Horcruxes;"
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville will take Harry’s place. There would still be three in the secret."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry repeated. “All right, Harry, You’re okay, are you?”"
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Dumbledore had died knowing that three people still knew about the Horcruxes;"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He stopped in his tracks. She was crouching over a girl who was"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "replaces",
+      "description": "Neville will take Harry’s place. There would still be three in the secret."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horcruxes",
+      "relationship_type": "knew_about",
+      "description": "Dumbledore had died knowing that three people still knew about the Horcruxes;"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Neville seized his wrist as Harry made to move on. “We’re all going to keep ﬁghting, Harry. You know that?”"
+    }
+  ]
+}

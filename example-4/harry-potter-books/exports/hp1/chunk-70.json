@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as a person who receives a letter addressed to him."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Harry's uncle and guardian. He is mentioned as a person who visits Harry in his cupboard."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin. He is mentioned as the owner of a second bedroom that Harry might move into."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "visited_by",
+      "description": "Uncle Vernon visited Harry in his cupboard."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "might_move_into_bedroom_of",
+      "description": "Harry might move into Dudley's second bedroom."
+    }
+  ]
+}

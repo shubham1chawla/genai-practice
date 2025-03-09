@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is being considered as a leader."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who suggests electing a leader and voting on it properly."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who looks at Hermione as though she were mad when she suggests Harry as the leader."
+    },
+    {
+      "name": "zacharias smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who halfheartedly votes for Harry to be the leader."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who suggests a name for the group."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "leader_of",
+      "description": "Hermione suggests Harry as the leader of the group."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "embarrassed_by",
+      "description": "Cho looks at Hermione as though she were mad when she suggests Harry as the leader, making Harry feel embarrassed."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "suggests_leader_for",
+      "description": "Hermione suggests electing a leader and voting on it properly, specifically suggesting Harry as the leader."
+    },
+    {
+      "entity_1": "zacharias smith",
+      "entity_2": "harry",
+      "relationship_type": "voted_for",
+      "description": "Zacharias Smith halfheartedly votes for Harry to be the leader."
+    }
+  ]
+}

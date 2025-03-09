@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is trying to reach the castle and climb the stairs."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where Harry needs to go, described as having a front door and marble stairs."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is guarding the portrait hole and is sleeping in her frame."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has set off Dungbombs to ensure Harry and Sirius get privacy."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as needing privacy with Harry."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry uses to become invisible and enter the common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "castle",
+      "relationship_type": "reached",
+      "description": "Harry reached the castle through the front doors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fat lady",
+      "relationship_type": "spoke_to",
+      "description": "Harry spoke to the Fat Lady, who was sleeping in her frame."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dungbombs",
+      "relationship_type": "set_off",
+      "description": "Hermione set off Dungbombs to ensure Harry and Sirius get privacy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "used",
+      "description": "Harry used the Invisibility Cloak to enter the common room."
+    }
+  ]
+}

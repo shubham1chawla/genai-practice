@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "gargoyle",
+      "entity_type": "gargoyle",
+      "singular": true,
+      "description": "A stone statue with a face that resembles a human, standing in front of the entrance. It is immovable until Harry says 'Cockroach Cluster'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who tries to enter the building by guessing passwords and eventually succeeds when he says 'Cockroach Cluster'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gargoyle",
+      "relationship_type": "interacts_with",
+      "description": "Harry tries to guess the password by saying different sweets, but the gargoyle remains immovable until Harry says 'Cockroach Cluster'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gargoyle",
+      "relationship_type": "moves_gargoyle",
+      "description": "When Harry says 'Cockroach Cluster', the gargoyle springs to life and jumps aside, allowing Harry to enter."
+    }
+  ]
+}

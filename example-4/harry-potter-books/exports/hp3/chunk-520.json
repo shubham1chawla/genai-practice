@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The team led by Harry Potter, mentioned as being in possession of thirty points and later increasing their lead to fifty points."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The opposing team that is enraged at Gryffindor's early lead and resorts to any means to take the Quaffle."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "player",
+      "singular": true,
+      "description": "The player leading Gryffindor in the game, mentioned as soaring over the match looking for the Snitch."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who is hit by Bole with his club and later said to be a Bludger."
+    },
+    {
+      "name": "bole",
+      "entity_type": "player",
+      "singular": true,
+      "description": "A Slytherin player who hits Alicia with his club and tries to say she was a Bludger."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher who awards both teams penalties during the game."
+    },
+    {
+      "name": "wood",
+      "entity_type": "player",
+      "singular": true,
+      "description": "A Gryffindor player who makes spectacular saves and is later caught by Bludgers in the stomach."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Slytherin student who keeps close to Harry as he soars over the match looking for the Snitch."
+    },
+    {
+      "name": "katie",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A Gryffindor student who scores fifty points for her team."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "player",
+      "singular": true,
+      "description": "A Gryffindor player who is mentioned as swooping around Katie with his club raised."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "player",
+      "singular": true,
+      "description": "A Gryffindor player who is mentioned as swooping around Katie with his club raised and later elbowed by Bole in the face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "slytherin",
+      "relationship_type": "lead",
+      "description": "Gryffindor is leading Slytherin in the game, with a score of thirty to ten."
+    },
+    {
+      "entity_1": "bole",
+      "entity_2": "alicia",
+      "relationship_type": "hit",
+      "description": "Bole hits Alicia with his club and tries to say she was a Bludger."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "bole",
+      "relationship_type": "elbow",
+      "description": "George Weasley elbowed Bole in the face in retaliation for hitting Alicia."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "gryffindor",
+      "relationship_type": "penalty",
+      "description": "Madam Hooch awards Gryffindor a penalty during the game."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "bole",
+      "relationship_type": "catch",
+      "description": "Wood is caught by Bludgers in the stomach, one of which was aimed at him by Bole and Derrick."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "follow",
+      "description": "Malfoy keeps close to Harry as he soars over the match looking for the Snitch."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "katie",
+      "relationship_type": "protect",
+      "description": "Fred Weasley is mentioned as swooping around Katie with his club raised, in case any of the Slytherins were thinking of revenge."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "katie",
+      "relationship_type": "protect",
+      "description": "George Weasley is mentioned as swooping around Katie with his club raised, in case any of the Slytherins were thinking of revenge."
+    }
+  ]
+}

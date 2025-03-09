@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Dementors are creatures that patrolled the outer trees."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person who survived and has a talisman against dementors."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who spoke to Harry and announced his death."
+    },
+    {
+      "name": "harry's father's stag",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's father's stag is an animal that kept guardian in Harry's heart."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry potter",
+      "relationship_type": "patrols",
+      "description": "Dementors patrolled the outer trees where Harry stood."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "announced_death",
+      "description": "Voldemort announced Harry's death to him."
+    }
+  ]
+}

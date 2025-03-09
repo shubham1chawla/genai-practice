@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "bezoar",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A bezoar is mentioned as an object clutched in Harry's hand. It is described as something that can act as an antidote to all these potions."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is a person who reaches the table last and inspects the potions of Ernie and Ron. He is described as someone who can be quite particular about things."
+    },
+    {
+      "name": "ernie",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ernie is a student whose potion is inspected by Professor Slughorn. His potion is described as something that Slughorn sniffs and then passes on to Ron's cauldron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is a student whose cauldron is inspected by Professor Slughorn. His potion is described as something that makes Slughorn retch slightly."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who holds out his hand with the bezoar sitting on his palm. He is described as someone who has a nerve and is like his mother."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who looks livid and sweaty-faced. She is described as someone who has soot on her nose and is working on an antidote with fifty-two ingredients including a chunk of her own hair."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "ernie",
+      "relationship_type": "inspects_potion",
+      "description": "Professor Slughorn inspects Ernie's potion and then passes on to Ron's cauldron."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "ron",
+      "relationship_type": "inspects_potion",
+      "description": "Professor Slughorn inspects Ron's cauldron and makes a grimace."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bezoar",
+      "relationship_type": "holds_object",
+      "description": "Harry holds out his hand with the bezoar sitting on his palm."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "bezoar",
+      "relationship_type": "takes_object",
+      "description": "Professor Slughorn takes the bezoar from Harry and holds it up so that the class can see it."
+    }
+  ]
+}

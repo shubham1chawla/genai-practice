@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "ivanova",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Bulgarian Beaters who dropped the Quaffle to Moran."
+    },
+    {
+      "name": "moran",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Received the Quaffle from Ivanova and then dropped it after being hit by a Bludger."
+    },
+    {
+      "name": "volkov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Bulgarian Beater who swung hard at a passing Bludger with his small club."
+    },
+    {
+      "name": "levski",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Caught the Quaffle after it was dropped by Moran."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Announced Troy's score and the stadium's reaction to it."
+    },
+    {
+      "name": "troy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scored a point in the Quidditch World Cup match."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Watched the Quidditch World Cup match through his Omnioculars."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Danced and cheered for Troy's score."
+    },
+    {
+      "name": "ireland",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Leading in the Quidditch World Cup match with a score of 10-0."
+    },
+    {
+      "name": "bulgaria",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Playing against Ireland in the Quidditch World Cup match."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ball used in the Quidditch World Cup match."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A ball that was hit by Volkov and then knocked into Moran's path."
+    },
+    {
+      "name": "omnioculars",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's device for watching the Quidditch World Cup match."
+    },
+    {
+      "name": "leprechauns",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Watching from the sidelines and forming a shamrock when Troy scored."
+    },
+    {
+      "name": "vela",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Watching the leprechauns sulkily."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "troy",
+      "entity_2": "ireland",
+      "relationship_type": "scored_for",
+      "description": "Troy scored a point for Ireland in the Quidditch World Cup match."
+    },
+    {
+      "entity_1": "levski",
+      "entity_2": "quaffle",
+      "relationship_type": "caught",
+      "description": "Levski caught the Quaffle after it was dropped by Moran."
+    },
+    {
+      "entity_1": "volkov",
+      "entity_2": "bludger",
+      "relationship_type": "hit",
+      "description": "Volkov hit the Bludger with his small club."
+    },
+    {
+      "entity_1": "moran",
+      "entity_2": "quaffle",
+      "relationship_type": "dropped",
+      "description": "Moran dropped the Quaffle after being hit by a Bludger."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "omnioculars",
+      "relationship_type": "used",
+      "description": "Harry used his Omnioculars to watch the Quidditch World Cup match."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "ireland",
+      "relationship_type": "announced_score_for",
+      "description": "Bagman announced Troy's score for Ireland in the Quidditch World Cup match."
+    }
+  ]
+}

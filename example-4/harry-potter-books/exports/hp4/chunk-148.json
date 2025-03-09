@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "people",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to a large group of individuals from various places."
+    },
+    {
+      "name": "foreigners",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Specifically mentions people who are not from the same country or region."
+    },
+    {
+      "name": "weirdos",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Describes a group of individuals who stand out due to their unusual behavior or appearance."
+    },
+    {
+      "name": "bloke",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Refers to a man wearing a kilt and poncho, described as unusual."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Responds anxiously to the situation."
+    },
+    {
+      "name": "mr roberts",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Has a front door where a wizard appears next to it."
+    },
+    {
+      "name": "wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Appears out of thin air and casts a spell on Mr. Roberts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr roberts",
+      "entity_2": "wizard",
+      "relationship_type": "cast_spell_on",
+      "description": "The wizard points his wand at Mr. Roberts, causing him to lose focus."
+    },
+    {
+      "entity_1": "wizard",
+      "entity_2": "mr roberts",
+      "relationship_type": "target_of_casting",
+      "description": "The wizard's spell is directed towards Mr. Roberts."
+    }
+  ]
+}

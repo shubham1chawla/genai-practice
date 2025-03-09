@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as shaking all over and helping Dumbledore into the boat. He is also referred to by name in the conversation with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as struggling to climb into the boat and needing Harry's help. His faint voice is also mentioned."
+    },
+    {
+      "name": "inferi",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "The Inferi are described as swarming below the boat and being deterred by the ring of fire."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "helped",
+      "description": "Harry helps Dumbledore into the boat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "inferi",
+      "relationship_type": "frightened",
+      "description": "Harry is frightened by the Inferi, which are described as coming at him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Dumbledore is helped into the boat by Harry."
+    },
+    {
+      "entity_1": "ring_of_fire",
+      "entity_2": "inferi",
+      "relationship_type": "repelled",
+      "description": "The ring of fire repels the Inferi, preventing them from resurfacing."
+    }
+  ]
+}

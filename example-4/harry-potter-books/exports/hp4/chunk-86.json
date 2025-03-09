@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt and uncle are mentioned as they arrive."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as being tall, thin, and balding."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as being dragged away by Uncle Vernon."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is introduced as he greets Harry's aunt and uncle."
+    },
+    {
+      "name": "harry's aunt and uncle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry's aunt and uncle are mentioned as they arrive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "greet",
+      "description": "Mr. Weasley greets Uncle Vernon."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "aunt petunia",
+      "relationship_type": "accompany",
+      "description": "Mr. Weasley is accompanied by Aunt Petunia."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry's aunt and uncle",
+      "relationship_type": "host",
+      "description": "Uncle Vernon hosts Harry's aunt and uncle."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "harry's aunt and uncle",
+      "relationship_type": "visit",
+      "description": "Mr. Weasley visits Harry's aunt and uncle."
+    }
+  ]
+}

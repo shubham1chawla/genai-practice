@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Dursleys are Harry's relatives who treat him poorly. They are mentioned as the ones who haven't remembered Harry's birthday and never give him proper presents."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, a boy who is being treated poorly by his relatives. He is mentioned as having a birthday that was ignored by the Dursleys."
+    },
+    {
+      "name": "school year",
+      "entity_type": "period_of_time",
+      "singular": true,
+      "description": "The school year is mentioned as being over, indicating that Harry has finished his academic year and is now on summer break."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dursleys",
+      "entity_2": "harry",
+      "relationship_type": "treats_poorly",
+      "description": "The Dursleys treat Harry poorly, as mentioned in the text. They ignore his birthday and never give him proper presents."
+    },
+    {
+      "entity_1": "dursleys",
+      "entity_2": "harry",
+      "relationship_type": "ignores_birthday",
+      "description": "The Dursleys ignore Harry's birthday, as mentioned in the text. This is an example of a bidirectional relationship, where the Dursleys both treat Harry poorly and ignore his birthday."
+    }
+  ]
+}

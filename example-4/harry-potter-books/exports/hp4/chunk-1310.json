@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is injured and needs medical attention. (\"He wanted me to bring him back,\" Harry muttered... \"What's happened? What's wrong with him?\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who helps Harry. (Dumbledore bent down, and with extraordinary strength for a man so old and thin, raised Harry from the ground... \"I'll take Harry, Dumbledore...\")"
+    },
+    {
+      "name": "diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has died. (\"Diggory's dead!\" ... \"He's ill, he's injured -- Dumble dore, Diggory's parents, they're here...\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is concerned about Harry's well-being. (\"He'll need to go to the hospital wing!\" ... \"Fudge was saying loudly.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Dumbledore helps Harry by raising him from the ground and setting him on his feet. (Dumbledore bent down, and with extraordinary strength for a man so old and thin, raised Harry from the ground... \"I'll take Harry, Dumbledore...\")"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Fudge is concerned about Harry's well-being. (\"He'll need to go to the hospital wing!\" ... \"Fudge was saying loudly.\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "diggory",
+      "relationship_type": "related_to",
+      "description": "Dumbledore is related to Diggory, as he mentions that Diggory's parents are present. (\"He's ill, he's injured -- Dumble dore, Diggory's parents, they're here...\")"
+    },
+    {
+      "entity_1": "diggory",
+      "entity_2": "harry",
+      "relationship_type": "related_to",
+      "description": "Diggory is related to Harry, as Fudge mentions that Dumbledore should tell him about Diggory before he sees him. (\"Don't you think you should tell him -- before he sees -- ?\")"
+    }
+  ]
+}

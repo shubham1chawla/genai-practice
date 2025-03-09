@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator of the story who is listening to a conversation through a door."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A man who is part of a group and is asking Lord Voldemort about their stay."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The cold voice that is being heard through the door. He is also known as My Lord."
+    },
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A sports event that is mentioned as a reason for delaying their plan."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "speaks_to",
+      "description": "Lord Voldemort speaks to Wormtail through the door."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "mishears",
+      "description": "Frank mishears the word 'Quidditch' as something else."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "lord voldemort",
+      "relationship_type": "asks_question",
+      "description": "Wormtail asks a question to Lord Voldemort about their stay."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "uses_as_reason",
+      "description": "Lord Voldemort uses the Quidditch World Cup as a reason for delaying their plan."
+    }
+  ]
+}

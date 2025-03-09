@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who is standing on the stairs and watching the pyrotechnical miracles. He is described as yelling with fright when one of the Catherine wheels whirled towards him."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a person who is standing on the stairs and watching the pyrotechnical miracles. She is described as yelling with fright and telling Filch to hurry when one of the rockets exploded."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is watching the pyrotechnical miracles from afar. He is not directly involved in the scene but is observing what is happening."
+    },
+    {
+      "name": "catherine wheels",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Catherine wheels are objects that are part of the pyrotechnical miracles and are described as whirling towards Umbridge and Filch."
+    },
+    {
+      "name": "dragons",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Dragons are objects that are part of the pyrotechnical miracles and are described as taking advantage of the open door to escape towards the second floor."
+    },
+    {
+      "name": "purple bat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A purple bat is an object that is part of the pyrotechnical miracles and is described as smoking ominously and escaping towards the second floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "filch",
+      "relationship_type": "yell_with_fright",
+      "description": "Umbridge and Filch both yell with fright when one of the Catherine wheels whirled towards them."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "shout_instruction",
+      "description": "Umbridge shouts an instruction to Filch, telling him to hurry."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "rockets",
+      "relationship_type": "stun_with_spell",
+      "description": "Umbridge uses a spell to stun one of the rockets, causing it to explode."
+    }
+  ]
+}

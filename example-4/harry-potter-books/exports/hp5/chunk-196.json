@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who is being discussed by Mr. Weasley and Tonks. He is described as someone that Fudge is frightened of."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the Minister of Magic who is frightened of Dumbledore. He thinks Dumbledore is plotting to overthrow him."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as someone who is discussing Dumbledore with Harry and Tonks."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is mentioned as someone who is discussing Dumbledore with Mr. Weasley and Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who is incredulous about Fudge being frightened of Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "is_frightened_of",
+      "description": "Fudge is frightened of Dumbledore, thinking he is plotting to overthrow him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "minister_of_magic",
+      "relationship_type": "wants_to_be",
+      "description": "Dumbledore wants to be the Minister of Magic, although he has never applied for the job."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley's voice is mentioned in the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry explained that they have an electric fire."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's voice joined the conversation and asked what they were doing there."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred's sarcastic voice is mentioned in the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "conversation_participant",
+      "description": "Mr. Weasley and Harry are participating in a conversation."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ron",
+      "relationship_type": "conversation_participant",
+      "description": "Mr. Weasley and Ron are also participating in the conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "electric fire",
+      "relationship_type": "owner",
+      "description": "Harry explained that they have an electric fire."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "eclectic fire",
+      "relationship_type": "interested_in",
+      "description": "Mr. Weasley is excited about the eclectic fire."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "conversation",
+      "relationship_type": "participant",
+      "description": "Ron is participating in the conversation."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "conversation",
+      "relationship_type": "participant",
+      "description": "Fred's sarcastic voice is also part of the conversation."
+    }
+  ]
+}

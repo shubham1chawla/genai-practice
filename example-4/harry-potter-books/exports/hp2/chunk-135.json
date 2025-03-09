@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "traffic",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "Traffic was described as 'rumbling along the main road ahead'."
+    },
+    {
+      "name": "main road",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The main road was mentioned as the location where traffic was rumbling."
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Harry's street was described as 'empty'."
+    },
+    {
+      "name": "car",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The car was mentioned as the vehicle that Harry and Ron were in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Ron",
+      "entity_2": "Invisibility Booster",
+      "relationship_type": "controls",
+      "description": "Ron pressed a tiny silver button on the dashboard to activate the Invisibility Booster."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "car",
+      "relationship_type": "is_in",
+      "description": "Harry was in the car when it vanished and reappeared."
+    }
+  ]
+}

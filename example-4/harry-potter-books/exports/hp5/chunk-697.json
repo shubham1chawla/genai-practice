@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who saw Malfoy look up eagerly. He is also mentioned later in the text as having his spirits lifted somewhat."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as looking up eagerly, and Harry saw him doing so."
+    },
+    {
+      "name": "grubbly-plank",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is mentioned as saying she can’t do something, and also as being questioned by Professor Umbridge."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as sending an owl to Professor Grubbly-Plank with a teaching job offer."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as taking a different tack in the class and questioning students on magical creatures. She also scribbled upon her clipboard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "saw",
+      "description": "Harry saw Malfoy look up eagerly."
+    },
+    {
+      "entity_1": "grubbly-plank",
+      "entity_2": "umbridge",
+      "relationship_type": "questioned_by",
+      "description": "Professor Umbridge questioned Professor Grubbly-Plank on magical creatures."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "grubbly-plank",
+      "relationship_type": "sent_job_offer_to",
+      "description": "Dumbledore sent a job offer to Professor Grubbly-Plank via owl."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "thomas",
+      "relationship_type": "questioned",
+      "description": "Professor Umbridge questioned Dean Thomas on magical creatures."
+    }
+  ]
+}

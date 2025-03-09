@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as being drenched and sputtering after a water-filled balloon exploded on his head. (Excerpt: 'A large, red, water-filled balloon had dropped from out of the ceiling onto Ron’s head and ex ploded.')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being hit by a second water bomb that burst at his feet. (Excerpt: 'just as a second water bomb dropped — narrowly missing Hermione, it burst at Harry’s feet...')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as being narrowly missed by the second water bomb. (Excerpt: 'just as a second water bomb dropped — narrowly missing Hermione, it burst at Harry’s feet...')"
+    },
+    {
+      "name": "peevs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is described as a Poltergeist who is taking aim with a water-filled balloon. (Excerpt: 'floating twenty feet above them, Peeves the Poltergeist, a little man in a bell-covered hat and orange bow tie...')"
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is described as rushing to the scene to stop Peeves. (Excerpt: '“PEEVES!” yelled an angry voice. “Peeves, come down here at ONCE!”')"
+    },
+    {
+      "name": "gryffindor house",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor House is mentioned as the house that Professor McGonagall is head of. (Excerpt: 'Professor McGonagall, Deputy Headmistress and head of Gryffindor House...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peevs",
+      "entity_2": "mcgonagall",
+      "relationship_type": "targeted_by",
+      "description": "Peeves is being targeted by Professor McGonagall. (Excerpt: '“PEEVES!” yelled an angry voice. “Peeves, come down here at ONCE!”')"
+    },
+    {
+      "entity_1": "peevs",
+      "entity_2": "ron",
+      "relationship_type": "targeted",
+      "description": "Peeves is targeting Ron with a water-filled balloon. (Excerpt: 'A large, red, water-filled balloon had dropped from out of the ceiling onto Ron’s head and ex ploded.')"
+    },
+    {
+      "entity_1": "peevs",
+      "entity_2": "harry",
+      "relationship_type": "targeted",
+      "description": "Peeves is targeting Harry with a second water bomb. (Excerpt: 'just as a second water bomb dropped — narrowly missing Hermione, it burst at Harry’s feet...')"
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "peevs",
+      "relationship_type": "commanding",
+      "description": "Professor McGonagall is commanding Peeves to come down. (Excerpt: '“PEEVES!” yelled an angry voice. “Peeves, come down here at ONCE!”')"
+    }
+  ]
+}

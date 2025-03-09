@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is described as being convinced he had gone too far."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who has a curious and satisfied expression on his face when answering Harry."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Harry, used by Snape to address him."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A group of dark creatures that are swooping towards Harry across the lake in the grounds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "interaction",
+      "description": "Harry and Snape stare at each other, with Snape having a curious expression on his face."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "threat",
+      "description": "Dementors are swooping towards Harry across the lake in the grounds."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "interaction",
+      "description": "Snape is standing in front of Harry, muttering under his breath and trying to Legilimise him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "defence",
+      "description": "Harry raises his wand and casts the Protego spell to defend himself against the dementors."
+    }
+  ]
+}

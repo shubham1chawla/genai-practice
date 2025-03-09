@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin turned up, carrying a large packing case, which he heaved onto Professor Binns’ desk."
+    },
+    {
+      "name": "professor binns",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin heaved the packing case onto Professor Binns’ desk."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry asked 'What’s that?'"
+    },
+    {
+      "name": "mr. filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boggart was found lurking inside Mr. Filch’s ﬁling cabinet."
+    },
+    {
+      "name": "boggart",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Lupin said 'Another boggart'"
+    },
+    {
+      "name": "dementor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The boggart will turn into a dementor when he sees you"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "boggart",
+      "relationship_type": "carries",
+      "description": "Lupin turned up, carrying a large packing case, which he heaved onto Professor Binns’ desk."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "professor binns",
+      "relationship_type": "places_on_desk",
+      "description": "Lupin heaved the packing case onto Professor Binns’ desk."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "boggart",
+      "relationship_type": "practices_on",
+      "description": "The boggart will turn into a dementor when he sees you, so we’ll be able to practice on him."
+    }
+  ]
+}

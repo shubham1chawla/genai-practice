@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dementors are mentioned to be around the boundary walls of Hogwarts."
+    },
+    {
+      "name": "boundary walls",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Boundary walls are mentioned as being heavily guarded by Dementors."
+    },
+    {
+      "name": "school",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school is mentioned to be under heavy guard with regular patrols inside."
+    },
+    {
+      "name": "Snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as being in charge of the school."
+    },
+    {
+      "name": "Carrows",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Carrow family is mentioned as being deputies to Professor Snape."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned in the conversation."
+    },
+    {
+      "name": "Ariana",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ariana Dumbledore is mentioned in the conversation."
+    },
+    {
+      "name": "picture",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A picture of Ariana is shown to Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Snape",
+      "entity_2": "Carrows",
+      "relationship_type": "deputy_of",
+      "description": "The Carrow family is mentioned as being deputies to Professor Snape."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Ariana",
+      "relationship_type": "related_to",
+      "description": "Hermione is shown a picture of Ariana, indicating a relationship between them."
+    }
+  ]
+}

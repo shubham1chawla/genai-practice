@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is mentioned as a person who should be in Azkaban, implying he has done something wrong."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being accused of making Stan a scapegoat."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as Harry's hero who also disassociated himself from the Ministry."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is a Ministry official who is trying to convince Harry to work with them."
+    },
+    {
+      "name": "barty crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty Crouch is mentioned as someone who made mistakes similar to Scrimgeour's."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a Ministry official who pretended everything was fine while people got murdered."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry is mentioned as an organization that Harry and Dumbledore have disassociated themselves from."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a prison where Stan should be."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "stan",
+      "relationship_type": "accuses",
+      "description": "Harry accuses Scrimgeour of making Stan a scapegoat."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "ministry",
+      "relationship_type": "representative",
+      "description": "Scrimgeour is a representative of the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "hero",
+      "description": "Harry considers Dumbledore his hero."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "barty crouch",
+      "relationship_type": "similar_to",
+      "description": "Scrimgeour is similar to Barty Crouch in making mistakes."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "ministry",
+      "relationship_type": "representative",
+      "description": "Fudge is a representative of the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "location_of",
+      "description": "Stan should be in Azkaban."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "tries_to_convince",
+      "description": "Scrimgeour tries to convince Harry to work with the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "disassociates_from",
+      "description": "Harry disassociates himself from the Ministry."
+    }
+  ]
+}

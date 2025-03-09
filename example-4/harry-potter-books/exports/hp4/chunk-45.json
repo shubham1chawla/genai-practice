@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who helps Sirius escape."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who had to flee for his life and was on the run."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who escaped from being taken to the Ministry of Magic."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A hippogriff that Harry used to help Sirius escape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "helped_escape",
+      "description": "Harry helped Sirius escape on the back of Buckbeak."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "was_helped_by",
+      "description": "Sirius was helped by Harry to escape."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "ministry_of_magic",
+      "relationship_type": "escaped_from",
+      "description": "Wormtail escaped from being taken to the Ministry of Magic."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "had_conflict_with",
+      "description": "Harry had a conflict with the Dursleys, who tried to keep him miserable and locked his school trunk."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "beetle",
+      "entity_type": "insect",
+      "singular": true,
+      "description": "The beetle is described as being given exercise by Harry. It scuttles over the desk top and avoids his wand."
+    },
+    {
+      "name": "wand",
+      "entity_type": "magical_tool",
+      "singular": true,
+      "description": "Ron's wand is described as being damaged beyond repair, crackling and sparking at odd moments. It also causes thick grey smoke to engulf Ron when he tries to transfigure the beetle."
+    },
+    {
+      "name": "Professor McGonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as not being pleased with Ron's situation."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is described as relieved to hear the lunch bell and suggests that Ron write home for another wand."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is described as having problems with his wand, which he has patched up with borrowed Spellota pe. He also accidentally squashes the beetle with his elbow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "beetle",
+      "relationship_type": "has",
+      "description": "Harry is giving exercise to the beetle, which scuttles over the desk top and avoids his wand."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "wand",
+      "relationship_type": "owns",
+      "description": "Ron has a damaged wand that he has patched up with borrowed Spellota pe."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Professor McGonagall",
+      "relationship_type": "is_in_class_of",
+      "description": "Harry is in Professor McGonagall's class, as evidenced by the fact that he and Ron are still in the classroom when everyone else has left."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Professor McGonagall",
+      "relationship_type": "is_in_class_of",
+      "description": "Like Harry, Ron is also in Professor McGonagall's class."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Ron",
+      "relationship_type": "helps",
+      "description": "Harry suggests that Ron write home for another wand, indicating that he is trying to help his friend."
+    }
+  ]
+}

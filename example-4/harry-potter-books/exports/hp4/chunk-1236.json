@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as a person who helped Harry with the egg and had help on it in the first place."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who helped Cedric with the egg and stayed behind to get all the hostages."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The spider is mentioned as an animal that dropped Harry."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The egg is mentioned as an object that Harry and Cedric helped with."
+    },
+    {
+      "name": "cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cup is mentioned as an object that Harry tells Cedric to take."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "helped_by",
+      "description": "Harry helped Cedric with the egg."
+    },
+    {
+      "entity_1": "cedric",
+      "entity_2": "harry",
+      "relationship_type": "helped",
+      "description": "Cedric had help from Harry on the egg in the first place."
+    },
+    {
+      "entity_1": "spider",
+      "entity_2": "harry",
+      "relationship_type": "dropped",
+      "description": "The spider dropped Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "egg",
+      "relationship_type": "helped_with",
+      "description": "Harry helped with the egg."
+    },
+    {
+      "entity_1": "cedric",
+      "entity_2": "egg",
+      "relationship_type": "had_help_on",
+      "description": "Cedric had help on the egg in the first place."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cup",
+      "relationship_type": "told_to_take",
+      "description": "Harry tells Cedric to take the cup."
+    }
+  ]
+}

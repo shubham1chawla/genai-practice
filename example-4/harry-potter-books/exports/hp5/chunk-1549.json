@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "o.w.l.s",
+      "entity_type": "exam_name",
+      "singular": true,
+      "description": "The name of the examination mentioned in the text."
+    },
+    {
+      "name": "quills",
+      "entity_type": "banned_item",
+      "singular": false,
+      "description": "Writing instruments that are banned from the examination hall."
+    },
+    {
+      "name": "remembralls",
+      "entity_type": "banned_item",
+      "singular": false,
+      "description": "Memory aids that are banned from the examination hall."
+    },
+    {
+      "name": "detachable cribbing cuffs",
+      "entity_type": "banned_item",
+      "singular": false,
+      "description": "Cuffs that can be detached and used to cheat during the examination."
+    },
+    {
+      "name": "self-correcting ink",
+      "entity_type": "banned_item",
+      "singular": false,
+      "description": "Ink that can correct mistakes on its own, banned from the examination hall."
+    },
+    {
+      "name": "wizardin g examinations authority",
+      "entity_type": "exam_authority",
+      "singular": true,
+      "description": "The governing body responsible for conducting the Wizarding Examinations."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house_name",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "head_mistress",
+      "singular": true,
+      "description": "The new headmistress of Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "Harry Potter's Muggle aunt."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "The main protagonist of the story."
+    },
+    {
+      "name": "examination results",
+      "entity_type": "exam_result",
+      "singular": false,
+      "description": "The outcome of the examination that will reflect on the headmistress's new regime at the school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizardin g examinations authority",
+      "entity_2": "o.w.l.s",
+      "relationship_type": "conducts_exam",
+      "description": "The Wizarding Examinations Authority is responsible for conducting the O.W.L. S examination."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "head_of_house",
+      "description": "Professor McGonagall is the head of Gryffindor house at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "teacher_student",
+      "description": "Professor McGonagall is Harry Potter's teacher."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry potter",
+      "relationship_type": "relative",
+      "description": "Aunt Petunia is Harry Potter's Muggle aunt."
+    },
+    {
+      "entity_1": "examination results",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "affects_head_mistress_regime",
+      "description": "The examination results will reflect on Professor McGonagall's new regime at the school."
+    }
+  ]
+}

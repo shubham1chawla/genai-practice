@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being spoken to by the headmaster, mentioned as 'Potter'."
+    },
+    {
+      "name": "headmaster",
+      "entity_type": "position",
+      "singular": true,
+      "description": "A position of authority in the school, mentioned as someone Harry should tell about something."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being spoken to and is also asleep."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "headmaster",
+      "entity_2": "potter",
+      "relationship_type": "authority_over",
+      "description": "The headmaster has authority over Potter, as indicated by the instruction to tell the headmaster about something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "headmaster",
+      "relationship_type": "should_tell",
+      "description": "Harry should tell the headmaster about something, indicating a relationship between Harry and the headmaster."
+    }
+  ]
+}

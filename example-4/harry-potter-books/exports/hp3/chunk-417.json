@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as walking headlong into Professor McGonagall and receiving his Firebolt back."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is holding Harry's Firebolt and giving him advice for the upcoming match."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as being a good friend to Harry."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is mentioned as reminding Professor McGonagall about the upcoming match."
+    },
+    {
+      "name": "gryffindor common room",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Professor McGonagall was looking for Harry."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick that is returned to him by Professor McGonagall."
+    },
+    {
+      "name": "harry's firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An alias for the Firebolt, mentioned as being returned to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "returning_object",
+      "description": "Professor McGonagall is returning Harry's Firebolt to him."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor common room",
+      "relationship_type": "location_of_event",
+      "description": "The event of Professor McGonagall looking for Harry occurs in the Gryffindor common room."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "recipient_of_advice",
+      "description": "Professor McGonagall is giving advice to Harry about the upcoming match."
+    },
+    {
+      "entity_1": "professor snape",
+      "entity_2": "harry potter",
+      "relationship_type": "reminder_of_upcoming_event",
+      "description": "Professor Snape reminds Professor McGonagall about the upcoming match, which affects Harry."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom is mentioned as the one who was awarded ten points by Harry Potter. He is described as being 'white with shock' after an incident at the Gryffindor table."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who awards Neville Longbottom ten points. He is also described as standing up to yell and cheer along with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as standing up to yell and cheer along with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as standing up to yell and cheer along with Harry and Ron."
+    },
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Gryffindor table is described as the location where some sort of explosion took place, causing a loud noise."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Someone standing outside the Great Hall might well have thought some sort of explosion had taken place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "neville longbottom",
+      "relationship_type": "awarded_points",
+      "description": "Harry Potter awards Neville Longbottom ten points."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor table",
+      "relationship_type": "location_of_incident",
+      "description": "The incident that caused a loud noise took place at the Gryffindor table, where Harry Potter was standing."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "great hall",
+      "relationship_type": "located_outside",
+      "description": "Someone standing outside the Great Hall might well have thought some sort of explosion had taken place at the Gryffindor table, where Neville Longbottom was."
+    }
+  ]
+}

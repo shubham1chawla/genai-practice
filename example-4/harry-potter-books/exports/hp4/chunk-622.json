@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as someone Harry should ask for help."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as someone Harry should ask for help."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and narrator of the story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who lapses into thoughtful silence."
+    },
+    {
+      "name": "ernie macmillan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie Macmillan is mentioned as someone swapping Chocolate Frog cards with Hannah Abbott."
+    },
+    {
+      "name": "hannah abbot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hannah Abbott is mentioned as someone swapping Chocolate Frog cards with Ernie Macmillan."
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric Diggory is mentioned as someone who has passed away and is being remembered by others."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is mentioned as a Ravenclaw student who is not wearing a Cedric badge."
+    },
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Ravenclaws are mentioned as a group of students that Cho is part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "should_ask_for_help",
+      "description": "Harry thinks he should ask Fred for help."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "should_ask_for_help",
+      "description": "Harry thinks he should ask George for help."
+    },
+    {
+      "entity_1": "ernie macmillan",
+      "entity_2": "hannah abbot",
+      "relationship_type": "swap_chocolate_frog_cards",
+      "description": "Ernie Macmillan and Hannah Abbott are swapping Chocolate Frog cards."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "ravenclaws",
+      "relationship_type": "part_of_group",
+      "description": "Cho is part of the Ravenclaw group."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric diggory",
+      "relationship_type": "remembered_by",
+      "description": "Harry remembers Cedric Diggory."
+    }
+  ]
+}

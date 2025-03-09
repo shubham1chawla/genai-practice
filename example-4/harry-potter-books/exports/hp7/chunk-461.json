@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person Harry wants to find, mentioned by the woman as not living there."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is trying to find Gregorovitch and has a wand."
+    },
+    {
+      "name": "the woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who lives in the house and does not want Harry to enter."
+    },
+    {
+      "name": "the children",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Two young children who come running into the hall when the woman screams."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gregorovitch",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for Gregorovitch, as mentioned in his dialogue."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the woman",
+      "relationship_type": "confronting",
+      "description": "Harry is confronting the woman who does not want him to enter her house."
+    },
+    {
+      "entity_1": "the woman",
+      "entity_2": "gregorovitch",
+      "relationship_type": "knows_not",
+      "description": "The woman claims she knows Gregorovitch and that he no longer lives there."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the children",
+      "relationship_type": "unrelated",
+      "description": "Harry is not directly related to the children, but they are present in the scene."
+    }
+  ]
+}

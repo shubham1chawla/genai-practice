@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "zacharias smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is glared at Harry for not doing well in a performance."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student and friend of Marietta's, who has trouble with magic spells."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho's curly-haired friend whose sleeve caught fire during the performance."
+    },
+    {
+      "name": "expelliarmious",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A magic spell that Cho tries to cast but gets wrong."
+    },
+    {
+      "name": "expellimellius",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Another magic spell that Cho tries to cast but gets wrong."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "zacharias smith",
+      "relationship_type": "glared_at",
+      "description": "Zacharias Smith glares at Harry for not doing well in a performance."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "marietta",
+      "relationship_type": "friend",
+      "description": "Cho is friends with Marietta."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "made_nervous",
+      "description": "Harry's presence makes Cho nervous during the performance."
+    },
+    {
+      "entity_1": "marietta",
+      "entity_2": "harry",
+      "relationship_type": "blamed",
+      "description": "Marietta blames Harry for making her nervous and causing her sleeve to catch fire."
+    }
+  ]
+}

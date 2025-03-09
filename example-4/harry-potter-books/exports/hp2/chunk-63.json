@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as someone who could have died or been seen, indicating he is a person involved in the situation. (\"YOU COULD HAVE DIED, YOU COULD HAVE BEEN SEEN\")"
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone who has never caused trouble like this before, indicating he is a person known to the family. (\"we never had trouble like this from Bill or Charlie or Percy\")"
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as one of the people who have never caused trouble like this before, indicating he is a person known to the family. (\"we never had trouble like this from Bill or Charlie or Percy\")"
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as one of the people who have never caused trouble like this before, indicating he is a person known to the family. (\"we never had trouble like this from Bill or Charlie or Percy\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who nodded encouragingly at Harry, indicating he is a person present in the scene. (\"Harry, after a nervous glance at Ron, who nodded encouragingly\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who has been scolded by Mrs Weasley and is being welcomed back home, indicating he is the main character of the scene. (\"I’m very pleased to see you, Harry , dear\")"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as someone who has been scolding Fred and welcoming Harry back home, indicating she is a person of authority in the family. (\"YOU COULD DO WITH TAKING A LEAF OUT OF PERCY’S BOOK! ... I’m very pleased to see you, Harry , dear\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "percy",
+      "relationship_type": "comparable_to",
+      "description": "Fred is compared to Percy by Mrs Weasley, indicating that Fred's behavior is being judged against Percy's. (\"YOU COULD DO WITH TAKING A LEAF OUT OF PERCY’S BOOK!\")"
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "mrs weasley",
+      "relationship_type": "scolded_by",
+      "description": "Mrs Weasley is scolding Fred, indicating a relationship of authority and discipline. (\"YOU COULD DO WITH TAKING A LEAF OUT OF PERCY’S BOOK! ... I’m very pleased to see you, Harry , dear\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs weasley",
+      "relationship_type": "welcomed_by",
+      "description": "Mrs Weasley is welcoming Harry back home, indicating a relationship of affection and hospitality. (\"I’m very pleased to see you, Harry , dear\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "encouraged",
+      "description": "Ron is encouraging Harry, indicating a relationship of support and friendship. (\"Harry, after a nervous glance at Ron, who nodded encouragingly\")"
+    }
+  ]
+}

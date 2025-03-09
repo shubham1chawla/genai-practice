@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is nervous and suggests Disapparating under the Invisibility Cloak. She is also described as being able to produce bright blue flames."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as wearing the Horcrux and asking where they are after Disapparating."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Horcrux is mentioned as something Harry was wearing."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hermione suggests using the Invisibility Cloak to Disapparate."
+    },
+    {
+      "name": "forest of dean",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Forest of Dean is mentioned as the location where they have Disapparated to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "wearing",
+      "description": "Harry was wearing the Horcrux after Disapparating."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "suggesting_use_of",
+      "description": "Hermione suggested using the Invisibility Cloak to Disapparate."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "forest of dean",
+      "relationship_type": "location_after_disapparation",
+      "description": "Harry and Hermione ended up in the Forest of Dean after Disapparating."
+    }
+  ]
+}

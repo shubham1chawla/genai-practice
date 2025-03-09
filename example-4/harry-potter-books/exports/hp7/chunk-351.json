@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story who is examining the papers."
+    },
+    {
+      "name": "A History of Magic",
+      "entity_type": "book",
+      "singular": false,
+      "description": "A book written by Barhilda Bagshot that Harry recognizes as part of its contents."
+    },
+    {
+      "name": "Barhilda Bagshot",
+      "entity_type": "author",
+      "singular": true,
+      "description": "The author of the book A History of Magic."
+    },
+    {
+      "name": "motorcycle maintenance manual",
+      "entity_type": "book",
+      "singular": false,
+      "description": "A book that Harry recognizes as part of its contents."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "A History of Magic",
+      "relationship_type": "recognizes",
+      "description": "Harry recognized a part of A History of Magic among the papers."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "motorcycle maintenance manual",
+      "relationship_type": "recognizes",
+      "description": "Harry recognized another book, a motorcycle maintenance manual, among the papers."
+    }
+  ]
+}

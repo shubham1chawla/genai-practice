@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "horcrux",
+      "entity_type": "horcruxes",
+      "singular": true,
+      "description": "The Horcrux is a magical object that contains a piece of Voldemort's soul. It is described as being cold against Harry's skin, and has a tiny heartbeat ticking irregularly alongside his own."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is trying to destroy the Horcrux that lies against his chest, but is struggling with fear and exhaustion."
+    },
+    {
+      "name": "ron",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is talking softly behind him in the tent. He has the option to walk away from the situation, but Harry does not."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who is talking softly behind him in the tent. She has the option to walk away from the situation, but Harry does not."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story. He is mentioned as being connected to the Horcrux through his soul."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "has_horcrux",
+      "description": "Harry has a Horcrux against his chest, which is ticking away the time he has left."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "can_walk_away_from",
+      "description": "Ron can walk away from Harry and the situation, but chooses not to."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "can_walk_away_from",
+      "description": "Hermione can walk away from Harry and the situation, but chooses not to."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having a plan to spy on Malfoy."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is concerned about Harry's plan and tries to dissuade him."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as having previously infiltrated the Headquarters, and who needs the Room to become the DA's Headquarters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is concerned about Harry's plan and tries to dissuade him."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is mentioned as having done well in some unspecified way."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "has_plan_against",
+      "description": "Harry Potter has a plan to spy on Malfoy."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "room",
+      "relationship_type": "uses",
+      "description": "Malfoy uses the Room as his Headquarters."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "room",
+      "relationship_type": "does_not_know",
+      "description": "Harry Potter does not know what happens to the Room when Malfoy is inside."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "kreacher",
+      "relationship_type": "praises",
+      "description": "Hermione praises Kreacher for doing well."
+    }
+  ]
+}

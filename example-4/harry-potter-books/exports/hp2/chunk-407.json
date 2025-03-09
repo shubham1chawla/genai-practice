@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "duelling club",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The duelling club is mentioned as the location where the narrator is being taken."
+    },
+    {
+      "name": "oak door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A gleaming oak door with a brass knocker in the shape of a griffon is seen ahead."
+    },
+    {
+      "name": "griffon",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "The brass knocker on the oak door is in the shape of a griffon."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore lived at this location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "duelling club",
+      "entity_2": "oak door",
+      "relationship_type": "location_of",
+      "description": "The duelling club is located where the oak door is seen ahead."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "duelling club",
+      "relationship_type": "residence_of",
+      "description": "Dumbledore lived at the duelling club."
+    }
+  ]
+}

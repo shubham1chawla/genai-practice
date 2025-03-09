@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is a poltergeist who stuck out his tongue and threw water bombs into the air."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who told Peeves to move along."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who slipped and slid across the entrance hall with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is a student who was muttering furiously under his breath as he pushed his sopping hair off his face."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is a student who walked past the Slytherins with Harry and Ron."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Slytherin is one of the four houses in the Great Hall."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Ravenclaw is one of the four houses in the Great Hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "told",
+      "description": "Professor McGonagall told Peeves to move along."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "walked_with",
+      "description": "Harry, Ron, and Hermione walked past the Slytherins together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "slytherin",
+      "relationship_type": "passed_by",
+      "description": "Hermione walked past the Slytherins with Harry and Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "walked_with",
+      "description": "Harry, Ron, and Hermione walked past the Slytherins together."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ravenclaw",
+      "relationship_type": "passed_by",
+      "description": "Hermione walked past the Ravenclaws with Harry and Ron."
+    }
+  ]
+}

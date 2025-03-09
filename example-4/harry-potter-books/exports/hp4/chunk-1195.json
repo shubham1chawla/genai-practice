@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is mentioned as someone who should consider whether a boy such as Harry Potter should be allowed to compete in the Triwizard Tournament. (\"Albus Dumbledore should surely consider whether a boy such as this should be allowed to compete in the Triwizard Tournament.\")"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as someone who might resort to the Dark Arts in his desperation to win the tournament. (\"Some fear that Potter might resort to the Dark Arts in his des-peration to win the tournament...\")"
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Triwizard Tournament is mentioned as an event where Harry Potter will compete. (\"...the third task of which takes place this evening.\")"
+    },
+    {
+      "name": "dark arts",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The Dark Arts are mentioned as something that Harry Potter might resort to in his desperation to win the tournament. (\"Some fear that Potter might resort to the Dark Arts in his des-peration to win the tournament...\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who is laughing at Harry Potter along with Crabbe and Goyle. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as someone who is laughing at Harry Potter along with Malfoy and Goyle. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as someone who is laughing at Harry Potter along with Malfoy and Crabbe. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is questioning Harry Potter about how she knew his scar hurt in Divination. (\"How did she know your scar hurt in Divination?\" Ron said.)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is questioning Harry Potter about how Hermione knew his scar hurt in Divination. (\"How did she know your scar hurt in Divination?\" Ron said.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dark arts",
+      "relationship_type": "may_resort_to",
+      "description": "Harry Potter might resort to the Dark Arts in his desperation to win the tournament. (\"Some fear that Potter might resort to the Dark Arts in his des-peration to win the tournament...\")"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "triwizard tournament",
+      "relationship_type": "competes_in",
+      "description": "Harry Potter will compete in the Triwizard Tournament. (\"...the third task of which takes place this evening.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "knows_about",
+      "description": "Hermione knows about Harry Potter's scar hurt in Divination. (\"How did she know your scar hurt in Divination?\" Ron said.)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "knows_about",
+      "description": "Ron knows about Hermione knowing Harry Potter's scar hurt in Divination. (\"How did she know your scar hurt in Divination?\" Ron said.)"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "teases",
+      "description": "Malfoy teases Harry Potter along with Crabbe and Goyle. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "harry potter",
+      "relationship_type": "teases",
+      "description": "Crabbe teases Harry Potter along with Malfoy and Goyle. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "harry potter",
+      "relationship_type": "teases",
+      "description": "Goyle teases Harry Potter along with Malfoy and Crabbe. (\"Over at the Slytherin table, Malfoy, Crabbe, and Goyle were laughing at him...\")"
+    }
+  ]
+}

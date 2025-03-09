@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a village where Harry might run into Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person that Harry might run into in Hogsmeade."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who left the castle with him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who left the castle with him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who left the castle with Ron and Hermione."
+    },
+    {
+      "name": "victor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is a person from Durmstrang ship."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Durmstrang is the name of the ship moored in the lake."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The lake is where Durmstrang ship is moored."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "may_run_into",
+      "description": "Harry might run into Hagrid in Hogsmeade."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "friend",
+      "description": "Ron and Hermione are friends of Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "victor krum",
+      "relationship_type": "saw",
+      "description": "Harry saw Viktor Krum emerge onto the deck of Durmstrang ship."
+    },
+    {
+      "entity_1": "viktor krum",
+      "entity_2": "lake",
+      "relationship_type": "fell_into",
+      "description": "Viktor Krum fell into the lake."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "victor krum",
+      "relationship_type": "thought_mad",
+      "description": "Harry thought Viktor Krum was mad for jumping into the lake."
+    }
+  ]
+}

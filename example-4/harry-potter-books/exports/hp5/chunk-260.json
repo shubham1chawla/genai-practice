@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is tired and yawning hugely."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person that Tonks needs to inform about not being able to do night duty."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who offers to cover for Tonks and has a report to finish."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "dumbledore",
+      "relationship_type": "informant",
+      "description": "Tonks needs to inform Dumbledore about not being able to do night duty."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "tonks",
+      "relationship_type": "helper",
+      "description": "Mr. Weasley offers to cover for Tonks."
+    }
+  ]
+}

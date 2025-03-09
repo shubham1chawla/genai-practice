@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is the main hall of Hogwarts School of Witchcraft and Wizardry where students have meals."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who has his nose stamped by Professor Snape."
+    },
+    {
+      "name": "victorius",
+      "entity_type": "score",
+      "singular": true,
+      "description": "The score of 161 is mentioned in the context of Quidditch match."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts who mimics something to do with Harry's nose."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry and a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a prefect at Hogwarts who helps the first-years."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who stamps Harry's nose."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "mimicry",
+      "description": "Malfoy mimics something to do with Harry's nose."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron is a friend of Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "first-years",
+      "relationship_type": "shepherd",
+      "description": "Hermione helps the first-years as their prefect."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "stamping",
+      "description": "Snape stamps Harry's nose."
+    }
+  ]
+}

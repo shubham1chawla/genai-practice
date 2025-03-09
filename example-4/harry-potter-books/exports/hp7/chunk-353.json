@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as still having his Invisibility Cloak and being cheered up by visits. Bathilda shares stories about him."
+    },
+    {
+      "name": "wormy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Visited last weekend and seemed down due to the McKinnons."
+    },
+    {
+      "name": "mckinnons",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Caused Wormy to seem down."
+    },
+    {
+      "name": "bathilda",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Drops in most days and shares stories about Dumbledore."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Mentioned as having a tale."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Experienced numb extremities and read a letter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bathilda",
+      "entity_2": "dumbledore",
+      "relationship_type": "shares_stories_about",
+      "description": "Bathilda shares stories about Dumbledore."
+    },
+    {
+      "entity_1": "wormy",
+      "entity_2": "mckinnons",
+      "relationship_type": "affected_by",
+      "description": "Wormy was affected by the McKinnons."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "letter",
+      "relationship_type": "read",
+      "description": "Harry read a letter."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "invisibility_cloak",
+      "relationship_type": "has",
+      "description": "Dumbledore still has his Invisibility Cloak."
+    }
+  ]
+}

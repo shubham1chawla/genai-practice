@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is a poltergeist who crashed a cabinet over Filch's office to distract him."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is the caretaker of Hogwarts school and was being distracted by Peeves."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nick is a ghost who helped Harry escape punishment from Filch."
+    },
+    {
+      "name": "sir patrick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sir Patrick is someone who was involved in the Headless Hunt."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts school who was being punished by Filch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "filch",
+      "relationship_type": "distracted_by",
+      "description": "Peeves crashed a cabinet over Filch's office to distract him."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "harry",
+      "relationship_type": "helped",
+      "description": "Nick helped Harry escape punishment from Filch."
+    },
+    {
+      "entity_1": "sir patrick",
+      "entity_2": "headless hunt",
+      "relationship_type": "involved_in",
+      "description": "Sir Patrick was involved in the Headless Hunt."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "grateful_to",
+      "description": "Harry is grateful to Nick for helping him escape punishment."
+    }
+  ]
+}

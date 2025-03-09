@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "gold prospector",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who sifts for gold is compared to a gold prospector."
+    },
+    {
+      "name": "little old man",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A little old man rises out of the swirling mass in the Pensieve."
+    },
+    {
+      "name": "Pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Pensieve is a device where memories are stored and can be reviewed."
+    },
+    {
+      "name": "ha ir",
+      "entity_type": "attribute",
+      "singular": false,
+      "description": "The little old man has a thatch of hair covering his eyes."
+    },
+    {
+      "name": "Slytherin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The locket is said to have belonged to Slytherin."
+    },
+    {
+      "name": "Merlin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A story about Merlin's favourite teapot is mentioned as a comparison."
+    },
+    {
+      "name": "young witch",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A young witch brought the locket to be sold."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "little old man",
+      "entity_2": "Pensieve",
+      "relationship_type": "is_in",
+      "description": "The little old man is in the Pensieve."
+    },
+    {
+      "entity_1": "Slytherin",
+      "entity_2": "locket",
+      "relationship_type": "owned",
+      "description": "The locket belonged to Slytherin."
+    },
+    {
+      "entity_1": "young witch",
+      "entity_2": "locket",
+      "relationship_type": "brought",
+      "description": "The young witch brought the locket to be sold."
+    }
+  ]
+}

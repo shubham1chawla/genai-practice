@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's wand is mentioned as being raised by Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one who raises Hermione's wand and jumps to his feet."
+    },
+    {
+      "name": "light",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The light is described as moving soundlessly towards Harry Potter."
+    },
+    {
+      "name": "trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Trees are mentioned as being in front of the light and becoming pitch-black in silhouette."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "owns",
+      "description": "Harry Potter raises Hermione's wand."
+    },
+    {
+      "entity_1": "light",
+      "entity_2": "trees",
+      "relationship_type": "approaches",
+      "description": "The light is moving towards the trees."
+    }
+  ]
+}

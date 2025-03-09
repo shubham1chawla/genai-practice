@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "patches",
+      "entity_type": "color_patches",
+      "singular": false,
+      "description": "Patches of color are described as being in the landscape."
+    },
+    {
+      "name": "green",
+      "entity_type": "colors",
+      "singular": true,
+      "description": "Green is mentioned as one of the colors present in the patches."
+    },
+    {
+      "name": "brown",
+      "entity_type": "colors",
+      "singular": true,
+      "description": "Brown is also mentioned as one of the colors present in the patches."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "patches",
+      "entity_2": "green",
+      "relationship_type": "contain_color",
+      "description": "Patches contain green color."
+    },
+    {
+      "entity_1": "patches",
+      "entity_2": "brown",
+      "relationship_type": "contain_color",
+      "description": "Patches also contain brown color."
+    }
+  ]
+}

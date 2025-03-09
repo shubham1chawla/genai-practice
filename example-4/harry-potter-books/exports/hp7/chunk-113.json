@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a wizard who is being chased by Death Eaters. He casts a jinx to slow down one of them."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are chasing Harry. They are closing in on him."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and a friend of Harry's. He is trying to help Harry escape from the Death Eaters."
+    },
+    {
+      "name": "impedimenta",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A jinx cast by Harry to slow down one of the Death Eaters."
+    },
+    {
+      "name": "the seven potters",
+      "entity_type": "event",
+      "singular": false,
+      "description": "An event in which seven people are being protected from Death Eaters. It is not clear what this event is or how it relates to Harry's situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "chased_by",
+      "description": "Harry is being chased by the Death Eaters."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "helping",
+      "description": "Hagrid is trying to help Harry escape from the Death Eaters."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "impedimenta",
+      "relationship_type": "cast",
+      "description": "Harry casts the Impedimenta jinx to slow down one of the Death Eaters."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "impedimenta",
+      "relationship_type": "affected_by",
+      "description": "One of the Death Eaters is affected by Harry's Impedimenta jinx."
+    }
+  ]
+}

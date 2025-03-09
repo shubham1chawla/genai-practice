@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Diggory is a person who is able to cast spells and disappear into darkness. He is described as marching across the clearing with his wand raised."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who watches Diggory vanish with her hands over her mouth."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is a person who sounds highly disbelieving when he hears that someone has been found unconscious."
+    },
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is a person who is described as being tiny and limp, and is recognized by Harry due to the tea towel she is wrapped in."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who recognizes Winky due to the tea towel she is wrapped in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "diggory",
+      "entity_2": "hermione",
+      "relationship_type": "watched",
+      "description": "Hermione watched Diggory vanish into darkness."
+    },
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "diggory",
+      "relationship_type": "spoke_to",
+      "description": "Mr. Crouch spoke to Mr. Diggory, asking who the person was that had been found unconscious."
+    },
+    {
+      "entity_1": "diggory",
+      "entity_2": "winky",
+      "relationship_type": "carried",
+      "description": "Diggory carried Winky in his arms."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "winky",
+      "relationship_type": "recognized",
+      "description": "Harry recognized Winky due to the tea towel she was wrapped in."
+    }
+  ]
+}

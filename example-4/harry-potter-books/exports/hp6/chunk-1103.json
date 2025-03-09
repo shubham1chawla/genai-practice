@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who is shouting at Harry Potter. He mentions that Harry's father would never attack him unless it was four on one."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is being shouted at by Snape and is trying to cast spells but they are being blocked by Snape."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A huge Death Eater is behind Harry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as a place that will turn up soon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "shouting_at",
+      "description": "Snape is shouting at Potter."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "snape",
+      "relationship_type": "being_shouted_at",
+      "description": "Potter is being shouted at by Snape."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "potter",
+      "relationship_type": "behind",
+      "description": "A huge Death Eater is behind Potter."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ministry",
+      "relationship_type": "concerned_about",
+      "description": "Snape is concerned that the Ministry will turn up soon."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "Rita Skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A journalist mentioned in the text as having some facts right."
+    },
+    {
+      "name": "Muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned alongside Rita Skeeter, also with some facts right."
+    },
+    {
+      "name": "Dumbledore family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family of Albus Dumbledore, mentioned as having lived and died in the location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Rita Skeeter",
+      "entity_2": "Muriel",
+      "relationship_type": "cooperative_fact_gathering",
+      "description": "Both Rita Skeeter and Muriel had got some of their facts right, indicating they worked together or shared information."
+    },
+    {
+      "entity_1": "Dumbledore family",
+      "entity_2": "location",
+      "relationship_type": "lived_and_died_here",
+      "description": "The Dumbledore family lived and part of it died in the location mentioned."
+    }
+  ]
+}

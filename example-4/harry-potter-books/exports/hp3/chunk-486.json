@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "zonko",
+      "entity_type": "store",
+      "singular": true,
+      "description": "Zonko's is a store where Ron bought something for Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who gave something to Harry and was out of breath."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher in the school where Ron and Harry are students."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Lupin is a teacher who helped clear up the situation with Snape."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who received something from Ron."
+    },
+    {
+      "name": "zonko's",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Zonko's is the name of the store where Ron bought something for Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "gave",
+      "description": "Ron gave something to Harry."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "snape",
+      "relationship_type": "helped",
+      "description": "Lupin helped clear up the situation with Snape."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "zonko's",
+      "relationship_type": "bought_from",
+      "description": "Ron bought something for Harry from Zonko's."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "needed_to_speak_with",
+      "description": "Lupin needed to speak with Harry about his vampire essay."
+    }
+  ]
+}

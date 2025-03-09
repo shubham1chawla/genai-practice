@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by name."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned alongside him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends, also mentioned alongside him."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is a member of the Weasley family and is married to Fleur."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is Bill's wife and has removed Griphook's shoes."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who is being taken care of by Bill."
+    },
+    {
+      "name": "sword of gryffindor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword that Gryffindor house owns and Griphook is clutching."
+    },
+    {
+      "name": "sea",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A geographical location visible from the window."
+    },
+    {
+      "name": "sunrise",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The time of day when the sun is rising."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "care_for",
+      "description": "Harry is taking care of Griphook by bringing him to Bill's room."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "fleur",
+      "relationship_type": "spouse_of",
+      "description": "Bill and Fleur are married, as mentioned in the text."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "sword of gryffindor",
+      "relationship_type": "possess",
+      "description": "Griphook is clutching the sword of Gryffindor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry and Ron are friends, as mentioned in the text."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Hermione is also a friend of Harry's."
+    }
+  ]
+}

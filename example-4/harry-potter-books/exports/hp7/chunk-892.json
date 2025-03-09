@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "royal",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Royal is mentioned as a person who has given their vote to Lee."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee is mentioned as a person who has received votes from Royal."
+    },
+    {
+      "name": "romulus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Romulus is the host of the program 'Pals of Potter'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's voice is mentioned as very familiar."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione forestalled Ron in a whisper."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as the one who has appeared on the program 'Pals of Potter'."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a symbol of everything for which they are fighting."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters would proclaim Harry's death if it had happened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "romulus",
+      "entity_2": "harry potter",
+      "relationship_type": "maintains_alive_status",
+      "description": "Romulus maintains that Harry Potter is still alive."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "death eaters",
+      "relationship_type": "would_proclaim_death",
+      "description": "Death Eaters would proclaim Harry's death if it had happened."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "romulus",
+      "relationship_type": "symbol_of_resistance",
+      "description": "Harry Potter is a symbol of everything for which they are fighting."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry potter",
+      "relationship_type": "has_forgiven",
+      "description": "Lupin has forgiven Harry for the terrible things he had said when they last met."
+    }
+  ]
+}

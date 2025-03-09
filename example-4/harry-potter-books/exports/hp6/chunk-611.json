@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as the one using a man to marshal werewolves."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A werewolf who believes in revenge against normal people."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, mentioned as being fiercely defending Lupin."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A werewolf who is being defended by Harry and has a 'furry little problem'."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, mentioned as having called Lupin's condition a 'furry little problem'."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who offers Lupin a glass of egg-nog."
+    },
+    {
+      "name": "werewolves",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people with the ability to transform into wolves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "defends",
+      "description": "Harry is defending Lupin against Greyback's insistence that werewolves deserve blood."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "werewolves",
+      "relationship_type": "believes_in",
+      "description": "Greyback believes in revenge for werewolves against normal people."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "lupin",
+      "relationship_type": "called_out",
+      "description": "James called Lupin's condition a 'furry little problem'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "james",
+      "relationship_type": "reminded_by",
+      "description": "Harry was reminded of his father when Lupin mentioned him."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "egg-nog",
+      "relationship_type": "received",
+      "description": "Lupin received a glass of egg-nog from Mr Weasley."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "werewolves",
+      "relationship_type": "believes_in_revenge_for",
+      "description": "Greyback believes in revenge for werewolves against normal people."
+    }
+  ]
+}

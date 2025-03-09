@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dawlish is a person who was stirring. He is mentioned as being present in the scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who seized Harry's wrist and closed his fingers over Harry's skin. He has a phoenix named Fawkes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who felt pain in the scar on his forehead when Dumbledore touched him."
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fawkes is a phoenix that circled the office and swooped low over Harry."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who yelled 'Where is he?' after Dumbledore and Harry disappeared."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is a person who also leaped to his feet and shouted 'I don't know!' when asked where Dumbledore was."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a person who cried that Dumbledore couldn't have Disapparated inside the school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "touched",
+      "description": "Dumbledore touched Harry's wrist and skin, causing pain in Harry's forehead."
+    },
+    {
+      "entity_1": "fawkes",
+      "entity_2": "dumbledore",
+      "relationship_type": "possessed_by",
+      "description": "Fawkes is a phoenix that Dumbledore possesses."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fawkes",
+      "relationship_type": "possesses",
+      "description": "Dumbledore has possession of Fawkes, the phoenix."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "door",
+      "relationship_type": "opened",
+      "description": "Kingsley opened the door to follow Dumbledore and Harry."
+    },
+    {
+      "entity_1": "dawlish",
+      "entity_2": "door",
+      "relationship_type": "opened",
+      "description": "Dawlish also opened the door to follow Dumbledore and Harry."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "dawlish",
+      "relationship_type": "followed",
+      "description": "Kingsley followed Dawlish after they both opened the door."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "searching_for",
+      "description": "Fudge is searching for Dumbledore, who has disappeared with Harry."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hall is mentioned as the location where Hagrid is standing and waiting for a crowd of Ravenclaws to pass. (\"Hagrid was standing beside the doors into the entrance hall...\")"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is heavily bruised and has a new cut on his nose. He is waiting for a crowd of Ravenclaws to pass. (\"Hagrid was standing beside the doors into the entrance hall...\", \"Are you okay, Hagrid? asked Harry...\")"
+    },
+    {
+      "name": "ravenclaws",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Ravenclaws is a group of students who are passing through the hall. (\"waiting for a crowd of Ravenclaws to pass\")"
+    },
+    {
+      "name": "giants",
+      "entity_type": "species",
+      "singular": true,
+      "description": "Giants is a species that Hagrid had a mission to deal with. (\"he had come back from his mission to the giants...\")"
+    },
+    {
+      "name": "professor vector",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Vector is a person who is passing through the hall and narrowly misses being concussed by Hagrid's waving hand. (\"who was passing...\""
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ravenclaws",
+      "relationship_type": "waiting_for",
+      "description": "Hagrid is waiting for a crowd of Ravenclaws to pass through the hall. (\"He was still as heavily bruised...\", \"All righ’, you two? he said, trying to muster a smile but managing only a kind of pained grimace.\")"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "giants",
+      "relationship_type": "had_mission_to",
+      "description": "Hagrid had a mission to deal with the giants. (\"he had come back from his mission to the giants...\")"
+    }
+  ]
+}

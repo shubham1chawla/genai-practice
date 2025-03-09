@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's teacher and a werewolf"
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Soul-sucking creatures that are repelled by Patronus charms"
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_entity",
+      "singular": true,
+      "description": "A magical charm that takes the form of an animal and repels dementors"
+    },
+    {
+      "name": "prongs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, who was a werewolf and transformed into a stag"
+    },
+    {
+      "name": "moony",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Marauders, a group of friends that included James Potter (Prongs)"
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Marauders"
+    },
+    {
+      "name": "padfoot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Marauders"
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical map that shows the location of everyone in Hogwarts"
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical cloak that makes the wearer invisible"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "has",
+      "description": "Harry has a Patronus charm"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "prongs",
+      "relationship_type": "was",
+      "description": "Lupin was Prongs, Harry's father"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "has",
+      "description": "Harry has the Marauder's Map"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "gave",
+      "description": "Lupin gave Harry back the Invisibility Cloak"
+    }
+  ]
+}

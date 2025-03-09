@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "greyback",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Greyback is a werewolf who was forced to gaze up at the woman and bared his pointed teeth."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape sent the sword to the woman's vault in Gringotts."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Gringotts is a location where the woman has a vault."
+    },
+    {
+      "name": "woman",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The woman is holding a sword and brandishing it in Greyback's face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "snape",
+      "relationship_type": "sent_by",
+      "description": "Snape sent the sword to the woman's vault in Gringotts, which was found by Greyback."
+    },
+    {
+      "entity_1": "woman",
+      "entity_2": "gringotts",
+      "relationship_type": "has_vault_in",
+      "description": "The woman has a vault in Gringotts where Snape sent the sword."
+    }
+  ]
+}

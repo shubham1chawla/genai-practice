@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who is being threatened by death. (\"Bow to death, Harry.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, whose face appears in his mind. (\"And their faces burst clearly into his mind as he fought for breath\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's other friend, whose face also appears in his mind."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A dark creature that is attacking Harry. (\"An enormous silver stag erupted from the tip of Harry’s wand; its antlers caught the dementor in the place where the heart should have been\")"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's cousin, who is curled on the ground and being attacked by a Dementor. (\"He had run barely a dozen steps when he reached them: Dudley was curled on the ground, his arms clamped over his face\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "attacked_by",
+      "description": "Harry is being attacked by a Dementor. (\"An enormous silver stag erupted from the tip of Harry’s wand; its antlers caught the dementor in the place where the heart should have been\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry is friends with Ron. (\"And their faces burst clearly into his mind as he fought for breath\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry is friends with Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "rescued",
+      "description": "Harry rescues Dudley from a Dementor. (\"He had run barely a dozen steps when he reached them: Dudley was curled on the ground, his arms clamped over his face\")"
+    }
+  ]
+}

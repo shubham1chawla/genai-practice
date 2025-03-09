@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "duelling club",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The duelling club is mentioned as the location where the scene takes place. (Excerpt: 'T HE  DUELLING  CLUB 145')"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher who smirks at Lockhart's attempt to cast a spell. (Excerpt: 'Snape smirked as Lockhart quickly picked it up, saying, ‘Whoops – my wand is a little over-excited.’')"
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is the teacher who attempts to cast a spell and drops his wand. (Excerpt: 'Snape smirked as Lockhart quickly picked it up, saying, ‘Whoops – my wand is a little over-excited.’')"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student who smirks at Harry and whispers something in Snape's ear. (Excerpt: 'Snape moved closer to Malfoy , bent down and whispered something in his ear.')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the student who looks nervously at Lockhart and asks him to show him a blocking spell. (Excerpt: 'Harry looked nervously up at Lockhart and said, ‘Professor, could you show me that blocking thing again?’')"
+    },
+    {
+      "name": "wands",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Wands are mentioned as the objects used by the students to cast spells. (Excerpt: 'He raised his own wand, attempted a complicated sort of wig-gling action and dropped it.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "whispered_to",
+      "description": "Snape whispers something in Malfoy's ear. (Excerpt: 'Snape moved closer to Malfoy , bent down and whispered something in his ear.')"
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry",
+      "relationship_type": "taught_to",
+      "description": "Lockhart is teaching Harry a blocking spell. (Excerpt: 'Harry looked nervously up at Lockhart and said, ‘Professor, could you show me that blocking thing again?’')"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snape",
+      "relationship_type": "whispered_to_by",
+      "description": "Malfoy is the recipient of Snape's whispered message. (Excerpt: 'Snape moved closer to Malfoy , bent down and whispered something in his ear.')"
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "wands",
+      "relationship_type": "owns",
+      "description": "Lockhart owns a wand that is described as being over-excited. (Excerpt: 'Snape smirked as Lockhart quickly picked it up, saying, ‘Whoops – my wand is a little over-excited.’')"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "teased",
+      "description": "Malfoy teases Harry by muttering 'Scared?' under his breath. (Excerpt: '‘Scared?’ muttered Malfoy , so that Lockhart couldn’t hear him.')"
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry",
+      "relationship_type": "cuffed",
+      "description": "Lockhart cuffs Harry on the shoulder. (Excerpt: 'Lockhart cuffed Harry merrily on the shoulder.')"
+    }
+  ]
+}

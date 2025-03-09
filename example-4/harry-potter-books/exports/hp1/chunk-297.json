@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being on a train home tomorrow."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts School of Witchcraft and Wizardry, mentioned as competing for the House Cup."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts School of Witchcraft and Wizardry, mentioned as competing against Gryffindor for the House Cup."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry, mentioned as giving points to Slytherin."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry Potter's friends, mentioned as being locked out of Gryffindor Tower."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry Potter's friends, mentioned as trying to leave with Hermione."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A portrait that guards the entrance to Gryffindor Tower, mentioned as going on a night-time visit."
+    },
+    {
+      "name": "harry potter's friends",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry Potter's group of friends, including Ron and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "locked_out_of",
+      "description": "Hermione is locked out of Gryffindor Tower."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "slytherin",
+      "relationship_type": "awarded_points_to",
+      "description": "Professor McGonagall awarded points to Slytherin."
+    },
+    {
+      "entity_1": "harry potter's friends",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "trying_to_leave_from",
+      "description": "Harry Potter's friends are trying to leave from Gryffindor Tower."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter's friends",
+      "relationship_type": "following",
+      "description": "Hermione is following Harry Potter's friends."
+    }
+  ]
+}

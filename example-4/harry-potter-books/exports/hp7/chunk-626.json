@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, who is walking on a heather-covered hillside with Hermione. He notices her distress and remembers Ron's contemptuous expression."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is distraught and crying. She performs spells to ensure their protection."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, whose contemptuous expression is remembered by Harry, causing him distress."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where the story takes place. It is mentioned as a place where they are currently located."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry starts bringing out, which is used for protection and navigation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concerned_about",
+      "description": "Harry watches Hermione, supposing that he ought to go and comfort her. He is concerned about her distress."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "remembers_contempt",
+      "description": "Harry remembers Ron's contemptuous expression, which causes him distress."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "godric's hollow",
+      "relationship_type": "located_in",
+      "description": "Hermione is located in Godric's Hollow with Harry. They are currently at this location."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "possesses",
+      "description": "Harry starts bringing out the Marauder's Map, which he possesses for protection and navigation."
+    }
+  ]
+}

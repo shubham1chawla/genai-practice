@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is feeling watched and senses something unusual."
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A deserted street where Harry is standing, described as having large square houses with no lights on."
+    },
+    {
+      "name": "garage",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A garage behind Harry, which has a door that gleams in the light of his wand."
+    },
+    {
+      "name": "fence",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A fence behind Harry, where he senses something standing between it and the garage."
+    },
+    {
+      "name": "alleyway",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A narrow black alleyway behind Harry, which is described as having a hulking outline of something big with wide eyes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "street",
+      "relationship_type": "location_of",
+      "description": "Harry is standing on the street, which appears to be deserted."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "garage",
+      "relationship_type": "behind",
+      "description": "The garage is behind Harry, where he senses something unusual."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fence",
+      "relationship_type": "adjacent_to",
+      "description": "The fence is adjacent to the garage, where Harry senses something standing between it and the garage."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "alleyway",
+      "relationship_type": "behind",
+      "description": "The alleyway is behind Harry, where he sees a hulking outline of something big with wide eyes."
+    }
+  ]
+}

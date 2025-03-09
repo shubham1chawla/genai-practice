@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, being followed by people from the Order of the Phoenix."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A powerful wizard and headmaster of Hogwarts, who is angry when he finds out Mundungus left before his shift ended."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who saw Dumbledore's reaction to Mundungus leaving early."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who left his shift early, causing Dumbledore's anger."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization that has been following Harry."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Harry's home address, where he would have stayed if Mundungus hadn't left early."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "A government-like organization that deals with magical matters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mundungus",
+      "relationship_type": "anger",
+      "description": "Dumbledore is angry at Mundungus for leaving early."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "order of the phoenix",
+      "relationship_type": "being_followed",
+      "description": "The Order of the Phoenix has been following Harry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "privet drive",
+      "relationship_type": "left_at",
+      "description": "Dumbledore would have left Harry at Privet Drive if Mundungus hadn't left early."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "concerned_about_hearing",
+      "description": "Harry is not worried about the Ministry of Magic hearing."
+    }
+  ]
+}

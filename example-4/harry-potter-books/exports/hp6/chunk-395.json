@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main protagonist of the story. He is mentioned as having practiced non-verbal spells with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron Weasley is Harry's friend and a student at Hogwarts. He is mentioned as having practiced non-verbal spells with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione Granger is Harry's friend and a student at Hogwarts. She is mentioned as having practiced non-verbal spells with Harry and Ron."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Rubeus Hagrid is the gamekeeper and Care of Magical Creatures teacher at Hogwarts. He has stopped coming to meals and seems distant."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Filius Flitwick is a teacher at Hogwarts. He is mentioned as needing practice with the Aguamenti charm."
+    },
+    {
+      "name": "skrewts",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "Skrewts are creatures that Hagrid teaches in his Care of Magical Creatures class. Ron mentions having had a narrow escape from them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "practiced_non_verbal_spells_with",
+      "description": "Harry, Ron, and Hermione practiced non-verbal spells together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "practiced_non_verbal_spells_with",
+      "description": "Harry, Ron, and Hermione practiced non-verbal spells together."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "skrewts",
+      "relationship_type": "had_narrow_escape_from",
+      "description": "Ron had a narrow escape from the Skrewts."
+    }
+  ]
+}

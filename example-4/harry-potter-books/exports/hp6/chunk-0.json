@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "prime minister",
+      "entity_type": "government_official",
+      "singular": true,
+      "description": "The Prime Minister is the head of the government, sitting alone in his office at midnight."
+    },
+    {
+      "name": "president",
+      "entity_type": "head_of_state",
+      "singular": true,
+      "description": "The President of a far-distant country is expected to call the Prime Minister."
+    },
+    {
+      "name": "political opponent",
+      "entity_type": "politician",
+      "singular": true,
+      "description": "A political opponent appears on the news to criticize the government."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "prime minister",
+      "entity_2": "president",
+      "relationship_type": "waiting_for_call",
+      "description": "The Prime Minister is waiting for a call from the President of a far-distant country."
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "political opponent",
+      "relationship_type": "being_criticized",
+      "description": "A political opponent appears on the news to criticize the government, which is being led by the Prime Minister."
+    }
+  ]
+}

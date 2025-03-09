@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who saw Draco Malfoy being dragged by Filch. He is described as grinning and his spirits are raised even higher when he sees this."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as being dragged by the ear towards Harry Potter by Argus Filch. He claims to have been trying to gatecrash Slughorn's party."
+    },
+    {
+      "name": "argus filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Argus Filch is mentioned as dragging Draco Malfoy by the ear towards Harry Potter. He is described as having a maniacal light of mischief-detection in his eyes and is wheezing."
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is mentioned as being questioned by Filch about whether he issued an invitation to Draco Malfoy. He says that it's all right."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "argus filch",
+      "entity_2": "draco malfoy",
+      "relationship_type": "dragged_by",
+      "description": "Argus Filch is dragging Draco Malfoy by the ear towards Harry Potter."
+    },
+    {
+      "entity_1": "professor slughorn",
+      "entity_2": "draco malfoy",
+      "relationship_type": "issued_invitation_to",
+      "description": "Professor Slughorn is questioned by Filch about whether he issued an invitation to Draco Malfoy."
+    }
+  ]
+}

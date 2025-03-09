@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as a character who is wading towards the crowd through a sea of books. He pulls Mr Weasley and Mr Malfoy apart."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is mentioned as being pulled apart by Hagrid. He has a cut lip."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Malfoy is mentioned as being hit in the eye by an Encyclopedia of Toadstools and having his eyes glittering with malice."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is mentioned as being beckoned to by Mr Malfoy."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as having an old transfiguration book that Mr Malfoy tries to give back to her."
+    },
+    {
+      "name": "encyclopedia of toadstools",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Encyclopedia of Toadstools is mentioned as hitting Mr Malfoy in the eye."
+    },
+    {
+      "name": "ginny's old transfiguration book",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Ginny's old transfiguration book is mentioned as being given back to her by Mr Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "mr weasley",
+      "relationship_type": "separated",
+      "description": "Hagrid pulls Mr Weasley and Mr Malfoy apart."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "mr malfoy",
+      "relationship_type": "separated",
+      "description": "Hagrid pulls Mr Weasley and Mr Malfoy apart."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "encyclopedia of toadstools",
+      "relationship_type": "hit_by",
+      "description": "Mr Weasley is not hit by the Encyclopedia of Toadstools, but it hits Mr Malfoy in the eye."
+    },
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "ginny's old transfiguration book",
+      "relationship_type": "held",
+      "description": "Mr Malfoy is holding Ginny's old transfiguration book."
+    },
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "encyclopedia of toadstools",
+      "relationship_type": "hit_by",
+      "description": "The Encyclopedia of Toadstools hits Mr Malfoy in the eye."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "mr weasley",
+      "relationship_type": "protected",
+      "description": "Hagrid protects Mr Weasley from Mr Malfoy."
+    },
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "draco",
+      "relationship_type": "beckoned_to",
+      "description": "Mr Malfoy beckons to Draco."
+    }
+  ]
+}

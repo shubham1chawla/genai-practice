@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'I' and 'me'. The text states that Harry is letting someone have a copy of his book."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who has a slug problem. He is supported by Harry and Hermione into Hagrid's cabin."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who helps support Ron into Hagrid's cabin."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, who is surprised to see Harry and his friends. He has a one-roomed cabin with an enormous bed."
+    },
+    {
+      "name": "professor lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is mentioned as having already visited Hagrid's cabin."
+    },
+    {
+      "name": "harry potter's book",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The book that Harry lets someone have a copy of. The text states that he will sign one tonight and send it over."
+    },
+    {
+      "name": "the castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Professor Lockhart is heading towards."
+    },
+    {
+      "name": "Ron's slug problem",
+      "entity_type": "issue",
+      "singular": false,
+      "description": "Ron's issue with slugs"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor lockhart",
+      "relationship_type": "has already visited",
+      "description": "The text states that Professor Lockhart has already visited Hagrid's cabin."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "helped",
+      "description": "Harry helped Ron into Hagrid's cabin."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "helped",
+      "description": "Hermione helped support Ron into Hagrid's cabin."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor lockhart",
+      "relationship_type": "has been visited by",
+      "description": "The text states that Professor Lockhart has already visited Hagrid's cabin."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "slugs",
+      "relationship_type": "has a problem with",
+      "description": "Ron has a slug problem."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "helped",
+      "description": "Hagrid helped Ron by giving him a copper basin to get rid of the slugs."
+    }
+  ]
+}

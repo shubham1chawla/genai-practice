@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who is groaning at Hermione's story. He is described as being present in the scene and reacting to Hermione's words."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the person who tried to explain something to Hagrid but he didn't understand. She is described as being miserable."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the person who was not present when Hermione arrived and was keeping some unknown creatures in the Forbidden Forest. He is described as not understanding Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as a person that Hagrid doesn't understand. No further description is given."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "interaction",
+      "description": "Hermione tried to explain something to Hagrid but he didn't understand."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbridge",
+      "relationship_type": "disagreement",
+      "description": "Hagrid doesn't understand Umbridge."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who finished a sentence for someone else. He used his wand to make a bullfrog swell up like a green balloon."
+    },
+    {
+      "name": "azka ban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azka Ban is a location where Harry would probably be back in the morning."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who used her wand to silence Harry's bullfrog with the spell 'Silencio'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is trying to cast the spell Silencio on his raven."
+    },
+    {
+      "name": "bullfrog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The bullfrog was made to swell up like a green balloon by Harry's wand."
+    },
+    {
+      "name": "raven",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A raven is an animal that let out a derisive caw when Ron tried to cast the spell Silencio on it."
+    },
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An owl is an animal that can be used for sending messages."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "azka ban",
+      "relationship_type": "location_of",
+      "description": "Harry would probably be back in Azka Ban this morning."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bullfrog",
+      "relationship_type": "silenced_by",
+      "description": "Hermione used her wand to silence Harry's bullfrog with the spell 'Silencio'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "raven",
+      "relationship_type": "tried_to_cast_silencio_on",
+      "description": "Ron tried to cast the spell Silencio on his raven."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "corrected",
+      "description": "Hermione corrected Ron's wand movement while he was trying to cast the spell Silencio."
+    }
+  ]
+}

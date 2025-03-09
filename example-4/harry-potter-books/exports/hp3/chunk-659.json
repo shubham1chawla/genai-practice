@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking to Professor Snape and trying to defend Harry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as being spoken to by Hermione and Fudge."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as trying to defend Hermione and making excuses for her behavior."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as wanting to speak to Harry and Hermione alone and insisting that Madam Pomfrey leave them."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as trying to treat Harry and Hermione but being overruled by Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as needing treatment and rest according to Madam Pomfrey."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black's story is mentioned as something Snape doesn't believe."
+    },
+    {
+      "name": "cornelius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cornelius is mentioned as being asked to leave by Dumbledore."
+    },
+    {
+      "name": "poppy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Poppy is mentioned as being asked to leave by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_speak_to",
+      "description": "Dumbledore wants to speak to Harry alone."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hermione",
+      "relationship_type": "wants_to_speak_to",
+      "description": "Dumbledore wants to speak to Hermione alone."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry",
+      "relationship_type": "needs_treatment_from",
+      "description": "Madam Pomfrey thinks Harry needs treatment."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "hermione",
+      "relationship_type": "needs_treatment_from",
+      "description": "Madam Pomfrey thinks Hermione needs treatment."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "black",
+      "relationship_type": "does_not_believe_story_of",
+      "description": "Snape doesn't believe Black's story."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dementors",
+      "relationship_type": "should_have_arrived_by_now_with",
+      "description": "Fudge thinks the dementors should have arrived by now."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "whispers_to",
+      "description": "Snape whispers to Dumbledore."
+    }
+  ]
+}

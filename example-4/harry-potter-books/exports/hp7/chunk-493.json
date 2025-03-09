@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, introduced as he turns a corner and observes the scene in front of him."
+    },
+    {
+      "name": "witches",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of witches are sitting at desks, waving their wands and creating pamphlets."
+    },
+    {
+      "name": "wizards",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of wizards are sitting at desks, waving their wands and creating pamphlets."
+    },
+    {
+      "name": "muggleborn registration commission",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Muggleborn Registration Commission is an organization that is involved in the creation of pamphlets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "witches",
+      "relationship_type": "observes",
+      "description": "Harry observes a group of witches creating pamphlets."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wizards",
+      "relationship_type": "observes",
+      "description": "Harry observes a group of wizards creating pamphlets."
+    },
+    {
+      "entity_1": "witches",
+      "entity_2": "pamphlets",
+      "relationship_type": "create",
+      "description": "The witches are creating pamphlets by waving their wands and assembling paper squares."
+    },
+    {
+      "entity_1": "wizards",
+      "entity_2": "pamphlets",
+      "relationship_type": "create",
+      "description": "The wizards are creating pamphlets by waving their wands and assembling paper squares."
+    },
+    {
+      "entity_1": "muggleborn registration commission",
+      "entity_2": "pamphlets",
+      "relationship_type": "involved_in_creation",
+      "description": "The Muggleborn Registration Commission is involved in the creation of pamphlets."
+    }
+  ]
+}

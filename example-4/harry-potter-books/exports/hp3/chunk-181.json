@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student in Professor McGonagall's class."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student in Professor McGonagall's class who raises her hand to speak."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher of the Divination class, who is skeptical of Sibyll Trelawney's predictions."
+    },
+    {
+      "name": "sibyll trelawney",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts School who makes predictions about death omens."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student in Professor McGonagall's class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "sibyll trelawney",
+      "relationship_type": "colleague",
+      "description": "Professor McGonagall mentions that she never speaks ill of her colleagues, implying a professional relationship with Sibyll Trelawney."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "teacher_student",
+      "description": "Professor McGonagall is the teacher of Harry Potter's Divination class."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "student_teacher",
+      "description": "Hermione is a student in Professor McGonagall's class."
+    }
+  ]
+}

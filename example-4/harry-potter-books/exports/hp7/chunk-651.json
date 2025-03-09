@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking in the conversation. She is referring to a church and its graveyard, suggesting that she believes Harry's parents are buried there."
+    },
+    {
+      "name": "church",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The church is mentioned as being visible from where Hermione is standing. It has a graveyard behind it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "church",
+      "relationship_type": "has_view_of",
+      "description": "Hermione can see the church from where she is standing, indicating that there is a visual relationship between her and the church."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "graveyard",
+      "relationship_type": "is_behind",
+      "description": "Hermione mentions seeing the graveyard behind the church, indicating that the graveyard is located in a spatial relationship to the church."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry's_mum_and_dad",
+      "relationship_type": "believes_to_be_buried_in",
+      "description": "Hermione believes that Harry's parents are buried in the graveyard behind the church, indicating a relationship of belief or assumption between her and Harry's family."
+    }
+  ]
+}

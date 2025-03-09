@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as the one who has a scar and is being questioned by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard, mentioned as the one questioning Harry about his scar."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as someone Dumbledore has been in contact with since he left Hogwarts last year."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "correspondent",
+      "description": "Dumbledore and Sirius have been in contact with each other since Sirius left Hogwarts last year."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "interrogated_by",
+      "description": "Harry is being questioned by Dumbledore about his scar."
+    }
+  ]
+}

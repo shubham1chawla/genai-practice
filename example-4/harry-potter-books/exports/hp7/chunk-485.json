@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "cattermole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cattermole is mentioned as someone's wife, indicating he is a person."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley has an office that needs to be sorted out, indicating he is a person."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who will come with Cattermole, indicating he is a person."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who will go and sort out Yaxley's office, indicating he is a person."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who suggests using Finite Incantatem to stop the rain, indicating she is a person."
+    },
+    {
+      "name": "department for the regulation and control of magical creatures",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department for the Regulation and Control of Magical Creatures is mentioned as the current location, indicating it is an organization."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cattermole",
+      "relationship_type": "accompanying",
+      "description": "Harry will come with Cattermole."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "yaxley",
+      "relationship_type": "sorting_out_office",
+      "description": "Ron will go and sort out Yaxley's office."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "cattermole",
+      "relationship_type": "advising",
+      "description": "Hermione suggests using Finite Incantatem to stop the rain for Cattermole."
+    }
+  ]
+}

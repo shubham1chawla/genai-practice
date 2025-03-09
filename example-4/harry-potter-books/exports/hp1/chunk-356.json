@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Bludger is a ball used in Quidditch."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Quaffle is another flying ball used in the game of Quidditch."
+    },
+    {
+      "name": "adrian pucey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Adrian Pucey is a Slytherin student who was mentioned as speeding off towards the goalposts. He was blocked by a Bludger sent his way by Fred or George Weasley."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred Weasley is one of the twins who sent a Bludger to block Adrian Pucey's path towards the goalposts."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley is the other twin who sent a Bludger to block Adrian Pucey's path towards the goalposts."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and was mentioned as watching the Quidditch match from his hut using binoculars."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is one of Harry's friends who was watching the Quidditch match with Hermione and Hagrid."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is another one of Harry's friends who was watching the Quidditch match with Ron and Hagrid."
+    },
+    {
+      "name": "angelina johnson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina Johnson is a Gryffindor student who was mentioned as flying towards the goalposts with the Quaffle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bludger",
+      "entity_2": "adrian pucey",
+      "relationship_type": "hit_by",
+      "description": "A Bludger hit Adrian Pucey in the back of the head."
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "bludger",
+      "relationship_type": "sent",
+      "description": "Fred Weasley sent a Bludger to block Adrian Pucey's path towards the goalposts."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "bludger",
+      "relationship_type": "sent",
+      "description": "George Weasley also sent a Bludger to block Adrian Pucey's path towards the goalposts."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "binoculars",
+      "relationship_type": "used_with",
+      "description": "Hagrid used binoculars to watch the Quidditch match from his hut."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "hermione granger",
+      "relationship_type": "together_with",
+      "description": "Ron and Hermione squeezed together to give Hagrid enough space to join them."
+    },
+    {
+      "entity_1": "angelina johnson",
+      "entity_2": "quaffle",
+      "relationship_type": "had",
+      "description": "Angelina Johnson had possession of the Quaffle and was able to fly towards the goalposts."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mudbloods",
+      "entity_type": "term",
+      "singular": false,
+      "description": "a derogatory term used by the wizarding community to refer to those with non-magical ancestry"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape, a Hogwarts teacher mentioned in the conversation"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, one of the main characters and a student at Hogwarts"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger, another main character and a student at Hogwarts"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley, a main character and a student at Hogwarts"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "directed_at",
+      "description": "Harry directed his wand at Snape"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mudbloods",
+      "relationship_type": "defended_against",
+      "description": "Harry defended against the term 'Mudbloods' by silencing the person using it"
+    }
+  ]
+}

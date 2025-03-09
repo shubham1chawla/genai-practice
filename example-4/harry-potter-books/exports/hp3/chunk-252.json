@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, feeling depressed on Halloween morning."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is trying to cheer him up by promising to bring sweets back from Honeydukes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend who has forgotten his squabble with Hermione in the face of Harry's difficulties."
+    },
+    {
+      "name": "honeydukes",
+      "entity_type": "store",
+      "singular": false,
+      "description": "A store where friends plan to buy sweets for Harry."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Ron and Hermione's cat that was the subject of a squabble between them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Hermione is trying to cheer up Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron is also trying to help Harry feel better."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "crookshanks",
+      "relationship_type": "ownership",
+      "description": "Hermione and Ron own Crookshanks."
+    }
+  ]
+}

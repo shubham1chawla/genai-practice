@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a character in the story who is speaking to Snape. She mentions that she was entrusted by the Dark Lord with his most precious things."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is Bellatrix's husband and is mentioned as someone who may have been responsible for something."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is Bellatrix's sister and is speaking to her in a low and deadly voice. She defends her husband."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a character who is being spoken to by Bellatrix. He mentions that he was following the Dark Lord's orders."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who would not have noticed if Snape had joined forces with the Death Eaters."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Dark Lord is a title given to Voldemort and is mentioned as someone who entrusted Bellatrix with his most precious things."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of followers of the Dark Lord and are mentioned as people Snape would have joined forces with."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Order of the Phoenix is a group that is fighting against the Death Eaters and is mentioned by Bellatrix."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "dark lord",
+      "relationship_type": "entrusted_by",
+      "description": "Bellatrix mentions that she was entrusted by the Dark Lord with his most precious things."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "death eaters",
+      "relationship_type": "would_have_joined_forces_with",
+      "description": "Snape mentions that he would have joined forces with the Death Eaters if Dumbledore had not noticed."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "lucius",
+      "relationship_type": "husband_of",
+      "description": "Bellatrix mentions her husband Lucius."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "snape",
+      "relationship_type": "defended_by",
+      "description": "Narcissa defends Snape."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "dumbledore",
+      "relationship_type": "would_not_have_noticed",
+      "description": "Bellatrix mentions that Dumbledore would not have noticed if Snape had joined forces with the Death Eaters."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "order of the phoenix",
+      "relationship_type": "fought_against",
+      "description": "Snape is mentioned as someone who fought against the Order of the Phoenix."
+    }
+  ]
+}

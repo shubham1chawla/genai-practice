@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "genuine sword of Gryﬃndor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is mentioned as a specific object that is not in a vault at Gringotts bank."
+    },
+    {
+      "name": "gringotts bank",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts bank is mentioned as the location where the vault is supposed to be."
+    },
+    {
+      "name": "ted",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ted is a person who is part of the conversation and is mentioned as saying 'I see'."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Griphook is a person who is part of the conversation and is mentioned as smugly responding to Ted's question."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group that Griphook did not bother telling about the information."
+    },
+    {
+      "name": "gornuk",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gornuk is a person who is part of the conversation and is mentioned as laughing along with Dirk."
+    },
+    {
+      "name": "dirk",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dirk is a person who is part of the conversation and is mentioned as laughing along with Gornuk."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is part of the conversation and is mentioned as closing his eyes and willing someone to ask him a question."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who is mentioned as having an ex-boyfriend in common with Dean."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is a person who is part of the conversation and is mentioned as being an ex-boyfriend of Ginny's."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "griphook",
+      "entity_2": "death eaters",
+      "relationship_type": "did_not_bother_telling",
+      "description": "Griphook did not bother telling the Death Eaters about the information."
+    },
+    {
+      "entity_1": "ted",
+      "entity_2": "griphook",
+      "relationship_type": "asked_question",
+      "description": "Ted asked Griphook a question, to which Griphook responded smugly."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dean",
+      "relationship_type": "wanted_information_from",
+      "description": "Harry wanted information from Dean, and after a minute, Dean obliged by answering Harry's question."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "dean",
+      "relationship_type": "ex_romantic_partner_of",
+      "description": "Ginny had an ex-boyfriend in common with Dean."
+    }
+  ]
+}

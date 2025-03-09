@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "azkaban",
+      "entity_type": "place",
+      "singular": true,
+      "description": "Azkaban is a prison where Harry's father was kept. It is mentioned that he lived out his life there and is buried beside the prison."
+    },
+    {
+      "name": "marvolo",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marvolo is Harry's grandfather. His last heirloom, a ring, was lost by Azkaban."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is Voldemort's uncle. His wand was stolen by Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "azkaban",
+      "entity_2": "marvolo",
+      "relationship_type": "location_of",
+      "description": "Azkaban is where Marvolo's last heirloom, a ring, was lost."
+    },
+    {
+      "entity_1": "morfin",
+      "entity_2": "voldemort",
+      "relationship_type": "victim_of_theft",
+      "description": "Voldemort stole Morfin's wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "muggle_man",
+      "relationship_type": "murderer",
+      "description": "Voldemort murdered the Muggle man who had abandoned his witch mother."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "muggle_grandparents",
+      "relationship_type": "murderer",
+      "description": "Voldemort also murdered Morfin's Muggle grandparents."
+    }
+  ]
+}

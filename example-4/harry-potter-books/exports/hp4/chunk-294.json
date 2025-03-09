@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as having a long position that is still pointing to 'work'. He has not had to go to the office on weekends since the days of You-Know-Who."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as sighing and expressing concern about Mr. Weasley's workload."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as defending his father's actions and suggesting that he made a public statement without clearing it with his Head of Department first."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is mentioned as a journalist who writes negative articles about the Ministry and its employees."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as playing chess with Ron and defending his father's actions."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as playing chess with Bill."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "work",
+      "relationship_type": "points_to",
+      "description": "Mr. Weasley's position points to 'work'."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "mr weasley",
+      "relationship_type": "concerned_about",
+      "description": "Mrs. Weasley is concerned about Mr. Weasley's workload."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "mr weasley",
+      "relationship_type": "defended",
+      "description": "Percy defends his father, Mr. Weasley."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "rita skeeter",
+      "relationship_type": "criticized",
+      "description": "Bill criticizes Rita Skeeter's writing style."
+    }
+  ]
+}

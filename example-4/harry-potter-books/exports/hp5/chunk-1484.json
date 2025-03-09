@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "grawp",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grawp is mentioned as someone who has been injured and Madam Pomfrey is trying to cure him."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is the one who will be curing Grawp."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who will have more trouble due to Grawp's injury."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people trying to charm teacups with his wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is also one of the people trying to charm teacups with his wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is able to mend Ron's broken cup using her wand."
+    },
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Montague is the person who has been injured and Madam Pomfrey is trying to cure him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "grawp",
+      "relationship_type": "cures",
+      "description": "Madam Pomfrey will be curing Grawp's injury."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "grawp",
+      "relationship_type": "trouble_for",
+      "description": "Umbridge will have more trouble due to Grawp's injury."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "helps",
+      "description": "Hermione is able to mend Ron's broken cup."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "causes_trouble_for",
+      "description": "Harry mentions that Grawp's injury will cause more trouble for Umbridge."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "montague",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Montague's permanent injury."
+    }
+  ]
+}

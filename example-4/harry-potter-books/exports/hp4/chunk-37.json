@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Harry's Muggle aunt who hates magic. She explains away Harry's absences at Hogwarts by telling everyone that he goes to a secure center for criminal boys."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's Muggle cousin who also hates magic. He and Petunia blame Harry for anything that goes wrong in their house."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a wizard who lives with his Muggle relatives, Petunia and Dudley. He has a scar that hurts him and worries about Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person Harry worries about."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is the school where Harry learns magic and is not allowed to use magic outside of it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "petunia",
+      "entity_2": "harry",
+      "relationship_type": "relative_of",
+      "description": "Petunia is Harry's aunt."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "harry",
+      "relationship_type": "cousin_of",
+      "description": "Dudley is Harry's cousin."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "voldemort",
+      "relationship_type": "concerned_about",
+      "description": "Petunia is concerned about Voldemort, but this relationship is not explicitly stated in the text. It is inferred from the context that Petunia and Dudley are worried about Harry's life in the wizarding world."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_of",
+      "description": "Harry is a student at Hogwarts."
+    }
+  ]
+}

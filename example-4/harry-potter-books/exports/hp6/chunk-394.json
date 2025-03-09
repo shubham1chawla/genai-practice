@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "u-no-poo",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "a laxative that caused stomach cramps"
+    },
+    {
+      "name": "spells",
+      "entity_type": "magic",
+      "singular": false,
+      "description": "magical incantations used by wizards and witches"
+    },
+    {
+      "name": "incantations",
+      "entity_type": "magic",
+      "singular": false,
+      "description": "words or phrases spoken to cast spells"
+    },
+    {
+      "name": "greenhouses",
+      "entity_type": "location",
+      "singular": true,
+      "description": "buildings used for growing plants in a controlled environment"
+    },
+    {
+      "name": "herbology",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "the study of magical plants and their properties"
+    },
+    {
+      "name": "venomous tentacula",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "a deadly plant that can seize people from behind"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "spells",
+      "entity_2": "incantations",
+      "relationship_type": "requirement",
+      "description": "spells require incantations to work"
+    },
+    {
+      "entity_1": "herbology",
+      "entity_2": "greenhouses",
+      "relationship_type": "location",
+      "description": "herbology is taught in greenhouses"
+    }
+  ]
+}

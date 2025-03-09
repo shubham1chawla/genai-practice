@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch made a chirruping noise to Mrs. Norris, indicating he is present in the scene."
+    },
+    {
+      "name": "norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Mrs. Norris stared blankly at Harry for a few more seconds before turning and following her master, indicating she is present in the scene."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry heard Snape walking away down the corridor; Filch handed Moody the egg and disappeared from view too, muttering to Mrs. Norris, indicating he is present in the scene."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape walked away down the corridor, indicating he is present in the scene."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody placed his staff on the bottommost stair and started to climb laboriously toward Harry, a dull clunk on every other step, indicating he is present in the scene."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves was mentioned by Filch as being up to something, indicating he is relevant to the scene."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "norris",
+      "relationship_type": "communicates_with",
+      "description": "Filch made a chirruping noise to Mrs. Norris."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "observes",
+      "description": "Harry heard Snape walking away down the corridor."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "moody",
+      "relationship_type": "hands_over",
+      "description": "Filch handed Moody the egg and disappeared from view too, muttering to Mrs. Norris."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "dumbledore",
+      "relationship_type": "plans_to_meet",
+      "description": "Filch said 'we’ll see Dumbledore in the morning'."
+    }
+  ]
+}

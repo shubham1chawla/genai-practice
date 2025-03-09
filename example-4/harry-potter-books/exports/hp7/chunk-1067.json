@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dragomir despard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dragomir Despard is introduced as a fictional foreigner who speaks little English and is in sympathy with the Dark Lord's aims. He has traveled from Transylvania to see the new regime."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is introduced as Dragomir Despard, a fictional foreigner who speaks little English and is in sympathy with the Dark Lord's aims."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger needs to visit Gringotts."
+    },
+    {
+      "name": "travers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Travers is introduced as someone who consorts with the long-fingered friends (Goblins) and has a fear of dirtying himself."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a goblin who feels threatened by Travers' words."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": false,
+      "description": "Gringotts is the bank that Hermione and Travers need to visit."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Diagon Alley is where Hermione and Travers are currently located."
+    },
+    {
+      "name": "transylvania",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Transylvania is the location from which Dragomir Despard has traveled to see the new regime."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Dark Lord's aims are in sympathy with Dragomir Despard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "travers",
+      "entity_2": "griphook",
+      "relationship_type": "fear",
+      "description": "Travers' words make Griphook feel threatened."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "gringotts",
+      "relationship_type": "need_to_visit",
+      "description": "Hermione needs to visit Gringotts."
+    },
+    {
+      "entity_1": "travers",
+      "entity_2": "griphook",
+      "relationship_type": "consort_with",
+      "description": "Travers consorts with the long-fingered friends (Goblins)."
+    },
+    {
+      "entity_1": "dragomir despard",
+      "entity_2": "dark lord",
+      "relationship_type": "sympathy",
+      "description": "Dragomir Despard is in sympathy with the Dark Lord's aims."
+    }
+  ]
+}

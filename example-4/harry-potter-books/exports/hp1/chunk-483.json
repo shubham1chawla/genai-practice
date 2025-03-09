@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as a character who looks worried."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the one asking questions to Hagrid."
+    },
+    {
+      "name": "werewolf",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Werewolf is mentioned as a possible killer of unicorns."
+    },
+    {
+      "name": "unicorn",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Unicorns are described as powerful magic creatures and their blood is found on the path."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "werewolf",
+      "relationship_type": "suspect_of",
+      "description": "Hagrid suggests that a werewolf might be killing unicorns."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "unicorn",
+      "relationship_type": "victim_of",
+      "description": "Hagrid mentions that it's not easy to catch a unicorn, implying that they are being hurt by something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "interrogator_of",
+      "description": "Harry asks Hagrid questions about the possibility of a werewolf killing unicorns."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ignotus peverell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ignotus Peverell is mentioned as being buried in Godric’s Hollow."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Godric’s Hollow is the location where Ignotus Peverell is buried."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being descended from Ignotus Peverell."
+    },
+    {
+      "name": "the third hallow",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Third Hallow is an object that Harry believes he has found."
+    },
+    {
+      "name": "harry's mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry’s mother is mentioned as sending him a letter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ignotus peverell",
+      "entity_2": "godric's hollow",
+      "relationship_type": "buried_in",
+      "description": "Ignotus Peverell is buried in Godric’s Hollow."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "the third hallow",
+      "relationship_type": "possesses",
+      "description": "Harry believes he has found the Third Hallow."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ignotus peverell",
+      "relationship_type": "descended_from",
+      "description": "Harry is descended from Ignotus Peverell."
+    },
+    {
+      "entity_1": "harry's mother",
+      "entity_2": "harry potter",
+      "relationship_type": "sent_letter_to",
+      "description": "Harry’s mother sent him a letter."
+    }
+  ]
+}

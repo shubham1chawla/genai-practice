@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as a school professor who might have gotten rid of the horse. He shares classes with Harry."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as being too tipsy to recognize Harry."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Firenze is mentioned as the subject of Professor Trelawney's criticisms."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who shares classes with Professor Dumbledore and is being talked to by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is talking to Harry about whether she plans to tell Ron that she interfered at Keeper tryouts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the person Hermione might tell about her interference at Keeper tryouts."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McLaggen is mentioned as someone Hermione asked out."
+    },
+    {
+      "name": "horse",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A horse is mentioned as something Professor Dumbledore might have gotten rid of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "classmate_of",
+      "description": "Harry shares classes with Professor Dumbledore."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "firenze",
+      "relationship_type": "criticizes",
+      "description": "Professor Trelawney criticizes Firenze under the cover of her furious criticisms."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "talking_to",
+      "description": "Harry is talking to Hermione about whether she plans to tell Ron that she interfered at Keeper tryouts."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "might_tell",
+      "description": "Hermione might tell Ron about her interference at Keeper tryouts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accuses_of_interference",
+      "description": "Harry accuses Hermione of interfering at Keeper tryouts."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "mclaggen",
+      "relationship_type": "asked_out",
+      "description": "Hermione asked McLaggen out."
+    }
+  ]
+}

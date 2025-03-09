@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and 'Harry'. The diary is proof that he is the heir of Slytherin."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who created Horcruxes, considered by Dumbledore to be of great importance. He has a past that Dumbledore is trying to understand."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts School of Witchcraft and Wizardry, mentioned as the house from which Harry is the heir."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Another one of the four houses at Hogwarts School of Witchcraft and Wizardry, mentioned as having a cup that became a Horcrux."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is trying to understand Voldemort's past and find evidence about his Horcruxes."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects created by Voldemort that contain pieces of his soul. There are six in total, with three already identified."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Horcrux created by Voldemort, mentioned as proof that Harry is the heir of Slytherin."
+    },
+    {
+      "name": "loket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "One of the Horcruxes, possibly created from Hufflepuff's cup."
+    },
+    {
+      "name": "hufflepuff's cup",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object that became a Horcrux."
+    },
+    {
+      "name": "voldemort's past",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Dumbledore is trying to understand Voldemort's past in order to find evidence about his Horcruxes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "trying_to_understand",
+      "description": "Dumbledore is trying to understand Voldemort's past and find evidence about his Horcruxes."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "slytherin",
+      "relationship_type": "heir_of",
+      "description": "The diary is proof that Harry is the heir of Slytherin."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "created",
+      "description": "Voldemort created Horcruxes, which contain pieces of his soul."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hufflepuff's cup",
+      "relationship_type": "possibly_became_horcrux",
+      "description": "Dumbledore believes that Hufflepuff's cup possibly became a Horcrux."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "loket",
+      "relationship_type": "created",
+      "description": "Voldemort created the locket, which is one of his Horcruxes."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horcruxes",
+      "relationship_type": "trying_to_find_evidence",
+      "description": "Dumbledore is trying to find evidence about Voldemort's Horcruxes."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "diary",
+      "relationship_type": "mentioned_as_proof",
+      "description": "The diary is mentioned as proof that Harry is the heir of Slytherin."
+    }
+  ]
+}

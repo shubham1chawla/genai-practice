@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person who agrees with the speaker. (\"Agreed,\" said Fred.)"
+    },
+    {
+      "name": "people",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "People are referred to as a group, urging them to calm down. (\"So, people, let’s try and calm down a bit.\")"
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "character",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as a character who can kill people with a single glance from his eyes. (\"That’s a basilisk, listeners. One simple test: Check whether the thing that’s glaring at you has got legs.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is laughing for the first time in weeks. (\"For the ﬁrst time in weeks and weeks, Harry was laughing:\")"
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "mythical_creature",
+      "singular": true,
+      "description": "A basilisk is mentioned as a creature that can kill people with a single glance from its eyes. (\"That’s a basilisk, listeners.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "people",
+      "relationship_type": "addressed",
+      "description": "Fred is addressing people to calm down. (\"So, people, let’s try and calm down a bit.\")"
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "basilisk",
+      "relationship_type": "equated_with",
+      "description": "You-Know-Who is equated with a basilisk, which can kill people with a single glance from its eyes. (\"That’s a basilisk, listeners.\")"
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "people",
+      "relationship_type": "can_harm",
+      "description": "You-Know-Who can harm people with a single glance from his eyes. (\"That’s a basilisk, listeners.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "people",
+      "relationship_type": "can_laugh_at",
+      "description": "Harry is laughing at the situation involving people. (\"For the ﬁrst time in weeks and weeks, Harry was laughing:\")"
+    }
+  ]
+}

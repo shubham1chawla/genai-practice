@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as being sacked by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as confirming Fudge's sack and introducing Rufus Scrimgeour."
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is introduced by Dumbledore as the new Head of the Ministry."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned in comparison to Scrimgeour by Dumbledore."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one asking questions about Scrimgeour."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as being underestimated by Scrimgeour."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "replaced_by",
+      "description": "Dumbledore confirms that Fudge has been replaced."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "appointed_as_head_of_ministry",
+      "description": "Dumbledore introduces Scrimgeour as the new Head of the Ministry."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "voldemort",
+      "relationship_type": "does_not_underestimate",
+      "description": "Scrimgeour is said to not underestimate Voldemort by Dumbledore."
+    }
+  ]
+}

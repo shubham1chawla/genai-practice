@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is described as staggering to his feet and looking around after the Headless Hunt has passed."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is Harry's friend who was supposed to be going back into the Room of Requirement."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who gets to his feet and looks around after the Headless Hunt has passed."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend who gets to her feet and suggests sticking together."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a character who remains slumped on the corridor floor without a wand."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a character who remains slumped on the corridor floor without a wand."
+    },
+    {
+      "name": "headless hunt",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The Headless Hunt is an event that has passed and caused Harry to stagger."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Room of Requirement is a location where Ginny was supposed to be going back into."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for Ginny, who was supposed to be going back into the Room of Requirement."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "room_of_requirement",
+      "relationship_type": "looking_into",
+      "description": "Ron is looking into whether the Room of Requirement will still work after the fire."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "advising",
+      "description": "Hermione is advising Harry to stick together with her and Ron."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "associated_with",
+      "description": "Malfoy and Goyle are associated with each other, as they remain slumped on the corridor floor together."
+    }
+  ]
+}

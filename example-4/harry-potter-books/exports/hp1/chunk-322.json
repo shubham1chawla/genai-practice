@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is the one who took out the Golden Snitch from the crate. It is mentioned in the text as 'Wood reached into the crate and took out the fourth and last ball.'"
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Golden Snitch is described as a tiny ball with bright gold color and little fluttering silver wings. It is mentioned in the text as 'This, said Wood, is the Golden Snitch...'."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is described as a large ball compared to the Golden Snitch. It is mentioned in the text as 'Compared with the Quaffle and the Bludgers, it was tiny...'."
+    },
+    {
+      "name": "bludgers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Bludgers are described as large balls compared to the Golden Snitch. It is mentioned in the text as 'Compared with the Quaffle and the Bludgers, it was tiny...'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is listening to Wood's explanation about the Golden Snitch. It is mentioned in the text as 'Harry shook his head. He understood what he had to do all.'"
+    },
+    {
+      "name": "chaser",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Chasers are players in Quidditch who have a specific role. It is mentioned in the text as 'You’ve got to weave in and out of the Chasers...'."
+    },
+    {
+      "name": "beater",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Beaters are players in Quidditch who have a specific role. It is mentioned in the text as 'You’ve got to weave in and out of the Chasers, Beaters...'."
+    },
+    {
+      "name": "seeker",
+      "entity_type": "position",
+      "singular": false,
+      "description": "Seekers are players in Quidditch who have a specific role. It is mentioned in the text as 'It’s the Seeker’s job to catch it.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "golden snitch",
+      "relationship_type": "has",
+      "description": "Wood has the Golden Snitch, which he took out from the crate. It is mentioned in the text as 'This, said Wood, is the Golden Snitch...'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "golden snitch",
+      "relationship_type": "understands",
+      "description": "Harry understands what he has to do with the Golden Snitch. It is mentioned in the text as 'He understood what he had to do all.'"
+    },
+    {
+      "entity_1": "seeker",
+      "entity_2": "golden snitch",
+      "relationship_type": "catches",
+      "description": "The Seeker's job is to catch the Golden Snitch. It is mentioned in the text as 'It’s the Seeker’s job to catch it.'"
+    },
+    {
+      "entity_1": "chaser",
+      "entity_2": "golden snitch",
+      "relationship_type": "obstructs",
+      "description": "Chasers obstruct the path of the Seeker to catch the Golden Snitch. It is mentioned in the text as 'You’ve got to weave in and out of the Chasers...'."
+    },
+    {
+      "entity_1": "beater",
+      "entity_2": "golden snitch",
+      "relationship_type": "obstructs",
+      "description": "Beaters obstruct the path of the Seeker to catch the Golden Snitch. It is mentioned in the text as 'You’ve got to weave in and out of the Chasers, Beaters...'."
+    },
+    {
+      "entity_1": "seeker",
+      "entity_2": "team",
+      "relationship_type": "wins",
+      "description": "The Seeker wins his team an extra hundred and fifty points if he catches the Golden Snitch. It is mentioned in the text as 'because whichever Seeker catches it, so they nearly always win.'"
+    },
+    {
+      "entity_1": "golden snitch",
+      "entity_2": "game",
+      "relationship_type": "ends",
+      "description": "The game of Quidditch ends when the Golden Snitch is caught. It is mentioned in the text as 'A game of Quidditch only ends when the Snitch is caught, so it can go on for ages...'."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is participating in a flying competition."
+    },
+    {
+      "name": "horntail",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "A dragon that is part of the flying competition, and is being ridden by Harry."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is commentating on the flying competition."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being addressed by Bagman, and is likely a competitor in the flying competition."
+    },
+    {
+      "name": "eggs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A group of eggs that Harry spots while he is flying."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is being compared to the Horntail's fire by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horntail",
+      "relationship_type": "follows",
+      "description": "The Horntail is following Harry as he flies."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "krum",
+      "relationship_type": "addressing",
+      "description": "Bagman is addressing Mr. Krum, likely to get his attention."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "coote",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Coote is a person who is grinning broadly. He chose to aim the next Bludger at Harper instead."
+    },
+    {
+      "name": "harper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harper is a person who was just passing Harry in the opposite direction. Coote aimed the Bludger at him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who was pleased to hear the dull thunk that meant the Bludger had found its mark."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is a team that seemed as though they could do no wrong. They scored again and again."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who saved goals with apparent ease. He was smiling now."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "coote",
+      "entity_2": "harper",
+      "relationship_type": "aimed_bludger_at",
+      "description": "Coote aimed the Bludger at Harper instead of Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "part_of_team",
+      "description": "Harry is a part of Gryffindor team."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor",
+      "relationship_type": "part_of_team",
+      "description": "Ron is a part of Gryffindor team."
+    },
+    {
+      "entity_1": "harper",
+      "entity_2": "harry",
+      "relationship_type": "collided_with",
+      "description": "Harper collided with Harry hard and deliberately."
+    }
+  ]
+}

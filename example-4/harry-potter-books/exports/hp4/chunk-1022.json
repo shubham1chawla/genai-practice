@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is having a conversation with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being talked to by Sirius."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is telling Sirius something."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who Hermione is talking to."
+    },
+    {
+      "name": "him",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A person who has taken a liking to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Sirius is having a conversation with Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "sirius",
+      "relationship_type": "information_transfer",
+      "description": "Hermione is telling Sirius something."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "conversation",
+      "description": "Hermione is talking to Ron."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "him",
+      "relationship_type": "liking",
+      "description": "Sirius knows that 'he' has taken a liking to Harry."
+    }
+  ]
+}

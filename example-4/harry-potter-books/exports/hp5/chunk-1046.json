@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "st mungo's hospital",
+      "entity_type": "hospital",
+      "singular": true,
+      "description": "a hospital for magical maladies and injuries"
+    },
+    {
+      "name": "dilys derwent",
+      "entity_type": "person",
+      "singular": true,
+      "description": "headmistress of hogwarts school of witchcraft and wizardry from 1741-1768"
+    },
+    {
+      "name": "hogwarts school of witchcraft and wizardry",
+      "entity_type": "school",
+      "singular": true,
+      "description": "a school for magical education"
+    },
+    {
+      "name": "weasley party",
+      "entity_type": "group",
+      "singular": false,
+      "description": "a group of wizards including harry"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dilys derwent",
+      "entity_2": "hogwarts school of witchcraft and wizardry",
+      "relationship_type": "headmistress_of",
+      "description": "dilys was the headmistress of hogwarts from 1741-1768"
+    },
+    {
+      "entity_1": "st mungo's hospital",
+      "entity_2": "magical maladies and injuries",
+      "relationship_type": "treats",
+      "description": "st mungo's is a hospital for magical maladies and injuries"
+    },
+    {
+      "entity_1": "dilys derwent",
+      "entity_2": "weasley party",
+      "relationship_type": "observes",
+      "description": "dilys was eyeing the weasley party as though counting them"
+    }
+  ]
+}

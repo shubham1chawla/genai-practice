@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "him",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who made a mistake and was being talked to by the narrator."
+    },
+    {
+      "name": "Fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the twins who were trying to get their money back from him."
+    },
+    {
+      "name": "George",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other twin who was trying to get their money back from him."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was present and reacting to the situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "him",
+      "entity_2": "Fred",
+      "relationship_type": "made_mistake_with",
+      "description": "He made a mistake with Fred."
+    },
+    {
+      "entity_1": "him",
+      "entity_2": "George",
+      "relationship_type": "made_mistake_with",
+      "description": "He made a mistake with George."
+    },
+    {
+      "entity_1": "Fred",
+      "entity_2": "him",
+      "relationship_type": "asked_for_money_back_from",
+      "description": "Fred asked him for their money back."
+    },
+    {
+      "entity_1": "George",
+      "entity_2": "him",
+      "relationship_type": "asked_for_money_back_from",
+      "description": "George also asked him for their money back."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "him",
+      "relationship_type": "reacted_to_situation_with",
+      "description": "Hermione reacted to the situation with surprise."
+    }
+  ]
+}

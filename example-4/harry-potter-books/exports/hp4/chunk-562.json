@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking quietly and looking anxious. She is described as thinking about what needs to be done after getting back to the castle."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being spoken to by Hermione and is described as having a scar that twinged."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned in passing by Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone who asked Harry to keep him posted on everything that's going on at Hogwarts."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The Triwizard Tournament is mentioned as an event that has happened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "has_to_tell",
+      "description": "Harry needs to tell Sirius what's happened, as per their agreement."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "advises",
+      "description": "Hermione advises Harry on what needs to be done after getting back to the castle."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan is the one who swiveled in his armchair and had pimples."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who was talking to Stan and mentioned Voldemort's name."
+    },
+    {
+      "name": "ern",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ern is the one who jerked the steering wheel of the bus."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a supporter of Voldemort, mentioned by Stan and Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the one who Black was a supporter of, mentioned by Stan and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "stan",
+      "entity_2": "black",
+      "relationship_type": "supporter_of",
+      "description": "Stan mentions that Black was a big supporter of Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "mentioned_name",
+      "description": "Harry mentions the name 'Voldemort' without thinking, which makes Stan and Ern react."
+    }
+  ]
+}

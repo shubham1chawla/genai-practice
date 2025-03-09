@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as weakened and vulnerable."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text, known for her quote about wands and wizards."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has a pouch around Dumbledore's neck."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text, whose hand brushes against an old Snitch."
+    },
+    {
+      "name": "dumbledore's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Dumbledore's wand, described as having lost its magical power."
+    },
+    {
+      "name": "twin cores of dumbledore's wand",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A part of Dumbledore's wand that has been lost."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An old Snitch that Harry's hand brushes against."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "dumbledore's wand",
+      "relationship_type": "lost",
+      "description": "Dumbledore has lost the protection of his wand."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "pouch around dumbledore's neck",
+      "relationship_type": "owner",
+      "description": "Hagrid owns a pouch around Dumbledore's neck."
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "twin cores of dumbledore's wand",
+      "relationship_type": "lost",
+      "description": "Dumbledore has lost the twin cores of his wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "proximity",
+      "description": "Harry's hand brushes against an old Snitch."
+    }
+  ]
+}

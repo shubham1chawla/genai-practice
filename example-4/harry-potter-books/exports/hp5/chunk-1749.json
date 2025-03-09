@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist, being attacked by the Death Eater."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dueling with a Death Eater, fighting to protect Harry."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Fighting two Death Eaters at once, helping to defend Harry."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Firing spells down at Bellatrix, trying to help protect Harry."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Being attacked by Tonks, one of the Death Eaters."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lunging out to attack the Death Eater holding Harry, unable to articulate a spell."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Having her wand used by Neville to attack the Death Eater's mask."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches attacking Harry and his friends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "attacked_by",
+      "description": "The Death Eater is attacking Harry, trying to get the prophecy from him."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "death eater",
+      "relationship_type": "dueling",
+      "description": "Sirius is fighting a Death Eater, trying to protect Harry and his friends."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "death eater",
+      "relationship_type": "fighting",
+      "description": "Kingsley is fighting two Death Eaters at once, helping to defend Harry and his friends."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "bellatrix",
+      "relationship_type": "attacking",
+      "description": "Tonks is firing spells down at Bellatrix, trying to help protect Harry and his friends."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "death eater",
+      "relationship_type": "attacked",
+      "description": "Neville lunged out to attack the Death Eater holding Harry, using Hermione's wand to do so."
+    }
+  ]
+}

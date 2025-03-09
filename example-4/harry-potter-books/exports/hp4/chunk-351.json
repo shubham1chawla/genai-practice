@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hundred",
+      "entity_type": "number",
+      "singular": true,
+      "description": "The largest number in an dwelling in Britain."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who has never seen a house-elf."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Nearly Headless Nick is a ghost who explains the behavior of house-elves."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "House-elves are invisible servants that do cleaning and maintenance work at night."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "conversation_participant",
+      "description": "Hermione is in a conversation with Nearly Headless Nick."
+    },
+    {
+      "entity_1": "house-elves",
+      "entity_2": "hundred",
+      "relationship_type": "comparative_size",
+      "description": "House-elves are compared to the number hundred."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "house-elves",
+      "relationship_type": "explanatory_source",
+      "description": "Nearly Headless Nick explains the behavior of house-elves."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "house-elves",
+      "relationship_type": "topic_of_conversation",
+      "description": "Hermione is discussing house-elves with Nearly Headless Nick."
+    }
+  ]
+}

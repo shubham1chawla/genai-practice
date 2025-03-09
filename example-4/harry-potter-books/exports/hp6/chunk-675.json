@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "pineapple",
+      "entity_type": "food",
+      "singular": true,
+      "description": "Harry thanks someone for the pineapple and mentions it's his favorite."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who receives a pineapple as a gift."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person standing beside Harry in the room filled with fog."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The teacher who speaks through the mist and warns Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "pineapple",
+      "relationship_type": "received",
+      "description": "Harry receives a pineapple as a gift."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "nearby",
+      "description": "Dumbledore is standing beside Harry in the room filled with fog."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "warned",
+      "description": "Slughorn warns Harry through the mist."
+    }
+  ]
+}

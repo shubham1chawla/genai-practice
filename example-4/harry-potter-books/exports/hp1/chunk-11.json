@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "the boy",
+      "entity_type": "individual",
+      "singular": true,
+      "description": "The main character of the story, who is 11 years old. He is mentioned at the beginning of the text."
+    },
+    {
+      "name": "bonfire night",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A celebration that takes place in Britain, but not until next week. It is mentioned as a reason for Mr Dursley's early celebration."
+    },
+    {
+      "name": "mr dursley",
+      "entity_type": "individual",
+      "singular": true,
+      "description": "The husband of Mrs Dursley and the father of Petunia. He is sitting in his armchair when he hears strange news on the radio."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "individual",
+      "singular": true,
+      "description": "The wife of Mr Dursley and the mother of Petunia. She is carrying two cups of tea into the living room when Mr Dursley tries to talk to her about his sister."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "individual",
+      "singular": true,
+      "description": "The daughter of Mr and Mrs Dursley. Her mother pretends she doesn't have a sister, but Mr Dursley is trying to get information from her about her aunt."
+    },
+    {
+      "name": "potters",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family that is mentioned as being related to Mrs Dursley's sister. Mr Dursley thinks they might be connected to the strange events happening in town."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "bonfire night",
+      "relationship_type": "celebrates",
+      "description": "Mr Dursley is celebrating Bonfire Night early, but it's not until next week."
+    },
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "potters",
+      "relationship_type": "speculates_connection",
+      "description": "Mr Dursley thinks the strange events happening in town might be connected to the Potters family."
+    }
+  ]
+}

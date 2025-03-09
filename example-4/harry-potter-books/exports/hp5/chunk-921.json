@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as the one who intervened before Ron could answer back. He is described as saying 'Dumbledore'd bewitched this branch to burn ever-more...'"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned by Hagrid as the one who bewitched the branch and sent a gift to Karkus. He is described as having 'warned us tha' migh' ha ppen.'"
+    },
+    {
+      "name": "karkus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkus is introduced as the one who received the gift from Dumbledore. It is mentioned that he did not speak English."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who was about to answer back when Hagrid intervened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "gave_gift",
+      "description": "Hagrid mentions that Dumbledore bewitched the branch and sent it as a gift to Karkus."
+    },
+    {
+      "entity_1": "karkus",
+      "entity_2": "hagrid",
+      "relationship_type": "received_gift",
+      "description": "Karkus received the gift from Hagrid, who was acting on behalf of Dumbledore."
+    }
+  ]
+}

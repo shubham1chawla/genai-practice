@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as 'he' throughout the passage."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches, mentioned as 'the brother and sister Death Eaters'."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A magical room in the castle, mentioned as being blocked."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character, mentioned as 'Snape' and associated with Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character, mentioned as 'Malfoy' and associated with Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "death eaters",
+      "relationship_type": "targeted_by",
+      "description": "Harry Potter is targeted by the Death Eaters, as they are running down the staircase and he aims jinxes at them."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "room of requirement",
+      "relationship_type": "concerned_with",
+      "description": "Harry Potter is concerned with the Room of Requirement, as it may be blocked and he hopes to find a shortcut."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "pursuing",
+      "description": "Harry Potter is pursuing Snape, as he hopes to close in on him and Malfoy."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "pursuing",
+      "description": "Harry Potter is pursuing Malfoy, as he hopes to close in on him and Snape."
+    }
+  ]
+}

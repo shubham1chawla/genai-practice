@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is mentioned as remembering the behavior of the Death Eaters at the Quidditch World Cup and having a conversation with Ron and Hermione about Prince Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who comes to his aid in the conversation. He is mentioned as saying that the behavior of the Death Eaters at the Quidditch World Cup was different from what Harry and his dad were doing."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who is having a conversation with him about Prince Harry. She is mentioned as being upset and defending her opinion that it was irresponsible to start performing spells without knowing what they're for."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are mentioned as behaving badly at the Quidditch World Cup. They are also mentioned in relation to Harry's father being referred to as 'Half-Blood'."
+    },
+    {
+      "name": "prince harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prince of Wales who is being talked about by Harry and Hermione. He is mentioned as being referred to as 'the Prince' and having a nickname of 'Half-Blood'."
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "A subject that Hermione is good at and is mentioned in the conversation between Harry and her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "aided_by",
+      "description": "Harry's friend Ron comes to his aid in the conversation. This is described as 'Ron came to his aid'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argued_with",
+      "description": "Harry and Hermione are having a conversation where they disagree on something. This is described as 'Harry heatedly said...' and 'Hermione, her cheeks reddening...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "prince harry",
+      "relationship_type": "mentioned_together",
+      "description": "Harry and Prince Harry are mentioned together in the conversation. This is described as 'You don’t like the Prince, Hermione'."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "potions",
+      "relationship_type": "skilled_at",
+      "description": "Hermione is good at Potions and this is mentioned in the conversation between Harry and her. This is described as 'because he’s better than you at Potions’."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "related_to",
+      "description": "Harry's father was referred to as 'Half-Blood' which is a nickname that Harry thinks would not be given to someone who was a budding Death Eater. This is described as 'if he’d been a budding Death Eater he wouldn’t have been boasting about being “Half-Blood”, would he?’"
+    }
+  ]
+}

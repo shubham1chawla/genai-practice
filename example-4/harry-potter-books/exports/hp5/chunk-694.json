@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is being lectured by Professor Umbridge. He is mentioned as speaking to Ron under his voice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate. He is mentioned as responding to Harry's comment about Professor Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Umbridge is a Hogwarts professor who is being lectured by Harry. She is described as following Professor McGonagall around the class."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor McGonagall is a Hogwarts professor who is being followed by Professor Umbridge. She is mentioned as telling students to pack away."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Trelawney is a Hogwarts professor who is being followed by Professor Umbridge. She is not explicitly mentioned in the context of this passage."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Lavender is a student at Hogwarts who is passing around a box containing mouse tails."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mcgonagall",
+      "relationship_type": "follows",
+      "description": "Professor Umbridge follows Professor McGonagall around the class."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "trelawney",
+      "relationship_type": "followed",
+      "description": "Professor Umbridge had followed Professor Trelawney in a previous context."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "speaks_to",
+      "description": "Harry speaks to Ron under his voice."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "mcgonagall",
+      "relationship_type": "followed_by",
+      "description": "Professor Umbridge is followed by Professor McGonagall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "lectured_by",
+      "description": "Harry is being lectured by Professor Umbridge."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "lavender",
+      "relationship_type": "passes_box_to",
+      "description": "Ron passes a box containing mouse tails to Lavender."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "Harry Potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An important figure in the story."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has proved himself trustworthy to Dumbledore."
+    },
+    {
+      "name": "Miss Granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has proved herself trustworthy to Dumbledore."
+    },
+    {
+      "name": "Lord Voldemort's Secrets",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Something that Dumbledore knows or suspects about."
+    },
+    {
+      "name": "Ron Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who Harry trusts to keep a secret."
+    },
+    {
+      "name": "Hermione Granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who Harry trusts to keep a secret."
+    },
+    {
+      "name": "Marvolo Gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who showed the ring to Ogden."
+    },
+    {
+      "name": "Ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who was shown the ring by Marvolo Gaunt."
+    },
+    {
+      "name": "Professor Slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who Harry and Dumbledore visited."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Harry Potter",
+      "relationship_type": "considers",
+      "description": "Dumbledore considers Harry for a task."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "Miss Granger",
+      "relationship_type": "proved trustworthy to",
+      "description": "Mr. Weasley and Miss Granger have proved themselves trustworthy to Dumbledore."
+    },
+    {
+      "entity_1": "Harry Potter",
+      "entity_2": "Ron Weasley",
+      "relationship_type": "trusts",
+      "description": "Harry trusts Ron to keep a secret."
+    },
+    {
+      "entity_1": "Harry Potter",
+      "entity_2": "Hermione Granger",
+      "relationship_type": "trusts",
+      "description": "Harry trusts Hermione to keep a secret."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Lord Voldemort's Secrets",
+      "relationship_type": "knows or suspects about",
+      "description": "Dumbledore knows or suspects about Lord Voldemort's secrets."
+    },
+    {
+      "entity_1": "Marvolo Gaunt",
+      "entity_2": "Ogden",
+      "relationship_type": "showed ring to",
+      "description": "Marvolo Gaunt showed the ring to Ogden."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Professor Slughorn",
+      "relationship_type": "visited with",
+      "description": "Dumbledore and Harry visited Professor Slughorn."
+    },
+    {
+      "entity_1": "Harry Potter",
+      "entity_2": "Marvolo Gaunt's Ring",
+      "relationship_type": "identified",
+      "description": "Harry identified the ring as Marvolo Gaunt's ring."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Marvolo Gaunt's Ring",
+      "relationship_type": "owned",
+      "description": "Dumbledore owned the ring, which was also shown by Marvolo Gaunt to Ogden."
+    }
+  ]
+}

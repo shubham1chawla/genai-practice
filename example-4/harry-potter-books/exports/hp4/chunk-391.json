@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as a student who is bitter about the amount of homework given by Professor Vector."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a student who catches up with Ron and Harry, and is described as 'brightly'."
+    },
+    {
+      "name": "professor vector",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Vector is introduced as a teacher who did not give any homework to his students."
+    },
+    {
+      "name": "professor mcgona-gall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as an example of how Professor Vector should be, but sounding 'much more like' her."
+    },
+    {
+      "name": "the weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are mentioned as a family that Ron belongs to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "professor vector",
+      "relationship_type": "gave_homework",
+      "description": "Ron is given homework by Professor Vector."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "caught_up_with",
+      "description": "Hermione catches up with Ron in the entrance hall."
+    },
+    {
+      "entity_1": "professor mcgona-gall",
+      "entity_2": "professor vector",
+      "relationship_type": "example_of",
+      "description": "Professor McGonagall is used as an example of how Professor Vector should be."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the weasley",
+      "relationship_type": "belongs_to",
+      "description": "Ron belongs to the Weasleys."
+    }
+  ]
+}

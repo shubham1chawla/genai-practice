@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who has come to visit someone in the hospital. He is accompanied by another person (not specified) and they are trying to be discreet about their visit."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is a person who works at the hospital as a Healer. He is leading Ron and his companion through the corridors."
+    },
+    {
+      "name": "healer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Healer is a person who works with Lockhart at the hospital. She is smiling expectantly at Ron and his companion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "lockhart",
+      "relationship_type": "accompanying",
+      "description": "Ron is accompanying Lockhart through the corridors of the hospital."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "healer",
+      "relationship_type": "being-led-by",
+      "description": "The Healer is leading Ron and his companion through the corridors."
+    }
+  ]
+}

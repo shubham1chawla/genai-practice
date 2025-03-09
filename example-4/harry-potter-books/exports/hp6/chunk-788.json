@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who has been to Hogwarts and felt at home there. (Excerpt: 'this school than he has ever been to a person... where he had been happiest; the first and only place he had felt at home.')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A magical school that Harry has attended and felt happy about. (Excerpt: 'Hogwarts was where he had been happiest; the first and only place he had felt at home.')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who has penetrated many secrets of Hogwarts. (Excerpt: 'Undoubtedly Voldemort had penetrated many more of its secrets than most of the students who pass through the place...')"
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts with whom Voldemort was on good terms. (Excerpt: 'who had demonstrated how influential a role a teacher can play')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended_school",
+      "description": "Harry has attended Hogwarts and felt happy about it. (Excerpt: 'this school than he has ever been to a person... where he had been happiest; the first and only place he had felt at home.')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "hogwarts",
+      "relationship_type": "penetrated_secrets",
+      "description": "Voldemort has penetrated many secrets of Hogwarts. (Excerpt: 'Undoubtedly Voldemort had penetrated many more of its secrets than most of the students who pass through the place...')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "professor slughorn",
+      "relationship_type": "good_terms_with_teacher",
+      "description": "Voldemort was on good terms with Professor Slughorn. (Excerpt: 'who had demonstrated how influential a role a teacher can play')"
+    }
+  ]
+}

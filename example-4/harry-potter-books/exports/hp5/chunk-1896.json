@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are the family that Harry lives with. They are described as being rooted to the floor and looking frightened and embarrassed when Mr. Weasley arrives."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who disengages herself from her mother to join the group. She is described as joining the group."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who arrives at the Dursleys' house and greets Uncle Vernon. He is described as being pleasant and having demolished most of the living room two years previously."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is a person who glares at Mr. Weasley but chooses not to say anything. He is described as turning a deeper shade of puce and being outnumbered two to one."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is a person who looks frightened and embarrassed when Mr. Weasley arrives. She is described as glancing around in terror that someone she knows will see her."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is a person who tries to look small and insignificant but fails extravagantly. He is described as being part of the Dursleys' family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "greeted_by",
+      "description": "Mr. Weasley greets Uncle Vernon when he arrives at the Dursleys' house."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "dursleys",
+      "relationship_type": "visited",
+      "description": "Mr. Weasley visits the Dursleys' house and is greeted by Uncle Vernon."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "group",
+      "relationship_type": "joined",
+      "description": "Hermione joins a group of people, which includes Mr. Weasley and the Dursleys."
+    }
+  ]
+}

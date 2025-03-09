@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "seer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The seer is overhearing a conversation between Harry and Dumbledore. The seer's presence is not explicitly stated but can be inferred from the context."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is having a conversation with Dumbledore about finding a Horcrux. He is eager to go on the mission and is boiling with anger at Snape."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is having a conversation with Harry about finding a Horcrux. He is warning Harry of the dangers involved in the mission."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who has increased Harry's desire to do something desperate and risky."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "warns",
+      "description": "Dumbledore is warning Harry of the dangers involved in finding a Horcrux."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "anger",
+      "description": "Harry's anger towards Snape has increased his desire to do something desperate and risky."
+    }
+  ]
+}

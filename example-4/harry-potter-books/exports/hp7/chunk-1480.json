@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagger is a person who yells 'HAGGER!' to alert others."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the leader of the Death Eaters and has giants at his command."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Grawp is a giant who is being attacked by Voldemort's giants."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a person who breaks free from the Body-Bind Curse and fights against Voldemort's forces."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagger",
+      "entity_2": "voldemort",
+      "relationship_type": "alerted",
+      "description": "Hagger alerts Voldemort that Neville has broken free."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "grawp",
+      "relationship_type": "saved",
+      "description": "Neville saves Grawp from being attacked by Voldemort's giants."
+    }
+  ]
+}

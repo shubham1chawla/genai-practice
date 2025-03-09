@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "secret keeper",
+      "entity_type": "secret_keeper",
+      "singular": true,
+      "description": "The person who keeps the Potters' location secret from You-Know-Who. (Excerpt: \"As long as the Secret-Keeper refused to speak...\" and \"James Potter told Dumbledore that Black would die rather than tell where they were\")"
+    },
+    {
+      "name": "lily potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of James Potter. (Excerpt: \"Lily and James were staying for years...\" )"
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The husband of Lily Potter. (Excerpt: \"Lily and James were staying for years...\" )"
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "The main antagonist of the story. (Excerpt: \"You-Know-Who could search the village...\" )"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is a friend to James Potter. (Excerpt: \"Dumbledore remained worried...\" and \"James Potter told Dumbledore that Black would die rather than tell where they were\")"
+    },
+    {
+      "name": "madam rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is present in the conversation. (Excerpt: \"So Black was the Potters' Secret-Keeper?\" )"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is a friend to James Potter. (Excerpt: \"Professor McGonagall said...\" )"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Secret-Keeper of the Potters. (Excerpt: \"James Potter told Dumbledore that Black would die rather than tell where they were\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "black",
+      "relationship_type": "suspected_traitor",
+      "description": "Dumbledore suspected that Black was a traitor who was passing information to You-Know-Who. (Excerpt: \"He was sure that somebody close to the Potters had been keeping You-Know-Who informed of their movements...\" )"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "black",
+      "relationship_type": "suspected_traitor_inverse",
+      "description": "Black was suspected by Dumbledore to be a traitor. (Excerpt: \"He had suspected for some time that someone on our side had turned traitor and was passing a lot of information to You-Know-Who.\")"
+    },
+    {
+      "entity_1": "james potter",
+      "entity_2": "black",
+      "relationship_type": "used_secret_keeper",
+      "description": "James Potter used Black as the Secret-Keeper. (Excerpt: \"But James Potter insisted on using Black?\" )"
+    }
+  ]
+}

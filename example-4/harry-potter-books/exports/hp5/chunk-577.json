@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having detention with Umbridge and being unhappy about it. (\"How was detention with Umbridge, anyway? What did she make you do?\")"
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is sympathetic towards Harry's bad day. (\"That's not too bad, then, eh?\" \"Nope\")"
+    },
+    {
+      "name": "Umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher who gave Harry detention, mentioned as being strict and making Harry do lines. (\"How was detention with Umbridge, anyway? What did she make you do?\")"
+    },
+    {
+      "name": "North Tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry and Ron go together after their conversation about detention. (\"They hurried off to North Tower together.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Umbridge",
+      "relationship_type": "had_detention_with",
+      "description": "Harry had detention with Umbridge, who made him do lines. (\"How was detention with Umbridge, anyway? What did she make you do?\")"
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Harry",
+      "relationship_type": "is_sympathetic_towards",
+      "description": "Ron is sympathetic towards Harry's bad day. (\"That's not too bad, then, eh?\" \"Nope\")"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "North Tower",
+      "relationship_type": "went_together_with",
+      "description": "Harry and Ron went to North Tower together after their conversation about detention. (\"They hurried off to North Tower together.\")"
+    }
+  ]
+}

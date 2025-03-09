@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Norris is a person who was prowling the second floor. He is mentioned as being present in the scene."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is a poltergeist who was bouncing around the trophy room. He is mentioned as being currently active and causing trouble."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person whose eyes are traveling up and down the familiar corridors. He is the main character of the scene."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a person who is tracing one of the passages on the map with his finger. He is mentioned as being knowledgeable about the secret passages."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who knows about four of the secret passages. He is mentioned as being aware of their existence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "norris",
+      "relationship_type": "location",
+      "description": "Harry's eyes are traveling up and down the familiar corridors where Norris was prowling."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "map",
+      "relationship_type": "reference",
+      "description": "Fred is tracing one of the passages on the map with his finger."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "passages",
+      "relationship_type": "awareness",
+      "description": "Filch knows about four of the secret passages."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a wizard who asks about the kind of blood on the walls. He is described as speaking loudly over the chiming of the grandfather clock."
+    },
+    {
+      "name": "horace",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Horace is mentioned as a wizard who responds to Dumbledore's question about the blood on the walls. He is described as shouting and speaking conversationally."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Dragon is mentioned as the type of blood that was spilled on the walls, according to Horace."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horace",
+      "relationship_type": "asked_question",
+      "description": "Dumbledore asks a question about the blood on the walls, and Horace responds with an answer."
+    },
+    {
+      "entity_1": "horace",
+      "entity_2": "dragon",
+      "relationship_type": "identified_as_source_of_blood",
+      "description": "Horace identifies dragon as the source of the blood on the walls."
+    }
+  ]
+}

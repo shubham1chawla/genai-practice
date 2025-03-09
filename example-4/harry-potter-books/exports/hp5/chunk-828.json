@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, Harry Potter. He is described as having had worse experiences than his current situation."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "A house-elf who is grateful to Harry for setting him free and making him happier."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being responsible for Harry's detention."
+    },
+    {
+      "name": "potions book",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A book that Harry is trying to finish an essay on."
+    },
+    {
+      "name": "defence against the dark arts",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "A subject that Harry and twenty-eight others want to practice without being discovered."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "gratitude",
+      "description": "Dobby is grateful to Harry for setting him free."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "victimhood",
+      "description": "Harry was detained by Umbridge."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "potions book",
+      "relationship_type": "ownership",
+      "description": "Harry is trying to finish an essay on the potions book."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "defence against the dark arts",
+      "relationship_type": "interest",
+      "description": "Harry and twenty-eight others are interested in practicing Defence Against the Dark Arts without being discovered."
+    }
+  ]
+}

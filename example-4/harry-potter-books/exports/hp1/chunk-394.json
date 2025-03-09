@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The library is described as pitch black and eerie, with rows of books. The description mentions that Harry lit a lamp to see his way along the rows of books."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the protagonist who is navigating the library. He is described as feeling uneasy and sensing a faint whispering coming from the books."
+    },
+    {
+      "name": "lamp",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The lamp is mentioned as being lit by Harry to see his way along the rows of books. It is also described as looking like it was floating in mid-air."
+    },
+    {
+      "name": "restricted section",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Restricted Section is introduced as being located at the back of the library. Harry steps carefully over a rope to access this area."
+    },
+    {
+      "name": "books",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The books are described as having peeling and faded gold letters that spell words in languages Harry cannot understand. Some have no title at all, and one has a dark stain that looks like blood."
+    },
+    {
+      "name": "blood",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "A book is mentioned to have a dark stain on it that looks horribly like blood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "library",
+      "relationship_type": "entered",
+      "description": "Harry entered the library and lit a lamp to see his way along the rows of books."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lamp",
+      "relationship_type": "held",
+      "description": "Harry held up his lamp to read the titles on the books in the Restricted Section."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "restricted section",
+      "relationship_type": "accessed",
+      "description": "Harry stepped carefully over a rope to access the Restricted Section at the back of the library."
+    }
+  ]
+}

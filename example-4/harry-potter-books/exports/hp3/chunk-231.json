@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "riddikulus",
+      "entity_type": "spell_name",
+      "singular": true,
+      "description": "The spell that Neville used to defeat the boggart (\"Riddikulus! he shouted\")."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character_name",
+      "singular": true,
+      "description": "Professor Snape appeared in his lacy dress as a boggart (\"they had a split second’s view of Snape in his lacy dress\")."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "Neville was the one who successfully defeated the boggart with the spell Riddikulus (\"Excellent! cried Professor Lupin as the class broke into applause. Excellent, Neville.\")."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house_name",
+      "singular": true,
+      "description": "Gryffindor house received points for every person who tackled the boggart (\"ﬁve points to Gryﬀindor for every person to tackle the boggart\")."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "Hermione received points for answering Professor Lupin’s questions correctly at the start of the class (\"Very well, you and Hermione answered my questions correctly at the start of the class\")."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student_name",
+      "singular": true,
+      "description": "Harry received points for answering Professor Lupin’s questions correctly at the start of the class (\"Very well, you and Hermione answered my questions correctly at the start of the class\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "boggart",
+      "relationship_type": "defeated_by",
+      "description": "Neville successfully defeated the boggart with the spell Riddikulus (\"Excellent! cried Professor Lupin as the class broke into applause. Excellent, Neville.\")."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "neville",
+      "relationship_type": "awarded_points_to",
+      "description": "Gryffindor house received points for every person who tackled the boggart (\"ﬁve points to Gryﬀindor for every person to tackle the boggart\")."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "hermione",
+      "relationship_type": "awarded_points_to",
+      "description": "Gryffindor house received points for every person who tackled the boggart (\"ﬁve points to Gryﬀindor for every person to tackle the boggart\")."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry",
+      "relationship_type": "awarded_points_to",
+      "description": "Gryffindor house received points for every person who tackled the boggart (\"ﬁve points to Gryﬀindor for every person to tackle the boggart\")."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "neville",
+      "relationship_type": "commended",
+      "description": "Professor Lupin commended Neville for his success in defeating the boggart (\"Excellent! cried Professor Lupin as the class broke into applause. Excellent, Neville.\")."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "hermione",
+      "relationship_type": "commended",
+      "description": "Professor Lupin commended Hermione for answering his questions correctly at the start of the class (\"Very well, you and Hermione answered my questions correctly at the start of the class\")."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "commended",
+      "description": "Professor Lupin commended Harry for answering his questions correctly at the start of the class (\"Very well, you and Hermione answered my questions correctly at the start of the class\")."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who has been down to see Aragog by night before. He is also the target of the thing's attack."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as expressing her concerns about leaving the castle at night and getting caught."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as agreeing with Hermione's concerns and stating that he would want to go even less if it were a question of saving Aragog."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as expecting Harry and his friends to go down and cry over the thing's body."
+    },
+    {
+      "name": "aragog",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "Aragog is mentioned as being dead and the reason why Harry and his friends are hesitant to help Hagrid."
+    },
+    {
+      "name": "thing",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The thing is mentioned as telling its mates to eat Harry and his friend, and expecting them to go down and cry over its body."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "thing",
+      "relationship_type": "expectation",
+      "description": "Hagrid expects Harry and his friends to go down and cry over the thing's body."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "agreement",
+      "description": "Hermione and Ron agree on their concerns about leaving the castle at night and getting caught."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "thing",
+      "relationship_type": "target",
+      "description": "The thing told its mates to eat Harry and his friend."
+    }
+  ]
+}

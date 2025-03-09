@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's brig ht blue eyes looked rather watery, and stared hastily at his own knees."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "‘I am very touched, Harry .’"
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "‘Scrimgeour wanted to know where you go when you’re not at Hogwarts,’ said Harry , still looking fixedly at his knees."
+    },
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He set Dawlish to tail me."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "dumbledore",
+      "relationship_type": "wanted_to_know",
+      "description": "‘Scrimgeour wanted to know where you go when you’re not at Hogwarts,’ said Harry , still looking fixedly at his knees."
+    },
+    {
+      "entity_1": "dawlish",
+      "entity_2": "dumbledore",
+      "relationship_type": "followed",
+      "description": "He set Dawlish to tail me."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "touched",
+      "description": "‘I am very touched, Harry .’"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dawlish",
+      "relationship_type": "jinxed",
+      "description": "I have already been forced to jinx Dawlish once; I did it again with the greatest regret."
+    }
+  ]
+}

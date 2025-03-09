@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is the one who is trying to keep Barty's illness a secret from Rita Skeeter. He mentions that he has people looking for Bertha Jorkins."
+    },
+    {
+      "name": "barty",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty is the person who is ill and absent from work. Bagman is trying to keep his illness a secret."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who is poking around for information about Barty's illness and Bertha Jorkins."
+    },
+    {
+      "name": "bertha jorkins",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bertha Jorkins is a person who went missing. Bagman mentions that Rita Skeeter might say she's gone missing like Bertha Jorkins."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is talking to Bagman about Barty's illness and Bertha Jorkins."
+    },
+    {
+      "name": "percy",
+      "entity_type": "assistant",
+      "singular": true,
+      "description": "Percy is Barty's assistant. He says that Barty is ill."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "barty",
+      "relationship_type": "knows",
+      "description": "Bagman knows about Barty's illness and is trying to keep it a secret."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "bertha jorkins",
+      "relationship_type": "looking for",
+      "description": "Bagman has people looking for Bertha Jorkins."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "barty",
+      "relationship_type": "investigating",
+      "description": "Rita Skeeter is poking around for information about Barty's illness."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "barty",
+      "relationship_type": "assistant to",
+      "description": "Percy is Barty's assistant."
+    }
+  ]
+}

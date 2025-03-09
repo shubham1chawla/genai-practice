@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, called by Professor Dumbledore to come up to the top table."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is calling Harry Potter to come up to the top table."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "One of Harry's friends who gives him a slight push to go up to the top table."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is seated at the end of the teachers' table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "called_to",
+      "description": "Professor Dumbledore calls Harry Potter to come up to the top table."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "encouraged",
+      "description": "Hermione encourages Harry to go up to the top table by giving him a slight push."
+    }
+  ]
+}

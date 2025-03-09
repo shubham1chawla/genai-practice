@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the one who stepped over the great trunk and proceeded toward Grawp. He used a long, broken bough to poke Grawp in the middle of his back."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Grawp is the giant who was sleeping on the ground. He gave a roar when Hagrid poked him with the bough."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry and Hermione are present in the scene, but they do not take any action. They are being watched by Grawp."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is present in the scene, but she does not take any action. She is being watched by Grawp."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "grawp",
+      "relationship_type": "poke",
+      "description": "Hagrid poked Grawp in the middle of his back with a long, broken bough."
+    },
+    {
+      "entity_1": "grawp",
+      "entity_2": "hagrid",
+      "relationship_type": "roar_at",
+      "description": "Grawp gave a roar when Hagrid poked him with the bough. This is an inverse relationship of 'poke'."
+    }
+  ]
+}

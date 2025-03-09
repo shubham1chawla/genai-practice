@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor and headmaster of Hogwarts, mentioned as writing to the Dursleys."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "tree",
+      "singular": true,
+      "description": "A magical tree that can attack people who come near it."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Harry's Muggle relatives, mentioned as being disappointed that the Whomping Willow hadn't squashed Harry."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, who appears with a wand and conjures food for Harry and Ron."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts, whose desk is targeted by Professor McGonagall's wand."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's best friend and classmate."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "twins",
+      "singular": false,
+      "description": "Ron's brothers, who are mentioned as flying a car."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": true,
+      "description": "Non-magical people, mentioned as not seeing the flying car."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "whomping willow",
+      "relationship_type": "attack_target",
+      "description": "The Whomping Willow is described as trying to squash Harry."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "snape",
+      "relationship_type": "target",
+      "description": "Professor McGonagall's wand targets Snape's desk."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend",
+      "description": "Ron and Harry are described as friends, sharing sandwiches and discussing their luck."
+    }
+  ]
+}

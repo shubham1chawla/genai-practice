@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as standing behind his desk, adding to the threatening atmosphere. He is also mentioned as having eyes that are boring into Harry's."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as sitting down when told by Snape, and trying not to blink when stared at by Snape. He also doesn't say anything in response to Snape's questions."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as having gone to see Snape with a strange story, and as being hit by mud on the back of his head while talking to Weasley."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is mentioned as being alone when Harry ran into him at the Shrieking Shack, and as being talked to by Malfoy before getting hit by mud on the back of his head."
+    },
+    {
+      "name": "shrieking shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Shrieking Shack is mentioned as a location where Harry ran into Weasley, and where Malfoy was talking to Weasley before getting hit by mud."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "stare_at",
+      "description": "Snape is described as boring into Harry's eyes, trying to stare him down like a hippogriﬀ."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "weasley",
+      "relationship_type": "talk_to",
+      "description": "Malfoy is mentioned as talking to Weasley at the Shrieking Shack before getting hit by mud on the back of his head."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snape",
+      "relationship_type": "visit",
+      "description": "Malfoy is described as having gone to see Snape with a strange story."
+    }
+  ]
+}

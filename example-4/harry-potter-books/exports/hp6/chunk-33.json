@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is a person who has attempted to strangle three people. He is mentioned as having a conversation with the Prime Minister."
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Prime Minister is a position that Scrimgeour is speaking to. The Prime Minister is anxious about someone's well-being."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who has consented to stay on in an advisory capacity. He attempts to smile but is unsuccessful."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "prime minister",
+      "relationship_type": "speaking_to",
+      "description": "Scrimgeour is speaking to the Prime Minister."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "fudge",
+      "relationship_type": "advising",
+      "description": "Fudge has consented to stay on in an advisory capacity for Scrimgeour."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "prime minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prime Minister is the main character of the story. He is described as getting up and moving over to the windows, looking out at the thin mist. He is also shown to be scared-looking when he sees his own reflection in the dark glass."
+    },
+    {
+      "name": "marble fireplace",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The marble fireplace is a feature of the Prime Minister's office, described as 'handsome' and facing the long sash windows."
+    },
+    {
+      "name": "sash windows",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The sash windows are a feature of the Prime Minister's office, described as being firmly closed against the unseasonable chill."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "prime minister",
+      "entity_2": "marble fireplace",
+      "relationship_type": "located near",
+      "description": "The Prime Minister is standing in front of the marble fireplace, looking out at the thin mist through the sash windows."
+    },
+    {
+      "entity_1": "prime minister",
+      "entity_2": "sash windows",
+      "relationship_type": "in front of",
+      "description": "The Prime Minister is standing in front of the sash windows, looking out at the thin mist through them."
+    }
+  ]
+}

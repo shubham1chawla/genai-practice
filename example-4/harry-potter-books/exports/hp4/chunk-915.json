@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a professor who stopped talking abruptly and discovered that someone had broken into his office."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is the caretaker who looked down at the foot of the stairs with Snape."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a professor who limped into sight wearing his old traveling cloak and leaning on his staff."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "Peeves is the poltergeist who was throwing things around as usual."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "filch",
+      "relationship_type": "looked_down_at",
+      "description": "Snape and Filch looked down at the foot of the stairs together."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "snape",
+      "relationship_type": "limped_into_sight_of",
+      "description": "Moody limped into sight in front of Snape."
+    },
+    {
+      "entity_1": "peeves",
+      "entity_2": "snape",
+      "relationship_type": "threw_things_at_office_of",
+      "description": "Peeves was throwing things around as usual, and someone broke into Snape's office."
+    }
+  ]
+}

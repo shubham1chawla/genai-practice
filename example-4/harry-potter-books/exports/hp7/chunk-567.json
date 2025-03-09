@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, trying to find an object that Gregorovitch had owned."
+    },
+    {
+      "name": "gregorovitch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who once owned an object that Voldemort is searching for."
+    },
+    {
+      "name": "the ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The governing body of the wizarding world."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is thinking about the thief."
+    },
+    {
+      "name": "the unknown thief",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A person who stole an object from Gregorovitch."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Two wizards who are mentioned as having a similar air of triumphant trickery."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gregorovitch",
+      "relationship_type": "searching_for",
+      "description": "Voldemort is searching for an object that Gregorovitch once owned."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "the unknown thief",
+      "relationship_type": "target",
+      "description": "The unknown thief is the target of Voldemort's search."
+    }
+  ]
+}

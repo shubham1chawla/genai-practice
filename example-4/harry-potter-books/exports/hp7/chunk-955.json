@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, described as having fury and wrath."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who suggests disposing of a Mudblood, described as having a wand and being shocked by Ron's arrival."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is instructed to take the Mudblood, described as having a wand and participating in the fight."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who bursts into the drawing room and tries to stop Bellatrix from harming the Mudblood."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character whose wand is used by Ron to disarm Bellatrix."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, who helps Ron and tries to stop the fight."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is hit by Harry's spell and collapses onto the hearth."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who participates in the fight with her wand."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who participates in the fight with his wand."
+    },
+    {
+      "name": "mudblood",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people that Bellatrix suggests disposing of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "mudblood",
+      "relationship_type": "suggests_disposing_of",
+      "description": "Bellatrix suggests disposing of the Mudblood, as described in the text: 'And I think, we can dispose of the Mudblood. Greyback, take her if you want her.'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bellatrix",
+      "relationship_type": "disarms",
+      "description": "Ron disarms Bellatrix with his wand, as described in the text: 'Bellatrix looked around, shocked; she turned her wand to face Ron instead —“Expelliarmus!”'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lucius malfoy",
+      "relationship_type": "hits",
+      "description": "Harry hits Lucius Malfoy with his spell, as described in the text: 'Harry yelled, “Stupefy!” and Lucius Malfoy collapsed onto the hearth.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "draco",
+      "relationship_type": "attacks",
+      "description": "Harry attacks Draco with his wand, as described in the text: 'Jets of light ﬂew from Draco’s, Narcissa’s, and Greyback’s wands; Harry threw himself to the ﬂoor, rolling behind a sofa to avoid them.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "narcissa",
+      "relationship_type": "attacks",
+      "description": "Harry attacks Narcissa with his wand, as described in the text: 'Jets of light ﬂew from Draco’s, Narcissa’s, and Greyback’s wands; Harry threw himself to the ﬂoor, rolling behind a sofa to avoid them.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "greyback",
+      "relationship_type": "attacks",
+      "description": "Harry attacks Greyback with his wand, as described in the text: 'Jets of light ﬂew from Draco’s, Narcissa’s, and Greyback’s wands; Harry threw himself to the ﬂoor, rolling behind a sofa to avoid them.'"
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "mudblood",
+      "relationship_type": "takes",
+      "description": "Greyback is instructed by Bellatrix to take the Mudblood, as described in the text: 'And I think, we can dispose of the Mudblood. Greyback, take her if you want her.'"
+    }
+  ]
+}

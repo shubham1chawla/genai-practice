@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as dead by Harry. The text states that Harry saw his body."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Patronus is a magical creature that can take different forms. Dumbledore's Patronus was specifically mentioned to be a phoenix."
+    },
+    {
+      "name": "phoenix",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Phoenix is the form of Dumbledore's Patronus."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is mentioned as an example of someone whose Patronus changed."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a character in the conversation who questions Dumbledore's death."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone to whom Dumbledore left an old Snitch."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Snitch is a magical object that was left by Dumbledore for Harry and Hermione."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is mentioned as something that Dumbledore could have given to the characters if he were alive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "phoenix",
+      "relationship_type": "has_patronus",
+      "description": "Dumbledore's Patronus was a phoenix."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "patronus",
+      "relationship_type": "has_changed_patronus",
+      "description": "Tonks's Patronus changed."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snitch",
+      "relationship_type": "left_object",
+      "description": "Dumbledore left an old Snitch for Harry and Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "sword",
+      "relationship_type": "wants_to_receive_object",
+      "description": "Ron questions why Dumbledore wouldn't give them the sword if he were alive."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "snitch",
+      "relationship_type": "received_object",
+      "description": "Hermione is mentioned as someone to whom Dumbledore left an old Snitch."
+    }
+  ]
+}

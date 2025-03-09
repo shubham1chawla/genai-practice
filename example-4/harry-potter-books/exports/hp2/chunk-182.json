@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, Harry, is described as the one who snapped the earmuffs over his ears."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is introduced as a person who puts on earmuffs and rolls up her sleeves to work with plants."
+    },
+    {
+      "name": "earmuffs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Earmuffs are described as objects that can be put over ears to shut out sound."
+    },
+    {
+      "name": "tufty plants",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "Tufty plants are introduced as the type of plant that Professor Sprout is working with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "earmuffs",
+      "relationship_type": "wore",
+      "description": "Harry wore earmuffs over his ears to shut out sound, as described in the text: 'Harry snapped the earmuffs over his ears.'"
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "earmuffs",
+      "relationship_type": "wore",
+      "description": "Professor Sprout also wore earmuffs, as described in the text: 'Professor Sprout put a pink fluffy pair over her own ears.'"
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "tufty plants",
+      "relationship_type": "worked_with",
+      "description": "Professor Sprout worked with tufty plants, as described in the text: 'and pulled hard' while grasping one of the tufty plants firmly."
+    }
+  ]
+}

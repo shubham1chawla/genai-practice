@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The governing body of the wizarding world."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who may not have committed a crime."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Foul creatures that feed on human happiness."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for wizards and witches."
+    },
+    {
+      "name": "doris purkiss",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who claims to have new evidence about Sirius Black."
+    },
+    {
+      "name": "18 acanthia way",
+      "entity_type": "location",
+      "singular": true,
+      "description": "An address in Little Norton."
+    },
+    {
+      "name": "little norton",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A town where Doris Purkiss lives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "sirius black",
+      "relationship_type": "has_targeted",
+      "description": "The Ministry of Magic has targeted Sirius Black for capture."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "sirius black",
+      "relationship_type": "feeds_on",
+      "description": "Dementors feed on human happiness, which Sirius Black may have."
+    },
+    {
+      "entity_1": "azkaban",
+      "entity_2": "sirius black",
+      "relationship_type": "has_prisoner",
+      "description": "Sirius Black is a prisoner in Azkaban."
+    },
+    {
+      "entity_1": "doris purkiss",
+      "entity_2": "sirius black",
+      "relationship_type": "has_evidence",
+      "description": "Doris Purkiss has new evidence about Sirius Black."
+    },
+    {
+      "entity_1": "18 acanthia way",
+      "entity_2": "doris purkiss",
+      "relationship_type": "is_residence_of",
+      "description": "18 Acanthia Way is the residence of Doris Purkiss."
+    },
+    {
+      "entity_1": "little norton",
+      "entity_2": "doris purkiss",
+      "relationship_type": "is_location_of",
+      "description": "Little Norton is the location where Doris Purkiss lives."
+    }
+  ]
+}

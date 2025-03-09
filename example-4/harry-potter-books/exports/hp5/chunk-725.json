@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by name."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, also mentioned by name."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmistress of Hogwarts, suspected to be under the veil."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry and Hermione attend."
+    },
+    {
+      "name": "hogs head",
+      "entity_type": "pub",
+      "singular": true,
+      "description": "A pub where Harry and Hermione are meeting."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "A professor at Hogwarts who is consulted by Hermione about school rules."
+    },
+    {
+      "name": "students",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of people that Harry and Hermione are part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are friends, as indicated by their conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "suspicion",
+      "description": "Harry suspects that Umbridge might be under the veil."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "flitwick",
+      "relationship_type": "consultation",
+      "description": "Hermione consults Professor Flitwick about school rules."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "students",
+      "relationship_type": "membership",
+      "description": "Harry is a member of the student group."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "students",
+      "relationship_type": "membership",
+      "description": "Hermione is also a member of the student group."
+    }
+  ]
+}

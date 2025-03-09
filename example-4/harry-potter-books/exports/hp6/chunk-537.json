@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as the opposing team in the game."
+    },
+    {
+      "name": "urquhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Urquhart is a Slytherin player who attempts to score a goal."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Weasley refers to Ron Weasley, a Gryffindor player who makes spectacular saves."
+    },
+    {
+      "name": "smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Smith is mentioned as the commentator who says that Weasley gets lucky sometimes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a Gryffindor player who is searching for the Snitch."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as Harry's team that is leading in the game."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a Gryffindor player who scores four goals."
+    },
+    {
+      "name": "zacharias",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zacharias is a Slytherin player who wonders if the Weasleys are only there because Harry likes them."
+    },
+    {
+      "name": "peakes",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peakes is a Slytherin player who is being questioned by Zacharias."
+    },
+    {
+      "name": "coote",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Coote is a Slytherin Beater who is hit with a Bludger by Harry."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Bludger is an object that is used in the game."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "coote",
+      "relationship_type": "hit",
+      "description": "Harry hits Coote with a Bludger."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "bludger",
+      "relationship_type": "deflected",
+      "description": "Weasley deflects the Bludger."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "goal",
+      "relationship_type": "scored",
+      "description": "Ginny scores four goals."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for the Snitch."
+    }
+  ]
+}

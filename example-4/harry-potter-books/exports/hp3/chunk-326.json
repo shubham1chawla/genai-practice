@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is navigating a dark passage."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Harry uses to light his way and interact with the map."
+    },
+    {
+      "name": "map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A tool that Harry uses to navigate, which is affected by his magic."
+    },
+    {
+      "name": "honeydukes",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place that Harry thinks about to give him motivation and sustain him during his journey."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "uses",
+      "description": "Harry uses his wand to light his way and interact with the map, as described in the text: 'He held up his wand, muttered, “Lumos!” and saw that he was in a very narrow, low, earthy passageway.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "map",
+      "relationship_type": "uses",
+      "description": "Harry uses the map to navigate, as described in the text: 'He raised the map, tapped it with the tip of his wand, and muttered, “Mischief managed!” The map went blank at once.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "honeydukes",
+      "relationship_type": "motivated_by",
+      "description": "Harry is motivated by the thought of Honeydukes, as described in the text: 'It took ages, but Harry had the thought of Honeydukes to sustain him.'"
+    }
+  ]
+}

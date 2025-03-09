@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "crystal bottle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A container mentioned in the text."
+    },
+    {
+      "name": "pumpkin juice",
+      "entity_type": "liquid",
+      "singular": true,
+      "description": "A type of drink mentioned in the text."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter's name is mentioned in the text."
+    },
+    {
+      "name": "office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where something can be found or located."
+    },
+    {
+      "name": "truth potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A type of potion mentioned in the text."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape's name is mentioned in the text."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger's name is mentioned in the text."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby's name is mentioned in the text."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black's name is mentioned in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "office",
+      "relationship_type": "visited",
+      "description": "Potter has been to Snape's office before."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "truth potion",
+      "relationship_type": "administered",
+      "description": "Snape is mentioned as someone who might administer the truth potion."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "hermione",
+      "relationship_type": "concerned about",
+      "description": "Potter is concerned that Snape might put Hermione in trouble."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "dobby",
+      "relationship_type": "concerned about",
+      "description": "Potter is also concerned that Snape might put Dobby in trouble."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "sirius",
+      "relationship_type": "in contact with",
+      "description": "Potter is secretly in contact with Sirius."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is fond of socks. He mentions that socks are his favorite clothes and has seven pairs now. He also talks about how he got two identical socks from the shop, which was a mistake."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is a person who received two identical socks from the shop. Dobby mentions that Harry didn't spot the mistake in the shop."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron Weasley is a person who is talking to Dobby and Harry Potter. He grins over from his bed and tells Dobby that he can mix up the socks properly."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Uncle Vernon is a person whose socks Dobby has taken. He mentions that Uncle Vernon's socks are his favorite clothes."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mrs. Weasley is a person who sent a hand-knitted sweater to Dobby. The sweater is described as being quite nice and overwhelming for Dobby."
+    },
+    {
+      "name": "shop",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The shop is where Dobby got two identical socks from. It's mentioned that the shop made a mistake by giving Harry Potter two identical socks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "received_identical_socks",
+      "description": "Dobby received two identical socks from the shop, which was meant for Harry Potter."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "dobby",
+      "relationship_type": "gave_help_to_dobby",
+      "description": "Ron Weasley gave Dobby a pair of violet socks and a hand-knitted sweater to help him out."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "dobby",
+      "relationship_type": "sent_gift_to_dobby",
+      "description": "Mrs. Weasley sent a hand-knitted sweater to Dobby, which he found overwhelming."
+    }
+  ]
+}

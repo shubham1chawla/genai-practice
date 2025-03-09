@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Gryffindor is mentioned as the team Ron helped win the Quidditch Cup."
+    },
+    {
+      "name": "quidditch cup",
+      "entity_type": "award",
+      "singular": true,
+      "description": "The Quidditch Cup is mentioned as the trophy Gryffindor won."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as a member of Gryffindor and the one who helped win the Quidditch Cup."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being present with Ron and Hermione."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as being present with Harry and Ron."
+    },
+    {
+      "name": "grawp",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grawp is mentioned as someone that Harry and Hermione wanted to talk about but didn't want to bring Ron back to reality."
+    },
+    {
+      "name": "beech tree",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The beech tree on the edge of the lake is mentioned as a place where they could study without being overheard."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The lake is mentioned as being near the beech tree."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of",
+      "description": "Ron Weasley is a member of Gryffindor, which won the Quidditch Cup."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "grawp",
+      "relationship_type": "wanted_to_talk_about",
+      "description": "Harry Potter wanted to talk about Grawp but didn't want to bring Ron back to reality."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "grawp",
+      "relationship_type": "wanted_to_talk_about",
+      "description": "Hermione Granger also wanted to talk about Grawp but didn't want to bring Ron back to reality."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "beech tree",
+      "relationship_type": "studied_at",
+      "description": "Ron Weasley studied at the beech tree on the edge of the lake."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "beech tree",
+      "relationship_type": "studied_at",
+      "description": "Harry Potter also studied at the beech tree on the edge of the lake."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "beech tree",
+      "relationship_type": "studied_at",
+      "description": "Hermione Granger also studied at the beech tree on the edge of the lake."
+    }
+  ]
+}

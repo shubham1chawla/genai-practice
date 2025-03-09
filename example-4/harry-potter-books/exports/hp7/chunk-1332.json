@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as having been killed."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as ringing in Harry's head."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as possibly hearing Voldemort in his head."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as possibly hearing Voldemort in her head."
+    },
+    {
+      "name": "gawp",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grawp is mentioned as being attacked."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "victim_of",
+      "description": "Snape was killed by Voldemort."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "voldemort",
+      "relationship_type": "exposed_to",
+      "description": "Ron and Hermione were exposed to Voldemort's presence in their heads."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "voldemort",
+      "relationship_type": "exposed_to",
+      "description": "Ron and Hermione were exposed to Voldemort's presence in their heads."
+    },
+    {
+      "entity_1": "gawp",
+      "entity_2": "attacker",
+      "relationship_type": "victim_of",
+      "description": "Grawp was attacked by an unknown entity."
+    }
+  ]
+}

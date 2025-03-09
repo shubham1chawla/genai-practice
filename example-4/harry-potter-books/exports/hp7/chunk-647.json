@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend and companion of Harry's, also a witch."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard."
+    },
+    {
+      "name": "godric’s hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry's parents died."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of_expectation",
+      "description": "Voldemort expects Harry to return to the scene of his parents' deaths."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "influence_on_decision",
+      "description": "Hermione influences Harry's decision on when to set out for Godric’s Hollow."
+    }
+  ]
+}

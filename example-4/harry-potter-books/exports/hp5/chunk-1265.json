@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge was stalking the school, stopping students at random and demanding that they turn out their books and pockets."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry knew she was looking for copies of The Quibbler"
+    },
+    {
+      "name": "the quibbler",
+      "entity_type": "magazine",
+      "singular": true,
+      "description": "The pages carrying Harry’s interview had been bewitched to resemble extracts from textbooks if anyone but themselves read it"
+    },
+    {
+      "name": "educational decree number twenty-six",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The teachers were forbidden from mentioning the interview by Educational Decree Number Twenty-six"
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout awarded Gryffindor twenty points when Harry passed her a watering can"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Professor Sprout awarded Gryffindor twenty points when Harry passed her a watering can"
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a beaming Professor Flitwick pressed a box of squeaking sugar mice on him at the end of Charms"
+    },
+    {
+      "name": "charms",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "a beaming Professor Flitwick pressed a box of squeaking sugar mice on him at the end of Charms"
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney broke into hysterical sobs during Divination"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the quibbler",
+      "relationship_type": "has_interview",
+      "description": "Harry knew she was looking for copies of The Quibbler"
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "the quibbler",
+      "relationship_type": "is_searching_for",
+      "description": "Professor Umbridge was stalking the school, stopping students at random and demanding that they turn out their books and pockets."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "passed_watering_can_to",
+      "description": "Professor Sprout awarded Gryffindor twenty points when Harry passed her a watering can"
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "harry",
+      "relationship_type": "pressed_sugar_mice_on",
+      "description": "a beaming Professor Flitwick pressed a box of squeaking sugar mice on him at the end of Charms"
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "divination",
+      "relationship_type": "taught_in",
+      "description": "Professor Trelawney broke into hysterical sobs during Divination"
+    }
+  ]
+}

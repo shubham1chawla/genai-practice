@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as a person who failed to recover Moody's body. He is also mentioned in conversation with Lupin and Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a person who failed to recover Moody's body. He is also mentioned in conversation with Bill and Harry."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as someone who died during the battle. His body was not recovered by Bill and Lupin."
+    },
+    {
+      "name": "the daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper that has not reported on Moody's death or the recovery of his body."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is mentioned as someone who does not want to admit that Voldemort is powerful. He is also the Minister of Magic."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a powerful person who attacked Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who was attacked by Voldemort. He is also in conversation with Bill and Lupin."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is mentioned as someone who shakes his head in response to Harry's question about the hearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "moody",
+      "relationship_type": "failed_to_recover_body",
+      "description": "Bill and Lupin failed to recover Moody's body after his death."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "voldemort",
+      "relationship_type": "does_not_want_to_admit_power",
+      "description": "Scrimgeour does not want to admit that Voldemort is powerful."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "was_attacked_by",
+      "description": "Voldemort attacked Harry."
+    },
+    {
+      "entity_1": "azkaban",
+      "entity_2": "voldemort",
+      "relationship_type": "allowed_mass_breakout",
+      "description": "Azkaban allowed a mass breakout of Death Eaters, who were likely working for Voldemort."
+    }
+  ]
+}

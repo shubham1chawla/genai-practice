@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "whomping willow",
+      "entity_type": "tree",
+      "singular": true,
+      "description": "The Whomping Willow is a valuable tree in the park that has been damaged. It is described as 'mad' and its branches can cause physical harm."
+    },
+    {
+      "name": "misuse of muggle artefacts office",
+      "entity_type": "office",
+      "singular": true,
+      "description": "The Misuse of Muggle Artefacts Office is a place where Mr Weasley works. It is mentioned in the context of Harry's father working there."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who feels sick and worried about being expelled from school."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is Harry's friend who is also in trouble with Snape."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Severus Snape is the teacher who is disciplining Ron and Harry for their actions."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is Harry's father who works in the Misuse of Muggle Artefacts Office. He has bewitched a car, which could cause trouble if discovered."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus snape",
+      "entity_2": "ron weasley",
+      "relationship_type": "disciplines",
+      "description": "Snape is disciplining Ron for his actions."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "whomping willow",
+      "relationship_type": "concerned about damage to",
+      "description": "Harry is worried about the damage caused by the Whomping Willow."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "harry potter",
+      "relationship_type": "disciplines",
+      "description": "Snape is also disciplining Harry for his actions."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "car",
+      "relationship_type": "bewitched",
+      "description": "Mr Weasley has bewitched a car, which could cause trouble if discovered."
+    }
+  ]
+}

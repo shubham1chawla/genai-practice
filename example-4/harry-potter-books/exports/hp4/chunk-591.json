@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having an ugly scar and being in the Triwizard Tournament."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "A journalist who is interviewing Harry Potter, described as having a heavily penciled eyebrow."
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that contains the names of participants in the Triwizard Tournament, mentioned as being mysterious and causing trouble for Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "goblet of fire",
+      "relationship_type": "contained_by",
+      "description": "The Goblet of Fire contains the name of Harry Potter, which is how he got into the Triwizard Tournament."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "harry potter",
+      "relationship_type": "interviews",
+      "description": "Rita Skeeter is interviewing Harry Potter, trying to get him to explain why his name was in the Goblet of Fire."
+    }
+  ]
+}

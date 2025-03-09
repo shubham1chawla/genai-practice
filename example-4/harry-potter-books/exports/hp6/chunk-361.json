@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as trying to look like a Muggle."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sets off at a brisk walk down the lane, described as wearing a frock-coat and spats."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who follows Harry and Ogden, but no further description is given."
+    },
+    {
+      "name": "great hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned on a wooden sign, described as 5 miles away."
+    },
+    {
+      "name": "little hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A village nestled between two steep hills, its church and graveyard clearly visible."
+    },
+    {
+      "name": "village",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The general term for the settlement of Little Hangleton."
+    },
+    {
+      "name": "church",
+      "entity_type": "building",
+      "singular": true,
+      "description": "A building in the village of Little Hangleton."
+    },
+    {
+      "name": "graveyard",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The area where people are buried in the village of Little Hangleton."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ogden",
+      "relationship_type": "follows",
+      "description": "Harry and Dumbledore follow Ogden down the lane."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "follows",
+      "description": "Dumbledore follows Harry, but this is an inverse relationship of the one above."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "little hangleton",
+      "relationship_type": "heading towards",
+      "description": "Ogden is heading towards Little Hangleton, as indicated by the sign."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hangleton",
+      "relationship_type": "away from",
+      "description": "Harry and Dumbledore are moving away from Great Hangleton, as indicated by the sign."
+    }
+  ]
+}

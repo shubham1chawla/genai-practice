@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the main character in this passage, and he is being given a potion by Snape. He is described as having his eyelids flutter and open after the potion takes effect."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is giving Dumbledore a potion and questioning him about Marvolo Gaunt's ring."
+    },
+    {
+      "name": "marvolo gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marvolo Gaunt's ring is mentioned as being on the desk before Dumbledore."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "The sword of Gryﬃndor is mentioned as lying beside Marvolo Gaunt's ring."
+    },
+    {
+      "name": "ring",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Marvolo Gaunt's ring is a cursed object that Dumbledore touched."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "gives_potion",
+      "description": "Snape gives Dumbledore a potion to make him recover from the effects of touching Marvolo Gaunt's ring."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ring",
+      "relationship_type": "touches",
+      "description": "Dumbledore touches Marvolo Gaunt's ring, which carries a curse."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ring",
+      "relationship_type": "questions_about",
+      "description": "Snape questions Dumbledore about why he touched Marvolo Gaunt's ring."
+    }
+  ]
+}

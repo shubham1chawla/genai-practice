@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "trapdoor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The trapdoor is mentioned as a location that Harry will go through tonight. (\"I’m going through that trapdoor tonight and nothing you two say is going to stop me!\")"
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as a house in Hogwarts that will win the House Cup. (\"D’you think he’ll leave you and your families alone if Gryffindor win the House Cup?\")"
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Stone is mentioned as an object that Harry needs to get to. (\"If I get caught before I can get to the Stone...\")"
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are mentioned as Harry's family who he will have to go back to if he gets caught. (\"well, I’ll have to go back to the Dursleys and wait for Voldemort to find me there.\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as a person who killed Harry's parents. (\"Voldemort killed my parents, remember?’\")"
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is mentioned as an object that Harry will use to go through the trapdoor. (\"I’ll use the Invisibility Cloak,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "trapdoor",
+      "relationship_type": "will_go_through",
+      "description": "Harry will go through the trapdoor tonight. (\"I’m going through that trapdoor tonight and nothing you two say is going to stop me!\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dursleys",
+      "relationship_type": "will_find",
+      "description": "Voldemort will find Harry at the Dursleys if he gets caught. (\"well, I’ll have to go back to the Dursleys and wait for Voldemort to find me there.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "will_use",
+      "description": "Harry will use the Invisibility Cloak. (\"I’ll use the Invisibility Cloak,\")"
+    }
+  ]
+}

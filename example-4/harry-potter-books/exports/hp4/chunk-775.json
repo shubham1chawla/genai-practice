@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Potions is mentioned as a subject that Harry was interested in, but it's not clear what specific potions class or activity this refers to."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as someone who was asked to the ball by Hermione, but she turned him down."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as someone who was also asked to the ball, and it's implied that she was interested in Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who turned down Neville's invitation to the ball."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "hermione",
+      "relationship_type": "rejected_by",
+      "description": "Neville was rejected by Hermione when he asked her to the ball."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "potions",
+      "relationship_type": "interested_in",
+      "description": "Ginny is interested in potions, but it's not clear what specific aspect of potions she's interested in."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "ginny",
+      "relationship_type": "rejected_by",
+      "description": "Neville was rejected by Ginny when he asked her to the ball."
+    }
+  ]
+}

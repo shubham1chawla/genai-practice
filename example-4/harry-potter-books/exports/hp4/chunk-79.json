@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A family of wizards who are friends with Harry. They have a car that is currently in the Forbidden Forest."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The father of the Weasleys and a friend of Harry's. He has borrowed cars from the Ministry of Magic before."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's Muggle uncle who is not fond of wizards."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's Muggle aunt who is also not fond of wizards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "weasleys",
+      "relationship_type": "friendship",
+      "description": "The Weasleys are friends with Harry and will be picking him up."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ministry of magic",
+      "relationship_type": "borrower",
+      "description": "Mr. Weasley has borrowed cars from the Ministry of Magic before."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "family_member",
+      "description": "Harry is a family member of Uncle Vernon's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt petunia",
+      "relationship_type": "family_member",
+      "description": "Harry is also a family member of Aunt Petunia's."
+    }
+  ]
+}

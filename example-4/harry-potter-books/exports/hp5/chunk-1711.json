@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville's arm is pressed against Harry's, and he can feel him shaking."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a Death Eater who is questioning Harry about the prophecy."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is being questioned by Bellatrix about the prophecy."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's name is mentioned by Harry, causing a reaction from the Death Eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "bellatrix",
+      "relationship_type": "questioned_by",
+      "description": "Bellatrix is questioning Harry about the prophecy."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "harry potter",
+      "relationship_type": "physically_close_to",
+      "description": "Neville's arm is pressed against Harry's, and he can feel him shaking."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "bellatrix",
+      "relationship_type": "wanted_by",
+      "description": "Voldemort wants the prophecy, which Bellatrix is trying to get from Harry."
+    }
+  ]
+}

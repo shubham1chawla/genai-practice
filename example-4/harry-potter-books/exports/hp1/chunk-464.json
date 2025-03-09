@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is in trouble with Professor McGonagall."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who is also in trouble with Professor McGonagall."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is another friend of Harry's who is being led by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who is questioning Harry and his friends about their behavior."
+    },
+    {
+      "name": "filch",
+      "entity_type": "staff_member",
+      "singular": true,
+      "description": "Filch is the caretaker of Hogwarts who takes Harry and his friends to Professor McGonagall's study."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_being_questioned_by",
+      "description": "Professor McGonagall is questioning Harry about his behavior."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_being_questioned_by",
+      "description": "Professor McGonagall is also questioning Hermione about her behavior."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_being_led_by",
+      "description": "Professor McGonagall is leading Neville to the study."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "are_friends_with",
+      "description": "Harry and Hermione are friends who are in trouble together."
+    }
+  ]
+}

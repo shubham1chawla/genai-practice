@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's Firebolt is a significant object in his life. It is mentioned that he returns to look at it almost every day."
+    },
+    {
+      "name": "apothecary",
+      "entity_type": "store",
+      "singular": true,
+      "description": "The Apothecary is a store where Harry buys potions ingredients. It is described as a place where he needs to replenish his stock."
+    },
+    {
+      "name": "madam malkin's robes for all occasions",
+      "entity_type": "clothing_store",
+      "singular": true,
+      "description": "Madam Malkin's Robes for All Occasions is a clothing store where Harry buys new school robes. It is mentioned that his old robes are now too short."
+    },
+    {
+      "name": "care of magical creatures",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Care of Magical Creatures is one of Harry's new subjects at school. He needs to buy books for this subject."
+    },
+    {
+      "name": "divination",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Divination is another one of Harry's new subjects at school. He also needs to buy books for this subject."
+    },
+    {
+      "name": "the monster book of monsters",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Monster Book of Monsters is a book that is being displayed in the window of the bookshop. It is mentioned that there are about a hundred copies of it, and they are grappled with each other."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "ownership",
+      "description": "Harry owns the Firebolt. It is mentioned that he returns to look at it almost every day."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "apothecary",
+      "relationship_type": "customer",
+      "description": "Harry is a customer of the Apothecary. He goes there to buy potions ingredients."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "madam malkin's robes for all occasions",
+      "relationship_type": "customer",
+      "description": "Harry is also a customer of Madam Malkin's Robes for All Occasions. He buys new school robes from there."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "care of magical creatures",
+      "relationship_type": "student",
+      "description": "Harry is a student studying Care of Magical Creatures at school. He needs to buy books for this subject."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "divination",
+      "relationship_type": "student",
+      "description": "Similarly, Harry is also a student studying Divination at school. He needs to buy books for this subject as well."
+    },
+    {
+      "entity_1": "bookshop",
+      "entity_2": "the monster book of monsters",
+      "relationship_type": "displayed_item",
+      "description": "The Monster Book of Monsters is being displayed in the window of the bookshop."
+    }
+  ]
+}

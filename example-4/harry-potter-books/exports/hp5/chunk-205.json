@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "house of black",
+      "entity_type": "family_name",
+      "singular": true,
+      "description": "The House of Black is mentioned as a noble and most ancient house. (Excerpt: 'THE NOBLE AND MOST ANCIENT HOUSE OF BLACK')"
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family_name",
+      "singular": false,
+      "description": "The Weasleys are mentioned as the family that Mrs. Weasley belongs to. (Excerpt: 'rs. Weasley followed them upstairs looking grim.')"
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Ginny is mentioned as a member of the Weasley family and is expected to be asleep by Mrs. Weasley. (Excerpt: 'I expect Ginny’s asleep...')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who has been talking to the others downstairs and is expected not to wake Ginny up. (Excerpt: 'I expect Ginny’s asleep, so try not to wake her up.')"
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Fred is mentioned as a member of the Weasley family and is making a comment about Ginny being awake. (Excerpt: '“Asleep, yeah, right,” said Fred in an undertone...')"
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Ron is mentioned as a member of the Weasley family and is being sent to bed by Mrs. Weasley. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is being sent to bed by Mrs. Weasley. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Mrs. Weasley is mentioned as a member of the Weasley family and is sending the children to bed. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "house of black",
+      "relationship_type": "belong_to",
+      "description": "Mrs. Weasley is mentioned as a member of the House of Black, indicating that she belongs to this noble and ancient house. (Excerpt: 'THE NOBLE AND MOST ANCIENT HOUSE OF BLACK')"
+    },
+    {
+      "entity_1": "ginny weasley",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Ginny is expected to be asleep by Mrs. Weasley, implying that she and Hermione are friends or at least close enough for Mrs. Weasley to worry about waking her up. (Excerpt: 'I expect Ginny’s asleep, so try not to wake her up.')"
+    },
+    {
+      "entity_1": "fred weasley",
+      "entity_2": "ginny weasley",
+      "relationship_type": "teasing_relationship",
+      "description": "Fred is making a comment about Ginny being awake, indicating that they have a teasing relationship. (Excerpt: '“Asleep, yeah, right,” said Fred in an undertone...')"
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry",
+      "relationship_type": "friendship",
+      "description": "Ron and Harry are being sent to bed together by Mrs. Weasley, implying that they are friends or at least close enough for her to treat them as a pair. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "ron weasley",
+      "relationship_type": "parent_child",
+      "description": "Mrs. Weasley is sending Ron to bed, indicating that she is his mother or caregiver. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "harry",
+      "relationship_type": "parent_child",
+      "description": "Mrs. Weasley is sending Harry to bed, indicating that she is his mother or caregiver. (Excerpt: '“All right, Ron, Harry,” said Mrs. Weasley on the second landing...')"
+    }
+  ]
+}

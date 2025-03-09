@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a powerful wizard who is troubled by his wand."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is trying to persuade Voldemort to call off the battle and seek Harry Potter."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of Lucius, whose whereabouts are unknown."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is summoned by Voldemort to perform a service."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A great thick snake that is suspended in midair and protected by an enchanted space."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "potter",
+      "relationship_type": "searching_for",
+      "description": "Voldemort is searching for Potter, as indicated by his statement 'Before the night is out, Potter will have come to find me.'"
+    },
+    {
+      "entity_1": "lucius",
+      "entity_2": "voldemort",
+      "relationship_type": "trying_to_persuade",
+      "description": "Lucius is trying to persuade Voldemort to call off the battle and seek Potter."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "requesting_service_from",
+      "description": "Voldemort requests a service from Snape, as indicated by his statement 'I need him. There is a — service — I require from him.'"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "nagini",
+      "relationship_type": "communicating_with",
+      "description": "Voldemort communicates with Nagini, as indicated by his whispered conversation with her."
+    }
+  ]
+}

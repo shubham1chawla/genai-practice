@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts School. He is rarely seen at meals and is thought to be leaving the school for days at a time."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts School, who is receiving private lessons from Dumbledore. He is concerned about Dumbledore's absence and feels abandoned."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts School, who shares Harry's concerns about Dumbledore's absence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "teaches",
+      "description": "Dumbledore is giving private lessons to Harry, which are leading up to something related to the prophecy."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogsmeade",
+      "relationship_type": "location_of",
+      "description": "The trip to Hogsmeade is a location where Dumbledore is not present, but Harry and his friends are going."
+    }
+  ]
+}

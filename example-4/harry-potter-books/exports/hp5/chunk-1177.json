@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people who saw Hermione's reaction to the newspaper."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the person who received the Daily Prophet and reacted to it."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people who saw Hermione's reaction to the newspaper."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper that arrived at Hermione's place."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "prison",
+      "singular": true,
+      "description": "Azkaban is mentioned as the prison where some people were sent for their crimes."
+    },
+    {
+      "name": "antonin dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Antonin Dolohov is mentioned as a person who was convicted of murder and had his picture in the newspaper."
+    },
+    {
+      "name": "gideon prewett",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gideon Prewett is mentioned as one of the people murdered by Antonin Dolohov."
+    },
+    {
+      "name": "fabian prewett",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fabian Prewett is mentioned as another person murdered by Antonin Dolohov."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "antonin dolohov",
+      "relationship_type": "victim_of_crime",
+      "description": "Harry is a victim of one of the crimes committed by Antonin Dolohov."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "daily prophet",
+      "relationship_type": "recipient_of_news",
+      "description": "Hermione received the Daily Prophet, which contained news about people who were sent to Azkaban for their crimes."
+    },
+    {
+      "entity_1": "antonin dolohov",
+      "entity_2": "gideon prewett",
+      "relationship_type": "murderer_of_person",
+      "description": "Antonin Dolohov murdered Gideon Prewett."
+    },
+    {
+      "entity_1": "antonin dolohov",
+      "entity_2": "fabian prewett",
+      "relationship_type": "murderer_of_person",
+      "description": "Antonin Dolohov murdered Fabian Prewett."
+    }
+  ]
+}

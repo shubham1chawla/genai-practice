@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is screaming again due to physical pain caused by the sound of her voice."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is running around the cellar and feeling the walls for something, knowing it's useless."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is half sobbing and pounding the walls with his fists."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid's pouch is being used by Harry to find something."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's eye appears in the mirror fragment."
+    },
+    {
+      "name": "malfoy manor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The cellar is located at Malfoy Manor."
+    },
+    {
+      "name": "dumbledore's snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry pulls out Dumbledore's Snitch from Hagrid's pouch."
+    },
+    {
+      "name": "phoenix wand",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The broken halves of the phoenix wand are waved by Harry."
+    },
+    {
+      "name": "mirror fragment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A mirror fragment falls sparkling to the floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore's snitch",
+      "relationship_type": "possesses",
+      "description": "Harry pulls out Dumbledore's Snitch from Hagrid's pouch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "phoenix wand",
+      "relationship_type": "waves",
+      "description": "The broken halves of the phoenix wand are waved by Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mirror fragment",
+      "relationship_type": "sees",
+      "description": "Harry sees Dumbledore's eye in the mirror fragment."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "malfoy manor",
+      "relationship_type": "located_at",
+      "description": "The cellar is located at Malfoy Manor, which is associated with Dumbledore."
+    }
+  ]
+}

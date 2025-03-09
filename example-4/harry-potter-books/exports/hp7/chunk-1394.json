@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is having a conversation with Dumbledore's portrait. He is wearing robes and swinging a traveling cloak over them."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person whose portrait is speaking to Snape. The portrait is advising Snape on what to do."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is a person who will receive the sword from Snape. Dumbledore's portrait believes Potter knows what to do with it."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George Weasley is a person whose mishap has affected Snape's appearance."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who rises out of the Pensieve and lies on the carpeted floor in the same room as Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore",
+      "relationship_type": "conversation",
+      "description": "Snape and Dumbledore's portrait are having a conversation about giving Potter the sword."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "george weasley",
+      "relationship_type": "affect",
+      "description": "George Weasley's mishap has affected Snape's appearance."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "trust",
+      "description": "Dumbledore believes Potter knows what to do with the sword."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "proximity",
+      "description": "Snape and Harry are in the same room."
+    }
+  ]
+}

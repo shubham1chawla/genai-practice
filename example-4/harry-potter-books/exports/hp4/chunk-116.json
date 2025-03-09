@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is described as being near a hedge, torn between amusement and anxiety. He is also mentioned as grinning and chuckling throughout the passage."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as looking up to see Percy's head poking out of a window on the second floor. He is also described as directing tables safely onto the grass with Bill."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is described as having his head poking out of a window on the second floor and bellowing at Bill to keep it down. He is also mentioned as slamming the window shut."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley's excellent cooking is described in the passage."
+    },
+    {
+      "name": "the weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The nine Weasleys are mentioned as being present at the gathering."
+    },
+    {
+      "name": "bill’s table",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Bill's table is described as being knocked off its leg and then reattached by Bill."
+    },
+    {
+      "name": "cauldron bottoms",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Cauldron bottoms are mentioned as being worked on by Percy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "percy",
+      "relationship_type": "interaction",
+      "description": "Bill and Percy interact with each other through a series of conversations, with Bill apologizing to Percy for the noise and Percy responding peevishly."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "bill",
+      "relationship_type": "collaboration",
+      "description": "Charlie collaborates with Bill in directing tables safely onto the grass."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "cauldron bottoms",
+      "relationship_type": "work_on",
+      "description": "Percy is working on cauldron bottoms, as mentioned by Bill."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "table leg",
+      "relationship_type": "repair",
+      "description": "Bill repairs the table leg that was knocked off."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "tablecloths",
+      "relationship_type": "conjure",
+      "description": "Bill conjures tablecloths from nowhere."
+    }
+  ]
+}

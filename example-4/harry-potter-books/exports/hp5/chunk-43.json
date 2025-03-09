@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being followed by Mundungus and is in danger from Dementors. (\"hat?” said Harry blankly.\")"
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "witch",
+      "singular": true,
+      "description": "Mrs. Figg is a witch who knows about Dementors and is trying to help Harry. (‘He left!’ said Mrs. Figg, wringing her hands.)"
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is a person who has been following Harry and leaving him without cover from Dementors. (‘I told him I’d flay him alive if he went, and now look! Dementors!’ said Mrs. Figg.)"
+    },
+    {
+      "name": "mr tibbies",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Mr. Tibbies is a cat who has been put on the case by Mrs. Figg to help Harry. (‘But we haven’t got time to stand around! Hurry, now, we’ve got to get you back!’ said Mrs. Figg.)"
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Dementors are entities that are attacking Harry and are being referred to by Mrs. Figg. (‘It’s just lucky I put Mr. Tibbies on the case! But we haven’t got time to stand around!’ said Mrs. Figg.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mundungus",
+      "relationship_type": "followed_by",
+      "description": "Mundungus has been following Harry, leaving him without cover from Dementors. (‘This bloke Mundungus has been following me? Hang on — it was him! He Disapparated from the front of my house!’ said Harry.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "attacked_by",
+      "description": "Dementors are attacking Harry. (‘It’s just lucky I put Mr. Tibbies on the case! But we haven’t got time to stand around!’ said Mrs. Figg.)"
+    },
+    {
+      "entity_1": "mrs figg",
+      "entity_2": "harry",
+      "relationship_type": "helping",
+      "description": "Mrs. Figg is trying to help Harry by putting Mr. Tibbies on the case and warning Mundungus about Dementors. (‘But we haven’t got time to stand around! Hurry, now, we’ve got to get you back!’ said Mrs. Figg.)"
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "harry",
+      "relationship_type": "left_without_cover",
+      "description": "Mundungus left Harry without cover from Dementors when he warned him about the danger. (‘He left you completely without cover when I warned him —’ said Mrs. Figg.)"
+    }
+  ]
+}

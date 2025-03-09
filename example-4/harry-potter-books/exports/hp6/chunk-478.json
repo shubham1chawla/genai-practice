@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as the person who has sent a letter requesting an appointment to Mrs. Cole."
+    },
+    {
+      "name": "mrs cole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Cole is introduced as the person who receives Dumbledore's letter and invites him for an appointment."
+    },
+    {
+      "name": "billy stubbs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Billy Stubbs is mentioned as a patient with scabs."
+    },
+    {
+      "name": "eric whalley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Eric Whalley is mentioned as a patient with chicken pox."
+    },
+    {
+      "name": "martha",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Martha is mentioned as the person who needs iodine."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mrs cole",
+      "relationship_type": "visited",
+      "description": "Dumbledore visits Mrs. Cole at her place."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "martha",
+      "relationship_type": "sent iodine to",
+      "description": "Dumbledore sends iodine to Martha."
+    },
+    {
+      "entity_1": "mrs cole",
+      "entity_2": "billy stubbs",
+      "relationship_type": "cared for",
+      "description": "Mrs. Cole cares for Billy Stubbs by sending him iodine."
+    },
+    {
+      "entity_1": "mrs cole",
+      "entity_2": "eric whalley",
+      "relationship_type": "cared for",
+      "description": "Mrs. Cole cares for Eric Whalley by sending him iodine."
+    }
+  ]
+}

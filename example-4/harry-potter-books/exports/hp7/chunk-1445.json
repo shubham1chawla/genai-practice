@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as speaking and interacting with Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as knowing Harry's parents' location."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, having a conversation with Harry."
+    },
+    {
+      "name": "harry's mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother, mentioned as being known by Voldemort."
+    },
+    {
+      "name": "harry's dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, mentioned as being known by Voldemort."
+    },
+    {
+      "name": "ariana",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's sister, whose ill health is a secret known to Harry."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison where Dumbledore's father died."
+    },
+    {
+      "name": "the cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that couldn't have helped Harry's parents survive."
+    },
+    {
+      "name": "the hallows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A set of objects being searched for by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "knows_secret",
+      "description": "Dumbledore is sharing a secret with Harry about his sister's ill health."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry's mum and dad",
+      "relationship_type": "knew_location",
+      "description": "Voldemort knew the location of Harry's parents."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "azkaban",
+      "relationship_type": "father_died_in",
+      "description": "Dumbledore's father died in Azkaban."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ariana",
+      "relationship_type": "knows_secret",
+      "description": "Harry knows the secret of Dumbledore's sister's ill health."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the hallows",
+      "relationship_type": "searching_for",
+      "description": "Dumbledore was searching for the Hallows when he saw the Cloak."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "does_not_despise",
+      "description": "Harry does not despise Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "resents_harry",
+      "description": "Dumbledore resented Harry for knowing his secrets."
+    }
+  ]
+}

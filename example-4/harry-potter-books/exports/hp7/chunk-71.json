@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to by name. (\"You, Harry\")"
+    },
+    {
+      "name": "dedalus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is speaking to Harry and explaining the arrangements. (\"Dedalus continued\")"
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was supposed to take Harry by Side-Along-Apparition but cannot do it now. (\"Mad-Eye will explain\")"
+    },
+    {
+      "name": "hestia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is speaking and telling Harry that Mad-Eye cannot come. (\"Hestia tersely\")"
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family of Harry's relatives, referred to as a group. (\"The Dursleys\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dedalus",
+      "relationship_type": "speaking_to",
+      "description": "Harry is being spoken to by Dedalus. (\"Dedalus continued, ‘will wait here for your guard.’\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hestia",
+      "relationship_type": "being_spoken_to",
+      "description": "Harry is being spoken to by Hestia. (\"Hestia tersely.\")"
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "harry",
+      "relationship_type": "supposed_to_take_by_side_along_apparition",
+      "description": "Mad-Eye was supposed to take Harry by Side-Along-Apparition. (\"I thought Mad-Eye was going to come and take me by Side-Along-Apparition?\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "related_to",
+      "description": "Harry is related to the Dursleys. (\"The Dursleys, who had listened to all of this with looks of utter incomprehension on their faces\")"
+    }
+  ]
+}

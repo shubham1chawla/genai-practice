@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to sneak back into the castle."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical potion that Harry has been drinking, which is wearing off as he creeps back into the castle."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A poltergeist who lives in the castle and is a nuisance to the students."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The portrait of a woman who guards the entrance to the Gryffindor common room, requiring a password to enter."
+    },
+    {
+      "name": "headmaster",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person in charge of the school, who has tightened security measures."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "felix felicis",
+      "relationship_type": "has_effect_on",
+      "description": "Harry can feel the effects of Felix Felicis wearing off as he creeps back into the castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "peeves",
+      "relationship_type": "encounters",
+      "description": "Harry meets Peeves on the third floor and narrowly avoids detection by diving through a shortcut."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fat lady",
+      "relationship_type": "interacts_with",
+      "description": "Harry pulls off his Invisibility Cloak in front of the Fat Lady, who is in a bad mood and refuses to let him in."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "headmaster",
+      "relationship_type": "has_conflict_with",
+      "description": "Harry is angry with the Headmaster for tightening security measures, which has caused problems for him."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a wizard who is concerned about his safety."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is running towards him to check on his well-being."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts who is accompanying Hermione and checking on the unicorn."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "A centaur who is leaving Harry in the Forest after a conversation."
+    },
+    {
+      "name": "unicorn",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal that has died in the clearing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is waiting for him to return from the Forest."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "unicorn",
+      "relationship_type": "examines",
+      "description": "Hagrid is examining the dead unicorn in the clearing."
+    },
+    {
+      "entity_1": "firenze",
+      "entity_2": "harry",
+      "relationship_type": "leaves",
+      "description": "Firenze leaves Harry behind in the Forest after their conversation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "awaits",
+      "description": "Ron is waiting for Harry to return from the Forest."
+    },
+    {
+      "entity_1": "firenze",
+      "entity_2": "centaurs",
+      "relationship_type": "reads_planets",
+      "description": "Firenze mentions that centaurs have read the planets wrongly before, including this time."
+    }
+  ]
+}

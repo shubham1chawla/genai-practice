@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, described as a 'disturbed teenage survivor' who accuses members of the Wizarding community of being Death Eaters. (\"Harry Potter Names Death Eaters Still Among Us.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Described as 'Little Miss Perfect', she is accused by Rita of not wanting a certain story out there. (\"But of course, Little Miss Perfect wouldn’t want that story out there, would she?\")"
+    },
+    {
+      "name": "rita",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A journalist who is writing an article about Harry Potter accusing members of the Wizarding community of being Death Eaters. (\"The Quick-Quotes Quill was actually in her hand and halfway to her mouth when the rapturous expression died out of her face.\")"
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Described as singing a song under her breath, she is mentioned as being present with Harry and Hermione. (\"Luna, on the other hand, sang, ‘Weasley Is Our King’ dreamily under her breath and stirred her tea.\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people accused by Harry Potter of being among them. (\"Harry Potter Names Death Eaters Still Among Us.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita",
+      "entity_2": "hermione",
+      "relationship_type": "accusation",
+      "description": "Rita accuses Hermione of not wanting a certain story out there. (\"But of course, Little Miss Perfect wouldn’t want that story out there, would she?\")"
+    },
+    {
+      "entity_1": "rita",
+      "entity_2": "harry potter",
+      "relationship_type": "accusation",
+      "description": "Rita is writing an article about Harry Potter accusing members of the Wizarding community of being Death Eaters. (\"Harry Potter Names Death Eaters Still Among Us.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "rita",
+      "relationship_type": "response_to_accusation",
+      "description": "Hermione responds to Rita's accusation by saying that she does want the story out there. (\"As a matter of fact, that’s exactly what Little Miss Perfect does want.\")"
+    }
+  ]
+}

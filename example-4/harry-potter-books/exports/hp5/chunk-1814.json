@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as a person who is in the Order and is being tortured by Voldemort. He is also referred to as Sirius Black."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who knows that Sirius is in the Order and is trying to keep him out of the way."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of_torture",
+      "description": "Sirius is being tortured by Voldemort, as seen in a vision."
+    },
+    {
+      "entity_1": "krebacher",
+      "entity_2": "sirius",
+      "relationship_type": "keeper_out_of_way",
+      "description": "Kreacher was told to keep Sirius out of the way by the Malfoys on Voldemort's instructions."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "krebacher",
+      "relationship_type": "instructed_keeper",
+      "description": "Voldemort instructed Kreacher to keep Sirius out of the way."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "buckbeak",
+      "relationship_type": "tender",
+      "description": "Sirius was trying to tend to Buckbeak when Harry appeared in the fire."
+    }
+  ]
+}

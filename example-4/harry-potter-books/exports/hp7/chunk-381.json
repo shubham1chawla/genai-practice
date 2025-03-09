@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "boat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A ghostly green and tiny boat that can carry one wizard and one victim towards the island in the center. (Excerpt: 'ghostly green and tiny, bewitched so as to carry one wizard and one victim toward the island in the center.')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord who tested the defenses surrounding the Horcrux by using a disposable creature. (Excerpt: 'This, then, was how Voldemort had tested the defenses surrounding the Horcrux...') "
+    },
+    {
+      "name": "kraacher",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "A house-elf who was used as a disposable creature by Voldemort. (Excerpt: 'This, then, was how Voldemort had tested the defenses surrounding the Horcrux...') "
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is being protected by defenses. (Excerpt: 'This, then, was how Voldemort had tested the defenses surrounding the Horcrux...') "
+    },
+    {
+      "name": "island",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in the center where the boat and potion are located. (Excerpt: 'the island in the center')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcrux",
+      "relationship_type": "tested_defenses",
+      "description": "Voldemort tested the defenses surrounding the Horcrux. (Excerpt: 'This, then, was how Voldemort had tested the defenses surrounding the Horcrux...') "
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "kraacher",
+      "relationship_type": "used_disposable_creature",
+      "description": "Voldemort used Kreacher as a disposable creature. (Excerpt: 'The D–Dark Lord made Kreacher drink it.')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "boat",
+      "relationship_type": "used_for_testing_defenses",
+      "description": "Voldemort used the boat to test the defenses surrounding the Horcrux. (Excerpt: 'This, then, was how Voldemort had tested the defenses surrounding the Horcrux...') "
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "house of gaunt",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The House of Gaunt is mentioned as a location where the events are taking place. It is described as having a filthy window and a stove."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is a person who lets out a mad cackle of laughter when the pot shoots across the floor."
+    },
+    {
+      "name": "gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gaunt is a person who screams at Morfin to mend the pot and later jeers at his daughter Merope."
+    },
+    {
+      "name": "merope",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merope is a Squib who stumbles across the room and tries to mend the pot with her wand before Ogden intervenes."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is a person from the Ministry who uses the spell 'Reparo' to mend the pot instantly."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry is an organization that Ogden is affiliated with."
+    },
+    {
+      "name": "pot",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The pot is an object that shoots across the floor and cracks in two when it hits the wall."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Merope's wand is an object used for magic spells."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "pot",
+      "relationship_type": "mended",
+      "description": "Ogden uses the spell 'Reparo' to mend the pot instantly."
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "merope",
+      "relationship_type": "jeered_at",
+      "description": "Gaunt jeers at his daughter Merope, calling her a dirty Squib."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "ministry",
+      "relationship_type": "affiliated_with",
+      "description": "Ogden is affiliated with the Ministry."
+    }
+  ]
+}

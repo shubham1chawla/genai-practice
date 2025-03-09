@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the one being asked questions by Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one asking Professor Dumbledore a question."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is Harry's pet rat."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "asked_question",
+      "description": "Harry Potter asks Professor Dumbledore a question."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "answered_question",
+      "description": "Professor Dumbledore answers Harry Potter's question."
+    }
+  ]
+}

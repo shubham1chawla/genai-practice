@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being present in the room and having a sword."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is addressing Lockhart and asking Ron to take him to the hospital wing."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is being addressed by Dumbledore and is trying to do a Memory Charm."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is explaining the situation to Dumbledore and taking Lockhart to the hospital wing."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where an accident occurred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lockhart",
+      "relationship_type": "addressed",
+      "description": "Dumbledore is addressing Lockhart."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "lockhart",
+      "relationship_type": "taking to hospital wing",
+      "description": "Ron is taking Lockhart to the hospital wing."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "speaking with",
+      "description": "Dumbledore wants to have a few more words with Harry."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "harry potter",
+      "relationship_type": "pointing at",
+      "description": "Lockhart is pointing at Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dumbledore",
+      "relationship_type": "explaining to",
+      "description": "Ron is explaining the situation to Dumbledore."
+    }
+  ]
+}

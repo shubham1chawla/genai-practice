@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who had skimmed through the book 'Advanced Potion-Making'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as overhearing Harry and correcting him with 'Or herself'."
+    },
+    {
+      "name": "prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prince is the author of the book 'Advanced Potion-Making' and has made additional notes throughout the book."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "prince",
+      "relationship_type": "read",
+      "description": "Harry had skimmed through the book 'Advanced Potion-Making' written by the Prince."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "overheard",
+      "description": "Hermione overheard Harry and corrected him with 'Or herself'."
+    }
+  ]
+}

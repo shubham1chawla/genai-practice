@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as excitedly discussing the second task."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who had lessons in swimming in his youth."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, mentioned as not giving Harry any swimming lessons."
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, mentioned as not giving Harry any swimming lessons."
+    },
+    {
+      "name": "merpeople",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who live in the lake and have fins."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "merpeople",
+      "relationship_type": "has_to_find",
+      "description": "Harry has to find the merpeople in the lake as part of his second task."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "lake",
+      "relationship_type": "had_swimming_lessons_in",
+      "description": "Dudley had swimming lessons in the lake."
+    }
+  ]
+}

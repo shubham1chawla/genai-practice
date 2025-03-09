@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as 'Harry walked over to the bed'."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Harry, mentioned in the sentence 'As he and Neville pulled the blankets back onto his bed'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, introduced as 'Ron, Dean and Seamus came in'."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Ron and Seamus, mentioned in the sentence 'Dean swore loudly'."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Ron and Dean, introduced as 'Ron, Dean and Seamus came in'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned in the sentence 'They hurried back down to the Gryffindor common room, which was half-empty, and joined Hermione, who was sitting alone, reading a book called Ancient Runes Made Easy'."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose books are mentioned in the sentence 'It was only as he threw the last of the Lockhart books back into it that he realised what wasn’t there'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as they work together to investigate the missing diary."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are friends, as they join forces to investigate the missing diary."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "lockhart",
+      "relationship_type": "connection_through_books",
+      "description": "Ron is connected to Lockhart through his books, which are mentioned in the sentence 'It was only as he threw the last of the Lockhart books back into it that he realised what wasn’t there'."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dumbledore mentions dementors as a presence in the alleyway. (\"We do, in fact, have a witness to the presence of dementors in that alleyway\")"
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Dumbledore mentions Dudley Dursley as another witness to the presence of dementors. (\"other than Dudley Dursley, I mean\")"
+    },
+    {
+      "name": "fudge",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Fudge is a character who interrupts Dumbledore and seems hesitant when confronted with the presence of dementors. (\"Enough, enough!\" \"We haven’t got time to listen to more taradiddles\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Dumbledore is a character who seems to be in charge and is trying to defend the accused. (\"We do, in fact, have a witness to the presence of dementors\")"
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organizations",
+      "singular": false,
+      "description": "The Wizengamot is an organization that seems to be involved in the proceedings. (\"The Wizengamot fell silent again\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wizengamot",
+      "relationship_type": "member_of",
+      "description": "Dumbledore seems to be a member of the Wizengamot, as he is speaking on their behalf. (\"The Wizengamot fell silent again\")"
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "wizengamot",
+      "relationship_type": "member_of",
+      "description": "Fudge also seems to be a member of the Wizengamot, as he is interrupting Dumbledore. (\"Enough, enough!\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "fudge",
+      "relationship_type": "opponent_of",
+      "description": "Dumbledore and Fudge seem to be on opposite sides of the argument, as Dumbledore is trying to defend the accused. (\"We do, in fact, have a witness to the presence of dementors\")"
+    }
+  ]
+}

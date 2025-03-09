@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who survived being murdered by the Dark Lord."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title given to Voldemort, the main antagonist of the story."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as the Dark Lord."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who protected the narrator and kept them out of Azkaban."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison where the narrator could have been sent if they had murdered Harry Potter."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school where Harry Potter and other characters attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "used_blood_of",
+      "description": "The Dark Lord used Harry Potter's blood to regenerate."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "protected_narrator_from",
+      "description": "Dumbledore protected the narrator from being sent to Azkaban by keeping them out of trouble."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "kept_alive",
+      "description": "The Dark Lord kept Harry Potter alive until a year ago, when he was no longer sorry that Potter survived."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "protected_student_of",
+      "description": "Dumbledore protected his favourite student, Harry Potter."
+    }
+  ]
+}

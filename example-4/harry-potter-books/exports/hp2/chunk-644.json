@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry' and 'he'. The diary is also referred to as 'Riddle', but it's clear that Harry is a person."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "diary",
+      "singular": true,
+      "description": "A magical diary that has taken over Harry's body. It's mentioned as 'the diary' and 'Riddle'."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who is with Harry in the story. She's mentioned as 'Ginny' and is worried about being expelled from Hogwarts."
+    },
+    {
+      "name": "fawkes",
+      "entity_type": "bird",
+      "singular": true,
+      "description": "A bird that is waiting for Harry and Ginny at the Chamber entrance. It's mentioned as 'Fawkes'."
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A monster that has been killed by Riddle (the diary). It's mentioned as 'that thing' and 'Him and the Basilisk'."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is a person who came to Hogwarts before Ginny. He's mentioned in passing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "riddle",
+      "relationship_type": "controlled_by",
+      "description": "Riddle (the diary) has taken over Harry's body, as described by the text: 'he t-took me over'."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "basilisk",
+      "relationship_type": "killed",
+      "description": "Harry killed the Basilisk with Riddle (the diary)."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "harry potter",
+      "relationship_type": "accompanying",
+      "description": "Ginny is accompanying Harry in the story, as they leave the Chamber together."
+    },
+    {
+      "entity_1": "fawkes",
+      "entity_2": "harry potter",
+      "relationship_type": "waiting_for",
+      "description": "Fawkes is waiting for Harry and Ginny at the Chamber entrance."
+    }
+  ]
+}

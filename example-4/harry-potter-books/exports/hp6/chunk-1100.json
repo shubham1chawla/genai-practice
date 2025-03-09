@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is running after something."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts and a close friend of Harry's. He emerges from his cabin to try and stop the Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are trying to escape."
+    },
+    {
+      "name": "brother and sister",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Two people that Harry overtakes using his shortcut. They are closing in behind him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "chasing",
+      "description": "Harry is chasing the Death Eaters."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "death eaters",
+      "relationship_type": "trying to stop",
+      "description": "Hagrid is trying to stop the Death Eaters from escaping."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "brother and sister",
+      "relationship_type": "being chased by",
+      "description": "The brother and sister are closing in behind Harry."
+    }
+  ]
+}

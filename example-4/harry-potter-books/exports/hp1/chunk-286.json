@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a young wizard who is facing expulsion from Hogwarts."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A strict but fair teacher at Hogwarts who is leading Harry to see Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who may be able to help Harry with his situation."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts who was expelled but allowed to stay on in a different role."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends at Hogwarts who is becoming a wizard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_being_led_by",
+      "description": "Professor McGonagall is leading Harry to see Dumbledore."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "may_see",
+      "description": "Harry may be able to see Dumbledore, who can help him with his situation."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gamekeeper",
+      "relationship_type": "is",
+      "description": "Hagrid is a gamekeeper at Hogwarts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "wizard",
+      "relationship_type": "is_becoming",
+      "description": "Ron is becoming a wizard."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is part of the group and is having a conversation with Hermione. (\"Oh come off it, Harry!\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is part of the group and is having a conversation with Harry. (\"Oh come off it, Harry! said Herm ione angrily\")"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as a person who is being referred to by Hermione. (\"who can blame Umbridge?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argument",
+      "description": "Harry and Hermione are having an argument about Harry's behavior. (\"Oh come off it, Harry! said Herm ione angrily\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "concern",
+      "description": "Hermione is concerned that Umbridge might be right in chucking Harry out. (\"who can blame Umbridge?\")"
+    }
+  ]
+}

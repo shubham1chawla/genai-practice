@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "beedle the bard",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book mentioned by Hermione as containing a mark."
+    },
+    {
+      "name": "the life and lies of albus dumbledore",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book shown to Harry by Hermione with a photograph of the original letter written by Dumbledore."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The former headmaster of Hogwarts who wrote a letter to Grindelwald and had his signature in The Life and Lies of Albus Dumbledore."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard mentioned as the recipient of a letter written by Dumbledore."
+    },
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where an old grave was found with the triangular mark."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "grindelwald",
+      "relationship_type": "wrote_to",
+      "description": "Dumbledore wrote a letter to Grindelwald."
+    },
+    {
+      "entity_1": "dumbledore's signature",
+      "entity_2": "beedle the bard",
+      "relationship_type": "similar",
+      "description": "The signature of Dumbledore in The Life and Lies of Albus Dumbledore is similar to the mark found in Beedle the Bard."
+    }
+  ]
+}

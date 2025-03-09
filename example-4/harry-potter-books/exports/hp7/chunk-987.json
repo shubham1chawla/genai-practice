@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "griphook",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A goblin who is talking to Harry Potter. He says that he would believe Harry to be a wizard who does not seek personal gain."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story. Griphook believes him to be a wizard who does not seek personal gain."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A dark wizard mentioned in the conversation between Harry and Griphook."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A wand-maker who is next door to where Harry is talking with Griphook."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of magical beings that are being discussed by Harry and Griphook."
+    },
+    {
+      "name": "elves",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of magical beings mentioned in the conversation between Harry and Griphook."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "griphook",
+      "entity_2": "harry potter",
+      "relationship_type": "believes_in",
+      "description": "Griphook believes that Harry Potter is a wizard who does not seek personal gain."
+    },
+    {
+      "entity_1": "wizards",
+      "entity_2": "goblins",
+      "relationship_type": "refuse_to_share_secrets_with",
+      "description": "Wizards refuse to share the secrets of wandlore with goblins."
+    },
+    {
+      "entity_1": "goblins",
+      "entity_2": "wizards",
+      "relationship_type": "deny_possibility_of_extending_powers",
+      "description": "Goblins are denied the possibility of extending their powers by wizards."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ollivander",
+      "relationship_type": "wants_to_question",
+      "description": "Harry Potter wants to question Ollivander next door."
+    }
+  ]
+}

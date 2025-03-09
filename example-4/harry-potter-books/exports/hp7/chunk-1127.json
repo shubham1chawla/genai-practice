@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "high street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the Death Eaters were patrolling."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are followers of Lord Voldemort."
+    },
+    {
+      "name": "curfew",
+      "entity_type": "rule",
+      "singular": true,
+      "description": "A regulation that prohibits people from being out on the streets after a certain time."
+    },
+    {
+      "name": "caterwauling charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that is used to summon someone or something."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for wizards and witches."
+    },
+    {
+      "name": "dark marks",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "A spell that is used to summon someone or something."
+    },
+    {
+      "name": "pub",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the conversation between the Death Eaters and the barman takes place."
+    },
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A pet that belongs to one of the characters in the story."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the Harry Potter series."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eater",
+      "entity_2": "high street",
+      "relationship_type": "patrolling",
+      "description": "The Death Eaters were patrolling the High Street when they encountered someone breaking curfew."
+    },
+    {
+      "entity_1": "barman",
+      "entity_2": "curfew",
+      "relationship_type": "breaking",
+      "description": "The barman was accused of breaking curfew by one of the Death Eaters."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "caterwauling charm",
+      "relationship_type": "using",
+      "description": "One of the Death Eaters asked if someone had used the Caterwauling Charm to summon someone or something."
+    },
+    {
+      "entity_1": "barman",
+      "entity_2": "azkaban",
+      "relationship_type": "threatening",
+      "description": "The barman threatened that he would be sent to Azkaban if the Death Eaters pressed their Dark Marks and summoned Lord Voldemort."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "dark marks",
+      "relationship_type": "pressing",
+      "description": "One of the Death Eaters mentioned that they had pressed their Dark Marks, which would summon Lord Voldemort."
+    },
+    {
+      "entity_1": "barman",
+      "entity_2": "pub",
+      "relationship_type": "owning",
+      "description": "The barman owns the pub where the conversation takes place."
+    }
+  ]
+}

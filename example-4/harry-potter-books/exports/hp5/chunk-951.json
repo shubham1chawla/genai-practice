@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as remembering an occasion when Malfoy entered the forest."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a Slytherin student who prefers the dark and is afraid of wild creatures. He is mentioned as saying something about preferring the dark."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is a Slytherin student who is present when Malfoy says something about preferring the dark."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a Slytherin student who is present when Malfoy says something about preferring the dark."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and teacher at Hogwarts. He is mentioned as leading a class to see wild creatures in their natural habitat."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherin students are mentioned as murmuring agreement with Malfoy's statement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "has_memory_of",
+      "description": "Harry remembers an occasion when Malfoy entered the forest."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "slytherins",
+      "relationship_type": "teaches",
+      "description": "Hagrid is leading a class of Slytherin students to see wild creatures in their natural habitat."
+    }
+  ]
+}

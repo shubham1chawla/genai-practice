@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": true,
+      "description": "Dementors are mentioned as remaining in place in Azkaban and doing everything they are asked to."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a location where dementors remain in place."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as the organization that ordered a pair of dementors into an alleyway on August 2nd."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as asking questions about why someone within the Ministry ordered a pair of dementors."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as recognizing Dolores Umbridge to speak."
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolores Umbridge is introduced as the Senior Undersecretary to the Ministry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ministry",
+      "relationship_type": "questioned_by",
+      "description": "Dumbledore asks questions about why someone within the Ministry ordered a pair of dementors."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "dolores umbridge",
+      "relationship_type": "recognized",
+      "description": "Fudge recognizes Dolores Umbridge to speak."
+    }
+  ]
+}

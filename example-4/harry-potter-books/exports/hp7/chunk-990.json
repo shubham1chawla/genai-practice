@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is trying to break into the vault. He asks the goblin for help."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who is also present in the scene."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another one of Harry's friends who is present in the scene."
+    },
+    {
+      "name": "goblin",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The goblin is a guardian of Gringotts and has a duty to protect the objects placed in their care."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblin",
+      "relationship_type": "asks_for_help",
+      "description": "Harry asks the goblin for help in breaking into the vault."
+    },
+    {
+      "entity_1": "goblin",
+      "entity_2": "gringotts",
+      "relationship_type": "guardian_of",
+      "description": "The goblin is a guardian of Gringotts and has a duty to protect its treasures."
+    }
+  ]
+}

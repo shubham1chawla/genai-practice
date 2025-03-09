@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is surprised by Dumbledore's statement"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is confused by Dumbledore's statement"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who makes a mysterious statement"
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is being referred to by Dumbledore"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "colin",
+      "relationship_type": "reference",
+      "description": "Dumbledore refers to Colin as the subject of his statement"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "confusion",
+      "description": "Professor McGonagall is confused by Dumbledore's statement"
+    }
+  ]
+}

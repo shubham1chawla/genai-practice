@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as having a similar experience to the current situation in their second year. The text states that 'similar happening to Hermione during their second year...'"
+    },
+    {
+      "name": "agnes",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Agnes is introduced as a furry-faced woman who receives Christmas presents from the Healer. She responds with loud barks."
+    },
+    {
+      "name": "broderick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Broderick is mentioned as receiving a potted plant and calendar from the Healer, who describes it as 'brightening things up'."
+    },
+    {
+      "name": "healer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Healer is introduced as handing out Christmas presents to Agnes and Broderick. She also mentions that Broderick's son has sent an owl to say he's visiting tonight."
+    },
+    {
+      "name": "mrs longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Longbottom is mentioned as leaving, with the Healer asking if she's already leaving."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "healer",
+      "entity_2": "agnes",
+      "relationship_type": "gives_present",
+      "description": "The Healer hands Agnes a small pile of Christmas presents. The text states, 'Here you are, Agnes...'"
+    },
+    {
+      "entity_1": "healer",
+      "entity_2": "broderick",
+      "relationship_type": "gives_present",
+      "description": "The Healer hands Broderick a potted plant and calendar. The text states, 'And look, Broderick...'"
+    },
+    {
+      "entity_1": "agnes",
+      "entity_2": "healer",
+      "relationship_type": "receives_present",
+      "description": "Agnes receives Christmas presents from the Healer."
+    },
+    {
+      "entity_1": "broderick",
+      "entity_2": "healer",
+      "relationship_type": "receives_present",
+      "description": "Broderick receives a potted plant and calendar from the Healer."
+    }
+  ]
+}

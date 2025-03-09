@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, mentioned as looking up and seeing Hedwig soar towards him."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is Harry's owl, described as fluttering down onto Harry's shoulder and holding out her leg wearily."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a character who stops talking abruptly when Hedwig arrives and watches anxiously as Hedwig lands on Harry's shoulder."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a character who watches anxiously with Hermione as Hedwig lands on Harry's shoulder."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned in the letter, saying he is back in the country and well hidden."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Fred is mentioned as being safely immersed in discussions about the Triwizard Tournament with his twin brother George."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as being safely immersed in discussions about the Triwizard Tournament with his twin brother Fred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "owner",
+      "description": "Harry owns Hedwig, as evidenced by him offering her bacon rinds and reading a letter from Sirius to Ron and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hedwig",
+      "relationship_type": "concerned_for",
+      "description": "Hermione is concerned for Hedwig's well-being, as evidenced by her watching anxiously as Hedwig lands on Harry's shoulder."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hedwig",
+      "relationship_type": "concerned_for",
+      "description": "Ron is also concerned for Hedwig's well-being, as evidenced by his watching anxiously with Hermione as Hedwig lands on Harry's shoulder."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "communicator",
+      "description": "Sirius communicates with Harry through a letter, which is read out to Ron and Hermione by Harry."
+    }
+  ]
+}

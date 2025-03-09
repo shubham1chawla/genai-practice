@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Gryﬀindors are watching fearfully as the scene unfolds in the classroom."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherins look excited, contrasting with the Gryﬀindors' fearful demeanor."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as picking up Trevor the toad and dipping a spoon into Neville’s potion. He is also mentioned as looking sour after the Gryﬀindors burst into applause."
+    },
+    {
+      "name": "trevor",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Trevor, initially described as a toad, undergoes transformation and is later referred to as a tadpole. He reappears fully grown after Snape pours a few drops from a small bottle."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville's potion is mentioned, and it is described as being green when Snape dips the spoon into it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is thinking about what Malfoy said while climbing the steps to the entrance hall with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is seething about Snape as he climbs the steps to the entrance hall with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as climbing the steps to the entrance hall with Ron and Harry."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy's statement has an impact on Harry, who is still thinking about it while climbing the steps to the entrance hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "trevor",
+      "relationship_type": "transformation",
+      "description": "Snape transforms Trevor from a tadpole back into his original form using a potion."
+    },
+    {
+      "entity_1": "gryffindors",
+      "entity_2": "snape",
+      "relationship_type": "applause",
+      "description": "The Gryﬀindors burst into applause after Snape transforms Trevor, but their joy is short-lived as Snape deducts points from them."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "gryffindors",
+      "relationship_type": "punishment",
+      "description": "Snape deducts five points from Gryﬀindor for helping Trevor, which wipes the smiles off their faces."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "influence",
+      "description": "Malfoy's statement has an impact on Harry, who is still thinking about it while climbing the steps to the entrance hall."
+    }
+  ]
+}

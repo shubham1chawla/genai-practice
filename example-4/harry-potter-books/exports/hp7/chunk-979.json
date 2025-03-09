@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who has a dead house-elf and a half-conscious goblin with him."
+    },
+    {
+      "name": "bill",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A member of the Order, who is trying to get information from Harry."
+    },
+    {
+      "name": "harry's mission",
+      "entity_type": "mission",
+      "singular": true,
+      "description": "The secret mission left by Dumbledore for Harry and his friends."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A goblin who is half-conscious and has been brought by Harry."
+    },
+    {
+      "name": "hallow",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is part of the mission."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is part of the mission."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "bill",
+      "relationship_type": "has_secret_to_share",
+      "description": "Harry has a secret to share with Bill, but he refuses to tell him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griphook",
+      "relationship_type": "will_speak_to_first",
+      "description": "Harry decides to speak to Griphook first."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "harry's mission",
+      "relationship_type": "is_part_of_order",
+      "description": "Bill is a member of the Order and knows about Harry's mission."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "hallow/horcrux",
+      "relationship_type": "may_be_involved_with",
+      "description": "Griphook may be involved with either Hallow or Horcrux."
+    }
+  ]
+}

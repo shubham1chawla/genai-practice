@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, also known as Voldemort. He is confirmed to have returned to the country and is active once more."
+    },
+    {
+      "name": "cornelius fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic who confirms that He-Who-Must-Not-Be-Named has returned."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for dark wizards and a location where the dementors are based."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "The creatures that have revolted against the Ministry and are taking direction from He-Who-Must-Not-Be-Named."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "he-who-must-not-be-named",
+      "entity_2": "azkaban",
+      "relationship_type": "location_of",
+      "description": "He-Who-Must-Not-Be-Named is located in Azkaban, as the dementors are taking direction from him."
+    },
+    {
+      "entity_1": "he-who-must-not-be-named",
+      "entity_2": "dementors",
+      "relationship_type": "controls",
+      "description": "He-Who-Must-Not-Be-Named is controlling or directing the dementors, as they are taking direction from him."
+    },
+    {
+      "entity_1": "cornelius fudge",
+      "entity_2": "he-who-must-not-be-named",
+      "relationship_type": "confirmed_return_of",
+      "description": "Cornelius Fudge confirmed that He-Who-Must-Not-Be-Named has returned."
+    }
+  ]
+}

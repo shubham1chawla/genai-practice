@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by Minister Scrimgeour."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister of Magic, who is trying to persuade Harry that his identity as the Chosen One matters less than what people believe."
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "villain",
+      "singular": true,
+      "description": "A powerful and evil wizard, referred to by Scrimgeour."
+    },
+    {
+      "name": "chrisitan community at large",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The collective group of wizards and witches who believe in Harry as the Chosen One."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "persuader",
+      "description": "Scrimgeour is trying to persuade Harry that his identity as the Chosen One matters less than what people believe."
+    },
+    {
+      "entity_1": "christian community at large",
+      "entity_2": "harry",
+      "relationship_type": "believer",
+      "description": "The Christian community at large believes in Harry as the Chosen One."
+    }
+  ]
+}

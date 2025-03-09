@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, hiding behind a table."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is ordering a drink from Rosmerta."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "The gamekeeper who is also ordering a drink from Rosmerta."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who is smacking his lips after drinking a cherry syrup and soda."
+    },
+    {
+      "name": "rosmerta",
+      "entity_type": "barmaid",
+      "singular": true,
+      "description": "The barmaid who is serving drinks to the teachers and minister."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "minister",
+      "singular": true,
+      "description": "The minister who is being offered a drink by Rosmerta."
+    },
+    {
+      "name": "gillywater",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "A type of drink that Professor McGonagall orders from Rosmerta."
+    },
+    {
+      "name": "mulled mead",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "A type of drink that Hagrid orders from Rosmerta."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "table",
+      "relationship_type": "hid_from",
+      "description": "Harry is hiding behind the table."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "rosmerta",
+      "relationship_type": "ordered_drink_from",
+      "description": "Professor McGonagall orders a drink from Rosmerta."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "rosmerta",
+      "relationship_type": "ordered_drink_from",
+      "description": "Hagrid orders a drink from Rosmerta."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "rosmerta",
+      "relationship_type": "ordered_drink_from",
+      "description": "Professor Flitwick orders a drink from Rosmerta."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "rosmerta",
+      "relationship_type": "offered_drink_by",
+      "description": "Rosmerta offers Fudge a drink."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "saw_ordering_drink",
+      "description": "Harry sees Professor McGonagall ordering a drink from Rosmerta."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "saw_ordering_drink",
+      "description": "Harry sees Hagrid ordering a drink from Rosmerta."
+    }
+  ]
+}

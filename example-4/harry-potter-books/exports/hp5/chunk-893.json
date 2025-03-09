@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ginger newts",
+      "entity_type": "animals",
+      "singular": false,
+      "description": "The text mentions that Ginger Newts were littered on the floor."
+    },
+    {
+      "name": "george",
+      "entity_type": "people",
+      "singular": true,
+      "description": "George is a student who was involved in a duel and insulted his parents."
+    },
+    {
+      "name": "harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is a student who was also involved in the duel."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Madam Hooch is a teacher who is supposed to sort out disputes."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who scolds George and Harry for their behavior."
+    },
+    {
+      "name": "dolores umbridge",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Dolores Umbridge is a teacher who arrives at the scene and offers to help Professor McGonagall."
+    },
+    {
+      "name": "parents",
+      "entity_type": "family_members",
+      "singular": false,
+      "description": "George's parents were insulted by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "duel_participants",
+      "description": "George and Harry were involved in a duel."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "dolores umbridge",
+      "relationship_type": "interaction",
+      "description": "Professor McGonagall interacts with Dolores Umbridge when she arrives at the scene."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "parents",
+      "relationship_type": "family_member",
+      "description": "George's parents were insulted by him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mother",
+      "relationship_type": "family_member",
+      "description": "Harry's mother was insulted by Harry."
+    }
+  ]
+}

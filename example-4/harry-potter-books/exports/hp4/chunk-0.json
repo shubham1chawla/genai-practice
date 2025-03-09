@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "the riddle house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Riddle House is described as a manor that stands on a hill overlooking the village. It has boarded windows, missing tiles from its roof, and ivy spreading over its face."
+    },
+    {
+      "name": "little hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Little Hangleton is described as a village where the Riddle House is located."
+    },
+    {
+      "name": "the riddle family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Riddle family is mentioned as having lived in the Riddle House."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "little hangleton",
+      "entity_2": "the riddle house",
+      "relationship_type": "location_of",
+      "description": "The Riddle House is located in Little Hangleton."
+    },
+    {
+      "entity_1": "the riddle family",
+      "entity_2": "the riddle house",
+      "relationship_type": "residence_of",
+      "description": "The Riddle family resided in the Riddle House."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate, also a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend and classmate, also a student at Hogwarts."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who has a sinister desire to be a Quidditch referee."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another student at Hogwarts."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "A sport played on broomsticks by students at Hogwarts."
+    },
+    {
+      "name": "chess",
+      "entity_type": "game",
+      "singular": true,
+      "description": "A game played by Hermione and Ron in the common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "has_desire_to_be_referee",
+      "description": "Harry told Ron and Hermione about Snape's desire to be a Quidditch referee."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_member_of",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "chess",
+      "relationship_type": "plays",
+      "description": "Ron plays chess with Hermione in the common room."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "chess",
+      "relationship_type": "plays",
+      "description": "Hermione plays chess with Ron in the common room."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "is_friend_of",
+      "description": "Harry is friends with Neville, as they are both students at Hogwarts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_member_of",
+      "description": "Ron is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gryffindor",
+      "relationship_type": "is_member_of",
+      "description": "Hermione is a member of Gryffindor house."
+    }
+  ]
+}

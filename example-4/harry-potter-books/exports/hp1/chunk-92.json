@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Harry'."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is a family member who is angry at Harry's presence."
+    },
+    {
+      "name": "dursley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Uncle Vernon's family, who are also angry at Harry's presence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "angry_at",
+      "description": "Uncle Vernon is angry at Harry's presence."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dursley",
+      "relationship_type": "related_to",
+      "description": "Harry is related to the Dursleys, but they are not being friendly towards him."
+    }
+  ]
+}

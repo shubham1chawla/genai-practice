@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has been treated poorly by Uncle Vernon and his family. (\"We thought we’d just have a few words with you about Harry,\")"
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as a person who is smiling and talking to Uncle Vernon about Harry. (\"said Mr. Weasley, still smiling.\")"
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as a person who is growling and talking to Uncle Vernon about Harry. (\"Yeah,\" growled Moody.)"
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as a person who is being addressed by Moody and Tonks. (\"I am not aware that it is any of your business what goes on in my house —\")"
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is mentioned as a person with pink hair who is talking to Uncle Vernon and his family. (\"Anyway, that’s not the point,\" interjected Tonks.)"
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as a person who is offended by Tonks' pink hair and closes her eyes rather than look at her. (\"her pink hair seemed to offend Aunt Petunia more than all the rest put together\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a person who adds to Tonks' statement about Uncle Vernon's behavior towards Harry. (\"— and make no mistake, we’ ll hear about it,\" added Lupin.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "uncle vernon",
+      "relationship_type": "scolded_by",
+      "description": "Moody scolds Uncle Vernon for his behavior towards Harry. (\"I expect what you’re not aware of would fill several books, Dursley,\" growled Moody.)"
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "aunt petunia",
+      "relationship_type": "offended_by",
+      "description": "Tonks' pink hair offends Aunt Petunia. (\"her pink hair seemed to offend Aunt Petunia more than all the rest put together\")"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "uncle vernon",
+      "relationship_type": "threatened_to_scold",
+      "description": "Lupin threatens to scold Uncle Vernon for his behavior towards Harry. (\"— and make no mistake, we’ ll hear about it,\" added Lupin.)"
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "accusing",
+      "description": "Mr. Weasley accuses Uncle Vernon of being horrible to Harry. (\"Yes,\" said Mr. Weasley, \"even if you won’t let Harry use the fellytone —\")"
+    }
+  ]
+}

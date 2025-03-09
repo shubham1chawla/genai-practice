@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as the one who is looking around into the pitch dark and gripping Harry's elbow very hard. He is also mentioned as saying 'Oh no' multiple times."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as the one who is listening to something big moving in the distance. He is also mentioned as saying 'Shut up' and 'What d'you think it's doing?'."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is described as being heard by Ron, implying that Fang is making some noise that can be heard by others."
+    },
+    {
+      "name": "something big",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Something big is described as moving in the distance and snapping branches as it carves a path through the trees. It is also mentioned as being heard by Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "gripped_by",
+      "description": "Ron is gripping Harry's elbow very hard, indicating that he has physical contact with Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "something big",
+      "relationship_type": "heard_by",
+      "description": "Ron hears something big moving in the distance, implying that he can perceive it through his senses."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "something big",
+      "relationship_type": "listened_to",
+      "description": "Harry listens to something big moving in the distance, indicating that he is aware of its presence."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fang",
+      "relationship_type": "heard_fang",
+      "description": "Ron hears Fang making some noise, implying that Fang's sounds can be perceived by others."
+    }
+  ]
+}

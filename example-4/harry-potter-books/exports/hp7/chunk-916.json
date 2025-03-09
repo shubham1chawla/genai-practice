@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "greyback",
+      "entity_type": "werewolf",
+      "singular": true,
+      "description": "A werewolf who is a Death Eater but not part of Voldemort's inner circle"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "greyback",
+      "relationship_type": "allowed_to_wear_death_eater_robes",
+      "description": "Harry thinks Greyback is allowed to wear Death Eater robes when he wants to use him"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "greyback",
+      "relationship_type": "not_granted_highest_honor",
+      "description": "Greyback has not been granted the highest honor of being branded with the Dark Mark by Voldemort"
+    }
+  ]
+}

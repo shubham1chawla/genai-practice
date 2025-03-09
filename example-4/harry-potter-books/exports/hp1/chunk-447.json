@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is mentioned as noticing Hagrid glance at the fire and looking at it too."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts. He is mentioned as having a huge, black egg in his fireplace."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends. He is mentioned as crouching over the fire to get a closer look at the egg."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends. She is mentioned as asking Hagrid what he is going to do with the egg when it hatches."
+    },
+    {
+      "name": "kettle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A kitchen appliance used for boiling water. It is mentioned as being underneath the huge, black egg in Hagrid's fireplace."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A huge, black egg found in Hagrid's fireplace. It is mentioned as having been won by Hagrid in a game of cards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "egg",
+      "relationship_type": "owns",
+      "description": "Hagrid has the egg. He is mentioned as saying 'That's - er... That's mine' when Harry asks him about it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "egg",
+      "relationship_type": "observes",
+      "description": "Ron observes the egg. He is mentioned as crouching over the fire to get a closer look at it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "egg",
+      "relationship_type": "asks_about",
+      "description": "Hermione asks Hagrid about the egg. She is mentioned as saying 'But what are you going to do with it when it's hatched?'"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "kettle",
+      "relationship_type": "contains",
+      "description": "The kettle contains water, which is being boiled by the fire. The egg is underneath the kettle."
+    }
+  ]
+}

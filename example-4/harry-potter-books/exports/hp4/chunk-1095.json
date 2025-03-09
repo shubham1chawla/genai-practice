@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as a judge for the Triwizard tournament. He is referred to by name and also as 'Mr. Crouch'."
+    },
+    {
+      "name": "igor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Igor is mentioned as someone Dumbledore tries to address, but Karkaroff interrupts him."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a participant in the Triwizard tournament and accuses Dumbledore of treachery."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is accused by Karkaroff of plotting against him. He is also mentioned as trying to address Igor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "dumbledore",
+      "relationship_type": "accusation",
+      "description": "Karkaroff accuses Dumbledore of treachery and plotting against him."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "igor",
+      "relationship_type": "addressing",
+      "description": "Dumbledore tries to address Igor, but Karkaroff interrupts him."
+    }
+  ]
+}

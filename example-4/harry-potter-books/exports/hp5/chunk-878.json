@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is a broomstick used by wizards for flying and playing Quidditch. It is mentioned as being turned towards Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a lone figure at the far end of the pitch, hovering before the three goal hoops while the massive Warrington pelted toward him. He is being described as a player in Quidditch."
+    },
+    {
+      "name": "warrington",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Warrington is a player who has the Quaffle and is heading for goal, out of Bludger range with just the Keeper ahead. He is being described as a player in Quidditch."
+    },
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is a ball used in Quidditch, mentioned as being possessed by Warrington."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Bludgers are objects used in Quidditch to disrupt play. They are mentioned as being out of range for Warrington."
+    },
+    {
+      "name": "keeper",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Keeper is a player who is ahead of Warrington, described as the only one between him and goal."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "warrington",
+      "entity_2": "quaffle",
+      "relationship_type": "has",
+      "description": "Warrington has possession of the Quaffle, heading for goal with it."
+    },
+    {
+      "entity_1": "warrington",
+      "entity_2": "keeper",
+      "relationship_type": "is_ahead_of",
+      "description": "The Keeper is ahead of Warrington, described as the only one between him and goal."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who is going to Hogwarts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for magic, where Harry will be attending."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is mentioned as having similar behavior to the boy Harry meets."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that the boy claims his family has always been a part of."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "A house at Hogwarts that the boy thinks he would leave if he were in it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "attend_school",
+      "description": "Harry is going to attend Hogwarts, as mentioned by the boy."
+    },
+    {
+      "entity_1": "boy",
+      "entity_2": "slytherin",
+      "relationship_type": "belong_to_house",
+      "description": "The boy claims that his family has always been in Slytherin house at Hogwarts."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dudley",
+      "relationship_type": "cousin",
+      "description": "Harry's cousin is mentioned as having similar behavior to the boy Harry meets."
+    },
+    {
+      "entity_1": "boy",
+      "entity_2": "slytherin",
+      "relationship_type": "belong_to_house",
+      "description": "The boy claims that his family has always been in Slytherin house at Hogwarts."
+    },
+    {
+      "entity_1": "boy",
+      "entity_2": "hufflepuff",
+      "relationship_type": "dislike_house",
+      "description": "The boy thinks he would leave if he were in Hufflepuff house."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "loxias",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Loxias is mentioned as a person who was defeated by the three brothers in the story."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's memory shifts when he hears the name Peverell, indicating that he has some connection to it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who asks Xenophilius about the Peverell family and their connection to the Deathly Hallows."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is a Quester who believes that the Peverells have everything to do with the Hallows."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron asks about the Peverell family."
+    },
+    {
+      "name": "ignorus peverell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ignorus Peverell is mentioned as being buried in Godric's Hollow with a mark on his grave."
+    },
+    {
+      "name": "peverell family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Peverell family is believed to have everything to do with the Hallows by many Questers."
+    },
+    {
+      "name": "deathly hallows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Deathly Hallows are mentioned as being connected to the Peverell family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "peverell family",
+      "relationship_type": "believe_in",
+      "description": "Xenophilius believes that the Peverells have everything to do with the Hallows."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "xenophilius",
+      "relationship_type": "ask_question",
+      "description": "Hermione asks Xenophilius about the Peverell family and their connection to the Deathly Hallows."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "peverell family",
+      "relationship_type": "seek_information",
+      "description": "Ron asks about the Peverell family."
+    },
+    {
+      "entity_1": "ignorus peverell",
+      "entity_2": "deathly hallows",
+      "relationship_type": "connected_to",
+      "description": "Ignorus Peverell is connected to the Deathly Hallows."
+    }
+  ]
+}

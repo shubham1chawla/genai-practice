@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a student who received T's in all his O.W.L.s."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a student who is concerned about the grade 'T'."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a student who had an inspected lesson in Charms."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as a student who explained the meaning of 'T'."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Umbridge is mentioned as the teacher who gave an inspected lesson in Charms."
+    },
+    {
+      "name": "hogwarts high inquisitor",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The Hogwarts High Inquisitor is mentioned as a title."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concerned_about",
+      "description": "Harry and Hermione are concerned about the grade 'T'."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "umbridge",
+      "relationship_type": "had_inspected_lesson_with",
+      "description": "Fred had an inspected lesson with Umbridge in Charms."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "explained_to",
+      "description": "George explained the meaning of 'T' to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "fred",
+      "relationship_type": "asked_about_inspected_lesson",
+      "description": "Hermione asked Fred about his inspected lesson in Charms."
+    }
+  ]
+}

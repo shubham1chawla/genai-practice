@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "oak",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The chapter is set in a forest with oak trees."
+    },
+    {
+      "name": "silver-white doe",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A silver-white deer appears to Harry in the forest."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, who is waiting for someone."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone Harry was supposed to meet, but forgot about until now."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "silver-white doe",
+      "relationship_type": "gaze_at",
+      "description": "Harry stares at the deer in wonder."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hermione",
+      "relationship_type": "planned_to_meet",
+      "description": "Harry was supposed to meet Hermione, but forgot about it until now."
+    },
+    {
+      "entity_1": "silver-white doe",
+      "entity_2": "Harry",
+      "relationship_type": "came_for",
+      "description": "The deer comes for Harry alone."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "silver-white doe",
+      "relationship_type": "called_out_to",
+      "description": "Harry calls out to the deer, asking it to come back."
+    }
+  ]
+}

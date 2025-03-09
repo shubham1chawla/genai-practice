@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ollivander is a wandmaker who is accused of lying to Lord Voldemort. He is mentioned in the conversation between Lucius and Ollivander."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who was lied to by Ollivander according to Lucius."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is the person that Ollivander sought to help escape from Lucius."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is a person who accuses Ollivander of lying and has his wand destroyed."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Wand is an object that exists between the wands of Lucius and Ollivander."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius",
+      "entity_2": "ollivander",
+      "relationship_type": "accused_of_lie",
+      "description": "Lucius accuses Ollivander of lying to Voldemort."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "potter",
+      "relationship_type": "sought_to_help",
+      "description": "Ollivander sought to help Potter escape from Lucius."
+    },
+    {
+      "entity_1": "lucius",
+      "entity_2": "wand",
+      "relationship_type": "destroyed_by",
+      "description": "Lucius's wand is destroyed by the connection between his and Ollivander's wands."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "voldemort",
+      "relationship_type": "lied_to",
+      "description": "Ollivander lied to Voldemort according to Lucius."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is the one shouting and drawing her wand. She is defending herself against Ron's words."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is automatically trying to calm down Ginny and Ron, though he is also affected by their argument."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who said something that Ginny took offense to. He is getting angry and pulling out his wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ginny",
+      "entity_2": "ron",
+      "relationship_type": "argument",
+      "description": "Ginny and Ron are arguing, with Ginny defending herself against Ron's words."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "protection",
+      "description": "Harry is standing in front of Ginny to protect her from Ron's wand."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as murmuring a question to Snape."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has given help to the Ministry after the Dark Lord fell and is now panicking due to retribution fears."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hogwarts teacher who is having a conversation with Dumbledore about Karkaroff's intentions."
+    },
+    {
+      "name": "fleur delacour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has come giggling in from the grounds along with Roger Davies."
+    },
+    {
+      "name": "roger davies",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has come giggling in from the grounds along with Fleur Delacour."
+    },
+    {
+      "name": "igor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as a coward by Dumbledore and compared to Snape."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization that has received help from Karkaroff after the Dark Lord fell."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as having fallen and for whom Karkaroff gave help to the Ministry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "karkaroff",
+      "relationship_type": "concerned_about",
+      "description": "Dumbledore is concerned about Karkaroff's intentions and his fear of retribution."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "karkaroff",
+      "relationship_type": "disapproves_of",
+      "description": "Snape disapproves of Karkaroff's intention to flee if the Mark burns."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "igor karkaroff",
+      "relationship_type": "compared_to",
+      "description": "Dumbledore compares Igor Karkaroff to Snape, stating that Snape is a braver man."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "fleur delacour",
+      "relationship_type": "observed",
+      "description": "Snape observes Fleur Delacour and Roger Davies as they come giggling in from the grounds."
+    }
+  ]
+}

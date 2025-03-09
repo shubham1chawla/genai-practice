@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one whose thoughts Harry is trying to access through the Pensieve. He is described as being at a table right behind Harry in the Great Hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is accessing Snape's thoughts through the Pensieve and is standing in the middle of the Great Hall during exam time."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Pensieve is a magical object that allows Harry to access Snape's thoughts. It is described as being used by Harry to plunge his face into the surface of Snape's thoughts."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is a location where Harry finds himself standing during exam time. It is described as having more than a hundred smaller tables instead of the usual four House tables."
+    },
+    {
+      "name": "exam",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Exam time is an event that is taking place in the Great Hall, where students are scribbling on parchment rolls. It is described as being clearly exam time due to the scratching of quills and occasional rustle of parchment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "accesses_thoughts",
+      "description": "Harry is accessing Snape's thoughts through the Pensieve. This is described as Harry plunging his face into the surface of Snape's thoughts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "standing_in_location",
+      "description": "Harry is standing in the middle of the Great Hall during exam time. This is described as Harry looking around carefully for Snape."
+    }
+  ]
+}

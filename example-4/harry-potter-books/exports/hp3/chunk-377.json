@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "scabbers",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "Scabbers is the pet rat of Ron Weasley, described as being kicked by Harry Potter."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "Crookshanks is a cat and the pet of Hermione Granger, described as being kicked at by Scabbers."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Ron Weasley is a student at Hogwarts School of Witchcraft and Wizardry, described as hopping up and down in pain after the trunk was knocked over."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts School of Witchcraft and Wizardry, described as kicking Scabbers by mistake."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Uncle Vernon is the uncle of Harry Potter, described as owning socks that contain a Pocket Sneakoscope."
+    },
+    {
+      "name": "pocket sneakoscope",
+      "entity_type": "object_name",
+      "singular": true,
+      "description": "The Pocket Sneakoscope is an object that detects and warns against danger, described as becoming dislodged from Uncle Vernon's socks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scabbers",
+      "entity_2": "crookshanks",
+      "relationship_type": "kicked_at",
+      "description": "Scabbers kicked at Crookshanks by mistake, causing the cat's fur to stand on end."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "pocket sneakoscope",
+      "relationship_type": "found",
+      "description": "Harry Potter found the Pocket Sneakoscope on the floor after it became dislodged from Uncle Vernon's socks."
+    }
+  ]
+}

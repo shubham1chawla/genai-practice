@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "habit",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "Habit is mentioned as something that didn't work anymore and was stuffed into Harry's pocket."
+    },
+    {
+      "name": "niffler",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Nifflers are magical creatures that were used in the Care of Magical Creatures class. They have a long snout and can sniff enthusiastically."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a teacher who was looking down into the crate to see if there was a spare niffler."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione had to go to the hospital wing and was missing from the class."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who released a niffler and it filled his lap with coins."
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pansy Parkinson was listening to the conversation between Harry, Ron, and Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who had a niffler in his pocket and was muttering something about explaining later."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "niffler",
+      "relationship_type": "released_by",
+      "description": "Ron released the niffler, which then filled his lap with coins."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "crate",
+      "relationship_type": "looking_into",
+      "description": "Hagrid was looking down into the crate to see if there was a spare niffler."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hospital wing",
+      "relationship_type": "went_to",
+      "description": "Hermione had to go to the hospital wing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "habit",
+      "relationship_type": "stuffed_into_pocket",
+      "description": "Harry stuffed his habit into his pocket."
+    }
+  ]
+}

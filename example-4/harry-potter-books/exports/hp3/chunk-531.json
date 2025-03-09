@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is a specific horse that is mentioned in the context of an appeal."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the main characters, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is a governing body that oversees the wizarding world in the Harry Potter series."
+    },
+    {
+      "name": "executioner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An executioner is a person responsible for carrying out executions, mentioned in the context of Buckbeak's appeal."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "executioner",
+      "relationship_type": "has_executioner",
+      "description": "The Ministry of Magic has an executioner, who is being brought to the appeal."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "informed_by",
+      "description": "Harry is informed by a letter from the Ministry of Magic about the upcoming appeal and executioner's presence."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hufflepuff",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The team that Ron's Quidditch match is against. (Extracted from 'coming match against Hufflepuff')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is playing in the Quidditch match. (Extracted from 'Ron seemed to notice Harry’s tone...')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is feeling apprehensive about meeting Cho. (Extracted from 'Harry, after attempting to flatten his hair...')"
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person that Harry is going to meet and talk to. (Extracted from 'feeling very apprehensive and wondering what on earth they were going to talk about.')"
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "The sport that Ron is playing in the match against Hufflepuff. (Extracted from 'Ron departed for the Quidditch pitch...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hufflepuff",
+      "relationship_type": "opponent",
+      "description": "Ron's team is playing against Hufflepuff in a Quidditch match. (Extracted from 'coming match against Hufflepuff')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "meeting",
+      "description": "Harry is going to meet and talk to Cho. (Extracted from 'feeling very apprehensive and wondering what on earth they were going to talk about.')"
+    }
+  ]
+}

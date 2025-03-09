@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people in the room, greeting Sirius and discussing the Ministry's decree. (\"Hi,\" chorused Harry, Ron, and Hermione... \"Not that good,\" said Harry)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people in the room, greeting Sirius and discussing the Ministry's decree. (\"Hi,\" chorused Harry, Ron, and Hermione...)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people in the room, greeting Sirius and discussing the Ministry's decree. (\"Hi,\" chorused Harry, Ron, and Hermione...)"
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Crookshanks is mentioned as a cat in the room, trying to get close to Sirius's face. (Crookshanks purred loudly and approached the fire...)"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as one of the people in the room, being greeted by Harry and discussing the Ministry's decree. (\"How’re things?\" said Sirius...)"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that has forced through a new decree, affecting Harry and his friends. (\"Not that good,\" said Harry, \"The Ministry’s forced through another decree...\")"
+    },
+    {
+      "name": "hog's head",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Hog's Head is mentioned as a potential meeting place for secret Defense Against the Dark Arts groups. (\"You want to choose your meeting places more carefully,\" said Sirius, \"The Hog’s Head, I ask you . . .\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "greeted_by",
+      "description": "Harry greets Sirius in the room. (\"Hi,\" chorused Harry, Ron, and Hermione... \"How’re things?\" said Sirius)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry",
+      "relationship_type": "affected_by",
+      "description": "The Ministry's decree affects Harry. (\"Not that good,\" said Harry, \"The Ministry’s forced through another decree...\")"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "hog's head",
+      "relationship_type": "recommended_meeting_place",
+      "description": "Sirius recommends the Hog's Head as a meeting place. (\"You want to choose your meeting places more carefully,\" said Sirius, \"The Hog’s Head, I ask you . . .\")"
+    }
+  ]
+}

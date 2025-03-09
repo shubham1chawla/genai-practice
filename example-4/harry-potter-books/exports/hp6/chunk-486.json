@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as speaking and rising from his seat. He is described as leading Harry out of Mrs. Cole's office."
+    },
+    {
+      "name": "mrs cole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Cole is mentioned as speaking and getting to her feet. She is described as steady despite having consumed two-thirds of the gin."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being impressed by Mrs. Cole's steadiness and seeing the orphans wearing greyish tunics."
+    },
+    {
+      "name": "the orphans",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The orphans are described as all wearing the same kind of greyish tunic and looking reasonably well-cared-for."
+    },
+    {
+      "name": "gin",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Gin is mentioned as being consumed by Mrs. Cole."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "leads",
+      "description": "Dumbledore leads Harry out of Mrs. Cole's office."
+    },
+    {
+      "entity_1": "mrs cole",
+      "entity_2": "gin",
+      "relationship_type": "consumes",
+      "description": "Mrs. Cole consumes gin."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the orphans",
+      "relationship_type": "caring_for",
+      "description": "Dumbledore is mentioned as having to return the orphans every summer, implying that he cares for them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the orphans",
+      "relationship_type": "observes",
+      "description": "Harry observes the orphans wearing greyish tunics."
+    }
+  ]
+}

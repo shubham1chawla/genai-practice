@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is browsing through books."
+    },
+    {
+      "name": "manager",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person working at a store or shop where Harry is browsing."
+    },
+    {
+      "name": "book",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A general term for the books being browsed by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "manager",
+      "relationship_type": "interaction",
+      "description": "Harry is interacting with the manager at a store or shop."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "book",
+      "relationship_type": "interest",
+      "description": "Harry shows interest in a book titled 'Death Omens'."
+    }
+  ]
+}

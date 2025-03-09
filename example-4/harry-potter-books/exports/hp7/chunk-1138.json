@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is mentioned as the brother of Professor Dumbledore and is speaking in a conversation with Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone that Professor Dumbledore cared about very much."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as the brother of Aberforth and someone who cared about Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking in a conversation with Aberforth."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aberforth",
+      "entity_2": "dumbledore",
+      "relationship_type": "brother_of",
+      "description": "Aberforth is the brother of Professor Dumbledore."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "harry",
+      "relationship_type": "dislikes",
+      "description": "Aberforth despises Harry for his thoughts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "cared_about",
+      "description": "Professor Dumbledore cared about Harry very much."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "hermione",
+      "relationship_type": "speaking_to",
+      "description": "Aberforth is speaking to Hermione in a conversation."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "people",
+      "relationship_type": "cared_about",
+      "description": "Professor Dumbledore cared about many people, but they ended up in a worse state than if he had left them alone."
+    }
+  ]
+}

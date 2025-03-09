@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is mentioned as being closeted with Harry Potter in the evenings. He asks Dumbledore why he is spending time with Potter."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as looking weary and discussing information with Harry Potter."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as being closeted with Severus Snape in the evenings. Dumbledore spends time with him to give him information."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "trusts",
+      "description": "Dumbledore trusts Harry Potter and gives him information."
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "dumbledore",
+      "relationship_type": "does not trust",
+      "description": "Severus Snape does not trust Dumbledore, as he is giving secrets to Harry Potter."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "potter",
+      "relationship_type": "gives information to",
+      "description": "Dumbledore gives information to Harry Potter."
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "potter",
+      "relationship_type": "is closeted with",
+      "description": "Severus Snape is closeted with Harry Potter in the evenings."
+    }
+  ]
+}

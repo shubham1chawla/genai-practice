@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who is talking to Harry about his broomstick and the Whomping Willow."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is talking to Lupin about his broomstick and the dementors."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "tree",
+      "singular": true,
+      "description": "The Whomping Willow is a tree that was planted at Hogwarts and is known for being aggressive."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Dumbledore is the headmaster of Hogwarts who has refused to let dementors inside the grounds."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Dementors are creatures that have been growing restless and furious at Professor Dumbledore's refusal to let them inside the grounds."
+    },
+    {
+      "name": "harry's broomstick",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick was smashed by the Whomping Willow."
+    },
+    {
+      "name": "davey gudgeon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Davey Gudgeon is a boy who nearly lost an eye trying to touch the trunk of the Whomping Willow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "whomping willow",
+      "relationship_type": "damaged_by",
+      "description": "Harry's broomstick was smashed by the Whomping Willow."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "dumbledore",
+      "relationship_type": "related_to",
+      "description": "Lupin is talking to Harry about Professor Dumbledore's refusal to let dementors inside the grounds."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "harry",
+      "relationship_type": "affected",
+      "description": "Dementors were the reason Harry fell."
+    },
+    {
+      "entity_1": "whomping willow",
+      "entity_2": "people",
+      "relationship_type": "interacted_with",
+      "description": "People used to play a game trying to get near enough to touch the trunk of the Whomping Willow."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dementors",
+      "relationship_type": "conflicted_with",
+      "description": "Professor Dumbledore has refused to let dementors inside the grounds."
+    }
+  ]
+}

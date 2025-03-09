@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is encouraging the students to gather around. He is described as giving an odd, shrieking cry that echoes through the dark trees."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the students in Hagrid's class and is being nudged by Harry to look at something."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is another student in Hagrid's class and is pointing out something to Ron."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A dragon is being called by Hagrid and is described as having a 'dragonish face, neck'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "nudged",
+      "description": "Hagrid nudges Ron to look at something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "pointed_at",
+      "description": "Harry points out something to Ron."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dragon",
+      "relationship_type": "called",
+      "description": "Hagrid calls the dragon by giving it a shrieking cry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "looked_at",
+      "description": "Ron looks at something pointed out by Harry."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "shell cottage",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cottage where Bill and Fleur live, described as a lonely and beautiful place with walls embedded with shells and white-washed."
+    },
+    {
+      "name": "bill and fleur's cottage garden",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The garden of the cottage where Harry spends time, described as having a constant ebb and flow of the sea."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is struggling with doubts about his decision not to race Voldemort for the wand."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who voices his doubts and questions Harry's decision."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned as possibly wanting Harry and Ron to work out the symbol in time to get the wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist who is after the Elder Wand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A powerful wand that Voldemort is trying to obtain."
+    },
+    {
+      "name": "hallows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A set of three objects that are central to the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "shell cottage",
+      "relationship_type": "visited",
+      "description": "Harry spends time in the cottage and its garden, described as a lonely and beautiful place."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "friend",
+      "description": "Ron is Harry's friend who voices his doubts about Harry's decision."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "elder wand",
+      "relationship_type": "wanted",
+      "description": "Dumbledore may have wanted Harry and Ron to work out the symbol in time to get the wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "pursued",
+      "description": "Voldemort is trying to obtain the Elder Wand."
+    }
+  ]
+}

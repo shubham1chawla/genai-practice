@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has been called out of the common room by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who supports Snape's punishment of detention for Harry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who has punished Harry with detention every Saturday until the end of term."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who tries to lecture him about his punishment."
+    },
+    {
+      "name": "gryffindor team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindor team is a group of students at Hogwarts who are disappointed that Harry will not be able to play on Saturday."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a friend of Harry's who looks at him with disappointment or anger in her eyes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "called_out_by",
+      "description": "Professor McGonagall called Harry out of the common room."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "punished",
+      "description": "Snape punished Harry with detention every Saturday until the end of term."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "lectured",
+      "description": "Hermione tried to lecture Harry about his punishment."
+    }
+  ]
+}

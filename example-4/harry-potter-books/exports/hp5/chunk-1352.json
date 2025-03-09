@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a person who is present in the conversation and is tasked with duplicating his notes and sending a copy to the Daily Prophet."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who is also present in the conversation and is in charge of Dumbledore's situation. He is radiant with glee when he thinks about charging Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is being escorted back to the Ministry and will be formally charged and sent to Azkaban. He seems calm and apologetic about the situation."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is an organization that Dumbledore is being taken back to, where he will be formally charged and sent to Azkaban. It seems to be in conflict with Dumbledore."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a location where Dumbledore will be sent to await trial after being formally charged at the Ministry."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is a newspaper that Percy is tasked with sending a copy of his notes to, in order to make it into the morning edition."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "charge",
+      "description": "Fudge is charging Dumbledore with something, as he says 'You will now be formally charged and then sent to Azkaban'."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "daily prophet",
+      "relationship_type": "send",
+      "description": "Percy is tasked with sending a copy of his notes to the Daily Prophet, as Fudge says 'Duplicate your notes, Weasley, and send a copy to the Daily Prophet at once'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "azkaban",
+      "relationship_type": "send_to",
+      "description": "Dumbledore will be sent to Azkaban after being formally charged, as Fudge says 'You will now be escorted back to the Ministry, where you will be formally charged and then sent to Azkaban'."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "dumbledore",
+      "relationship_type": "charge",
+      "description": "The Ministry is charging Dumbledore with something, as Fudge says 'You will now be formally charged and then sent to Azkaban'."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a teacher at Hogwarts. She interrupts Professor McGonagall and tries to speak, but is ignored."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts. She ignores Professor Umbridge's interruptions and speaks sternly to Dean Thomas."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Seamus is a student in Harry's class. He hands back Harry's essay, which he had graded with an A."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student in Professor McGonagall's class. He receives his graded essay from Seamus and sees that he got an A."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Dean Thomas is a student in Professor McGonagall's class. He is warned by Professor McGonagall for mistreating a mouse."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "interrupts",
+      "description": "Professor Umbridge interrupts Professor McGonagall's lesson, trying to speak and ask a question."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "harry",
+      "relationship_type": "hands_back_essay",
+      "description": "Seamus hands back Harry's graded essay, which he had received from Seamus."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "dean thomas",
+      "relationship_type": "warns",
+      "description": "Professor McGonagall warns Dean Thomas for mistreating a mouse during the lesson."
+    }
+  ]
+}

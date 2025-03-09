@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is worried about saying goodbye to Sirius."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, who is planning something and giving Harry a package."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who accused Sirius of cowardice."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Sirius's home, where Harry is worried that Sirius might be planning something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about saying goodbye to Sirius and worries that Snape's accusation has affected him."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "affected_by",
+      "description": "Sirius was accused of cowardice by Snape, which has stung him badly."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who has knowledge of the plan. He is described as being in charge and having authority over others."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is a person who is involved in the plan and is trusted by the Dark Lord. She is described as being guilty of great treachery if she didn't know about the plan."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is a person who is surprised that Snape knows about the plan and expresses outrage at this knowledge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "narcissa",
+      "relationship_type": "knows",
+      "description": "Snape has knowledge of the plan, which he shares with Narcissa. This is described in the text as Snape saying 'I am one of the few the Dark Lord has told'."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "bellatrix",
+      "relationship_type": "knows",
+      "description": "Snape also knows about the plan, which he shares with Bellatrix. This is described in the text as Snape saying 'Certainly'."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "snape",
+      "relationship_type": "trusts",
+      "description": "Narcissa trusts Snape and believes that he would be able to persuade the Dark Lord on her behalf. This is described in the text as Narcissa saying 'He trusts you so, Severus'."
+    }
+  ]
+}

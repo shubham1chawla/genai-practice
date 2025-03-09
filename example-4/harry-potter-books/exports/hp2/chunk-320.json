@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being present behind Hermione when she approaches Lockhart's desk. (\"She approached Lockhart’s desk, a piece of paper clutched tightly in her hand, Harry and Ron right behind her.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being present behind Hermione when she approaches Lockhart's desk. (\"She approached Lockhart’s desk, a piece of paper clutched tightly in her hand, Harry and Ron right behind her.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the main character who approaches Lockhart's desk to ask for permission to borrow a book. (\"She approached Lockhart’s desk, a piece of paper clutched tightly in her hand, Harry and Ron right behind her.\")"
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lockhart is the teacher who Hermione approaches to ask for permission to borrow a book. (\"‘Er – Professor Lockhart?’ Hermione stammered.\")"
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Bludger is mentioned as being related to the Rogue Bludger 123. (\"T HE  ROGUE  BLUDGER 123\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "lockhart",
+      "relationship_type": "asks_permission",
+      "description": "Hermione asks Lockhart for permission to borrow a book from the Restricted Section of the library. (\"‘Er – Professor Lockhart?’ Hermione stammered. ‘I wanted to – to get this book out of the library . Just for background reading.’\")"
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "hermione",
+      "relationship_type": "grants_permission",
+      "description": "Lockhart grants permission to Hermione to borrow a book from the Restricted Section of the library. (\"‘Ah, Gadding with Ghouls!’ said Lockhart, taking the note from Hermione and smiling widely at her.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "gadding_with_ghouls",
+      "relationship_type": "reads_book",
+      "description": "Hermione mentions that she has read Gadding with Ghouls. (\"‘Oh, yes,’ said Hermione eagerly . ‘So clever, the way you trapped that last one with the tea-strainer ...’\")"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "godric's hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is staying with Ron and Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, a wizard who is staying with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who has left without saying goodbye."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry and Ron's friend, who is also staying with them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "left",
+      "description": "Ron has left without saying goodbye to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "staying_with",
+      "description": "Harry and Hermione are staying together in Godric's Hollow."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "godric's hollow",
+      "relationship_type": "left",
+      "description": "Ron has left Godric's Hollow, making it impossible for him to find Harry and Hermione again."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "staying_with",
+      "description": "Hermione is also staying with Harry in Godric's Hollow."
+    }
+  ]
+}

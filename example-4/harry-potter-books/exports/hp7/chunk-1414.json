@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is trying to make a world where he can live a happier life. He is accompanied by his companions, James and Sirius."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is one of Harry's companions who will stay with him until the very end."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is another companion of Harry, and he explains that they are part of Harry and invisible to anyone else."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Dementors are a type of entity that Harry and his companions encounter in the forest. They have a chilling presence, but Harry's companions act as Patronuses to protect him."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Patronus is a magical concept that Harry's companions embody to protect him from the dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "james",
+      "relationship_type": "accompanying",
+      "description": "Harry is accompanied by James, who will stay with him until the very end. (\"You'll stay with me?\" \"Until the very end,\" said James.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "accompanying",
+      "description": "Harry is also accompanied by Sirius, who explains that they are part of Harry and invisible to anyone else. (\"We are part of you,\" said Sirius.)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "encountering",
+      "description": "Harry encounters dementors in the forest, but his companions protect him from their chilling presence. (The dementors' chill did not overcome him; he passed through it with his companions...)"
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "harry",
+      "relationship_type": "protecting",
+      "description": "James protects Harry from the dementors, acting as a Patronus to keep him safe. (They acted like Patronuses to him...)"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "protecting",
+      "description": "Sirius also protects Harry from the dementors, acting as a Patronus to keep him safe. (They acted like Patronuses to him...)"
+    }
+  ]
+}

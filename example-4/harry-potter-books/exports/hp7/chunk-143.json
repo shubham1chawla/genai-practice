@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "georgie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Georgie is the person being spoken to by Mrs. Weasley."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is the one whispering to Georgie."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is the person who is feeling holy and is being spoken to by his brother Fred."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is George's brother who is looking terrified and asking if George's mind is affected."
+    },
+    {
+      "name": "saintlike",
+      "entity_type": "state",
+      "singular": true,
+      "description": "Saintlike is the state that George claims to be in."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "concerned_about",
+      "description": "Fred is concerned about George's well-being and asks if his mind is affected."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "georgie",
+      "relationship_type": "speaking_to",
+      "description": "Mrs. Weasley is speaking to Georgie in a whisper."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "brother_of",
+      "description": "Fred and George are brothers."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "saintlike",
+      "relationship_type": "has_state",
+      "description": "George claims to be in the state of being holy."
+    }
+  ]
+}

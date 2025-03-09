@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has knowledge about the Philosopher's Stone. He tries to talk to Professor Dumbledore about it."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who seems to know more than she lets on about the Philosopher's Stone. She is trying to protect it."
+    },
+    {
+      "name": "philosopher’s stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Philosopher's Stone is an object that someone is planning to steal tonight."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "knows about",
+      "description": "Harry knows that Professor McGonagall has knowledge about the Philosopher's Stone."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "concerned about",
+      "description": "Harry is concerned about the safety of the Philosopher's Stone and wants to talk to Professor Dumbledore about it."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "protects",
+      "description": "Professor McGonagall seems to be protecting the Philosopher's Stone."
+    }
+  ]
+}

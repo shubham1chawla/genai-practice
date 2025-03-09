@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as someone who is reading and observing Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is reading from a book out loud."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another student who corrects Hermione's timing of the story."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's mother, mentioned as someone who told Ron and Harry about the time of day."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "observes",
+      "description": "Harry is observing Hermione reading from a book."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "corrects",
+      "description": "Ron corrects Hermione's timing of the story."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mum",
+      "relationship_type": "was_told_by",
+      "description": "Ron was told by his mother about the time of day."
+    }
+  ]
+}

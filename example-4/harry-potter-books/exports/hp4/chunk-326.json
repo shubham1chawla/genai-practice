@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a student who might enter the competition and show off his family name."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as Harry's friend who is being talked to by Malfoy."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is the one talking to Ron and Harry about the competition."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as a student who is reading a book and testily tells Malfoy to go away."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "draco malfoy",
+      "relationship_type": "speak_to",
+      "description": "Harry Potter is being spoken to by Draco Malfoy about the competition."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "draco malfoy",
+      "relationship_type": "speak_to",
+      "description": "Ron Weasley is also being talked to by Draco Malfoy about the competition."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "draco malfoy",
+      "relationship_type": "tell_to_go_away",
+      "description": "Hermione Granger tells Draco Malfoy to go away."
+    }
+  ]
+}

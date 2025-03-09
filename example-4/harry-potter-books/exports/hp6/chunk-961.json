@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as standing at the top of the stairs, looking bewildered at Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as needing Ron's book and sprinting off to get it."
+    },
+    {
+      "name": "advanced potion-making",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Advanced Potion-Making is mentioned as the book that Harry needs from Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "gave_book_to",
+      "description": "Ron handed his copy of Advanced Potion-Making to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "advanced potion-making",
+      "relationship_type": "needs",
+      "description": "Harry needs the book from Ron."
+    }
+  ]
+}

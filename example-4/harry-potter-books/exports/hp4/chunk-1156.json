@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "the pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A device used to store and recall memories, mentioned as being used by You-Know-Who."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person of great power and importance, mentioned as using the pensieve."
+    },
+    {
+      "name": "rookwood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a friend or acquaintance of Harry Potter, mentioned as talking about getting him a job in the Ministry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government organization that deals with magical law and order, mentioned as a potential future workplace for Harry Potter."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": true,
+      "description": "A sport played by wizards and witches, mentioned as something that Harry Potter is involved with."
+    },
+    {
+      "name": "bludgers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Objects used in the sport of Quidditch to hit players, mentioned as a reason why Harry Potter can't continue playing."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is in charge of the trial, mentioned as saying that the decision will be put to a vote."
+    },
+    {
+      "name": "jury",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are deciding Harry Potter's fate, mentioned as being asked to raise their hands in favor of imprisonment."
+    },
+    {
+      "name": "mr. bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is a friend or acquaintance of Harry Potter, mentioned as having performed well in a Quidditch match."
+    },
+    {
+      "name": "england",
+      "entity_type": "country",
+      "singular": true,
+      "description": "A country that is participating in the sport of Quidditch, mentioned as being defeated by Turkey."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "the pensieve",
+      "relationship_type": "uses",
+      "description": "You-Know-Who is using the pensieve to store and recall memories."
+    },
+    {
+      "entity_1": "rookwood",
+      "entity_2": "ministry",
+      "relationship_type": "offers_job",
+      "description": "Rookwood is offering Harry Potter a job in the Ministry."
+    },
+    {
+      "entity_1": "mr. crouch",
+      "entity_2": "jury",
+      "relationship_type": "instructs",
+      "description": "Mr. Crouch is instructing the jury to raise their hands in favor of imprisonment."
+    },
+    {
+      "entity_1": "jury",
+      "entity_2": "mr. bagman",
+      "relationship_type": "congratulates",
+      "description": "The jury is congratulating Mr. Bagman on his performance in the Quidditch match against Turkey."
+    },
+    {
+      "entity_1": "england",
+      "entity_2": "turkey",
+      "relationship_type": "competes_against",
+      "description": "England and Turkey are competing against each other in a Quidditch match."
+    }
+  ]
+}

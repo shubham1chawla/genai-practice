@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "the advanced guard",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people, mentioned as 'we' in the text. They are supposed to be packing and getting ready to go."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, Harry. He is being told by Tonks that they need to get going and pack."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is helping Harry pack. She has a wand and uses magic to pack their belongings."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks' mother, mentioned as having a knack for packing efficiently."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "helping",
+      "description": "Tonks is helping Harry pack their belongings."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "mum",
+      "relationship_type": "parent_child",
+      "description": "Tonks has a mother, who is mentioned as having a knack for packing efficiently."
+    }
+  ]
+}

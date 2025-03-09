@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is present in the scene and is interacting with Dumbledore. He is mentioned as having a reaction to Morfin's death (\"Well, that’s rubbish,\" snapped Harry) and is also shown to be remembering something important that Dumbledore had said (\"remembering that Dumbledore had said it was the most important one he had collected\")."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is present in the scene and is interacting with Harry. He is mentioned as having a memory of Morfin (\"Whatever Morfin was, he did not deserve to die as he did\")."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is a person who is mentioned in the scene. He is said to have been blamed for murders he had not committed and died under suspicious circumstances."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Pensieve is an object that is used by Dumbledore to store memories. It is mentioned as a device that allows Harry to see memories (\"Once more into the Pensieve, then ...\")"
+    },
+    {
+      "name": "memory",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Memory is a concept that is discussed in the scene. It is mentioned as something that can be stored and retrieved using the Pensieve (\"This will not take long,\" said Dumbledore, when he had finally emptied the phial. \"We shall be back before you know it. Once more into the Pensieve, then ...\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "interact_with",
+      "description": "Harry and Dumbledore are interacting with each other in the scene. They are having a conversation and Harry is shown to be reacting to something that Dumbledore has said."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "morfin",
+      "relationship_type": "remember",
+      "description": "Dumbledore remembers Morfin, who had died under suspicious circumstances."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pensieve",
+      "relationship_type": "use",
+      "description": "Harry uses the Pensieve to see memories. He is shown to be falling through the silver surface of the Pensieve and landing in a different memory."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "memory",
+      "relationship_type": "store",
+      "description": "Dumbledore stores memories using the Pensieve. He is shown to be emptying a phial into the Pensieve, which allows Harry to see the memory."
+    }
+  ]
+}

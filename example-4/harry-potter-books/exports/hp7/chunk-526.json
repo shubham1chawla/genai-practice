@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who has a wand, indicating she is a student at Hogwarts. (\"A silver otter burst from the end of Hermione’s wand\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as a person who leads others, indicating he has some level of authority or leadership. (\"C’mon,\" said Harry, and he led Hermione and Mrs. Cattermole to the door.)"
+    },
+    {
+      "name": "mrs cattermole",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mrs. Cattermole is mentioned as a person who follows Harry, indicating she is also a student at Hogwarts or someone important to the story. (\"C’mon,\" said Harry, and he led Hermione and Mrs. Cattermole to the door.)"
+    },
+    {
+      "name": "patronum",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Patronum is mentioned as a spell that Hermione casts, indicating it is an important magical concept in the story. (\"Expecto patronum! \")"
+    },
+    {
+      "name": "otter",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "An otter is summoned by Hermione's spell, indicating it is a magical creature that can be conjured in the story. (\"A silver otter burst from the end of Hermione’s wand\")"
+    },
+    {
+      "name": "stag",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A stag is mentioned as joining the summoned otter, indicating it may be a magical creature or an important animal in the story. (\"A silver otter burst from the end of Hermione’s wand and swam gracefully through the air to join the stag.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "patronum",
+      "relationship_type": "casts",
+      "description": "Hermione casts the Patronum spell, as indicated by her incantation \"Expecto patronum! \"."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "leads",
+      "description": "Harry leads Hermione and Mrs. Cattermole to the door, indicating he has some level of authority or leadership over them."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs cattermole",
+      "relationship_type": "leads",
+      "description": "Harry leads Hermione and Mrs. Cattermole to the door, indicating he has some level of authority or leadership over them."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "otter",
+      "relationship_type": "summons",
+      "description": "Hermione summons an otter using her Patronum spell, as indicated by the text \"A silver otter burst from the end of Hermione’s wand\"."
+    },
+    {
+      "entity_1": "otter",
+      "entity_2": "stag",
+      "relationship_type": "joins",
+      "description": "The summoned otter joins a stag, indicating they may be connected or have some relationship in the story."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "imperius curse",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "The Imperius Curse is a powerful spell that allows the caster to control another person's actions. It is illegal to use it on humans, but Professor Moody plans to demonstrate its power by putting it on his students."
+    },
+    {
+      "name": "moody",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Moody is a wizard who teaches Defense Against the Dark Arts. He has a magical eye and is willing to use the Imperius Curse on his students to teach them its effects."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione is one of Professor Moody's students who is uncertain about using the Imperius Curse. She is hesitant to learn its effects in a hands-on way."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "imperius curse",
+      "relationship_type": "uses",
+      "description": "Professor Moody plans to use the Imperius Curse on his students, including Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "imperius curse",
+      "relationship_type": "will be affected by",
+      "description": "Hermione will be subjected to the effects of the Imperius Curse as part of her lesson with Professor Moody."
+    }
+  ]
+}

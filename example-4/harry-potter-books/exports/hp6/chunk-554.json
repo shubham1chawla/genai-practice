@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as thinking his voice might soon vanish from lack of use."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as warning him about something."
+    },
+    {
+      "name": "libatius borage",
+      "entity_type": "author",
+      "singular": true,
+      "description": "An author whose text is being studied by Harry and Hermione."
+    },
+    {
+      "name": "romilda vane",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A girl mentioned as trying to slip a love potion to Harry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as having taught Harry less than the Half-Blood Prince."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as having taught Harry less than the Half-Blood Prince."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "libatius borage",
+      "relationship_type": "studied",
+      "description": "Harry is studying the text written by Libatius Borage, as mentioned in the sentence 'decipher the Prince’s useful additions to Libatius Borage’s text'."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "half-blood prince",
+      "relationship_type": "learned_from",
+      "description": "Harry has learned more from the Half-Blood Prince than Snape or Slughorn, as mentioned in the sentence 'I’ve learned more from the Half-Blood Prince than Snape or Slughorn have taught me in –'."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "warned",
+      "description": "Hermione is warning Harry about something, as mentioned in the sentence '‘I’m not talking about your stupid so-called Prince,’ said Hermione, giving his book a nasty look as though it had been rude to her, ‘I’m talking about earlier. I went into the girls’ bathroom just before I came in here and there were about a dozen girls in there, including that Romilda Vane, trying to decide how to slip you a love potion.'"
+    },
+    {
+      "entity_1": "romilda vane",
+      "entity_2": "harry potter",
+      "relationship_type": "attempted_to_slip_love_potion",
+      "description": "Romilda Vane is trying to decide how to slip a love potion to Harry, as mentioned in the sentence 'there were about a dozen girls in there, including that Romilda Vane, trying to decide how to slip you a love potion.'"
+    }
+  ]
+}

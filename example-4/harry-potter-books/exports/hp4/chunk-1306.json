@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "arry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is transported by a Portkey."
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that transports people from one place to another."
+    },
+    {
+      "name": "tri-wizard cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical trophy awarded to the winner of a tournament."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other person that arry is clutching onto, who has died."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "arry",
+      "entity_2": "portkey",
+      "relationship_type": "transported_by",
+      "description": "Portkey transported arry from one place to another."
+    },
+    {
+      "entity_1": "arry",
+      "entity_2": "tri-wizard cup",
+      "relationship_type": "clutching",
+      "description": "Arry is clutching the Tri-Wizard Cup."
+    },
+    {
+      "entity_1": "arry",
+      "entity_2": "cedric",
+      "relationship_type": "holding_body",
+      "description": "Arry is holding Cedric's body."
+    }
+  ]
+}

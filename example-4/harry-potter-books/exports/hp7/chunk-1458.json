@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as someone who has an obsession with the Elder Wand and believes it makes him invincible. (\"For him, the Elder Wand has become an obsession to rival his obsession with you.\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who planned Snape's death to end up with the Elder Wand. (\"If you planned your death with Snape, you meant him to end up with the Elder Wand, didn’t you?\")"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who was involved in Dumbledore's plan. (\"If you planned your death with Snape, you meant him to end up with the Elder Wand, didn’t you?\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is having a conversation with Dumbledore about the Elder Wand. (\"If you planned your death with Snape, you meant him to end up with the Elder Wand, didn’t you?\")"
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as a powerful object that makes its owner invincible. (\"He believes that the Elder Wand removes his last weakness and makes him truly invincible.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "planned_death_with",
+      "description": "Dumbledore planned Snape's death to end up with the Elder Wand. (\"If you planned your death with Snape, you meant him to end up with the Elder Wand, didn’t you?\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "elder wand",
+      "relationship_type": "intended_to_end_up_with",
+      "description": "Dumbledore intended for Snape to end up with the Elder Wand. (\"If you planned your death with Snape, you meant him to end up with the Elder Wand, didn’t you?\")"
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "elder wand",
+      "relationship_type": "obsessed_with",
+      "description": "Severus is obsessed with the Elder Wand. (\"For him, the Elder Wand has become an obsession to rival his obsession with you.\")"
+    }
+  ]
+}

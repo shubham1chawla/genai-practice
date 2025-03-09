@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "silver doe",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry needed to go, described as a place with snow."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the people who went on an adventure and was trying to reach the Silver Doe."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who stayed behind at the hill and waited for Harry to appear."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who went with him on an adventure and used Disapparating under the Invisibility Cloak as an extra precaution."
+    },
+    {
+      "name": "hill",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Ron stayed behind."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry and Hermione to Disapparate under."
+    },
+    {
+      "name": "tent",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A piece of equipment that Ron was waiting for Harry and Hermione to pack up."
+    },
+    {
+      "name": "snow",
+      "entity_type": "environmental feature",
+      "singular": false,
+      "description": "The environmental feature present at the Silver Doe location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "waiting_for",
+      "description": "Ron was waiting for Harry to appear on the hill."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "used_with",
+      "description": "Hermione used the Invisibility Cloak to Disapparate under."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "silver doe",
+      "relationship_type": "destination",
+      "description": "Harry was trying to reach the Silver Doe location."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hill",
+      "relationship_type": "location",
+      "description": "Ron stayed behind at the hill."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "travelled_with",
+      "description": "Harry and Hermione went on an adventure together."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "tent",
+      "relationship_type": "waiting_for_packing_up",
+      "description": "Ron was waiting for Harry and Hermione to pack up the tent."
+    }
+  ]
+}

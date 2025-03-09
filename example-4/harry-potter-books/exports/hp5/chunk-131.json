@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who has been absent for a month and has just arrived. He is hugged by Hermione and greeted by Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as someone who throws herself onto Harry in a hug and greets him excitedly."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as someone who greets Harry and tries to calm Hermione down."
+    },
+    {
+      "name": "pigwidgeon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Pigwidgeon is Ron's owl that zooms excitedly around their heads."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "greeted_by",
+      "description": "Hermione greets Harry with a hug."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "greeted",
+      "description": "Ron greets Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "calmed_down_by",
+      "description": "Hermione is calmed down by Ron."
+    }
+  ]
+}

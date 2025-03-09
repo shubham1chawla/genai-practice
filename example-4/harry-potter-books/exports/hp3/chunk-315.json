@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is an expert in fighting dementors."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Supernatural creatures that are the main antagonists of the story."
+    },
+    {
+      "name": "quidditch",
+      "entity_type": "sport",
+      "singular": false,
+      "description": "A sport played by students at Hogwarts."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts."
+    },
+    {
+      "name": "huffelpuff",
+      "entity_type": "house",
+      "singular": false,
+      "description": "One of the four houses at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "dementors",
+      "relationship_type": "expertise",
+      "description": "Lupin is an expert in fighting dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quidditch",
+      "relationship_type": "participation",
+      "description": "Harry participates in Quidditch matches."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "ravenclaw",
+      "relationship_type": "competition",
+      "description": "Gryffindor and Ravenclaw are competing against each other in a Quidditch match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "membership",
+      "description": "Harry is a member of Gryffindor house."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "holidays",
+      "relationship_type": "preparation",
+      "description": "Lupin has to prepare for the holidays before he can teach Harry how to fight dementors."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "quidditch match",
+      "relationship_type": "participation",
+      "description": "Gryffindor participates in a Quidditch match."
+    }
+  ]
+}

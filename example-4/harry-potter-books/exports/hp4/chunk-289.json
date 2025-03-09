@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort's sign is mentioned in the sky again."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are on the march three days after Harry's scar hurts."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as their Divination teacher at Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the one who remembers what Professor Trelawney said."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is mentioned as reacting to Harry's mention of Voldemort's name."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as having a terrified look and reacting to Harry's mention of Professor Trelawney."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "associated_with",
+      "description": "The Death Eaters are associated with Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "remembers",
+      "description": "Harry remembers what Professor Trelawney said."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "voldemort",
+      "relationship_type": "reacts_to",
+      "description": "Ron reacts to Harry's mention of Voldemort's name."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor trelawney",
+      "relationship_type": "reacts_to",
+      "description": "Hermione reacts to Harry's mention of Professor Trelawney."
+    }
+  ]
+}

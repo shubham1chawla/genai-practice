@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "scabbers",
+      "entity_type": "animal_name",
+      "singular": true,
+      "description": "Scabbers is mentioned as a pet that pokes its nose out of Ron's pocket to sniff the air."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Ron is mentioned as waking Harry up and ripping the paper off his presents."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Harry is mentioned as being woken up by Ron and reaching for his glasses to see the presents."
+    },
+    {
+      "name": "christmas trees",
+      "entity_type": "object_name",
+      "singular": false,
+      "description": "The Christmas trees are described as glittering with golden stars in the Great Hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "woke_up_by",
+      "description": "Ron woke up Harry by throwing his pillow at him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owned_by",
+      "description": "Scabbers is Ron's pet, as it pokes its nose out of Ron's pocket."
+    }
+  ]
+}

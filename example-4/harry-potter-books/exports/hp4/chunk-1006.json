@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who is known for being strict and having a grudge against Harry. He has fathomless black eyes that can bore into people's souls."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main protagonist of the story, a student at Hogwarts who is accused by Snape of stealing from his private stores."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend and classmate, who took the boomslang skin for the Polyjuice Potion in their second year."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who stole the gillyweed from Snape's private stores."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "accusation",
+      "description": "Snape accuses Harry of stealing from his private stores, specifically boomslang skin and gillyweed."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "boomslang skin",
+      "relationship_type": "possession",
+      "description": "Hermione took the boomslang skin for the Polyjuice Potion in their second year."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "gillyweed",
+      "relationship_type": "theft",
+      "description": "Dobby stole the gillyweed from Snape's private stores."
+    }
+  ]
+}

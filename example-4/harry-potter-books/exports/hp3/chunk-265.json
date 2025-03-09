@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where Harry, Ron, and Hermione are students. The Hogwarts ghosts provided entertainment for a feast."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A Gryffindor ghost who reenacted his own botched beheading during the feast."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts. Nearly Headless Nick is a Gryffindor ghost."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who shouted through the crowd as they left the hall."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Creatures that send their love to Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is being targeted by the dementors."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is also a student at Hogwarts."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is also a student at Hogwarts."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "portrait",
+      "singular": true,
+      "description": "A portrait that guards the entrance to Gryffindor Tower."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who came through the crowd and asked what was going on."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dementors",
+      "relationship_type": "targeted_by",
+      "description": "The dementors send their love to Harry Potter, indicating that they are targeting him."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "gryffindor",
+      "relationship_type": "part_of",
+      "description": "Nearly Headless Nick is a Gryffindor ghost."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "harasses",
+      "description": "Malfoy shouted through the crowd as they left the hall, targeting Harry Potter."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "fat lady",
+      "relationship_type": "interacts_with",
+      "description": "Percy came through the crowd and interacted with the Fat Lady."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Ron is Harry's friend."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Hermione is Harry's friend."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person Dumbledore is interacting with."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one giving instructions to others."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone Dumbledore wants to see in his office."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is mentioned as someone Dumbledore also wants to see in his office."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who receives instructions from Dumbledore and leaves without a word."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as someone Dumbledore asks to go down to Professor Moody’s office."
+    },
+    {
+      "name": "professor moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Moody is mentioned as the one whose office Madam Pomfrey needs to go to."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is mentioned as someone who will look after Winky for Dumbledore and his team."
+    },
+    {
+      "name": "winky",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Winky is mentioned as a house-elf in considerable distress that Madam Pomfrey needs to take care of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "wants_to_see",
+      "description": "Dumbledore wants to see Hagrid in his office."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madame maxime",
+      "relationship_type": "also_wants_to_see",
+      "description": "Dumbledore also wants to see Madame Maxime in his office."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hagrid",
+      "relationship_type": "will_convey_instructions",
+      "description": "Professor McGonagall will convey Dumbledore’s instructions to Hagrid."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "asks_for_help",
+      "description": "Dumbledore asks Madam Pomfrey for help in taking care of Winky."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "professor moody",
+      "relationship_type": "will_visit_office",
+      "description": "Madam Pomfrey will visit Professor Moody’s office to take care of Winky."
+    }
+  ]
+}

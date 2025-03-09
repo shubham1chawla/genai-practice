@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flitwick is mentioned as someone busy with the Christmas decorations. He asks Hagrid to put the last tree in a specific corner."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as being asked by Flitwick to put the last tree in a specific corner. He is likely one of the people responsible for decorating the Hall."
+    },
+    {
+      "name": "christmas decorations",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "The Christmas decorations are mentioned as being busy with, and include trees, holly, mistletoe, icicles, and candles. They are described as making the Hall look spectacular."
+    },
+    {
+      "name": "the hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Hall is mentioned as being decorated with Christmas decorations. It is described as looking spectacular."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "flitwick",
+      "entity_2": "hagrid",
+      "relationship_type": "asks_for_help",
+      "description": "Flitwick asks Hagrid to put the last tree in a specific corner, indicating that Flitwick is seeking help from Hagrid."
+    },
+    {
+      "entity_1": "flitwick",
+      "entity_2": "christmas decorations",
+      "relationship_type": "involved_with",
+      "description": "Flitwick is involved with the Christmas decorations, as he is busy with them and giving instructions to Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "christmas decorations",
+      "relationship_type": "involved_with",
+      "description": "Hagrid is also involved with the Christmas decorations, as he is being asked by Flitwick to put a tree in a specific corner."
+    },
+    {
+      "entity_1": "flitwick",
+      "entity_2": "the hall",
+      "relationship_type": "decorated",
+      "description": "Flitwick is responsible for decorating the Hall, as he is busy with the Christmas decorations and giving instructions to Hagrid."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as staring in shock between two Mooods, indicating his presence and reaction to the situation."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned twice, once sleeping in a trunk and once unconscious on the floor. This indicates that there are two instances of Moody present."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as climbing into the trunk and examining Moody, indicating his presence and actions in the scene."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is mentioned as someone who will need to see the imposter's body, indicating her role in the story."
+    },
+    {
+      "name": "imposter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The imposter is described as freezing and needing a cloak, indicating their presence and vulnerability."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "stared_at",
+      "description": "Harry stared at the two Mooods in shock."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "examined",
+      "description": "Dumbledore examined Moody's unconscious body."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "imposter",
+      "relationship_type": "threw_cloak_at",
+      "description": "Harry threw the imposter's cloak down to cover them."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "moody",
+      "relationship_type": "covered_with_cloak",
+      "description": "Dumbledore covered Moody with the cloak."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is mentioned as saying 'gone' in a glum tone, indicating she is likely one of the students who went to practice."
+    },
+    {
+      "name": "fr ed",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fr ed is mentioned as zooming off with George and Katie towards the castle, indicating he is a student who participated in practice."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as zooming off with Fr ed and Katie towards the castle, indicating he is a student who participated in practice."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is mentioned as being supported by Fr ed and George while they zoom off towards the castle, indicating she is a student who participated in practice."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as asking Harry and Ron about their practice, indicating she is a student who is interested in their well-being."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as climbing through the portrait hole with Ron into the Gryffindor common room, indicating he is a student who participated in practice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as saying his practice was 'lousy' and getting defensive with Hermione, indicating he is a student who had a disappointing experience during practice."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fr ed",
+      "entity_2": "george",
+      "relationship_type": "travelled_with",
+      "description": "Fr ed and George are mentioned as zooming off together towards the castle, indicating they travelled with each other."
+    },
+    {
+      "entity_1": "fr ed",
+      "entity_2": "katie",
+      "relationship_type": "supported",
+      "description": "Fr ed is mentioned as supporting Katie while he and George zoom off towards the castle, indicating he supported her."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "fr ed",
+      "relationship_type": "travelled_with",
+      "description": "George and Fr ed are mentioned as zooming off together towards the castle, indicating they travelled with each other. (Inverse of previous relationship)"
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "katie",
+      "relationship_type": "supported",
+      "description": "George is mentioned as supporting Katie while he and Fr ed zoom off towards the castle, indicating he supported her. (Inverse of previous relationship)"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "climbed_with",
+      "description": "Harry and Ron are mentioned as climbing through the portrait hole together into the Gryffindor common room, indicating they climbed with each other."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "spoke_to",
+      "description": "Harry is mentioned as speaking to Hermione about his practice, indicating he spoke to her."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "climbed_with",
+      "description": "Ron and Harry are mentioned as climbing through the portrait hole together into the Gryffindor common room, indicating they climbed with each other. (Inverse of previous relationship)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "spoke_to",
+      "description": "Ron is mentioned as speaking to Hermione about his practice, indicating he spoke to her."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "spoke_to",
+      "description": "Hermione is mentioned as speaking to Ron about his practice, indicating she spoke to him. (Inverse of previous relationship)"
+    }
+  ]
+}

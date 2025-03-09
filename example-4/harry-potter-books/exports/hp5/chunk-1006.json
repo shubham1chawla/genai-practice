@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, described as not looking at Harry and examining his own fingers."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is trying to make Dumbledore understand that he had a real dream about Ron's dad being attacked by a giant snake."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, whose dad has been attacked by a giant snake in Harry's dream."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's dad, who has been attacked by a giant snake in Harry's dream."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "trying_to_make_understand",
+      "description": "Harry is trying to make Dumbledore understand that he had a real dream about Ron's dad being attacked by a giant snake."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "had_dream_about",
+      "description": "Harry had a dream about Mr. Weasley being attacked by a giant snake."
+    }
+  ]
+}

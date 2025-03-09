@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, waving his arms to attract Moody's attention."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who is present on the staircase and has possession of the Marauder's Map."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who tries to reach for the Marauder's Map but fails."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who turns to look at the Marauder's Map along with Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "has_attention_of",
+      "description": "Harry tries to attract Moody's attention by waving his arms."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "marauder's_map",
+      "relationship_type": "tries_to_grab",
+      "description": "Snape tries to reach for the Marauder's Map but fails."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "marauder's_map",
+      "relationship_type": "has",
+      "description": "Moody has possession of the Marauder's Map."
+    }
+  ]
+}

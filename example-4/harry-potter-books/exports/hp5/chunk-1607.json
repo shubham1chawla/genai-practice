@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is frustrated and shouting at Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who steps back from him looking alarmed."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another friend of Harry's who gets defensive when Harry accuses him of having a problem with his saving-people thing."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is trapped by Voldemort and Harry has seen him."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist who has Sirius trapped."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a wise and powerful wizard who wanted Harry to be prevented from seeing certain things."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argument",
+      "description": "Harry and Hermione are arguing about whether the things Harry is seeing are real or just nightmares."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "connection",
+      "description": "Harry has seen Sirius, who is trapped by Voldemort."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "sirius",
+      "relationship_type": "captivity",
+      "description": "Voldemort has Sirius trapped."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "influence",
+      "description": "Dumbledore wanted Harry to be prevented from seeing certain things."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "accusation",
+      "description": "Harry accuses Ron of having a problem with his saving-people thing."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "influence",
+      "description": "Hermione is influenced by Dumbledore's wishes."
+    }
+  ]
+}

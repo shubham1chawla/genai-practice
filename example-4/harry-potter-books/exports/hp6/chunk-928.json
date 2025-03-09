@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who made a decision."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard and the main antagonist."
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A headmaster of Hogwarts who snorted in response to Dumbledore's decision."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist and a student at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "decision_made_by",
+      "description": "Dumbledore made a decision that affected Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "question_asked_to",
+      "description": "Harry asked Dumbledore a question."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "diary",
+      "relationship_type": "owned_by",
+      "description": "Voldemort owned the diary."
+    }
+  ]
+}

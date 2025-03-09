@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a man with a bad leg who lives in an old house."
+    },
+    {
+      "name": "riddle house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A house that belongs to the Riddles family, where Frank's grandchildren live."
+    },
+    {
+      "name": "the riddles",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family who owns the Riddle House and whose deaths are mentioned in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "frank",
+      "entity_2": "riddle house",
+      "relationship_type": "owns",
+      "description": "Frank's grandchildren live in the Riddle House, which he knows is owned by their family."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "the riddles",
+      "relationship_type": "victim",
+      "description": "The police had taken Frank in for questioning about the deaths of the Riddles family."
+    }
+  ]
+}

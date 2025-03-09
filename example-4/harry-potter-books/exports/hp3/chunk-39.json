@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ripper",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Ripper is Harry's pet, mentioned as being left behind by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, who is visiting his relatives."
+    },
+    {
+      "name": "aunt marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is Harry's aunt, who is gruff and critical of Harry."
+    },
+    {
+      "name": "vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Vernon is Harry's uncle, mentioned as keeping Harry."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is Harry's aunt, mentioned as keeping Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ripper",
+      "relationship_type": "owner_of",
+      "description": "Harry owns Ripper, his pet."
+    },
+    {
+      "entity_1": "vernon",
+      "entity_2": "harry",
+      "relationship_type": "caregiver_of",
+      "description": "Vernon and Petunia are keeping Harry."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "harry",
+      "relationship_type": "caregiver_of",
+      "description": "Vernon and Petunia are keeping Harry."
+    }
+  ]
+}

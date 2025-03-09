@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of Harry's thoughts when he casts his Patronus. (\"It was of Ron and Hermione that he thought\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of Harry's thoughts when he casts his Patronus. (\"It was of Ron and Hermione that he thought\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who casts his Patronus to repel the Dementors."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Dementors are mentioned as creatures that Harry's Patronus is trying to repel. (\"The Dementors have retreated\")"
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group of people who are approaching the scene. (\"the footsteps of the Death Eaters were becoming louder\")"
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_entity",
+      "singular": true,
+      "description": "Harry's Patronus is mentioned as a silver stag that bursts from his wand and charges at the Dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "thought_of",
+      "description": "Harry thought of Ron when he cast his Patronus. (\"It was of Ron and Hermione that he thought\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "thought_of",
+      "description": "Harry thought of Hermione when he cast his Patronus. (\"It was of Ron and Hermione that he thought\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "created",
+      "description": "Harry created his Patronus, a silver stag, when he cast the spell \"Expecto Patronum!\"."
+    },
+    {
+      "entity_1": "patronus",
+      "entity_2": "dementor",
+      "relationship_type": "repelled",
+      "description": "The Patronus repelled the Dementors. (\"The Dementors have retreated\")"
+    }
+  ]
+}

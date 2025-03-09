@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Snape, mentioned as 'Potter'."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is questioning Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "one thousand magical herbs and fungi",
+      "entity_type": "book",
+      "singular": false,
+      "description": "A book mentioned as being looked through by Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "question",
+      "description": "Snape is questioning Potter about whether he read a book before coming."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "one thousand magical herbs and fungi",
+      "relationship_type": "read",
+      "description": "Harry Potter looked through the book 'One Thousand Magical Herbs and Fungi'."
+    }
+  ]
+}

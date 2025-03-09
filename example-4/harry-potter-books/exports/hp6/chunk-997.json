@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "seer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The seer is mentioned as overhearing 509. The text does not provide more information about the seer."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a main character in the story and is paying attention to what happened."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney made the prophecy that altered Harry's life. The text mentions her as having an interview with Dumbledore."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as being part of the prophecy made by Professor Trelawney."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape interrupted Professor Trelawney's interview with Dumbledore. He was seeking a job at the time."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore had an interview with Professor Trelawney and later gave her a job after being interrupted by Severus Snape."
+    },
+    {
+      "name": "barman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The barman is mentioned as standing with Severus Snape and causing a commotion outside the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "involved_in_prophecy",
+      "description": "Harry was involved in a prophecy made by Professor Trelawney about him and Voldemort."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "dumbledore",
+      "relationship_type": "interviewed_by",
+      "description": "Professor Trelawney had an interview with Dumbledore, which was interrupted by Severus Snape."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "barman",
+      "relationship_type": "stood_with",
+      "description": "Severus Snape stood with the barman outside the door."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor trelawney",
+      "relationship_type": "gave_job_to",
+      "description": "Dumbledore gave a job to Professor Trelawney after being interrupted by Severus Snape."
+    }
+  ]
+}

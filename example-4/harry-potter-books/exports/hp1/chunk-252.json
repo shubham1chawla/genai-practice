@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ghosts",
+      "entity_type": "entities",
+      "singular": false,
+      "description": "The students mention that ghosts can pop up suddenly, indicating that they are supernatural entities."
+    },
+    {
+      "name": "students",
+      "entity_type": "groups",
+      "singular": false,
+      "description": "The text mentions the students as a group of individuals who attend classes at Hogwarts."
+    },
+    {
+      "name": "Mrs Norris",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Mrs Norris is mentioned as a person who is disliked by the students."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Harry is introduced as a student who quickly learns that magic involves more than just waving a wand and saying funny words."
+    },
+    {
+      "name": "Professor Sprout",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Professor Sprout is mentioned as a dumpy little witch who teaches Herbology."
+    },
+    {
+      "name": "Professor Binns",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Professor Binns is introduced as an old ghost who teaches History of Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "students",
+      "entity_2": "Mrs Norris",
+      "relationship_type": "hate",
+      "description": "The students all hated Mrs Norris, indicating a negative relationship between the two entities."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Professor Sprout",
+      "relationship_type": "student_teacher",
+      "description": "Harry is learning from Professor Sprout in Herbology class, establishing a teacher-student relationship."
+    },
+    {
+      "entity_1": "students",
+      "entity_2": "Professor Binns",
+      "relationship_type": "student_teacher",
+      "description": "The students are attending History of Magic class taught by Professor Binns, indicating a student-teacher relationship."
+    }
+  ]
+}

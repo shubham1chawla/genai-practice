@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "butterbeer",
+      "entity_type": "beverage",
+      "singular": true,
+      "description": "Butterbeer is a popular drink among students at Hogwarts. It was mentioned by Harry as something he likes."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogsmeade is a village near Hogwarts where students can visit on weekends. Ron and Hermione brought butterbeer back from there for Harry."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts. Professor Lupin mentioned a Gryffindor victory against Ravenclaw."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Ravenclaw is one of the four houses at Hogwarts. Professor Lupin mentioned a Gryffindor victory against Ravenclaw."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "Dementors are foul creatures that serve as guards for Azkaban prison. Harry asked what is under their hood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "butterbeer",
+      "relationship_type": "likes",
+      "description": "Harry likes butterbeer, which he mentioned when Lupin raised an eyebrow."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "brought",
+      "description": "Ron and Hermione brought butterbeer back from Hogsmeade for Harry."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "gryffindor",
+      "relationship_type": "mentioned_victory",
+      "description": "Professor Lupin mentioned a Gryffindor victory against Ravenclaw."
+    },
+    {
+      "entity_1": "dementor",
+      "entity_2": "hood",
+      "relationship_type": "has",
+      "description": "Dementors have their hood, which they lower only to use their last and worst weapon."
+    }
+  ]
+}

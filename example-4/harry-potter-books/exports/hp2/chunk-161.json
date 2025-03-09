@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "the whumping willow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Whumping Willow is mentioned as the location where Harry and Ron are standing. It is described as being near the hospital wing."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who is eyeing Harry and Ron like a wrathful eagle. She is mentioned as being in charge of the Sorting Ceremony."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is a student at Hogwarts who has been injured and is bleeding. He wants to watch his sister being Sorted."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts who is arguing with Professor McGonagall about the points taken from Gryffindor house."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is one of the four houses at Hogwarts that Harry and Ron are a part of. It has been accused of breaking the rules by taking the car without permission."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "ron weasley",
+      "relationship_type": "scolded",
+      "description": "Professor McGonagall scolds Ron for being injured and not following the rules."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "argued_with",
+      "description": "Harry argues with Professor McGonagall about the points taken from Gryffindor house."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "harry potter",
+      "relationship_type": "belongs_to",
+      "description": "Gryffindor is Harry's house at Hogwarts."
+    }
+  ]
+}

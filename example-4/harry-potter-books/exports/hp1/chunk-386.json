@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a boy who received a mysterious note and cloak."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who found a note in the cloak."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Ron's brothers, who entered the dormitory with George."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's other brother, who entered the dormitory with Fred."
+    },
+    {
+      "name": "the cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical cloak that belonged to Harry's father."
+    },
+    {
+      "name": "the note",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A letter written in a mysterious handwriting style, left by Harry's father."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the cloak",
+      "relationship_type": "owned_by",
+      "description": "Harry found the cloak and was wondering who had sent it to him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the note",
+      "relationship_type": "found",
+      "description": "Ron discovered a note in the cloak."
+    }
+  ]
+}

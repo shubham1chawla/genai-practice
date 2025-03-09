@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who has a conversation with Ron. He is also the one who is going to play in the match."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who has a conversation with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is going to look in before the match."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as a person who has gone down to the pitch with Hermione."
+    },
+    {
+      "name": "smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Smith is mentioned as a person who Harry is going to play against in the match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "conversation",
+      "description": "Harry and Hermione have a conversation about looking in before the match."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Ron and Harry have a conversation about going out with someone."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "mention",
+      "description": "Ron mentions Hermione in his conversation with Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "location",
+      "description": "Harry knows that Ginny has gone down to the pitch with Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "smith",
+      "relationship_type": "opponent",
+      "description": "Harry is going to play against Smith in the match."
+    }
+  ]
+}

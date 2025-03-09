@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is mentioned as making a prediction and speaking to Harry. She is described as having 'words still resounding in his head'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who receives Professor Trelawney's prediction and is seen dashing past security trolls outside Gryﬀindor Tower."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Buckbeak is mentioned as being lost, with Ron and Hermione receiving the news from Hagrid's note."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the students who receives the news about Buckbeak being lost. He is described as sitting in the common room with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the students who receives the news about Buckbeak being lost. She is described as sitting in the common room with Ron."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as sending a note to Ron and Hermione about Buckbeak being lost. His hand seemed to have shaken while writing the note."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "trelawney",
+      "entity_2": "harry",
+      "relationship_type": "predicted_for",
+      "description": "Professor Trelawney makes a prediction for Harry, which is still resonating in his head."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "buckbeak",
+      "relationship_type": "lost_to",
+      "description": "Ron receives the news that Buckbeak has been lost."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "buckbeak",
+      "relationship_type": "lost_to",
+      "description": "Hermione also receives the news that Buckbeak has been lost."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ron",
+      "relationship_type": "informed",
+      "description": "Hagrid informs Ron about Buckbeak being lost."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "informed",
+      "description": "Hagrid also informs Hermione about Buckbeak being lost."
+    }
+  ]
+}

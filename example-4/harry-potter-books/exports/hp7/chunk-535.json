@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who is lying on the forest floor. He has no idea what happened to him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, who is also lying on the forest floor and groaning."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend, who is also lying on the forest floor."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, whose hut is located in the Forbidden Forest."
+    },
+    {
+      "name": "forbidden forrest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A forest that is forbidden to students of Hogwarts."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Harry and his friends are studying."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friendship",
+      "description": "Harry and Ron are friends, as indicated by the fact that they are lying together on the forest floor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are friends, as indicated by the fact that they are lying together on the forest floor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "forbidden forrest",
+      "relationship_type": "location_of_interest",
+      "description": "Harry is interested in sneaking through the Forbidden Forest to Hagrid's hut."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "school_attended_by",
+      "description": "Harry attends Hogwarts, as indicated by his thoughts about sneaking into the Forbidden Forest."
+    }
+  ]
+}

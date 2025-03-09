@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as sneering and making a comment about Granger's black eye. He is also referred to as 'my son' by his mother, indicating that he is the child of Narcissa Malfoy."
+    },
+    {
+      "name": "granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Granger is mentioned as having a black eye and being the target of Malfoy's comment. She is also referred to by Harry, indicating that she is his friend or acquaintance."
+    },
+    {
+      "name": "madam malkin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Malkin is mentioned as sharply telling Malfoy to stop and looking over her shoulder for support. She appears to be in a position of authority or at least trying to maintain order."
+    },
+    {
+      "name": "narcissa malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa Malfoy is mentioned as strolling out from behind the clothes rack and telling Harry and Ron to put their wands away. She appears to be a mother who is protective of her son."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as taking a step forwards and gazing into Malfoy's face. He is also referred to by Narcissa Malfoy, indicating that he is known to her."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned alongside Harry and told by Narcissa Malfoy to put his wand away. He appears to be a friend or acquaintance of Harry's."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "narcissa malfoy",
+      "entity_2": "malfoy",
+      "relationship_type": "parent_child",
+      "description": "Narcissa Malfoy is referred to as 'my son' by her mother, indicating that she is the parent of Malfoy."
+    },
+    {
+      "entity_1": "madam malkin",
+      "entity_2": "narcissa malfoy",
+      "relationship_type": "supporter_protected",
+      "description": "Madam Malkin appears to be in a position of authority or at least trying to maintain order, and Narcissa Malfoy is referred to as being protected by her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "granger",
+      "relationship_type": "friend_acquaintance",
+      "description": "Harry is referred to by Granger, indicating that they are friends or acquaintances."
+    },
+    {
+      "entity_1": "narcissa malfoy",
+      "entity_2": "harry",
+      "relationship_type": "known_person",
+      "description": "Narcissa Malfoy appears to know Harry and refers to him in a conversation with her son."
+    }
+  ]
+}

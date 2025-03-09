@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as raising his voice and ensuring the integrity of the tournament judge."
+    },
+    {
+      "name": "weasley twins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Fred and George Weasley, students at Hogwarts, mentioned as looking furious at Dumbledore's words."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A French school of magic, mentioned as sending a delegation to participate in the tournament."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A foreign school of magic, mentioned as sending a delegation to participate in the tournament."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "weasley twins",
+      "relationship_type": "scolded",
+      "description": "Dumbledore scolds the Weasley twins for their reaction to his words."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "beauxbatons",
+      "relationship_type": "hosting",
+      "description": "Hogwarts, under Dumbledore's leadership, will be hosting delegations from Beauxbatons and Durmstrang."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "durmstrang",
+      "relationship_type": "hosting",
+      "description": "Hogwarts, under Dumbledore's leadership, will be hosting delegations from Beauxbatons and Durmstrang."
+    }
+  ]
+}

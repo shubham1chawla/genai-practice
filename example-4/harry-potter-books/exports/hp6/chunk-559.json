@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who owns a copy of Advanced Potion-Making. He snatches his book from the table when she lunges at it."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend who helps him escape from the situation. She packed her things hastily and grabbed Harry by the arm to frogmarch him away."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The library is a place where people go to study and read books. The librarian might ban someone from the library if they are not careful."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who works at the library. There might be something going on between Filch and the librarian."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "library",
+      "relationship_type": "has_been_banned_from",
+      "description": "The librarian might ban Harry from the library if he is not careful."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "helped_escape",
+      "description": "Hermione helped Harry escape from the situation by grabbing him by the arm and frogmarching him away."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "librarian",
+      "relationship_type": "has_relationship_with",
+      "description": "There might be something going on between Filch and the librarian."
+    }
+  ]
+}

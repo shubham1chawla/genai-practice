@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "trance",
+      "entity_type": "state",
+      "singular": true,
+      "description": "Trance is a state that students are in when they perform Bubble-Head Charms on themselves to have fresh clean air. (\"...perform Bubble-Head Charms on themselves before leaving lessons, which ensured them a supply of fresh clean air...\")"
+    },
+    {
+      "name": "dungbombs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Dungbombs are objects that students drop in the corridors to have fresh clean air. (\"...dropped so frequently in the corridors that it became the new fashion for students to perform Bubble-Head Charms on themselves before leaving lessons...\")"
+    },
+    {
+      "name": "stinkpellets",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Stinkpellets are objects that students drop in the corridors to have fresh clean air. (\"...dropped so frequently in the corridors that it became the new fashion for students to perform Bubble-Head Charms on themselves before leaving lessons...\")"
+    },
+    {
+      "name": "bubble-head charms",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "Bubble-Head Charms are spells that students cast on themselves to have fresh clean air. (\"...perform Bubble-Head Charms on themselves before leaving lessons, which ensured them a supply of fresh clean air...\")"
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is the person who prowls the corridors with a horsewhip ready in his hands to catch miscreants. (\"Filch prowled the corridors with a horsewhip ready in his hands, desperate to catch miscreants...\")"
+    },
+    {
+      "name": "inquisitorial squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Inquisitorial Squad is a group of people who are attempting to help Filch catch miscreants. (\"...the problem was that there were now so many of them that he did not know which way to turn. The Inquisitorial Squad were attempting to help him...\")"
+    },
+    {
+      "name": "warrington",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Warrington is a person who reported to the hospital wing with a horrible skin complaint that made him look as though he had been coated in cornflakes. (\"Warringon of the Slytherin Quidditch team reported to the hospital wing with a horrible skin complaint that made him look as though he had been coated in cornflakes.\")"
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pansy Parkinson is a person who sprouted antlers and missed all her lessons the following day. (\"Pansy Parkinson, to Hermione’s delight, missed all her lessons the following day, as she had sprouted antlers.\")"
+    },
+    {
+      "name": "slytherin quidditch team",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherin Quidditch team is a group of people who Warrington is part of. (\"Warringon of the Slytherin Quidditch team reported to the hospital wing with a horrible skin complaint that made him look as though he had been coated in cornflakes.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is mentioned as being delighted when Pansy Parkinson sprouted antlers. (\"Pansy Parkinson, to Hermione’s delight, missed all her lessons the following day, as she had sprouted antlers.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "helps",
+      "description": "Filch is being helped by the Inquisitorial Squad to catch miscreants. (\"...the problem was that there were now so many of them that he did not know which way to turn. The Inquisitorial Squad were attempting to help him...\")"
+    },
+    {
+      "entity_1": "warrington",
+      "entity_2": "slytherin quidditch team",
+      "relationship_type": "part_of",
+      "description": "Warrington is part of the Slytherin Quidditch team. (\"Warringon of the Slytherin Quidditch team reported to the hospital wing with a horrible skin complaint that made him look as though he had been coated in cornflakes.\")"
+    },
+    {
+      "entity_1": "pansy parkinson",
+      "entity_2": "hermione",
+      "relationship_type": "affects",
+      "description": "Pansy Parkinson's antlers affect Hermione, who is delighted by the situation. (\"Pansy Parkinson, to Hermione’s delight, missed all her lessons the following day, as she had sprouted antlers.\")"
+    }
+  ]
+}

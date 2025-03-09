@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermes",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "A handsome owl standing on the windowsill, gazing into the room at Ron."
+    },
+    {
+      "name": "ronald weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's name mentioned in the letter from Percy."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is writing a letter to Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ronald weasley",
+      "entity_2": "hermes",
+      "relationship_type": "belongs_to",
+      "description": "Hermes is standing on the windowsill near Ron."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "ronald weasley",
+      "relationship_type": "writes_to",
+      "description": "Percy is writing a letter to Ron."
+    },
+    {
+      "entity_1": "hermes",
+      "entity_2": "ronald weasley",
+      "relationship_type": "delivers_to",
+      "description": "Hermes delivers the letter from Percy to Ron."
+    },
+    {
+      "entity_1": "ronald weasley",
+      "entity_2": "percy",
+      "relationship_type": "receives_from",
+      "description": "Ron receives a letter from Percy."
+    }
+  ]
+}

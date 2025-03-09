@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who thinks it's fascinating to know more about Voldemort and his weaknesses. She is also described as being at Slughorn's party."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the person that Harry needs to find out weaknesses of."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is mentioned as the one who had a party where Hermione was present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of_inquiry",
+      "description": "Harry needs to find out Voldemort's weaknesses."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "slughorn",
+      "relationship_type": "attendee_at_party",
+      "description": "Hermione attended Slughorn's party."
+    }
+  ]
+}

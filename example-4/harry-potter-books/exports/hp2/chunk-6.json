@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young boy who survived a curse from Lord Voldemort."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark sorcerer who cast a curse on Harry and killed his parents."
+    },
+    {
+      "name": "harry's mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother who died in Voldemort's attack."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that took care of Harry after his parents' death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort",
+      "relationship_type": "target_of_curse",
+      "description": "Harry was the target of Lord Voldemort's curse."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "failed_to_kill",
+      "description": "Voldemort failed to kill Harry, and his powers were destroyed in the process."
+    },
+    {
+      "entity_1": "dursleys",
+      "entity_2": "harry",
+      "relationship_type": "caregivers",
+      "description": "The Dursleys took care of Harry after his parents' death."
+    }
+  ]
+}

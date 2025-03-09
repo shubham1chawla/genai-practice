@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "headstone",
+      "entity_type": "physical_object",
+      "singular": true,
+      "description": "The headstone is mentioned as something that Harry looks around for, indicating it's a notable object in the scene. (\"Harry looked around, worried, thinking of dementors, then realized that the carols had ﬁnished... Somebody inside the church had just turned oﬀ the lights.\")"
+    },
+    {
+      "name": "dementors",
+      "entity_type": "supernatural_entity",
+      "singular": true,
+      "description": "Dementors are mentioned as something Harry is worried about, indicating they're a significant entity in the scene. (\"Harry looked around, worried, thinking of dementors...\")"
+    },
+    {
+      "name": "church",
+      "entity_type": "building",
+      "singular": true,
+      "description": "The church is mentioned as a location where people are going back to after the carols have finished. (\"that the chatter and ﬂurry of churchgoers were fading away as they made their way back into the square.\")"
+    },
+    {
+      "name": "carols",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The carols are mentioned as something that has finished, indicating they're a notable event in the scene. (\"that the carols had ﬁnished...\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the protagonist of the scene, indicating he's a significant entity. (\"Harry looked around, worried...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "dementors",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about dementors, indicating a relationship between the two entities. (\"Harry looked around, worried, thinking of dementors...\")"
+    },
+    {
+      "entity_1": "church",
+      "entity_2": "carols",
+      "relationship_type": "location_of_event",
+      "description": "The church is where the carols are taking place, indicating a relationship between the two entities. (\"that the chatter and ﬂurry of churchgoers were fading away as they made their way back into the square.\")"
+    }
+  ]
+}

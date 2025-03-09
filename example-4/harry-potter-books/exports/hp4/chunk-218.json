@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "quidditch world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Quidditch World Cup is mentioned as a significant event in the text."
+    },
+    {
+      "name": "wronski feint",
+      "entity_type": "maneuver",
+      "singular": true,
+      "description": "Wronski Feint is mentioned as a possible maneuver, but Harry is sure it's not that."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is the object being chased by the Seekers."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is a Seeker who is chasing after the Snitch."
+    },
+    {
+      "name": "lynch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lynch is another Seeker who is also chasing after the Snitch."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a character in the story who is watching the Quidditch match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "krum",
+      "entity_2": "snitch",
+      "relationship_type": "chasing",
+      "description": "Krum is chasing after the Snitch."
+    },
+    {
+      "entity_1": "lynch",
+      "entity_2": "snitch",
+      "relationship_type": "chasing",
+      "description": "Lynch is also chasing after the Snitch."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "lynch",
+      "relationship_type": "following",
+      "description": "Krum is following Lynch."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "quidditch world cup",
+      "relationship_type": "watching",
+      "description": "Harry Potter is watching the Quidditch World Cup."
+    }
+  ]
+}

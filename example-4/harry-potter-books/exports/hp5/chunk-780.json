@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "educational decree number twenty-four",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The educational decree is mentioned as a specific document with the number 24."
+    },
+    {
+      "name": "strengthening solutions",
+      "entity_type": "program",
+      "singular": true,
+      "description": "Strengthening Solutions is a program or course being taught by Professor Umbridge."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the teacher of the class and is mentioned as making notes in her corner."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person being questioned by Professor Umbridge."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the student who is careless with his potion and is being watched by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the student who grabs Harry's wrist to prevent him from adding the wrong ingredient."
+    },
+    {
+      "name": "salamander blood",
+      "entity_type": "ingredient",
+      "singular": true,
+      "description": "Salamander blood is an ingredient mentioned in the potion recipe."
+    },
+    {
+      "name": "pomegranate juice",
+      "entity_type": "ingredient",
+      "singular": true,
+      "description": "Pomegranate juice is an incorrect ingredient that Harry almost adds to the potion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "salamander blood",
+      "relationship_type": "has_potential_to_add",
+      "description": "Harry has the potential to add salamander blood to his potion, but is prevented by Hermione."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "snape",
+      "relationship_type": "questioning",
+      "description": "Professor Umbridge is questioning Snape about something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pomegranate juice",
+      "relationship_type": "almost_added",
+      "description": "Harry almost added pomegranate juice to his potion, but was stopped by Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "prevented_from_adding_wrong_ingredient",
+      "description": "Hermione prevented Harry from adding the wrong ingredient to his potion."
+    }
+  ]
+}

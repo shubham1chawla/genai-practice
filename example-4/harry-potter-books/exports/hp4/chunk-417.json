@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "avada kedavra",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Killing Curse, mentioned as the last and worst by Moody."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is teaching Harry Potter, mentioned as using his wand to cast a spell."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The student being taught by Moody, feeling a sudden thrill of foreboding when Moody raises his wand."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A third spider that is trapped and placed on the desktop by Moody."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "avada kedavra",
+      "relationship_type": "casts",
+      "description": "Moody roars 'Avada Kedavra' as he raises his wand, indicating that he is casting the spell."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "moody",
+      "relationship_type": "feels fear from",
+      "description": "Harry feels a sudden thrill of foreboding when Moody raises his wand, indicating that Harry is afraid of what Moody might do."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "muggles",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Refers to non-magical people. Mentioned as having noticed something's going on."
+    },
+    {
+      "name": "news",
+      "entity_type": "medium",
+      "singular": true,
+      "description": "Mentioned as a source of information for the Muggles."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Refers to Harry Potter's cruel and neglectful relatives. Mentioned as having a dark living-room window."
+    },
+    {
+      "name": "dedalus diggle",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Mentioned as being responsible for shooting stars in Kent."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Mentioned as speaking gently and not wanting to blame the Muggles."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Mentioned as being irritated and blaming people for being careless."
+    },
+    {
+      "name": "yule ball",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Mentioned as an event that would be a fine thing if it happened on the same day."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "muggles",
+      "entity_2": "news",
+      "relationship_type": "inform",
+      "description": "The Muggles have noticed something's going on through the news."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "reassure",
+      "description": "Dumbledore is trying to reassure Professor McGonagall that it's not their fault."
+    }
+  ]
+}

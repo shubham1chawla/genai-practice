@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "t m riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name 'T.M.Riddle' was written in smudged ink on the first page of the diary. It is also mentioned that T.M.Riddle got an award for special services to the school fifty years ago."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron knows the name 'T.M.Riddle' because he had to polish Filch's shield about fifty times in detention."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch made Ron polish his shield about fifty times in detention."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry was looking at the diary with Ron and knew that T.M.Riddle never wrote in it."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is fifty years old and has a name 'T.M.Riddle' written on its first page. It was completely blank when Harry opened it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "filch",
+      "relationship_type": "polished_shield_for",
+      "description": "Ron had to polish Filch's shield about fifty times in detention, which is why he remembers the name 'T.M.Riddle'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diary",
+      "relationship_type": "opened",
+      "description": "Harry opened the diary and found that it was completely blank."
+    }
+  ]
+}

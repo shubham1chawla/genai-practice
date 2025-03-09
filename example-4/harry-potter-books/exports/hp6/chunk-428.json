@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being given detention by Professor McGonagall."
+    },
+    {
+      "name": "demelza",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sent party invitations to Harry, and is mentioned in a sarcastic tone by Harry."
+    },
+    {
+      "name": "flobberworms",
+      "entity_type": "organism",
+      "singular": false,
+      "description": "A type of magical creature that needs to be sorted out for use in Potions class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "demelza",
+      "relationship_type": "sent_invitations",
+      "description": "Demelza sent party invitations to Harry, which he received and is now being punished for ignoring."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "flobberworms",
+      "relationship_type": "will_sort_out",
+      "description": "Harry will be responsible for sorting out the Flobberworms in Potions class, as part of his detention."
+    }
+  ]
+}

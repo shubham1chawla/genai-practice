@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as a person who has trouble with money and tries to pay with gold coins."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as a person who has trouble with money and tries to pay with gold coins."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry corrects Mr. Weasley about the value of a note."
+    },
+    {
+      "name": "mr roberts",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Roberts is mentioned as a person who has trouble with people trying to pay him with gold coins and tries to catch every word."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as a person who has trouble with money and is corrected by Harry about the value of a note."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bagman",
+      "entity_2": "crouch",
+      "relationship_type": "same_problem_with_money",
+      "description": "Bagman and Crouch both have trouble with money."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr weasley",
+      "relationship_type": "corrected_by",
+      "description": "Harry corrects Mr. Weasley about the value of a note."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person speaking in the conversation. He mentions that odd stuff has been happening lately."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is a newspaper that Harry mentions as publishing stories about the Dark Mark and Death Eaters."
+    },
+    {
+      "name": "dark mark",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "The Dark Mark is mentioned by Harry as being featured in the Daily Prophet. It is described as an ominous symbol."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of dark wizards and witches that are mentioned by Harry as being associated with the Dark Mark."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who is speaking in the conversation. He has mismat ched eyes and is described as having a magical eye."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Marauder's Map is an object that Moody is looking at with his magical eye. It is mentioned as being used to track the movements of people."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is a person who is mentioned by Moody as possibly thinking along certain lines."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is a journalist who is mentioned by Moody as helping to spread rumors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "marauder's map",
+      "relationship_type": "looking_at",
+      "description": "Moody is looking at the Marauder's Map with his magical eye."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "death eaters",
+      "relationship_type": "thinking_about",
+      "description": "Crouch is possibly thinking about the Death Eaters."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "rumors",
+      "relationship_type": "spreading",
+      "description": "Rita Skeeter is helping to spread rumors."
+    }
+  ]
+}

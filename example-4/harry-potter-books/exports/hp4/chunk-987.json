@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "bubble-head charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "a spell used by Fleur and Cedric to retrieve their hostages"
+    },
+    {
+      "name": "grindylows",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "creatures that attacked Bubble-Head Charm as she approached her goal"
+    },
+    {
+      "name": "fleur",
+      "entity_type": "student",
+      "singular": true,
+      "description": "a student who used the Bubble-Head Charm and was awarded zero points"
+    },
+    {
+      "name": "cedric diggory",
+      "entity_type": "student",
+      "singular": true,
+      "description": "a student who used the Bubble-Head Charm and was awarded 47 points"
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "a student who witnessed Cedric's return with his hostage"
+    },
+    {
+      "name": "cho",
+      "entity_type": "student",
+      "singular": true,
+      "description": "a student who gave Cedric a glowing look"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fleur",
+      "entity_2": "bubble-head charm",
+      "relationship_type": "used",
+      "description": "Fleur used the Bubble-Head Charm to retrieve her hostage"
+    },
+    {
+      "entity_1": "cedric diggory",
+      "entity_2": "bubble-head charm",
+      "relationship_type": "used",
+      "description": "Cedric Diggory used the Bubble-Head Charm to retrieve his hostage"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "saw",
+      "description": "Harry saw Cho give Cedric a glowing look"
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "zero points",
+      "relationship_type": "awarded",
+      "description": "Fleur was awarded zero points for failing to retrieve her hostage"
+    },
+    {
+      "entity_1": "cedric diggory",
+      "entity_2": "47 points",
+      "relationship_type": "awarded",
+      "description": "Cedric Diggory was awarded 47 points for successfully retrieving his hostage"
+    }
+  ]
+}

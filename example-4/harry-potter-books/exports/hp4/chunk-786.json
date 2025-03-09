@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "pigwidgeon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Ron's owl that brings letters"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student who owns Pigwidgeon and is frustrated with its behavior"
+    },
+    {
+      "name": "dentists",
+      "entity_type": "profession",
+      "singular": false,
+      "description": "Profession that Ron's friends are part of"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "pigwidgeon",
+      "relationship_type": "owner",
+      "description": "Ron owns Pigwidgeon"
+    },
+    {
+      "entity_1": "pigwidgeon",
+      "entity_2": "ron",
+      "relationship_type": "owned_by",
+      "description": "Pigwidgeon is owned by Ron"
+    }
+  ]
+}

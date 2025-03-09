@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, mentioned as 'Potter' later in the text."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father, mentioned along with his mother and Sirius."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, mentioned along with Harry's parents."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater, mentioned as having a conversation with Dolohov."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater, mentioned as having a conversation with Yaxley."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, mentioned by Dolohov."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "dolohov",
+      "relationship_type": "conversation_participant",
+      "description": "Yaxley and Dolohov are having a conversation, as mentioned in the text: '“Deﬁnitely heard something,” said Yaxley. “Animal, d’you reckon?”' and 'That head case Hagrid kept a whole bunch of stuﬀ in here,’ said Dolohov...'"
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "hagrid",
+      "relationship_type": "mention",
+      "description": "Yaxley mentions Hagrid, as mentioned in the text: '“That head case Hagrid kept a whole bunch of stuﬀ in here,” said Dolohov...'"
+    },
+    {
+      "entity_1": "dolohov",
+      "entity_2": "hagrid",
+      "relationship_type": "mention",
+      "description": "Dolohov mentions Hagrid, as mentioned in the text: 'That head case Hagrid kept a whole bunch of stuﬀ in here,' said Dolohov..."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "potter",
+      "relationship_type": "concerned_about",
+      "description": "Yaxley is concerned about Potter, as mentioned in the text: '“Time’s nearly up. Potter’s had his hour. He’s not coming.”'"
+    },
+    {
+      "entity_1": "dolohov",
+      "entity_2": "potter",
+      "relationship_type": "concerned_about",
+      "description": "Dolohov is also concerned about Potter, as mentioned in the text: '“And he was sure he’d come! He won’t be happy.”'"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "the dark mark",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Dark Mark is mentioned as a symbol of evil and is associated with Voldemort. It is described as being made by an incantation (\"I is not making the Dark Mark, sir!\")."
+    },
+    {
+      "name": "mr diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Diggory is a Ministry wizard who is investigating the incident with Winky and the wand. He is described as having hardening eyes when looking at Winky."
+    },
+    {
+      "name": "winky",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "Winky is an elf who found the wand and was accused of making the Dark Mark. She has a squeaky little voice and is described as cowering in front of Mr. Diggory."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having missed the wand when they got into the wood. He is not directly involved in the incident with Winky and the Dark Mark."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione speaks up to defend Winky, stating that she did not make the incantation for the Dark Mark. She is described as looking nervous but determined."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "the dark mark",
+      "relationship_type": "made_by",
+      "description": "Winky was accused of making the Dark Mark, but she claims she did not know how to do it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "winky",
+      "relationship_type": "defended",
+      "description": "Hermione defended Winky by stating that she did not make the incantation for the Dark Mark."
+    }
+  ]
+}

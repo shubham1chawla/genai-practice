@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is talking to Ron and trying to get him to reveal what he's hiding."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is hiding something from Fred and George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of Ron's brothers who is mentioned as being involved in testing stuff on first years."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is Ron's other brother who is also mentioned as being involved in testing stuff on first years."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry and Ron who is mentioned as being present in the common room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "hiding_from",
+      "description": "Ron is hiding from Fred, indicating that Fred might be causing trouble for Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "george",
+      "relationship_type": "hiding_from",
+      "description": "Similar to the previous relationship, Ron is also hiding from George."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "protecting",
+      "description": "Ron mentions that Hermione's presence in the common room prevents Fred and George from testing stuff on first years there."
+    }
+  ]
+}

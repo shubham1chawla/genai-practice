@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is disoriented by the sudden appearance of people and his scar is burning fiercely."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of Harry's friends who makes a joke about making things up as they go along."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is another friend of Harry's who is called back for the fight and is trying to stop it."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is a person who receives a message that Harry is back and they are going to fight."
+    },
+    {
+      "name": "scar",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "Harry's scar is burning fiercely."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "told",
+      "description": "Harry tells Neville to stop the fight."
+    },
+    {
+      "entity_1": "dean",
+      "entity_2": "harry",
+      "relationship_type": "received_message_from",
+      "description": "Dean receives a message that Harry is back and they are going to fight."
+    }
+  ]
+}

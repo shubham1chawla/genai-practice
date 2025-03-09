@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "basilisk",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The basilisk is described as a creature that has swept the Sorting Hat into Harry's arms and is attacking him. It is said to have a tail that swings over Harry again."
+    },
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sorting hat is described as being swept by the basilisk into Harry's arms. It is then used by Harry as his only chance for survival."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is being attacked by the basilisk. He uses the sorting hat to protect himself and eventually kills the basilisk with a sword that appears inside the hat."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "basilisk",
+      "entity_2": "sorting hat",
+      "relationship_type": "attacked_by",
+      "description": "The basilisk sweeps the sorting hat into Harry's arms."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sorting hat",
+      "relationship_type": "possesses",
+      "description": "Harry uses the sorting hat to protect himself from the basilisk."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "basilisk",
+      "relationship_type": "attacked_by",
+      "description": "The basilisk attacks Harry."
+    },
+    {
+      "entity_1": "sorting hat",
+      "entity_2": "sword",
+      "relationship_type": "contains",
+      "description": "A sword appears inside the sorting hat."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sword",
+      "relationship_type": "possesses",
+      "description": "Harry uses the sword to kill the basilisk."
+    }
+  ]
+}

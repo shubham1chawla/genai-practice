@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "torch bracket",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A fixture on the wall where a torch is hung. The text states that there was no stiff cat hanging from it."
+    },
+    {
+      "name": "chair",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An empty chair standing against the wall, bearing a message."
+    },
+    {
+      "name": "message",
+      "entity_type": "text",
+      "singular": true,
+      "description": "A written or printed communication on the chair. The text states that it was 'bearing' the message, implying that it was displaying or holding the message."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "torch bracket",
+      "entity_2": "stiff cat",
+      "relationship_type": "no_hanging_from",
+      "description": "The text states that there was no stiff cat hanging from the torch bracket, indicating a lack of relationship between the two entities."
+    },
+    {
+      "entity_1": "chair",
+      "entity_2": "message",
+      "relationship_type": "bearing",
+      "description": "The text states that an empty chair stood against the wall bearing the message, indicating that the chair is holding or displaying the message."
+    }
+  ]
+}

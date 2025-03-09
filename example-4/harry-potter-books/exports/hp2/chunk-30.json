@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is trying to give Harry a hint about You Know Who. He is worried and his eyes are wide."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character in the story who is trying to figure out who You Know Who is."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is the Headmaster of Hogwarts and has great powers. He is compared to You Know Who."
+    },
+    {
+      "name": "you know who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You Know Who is a mysterious person that Dobby and Harry are trying to figure out. It seems to be someone with great power."
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He Who Must Not Be Named is another name for You Know Who. He has great powers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "you know who",
+      "relationship_type": "trying_to_give_hint",
+      "description": "Dobby is trying to give Harry a hint about You Know Who."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "you know who",
+      "relationship_type": "trying_to_figure_out",
+      "description": "Harry is trying to figure out who You Know Who is."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "he who must not be named",
+      "relationship_type": "compared_to",
+      "description": "Dumbledore's powers are compared to He Who Must Not Be Named."
+    },
+    {
+      "entity_1": "you know who",
+      "entity_2": "harry",
+      "relationship_type": "target_of_guesses",
+      "description": "Harry is guessing that You Know Who might be someone with great power."
+    },
+    {
+      "entity_1": "he who must not be named",
+      "entity_2": "dumbledore",
+      "relationship_type": "compared_to",
+      "description": "He Who Must Not Be Named's powers are compared to Dumbledore's."
+    }
+  ]
+}

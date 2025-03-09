@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is the one who is tightening her face and speaking in a dangerous voice. She is also the one who is forcing Harry Potter to tell her something."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is the one who refused Umbridge's offer to tell her something freely."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is the one who is asked by Umbridge to fetch Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a member of the Order of the Phoenix and is still at Hogwarts. Harry realizes that he can count on Snape for help."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is struggling against Warrington's half nelson and his lip is bleeding onto Umbridge's carpet."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is still trying to keep Ron under control."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "potter",
+      "relationship_type": "force",
+      "description": "Umbridge forces Potter to tell her something."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "snape",
+      "relationship_type": "fetch",
+      "description": "Draco is asked by Umbridge to fetch Professor Snape."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "order_of_the_phoenix",
+      "relationship_type": "belong_to",
+      "description": "Potter realizes that he can count on the members of the Order of the Phoenix for help, and specifically mentions Snape as a member still at Hogwarts."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "order_of_the_phoenix",
+      "relationship_type": "belong_to",
+      "description": "Snape is a member of the Order of the Phoenix."
+    }
+  ]
+}

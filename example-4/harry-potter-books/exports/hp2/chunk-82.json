@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and classmates."
+    },
+    {
+      "name": "Mr Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The father of Ginny and a wizard."
+    },
+    {
+      "name": "Mrs Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Ginny and a witch."
+    },
+    {
+      "name": "Ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The daughter of Mr and Mrs Weasley."
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for young wizards and witches."
+    },
+    {
+      "name": "The Burrow",
+      "entity_type": "house",
+      "singular": true,
+      "description": "The home of the Weasley family."
+    },
+    {
+      "name": "telephone",
+      "entity_type": "device",
+      "singular": true,
+      "description": "A device used for communication over long distances."
+    },
+    {
+      "name": "plugs",
+      "entity_type": "device",
+      "singular": false,
+      "description": "Devices that provide power to other devices."
+    },
+    {
+      "name": "postal service",
+      "entity_type": "service",
+      "singular": true,
+      "description": "A system for sending and receiving mail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hogwarts",
+      "relationship_type": "attended_by",
+      "description": "Harry is a student at Hogwarts."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Hogwarts",
+      "relationship_type": "attended_by",
+      "description": "Ron is also a student at Hogwarts."
+    },
+    {
+      "entity_1": "Mr Weasley",
+      "entity_2": "The Burrow",
+      "relationship_type": "resides_at",
+      "description": "Mr Weasley lives in The Burrow with his family."
+    },
+    {
+      "entity_1": "Mrs Weasley",
+      "entity_2": "The Burrow",
+      "relationship_type": "resides_at",
+      "description": "Mrs Weasley also lives in The Burrow with her family."
+    },
+    {
+      "entity_1": "Ginny",
+      "entity_2": "The Burrow",
+      "relationship_type": "resides_at",
+      "description": "Ginny lives in The Burrow with her parents."
+    }
+  ]
+}

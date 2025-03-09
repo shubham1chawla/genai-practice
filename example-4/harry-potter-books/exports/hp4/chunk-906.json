@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' throughout the text. He is described as getting out of the bath and putting on his pajamas."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A ghost who lives in one of the bathrooms, mentioned as 'Myrtle' throughout the text. She is described as asking Harry to visit her bathroom again and saying goodbye to him."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who works in the castle, mentioned as having an office with his cat Mrs. Norris. He is described as being safely in his office on the Marauder's Map."
+    },
+    {
+      "name": "mrs. norris",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Filch's cat, mentioned as being with Filch in their office on the Marauder's Map."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "myrtle",
+      "relationship_type": "interaction",
+      "description": "Harry and Myrtle interacted in the bathroom, with Harry getting out of the bath and Myrtle asking him to visit her again."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "proximity",
+      "description": "Harry is aware that Filch is safely in his office, as shown on the Marauder's Map."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mrs. norris",
+      "relationship_type": "proximity",
+      "description": "Harry is aware that Mrs. Norris is with Filch in their office, as shown on the Marauder's Map."
+    }
+  ]
+}

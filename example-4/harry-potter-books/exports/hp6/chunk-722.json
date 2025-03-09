@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn, a potions master at Hogwarts. He is asked by Harry to create an antidote for Ron's love potion."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who accidentally drank a love potion and needs an antidote."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Hogwarts nurse who can help Ron with the effects of the love potion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "ron",
+      "relationship_type": "can_create_antidote_for",
+      "description": "Slughorn is asked by Harry to create an antidote for Ron's love potion."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "ron",
+      "relationship_type": "can_help_with_effects_of_love_potion",
+      "description": "Madam Pomfrey can help Ron with the effects of the love potion."
+    }
+  ]
+}

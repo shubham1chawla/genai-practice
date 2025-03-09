@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The corridor is described as being quite different from the ones above, with bare walls and no windows or doors apart from a plain black one at the end."
+    },
+    {
+      "name": "walls",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The walls are mentioned as being bare in the corridor."
+    },
+    {
+      "name": "windows",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Windows are mentioned as not being present in the corridor."
+    },
+    {
+      "name": "doors",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Doors are mentioned as not being present in the corridor apart from a plain black one at the end."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is described as seizing Harry by the arm and dragging him to the left, where there was an opening leading to a flight of steps."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being dragged by Mr. Weasley to the left, where there was an opening leading to a flight of steps."
+    },
+    {
+      "name": "steps",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The steps are described as leading down to another corridor."
+    },
+    {
+      "name": "lift",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The lift is mentioned as not coming down that far."
+    },
+    {
+      "name": "Snape's dungeon",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Snape's dungeon at Hogwarts is mentioned as having a similar corridor to the one they are currently in."
+    },
+    {
+      "name": "Hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as being associated with Snape's dungeon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "Harry",
+      "relationship_type": "dragged_by",
+      "description": "Mr. Weasley dragged Harry to the left, where there was an opening leading to a flight of steps."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "steps",
+      "relationship_type": "led_to",
+      "description": "Mr. Weasley led them down the steps to another corridor."
+    },
+    {
+      "entity_1": "lift",
+      "entity_2": "corridor",
+      "relationship_type": "does_not_come_down",
+      "description": "The lift does not come down that far, implying it is above the current corridor."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is a student who is laughing and wiping tears from his face. He whispers 'Cheers' in the conversation."
+    },
+    {
+      "name": "vanishing them",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Vanishing them refers to some kind of magical or explosive device that George mentions as something that someone might try next, but which multiplies by ten every time it's tried."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who seems to be sardonic and calm in the face of the fireworks. She asks Miss Brown to inform the headmistress about an escaped firework."
+    },
+    {
+      "name": "miss brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Brown is a teacher who is asked by Professor McGonagall to run along and inform the headmistress about an escaped firework."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the new headmistress who spends her first afternoon running around the school answering summonses from other teachers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "vanishing them",
+      "relationship_type": "mentioned",
+      "description": "George mentions 'Vanishing them' as something that someone might try next, but which multiplies by ten every time it's tried."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "miss brown",
+      "relationship_type": "asked",
+      "description": "Professor McGonagall asks Miss Brown to run along and inform the headmistress about an escaped firework."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "headmistress",
+      "relationship_type": "informed",
+      "description": "Professor McGonagall asks Miss Brown to inform the headmistress about an escaped firework."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "other teachers",
+      "relationship_type": "responded_to",
+      "description": "Professor Umbridge spends her first afternoon running around the school answering summonses from other teachers."
+    }
+  ]
+}

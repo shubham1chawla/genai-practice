@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, who is in a duel with Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character mentioned by Voldemort as having pulled strings to help Harry survive."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Objects that contain pieces of Voldemort's soul and are necessary for his immortality."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "duel",
+      "description": "Harry and Voldemort are engaged in a duel, moving sideways in a perfect circle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "helped_by",
+      "description": "Voldemort mentions that Dumbledore helped Harry survive by pulling strings."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "dependent_on",
+      "description": "Voldemort is dependent on the Horcruxes for his immortality."
+    }
+  ]
+}

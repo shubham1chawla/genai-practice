@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as someone Harry had almost forgotten about."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and has a conversation with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who asked Harry to extract a memory from Professor Slughorn."
+    },
+    {
+      "name": "professor slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is mentioned as someone who has the memory that Harry wants to retrieve."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned in a conversation with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "asked_for_memory",
+      "description": "Dumbledore asked Harry to extract a memory from Professor Slughorn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor slughorn",
+      "relationship_type": "tried_to_retrieve_memory",
+      "description": "Harry tried to retrieve the memory from Professor Slughorn."
+    }
+  ]
+}

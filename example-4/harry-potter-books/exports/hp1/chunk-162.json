@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is trying out wands with Mr. Ollivander."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wand maker who is helping Harry find the perfect wand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is trying out wands with Mr. Ollivander."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "dagon alley",
+      "relationship_type": "located_at",
+      "description": "Mr. Ollivander is located at Dagon Alley, where he is helping Harry try out wands."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr ollivander",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacted with Mr. Ollivander while trying out wands at Dagon Alley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dagon alley",
+      "relationship_type": "present_at",
+      "description": "Harry was present at Dagon Alley, where he tried out wands with Mr. Ollivander."
+    }
+  ]
+}

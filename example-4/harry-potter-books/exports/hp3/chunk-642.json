@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story who is unable to run."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends who is chained to Pettigrew and Lupin."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who is chained to Ron and Lupin."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A werewolf who transforms into a wolf-like creature."
+    },
+    {
+      "name": "black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who catches Harry around the chest and throws him back."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hermione's cat who is backing away from Lupin."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A character who transforms into a dog and helps Harry in the battle."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The one who screams at the sight of the battle."
+    },
+    {
+      "name": "the werewolf",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A wolf-like creature that Lupin transforms into."
+    },
+    {
+      "name": "the dog",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Sirius's transformed form which helps Harry in the battle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Sirius transforms into a dog and helps Harry in the battle."
+    },
+    {
+      "entity_1": "the werewolf",
+      "entity_2": "lupin",
+      "relationship_type": "transformed_into",
+      "description": "Lupin transforms into a wolf-like creature."
+    },
+    {
+      "entity_1": "the dog",
+      "entity_2": "sirius",
+      "relationship_type": "transformed_from",
+      "description": "Sirius transforms into a dog."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "caught_by",
+      "description": "Black catches Harry around the chest and throws him back."
+    },
+    {
+      "entity_1": "the werewolf",
+      "entity_2": "pettigrew",
+      "relationship_type": "locked_with",
+      "description": "The werewolf is locked with Pettigrew, jaw to jaw, claws ripping at each other."
+    },
+    {
+      "entity_1": "the dog",
+      "entity_2": "the werewolf",
+      "relationship_type": "attacked",
+      "description": "The dog seizes the werewolf about the neck and pulls it backward."
+    }
+  ]
+}

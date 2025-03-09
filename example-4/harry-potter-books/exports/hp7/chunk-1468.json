@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is being thrown around by Voldemort's followers."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story who is leading his followers to taunt and humiliate Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A large person who is tasked with carrying Harry's body."
+    },
+    {
+      "name": "glasses",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's glasses that are put back on his face by someone."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that Harry has with him."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Voldemort and his followers plan to take Harry's body."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "humiliates",
+      "description": "Voldemort is leading his followers to taunt and humiliate Harry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "castle",
+      "relationship_type": "destination",
+      "description": "Voldemort and his followers plan to take Harry's body to the castle."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "carries",
+      "description": "Hagrid is tasked with carrying Harry's body."
+    }
+  ]
+}

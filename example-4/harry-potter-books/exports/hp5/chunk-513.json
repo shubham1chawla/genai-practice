@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "defensive magic",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Defensive magic is a type of magic that can be used for legal purposes. It was mentioned as one of the course aims in Professor Umbridge's class."
+    },
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a teacher who is teaching a class on defensive magic. She asks students to reply 'Yes, Professor Umbridge' or 'No, Professor Umbridge' when she asks them a question."
+    },
+    {
+      "name": "wilbert slinkhard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wilbert Slinkhard is the author of the book 'Defensive Magical Theory'. Professor Umbridge asks students if they have a copy of this book."
+    },
+    {
+      "name": "defensive magical theory",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Defensive Magical Theory is a book written by Wilbert Slinkhard. It was mentioned as one of the required readings for Professor Umbridge's class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "defensive magic",
+      "relationship_type": "teaches",
+      "description": "Professor Umbridge is teaching a class on defensive magic. This relationship was established when Professor Umbridge mentioned the course aims, which included understanding the principles underlying defensive magic."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "defensive magical theory",
+      "relationship_type": "assigns",
+      "description": "Professor Umbridge assigned the book 'Defensive Magical Theory' to her students. This relationship was established when Professor Umbridge asked if everyone had a copy of the book."
+    },
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "wilbert slinkhard",
+      "relationship_type": "author_of_required_reading",
+      "description": "Professor Umbridge assigned the book 'Defensive Magical Theory' written by Wilbert Slinkhard to her students. This relationship was established when Professor Umbridge asked if everyone had a copy of the book."
+    }
+  ]
+}

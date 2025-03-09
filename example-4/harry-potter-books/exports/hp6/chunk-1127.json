@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who believed Snape was sorry James was dead. This shows that Dumbledore had a certain level of trust in Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who hated James and called Harry's mother 'Mudblood'. He also joined forces with the Death Eaters after being alerted by Filius."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as someone who was dead and hated by Snape."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone whose mother was called 'Mudblood' by Snape. He also knew that Snape didn't think his mother was worth a damn."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is mentioned as someone who sent Filius to fetch Snape and alerted him to what was going on. She also felt guilty for this action."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as someone who was incredulous about Dumbledore's belief in Snape and tried to defend McGonagall from blame."
+    },
+    {
+      "name": "filius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filius is mentioned as someone who told Snape that the Death Eaters were coming."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as a group of people who joined forces with Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "snape",
+      "relationship_type": "alerted",
+      "description": "McGonagall alerted Snape to what was going on, which led him to join forces with the Death Eaters."
+    },
+    {
+      "entity_1": "filius",
+      "entity_2": "snape",
+      "relationship_type": "told",
+      "description": "Filius told Snape that the Death Eaters were coming."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "death eaters",
+      "relationship_type": "involved_with",
+      "description": "McGonagall's actions led to the involvement of the Death Eaters."
+    }
+  ]
+}

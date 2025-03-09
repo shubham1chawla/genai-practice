@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "head boy",
+      "entity_type": "title",
+      "singular": true,
+      "description": "The person in charge of the school, mentioned as speaking up to get Professor Dumbledore."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who speaks up and asks for Professor Dumbledore."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The headmaster of the school, summoned by Percy."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who arrives and asks what's going on."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "One of the students who moves closer to see what the trouble is."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Another student who moves closer with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who grabs Harry's arm in shock."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "painting",
+      "singular": true,
+      "description": "The portrait of the Fat Lady that has been vandalized."
+    },
+    {
+      "name": "professors mcgonagall",
+      "entity_type": "teacher",
+      "singular": false,
+      "description": "Multiple professors who hurry toward Professor Dumbledore."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "One of the professors who hurries toward Professor Dumbledore."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Another professor who hurries toward Professor Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "percy",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "requests_help",
+      "description": "Percy asks for Professor Dumbledore's help."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "harry",
+      "relationship_type": "asks_question",
+      "description": "Ginny asks Harry what's going on."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "grabs_arm",
+      "description": "Hermione grabs Harry's arm in shock."
+    },
+    {
+      "entity_1": "professors mcgonagall",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "hurries_toward",
+      "description": "Multiple professors hurry toward Professor Dumbledore."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "hurries_toward",
+      "description": "Lupin hurries toward Professor Dumbledore."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "hurries_toward",
+      "description": "Snape hurries toward Professor Dumbledore."
+    }
+  ]
+}

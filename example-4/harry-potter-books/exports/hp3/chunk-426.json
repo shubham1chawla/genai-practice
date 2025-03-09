@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is described as being upset and miserable about his pet rat Scabbers."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet_rat",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat who has been described as being off-color and wasting away. It is suggested that it would be better for him to die quickly."
+    },
+    {
+      "name": "fred",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Fred is mentioned as trying to cheer up Ron by making jokes about Scabbers."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ginny is mentioned as being indignant on behalf of Ron when Fred makes a joke about Scabbers."
+    },
+    {
+      "name": "george",
+      "entity_type": "character",
+      "singular": true,
+      "description": "George is mentioned as agreeing with Ginny that Scabbers was not very interesting."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Goyle is mentioned as having been bitten by Scabbers in the past."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as remembering that Goyle was bitten by Scabbers and trying to cheer up Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns",
+      "description": "Ron owns Scabbers, his pet rat."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ron",
+      "relationship_type": "tries_to_cheer_up",
+      "description": "Fred is trying to cheer up Ron by making jokes about Scabbers."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "ron",
+      "relationship_type": "supports",
+      "description": "Ginny is supporting Ron and disagreeing with Fred's joke about Scabbers."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "scabbers",
+      "relationship_type": "dislikes",
+      "description": "George dislikes Scabbers and agrees with Ginny that it was not very interesting."
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "scabbers",
+      "relationship_type": "was_bitten_by",
+      "description": "Goyle was bitten by Scabbers in the past."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "tries_to_cheer_up",
+      "description": "Harry is trying to cheer up Ron and remembers that Goyle was bitten by Scabbers."
+    }
+  ]
+}

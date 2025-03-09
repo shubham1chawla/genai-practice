@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ministry",
+      "entity_type": "government_building",
+      "singular": true,
+      "description": "The Ministry is mentioned as the location where visitors are required to submit to a search and present their wand for registration."
+    },
+    {
+      "name": "security desk",
+      "entity_type": "desk",
+      "singular": true,
+      "description": "The security desk is located at the far end of the Atrium and is where visitors need to go to register their wands."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "building_feature",
+      "singular": true,
+      "description": "The Atrium is mentioned as a location within the Ministry where the security desk is located."
+    },
+    {
+      "name": "wand",
+      "entity_type": "magical_object",
+      "singular": true,
+      "description": "Visitors are required to present their wand for registration at the security desk."
+    },
+    {
+      "name": "telephone box",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "Harry and his friends are inside a telephone box that is sinking into the ground."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "security desk",
+      "relationship_type": "location_of",
+      "description": "The security desk is located at the far end of the Atrium within the Ministry."
+    },
+    {
+      "entity_1": "visitor",
+      "entity_2": "ministry",
+      "relationship_type": "destination",
+      "description": "Visitors are required to submit to a search and present their wand for registration at the Ministry."
+    }
+  ]
+}

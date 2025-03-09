@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A rival of Harry's, a student at Hogwarts."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Malfoy's friends and followers."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Malfoy's friends and followers."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical map that shows the layout of the castle and the locations of its occupants."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "target",
+      "description": "Harry is trying to find Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crabbe",
+      "relationship_type": "associated_with",
+      "description": "Crabbe is associated with Malfoy, as he was arguing with him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend",
+      "description": "Ron is friends with Harry and helps him search for Malfoy on the Marauder's Map."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "associated_with",
+      "description": "Malfoy is associated with Crabbe, as he was arguing with him."
+    }
+  ]
+}

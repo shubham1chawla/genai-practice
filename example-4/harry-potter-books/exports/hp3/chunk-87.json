@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "monster books",
+      "entity_type": "books",
+      "singular": false,
+      "description": "The manager is trying to stop them from pulling apart another book."
+    },
+    {
+      "name": "manager",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The manager is trying to restore order in the shop."
+    },
+    {
+      "name": "invisible book of invisibility",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The manager mentions that they bought 200 copies but never found them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "manager",
+      "entity_2": "monster books",
+      "relationship_type": "stops",
+      "description": "The manager is trying to stop the monster books from pulling apart another book."
+    },
+    {
+      "entity_1": "manager",
+      "entity_2": "invisible book of invisibility",
+      "relationship_type": "bought",
+      "description": "The manager mentions that they bought 200 copies of the invisible book of invisibility."
+    }
+  ]
+}

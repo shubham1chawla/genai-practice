@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to protect the prophecy."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and a villain in the story, who is chasing Harry."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards and witches who are working with Bellatrix Lestrange."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is being held captive by the Death Eaters."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is also being held captive by the Death Eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "chased_by",
+      "description": "Harry is being chased by the Death Eaters."
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "harry",
+      "relationship_type": "chasing",
+      "description": "Bellatrix Lestrange is chasing Harry."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "ron",
+      "relationship_type": "held_captive_with",
+      "description": "Neville and Ron are being held captive together by the Death Eaters."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "prophecy",
+      "relationship_type": "protecting",
+      "description": "Harry is trying to protect the prophecy."
+    }
+  ]
+}

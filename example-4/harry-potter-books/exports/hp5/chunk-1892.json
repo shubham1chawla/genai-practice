@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is waiting for the train to Hogwarts."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, whose cage he lifts down from the train."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is waiting for the train with him and Hermione."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is waiting for the train with him and Ron."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is standing on the platform to greet Harry, looking quite sinister."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hedwig",
+      "relationship_type": "owner_of",
+      "description": "Harry owns Hedwig's cage and prepares to drag his trunk from the train."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron weasley",
+      "relationship_type": "friend_of",
+      "description": "Harry is friends with Ron, who is waiting for the train with him and Hermione."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "friend_of",
+      "description": "Harry is friends with Hermione, who is waiting for the train with him and Ron."
+    },
+    {
+      "entity_1": "mad-eye moody",
+      "entity_2": "harry potter",
+      "relationship_type": "greeted_by",
+      "description": "Mad-Eye Moody greets Harry on the platform."
+    }
+  ]
+}

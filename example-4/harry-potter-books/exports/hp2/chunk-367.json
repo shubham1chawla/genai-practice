@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione suggests a diversion to sneak into Snape's office."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is the teacher whose office Hermione wants to sneak into."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the students who will help with the diversion."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another student who will help with the diversion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "snape",
+      "relationship_type": "target_of_diversion",
+      "description": "Hermione suggests sneaking into Snape's office as a diversion."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "involved_in_diversion",
+      "description": "Harry is involved in the diversion to sneak into Snape's office."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "snape",
+      "relationship_type": "involved_in_diversion",
+      "description": "Ron is also involved in the diversion to sneak into Snape's office."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "asks_for_help",
+      "description": "Hermione asks Harry for help with the diversion."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "asks_for_help",
+      "description": "Hermione also asks Ron for help with the diversion."
+    }
+  ]
+}

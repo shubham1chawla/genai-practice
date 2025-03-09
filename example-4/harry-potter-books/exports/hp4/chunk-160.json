@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters who joined the queue for the tap."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another main character who joined the queue for the tap."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a main character who joined the queue for the tap."
+    },
+    {
+      "name": "archie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Archie is an old wizard who was wearing a long flowery nightgown and refusing to put on pin-striped trousers."
+    },
+    {
+      "name": "ministry wizard",
+      "entity_type": "organization_employee",
+      "singular": false,
+      "description": "The Ministry wizard is trying to persuade Archie to wear the pin-striped trousers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "tap",
+      "relationship_type": "joins_queue",
+      "description": "Harry joined the queue for the tap."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "tap",
+      "relationship_type": "joins_queue",
+      "description": "Ron joined the queue for the tap."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "tap",
+      "relationship_type": "joins_queue",
+      "description": "Hermione joined the queue for the tap."
+    },
+    {
+      "entity_1": "archie",
+      "entity_2": "ministry wizard",
+      "relationship_type": "argues_with",
+      "description": "Archie is arguing with the Ministry wizard over wearing pin-striped trousers."
+    },
+    {
+      "entity_1": "archie",
+      "entity_2": "tap",
+      "relationship_type": "refuses_to_use",
+      "description": "Archie refuses to use the tap because he is not wearing proper clothes."
+    }
+  ]
+}

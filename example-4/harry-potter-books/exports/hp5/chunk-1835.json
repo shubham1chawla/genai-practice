@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "the wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wand is described as an object that can withdraw silvery strands of thought."
+    },
+    {
+      "name": "his temple",
+      "entity_type": "location",
+      "singular": true,
+      "description": "His temple is the location where he raises his wand."
+    },
+    {
+      "name": "the basin",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The basin is an object where he deposits the silvery strands of thought."
+    },
+    {
+      "name": "he",
+      "entity_type": "person",
+      "singular": true,
+      "description": "He is a person performing the action of withdrawing and depositing the strands of thought."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "the wand",
+      "entity_2": "his temple",
+      "relationship_type": "is_at",
+      "description": "The wand is at his temple, where he raises it."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "the wand",
+      "relationship_type": "uses",
+      "description": "He uses the wand to withdraw strands of thought."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "the basin",
+      "relationship_type": "deposits_in",
+      "description": "He deposits the silvery strands in the basin."
+    },
+    {
+      "entity_1": "the wand",
+      "entity_2": "the basin",
+      "relationship_type": "is_used_with",
+      "description": "The wand is used with the basin to deposit the strands of thought."
+    }
+  ]
+}

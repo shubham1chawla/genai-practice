@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who received a bottle of Felix Felicis from Professor McGonagall."
+    },
+    {
+      "name": "felix felicis",
+      "entity_type": "liquid",
+      "singular": true,
+      "description": "A magical liquid that brings good luck to its user."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate, who is disappointed by Harry's actions."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate, who is dumbfounded by Harry's actions."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is within earshot of Harry's conversation with Ron."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of students from Slytherin house, who are furious at Harry's actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "felix felicis",
+      "relationship_type": "possession",
+      "description": "Harry received the bottle of Felix Felicis from Professor McGonagall."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "interaction",
+      "description": "Harry and Hermione have a conversation about Harry's actions."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron weasley",
+      "relationship_type": "interaction",
+      "description": "Harry and Ron have a conversation about Harry's actions."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "disapproval",
+      "description": "Hermione is disapproving of Harry's actions."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "harry potter",
+      "relationship_type": "support",
+      "description": "Ron supports Harry's actions."
+    }
+  ]
+}

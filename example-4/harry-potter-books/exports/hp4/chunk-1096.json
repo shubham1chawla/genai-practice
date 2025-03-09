@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is a person who spat onto the ground at Dumbledore's feet. He is being physically restrained by Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who seized Karkaroff's furs and lifted him into the air, slamming him against a nearby tree. He is being ordered by Dumbledore to escort Harry back up to the castle."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who shouted at Hagrid to stop, and then orders him to take Harry back to school. He has authority over Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who needs to be escorted back up to the castle by Hagrid, as per Dumbledore's order."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "hagrid",
+      "relationship_type": "restrained_by",
+      "description": "Hagrid is physically restraining Karkaroff against a tree, as described in the text: 'Hagrid’s massive fist at his throat, his feet dangling in midair'."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dumbledore",
+      "relationship_type": "ordered_by",
+      "description": "Dumbledore is ordering Hagrid to take Harry back up to the castle, as described in the text: 'Kindly escort Harry back up to the castle, Hagrid,' said Dumbledore sharply."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "karkaroff",
+      "relationship_type": "restraining",
+      "description": "Hagrid is restraining Karkaroff against a tree, as described in the text: 'In one swift movement, Hagrid seized the front of Karkaroff’s furs, lifted him into the air, and slammed him against a nearby tree'."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "escorting",
+      "description": "Hagrid is being ordered by Dumbledore to escort Harry back up to the castle, as described in the text: 'Kindly escort Harry back up to the castle, Hagrid,' said Dumbledore sharply."
+    }
+  ]
+}

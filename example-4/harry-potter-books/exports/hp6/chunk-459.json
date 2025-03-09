@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Potter' by Professor McGonagall. (Excerpt: 'Professor, can I see Professor Dumbledore, please?', 'Yes, Potter, away!')"
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse at Hogwarts School of Witchcraft and Wizardry, mentioned as someone who can give Harry something for shock. (Excerpt: 'get Madam Pomfrey to give you something for shock.')"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry, mentioned as someone who is in charge while Dumbledore is away. (Excerpt: 'Professor McGonagall turned back to Harry, Ron and Hermione.')"
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry, mentioned as being away until Monday. (Excerpt: 'The Headmaster is away until Monday, Potter')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as someone who cannot speak after Katie touched the necklace. (Excerpt: 'before either Ron or Hermione could speak.')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as someone who cannot speak after Katie touched the necklace. (Excerpt: 'before either Ron or Hermione could speak.')"
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose actions are being discussed by Professor McGonagall and Harry. (Excerpt: 'What happened when Katie touched the necklace?')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "has_request",
+      "description": "Harry asks Madam Pomfrey to give him something for shock. (Excerpt: 'get Madam Pomfrey to give you something for shock.')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has_request",
+      "description": "Harry asks Professor McGonagall if he can see Professor Dumbledore. (Excerpt: 'Professor, can I see Professor Dumbledore, please?')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has_conversation",
+      "description": "Harry has a conversation with Professor McGonagall about Katie touching the necklace. (Excerpt: 'What happened when Katie touched the necklace?')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has_conversation",
+      "description": "Harry has a conversation with Professor McGonagall about Dumbledore being away. (Excerpt: 'The Headmaster is away until Monday, Potter')"
+    },
+    {
+      "entity_1": "katie",
+      "entity_2": "harry potter",
+      "relationship_type": "has_effect_on",
+      "description": "Katie's actions have an effect on Harry and his friends. (Excerpt: 'What happened when Katie touched the necklace?')"
+    }
+  ]
+}

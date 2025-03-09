@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "inquisitorial squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people sitting with Hermione, expecting trouble at the match."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's companion, who is concerned about something and keeps looking around."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is concerned about Hagrid's behavior and asks him what is wrong."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who thinks Ravenclaw scored a goal in the match."
+    },
+    {
+      "name": "ravenclaw house team or players (implied by Harry's statement)",
+      "entity_type": "team",
+      "singular": false,
+      "description": "A group of students from Ravenclaw House who are playing in the match."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Hagrid and Hermione are walking together across the lawn."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "sitting_with",
+      "description": "The Inquisitorial Squad is sitting with Hagrid."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about Hagrid's behavior and asks him what is wrong."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ravenclaw house team or players (implied by Harry's statement)",
+      "relationship_type": "predicted_score",
+      "description": "Harry predicts that Ravenclaw will score a goal in the match."
+    }
+  ]
+}

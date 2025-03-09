@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is being rewarded with 243 Galleons."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ginny is the one who found the suspicious object in her mother's book."
+    },
+    {
+      "name": "miss weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Miss Weasley is Ginny's mother and has been affected by the ordeal."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is a wise wizard who interrupts to tell Miss Weasley to go to bed."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Madam Pomfrey is the nurse who is still awake and giving out Mandrake juice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who asks if Hermione is okay."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is the victim of the Basilisk and is waking up."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "villain",
+      "singular": true,
+      "description": "Lord Voldemort is a powerful wizard who has been defeated by Dumbledore."
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "The Basilisk is the monster that attacked Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "miss weasley",
+      "relationship_type": "interrupts",
+      "description": "Dumbledore interrupts Miss Weasley to tell her to go to bed."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "concerned about",
+      "description": "Ron is concerned about Hermione's well-being."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "informs",
+      "description": "Dumbledore informs Madam Pomfrey that the Basilisk's victims will be waking up soon."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "defeated by",
+      "description": "Lord Voldemort has been defeated by Dumbledore."
+    }
+  ]
+}

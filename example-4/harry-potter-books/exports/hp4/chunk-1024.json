@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is being addressed by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the one who is talking to Hermione and is being scolded by Sirius."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is giving advice to Ron about how to judge a person's character."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty Crouch is the one who is being discussed by Sirius and Ron."
+    },
+    {
+      "name": "barty crouch jr.",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barty Crouch Jr. is mentioned as someone who is impersonating his father."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "crouch",
+      "relationship_type": "judged_by",
+      "description": "Ron is being judged by Sirius on how he treats others."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "crouch",
+      "relationship_type": "judging",
+      "description": "Sirius is judging Crouch based on how he treats his inferiors."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "addressed_by",
+      "description": "Ron is being addressed by Hermione."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "crouch",
+      "relationship_type": "better_than",
+      "description": "Sirius says that Hermione has a better understanding of Crouch than Ron does."
+    }
+  ]
+}

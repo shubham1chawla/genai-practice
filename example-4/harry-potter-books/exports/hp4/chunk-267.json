@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "department",
+      "entity_type": "government_agency",
+      "singular": true,
+      "description": "The department is mentioned as the entity that Winky will be taken to for questioning. (Excerpt: 'department for questioning')"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "government_agency",
+      "singular": true,
+      "description": "The ministry is mentioned as an important part of the government, and Mr. Crouch's position within it. (Excerpt: 'such an important member of the Ministry')"
+    },
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is a house-elf who has disobeyed Mr. Crouch and will be punished as a result. (Excerpt: 'Winky stammered, looking up at Mr. Crouch')"
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is an important member of the Ministry who has authority over Winky and will be punishing her for disobeying him. (Excerpt: 'Mr. Crouch was such an important member of the Ministry')"
+    },
+    {
+      "name": "mr diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Diggory is a person who does not think much of Mr. Crouch's suggestion to deal with Winky himself. (Excerpt: 'Mr. Diggory looked as though he didn’t think much of this suggestion at all')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "winky",
+      "relationship_type": "authority_over",
+      "description": "Mr. Crouch has authority over Winky and will be punishing her for disobeying him. (Excerpt: 'I told her to remain in the tent... And I find that she disobeyed me')"
+    },
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "department",
+      "relationship_type": "affiliation_with",
+      "description": "Mr. Crouch is an important member of the Ministry, which suggests he has a relationship with the department. (Excerpt: 'such an important member of the Ministry')"
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "mr crouch",
+      "relationship_type": "subordinate_to",
+      "description": "Winky is subordinate to Mr. Crouch and will be punished for disobeying him. (Excerpt: 'M-m-master . . .’ Winky stammered, looking up at Mr. Crouch')"
+    }
+  ]
+}

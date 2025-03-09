@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who needs to learn English and has made a promise with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who thinks Hagrid has lost his mind and is trying to convince Harry and Hermione to break their promise."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is hesitant to break her promise with Ron and Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who has monster mates like Norbert and Aragog."
+    },
+    {
+      "name": "norbert",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "Norbert is mentioned as one of Hagrid's monster mates."
+    },
+    {
+      "name": "aragog",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "Aragog is mentioned as another one of Hagrid's monster mates."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "has_monster_mate",
+      "description": "Ron mentions that they have never come off better for mixing with any of Hagrid's monster mates."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "made_promise_with",
+      "description": "Hermione and Harry made a promise together."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "trying_to_convince",
+      "description": "Ron is trying to convince Hermione to break her promise with Harry."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "norbert",
+      "relationship_type": "has_monster_mate",
+      "description": "Hagrid has Norbert as one of his monster mates."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "aragog",
+      "relationship_type": "has_monster_mate",
+      "description": "Hagrid also has Aragog as one of his monster mates."
+    }
+  ]
+}

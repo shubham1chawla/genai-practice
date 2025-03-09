@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry'."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who had potions with Harry, mentioned as 'Snape'."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who pushed the door and was watching the passage outside, mentioned as 'Riddle'."
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "A subject that Harry had with Snape, mentioned as 'Potions'."
+    },
+    {
+      "name": "door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The door that Riddle pushed and Harry was watching, mentioned as 'the door'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "had_potions_with",
+      "description": "Harry had potions with Snape."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "door",
+      "relationship_type": "pushed",
+      "description": "Riddle pushed the door."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "riddle",
+      "relationship_type": "followed",
+      "description": "Harry followed Riddle."
+    }
+  ]
+}

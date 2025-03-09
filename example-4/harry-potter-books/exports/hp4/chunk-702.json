@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "dragon",
+      "entity_type": "living_thing",
+      "singular": true,
+      "description": "The dragon is mentioned as being past by Harry and the other champions. It roars loudly, indicating its presence."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a champion who has been given a task to complete. He is mentioned as leaving the tent and talking with Ron."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and fellow champion. He is mentioned as being talked to by Harry."
+    },
+    {
+      "name": "golden eggs",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The golden eggs are objects that the champions have been given. They contain a clue that will help them complete their second task."
+    },
+    {
+      "name": "clue",
+      "entity_type": "information",
+      "singular": true,
+      "description": "The clue is inside the golden egg and will tell the champions what their second task is."
+    },
+    {
+      "name": "second task",
+      "entity_type": "task",
+      "singular": true,
+      "description": "The second task is a challenge that the champions must complete. It takes place at half past nine on February 24th."
+    },
+    {
+      "name": "February 24th",
+      "entity_type": "date",
+      "singular": false,
+      "description": "This is the date when the second task will take place."
+    },
+    {
+      "name": "witch",
+      "entity_type": "living_thing",
+      "singular": true,
+      "description": "A witch leaps out from behind a clump of trees, surprising Harry and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "dragon",
+      "relationship_type": "past",
+      "description": "Harry has passed by the dragon, which is mentioned as being present in the forest."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Harry",
+      "relationship_type": "friend",
+      "description": "Ron is Harry's friend and fellow champion. They are talking to each other as they walk back around the edge of the forest."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "golden eggs",
+      "relationship_type": "has",
+      "description": "Harry has been given a golden egg, which contains a clue that will help him complete his second task."
+    },
+    {
+      "entity_1": "clue",
+      "entity_2": "second task",
+      "relationship_type": "describes",
+      "description": "The clue inside the golden egg describes what the second task is and how to prepare for it."
+    }
+  ]
+}

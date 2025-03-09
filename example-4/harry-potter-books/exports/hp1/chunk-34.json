@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The street where the Dursleys live."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that lives on Privet Drive."
+    },
+    {
+      "name": "nephew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the nephew of the Dursleys."
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The son of Mr. and Mrs. Dursley."
+    },
+    {
+      "name": "mr. dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The father of Dudley Dursley."
+    },
+    {
+      "name": "mrs. dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Dudley Dursley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dursleys",
+      "entity_2": "nephew",
+      "relationship_type": "family_member_of",
+      "description": "The nephew lives with the Dursleys."
+    },
+    {
+      "entity_1": "mr. dursley",
+      "entity_2": "dudley dursley",
+      "relationship_type": "parent_of",
+      "description": "Mr. Dursley is the father of Dudley Dursley."
+    },
+    {
+      "entity_1": "mrs. dursley",
+      "entity_2": "dudley dursley",
+      "relationship_type": "parent_of",
+      "description": "Mrs. Dursley is the mother of Dudley Dursley."
+    },
+    {
+      "entity_1": "nephew",
+      "entity_2": "privet drive",
+      "relationship_type": "resides_at",
+      "description": "The nephew lives on Privet Drive."
+    }
+  ]
+}

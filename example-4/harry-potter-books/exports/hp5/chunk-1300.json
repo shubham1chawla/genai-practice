@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one giving instructions and making wishes. He says 'It is my wish that you remain' to Professor McGonagall."
+    },
+    {
+      "name": "sibyll",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sibyll is a Divination teacher who needs to be escorted back upstairs by Professor McGonagall."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is asked by Dumbledore to escort Sibyll back upstairs."
+    },
+    {
+      "name": "sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout comes hurrying forward and grabs Professor Trelawney's other arm to guide her up the stairs."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is being escorted by Professor Sprout and guided past Umbridge."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick goes scurrying after the group to bring up the rear and make sure Professor Trelawney's luggage follows her."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is standing stock-still, staring at Dumbledore, and asking what he plans to do with Sibyll once she appoints a new Divination teacher."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mcgonagall",
+      "relationship_type": "asks_for_help",
+      "description": "Dumbledore asks McGonagall for help in escorting Sibyll back upstairs."
+    },
+    {
+      "entity_1": "sprout",
+      "entity_2": "trelawney",
+      "relationship_type": "helps",
+      "description": "Professor Sprout helps guide Professor Trelawney up the stairs."
+    },
+    {
+      "entity_1": "flitwick",
+      "entity_2": "trelawney",
+      "relationship_type": "brings_up_the_rear",
+      "description": "Professor Flitwick brings up the rear to make sure Professor Trelawney's luggage follows her."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "dumbledore",
+      "relationship_type": "questions_dumbledore",
+      "description": "Umbridge asks Dumbledore what he plans to do with Sibyll once she appoints a new Divination teacher."
+    }
+  ]
+}

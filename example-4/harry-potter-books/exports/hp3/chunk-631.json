@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is mentioned as a person who was sold to Voldemort by Pettigrew. (\"You sold Lily and James to Voldemort\")"
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as a person who was sold to Voldemort by Pettigrew. (\"You sold Lily and James to Voldemort\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "Voldemort is mentioned as the Dark Lord who forced Pettigrew to pass information to him. (\"He-Who-Must-Not-Be-Named forced me\")"
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is mentioned as a person who was accused of being Voldemort's spy and passing information to him. (\"YOU'D BEEN PASSING INFORMATION TO HIM FOR A YEAR BEFORE LILY AND JAMES DIED! YOU WERE HIS SPY!\")"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is mentioned as a person who was present during the conversation and accused Pettigrew of being Voldemort's spy. (\"YOU'D BEEN PASSING INFORMATION TO HIM FOR A YEAR BEFORE LILY AND JAMES DIED! YOU WERE HIS SPY!\")"
+    },
+    {
+      "name": "remus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Remus is mentioned as a person who was brave like Sirius and James. (\"I never meant it to happen. … He-Who-Must-Not-Be-Named forced me —\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "voldemort",
+      "relationship_type": "spy_for",
+      "description": "Pettigrew was accused of being Voldemort's spy and passing information to him. (\"YOU'D BEEN PASSING INFORMATION TO HIM FOR A YEAR BEFORE LILY AND JAMES DIED! YOU WERE HIS SPY!\")"
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "voldemort",
+      "relationship_type": "forced_by",
+      "description": "Voldemort forced Pettigrew to pass information to him. (\"He-Who-Must-Not-Be-Named forced me —\")"
+    }
+  ]
+}

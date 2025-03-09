@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lavender",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Lavender is mentioned as the destination of Ron's test, and Harry is left to be tested alone."
+    },
+    {
+      "name": "ronald weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ronald Weasley is a student who is being tested by Professor Trelawney. He makes something up because he can't see anything."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone Harry's mind is with, but no further context is provided."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is the one conducting the test on Harry. She has a familiar misty voice and is described as being in the tower room."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who is being tested by Professor Trelawney. He is left alone after Ron leaves and meets up with him in the common room later."
+    },
+    {
+      "name": "common room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The common room is mentioned as a place where Harry and Ron meet up after their tests."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ronald weasley",
+      "entity_2": "professor trelawney",
+      "relationship_type": "test_conducted_by",
+      "description": "Professor Trelawney conducts the test on Ron, who makes something up because he can't see anything."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor trelawney",
+      "relationship_type": "test_conducted_by",
+      "description": "Professor Trelawney conducts the test on Harry, who is left alone after Ron leaves."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ronald weasley",
+      "relationship_type": "met_in_common_room",
+      "description": "Harry and Ron meet up in the common room after their tests."
+    }
+  ]
+}

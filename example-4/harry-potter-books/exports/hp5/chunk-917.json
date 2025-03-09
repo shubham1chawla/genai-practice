@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is described as someone who has found something and is telling Harry about it. He is also mentioned to be having a long draft of tea."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as potential threats that Hagrid is concerned about."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who is eager to hear more from Hagrid and asks questions about what he found."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who asks a question about the size of the creatures that Hagrid found."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as someone who asks a question about the number of creatures that Hagrid found."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "death eaters",
+      "relationship_type": "concerned_about",
+      "description": "Hagrid is concerned about Death Eaters being around."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in what Hagrid found and asks him to continue telling his story."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "asked_question_to",
+      "description": "Ron asked a question about the size of the creatures that Hagrid found."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "asked_question_to",
+      "description": "Hermione asked a question about the number of creatures that Hagrid found."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "mimbulus mimbletonia",
+      "entity_type": "phrase",
+      "singular": true,
+      "description": "A magical phrase that the Fat Lady says to let Harry and Ron into Hogwarts."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Fat Lady is a magical portrait who guards the entrance to Gryffindor Tower. She is described as swinging forward once more when Harry and Ron arrive."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters in the story. He is described as sprinting up the stairs and trying to smile naturally while his heart continues to race."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry's who comes running toward him with a goblet of butterbeer. He is described as beaming all over his face and slopping butterbeer down his front."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another friend of Harry's who is dozing in an armchair by the fire. She has a drink tipping precariously in her hand."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of Ron's brothers who is also at Hogwarts. He points out Hermione to Harry and Ron."
+    },
+    {
+      "name": "butterbeer",
+      "entity_type": "drink",
+      "singular": false,
+      "description": "Butterbeer is a popular drink in the wizarding world that Ron and Fred are drinking from goblets."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fat lady",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacts with the Fat Lady when he says 'Mimbulus mimbletonia!' and she swings forward to let him in."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "greeted",
+      "description": "Ron greets Harry by coming running toward him with a goblet of butterbeer."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "hermione",
+      "relationship_type": "pointed_out",
+      "description": "Fred points out Hermione to Harry and Ron, indicating where she is sitting."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "butterbeer",
+      "relationship_type": "drinking",
+      "description": "Ron is drinking butterbeer from a goblet."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "butterbeer",
+      "relationship_type": "drinking",
+      "description": "Fred is also drinking butterbeer from a goblet."
+    }
+  ]
+}

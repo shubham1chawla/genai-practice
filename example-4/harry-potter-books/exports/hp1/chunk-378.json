@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as taking out a list of subjects and titles she had decided to search."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as strode off down a row of books and started pulling them off the shelves at random."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as wandering over to the Restricted Section."
+    },
+    {
+      "name": "flamel",
+      "entity_type": "book",
+      "singular": true,
+      "description": "Flamel is mentioned as a book that Harry has been wondering if it was somewhere in the Restricted Section."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "restricted section",
+      "relationship_type": "visited",
+      "description": "Harry wandered over to the Restricted Section."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "flamel",
+      "relationship_type": "searched_for",
+      "description": "Harry has been wondering if Flamel wasn’t somewhere in the Restricted Section."
+    }
+  ]
+}

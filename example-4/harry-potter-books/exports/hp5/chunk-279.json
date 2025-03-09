@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as the location where Harry and Mr. Weasley are currently at. It is described as having enchanted windows that show a controlled weather, and it has various departments such as Auror Headquarters."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, who is being accompanied by Mr. Weasley through the Ministry of Magic. He asks questions and observes his surroundings."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a character who is accompanying Harry through the Ministry of Magic. He explains the enchanted windows and introduces Harry to various departments such as Auror Headquarters."
+    },
+    {
+      "name": "auror headquarters",
+      "entity_type": "department",
+      "singular": true,
+      "description": "Auror Headquarters is a department within the Ministry of Magic, mentioned in the story. It is described as being located in a cubicle and having memos zooming in and out."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "harry",
+      "relationship_type": "location_of",
+      "description": "Harry is currently located within the Ministry of Magic, as mentioned by Mr. Weasley."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ministry of magic",
+      "relationship_type": "employee_of",
+      "description": "Mr. Weasley works at the Ministry of Magic, as he is showing Harry around and explaining its features."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "auror headquarters",
+      "relationship_type": "nearby",
+      "description": "Harry passes by Auror Headquarters while being accompanied by Mr. Weasley through the Ministry of Magic."
+    }
+  ]
+}

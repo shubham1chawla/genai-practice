@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who is not back, implying he is absent or missing. (\"it'll just draw even more attention to the fact that he's not back\")"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone who is trying to reassure Harry and Hermione about Hagrid's absence. (\"Listen, don't go asking too many questions about Hagrid\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who does not want attention drawn to Hagrid's absence. (\"I know Dumbledore doesn't want that\")"
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is mentioned as a place where Sirius asks about the next weekend. (\"When's your next Hogsmeade weekend anyway?\")"
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper that is guessing Sirius' location. (\"Oh that, they're always guessing where I am\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Malfoy is mentioned as someone who said something on the train that made Harry and Hermione think he knew Sirius' identity. (\"Something Malfoy said on the train made us think he knew it was you\")"
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as someone who was on the platform at the station. (\"his father was on the platform, Sirius -- you know, Lucius Malfoy\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "hagrid",
+      "relationship_type": "reassures",
+      "description": "Sirius is reassuring Harry and Hermione about Hagrid's absence. (\"Hagrid's tough, he'll be okay\")"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "sirius",
+      "relationship_type": "suspects",
+      "description": "Malfoy said something on the train that made Harry and Hermione think he knew Sirius' identity. (\"Something Malfoy said on the train made us think he knew it was you\")"
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "sirius",
+      "relationship_type": "knows_location",
+      "description": "Lucius Malfoy is mentioned as someone who knows Sirius' location. (\"his father was on the platform, Sirius -- you know, Lucius Malfoy\")"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, trying to save his friends from the troll."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is frozen with terror and unable to move."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is nearest to the troll and has no way to escape."
+    },
+    {
+      "name": "troll",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A large, aggressive creature that is terrorizing the group."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "trying_to_pull",
+      "description": "Harry tries to pull Hermione towards the door, but she can't move due to fear."
+    },
+    {
+      "entity_1": "troll",
+      "entity_2": "ron",
+      "relationship_type": "targeting",
+      "description": "The troll is heading towards Ron, who has no way to escape."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "troll",
+      "relationship_type": "attacking",
+      "description": "Harry takes a great running jump and manages to fasten his arms around the troll's neck from behind, sticking his wand up its nose."
+    }
+  ]
+}

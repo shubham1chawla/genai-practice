@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as a person who hasn't forgotten Dudley and the Ton-Tongue Toffee."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as a person who hasn't forgotten Dudley and the Ton-Tongue Toffee."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as someone Fred and George haven't forgotten."
+    },
+    {
+      "name": "ton-tongue toffee",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Ton-Tongue Toffee is a type of food that Fred and George haven't forgotten."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "dudley",
+      "relationship_type": "remembered_by",
+      "description": "Fred remembers Dudley."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "dudley",
+      "relationship_type": "remembered_by",
+      "description": "George also remembers Dudley."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ton-tongue toffee",
+      "relationship_type": "remembers",
+      "description": "Fred remembers the Ton-Tongue Toffee."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "ton-tongue toffee",
+      "relationship_type": "remembers",
+      "description": "George also remembers the Ton-Tongue Toffee."
+    }
+  ]
+}

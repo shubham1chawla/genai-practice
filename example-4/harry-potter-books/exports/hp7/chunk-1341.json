@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is introduced as the boy who has been watching Lily. He is described as hot and uncomfortable in the bright sunlight."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is introduced as a witch, with Snape confirming that she is one."
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Petunia is introduced as Lily's sister, who laughs at the idea of being a wizard."
+    },
+    {
+      "name": "snape boy",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Snape refers to himself as 'that Snape boy', indicating that he comes from a family with the surname Snape."
+    },
+    {
+      "name": "spinner's end",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Spinner's End is introduced as the address where Snape lives."
+    },
+    {
+      "name": "river",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The river is mentioned as being near Spinner's End."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "watching",
+      "description": "Snape has been watching Lily."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "petunia",
+      "relationship_type": "spying",
+      "description": "Petunia accuses Snape of spying on her."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "snape",
+      "relationship_type": "being_watched_by",
+      "description": "Snape has been watching Lily."
+    },
+    {
+      "entity_1": "petunia",
+      "entity_2": "snape",
+      "relationship_type": "accusing_of_spying",
+      "description": "Petunia accuses Snape of spying on her."
+    }
+  ]
+}

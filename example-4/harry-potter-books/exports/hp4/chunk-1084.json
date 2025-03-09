@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, completely unaware that he was being watched by Crouch."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is seemingly mad and has released Harry from his bonds. He is convinced that Percy is standing in front of him, but it's actually a tree."
+    },
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is with Crouch and seems to be doubting his sanity. He is told by Harry to stay with Crouch while he goes to get Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who needs to be informed about something urgent by Crouch."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as someone that Crouch thinks is standing in front of him, but it's actually a tree."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "crouch",
+      "relationship_type": "watched_by",
+      "description": "Crouch was watching Harry without his knowledge, which surprised him so much that he didn't notice Crouch releasing him."
+    },
+    {
+      "entity_1": "krum",
+      "entity_2": "harry",
+      "relationship_type": "told_to_stay_with_crouch",
+      "description": "Harry told Krum to stay with Crouch while he went to get Dumbledore."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "dumbledore",
+      "relationship_type": "needs_to_warn",
+      "description": "Crouch needs to warn Dumbledore about something urgent, as mentioned in his whispers to Harry."
+    }
+  ]
+}

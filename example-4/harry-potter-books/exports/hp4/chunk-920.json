@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is a character in the story who has black eyes and is suspicious of Harry. He recognizes the egg and parchment as belonging to Harry."
+    },
+    {
+      "name": "moody",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Moody is a character in the story who is calm and seems to be unaware of Snape's suspicions."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character in the story who is hiding from Snape using his Invisibility Cloak."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The egg is an object that Snape recognizes as belonging to Harry."
+    },
+    {
+      "name": "map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The map is an object that Moody has in his hand."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The parchment is an object that Snape recognizes as belonging to Harry."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's Invisibility Cloak allows him to hide from Snape."
+    },
+    {
+      "name": "filch's arms",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Filch is holding the egg in his arms."
+    },
+    {
+      "name": "place where harry was",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Snape tries to stare at the place where Harry is hiding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "egg",
+      "relationship_type": "recognizes",
+      "description": "Snape recognizes the egg as belonging to Harry."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "parchment",
+      "relationship_type": "recognizes",
+      "description": "Snape recognizes the parchment as belonging to Harry."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "map",
+      "relationship_type": "has",
+      "description": "Moody has the map in his hand."
+    }
+  ]
+}

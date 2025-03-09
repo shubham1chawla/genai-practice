@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as speaking and making decisions."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and companion. He is mentioned as speaking and trying to protect Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's other friend and companion. She is mentioned as speaking and trying to take the Cloak."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "horcrux",
+      "singular": true,
+      "description": "Nagini is a Horcrux that Voldemort is keeping close to him. It is mentioned as being hidden near Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nagini",
+      "relationship_type": "has_horcrux",
+      "description": "Harry knows that Nagini is a Horcrux and that it is being kept close to Voldemort, so he needs to go to Voldemort to get near the thing."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Ron wants to protect Harry from going to Voldemort alone."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "cloak",
+      "relationship_type": "uses",
+      "description": "Hermione suggests using the Cloak to go and get Nagini."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "orders",
+      "description": "Harry orders Ron to stay behind and look after Hermione."
+    }
+  ]
+}

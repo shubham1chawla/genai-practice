@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is mentioned as expressing a preference for being at Hogwarts over going back to the Dursleys."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is Harry's godfather and a wizard. He is described as gloomy and having a dark look on his face when talking about the Dursleys."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Dursleys are Harry's Muggle relatives who treat him poorly. They are mentioned as being bad by Sirius."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a member of the Weasley family and a kind person. She is mentioned as calling out to Harry and Sirius to hurry up."
+    },
+    {
+      "name": "harry's godfather",
+      "entity_type": "title",
+      "singular": false,
+      "description": "Harry's godfather is Sirius. He is mentioned as being able to restore his skin to normal after getting a bad bite from a silver snuffbox."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "preference",
+      "description": "Harry prefers being at Hogwarts over going back to the Dursleys."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "tapestry",
+      "relationship_type": "dislike",
+      "description": "Sirius casts a dark look at the tapestry, indicating that he dislikes it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "friendship",
+      "description": "Harry and Sirius are friends. They work together to empty the glass cabinets."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "silver snuffbox",
+      "relationship_type": "victim",
+      "description": "Sirius gets a bad bite from a silver snuffbox."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "glass cabinets",
+      "relationship_type": "task",
+      "description": "Harry helps to empty the glass cabinets with Sirius."
+    }
+  ]
+}

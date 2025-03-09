@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The group of people who were ready to attack Harry and his friends. They swerved to avoid the motorbike and its companion."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who helped Harry by slamming his hand onto the purple button, causing dragon fire to burst out."
+    },
+    {
+      "name": "dragon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The dragon that was used to attack the Death Eaters. It was summoned by Hagrid."
+    },
+    {
+      "name": "motorbike",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The motorbike that Harry and his friends were riding on. They were being chased by the Death Eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dragon",
+      "relationship_type": "summons",
+      "description": "Hagrid summoned the dragon to attack the Death Eaters."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "motorbike",
+      "relationship_type": "pursue",
+      "description": "The Death Eaters were chasing Harry and his friends on their motorbike."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dragon fire",
+      "relationship_type": "cause",
+      "description": "Hagrid's action caused the dragon fire to burst out."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "hagrid",
+      "relationship_type": "attack",
+      "description": "The Death Eaters were attacking Hagrid."
+    }
+  ]
+}

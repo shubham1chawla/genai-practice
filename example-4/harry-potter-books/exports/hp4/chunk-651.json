@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hungarian horntail",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "The Hungarian Horntail is a dragon that Sirius was trying to get past."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is hiding in the walls of Hogwarts and is being pursued by someone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is trying to help Sirius and is worried about getting into trouble with the Ministry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is wandering around Hogwarts at 1am in his pajamas."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "hungarian horntail",
+      "relationship_type": "pursued_by",
+      "description": "Sirius was trying to get past the Hungarian Horntail, but someone else is also pursuing him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "helping",
+      "description": "Harry is helping Sirius by hiding his fire and letting him escape."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "interrupted_by",
+      "description": "Ron interrupts Harry while he is trying to help Sirius."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Uncle Vernon's son. He was hit by his father for holding them up while packing his belongings."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is the father of Dudley and Harry. He drove them away from their home without telling them where they were going."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Uncle Vernon's wife and Dudley and Harry's aunt. She didn't dare ask where they were going."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Uncle Vernon's son. He shared a room with Dudley at the hotel."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "dudley",
+      "relationship_type": "hit",
+      "description": "Uncle Vernon hit Dudley for holding them up while packing his belongings."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "parent_of",
+      "description": "Uncle Vernon is Harry's father."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dudley",
+      "relationship_type": "aunt_of",
+      "description": "Aunt Petunia is Dudley's aunt."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "hotel",
+      "relationship_type": "stayed_at",
+      "description": "Uncle Vernon stayed at the hotel with his sons."
+    }
+  ]
+}

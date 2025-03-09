@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "charing cross road",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The street where Harry and Hermione are located."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "establishment",
+      "singular": true,
+      "description": "A wizarding inn that is a front for the entrance to Diagon Alley."
+    },
+    {
+      "name": "tom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The landlord of the Leaky Cauldron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts and a friend of Harry's."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A goblin who is being carried by Harry."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "establishment",
+      "singular": true,
+      "description": "A wizarding bank."
+    },
+    {
+      "name": "madam lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A woman who is greeted by Tom at the Leaky Cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "location_of",
+      "description": "Harry and Griphook are leaving Gringotts out of the Inn into the tiny backyard."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "madam lestrange",
+      "relationship_type": "greeting",
+      "description": "Hermione greets Madam Lestrange at the Leaky Cauldron."
+    },
+    {
+      "entity_1": "tom",
+      "entity_2": "harry",
+      "relationship_type": "interaction",
+      "description": "Tom looks surprised when Harry passes by with Griphook."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "tom",
+      "relationship_type": "interaction",
+      "description": "Hermione greets Tom at the Leaky Cauldron."
+    }
+  ]
+}

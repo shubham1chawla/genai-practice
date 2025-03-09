@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who is talking to Harry and Charlie about the dragons."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is a person who is explaining the different breeds of dragons to Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is observing the dragons with Hagrid and Charlie."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is a person who is strolling around the edge of the enclosure, gazing at the stunned dragons."
+    },
+    {
+      "name": "hungarian horntail",
+      "entity_type": "dragon_breed",
+      "singular": true,
+      "description": "The Hungarian Horntail is a breed of dragon that Charlie identifies."
+    },
+    {
+      "name": "common welsh green",
+      "entity_type": "dragon_breed",
+      "singular": false,
+      "description": "The Common Welsh Green is a breed of dragon that Charlie identifies."
+    },
+    {
+      "name": "swedish short-snout",
+      "entity_type": "dragon_breed",
+      "singular": true,
+      "description": "The Swedish Short-Snout is a breed of dragon that Charlie identifies."
+    },
+    {
+      "name": "chinese fireball",
+      "entity_type": "dragon_breed",
+      "singular": true,
+      "description": "The Chinese Fireball is a breed of dragon that Charlie identifies."
+    },
+    {
+      "name": "enclosure",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The enclosure is the area where the dragons are being kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hungarian horntail",
+      "relationship_type": "gaze_at",
+      "description": "Hagrid gazes at the Hungarian Horntail with something close to reverence."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "common welsh green",
+      "relationship_type": "identify",
+      "description": "Charlie identifies the Common Welsh Green as a breed of dragon."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "swedish short-snout",
+      "relationship_type": "identify",
+      "description": "Charlie identifies the Swedish Short-Snout as a breed of dragon."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "chinese fireball",
+      "relationship_type": "identify",
+      "description": "Charlie identifies the Chinese Fireball as a breed of dragon."
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "enclosure",
+      "relationship_type": "stroll_through",
+      "description": "Madame Maxime strolls around the edge of the enclosure, gazing at the stunned dragons."
+    }
+  ]
+}

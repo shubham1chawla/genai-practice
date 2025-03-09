@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as sounding reassured when talking about the Sorting Hat's new song."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as looking up and down the staff table, hoping for an explanation of Hagrid's absence."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid's absence is mentioned, with Hermione looking for an explanation."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as sitting at the center of the staff table, wearing deep-purple robes and a matching hat."
+    },
+    {
+      "name": "the sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat's new song is mentioned, with Ron sounding reassured about it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "query",
+      "description": "Hermione is looking for an explanation of Hagrid's absence."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the sorting hat",
+      "relationship_type": "reassurance",
+      "description": "Ron sounds reassured about the Sorting Hat's new song."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "observation",
+      "description": "Harry observes Dumbledore sitting at the staff table, wearing deep-purple robes and a matching hat."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the staff table",
+      "relationship_type": "search",
+      "description": "Hermione looks up and down the staff table for an explanation of Hagrid's absence."
+    }
+  ]
+}

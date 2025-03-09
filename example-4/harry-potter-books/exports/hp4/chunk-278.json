@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "a group of people involved with the dark arts, mentioned as having powers and being feared by others."
+    },
+    {
+      "name": "dark mark",
+      "entity_type": "object",
+      "singular": true,
+      "description": "a mysterious object that can be conjured to show support or scare away death eaters."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a student at hogwarts who is trying to understand the dark mark and its purpose."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "a member of the order of the phoenix who provides information about the dark mark and death eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "dark mark",
+      "relationship_type": "can_conjure",
+      "description": "only death eaters know how to conjure the dark mark, according to mr. weasley."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dark mark",
+      "relationship_type": "trying_to_understand",
+      "description": "hermione is trying to understand the purpose of the dark mark and who might have conjured it."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "death eaters",
+      "relationship_type": "knew_about",
+      "description": "mr. weasley has knowledge about death eaters and their abilities, including how to conjure the dark mark."
+    }
+  ]
+}

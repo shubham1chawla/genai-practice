@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'he' and 'Harry'. He is getting ready for bed on his birthday."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school that Harry attends, mentioned in the context of his return."
+    },
+    {
+      "name": "hogsmeade form",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A document or application that Harry needs to fill out, but decides to worry about it later."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "attendee",
+      "description": "Harry attends Hogwarts school, as mentioned in the context of his return to the school."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogsmeade form",
+      "relationship_type": "applicant",
+      "description": "Harry needs to fill out the Hogsmeade form, but decides to worry about it later."
+    }
+  ]
+}

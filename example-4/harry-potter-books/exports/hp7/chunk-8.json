@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "imperius curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "The Imperius Curse is a spell that can be used to control someone's actions. It was placed upon Pius Thicknesse by Yaxley."
+    },
+    {
+      "name": "pius thicknesse",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pius Thicknesse is the Head of the Department of Magical Law Enforcement. He has been placed under an Imperius Curse by Yaxley."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Yaxley is a person who has succeeded in placing an Imperius Curse upon Pius Thicknesse."
+    },
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolohov is Yaxley's neighbor and clapped him on the back after he placed the curse."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a person who wants to surround Scrimgeour with their people before acting."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is the Minister whose life Voldemort wants to target."
+    },
+    {
+      "name": "department of magical law enforcement",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department of Magical Law Enforcement is an organization headed by Pius Thicknesse."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "yaxley",
+      "entity_2": "pius thicknesse",
+      "relationship_type": "placed curse on",
+      "description": "Yaxley placed the Imperius Curse upon Pius Thicknesse."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "scrimgeour",
+      "relationship_type": "wants to target",
+      "description": "Voldemort wants to surround Scrimgeour with their people before acting."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "dolohov",
+      "relationship_type": "neighbor of",
+      "description": "Yaxley and Dolohov are neighbors."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "pius thicknesse",
+      "relationship_type": "wants to use as pawn",
+      "description": "Voldemort wants to surround Scrimgeour with people like Pius Thicknesse before acting."
+    }
+  ]
+}

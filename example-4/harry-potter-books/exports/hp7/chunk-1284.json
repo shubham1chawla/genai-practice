@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diadem is described as being pulled from Harry's wrist and held up. It was still hot, blackened with soot, but had tiny words etched upon it."
+    },
+    {
+      "name": "fiendfyre",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Fiendfyre is described as a substance that destroys Horcruxes and is mentioned as being used by Crabbe."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Horcruxes are mentioned as being destroyed by Fiendfyre."
+    },
+    {
+      "name": "carrows",
+      "entity_type": "people",
+      "singular": false,
+      "description": "The Carrows are mentioned as people who taught Crabbe how to use Fiendfyre."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as someone who used Fiendfyre and learned it from the Carrows."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being present and reacting to the broken diadem."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as holding the diadem and feeling its vibration."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crabbe",
+      "entity_2": "carrows",
+      "relationship_type": "learned_from",
+      "description": "Crabbe learned how to use Fiendfyre from the Carrows."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diadem",
+      "relationship_type": "held",
+      "description": "Harry held the diadem in his hands."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "diadem",
+      "relationship_type": "reacted_to",
+      "description": "Hermione reacted to the broken diadem."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "fiendfyre",
+      "relationship_type": "used",
+      "description": "Crabbe used Fiendfyre."
+    }
+  ]
+}

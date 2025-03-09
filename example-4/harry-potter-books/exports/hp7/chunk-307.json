@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is a wizard and was kept hidden by his relatives."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is Harry's headmaster at Hogwarts and has a sister who was imprisoned for lack of magic."
+    },
+    {
+      "name": "kendra",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kendra is Dumbledore's sister who was imprisoned by her brother."
+    },
+    {
+      "name": "ariana",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ariana is Dumbledore's sister who was imprisoned and possibly killed by her mother."
+    },
+    {
+      "name": "muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Muriel is a relative of Harry's who suggests that Kendra might have been killed by Ariana."
+    },
+    {
+      "name": "doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Doge is a relative of Harry's who is shocked by Muriel's suggestion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "kendra",
+      "relationship_type": "sister",
+      "description": "Dumbledore and Kendra are sisters."
+    },
+    {
+      "entity_1": "muriel",
+      "entity_2": "ariana",
+      "relationship_type": "mother",
+      "description": "Muriel suggests that she might be Ariana's mother."
+    },
+    {
+      "entity_1": "kendra",
+      "entity_2": "dumbledore",
+      "relationship_type": "sister",
+      "description": "Kendra is Dumbledore's sister."
+    },
+    {
+      "entity_1": "ariana",
+      "entity_2": "muriel",
+      "relationship_type": "daughter",
+      "description": "Muriel suggests that she might be Ariana's mother."
+    }
+  ]
+}

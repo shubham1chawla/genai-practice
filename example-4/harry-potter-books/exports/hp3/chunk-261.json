@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is speaking with Professor Lupin. He mentions that Professor Snape is interested in the Dark Arts and might be trying to get the Defense Against the Dark Arts job."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is a teacher at Hogwarts who is working alongside Professor Snape. He is taking a potion that Harry thinks is strange."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is a teacher at Hogwarts who is interested in the Dark Arts and might be trying to get the Defense Against the Dark Arts job."
+    },
+    {
+      "name": "potion",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "The potion that Professor Lupin is drinking. Harry thinks it's strange."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "suspects",
+      "description": "Harry suspects that Snape might be trying to get the Defense Against the Dark Arts job."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "snape",
+      "relationship_type": "collaborates_with",
+      "description": "Professor Lupin is working alongside Professor Snape."
+    }
+  ]
+}

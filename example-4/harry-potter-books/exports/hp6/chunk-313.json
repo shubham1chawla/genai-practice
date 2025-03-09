@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Neville is a student who is struggling in Transfiguration. He is described as looking miserable and muttering something about his grandmother wanting him to continue with the subject."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who is evaluating Neville's performance in Transfiguration. She is described as peering at him through her square spectacles and expressing disappointment with his grades."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Longbottom is a student who received an 'Acceptable' grade in Transfiguration, which Professor McGonagall deemed insufficient for continuing at the N.E.W.T. level."
+    },
+    {
+      "name": "ne.w.t.",
+      "entity_type": "academic_level",
+      "singular": true,
+      "description": "N.E.W.T. is an academic level that Neville and Longbottom are trying to achieve in their studies."
+    },
+    {
+      "name": "transfiguration",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Transfiguration is a subject that Neville and Longbottom are studying, but Neville is struggling with it."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Ministry is a location where something happened in the past, which Professor McGonagall mentions as an example of why Neville's grandmother should be proud of him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "transfiguration",
+      "relationship_type": "struggling_with",
+      "description": "Neville is struggling with Transfiguration, as evidenced by his miserable expression and Professor McGonagall's disappointment with his grades."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "neville",
+      "relationship_type": "evaluating",
+      "description": "Professor McGonagall is evaluating Neville's performance in Transfiguration, as shown by her peering at him through her spectacles and expressing disappointment with his grades."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "longbottom",
+      "relationship_type": "disapproving_of",
+      "description": "Professor McGonagall is disapproving of Longbottom's 'Acceptable' grade in Transfiguration, which she deems insufficient for continuing at the N.E.W.T. level."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "ministry",
+      "relationship_type": "connected_to",
+      "description": "Neville is connected to the Ministry through an event that happened in the past, which Professor McGonagall mentions as an example of why Neville's grandmother should be proud of him."
+    }
+  ]
+}

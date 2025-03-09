@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Griphook is a goblin who disapproves of the tiara being kept by wizards. He believes it should have been returned to the goblins after the original purchaser died."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is a wizard who is letting Harry know that he should be careful about what he promises to the goblins. It seems Bill might know more than he's letting on."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Goblins are a group of beings who believe that wizards should return their objects after the original purchaser dies, and not keep them for themselves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "griphook",
+      "entity_2": "goblins",
+      "relationship_type": "disapproves_of",
+      "description": "Griphook disapproves of the tiara being kept by wizards, and believes it should have been returned to the goblins."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "goblins",
+      "relationship_type": "cautions_against",
+      "description": "Bill is cautioning Harry against making promises to the goblins, suggesting that he might know more than he's letting on."
+    }
+  ]
+}

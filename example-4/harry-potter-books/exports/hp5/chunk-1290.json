@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is being chased by someone called Snap e."
+    },
+    {
+      "name": "snap e",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is chasing Harry and has a special ability to sense Harry's thoughts."
+    },
+    {
+      "name": "department of mysteries",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where Harry is being chased by Snap e."
+    },
+    {
+      "name": "circular room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A room inside the Department of Mysteries where Harry finds himself after running through a black door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snap e",
+      "relationship_type": "chased_by",
+      "description": "Harry is being chased by Snap e, as indicated by the cry of 'Legilimens!' and Harry's frantic attempt to clear his mind."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "department of mysteries",
+      "relationship_type": "inside",
+      "description": "Harry is inside the Department of Mysteries, where he is being chased by Snap e."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "circular room",
+      "relationship_type": "inside",
+      "description": "After running through a black door, Harry finds himself inside a circular room."
+    }
+  ]
+}

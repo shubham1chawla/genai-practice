@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who joined Harry and Hermione for lunch. He suggests asking his parents about Flamel."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who joins Ron and Harry for lunch. She asks them to keep looking for information on Flamel while she's away."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is searching for information on Flamel with Ron and Hermione."
+    },
+    {
+      "name": "flamel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flamel is someone that Harry, Ron, and Hermione are trying to find more information about."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student who Ron and Harry want to get expelled from school."
+    },
+    {
+      "name": "parents",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Ron's parents are dentists who he suggests asking about Flamel."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "flamel",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for information on Flamel."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "flamel",
+      "relationship_type": "searching_for",
+      "description": "Ron is also searching for information on Flamel."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "flamel",
+      "relationship_type": "searching_for",
+      "description": "Hermione is searching for information on Flamel while she's away."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "parents",
+      "relationship_type": "asking",
+      "description": "Ron suggests asking his parents about Flamel."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "wanting_to_expel",
+      "description": "Harry wants to get Malfoy expelled from school."
+    }
+  ]
+}

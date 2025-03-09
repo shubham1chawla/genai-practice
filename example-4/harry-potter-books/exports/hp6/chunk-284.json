@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Tonks is stationed to give extra protection to the school."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Metamorphmagus and Auror who is stationed in Hogsmeade to protect the school."
+    },
+    {
+      "name": "proudfoot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror who is stationed in Hogsmeade along with Tonks."
+    },
+    {
+      "name": "savage",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror who is stationed in Hogsmeade along with Tonks."
+    },
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An Auror who was attacked by Dumbledore last year and is now stationed in Hogsmeade."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is not present in this scene."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A powerful wizard and the headmaster of Hogwarts who attacked Dawlish last year."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where something happened that affected Tonks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "hogsmeade",
+      "relationship_type": "stationed_in",
+      "description": "Tonks is stationed in Hogsmeade to protect the school."
+    },
+    {
+      "entity_1": "proudfoot",
+      "entity_2": "hogsmeade",
+      "relationship_type": "stationed_in",
+      "description": "Proudfoot is stationed in Hogsmeade along with Tonks."
+    },
+    {
+      "entity_1": "savage",
+      "entity_2": "hogsmeade",
+      "relationship_type": "stationed_in",
+      "description": "Savage is stationed in Hogsmeade along with Tonks."
+    },
+    {
+      "entity_1": "dawlish",
+      "entity_2": "hogsmeade",
+      "relationship_type": "stationed_in",
+      "description": "Dawlish is stationed in Hogsmeade along with Tonks."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "ministry of magic",
+      "relationship_type": "affected_by",
+      "description": "Tonks was affected by something that happened at the Ministry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dawlish",
+      "relationship_type": "attacked",
+      "description": "Dumbledore attacked Dawlish last year."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tonks",
+      "relationship_type": "observing",
+      "description": "Harry is observing Tonks under his Cloak."
+    }
+  ]
+}

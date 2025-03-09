@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Slytherin students are present in the classroom."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Gryffindor students are also present in the classroom."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is eager to answer a question and raises her hand."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy imitates Hermione's eagerness to answer a question behind her back."
+    },
+    {
+      "name": "pansy parkinson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pansy Parkinson laughs at the sight of the twigs and then screams when they reveal themselves to be tiny creatures."
+    },
+    {
+      "name": "parvati",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Parvati is excited and says 'Oooooh!' along with Lavender."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender is also excited and says 'Oooooh!' along with Parvati."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid shows the students impressive creatures in his classroom."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "imitation",
+      "description": "Malfoy imitates Hermione's eagerness to answer a question behind her back."
+    },
+    {
+      "entity_1": "pansy parkinson",
+      "entity_2": "twigs",
+      "relationship_type": "reaction",
+      "description": "Pansy Parkinson laughs at the sight of the twigs and then screams when they reveal themselves to be tiny creatures."
+    },
+    {
+      "entity_1": "parvati",
+      "entity_2": "lavender",
+      "relationship_type": "similarity",
+      "description": "Parvati and Lavender are both excited and say 'Oooooh!' together."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "creatures",
+      "relationship_type": "showing",
+      "description": "Hagrid shows the students impressive creatures in his classroom."
+    }
+  ]
+}

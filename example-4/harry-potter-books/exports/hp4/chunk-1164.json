@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "the pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A device used by Dumbledore to store and view his thoughts and memories. (\"This? It is called a Pensieve...\")"
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is standing beside Harry. (\"Albus Dumbledore was standing beside him.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is talking to Dumbledore. (\"Harry gasped...\" \"Harry did so...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the pensieve",
+      "relationship_type": "owns",
+      "description": "Dumbledore has a Pensieve, which he uses to store his thoughts and memories. (\"This? It is called a Pensieve...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "speaks_to",
+      "description": "Harry is talking to Dumbledore about the Pensieve. (\"Professor,\" Harry gasped, \"I know I shouldn’t’ve — I didn’t mean...\")"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "speaks_to",
+      "description": "Dumbledore is talking to Harry about the Pensieve. (\"I quite understand,\" said Dumbledore.)"
+    }
+  ]
+}

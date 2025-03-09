@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is mentioned as a place where someone can be released from."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is mentioned as the person who was affected by Voldemort's magic."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who did magic on Morfin."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that makes decisions and has a role in detecting magic."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dobby is mentioned as the one who cast a Hover Charm."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person asking questions and expressing indignation."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as a person who explains how the Ministry works."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry",
+      "entity_2": "voldemort",
+      "relationship_type": "failed_to_detect",
+      "description": "The Ministry failed to detect that Voldemort was responsible for the magic done on Morfin."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "blamed",
+      "description": "Harry was blamed by the Ministry for a magic spell cast by Dobby."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "harry",
+      "relationship_type": "failed_to_detect",
+      "description": "The Ministry failed to detect that Harry was not responsible for the magic spell."
+    }
+  ]
+}

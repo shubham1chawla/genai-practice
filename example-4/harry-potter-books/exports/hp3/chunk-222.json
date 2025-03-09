@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that takes the form of what each person fears. It is mentioned that nobody knows what a boggart looks like when it's alone."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The teacher who is guiding Harry and his friends in dealing with the boggart. He mentions that having company helps to confuse the boggart."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "One of the students being guided by Professor Lupin. He tries to answer a question about the boggart."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "boggart",
+      "entity_2": "professor lupin",
+      "relationship_type": "confused_by",
+      "description": "The boggart becomes confused when it has multiple people to take the form of, as mentioned by Professor Lupin."
+    },
+    {
+      "entity_1": "boggart",
+      "entity_2": "harry",
+      "relationship_type": "frightens",
+      "description": "The boggart frightens Harry, but only because it takes the form of what he fears."
+    }
+  ]
+}

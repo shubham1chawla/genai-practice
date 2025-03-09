@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is a person who is being pulled away by Mr. Weasley. (\"He seized Tonks’s wrist and pulled her away\")"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is a person who appears out of thin air at the gate, accompanied by Rufus Scrimgeour. (\"a second later, Mr. Weasley had appeared out of thin air at the gate\")"
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rufus Scrimgeour is a person who appears with Mr. Weasley, instantly recognizable by his mane of grizzled hair. (\"Rufus Scrimgeour, instantly recognizable by his mane of grizzled hair\")"
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is a person who looks bewildered at the sudden appearance of Mr. Weasley and Rufus Scrimgeour. (\"Mrs. Weasley looked bewildered\")"
+    },
+    {
+      "name": "the minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Minister is a person who is being referred to by Mrs. Weasley, but her identity is not specified. (\"The Minister — but why — ?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "tonks",
+      "relationship_type": "pulled",
+      "description": "Mr. Weasley pulled Tonks away from the fence. (\"He seized Tonks’s wrist and pulled her away\")"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "accompanied_by",
+      "description": "Mr. Weasley appeared with Rufus Scrimgeour at the gate. (\"a second later, Mr. Weasley had appeared out of thin air at the gate\")"
+    },
+    {
+      "entity_1": "rufus scrimgeour",
+      "entity_2": "mr weasley",
+      "relationship_type": "accompanied_by",
+      "description": "Rufus Scrimgeour appeared with Mr. Weasley, instantly recognizable by his mane of grizzled hair. (\"Rufus Scrimgeour, instantly recognizable by his mane of grizzled hair\")"
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "mr weasley",
+      "relationship_type": "looked_at",
+      "description": "Mrs. Weasley looked bewildered at the sudden appearance of Mr. Weasley and Rufus Scrimgeour. (\"Mrs. Weasley looked bewildered\")"
+    }
+  ]
+}

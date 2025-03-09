@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is described as walking over to the fireside and staring at the Firebolt."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as receiving a broomstick called the Firebolt."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned alongside Harry Potter looking around at Hermione."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is a student at Hogwarts School of Witchcraft and Wizardry. She is mentioned as informing Professor McGonagall that Harry has received the Firebolt."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is a broomstick sent to Harry Potter. It is described by Professor McGonagall as being examined carefully from handle to twig-ends."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "firebolt",
+      "relationship_type": "examines",
+      "description": "Professor McGonagall examines the Firebolt carefully from handle to twig-ends."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "firebolt",
+      "relationship_type": "owns",
+      "description": "Harry Potter is mentioned as receiving the Firebolt, implying that he owns it."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "takes_from",
+      "description": "Professor McGonagall takes the Firebolt from Harry Potter."
+    }
+  ]
+}

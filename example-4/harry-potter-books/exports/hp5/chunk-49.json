@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Figg is a person who is angry and scolding Mundungus for his actions. She says 'I'll give you undercover!' and calls him a 'useless, skiving sneak thief'."
+    },
+    {
+      "name": "mundungus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus is a person who is being scolded by Mrs. Figg for his actions. He looks uncomfortable and tries to explain himself."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are creatures that are attacking the boy on Mundungus's watch. Mrs. Figg says 'Yes, here, you worthless pile of bat droppings, here!' and points out their presence."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is being attacked by Dementors. Mundungus looks from Mrs. Figg to Harry and back again."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who needs to be told about the situation with Mundungus and the Dementors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs figg",
+      "entity_2": "mundungus",
+      "relationship_type": "scolded_by",
+      "description": "Mrs. Figg is scolding Mundungus for his actions, calling him a 'useless, skiving sneak thief'."
+    },
+    {
+      "entity_1": "mrs figg",
+      "entity_2": "dumbledore",
+      "relationship_type": "informing",
+      "description": "Mrs. Figg says 'Someone's gotta tell Dumbledore!' and is informing him about the situation with Mundungus and the Dementors."
+    },
+    {
+      "entity_1": "mundungus",
+      "entity_2": "harry",
+      "relationship_type": "watched_over",
+      "description": "Mundungus is watching over Harry, but is failing to protect him from the Dementors."
+    }
+  ]
+}

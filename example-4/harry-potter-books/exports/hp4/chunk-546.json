@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being questioned by Cedric."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is questioning Harry about how he got his name in the Goblet of Fire."
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that has been extinguished, leaving only torches to light the entrance hall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "questioned_by",
+      "description": "Cedric is questioning Harry about how he got his name in the Goblet of Fire."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goblet of fire",
+      "relationship_type": "involved_with",
+      "description": "Harry's name was somehow involved with the Goblet of Fire, although he claims not to have put it in."
+    }
+  ]
+}

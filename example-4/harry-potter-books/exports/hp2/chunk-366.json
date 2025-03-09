@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "onion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A pointed purple crystal is mentioned as an example of something that might be used to distract or deceive others."
+    },
+    {
+      "name": "newt-tail",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A rotting newt-tail is mentioned as an example of something that might be used to distract or deceive others."
+    },
+    {
+      "name": "Gryffindor boys",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Gryffindor boys are mentioned as a group that pointed out Harry's safety."
+    },
+    {
+      "name": "Filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Filch is mentioned as someone who was attacked first."
+    },
+    {
+      "name": "Neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom is mentioned as a Gryffindor student who is fearful of being attacked."
+    },
+    {
+      "name": "Squib",
+      "entity_type": "condition",
+      "singular": false,
+      "description": "Being almost a Squib is mentioned as a reason why Neville might be safe from attack."
+    },
+    {
+      "name": "Professor McGonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as someone who comes around to collect names for the Christmas holidays."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a student who signs Professor McGonagall's list."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as a student who signs Professor McGonagall's list."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is mentioned as a student who signs Professor McGonagall's list."
+    },
+    {
+      "name": "Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as someone who is staying at school for Christmas."
+    },
+    {
+      "name": "Polyjuice Potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Polyjuice Potion is mentioned as something that Harry and his friends want to use to try to get a confession out of Malfoy."
+    },
+    {
+      "name": "Bicorn horn",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Bicorn horn is mentioned as one of the ingredients needed for the Polyjuice Potion."
+    },
+    {
+      "name": "Boomslang skin",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Boomslang skin is mentioned as another ingredient needed for the Polyjuice Potion."
+    },
+    {
+      "name": "Snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is mentioned as someone who has private stores where Harry and his friends might get the ingredients they need."
+    },
+    {
+      "name": "Slytherin's legendary monster",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Slytherin's legendary monster is mentioned as something that Harry would rather face than have Snape catch him robbing his office."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Polyjuice Potion",
+      "relationship_type": "has_plan",
+      "description": "Harry and his friends plan to use the Polyjuice Potion to try to get a confession out of Malfoy."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Bicorn horn",
+      "relationship_type": "needs",
+      "description": "Harry needs the Bicorn horn as an ingredient for the Polyjuice Potion."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Boomslang skin",
+      "relationship_type": "needs",
+      "description": "Harry needs the Boomslang skin as another ingredient for the Polyjuice Potion."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Snape's private stores",
+      "relationship_type": "will_get_from",
+      "description": "Harry and his friends plan to get the ingredients they need from Snape's private stores."
+    },
+    {
+      "entity_1": "Neville",
+      "entity_2": "Squib condition",
+      "relationship_type": "has_condition",
+      "description": "Neville is almost a Squib, which might make him safe from attack."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Snape's office",
+      "relationship_type": "will_face",
+      "description": "Harry would rather face Slytherin's legendary monster than have Snape catch him robbing his office."
+    }
+  ]
+}

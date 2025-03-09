@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is introduced as someone who is not listening and is opening the cabin door."
+    },
+    {
+      "name": "ni ght",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The night is mentioned as where Hagrid is striding off to."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as someone who is following Hagrid."
+    },
+    {
+      "name": "beauxbatons carriage",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The Beauxbatons carriage is mentioned as where Hagrid is leading Harry to."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is introduced as someone who opens the door bearing the crossed golden wands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ni ght",
+      "relationship_type": "is_leading_to",
+      "description": "Hagrid is leading Harry to the night."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "beauxbatons carriage",
+      "relationship_type": "is_being_led_to",
+      "description": "Harry is being led by Hagrid to the Beauxbatons carriage."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "is_knocking_on_door_of",
+      "description": "Hagrid knocks on the door of Madame Maxime."
+    }
+  ]
+}

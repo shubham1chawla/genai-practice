@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "sorting hat",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorting Hat is a magical object that sorts students into houses at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who believes Harry's story about You-Know-Who."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a student who disagrees with Ron and has parents who have a problem with Harry."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is a student whose parents are Muggles."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who is present in the conversation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person about whom Ron believes his story."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is a person whose identity is unknown."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "seamus",
+      "relationship_type": "disagrees_with",
+      "description": "Ron and Seamus have a disagreement about Harry's story."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dean",
+      "relationship_type": "has_same_opinion_as",
+      "description": "Ron and Dean share the same opinion about Harry's story."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "ron",
+      "relationship_type": "disagrees_with",
+      "description": "Seamus disagrees with Ron about Harry's story."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "neville",
+      "relationship_type": "has_same_opinion_as",
+      "description": "Ron and Neville share the same opinion about Harry's story."
+    }
+  ]
+}

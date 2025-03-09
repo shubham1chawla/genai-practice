@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, and it's mentioned that he's thinking about dropping out of Hogwarts."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is a person who has learned about Harry, Ron, and Hermione planning to drop out of Hogwarts."
+    },
+    {
+      "name": "harry ron hermione",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry, Ron, and Hermione are planning to drop out of Hogwarts, as mentioned in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry ron hermione",
+      "relationship_type": "learned_about",
+      "description": "Scrimgeour has learned about Harry, Ron, and Hermione planning to drop out of Hogwarts."
+    }
+  ]
+}

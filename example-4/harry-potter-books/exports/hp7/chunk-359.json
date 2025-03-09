@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione burst inside the room and expressed her concern for Harry's disappearance."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron was annoyed with Harry's disappearance and shouted from several floors below."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry disappeared without telling his friends where he was going."
+    },
+    {
+      "name": "mother",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's mother is mentioned in the letter that Harry found."
+    },
+    {
+      "name": "letter",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The letter from Harry's mother was torn and partially destroyed."
+    },
+    {
+      "name": "photograph",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A photograph of a baby on a toy broomstick was found by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "concern",
+      "description": "Hermione expressed her concern for Harry's disappearance."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "anger",
+      "description": "Ron was annoyed with Harry's disappearance."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "letter",
+      "relationship_type": "read",
+      "description": "Hermione read the letter from Harry's mother."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "photograph",
+      "relationship_type": "found",
+      "description": "Harry found the photograph of a baby on a toy broomstick."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "room",
+      "relationship_type": "searched",
+      "description": "Hermione searched the room for more clues about Harry's disappearance."
+    }
+  ]
+}

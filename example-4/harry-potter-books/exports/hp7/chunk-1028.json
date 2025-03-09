@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "goblin",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The goblins are mentioned as having their own version of history."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and has a conversation with Hermione about giving the sword to the goblin."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is concerned about Harry's plan to give the sword to the goblin."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron has a positive reaction to Harry's plan."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is mentioned as being taken by the goblin and potentially given back to him."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Horcruxes are mentioned as something that Harry wants to use the sword on."
+    },
+    {
+      "name": "nurmengard",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Nurmengard is a location where Harry has been and remembers some words engraved over its gateway."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblin",
+      "relationship_type": "has_plan_to_give_sword",
+      "description": "Harry plans to give the sword to the goblin after they help them get into the vault."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry has a conversation with Hermione about his plan to give the sword to the goblin."
+    }
+  ]
+}

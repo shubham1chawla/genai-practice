@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as leaving Harry and his friends to grope in the darkness without a map or plan. He is described as having left them to wrestle with unknown terrors alone and unaided."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being left by Dumbledore without a sword and his wand, and he has dropped the photograph of the thief which would make it easy for Voldemort to find out who he was."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as looking frightened that Harry might curse her with his wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as having all the information now and being able to find out who Harry was."
+    },
+    {
+      "name": "thief",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The thief is mentioned as someone whose photograph Harry had dropped."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "has_information",
+      "description": "Voldemort has all the information now and can find out who Harry was."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "left_without_plan",
+      "description": "Dumbledore left Harry without a map or plan, making him grope in the darkness."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who is late for Professor Flitwick's class. He is mentioned as saying 'We're due in Charms' and 'Where's Hermione gone?'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is missing from the classroom. She was last seen next to Harry."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Flitwick is the teacher of Charms class. He is mentioned as saying 'You're late, boys!' and explaining the lesson."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is present in the classroom. He is mentioned as opening the classroom door and looking around for Hermione."
+    },
+    {
+      "name": "charms class",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Charms class is where Professor Flitwick teaches his lesson. It is described as having a marble staircase."
+    },
+    {
+      "name": "cheering charms",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Cheering Charms is the subject being taught in this lesson."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "concerned about",
+      "description": "Ron is concerned about Hermione's whereabouts, as he asks 'Where's Hermione gone?'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "looking for",
+      "description": "Harry is looking for Hermione, as he looks around the classroom for her."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "ron and harry",
+      "relationship_type": "teaching",
+      "description": "Professor Flitwick is teaching Ron and Harry in his Charms class."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "together with",
+      "description": "Harry and Ron are together in the classroom, as they open their bags and look around for Hermione."
+    }
+  ]
+}

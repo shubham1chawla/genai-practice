@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being discussed in the newspaper article."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who hands over the newspaper to Harry."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "The author of the article in the Daily Prophet, who writes about Harry's behavior."
+    },
+    {
+      "name": "he-who-must-not-be-named",
+      "entity_type": "voldemort",
+      "singular": true,
+      "description": "The main antagonist of the story, who is mentioned as a reference to Harry's past experience."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "harry",
+      "relationship_type": "writes_about",
+      "description": "Rita Skeeter writes an article about Harry in the Daily Prophet."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "hands_over_newspaper_to",
+      "description": "Ron hands over the newspaper to Harry."
+    }
+  ]
+}

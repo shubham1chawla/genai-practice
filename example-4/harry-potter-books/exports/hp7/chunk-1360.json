@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is the one who says Snape's theory about the full moon is not convincing. She mentions that James Potter saved Snape from something in a tunnel."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one who believes in his theory about the full moon and thinks the people he's talking about are using Dark Magic."
+    },
+    {
+      "name": "james potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James Potter saved Snape from something in a tunnel."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "disagreement",
+      "description": "Snape and Lily disagree about the people he's talking about using Dark Magic."
+    },
+    {
+      "entity_1": "james potter",
+      "entity_2": "snape",
+      "relationship_type": "rescue",
+      "description": "James Potter saved Snape from something in a tunnel."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who is shocked and disapproving. She says 'He shouldn't be doing that!' and expresses her concern about Dumbledore's opinion."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is being persuaded to cheat by Bagman. He responds to Hermione's concerns saying 'Er . . . nearly'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone whose opinion Hermione is concerned about. She says 'I don't think Dumbledore would like it if he knew Bagman was trying to persuade you to cheat!'"
+    },
+    {
+      "name": "bagman",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bagman is mentioned as the one who is trying to persuade Harry to cheat. Hermione expresses her concern about this."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Cedric is mentioned as someone Bagman might be trying to help."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerns_opinion_of",
+      "description": "Hermione expresses her concern about what Dumbledore would think of Bagman's actions."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "harry",
+      "relationship_type": "trying_to_persuade_to_cheat",
+      "description": "Bagman is trying to persuade Harry to cheat, according to Hermione's statement."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "bagman",
+      "relationship_type": "expresses_concern_about",
+      "description": "Hermione expresses her concern about Bagman's actions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "trying_to_help",
+      "description": "Bagman might be trying to help Cedric, according to Hermione's statement."
+    }
+  ]
+}

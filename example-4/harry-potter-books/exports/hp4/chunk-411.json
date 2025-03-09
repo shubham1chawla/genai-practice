@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "imperius curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that gave the Ministry trouble at one time. It is mentioned as 'the Imperius Curse'."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An organization that was given trouble by the Imperius Curse."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who knows about the Imperius Curse and has a jar with spiders in it."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who hates spiders."
+    },
+    {
+      "name": "spider",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal that is used to demonstrate the Imperius Curse."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "imperius curse",
+      "relationship_type": "knows",
+      "description": "Moody knows about the Imperius Curse."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "imperius curse",
+      "relationship_type": "troubled by",
+      "description": "The Ministry was given trouble by the Imperius Curse."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "spider",
+      "relationship_type": "has",
+      "description": "Moody has a jar with spiders in it."
+    }
+  ]
+}

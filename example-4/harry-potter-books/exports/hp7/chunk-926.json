@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is mentioned as the one being spoken to by Lucius Malfoy. He seems scared of looking at Harry Potter."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as the one who sounds avid and excited about handing over Harry Potter to the Dark Lord."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Greyback is mentioned as a menacing character who seems to be involved in the capture of Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one being referred to by Lucius Malfoy and Greyback. He is described as being in a state of distress."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "draco",
+      "relationship_type": "speaks_to",
+      "description": "Lucius Malfoy speaks to Draco, asking him if they are the ones who caught Harry Potter."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry potter",
+      "relationship_type": "involvement_in_capture",
+      "description": "Greyback is involved in the capture of Harry Potter, as mentioned by Lucius Malfoy."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "greyback",
+      "relationship_type": "questions",
+      "description": "Lucius Malfoy asks Greyback about how Harry Potter got into his current state."
+    }
+  ]
+}

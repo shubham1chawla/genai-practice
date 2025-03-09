@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is described as the greatest wizard of all time and the most powerful. He is also mentioned as the killer of Dumbledore and other men."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as one of Lord Voldemort's victims."
+    },
+    {
+      "name": "the boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boy is described as the one who has destroyed one of Lord Voldemort's Horcruxes."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Although not explicitly mentioned by name, it can be inferred that Harry Potter is the 'boy' referred to in the text."
+    },
+    {
+      "name": "goblin's corpse",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The goblin's corpse is mentioned as something Lord Voldemort kicks aside while pacing the room."
+    },
+    {
+      "name": "hagwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as one of the places that Lord Voldemort thinks might be a Horcrux."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "victim_of",
+      "description": "Lord Voldemort killed Dumbledore."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "the boy",
+      "relationship_type": "target_of_attack",
+      "description": "The boy has destroyed one of Lord Voldemort's Horcruxes, which suggests that he is a target of attack for Lord Voldemort."
+    },
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "hagwarts",
+      "relationship_type": "possible_horcrux_location",
+      "description": "Lord Voldemort thinks Hogwarts might be one of his remaining Horcruxes."
+    },
+    {
+      "entity_1": "the boy",
+      "entity_2": "horcrux",
+      "relationship_type": "destroyer_of",
+      "description": "The boy has destroyed one of Lord Voldemort's Horcruxes."
+    }
+  ]
+}

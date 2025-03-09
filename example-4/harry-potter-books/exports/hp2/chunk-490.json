@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as gliding noiselessly behind Tom Riddle."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is being questioned by Dumbledore, described as having auburn hair and beard."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A tall wizard with long, sweeping auburn hair and beard, introduced as the Headmaster."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "tom riddle",
+      "relationship_type": "follows",
+      "description": "Harry is following Tom Riddle through the corridors."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "tom riddle",
+      "relationship_type": "questions",
+      "description": "Dumbledore questions Tom Riddle about his presence in the corridors late at night."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "sees",
+      "description": "Harry sees Dumbledore questioning Tom Riddle."
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "dungeons",
+      "relationship_type": "heads_to",
+      "description": "Tom Riddle heads straight down the stone steps to the dungeons."
+    }
+  ]
+}

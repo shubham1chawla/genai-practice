@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "impervius",
+      "entity_type": "charm",
+      "singular": true,
+      "description": "a charm used to repel water"
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "one of the players in the game, shouted instructions and led the team"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "one of the players in the game, had difficulty seeing the Bludger"
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "a ball used in the Quidditch game"
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "a small golden ball used in the Quidditch game"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "angelina",
+      "entity_2": "harry",
+      "relationship_type": "led",
+      "description": "Angelina led Harry and the team"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bludger",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacted with the Bludger during practice"
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "snitch",
+      "relationship_type": "related_to",
+      "description": "Angelina mentioned the Snitch in her instructions"
+    }
+  ]
+}

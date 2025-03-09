@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is learning spells at school."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student and friend of Harry's, who helps him with his spells."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "The Transfiguration teacher at the school, who gives permission for Harry to use an empty classroom."
+    },
+    {
+      "name": "transfiguration classr oom",
+      "entity_type": "classroom",
+      "singular": false,
+      "description": "An empty classroom where Harry practices his spells."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "permission_from",
+      "description": "Professor McGonagall gave permission for Harry to use the Transfiguration classroom at lunchtimes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "transfiguration classr oom",
+      "relationship_type": "uses",
+      "description": "Harry uses the empty Transfiguration classroom to practice his spells."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Hermione helps Harry with his spells, including looking up a counter-jinx for him."
+    }
+  ]
+}

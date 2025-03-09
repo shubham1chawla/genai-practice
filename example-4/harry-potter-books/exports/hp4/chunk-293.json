@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "jacuzzi",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name mentioned as having his number known by the speaker."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who glanced at the grandfather clock in the corner."
+    },
+    {
+      "name": "grandfather clock",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A grandfather clock mentioned as being in the corner of the room."
+    },
+    {
+      "name": "weasley family",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family whose names are engraved on the golden hands of the grandfather clock."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "jacuzzi",
+      "entity_2": "mrs weasley",
+      "relationship_type": "has_number",
+      "description": "The speaker knows Jacuzzi's number, which is known by Mrs. Weasley as well."
+    },
+    {
+      "entity_1": "grandfather clock",
+      "entity_2": "weasley family",
+      "relationship_type": "belongs_to",
+      "description": "The grandfather clock belongs to the Weasley family."
+    }
+  ]
+}

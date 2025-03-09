@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is a teacher who is present in the scene. She is mentioned as saying 'Oh — right — here you are, then, Potter,' which indicates her interaction with Harry Potter."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is a person who is sitting with Madam Hooch. His name is mentioned as being spoken by Madam Hooch."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is Harry Potter, the main character of the story. He is mentioned in the conversation between Madam Hooch and Weasley."
+    },
+    {
+      "name": "cho chang",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho Chang is a fourth-year student who is playing as Seeker for Ravenclaw. She is mentioned by Wood as having some problems with injuries but has made a full recovery."
+    },
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is the coach of Gryffindor team. He is giving instructions to his team and talking about Cho Chang."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Ravenclaw is a team that is playing against Gryffindor. They are mentioned as having Cho Chang as their Seeker."
+    },
+    {
+      "name": "gryﬀindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is the team that Wood is coaching. They are gathering around him for instructions."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broomstick",
+      "singular": true,
+      "description": "Firebolt is Harry's broomstick. It is mentioned by Wood as being better than Cho Chang's Comet Two Sixty."
+    },
+    {
+      "name": "comet two sixty",
+      "entity_type": "broomstick",
+      "singular": true,
+      "description": "Comet Two Sixty is Cho Chang's broomstick. It is mentioned by Wood as looking like a joke next to the Firebolt."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "gryﬀindor",
+      "relationship_type": "coach_of",
+      "description": "Wood is coaching Gryffindor team. This relationship is mentioned in the text as 'the Gryﬀindor team gathered around Wood for his ﬁnal instructions'."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "cho chang",
+      "relationship_type": "opponent_of",
+      "description": "Wood is talking about Cho Chang, who is playing as Seeker for Ravenclaw. This relationship is mentioned in the text as 'It’s Cho Chang. She’s a fourth year, and she’s pretty good'."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "potter",
+      "relationship_type": "teacher_of",
+      "description": "Madam Hooch is interacting with Potter. This relationship is mentioned in the text as 'Oh — right — here you are, then, Potter'."
+    },
+    {
+      "entity_1": "wood",
+      "entity_2": "firebolt",
+      "relationship_type": "better_than",
+      "description": "Wood is comparing Firebolt to Comet Two Sixty and says that it is better. This relationship is mentioned in the text as 'On the other hand, she rides a Comet Two Sixty, which is going to look like a joke next to the Firebolt'."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "firebolt",
+      "relationship_type": "owner_of",
+      "description": "Potter owns Firebolt. This relationship is mentioned in the text as 'Harry mounted his Firebolt, and kicked oﬀ from the ground'."
+    }
+  ]
+}

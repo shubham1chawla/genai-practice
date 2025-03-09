@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who heard Snape let out a tiny groan. He watched the roll call and saw his father join Lily and Sirius at the Gryffindor table."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a professor who let out a tiny groan. Harry saw a sad little smile on his face when Lily glanced back at him."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is a student who took off the hat and handed it back to Professor McGonagall. She seemed to recognize Sirius from the train and turned her back on him."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who moved up the bench to make room for Lily. He was recognized by Lily from the train."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a professor who received the hat back from Lily."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor is a house at Hogwarts that was cheering for Lily."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who joined Lily and Sirius at the Gryffindor table."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is a person who joined Lily and Sirius at the Gryffindor table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "saw",
+      "description": "Harry saw Snape let out a tiny groan. He also saw a sad little smile on his face when Lily glanced back at him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lily",
+      "relationship_type": "saw",
+      "description": "Harry watched the roll call and saw his father join Lily and Sirius at the Gryffindor table."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "saw",
+      "description": "Harry watched the roll call and saw his father join Lily and Sirius at the Gryffindor table."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "snape",
+      "relationship_type": "glanced_at",
+      "description": "Lily glanced back at Snape, and there was a sad little smile on her face."
+    },
+    {
+      "entity_1": "lily",
+      "entity_2": "sirius",
+      "relationship_type": "recognized",
+      "description": "She seemed to recognize Sirius from the train and turned her back on him."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "lily",
+      "relationship_type": "was_recognized_by",
+      "description": "She seemed to recognize Sirius from the train and turned her back on him."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "received_hat_from",
+      "description": "Lily handed the hat back to Professor McGonagall."
+    }
+  ]
+}

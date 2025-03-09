@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "firebolt",
+      "entity_type": "broomstick_model",
+      "singular": true,
+      "description": "A high-performance broomstick model that is highly sought after. It is mentioned as a Firebolt, on the run, and being looked for by the whole country."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student at Hogwarts who has bought a Firebolt broomstick. He is mentioned as discussing with McGonagall about stripping it down."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who wants to strip the Firebolt broomstick down. She is mentioned as being persuaded by Wood to see reason."
+    },
+    {
+      "name": "wood",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student at Hogwarts who promises to talk to McGonagall and make her see reason about the Firebolt broomstick."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts that is mentioned as wanting to win. McGonagall wants Gryﬀindor to win as much as the other students do."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts who has provided a bonfire with salamanders for the students' enjoyment. He is mentioned as providing dry wood and leaves to keep the fire blazing."
+    },
+    {
+      "name": "salamanders",
+      "entity_type": "lizards",
+      "singular": false,
+      "description": "A type of lizard that loves flames and are being kept in a bonfire by Hagrid. They are mentioned as scampering up and down the logs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "mcgonagall",
+      "relationship_type": "will_talk_to",
+      "description": "Wood promises to talk to McGonagall about the Firebolt broomstick and make her see reason."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "gryffindor",
+      "relationship_type": "wants_to_win_for",
+      "description": "McGonagall wants Gryﬀindor to win as much as the other students do."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "salamanders",
+      "relationship_type": "caring_for",
+      "description": "Hagrid has provided a bonfire with salamanders for the students' enjoyment."
+    }
+  ]
+}

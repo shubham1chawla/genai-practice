@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who has been discovered in a ridiculous position by Tonks."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is looking at Harry and handing him back his Invisibility Cloak."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one responsible for putting the Invisibility Cloak on Harry."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A matron who is skilled in Healing spells and has more confidence than Tonks."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that was put on Harry by Draco Malfoy."
+    },
+    {
+      "name": "episkey",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell used by Tonks to heal Harry's nose."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "tonks",
+      "relationship_type": "looked_at_by",
+      "description": "Tonks was looking at Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wore",
+      "description": "Harry wore the Invisibility Cloak."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "put_on",
+      "description": "Draco Malfoy put the Invisibility Cloak on Harry."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "episkey",
+      "relationship_type": "used",
+      "description": "Tonks used the Episkey spell to heal Harry's nose."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "has_more_confidence_in",
+      "description": "Harry has more confidence in Madam Pomfrey than Tonks."
+    }
+  ]
+}

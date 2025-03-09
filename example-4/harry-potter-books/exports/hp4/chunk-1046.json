@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "winky",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Winky is an elf who still thinks Mr. Crouch is her master."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mr. Crouch is a person who has stopped turning up to judge the Triwizard Tournament."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professor Dumbledore is mentioned as Winky's new master."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is a person who talks to Winky and asks her about Mr. Crouch."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione Granger is a person who quickly corrects Harry's statement that Mr. Crouch is ill."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as reporting that Mr. Crouch is ill."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The Triwizard Tournament is an event where Mr. Crouch was supposed to be a judge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "mr crouch",
+      "relationship_type": "master_of",
+      "description": "Winky still thinks Mr. Crouch is her master."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "winky",
+      "relationship_type": "talks_to",
+      "description": "Harry talks to Winky and asks her about Mr. Crouch."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "mr crouch",
+      "relationship_type": "mentions",
+      "description": "Hermione mentions that they are not sure if Mr. Crouch is ill."
+    },
+    {
+      "entity_1": "daily prophet",
+      "entity_2": "mr crouch",
+      "relationship_type": "reports_on",
+      "description": "The Daily Prophet reports on Mr. Crouch's supposed illness."
+    },
+    {
+      "entity_1": "winky",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "master_of",
+      "description": "Winky is mentioned as Professor Dumbledore's new elf."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "wizarding community",
+      "entity_type": "community",
+      "singular": true,
+      "description": "The group of people with magical abilities."
+    },
+    {
+      "name": "alice longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville's mother, who is highly gifted in magic."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the wizarding community and Alice's son."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Not directly mentioned in this text, but a character from the series."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the original Order of the Phoenix."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "alice longbottom",
+      "entity_2": "neville longbottom",
+      "relationship_type": "parent_child",
+      "description": "Alice is Neville's mother."
+    },
+    {
+      "entity_1": "alice longbottom",
+      "entity_2": "wizarding community",
+      "relationship_type": "member_of",
+      "description": "Alice is a member of the wizarding community."
+    },
+    {
+      "entity_1": "neville longbottom",
+      "entity_2": "alice longbottom",
+      "relationship_type": "child_of",
+      "description": "Neville is Alice's son."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "original order of the phoenix",
+      "relationship_type": "member_of",
+      "description": "Moody was a member of the original Order of the Phoenix."
+    }
+  ]
+}

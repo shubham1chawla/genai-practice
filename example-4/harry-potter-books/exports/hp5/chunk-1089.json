@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "christmas jumper",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Christmas-themed sweater worn by Harry."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is talking to Fred."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is talking to George."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is being comforted by his friends."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who has painted a portrait of Harry."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who is helping to cheer up Harry."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has been insulted by Fred and George."
+    },
+    {
+      "name": "harry's portrait",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A painting of Harry done by Dobby."
+    },
+    {
+      "name": "dobby's painting",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A painting of a gibbon with two black eyes that looks like Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "fred",
+      "relationship_type": "conversation",
+      "description": "George and Fred are talking to each other."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "harry's portrait",
+      "relationship_type": "observation",
+      "description": "Fred is looking at Harry's portrait."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "dobby's painting",
+      "relationship_type": "identification",
+      "description": "George identifies the gibbon in Dobby's painting as Harry."
+    }
+  ]
+}

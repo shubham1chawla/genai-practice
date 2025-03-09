@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "professor binns",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Binns is mentioned as the one who asked for two rolls of parchment."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who will be in London and has a comment about Percy being Head Boy."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who sent the letter to Harry with a present."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as being Head Boy and Ron seems unhappy about it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who received Hermione's letter and present."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts Express is mentioned as a place where Harry will see Ron if he can't come to London."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "London is the destination that Ron will be in during the last week of holidays."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "percy",
+      "relationship_type": "comment_on",
+      "description": "Ron seems unhappy about Percy being Head Boy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "recipient_of_present",
+      "description": "Hermione sent a present to Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "london",
+      "relationship_type": "location_in",
+      "description": "Ron will be in London during the last week of holidays."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts express",
+      "relationship_type": "meeting_place",
+      "description": "Harry will see Ron on the Hogwarts Express if he can't come to London."
+    }
+  ]
+}

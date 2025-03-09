@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being scolded by his aunt."
+    },
+    {
+      "name": "Aunt Petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who is angry with him and receives a letter from an owl."
+    },
+    {
+      "name": "Marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, mentioned as being right about keeping Harry in the orphanage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Aunt Petunia",
+      "entity_2": "Harry",
+      "relationship_type": "anger",
+      "description": "Aunt Petunia is angry with Harry and scolds him."
+    },
+    {
+      "entity_1": "Marge",
+      "entity_2": "Harry",
+      "relationship_type": "rightness",
+      "description": "Marge was right about keeping Harry in the orphanage, according to Aunt Petunia."
+    },
+    {
+      "entity_1": "Aunt Petunia",
+      "entity_2": "letter",
+      "relationship_type": "recipient",
+      "description": "The owl delivers a letter to Aunt Petunia."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "letter",
+      "relationship_type": "attempted_recipient",
+      "description": "Harry attempts to receive the letter, but it is delivered to his aunt first."
+    }
+  ]
+}

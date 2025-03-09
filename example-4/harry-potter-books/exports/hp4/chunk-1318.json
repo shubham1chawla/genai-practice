@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry' by Moody."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is revealed to be guiding Harry through the tasks without arousing suspicion."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, mentioned as being nudged by Moody into showing Harry the dragons."
+    },
+    {
+      "name": "goblet of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical object that is used to select participants for a tournament."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "guided",
+      "description": "Moody is guiding Harry through the tasks without arousing suspicion."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "goblet of fire",
+      "relationship_type": "manipulated",
+      "description": "Moody put Harry's name in the Goblet of Fire under a different school's name."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "hagrid",
+      "relationship_type": "influenced",
+      "description": "Moody nudged Hagrid into showing Harry the dragons."
+    }
+  ]
+}

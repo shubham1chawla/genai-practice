@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is trying to escape from the room. He is described as running and shouting desperately for an exit."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being present in the same room as Harry, giggling feebly when Harry says 'Harry — what — ?'"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being unconscious and present in the same room as Harry and Ron."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is mentioned as disappearing through a door on the other side of the room, leading back to the lifts. She is described as slamming the door behind her and causing the walls to rotate again."
+    },
+    {
+      "name": "the circular black hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The circular black hall is mentioned as a location where Harry finds himself after wrenched open the door. It is described as having a door on the other side of the room, leading back to the lifts."
+    },
+    {
+      "name": "the corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The corridor is mentioned as a location that leads back to the lifts. It is described as being empty and torch-lit."
+    },
+    {
+      "name": "the lifts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The lifts are mentioned as a location that can be accessed through the corridor. They are described as clattering ahead of Harry when he runs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "presence",
+      "description": "Harry and Ron are present in the same room, with Ron giggling feebly when Harry says 'Harry — what — ?'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "presence",
+      "description": "Harry and Hermione are present in the same room, with Hermione being unconscious."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "the corridor",
+      "relationship_type": "exit",
+      "description": "Bellatrix disappears through a door on the other side of the room, leading back to the lifts in the corridor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the circular black hall",
+      "relationship_type": "location",
+      "description": "Harry finds himself in the circular black hall after wrenched open the door."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the corridor",
+      "relationship_type": "exit",
+      "description": "The room seems to have been waiting for Harry to ask, and the door right behind him flies open, revealing the torch-lit and empty corridor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the lifts",
+      "relationship_type": "exit",
+      "description": "Harry runs towards the lifts in the corridor, which are described as clattering ahead of him."
+    }
+  ]
+}

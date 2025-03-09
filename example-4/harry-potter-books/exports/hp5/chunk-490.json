@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "science",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "The subject being discussed by Harry, Ron, and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story. She is described as cleverer than her friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story. He defends himself and his friend Harry against Hermione's criticism."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story. He is defended by Ron against Hermione's criticism."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is likely to set a difficult lesson for Harry, Ron, and Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "criticizes",
+      "description": "Hermione criticizes Ron for not trying to listen to Snape. (\"You don't even try to listen to him, do you?\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "criticizes",
+      "description": "Hermione criticizes Harry for not trying to listen to Snape. (\"You don't even try to listen to him, do you?\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "defends",
+      "description": "Ron defends himself and Harry against Hermione's criticism. (\"We just haven't got your brains or your memory or your concentration — you're just cleverer than we are — is it nice to rub it in?\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "will_be_taught_by",
+      "description": "Harry, Ron, and Hermione discuss what Snape will likely set for them in the first lesson of the year. (\"They had got as far as agreeing that it was likely to be something extremely difficult... when someone walked around the corner toward them.\")"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being led to a place where dragons are kept."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry, who is leading Harry to the tent."
+    },
+    {
+      "name": "mr. bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who will be explaining the procedure to Harry inside the tent."
+    },
+    {
+      "name": "the dragons",
+      "entity_type": "animals",
+      "singular": false,
+      "description": "The creatures that are being kept in an enclosure behind a screen of trees."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "is_being_led_by",
+      "description": "Professor McGonagall is leading Harry to the tent."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. bagman",
+      "relationship_type": "will_be_told_by",
+      "description": "Mr. Bagman will be explaining the procedure to Harry inside the tent."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the dragons",
+      "relationship_type": "is_related_to",
+      "description": "Harry is being led to a place where dragons are kept."
+    }
+  ]
+}

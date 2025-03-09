@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is Ron's brother who has been acting oddly this summer."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts and the owner of the car."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is Ron's brother who has been noticing Percy's odd behavior."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a student at Hogwarts and the driver of the car."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is guessing that Ron's dad works at the Ministry of Magic."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic is where Ron's dad works."
+    },
+    {
+      "name": "misuse of muggle artefacts office",
+      "entity_type": "department",
+      "singular": false,
+      "description": "This is the department where Ron's dad works."
+    },
+    {
+      "name": "car",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The car that Ron and his friends are driving."
+    },
+    {
+      "name": "prefect badge",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A badge that prefects wear."
+    },
+    {
+      "name": "compass",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A compass on the dashboard of the car."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "percy",
+      "relationship_type": "brother_of",
+      "description": "Percy is Ron's brother."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "percy",
+      "relationship_type": "brother_of",
+      "description": "George is Percy's brother."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "ministry of magic",
+      "relationship_type": "works_at",
+      "description": "Ron's dad works at the Ministry of Magic."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "misuse of muggle artefacts office",
+      "relationship_type": "department_of",
+      "description": "Ron's dad works in the Misuse of Muggle Artefacts Office."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "car",
+      "relationship_type": "drives",
+      "description": "Fred is driving the car."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "car",
+      "relationship_type": "owns",
+      "description": "Ron owns the car."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "guesses_works_at",
+      "description": "Harry guesses that Ron's dad works at the Ministry of Magic."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as being back, implying that he has returned."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as saying something about forgiveness and giving private lessons to Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as quoting Dumbledore and reacting to the news of Harry's private lessons with Dumbledore."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as being surprised by the news of Harry's private lessons with Dumbledore and reacting to it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having private lessons with Dumbledore and keeping it a secret from Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "gives_private_lessons",
+      "description": "Dumbledore will be giving Harry private lessons this year."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "quotes",
+      "description": "Hermione is quoting Dumbledore's words about forgiveness."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "is_surprised_by",
+      "description": "Ron is surprised by the news of Harry's private lessons with Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hermione",
+      "relationship_type": "speaks_to",
+      "description": "Dumbledore told Hermione about his conversation with Harry."
+    }
+  ]
+}

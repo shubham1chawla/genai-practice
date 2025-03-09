@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, described as walking up the stone steps and staring at the newly materialized door."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who pulls out his wand and taps the door to open it."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person carrying Harry's trunk."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, described as having a cage."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person standing on the top step and releasing balls of light."
+    },
+    {
+      "name": "the put-out-er",
+      "entity_type": "object",
+      "singular": false,
+      "description": "An object that stole balls of light from street-lamps."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "accompanies",
+      "description": "Harry is accompanied by Lupin as they enter the hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tonks",
+      "relationship_type": "accompanies",
+      "description": "Harry is also accompanied by Tonks as they enter the hall."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry",
+      "relationship_type": "opens_door_for",
+      "description": "Lupin opens the door for Harry to enter the hall."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "the put-out-er",
+      "relationship_type": "releases_light_from",
+      "description": "Moody releases light from The Put-Out-Er."
+    }
+  ]
+}

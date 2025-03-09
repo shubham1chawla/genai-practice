@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the boy in the photograph with Scabbers on his shoulder. He is also referred to by name when Lupin asks Black how he got the photograph."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "pet",
+      "singular": true,
+      "description": "Scabbers is Ron's pet rat and is mentioned as being on Ron's shoulder in the photograph."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a wizard who has been imprisoned in Azkaban and is referred to by name when Lupin asks him how he got the photograph."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a wizard who is present with Black and Ron and is referred to by name when he asks Black how he got the photograph."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is mentioned as the person who gave Black the paper with the photograph on it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "black",
+      "entity_2": "ron",
+      "relationship_type": "has_photo",
+      "description": "Black has a photo of Ron and his family, which he obtained from Fudge."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "scabbers",
+      "relationship_type": "is_transformed_from",
+      "description": "Lupin recognizes Scabbers as Peter Pettigrew in his transformed state."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "fudge",
+      "relationship_type": "received_photo_from",
+      "description": "Black received the photo from Fudge when he came to inspect Azkaban."
+    }
+  ]
+}

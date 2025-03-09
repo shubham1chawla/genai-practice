@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "auntie muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Auntie Muriel is a person who is described as having surprising strength and being able to swing around a chair with ease. She is also mentioned as being interested in reading Rita Skeeter's biography of Dumbledore."
+    },
+    {
+      "name": "doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Doge is a person who is described as looking stiff and solemn when Auntie Muriel mentions rumors about Albus Dumbledore. He also turns radish-colored again after speaking up."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rita Skeeter is a person who has written a biography of Dumbledore, which Auntie Muriel is interested in reading."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is a person about whom there were some funny rumors before he became respected and respectable. He is also the subject of Rita Skeeter's biography."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is addressed by Auntie Muriel as 'Barry' or whatever his name is."
+    },
+    {
+      "name": "barry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Barry is a person whose name is used by Auntie Muriel to address Harry."
+    },
+    {
+      "name": "flourish and blotts",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Flourish and Blotts is a store where Auntie Muriel plans to place an order for Rita Skeeter's biography of Dumbledore."
+    },
+    {
+      "name": "goblet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A goblet is an object that Auntie Muriel drains and then clicks her bony fingers at a passing waiter to replace."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "auntie muriel",
+      "entity_2": "rita skeeter",
+      "relationship_type": "interested_in_reading",
+      "description": "Auntie Muriel is interested in reading Rita Skeeter's biography of Dumbledore, as mentioned by her saying 'I must remember to place an order at Flourish and Blotts!'"
+    },
+    {
+      "entity_1": "auntie muriel",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "subject_of_biography",
+      "description": "Albus Dumbledore is the subject of Rita Skeeter's biography, which Auntie Muriel is interested in reading."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "biographer",
+      "description": "Rita Skeeter has written a biography of Albus Dumbledore."
+    }
+  ]
+}

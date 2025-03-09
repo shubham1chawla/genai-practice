@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, introduced as a boy who is about to start at Hogwarts. He is described as being quiet and having a conversation with Madam Malkin."
+    },
+    {
+      "name": "madam malkin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Malkin is an old woman who runs a shop selling robes for wizards and witches. She is mentioned as saying 'That's you done, my dear' to Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and a friend of Harry's. He buys ice-cream for Harry and asks him what's wrong when he seems quiet."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a school for wizards and witches where Harry will be starting soon. It is mentioned as being an exclusive place that only accepts certain families."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Diagon Alley is a street in London where wizards and witches shop for supplies. It is mentioned as the location of Madam Malkin's shop."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "will_attend",
+      "description": "Harry will be attending Hogwarts, a school for wizards and witches. This is mentioned as he is about to start at the school."
+    },
+    {
+      "entity_1": "madam malkin",
+      "entity_2": "harry",
+      "relationship_type": "serves",
+      "description": "Madam Malkin serves Harry by helping him with his robes, saying 'That's you done, my dear' to him."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "friend",
+      "description": "Hagrid is a friend of Harry's and buys ice-cream for him. He also asks Harry what's wrong when he seems quiet."
+    }
+  ]
+}

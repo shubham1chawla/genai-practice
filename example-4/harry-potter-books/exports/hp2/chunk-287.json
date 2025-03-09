@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "squibs",
+      "entity_type": "people_group",
+      "singular": false,
+      "description": "A group of people who are born without magical powers. Mentioned as a possible explanation for Filch's behavior."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker of Hogwarts School of Witchcraft and Wizardry. Described as trying to learn magic from a Kwikspell course and being bitter."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends. Described as giving a satisfied smile."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry. Mentioned as someone who might try to frame Harry and Ron for something else."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The cat of Filch. Attacked by someone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story. Described as seeing Filch scrubbing the message on the wall."
+    },
+    {
+      "name": "mrs skower",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The creator of a magical cleaning product. Mentioned as having an all-purpose mess remover."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "squibs",
+      "relationship_type": "is_a_member_of",
+      "description": "Filch is a Squib, which explains his behavior."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "mrs norris",
+      "relationship_type": "is_protected_by",
+      "description": "Filch is protecting Mrs Norris after she was attacked."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "snape",
+      "relationship_type": "is_in_conflict_with",
+      "description": "Filch and Snape have a conflict."
+    }
+  ]
+}

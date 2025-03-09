@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "peruvian instant darkness powder",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A product that causes instant darkness, mentioned as a problem by Ron."
+    },
+    {
+      "name": "fred and george's products",
+      "entity_type": "product_line",
+      "singular": false,
+      "description": "The product line of Fred and George Weasley, mentioned as being sold without proper regulation."
+    },
+    {
+      "name": "lumos",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that produces light, tried by Ginny but ineffective in this case."
+    },
+    {
+      "name": "incendio",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that produces fire, also tried by Ginny but ineffective in this case."
+    },
+    {
+      "name": "hand thing",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Malfoy to see in the darkness."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and a student at Hogwarts, mentioned as guiding others through the dark corridor."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of followers of Voldemort, mentioned as being led by Malfoy."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters and a student at Hogwarts, mentioned as having a problem with the darkness powder."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters and a student at Hogwarts, mentioned as trying to use spells to light up the corridor."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters and a student at Hogwarts, mentioned as running into Lupin and others."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, mentioned as being informed by Ron, Ginny, and Neville about the problem with the darkness powder."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred and george's products",
+      "entity_2": "peruvian instant darkness powder",
+      "relationship_type": "sold_by",
+      "description": "Fred and George Weasley sold the Peruvian Instant Darkness Powder without proper regulation."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hand thing",
+      "relationship_type": "used_with",
+      "description": "Malfoy used the Hand Thing to see in the darkness."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "peruvian instant darkness powder",
+      "relationship_type": "affected_by",
+      "description": "Ron was affected by the Peruvian Instant Darkness Powder."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "lumos",
+      "relationship_type": "tried_to_use",
+      "description": "Ginny tried to use the Lumos spell to light up the corridor."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "lupin",
+      "relationship_type": "told",
+      "description": "Neville told Lupin about the problem with the darkness powder."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "ginny",
+      "relationship_type": "worked_with",
+      "description": "Ron and Ginny worked together to try and light up the corridor."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "death eaters",
+      "relationship_type": "led",
+      "description": "Malfoy led the Death Eaters through the dark corridor."
+    }
+  ]
+}

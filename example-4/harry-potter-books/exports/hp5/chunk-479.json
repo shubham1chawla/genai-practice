@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Gryffindor is mentioned as the team that Harry has been made captain of. It is described as a team in the context of Quidditch."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person who has been made Gryffindor Quidditch Captain. He is described as grinning at Angelina and having a conversation with her."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is mentioned as the new Quidditch Captain of Gryffindor. She is described as giving pep talks to the team and having a conversation with Harry."
+    },
+    {
+      "name": "oliver wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Oliver Wood is mentioned as the previous Keeper of Gryffindor Quidditch team. He is described as leaving the team and having long pep talks."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who has forgotten that Oliver Wood had left the team. She is described as sitting down beside Ron and having a conversation with him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who is sitting down beside Hermione and having a conversation with her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "captain_of",
+      "description": "Harry has been made the captain of Gryffindor Quidditch team. This is mentioned in the context of Angelina's pep talks and Oliver Wood's departure."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "gryffindor",
+      "relationship_type": "captain_of",
+      "description": "Angelina is the new captain of Gryffindor Quidditch team. This is mentioned in the context of her pep talks and Harry's conversation with her."
+    },
+    {
+      "entity_1": "oliver wood",
+      "entity_2": "gryffindor",
+      "relationship_type": "keeper_of",
+      "description": "Oliver Wood was the previous Keeper of Gryffindor Quidditch team. This is mentioned in the context of his departure and Angelina's pep talks."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "angelina",
+      "relationship_type": "has_conversation_with",
+      "description": "Harry has a conversation with Angelina about her pep talks and Oliver Wood's departure. This is mentioned in the context of their interaction."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "sits_with",
+      "description": "Hermione sits down beside Ron and has a conversation with him about Oliver Wood's departure. This is mentioned in the context of their interaction."
+    }
+  ]
+}

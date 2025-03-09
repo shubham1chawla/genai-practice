@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a Squib, as revealed by Harry Potter. He is uncomfortable about being known as a Squib."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who saw Filch's Kwikspell letter and is accused of being in the wrong place at the wrong time."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher who doubts Harry's innocence and suggests that there are suspicious circumstances surrounding his presence in the upstairs corridor."
+    },
+    {
+      "name": "hallowe'en feast",
+      "entity_type": "event",
+      "singular": false,
+      "description": "The Hallowe'en feast is an event where students gather to celebrate. Harry Potter and his friends were expected to attend but were instead found in the upstairs corridor."
+    },
+    {
+      "name": "kwikspell letter",
+      "entity_type": "document",
+      "singular": true,
+      "description": "Filch's Kwikspell letter is a document that reveals his identity as a Squib. Harry Potter saw this letter on the wall."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Norris is someone who Filch is defending himself against accusations of touching her."
+    },
+    {
+      "name": "lockharts",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Lockharts are a family whose portraits are on the walls. Harry Potter feels uncomfortable about being looked at by them."
+    },
+    {
+      "name": "ron and hermione",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Ron and Hermione are friends of Harry Potter who launch into an explanation with him to defend themselves against Snape's accusations."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "filch",
+      "relationship_type": "accused_by",
+      "description": "Harry Potter is accused by Filch of being a Squib and seeing his Kwikspell letter."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry potter",
+      "relationship_type": "doubts_innocence_of",
+      "description": "Snape doubts Harry's innocence in the suspicious circumstances surrounding his presence in the upstairs corridor."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "kwikspell letter",
+      "relationship_type": "owns",
+      "description": "Filch owns the Kwikspell letter that was seen by Harry Potter on the wall."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as someone who is coming with a dragon."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who tells lies and gets detention."
+    },
+    {
+      "name": "norbert",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "A dragon that Harry has, mentioned as being thrashed about in a crate."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who is happy to see Malfoy get detention."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher mentioned as someone that Malfoy will be taken to see."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who has brought broomsticks and a harness for Norbert."
+    },
+    {
+      "name": "professor",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title given to Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "norbert",
+      "relationship_type": "has",
+      "description": "Harry has a dragon named Norbert."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "professor snape",
+      "relationship_type": "will_see",
+      "description": "Malfoy will be taken to see Professor Snape."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Harry and Hermione are together, waiting for Charlie's friends."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Charlie is a friend of Harry's."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "malfoy",
+      "relationship_type": "happy_about",
+      "description": "Hermione is happy to see Malfoy get detention."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "norbert",
+      "relationship_type": "helped_with",
+      "description": "Charlie and his friends helped Harry and Hermione with Norbert."
+    }
+  ]
+}

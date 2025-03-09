@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is talking to Harry. He mentions that Riddle was able to talk to snakes and that he was impressed by Riddle's talent and good looks."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who was known as Tom Marvolo Riddle. He was able to talk to snakes and was very talented and good-looking."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is talking to Dumbledore. He asks Dumbledore if he told the staff about Riddle's behavior at the orphanage."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students at Hogwarts that Riddle was a part of. They were impressed by his displays of Parseltongue."
+    },
+    {
+      "name": "parseltongue",
+      "entity_type": "language",
+      "singular": true,
+      "description": "A language that allows the speaker to talk to snakes. Riddle was able to speak this language and used it to impress his fellow Slytherins."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "knew",
+      "description": "Dumbledore knew that Riddle was able to talk to snakes. This is mentioned in the text as 'How soon Riddle learned that the famous founder of the house could talk to snakes, I do not know...'."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "impressed_by",
+      "description": "Dumbledore was impressed by Riddle's talent and good looks. This is mentioned in the text as 'Nearly all were most favourably impressed by him.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Dumbledore a question about Riddle's behavior at the orphanage. This is mentioned in the text as 'Didn’t you tell them, sir, what he’d been like when you met him at the orphanage?’."
+    }
+  ]
+}

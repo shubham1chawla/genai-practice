@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as looking under the sink and picking up a book. He is also described as laughing at Ron's concerns about the book being dangerous."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as holding Harry back from picking up the book and expressing concern that it could be dangerous."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Myrtle is mentioned as pointing under the sink where the small, thin book was found."
+    },
+    {
+      "name": "the ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as having confiscated some books that were considered dangerous."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "held_back",
+      "description": "Ron held Harry back from picking up the book."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the ministry",
+      "relationship_type": "related_to",
+      "description": "Harry is related to The Ministry through Ron's mention of a book that was confiscated by The Ministry."
+    }
+  ]
+}

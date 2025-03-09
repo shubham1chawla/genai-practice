@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is the nurse who lets Harry, Ron, and Hermione visit Hermione in the hospital wing. She says there's no point talking to a Petrified person."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall has given permission for Harry, Ron, and Hermione to visit Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the person who is petrified and lying in bed. She doesn't seem to know that she has visitors."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has_permission",
+      "description": "Madam Pomfrey lets Harry, Ron, and Hermione visit Hermione because Professor McGonagall has given permission."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "hermione",
+      "relationship_type": "is_caring_for",
+      "description": "Madam Pomfrey is caring for Hermione in the hospital wing."
+    }
+  ]
+}

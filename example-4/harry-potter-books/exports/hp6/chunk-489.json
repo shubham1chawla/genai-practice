@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is the main character in the story who is being offered a place at Hogwarts by Professor Dumbledore. He is described as glaring and warier still when first introduced (\"After a few seconds Riddle stopped glaring, though he looked, if anything, warier still.\")."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the one who offers Riddle a place at Hogwarts. He is described as patient and calm (\"I am not from the asylum,\" said Dumbledore patiently)."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is a school that Professor Dumbledore works at and offers Riddle a place at. It is mentioned as \"my school\" by Dumbledore (\"I have come to offer you a place at my school – your new school, if you would like to come.\")."
+    },
+    {
+      "name": "amy benson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Amy Benson is someone that Riddle claims he did not harm. She is mentioned as an example of people who can vouch for Riddle's innocence (\"I never did anything to little Amy Benson or Dennis Bishop, and you can ask them, they’ll tell you!\")."
+    },
+    {
+      "name": "dennis bishop",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dennis Bishop is someone that Riddle claims he did not harm. He is mentioned as an example of people who can vouch for Riddle's innocence (\"I never did anything to little Amy Benson or Dennis Bishop, and you can ask them, they’ll tell you!\")."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "hagwarts",
+      "relationship_type": "offer",
+      "description": "Professor Dumbledore offers Riddle a place at Hogwarts (\"I have come to offer you a place at my school – your new school, if you would like to come.\")."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "refusal",
+      "description": "Riddle refuses the offer from Professor Dumbledore (\"You can’t kid me! The asylum, that’s where you’re from, isn’t it? “Professor”, yes, of course – well, I’m not going, see?\")."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "offer",
+      "description": "The relationship is bidirectional. Professor Dumbledore offers Riddle a place at Hogwarts."
+    },
+    {
+      "entity_1": "amy benson",
+      "entity_2": "riddle",
+      "relationship_type": "vouching",
+      "description": "Riddle claims that Amy Benson can vouch for his innocence (\"I never did anything to little Amy Benson or Dennis Bishop, and you can ask them, they’ll tell you!\")."
+    },
+    {
+      "entity_1": "dennis bishop",
+      "entity_2": "riddle",
+      "relationship_type": "vouching",
+      "description": "Riddle claims that Dennis Bishop can vouch for his innocence (\"I never did anything to little Amy Benson or Dennis Bishop, and you can ask them, they’ll tell you!\")."
+    }
+  ]
+}

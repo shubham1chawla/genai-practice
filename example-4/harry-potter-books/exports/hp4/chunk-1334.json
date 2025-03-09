@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who asks Crouch to explain how he escaped from Azkaban."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A wizard who is being questioned by Dumbledore about his escape from Azkaban."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A maximum-security prison for wizards and witches."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical potion that allows the drinker to take on the appearance of another person."
+    },
+    {
+      "name": "winky",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A house-elf who is present during Crouch's explanation and tries to stop him from saying more."
+    },
+    {
+      "name": "barty crouch sr",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Crouch's father, who helped him escape from Azkaban by disguising him as himself."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Foul creatures that guard Azkaban and can sense the emotions of those around them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crouch",
+      "entity_2": "azkaban",
+      "relationship_type": "escaped_from",
+      "description": "Crouch escaped from Azkaban with the help of his father."
+    },
+    {
+      "entity_1": "barty crouch sr",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "used",
+      "description": "Barty Crouch Sr used Polyjuice Potion to disguise himself and his son."
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "took",
+      "description": "Crouch took a draft of Polyjuice Potion containing one of his mother's hairs."
+    }
+  ]
+}

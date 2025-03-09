@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "father",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The narrator's father is mentioned as the previous owner of something, but the exact object is not specified. The text states 'this had been his father's' which implies that the father owned it before."
+    },
+    {
+      "name": "note",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A note is mentioned in the text, which contains the instruction to 'Use it well'. The note is not specified further, but its content is relevant to the story."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "article_of_clothing",
+      "singular": true,
+      "description": "The cloak is mentioned as something that the narrator wraps around himself. It is described as 'smoother than silk, light as air'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "father",
+      "entity_2": "note",
+      "relationship_type": "owned_by",
+      "description": "The father owned the note before it was passed on to the narrator. The text states 'this had been his father's' which implies that the father owned it before."
+    },
+    {
+      "entity_1": "father",
+      "entity_2": "cloak",
+      "relationship_type": "owned_by",
+      "description": "The father owned the cloak before it was passed on to the narrator. The text states 'this had been his father's' which implies that the father owned it before."
+    },
+    {
+      "entity_1": "note",
+      "entity_2": "cloak",
+      "relationship_type": "related_to",
+      "description": "The note contains instructions related to the cloak. The text states 'Use it well,  the note had said' which implies that the note is connected to the cloak."
+    }
+  ]
+}

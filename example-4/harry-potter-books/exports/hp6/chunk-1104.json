@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one who is torturing Harry. He is shouting orders to his Death Eaters and has a sneering face."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being tortured by Snape. He is trying to defend himself with his wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone Harry hates as much as he hates Snape."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who obey Snape's orders and run towards the gates."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "tortures",
+      "description": "Snape is torturing Harry with his wand."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "death eater",
+      "relationship_type": "orders",
+      "description": "Snape gives orders to the Death Eaters to leave Harry and run towards the gates."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "hates",
+      "description": "Harry hates Voldemort as much as he hates Snape."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher who has been assigned to Harry with a task. He is described as cold and quiet throughout the passage."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has been given a task by Snape. He is described as having a rumbling stomach and hurrying out of the door."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry. It is mentioned as possibly having won or lost a game."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "assigned_task",
+      "description": "Snape has assigned Harry with a task, which he needs to complete by next Saturday."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "house_member",
+      "description": "Harry is a member of Gryffindor house."
+    }
+  ]
+}

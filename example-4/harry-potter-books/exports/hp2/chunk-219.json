@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story"
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco's father and a Slytherin supporter"
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius' son and a Slytherin student"
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor student and one of Harry's friends"
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Gryffindor student and Fred's twin brother"
+    },
+    {
+      "name": "flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Slytherin team captain"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "draco malfoy",
+      "relationship_type": "parent_of",
+      "description": "Lucius is Draco's father"
+    },
+    {
+      "entity_1": "flint",
+      "entity_2": "slytherin team",
+      "relationship_type": "leader_of",
+      "description": "Flint is the leader of the Slytherin team"
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "slytherin team",
+      "relationship_type": "supporter_of",
+      "description": "Lucius supports the Slytherin team"
+    }
+  ]
+}

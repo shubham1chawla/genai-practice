@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius Black is mentioned as a person who wants Harry to be in danger. He is described as someone that Harry's parents would not want him to go looking for."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being warned by Ron and Hermione about going after Sirius Black."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron suggests visiting Hagrid during the holidays to change the subject from Sirius Black."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione quickly intervenes to remind Harry that he is not supposed to leave the castle."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is someone that Ron suggests visiting during the holidays."
+    },
+    {
+      "name": "crookshanks",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Crookshanks is a cat who stretches luxuriously in the silence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "target_of_warning",
+      "description": "Harry is being warned by Ron and Hermione about going after Sirius Black."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "plan_to_visit",
+      "description": "Ron suggests visiting Hagrid during the holidays."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "reminder",
+      "description": "Hermione quickly intervenes to remind Harry that he is not supposed to leave the castle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black",
+      "relationship_type": "inquiry",
+      "description": "Harry wants to ask Hagrid why he never mentioned Sirius Black when telling him about his parents."
+    }
+  ]
+}

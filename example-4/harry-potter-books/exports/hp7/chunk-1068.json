@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts is described as a place where it stands towering over other little shops. It is also mentioned that the liveried goblins who usually flank Gringotts are not present."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as someone who is walking alongside Harry and Griphook. He is also mentioned as someone that Harry cannot communicate with due to Travers matching at Bellatrix's side."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Griphook is described as a goblin who has already warned them about the liveried goblins not being present. He is also mentioned as someone walking alongside Harry and Ron."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as someone who cannot communicate with Hermione or Ron due to Travers matching at Bellatrix's side. He is also mentioned as walking alongside Griphook and Ron."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as someone that Harry cannot communicate with due to Travers matching at Bellatrix's side."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is mentioned as the person that Travers believes he is matching at. She is also mentioned in relation to Hermione and Ron, implying she may be a threat."
+    },
+    {
+      "name": "travers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Travers is described as someone who believes he is matching at Bellatrix's side. He is also mentioned as the reason why Harry cannot communicate with Hermione or Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "cannot_communicate_with",
+      "description": "Harry and Hermione are unable to communicate with each other due to Travers matching at Bellatrix's side."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron weasley",
+      "relationship_type": "cannot_communicate_with",
+      "description": "Harry and Ron are unable to communicate with each other due to Travers matching at Bellatrix's side."
+    },
+    {
+      "entity_1": "travers",
+      "entity_2": "bellatrix",
+      "relationship_type": "matching_at",
+      "description": "Travers believes he is matching at Bellatrix's side, which prevents Harry from communicating with Hermione or Ron."
+    }
+  ]
+}

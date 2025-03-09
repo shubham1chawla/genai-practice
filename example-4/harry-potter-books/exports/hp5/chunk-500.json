@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student who is being taught by Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A professor at Hogwarts School of Witchcraft and Wizardry, teaching Potions class."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Harry, used by Professor Snape to address him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "teaches",
+      "description": "Professor Snape is teaching a class of students, including Harry, how to make potions."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "harry",
+      "relationship_type": "alias",
+      "description": "Harry is also referred to as 'Potter' by Professor Snape."
+    }
+  ]
+}

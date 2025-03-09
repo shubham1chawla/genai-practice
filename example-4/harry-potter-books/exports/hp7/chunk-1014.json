@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "he",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, referred to as 'he' throughout the passage."
+    },
+    {
+      "name": "Disillusionment Charm",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A magical charm that hides the user from their own eyes, mentioned in the first paragraph."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The beloved castle of the protagonist, his 'first kingdom' and 'birthright', described as being beside the lake."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A body of water where the castle is located, mentioned in the second paragraph."
+    },
+    {
+      "name": "tomb",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "A white marble tomb that is an 'unnecessary blot' on the familiar landscape, described as being beside the lake."
+    },
+    {
+      "name": "yew wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An old yew wand used by the protagonist to cast spells, mentioned in the third paragraph."
+    },
+    {
+      "name": "Wandmaker",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The creator of the yew wand, mentioned as 'The Wandmaker' in the fourth paragraph."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "he",
+      "entity_2": "Disillusionment Charm",
+      "relationship_type": "uses",
+      "description": "The protagonist uses the Disillusionment Charm to hide himself from his own eyes."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "castle",
+      "relationship_type": "owns",
+      "description": "The protagonist owns or has a connection to the castle, which is described as his 'first kingdom' and 'birthright'."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "lake",
+      "relationship_type": "adjacent_to",
+      "description": "The lake is located beside the castle, where the protagonist walks."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "tomb",
+      "relationship_type": "opposes",
+      "description": "The protagonist feels a sense of purpose in destroying the tomb, which he sees as an 'unnecessary blot' on the landscape."
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "yew wand",
+      "relationship_type": "uses",
+      "description": "The protagonist uses the yew wand to cast spells, including the one that destroys the tomb."
+    },
+    {
+      "entity_1": "Wandmaker",
+      "entity_2": "yew wand",
+      "relationship_type": "created",
+      "description": "The Wandmaker created the yew wand, which is used by the protagonist."
+    }
+  ]
+}

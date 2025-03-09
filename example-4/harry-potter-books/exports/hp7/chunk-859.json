@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as the subject of a conversation about her being alive or dead. She is described as 'tough' and capable of teaching others about Wrackspurts and Nargles."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is part of the conversation about Luna's fate and mentions that she would likely be in Azkaban if she were alive."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is also part of the conversation, expressing her hope for Luna's safety and mentioning her sympathy for Xenophilius."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as having a positive opinion about Luna's chances of survival in Azkaban."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is mentioned as someone Hermione would feel sorry for if something bad happened to him."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Azkaban is mentioned as a place where Luna would likely be if she were alive."
+    },
+    {
+      "name": "wrackspurts",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Wrackspurts are mentioned as something Luna might teach others about in Azkaban."
+    },
+    {
+      "name": "nargles",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Nargles are also mentioned as something Luna might teach others about in Azkaban."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are mentioned as a group that Xenophilius tried to sell the trio to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "hope_for_survival",
+      "description": "Harry hopes for Luna's survival in Azkaban."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "azkaban",
+      "relationship_type": "location_of_luna",
+      "description": "Ron mentions that if Luna were alive, she would likely be in Azkaban."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "xenophilius",
+      "relationship_type": "sympathy_for_xenophilius",
+      "description": "Hermione expresses her sympathy for Xenophilius."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "wrackspurts_nargles",
+      "relationship_type": "teaches_about",
+      "description": "Luna is described as teaching others about Wrackspurts and Nargles."
+    },
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "death eaters",
+      "relationship_type": "tried_to_sell_to",
+      "description": "Xenophilius tried to sell the trio to the Death Eaters."
+    }
+  ]
+}

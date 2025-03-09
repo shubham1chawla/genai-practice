@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being addressed by Moody."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A famous Auror and Death Eater, who has a magical eye and is speaking to Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's friend, mentioned as the famous Auror who caught many Death Eaters."
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The leader of the Death Eaters, who is referred to by Moody in his speech."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "addressed_by",
+      "description": "Moody is speaking directly to Harry, as indicated by the use of 'you' in his speech."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "the dark lord",
+      "relationship_type": "loyal_to",
+      "description": "Moody claims that he has done a favor for the Dark Lord, and will be rewarded by him."
+    }
+  ]
+}

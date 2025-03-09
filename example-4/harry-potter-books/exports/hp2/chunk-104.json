@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "borgin and burkes",
+      "entity_type": "store",
+      "singular": true,
+      "description": "Borgin and Burkes is a shop devoted to the Dark Arts, located in Kn ockturn Alley."
+    },
+    {
+      "name": "knockturn alley",
+      "entity_type": "street",
+      "singular": true,
+      "description": "Kn ockturn Alley is a street filled with shops devoted to the Dark Arts, where Harry finds himself after emerging from Borgin and Burkes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist of the story, who has emerged into Kn ockturn Alley and is trying to find a way out."
+    },
+    {
+      "name": "weasleys' fire",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Weasleys' fire is where Harry was before he ended up in Kn ockturn Alley, where he had spoken through his mouthful of ashes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "borgin and burkes",
+      "relationship_type": "emerged_from",
+      "description": "Harry emerged into Borgin and Burkes after speaking through his mouthful of ashes in the Weasleys' fire."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "knockturn alley",
+      "relationship_type": "located_in",
+      "description": "Harry finds himself in Kn ockturn Alley, a street filled with shops devoted to the Dark Arts."
+    },
+    {
+      "entity_1": "borgin and burkes",
+      "entity_2": "knockturn alley",
+      "relationship_type": "located_in",
+      "description": "Borgin and Burkes is located in Kn ockturn Alley."
+    }
+  ]
+}

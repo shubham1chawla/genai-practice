@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is driving a car."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, which is shrieking in terror."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is sitting next to him in the car."
+    },
+    {
+      "name": "the tree",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A large tree that has been hit by the car and is now attacking them."
+    },
+    {
+      "name": "the windscreen",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The front window of the car."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "is associated with",
+      "description": "Harry's owl is shrieking in terror."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the windscreen",
+      "relationship_type": "is looking at",
+      "description": "Ron is staring through the windscreen."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the tree",
+      "relationship_type": "has collided with",
+      "description": "The car has hit the tree, which is now attacking them."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "his wand",
+      "relationship_type": "owns",
+      "description": "Ron's wand has snapped."
+    }
+  ]
+}

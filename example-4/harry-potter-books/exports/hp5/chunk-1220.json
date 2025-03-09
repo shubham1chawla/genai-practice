@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a person who is speaking and asking Harry about Cedric."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is a person who died and was mentioned by Cho."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is speaking with Cho and trying to avoid talking about Cedric."
+    },
+    {
+      "name": "tornados",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Tornados are a Quidditch team that Cho supports."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cho",
+      "entity_2": "cedric",
+      "relationship_type": "mentioned_by",
+      "description": "Cho asks Harry if Cedric mentioned her before he died."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "speaking_with",
+      "description": "Harry is speaking with Cho about Cedric."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "tornados",
+      "relationship_type": "supports",
+      "description": "Cho supports the Tornados Quidditch team."
+    }
+  ]
+}

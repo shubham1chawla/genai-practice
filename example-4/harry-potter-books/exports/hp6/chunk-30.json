@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The subject of the conversation between Scrimgeour and the Prime Minister."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The new leader of the wizarding community, preferred over Fudge by the Prime Minister."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The previous leader of the wizarding community, not preferred by the Prime Minister."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry potter",
+      "relationship_type": "leader_of",
+      "description": "Scrimgeour is the new leader of the wizarding community, which Harry Potter is a part of."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "scrimgeour",
+      "relationship_type": "predecessor_of",
+      "description": "Fudge was the previous leader of the wizarding community, replaced by Scrimgeour."
+    }
+  ]
+}

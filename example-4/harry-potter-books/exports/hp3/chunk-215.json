@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who is carrying books to class. She mentions that she has many subjects and asks Ron if he can hold some of the books for her."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Hermione's friend who is asked by Hermione to hold some of her books. He looks at the covers of the books and notices that they are not subjects she has today."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is a location where students go for lunch. Hermione mentions that she hopes there's something good for lunch and marches off towards it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "asked_for_help",
+      "description": "Hermione asks Ron to hold some of her books."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "helped",
+      "description": "Ron agrees to help Hermione by holding some of her books."
+    }
+  ]
+}

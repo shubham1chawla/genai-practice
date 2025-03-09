@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is hiding from Filch."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at the school who is chasing Harry."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "poltergeist",
+      "singular": true,
+      "description": "A mischievous poltergeist who has stolen a Triwizard clue."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of the school who will punish Peeves for stealing."
+    },
+    {
+      "name": "mrs. norris",
+      "entity_type": "cat",
+      "singular": true,
+      "description": "Filch's cat with lamp-like eyes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "peeves",
+      "relationship_type": "is_chasing",
+      "description": "Filch is chasing Peeves because he has stolen a Triwizard clue."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "peeves",
+      "relationship_type": "will_punish",
+      "description": "Dumbledore will punish Peeves for stealing the Triwizard clue."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "kraacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is a house-elf who was loyal to the Black family. He is mentioned as being troubled and sobbing hard after an event that happened in the cave."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends and a student at Hogwarts. She is watching Kreacher with tears in her eyes but does not dare touch him again."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of Harry's friends and a student at Hogwarts. He looks troubled while watching Kreacher."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is trying to clear his head after an event that happened in the cave."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is a dark wizard who tried to kill Kreacher and Sirius."
+    },
+    {
+      "name": "regulus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Regulus is a character who died to bring Voldemort down."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is a character who was betrayed by Kreacher and handed over to Voldemort."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Narcissa is a character who received information from Kreacher about Sirius."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is a character who received information from Kreacher about Sirius and passed it on to Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kraacher",
+      "entity_2": "voldemort",
+      "relationship_type": "betrayed_by",
+      "description": "Kreacher betrayed Sirius to Voldemort."
+    },
+    {
+      "entity_1": "kraacher",
+      "entity_2": "narcissa",
+      "relationship_type": "passed_information_to",
+      "description": "Kreacher passed information about Sirius to Narcissa and Bellatrix, who then passed it on to Voldemort."
+    },
+    {
+      "entity_1": "regulus",
+      "entity_2": "voldemort",
+      "relationship_type": "died_to_defeat",
+      "description": "Regulus died in order to bring down Voldemort."
+    }
+  ]
+}

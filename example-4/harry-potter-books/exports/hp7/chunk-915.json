@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "malfoy manor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is being taken by the Snatchers."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Snatchers who has caught Harry. He suggests taking Harry to You-Know-Who."
+    },
+    {
+      "name": "scabior",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another Snatcher who is discussing what to do with Harry."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, the person being caught by the Snatchers."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A mysterious figure who is mentioned as a possible destination for Harry."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic, which is mentioned as an alternative destination for Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "potter",
+      "relationship_type": "caught",
+      "description": "Greyback has caught Potter."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "malfoy manor",
+      "relationship_type": "destination",
+      "description": "Greyback suggests taking Potter to Malfoy Manor."
+    },
+    {
+      "entity_1": "scabior",
+      "entity_2": "potter",
+      "relationship_type": "discussing fate",
+      "description": "Scabior is discussing Potter's fate with Greyback."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "you-know-who",
+      "relationship_type": "destination",
+      "description": "Greyback suggests taking Potter to You-Know-Who."
+    }
+  ]
+}

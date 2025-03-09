@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is being observed by Professor Umbridge."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the school management that Professor Grubbly-Plank is happy with."
+    },
+    {
+      "name": "grubbly-plank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is one of the professors being questioned by Professor Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the inquisitor who is questioning Professor Grubbly-Plank."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a professor who might not return."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "grubbly-plank",
+      "relationship_type": "questioning",
+      "description": "Professor Umbridge is questioning Professor Grubbly-Plank about her teaching plans."
+    },
+    {
+      "entity_1": "grubbly-plank",
+      "entity_2": "hagrid",
+      "relationship_type": "assuming absence",
+      "description": "Professor Grubbly-Plank assumes that Hagrid might not return, which affects her teaching plans."
+    }
+  ]
+}

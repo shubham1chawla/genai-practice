@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to by Snape as 'Potter'."
+    },
+    {
+      "name": "Snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A potions master at Hogwarts, known for his dark eyes and ability to insult Harry."
+    },
+    {
+      "name": "Legilimency",
+      "entity_type": "skill",
+      "singular": true,
+      "description": "A magical skill that allows the user to extract feelings and memories from another person's mind."
+    },
+    {
+      "name": "Muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Non-magical people, referred to by Snape as those who 'talk of "
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Snape",
+      "relationship_type": "insulted_by",
+      "description": "Snape insults Harry, calling him a 'lamentable potion-maker'."
+    },
+    {
+      "entity_1": "Snape",
+      "entity_2": "Legilimency",
+      "relationship_type": "master_of",
+      "description": "Snape has mastered the magical skill of Legilimency."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Muggles",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Muggles, as Snape refers to them when talking about 'mind reading'."
+    }
+  ]
+}

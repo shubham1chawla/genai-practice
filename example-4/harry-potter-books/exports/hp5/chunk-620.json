@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is excitedly talking about a possible frame-up."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione looks impressed by Ron's theory and thinks it might be true."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Ministry suspects that the person in question is one of Dumbledore's lot."
+    },
+    {
+      "name": "the ministry",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry is suspected to be involved in a possible frame-up."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "expressed_opinion",
+      "description": "Ron expresses his opinion about the situation to Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the ministry",
+      "relationship_type": "suspects",
+      "description": "Hermione suspects that the Ministry is involved in a possible frame-up."
+    }
+  ]
+}

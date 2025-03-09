@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where the narrator and Albus Dumbledore met. (Page 1)"
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was remembered by Elphias Doge. He had a pockmarked visage and greenish hue due to dragon pox, and his father was convicted of attacking three young Muggles. (Page 1-2)"
+    },
+    {
+      "name": "elphias doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The author who wrote the article 'ALBUS DUMBLEDORE REMEMBERED'. He met Albus Dumbledore at Hogwarts. (Page 1)"
+    },
+    {
+      "name": "percival dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore's father, who was convicted of attacking three young Muggles and later died in Azkaban. (Page 2)"
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "prison",
+      "singular": true,
+      "description": "A prison where Percival Dumbledore died. (Page 2)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "elphias doge",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "met",
+      "description": "Elphias Doge met Albus Dumbledore at Hogwarts. (Page 1)"
+    },
+    {
+      "entity_1": "albus dumbledore",
+      "entity_2": "percival dumbledore",
+      "relationship_type": "father_of",
+      "description": "Albus Dumbledore's father was Percival Dumbledore, who was convicted of attacking three young Muggles. (Page 2)"
+    },
+    {
+      "entity_1": "elphias doge",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Elphias Doge attended Hogwarts, where he met Albus Dumbledore. (Page 1)"
+    }
+  ]
+}

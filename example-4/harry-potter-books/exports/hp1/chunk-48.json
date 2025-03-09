@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as shouting at Uncle Vernon through the locked door of his cupboard."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, complained to Aunt Petunia about various things."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon's wife, listened to his complaints while driving."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, mentioned as someone Harry had to be with on the day."
+    },
+    {
+      "name": "piers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another person Harry had to spend the day with."
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A neighbor of Harry's, mentioned as having a cabbage-smelling living-room."
+    },
+    {
+      "name": "council",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization that Uncle Vernon complained about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "complained_about",
+      "description": "Uncle Vernon complained to Aunt Petunia about Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "council",
+      "relationship_type": "target_of_complaints",
+      "description": "Harry was one of Uncle Vernon's favorite subjects to complain about."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "aunt petunia",
+      "relationship_type": "complained_to",
+      "description": "Uncle Vernon complained to Aunt Petunia while driving."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "motorbike",
+      "relationship_type": "dreamed_about",
+      "description": "Harry had a dream about a motorbike that was flying."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "history of magic",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The book that Malfoy threatened Borgin with. (\"No, no, not History of Magic – Malfoy threatened Borgin with him!\")"
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An old family friend of Malfoy's who is a werewolf. (\"He told Borgin that Greyback was an old family friend and that he’d be checking up on Borgin’s progress!\")"
+    },
+    {
+      "name": "borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person in Knockturn Alley who Malfoy threatened with the History of Magic. (\"Malfoy threatened Borgin with him!\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater and friend of Greyback's. (\"He told Borgin that Greyback was an old family friend and that he’d be checking up on Borgin’s progress!\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who remembers Malfoy threatening Borgin with the History of Magic. (\"‘No, no, not History of Magic – Malfoy threatened Borgin with him!’ said Hermione.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is discussing the possibility that Malfoy's threat was an empty one. (\"‘You’re unbelievable, you are,’ said Harry , shaking his head.\")"
+    },
+    {
+      "name": "knockturn alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Malfoy threatened Borgin with the History of Magic. (\"Back in Knockturn Alley , don’t you remember?\")"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An organization that Harry had a row with Rufus Scrimgeour about. (\"Oh yeah, I had a row with Rufus Scrimgeour as well ... We’ll see who’s right ... you’ll be eating your words, Hermione, just like the Ministry.\")"
+    },
+    {
+      "name": "rufus scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person that Harry had a row with. (\"Oh yeah, I had a row with Rufus Scrimgeour as well ... We’ll see who’s right ... you’ll be eating your words, Hermione, just like the Ministry.\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "greyback",
+      "relationship_type": "friendship",
+      "description": "Malfoy and Greyback are friends. (\"He told Borgin that Greyback was an old family friend and that he’d be checking up on Borgin’s progress!\")"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "borgin",
+      "relationship_type": "threatening",
+      "description": "Malfoy threatened Borgin with the History of Magic. (\"No, no, not History of Magic – Malfoy threatened Borgin with him!\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argument",
+      "description": "Harry and Hermione are arguing about whether Malfoy's threat was an empty one. (\"‘You’re unbelievable, you are,’ said Harry , shaking his head.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rufus scrimgeour",
+      "relationship_type": "argument",
+      "description": "Harry had a row with Rufus Scrimgeour. (\"Oh yeah, I had a row with Rufus Scrimgeour as well ... We’ll see who’s right ... you’ll be eating your words, Hermione, just like the Ministry.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ministry",
+      "relationship_type": "comparison",
+      "description": "Hermione will eat her words, just like the Ministry. (\"you’ll be eating your words, Hermione, just like the Ministry.\")"
+    }
+  ]
+}

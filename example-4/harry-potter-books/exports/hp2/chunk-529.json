@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "aragog",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Aragog is mentioned as a character who is not visible from the castle windows."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who is usually visible from the castle windows with Fang at his heels."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is Hagrid's dog and is mentioned as being at his heels."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a character who is in the hospital wing."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Madam Pomfrey is a character who is taking care of the people in the hospital wing."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being gone."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a character who is trying to visit Hermione in the hospital wing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is Harry's friend and is also trying to visit Hermione in the hospital wing."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The castle is mentioned as a location where things are horribly wrong."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "fang",
+      "relationship_type": "has_dog",
+      "description": "Hagrid has Fang at his heels."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "hermione",
+      "relationship_type": "caring_for",
+      "description": "Madam Pomfrey is taking care of the people in the hospital wing, including Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry and Ron are friends who are trying to visit Hermione in the hospital wing."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "castle",
+      "relationship_type": "associated_with",
+      "description": "Dumbledore is associated with the castle, but he is gone."
+    }
+  ]
+}

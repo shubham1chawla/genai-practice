@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a delighted elf who receives a maroon sweater from Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the one who gives Dobby the maroon sweater."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron helps Harry prepare to leave and loads his pockets with cream cakes and pies."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione refuses snacks offered by the elves due to their bowing and curtsying."
+    },
+    {
+      "name": "the elves",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The surrounding elves offer snacks to Harry, Ron, and Hermione as they prepare to leave."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "gives",
+      "description": "Harry gives Dobby the maroon sweater."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Ron helps Harry prepare to leave and loads his pockets with cream cakes and pies."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the elves",
+      "relationship_type": "refuses_offer_from",
+      "description": "Hermione refuses snacks offered by the elves due to their bowing and curtsying."
+    }
+  ]
+}

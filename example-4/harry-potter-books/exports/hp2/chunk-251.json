@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Peeves is a person who has done something to distract Filch from Harry. He is described as having 'wrecked something very big this time'."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a person who is being distracted by Peeves. He is the one in charge of discipline at Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is trying to avoid Filch's attention."
+    },
+    {
+      "name": "kwikspell",
+      "entity_type": "course",
+      "singular": true,
+      "description": "Kwikspell is a correspondence course in beginners' magic that Harry finds intriguing."
+    },
+    {
+      "name": "harry's form",
+      "entity_type": "document",
+      "singular": true,
+      "description": "Harry has a half-completed form on his desk."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peeves",
+      "entity_2": "filch",
+      "relationship_type": "distracts",
+      "description": "Peeves' actions distract Filch from Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "kwikspell",
+      "relationship_type": "interested_in",
+      "description": "Harry is intrigued by the Kwikspell course and reads its contents."
+    }
+  ]
+}

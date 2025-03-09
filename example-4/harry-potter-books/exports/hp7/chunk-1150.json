@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is Harry's uncle and a wizard who lives in the Burrow. He has eyes that are extraordinarily like his brother's (James Potter)."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Aberforth's nephew and a student at Hogwarts. He is trying to get into Hogwarts with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and a student at Hogwarts. He is trying to get into Hogwarts with Harry."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is a school for wizards and witches where Harry and Ron are students."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aberforth",
+      "entity_2": "harry",
+      "relationship_type": "nephew_of",
+      "description": "Aberforth is Harry's uncle."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "hogwarts",
+      "relationship_type": "related_to",
+      "description": "Aberforth has a connection to Hogwarts, as he mentions the old secret passageways."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who is concerned about his owl Hedwig's well-being. He mentions that he doesn't know what Thestrals are but wants to know if Hedwig will be okay."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Hedwig is Harry's owl who has traveled a long distance and needs rest. Professor McGonagall and Professor Grubbly-Plank examine her wing to determine the extent of her injuries."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who looks at Harry sharply and understands that 'London' refers to 'number twelve, Grimmauld Place'. She examines Hedwig's wing with Professor Grubbly-Plank."
+    },
+    {
+      "name": "professor grubbly-plank",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Grubbly-Plank is a teacher who pulls out a monocle to examine Hedwig's wing closely. She offers to take care of Hedwig and suggests that she shouldn't fly long distances for a few days."
+    },
+    {
+      "name": "thestrals",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Thestrals are creatures that Harry doesn't know about but is curious about. Professor McGonagall seems to understand what they are."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Grimmauld Place is a location in London where Harry lives with his relatives. Professor McGonagall understands that 'London' refers to this address."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "understanding",
+      "description": "Professor McGonagall understands what Harry means by 'London', which actually refers to Grimmauld Place."
+    },
+    {
+      "entity_1": "professor grubbly-plank",
+      "entity_2": "hedwig",
+      "relationship_type": "care",
+      "description": "Professor Grubbly-Plank offers to take care of Hedwig and suggests that she shouldn't fly long distances for a few days."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "hedwig",
+      "relationship_type": "examination",
+      "description": "Professor McGonagall examines Hedwig's wing with Professor Grubbly-Plank to determine the extent of her injuries."
+    }
+  ]
+}

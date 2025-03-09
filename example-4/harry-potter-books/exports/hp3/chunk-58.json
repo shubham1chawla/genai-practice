@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to get to London."
+    },
+    {
+      "name": "stan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is operating a bus and selling tickets to passengers."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, whose cage is being carried on the bus."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The destination that Harry is trying to reach."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "stan",
+      "relationship_type": "paid_for_service",
+      "description": "Harry paid Stan for a ticket to get to London."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hedwig",
+      "relationship_type": "carrying",
+      "description": "Harry is carrying Hedwig's cage on the bus."
+    }
+  ]
+}

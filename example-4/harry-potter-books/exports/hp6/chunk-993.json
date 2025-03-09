@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as having heard about Professor Trelawney's Inner Eye before."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Trelawney is the Divination teacher at Hogwarts. She has an 'Inner Eye' that allows her to see visions of the future."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "Dumbledore is the Headmaster of Hogwarts School of Witchcraft and Wizardry. He prefers fewer visits from Professor Trelawney."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts who is celebrating something. Harry suspects that Malfoy threw Professor Trelawney out of the Room."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "trelawney",
+      "relationship_type": "suspicion",
+      "description": "Harry suspects that someone (Malfoy) threw Professor Trelawney out of the Room."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "trelawney",
+      "relationship_type": "preference",
+      "description": "Dumbledore prefers fewer visits from Professor Trelawney."
+    }
+  ]
+}

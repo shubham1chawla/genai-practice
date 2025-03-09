@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gryffindor Tower is mentioned as a location where Professor McGonagall will escort the student back to. (\"I will escort you back to Gryffindor Tower\")."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as a person who needs to address the students. (\"said Professor McGonagall heavily\")"
+    },
+    {
+      "name": "students",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Students are mentioned as a group that need to return to their house common rooms by six o'clock in the evening. (\"All students will return to their house common rooms by six o'clock in the evening\")"
+    },
+    {
+      "name": "house common rooms",
+      "entity_type": "location",
+      "singular": false,
+      "description": "House common rooms are mentioned as a location where students need to return to. (\"All students will return to their house common rooms by six o'clock in the evening\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "escort_to",
+      "description": "Professor McGonagall will escort the student back to Gryffindor Tower. (\"I will escort you back to Gryffindor Tower\")."
+    },
+    {
+      "entity_1": "students",
+      "entity_2": "house common rooms",
+      "relationship_type": "return_to",
+      "description": "Students need to return to their house common rooms by six o'clock in the evening. (\"All students will return to their house common rooms by six o'clock in the evening\")"
+    }
+  ]
+}

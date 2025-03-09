@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the students who had a pet dragon during their first year. (Excerpt: 'Harry, Ron, and Hermione knew only too well — he had owned one for a brief period during their first year...')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the students who had a pet dragon during their first year. (Excerpt: 'Harry, Ron, and Hermione knew only too well — he had owned one for a brief period during their first year...')"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the students who had a pet dragon during their first year. (Excerpt: 'Harry, Ron, and Hermione knew only too well — he had owned one for a brief period during their first year...')"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the gamekeeper who loves monstrous creatures. (Excerpt: 'Hagrid simply loved monstrous creatures, the more lethal, the better.')"
+    },
+    {
+      "name": "norbert",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "Norbert is mentioned as a pet dragon owned by Harry during their first year. (Excerpt: 'a vicious Norwegian Ridgeback by the name of Norbert')"
+    },
+    {
+      "name": "skrewts",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "Skrewts are mentioned as creatures that Hagrid is taking care of. (Excerpt: 'Well, at least the skrewts are small...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "norbert",
+      "relationship_type": "owned",
+      "description": "Hagrid owned Norbert during their first year. (Excerpt: 'he had owned one for a brief period during their first year, a vicious Norwegian Ridgeback by the name of Norbert')"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "skrewts",
+      "relationship_type": "caring_for",
+      "description": "Hagrid is taking care of the skrewts. (Excerpt: 'Well, at least the skrewts are small...')"
+    }
+  ]
+}

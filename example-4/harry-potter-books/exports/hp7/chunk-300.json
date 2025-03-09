@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is unsure and needs to know everything."
+    },
+    {
+      "name": "doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is concerned about Harry's feelings and tries to reassure him."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "A journalist who has written a book about Dumbledore."
+    },
+    {
+      "name": "auntie muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who is enthusiastic about Rita Skeeter's work."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "doge",
+      "relationship_type": "concerned_about",
+      "description": "Doge is concerned about Harry's feelings and tries to reassure him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "rita skeeter",
+      "relationship_type": "discussing",
+      "description": "Harry and Doge were discussing Rita Skeeter when they were interrupted by Auntie Muriel."
+    },
+    {
+      "entity_1": "doge",
+      "entity_2": "rita skeeter",
+      "relationship_type": "mentioning",
+      "description": "Doge mentions Rita Skeeter in his conversation with Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "auntie muriel",
+      "relationship_type": "interrupted_by",
+      "description": "Harry and Doge were interrupted by Auntie Muriel when they were discussing Rita Skeeter."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "dumbledore",
+      "relationship_type": "written_about",
+      "description": "Rita Skeeter has written a book about Dumbledore."
+    }
+  ]
+}

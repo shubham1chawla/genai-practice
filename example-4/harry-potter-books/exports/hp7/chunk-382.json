@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "kreacher",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is an elf who is being tortured by Voldemort. He cries for his Master Regulus and Mistress Black to save him."
+    },
+    {
+      "name": "regulus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Regulus is Kreacher's master, whom he calls out for help."
+    },
+    {
+      "name": "mistress black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mistress Black is a person that Kreacher cries out to for help."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is the Dark Lord who is torturing Kreacher with a potion."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "kreacher",
+      "entity_2": "regulus",
+      "relationship_type": "called_out_to_for_help",
+      "description": "Kreacher cries out to Master Regulus for help."
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "mistress black",
+      "relationship_type": "called_out_to_for_help",
+      "description": "Kreacher also cries out to Mistress Black for help."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "kreacher",
+      "relationship_type": "torturing_with_potion",
+      "description": "Voldemort is torturing Kreacher with a potion."
+    }
+  ]
+}

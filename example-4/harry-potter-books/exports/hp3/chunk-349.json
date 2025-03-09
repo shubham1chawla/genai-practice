@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is the Minister of Magic who is speaking to Rosmerta. He mentions that Black was taken away by the Magical Law Enforcement Squad and received the Order of Merlin, First Class."
+    },
+    {
+      "name": "rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rosmerta is a person who is being spoken to by Fudge. She asks if it's true that Black is mad."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is the person who was taken away by the Magical Law Enforcement Squad and received the Order of Merlin, First Class. He is also mentioned as being in Azkaban."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Pettigrew is a person who received the Order of Merlin, First Class. His murder is mentioned by Fudge."
+    },
+    {
+      "name": "magical law enforcement squad",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Magical Law Enforcement Squad is an organization that took away Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "black",
+      "relationship_type": "spoke_about",
+      "description": "Fudge spoke about Black's situation to Rosmerta."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "rosmerta",
+      "relationship_type": "speaking_to",
+      "description": "Fudge was speaking to Rosmerta when he mentioned Black's situation."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "magical law enforcement squad",
+      "relationship_type": "taken_by",
+      "description": "The Magical Law Enforcement Squad took away Black."
+    }
+  ]
+}

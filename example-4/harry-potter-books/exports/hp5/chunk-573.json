@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor at Hogwarts who is handing Harry a special quill."
+    },
+    {
+      "name": "quill",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A long, thin black quill with an unusually sharp point given to Harry by Professor Umbridge."
+    },
+    {
+      "name": "parchment",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A stack of papers that look like essays for marking on Professor Umbridge's desk."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "gives",
+      "description": "Professor Umbridge gives Harry a special quill."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "quill",
+      "relationship_type": "uses",
+      "description": "Harry uses the special quill given to him by Professor Umbridge."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is trying to get into the house by using a long stick to prod the knot on the tree trunk."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who had done something that allowed Harry's father to know what Harry was."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who forbade Snape from telling anybody about Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who was talking to Harry and mentioned Snape."
+    },
+    {
+      "name": "snape's father",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape's father is not explicitly mentioned but it can be inferred from the context that he is a person who had heard what Sirius had done."
+    },
+    {
+      "name": "the tree trunk",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The tree trunk is an object on which Snape tried to prod the knot with a long stick."
+    },
+    {
+      "name": "the house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The house is a location where Harry and others are present."
+    },
+    {
+      "name": "the tunnel",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The tunnel is a location where Snape saw Harry at the end."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Invisibility Cloak is an object that Snape was pulling off to use against Lupin."
+    },
+    {
+      "name": "the knot",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The knot is an object on the tree trunk that Snape tried to prod with a long stick."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "attack",
+      "description": "Snape was pointing his wand directly at Lupin, indicating an attack."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "forbid",
+      "description": "Dumbledore forbade Snape from telling anybody about Harry."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry's father",
+      "relationship_type": "inform",
+      "description": "Sirius had done something that allowed Harry's father to know what Harry was."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "the tree trunk",
+      "relationship_type": "interact",
+      "description": "Snape tried to prod the knot on the tree trunk with a long stick."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "talk",
+      "description": "Harry and Lupin were talking about Snape."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "the house",
+      "relationship_type": "attempt_to_enter",
+      "description": "Snape was trying to get into the house."
+    }
+  ]
+}

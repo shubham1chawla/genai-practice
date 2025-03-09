@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is trying to escape from Bellatrix and is using the lift to move around the Atrium."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A villainous character who is trying to evade Harry. She is using magic spells to try and harm him."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large hall or room where the events of the story are taking place. It has a lift, grilles, statues, and wrought gold gates."
+    },
+    {
+      "name": "fountain of magical brethren",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A feature in the Atrium where Harry takes cover from Bellatrix's spells. It is a statue or monument with some kind of magical significance."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "atrium",
+      "relationship_type": "location_of",
+      "description": "Harry is currently in the Atrium, trying to escape from Bellatrix. He uses the lift to move around the hall."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "atrium",
+      "relationship_type": "location_of",
+      "description": "Bellatrix is also in the Atrium, trying to evade Harry and using magic spells to harm him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bellatrix",
+      "relationship_type": "target_of_attack",
+      "description": "Harry is being attacked by Bellatrix with magic spells. He tries to dodge behind the Fountain of Magical Brethren to avoid her spells."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fountain of magical brethren",
+      "relationship_type": "took_cover_at",
+      "description": "Harry takes cover behind the Fountain of Magical Brethren to avoid Bellatrix's spells. He uses this location as a temporary hiding place."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "target_of_attack",
+      "description": "Bellatrix is attacking Harry with magic spells, trying to harm him and prevent him from escaping."
+    }
+  ]
+}

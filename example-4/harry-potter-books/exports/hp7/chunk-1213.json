@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts. She shouts orders to Filch and casts the Piertotum Locomotor spell."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is a caretaker at Hogwarts. He is ordered by McGonagall to fetch Peeves, but seems unsure of who Peeves is."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Peeves is a mischievous ghost at Hogwarts. Filch has been complaining about him for a quarter of a century, but seems unsure of who he is."
+    },
+    {
+      "name": "piertotum locomotor",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "Piertotum Locomotor is a spell cast by McGonagall to summon the statues and suits of armor in the castle."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is the school where McGonagall, Filch, Peeves, and Harry are located. It is threatened by an unknown danger."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "filch",
+      "relationship_type": "orders",
+      "description": "McGonagall orders Filch to fetch Peeves, indicating a hierarchical relationship between the two."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "peeves",
+      "relationship_type": "summons",
+      "description": "McGonagall casts the Piertotum Locomotor spell to summon Peeves, indicating a relationship of control or authority."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "hogwarts",
+      "relationship_type": "protects",
+      "description": "McGonagall shouts orders to protect Hogwarts, indicating a relationship of responsibility or guardianship."
+    }
+  ]
+}

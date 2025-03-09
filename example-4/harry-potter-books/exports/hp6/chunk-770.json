@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone Harry wants to know about."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character and is being asked by Ron to follow someone."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who is excited to follow Harry's instructions."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is a house-elf who is being asked by Harry to follow someone."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Malfoys are mentioned as the family of the person Harry wants Kreacher to follow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "asks_for_information",
+      "description": "Harry asks Ron for information about someone."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "follows_instructions",
+      "description": "Dobby agrees to follow Harry's instructions."
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "malfoy",
+      "relationship_type": "spies_on",
+      "description": "Kreacher is asked by Harry to spy on the youngest Malfoy."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kreacher",
+      "relationship_type": "gives_instructions",
+      "description": "Harry gives instructions to Kreacher about what he should do."
+    }
+  ]
+}

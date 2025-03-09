@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts School of Witchcraft and Wizardry. She remained in the hospital wing for several weeks after an incident, and her friends Harry and Ron visited her every evening to bring her homework."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts School of Witchcraft and Wizardry. He and his friend Ron visited Hermione in the hospital wing every evening to bring her homework."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts School of Witchcraft and Wizardry. He and his friend Harry visited Hermione in the hospital wing every evening to bring her homework."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Madam Pomfrey is a nurse at Hogwarts School of Witchcraft and Wizardry. She took out her curtains to spare Hermione the shame of being seen with a furry face."
+    },
+    {
+      "name": "harry and ron",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Harry and Ron are friends who visited Hermione in the hospital wing every evening to bring her homework."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry and ron",
+      "relationship_type": "visited",
+      "description": "Harry and Ron visited Hermione in the hospital wing every evening to bring her homework."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "hermione",
+      "relationship_type": "protected",
+      "description": "Madam Pomfrey took out her curtains to spare Hermione the shame of being seen with a furry face."
+    }
+  ]
+}

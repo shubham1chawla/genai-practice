@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, a prefect and friend of Harry Potter."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is a prefect and member of the Inquisitorial Squad. He is known for being arrogant and mean-spirited."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is friends with Malfoy and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is friends with Malfoy and Crabbe."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, a prefect and friend of Harry Potter. She is known for being smart and resourceful."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "A professor at Hogwarts who has been hand-picking members for the Inquisitorial Squad."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a prefect and friend of Ron Weasley and Hermione Granger. He is known for being brave and loyal."
+    },
+    {
+      "name": "weasel king",
+      "entity_type": "title",
+      "singular": false,
+      "description": "A title given to Malfoy by Crabbe and Goyle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "umbridge",
+      "relationship_type": "member_of",
+      "description": "Malfoy is a member of the Inquisitorial Squad, which was hand-picked by Professor Umbridge."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "malfoy",
+      "relationship_type": "friend_of",
+      "description": "Crabbe and Malfoy are friends."
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "malfoy",
+      "relationship_type": "friend_of",
+      "description": "Goyle and Malfoy are friends."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "potter",
+      "relationship_type": "friend_of",
+      "description": "Ron is a friend of Harry Potter."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "potter",
+      "relationship_type": "friend_of",
+      "description": "Hermione is a friend of Harry Potter."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "member_of",
+      "description": "Malfoy is a member of the Inquisitorial Squad."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "member_of",
+      "description": "Crabbe is a member of the Inquisitorial Squad."
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "member_of",
+      "description": "Goyle is a member of the Inquisitorial Squad."
+    }
+  ]
+}

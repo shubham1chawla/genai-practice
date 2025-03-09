@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is playing chess with him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is playing chess with him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is playing chess with Ron and Hermione."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is trying to get the Stone."
+    },
+    {
+      "name": "the white queen",
+      "entity_type": "piece",
+      "singular": true,
+      "description": "A chess piece that Ron is planning to sacrifice."
+    },
+    {
+      "name": "the king",
+      "entity_type": "piece",
+      "singular": true,
+      "description": "The goal of the game for Harry and his friends."
+    },
+    {
+      "name": "the bishop",
+      "entity_type": "piece",
+      "singular": true,
+      "description": "A chess piece that Hermione is supposed to take."
+    },
+    {
+      "name": "the board",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The surface on which the game of chess is being played."
+    },
+    {
+      "name": "the stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Snape is trying to get and Harry's friends are trying to protect."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "helps",
+      "description": "Ron helps Hermione by planning a move that will allow her to checkmate the king."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "opposes",
+      "description": "Harry and his friends are trying to stop Snape from getting the Stone."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the white queen",
+      "relationship_type": "sacrifices",
+      "description": "Ron plans to sacrifice himself by allowing the white queen to take him."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the bishop",
+      "relationship_type": "takes",
+      "description": "Hermione is supposed to take the bishop."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the king",
+      "relationship_type": "checks",
+      "description": "Harry's goal is to checkmate the king."
+    }
+  ]
+}

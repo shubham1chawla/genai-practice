@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is introduced as the current minister who is being replaced by his successor. He is described as being busy and having trouble with Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone Fudge has been trying to persuade, but he won't budge. He is also the recipient of Fudge's letters."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is introduced as Fudge's successor and is mentioned as possibly having more success than Fudge in persuading Dumbledore."
+    },
+    {
+      "name": "muggles prime minister",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Muggle Prime Minister is requested to meet by the portrait of the ugly little man."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "trying_to_persuade",
+      "description": "Fudge has been trying to persuade Dumbledore, but he won't budge."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "dumbledore",
+      "relationship_type": "trying_to_persuade",
+      "description": "Scrimgeour is mentioned as possibly having more success than Fudge in persuading Dumbledore."
+    },
+    {
+      "entity_1": "portrait",
+      "entity_2": "muggles prime minister",
+      "relationship_type": "requesting_meeting",
+      "description": "The portrait requests a meeting with the Muggle Prime Minister."
+    }
+  ]
+}

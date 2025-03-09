@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a student in the class, looking at Dean."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is mentioned as a student on the other side of the classroom, looking unhappy."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a student who says something to Harry and mentions Ginny and Dean."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned by Hermione as not speaking with Dean."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as warning Harry about Flitwick."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Flitwick is mentioned as the Charms master who is approaching them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dean",
+      "relationship_type": "looked_at",
+      "description": "Harry glanced over at Dean."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ginny",
+      "relationship_type": "mentioned",
+      "description": "Hermione mentions Ginny and Dean not speaking."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "flitwick",
+      "relationship_type": "warned_about",
+      "description": "Ron warns Harry about Flitwick."
+    }
+  ]
+}

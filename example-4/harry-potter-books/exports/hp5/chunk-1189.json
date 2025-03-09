@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts school. He is on probation due to an inspection that did not go well."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends and classmates. He is surprised to hear that Hagrid is on probation."
+    },
+    {
+      "name": "salamanders",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Salamanders are a type of animal that Hagrid is taking care of. They have scale rot and need to be treated with chili powder."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of Ron's friends and classmates. He is watching Hagrid leave the school grounds."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is a school where Harry, Ron, and Hagrid are students or staff members."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "salamanders",
+      "relationship_type": "care_for",
+      "description": "Hagrid is taking care of the salamanders, but they have scale rot."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hagrid",
+      "relationship_type": "friend_of",
+      "description": "Ron is friends with Hagrid and is surprised to hear that he is on probation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "classmate_of",
+      "description": "Harry is a classmate of Hagrid's at Hogwarts school."
+    }
+  ]
+}

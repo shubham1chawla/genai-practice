@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "quaffle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Quaffle is mentioned as something that Harry and Higgs are looking at, but it's not clear what they're doing with it. The text says 'looking over his shoulder at the flash of gold that had passed his left ear' which implies that the Quaffle was flying past them."
+    },
+    {
+      "name": "terence higgs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Terence Higgs is mentioned as the Slytherin Seeker who saw the Golden Snitch. He's described as 'neck and neck' with Harry in their pursuit of the Snitch."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one who dived downwards after seeing the Golden Snitch. He's described as being faster than Higgs and able to see the Snitch ahead of him."
+    },
+    {
+      "name": "marcus flint",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marcus Flint is mentioned as the one who blocked Harry on purpose with his broom. This caused a commotion among the Gryffindors and led to Madam Hooch speaking angrily to him."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is mentioned as the one who spoke angrily to Marcus Flint after he blocked Harry. She then ordered a free shot at the goalposts for Gryffindor."
+    },
+    {
+      "name": "golden snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Golden Snitch is mentioned as something that Harry and Higgs are chasing. It's described as 'wings fluttering' and 'darting up ahead'."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindors are mentioned as the team that was watching Harry and Higgs chase the Snitch. They were yelling 'Foul!' after Marcus Flint blocked Harry."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean Thomas is mentioned as someone who was yelling in the stands to have Marcus Flint sent off."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "golden snitch",
+      "relationship_type": "chase",
+      "description": "Harry Potter is chasing after the Golden Snitch, as described by the text: 'In a great rush of excitement he dived downwards after the streak of gold.'"
+    },
+    {
+      "entity_1": "terence higgs",
+      "entity_2": "golden snitch",
+      "relationship_type": "chase",
+      "description": "Terence Higgs is also chasing after the Golden Snitch, as described by the text: 'Slytherin Seeker Terence Higgs had seen it, too. Neck and neck they hurtled towards the Snitch...'"
+    },
+    {
+      "entity_1": "marcus flint",
+      "entity_2": "harry potter",
+      "relationship_type": "block",
+      "description": "Marcus Flint blocked Harry Potter on purpose with his broom, as described by the text: 'WHAM! A roar of rage echoed from the Gryffindors below – Marcus Flint had blocked Harry on purpose and Harry’s broom span off course...'"
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "marcus flint",
+      "relationship_type": "scold",
+      "description": "Madam Hooch spoke angrily to Marcus Flint after he blocked Harry, as described by the text: 'Madam Hooch spoke angrily to Flint and then ordered a free shot at the goalposts for Gryffindor.'"
+    }
+  ]
+}

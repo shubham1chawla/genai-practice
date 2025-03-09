@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is being introduced to various people and shops."
+    },
+    {
+      "name": "dedalus diggle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who remembers Harry and is excited to meet him."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is being introduced to various people and shops in Diagon Alley."
+    },
+    {
+      "name": "doris crockford",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who keeps coming back for more handshakes with Harry."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts who introduces Professor Quirrell to Harry."
+    },
+    {
+      "name": "professor quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's teachers at Hogwarts, who is nervous and stuttering."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dedalus diggle",
+      "entity_2": "harry potter",
+      "relationship_type": "remembers",
+      "description": "Dedalus Diggle remembers Harry Potter."
+    },
+    {
+      "entity_1": "doris crockford",
+      "entity_2": "harry potter",
+      "relationship_type": "shakes_hands_with",
+      "description": "Doris Crockford shakes hands with Harry Potter repeatedly."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "professor quirrell",
+      "relationship_type": "introduces",
+      "description": "Hagrid introduces Professor Quirrell to Harry."
+    },
+    {
+      "entity_1": "professor quirrell",
+      "entity_2": "harry potter",
+      "relationship_type": "teaches",
+      "description": "Professor Quirrell will be one of Harry's teachers at Hogwarts."
+    },
+    {
+      "entity_1": "professor quirrell",
+      "entity_2": "harry potter",
+      "relationship_type": "meets",
+      "description": "Professor Quirrell meets Harry Potter."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper and Care of Magical Creatures teacher at Hogwarts School of Witchcraft and Wizardry. He is mentioned as being in trouble with the school governors."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts School of Witchcraft and Wizardry. She reacts to Hagrid's situation by gasping that he hasn't been fired yet."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts School of Witchcraft and Wizardry. He asks how Malfoy is after being injured."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts School of Witchcraft and Wizardry. He is mentioned as faking an injury to get attention."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is the Hogwarts nurse. She is mentioned as being able to mend injuries, including regrowing half of Harry's bones last year."
+    },
+    {
+      "name": "school governors",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The school governors are in charge of making decisions about the school. They are mentioned as having been told about Hagrid's situation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "school governors",
+      "relationship_type": "in_trouble_with",
+      "description": "Hagrid is in trouble with the school governors, who think he started too big and should have left."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "treated_by",
+      "description": "Malfoy was treated by Madam Pomfrey after being injured."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "supported_by",
+      "description": "Hermione supports Hagrid, reacting to his situation with concern."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about Malfoy's injury and asks how he is."
+    }
+  ]
+}

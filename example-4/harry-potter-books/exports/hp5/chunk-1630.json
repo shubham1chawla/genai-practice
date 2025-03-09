@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is mentioned as someone who speaks highly of Harry Potter."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the one being spoken to by Umbridge and is also trying to leave the office."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is shouting about Padfoot and trying to let someone know what's going on."
+    },
+    {
+      "name": "padfoot",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Padfoot is a name mentioned by Harry as being associated with something hidden."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the one asking questions about Padfoot and what's going on."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "padfoot",
+      "relationship_type": "has",
+      "description": "Harry Potter mentions that Snape has Padfoot."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "umbridge",
+      "relationship_type": "is-speaking-to",
+      "description": "Snape is being spoken to by Umbridge."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "snape",
+      "relationship_type": "has-information-from",
+      "description": "Harry Potter has information that he wants to share with Snape, but can't do so in front of Umbridge."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "padfoot",
+      "relationship_type": "is-interested-in",
+      "description": "Professor Umbridge is interested in learning more about Padfoot."
+    }
+  ]
+}

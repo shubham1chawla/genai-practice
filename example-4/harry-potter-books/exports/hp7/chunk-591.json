@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "kid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being spoken to by Ted."
+    },
+    {
+      "name": "dirk",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who was caught and escaped from Azkaban."
+    },
+    {
+      "name": "dawlish",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was stunned by Dirk."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A prison for wizards."
+    },
+    {
+      "name": "ted",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person speaking to the kid and Dirk."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of creatures that take no sides in the wizards' war."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person or entity being referred to by Ted."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dirk",
+      "entity_2": "azkaban",
+      "relationship_type": "escaped_from",
+      "description": "Dirk escaped from Azkaban."
+    },
+    {
+      "entity_1": "dawlish",
+      "entity_2": "dirk",
+      "relationship_type": "stunned_by",
+      "description": "Dawlish was stunned by Dirk."
+    },
+    {
+      "entity_1": "goblins",
+      "entity_2": "you-know-who",
+      "relationship_type": "allegiance_to",
+      "description": "The goblins are allegedly loyal to You-Know-Who."
+    },
+    {
+      "entity_1": "dirk",
+      "entity_2": "dawlish",
+      "relationship_type": "stole_broom_from",
+      "description": "Dirk stole Dawlish's broom."
+    },
+    {
+      "entity_1": "goblins",
+      "entity_2": "wizards_war",
+      "relationship_type": "involved_in",
+      "description": "The goblins are involved in the wizards' war."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Burrow is the home of Harry's relatives, the Weasleys. It is mentioned as a place where they can quickly leave if needed."
+    },
+    {
+      "name": "rucksack",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Hermione packed Harry's rucksack with essentials in case of an emergency."
+    },
+    {
+      "name": "robes",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Ron handed Hermione his bundled-up robes to put into the bag."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry wore his Invisibility Cloak to become invisible."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "rucksack",
+      "relationship_type": "packed_by",
+      "description": "Hermione packed Harry's rucksack with essentials in case of an emergency."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "robes",
+      "relationship_type": "handed_to",
+      "description": "Ron handed Hermione his bundled-up robes to put into the bag."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "robes",
+      "relationship_type": "put_into_bag_by",
+      "description": "Hermione put Ron's robes into the bag."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "wore",
+      "description": "Harry wore his Invisibility Cloak to become invisible."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is mentioned as wiping his inky fingers on his jeans."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who helps Harry and Ron. She raises her wand to summon the locket."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is searching for the locket with Harry and Hermione."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as putting counter-enchantments on the stone basin in the cave."
+    },
+    {
+      "name": "loket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket is an object that Harry and his friends are searching for."
+    },
+    {
+      "name": "quills",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Quills are old writing instruments found in the drawer."
+    },
+    {
+      "name": "textbooks",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Textbooks are mentioned as being out-of-date and roughly handled."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "loket",
+      "relationship_type": "searches_for",
+      "description": "Harry is searching for the locket."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "loket",
+      "relationship_type": "tries_to_summon",
+      "description": "Hermione tries to summon the locket using her wand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "loket",
+      "relationship_type": "searches_for",
+      "description": "Ron is also searching for the locket."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "stone_basin",
+      "relationship_type": "put_counter_enchantments_on",
+      "description": "Voldemort put counter-enchantments on the stone basin in the cave."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The group of followers of Lord Voldemort, mentioned as wanting to harm Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, protected by Dumbledore's magic and his relations."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who arranged Harry Potter's future and invoked an ancient magic to protect him."
+    },
+    {
+      "name": "ministry wizards",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of wizards working for the Ministry, mentioned as being present at the Quidditch World Cup."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eaters",
+      "entity_2": "harry potter",
+      "relationship_type": "target",
+      "description": "The Death Eaters want to harm Harry Potter."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "protector",
+      "description": "Dumbledore invoked an ancient magic to protect Harry Potter."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "ministry wizards",
+      "relationship_type": "opponent",
+      "description": "The Death Eaters were not strong enough to attempt kidnap in the midst of a horde of Ministry wizards."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "protected_by",
+      "description": "Harry Potter is protected by Dumbledore's magic."
+    }
+  ]
+}

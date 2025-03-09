@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts, mentioned as sitting next to Cho and having a conversation with Hermione."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a person with silvery hair, sitting near Harry and the girl with silvery hair."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts, mentioned as having a conversation with Harry and pointing out the staff table."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ludo Bagman is a person sitting on Professor Karkaroff's side at the staff table."
+    },
+    {
+      "name": "professor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Karkaroff is a person sitting next to Ludo Bagman at the staff table."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is Percy's boss, sitting next to Madame Maxime at the staff table."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is a person sitting next to Mr. Crouch at the staff table."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as having a boss, Mr. Crouch."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Hogwarts is the school that Harry and his friends attend."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Triwizard Tournament is an event organized by Ludo Bagman and Mr. Crouch, mentioned as starting soon."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "sitting near",
+      "description": "Harry is sitting next to Cho at the table."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "talking to",
+      "description": "Hermione is having a conversation with Harry about the staff table."
+    },
+    {
+      "entity_1": "ludo bagman",
+      "entity_2": "professor karkaroff",
+      "relationship_type": "sitting next to",
+      "description": "Ludo Bagman is sitting on Professor Karkaroff's side at the staff table."
+    },
+    {
+      "entity_1": "mr. crouch",
+      "entity_2": "madame maxime",
+      "relationship_type": "sitting next to",
+      "description": "Mr. Crouch is sitting next to Madame Maxime at the staff table."
+    }
+  ]
+}

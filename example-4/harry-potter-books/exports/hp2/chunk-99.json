@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "mr borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Borgin is introduced as a character who is interacting with Mr Malfoy. He is described as having a face where the smile faded slightly when he heard that Mr Malfoy was selling items."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Malfoy is introduced as a character who is buying from Mr Borgin but then reveals that he is actually selling. He mentions the Ministry conducting raids and has a list of items at home that might embarrass him."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as an organization that is conducting raids and creating new laws, such as the Muggle Protection Act. It is described as growing more meddlesome."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "ministry",
+      "relationship_type": "has_concerns_about",
+      "description": "Mr Malfoy expresses concerns about the Ministry conducting raids and creating new laws."
+    },
+    {
+      "entity_1": "mr borgin",
+      "entity_2": "ministry",
+      "relationship_type": "is_target_of",
+      "description": "Mr Borgin mentions that he has not been visited by the Ministry yet, implying that he is a target of their raids."
+    }
+  ]
+}

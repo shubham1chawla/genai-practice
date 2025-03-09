@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The family that Harry lives with, mentioned as the ones who sent him a toothpick and a note."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who received a toothpick and a note from the Dursleys."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for magic, where Harry is able to stay during holidays."
+    },
+    {
+      "name": "summer holidays",
+      "entity_type": "time_period",
+      "singular": false,
+      "description": "The time period when the story takes place, mentioned as a holiday season."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "sent_item",
+      "description": "The Dursleys sent Harry a toothpick and a note."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "stay_at_school",
+      "description": "Harry is able to stay at Hogwarts for the summer holidays."
+    }
+  ]
+}

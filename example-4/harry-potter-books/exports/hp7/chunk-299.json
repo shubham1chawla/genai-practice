@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is mentioned as someone Harry knew longest, excluding Aberforth himself."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as a newspaper that published an interview by Rita Skeeter."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "Rita Skeeter is mentioned as the journalist who gave an interview about Dumbledore in the Daily Prophet."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as being involved in the Dark Arts when he was young, according to Rita Skeeter's interview."
+    },
+    {
+      "name": "elphias doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Elphias Doge is mentioned as someone who was interviewed by Rita Skeeter and became rude towards her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "daily prophet",
+      "relationship_type": "published_in",
+      "description": "Rita Skeeter's interview was published in the Daily Prophet."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "elphias doge",
+      "relationship_type": "interviewed",
+      "description": "Rita Skeeter interviewed Elphias Doge for her article."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "dark arts",
+      "relationship_type": "involved_in",
+      "description": "According to Rita Skeeter's interview, Dumbledore was involved in the Dark Arts when he was young."
+    },
+    {
+      "entity_1": "elphias doge",
+      "entity_2": "rita skeeter",
+      "relationship_type": "became_rude_towards",
+      "description": "Elphias Doge became rude towards Rita Skeeter during her interview."
+    }
+  ]
+}

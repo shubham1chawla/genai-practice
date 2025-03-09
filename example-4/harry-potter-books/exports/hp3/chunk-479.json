@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts, as mentioned in the conversation between Harry and Snape. (\"Your father didn’t set much store by rules either,\" Snape went on, pressing his advantage, his thin face full of malice.)"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts, as mentioned in the conversation between Harry and Snape. (\"Your father didn’t set much store by rules either,\" Snape went on, pressing his advantage, his thin face full of malice.)"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts, as mentioned in the conversation between Harry and Snape. (‘I know the truth, all right? He saved your life! Dumbledore told me! You wouldn’t even be here if it wasn’t for my dad!’)"
+    },
+    {
+      "name": "harry's dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father is mentioned as someone who saved Snape's life, as revealed by Dumbledore. (‘I know the truth, all right? He saved your life! Dumbledore told me! You wouldn’t even be here if it wasn’t for my dad!’)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry's dad",
+      "relationship_type": "saved_by",
+      "description": "Harry's father saved Snape's life, as revealed by Dumbledore. (‘I know the truth, all right? He saved your life! Dumbledore told me! You wouldn’t even be here if it wasn’t for my dad!’)"
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry's dad",
+      "relationship_type": "revealed_info_to",
+      "description": "Dumbledore revealed information about Harry's father saving Snape's life to Harry. (‘I know the truth, all right? He saved your life! Dumbledore told me! You wouldn’t even be here if it wasn’t for my dad!’)"
+    }
+  ]
+}

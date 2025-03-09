@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons students",
+      "entity_type": "group_of_students",
+      "singular": false,
+      "description": "The group of students from Beauxbatons Academy who are visiting Hogwarts."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Madame Maxime, the Transfiguration teacher from Beauxbatons Academy, is leading the students back to their carriage."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron Weasley is following Madame Maxime and the Beauxbatons students, curious about where they are sleeping."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger returns with a box of S.P.E.W. badges and encourages Ron to hurry up."
+    },
+    {
+      "name": "hagrid's cabin",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Hagrid lives, near the edge of the Forbidden Forest."
+    },
+    {
+      "name": "s.p.e.w. badges",
+      "entity_type": "items",
+      "singular": false,
+      "description": "A box of S.P.E.W. (Society for the Promotion of Elfish Welfare) badges that Hermione brought with her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "beauxbatons students",
+      "relationship_type": "leads",
+      "description": "Madame Maxime is leading the Beauxbatons students back to their carriage."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "madame maxime",
+      "relationship_type": "follows",
+      "description": "Ron Weasley is following Madame Maxime and the Beauxbatons students."
+    },
+    {
+      "entity_1": "hermione granger",
+      "entity_2": "ron weasley",
+      "relationship_type": "encourages",
+      "description": "Hermione Granger encourages Ron to hurry up as they are following Madame Maxime and the Beauxbatons students."
+    },
+    {
+      "entity_1": "beauxbatons students",
+      "entity_2": "hagrid's cabin",
+      "relationship_type": "near",
+      "description": "The Beauxbatons students are near Hagrid's cabin, which is located on the edge of the Forbidden Forest."
+    },
+    {
+      "entity_1": "beauxbatons students",
+      "entity_2": "s.p.e.w. badges",
+      "relationship_type": "has",
+      "description": "The Beauxbatons students have S.P.E.W. badges, which Hermione brought with her."
+    }
+  ]
+}

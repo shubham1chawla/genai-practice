@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is mentioned as being summoned by Dumbledore."
+    },
+    {
+      "name": "madame maxi",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is the headmistress of Beauxbaton Academy and is introduced in the text."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry and is mentioned as welcoming the guests."
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Beauxbaton Academy is a school from France that has sent students to attend Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "karkaroff",
+      "relationship_type": "invited",
+      "description": "Dumbledore invited Karkaroff."
+    },
+    {
+      "entity_1": "madame maxi",
+      "entity_2": "beauxbatons",
+      "relationship_type": "headmistress_of",
+      "description": "Madame Maxime is the headmistress of Beauxbaton Academy."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "beauxbatons",
+      "relationship_type": "welcomed",
+      "description": "Dumbledore welcomed the students from Beauxbaton Academy."
+    },
+    {
+      "entity_1": "madame maxi",
+      "entity_2": "dumbledore",
+      "relationship_type": "sat_next_to",
+      "description": "Madame Maxime sat next to Dumbledore."
+    }
+  ]
+}

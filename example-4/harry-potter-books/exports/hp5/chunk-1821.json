@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School of Witchcraft and Wizardry. He is described as being quiet and trying to keep Sirius alive."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is a character who was locked up by Dumbledore last summer. Harry is trying to get him out."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is the main protagonist of the story. He is furious with Dumbledore for locking him up and wants to rage at him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "sirius",
+      "relationship_type": "kept_alive_by",
+      "description": "Dumbledore was trying to keep Sirius alive, as mentioned in the conversation between Harry and Dumbledore."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "angry_at",
+      "description": "Harry is angry at Dumbledore for locking him up last summer."
+    }
+  ]
+}

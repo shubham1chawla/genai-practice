@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a character who reacts to Hermione's outburst."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the person Ron is talking to."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a character who scolds Fred and George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the twins who are testing their potion on students."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as one of the twins who are testing their potion on students."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee is mentioned as a character who tries to calm down Hermione."
+    },
+    {
+      "name": "first years",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The first years are mentioned as the group of students being tested by Fred and George."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "fred",
+      "relationship_type": "scolded",
+      "description": "Hermione scolds Fred for testing his potion on students."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "george",
+      "relationship_type": "scolded",
+      "description": "Hermione scolds George for testing his potion on students."
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "hermione",
+      "relationship_type": "calmed_down",
+      "description": "Lee tries to calm down Hermione."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "agreed_with",
+      "description": "Fred and George agree with each other about the dosage of their potion."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "spoke_to",
+      "description": "Ron speaks to Harry."
+    }
+  ]
+}

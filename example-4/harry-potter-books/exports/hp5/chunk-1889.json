@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to by name and pronoun."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as playing chess with Harry."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is the subject of Harry's interest and has a relationship with Marietta."
+    },
+    {
+      "name": "marietta edgecombe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho's companion, wearing a balaclava."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who shares information about Cho."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho",
+      "relationship_type": "has_interest_in",
+      "description": "Harry has interest in Cho, as indicated by their eye contact and Harry's reaction to Hermione's news."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Ron is friends with Harry, as shown by their interaction during the chess game."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "cho",
+      "relationship_type": "has_information_about",
+      "description": "Hermione has information about Cho's relationship status, which she shares with Harry."
+    }
+  ]
+}

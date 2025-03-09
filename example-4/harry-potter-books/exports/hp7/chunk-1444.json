@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who possessed the Cloak on the night Harry's parents died. He is described as having a long history with the Cloak and being impressed by its quality."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who has guessed why Dumbledore possessed the Cloak on the night his parents died. He is also referred to as having a father who was involved with the Cloak."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as Harry's father and the one who showed the Cloak to Dumbledore just before he died."
+    },
+    {
+      "name": "hallows",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "The Hallows are mentioned as a dream of Dumbledore's that he had given up on. He takes a closer look at the Cloak because it is one of the Hallows."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "possessed_cloak",
+      "description": "Dumbledore possessed the Cloak on the night Harry's parents died."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "hallows",
+      "relationship_type": "related_to",
+      "description": "James was related to the Hallows, as he showed the Cloak to Dumbledore just before he died."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hallow",
+      "relationship_type": "attempted_to_unite",
+      "description": "Dumbledore had long since given up his dream of uniting the Hallows, but he could not resist taking a closer look at the Cloak."
+    }
+  ]
+}

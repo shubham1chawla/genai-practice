@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as still searching his pockets for his wand."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the people they are looking out for."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as one of the people they are looking out for."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as one of the people they are looking out for."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of goblins is mentioned as cackling over a sack of gold."
+    },
+    {
+      "name": "gold",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Gold is mentioned as the object being bet on by the goblins."
+    },
+    {
+      "name": "committee_for_the_disposal_of_dangerous_creatures",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Committee for the Disposal of Dangerous Creatures is mentioned as an organization that employs dragon killers."
+    },
+    {
+      "name": "veela",
+      "entity_type": "supernatural_beings",
+      "singular": true,
+      "description": "Three veela are mentioned standing in a clearing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "has",
+      "description": "Harry is searching for his wand."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "ginny",
+      "relationship_type": "friend",
+      "description": "Fred and Ginny are mentioned as people they are looking out for, implying a friendship."
+    },
+    {
+      "entity_1": "goblins",
+      "entity_2": "gold",
+      "relationship_type": "bet_on",
+      "description": "The goblins are cackling over a sack of gold that they have undoubtedly won betting on the match."
+    },
+    {
+      "entity_1": "committee_for_the_disposal_of_dangerous_creatures",
+      "entity_2": "dragon_killer",
+      "relationship_type": "employs",
+      "description": "The Committee for the Disposal of Dangerous Creatures employs dragon killers."
+    }
+  ]
+}

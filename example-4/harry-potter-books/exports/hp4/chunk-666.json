@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'he' and 'him'. The text mentions Harry's hesitation and his fear of being caught cheating."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who is also a participant in the Triwizard Tournament. He is described as sitting down and stretching out his wooden leg with a groan."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts School of Witchcraft and Wizardry. The text mentions that Hagrid had broken the rules by cheating in the Triwizard Tournament."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A participant in the Triwizard Tournament who is mentioned as someone Harry hasn't told about his cheating."
+    },
+    {
+      "name": "triwizard tournament",
+      "entity_type": "event",
+      "singular": false,
+      "description": "An annual magical competition between three schools. The text mentions that cheating has always been a part of this event."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "questioned_by",
+      "description": "Moody asks Harry if he's found out about the dragons, bringing him back to reality."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "kept_secret_from",
+      "description": "Harry hasn't told Cedric that Hagrid had broken the rules by cheating in the Triwizard Tournament."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "triwizard tournament",
+      "relationship_type": "participant_in",
+      "description": "Moody is a participant in the Triwizard Tournament."
+    }
+  ]
+}

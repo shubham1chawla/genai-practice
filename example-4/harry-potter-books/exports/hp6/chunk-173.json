@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is mentioned as being spoken to by Mrs Weasley and is described as having long red hair."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley is mentioned as speaking to Ginny and withdrawing from the room."
+    },
+    {
+      "name": "phlegm",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phlegm is mentioned as someone Ginny suspects Mrs Weasley wants to be alone with."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is mentioned as an example of a ballerina by Ginny."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are mentioned as having something Hermione is peering into."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as peering into Fred and George's something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ginny",
+      "entity_2": "phlegm",
+      "relationship_type": "suspects",
+      "description": "Ginny suspects that Mrs Weasley wants to be alone with Phlegm."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "ginny",
+      "relationship_type": "example_of",
+      "description": "Fleur is an example of a ballerina, as described by Ginny."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "fred and george",
+      "relationship_type": "peering_into",
+      "description": "Hermione is peering into something belonging to Fred and George."
+    }
+  ]
+}

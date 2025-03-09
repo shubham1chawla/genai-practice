@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "cabinet",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "The Cabinet is described as something that can travel between the school and the shop. It's also mentioned that it's broken."
+    },
+    {
+      "name": "borgin and burkes",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Borgin and Burkes is a shop where the Death Eaters were able to pass into the school."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place that can be accessed through the Cabinets."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as someone who praises the plan and seems to know what's going on."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who draws courage from Dumbledore's praise."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are described as people who were able to pass into the school through Borgin and Burkes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "borgin and burkes",
+      "entity_2": "hogwarts",
+      "relationship_type": "access_to",
+      "description": "The Death Eaters were able to pass from Borgin and Burkes into the school."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "malfoy",
+      "relationship_type": "praise_of",
+      "description": "Dumbledore praises Malfoy's plan."
+    },
+    {
+      "entity_1": "borgin and burkes",
+      "entity_2": "death eaters",
+      "relationship_type": "association_with",
+      "description": "The Death Eaters were associated with Borgin and Burkes."
+    },
+    {
+      "entity_1": "cabinet",
+      "entity_2": "hogwarts",
+      "relationship_type": "potential_access_to",
+      "description": "There could be a way into Hogwarts through the Cabinets."
+    }
+  ]
+}

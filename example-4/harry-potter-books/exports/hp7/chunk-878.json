@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to open the Snitch and find the Elder Wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist, searching for the Elder Wand and wanting the same thing as Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who does not believe in the idea of the Deathly Hallows."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is right about Hermione being limited and narrow-minded."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The golden ball that Harry is trying to open, which contains the Elder Wand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A powerful wand that Voldemort and Harry are searching for."
+    },
+    {
+      "name": "deathly hallows",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Three powerful objects that Harry and Hermione are trying to understand and find."
+    },
+    {
+      "name": "resurrection stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "One of the Deathly Hallows, which has the power to bring people back from the dead."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "shared_goal",
+      "description": "Harry and Voldemort are united in wanting the same thing, which is the Elder Wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "trying_to_open",
+      "description": "Harry is trying to open the Snitch, which contains the Elder Wand."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "searching_for",
+      "description": "Voldemort is searching for the Elder Wand."
+    }
+  ]
+}

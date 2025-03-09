@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is described as a Durmstrang student sitting at the Slytherin table. He appears wary and frightened."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as welcoming guests back to Hogwarts and emphasizing the importance of unity in the face of Voldemort's return."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as having a gift for spreading discord and enmity."
+    },
+    {
+      "name": "durmstrang students",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Durmstrang students are described as being welcomed back to Hogwarts by Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "krum",
+      "entity_2": "dumbledore",
+      "relationship_type": "looks_at",
+      "description": "Krum looks wary and frightened at Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "durmstrang students",
+      "relationship_type": "welcomes",
+      "description": "Dumbledore welcomes the Durmstrang students back to Hogwarts."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "krum",
+      "relationship_type": "affects",
+      "description": "Voldemort's return affects Krum, making him wary and frightened."
+    }
+  ]
+}

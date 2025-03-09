@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dolohov",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dolohov is mentioned as a Death Eater who cast a spell that hit Hermione. He is described as 'baby-headed' and blundered out of sight."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as being hit by Dolohov's spell and is unable to move. Neville tries to wake her up."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as trying to wake Hermione up and checking for a pulse on her wrist."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as shaking Hermione and trying to wake her up. He also listens hard for the sounds of Dolohov."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dolohov",
+      "entity_2": "hermione",
+      "relationship_type": "attacked",
+      "description": "Dolohov cast a spell that hit Hermione, causing her to be unable to move."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "hermione",
+      "relationship_type": "checked_pulse",
+      "description": "Neville checked for a pulse on Hermione's wrist."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dolohov",
+      "relationship_type": "listened_for",
+      "description": "Harry listened hard for the sounds of Dolohov after he blundered out of sight."
+    }
+  ]
+}

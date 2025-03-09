@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is hiding under an Invisibility Cloak."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is unfriendly to Harry and seems to be suspicious of him."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another Slytherin student who accidentally hits Harry with a trunk."
+    },
+    {
+      "name": "slytherins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students from the Slytherin house, who are unfriendly to Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "suspicion",
+      "description": "Malfoy seems to be suspicious of Harry and is looking at him with a frown."
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "harry",
+      "relationship_type": "accident",
+      "description": "Goyle accidentally hits Harry with a trunk while reaching for his own luggage."
+    }
+  ]
+}

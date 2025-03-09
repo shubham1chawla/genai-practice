@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "happiness",
+      "entity_type": "emotion",
+      "singular": true,
+      "description": "The text mentions that happiness was extinguished at a stroke."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as looking scared along with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as looking scared along with Ron."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one seeking the Elder Wand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as being sought after by Voldemort."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "seeking",
+      "description": "Voldemort is seeking the Elder Wand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "scared_with",
+      "description": "Ron and Hermione are both scared along with Harry."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "seeking",
+      "description": "Voldemort is seeking the Elder Wand."
+    }
+  ]
+}

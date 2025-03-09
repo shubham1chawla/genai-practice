@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "elf",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The elf is described as doing something odd and pointing at the diary and Mr Malfoy. The text states 'His great eyes fixed meaningfully on Harry...' which suggests that the elf's actions are significant."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is mentioned as being looked at by the elf. The text states 'His great eyes fixed meaningfully on Harry' which indicates that Harry is a focus of attention."
+    },
+    {
+      "name": "diary",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The diary is described as something the elf is pointing at. The text states 'he kept pointing at the diary...' which suggests that the diary is important to the scene."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mr Malfoy is mentioned as being pointed at by the elf. The text states 'he kept pointing at the diary, then at Mr Malfoy...' which indicates that Mr Malfoy is a focus of attention."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as speaking to Mr Malfoy. The text states '‘I see ...’ said Mr Malfoy slowly to Dumbledore' which suggests that Dumbledore is in a position of authority."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "elf",
+      "entity_2": "diary",
+      "relationship_type": "points_at",
+      "description": "The elf points at the diary, indicating that it is significant to the scene."
+    },
+    {
+      "entity_1": "elf",
+      "entity_2": "mr malfoy",
+      "relationship_type": "points_at",
+      "description": "The elf points at Mr Malfoy, indicating that he is a focus of attention."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mr malfoy",
+      "relationship_type": "speaks_to",
+      "description": "Dumbledore speaks to Mr Malfoy, suggesting that Dumbledore is in a position of authority."
+    }
+  ]
+}

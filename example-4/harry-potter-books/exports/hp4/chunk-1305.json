@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is introduced as a character who wants to kill Cedric and is described as having red eyes and a smile."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is introduced as a person that Harry tries to grab onto while falling, but he is too heavy for Harry to carry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is trying to grab onto Cedric and is using magic to try and get the Triwizard Cup."
+    },
+    {
+      "name": "triwizard cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Triwizard Cup is a magical object that Harry uses his wand to summon with the spell 'Accio'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "cedric",
+      "relationship_type": "target",
+      "description": "Voldemort wants to kill Cedric, as stated in his scream of fury when Harry takes the cup."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "triwizard cup",
+      "relationship_type": "possession",
+      "description": "Harry uses his wand to summon the Triwizard Cup with the spell 'Accio'."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "opponent",
+      "description": "Voldemort is trying to kill Harry, as stated in his scream of fury when Harry takes the cup."
+    }
+  ]
+}

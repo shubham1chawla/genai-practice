@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who claims to have done magic, but denies using it on Dudley. He is slightly less calm when questioned by Uncle Vernon."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is Harry's uncle who roars in anger and slams his fist down on the fridge, causing it to open. He questions Harry about using magic on Dudley."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin who claims that Harry used magic on him and made everything dark. He shudders when describing the experience."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is Harry's aunt who makes flapping gestures at Harry to quiet him and asks Dudley to continue telling what happened."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "used_magic_on",
+      "description": "Dudley claims that Harry used magic on him, making everything dark and causing strange things to be heard in his head."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "questioned",
+      "description": "Uncle Vernon questions Harry about using magic on Dudley, slamming his fist down on the fridge and causing it to open in anger."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry",
+      "relationship_type": "silenced",
+      "description": "Aunt Petunia makes flapping gestures at Harry to quiet him, indicating that she is trying to silence him."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "potion ingredients",
+      "entity_type": "potion_ingredients",
+      "singular": true,
+      "description": "Potion ingredients are mentioned as missing from the private store cupboard."
+    },
+    {
+      "name": "students",
+      "entity_type": "students",
+      "singular": false,
+      "description": "Students are mentioned as attempting to make illicit mixtures."
+    },
+    {
+      "name": "Moody",
+      "entity_type": "auror",
+      "singular": true,
+      "description": "Moody is an Auror who has been tasked with keeping an eye on Snape."
+    },
+    {
+      "name": "Snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher at the school and is being accused of hiding something by Moody."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "headmaster",
+      "singular": true,
+      "description": "Dumbledore is the headmaster who has tasked Moody with keeping an eye on Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Moody",
+      "entity_2": "Snape",
+      "relationship_type": "tasked_with_monitoring",
+      "description": "Moody has been tasked by Dumbledore to keep an eye on Snape."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Moody",
+      "relationship_type": "tasked_with_task",
+      "description": "Dumbledore has tasked Moody with keeping an eye on Snape."
+    }
+  ]
+}

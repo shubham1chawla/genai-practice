@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character, described as having his nose broken by Malfoy earlier in the text."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's, described as looking cold and distant while walking to the stadium."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a friend of Harry's, mentioned in the context of Hermione not wishing him good luck."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a character who broke Harry's nose earlier in the text."
+    },
+    {
+      "name": "gryffindor house",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor house is mentioned as having many students participating in the trials, from first-years to seventh-years."
+    },
+    {
+      "name": "hogwarts express",
+      "entity_type": "train",
+      "singular": true,
+      "description": "The Hogwarts Express is mentioned as a place where Harry met Cormac McLaggen earlier."
+    },
+    {
+      "name": "cormac mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cormac McLaggen is introduced as the Keeper, described as being confident and having a large build."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "was_broken_by",
+      "description": "Malfoy broke Harry's nose earlier in the text, as mentioned in the first sentence."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "did_not_wish_good_luck_to",
+      "description": "Hermione did not wish Ron good luck before departing to find a place in the stands, as mentioned in the second sentence."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cormac mclaggen",
+      "relationship_type": "met_on_train",
+      "description": "Harry met Cormac McLaggen on the Hogwarts Express earlier, as mentioned in the seventh sentence."
+    }
+  ]
+}

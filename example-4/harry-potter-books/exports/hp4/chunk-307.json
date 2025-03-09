@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mr diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Diggory is the one who claims to have seen an intruder in his yard. He describes the incident where he was ambushed by his dustbins."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is the one who asks Mr. Diggory about what happened to the intruder and takes notes on the incident."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is referred to as an intruder by Mr. Diggory's head."
+    },
+    {
+      "name": "dustbins",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The dustbins are the ones that ambushed Mr. Diggory and made a lot of noise."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr diggory",
+      "entity_2": "intruder",
+      "relationship_type": "saw",
+      "description": "Mr. Diggory saw an intruder in his yard."
+    },
+    {
+      "entity_1": "dustbins",
+      "entity_2": "mr diggory",
+      "relationship_type": "ambushed",
+      "description": "The dustbins ambushed Mr. Diggory."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "intruder",
+      "relationship_type": "asked about",
+      "description": "Mr. Weasley asked Mr. Diggory about the intruder."
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "pleasemen",
+      "relationship_type": "was with",
+      "description": "Mad-Eye was with the please-men when they turned up."
+    }
+  ]
+}

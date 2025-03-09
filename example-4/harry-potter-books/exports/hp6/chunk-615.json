@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Harry is currently located."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is mentioned in Harry's thoughts."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in Harry's thoughts."
+    },
+    {
+      "name": "half-blood prince",
+      "entity_type": "book",
+      "singular": true,
+      "description": "A book that is mentioned in Harry's thoughts."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron's friend who gave him a gold chain."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "location_of",
+      "description": "Harry is currently located at Hogwarts."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "thought_of_by",
+      "description": "Harry thinks about Snape."
+    },
+    {
+      "entity_1": "stan shunpike",
+      "entity_2": "harry",
+      "relationship_type": "thought_of_by",
+      "description": "Harry thinks about Stan Shunpike."
+    },
+    {
+      "entity_1": "half-blood prince",
+      "entity_2": "harry",
+      "relationship_type": "thought_of_by",
+      "description": "Harry thinks about the Half-Blood Prince."
+    },
+    {
+      "entity_1": "lavender",
+      "entity_2": "ron",
+      "relationship_type": "gave_to",
+      "description": "Lavender gave a gold chain to Ron."
+    }
+  ]
+}

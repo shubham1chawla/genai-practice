@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Marge is described as a person who is rising off her chair towards the ceiling, entirely round and making apoplectic popping noises."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as a person who is yelling at Aunt Marge and trying to pull her down from the air."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is described as a person who is yelling at Aunt Marge along with Uncle Vernon."
+    },
+    {
+      "name": "ripper",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Ripper is described as an animal that came skidding into the room barking madly and sank his teeth into Uncle Vernon's leg."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a person who tore from the dining room to get something from the cupboard under the stairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "marge",
+      "relationship_type": "tries_to_pull_down",
+      "description": "Uncle Vernon is trying to pull down Aunt Marge who is rising off her chair towards the ceiling."
+    },
+    {
+      "entity_1": "ripper",
+      "entity_2": "uncle vernon",
+      "relationship_type": "bites_leg",
+      "description": "Ripper sank his teeth into Uncle Vernon's leg."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cupboard under the stairs",
+      "relationship_type": "gets_item_from",
+      "description": "Harry got something from the cupboard under the stairs."
+    }
+  ]
+}

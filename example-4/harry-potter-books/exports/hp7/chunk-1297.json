@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is reacting to the battle. He pulled back and opened his eyes at the same moment his ears were assaulted with the screeches and cries of battle."
+    },
+    {
+      "name": "shrieking shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Shrieking Shack is a location where Voldemort is sitting. It's mentioned that he's in the Shrieking Shack."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist who is sitting in the Shrieking Shack. He's not fighting."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is a person who has been sent by Voldemort to find Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is being searched for by Lucius Malfoy."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a character who is outraged when she hears that Voldemort is sitting in the Shrieking Shack."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is an object mentioned at the end of the passage."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "shrieking shack",
+      "relationship_type": "location_of",
+      "description": "Voldemort is sitting in the Shrieking Shack."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "snape",
+      "relationship_type": "searching_for",
+      "description": "Lucius Malfoy has been sent by Voldemort to find Snape."
+    }
+  ]
+}

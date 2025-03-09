@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is the caretaker of Hogwarts school. He is mentioned as having sources and being self-satisfied."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts school. He sent a letter to Filch but claims it has gone missing."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a student at Hogwarts school and witnessed Harry sending the letter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "filch",
+      "entity_2": "harry",
+      "relationship_type": "accuses",
+      "description": "Filch accuses Harry of not sending the letter."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "witnesses",
+      "description": "Cho witnessed Harry sending the letter."
+    }
+  ]
+}

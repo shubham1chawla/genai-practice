@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is trying to resist Voldemort. (Excerpt: 'Harry saw small collections of lights as they passed over more villages...') "
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is yelling from behind him. (Excerpt: 'This is bizarre!' Harry heard Ron yell from somewhere behind him...) "
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a wizard, who is lying on the Department of Mysteries floor. (Excerpt: 'How much time had elapsed since he had seen Sirius lying on the Department of Mysteries floor?') "
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist, a dark wizard who is trying to control Harry. (Excerpt: 'How much longer would he be able to resist Voldemort?') "
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "has_seen",
+      "description": "Harry has seen Sirius lying on the Department of Mysteries floor. (Excerpt: 'How much time had elapsed since he had seen Sirius lying on the Department of Mysteries floor?') "
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "resists",
+      "description": "Harry is resisting Voldemort. (Excerpt: 'How much longer would he be able to resist Voldemort?') "
+    }
+  ]
+}

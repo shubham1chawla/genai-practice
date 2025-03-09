@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "rain",
+      "entity_type": "weather_condition",
+      "singular": true,
+      "description": "The rain is described as thickening and hammering against the windows."
+    },
+    {
+      "name": "train",
+      "entity_type": "mode_of_transportation",
+      "singular": true,
+      "description": "The train is speeding north and slowing down."
+    },
+    {
+      "name": "Professor Lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is sleeping on the train."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is leaning forward to look out the window and getting up to try and see outside."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is checking her watch and saying they can't be there yet."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is getting up to look into the corridor."
+    },
+    {
+      "name": "feast",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Ron wants to get to the feast."
+    },
+    {
+      "name": "corridor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Heads are sticking out of the corridor along the carriage."
+    },
+    {
+      "name": "luggage racks",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Lanterns are ﬂickering into life over the luggage racks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "train",
+      "entity_2": "Professor Lupin",
+      "relationship_type": "is_containing",
+      "description": "The train is containing Professor Lupin."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "window",
+      "relationship_type": "can_see",
+      "description": "Ron can see out the window."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "watch",
+      "relationship_type": "is_checking",
+      "description": "Hermione is checking her watch."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "corridor",
+      "relationship_type": "can_see",
+      "description": "Harry can see into the corridor."
+    },
+    {
+      "entity_1": "train",
+      "entity_2": "feast",
+      "relationship_type": "is_approaching",
+      "description": "The train is approaching the feast."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "feast",
+      "relationship_type": "wants_to_get_to",
+      "description": "Ron wants to get to the feast."
+    }
+  ]
+}

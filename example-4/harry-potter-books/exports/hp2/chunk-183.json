@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "gilderoy lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Gilderoy Lockhart is mentioned as the one who will be working with the Mandrakes. He is described as a person who will be affected by the Mandrake's cries."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is mentioned as the one who takes care of the Mandrakes and explains how to handle them safely. She is described as a person who is calm and experienced in handling magical plants."
+    },
+    {
+      "name": "mandrake",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "The Mandrake is mentioned as a magical plant that has the ability to knock people out with its cries. It is described as being buried in compost and having leaves growing out of it."
+    },
+    {
+      "name": "earmuffs",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Earmuffs are mentioned as a necessary object for protecting oneself from the Mandrake's cries. They are described as something that needs to be securely in place while working with the Mandrakes."
+    },
+    {
+      "name": "table",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The table is mentioned as a location where Professor Sprout finds a plant pot under it. It is not further described or explained."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mandrake",
+      "entity_2": "gilderoy lockhart",
+      "relationship_type": "affects",
+      "description": "The Mandrake's cries will knock Gilderoy Lockhart out for several hours, as mentioned by Professor Sprout."
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "mandrake",
+      "relationship_type": "cares_for",
+      "description": "Professor Sprout is taking care of the Mandrakes and explaining how to handle them safely. She is described as being calm and experienced in handling magical plants."
+    },
+    {
+      "entity_1": "gilderoy lockhart",
+      "entity_2": "earmuffs",
+      "relationship_type": "uses",
+      "description": "Gilderoy Lockhart will be using earmuffs to protect himself from the Mandrake's cries, as mentioned by Professor Sprout."
+    }
+  ]
+}

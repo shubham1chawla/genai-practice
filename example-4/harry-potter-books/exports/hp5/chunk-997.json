@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is experiencing pain and discomfort. He is described as being ill, vomiting, and having a headache."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is standing over him and looking frightened. He is trying to understand what is happening to Harry's dad."
+    },
+    {
+      "name": "harry's dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has been attacked and bitten, causing serious harm. The exact identity of this person is not specified in the text."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about Ron's reaction to his news, and Ron is trying to understand what is happening."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "harry's dad",
+      "relationship_type": "informed_about",
+      "description": "Harry informs Ron that his dad has been attacked and bitten. This relationship is bidirectional, as Harry is also informed about the situation with his dad."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry's dad",
+      "relationship_type": "concerned_about",
+      "description": "Ron is concerned about his dad's well-being and is trying to get help. This relationship is bidirectional, as Ron is also informed about the situation with Harry's dad."
+    }
+  ]
+}

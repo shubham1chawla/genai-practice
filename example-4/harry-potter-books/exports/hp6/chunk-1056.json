@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a person who was dropped by The Cave 539 and hit the ground, slipped on the rock and fell, grazing his arms, but scrambled back up, raising his wand and staring around."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as a person who was on his feet again, pale as any of the surrounding Inferi, but taller than any , too, the fire dancing in his eyes; his wand was raised like a torch and from its tip emanated the flames, like a vast lasso, encircling them all with warmth."
+    },
+    {
+      "name": "the cave 539",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Cave 539 is described as a location where Harry was dropped."
+    },
+    {
+      "name": "inferi",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Inferi are described as people who were attempting, blindly , to escape the fire in which they were enclosed."
+    },
+    {
+      "name": "the lock et",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Lock Et is described as an object that Dumbledore scooped from the bottom of the stone basin and stowed it inside his robes."
+    },
+    {
+      "name": "the boat",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Boat is described as a location where Harry and Dumbledore went back to."
+    },
+    {
+      "name": "the ring of fire",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Ring of Fire is described as an object that was moving with them, around them, the bewildered Inferi accompanying them to the water’s edge."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the cave 539",
+      "relationship_type": "dropped_by",
+      "description": "Harry was dropped by The Cave 539."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the lock et",
+      "relationship_type": "possesses",
+      "description": "Dumbledore scooped the Lock Et from the bottom of the stone basin and stowed it inside his robes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "led_by",
+      "description": "Wordlessly , Dumbledore gestured to Harry to come to his side, leading him back to The Boat."
+    },
+    {
+      "entity_1": "the ring of fire",
+      "entity_2": "inferi",
+      "relationship_type": "encloses",
+      "description": "The Ring of Fire was encircling the Inferi with warmth."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "accompanies",
+      "description": "Harry accompanied Dumbledore back to The Boat."
+    }
+  ]
+}

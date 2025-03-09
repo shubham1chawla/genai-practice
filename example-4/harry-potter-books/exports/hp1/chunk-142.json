@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to by name."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is helping Harry."
+    },
+    {
+      "name": "griffindor",
+      "entity_type": "treasure",
+      "singular": false,
+      "description": "The treasure that belongs to Harry, consisting of gold coins, silver columns, and bronze Knuts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "griffindor",
+      "relationship_type": "owns",
+      "description": "Hagrid is helping Harry with his treasure."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "griffindor",
+      "relationship_type": "possesses",
+      "description": "The treasure belongs to Harry."
+    }
+  ]
+}

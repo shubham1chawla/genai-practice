@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Weasley had appeared, holding a long poker like a sword."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley's eyes jerked open. He stared guiltily at his wife."
+    },
+    {
+      "name": "cars",
+      "entity_type": "vehicle",
+      "singular": false,
+      "description": "Imagine a wizard buying a rusty old car and telling his wife all he wanted to do with it was take it apart to see how it worked, while really he was enchanting it to make it fly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "cars",
+      "relationship_type": "owns",
+      "description": "Mr Weasley's eyes jerked open. He stared guiltily at his wife, and the conversation was about him buying a car."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "cars",
+      "relationship_type": "concerned_about",
+      "description": "Mrs Weasley had appeared, holding a long poker like a sword, and the conversation was about Mr Weasley buying a car."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mrs weasley",
+      "relationship_type": "married_to",
+      "description": "Mr Weasley's eyes jerked open. He stared guiltily at his wife, indicating their marital relationship."
+    }
+  ]
+}

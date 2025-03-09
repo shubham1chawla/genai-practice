@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a student who is speaking loudly and smirking. He is also referred to as 'Father's son' by Snape, indicating that he has a father who is likely a significant figure in the wizarding world."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as a teacher who is responding to Malfoy's comments. He is described as having a 'thin-lipped smile' and is referred to as 'sir'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the Headmaster who has been suspended by the governors. Snape mentions that he will likely return soon."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Seamus Finnigan is mentioned as a student who is pretending to vomit into his cauldron, and was fortunately not spotted by Snape."
+    },
+    {
+      "name": "granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Granger is mentioned as a student who Malfoy wishes had died instead of someone else."
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is mentioned as a student who leapt off his stool in response to Malfoy's comments, but was unable to reach him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snape",
+      "relationship_type": "speak_to",
+      "description": "Malfoy speaks loudly and smirks at Snape, who responds with a thin-lipped smile."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dumbledore",
+      "relationship_type": "comment_about",
+      "description": "Malfoy makes comments about Dumbledore's suspension, which Snape responds to by saying he will likely return soon."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "smirk_at",
+      "description": "Snape smirks at Malfoy in response to his comments."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "try_to_reach",
+      "description": "Ron tries to reach Malfoy, but is unable to do so in the scramble to collect bags and books."
+    }
+  ]
+}

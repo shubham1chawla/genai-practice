@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as 'Harry Potter' and also referred to by his first name 'Harry'. The text describes him trying to squash a Mandrake into a pot and struggling with Transfiguration. (Excerpt: 'Harry spent ten whole minutes trying to squash a particularly fat one into a pot.')"
+    },
+    {
+      "name": "mandrakes",
+      "entity_type": "plant",
+      "singular": false,
+      "description": "A type of magical plant that is difficult to handle. The text describes them as squirming, kicking, and flailing their fists. (Excerpt: 'The Mandrakes didn’t like coming out of the earth, but didn’t seem to want to go back into it either.')"
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who teaches Herbology. The text describes her as making something look 'extremely easy' but actually being difficult. (Excerpt: 'Professor Sprout had made it look extremely easy, but it wasn’t.')"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who teaches Transfiguration. The text describes her classes as 'hard work' and mentions that Harry struggled with the lesson. (Excerpt: 'Professor McGonagall’s classes were always hard work, but today was especially difficult.')"
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "house",
+      "singular": false,
+      "description": "A group of students who attend Hogwarts School of Witchcraft and Wizardry. The text mentions that the Gryffindors 'hurried off to Transfiguration'. (Excerpt: 'They traipsed back to the castle for a quick wash and then the Gryffindors hurried off to Transfiguration.')"
+    },
+    {
+      "name": "beetle",
+      "entity_type": "insect",
+      "singular": true,
+      "description": "A type of insect that is being used in Professor McGonagall's lesson. The text describes Harry struggling to turn it into a button. (Excerpt: 'He was supposed to be turning a beetle into a button, but all he')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school of witchcraft and wizardry where Harry attends classes. The text mentions that the students traipsed back to the castle for a wash. (Excerpt: 'They traipsed back to the castle for a quick wash')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mandrakes",
+      "relationship_type": "struggle",
+      "description": "Harry is struggling to squash a Mandrake into a pot. (Excerpt: 'Harry spent ten whole minutes trying to squash a particularly fat one into a pot.')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "struggle",
+      "description": "Harry is struggling with Professor McGonagall's Transfiguration lesson. (Excerpt: 'He was supposed to be turning a beetle into a button, but all he')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "beetle",
+      "relationship_type": "struggle",
+      "description": "Harry is struggling to turn the beetle into a button. (Excerpt: 'He was supposed to be turning a beetle into a button, but all he')"
+    },
+    {
+      "entity_1": "professor sprout",
+      "entity_2": "mandrakes",
+      "relationship_type": "teach",
+      "description": "Professor Sprout teaches the students how to handle Mandrakes. (Excerpt: 'Professor Sprout had made it look extremely easy, but it wasn’t.')"
+    },
+    {
+      "entity_1": "gryffindors",
+      "entity_2": "transfiguration",
+      "relationship_type": "attend",
+      "description": "The Gryffindors attend Professor McGonagall's Transfiguration lesson. (Excerpt: 'They traipsed back to the castle for a quick wash and then the Gryffindors hurried off to Transfiguration.')"
+    }
+  ]
+}

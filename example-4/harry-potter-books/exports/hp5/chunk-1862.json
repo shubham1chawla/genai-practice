@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a professor who beckons students forward imperiously. She thrusts her carpetbag into Crabbe's chest and her cloak into Goyl e's."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is one of the students who receives a carpetbag from Professor McGonagall."
+    },
+    {
+      "name": "goyl e",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyl e is one of the students who receives a cloak from Professor McGonagall."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is one of the students who alerted the world to the return of You-Know-Who."
+    },
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is a professor who is asked for his opinion on awarding points to Potter and his friends."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "thing",
+      "singular": true,
+      "description": "You-Know-Who is the entity that was returned."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "crabbe",
+      "relationship_type": "gave",
+      "description": "Professor McGonagall gave her carpetbag to Crabbe."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "goyl e",
+      "relationship_type": "gave",
+      "description": "Professor McGonagall gave her cloak to Goyl e."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "you-know-who",
+      "relationship_type": "alerted",
+      "description": "Potter and his friends alerted the world to the return of You-Know-Who."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "potter",
+      "relationship_type": "awarded_points",
+      "description": "Professor McGonagall thinks Potter and his friends should be awarded points for alerting the world to the return of You-Know-Who."
+    },
+    {
+      "entity_1": "professor snape",
+      "entity_2": "potter",
+      "relationship_type": "opinion",
+      "description": "Professor Snape is asked for his opinion on awarding points to Potter and his friends."
+    }
+  ]
+}

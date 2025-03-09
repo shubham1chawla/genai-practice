@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco is mentioned as someone who needs to pick up something for Bellatrix."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the target of Voldemort's attack and death."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the Dark Lord who is coming to kill Harry Potter."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is mentioned as someone who gives orders and takes care of Hermione."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Greyback is mentioned as someone who will take care of Miss Mudblood (Hermione)."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as Miss Mudblood and is being taken care of by Greyback."
+    },
+    {
+      "name": "miss mudblood",
+      "entity_type": "title",
+      "singular": true,
+      "description": "Miss Mudblood is a title given to Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "target_of_attack",
+      "description": "Voldemort is coming to kill Harry Potter."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "hermione",
+      "relationship_type": "caretaker",
+      "description": "Bellatrix takes care of Hermione."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "hermione",
+      "relationship_type": "target_of_action",
+      "description": "Greyback will take care of Miss Mudblood (Hermione)."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "draco",
+      "relationship_type": "order_giver",
+      "description": "Bellatrix gives orders to Draco."
+    }
+  ]
+}

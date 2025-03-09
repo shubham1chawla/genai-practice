@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as the one who cast a curse on Malfoy, causing wounds. He is also mentioned to be soaked in blood and water."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as the one who performed an incantation that sounded like a song, and then repeated his spell to counter-curse Malfoy's wounds."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the victim of Harry's curse, with wounds that Snape tries to heal."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Myrtle is described as sobbing and wailing overhead, indicating her presence in the bathroom."
+    },
+    {
+      "name": "hospital wing",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The hospital wing is mentioned as a place where Malfoy needs to go for treatment."
+    },
+    {
+      "name": "dittany",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Dittany is mentioned as something that might help avoid scarring if taken immediately."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "heals",
+      "description": "Snape performs a counter-curse to heal Malfoy's wounds."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "injured",
+      "description": "Harry cast a curse that injured Malfoy."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dittany",
+      "relationship_type": "prescribes",
+      "description": "Snape suggests taking dittany to avoid scarring."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hospital wing",
+      "relationship_type": "needs treatment at",
+      "description": "Malfoy needs to go to the hospital wing for treatment."
+    }
+  ]
+}

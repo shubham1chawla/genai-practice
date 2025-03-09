@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as the one who is trying to lift Neville up the steps. He is mentioned multiple times in the text and is shown to be exerting a lot of effort to help Neville."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is described as being unable to support his own weight and needing Harry's help to climb the steps. He is mentioned multiple times in the text and is shown to be struggling to move."
+    },
+    {
+      "name": "stone bench",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stone bench is described as being hit by a spell and crumbling away. It is mentioned only once in the text but plays an important role in the scene."
+    },
+    {
+      "name": "prophecy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The prophecy is described as being thrust into Neville's pocket. It is mentioned only once in the text but is shown to be an important item."
+    },
+    {
+      "name": "spell",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A spell is described as hitting the stone bench and causing it to crumble away. It is mentioned multiple times in the text and is shown to be a significant obstacle for Harry and Neville."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "helps",
+      "description": "Harry is helping Neville by lifting him up the steps. This is described in the text as 'Come on!' said Harry desperately, hauling at Neville's robes."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone bench",
+      "relationship_type": "affected_by",
+      "description": "The stone bench is affected by a spell that hits it and causes it to crumble away. This is described in the text as 'A spell hit the stone bench at Harry's heel.'"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "prophecy",
+      "relationship_type": "possesses",
+      "description": "Neville possesses the prophecy, which he thrusts into his pocket. This is described in the text as 'Neville sank to the ground, his legs still jerking and thrashing, and thrust the prophecy into his pocket.'"
+    },
+    {
+      "entity_1": "spell",
+      "entity_2": "stone bench",
+      "relationship_type": "affects",
+      "description": "The spell affects the stone bench by hitting it and causing it to crumble away. This is described in the text as 'A spell hit the stone bench at Harry's heel.'"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "spell",
+      "relationship_type": "affected_by",
+      "description": "Neville is affected by the spell, which hits him and causes his legs to jerk and thrash. This is described in the text as 'Neville’s legs twitched and jerked and would not support his weight.'"
+    }
+  ]
+}

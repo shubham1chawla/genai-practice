@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student in the class who speaks up against Professor Umbridge."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student in the class who defends jinxes and argues with Professor Umbridge."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the Hogwarts High Inquisitor who is against jinxes and takes points from Gryffindor House."
+    },
+    {
+      "name": "slinkhard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Slinkhard is a teacher who does not like jinxes."
+    },
+    {
+      "name": "gryffindor house",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryffindor House is one of the four houses in Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "slinkhard",
+      "relationship_type": "opinion",
+      "description": "Professor Umbridge agrees with Mr. Slinkhard's opinion on jinxes."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "umbridge",
+      "relationship_type": "disagreement",
+      "description": "Hermione disagrees with Professor Umbridge's stance on jinxes."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "gryffindor house",
+      "relationship_type": "penalty",
+      "description": "Professor Umbridge takes points from Gryffindor House as a penalty."
+    }
+  ]
+}

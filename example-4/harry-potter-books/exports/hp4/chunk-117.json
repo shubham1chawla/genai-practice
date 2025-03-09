@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as settling down to eat beneath a clear sky. He is helping himself to food."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned alongside Harry as they settle down to eat."
+    },
+    {
+      "name": "percival weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is described as telling his father about his report on cauldron bottoms."
+    },
+    {
+      "name": "mr. crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is mentioned by Percy as the one he will be submitting his report to."
+    },
+    {
+      "name": "ludo bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ludo Bagman is mentioned by Percy as someone who got something done."
+    },
+    {
+      "name": "department of magical games and sports",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Department of Magical Games and Sports is mentioned as not providing the support needed by Percy's department."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "percival weasley",
+      "entity_2": "mr. crouch",
+      "relationship_type": "submit_report_to",
+      "description": "Percy is submitting his report to Mr. Crouch."
+    },
+    {
+      "entity_1": "department of magical games and sports",
+      "entity_2": "percival weasley's department",
+      "relationship_type": "lack_support_for",
+      "description": "The Department of Magical Games and Sports is not providing the support needed by Percy's department."
+    }
+  ]
+}

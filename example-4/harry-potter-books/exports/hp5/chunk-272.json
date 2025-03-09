@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as thinking desperately about putting in ten Galleons."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": false,
+      "description": "A type of currency mentioned as something Harry is willing to put in if he's not expelled from Hogwarts."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, also referred to by his full name."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is escorting Harry and mentioned as saying 'Over here, Harry'."
+    },
+    {
+      "name": "ministry employees",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people heading for the golden gates."
+    },
+    {
+      "name": "golden gates",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned as where the Ministry employees are heading."
+    },
+    {
+      "name": "security wizard",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is checking Harry's wand."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper that the security wizard was reading."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "galleons",
+      "relationship_type": "has_willingness_to_put_in",
+      "description": "Harry is willing to put in ten Galleons if he's not expelled from Hogwarts."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "harry",
+      "relationship_type": "is Escorting",
+      "description": "Mr. Weasley is escorting Harry."
+    },
+    {
+      "entity_1": "security wizard",
+      "entity_2": "daily prophet",
+      "relationship_type": "was_reading",
+      "description": "The security wizard was reading the Daily Prophet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "is_being_escorted_by",
+      "description": "Harry is being escorted by Mr. Weasley."
+    },
+    {
+      "entity_1": "security wizard",
+      "entity_2": "harry",
+      "relationship_type": "checked_wand_of",
+      "description": "The security wizard checked Harry's wand."
+    }
+  ]
+}

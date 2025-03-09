@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Bellatrix, referred to as 'Potter'."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Death Eater who is shouting at Potter and demanding the prophecy."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to as 'Potter', who has a scar on his forehead."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard and the one Harry is referring to as 'your dear old mate'."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was being helped by Harry when the prophecy was smashed."
+    },
+    {
+      "name": "prophecy",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that contains important information and is being demanded by Bellatrix from Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "potter",
+      "relationship_type": "demands",
+      "description": "Bellatrix demands the prophecy from Potter, shouting at him to give it to her."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "knows_about",
+      "description": "Harry knows that Voldemort is not happy about the prophecy being smashed."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "prophecy",
+      "relationship_type": "has",
+      "description": "Potter has the prophecy, but it was smashed when he was trying to get Neville up the steps."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "voldemort",
+      "relationship_type": "will_be_unhappy_with",
+      "description": "Bellatrix knows that Voldemort will be unhappy with her if she fails to obtain the prophecy."
+    }
+  ]
+}

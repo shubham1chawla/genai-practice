@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "professor snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is a teacher at Hogwarts School of Witchcraft and Wizardry, mentioned as being strict and having a confrontational tone with the students. (\"Miss Granger, you are already facing suspension from this school,\" Snape spat.)"
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger is a student at Hogwarts School of Witchcraft and Wizardry, mentioned as being reprimanded by Professor Snape. (\"Miss Granger, you are already facing suspension from this school,\" Snape spat.)"
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts School of Witchcraft and Wizardry, mentioned as being out-of-bounds with Ron Weasley. (\"You, Potter, and Weasley are out-of-bounds, in the company of a convicted murderer and a werewolf.\")"
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is a student at Hogwarts School of Witchcraft and Wizardry, mentioned as being out-of-bounds with Harry Potter. (\"You, Potter, and Weasley are out-of-bounds, in the company of a convicted murderer and a werewolf.\")"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Black is a convicted murderer and a werewolf, mentioned as being present with Harry Potter and Ron Weasley. (\"You, Potter, and Weasley are out-of-bounds, in the company of a convicted murderer and a werewolf.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another name for Miss Granger. (\"But if — if there was a mistake —\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor snape",
+      "entity_2": "miss granger",
+      "relationship_type": "reprimand",
+      "description": "Professor Snape reprimands Miss Granger for being out-of-bounds. (\"Miss Granger, you are already facing suspension from this school,\" Snape spat.)"
+    },
+    {
+      "entity_1": "professor snape",
+      "entity_2": "potter",
+      "relationship_type": "reprimand",
+      "description": "Professor Snape reprimands Harry Potter for being out-of-bounds. (\"You, Potter, and Weasley are out-of-bounds, in the company of a convicted murderer and a werewolf.\")"
+    },
+    {
+      "entity_1": "professor snape",
+      "entity_2": "weasley",
+      "relationship_type": "reprimand",
+      "description": "Professor Snape reprimands Ron Weasley for being out-of-bounds. (\"You, Potter, and Weasley are out-of-bounds, in the company of a convicted murderer and a werewolf.\")"
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "professor snape",
+      "relationship_type": "admiration",
+      "description": "Severus Black shows admiration for Professor Snape's ability to catch him. (\"Vengeance is very sweet,\" Snape breathed at Black.)"
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "potter",
+      "relationship_type": "cooperation",
+      "description": "Severus Black agrees to come quietly with Harry Potter as long as his rat is brought up to the castle. (\"The joke’s on you again, Severus,\" Black snarled. \"As long as this boy brings his rat up to the castle\" — he jerked his head at Ron — \"I’ll come quietly.\")"
+    }
+  ]
+}

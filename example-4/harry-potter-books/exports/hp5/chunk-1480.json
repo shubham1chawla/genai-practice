@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "skiving snackboxes",
+      "entity_type": "product",
+      "singular": false,
+      "description": "Skiving Snackboxes are mentioned as something Fred and George had managed to sell before leaving Hogwarts. (Text: 'Meanwhile it became clear just how many Skiving Snackboxes Fred and George had managed to sell b efore leaving Hogwarts.')"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the people who sold Skiving Snackboxes. (Text: 'Fred and George had managed to sell...')"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as one of the people who sold Skiving Snackboxes. (Text: 'Fred and George had managed to sell...')"
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone who enters her classroom for students assembled there. (Text: 'Umbridge only had to enter her classroom for the student s assembled there to...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "co-seller",
+      "description": "Fred and George are mentioned as co-sellers of Skiving Snackboxes. (Text: 'Fred and George had managed to sell...')"
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "students",
+      "relationship_type": "teacher-student",
+      "description": "Umbridge is mentioned as a teacher who enters her classroom for students assembled there. (Text: 'Umbridge only had to enter her classroom for the student s assembled there to...')"
+    }
+  ]
+}

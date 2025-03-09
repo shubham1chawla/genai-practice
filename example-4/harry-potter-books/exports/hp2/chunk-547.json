@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "Fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is a dog who yelped and tried to run when he got lodged in thorns."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one being called by Ron, and he blunders after Ron towards the light."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron shouts for Harry and leads him to their car."
+    },
+    {
+      "name": "Mr Weasley's car",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The car is standing in a clearing, empty, with its headlamps ablaze."
+    },
+    {
+      "name": "the Forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Forest has turned Mr Weasley's car wild and it has been trundling around on its own."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Ron",
+      "entity_2": "Harry",
+      "relationship_type": "called",
+      "description": "Ron shouts for Harry."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Mr Weasley's car",
+      "relationship_type": "owned",
+      "description": "The car belongs to Ron (implied by the context)."
+    },
+    {
+      "entity_1": "Fang",
+      "entity_2": "Harry",
+      "relationship_type": "attached_to",
+      "description": "Fang keeps close to Harry."
+    },
+    {
+      "entity_1": "the Forest",
+      "entity_2": "Mr Weasley's car",
+      "relationship_type": "affected",
+      "description": "The Forest has turned Mr Weasley's car wild."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Champion number four'."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A judge who is explaining the wand weighing ceremony to Harry."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "journalist",
+      "singular": true,
+      "description": "A journalist from the Daily Prophet, doing a piece on the tournament."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An expert who is upstairs with Bagman, checking Harry's wand."
+    },
+    {
+      "name": "wand weighing ceremony",
+      "entity_type": "event",
+      "singular": false,
+      "description": "A ceremony where the judges check if the wands are fully functional."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The newspaper that Rita Skeeter is writing for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "wand weighing ceremony",
+      "relationship_type": "participates_in",
+      "description": "Harry is participating in the wand weighing ceremony."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "dumbledore",
+      "relationship_type": "colleague",
+      "description": "Bagman and Dumbledore are colleagues, as they are both judges."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "daily prophet",
+      "relationship_type": "employee",
+      "description": "Rita Skeeter is an employee of the Daily Prophet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bagman",
+      "relationship_type": "interacts_with",
+      "description": "Harry is interacting with Bagman, as he is explaining the wand weighing ceremony to him."
+    },
+    {
+      "entity_1": "rita skeeter",
+      "entity_2": "harry",
+      "relationship_type": "interviews",
+      "description": "Rita Skeeter is interviewing Harry for her piece on the tournament."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix was described as being terrified when she thought Harry and Ron had been in a certain place."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry was mentioned as the one who might have seen something that You-Know-Who would find out about."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron was described as looking baffled by Harry's statement."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "character",
+      "singular": true,
+      "description": "You-Know-Who was mentioned as the one who might have done something important in certain places."
+    },
+    {
+      "name": "lestranges' vault",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The Lestranges' vault was mentioned as a possible place where You-Know-Who might have been."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Gringotts was mentioned as the bank where Harry's gold is kept."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "fear_of",
+      "description": "Bellatrix was terrified of what Harry and Ron might have seen or taken."
+    },
+    {
+      "entity_1": "you-know-who",
+      "entity_2": "lestranges' vault",
+      "relationship_type": "presence_at",
+      "description": "You-Know-Who might have been inside the Lestranges' vault."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gringotts",
+      "relationship_type": "connection_to",
+      "description": "Harry's gold is kept at Gringotts."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is mentioned as a person who was killed by the speaker three hours ago."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's last plan went wrong, according to Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a person who is being addressed by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the speaker and is referred to as 'Riddle'."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as a powerful object that is truly owned by Voldemort."
+    },
+    {
+      "name": "deathstick",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Deathstick is another name for the Elder Wand."
+    },
+    {
+      "name": "wand of destiny",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Wand of Destiny is yet another name for the Elder Wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus snape",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Severus Snape three hours ago, according to the speaker."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "plan_failed_for",
+      "description": "Dumbledore's last plan went wrong for Harry Potter."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "owns",
+      "description": "The Elder Wand is truly owned by Voldemort, according to the speaker."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "addressed_by",
+      "description": "Harry Potter is being addressed by Voldemort."
+    }
+  ]
+}

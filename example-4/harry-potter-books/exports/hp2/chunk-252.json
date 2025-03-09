@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Hogwarts staff member who is interested in taking a Kwikspell course."
+    },
+    {
+      "name": "madam z. nettles",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch who has benefited from the Kwikspell method and writes a testimonial about it."
+    },
+    {
+      "name": "d.j. prod",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A warlock who has also benefited from the Kwikspell method and writes a testimonial about it."
+    },
+    {
+      "name": "kwikspell",
+      "entity_type": "product",
+      "singular": true,
+      "description": "An all-new, fail-safe, quick-result, easy-learn course for witches and wizards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in learning more about Filch's interest in taking a Kwikspell course."
+    },
+    {
+      "entity_1": "madam z. nettles",
+      "entity_2": "kwikspell",
+      "relationship_type": "benefited_from",
+      "description": "Madam Z. Nettles has benefited from the Kwikspell method, as described in her testimonial."
+    },
+    {
+      "entity_1": "d.j. prod",
+      "entity_2": "kwikspell",
+      "relationship_type": "benefited_from",
+      "description": "D.J. Prod has also benefited from the Kwikspell method, as described in his testimonial."
+    }
+  ]
+}

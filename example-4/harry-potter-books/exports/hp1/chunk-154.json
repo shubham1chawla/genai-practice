@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts. He is mentioned as saying 'An' anyway , yeh couldn’ work any of them curses yet, yeh’ll need a lot more study before yeh get ter that level.'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character. He is mentioned as buying a set of scales and examining silver unicorn horns at twenty-one Galleons each."
+    },
+    {
+      "name": "cauldron",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A cauldron is a cooking pot used for brewing potions. Hagrid wouldn’t let Harry buy a solid gold cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "advises",
+      "description": "Hagrid advises Harry on potion-making, saying 'An' anyway , yeh couldn’ work any of them curses yet, yeh’ll need a lot more study before yeh get ter that level.'"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "cauldron",
+      "relationship_type": "forbids_purchase",
+      "description": "Hagrid forbids Harry from buying a solid gold cauldron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "apothecary's",
+      "relationship_type": "visits",
+      "description": "Harry visits the apothecary’s with Hagrid."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'he' and described by Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, described as murmuring and reaching out to stroke the dragon's head."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as asking Hagrid a question."
+    },
+    {
+      "name": "norwegian ridgeback",
+      "entity_type": "dragon",
+      "singular": false,
+      "description": "A type of dragon, described by Hagrid and seen by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, mentioned as seeing the Norwegian Ridgeback and having a suspicious smile."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "norwegian ridgeback",
+      "relationship_type": "saw",
+      "description": "Harry saw the Norwegian Ridgeback."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "norwegian ridgeback",
+      "relationship_type": "saw",
+      "description": "Malfoy saw the Norwegian Ridgeback."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "responded_to_question",
+      "description": "Hagrid responded to Hermione's question about the growth of Norwegian Ridgebacks."
+    }
+  ]
+}

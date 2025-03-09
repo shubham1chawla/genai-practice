@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is the one who has an office and is triumphant in her statement."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who is hiding from Umbridge's office and is now visible again."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is a person who was sacked on a previous night."
+    },
+    {
+      "name": "inquisitorial squad",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Inquisitorial Squad are members of the school who look pleased with themselves."
+    },
+    {
+      "name": "peeves",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Peeves is a ghost who is bobbing overhead and gazing down at Fred and George."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the twins who are standing in the middle of the floor with an unmistakable look on their faces."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is the other twin who is standing in the middle of the floor with his brother Fred."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "harry",
+      "relationship_type": "visibility",
+      "description": "Umbridge's office is where Harry was hiding, and now he has become visible again."
+    },
+    {
+      "entity_1": "inquisitorial squad",
+      "entity_2": "peeves",
+      "relationship_type": "proximity",
+      "description": "The Inquisitorial Squad are standing near Peeves who is bobbing overhead."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "co-location",
+      "description": "Fred and George are standing together in the middle of the floor."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "inquisitorial squad",
+      "relationship_type": "affiliation",
+      "description": "Umbridge is associated with the Inquisitorial Squad who look pleased with themselves."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as reacting to a noise by screwing up his eyes and clapping his hands over his ears."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as darting forward with Mrs. Weasley to try to close the curtains."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley is described as trying to close the curtains and later stunning other portraits with her wand."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks apologizes over and over again while dragging a troll's leg back off the floor."
+    },
+    {
+      "name": "the old woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The old woman is described as screeching loudly and trying to tear at people's faces with her clawed hands."
+    },
+    {
+      "name": "the man with long black hair",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A man with long black hair comes charging out of a door facing Harry and roars at the old woman to shut up."
+    },
+    {
+      "name": "the troll",
+      "entity_type": "troll",
+      "singular": true,
+      "description": "The troll is mentioned as being dragged back off the floor by Tonks."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tonks",
+      "entity_2": "the troll",
+      "relationship_type": "dragged_back_off_floor",
+      "description": "Tonks is dragging the troll's leg back off the floor."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "the old woman",
+      "relationship_type": "tried_to_close_curtains",
+      "description": "Mrs. Weasley tried to close the curtains over the old woman."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "the old woman",
+      "relationship_type": "tried_to_close_curtains",
+      "description": "Lupin is mentioned as trying to close the curtains with Mrs. Weasley."
+    },
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "other portraits",
+      "relationship_type": "stunned_with_wand",
+      "description": "Mrs. Weasley stunned other portraits in the hall with her wand."
+    },
+    {
+      "entity_1": "the man with long black hair",
+      "entity_2": "the old woman",
+      "relationship_type": "roared_at_to_shut_up",
+      "description": "The man with long black hair roars at the old woman to shut up."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "apologized_over_him",
+      "description": "Tonks apologized over and over again while dragging a troll's leg back off the floor, near Harry."
+    }
+  ]
+}

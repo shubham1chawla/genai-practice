@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, a Triwizard champion."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's best friends and a clever student."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is also a Auror."
+    },
+    {
+      "name": "skeeter woman",
+      "entity_type": "journalist",
+      "singular": false,
+      "description": "A journalist who has been causing trouble for the wizarding community."
+    },
+    {
+      "name": "binns",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher at Hogwarts who teaches History of Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "skeeter woman",
+      "relationship_type": "target",
+      "description": "Hermione thinks she has an idea to catch the Skeeter woman."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "binns",
+      "relationship_type": "student",
+      "description": "Harry is a student in Binns's class."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "skeeter woman",
+      "relationship_type": "target",
+      "description": "Ron thinks Hermione must really hate the Skeeter woman to risk missing an exam."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "library",
+      "relationship_type": "location",
+      "description": "Hermione wants to go to the library for two seconds."
+    }
+  ]
+}

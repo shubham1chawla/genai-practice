@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "grimmault place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where they took the old robes from."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the people involved in the scene."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person Harry is loathing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmault place",
+      "relationship_type": "visited",
+      "description": "Harry and others visited Grimmauld Place to take the old robes."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "loathed_by",
+      "description": "Hermione was loathed by Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "loathes",
+      "description": "Harry loathed Hermione."
+    }
+  ]
+}

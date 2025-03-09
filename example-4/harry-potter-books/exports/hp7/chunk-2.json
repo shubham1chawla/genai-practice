@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape and Yaxley sped toward the front door, which swung inward at their approach. The eyes of the pale-faced portraits on the walls followed Snape and Yaxley as they strode past."
+    },
+    {
+      "name": "yaxley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape and Yaxley sped toward the front door, which swung inward at their approach. The eyes of the pale-faced portraits on the walls followed Snape and Yaxley as they strode past."
+    },
+    {
+      "name": "fountain",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Somewhere in the dark garden beyond the hedge a fountain was playing."
+    },
+    {
+      "name": "hallway",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hallway was large, dimly light, and sumptuously decorated, with a magniﬁcent carpet covering most of the stone ﬂoor."
+    },
+    {
+      "name": "portraits",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The eyes of the pale-faced portraits on the walls followed Snape and Yaxley as they strode past."
+    },
+    {
+      "name": "drawing room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The drawing room was full of silent people, sitting at a long and ornate table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "yaxley",
+      "relationship_type": "accompanying",
+      "description": "Snape and Yaxley sped toward the front door, which swung inward at their approach."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "hallway",
+      "relationship_type": "entering",
+      "description": "The hallway was large, dimly light, and sumptuously decorated, with a magniﬁcent carpet covering most of the stone ﬂoor."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "portraits",
+      "relationship_type": "being_followed_by",
+      "description": "The eyes of the pale-faced portraits on the walls followed Snape and Yaxley as they strode past."
+    },
+    {
+      "entity_1": "yaxley",
+      "entity_2": "hallway",
+      "relationship_type": "entering",
+      "description": "The hallway was large, dimly light, and sumptuously decorated, with a magniﬁcent carpet covering most of the stone ﬂoor."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "drawing room",
+      "relationship_type": "entering",
+      "description": "The drawing room was full of silent people, sitting at a long and ornate table."
+    }
+  ]
+}

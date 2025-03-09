@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as one of the people with Hagrid and Neville. He sneaked up behind Neville and grabbed him for a joke."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as one of the people with Hagrid and Malfoy. He panicked and sent up sparks when Malfoy grabbed him."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as being fuming and in charge of the group. He is trying to catch something in the forest."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang is mentioned as an animal that Harry goes with into the forest."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people who will be staying with Hagrid and Neville."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "neville",
+      "relationship_type": "with",
+      "description": "Hagrid is with Neville."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "malfoy",
+      "relationship_type": "with",
+      "description": "Hagrid is also with Malfoy."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "malfoy",
+      "relationship_type": "grabbed_by",
+      "description": "Malfoy grabbed Neville for a joke."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fang",
+      "relationship_type": "with",
+      "description": "Harry is going with Fang into the forest."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Hagrid will be staying with Hermione and Neville."
+    }
+  ]
+}

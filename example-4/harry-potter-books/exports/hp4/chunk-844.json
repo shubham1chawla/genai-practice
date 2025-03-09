@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dormitory",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The place where Harry is trying to figure out a sound."
+    },
+    {
+      "name": "egg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that makes a strange sound when shaken."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to figure out the sound."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "dormitory",
+      "relationship_type": "location_of",
+      "description": "Harry is in the dormitory when he hears the strange sound."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "egg",
+      "relationship_type": "possesses",
+      "description": "Harry has the egg and is trying to figure out its sound."
+    }
+  ]
+}

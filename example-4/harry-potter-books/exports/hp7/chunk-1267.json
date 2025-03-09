@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to find a hidden place."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is accompanying him on his quest."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends who tries to use the spell 'Accio' to retrieve an object."
+    },
+    {
+      "name": "Draco Malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character from the story who had previously mended the Vanish Cabinet."
+    },
+    {
+      "name": "the Diadem",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that Hermione tries to retrieve using the spell 'Accio'."
+    },
+    {
+      "name": "the Vanish Cabinet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A magical cabinet that was mended by Draco Malfoy."
+    },
+    {
+      "name": "the vault",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned in the story where Hermione's spell 'Accio' seems to have failed."
+    },
+    {
+      "name": "the cathedral",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large building that is being used as a hidden place by Harry and his friends."
+    },
+    {
+      "name": "the city",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location with the appearance of a city, built inside the cathedral."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "the Diadem",
+      "relationship_type": "searches_for",
+      "description": "Harry is searching for the Diadem."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "the Diadem",
+      "relationship_type": "tries_to_retrieve",
+      "description": "Hermione tries to retrieve the Diadem using the spell 'Accio'."
+    },
+    {
+      "entity_1": "Draco Malfoy",
+      "entity_2": "the Vanish Cabinet",
+      "relationship_type": "mended",
+      "description": "Draco Malfoy had previously mended the Vanish Cabinet."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "the cathedral",
+      "relationship_type": "is_in",
+      "description": "Harry and his friends are inside the cathedral."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "the vault",
+      "relationship_type": "failed_to_retrieve_from",
+      "description": "Hermione's spell 'Accio' failed to retrieve an object from the vault."
+    }
+  ]
+}

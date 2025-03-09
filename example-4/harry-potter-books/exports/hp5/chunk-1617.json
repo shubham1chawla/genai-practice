@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The invisibility cloak is used by Harry and Ginny to hide from the crowd. (\"He threw the Invisibility Cloak over both of them\")"
+    },
+    {
+      "name": "garroting gas",
+      "entity_type": "gas",
+      "singular": true,
+      "description": "Garroting Gas is a type of gas that has been released, causing people to be unable to see. (\"someone’s let off Garroting Gas just along here\")"
+    },
+    {
+      "name": "ginnys voice",
+      "entity_type": "voice",
+      "singular": true,
+      "description": "Ginny's voice is used to convince the crowd that the gas is real. (\"That’s because it’s colorless,\" sa id Ginny in a convincingly exasperated voice, \"but if you want to walk through it, carry on, then we’ll have your body as proof for the next idiot who didn’t believe us.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the people trying to get Harry and Ginny down from the fire. (\"I think that’s as good as we’re going to get,  Harry — come on, let’s do it.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people trying to get down from the fire. (\"I think that’s as good as we’re going to get,  Harry — come on, let’s do it.\")"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is one of the people trying to get down from the fire. (\"You can’t come down here!\" Ginny was calling to the crowd.)"
+    },
+    {
+      "name": "crowd",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The crowd is a group of people who are trying to get down from the fire. (\"You can’t come down here!\" Ginny was calling to the crowd.)"
+    },
+    {
+      "name": "bust",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The bust is a statue that is in front of them, and they are listening carefully to its Latin mumblings. (\"They stood listening carefully over the Latin mumblings of the bust in front of them.\")"
+    },
+    {
+      "name": "staircase",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The swiveling staircase is a way for people to get down from the fire, but it's not being used because of the gas. (\"No, sorry, you’re going to have to go round by the swiveling staircase\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "invisibility cloak",
+      "entity_2": "harry",
+      "relationship_type": "used_by",
+      "description": "The invisibility cloak is used by Harry to hide from the crowd. (\"He threw the Invisibility Cloak over both of them\")"
+    },
+    {
+      "entity_1": "invisibility cloak",
+      "entity_2": "ginny",
+      "relationship_type": "used_by",
+      "description": "The invisibility cloak is used by Ginny to hide from the crowd. (\"He threw the Invisibility Cloak over both of them\")"
+    },
+    {
+      "entity_1": "garroting gas",
+      "entity_2": "crowd",
+      "relationship_type": "affects",
+      "description": "The Garroting Gas is affecting the crowd, causing them to be unable to see. (\"someone’s let off Garroting Gas just along here\")"
+    },
+    {
+      "entity_1": "ginny's voice",
+      "entity_2": "crowd",
+      "relationship_type": "influences",
+      "description": "Ginny's voice is influencing the crowd, convincing them that the gas is real. (\"That’s because it’s colorless,\" sa id Ginny in a convincingly exasperated voice, \"but if you want to walk through it, carry on, then we’ll have your body as proof for the next idiot who didn’t believe us.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "helps",
+      "description": "Hermione is helping Harry to get down from the fire. (\"I think that’s as good as we’re going to get,  Harry — come on, let’s do it.\")"
+    }
+  ]
+}

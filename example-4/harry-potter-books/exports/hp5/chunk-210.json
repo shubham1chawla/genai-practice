@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is a person who is part of Harry's group and is discussing the weapon with Ron and Fred. He says 'That's where he hid the Sorcerer's Stone!' referring to Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is part of Harry's group and is discussing the weapon with George and Fred. He sounds slightly nervous when saying 'I hope it's our side'."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is a person who is part of Harry's group and is discussing the weapon with Ron and George. He says 'Dumbledore's probably keeping it'."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is mentioned by Fred as possibly keeping the weapon. He is also mentioned as hiding the Sorcerer's Stone in Hogwarts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is part of the group and is discussing the weapon with Ron, George, and Fred. He asks 'What d'you mean?' when referring to Ginny's Bat-Bogey Hexes."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a person who is mentioned by George as being able to cast powerful spells, specifically the Bat-Bogey Hexes."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is a location where Dumbledore hid the Sorcerer's Stone and possibly keeping the weapon. It is also mentioned as a possible place for the weapon to be kept."
+    },
+    {
+      "name": "sorcerer's stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Sorcerer's Stone is an object that was hidden by Dumbledore in Hogwarts."
+    },
+    {
+      "name": "bat-bogey hexes",
+      "entity_type": "spell",
+      "singular": false,
+      "description": "Bat-Bogey Hexes are spells cast by Ginny that can be powerful despite their size."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "dumbledore",
+      "relationship_type": "possesses",
+      "description": "Fred says 'Dumbledore's probably keeping it' which implies that Dumbledore possesses the weapon."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "hogwarts",
+      "relationship_type": "location_of",
+      "description": "George says 'That's where he hid the Sorcerer's Stone!' referring to Hogwarts, implying that Hogwarts is a location of the Sorcerer's Stone and possibly the weapon."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "bat-bogey hexes",
+      "relationship_type": "casts",
+      "description": "George says 'You've never been on the receivin g end of one of her Bat-Bogey Hexes' which implies that Ginny casts the Bat-Bogey Hexes."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "george",
+      "relationship_type": "agrees_with",
+      "description": "Ron agrees with George when he says 'Bet it is!' and 'That's where he hid the Sorcerer's Stone!'}"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ginny",
+      "relationship_type": "has_experience_of",
+      "description": "Harry asks 'What d'you mean?' which implies that he has experience of Ginny's Bat-Bogey Hexes."
+    }
+  ]
+}

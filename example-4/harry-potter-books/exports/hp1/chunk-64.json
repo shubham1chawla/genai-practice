@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as a person who needs to get the post, introduced by Uncle Vernon's instruction."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who needs to get the post, introduced by Uncle Vernon's instruction and also by his own name being called out."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as a person giving instructions to Harry and Dudley, introduced by the context of the conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "dudley",
+      "relationship_type": "instructs",
+      "description": "Uncle Vernon instructs Dudley to get the post, as mentioned in 'Make Dudley get it'."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "harry",
+      "relationship_type": "instructs",
+      "description": "Uncle Vernon also instructs Harry to get the post, as mentioned in 'Get the post, Harry'."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "is_instructed_by",
+      "description": "Dudley is instructed by Uncle Vernon to get the post, as mentioned in 'Make Dudley get it'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "is_instructed_by",
+      "description": "Harry is also instructed by Uncle Vernon to get the post, as mentioned in 'Get the post, Harry'."
+    }
+  ]
+}

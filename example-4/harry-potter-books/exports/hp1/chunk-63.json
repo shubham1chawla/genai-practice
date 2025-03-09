@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "metal tub",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The metal tub is described as being in the sink, full of dirty rags and grey water."
+    },
+    {
+      "name": "grey water",
+      "entity_type": "liquid",
+      "singular": true,
+      "description": "The grey water is described as swimming in the metal tub."
+    },
+    {
+      "name": "dirty rags",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The dirty rags are described as looking like they are swimming in the grey water."
+    },
+    {
+      "name": "Aunt Petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as being present and responding to Harry's question."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who asks questions and expresses his doubts about his new uniform."
+    },
+    {
+      "name": "Dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as having old things that are being dyed grey for Harry's school uniform."
+    },
+    {
+      "name": "Stonewall High",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Stonewall High is mentioned as the new school that Harry will be attending."
+    },
+    {
+      "name": "Smeltings stick",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Smeltings stick is described as being carried by Dudley everywhere."
+    },
+    {
+      "name": "newspaper",
+      "entity_type": "document",
+      "singular": true,
+      "description": "Uncle Vernon's newspaper is mentioned as something he opens and reads."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Aunt Petunia",
+      "relationship_type": "question_asked_by",
+      "description": "Harry asks Aunt Petunia a question about the metal tub."
+    },
+    {
+      "entity_1": "Aunt Petunia",
+      "entity_2": "Harry",
+      "relationship_type": "answer_given_to",
+      "description": "Aunt Petunia responds to Harry's question by saying it is his new school uniform."
+    }
+  ]
+}

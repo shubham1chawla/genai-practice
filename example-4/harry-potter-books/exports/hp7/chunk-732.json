@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who had his mother die and was stuck alone in the house. He is also described as shouting at Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is defending Dumbledore's writings and trying to explain Harry's behavior."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the author of some writings that Hermione is defending. It is also revealed that he had changed his views over time."
+    },
+    {
+      "name": "blackbirds",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Blackbirds are mentioned as rising into the air and squawking when Harry shouts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "argument",
+      "description": "Harry and Hermione are arguing about Dumbledore's writings."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "influence",
+      "description": "Dumbledore's writings have an influence on Harry, as he is defending them."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "dumbledore",
+      "relationship_type": "defense",
+      "description": "Hermione is defending Dumbledore's writings."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one asking about someone's condition."
+    },
+    {
+      "name": "lavender",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lavender is responding to Harry's question with sympathy."
+    },
+    {
+      "name": "she",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose condition is being discussed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lavender",
+      "relationship_type": "asked_question",
+      "description": "Harry asked Lavender about someone's condition."
+    },
+    {
+      "entity_1": "lavender",
+      "entity_2": "she",
+      "relationship_type": "responded_with_sympathy",
+      "description": "Lavender responded to Harry's question with sympathy for the person in question."
+    }
+  ]
+}

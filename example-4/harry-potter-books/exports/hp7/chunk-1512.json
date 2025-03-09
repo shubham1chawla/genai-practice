@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is seeking advice from Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who is being sought for advice by Harry."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that was hidden in the Snitch and dropped by Harry in the forest."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry dropped the Snitch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "seeking_advice",
+      "description": "Harry is seeking advice from Dumbledore on what to do with the Snitch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "dropped_object",
+      "description": "Harry dropped the Snitch in the forest."
+    }
+  ]
+}

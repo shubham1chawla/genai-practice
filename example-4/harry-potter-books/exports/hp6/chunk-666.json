@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as someone who is liked by the narrator and is compared to Riddle."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned as someone who has come back and is being questioned by Voldemort."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being questioned by Voldemort and is talking about Riddle."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The one questioning Morfin and asking about Riddle."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A group or organization that has a locket."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "morfin",
+      "relationship_type": "questioning",
+      "description": "Voldemort is questioning Morfin about Riddle."
+    },
+    {
+      "entity_1": "morfin",
+      "entity_2": "riddle",
+      "relationship_type": "accusing",
+      "description": "Morfin is accusing Riddle of robbing and dishonoring his family."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "slytherin",
+      "relationship_type": "searching_for",
+      "description": "Voldemort is searching for Slytherin's locket."
+    }
+  ]
+}

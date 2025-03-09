@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "orange",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object mentioned in the text as something that can be seen."
+    },
+    {
+      "name": "rat spleen",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "A body part of a rat that is needed for a potion, according to Snape."
+    },
+    {
+      "name": "leech juice",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "A substance used in potions, mentioned by Snape as sufficient for the task."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville Longbottom, a student who is being scolded by Snape."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Neville Longbottom."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione Granger, a student who tries to help Neville."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape, the teacher who is scolding Neville."
+    },
+    {
+      "name": "toad",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A toad that will be used in an experiment at the end of the lesson."
+    },
+    {
+      "name": "potion",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "A potion that Snape is trying to make Neville understand how to create."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "longbottom",
+      "relationship_type": "scolded_by",
+      "description": "Snape scolds Longbottom for not understanding the potion recipe."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "neville",
+      "relationship_type": "helping",
+      "description": "Hermione tries to help Neville understand the potion recipe."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "toad",
+      "relationship_type": "will_feed_potion_to",
+      "description": "Snape will feed a potion to the toad at the end of the lesson."
+    },
+    {
+      "entity_1": "longbottom",
+      "entity_2": "potion",
+      "relationship_type": "struggling_with",
+      "description": "Longbottom is struggling to understand how to create the potion."
+    }
+  ]
+}

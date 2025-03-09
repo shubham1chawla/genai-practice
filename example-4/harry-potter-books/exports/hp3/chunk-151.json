@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor table",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Gryﬀindor table is mentioned as a location where people are sitting. It is described as being at the back of the hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who has collapsed in front of a dementor and is being pointed at by others."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who sits down next to Ron and Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron has saved seats for Harry and Hermione."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A dementor is a creature that has entered the train compartment and caused Harry to collapse."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is the headmaster who stands up to speak. He is described as very old but with great energy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "affected_by",
+      "description": "Harry has collapsed in front of the dementor."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "saved",
+      "description": "Ron saved seats for Harry and Hermione."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "sat_next_to",
+      "description": "Hermione sat down next to Ron and Harry."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "students",
+      "relationship_type": "addressed",
+      "description": "Professor Dumbledore stood up to speak to the students."
+    }
+  ]
+}

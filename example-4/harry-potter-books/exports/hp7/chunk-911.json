@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Greyback is a person who has attacked and bound Harry Potter. He is described as having a callous voice."
+    },
+    {
+      "name": "malfoy manor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Malfoy Manor is the location where Greyback and his companions have taken Harry Potter. It is mentioned that it is the son of a Ministry Official."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person who has been attacked and bound by Greyback. He is described as having his heart pounding against the ropes around his ribs."
+    },
+    {
+      "name": "ministry official",
+      "entity_type": "job_title",
+      "singular": false,
+      "description": "A Ministry Official is mentioned as being related to Harry Potter. It is not specified what their role or position is."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry potter",
+      "relationship_type": "attacked",
+      "description": "Greyback has attacked and bound Harry Potter."
+    },
+    {
+      "entity_1": "greyback",
+      "entity_2": "malfoy manor",
+      "relationship_type": "location_of_event",
+      "description": "The event of Greyback attacking and binding Harry Potter took place at Malfoy Manor."
+    }
+  ]
+}

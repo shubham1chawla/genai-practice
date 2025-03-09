@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, trying to open a door."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who tries to help him open the door using magic."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's, who joins in trying to force the door open."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose knife is used by Harry to try and open the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "door",
+      "relationship_type": "tries_to_open",
+      "description": "Harry tries to force the door open, but it doesn't budge."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "lock",
+      "relationship_type": "attempts_to_unlock",
+      "description": "Hermione uses her wand to try and unlock the door."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius's_knife",
+      "relationship_type": "uses",
+      "description": "Harry pulls out Sirius's knife from his robes and tries to use it to open the door."
+    }
+  ]
+}

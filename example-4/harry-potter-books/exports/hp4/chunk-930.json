@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts with a magical eye."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is suspected of hiding something."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is pretending to be ill and has a connection to Hogwarts."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical map that shows the location of everyone at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "moody",
+      "relationship_type": "interaction",
+      "description": "Harry and Moody have a conversation about Harry's nighttime activities."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "suspicion",
+      "description": "Harry is suspicious of Snape and thinks he might be hiding something."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "crouch",
+      "relationship_type": "connection",
+      "description": "Harry suspects that Crouch is pretending to be ill and has a connection to Hogwarts."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "harry",
+      "relationship_type": "advice",
+      "description": "Moody gives Harry advice about becoming an Auror."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry. Harry mentions that he will take points from Gryffindor if he fails to retrieve the Stone."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Weasley is another house at Hogwarts School of Witchcraft and Wizardry. Harry says 'Yes, Weasley' indicating that he is referring to his own house."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main protagonist of the story. He is a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and classmate at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's other friend and classmate at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts School of Witchcraft and Wizardry. He is also the Potions master."
+    },
+    {
+      "name": "flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Flitwick is a teacher at Hogwarts School of Witchcraft and Wizardry. He teaches Charms."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is a teacher at Hogwarts School of Witchcraft and Wizardry. She is also the Transfiguration professor."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is a dark wizard who is trying to return to power. Harry mentions that if Snape gets hold of the Stone, Voldemort will come back."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "house_member",
+      "description": "Harry is a member of Gryffindor house at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "entity_1": "weasley",
+      "entity_2": "harry",
+      "relationship_type": "house_member",
+      "description": "Harry says 'Yes, Weasley' indicating that he is referring to his own house."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "stone",
+      "relationship_type": "has_object",
+      "description": "Snape is trying to get hold of the Stone."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "stone",
+      "relationship_type": "trying_to_get",
+      "description": "Harry wants to try and get to the Stone first."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "will_be_helped_by",
+      "description": "If Snape gets hold of the Stone, Voldemort will come back."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "krebber",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Kreacher is a house-elf who has been lurking in the attic. He is covered in dust and seems to be looking for more relics of the Black family."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius is Harry's friend who found Kreacher in the attic."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who has vague suspicions about Kreacher."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Mrs. Weasley is a kind and caring person who calls Sirius's behavior 'fits of the sullens.'"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is a school where Harry and his friends attend."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "krebber",
+      "relationship_type": "found",
+      "description": "Sirius found Kreacher in the attic."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "krebber",
+      "relationship_type": "suspects",
+      "description": "Harry has vague suspicions about Kreacher."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "sirius",
+      "relationship_type": "describes_behavior",
+      "description": "Mrs. Weasley describes Sirius's behavior as 'fits of the sullens.'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_of",
+      "description": "Harry is a student at Hogwarts."
+    }
+  ]
+}

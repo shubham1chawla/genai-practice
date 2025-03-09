@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is talking to Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and calm wizard who is having a conversation with Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, who was involved in the situation where Pettigrew was saved."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who was also involved in the situation where Pettigrew was saved."
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose life Harry saved, and who is now in Voldemort's debt."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "pettigrew",
+      "relationship_type": "saved_by",
+      "description": "Harry saved Pettigrew's life."
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "voldemort",
+      "relationship_type": "servant_of",
+      "description": "Pettigrew is in Voldemort's debt, as a result of being saved by Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pettigrew",
+      "relationship_type": "debt_to",
+      "description": "Pettigrew owes his life to Harry, and therefore is in Harry's debt."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "pettigrew",
+      "relationship_type": "has_servant",
+      "description": "Voldemort has Pettigrew as one of his servants."
+    }
+  ]
+}

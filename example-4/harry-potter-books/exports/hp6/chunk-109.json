@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is accompanied by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor and old colleague of Harry Potter's, who is guiding him on his journey."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who has informed Harry about the rules of Apparating inside the buildings or grounds."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Harry Potter is staying with his relatives."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school for wizards and witches where Harry Potter studies."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "entity",
+      "singular": false,
+      "description": "Fearsome creatures that are mentioned as a threat to Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "accompanying",
+      "description": "Harry is accompanied by Dumbledore on his journey."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione granger",
+      "relationship_type": "informed_by",
+      "description": "Hermione has informed Harry about the rules of Apparating inside Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "his old colleague",
+      "relationship_type": "colleague_of",
+      "description": "Dumbledore is an old colleague of his, whom he visits late at night."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hogwarts",
+      "relationship_type": "student_at",
+      "description": "Harry studies at Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts",
+      "relationship_type": "professor_at",
+      "description": "Dumbledore is a professor at Hogwarts."
+    }
+  ]
+}

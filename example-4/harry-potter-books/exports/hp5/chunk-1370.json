@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who is mentioned as turning away and disappearing in the crowd."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other Weasley twin who is mentioned as turning away and disappearing in the crowd."
+    },
+    {
+      "name": "ernie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is mentioned as being disconcerted and scurrying away due to unfinished Transfiguration homework."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who suggests getting out of the Great Hall in case something happens."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who agrees with Hermione to leave the Great Hall."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is summoned by Filch to see the headmistress."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker who summons Harry to see the headmistress and is described as being best viewed at a distance."
+    },
+    {
+      "name": "headmistress",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The person in charge of Hogwarts School who wants to see Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "filch",
+      "relationship_type": "summoned_by",
+      "description": "Filch summons Harry to see the headmistress."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "agreed_with",
+      "description": "Hermione and Ron agree to leave the Great Hall together."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "headmistress",
+      "relationship_type": "to_see",
+      "description": "Harry is summoned by Filch to see the headmistress."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "occlumency",
+      "entity_type": "magic_technique",
+      "singular": true,
+      "description": "A magic technique that allows skilled individuals to shut down feelings and memories that contradict a lie, making it possible to utter falsehoods without detection. (Extracted from the text: 'Only those skilled at Occlumency are able to shut down those feelings and memories that contradict the lie...')"
+    },
+    {
+      "name": "legilimency",
+      "entity_type": "magic_technique",
+      "singular": true,
+      "description": "A magic technique that allows individuals to read minds. (Extracted from the text: 'Whatever Snape said, Legilimency sounded like mind reading to Harry and he did not like the sound of it at all.')"
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "title",
+      "singular": true,
+      "description": "A title given to a powerful individual. (Extracted from the text: 'The Dark Lord...')"
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is teaching Harry about Occlumency and Legilimency. (Extracted from the text: 'Snape said...', 'Snape eyed Harry...')"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is learning about Occlumency and Legilimency. (Extracted from the text: 'So he could know what we're thinking right now? Sir?', 'Snape eyed Harry...')"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A school where magic is taught. (Extracted from the text: 'The walls and grounds of Hogwarts are guarded by many ancient spells and charms...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dark lord",
+      "entity_2": "occlumency",
+      "relationship_type": "can_detect",
+      "description": "The Dark Lord can detect when someone is lying using Occlumency. (Extracted from the text: 'The Dark Lord, for instance, almost always knows when somebody is lying to him.')"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "occlumency",
+      "relationship_type": "teaches",
+      "description": "Snape teaches Occlumency. (Extracted from the text: 'Whatever Snape said...')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "legilimency",
+      "relationship_type": "is_target_of",
+      "description": "Harry is a target of Legilimency, as he does not like the sound of it. (Extracted from the text: 'Whatever Snape said, Legilimency sounded like mind reading to Harry and he did not like the sound of it at all.')"
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "teaches",
+      "description": "Snape teaches Harry about Occlumency. (Extracted from the text: 'Whatever Snape said...')"
+    },
+    {
+      "entity_1": "dark lord",
+      "entity_2": "legilimency",
+      "relationship_type": "uses",
+      "description": "The Dark Lord uses Legilimency to read minds. (Extracted from the text: 'Time and space matter in magic, Potter. Eye contact is often essential to Legilimency.')"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "occlumency",
+      "relationship_type": "is_learning",
+      "description": "Harry is learning Occlumency from Snape. (Extracted from the text: 'Well then, why do I have to learn Occlumency?')"
+    }
+  ]
+}

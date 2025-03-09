@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "frank bryce",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Frank Bryce is a suspect in the murder of the Riddles. He claims to be innocent and mentions seeing a teenage boy near the house on the day of the Riddles' deaths."
+    },
+    {
+      "name": "little hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Little Hangleton is a village where people doubt Frank Bryce's innocence."
+    },
+    {
+      "name": "great hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Great Hangleton is a neighboring town of Little Hangleton where the police station is located."
+    },
+    {
+      "name": "riddles",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Riddles are the victims of the murder. Their bodies were found and the report on their bodies came back."
+    },
+    {
+      "name": "teenage boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teenage boy is mentioned by Frank Bryce as someone he saw near the house on the day of the Riddles' deaths. However, nobody else in the village has seen this boy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "frank bryce",
+      "entity_2": "riddles",
+      "relationship_type": "suspect_of_murder",
+      "description": "Frank Bryce is suspected of murdering the Riddles. He claims to be innocent but the police are not convinced."
+    },
+    {
+      "entity_1": "frank bryce",
+      "entity_2": "teenage boy",
+      "relationship_type": "saw",
+      "description": "Frank Bryce saw a teenage boy near the house on the day of the Riddles' deaths. However, this is disputed by the police who think Frank invented him."
+    },
+    {
+      "entity_1": "police",
+      "entity_2": "frank bryce",
+      "relationship_type": "accuse_of_murder",
+      "description": "The police accuse Frank Bryce of murdering the Riddles. They do not believe his claim that he saw a teenage boy near the house."
+    }
+  ]
+}

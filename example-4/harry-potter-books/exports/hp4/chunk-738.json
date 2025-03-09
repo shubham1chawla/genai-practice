@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "winky",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Winky is a house-elf who works for Mr. Crouch and is struggling to adjust to her newfound freedom."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Crouch is Winky's former master and a good wizard according to Winky."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "Dobby is a house-elf who is friends with Harry Potter and provides him with information about the wizarding world."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore is a wise and powerful wizard who has told Dobby that he does not insist upon house-elves keeping secrets and remaining silent."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "winky",
+      "entity_2": "mr crouch",
+      "relationship_type": "former_master_of",
+      "description": "Winky used to work for Mr. Crouch, but is now free."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "professor dumbledore",
+      "relationship_type": "advised_by",
+      "description": "Professor Dumbledore has advised Dobby on how house-elves should behave."
+    }
+  ]
+}

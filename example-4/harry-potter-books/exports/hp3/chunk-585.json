@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story, and he is wearing an Invisibility Cloak."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who is watching Harry on the Marauder's Map."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as someone who used to wear an Invisibility Cloak."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The Marauder's Map is a magical object that shows the location of everyone on the Hogwarts grounds."
+    },
+    {
+      "name": "hagrid's hut",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hagrid's hut is a location where Harry visited with someone else."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Whomping Willow is a magical tree that can attack people who come near it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "watching",
+      "description": "Lupin was watching Harry on the Marauder's Map."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "being_watched_by",
+      "description": "Harry was being watched by Lupin on the Marauder's Map."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "hagrid's hut",
+      "relationship_type": "observing",
+      "description": "Lupin observed Harry entering Hagrid's hut."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "whomping willow",
+      "relationship_type": "colliding_with",
+      "description": "Harry collided with Sirius Black near the Whomping Willow."
+    }
+  ]
+}

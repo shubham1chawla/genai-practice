@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "mayhem",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Mayhem is described as an 'absolute uproar' at the Ministry, indicating a state of chaos and disorder."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Ministry is mentioned as the location where mayhem has occurred, implying that it is a place of work or official business."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as someone who was not at home much over the following week, indicating that he has been away on business or other obligations."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is described as being at home only in the evenings, and is mentioned as having been putting out fires all week due to Howlers sent by people complaining about security at the World Cup."
+    },
+    {
+      "name": "howlers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Howlers are described as being sent by people complaining about security at the World Cup, and Percy mentions that they can explode if not opened straight away."
+    },
+    {
+      "name": "world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The World Cup is mentioned as the event that has caused people to complain about security, leading to the sending of Howlers."
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus Fletcher is mentioned as having put in a claim for compensation for his ruined property, specifically a twelve-bedroomed tent with en-suite."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "percy",
+      "entity_2": "howlers",
+      "relationship_type": "received",
+      "description": "Percy received Howlers from people complaining about security at the World Cup, which caused him to put out fires all week."
+    },
+    {
+      "entity_1": "mundungus fletcher",
+      "entity_2": "world cup",
+      "relationship_type": "affected_by",
+      "description": "Mundungus Fletcher's property was affected by the World Cup, leading him to put in a claim for compensation."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "mundungus fletcher",
+      "relationship_type": "related_to",
+      "description": "Percy is related to Mundungus Fletcher through their shared experience of dealing with the aftermath of the World Cup."
+    }
+  ]
+}

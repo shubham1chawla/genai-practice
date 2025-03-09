@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is cautious and has a wand that can control flames. He is described as having an inside pocket in his suit jacket where he keeps his wand."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is a person who is shocked and enraged when Dumbledore sets the wardrobe on fire, but then becomes frightened when something starts rattling inside it."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who can hardly blame Riddle for howling in shock and rage."
+    },
+    {
+      "name": "wardrobe",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wardrobe is an object that bursts into flames when Dumbledore points his wand at it, but then returns to its original state without any damage."
+    },
+    {
+      "name": "something trying to get out of your wardrobe",
+      "entity_type": "unknown entity",
+      "singular": false,
+      "description": "Something is trying to get out of the wardrobe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wardrobe",
+      "relationship_type": "causes_damage",
+      "description": "Dumbledore causes damage to the wardrobe by pointing his wand at it."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "wardrobe",
+      "relationship_type": "owns",
+      "description": "Riddle owns the wardrobe, as he is shocked and enraged when Dumbledore sets it on fire."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "helps",
+      "description": "Dumbledore helps Riddle by opening the door to the wardrobe."
+    },
+    {
+      "entity_1": "wardrobe",
+      "entity_2": "something trying to get out of your wardrobe",
+      "relationship_type": "contains",
+      "description": "The wardrobe contains something that is trying to get out."
+    }
+  ]
+}

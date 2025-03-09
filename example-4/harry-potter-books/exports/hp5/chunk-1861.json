@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the one trying to decide what curse to use on Malfoy. He is also referred to by Professor Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Snape is introduced as someone who is cold and stern, and is mentioned multiple times in the conversation."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as the one Harry Potter wants to use a curse on."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor house is mentioned in relation to the points system and the hour-glasses on the walls."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is introduced as someone who has just returned from St. Mungo's Hospital for Magical Maladies and Injuries, and looks quite well despite her injury."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as one of the people that Professor McGonagall addresses when she returns to the castle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as one of the people that Professor McGonagall addresses when she returns to the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "malfoy",
+      "relationship_type": "target_of_curse",
+      "description": "Harry Potter is trying to decide what curse to use on Draco Malfoy, indicating that Malfoy is the target of the curse."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "potter",
+      "relationship_type": "authority_over",
+      "description": "Professor Snape is in authority over Harry Potter and tells him to put his wand away, indicating that Snape has control over Potter's actions."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "st_mungo_s_hospital",
+      "relationship_type": "patient_of",
+      "description": "Professor McGonagall is a patient of St. Mungo's Hospital for Magical Maladies and Injuries, indicating that she has been treated there."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "crabbe",
+      "relationship_type": "addressed_by",
+      "description": "Professor McGonagall addresses Crabbe when she returns to the castle, indicating that she is speaking to him."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "goyle",
+      "relationship_type": "addressed_by",
+      "description": "Professor McGonagall addresses Goyle when she returns to the castle, indicating that she is speaking to him."
+    }
+  ]
+}

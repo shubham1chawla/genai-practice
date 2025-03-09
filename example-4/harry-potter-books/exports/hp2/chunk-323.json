@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of a book mentioned in the text."
+    },
+    {
+      "name": "madam pince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The librarian of the library, described as a thin and irritable woman."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as trying to keep a note from Madam Pince."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story, mentioned as helping Hermione with the note."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being willing to sign anything if it stands still long enough."
+    },
+    {
+      "name": "moaning myrtle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The ghost of a girl who haunts the bathroom, mentioned as being barricaded in with Hermione and Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "madam pince",
+      "relationship_type": "interact_with",
+      "description": "Hermione tries to keep a note from Madam Pince, but Madam Pince eventually takes it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "madam pince",
+      "relationship_type": "interact_with",
+      "description": "Ron helps Hermione by taking the note from her and giving it to Madam Pince."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "lockhart",
+      "relationship_type": "has_connection_to",
+      "description": "Hermione mentions that Lockhart will sign anything if it stands still long enough."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "moaning myrtle",
+      "relationship_type": "interact_with",
+      "description": "Hermione and Ron barricade themselves in Moaning Myrtle's bathroom."
+    }
+  ]
+}

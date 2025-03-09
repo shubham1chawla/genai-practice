@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Montague is a person who is being shouted at by Katie."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is a person who has put another penalty past the Slytherin Seeker."
+    },
+    {
+      "name": "slytherin seeker",
+      "entity_type": "position",
+      "singular": false,
+      "description": "The Slytherin Seeker is a position in the game that Katie has scored against."
+    },
+    {
+      "name": "jordan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Jordan is a person who is commentating and being reprimanded by Professor McGonagall."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a person who is reprimanding Jordan for biased commentary."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who has seen the Snitch and is trying to catch it without being noticed by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who is trying to catch the Snitch but is being tricked by Harry."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is an object that Harry and Malfoy are competing for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "competition",
+      "description": "Harry and Malfoy are competing to catch the Snitch."
+    },
+    {
+      "entity_1": "katie",
+      "entity_2": "slytherin seeker",
+      "relationship_type": "opponent",
+      "description": "Katie has scored against the Slytherin Seeker."
+    }
+  ]
+}

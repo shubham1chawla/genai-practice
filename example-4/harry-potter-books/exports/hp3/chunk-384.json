@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as indicating that everybody should start serving themselves."
+    },
+    {
+      "name": "christmas day",
+      "entity_type": "holiday",
+      "singular": true,
+      "description": "Christmas Day is mentioned as the unfortunate time for Professor Lupin's illness to happen."
+    },
+    {
+      "name": "sibyll",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sibyll is mentioned as being addressed by Dumbledore and McGonagall."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "McGonagall is mentioned as addressing Trelawney and having a conversation with her."
+    },
+    {
+      "name": "trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Trelawney is mentioned as giving McGonagall a cold look and explaining her behavior to her."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as being ill and not expected to be with the group for long, according to Trelawney's prophecy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "trelawney",
+      "relationship_type": "gives_cold_look",
+      "description": "Trelawney gives McGonagall a cold look in response to her questioning."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "trelawney",
+      "relationship_type": "has_conversation",
+      "description": "McGonagall and Trelawney have a conversation about Trelawney's behavior and abilities."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "christmas day",
+      "relationship_type": "happens_on",
+      "description": "Dumbledore mentions that Professor Lupin's illness is unfortunate because it happens on Christmas Day."
+    },
+    {
+      "entity_1": "trelawney",
+      "entity_2": "lupin",
+      "relationship_type": "sees_death",
+      "description": "Trelawney sees a prophecy about Professor Lupin's death and shares this information with McGonagall."
+    }
+  ]
+}

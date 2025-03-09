@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "curtains",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The curtains are mentioned as something that the room has, and they are combed for more than an hour. (\"They combed every inch of the room for more than an hour...\")"
+    },
+    {
+      "name": "room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The room is mentioned as a place where the search is taking place. (\"They combed every inch of the room...\")"
+    },
+    {
+      "name": "loket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket is mentioned as something that is being searched for, and it is concluded to not be in the room. (\"but were forced, ﬁnally, to conclude that the locket was not there.\")"
+    },
+    {
+      "name": "sun",
+      "entity_type": "celestial_body",
+      "singular": true,
+      "description": "The sun is mentioned as something that has risen and is causing light. (\"The sun had risen now; its light dazzled them even through the grimy landing windows.\")"
+    },
+    {
+      "name": "landing windows",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The landing windows are mentioned as something that is affected by the sunlight. (\"its light dazzled them even through the grimy landing windows.\")"
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is speaking and trying to rally her friends. (\"‘It could be somewhere else in the house, though,’ said Hermione in a rallying tone...\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who is becoming discouraged. (\"As Harry and Ron had become more discouraged...\")"
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as someone who is becoming discouraged. (\"As Harry and Ron had become more discouraged...\")"
+    },
+    {
+      "name": "Voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone that the locket would be hidden from. (\"he’d want to keep it hidden from Voldemort, wouldn’t he?\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Harry",
+      "relationship_type": "encourages",
+      "description": "Hermione is trying to rally Harry and Ron. (\"‘It could be somewhere else in the house, though,’ said Hermione in a rallying tone...\")"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Ron",
+      "relationship_type": "encourages",
+      "description": "Hermione is trying to rally Harry and Ron. (\"‘It could be somewhere else in the house, though,’ said Hermione in a rallying tone...\")"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Voldemort",
+      "relationship_type": "is_hidden_from",
+      "description": "The locket would be hidden from Voldemort. (\"he’d want to keep it hidden from Voldemort, wouldn’t he?\")"
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Voldemort",
+      "relationship_type": "is_hidden_from",
+      "description": "The locket would be hidden from Voldemort. (\"he’d want to keep it hidden from Voldemort, wouldn’t he?\")"
+    }
+  ]
+}

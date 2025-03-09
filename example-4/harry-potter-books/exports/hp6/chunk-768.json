@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, unable to speak due to his tongue being glued to the roof of his mouth. He is described as making obscene gestures and using magic to restrain Kreacher."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who appreciates Harry's actions and helps him restrain Kreacher."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is being restrained by Harry and Ron. He is described as a free house-elf who can obey anyone he likes."
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "A house-elf who is being restrained by Harry. He is described as wizened and old."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "kreacher",
+      "relationship_type": "restrains",
+      "description": "Harry uses magic to restrain Kreacher, preventing them from fighting each other."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "releases",
+      "description": "Harry releases Dobby from his restraint, allowing him to fall to the floor."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dobby",
+      "relationship_type": "releases",
+      "description": "Ron releases Dobby from his restraint, allowing him to fall to the floor."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "obeys",
+      "description": "Dobby states that he will obey Harry's orders."
+    },
+    {
+      "entity_1": "kreacher",
+      "entity_2": "harry potter",
+      "relationship_type": "is_restrained_by",
+      "description": "Kreacher is being restrained by Harry, preventing them from fighting each other."
+    }
+  ]
+}

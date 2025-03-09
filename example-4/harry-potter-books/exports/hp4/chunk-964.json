@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is marveling at his ability to swim and see underwater."
+    },
+    {
+      "name": "lake",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A body of water where Harry is swimming."
+    },
+    {
+      "name": "flipper-like feet",
+      "entity_type": "attribute",
+      "singular": false,
+      "description": "Harry's feet have transformed into flipper-like appendages, allowing him to swim efficiently."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lake",
+      "relationship_type": "swimming_in",
+      "description": "Harry is swimming in the lake."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "flipper-like feet",
+      "relationship_type": "has_attribute",
+      "description": "Harry has flipper-like feet that allow him to swim efficiently."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is a person who is part of the Ministry and has experience with Death Eaters. He is described as snarling and limping forward."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is a person who is being referred to by Moody, implying that he is the main target of You-Know-Who's plans. He is described as having hair that needs to be pulled."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who catches Harry's eye, implying that she is present in the scene and aware of what is happening."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who grimaces at Harry, indicating his reluctance to participate in the plan."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is a person who is being referred to as a powerful and feared individual. He has Death Eaters on his side and is planning to ambush Potter."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who work for You-Know-Who and are keeping an eye out for Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "moody",
+      "entity_2": "potter",
+      "relationship_type": "concerned_about",
+      "description": "Moody is concerned about Potter's safety, as he believes that You-Know-Who will try to ambush him on the thirtieth."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "you-know-who",
+      "relationship_type": "opposed_to",
+      "description": "Moody is opposed to You-Know-Who, as he believes that he is a powerful and feared individual who needs to be stopped."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "you-know-who",
+      "relationship_type": "target_of",
+      "description": "Potter is the target of You-Know-Who's plans, as Moody believes that he will try to ambush him on the thirtieth."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "death eater",
+      "relationship_type": "target_of",
+      "description": "Potter is also a target of Death Eaters, as they are keeping an eye out for him on You-Know-Who's behalf."
+    }
+  ]
+}

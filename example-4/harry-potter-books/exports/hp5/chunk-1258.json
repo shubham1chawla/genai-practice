@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having a book published with his name on it."
+    },
+    {
+      "name": "luna",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who brings him a copy of his book and mentions that she asked her dad to send it to him."
+    },
+    {
+      "name": "fred",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Ron's brothers, mentioned as sitting at the Gryffindor table with Luna."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is present when Luna brings him a copy of his book."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is present when Luna brings him a copy of his book and starts reading letters from readers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "luna",
+      "relationship_type": "gave",
+      "description": "Luna gives Harry a copy of his book."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "shared",
+      "description": "Harry and Hermione share letters from readers."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "read",
+      "description": "Ron reads a letter to Harry."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "read",
+      "description": "Hermione reads letters from readers."
+    }
+  ]
+}

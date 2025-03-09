@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, being pulled to his feet and tied to a headstone."
+    },
+    {
+      "name": "short man in the cloak",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A mysterious figure who is conjuring cords around Harry."
+    },
+    {
+      "name": "marble headstone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A physical object where Harry is being tied."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by the short man in the cloak to light and conjure cords."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "short man in the cloak",
+      "relationship_type": "being_pulled_by",
+      "description": "The short man in the cloak is pulling Harry towards the marble headstone."
+    },
+    {
+      "entity_1": "short man in the cloak",
+      "entity_2": "wand",
+      "relationship_type": "using",
+      "description": "The short man in the cloak is using his wand to light and conjure cords."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marble headstone",
+      "relationship_type": "being_tied_to",
+      "description": "Harry is being tied to the marble headstone by the short man in the cloak."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "nagini",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nagini is mentioned as having interesting news, indicating she has some information to share."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is addressed by the voice and responds to it, showing he is present in the conversation."
+    },
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Frank is mentioned as an old Muggle standing outside the room, listening to every word they say."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggle refers to a group of people who are not part of the magical community."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wormtail",
+      "entity_2": "nagini",
+      "relationship_type": "informant",
+      "description": "Nagini has interesting news, which she shares with Wormtail."
+    },
+    {
+      "entity_1": "voice",
+      "entity_2": "wormtail",
+      "relationship_type": "communicator",
+      "description": "The voice communicates with Wormtail and addresses him directly."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "room",
+      "relationship_type": "outside",
+      "description": "Frank is standing outside the room, listening to every word they say."
+    },
+    {
+      "entity_1": "wormtail",
+      "entity_2": "frank",
+      "relationship_type": "host",
+      "description": "Wormtail is asked by the voice to invite Frank inside."
+    }
+  ]
+}

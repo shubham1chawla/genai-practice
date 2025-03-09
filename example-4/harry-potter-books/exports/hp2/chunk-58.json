@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "old witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The old witch is mentioned as having died, indicating that she is no longer alive. The text also mentions her tea set being sold to an antiques shop."
+    },
+    {
+      "name": "antiques shop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The antiques shop is mentioned as the buyer of the old witch's tea set, indicating that it is a place where old items are sold."
+    },
+    {
+      "name": "muggle woman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Muggle woman is mentioned as buying the tea set from the antiques shop and trying to serve her friends tea in it, indicating that she is a person who owns the tea set."
+    },
+    {
+      "name": "dads workplace",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dad's workplace is mentioned as where he was working overtime for weeks, indicating that it is a place where work is done."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "old witch",
+      "entity_2": "antiques shop",
+      "relationship_type": "owned_by",
+      "description": "The old witch's tea set was sold to the antiques shop, indicating that the antiques shop owned the tea set after the old witch died."
+    },
+    {
+      "entity_1": "muggle woman",
+      "entity_2": "antiques shop",
+      "relationship_type": "bought_from",
+      "description": "The Muggle woman bought the tea set from the antiques shop, indicating that she acquired the tea set through a transaction with the antiques shop."
+    },
+    {
+      "entity_1": "muggle woman",
+      "entity_2": "dads workplace",
+      "relationship_type": "affected_by",
+      "description": "The Muggle woman's actions (trying to serve her friends tea in the old witch's tea set) had an impact on Dad, who was working overtime for weeks, indicating that the Muggle woman's actions affected Dad's work."
+    }
+  ]
+}

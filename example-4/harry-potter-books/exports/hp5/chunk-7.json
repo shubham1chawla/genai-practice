@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character who is trying to escape from under the window."
+    },
+    {
+      "name": "Dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The family that Harry lives with and has a strained relationship with. They are mentioned as being in their living room."
+    },
+    {
+      "name": "Aunt Petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the members of the Dursley family who is mentioned as screaming loudly."
+    },
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A cat that streaks out from under a parked car and flies out of sight."
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is trying to escape to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Dursleys",
+      "relationship_type": "conflict",
+      "description": "Harry and the Dursleys have a strained relationship, as indicated by the loud noise coming from their living room."
+    },
+    {
+      "entity_1": "cat",
+      "entity_2": "parked car",
+      "relationship_type": "location",
+      "description": "The cat is under the parked car when it streaks out."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "window",
+      "relationship_type": "collision",
+      "description": "Harry's head collides with the Dursleys' open window."
+    },
+    {
+      "entity_1": "Aunt Petunia",
+      "entity_2": "Harry",
+      "relationship_type": "anger",
+      "description": "Aunt Petunia screams loudly when Harry's head collides with the window."
+    }
+  ]
+}

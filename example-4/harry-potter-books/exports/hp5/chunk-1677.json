@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "thestrals",
+      "entity_type": "animal_species",
+      "singular": true,
+      "description": "Thestrals are described as now foraging for scraps of rotten food inside the dumpster."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person_name",
+      "singular": true,
+      "description": "Luna is mentioned as being in the box before thestrals."
+    },
+    {
+      "name": "the box",
+      "entity_type": "container",
+      "singular": true,
+      "description": "The box is described as a place where Luna and thestrals are present."
+    },
+    {
+      "name": "dumpster",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The dumpster is mentioned as a location where thestrals are foraging for food."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "the box",
+      "entity_2": "luna",
+      "relationship_type": "contains",
+      "description": "Luna is in the box."
+    },
+    {
+      "entity_1": "the box",
+      "entity_2": "thestrals",
+      "relationship_type": "contains",
+      "description": "Thestrals are also in the box."
+    }
+  ]
+}

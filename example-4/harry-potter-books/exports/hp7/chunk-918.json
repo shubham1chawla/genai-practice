@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is being transported with Ron and Hermione."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is being transported with him and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is being transported with him and Ron."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A prisoner who is holding onto Harry during the Disapparation."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, who is not present at Malfoy Manor."
+    },
+    {
+      "name": "malfoy manor",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where Harry and his friends are transported to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "greyback",
+      "relationship_type": "held_by",
+      "description": "Greyback is holding onto Harry during the Disapparation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "next_to",
+      "description": "Ron and Hermione are squeezed tightly against Harry on either side."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "next_to",
+      "description": "Ron and Hermione are squeezed tightly against Harry on either side."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "malfoy manor",
+      "relationship_type": "not_present_at",
+      "description": "Voldemort is not present at Malfoy Manor, which gives Harry a small amount of relief."
+    }
+  ]
+}

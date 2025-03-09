@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "a newspaper mentioned in the conversation"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a member of Harry's group and has a brother named Percy"
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is Ron's brother"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a member of the Order and has been staying with Kreacher"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "house-elf",
+      "singular": true,
+      "description": "Kreacher is a house-elf who has been staying with Sirius"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper and has gone missing"
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime was traveling with Hagrid but got separated from him"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "kreacher",
+      "relationship_type": "residence",
+      "description": "Sirius and Kreacher have been staying together"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime",
+      "relationship_type": "traveling_with",
+      "description": "Hagrid was traveling with Madame Maxime but got separated from her"
+    }
+  ]
+}

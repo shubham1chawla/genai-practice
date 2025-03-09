@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'Harry'."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a person who is described as being uncertain and airily responding to Harry's question."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is Harry's cousin, who takes food from Harry even if it makes him sick."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "percy",
+      "relationship_type": "questioned_by",
+      "description": "Harry asks Percy a question about whether he is mad."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "harry",
+      "relationship_type": "responded_to_question",
+      "description": "Percy responds to Harry's question by saying that he is a genius but also a bit mad."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "harry",
+      "relationship_type": "took_food_from",
+      "description": "Dudley takes food from Harry, even if it makes him sick."
+    }
+  ]
+}

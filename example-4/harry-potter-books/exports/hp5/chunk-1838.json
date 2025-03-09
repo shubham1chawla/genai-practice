@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is explaining the prophecy to Harry."
+    },
+    {
+      "name": "sibyll",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The one who made the prophecy."
+    },
+    {
+      "name": "neville longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard boy who was also born at the end of July and had parents in the Order of the Phoenix."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The main antagonist of the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sibyll",
+      "relationship_type": "made_prophecy",
+      "description": "Sibyll made a prophecy that could have applied to Harry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "voldemort",
+      "relationship_type": "attacked_by",
+      "description": "Voldemort attacked Dumbledore, but he narrowly escaped."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "target_of_attack",
+      "description": "Voldemort tried to kill Harry because he knew Harry was the one Sibyll was referring to in her prophecy."
+    }
+  ]
+}

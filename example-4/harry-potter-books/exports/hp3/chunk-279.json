@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and Seeker of Gryffindor team. He is mentioned as being outraged and wanting to train."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who is deeply interested in the Gryffindor team's prospects. She suggested Harry as Seeker."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Madam Hooch is a teacher who will oversee Harry's training sessions."
+    },
+    {
+      "name": "oliver wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Oliver Wood is the captain of Gryffindor team. He gives his team some unwelcome news."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": true,
+      "description": "Slytherin is a rival team that Gryffindor will not be playing against."
+    },
+    {
+      "name": "gryﬀindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is the team Harry is part of. They are training harder than ever under Madam Hooch's eye."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "interested_in",
+      "description": "Professor McGonagall is deeply interested in the Gryffindor team's prospects, which includes Harry as Seeker."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "harry",
+      "relationship_type": "overseeing_training",
+      "description": "Madam Hooch will oversee Harry's training sessions."
+    },
+    {
+      "entity_1": "oliver wood",
+      "entity_2": "gryﬀindor",
+      "relationship_type": "captain_of",
+      "description": "Oliver Wood is the captain of Gryffindor team."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "not_playing_against",
+      "description": "Gryffindor will not be playing against Slytherin."
+    },
+    {
+      "entity_1": "gryﬀindor",
+      "entity_2": "madam hooch",
+      "relationship_type": "training_under",
+      "description": "The Gryffindor team is training harder than ever under Madam Hooch's eye."
+    }
+  ]
+}

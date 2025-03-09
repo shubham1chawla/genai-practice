@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a wizard who is being levicorpused by Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A witch and one of Harry's best friends, who casts the levicorpus spell on Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other best friend, a wizard who is also affected by the levicorpus spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "casts_spell_on",
+      "description": "Hermione casts the levicorpus spell on Harry, levitating him into the air."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "levicorpus",
+      "relationship_type": "affected_by",
+      "description": "Ron is affected by the levicorpus spell cast by Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "armor",
+      "relationship_type": "hits",
+      "description": "Harry hits a suit of armor after being levitated into the air."
+    }
+  ]
+}

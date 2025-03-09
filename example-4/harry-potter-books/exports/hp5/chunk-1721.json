@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, mentioned as 'they' and 'Harry'. The text describes Harry's actions and thoughts throughout the scene."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, also a student at Hogwarts. She is described as having charmed shut the door and crawling out from under the desk to get a better aim."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's, mentioned as diving under desks with him and Hermione."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of dark wizards who are enemies of the main characters. They are described as wearing robes and having wands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "attack",
+      "description": "Harry is attacking the Death Eaters with his wand, shouting 'STUPEFY!'"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eater 2",
+      "relationship_type": "target",
+      "description": "The second Death Eater points his wand at Hermione, who has crawled out from under the desk to get a better aim."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "protect",
+      "description": "Harry is trying to protect Hermione by casting a spell at the Death Eaters."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "magnolia road",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the gang is saying their farewells."
+    },
+    {
+      "name": "dudley's gang",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people led by Dudley."
+    },
+    {
+      "name": "magnolia crescent",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the gang is strolling along."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is waiting in the shadow of a lilac tree."
+    },
+    {
+      "name": "malcolm",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is saying something to guffaws from the others."
+    },
+    {
+      "name": "piers",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is complimenting Dudley on his right hook."
+    },
+    {
+      "name": "gordon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is suggesting a location for the next meeting."
+    },
+    {
+      "name": "lilac tree",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object where Harry is waiting in its shadow."
+    },
+    {
+      "name": "big d",
+      "entity_type": "nickname",
+      "singular": true,
+      "description": "A nickname for Dudley."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The leader of the gang and a person who is being complimented by Piers."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lilac tree",
+      "relationship_type": "near",
+      "description": "Harry is waiting in the shadow of the lilac tree."
+    },
+    {
+      "entity_1": "dudley's gang",
+      "entity_2": "magnolia crescent",
+      "relationship_type": "location",
+      "description": "The gang is strolling along Magnolia Crescent."
+    },
+    {
+      "entity_1": "malcolm",
+      "entity_2": "guffaws",
+      "relationship_type": "cause",
+      "description": "Malcolm's words are causing guffaws from the others."
+    },
+    {
+      "entity_1": "piers",
+      "entity_2": "dudley",
+      "relationship_type": "compliment",
+      "description": "Piers is complimenting Dudley on his right hook."
+    },
+    {
+      "entity_1": "gordon",
+      "entity_2": "dudley's place",
+      "relationship_type": "location",
+      "description": "Gordon suggests a location for the next meeting, which is at Dudley's place."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley's gang",
+      "relationship_type": "follows",
+      "description": "Harry waits until the rest of the gang moves on before setting off again."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "gordon",
+      "relationship_type": "invites",
+      "description": "Dudley invites Gordon to a meeting at his place."
+    }
+  ]
+}

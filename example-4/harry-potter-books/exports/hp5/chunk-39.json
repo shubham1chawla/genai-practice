@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who is trying to cast a spell to defend himself against a dementor."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A dark creature that is attacking Harry and sucking out his happiness."
+    },
+    {
+      "name": "patronum",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that Harry is trying to cast to defend himself against the dementor."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by wizards to cast spells, which Harry uses to try and cast the Patronum spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "attacked_by",
+      "description": "The dementor is attacking Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "patronum",
+      "relationship_type": "trying_to_cast",
+      "description": "Harry is trying to cast the Patronum spell to defend himself against the dementor."
+    },
+    {
+      "entity_1": "dementor",
+      "entity_2": "harry",
+      "relationship_type": "attacking",
+      "description": "The dementor is attacking Harry."
+    },
+    {
+      "entity_1": "wand",
+      "entity_2": "patronum",
+      "relationship_type": "used_to_cast",
+      "description": "Harry uses his wand to try and cast the Patronum spell."
+    }
+  ]
+}

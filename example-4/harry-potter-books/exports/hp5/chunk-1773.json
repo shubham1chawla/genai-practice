@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort had appeared in the middle of the hall, his wand pointing at Harry who stood frozen, quite unable to move."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry who stood frozen, quite unable to move"
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix, flinging herself down at Voldemort's feet as he paced slowly nearer."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "my Death Eaters have let Harry Potter thwart me again"
+    },
+    {
+      "name": "animagus black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "I was fighting the Animagus Black!"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "targeted_by",
+      "description": "Lord Voldemort had appeared in the middle of the hall, his wand pointing at Harry who stood frozen, quite unable to move."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "bellatrix",
+      "relationship_type": "angrily_towards",
+      "description": "Voldemort dangerously. “I shall deal with you in a moment."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "voldemort",
+      "relationship_type": "thwarted_by",
+      "description": "Months of preparation, months of effort . . . and my Death Eaters have let Harry Potter thwart me again"
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "animagus black",
+      "relationship_type": "fought_against",
+      "description": "I was fighting the Animagus Black!"
+    }
+  ]
+}

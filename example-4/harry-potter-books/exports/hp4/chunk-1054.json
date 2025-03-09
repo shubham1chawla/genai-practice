@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who is disappointed when she sees that the gray owl does not have a newspaper."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who seizes Hermione's goblet to prevent it from being knocked over by the cluster of owls."
+    },
+    {
+      "name": "gray owl",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "The gray owl lands in front of Hermione's plate and tries to deliver a letter."
+    },
+    {
+      "name": "barn owls",
+      "entity_type": "owls",
+      "singular": false,
+      "description": "Four barn owls are jostling close to Hermione, trying to deliver their own letters first."
+    },
+    {
+      "name": "brown owl",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "A brown owl is one of the owls that tries to deliver a letter."
+    },
+    {
+      "name": "tawny owl",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "A tawny owl is one of the owls that tries to deliver a letter."
+    },
+    {
+      "name": "Daily Prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is mentioned as the source of the pasted letters in the letter delivered by the gray owl."
+    },
+    {
+      "name": "letter",
+      "entity_type": "letter",
+      "singular": true,
+      "description": "A letter is delivered to Hermione by the gray owl and contains a message from an unknown sender."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Hermione",
+      "entity_2": "gray owl",
+      "relationship_type": "delivers_to",
+      "description": "The gray owl delivers a letter to Hermione."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "goblet",
+      "relationship_type": "seizes",
+      "description": "Harry seizes Hermione's goblet to prevent it from being knocked over by the cluster of owls."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "letter",
+      "relationship_type": "receives",
+      "description": "Hermione receives a letter delivered by the gray owl."
+    },
+    {
+      "entity_1": "gray owl",
+      "entity_2": "Daily Prophet",
+      "relationship_type": "comprises_letters_from",
+      "description": "The letters in the letter delivered by the gray owl are pasted from the Daily Prophet."
+    },
+    {
+      "entity_1": "letter",
+      "entity_2": "Hermione",
+      "relationship_type": "is_delivered_to",
+      "description": "A letter is delivered to Hermione by the gray owl."
+    }
+  ]
+}

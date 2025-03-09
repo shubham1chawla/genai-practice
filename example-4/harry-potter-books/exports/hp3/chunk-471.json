@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as having a pale face and splitting into a malevolent grin. He is also mentioned to be looking up at the crumbling house behind Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is described as being addressed by Malfoy with the question 'What are you doing, Weasley?' and later having his robes seized by Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as seizing the back of Ron's robes to stop him from leaping on Malfoy and then creeping silently around behind Malfoy, Crabbe, and Goyle."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as being present with Malfoy and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as being present with Malfoy and Crabbe."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned by Malfoy as the subject of their discussion with Ron."
+    },
+    {
+      "name": "committee for the disposal of dangerous creatures",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Committee for the Disposal of Dangerous Creatures is mentioned as being involved in a discussion with Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "stops",
+      "description": "Harry stops Ron from leaping on Malfoy."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "accompanies",
+      "description": "Malfoy is accompanied by Crabbe."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "accompanies",
+      "description": "Malfoy is accompanied by Goyle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "attacks",
+      "description": "Harry attacks Malfoy with mud."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "committee for the disposal of dangerous creatures",
+      "relationship_type": "discusses",
+      "description": "Malfoy discusses Hagrid's situation with the Committee for the Disposal of Dangerous Creatures."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story. He is shouting orders to his friends."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry's friends who is being saved by him."
+    },
+    {
+      "name": "luna",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Another one of Harry's friends who is being saved by him."
+    },
+    {
+      "name": "ernie",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is being saved by him."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is being saved by him."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dark creatures that are being chased away by Harry's wand."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's magical wand that is able to chase away the dementors."
+    },
+    {
+      "name": "giant",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "A large creature that comes out of the darkness and brandishes a club."
+    },
+    {
+      "name": "club",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The giant's weapon that is taller than any of Harry's friends."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A place where the giant comes out from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "chases_away",
+      "description": "Harry's wand chases away the dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wand",
+      "relationship_type": "possesses",
+      "description": "Harry possesses a magical wand that is able to chase away the dementors."
+    },
+    {
+      "entity_1": "giant",
+      "entity_2": "club",
+      "relationship_type": "brandishes",
+      "description": "The giant brandishes a club as its weapon."
+    }
+  ]
+}

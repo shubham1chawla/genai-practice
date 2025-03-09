@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "Invisibility Cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry Potter"
+    },
+    {
+      "name": "Marauder's Map",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical map created by James Potter and his friends"
+    },
+    {
+      "name": "Girls' Dormitories",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Hermione Granger stays"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "Invisibility Cloak",
+      "relationship_type": "possesses",
+      "description": "Harry has the Invisibility Cloak"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Marauder's Map",
+      "relationship_type": "carries",
+      "description": "Harry carries the Marauder's Map"
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Girls' Dormitories",
+      "relationship_type": "escapes to",
+      "description": "Hermione escapes to the Girls' Dormitories"
+    }
+  ]
+}

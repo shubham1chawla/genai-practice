@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is upset and anxious about something."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who tries to calm Ron down and make decisions with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who tries to calm Ron down and makes suggestions for what to do."
+    },
+    {
+      "name": "norbert",
+      "entity_type": "dragon",
+      "singular": true,
+      "description": "Norbert is a dragon that needs to be gotten rid of."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who has taken something from Ron and knows about the plan to get rid of Norbert."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is a person whose letter was in the book that Malfoy took."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "calms_down",
+      "description": "Harry tries to calm Ron down."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "tries_to_calm_down",
+      "description": "Hermione tries to calm Ron down."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "makes_decisions_with",
+      "description": "Harry makes decisions with Hermione."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ron",
+      "relationship_type": "has_information_about_plan",
+      "description": "Malfoy has information about the plan to get rid of Norbert and knows that Ron is trying to hide it from him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "norbert",
+      "relationship_type": "trying_to_get_rid_of",
+      "description": "Harry is trying to get rid of Norbert."
+    }
+  ]
+}

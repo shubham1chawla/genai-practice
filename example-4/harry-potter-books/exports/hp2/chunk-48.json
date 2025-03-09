@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Harry'. He is trying to get out of his room and access his trunk."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's twin brothers. He is helping Harry by picking the lock on the cupboard under the stairs."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other twin brother of George and Harry. He is also helping Harry by providing a distraction while George picks the lock."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, who is mentioned as someone to hand things out to."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school that Harry attends. His 'Hogwarts stuff' is being locked away in the cupboard under the stairs."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "george",
+      "relationship_type": "helped_by",
+      "description": "George is helping Harry by picking the lock on the cupboard under the stairs."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fred",
+      "relationship_type": "helped_by",
+      "description": "Fred is also helping Harry by providing a distraction while George picks the lock."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "assisted",
+      "description": "George is assisting Harry in getting out of his room and accessing his trunk."
+    }
+  ]
+}

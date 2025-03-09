@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He had an impression that Lupin wanted to leave quickly."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a person who wants to leave as quickly as possible. He shakes hands with Dumbledore and leaves the office."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who stays in the office after Lupin leaves. He talks to Harry about his feelings and accomplishments."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "left_by",
+      "description": "Lupin left the office, leaving Harry behind."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "talked_to",
+      "description": "Dumbledore talked to Harry about his feelings and accomplishments."
+    }
+  ]
+}

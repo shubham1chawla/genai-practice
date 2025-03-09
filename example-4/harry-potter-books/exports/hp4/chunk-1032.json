@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as the father of the boy who died. He is described as a hero and poised to become Minister of Magic."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as someone who is talking about Crouch's situation. He is drinking pumpkin juice."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "crouch",
+      "entity_2": "boy",
+      "relationship_type": "father_of",
+      "description": "Crouch is the father of the boy who died, as mentioned in the text: 'One moment, a hero, poised to become Minister of Magic . . . next, his son dead...'"
+    },
+    {
+      "entity_1": "crouch",
+      "entity_2": "sirius",
+      "relationship_type": "unrelated",
+      "description": "There is no direct relationship between Crouch and Sirius. They are mentioned in the same context but do not have a specific connection."
+    },
+    {
+      "entity_1": "boy",
+      "entity_2": "crouch",
+      "relationship_type": "child_of",
+      "description": "The boy who died is the child of Crouch, as mentioned in the text: 'his son dead...'"
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "pumpkin juice",
+      "relationship_type": "consumes",
+      "description": "Sirius drinks pumpkin juice, as mentioned in the text: 'he picked up the flask of  pumpkin juice and drained it.'"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "unbreakable vow",
+      "entity_type": "vow",
+      "singular": true,
+      "description": "The Unbreakable Vow is mentioned as a task that needs to be protected. It's described as 'my job' and the speaker has a plan to complete it."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is introduced as a teacher who is scolding Malfoy for his behavior. He mentions that Crabbe and Goyle need to work harder in their Defence Against the Dark Arts class."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Malfoy is mentioned as a student who is being scolded by Snape. He's described as having 'risen excitedly' and his voice has been 'spat down' by Snape."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Crabbe is mentioned as a student who is in detention and was supposed to be with Malfoy. He's described as needing to work harder in his Defence Against the Dark Arts class."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Goyle is mentioned as a student who is in detention and was supposed to be with Malfoy. He's described as needing to work harder in his Defence Against the Dark Arts class."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "malfoy",
+      "relationship_type": "scolded_by",
+      "description": "Snape is scolding Malfoy for his behavior. Snape mentions that Crabbe and Goyle need to work harder in their Defence Against the Dark Arts class."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "crabbe",
+      "relationship_type": "mentioned_together_with",
+      "description": "Snape is mentioned together with Crabbe as students who need to work harder in their Defence Against the Dark Arts class."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "goyle",
+      "relationship_type": "mentioned_together_with",
+      "description": "Snape is mentioned together with Goyle as students who need to work harder in their Defence Against the Dark Arts class."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "friend_of",
+      "description": "Malfoy mentions that Crabbe was supposed to be with him, implying they are friends."
+    }
+  ]
+}

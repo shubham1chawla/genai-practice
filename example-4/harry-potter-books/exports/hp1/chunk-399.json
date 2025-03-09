@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry is described as wanting to look at himself in the mirror but seeing no reflection again."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned by name, Filch is described as someone who makes a sound that Harry is trying to avoid."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned by name, Snape is also someone who makes a sound that Harry is trying to avoid."
+    },
+    {
+      "name": "the mirror",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The mirror in the story is described as having a trick of reflecting invisible people."
+    },
+    {
+      "name": "woman standing right behind him",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A woman who is reflected in the mirror, but not physically present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the mirror",
+      "relationship_type": "reflected_in",
+      "description": "Harry sees himself reflected in the mirror."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "woman standing right behind him",
+      "relationship_type": "reflected_behind",
+      "description": "A woman is reflected behind Harry in the mirror."
+    }
+  ]
+}

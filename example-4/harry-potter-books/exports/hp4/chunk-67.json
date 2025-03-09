@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "world cup",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The World Cup is mentioned as a 'thing' that Harry can go to. It's an event where Quidditch teams compete."
+    },
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasleys are a family who will be picking Harry up from the train station. They are mentioned as 'these Weasleys'."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story and is being given permission to go to the World Cup by his aunt."
+    },
+    {
+      "name": "dudley dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley Dursley is Harry's cousin who is lurking behind the door trying to overhear Harry's conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "weasleys",
+      "relationship_type": "will_pick_up",
+      "description": "The Weasleys will be picking Harry up from the train station."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "world cup",
+      "relationship_type": "attendee",
+      "description": "Harry is going to attend the World Cup."
+    }
+  ]
+}

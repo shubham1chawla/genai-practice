@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by Slughorn as 'the Chosen Boy Who'."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, known for his love of wine and friendship with Slughorn."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned in the toasts."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, known for his love of wine and friendship with Hagrid."
+    },
+    {
+      "name": "parry otter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mentioned by Slughorn as 'the Chosen Boy Who'."
+    },
+    {
+      "name": "odo",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dying wizard mentioned in the song sung by Hagrid and Slughorn."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The school where Hagrid and Slughorn work."
+    },
+    {
+      "name": "elf-made wine",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A type of wine mentioned in the toasts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "slughorn",
+      "relationship_type": "friendship",
+      "description": "Hagrid and Slughorn are friends, as shown by their behavior towards each other."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "hogwarts",
+      "relationship_type": "employment",
+      "description": "Hagrid works at Hogwarts."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "hogwarts",
+      "relationship_type": "employment",
+      "description": "Slughorn works at Hogwarts."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "parry otter",
+      "relationship_type": "mention",
+      "description": "Hagrid mentions Parry Otter in the context of Slughorn's toast."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "parry otter",
+      "relationship_type": "mention",
+      "description": "Slughorn mentions Parry Otter in his toast."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "odo",
+      "relationship_type": "song_about",
+      "description": "Hagrid sings a song about Odo."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "odo",
+      "relationship_type": "song_about",
+      "description": "Slughorn continues to sing the refrain of the song about Odo."
+    }
+  ]
+}

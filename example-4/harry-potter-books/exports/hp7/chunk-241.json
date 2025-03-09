@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as interrupting Dumbledore's death announcement. The text states 'But Harry interrupted.'"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having died over a month ago."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as speaking up against Scrimgeour's actions. The text states 'Isn’t it obvious?’ said Hermione..."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is mentioned as being questioned by Harry and Hermione. The text states '“Isn’t it obvious?” said Hermione, before Scrimgeour could answer.'"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as having the power to confiscate contents of a will. The text states 'The Decree for Justifiable Conﬁscation gives the Ministry the power...'"
+    },
+    {
+      "name": "decree for justifiable confiscation",
+      "entity_type": "law",
+      "singular": true,
+      "description": "The Decree is mentioned as giving the Ministry the power to confiscate contents of a will. The text states 'The Decree for Justifiable Conﬁscation gives the Ministry the power...'"
+    },
+    {
+      "name": "will",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The Will is mentioned as being left by Dumbledore and examined by the Ministry. The text states 'They wanted to examine whatever he’s left us.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "ministry",
+      "relationship_type": "affiliated_with",
+      "description": "Scrimgeour is affiliated with the Ministry, as mentioned in the text 'The Decree for Justifiable Conﬁscation gives the Ministry the power...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "interrupted",
+      "description": "Harry interrupted Dumbledore's death announcement, as stated in the text 'But Harry interrupted.'"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "scrimgeour",
+      "relationship_type": "accused",
+      "description": "Hermione accused Scrimgeour of wrongdoing, as mentioned in the text '“They wanted to examine whatever he’s left us.” she said, and her voice trembled slightly.'"
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "will",
+      "relationship_type": "examined",
+      "description": "The Ministry examined the Will left by Dumbledore, as stated in the text 'They wanted to examine whatever he’s left us.'"
+    }
+  ]
+}

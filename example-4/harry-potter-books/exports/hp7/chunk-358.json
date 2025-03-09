@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as the one who belonged to, implying that James is a person of importance or relevance in the story. (\"belonged to James was chasing after him.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and narrator of the story. He is searching for his mother's letter and looking for clues. (\"Harry tucked the photograph into his pocket with Lily’s letter and continued to look for the second sheet.\")"
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is Harry's mother, mentioned as the one who wrote the letter that Harry is searching for. (\"Harry tucked the photograph into his pocket with Lily’s letter and continued to look for the second sheet.\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person of importance in the story, mentioned as someone who might have information that could be valuable. (\"It seems incredible that Dumbledore — what?\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Death Eaters are a group of people who are enemies of Harry and his friends. They are mentioned as possibly being interested in the information on Dumbledore. (\"The only potentially useful thing he could see her was possible information on Dumbledore.\")"
+    },
+    {
+      "name": "kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kreacher is a person who is shouting Harry's name and seems to be in distress. (\"“Harry? Harry? Harry! ”\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lily",
+      "relationship_type": "belonged_to",
+      "description": "Harry is searching for his mother's letter, which belonged to Lily. (\"Harry tucked the photograph into his pocket with Lily’s letter and continued to look for the second sheet.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_information_about",
+      "description": "Harry is looking for clues that might have made the second sheet valuable, which could be related to information about Dumbledore. (\"His toy broomstick could hardly be considered interesting to the Death Eaters . . . The only potentially useful thing he could see her was possible information on Dumbledore.\")"
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "dumbledore",
+      "relationship_type": "interested_in",
+      "description": "Death Eaters are mentioned as possibly being interested in the information on Dumbledore. (\"The only potentially useful thing he could see her was possible information on Dumbledore.\")"
+    }
+  ]
+}

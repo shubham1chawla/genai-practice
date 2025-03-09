@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as being in a situation where he needs to avoid Filch."
+    },
+    {
+      "name": "argus filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is known for being strict and having a cat named Mrs Norris. He has flu and is cleaning up after students."
+    },
+    {
+      "name": "nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who warns Harry to leave the area because Filch is in a bad mood."
+    },
+    {
+      "name": "mrs norris",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Filch's cat, which seems to have some sort of mysterious connection with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "argus filch",
+      "relationship_type": "is_caught_by",
+      "description": "Harry is caught by Filch for dripping mud all over the place."
+    },
+    {
+      "entity_1": "nick",
+      "entity_2": "harry",
+      "relationship_type": "warns",
+      "description": "Nick warns Harry to get out of the area because Filch is in a bad mood."
+    }
+  ]
+}

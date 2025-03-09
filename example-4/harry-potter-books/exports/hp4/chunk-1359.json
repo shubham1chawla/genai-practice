@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "battle",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A very rare effect will take place during the battle."
+    },
+    {
+      "name": "wands",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The wands are mentioned as having a special effect."
+    },
+    {
+      "name": "spells",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "The spells performed by the wands will be regurgitated in reverse order."
+    },
+    {
+      "name": "Cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore mentions that some form of Cedric must have reappeared."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as nodding in response to Dumbledore's statement."
+    },
+    {
+      "name": "Sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius asks if Diggory came back to life."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore explains the concept of a reverse echo and shadow."
+    },
+    {
+      "name": "Diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius asks if Diggory came back to life."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "battle",
+      "entity_2": "wands",
+      "relationship_type": "involved_in",
+      "description": "A very rare effect will take place during the battle, involving the wands."
+    },
+    {
+      "entity_1": "wands",
+      "entity_2": "spells",
+      "relationship_type": "regurgitate",
+      "description": "The wands will force each other to regurgitate spells in reverse order."
+    },
+    {
+      "entity_1": "Cedric",
+      "entity_2": "Dumbledore",
+      "relationship_type": "reappeared_through",
+      "description": "Some form of Cedric must have reappeared, as mentioned by Dumbledore."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Dumbledore",
+      "relationship_type": "responded_to",
+      "description": "Harry nodded in response to Dumbledore's statement."
+    },
+    {
+      "entity_1": "Sirius",
+      "entity_2": "Diggory",
+      "relationship_type": "concerned_about",
+      "description": "Sirius asks if Diggory came back to life."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Cedric",
+      "relationship_type": "explained_reappearance_of",
+      "description": "Dumbledore explains that some form of Cedric must have reappeared."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Harry",
+      "relationship_type": "informed",
+      "description": "Dumbledore informs Harry about the concept of a reverse echo and shadow."
+    }
+  ]
+}

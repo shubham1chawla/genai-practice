@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is trying to rescue people from a burning building."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is also present in the scene and tries to help Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another one of Harry's friends who helps Ron rescue Goyle."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is trying to escape the burning building with Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is unconscious and being carried by Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "rescue_attempt",
+      "description": "Harry tries to rescue Malfoy from the burning building."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "collaboration",
+      "description": "Ron and Hermione work together to rescue Goyle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goyle",
+      "relationship_type": "rescue_attempt",
+      "description": "Harry tries to rescue Goyle from the burning building."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "caregiver",
+      "description": "Malfoy is taking care of Goyle and trying to escape with him."
+    }
+  ]
+}

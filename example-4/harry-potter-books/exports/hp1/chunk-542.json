@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is one of the main characters in the story, a boy who is standing on the edge of a huge chessboard."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is another main character in the story, a boy who is trying to figure out how to get across the chessboard."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is a third main character in the story, a girl who is nervous about their situation."
+    },
+    {
+      "name": "chessmen",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The chessmen are pieces on the chessboard that are carved from black stone and have no faces."
+    },
+    {
+      "name": "knight",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A specific type of chessman that is mentioned in the story."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "knight",
+      "relationship_type": "touches",
+      "description": "Ron puts his hand out to touch the knight's horse, causing it to spring to life."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "communicates_with",
+      "description": "Ron turns to Harry and asks if they have to join the chessmen to get across."
+    }
+  ]
+}

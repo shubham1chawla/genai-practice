@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is introduced as a powerful figure, with the speaker prostrating themselves before him. He is described as having 'blank, red eyes' and is shown to be surveying a group of people."
+    },
+    {
+      "name": "mr goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Goyle is mentioned as being in the shadow of Voldemort, suggesting that he may be present but not directly involved in the conversation."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are referred to as a group of individuals who have gone missing. They are described as being in Voldemort's service, and three of them are mentioned as having died."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "has_member",
+      "description": "Voldemort mentions that there are six missing Death Eaters, suggesting a relationship between him and the group."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "mr goyle",
+      "relationship_type": "is_in_shadow_of",
+      "description": "Mr. Goyle is mentioned as being in Voldemort's shadow, suggesting a power dynamic or hierarchy between the two."
+    }
+  ]
+}

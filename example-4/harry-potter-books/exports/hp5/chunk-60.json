@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to communicate with someone."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has arrived at the Ministry and is trying to sort out a problem."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who yells 'OWLS!' in response to something."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Harry's aunt, whose house Harry is supposed to stay at."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A place where Dumbledore has arrived and is trying to sort out a problem."
+    },
+    {
+      "name": "owl",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal that delivers messages, tied with a roll of parchment to its leg."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "communication",
+      "description": "Harry receives a message from Dumbledore, who is trying to sort out a problem at the Ministry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt",
+      "relationship_type": "residence",
+      "description": "Harry is supposed to stay at his aunt's house, according to Dumbledore's message."
+    }
+  ]
+}

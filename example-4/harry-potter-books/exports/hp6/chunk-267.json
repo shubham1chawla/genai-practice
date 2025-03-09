@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A fellow student of Harry's at Hogwarts, mentioned as being asked a question by Harry."
+    },
+    {
+      "name": "zabini",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A Slytherin student and one of the characters that Harry is trying to follow."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "book_series",
+      "singular": true,
+      "description": "The book series in which this story takes place."
+    },
+    {
+      "name": "hogwarts school of witchcraft and wizardry",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A magical school where Harry and his friends are students."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that allows the wearer to become invisible."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "zabini",
+      "relationship_type": "follows",
+      "description": "Harry is trying to follow Zabini through the train corridors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "interacts_with",
+      "description": "Harry whispers 'later' to Neville before following Zabini."
+    }
+  ]
+}

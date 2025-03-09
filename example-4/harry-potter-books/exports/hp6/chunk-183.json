@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Fleur mentions Beauxbatons as a school with a different way of doing things."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is the one who is talking about Beauxbatons."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione points out three black specks in the sky through the kitchen window."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron joins Hermione at the window to look at the owls."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry hastens to join Hermione at the window to look at the owls."
+    },
+    {
+      "name": "the burrow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The owls are flying directly at The Burrow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fleur",
+      "entity_2": "beauxbatons",
+      "relationship_type": "attended_school",
+      "description": "Fleur attended Beauxbatons."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the burrow",
+      "relationship_type": "target_of_attack",
+      "description": "The owls are flying directly at The Burrow, which Hermione is holding onto."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "the burrow",
+      "relationship_type": "target_of_attack",
+      "description": "The owls are flying directly at The Burrow, which Ron is also holding onto."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the burrow",
+      "relationship_type": "target_of_attack",
+      "description": "The owls are flying directly at The Burrow, which Harry is also holding onto."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "holding_tightly",
+      "description": "Hermione is gripping Ron tightly around the elbows."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "holding_tightly",
+      "description": "Hermione is also holding onto Harry tightly."
+    }
+  ]
+}

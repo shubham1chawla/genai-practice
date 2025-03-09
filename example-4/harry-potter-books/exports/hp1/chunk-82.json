@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by name."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is present in the scene and interacts with the hotel owner."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who suggests going home but is ignored by Uncle Vernon."
+    },
+    {
+      "name": "mr h. potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name on the letter addressed to Harry Potter."
+    },
+    {
+      "name": "railview hotel",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The hotel where Harry and his family are staying."
+    },
+    {
+      "name": "cokeworth",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned in the address on the letter."
+    },
+    {
+      "name": "letter",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A letter addressed to Harry Potter that is delivered to his hotel room."
+    },
+    {
+      "name": "hotel owner",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The woman who delivers the letter to Harry's table."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "letter",
+      "relationship_type": "has",
+      "description": "Uncle Vernon takes possession of the letter from the hotel owner."
+    },
+    {
+      "entity_1": "hotel owner",
+      "entity_2": "letter",
+      "relationship_type": "delivers",
+      "description": "The hotel owner delivers the letter to Harry's table."
+    }
+  ]
+}

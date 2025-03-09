@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fudge is a gerbil that appeared in front of the Prime Minister. It was described as an 'ugly little man' who announced Fudge's arrival."
+    },
+    {
+      "name": "the prime minister",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Prime Minister is the main character of the story. He is trying to convince himself that Fudge was a hallucination."
+    },
+    {
+      "name": "fudge's arrival",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Fudge's arrival is an event that is mentioned in the text. It is described as being announced by 'the ugly little man' who turned out to be Fudge."
+    },
+    {
+      "name": "the chancellor of the exchequer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Chancellor of the Exchequer is a person who tried to remove the portrait of Fudge from the wall."
+    },
+    {
+      "name": "the art historian",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Art Historian is a person who tried to remove the portrait of Fudge from the wall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "the prime minister",
+      "relationship_type": "appeared_to",
+      "description": "Fudge appeared in front of the Prime Minister."
+    },
+    {
+      "entity_1": "the prime minister",
+      "entity_2": "fudge's arrival",
+      "relationship_type": "related_to",
+      "description": "The Prime Minister is trying to convince himself that Fudge was a hallucination related to his election campaign."
+    },
+    {
+      "entity_1": "the chancellor of the exchequer",
+      "entity_2": "the portrait of fudge",
+      "relationship_type": "tried_to_remove",
+      "description": "The Chancellor of the Exchequer tried to remove the portrait of Fudge from the wall."
+    },
+    {
+      "entity_1": "the art historian",
+      "entity_2": "the portrait of fudge",
+      "relationship_type": "tried_to_remove",
+      "description": "The Art Historian tried to remove the portrait of Fudge from the wall."
+    }
+  ]
+}

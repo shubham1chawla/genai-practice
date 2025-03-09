@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse at Hogwarts who is spooning bright blue liquid into Montague's mouth when Harry bursts in."
+    },
+    {
+      "name": "montague",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A patient in the hospital wing, being treated by Madam Pomfrey."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The head of Gryffindor House at Hogwarts, who has been transferred to St. Mungo's Hospital after being attacked with Stunning Spells."
+    },
+    {
+      "name": "st mungo's hospital",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A hospital for wizards and witches where Professor McGonagall has been transferred to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "needs_to_see",
+      "description": "Harry needs to see Professor McGonagall, as he has urgent business with her."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "montague",
+      "relationship_type": "treating_patient",
+      "description": "Madam Pomfrey is treating Montague's injuries in the hospital wing."
+    }
+  ]
+}

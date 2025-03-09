@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts. He has a slight sneer and is mentioned as being brainy."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a student at Hogwarts. He interjects Snape with a question about where he's hoping to go."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is a student at Hogwarts. He roars with laughter and imitates Lily's voice."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is Harry's mother. She walks forward on trembling legs to be sorted into a house at Hogwarts."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts. She says 'Evans, Lily!' and drops the Sorting Hat onto her head."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "sirius",
+      "relationship_type": "interjected",
+      "description": "Sirius interjects Snape with a question about where he's hoping to go."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "snape",
+      "relationship_type": "tried_to_trip",
+      "description": "James tries to trip Snape as he passes by."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "lily",
+      "relationship_type": "sorted",
+      "description": "Professor McGonagall sorts Lily into Gryffindor house using the Sorting Hat."
+    }
+  ]
+}

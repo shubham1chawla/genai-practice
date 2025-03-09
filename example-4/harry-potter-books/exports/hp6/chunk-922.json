@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person mentioned in the conversation. He is discussing Horcruxes with another character."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is a person mentioned in the conversation. He is being discussed as having created Horcruxes."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Horcruxes are objects that contain pieces of a person's soul. They are being discussed by Harry and another character."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lord voldemort",
+      "entity_2": "horcruxes",
+      "relationship_type": "created",
+      "description": "Lord Voldemort created Horcruxes, as mentioned in the conversation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcruxes",
+      "relationship_type": "concerned_with",
+      "description": "Harry is concerned with finding and understanding Horcruxes."
+    }
+  ]
+}

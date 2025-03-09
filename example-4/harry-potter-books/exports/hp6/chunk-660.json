@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "death eaters",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who became the first Death Eaters after leaving Hogwarts."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was rigidly controlled by Riddle and was never detected in open wrong-doing."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was wrongly accused of opening the Chamber of Secrets."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where Riddle and Death Eaters were present."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where a girl died due to the opening of the Chamber."
+    },
+    {
+      "name": "pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Dumbledore to store memories."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who was searching for memories of Riddle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "death eaters",
+      "relationship_type": "controlled_by",
+      "description": "Riddle controlled the Death Eaters."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "accused_of_opening",
+      "description": "Hagrid was wrongly accused of opening the Chamber of Secrets."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "pensieve",
+      "relationship_type": "used_by",
+      "description": "Dumbledore used the Pensieve to store memories."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Riddle attended Hogwarts."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Death Eaters attended Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "riddle",
+      "relationship_type": "searched_for_memories_of",
+      "description": "Dumbledore searched for memories of Riddle."
+    }
+  ]
+}

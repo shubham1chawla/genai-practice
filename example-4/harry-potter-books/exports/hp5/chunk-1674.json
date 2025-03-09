@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "he",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person experiencing the event"
+    },
+    {
+      "name": "it",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object being referred to (likely a rope or cable)"
+    },
+    {
+      "name": "neck",
+      "entity_type": "body_part",
+      "singular": true,
+      "description": "A part of the person's body"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "he",
+      "entity_2": "it",
+      "relationship_type": "attached_to",
+      "description": "He is attached to it (the rope or cable)"
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "neck",
+      "relationship_type": "located_on",
+      "description": "He is located on his neck"
+    }
+  ]
+}

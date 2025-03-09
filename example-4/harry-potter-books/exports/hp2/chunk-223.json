@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of students from Gryffindor house who are gathered around Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is the person who is belching large slugs and nobody wants to touch him."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper whose cabin is nearest to where Ron is being taken."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person who suggests taking Ron to Hagrid's cabin and tries to hold him still."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the person who nods bravely and helps Harry pull Ron up by the arms."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin is a student who runs down from his seat to see what's happening with Ron and takes pictures with his camera."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "supports",
+      "description": "Harry helps pull Ron up by the arms."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "supports",
+      "description": "Hermione helps Harry pull Ron up by the arms."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "colin",
+      "relationship_type": "angers",
+      "description": "Harry gets angry with Colin for trying to take pictures of Ron."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "slugs",
+      "relationship_type": "produces",
+      "description": "Ron belches large slugs."
+    }
+  ]
+}

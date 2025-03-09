@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is described as looking into Snape's pale face and speaking in first person, indicating that he is experiencing a vision or possession."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is described as having dark eyes fixed upon the coiling serpent in its protective sphere, suggesting that he is under some sort of spell or trance."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is mentioned as the target of Voldemort's wands and the reason for their failure."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the previous master of the Elder Wand, which was taken from his grave by Voldemort."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Lucius is mentioned as the owner of a wand that shattered upon meeting Harry Potter's."
+    },
+    {
+      "name": "olivander",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ollivander is mentioned as telling Voldemort about the twin cores and advising him to take another's wand under torture."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is described as the Wand of Destiny, the Deathstick, and is sought by Voldemort after his previous wands failed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "possesses_vision_of",
+      "description": "Voldemort experiences a vision or possession of Snape's face, allowing him to speak through Snape."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "owns",
+      "description": "Voldemort takes the Elder Wand from its previous master, Dumbledore."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "coiling serpent",
+      "relationship_type": "observes",
+      "description": "Snape's dark eyes are fixed upon the coiling serpent in its protective sphere."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lucius",
+      "relationship_type": "took_wand_from",
+      "description": "Voldemort takes Lucius's wand, which shatters upon meeting Harry Potter's."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "dumbledore",
+      "relationship_type": "took_wand_from_grave_of",
+      "description": "Voldemort takes the Elder Wand from Dumbledore's grave."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as having died in an accident or blunder, and his death is being discussed by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is speaking to the Hall about Cedric's death and mentioning Harry Potter."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned by Dumbledore as someone who must be connected with Cedric's death, and he is described as showing bravery in returning Cedric's body to Hogwarts."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the one Harry Potter managed to escape from."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as being at the Slytherin table with Draco Malfoy and Goyle."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is mentioned as muttering something to Crabbe and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as being at the Slytherin table with Draco Malfoy and Crabbe."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cedric",
+      "relationship_type": "mentioned_connection",
+      "description": "Dumbledore mentions Cedric's death in connection with Harry Potter."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "mentioned_connection",
+      "description": "Dumbledore mentions Harry Potter as someone connected to Cedric's death."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "cedric",
+      "relationship_type": "returned_body",
+      "description": "Harry Potter is described as returning Cedric's body to Hogwarts."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "lord voldemort",
+      "relationship_type": "escaped_from",
+      "description": "Dumbledore mentions that Harry Potter managed to escape from Lord Voldemort."
+    },
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "muttering_to",
+      "description": "Draco Malfoy is mentioned as muttering something to Crabbe and Goyle."
+    }
+  ]
+}

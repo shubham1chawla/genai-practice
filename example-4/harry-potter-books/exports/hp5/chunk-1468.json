@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, mentioned as having Occlumency lessons with Snape."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's godfather, who is upset about Snape stopping Harry's Occlumency lessons."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts, who tries to calm down Sirius and advises Harry on how to handle the situation with Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Potions master at Hogwarts, who has stopped giving Harry Occlumency lessons."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as someone who will be informed about Snape's actions."
+    },
+    {
+      "name": "occlumency",
+      "entity_type": "subject",
+      "singular": false,
+      "description": "A subject taught by Snape to Harry, which involves controlling one's thoughts and emotions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "snape",
+      "relationship_type": "anger_towards",
+      "description": "Sirius is angry with Snape for stopping Harry's Occlumency lessons."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "sirius",
+      "relationship_type": "calming_influence",
+      "description": "Lupin tries to calm down Sirius, who is upset about Snape's actions."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "recipient_of_instructions",
+      "description": "Harry receives instructions from Lupin on how to handle the situation with Snape."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "authority_over",
+      "description": "Dumbledore has authority over Snape and will be informed about his actions."
+    }
+  ]
+}

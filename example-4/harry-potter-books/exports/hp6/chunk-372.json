@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "mr gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Gaunt is introduced as a character in the conversation. He is referred to by Ogden and is shown to be yelling at Merope."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is introduced as a character who is having a conversation with Mr Gaunt. He is shocked by Mr Gaunt's behavior towards Merope."
+    },
+    {
+      "name": "merope",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merope is introduced as Mr Gaunt's daughter. She drops a pot and is scolded by her father."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The term 'Muggle' refers to non-magical people in the wizarding world. It is used by Ogden to describe someone who would perform magic in front of a Muggle."
+    },
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is introduced as Mr Gaunt's son. He is accused of performing magic in front of a Muggle."
+    },
+    {
+      "name": "pot",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The pots on the shelf are mentioned at the beginning of the passage and one of them is dropped by Merope."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Merope uses her wand to try and pick up the pot she had dropped."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "mr gaunt",
+      "relationship_type": "conversation",
+      "description": "Ogden is having a conversation with Mr Gaunt. They are discussing Morfin's alleged magic in front of a Muggle."
+    },
+    {
+      "entity_1": "merope",
+      "entity_2": "pot",
+      "relationship_type": "dropped",
+      "description": "Merope drops the pot, which then falls to the floor."
+    },
+    {
+      "entity_1": "mr gaunt",
+      "entity_2": "merope",
+      "relationship_type": "scolded",
+      "description": "Mr Gaunt scolds Merope for dropping the pot and not using her wand properly."
+    },
+    {
+      "entity_1": "merope",
+      "entity_2": "wand",
+      "relationship_type": "used",
+      "description": "Merope uses her wand to try and pick up the pot she had dropped."
+    }
+  ]
+}

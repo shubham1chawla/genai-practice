@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mum is mentioned as sending a sweater to Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the recipient of the gifts from Mrs. Weasley."
+    },
+    {
+      "name": "mrs weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley sent Harry a scarlet sweater and other gifts."
+    },
+    {
+      "name": "gryffindor lion",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "The Gryﬀindor lion is knitted on the front of the sweater."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A Firebolt broomstick was given to Harry as a gift."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Harry had seen the dream broom in Diagon Alley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mrs weasley",
+      "entity_2": "harry",
+      "relationship_type": "gave_gifts",
+      "description": "Mrs. Weasley sent gifts to Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "received_gift",
+      "description": "Harry received the Firebolt broomstick as a gift from Mrs. Weasley."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who has been tasked with destroying the Horcrux. He is holding Hermione's wand and leading the way to the rock where the Horcrux lies."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione's wand is being used by Harry to destroy the Horcrux."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron has retrieved the sword from the pool and is now being asked by Harry to use it to destroy the Horcrux."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Horcrux is an object that needs to be destroyed. It lies on a rock in the shadow of a sycamore tree."
+    },
+    {
+      "name": "sycamore tree",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A sycamore tree provides shade for the rock where the Horcrux lies."
+    },
+    {
+      "name": "rock",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The rock is a flat surface where the Horcrux lies. Harry brushes snow from its surface before holding out his hand to receive the Horcrux."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Ron has retrieved the sword from the pool and is now being asked by Harry to use it to destroy the Horcrux."
+    },
+    {
+      "name": "pool",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pool is where Ron retrieved the sword."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "has_horcrux",
+      "description": "Harry has been tasked with destroying the Horcrux and is leading the way to it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "sword",
+      "relationship_type": "has_sword",
+      "description": "Ron has retrieved the sword from the pool."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "asks_for_help",
+      "description": "Harry asks Ron to use the sword to destroy the Horcrux."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "horcrux",
+      "relationship_type": "is_asked_to_destroy",
+      "description": "Ron is being asked by Harry to use the sword to destroy the Horcrux."
+    }
+  ]
+}

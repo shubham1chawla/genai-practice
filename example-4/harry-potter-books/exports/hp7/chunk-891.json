@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "wizards",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Wizards are mentioned as risking their own safety to protect Muggle friends and neighbors."
+    },
+    {
+      "name": "witches",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Witches are also mentioned as risking their own safety to protect Muggle friends and neighbors."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "people",
+      "singular": true,
+      "description": "Muggles are mentioned as being protected by wizards and witches without their knowledge."
+    },
+    {
+      "name": "lee",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lee is a person who asks a question to Kingsley."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley is a person who replies to Lee's question."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizards",
+      "entity_2": "muggles",
+      "relationship_type": "protect",
+      "description": "Wizards protect Muggle friends and neighbors without their knowledge."
+    },
+    {
+      "entity_1": "witches",
+      "entity_2": "muggles",
+      "relationship_type": "protect",
+      "description": "Witches also protect Muggle friends and neighbors without their knowledge."
+    },
+    {
+      "entity_1": "lee",
+      "entity_2": "kingsley",
+      "relationship_type": "ask_question",
+      "description": "Lee asks a question to Kingsley."
+    },
+    {
+      "entity_1": "kingsley",
+      "entity_2": "death eaters",
+      "relationship_type": "lead_to",
+      "description": "Kingsley says that 'Wizards first' can lead to 'Pure-bloods first' and then to 'Death Eaters'."
+    }
+  ]
+}

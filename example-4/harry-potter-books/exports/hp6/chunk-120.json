@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as smiling at Harry and directing him towards a chair. He is also mentioned to have sat down without invitation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being directed by Dumbledore towards a chair and is the focus of Slughorn's attention when he turns to face the room again."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is described as impersonating someone in the past and is busy with decanters and glasses. He is also mentioned to have turned to face the room again and his eyes fell immediately upon Harry."
+    },
+    {
+      "name": "chair",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A chair is mentioned to be placed beside the newly burning fire and a brightly glowing oil lamp."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "directed_towards",
+      "description": "Dumbledore directed Harry towards a chair."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "focused_attention",
+      "description": "Slughorn's eyes fell immediately upon Harry when he turned to face the room again."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "chair",
+      "relationship_type": "sat_down_on",
+      "description": "Dumbledore sat down on the chair."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "decanters_and_glasses",
+      "relationship_type": "busy_with",
+      "description": "Slughorn was busy with decanters and glasses."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts School of Witchcraft and Wizardry. He made them tea and offered them stoat sandwiches."
+    },
+    {
+      "name": "fluffy",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fluffy is a three-headed dog that is guarding the Philosopher's Stone."
+    },
+    {
+      "name": "philosopher’s stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Philosopher's Stone is an object that is being guarded by Fluffy and possibly other unknown entities."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Gringotts is a wizarding bank where the Philosopher's Stone was almost stolen."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the students who are asking Hagrid about the Philosopher's Stone."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another student who is asking Hagrid about the Philosopher's Stone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "guarding",
+      "description": "Hagrid knows that Fluffy and possibly other entities are guarding the Philosopher's Stone."
+    },
+    {
+      "entity_1": "fluffy",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "guarding",
+      "description": "Fluffy is one of the entities that is guarding the Philosopher's Stone."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "gringotts",
+      "relationship_type": "almost stolen from",
+      "description": "The Philosopher's Stone was almost stolen from Gringotts, a wizarding bank."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "philosopher’s stone",
+      "relationship_type": "asking about",
+      "description": "Harry is asking Hagrid about the Philosopher's Stone."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "flattering",
+      "description": "Hermione is using a flattering voice to ask Hagrid about the Philosopher's Stone."
+    }
+  ]
+}

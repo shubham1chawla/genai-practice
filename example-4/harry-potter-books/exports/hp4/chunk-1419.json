@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who has put an Unbreakable Charm on the jar to prevent the beetle from transforming."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student who handed the glass jar back to Hermione."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is someone about whom the beetle was writing horrible lies."
+    },
+    {
+      "name": "beetle",
+      "entity_type": "insect",
+      "singular": true,
+      "description": "The beetle is being kept in a glass jar and has been writing horrible lies with its quill."
+    },
+    {
+      "name": "quill",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The quill is an object used by the beetle to write horrible lies."
+    },
+    {
+      "name": "london",
+      "entity_type": "location",
+      "singular": true,
+      "description": "London is a location where Hermione plans to release the beetle when they return."
+    },
+    {
+      "name": "jar",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The jar is an object used by Hermione to keep the beetle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "beetle",
+      "relationship_type": "owns",
+      "description": "Hermione owns the beetle and has put it in a jar."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "jar",
+      "relationship_type": "uses",
+      "description": "Hermione uses the jar to keep the beetle."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "jar",
+      "relationship_type": "hands_over",
+      "description": "Ron hands over the jar to Hermione."
+    }
+  ]
+}

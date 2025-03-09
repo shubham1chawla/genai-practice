@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "pavement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pavement is yelling to Harry and his friends."
+    },
+    {
+      "name": "Fancy a drink",
+      "entity_type": "phrase",
+      "singular": true,
+      "description": "A phrase used by the pavement to invite Harry and his friends for a drink."
+    },
+    {
+      "name": "Ditch ginger",
+      "entity_type": "phrase",
+      "singular": true,
+      "description": "A phrase used by the pavement to tell Ron to leave someone named Ginger."
+    },
+    {
+      "name": "pint",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "A type of drink mentioned in the invitation."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is trying to calm down Ron and Harry."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is about to shout back at the pavement."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is trying to calm down Ron and is also feeling the effects of Polyjuice potion."
+    },
+    {
+      "name": "Leaky Cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned by Ron as being close to their current location."
+    },
+    {
+      "name": "Charing Cross",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location mentioned by Ron as the location of the Leaky Cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pavement",
+      "entity_2": "Harry",
+      "relationship_type": "invites",
+      "description": "The pavement is inviting Harry and his friends for a drink."
+    },
+    {
+      "entity_1": "Hermione",
+      "entity_2": "Ron",
+      "relationship_type": "calms_down",
+      "description": "Hermione is trying to calm down Ron."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Polyjuice potion",
+      "relationship_type": "feeling_effects_of",
+      "description": "Harry is feeling the effects of Polyjuice potion."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "Leaky Cauldron",
+      "relationship_type": "nearby_location",
+      "description": "Ron mentions that the Leaky Cauldron is nearby."
+    }
+  ]
+}

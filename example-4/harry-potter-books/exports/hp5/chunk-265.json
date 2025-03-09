@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "ministry of magic",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Ministry of Magic is mentioned as the destination they are heading to. (THE MINISTRY OF MAGIC)"
+    },
+    {
+      "name": "escalator",
+      "entity_type": "object",
+      "singular": true,
+      "description": "They went through an escalator at the beginning of their journey. (the escalator they went, through the ticket barrier)"
+    },
+    {
+      "name": "ticket barrier",
+      "entity_type": "object",
+      "singular": true,
+      "description": "They passed through a ticket barrier after going through the escalator. (through the ticket barrier)"
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as being delighted with the way the stile swallowed his ticket. (Mr. Weasley delighted with the way the stile swallowed his ticket)"
+    },
+    {
+      "name": "stile",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The stile is mentioned as swallowing Mr. Weasley's ticket. (the stile swallowed his ticket)"
+    },
+    {
+      "name": "ticket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Mr. Weasley's ticket was swallowed by the stile. (his ticket)"
+    },
+    {
+      "name": "map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Mr. Weasley refers to a map while trying to find their way. (Mr. Weasley’s contin ual references to the map)"
+    },
+    {
+      "name": "street",
+      "entity_type": "location",
+      "singular": true,
+      "description": "They emerged onto a broad street lined with imposing-looking buildings. (onto a broad street)"
+    },
+    {
+      "name": "buildings",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The buildings are described as imposing-looking at first, but later become smaller and less imposing. (im posing-looking buildings)"
+    },
+    {
+      "name": "pub",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A pub is mentioned as being located on the street they reached. (a pu b)"
+    },
+    {
+      "name": "dumpster",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An overflowing dumpster is mentioned as being located on the same street. (an overflowing dumpster)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "escalator",
+      "relationship_type": "location_of",
+      "description": "The Ministry of Magic is where they are heading to, and the escalator is a part of their journey there. (THE MINISTRY OF MAGIC ... the escalator they went)"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "ticket barrier",
+      "relationship_type": "passed_through",
+      "description": "Mr. Weasley passed through the ticket barrier after going through the escalator. (through the ticket barrier)"
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "stile",
+      "relationship_type": "swallowed_by",
+      "description": "The stile swallowed Mr. Weasley's ticket. (the stile swallowed his ticket)"
+    },
+    {
+      "entity_1": "map",
+      "entity_2": "mr weasley",
+      "relationship_type": "used_by",
+      "description": "Mr. Weasley refers to a map while trying to find their way. (Mr. Weasley’s contin ual references to the map)"
+    },
+    {
+      "entity_1": "street",
+      "entity_2": "buildings",
+      "relationship_type": "contains",
+      "description": "The street they emerged onto contained imposing-looking buildings. (onto a broad street lined with im posing-looking buildings)"
+    },
+    {
+      "entity_1": "pub",
+      "entity_2": "street",
+      "relationship_type": "located_on",
+      "description": "A pub is mentioned as being located on the same street they reached. (a pu b, and an overflowing dumpster)"
+    },
+    {
+      "entity_1": "dumpster",
+      "entity_2": "street",
+      "relationship_type": "located_on",
+      "description": "An overflowing dumpster is mentioned as being located on the same street. (an overflowing dumpster)"
+    }
+  ]
+}

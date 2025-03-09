@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "boy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The boy who lived is mentioned as the one Voldemort tried to kill, but couldn't. (Excerpt: 'They're saying he tried to kill the Potters' son, Harry.')"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort's power broke when he couldn't kill the boy, and that's why he's gone. (Excerpt: 'when he couldn’t kill Harry Potter, Voldemort’s power somehow broke – and that’s why he’s gone.')"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the son of the Potters who Voldemort tried to kill. (Excerpt: 'They're saying he tried to kill the Potters' son, Harry.')"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a character in the conversation, nodding glumly and giving a great sniff. (Excerpt: 'Dumbledore nodded glumly. ... Dumbledore gave a great sniff as he took a golden watch from his pocket...')"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a character in the conversation, with her voice trembling and dabbing at her eyes. (Excerpt: 'Professor McGonagall’s voice trembled as she went on... Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles.')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "boy",
+      "relationship_type": "tried_to_kill",
+      "description": "Voldemort tried to kill the boy. (Excerpt: 'They're saying he tried to kill the Potters' son, Harry.')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry potter",
+      "relationship_type": "tried_to_kill",
+      "description": "Voldemort tried to kill Harry Potter. (Excerpt: 'They're saying he tried to kill the Potters' son, Harry.')"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "boy",
+      "relationship_type": "power_broke",
+      "description": "When Voldemort couldn't kill the boy, his power broke. (Excerpt: 'when he couldn’t kill Harry Potter, Voldemort’s power somehow broke – and that’s why he’s gone.')"
+    }
+  ]
+}

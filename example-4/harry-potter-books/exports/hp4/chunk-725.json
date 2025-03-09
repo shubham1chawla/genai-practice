@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story who is walking down a corridor with Hermione and Ron. He asks Hermione where they are going."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who is hurrying to keep up with them as they walk down the corridor."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who is leading the way and walking down the corridor with Harry and Ron."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Fat Lady is a magical portrait that guards the entrance to Gryffindor Tower. She is talking to Ron as they walk by."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Harry and Hermione are walking down the corridor together."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fat lady",
+      "relationship_type": "talking_to",
+      "description": "Ron is talking to the Fat Lady as he walks by."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who could have died multiple times and is now returning to the Muggle world."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is talking to Harry about his aunt and uncle being proud of him."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as the only person Harry has to talk to at home."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Harry's aunt is mentioned as someone who will be proud of him when she hears about his actions this year."
+    },
+    {
+      "name": "uncle",
+      "entity_type": "family_member",
+      "singular": false,
+      "description": "Harry's uncle is mentioned as someone who will be proud of him when he hears about his actions this year."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt",
+      "relationship_type": "will_be_proud_of",
+      "description": "Harry's aunt will be proud of him when she hears about his actions this year."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle",
+      "relationship_type": "will_be_proud_of",
+      "description": "Harry's uncle will be proud of him when he hears about his actions this year."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "talking_to",
+      "description": "Hermione is talking to Harry about his aunt and uncle being proud of him."
+    }
+  ]
+}

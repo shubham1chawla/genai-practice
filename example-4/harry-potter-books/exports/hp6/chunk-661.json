@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Riddle is mentioned as a person who grew up in an orphanage and was obsessed with his parentage. He searched for his father's name on various records and books."
+    },
+    {
+      "name": "tom riddle senior",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle Senior is mentioned as the father of Riddle, who never set foot in Hogwarts."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the assumed identity of Riddle after he dropped his previous name."
+    },
+    {
+      "name": "marvolo",
+      "entity_type": "family_name",
+      "singular": true,
+      "description": "Marvolo is mentioned as a family name that Riddle used to investigate his mother's family."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "tom riddle senior",
+      "relationship_type": "parent_child",
+      "description": "Riddle searched for his father's name on various records and books."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "lord voldemort",
+      "relationship_type": "alias",
+      "description": "Riddle assumed the identity of Lord Voldemort after dropping his previous name."
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "marvolo",
+      "relationship_type": "investigation_target",
+      "description": "Riddle used Marvolo as a family name to investigate his mother's family."
+    }
+  ]
+}

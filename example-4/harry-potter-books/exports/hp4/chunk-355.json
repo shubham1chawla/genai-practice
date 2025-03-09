@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as speaking to the students."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Not explicitly mentioned but implied as being present in the Great Hall."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the scene is taking place."
+    },
+    {
+      "name": "griffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Not explicitly mentioned but implied as being one of the houses at Hogwarts."
+    },
+    {
+      "name": "harry potter's teachers",
+      "entity_type": "teacher",
+      "singular": false,
+      "description": "The teachers who will be affected by the upcoming event."
+    },
+    {
+      "name": "the stranger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A man standing in the doorway of the Great Hall, shrouded in a black traveling cloak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter's teachers",
+      "relationship_type": "affects",
+      "description": "Dumbledore mentions that the upcoming event will take up much of the teachers' time and energy."
+    },
+    {
+      "entity_1": "the stranger",
+      "entity_2": "great hall",
+      "relationship_type": "enters",
+      "description": "The stranger enters the Great Hall, causing a commotion."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the stranger",
+      "relationship_type": "meets",
+      "description": "Dumbledore meets the stranger as he walks up to the teachers' table."
+    }
+  ]
+}

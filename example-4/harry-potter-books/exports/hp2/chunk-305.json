@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "the chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber has been opened."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch has been keeping guard"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is searching for clues"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione found something funny"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron was standing well back"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the chamber",
+      "relationship_type": "visited",
+      "description": "Harry crawled along the corridor to search for clues"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "the message on the wall",
+      "relationship_type": "found",
+      "description": "Hermione found something funny at the topmost pane of the window"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "communicated_with",
+      "description": "Harry and Ron were talking to each other"
+    }
+  ]
+}

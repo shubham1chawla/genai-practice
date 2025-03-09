@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who has been accused by Harry of robbing ingredients from the cupboard."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who has been accused by Snape of robbing ingredients from the cupboard."
+    },
+    {
+      "name": "dumbledore's pensieve",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Dumbledore's Pensieve is an object that Harry recognizes as belonging to Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "accused",
+      "description": "Snape accused Harry of robbing ingredients from the cupboard."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dumbledore's pensieve",
+      "relationship_type": "pointing_at",
+      "description": "Snape pointed silently at Dumbledore's Pensieve."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "dislike",
+      "description": "Harry felt that Snape disliked him, as evident from Snape's cold black eyes and etched lines on his face."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore's pensieve",
+      "relationship_type": "recognized",
+      "description": "Harry recognized Dumbledore's Pensieve at once."
+    }
+  ]
+}

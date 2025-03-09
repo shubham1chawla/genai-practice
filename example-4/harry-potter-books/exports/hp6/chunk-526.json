@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main character of the story, trying to sleep and dealing with his friends' issues."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is being cold-shouldered by Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry's friend who has become touchy and aggressive overnight."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Harry's who is being treated with icy indifference by Ron."
+    },
+    {
+      "name": "dean",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend of Ginny's who is also being cold-shouldered by Ron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "ginny",
+      "relationship_type": "cold_shoulders",
+      "description": "Ron is cold-shouldering Ginny."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "treats_with_indifference",
+      "description": "Ron is treating Hermione with icy indifference."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dean",
+      "relationship_type": "cold_shoulders",
+      "description": "Ron is cold-shouldering Dean."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "tries_to_keep_peace",
+      "description": "Harry is trying to keep the peace between Ron and Hermione."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "tries_to_keep_peace",
+      "description": "Harry is trying to keep the peace between Ron and Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "is_aggressive_towards",
+      "description": "Ron is being aggressive towards Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "first_years",
+      "relationship_type": "swears_at",
+      "description": "Ron is swearing at first-years."
+    }
+  ]
+}

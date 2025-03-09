@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "girls",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The bathroom is referred to as a girls' bathroom."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people in the group."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the people in the group."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people in the group."
+    },
+    {
+      "name": "myrtle",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "Myrtle is a ghost who is being referred to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "asked_for_help",
+      "description": "Harry and Hermione are working together to investigate the attack on the cat."
+    },
+    {
+      "entity_1": "myrtle",
+      "entity_2": "ron",
+      "relationship_type": "unrelated_to",
+      "description": "Myrtle is unrelated to Ron, but she is reacting strongly to his presence."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "myrtle",
+      "relationship_type": "talking_to",
+      "description": "Harry and Myrtle are talking to each other."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "myrtle",
+      "relationship_type": "talking_to",
+      "description": "Hermione and Myrtle are talking to each other."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker's father is still alive, as mentioned in the letter from Mum."
+    },
+    {
+      "name": "st. mungo’s",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A hospital where the speaker is going to send news about their dad's condition."
+    },
+    {
+      "name": "mum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker's mother, who sent a letter with the news about their dad's condition."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley brothers, who is present at the table and reads the letter from Mum."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is sitting at the table with Ron and the Weasleys."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The father of the Weasley family, who is mentioned in the letter from Mum."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who is sitting at the table with Harry and the Weasleys."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley brothers, who reads the letter from Mum."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who suggests going to bed but is not convinced."
+    },
+    {
+      "name": "the weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family, who are present at the table and watching Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dad",
+      "relationship_type": "has_parent",
+      "description": "Harry's dad is still alive, as mentioned in the letter from Mum."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "mum",
+      "relationship_type": "is_child_of",
+      "description": "George is one of the Weasley brothers, and his mother sent a letter with news about their dad's condition."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr. weasley",
+      "relationship_type": "has_family_member",
+      "description": "Harry knows Mr. Weasley as a family member of the Weasleys, who is mentioned in the letter from Mum."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "mum",
+      "relationship_type": "is_child_of",
+      "description": "Ron is one of the main characters, and his mother sent a letter with news about their dad's condition."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "mum",
+      "relationship_type": "is_child_of",
+      "description": "Fred is one of the Weasley brothers, and his mother sent a letter with news about their dad's condition."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Sirius is a friend of Harry's, who suggests going to bed but is not convinced."
+    }
+  ]
+}

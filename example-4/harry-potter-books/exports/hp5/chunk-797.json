@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "hogs head",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The bar where Sirius was banned 20 years ago. (\"He was banned from the Hog’s Head twenty years ago\")"
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who is friends with Harry and Ron. (\"said Sirius\")"
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard whose Invisibility Cloak was lost. (\"We lost Moody’s spare Invisibility Cloak\")"
+    },
+    {
+      "name": "sturgis",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who was arrested and caused the loss of Moody's Invisibility Cloak. (\"so Dung’s been dressing as a witch a lot lately because we lost Moody’s spare Invisibility Cloak when Sturgis was arrest ed\")"
+    },
+    {
+      "name": "dung",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who has been dressing up as a witch. (\"so Dung’s been dressing as a witch a lot lately\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is being warned by his mother not to join the secret group. (\"Ron — I’ve sworn to pass on a message from your mother\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose mother is warning Ron about joining the secret group. (\"She says on no account whatsoever are you to take part in an illegal secret Defense Against the Dark Ar ts group\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is also being warned by Harry's mother not to join the secret group. (\"She says you’ll be expelled for sure and your future will be ruined\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hogs head",
+      "entity_2": "sirius",
+      "relationship_type": "banned_from",
+      "description": "Sirius was banned from the Hog's Head 20 years ago. (\"He was banned from the Hog’s Head twenty years ago\")"
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "sturgis",
+      "relationship_type": "lost_to",
+      "description": "Moody lost his Invisibility Cloak to Sturgis when he was arrested. (\"We lost Moody’s spare Invisibility Cloak when Sturgis was arrest ed\")"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry's mother",
+      "relationship_type": "warned_by",
+      "description": "Harry's mother warned Ron not to join the secret group. (\"Ron — I’ve sworn to pass on a message from your mother\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry's mother",
+      "relationship_type": "warned_by",
+      "description": "Harry's mother also warned Hermione not to join the secret group. (\"She says you’ll be expelled for sure and your future will be ruined\")"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "phoenix lament",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of a book mentioned in the conversation."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as whispering to someone. She is the Defence Against the Dark Arts teacher."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as saying something savagely. He was the one who helped the Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people with a Dark Mark on their foreheads, who are being chased by Harry and others."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as emerging out of the dust along with a boy. None of them were attacked."
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Greyback is mentioned as being one of the Death Eaters who came back."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is mentioned as saying something in a hollow voice. She and others let the Death Eaters pass thinking they were being chased."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as explaining what happened when Snape and the boy emerged out of the dust."
+    },
+    {
+      "name": "barrier",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A barrier that was blocking the stairs. It was broken by a hex fired off by a Death Eater."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "helped",
+      "description": "Harry helped the Death Eaters, not to stop them but to help them. This is mentioned in the conversation between Harry and McGonagall."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "greyback",
+      "relationship_type": "associated_with",
+      "description": "Snape emerged out of the dust along with a boy, who was Greyback. This is mentioned by Lupin in the conversation."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "death eaters",
+      "relationship_type": "let_pass",
+      "description": "Tonks and others let the Death Eaters pass thinking they were being chased. This is mentioned by Tonks in a hollow voice."
+    }
+  ]
+}

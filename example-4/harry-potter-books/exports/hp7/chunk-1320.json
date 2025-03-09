@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, referred to as 'Potter'."
+    },
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being addressed by Voldemort, also known as Snape."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist in the story, referred to as 'my Lord'."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is mentioned as sounding similar to Snape."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are following Voldemort's instructions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "severus",
+      "relationship_type": "has_called_back_from_battle",
+      "description": "Voldemort has called Severus back from battle."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "is_targeting",
+      "description": "Voldemort is targeting Harry, and knows his weakness."
+    },
+    {
+      "entity_1": "severus",
+      "entity_2": "lucius",
+      "relationship_type": "sounds_like",
+      "description": "Severus sounds like Lucius."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "death eaters",
+      "relationship_type": "has_given_instructions_to",
+      "description": "Voldemort has given instructions to the Death Eaters."
+    }
+  ]
+}

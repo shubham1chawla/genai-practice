@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is walking with someone."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who overheard a prophecy and carried news to Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story who is being hunted by Harry's parents."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's parents who was hunted by Voldemort."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's father who was hunted by Voldemort."
+    },
+    {
+      "name": "peter pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who sent news to Voldemort along with Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "informed",
+      "description": "Snape carried the news of the prophecy to Voldemort."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "peter pettigrew",
+      "relationship_type": "collaborated_with",
+      "description": "Snape and Peter Pettigrew sent news to Voldemort together."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "lily",
+      "relationship_type": "hunted",
+      "description": "Voldemort was hunting Lily."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "james",
+      "relationship_type": "hunted",
+      "description": "Voldemort was hunting James."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "indirectly_involved_in_hunting",
+      "description": "Snape's actions led to Lily being hunted by Voldemort."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "james",
+      "relationship_type": "indirectly_involved_in_hunting",
+      "description": "Snape's actions led to James being hunted by Voldemort."
+    }
+  ]
+}

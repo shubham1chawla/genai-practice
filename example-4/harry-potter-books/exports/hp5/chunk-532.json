@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "dolores umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dolores Umbridge is mentioned as the one who has been giving Harry Potter detention every evening this week."
+    },
+    {
+      "name": "house points",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "House points are mentioned as something that could be lost due to misbehavior in Professor Umbridge's class."
+    },
+    {
+      "name": "detention",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Detention is mentioned as a consequence of misbehavior in Professor Umbridge's class."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who is speaking to Harry Potter and reminding him that Dolores Umbridge is reporting to someone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dolores umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "reports_to",
+      "description": "Dolores Umbridge is reporting to Professor McGonagall, as mentioned in the conversation between Harry Potter and Professor McGonagall."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "dolores umbridge",
+      "relationship_type": "given_detention_by",
+      "description": "Dolores Umbridge has given detention to Harry Potter every evening this week, as mentioned in the conversation between Harry Potter and Professor McGonagall."
+    }
+  ]
+}

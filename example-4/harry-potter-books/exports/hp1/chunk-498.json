@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, staring at Firenze's head."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person with a dappled silver back, being stared at by Harry."
+    },
+    {
+      "name": "moonlight",
+      "entity_type": "environment",
+      "singular": true,
+      "description": "The source of light that is illuminating Firenze's back."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "firenze",
+      "relationship_type": "stare_at",
+      "description": "Harry is staring at the back of Firenze's head, which is illuminated by the moonlight."
+    },
+    {
+      "entity_1": "moonlight",
+      "entity_2": "firenze",
+      "relationship_type": "illuminate",
+      "description": "The moonlight is illuminating Firenze's back, allowing Harry to see it."
+    }
+  ]
+}

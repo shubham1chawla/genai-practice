@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who took Harry from the rubble 16 years ago. (\"The hedge had grown wild in the sixteen years since Hagrid had taken Harry from the rubble that lay scattered amongst the waist-high grass.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who was taken by Hagrid 16 years ago and is now standing at the gate with Hermione. (\"He and Hermione stood at the gate, gazing at the wreck of what must once have been a cottage just like those that flanked it.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as someone who is standing with Harry at the gate. (\"He and Hermione stood at the gate, gazing at the wreck of what must once have been a cottage just like those that flanked it.\")"
+    },
+    {
+      "name": "cottage",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cottage is mentioned as something that was destroyed by a curse. (\"the right side of the top floor had been blown apart; that, Harry was sure, was where the curse had backfired.\")"
+    },
+    {
+      "name": "ivy",
+      "entity_type": "plant",
+      "singular": true,
+      "description": "The cottage is covered in dark ivy. (\"Most of the cottage was still standing, though entirely covered in dark ivy and snow,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "harry",
+      "relationship_type": "took",
+      "description": "Hagrid took Harry from the rubble 16 years ago. (\"The hedge had grown wild in the sixteen years since Hagrid had taken Harry from the rubble that lay scattered amongst the waist-high grass.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cottage",
+      "relationship_type": "visited",
+      "description": "Harry is standing at the gate of the cottage. (\"He and Hermione stood at the gate, gazing at the wreck of what must once have been a cottage just like those that flanked it.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "with",
+      "description": "Harry is standing with Hermione at the gate. (\"He and Hermione stood at the gate, gazing at the wreck of what must once have been a cottage just like those that flanked it.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cottage",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned about the state of the cottage. (\"I wonder why nobody’s ever rebuilt it?\" whispered Hermione.)"
+    }
+  ]
+}

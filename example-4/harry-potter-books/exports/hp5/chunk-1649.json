@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as grabbing Hermione and pulling her to the ground. He is also seen trying to reach Umbridge's wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is grabbed by Harry and pulled to the ground. She does not have any other actions described in this passage."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is shrieking and yelling as she is seized by Bane. She attempts to Stun one of the centaurs with her wand."
+    },
+    {
+      "name": "bane",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Bane is described as seizing Umbridge from behind and lifting her high into the air."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "protects",
+      "description": "Harry grabs Hermione and pulls her to the ground, indicating that he is trying to protect her."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "bane",
+      "relationship_type": "is_seized_by",
+      "description": "Umbridge is seized from behind by Bane."
+    }
+  ]
+}

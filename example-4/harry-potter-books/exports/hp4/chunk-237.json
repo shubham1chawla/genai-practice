@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is being addressed by Malfoy"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is sneering at Granger"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being pulled up the path by Hermione"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is making a bet about Harry's dad"
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "Hermione hopes the Ministry will catch someone"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is missing with George and Ginny"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is missing with Fred and Ginny"
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is missing with Fred and George"
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime is being asked about by a girl"
+    },
+    {
+      "name": "beauxbatons",
+      "entity_type": "school",
+      "singular": false,
+      "description": "Beauxbatons is mentioned as a school"
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a school"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "granger",
+      "relationship_type": "sneer_at",
+      "description": "Malfoy sneers at Granger"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry and Ron are friends, being pulled up the path together"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ministry",
+      "relationship_type": "hope_for",
+      "description": "Hermione hopes the Ministry will catch someone"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "bet_with",
+      "description": "Ron makes a bet about Harry's dad"
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "sibling",
+      "description": "Fred and George are siblings, missing with Ginny"
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "ginny",
+      "relationship_type": "sibling",
+      "description": "George is a sibling of Ginny, missing with Fred"
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "fred",
+      "relationship_type": "sibling",
+      "description": "Ginny is a sibling of Fred, missing with George"
+    },
+    {
+      "entity_1": "madame maxime",
+      "entity_2": "beauxbatons",
+      "relationship_type": "teacher_of",
+      "description": "Madame Maxime teaches at Beauxbatons"
+    },
+    {
+      "entity_1": "hogwarts",
+      "entity_2": "hermione",
+      "relationship_type": "student_at",
+      "description": "Hermione is a student at Hogwarts"
+    }
+  ]
+}

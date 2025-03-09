@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is the one who successfully disarmed Harry with Expelliarmus spell."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the person whose wand was disarmed by Neville."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the people who will practice with Neville and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the people who will practice with Neville and Ron."
+    },
+    {
+      "name": "zacharias smith",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zacharias Smith is the person whose wand keeps flying out of his hand when he tries to disarm Anthony Goldstein."
+    },
+    {
+      "name": "anthony goldstein",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Anthony Goldstein is the person who Zacharias Smith is trying to disarm, but Fred and George are interfering with the spell."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the twins who are interfering with Zacharias' spell by pointing their wands at his back."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is the other twin who is interfering with Zacharias' spell by pointing his wand at his back."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "harry",
+      "relationship_type": "disarmed_by",
+      "description": "Neville disarmed Harry with the Expelliarmus spell."
+    },
+    {
+      "entity_1": "zacharias smith",
+      "entity_2": "anthony goldstein",
+      "relationship_type": "attempting_to_disarm",
+      "description": "Zacharias Smith is trying to disarm Anthony Goldstein, but Fred and George are interfering with the spell."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "zacharias smith",
+      "relationship_type": "interfering_with_spell",
+      "description": "Fred is pointing his wand at Zacharias' back to interfere with his spell."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "zacharias smith",
+      "relationship_type": "interfering_with_spell",
+      "description": "George is also pointing his wand at Zacharias' back to interfere with his spell."
+    }
+  ]
+}

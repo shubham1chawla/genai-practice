@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the main character in the conversation. He is mentioned as being on the ramparts and struggling against an enchantment."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a person who is sneering at Dumbledore and denying his involvement in some actions."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as being kept watch over Malfoy by Dumbledore's orders, but Malfoy claims he is a double-agent working for his mother."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is bound by an enchantment and struggling against it."
+    },
+    {
+      "name": "cabinet",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cabinet is mentioned as something that Dumbledore was trying to mend."
+    },
+    {
+      "name": "necklace",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A cursed necklace is sent by someone (not specified) and is bound to reach the wrong hands."
+    },
+    {
+      "name": "poisoned mead",
+      "entity_type": "object",
+      "singular": false,
+      "description": "There was a chance that Harry might drink poisoned mead."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "malfoy",
+      "relationship_type": "accusation",
+      "description": "Dumbledore accuses Malfoy of being behind some actions."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "orders",
+      "description": "Dumbledore orders Snape to keep watch over Malfoy."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "snape",
+      "relationship_type": "allegiance",
+      "description": "Malfoy claims that Snape is a double-agent working for his mother."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cabinet",
+      "relationship_type": "attempted repair",
+      "description": "Dumbledore was trying to mend the cabinet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "poisoned mead",
+      "relationship_type": "exposure risk",
+      "description": "There is a chance that Harry might drink poisoned mead."
+    }
+  ]
+}

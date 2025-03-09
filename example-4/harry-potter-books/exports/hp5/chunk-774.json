@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "floo network",
+      "entity_type": "communication_network",
+      "singular": true,
+      "description": "The Floo Network is a magical communication system that allows wizards to travel between locations instantly. It is mentioned as a means of warning someone not to come without being intercepted."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy is a student at Hogwarts who is standing outside Snape's classroom door, waving an official-looking piece of parchment and talking loudly. He mentions that Umbridge gave the Slytherin Quidditch team permission to continue playing."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts whose classroom door is near where Draco Malfoy is standing."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is someone who gave permission to the Slytherin Quidditch team to continue playing. She knows Draco's father."
+    },
+    {
+      "name": "slytherin quidditch team",
+      "entity_type": "sports_team",
+      "singular": false,
+      "description": "The Slytherin Quidditch team was given permission by Umbridge to continue playing."
+    },
+    {
+      "name": "potions",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Potions is a subject taught at Hogwarts that the three students are heading down to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco malfoy",
+      "entity_2": "umbridge",
+      "relationship_type": "gave_permission",
+      "description": "Draco Malfoy mentions that Umbridge gave permission to the Slytherin Quidditch team to continue playing."
+    },
+    {
+      "entity_1": "slytherin quidditch team",
+      "entity_2": "umbridge",
+      "relationship_type": "received_permission",
+      "description": "The Slytherin Quidditch team received permission from Umbridge to continue playing."
+    }
+  ]
+}

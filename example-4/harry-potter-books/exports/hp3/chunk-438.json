@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who is participating in a Quidditch match."
+    },
+    {
+      "name": "katie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Katie is another student at Hogwarts who is also participating in the Quidditch match."
+    },
+    {
+      "name": "cho chang",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho Chang is a student at Hogwarts who is tailing Harry closely during the Quidditch match."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of Harry's friends and teammates in the Quidditch match."
+    },
+    {
+      "name": "alicia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia is a student at Hogwarts who is being pursued by Fred during the Quidditch match."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is Harry's broomstick that he uses to play Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cho chang",
+      "relationship_type": "tailing",
+      "description": "Cho Chang was tailing Harry closely during the Quidditch match."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "alicia",
+      "relationship_type": "pursuing",
+      "description": "Fred was pursuing Alicia during the Quidditch match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "using",
+      "description": "Harry was using the Firebolt broomstick to play Quidditch."
+    }
+  ]
+}

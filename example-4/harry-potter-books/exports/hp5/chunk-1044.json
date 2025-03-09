@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "front row",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where people are sitting."
+    },
+    {
+      "name": "Daily Prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "A newspaper mentioned in the text."
+    },
+    {
+      "name": "steam",
+      "entity_type": "substance",
+      "singular": true,
+      "description": "Steam coming out of a person's mouth."
+    },
+    {
+      "name": "warlock",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A grubby-looking warlock in the corner."
+    },
+    {
+      "name": "bell",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that clanged like a bell."
+    },
+    {
+      "name": "Umbridge’s clipboard",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A clipboard used by the witches and wizards."
+    },
+    {
+      "name": "wand and bone",
+      "entity_type": "symbol",
+      "singular": true,
+      "description": "An emblem embroidered on their chests."
+    },
+    {
+      "name": "Healers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are Healers."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text."
+    },
+    {
+      "name": "plump blonde witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person seated at a desk marked inquiries."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "front row",
+      "entity_2": "Daily Prophet",
+      "relationship_type": "contains",
+      "description": "The front row is where people are sitting and reading the Daily Prophet."
+    },
+    {
+      "entity_1": "warlock",
+      "entity_2": "bell",
+      "relationship_type": "clanged_like",
+      "description": "The warlock clanged like a bell every time he moved."
+    },
+    {
+      "entity_1": "Umbridge’s clipboard",
+      "entity_2": "witches and wizards",
+      "relationship_type": "used_by",
+      "description": "The witches and wizards were using Umbridge’s clipboards to make notes."
+    },
+    {
+      "entity_1": "wand and bone",
+      "entity_2": "Healers",
+      "relationship_type": "symbol_of",
+      "description": "The emblem on their chests was a wand and bone, crossed."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "plump blonde witch",
+      "relationship_type": "called_to",
+      "description": "Mr. Weasley called to the plump blonde witch over the renewed clanging of the warlock in the corner."
+    },
+    {
+      "entity_1": "Healers",
+      "entity_2": "warlock",
+      "relationship_type": "helped_by",
+      "description": "The Healers were helping the warlock."
+    }
+  ]
+}

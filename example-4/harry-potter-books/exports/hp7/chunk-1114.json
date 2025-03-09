@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "gaunt shack",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Gaunt shack is mentioned as a place where something was hidden. It is described as a location that no one had ever known to be related to the narrator, and it is said that he had hidden the connection."
+    },
+    {
+      "name": "ring",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The ring is mentioned as something that was hidden in the Gaunt shack. It is described as being safe."
+    },
+    {
+      "name": "cave",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cave is mentioned as a place that protects the locket. It is said to be inaccessible and its protection is described as strong."
+    },
+    {
+      "name": "loket",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The locket is mentioned as something that was stolen, but it is also said to be protected by the cave's protection."
+    },
+    {
+      "name": "hagwarts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place where one of the Horcruxes was hidden. The narrator alone knows where it is located, and he has plumbed its deepest secrets."
+    },
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Horcrux is mentioned as something that was hidden in Hogwarts. It is said to be one of the things that the narrator must return to and protect."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Nagini is mentioned as a person who must remain close to the narrator, but no longer sent to do his bidding. She is under his protection."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is mentioned as something that the narrator must undertake a quest for alone."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gaunt shack",
+      "entity_2": "ring",
+      "relationship_type": "contains",
+      "description": "The ring was hidden in the Gaunt shack, as mentioned in the text: 'he had hidden the ring in the Gaunt shack'."
+    },
+    {
+      "entity_1": "cave",
+      "entity_2": "loket",
+      "relationship_type": "protects",
+      "description": "The cave protects the locket, as mentioned in the text: 'the idea of the locket being stolen was absurd... And how could the boy, or anybody else, know about the cave or penetrate its protection?'"
+    },
+    {
+      "entity_1": "hagwarts",
+      "entity_2": "horcrux",
+      "relationship_type": "contains",
+      "description": "One of the Horcruxes was hidden in Hogwarts, as mentioned in the text: 'He alone knew where in Hogwarts he had stowed the Horcrux'."
+    },
+    {
+      "entity_1": "nagini",
+      "entity_2": "protector",
+      "relationship_type": "is_protected_by",
+      "description": "Nagini is under the narrator's protection, as mentioned in the text: 'And there was still Nagini, who must remain close now, no longer sent to do his bidding, under his protection'."
+    },
+    {
+      "entity_1": "nagini",
+      "entity_2": "protector",
+      "relationship_type": "is_protected_by",
+      "description": "Inverse of the previous relationship. Nagini is also protected by the narrator."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as one of the characters who had a bad experience with dementors. He says that they 'sort of freeze your insides' and that his dad came back all weak and shaking after visiting Azkaban."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as one of the characters who had a bad experience with dementors. He says that they 'suck the happiness out of a place' and that most prisoners go mad in Azkaban."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the characters who had a bad experience with dementors. He asks George if he passed out after facing dementors and later helps himself to sausages and fried tomatoes."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as one of the characters who had a bad experience with dementors. He is also mentioned as the opponent in Harry's Quidditch match."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "thing",
+      "singular": false,
+      "description": "Dementors are mentioned as creatures that 'suck the happiness out of a place' and cause people to go mad. They are also described as things that 'sort of freeze your insides'."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "place",
+      "singular": true,
+      "description": "Azkaban is mentioned as a prison where Harry's dad had to go and was affected by dementors."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Gryffindor is mentioned as the team that Harry is on in Quidditch."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": false,
+      "description": "Slytherin is mentioned as the opponent of Gryffindor in Quidditch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "dementors",
+      "relationship_type": "experienced_by",
+      "description": "Fred had a bad experience with dementors."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "dementors",
+      "relationship_type": "experienced_by",
+      "description": "George had a bad experience with dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "experienced_by",
+      "description": "Harry had a bad experience with dementors."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dementors",
+      "relationship_type": "experienced_by",
+      "description": "Malfoy had a bad experience with dementors."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban",
+      "relationship_type": "visited",
+      "description": "Harry's dad visited Azkaban and was affected by dementors."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "malfoy",
+      "relationship_type": "opponent_in_quidditch_match",
+      "description": "Fred faced Malfoy in a Quidditch match."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "gryffindor",
+      "relationship_type": "member_of_team",
+      "description": "Harry is a member of the Gryffindor team."
+    }
+  ]
+}

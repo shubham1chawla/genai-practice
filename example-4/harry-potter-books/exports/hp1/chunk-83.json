@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is the son of Uncle Vernon and Aunt Petunia. He is mentioned as asking his aunt if his father has gone mad."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is the wife of Uncle Vernon and mother of Dudley. She is mentioned as being asked by Dudley about her husband's sanity."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is the father of Dudley and husband of Aunt Petunia. He is mentioned as parking his car at the coast and locking everyone inside."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a boy who is celebrating his eleventh birthday. He is mentioned as thinking about his upcoming birthday."
+    },
+    {
+      "name": "the great humberto",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Great Humberto is an event that Dudley wants to watch on television. It is mentioned as being on tonight."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dudley",
+      "entity_2": "aunt petunia",
+      "relationship_type": "has_parent",
+      "description": "Dudley's mother is Aunt Petunia."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "dudley",
+      "relationship_type": "is_father_of",
+      "description": "Uncle Vernon is the father of Dudley."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "friend",
+      "description": "Harry and Dudley are friends, as they share a birthday."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is one of the people shouting orders to go to sleep."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of the people talking and speculating about Black's whereabouts."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people being addressed by Ron."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the people talking and speculating about Black's whereabouts."
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Black is a person who might be in the castle."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who thinks Black might be in the castle."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "student",
+      "singular": false,
+      "description": "A Ravenclaw student suggests that Black might have Apparated into the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "addressed",
+      "description": "Ron addresses Harry."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "addressed",
+      "description": "Ron addresses Hermione."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "black",
+      "relationship_type": "thought_to_be_in_castle",
+      "description": "Dumbledore thinks Black might be in the castle."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "black",
+      "relationship_type": "speculation",
+      "description": "Hermione speculates about Black's whereabouts."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "black",
+      "relationship_type": "speculation",
+      "description": "Ron speculates about Black's whereabouts."
+    },
+    {
+      "entity_1": "ravenclaw",
+      "entity_2": "black",
+      "relationship_type": "suggestion",
+      "description": "A Ravenclaw student suggests that Black might have Apparated into the castle."
+    },
+    {
+      "entity_1": "hufflepuff",
+      "entity_2": "black",
+      "relationship_type": "speculation",
+      "description": "A Hufflepuff student speculates about how Black got into the castle."
+    }
+  ]
+}

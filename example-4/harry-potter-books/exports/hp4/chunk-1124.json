@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "wo rmtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is described as a person who is on the floor, stirring and wheezing. He has watery eyes and a pointed nose."
+    },
+    {
+      "name": "nagini",
+      "entity_type": "snake",
+      "singular": true,
+      "description": "Nagini is described as a snake that is mentioned in the conversation between Wormtail and the cold voice from the chair."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned by the cold voice as someone who will be fed to Nagini instead of Wormtail."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wo rmtail",
+      "entity_2": "nagini",
+      "relationship_type": "target_of_feeding",
+      "description": "The cold voice mentions that Harry Potter will be fed to Nagini instead of Wormtail, indicating a relationship between Nagini and the person she is being fed."
+    },
+    {
+      "entity_1": "wo rmtail",
+      "entity_2": "harry potter",
+      "relationship_type": "replacement_target_of_feeding",
+      "description": "The cold voice mentions that Harry Potter will be fed to Nagini instead of Wormtail, indicating a relationship between Wormtail and the person he is being replaced by."
+    }
+  ]
+}

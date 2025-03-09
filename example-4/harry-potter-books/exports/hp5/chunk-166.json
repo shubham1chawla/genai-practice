@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is Harry's godfather and he has taken over his parents' house. He mentions that it was his parents' house and that he offered it to Dumbledore for headquarters."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is Sirius's godson and he is visiting Sirius at his house."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts and Sirius has offered him his parents' house as headquarters."
+    },
+    {
+      "name": "the phoenix",
+      "entity_type": "book",
+      "singular": true,
+      "description": "The Phoenix is a book that Harry is reading."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "godfather_godson",
+      "description": "Sirius is Harry's godfather."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "dumbledore",
+      "relationship_type": "offeree_offerrer",
+      "description": "Sirius has offered his parents' house to Dumbledore as headquarters."
+    }
+  ]
+}

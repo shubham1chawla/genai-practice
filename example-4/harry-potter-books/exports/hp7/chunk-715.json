@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned in the text as reading with Harry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Headmaster of Hogwarts and a prominent figure in the story."
+    },
+    {
+      "name": "elphias doge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore's sidekick."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school mentioned in the text where Dumbledore was Headmaster."
+    },
+    {
+      "name": "barnabus finkley prize",
+      "entity_type": "award",
+      "singular": true,
+      "description": "An award won by Dumbledore for Exceptional Spell-Casting."
+    },
+    {
+      "name": "wizengamot",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A council mentioned in the text where Dumbledore was a representative."
+    },
+    {
+      "name": "cairo",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location of an International Alchemical Conference."
+    },
+    {
+      "name": "international alchemical conference",
+      "entity_type": "event",
+      "singular": true,
+      "description": "An event mentioned in the text where Dumbledore won a Gold Medal."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts",
+      "relationship_type": "was_headmaster_of",
+      "description": "Dumbledore was Headmaster of Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "barnabus finkley prize",
+      "relationship_type": "won",
+      "description": "Dumbledore won the Barnabus Finkley Prize for Exceptional Spell-Casting."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "wizengamot",
+      "relationship_type": "representative_of",
+      "description": "Dumbledore was a representative of the Wizengamot."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "cairo",
+      "relationship_type": "attended_event_in",
+      "description": "Dumbledore attended an event in Cairo."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "international alchemical conference",
+      "relationship_type": "won_gold_medal_at",
+      "description": "Dumbledore won a Gold Medal at the International Alchemical Conference."
+    }
+  ]
+}

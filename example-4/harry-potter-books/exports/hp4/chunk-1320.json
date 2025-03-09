@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as someone who failed to realize that a book was in their dormitory."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A boy who received a book from the speaker and could have helped Potter with his problem."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "A house-elf mentioned as having given Potter a Christmas present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "potter",
+      "entity_2": "longbottom",
+      "relationship_type": "could_have_helped",
+      "description": "Longbottom could have helped Potter with his problem, but Potter did not ask for help."
+    },
+    {
+      "entity_1": "speaker",
+      "entity_2": "dobby",
+      "relationship_type": "gave_present",
+      "description": "The speaker mentions that Dobby gave Potter a Christmas present."
+    }
+  ]
+}

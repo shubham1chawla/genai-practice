@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as someone who can grow plants to a high height in a short amount of time."
+    },
+    {
+      "name": "quidditch field",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The quidditch field is mentioned as something that will be returned to normal after the task is over."
+    },
+    {
+      "name": "maze",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A maze is being created for the third task of the Triwizard Tournament."
+    },
+    {
+      "name": "triwizard cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Triwizard Cup will be placed in the center of the maze and the first champion to touch it will receive full marks."
+    },
+    {
+      "name": "kumar",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Krum is mentioned as one of the champions who guesses that the task is a maze."
+    },
+    {
+      "name": "bagman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bagman is mentioned as someone who explains the rules of the third task to the champions."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is mentioned as one of the champions who asks a question about the task."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who has an unhappy expression on his face when Hagrid explains that the quidditch field will be returned to normal after the task is over."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as someone who has an unhappy expression on his face when Hagrid explains that the quidditch field will be returned to normal after the task is over."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "quidditch field",
+      "relationship_type": "will_return_to_normal",
+      "description": "Hagrid says that the quidditch field will be returned to normal after the task is over."
+    },
+    {
+      "entity_1": "bagman",
+      "entity_2": "maze",
+      "relationship_type": "created_by",
+      "description": "Bagman explains that a maze is being created for the third task of the Triwizard Tournament."
+    },
+    {
+      "entity_1": "triwizard cup",
+      "entity_2": "maze",
+      "relationship_type": "placed_in",
+      "description": "The Triwizard Cup will be placed in the center of the maze."
+    },
+    {
+      "entity_1": "kumar",
+      "entity_2": "maze",
+      "relationship_type": "guessed_correctly",
+      "description": "Krum guesses that the task is a maze."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "bagman",
+      "relationship_type": "asked_question_to",
+      "description": "Fleur asks a question about the task to Bagman."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "unhappy_expression_towards",
+      "description": "Harry has an unhappy expression on his face when Hagrid explains that the quidditch field will be returned to normal after the task is over."
+    },
+    {
+      "entity_1": "cedric",
+      "entity_2": "hagrid",
+      "relationship_type": "unhappy_expression_towards",
+      "description": "Cedric has an unhappy expression on his face when Hagrid explains that the quidditch field will be returned to normal after the task is over."
+    }
+  ]
+}

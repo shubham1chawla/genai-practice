@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who will think they made up the story to get him sacked."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is friendly with Snape and thinks throwing out students is good."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who Filch is friendly with."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who looks convinced by their plan."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who doesn't believe in their plan."
+    },
+    {
+      "name": "stone",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object they are not supposed to know about."
+    },
+    {
+      "name": "fluffy",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal they are not supposed to know about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "us",
+      "relationship_type": "will_believe",
+      "description": "Dumbledore will believe them."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "snape",
+      "relationship_type": "friendly_with",
+      "description": "Filch is friendly with Snape."
+    },
+    {
+      "entity_1": "us",
+      "entity_2": "stone",
+      "relationship_type": "know_about",
+      "description": "They are not supposed to know about the Stone."
+    },
+    {
+      "entity_1": "us",
+      "entity_2": "fluffy",
+      "relationship_type": "know_about",
+      "description": "They are not supposed to know about Fluffy."
+    }
+  ]
+}

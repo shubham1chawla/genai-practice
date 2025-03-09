@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is currently in bed and upset about a recent loss."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A nurse who is taking care of Harry Potter and trying to keep him calm."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend who is talking to Harry about their recent loss."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person that Harry wants to find and kill due to a recent loss."
+    },
+    {
+      "name": "headmaster",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The leader of the school where Harry is attending."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "madam pomfrey",
+      "relationship_type": "is_being_treated_by",
+      "description": "Madam Pomfrey is taking care of Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ron",
+      "relationship_type": "is_talking_to",
+      "description": "Harry is talking to Ron about their recent loss."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mclaggen",
+      "relationship_type": "wants_to_find_and_kill",
+      "description": "Harry wants to find and kill McLaggen."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry potter",
+      "relationship_type": "is_treating",
+      "description": "Madam Pomfrey is treating Harry Potter."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "is_being_talked_to",
+      "description": "Ron is being talked to by Harry about their recent loss."
+    }
+  ]
+}

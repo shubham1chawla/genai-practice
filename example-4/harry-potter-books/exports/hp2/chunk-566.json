@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is mentioned as the one who restored something with her wand and is sternly talking to Seamus about exams. She is also scowling at the mutinous muttering in the room."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is mentioned as being talked to by Professor McGonagall sternly about exams."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as looking down at the pair of white rabbits he was supposed to be turning into slippers and thinking that there would be exams with the castle in this state."
+    },
+    {
+      "name": "professor dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Dumbledore's instructions are mentioned as being to keep the school running as normally as possible."
+    },
+    {
+      "name": "white rabbits",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The pair of white rabbits that Harry is supposed to be turning into slippers."
+    },
+    {
+      "name": "slippers",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The object that Harry is supposed to be turning the pair of white rabbits into."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "seamus",
+      "relationship_type": "talks_to",
+      "description": "Professor McGonagall is sternly talking to Seamus about exams."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "scowls_at",
+      "description": "Professor McGonagall scowls at Harry due to the mutinous muttering in the room."
+    },
+    {
+      "entity_1": "professor dumbledore",
+      "entity_2": "mcgonagall",
+      "relationship_type": "instructs",
+      "description": "Professor Dumbledore's instructions are being followed by Professor McGonagall to keep the school running as normally as possible."
+    }
+  ]
+}

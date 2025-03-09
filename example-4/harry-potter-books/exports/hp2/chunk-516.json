@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having to stay in his tower unless he is in class."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "A teacher who told Harry and others that they have to stay in their tower unless they are in class."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "gamekeeper",
+      "singular": true,
+      "description": "Someone that Harry and his friends want to visit without anyone knowing about it."
+    },
+    {
+      "name": "neville",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who is discussing the Chamber of Secrets with Dean and Seamus."
+    },
+    {
+      "name": "dean",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who is discussing the Chamber of Secrets with Neville and Seamus."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "student",
+      "singular": true,
+      "description": "A student who is discussing the Chamber of Secrets with Neville and Dean."
+    },
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A mysterious location that Neville, Dean, and Seamus are discussing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "mcgonagall",
+      "relationship_type": "instructed_by",
+      "description": "McGonagall instructed Harry to stay in his tower unless he is in class."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "wants_to_visit",
+      "description": "Harry wants to visit Hagrid without anyone knowing about it."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "discussing",
+      "description": "Neville is discussing the Chamber of Secrets with Dean and Seamus."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "owns",
+      "description": "Harry owns an Invisibility Cloak that he uses to sneak out of the school."
+    }
+  ]
+}

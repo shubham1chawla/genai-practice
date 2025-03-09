@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'sir' by another character."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school for magic, where Harry has previously attended."
+    },
+    {
+      "name": "friends",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Harry's friends at Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "attended",
+      "description": "Harry has previously attended Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "friends",
+      "relationship_type": "has_friends_at",
+      "description": "Harry has friends at Hogwarts."
+    }
+  ]
+}

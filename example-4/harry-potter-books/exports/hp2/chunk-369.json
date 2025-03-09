@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master of Hogwarts, introduced as he turns and walks off to bully Neville. He tries to restore calm and find out what happened after Goyle's potion exploded."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student in the class, mentioned as Snape turns and walks off to bully him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend, caught his eye and nodded before slipping quietly out of the door during the chaos."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student in the class, who ducked down behind his cauldron to avoid Snape's bullying and then threw a firework into Goyle's cauldron."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is a student in the class, whose potion exploded after Harry threw a firework into his cauldron."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy got a faceful of the Swelling Solution and his nose began to swell like a balloon."
+    },
+    {
+      "name": "filibuster fireworks",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Filibuster fireworks are mentioned as Harry pulled one out of his pocket to throw into Goyle's cauldron."
+    },
+    {
+      "name": "swelling solution",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "The Swelling Solution is a potion that hit Malfoy and caused his nose to swell like a balloon."
+    },
+    {
+      "name": "deflating draught",
+      "entity_type": "potion",
+      "singular": true,
+      "description": "Snape mentions the Deflating Draught as a potion to be given to those who have been splashed by the Swelling Solution."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "neville",
+      "relationship_type": "bullied",
+      "description": "Snape turns and walks off to bully Neville, indicating a relationship of bullying between the two."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goyle",
+      "relationship_type": "attacked",
+      "description": "Harry threw a firework into Goyle's cauldron, causing his potion to explode and indicating a relationship of attack between the two."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "collaborated",
+      "description": "Hermione caught Harry's eye and nodded before slipping quietly out of the door, indicating a relationship of collaboration between the two."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "swelling solution",
+      "relationship_type": "affected_by",
+      "description": "Malfoy got a faceful of the Swelling Solution and his nose began to swell like a balloon, indicating a relationship of being affected by between Malfoy and the potion."
+    },
+    {
+      "entity_1": "goyle",
+      "entity_2": "swelling solution",
+      "relationship_type": "affected_by",
+      "description": "Goyle's potion exploded after Harry threw a firework into his cauldron, causing him to be affected by the Swelling Solution."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "deflating draught",
+      "relationship_type": "administered",
+      "description": "Snape mentions the Deflating Draught as a potion to be given to those who have been splashed by the Swelling Solution, indicating a relationship of administration between Snape and the potion."
+    }
+  ]
+}

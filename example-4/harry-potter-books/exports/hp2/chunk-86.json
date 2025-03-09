@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character in the story. He is mentioned as being rescued from the Dursleys."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and is mentioned as writing to Hermione saying they were going to rescue Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Ron and Harry. She wrote a letter to Ron and Harry, expressing her concern for Harry's safety."
+    },
+    {
+      "name": "errol",
+      "entity_type": "owl",
+      "singular": true,
+      "description": "Errol is an owl that delivers letters in the story. It is mentioned as being limp and pathetic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "rescued_by",
+      "description": "Ron helped rescue Harry from the Dursleys."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "wrote_to",
+      "description": "Ron wrote to Hermione saying they were going to rescue Harry."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dursleys",
+      "relationship_type": "rescued_from",
+      "description": "Harry was rescued from the Dursleys by Ron and others."
+    }
+  ]
+}

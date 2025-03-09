@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is trying to sneak past workers."
+    },
+    {
+      "name": "workers",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people working on something, so intent that they won't notice Harry."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A young person who is also a witch, next to whom Harry places the pamphlet."
+    },
+    {
+      "name": "pamphlet",
+      "entity_type": "document",
+      "singular": true,
+      "description": "A completed document that Harry takes from the pile and examines under his Invisibility Cloak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "workers",
+      "relationship_type": "proximity",
+      "description": "Harry is trying to sneak past the workers, who are so intent on their work that they won't notice him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "witch",
+      "relationship_type": "proximity",
+      "description": "Harry places the pamphlet next to a young witch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pamphlet",
+      "relationship_type": "possession",
+      "description": "Harry takes the completed pamphlet from the pile and examines it under his Invisibility Cloak."
+    },
+    {
+      "entity_1": "workers",
+      "entity_2": "work",
+      "relationship_type": "engagement",
+      "description": "The workers are so intent on their work that they won't notice Harry."
+    }
+  ]
+}

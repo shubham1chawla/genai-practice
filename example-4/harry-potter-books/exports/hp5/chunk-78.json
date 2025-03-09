@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as the one who has a surgically clean kitchen and is talking calmly about Lord Voldemort to Uncle Vernon."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lord Voldemort is mentioned as the topic of conversation between Aunt Petunia and Uncle Vernon."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as the one who is talking to Aunt Petunia about Lord Voldemort."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one whose two lives have become fused and everything has been turned upside down."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "Dementors are mentioned as the ones that have caused a breach in the invisible wall between the non-magical world of Privet Drive and the magical world beyond."
+    },
+    {
+      "name": "albus dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore is mentioned as someone Mrs. Figg knows."
+    },
+    {
+      "name": "mrs figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Figg is mentioned as the one who knows Albus Dumbledore."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogwarts is mentioned as a place Harry might never go back to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "lord voldemort",
+      "relationship_type": "discussed",
+      "description": "Aunt Petunia and Uncle Vernon are discussing Lord Voldemort."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "may_not_return_to",
+      "description": "Harry might never go back to Hogwarts."
+    },
+    {
+      "entity_1": "mrs figg",
+      "entity_2": "albus dumbledore",
+      "relationship_type": "knows",
+      "description": "Mrs. Figg knows Albus Dumbledore."
+    },
+    {
+      "entity_1": "dementors",
+      "entity_2": "little whinging",
+      "relationship_type": "present_in",
+      "description": "Dementors are present in Little Whinging."
+    }
+  ]
+}

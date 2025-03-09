@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the speaker of the dialogue, expressing disgust at his failed attempt to turn someone yellow."
+    },
+    {
+      "name": "him",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person Ron tried to turn yellow is referred to as 'him', indicating that it is a male entity."
+    },
+    {
+      "name": "yesterday",
+      "entity_type": "date",
+      "singular": true,
+      "description": "Yesterday is mentioned as the day when Ron attempted to cast the spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "him",
+      "relationship_type": "tried_to_turn_yellow",
+      "description": "Ron tried to turn him yellow using a spell, but it didn't work."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "yesterday",
+      "relationship_type": "attempted_spell_on",
+      "description": "Ron attempted to cast the spell on yesterday."
+    }
+  ]
+}

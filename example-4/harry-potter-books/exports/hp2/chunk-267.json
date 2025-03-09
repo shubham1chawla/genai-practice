@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "dungeon",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The setting where the events are taking place. The text states 'yelling, ‘Spotty! Spotty!’ in the dungeon.'"
+    },
+    {
+      "name": "peevs",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ghost who is shooting mouldy peanuts at Hermione. The text states 'Peeves shot after her...'"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who is present in the dungeon. The text states ‘Oh, dear,’ said Hermione sadly."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ghost who is a member of the Hogwarts staff. The text states 'Nearly Headless Nick now drifted towards them through the crowd.'"
+    },
+    {
+      "name": "the wailing widow",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A ghost who came from Kent to attend the event in the dungeon. The text states 'The Wailing Widow came all the way up from Kent...'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the students who is present in the dungeon. The text states ‘Harry started to clap too, but stopped quickly at the sight of Nick’s face.'"
+    },
+    {
+      "name": "the orchestra",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people playing music in the dungeon. The text states 'The orchestra, however, stopped playing at that very moment.'"
+    },
+    {
+      "name": "the ghost horses",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "A dozen ghost horses who burst through the dungeon wall. The text states 'Through the dungeon wall burst a dozen ghost horses...'"
+    },
+    {
+      "name": "the headless horsemen",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The people riding the ghost horses. The text states 'each ridden by a headless horseman.'"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "the orchestra",
+      "relationship_type": "warns",
+      "description": "Nearly Headless Nick says he needs to warn the orchestra. The text states 'It’s nearly time for my speech, I’d better go and warn the orchestra...'"
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "the wailing widow",
+      "relationship_type": "greeted",
+      "description": "Nearly Headless Nick greets The Wailing Widow. The text states 'Not a bad turnout,' said Nearly Headless Nick proudly . ‘The Wailing Widow came all the way up from Kent...'"
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "the orchestra",
+      "relationship_type": "stops",
+      "description": "The orchestra stops playing at the moment when Nearly Headless Nick says he needs to warn them. The text states 'They , and everyone else in the dungeon, fell silent, looking around in excitement, as a hunting horn sounded.'"
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "the ghost horses",
+      "relationship_type": "commands",
+      "description": "Nearly Headless Nick seems to be commanding or controlling the ghost horses. The text states 'Oh, here we go,’ said Nearly Headless Nick bitterly . Through the dungeon wall burst a dozen ghost horses...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "sees",
+      "description": "Harry sees Nearly Headless Nick's face. The text states 'The horses galloped into the middle of the dance floor and halted, rearing and plunging; a large ghost at the front, whose face Harry saw...'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the ghost horses",
+      "relationship_type": "sees",
+      "description": "Harry sees the ghost horses. The text states 'The horses galloped into the middle of the dance floor and halted, rearing and plunging; a large ghost at the front, whose face Harry saw...'}"
+    }
+  ]
+}

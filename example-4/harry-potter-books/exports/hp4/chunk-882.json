@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who is speaking and reacting to Dumbledore's words. He is described as sheepish and trying to defend Hagrid."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one who is speaking and trying to convince Harry of something. He is described as looking carefully up at the ceiling."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as the one who is being defended by Dumbledore. He is described as having beetle-black eyes and a tangled beard."
+    },
+    {
+      "name": "woman",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The woman is mentioned as someone who wrote something about Hagrid. The text does not provide more information about her."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hagrid",
+      "relationship_type": "defends",
+      "description": "Dumbledore defends Hagrid by showing him letters from parents who remember him and would speak out if he were sacked."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "reacts_to",
+      "description": "Harry reacts to Dumbledore's words, trying to defend Hagrid."
+    }
+  ]
+}

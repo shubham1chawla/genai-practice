@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is paralyzed and staring in terror."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who seem to have won a fight below."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A calm and welcoming person who is being cornered by the Death Eaters."
+    },
+    {
+      "name": "amykus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A lumpy-looking man with a lopsided leer who is one of the Death Eaters."
+    },
+    {
+      "name": "alecto",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A stocky little woman who looks like she could be Amycus's sister and is grinning eagerly."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who has done something well according to the lumpy-looking man."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "amykus",
+      "entity_2": "alecto",
+      "relationship_type": "sibling",
+      "description": "Amycus and Alecto seem to be related, possibly as siblings."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "amykus",
+      "relationship_type": "hostage",
+      "description": "Dumbledore is being cornered by Amycus and the Death Eaters."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "amykus",
+      "relationship_type": "accolade",
+      "description": "Draco has done something well according to Amycus, who gives him an accolade."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "alecto",
+      "relationship_type": "hostage",
+      "description": "Dumbledore is also being held by Alecto."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "azkaban guards",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people stationed around the entrances to the school grounds."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts who is not fond of the Azkaban guards."
+    },
+    {
+      "name": "black",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "A wizard that the Azkaban guards are trying to catch."
+    },
+    {
+      "name": "molly weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley who is also not fond of the Azkaban guards."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley who is also not fond of the Azkaban guards."
+    },
+    {
+      "name": "harry",
+      "entity_type": "wizard",
+      "singular": true,
+      "description": "The main character who is trying to avoid detection by the Azkaban guards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "azkaban guards",
+      "relationship_type": "dislike",
+      "description": "Dumbledore is not fond of the Azkaban guards."
+    },
+    {
+      "entity_1": "molly weasley",
+      "entity_2": "azkaban guards",
+      "relationship_type": "dislike",
+      "description": "Molly Weasley is also not fond of the Azkaban guards."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "azkaban guards",
+      "relationship_type": "dislike",
+      "description": "Mr. Weasley is also not fond of the Azkaban guards."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "azkaban guards",
+      "relationship_type": "target_of",
+      "description": "The Azkaban guards are trying to catch Black."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "azkaban guards",
+      "relationship_type": "avoidance",
+      "description": "Harry is trying to avoid detection by the Azkaban guards."
+    }
+  ]
+}

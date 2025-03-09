@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is being grabbed by Uncle Vernon. (Introduced as 'Harry' in the first sentence.)"
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle of Harry's mother and father, who tries to grab Harry. (Introduced as 'Uncle Vernon' in the third sentence.)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends from the Weasley family, who helps pull Harry away from Uncle Vernon. (Introduced as 'Ron' in the fourth sentence.)"
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends from the Weasley family, who is told to put his foot down by Ron. (Introduced as 'Fred' in the fifth sentence.)"
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends from the Weasley family, who helps pull Harry away from Uncle Vernon. (Introduced as 'George' in the fourth sentence.)"
+    },
+    {
+      "name": "petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who is hanging out of the car window with her husband and son. (Introduced as 'Aunt Petunia' in the ninth sentence.)"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is hanging out of the car window with his parents. (Introduced as 'Dudley' in the ninth sentence.)"
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, who is let out by Ron to fly behind the car. (Introduced as 'Hedwig' in the eleventh sentence.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "grabbed_by",
+      "description": "Uncle Vernon tries to grab Harry, but is unsuccessful. (Described in the third and fourth sentences.)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "fred",
+      "relationship_type": "told_to_put_foot_down",
+      "description": "Ron tells Fred to put his foot down, which causes the car to accelerate. (Described in the fifth sentence.)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hedwig",
+      "relationship_type": "let_out",
+      "description": "Ron lets Hedwig out of the car so she can fly behind them. (Described in the eleventh sentence.)"
+    }
+  ]
+}

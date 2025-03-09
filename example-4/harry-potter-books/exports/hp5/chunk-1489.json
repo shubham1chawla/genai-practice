@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry is mentioned as having wanted to talk to Sirius and having had funny dreams."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Hermione's friend and a member of Dumbledore's Army. He is mentioned as having told Hermione about Harry's muttering in his sleep."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Ron's friend and a member of Dumbledore's Army. She is mentioned as being curious about Harry's dreams and wanting to know more about his Occlumency lessons."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a character who has passed away, but is still mentioned in the story as someone Harry wanted to talk to. He is also mentioned as wanting Harry to resume Occlumency lessons."
+    },
+    {
+      "name": "occlumency",
+      "entity_type": "subject",
+      "singular": true,
+      "description": "Occlumency is a subject that Sirius wants Harry to resume learning, and Hermione keeps bringing up as a topic of conversation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sirius",
+      "relationship_type": "wanted_to_talk_to",
+      "description": "Harry wanted to talk to Sirius, but didn't confide in Ron and Hermione about the reason why."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "curious_about_dreams",
+      "description": "Hermione is curious about Harry's dreams and keeps bringing up the topic of conversation."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "hermione",
+      "relationship_type": "told_secret",
+      "description": "Ron told Hermione a secret about Harry muttering in his sleep, which Hermione used to try and get more information out of Harry."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "wanted_to_resume_occlumency",
+      "description": "Sirius wants Harry to resume Occlumency lessons, which Hermione keeps bringing up as a topic of conversation."
+    }
+  ]
+}

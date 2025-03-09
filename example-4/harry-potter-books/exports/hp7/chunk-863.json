@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "him",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being referred to is unknown and not famous or important."
+    },
+    {
+      "name": "she",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker who looked up information about the person on his grave."
+    },
+    {
+      "name": "Peverell",
+      "entity_type": "family_name",
+      "singular": false,
+      "description": "A pureblood family mentioned in Nature's Nobility: A Wizarding Genealogy."
+    },
+    {
+      "name": "Kreacher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who borrowed the book from which the speaker found information about Peverell."
+    },
+    {
+      "name": "Nature's Nobility: A Wizarding Genealogy",
+      "entity_type": "book_title",
+      "singular": false,
+      "description": "A book that lists pureblood families that are now extinct in the male line."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "she",
+      "entity_2": "Peverell",
+      "relationship_type": "mentioned_in",
+      "description": "The speaker mentioned Peverell while talking about looking up information."
+    },
+    {
+      "entity_1": "she",
+      "entity_2": "Kreacher",
+      "relationship_type": "borrowed_from",
+      "description": "The speaker borrowed the book from Kreacher."
+    }
+  ]
+}

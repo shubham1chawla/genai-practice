@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as one of the students who will have a good term."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the students who will have a good term."
+    },
+    {
+      "name": "twins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The twins are mentioned as being fastened a cloak over their shoulders by Mr. Weasley."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is mentioned as saying goodbye to Harry and Ron before Disapparating."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly is mentioned as being fine taking the kids to King's Cross."
+    },
+    {
+      "name": "mad-eye moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye Moody is mentioned as having someone try to break into his house last night."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as entering the kitchen and asking about Mad-Eye Moody."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as entering the kitchen with Bill."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as spreading mar-malade on his toast and thinking about Mad-Eye Moody."
+    },
+    {
+      "name": "kids",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The kids are mentioned as being taken to King's Cross by Molly."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "harry",
+      "relationship_type": "said_to",
+      "description": "Mr. Weasley said goodbye to Harry before Disapparating."
+    },
+    {
+      "entity_1": "molly",
+      "entity_2": "kids",
+      "relationship_type": "taking_care_of",
+      "description": "Molly is taking care of the kids and will take them to King's Cross."
+    },
+    {
+      "entity_1": "mad-eye moody",
+      "entity_2": "someone",
+      "relationship_type": "victim_of_attempted_break_in",
+      "description": "Someone tried to break into Mad-Eye Moody's house last night."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "mad-eye moody",
+      "relationship_type": "concerned_about",
+      "description": "Bill is concerned about what Mad-Eye Moody has been up to."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "mad-eye moody",
+      "relationship_type": "thinking_about",
+      "description": "George is thinking about Mad-Eye Moody and calling him a nutter."
+    }
+  ]
+}

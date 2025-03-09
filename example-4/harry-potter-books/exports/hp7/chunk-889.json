@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "gaddley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where a Muggle family was found dead."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of non-magical people."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "An organization that is informed about the death of the Muggle family."
+    },
+    {
+      "name": "killing curse",
+      "entity_type": "spell",
+      "singular": true,
+      "description": "A spell that was used to kill the Muggle family."
+    },
+    {
+      "name": "bathilda bagshot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose remains were discovered in Godric's Hollow."
+    },
+    {
+      "name": "godric’s hollow",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Bathilda Bagshot's remains were discovered."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "order of the phoenix",
+      "entity_2": "killing curse",
+      "relationship_type": "used_by",
+      "description": "The Order of the Phoenix informed that it was the Killing Curse that killed the Muggle family."
+    },
+    {
+      "entity_1": "muggle authorities",
+      "entity_2": "gaddley",
+      "relationship_type": "located_in",
+      "description": "Muggle authorities are attributing the deaths to a gas leak in Gaddley."
+    },
+    {
+      "entity_1": "order of the phoenix",
+      "entity_2": "bathilda bagshot",
+      "relationship_type": "informed_about",
+      "description": "The Order of the Phoenix was informed about Bathilda Bagshot's death."
+    },
+    {
+      "entity_1": "muggle authorities",
+      "entity_2": "gaddley",
+      "relationship_type": "attributed_to",
+      "description": "Muggle authorities attributed the deaths to a gas leak in Gaddley."
+    }
+  ]
+}

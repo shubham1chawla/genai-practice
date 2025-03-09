@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "kettle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The kettle is described as 'dusty' and Harry peered inside it to check if it needs water. It's a physical object that the group needs for their camping trip."
+    },
+    {
+      "name": "tap",
+      "entity_type": "fixture",
+      "singular": true,
+      "description": "The tap is mentioned on a map given by a Muggle (non-magical person) and is located on the other side of the field. It's a physical fixture that provides water."
+    },
+    {
+      "name": "map",
+      "entity_type": "document",
+      "singular": true,
+      "description": "The map is described as being given by a Muggle and contains information about the location of the tap. It's a written document that helps the group navigate their surroundings."
+    },
+    {
+      "name": "oven",
+      "entity_type": "appliance",
+      "singular": true,
+      "description": "The oven is mentioned as an alternative to cooking on a fire, but Mr. Weasley insists they cook outdoors for anti-Muggle security reasons. It's a physical appliance that the group has access to."
+    },
+    {
+      "name": "fire",
+      "entity_type": "structure",
+      "singular": true,
+      "description": "The fire is mentioned as a way of cooking outdoors and is part of the group's camping setup. It's a physical structure that provides heat for cooking."
+    },
+    {
+      "name": "wood",
+      "entity_type": "resource",
+      "singular": false,
+      "description": "The wood is mentioned as something the group needs to gather for their fire. It's a natural resource that they need to collect."
+    },
+    {
+      "name": "Mr. Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley is described as handing over the kettle and saucepans to Harry and Hermione, and explaining the importance of cooking outdoors for anti-Muggle security reasons. He's a person with authority in the group."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as going with Hermione to get water from the tap, and is given the kettle and saucepans by Mr. Weasley. He's a person with a key role in the group."
+    },
+    {
+      "name": "Hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as going with Harry to get water from the tap, and is given the kettle and saucepans by Mr. Weasley. She's a person with a key role in the group."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as following Harry into the tent, and questioning why they can't just use the oven instead of cooking on a fire. He's a person with a key role in the group."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "kettle",
+      "relationship_type": "has",
+      "description": "Harry is given the kettle by Mr. Weasley to go and get water."
+    },
+    {
+      "entity_1": "Mr. Weasley",
+      "entity_2": "kettle",
+      "relationship_type": "gives",
+      "description": "Mr. Weasley hands over the kettle to Harry and Hermione."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "Hermione",
+      "relationship_type": "travels_with",
+      "description": "Harry goes with Hermione to get water from the tap."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "oven",
+      "relationship_type": "uses",
+      "description": "Ron suggests using the oven instead of cooking on a fire, but Mr. Weasley insists they cook outdoors for anti-Muggle security reasons."
+    }
+  ]
+}

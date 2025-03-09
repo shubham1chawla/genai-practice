@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a person who quickly spoke to Harry and gripped his pink umbrella tightly."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character who is being measured by Mr. Ollivander for his wand."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Ollivander is a person who is measuring Harry's arm to find his wand."
+    },
+    {
+      "name": "unicorn hairs",
+      "entity_type": "material",
+      "singular": false,
+      "description": "Unicorn hairs are used as the core of powerful magical substances in Ollivander wands."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "umbrella",
+      "relationship_type": "grasped_by",
+      "description": "Hagrid gripped his pink umbrella tightly."
+    },
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "tape measure",
+      "relationship_type": "held",
+      "description": "Mr. Ollivander held a long tape measure with silver markings out of his pocket."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "wand",
+      "relationship_type": "will_use",
+      "description": "Harry will use an Ollivander wand."
+    }
+  ]
+}

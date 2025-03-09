@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The main shopping street for wizards and witches in London."
+    },
+    {
+      "name": "eeylops owl emporium",
+      "entity_type": "store",
+      "singular": true,
+      "description": "A store that sells owls and other magical creatures."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story."
+    },
+    {
+      "name": "eylops owl emporium",
+      "entity_type": "store",
+      "singular": true,
+      "description": "A store that sells owls and other magical creatures."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "professor quirrell",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "ollivanders",
+      "entity_type": "store",
+      "singular": true,
+      "description": "A store that sells wands."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Harry's Muggle relatives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "eeylops owl emporium",
+      "relationship_type": "visited",
+      "description": "Harry and Hagrid visited Eeylops Owl Emporium."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ollivanders",
+      "relationship_type": "visited",
+      "description": "After visiting Eeylops, Harry and Hagrid went to Ollivanders."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "dursleys",
+      "relationship_type": "mentioned",
+      "description": "Hagrid mentioned the Dursleys in conversation with Harry."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor quirrell",
+      "relationship_type": "resembled",
+      "description": "Harry was compared to Professor Quirrell by Hagrid."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "ollivanders",
+      "relationship_type": "purchased_from",
+      "description": "After visiting Ollivanders, Harry purchased a wand from the store."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "ollivanders",
+      "relationship_type": "recommended",
+      "description": "Hagrid recommended that Harry buy his wand at Ollivanders."
+    }
+  ]
+}

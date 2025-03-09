@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A dark creature that is haunting Harry. It is described as having halted and being between Harry and the Patronus."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_entity",
+      "singular": true,
+      "description": "A silvery shadow that comes out of Harry's wand to protect him from the dementor. It is described as being cloudy and vanishing along with the dementor."
+    },
+    {
+      "name": "boggart",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A creature that Professor Lupin forces back into a packing case using his wand. It turns into a silvery orb again."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is described as forcing the boggart back into the packing case and praising Harry's effort."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as being on his feet despite feeling exhausted, and receiving praise from Professor Lupin for his effort in casting a Patronus."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "patronus",
+      "relationship_type": "protected_by",
+      "description": "Harry is protected by the Patronus, which comes out of his wand to defend him from the dementor."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "boggart",
+      "relationship_type": "defeated",
+      "description": "Professor Lupin defeats the boggart by forcing it back into a packing case using his wand."
+    }
+  ]
+}

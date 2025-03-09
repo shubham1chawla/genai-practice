@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "madam pomfrey",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Pomfrey is a person who is alarmed by the distant roar of fury and angry voices. She is staring at the door and expressing concern about the noise disturbing others."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is a person who is also present in the scene and is reacting angrily to the situation. He is accusing Harry Potter of something related to Apparition or Disapparition."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is a person who has been locked up and is somehow involved in the commotion that Snape is reacting to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "severus snape",
+      "entity_2": "harry potter",
+      "relationship_type": "accusation",
+      "description": "Severus Snape accuses Harry Potter of something related to Apparition or Disapparition, as indicated by the text: 'THIS — HAS — SOMETHING — TO — DO — WITH — POTTER!'"
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "harry potter",
+      "relationship_type": "concern",
+      "description": "Madam Pomfrey is concerned about Harry Potter's situation, as indicated by the text: 'Harry has been locked up'."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is thinking about his father and his encounter with Lupin. He is described as looking down at his feet and trying to read the Daily Prophet but unable to focus."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who looks uncertain in response to Harry's plea. He is described as having unspoken reproaches towards Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is Harry's friend who looks sympathetic towards him. She is described as having unspoken reproaches towards Harry."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is Harry's father who is being thought about by Harry. Harry wonders if his father would have backed him in what he said to Lupin or been angry at how his son treated his old friend."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is an old friend of James who was treated poorly by Harry. He is described as being the subject of Harry's encounter and Ron and Hermione's unspoken reproaches."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person mentioned in the Daily Prophet that Harry reads. His name leapt out at Harry from the paper."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "had_encounter",
+      "description": "Harry had an encounter with Lupin, which is still on his mind. This relationship is described as Harry's mind being 'full of the encounter'."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "has_unspoken_reproach",
+      "description": "Ron has unspoken reproaches towards Harry, which is described as Ron and Hermione having 'unspoken reproaches'. This relationship is bidirectional."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "has_unspoken_reproach",
+      "description": "Hermione has unspoken reproaches towards Harry, which is described as Ron and Hermione having 'unspoken reproaches'. This relationship is bidirectional."
+    },
+    {
+      "entity_1": "james",
+      "entity_2": "harry",
+      "relationship_type": "is_father_of",
+      "description": "James is the father of Harry. This relationship is described as Harry thinking about his father."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "is_mentioned_in_newspaper",
+      "description": "Dumbledore's name is mentioned in the Daily Prophet that Harry reads."
+    }
+  ]
+}

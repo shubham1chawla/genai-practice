@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who saw the shadow of the wolf upon his human face."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is mentioned as a werewolf and is expressing his emotions about being an outcast in the wizarding world."
+    },
+    {
+      "name": "wolf",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The wolf is mentioned as having a shadow on Harry's face."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who has protected Lupin in the past."
+    },
+    {
+      "name": "order",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Order is mentioned as a group that Lupin is part of."
+    },
+    {
+      "name": "harry's wife",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's wife is mentioned as someone who has been made an outcast by Lupin's condition."
+    },
+    {
+      "name": "child",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The child is mentioned as someone who would be a werewolf like Lupin."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "harry's wife",
+      "relationship_type": "has_made_outcast",
+      "description": "Lupin has made Harry's wife an outcast by his condition."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "child",
+      "relationship_type": "would_be_werewolf",
+      "description": "The child would be a werewolf like Lupin."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "wolf",
+      "relationship_type": "has_seen_shadow",
+      "description": "Harry has seen the shadow of the wolf on his face."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "order",
+      "relationship_type": "is_part_of",
+      "description": "Lupin is part of the Order."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "lupin",
+      "relationship_type": "has_protected",
+      "description": "Dumbledore has protected Lupin in the past."
+    },
+    {
+      "entity_1": "parents",
+      "entity_2": "child",
+      "relationship_type": "want_to_marry",
+      "description": "Parents want their daughter to marry a werewolf, implying they do not want her to marry someone with Lupin's condition."
+    }
+  ]
+}

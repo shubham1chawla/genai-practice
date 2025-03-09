@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is looking at the snake and trying to interact with it. (Excerpt: 'He moved in front of the tank and looked intently at the snake.')"
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who is bored and wants to leave. (Excerpt: '‘This is boring,’ Dudley moaned. He shuffled away .')"
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is present in the scene but not directly interacting with the snake. (Excerpt: 'The snake jerked its head towards Uncle Vernon and Dudley ,')"
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A pet snake that is being kept in a tank, which seems to be bored with the people watching it. (Excerpt: 'He wouldn’t have been surprised if it had died of boredom itself – no company except stupid people drumming their fingers on the glass trying to disturb it all day long.')"
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who is mentioned as someone who would wake him up in his bedroom. (Excerpt: 'It was worse than having a cupboard as a bedroom, where the only visitor was Aunt Petunia hammering on the door to wake you up')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snake",
+      "relationship_type": "interaction",
+      "description": "Harry is interacting with the snake, trying to get its attention and even winking at it. (Excerpt: 'He looked quickly around to see if anyone was watching. They weren’t. He looked back at the snake and winked, too.')"
+    },
+    {
+      "entity_1": "snake",
+      "entity_2": "uncle vernon",
+      "relationship_type": "attention",
+      "description": "The snake is giving attention to Uncle Vernon, but in a dismissive way. (Excerpt: 'It jerked its head towards Uncle Vernon and Dudley , then raised its eyes to the ceiling.')"
+    },
+    {
+      "entity_1": "snake",
+      "entity_2": "dudley",
+      "relationship_type": "attention",
+      "description": "The snake is also giving attention to Dudley, but in a similar dismissive way. (Excerpt: 'It jerked its head towards Uncle Vernon and Dudley , then raised its eyes to the ceiling.')"
+    }
+  ]
+}

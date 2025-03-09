@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, a dark wizard who attempted to kill Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story, a young boy who survived Voldemort's attempt on his life."
+    },
+    {
+      "name": "house-elves",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of magical creatures that are bound to serve wizarding families."
+    },
+    {
+      "name": "children",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Young people who are the subject of Voldemort's disregard for their power and innocence."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "attempted_killing",
+      "description": "Voldemort attempted to kill Harry, but failed."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "house-elves",
+      "relationship_type": "disregard_for_power",
+      "description": "Voldemort does not value or comprehend the power of house-elves."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "children",
+      "relationship_type": "disregard_for_innocence",
+      "description": "Voldemort knows and understands nothing about love, loyalty, and innocence in children."
+    }
+  ]
+}

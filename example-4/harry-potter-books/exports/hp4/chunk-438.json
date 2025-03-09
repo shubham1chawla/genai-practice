@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as receiving a letter."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, mentioned as asking about the content of the letter."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend, mentioned as being addressed in the letter."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, mentioned as having Mad-Eye out of retirement."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who has been retired, but is now being readied by Dumbledore."
+    },
+    {
+      "name": "hedwig",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl, mentioned as being jolted out of his lap."
+    },
+    {
+      "name": "the letter",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A short letter that Harry receives from an unknown sender."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_information_from",
+      "description": "Harry is receiving information from Dumbledore about his scar."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mad-eye",
+      "relationship_type": "is_being_readied_by",
+      "description": "Dumbledore has Mad-Eye out of retirement, which means he's reading the signs."
+    }
+  ]
+}

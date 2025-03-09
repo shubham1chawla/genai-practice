@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, a wizard who is using the Put-Outer to extinguish street lamps."
+    },
+    {
+      "name": "put-outter",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A device used by Dumbledore to turn off street lamps. It is described as being clicked multiple times."
+    },
+    {
+      "name": "street lamp",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The street lamps that are being turned off by the Put-Outer. They are described as going out with a 'little pop'."
+    },
+    {
+      "name": "cat",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A cat watching Dumbledore from a distance, its eyes visible in the dark."
+    },
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The wife of Vernon Dursley, who is mentioned as being unable to see what's happening on the pavement due to the lack of light."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "put-outter",
+      "relationship_type": "uses",
+      "description": "Dumbledore is using the Put-Outer to turn off street lamps. This is described as him clicking it multiple times."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "street lamp",
+      "relationship_type": "turns_off",
+      "description": "Dumbledore is turning off the street lamps using the Put-Outer. This is described as them going out with a 'little pop'."
+    },
+    {
+      "entity_1": "cat",
+      "entity_2": "dumbledore",
+      "relationship_type": "watches",
+      "description": "The cat is watching Dumbledore from a distance, its eyes visible in the dark."
+    }
+  ]
+}

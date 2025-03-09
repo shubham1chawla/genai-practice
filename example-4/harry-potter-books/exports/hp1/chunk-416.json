@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry had to bunny hop up to, described as a place that students live in."
+    },
+    {
+      "name": "leg-locker curse",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "A magical curse that causes people's legs to stick together, mentioned by Hermione and Neville."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who leapt up and performed the counter-curse to break the Leg-Locker Curse."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose legs were stuck together by the Leg-Locker Curse, helped by Hermione."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hermione",
+      "entity_2": "leg-locker curse",
+      "relationship_type": "cured_by",
+      "description": "Hermione performed a counter-curse to break the Leg-Locker Curse."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "hermione",
+      "relationship_type": "helped_by",
+      "description": "Neville's legs were stuck together by the curse, but Hermione helped him by performing a counter-curse."
+    }
+  ]
+}

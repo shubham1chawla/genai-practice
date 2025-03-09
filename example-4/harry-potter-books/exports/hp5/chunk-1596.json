@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student who is taking an examination."
+    },
+    {
+      "name": "professor tofty",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who helps Harry out into the entrance hall."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the examination is taking place."
+    },
+    {
+      "name": "hospital wing",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A part of the school that provides medical care."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor tofty",
+      "relationship_type": "helped_by",
+      "description": "Professor Tofty helps Harry out into the entrance hall."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "located_in",
+      "description": "The examination is taking place in the Great Hall."
+    },
+    {
+      "entity_1": "professor tofty",
+      "entity_2": "hospital wing",
+      "relationship_type": "related_to",
+      "description": "Professor Tofty helps Harry out of the hospital wing."
+    }
+  ]
+}

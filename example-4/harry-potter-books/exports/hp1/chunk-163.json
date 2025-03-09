@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid whooped and clapped"
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Ollivander cried, 'Oh, bravo! Yes, indeed, oh, very good.'"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's wand back into its box and wrapped it in brown paper"
+    },
+    {
+      "name": "phoenix",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "the phoenix whose tail feather is in your wand"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "mr ollivander",
+      "relationship_type": "applauds",
+      "description": "Hagrid whooped and clapped and Mr Ollivander cried, 'Oh, bravo! Yes, indeed, oh, very good.'"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "mr ollivander",
+      "relationship_type": "interacts_with",
+      "description": "Harry said 'Sorry , but what' s curious?' and Mr Ollivander fixed Harry with his pale stare."
+    },
+    {
+      "entity_1": "phoenix",
+      "entity_2": "harry potter",
+      "relationship_type": "related_to",
+      "description": "It so happens that the phoenix whose tail feather is in your wand, gave another feather – just one other."
+    }
+  ]
+}

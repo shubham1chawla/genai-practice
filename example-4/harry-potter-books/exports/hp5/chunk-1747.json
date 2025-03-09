@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is being held by a Death Eater and is screaming in agony."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is the one who dropped Neville and is now threatening Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being threatened by Bellatrix and has to give her the prophecy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy jumps forward to take the prophecy from Harry."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius bursts into the room with other members of the Order."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin bursts into the room with other members of the Order."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody bursts into the room with other members of the Order."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks sends a Stunning Spell at Malfoy."
+    },
+    {
+      "name": "kingsley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley bursts into the room with other members of the Order."
+    },
+    {
+      "name": "death eater",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A Death Eater is holding Neville and drops him when Bellatrix tells them to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "neville",
+      "relationship_type": "threatens",
+      "description": "Bellatrix threatens to kill Neville if Harry doesn't give her the prophecy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bellatrix",
+      "relationship_type": "is_threatened_by",
+      "description": "Harry is being threatened by Bellatrix and has to give her the prophecy."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "malfoy",
+      "relationship_type": "attacks",
+      "description": "Tonks sends a Stunning Spell at Malfoy."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "is_threatening",
+      "description": "Bellatrix is threatening Harry to give her the prophecy."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "tonks",
+      "relationship_type": "is_attacked_by",
+      "description": "Tonks sends a Stunning Spell at Malfoy."
+    }
+  ]
+}

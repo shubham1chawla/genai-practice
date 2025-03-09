@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Mrs Weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The mother of Ron and Harry, who is yelling at them through a Howler."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the recipients of the Howler, who is trying to avoid looking embarrassed in front of his peers."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The other recipient of the Howler, who has been wondering when his name would be mentioned."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose letter to Mrs Weasley is being referenced in the Howler."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Mrs Weasley",
+      "entity_2": "Ron",
+      "relationship_type": "yell_at",
+      "description": "Mrs Weasley yells at Ron through a Howler, expressing her disappointment and anger towards his behavior."
+    },
+    {
+      "entity_1": "Mrs Weasley",
+      "entity_2": "Harry",
+      "relationship_type": "yell_at",
+      "description": "Mrs Weasley also yells at Harry through the same Howler, criticizing him for his actions and threatening to bring him back home if he misbehaves again."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Mrs Weasley",
+      "relationship_type": "send_letter_to",
+      "description": "Dumbledore sent a letter to Mrs Weasley the previous night, which is being referenced in the Howler."
+    }
+  ]
+}

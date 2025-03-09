@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fawkes",
+      "entity_type": "bird",
+      "singular": true,
+      "description": "Fawkes is Dumbledore's phoenix, described as tiny and ugly. It is placed on the tray of soft ashes beneath the golden post."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student who has caused damage by his actions tonight. He tries to say 'Good' but no sound comes out."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Dumbledore is Harry's teacher who is reminding him of the amount of damage he had caused by his actions tonight."
+    },
+    {
+      "name": "madam pomfrey",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Madam Pomfrey is a teacher who is patching up everybody after the night's events."
+    },
+    {
+      "name": "nymphadora tonks",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Nymphadora Tonks may need to spend time in St. Mungo's but will make a full recovery."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "reminds",
+      "description": "Dumbledore reminds Harry of the amount of damage he had caused by his actions tonight."
+    },
+    {
+      "entity_1": "madam pomfrey",
+      "entity_2": "everybody",
+      "relationship_type": "patches_up",
+      "description": "Madam Pomfrey is patching up everybody after the night's events."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "nymphadora tonks",
+      "relationship_type": "informs",
+      "description": "Dumbledore informs Harry that Nymphadora Tonks may need to spend time in St. Mungo's but will make a full recovery."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "fawkes",
+      "relationship_type": "places",
+      "description": "Harry places Fawkes on the tray of soft ashes beneath the golden post."
+    }
+  ]
+}

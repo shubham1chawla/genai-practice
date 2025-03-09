@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "riddle house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Riddle House is described as still being well kept and impressive. It is also mentioned that a maid entered the drawing room to find all three Riddles dead."
+    },
+    {
+      "name": "little hangleton",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Little Hangleton is mentioned as the village where the Riddle family lived and where the police were summoned."
+    },
+    {
+      "name": "the riddles",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Riddles are described as being dead. They include Mr. and Mrs. Riddle and their grown-up son Tom."
+    },
+    {
+      "name": "mr. riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Riddle is mentioned as being elderly, rich, snobbish, and rude."
+    },
+    {
+      "name": "mrs. riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Riddle is described as being elderly, rich, snobbish, and rude."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle is mentioned as being the grown-up son of Mr. and Mrs. Riddle and being worse than his parents."
+    },
+    {
+      "name": "the police",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The police are summoned to investigate the deaths of the Riddles."
+    },
+    {
+      "name": "the hanged man",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Hanged Man is mentioned as the village pub where people gathered to discuss the Riddle family's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "little hangleton",
+      "entity_2": "the riddles",
+      "relationship_type": "location_of_death",
+      "description": "The Riddle family lived in Little Hangleton, and they died there as well."
+    },
+    {
+      "entity_1": "mr. riddle",
+      "entity_2": "mrs. riddle",
+      "relationship_type": "spouse",
+      "description": "Mr. and Mrs. Riddle were married."
+    },
+    {
+      "entity_1": "mr. riddle",
+      "entity_2": "tom riddle",
+      "relationship_type": "parent_child",
+      "description": "Tom Riddle was the son of Mr. and Mrs. Riddle."
+    },
+    {
+      "entity_1": "mrs. riddle",
+      "entity_2": "tom riddle",
+      "relationship_type": "parent_child",
+      "description": "Tom Riddle was the son of Mr. and Mrs. Riddle."
+    },
+    {
+      "entity_1": "the police",
+      "entity_2": "little hangleton",
+      "relationship_type": "location_of_investigation",
+      "description": "The police were summoned to investigate the deaths in Little Hangleton."
+    }
+  ]
+}

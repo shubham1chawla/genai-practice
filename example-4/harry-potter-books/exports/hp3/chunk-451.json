@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a student at Hogwarts and is mentioned as the one who pointed a shaking finger at Sir Cadogan's picture."
+    },
+    {
+      "name": "sir cadogan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sir Cadogan is a portrait of an old knight and is being questioned by Professor McGonagall about letting someone into Gryffindor Tower."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts and is investigating the incident of someone entering Gryffindor Tower without permission."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "sir cadogan",
+      "relationship_type": "points_at",
+      "description": "Ron points a shaking finger at Sir Cadogan's picture, suggesting that he should be asked if he saw anything."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "sir cadogan",
+      "relationship_type": "questions",
+      "description": "Professor McGonagall asks Sir Cadogan if he let someone into Gryffindor Tower."
+    }
+  ]
+}

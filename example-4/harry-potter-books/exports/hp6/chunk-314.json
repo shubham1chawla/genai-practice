@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who receives a compliment from Professor McGonagall. He has an 'Exceeds Expectations' in Charms, but his grandmother thinks Charms is a soft option."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who pays Neville a compliment and encourages him to take Charms. She also reminds Augusta that just because she failed her Charms O.W.L., the subject is not worthless."
+    },
+    {
+      "name": "augusta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Augusta is Neville's grandmother who thinks Charms is a soft option. Professor McGonagall reminds her that just because she failed her Charms O.W.L., the subject is not worthless."
+    },
+    {
+      "name": "parvati patil",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Parvati Patil is a student who asks Professor McGonagall about Firenze's teaching schedule for Divination."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Firenze is a handsome centaur who teaches Divination. He and Professor Trelawney are dividing classes between them."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a teacher who is dividing classes with Firenze for Divination."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "neville",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "encourages",
+      "description": "Professor McGonagall encourages Neville to take Charms, saying 'why not try for a N.E.W.T. in Charms?'"
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "augusta",
+      "relationship_type": "related_to",
+      "description": "Neville is related to Augusta, who thinks Charms is a soft option."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "augusta",
+      "relationship_type": "reminds",
+      "description": "Professor McGonagall reminds Augusta that just because she failed her Charms O.W.L., the subject is not worthless."
+    },
+    {
+      "entity_1": "parvati patil",
+      "entity_2": "firenze",
+      "relationship_type": "asks_about",
+      "description": "Parvati Patil asks Professor McGonagall about Firenze's teaching schedule for Divination."
+    },
+    {
+      "entity_1": "firenze",
+      "entity_2": "professor trelawney",
+      "relationship_type": "divides_classes_with",
+      "description": "Firenze and Professor Trelawney are dividing classes between them for Divination."
+    }
+  ]
+}

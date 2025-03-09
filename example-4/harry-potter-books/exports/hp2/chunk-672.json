@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being threatened by Lucius Malfoy's servant."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "Dobby is a loyal and protective elf who has been given a sock by Harry."
+    },
+    {
+      "name": "lucius malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius Malfoy is the father of Draco Malfoy and is angry at Dobby for protecting Harry."
+    },
+    {
+      "name": "draco malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco Malfoy's father is Lucius Malfoy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "harry",
+      "relationship_type": "threatens",
+      "description": "Lucius Malfoy threatens Harry."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry",
+      "relationship_type": "protects",
+      "description": "Dobby protects Harry from Lucius Malfoy's servant."
+    },
+    {
+      "entity_1": "lucius malfoy",
+      "entity_2": "draco malfoy",
+      "relationship_type": "parent_of",
+      "description": "Lucius Malfoy is the father of Draco Malfoy."
+    }
+  ]
+}

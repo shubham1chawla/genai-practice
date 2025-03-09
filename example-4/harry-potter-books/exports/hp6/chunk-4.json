@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "the Prime Minister",
+      "entity_type": "prime_minister",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as a person who receives a message from the portrait of Fudge. The description mentions that he is waiting for a telephone call from the president."
+    },
+    {
+      "name": "Fudge",
+      "entity_type": "minister",
+      "singular": true,
+      "description": "Fudge is mentioned as a minister who sends an urgent message to the Prime Minister through his portrait."
+    },
+    {
+      "name": "the president",
+      "entity_type": "president",
+      "singular": true,
+      "description": "The president is mentioned as someone from whom the Prime Minister is expecting a telephone call."
+    },
+    {
+      "name": "Mr Fudge",
+      "entity_type": "minister",
+      "singular": true,
+      "description": "Mr Fudge is another name for the minister who sends an urgent message to the Prime Minister through his portrait."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "the Prime Minister",
+      "entity_2": "Fudge",
+      "relationship_type": "sent_message",
+      "description": "The Prime Minister receives a message from Fudge's portrait."
+    },
+    {
+      "entity_1": "the Prime Minister",
+      "entity_2": "the president",
+      "relationship_type": "waiting_for_call",
+      "description": "The Prime Minister is waiting for a telephone call from the president."
+    },
+    {
+      "entity_1": "Fudge",
+      "entity_2": "the Prime Minister",
+      "relationship_type": "sent_message",
+      "description": "Fudge sends an urgent message to the Prime Minister through his portrait."
+    },
+    {
+      "entity_1": "the little man (portrait of Fudge)",
+      "entity_2": "the president",
+      "relationship_type": "will_forget_call",
+      "description": "The little man in the portrait arranges for the president to forget to call the Prime Minister."
+    }
+  ]
+}

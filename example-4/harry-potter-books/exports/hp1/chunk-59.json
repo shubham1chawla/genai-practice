@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "gang",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The gang is described as a group of people that Harry Potter dislikes, and they are also disliked by others."
+    },
+    {
+      "name": "dudley's gang",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "Dudley's gang is mentioned as a specific group of people that nobody likes to disagree with."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is described as wearing baggy old clothes and broken glasses, indicating his appearance."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as the leader of the gang that nobody likes to disagree with."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "gang",
+      "entity_2": "harry potter",
+      "relationship_type": "dislike",
+      "description": "The gang dislikes Harry Potter, as mentioned in the text: 'gang hated that odd Harry Potter'."
+    },
+    {
+      "entity_1": "dudley's gang",
+      "entity_2": "nobody",
+      "relationship_type": "influence",
+      "description": "Dudley's gang has an influence on others, as mentioned in the text: 'and nobody liked to disagree with Dudley’s gang'."
+    },
+    {
+      "entity_1": "gang",
+      "entity_2": "dudley",
+      "relationship_type": "membership",
+      "description": "The gang is associated with Dudley, as mentioned in the text: 'Dudley’s gang'."
+    }
+  ]
+}

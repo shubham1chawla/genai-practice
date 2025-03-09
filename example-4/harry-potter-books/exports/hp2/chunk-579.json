@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is present in the conversation."
+    },
+    {
+      "name": "basilisk",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A giant serpent that is the monster in the Chamber."
+    },
+    {
+      "name": "chamber",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the Basilisk is present."
+    },
+    {
+      "name": "parseltongue",
+      "entity_type": "language",
+      "singular": true,
+      "description": "A language that Ron understands."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters in the story who is present in the conversation."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who saw the Basilisk through his camera."
+    },
+    {
+      "name": "justin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who must have seen the Basilisk through Nearly Headless Nick."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "ghost",
+      "singular": true,
+      "description": "A ghost who is present in the story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends who is present in the conversation."
+    },
+    {
+      "name": "ravenclaw prefect",
+      "entity_type": "person",
+      "singular": false,
+      "description": "A person who was found with a mirror next to them."
+    },
+    {
+      "name": "mirror",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is used to reflect the Basilisk's gaze."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "parseltongue",
+      "relationship_type": "speaks_language",
+      "description": "Ron understands Parseltongue."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chamber",
+      "relationship_type": "location_of_monster",
+      "description": "The Basilisk is present in the Chamber, which Harry has discovered."
+    },
+    {
+      "entity_1": "colin",
+      "entity_2": "basilisk",
+      "relationship_type": "saw_monster_through_camera",
+      "description": "Colin saw the Basilisk through his camera."
+    },
+    {
+      "entity_1": "justin",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "saw_monster_through_ghost",
+      "description": "Justin must have seen the Basilisk through Nearly Headless Nick."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "basilisk",
+      "relationship_type": "realized_monster_was_basilisk",
+      "description": "Hermione realized that the monster was a Basilisk."
+    },
+    {
+      "entity_1": "ravenclaw prefect",
+      "entity_2": "mirror",
+      "relationship_type": "used_mirror_to_avoid_monster",
+      "description": "The Ravenclaw Prefect used a mirror to avoid looking at the Basilisk."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "basilisk",
+      "relationship_type": "understood_basilisk_was_present",
+      "description": "Ron understood that the Basilisk was present in the Chamber."
+    }
+  ]
+}

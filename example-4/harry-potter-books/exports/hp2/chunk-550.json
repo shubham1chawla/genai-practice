@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hairy legs",
+      "entity_type": "legs",
+      "singular": false,
+      "description": "The creatures have six immensely long, hairy legs."
+    },
+    {
+      "name": "black pincers",
+      "entity_type": "pincers",
+      "singular": true,
+      "description": "The front two legs are clutching Harry tightly below a pair of shining black pincers."
+    },
+    {
+      "name": "creatures",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "There are multiple creatures mentioned in the text, carrying Ron and Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is being carried by one of the creatures."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Fang, a dog, is fighting to free himself from a monster."
+    },
+    {
+      "name": "monsters",
+      "entity_type": "creatures",
+      "singular": false,
+      "description": "There are multiple monsters mentioned in the text, carrying Fang and Harry."
+    },
+    {
+      "name": "forest",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The creatures are moving into the very heart of the Forest."
+    },
+    {
+      "name": "spiders",
+      "entity_type": "animals",
+      "singular": false,
+      "description": "Spiders are swarming over the leaves and on the ground in the hollow."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "creatures",
+      "entity_2": "ron",
+      "relationship_type": "carrying",
+      "description": "The creatures are carrying Ron behind Harry."
+    },
+    {
+      "entity_1": "creatures",
+      "entity_2": "harry",
+      "relationship_type": "carrying",
+      "description": "The creatures are carrying Harry in front of Ron."
+    },
+    {
+      "entity_1": "fang",
+      "entity_2": "monsters",
+      "relationship_type": "being_attacked_by",
+      "description": "Fang is being attacked by a monster."
+    }
+  ]
+}

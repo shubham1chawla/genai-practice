@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story who is talking to his aunt and uncle."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are creatures that guard the wizard prison Azkaban. They are mentioned by Harry as being responsible for something."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Azkaban is a wizard prison where dementors guard it. It was mentioned by Aunt Petunia as the place where dementors are located."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "guard",
+      "description": "Dementors guard Azkaban, which is a location mentioned by Aunt Petunia. Harry mentions that dementors are responsible for something."
+    },
+    {
+      "entity_1": "aunt_petunia",
+      "entity_2": "azkaban",
+      "relationship_type": "location_of_guarded_place",
+      "description": "Aunt Petunia knows about Azkaban and its connection to dementors, which implies that she has some knowledge or experience with the place."
+    }
+  ]
+}

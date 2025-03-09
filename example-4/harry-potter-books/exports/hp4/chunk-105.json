@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The Weasley family is mentioned as having a room where Fred and George invent joke items."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the twins who invents joke items in their room."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the twins who invents joke items in their room."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as having seen the Weasley twins' inventions and is surprised by how much they have created."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is Ron's sister and is also aware of the Weasley twins' inventions."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "Hogwarts is mentioned as a place where the Weasley twins plan to sell their inventions."
+    },
+    {
+      "name": "o.w.l.s",
+      "entity_type": "examination",
+      "singular": false,
+      "description": "O.W.L.s are examinations taken by Hogwarts students at the age of fifteen."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "weasleys",
+      "relationship_type": "visited",
+      "description": "Ron visited the Weasley twins' room and saw their inventions."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "weasleys",
+      "relationship_type": "aware_of",
+      "description": "Ginny is aware of the Weasley twins' inventions."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "george",
+      "relationship_type": "twin",
+      "description": "Fred and George are twins who invent joke items together."
+    },
+    {
+      "entity_1": "weasleys",
+      "entity_2": "hogwarts",
+      "relationship_type": "planned_to_sell_at",
+      "description": "The Weasley twins planned to sell their inventions at Hogwarts."
+    },
+    {
+      "entity_1": "mum",
+      "entity_2": "fred_and_george",
+      "relationship_type": "disapproved_of",
+      "description": "Mum disapproved of Fred and George's inventions and burned the order forms."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "wood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wood is introduced as a person who yells 'Team! Bed!' to wake up Harry. (\"It came as a relief when Wood suddenly stood up and yelled, ‘Team! Bed!’\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is introduced as the person who has bad dreams about oversleeping and forgetting his Firebolt. (\"Harry slept badly.\")"
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned in Harry's dream as a substitute for him. (\"We had to use Neville instead!\")"
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is introduced as the Slytherin team member who arrives on a dragon. (\"Then he dreamed that Malfoy and the rest of the Slytherin team arrived for the match riding dragons.\")"
+    },
+    {
+      "name": "slytherin team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Slytherin team is introduced as a group of students who arrive on dragons. (\"Then he dreamed that Malfoy and the rest of the Slytherin team arrived for the match riding dragons.\")"
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Firebolt is introduced as Harry's broomstick that he forgets in his dream. (\"He was flying at breakneck speed, trying to avoid a spurt of flames from Malfoy’s steed’s mouth, when he realized he had forgotten his Firebolt.\")"
+    },
+    {
+      "name": "bed",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The bed is introduced as the place where Harry sleeps. (\"It was a few seconds before Harry remembered that the match hadn’t taken place yet, that he was safe in bed,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wood",
+      "entity_2": "harry",
+      "relationship_type": "woke_up",
+      "description": "Wood wakes up Harry by yelling 'Team! Bed!' (\"It came as a relief when Wood suddenly stood up and yelled, ‘Team! Bed!’\")"
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "slytherin team",
+      "relationship_type": "member_of",
+      "description": "Malfoy is a member of the Slytherin team. (\"Then he dreamed that Malfoy and the rest of the Slytherin team arrived for the match riding dragons.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "firebolt",
+      "relationship_type": "owns",
+      "description": "Harry owns the Firebolt broomstick. (\"He was flying at breakneck speed, trying to avoid a spurt of flames from Malfoy’s steed’s mouth, when he realized he had forgotten his Firebolt.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bed",
+      "relationship_type": "sleeps_in",
+      "description": "Harry sleeps in the bed. (\"It was a few seconds before Harry remembered that the match hadn’t taken place yet, that he was safe in bed,\")"
+    }
+  ]
+}

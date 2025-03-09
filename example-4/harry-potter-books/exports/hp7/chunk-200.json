@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "horcrux",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A book containing explicit instructions on how to make a Horcrux. It is described as 'horrible', 'awful', and 'full of evil magic'. (Excerpt: \"Secrets of the Darkest Art — it’s a horrible book, really awful, full of evil magic.\")"
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster who removed the Horcrux instruction book from the library. (Excerpt: \"I wonder when Dumbledore removed it from the library.\")"
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who may have obtained information on how to make a Horcrux from the instruction book. (Excerpt: \"If he didn’t do it until he was headmaster, I bet Voldemort got all the instruction he needed from here.\")"
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who may have provided information on what would happen if you split your soul into seven. (Excerpt: \"He only approached Slughorn to find out what would happen if you split your soul into seven.\")"
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who may have already known how to make a Horcrux. (Excerpt: \"Dumbledore was sure Riddle already knew how to make a Horcrux but the time he asked Slughorn about them.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is discussing the information on Horcruxes. (Excerpt: \"He only approached Slughorn to find out what would happen if you split your soul into seven.\")"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is discussing the information on Horcruxes. (Excerpt: \"And the more I’ve read about them,\" said Hermione, \"the more\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horcrux",
+      "relationship_type": "removed_from_library",
+      "description": "Dumbledore removed the Horcrux instruction book from the library. (Excerpt: \"I wonder when Dumbledore removed it from the library.\")"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "horcrux",
+      "relationship_type": "obtained_information_from",
+      "description": "Voldemort may have obtained information on how to make a Horcrux from the instruction book. (Excerpt: \"If he didn’t do it until he was headmaster, I bet Voldemort got all the instruction he needed from here.\")"
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "horcrux",
+      "relationship_type": "provided_information_on",
+      "description": "Slughorn may have provided information on what would happen if you split your soul into seven. (Excerpt: \"He only approached Slughorn to find out what would happen if you split your soul into seven.\")"
+    },
+    {
+      "entity_1": "riddle",
+      "entity_2": "horcrux",
+      "relationship_type": "knew_how_to_make",
+      "description": "Riddle may have already known how to make a Horcrux. (Excerpt: \"Dumbledore was sure Riddle already knew how to make a Horcrux but the time he asked Slughorn about them.\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "horcrux",
+      "relationship_type": "discussed_information_on",
+      "description": "Harry is discussing the information on Horcruxes. (Excerpt: \"He only approached Slughorn to find out what would happen if you split your soul into seven.\")"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "horcrux",
+      "relationship_type": "discussed_information_on",
+      "description": "Hermione is discussing the information on Horcruxes. (Excerpt: \"And the more I’ve read about them,\" said Hermione, \"the more\")"
+    }
+  ]
+}

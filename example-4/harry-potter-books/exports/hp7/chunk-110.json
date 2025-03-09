@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is on a broomstick and fighting against Death Eaters. (\"Craning his neck, Harry saw it expand into being in midair.\")"
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is riding a bike with an exhaust pipe that can create objects. (\"Hagrid leaned low over the handlebars and sped up.\")"
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are fighting against Harry and Hagrid. (\"Three of the Death Eaters swerved and avoided it...\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "opponent_of",
+      "description": "Harry is fighting against the Death Eaters. (\"More Killing Curses ﬂew past Harry’s head from the two remaining Death Eaters’ wands...\")"
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "death eaters",
+      "relationship_type": "opponent_of",
+      "description": "Hagrid is also fighting against the Death Eaters. (\"More Killing Curses ﬂew past Harry’s head from the two remaining Death Eaters’ wands...\")"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "ally_of",
+      "description": "Harry and Hagrid are allies in this fight. (\"Here we go again, Harry, hold on!\" yelled Hagrid...)"
+    }
+  ]
+}

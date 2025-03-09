@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is a character in the story who has a conversation with Harry. She falls asleep and then wakes up, denying that she said anything about the Dark Lord rising again."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a character in the story who has a conversation with Professor Trelawney. He seems to be concerned about what Professor Trelawney said earlier."
+    },
+    {
+      "name": "dark lord",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "The Dark Lord is a concept mentioned in the story as someone or something that is not supposed to be named (He-Who-Must-Not-Be-Named)."
+    },
+    {
+      "name": "he who must not be named",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "He-Who-Must-Not-Be-Named is a nickname for the Dark Lord."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "harry",
+      "relationship_type": "conversation",
+      "description": "Professor Trelawney and Harry have a conversation about what Professor Trelawney said earlier. She denies saying anything about the Dark Lord rising again."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "dark lord",
+      "relationship_type": "prediction",
+      "description": "Professor Trelawney seems to be predicting that the Dark Lord will rise again, but then denies saying anything about it."
+    }
+  ]
+}

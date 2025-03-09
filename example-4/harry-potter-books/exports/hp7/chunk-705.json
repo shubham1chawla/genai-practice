@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one who tried to cast a spell using the wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the target of Harry's spell."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The wand is the object being used by Harry to cast a spell."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "target_of_spell",
+      "description": "Harry's spell was directed at Hermione."
+    },
+    {
+      "entity_1": "wand",
+      "entity_2": "harry",
+      "relationship_type": "used_by",
+      "description": "The wand is being used by Harry to cast a spell."
+    }
+  ]
+}

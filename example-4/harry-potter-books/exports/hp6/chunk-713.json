@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts. He is described as looking at a map and searching for Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Slytherin student who is missing from the Great Hall during breakfast. Harry is searching for him."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and a student at Hogwarts. He offers Harry a box of Chocolate Cauldrons."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is sitting in his study during breakfast. Malfoy is not near him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "searching_for",
+      "description": "Harry is searching for Malfoy, who is missing from the Great Hall."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "offering_food",
+      "description": "Ron offers Harry a box of Chocolate Cauldrons."
+    }
+  ]
+}

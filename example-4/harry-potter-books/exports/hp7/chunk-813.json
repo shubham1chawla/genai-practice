@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "printing press",
+      "entity_type": "printing_press",
+      "singular": true,
+      "description": "The printing press is mentioned as being used to churn out Quibblers. It is described as a machine that makes loud bangs and clatters."
+    },
+    {
+      "name": "quibblers",
+      "entity_type": "publication",
+      "singular": false,
+      "description": "Quibblers are mentioned as the publication being churned out by the printing press."
+    },
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is introduced as a character who owns the printing press and is involved in its operation."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as visiting Xenophilius's home, where he encounters the printing press and other unusual objects."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is introduced as a character who accompanies Harry on his visit to Xenophilius's home and reacts with shock at the sight of the Crumple-Horned Snorkack horn."
+    },
+    {
+      "name": "crumple-horned snorkack",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "The Crumple-Horned Snorkack is mentioned as a creature whose horn has been mounted on the wall in Xenophilius's home."
+    },
+    {
+      "name": "horn of crumple-horned snorkack",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The horn of the Crumple-Horned Snorkack is described as being mounted on the wall in Xenophilius's home."
+    },
+    {
+      "name": "mr. lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Lovegood is mentioned as the owner of the printing press and the one who has mounted the horn of the Crumple-Horned Snorkack on his wall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "printing press",
+      "relationship_type": "owns",
+      "description": "Xenophilius is described as owning the printing press, which he uses to churn out Quibblers."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "xenophilius",
+      "relationship_type": "visited",
+      "description": "Harry is mentioned as visiting Xenophilius's home, where he encounters the printing press and other unusual objects."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "crumple-horned snorkack horn",
+      "relationship_type": "reacted_with_shock",
+      "description": "Hermione reacts with shock at the sight of the Crumple-Horned Snorkack horn, which has been mounted on the wall in Xenophilius's home."
+    },
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "crumple-horned snorkack horn",
+      "relationship_type": "mounted",
+      "description": "Xenophilius is described as having mounted the horn of the Crumple-Horned Snorkack on his wall."
+    }
+  ]
+}

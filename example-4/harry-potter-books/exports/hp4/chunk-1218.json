@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is in a precarious situation."
+    },
+    {
+      "name": "grass ceiling",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location where Harry finds himself, with grass on the ceiling and sky on the ground."
+    },
+    {
+      "name": "sky",
+      "entity_type": "environment",
+      "singular": true,
+      "description": "The environment that is normally above the ground, but has been reversed in this situation."
+    },
+    {
+      "name": "ground",
+      "entity_type": "environment",
+      "singular": true,
+      "description": "The surface that Harry is trying to move towards."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grass ceiling",
+      "relationship_type": "is_on",
+      "description": "Harry is on top of the grassy ceiling."
+    },
+    {
+      "entity_1": "sky",
+      "entity_2": "ground",
+      "relationship_type": "reversed_position",
+      "description": "The sky and ground have been reversed in this situation."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ground",
+      "relationship_type": "fell_on",
+      "description": "Harry fell forward onto his knees onto the wonderfully solid ground."
+    }
+  ]
+}

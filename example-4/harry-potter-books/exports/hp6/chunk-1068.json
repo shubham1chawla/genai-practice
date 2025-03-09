@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as having already crossed the crenellated ramparts and dismounting. He is also described as clutching at his chest with his blackened hand."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as landing next to Dumbledore seconds later and looking around. He is also instructed by Dumbledore to go and wake Severus."
+    },
+    {
+      "name": "severus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus is mentioned as someone who needs to be woken up by Harry."
+    },
+    {
+      "name": "the mark",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Mark is described as a green skull with its serpent's tongue glinting evilly above them."
+    },
+    {
+      "name": "the castle",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The castle is mentioned as the place where Dumbledore and Harry are standing."
+    },
+    {
+      "name": "the ramparts",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The ramparts are described as being deserted."
+    },
+    {
+      "name": "the door",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The door is mentioned as leading to the spiral staircase that led back into the castle."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "instructed",
+      "description": "Dumbledore instructs Harry to go and wake Severus."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "severus",
+      "relationship_type": "affected_by",
+      "description": "Dumbledore is affected by the situation, which requires him to instruct Harry to go and wake Severus."
+    }
+  ]
+}

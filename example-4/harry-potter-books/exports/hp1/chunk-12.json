@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "mrs dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Dursley is the wife of Mr Dursley and they are discussing their son's name."
+    },
+    {
+      "name": "mr dursley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Dursley is the husband of Mrs Dursley and they are discussing their son's name."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is the son of Mr and Mrs Dursley."
+    },
+    {
+      "name": "potter",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Potter family is mentioned as being related to Mr Dursley's concerns."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the son of the Potter family and his name is discussed by Mr and Mrs Dursley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "potter",
+      "relationship_type": "related_to",
+      "description": "Mr Dursley is concerned that he might be related to the Potter family."
+    },
+    {
+      "entity_1": "mr dursley",
+      "entity_2": "harry potter",
+      "relationship_type": "concerned_about",
+      "description": "Mr Dursley is worried about Harry Potter and his connection to the Potter family."
+    }
+  ]
+}

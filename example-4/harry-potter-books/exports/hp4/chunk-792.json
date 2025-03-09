@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is being given a present by Harry Potter. He squeaks tentatively when asking for the present."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is giving Dobby a present and says he has something for Dobby too."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Uncle Vernon's old socks are being given to Dobby as a present."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dobby",
+      "relationship_type": "gave_present_to",
+      "description": "Harry Potter gives a present to Dobby, which is actually his old socks."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "uncle vernon",
+      "relationship_type": "belonged_to",
+      "description": "The socks given to Dobby belonged to Uncle Vernon."
+    }
+  ]
+}

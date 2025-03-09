@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is concerned about the legend of wands being passed from hand to hand by murder."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A dark wizard who is mentioned as having an idea to put into action."
+    },
+    {
+      "name": "ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wand maker who is being questioned by Harry about the legend of wands."
+    },
+    {
+      "name": "wand",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical stick used by wizards to cast spells."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "concerned_about",
+      "description": "Harry is concerned that Voldemort has decided to put his idea into action, which suggests a connection between the two characters."
+    },
+    {
+      "entity_1": "ollivander",
+      "entity_2": "wand",
+      "relationship_type": "maker_of",
+      "description": "Ollivander is a wand maker, which means he creates wands for wizards."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. He is trying to see past the barman's long hair and beard."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "An elf who was sent by the barman to help Harry. He has been killed by Bellatrix Lestrange."
+    },
+    {
+      "name": "bellatrix lestrange",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who killed Dobby, an elf sent by the barman to help Harry."
+    },
+    {
+      "name": "the barman",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The owner of the bar. He has a long hair and beard and wears spectacles."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dobby",
+      "relationship_type": "sent_by",
+      "description": "Dobby was sent by the barman to help Harry. This is mentioned in the line 'You sent Dobby'."
+    },
+    {
+      "entity_1": "bellatrix lestrange",
+      "entity_2": "dobby",
+      "relationship_type": "killed_by",
+      "description": "Bellatrix Lestrange killed Dobby, an elf who was sent by the barman to help Harry. This is mentioned in the line 'He's dead, Bellatrix Lestrange killed him'."
+    },
+    {
+      "entity_1": "the barman",
+      "entity_2": "dobby",
+      "relationship_type": "sent_dobby",
+      "description": "The barman sent Dobby to help Harry. This is mentioned in the line 'You sent Dobby'."
+    }
+  ]
+}

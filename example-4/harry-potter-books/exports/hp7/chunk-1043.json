@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "atmosphere",
+      "entity_type": "environment",
+      "singular": true,
+      "description": "The atmosphere is described as 'wild' and 'night', indicating a sense of freedom and adventure. (\"He fastened his cloak and made his farewells, hugging the women and grasping hands with the men, then, still beaming, returned into the wild night.\")"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as a person who has noticed something unusual. (\"Harry thought he was the only one who had noticed this, until he saw Bill’s eyes following the goblin up the stairs.\")"
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is described as a person whose eyes are following something. (\"Harry thought he was the only one who had noticed this, until he saw Bill’s eyes following the goblin up the stairs.\")"
+    },
+    {
+      "name": "goblin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The goblin is described as a person who is being followed by someone. (\"Harry thought he was the only one who had noticed this, until he saw Bill’s eyes following the goblin up the stairs.\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is described as a person who is leaving. (\"No . . . no . . . I really must get back,\" said Lupin at last, de-clining yet another goblet of wine.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "goblin",
+      "relationship_type": "observed",
+      "description": "Harry observed the goblin going up the stairs. (\"Harry thought he was the only one who had noticed this, until he saw Bill’s eyes following the goblin up the stairs.\")"
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "goblin",
+      "relationship_type": "observed",
+      "description": "Bill observed the goblin going up the stairs. (\"Harry thought he was the only one who had noticed this, until he saw Bill’s eyes following the goblin up the stairs.\")"
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "atmosphere",
+      "relationship_type": "exited_to",
+      "description": "Lupin exited to the wild night. (\"He fastened his cloak and made his farewells, hugging the women and grasping hands with the men, then, still beaming, returned into the wild night.\")"
+    }
+  ]
+}

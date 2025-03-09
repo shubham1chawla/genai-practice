@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who said 'I wonder if Hermione's seen this yet?' and pulled Ron to his feet. He is described as looking around at the door to the girls' dormitories."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as the one who bounded forward, pulled open the door, and set off up the spiral staircase. He is described as trying to keep running down the newly created slide."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned by Harry as someone he wonders if has seen the educational decree yet."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "mentioned_together",
+      "description": "Harry and Hermione are mentioned together in the same sentence, with Harry wondering if Hermione has seen the educational decree yet."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "helped_by",
+      "description": "Ron is helped by Harry after he falls down the slide. Harry pulls Ron to his feet and tries not to laugh."
+    }
+  ]
+}

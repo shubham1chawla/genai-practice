@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as 'Harry'."
+    },
+    {
+      "name": "atrium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location in the Ministry of Magic, where Harry and others are heading."
+    },
+    {
+      "name": "security desk",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Located at the far end of the Atrium, mentioned as a place to present wands for registration."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "atrium",
+      "relationship_type": "heading_to",
+      "description": "Harry and others are heading towards the Atrium."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "security desk",
+      "relationship_type": "has_to_present_wand",
+      "description": "Harry has to present his wand at the security desk for registration."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry and Ron waited with bated breath: Malfoy was surely seconds away from telling them it was him. This indicates that Harry is one of the people waiting."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry and Ron waited with bated breath: Malfoy was surely seconds away from telling them it was him. This indicates that Ron is one of the people waiting."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy was surely seconds away from telling them it was him. This indicates that Malfoy is a person who knows something."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "waiting_for_information_from",
+      "description": "Harry and Ron waited with bated breath: Malfoy was surely seconds away from telling them it was him. This indicates that Harry is waiting for information from Malfoy."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "waiting_for_information_from",
+      "description": "Harry and Ron waited with bated breath: Malfoy was surely seconds away from telling them it was him. This indicates that Ron is waiting for information from Malfoy."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "has_information_about",
+      "description": "Malfoy was surely seconds away from telling them it was him. This indicates that Malfoy has information about Harry."
+    }
+  ]
+}

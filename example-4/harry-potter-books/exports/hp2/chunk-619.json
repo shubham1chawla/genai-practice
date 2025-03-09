@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is mentioned as a great oaf and Harry's friend."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle is the one who framed Hagrid and is talking to Harry."
+    },
+    {
+      "name": "armando dippet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Armando Dippet is an old person mentioned as someone who would believe Tom Riddle's word against Hagrid's."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the one talking to Tom Riddle and defending Hagrid."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "hagrid",
+      "relationship_type": "framed",
+      "description": "Tom Riddle framed Hagrid."
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "armando dippet",
+      "relationship_type": "believed",
+      "description": "Tom Riddle's word was believed by Armando Dippet."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "defended",
+      "description": "Harry defended Hagrid against Tom Riddle's accusations."
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "harry",
+      "relationship_type": "accused",
+      "description": "Tom Riddle accused Harry of making a mistake in believing him."
+    }
+  ]
+}

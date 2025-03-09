@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "t om riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having visited the spot with his youthful victims."
+    },
+    {
+      "name": "orphans",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "A group of people who were taken to the spot for sea air and a view of the waves."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is not a wizard or witch."
+    },
+    {
+      "name": "youthful victims",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The people who were victimized by Tom Riddle."
+    },
+    {
+      "name": "cliffs behind us",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where the orphans and Tom Riddle visited."
+    },
+    {
+      "name": "waves",
+      "entity_type": "natural_feature",
+      "singular": true,
+      "description": "The natural feature that the orphans were taken to see."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "t om riddle",
+      "entity_2": "youthful victims",
+      "relationship_type": "victim_of",
+      "description": "Tom Riddle was the one who victimized these people."
+    },
+    {
+      "entity_1": "t om riddle",
+      "entity_2": "cliffs behind us",
+      "relationship_type": "visited",
+      "description": "Tom Riddle visited this location with his youthful victims."
+    },
+    {
+      "entity_1": "orphans",
+      "entity_2": "waves",
+      "relationship_type": "viewed",
+      "description": "The orphans were taken to see the waves."
+    },
+    {
+      "entity_1": "muggle",
+      "entity_2": "cliffs behind us",
+      "relationship_type": "cannot_reach",
+      "description": "Muggles cannot reach this location unless they are uncommonly good mountaineers."
+    }
+  ]
+}

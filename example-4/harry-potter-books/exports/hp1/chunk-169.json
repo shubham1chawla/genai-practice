@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is counting down to September 1st."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin, who screams and runs from the room when Harry enters."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, who is watching a quiz show on television with his wife."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "person",
+      "singular": false,
+      "description": "Uncle Vernon's wife, who is also watching the quiz show."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "request_for_lift",
+      "description": "Harry asks Uncle Vernon for a lift to King's Cross station."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "king's cross station",
+      "relationship_type": "destination",
+      "description": "Harry needs to go to King's Cross station, which is his destination."
+    }
+  ]
+}

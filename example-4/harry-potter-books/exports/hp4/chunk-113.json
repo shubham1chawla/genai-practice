@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "weasleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "The Weasley family is mentioned as the ones who are not using their brains properly. They are in trouble and might end up in front of the Improper Use of Magic Office."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the people who jumped out of the way as knives were flying across the kitchen. He is a member of the Weasley family, but not mentioned as being in trouble."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another person who jumped out of the way as knives were flying across the kitchen. He is a member of the Weasley family, but not mentioned as being in trouble."
+    },
+    {
+      "name": "improper use of magic office",
+      "entity_type": "institution",
+      "singular": true,
+      "description": "The Improper Use of Magic Office is an institution that might punish the Weasleys if they don't improve their behavior."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "weasleys",
+      "entity_2": "improper use of magic office",
+      "relationship_type": "potential_punishment",
+      "description": "The Weasleys might end up in front of the Improper Use of Magic Office if they don't improve their behavior."
+    },
+    {
+      "entity_1": "weasleys",
+      "entity_2": "harry",
+      "relationship_type": "family_member",
+      "description": "Harry is a member of the Weasley family."
+    },
+    {
+      "entity_1": "weasleys",
+      "entity_2": "ron",
+      "relationship_type": "family_member",
+      "description": "Ron is a member of the Weasley family."
+    }
+  ]
+}

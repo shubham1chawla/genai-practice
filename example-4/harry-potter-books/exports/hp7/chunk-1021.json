@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "goblin",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "The goblin is a character in the story who is sitting cross-legged in a low chair and drumming its arms with his spindly fingers. (\"I have reached my decision, Harry Potter,\" said the goblin...)."
+    },
+    {
+      "name": "gringotts",
+      "entity_type": "bank",
+      "singular": true,
+      "description": "Gringotts is a bank where goblins work. (The goblins of Gringotts will consider it base treachery...)"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story who is being helped by the goblin. (\"I have reached my decision, Harry Potter,\" said the goblin...)."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a specific goblin who is helping Harry Potter. (\"I have reached my decision, Harry Potter,\" said Griphook...)"
+    },
+    {
+      "name": "godric griffindor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Godric Gryffindor is the owner of a sword that Griphook wants. (\"I want the sword of Godric Gryﬃndor,\" said the goblin...)"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who offers to give something else to Griphook. (\"We can give you something else,\" said Ron eagerly.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "griphook",
+      "entity_2": "gringotts",
+      "relationship_type": "employee_of",
+      "description": "Griphook is an employee of Gringotts. (The goblins of Gringotts will consider it base treachery...)"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "griphook",
+      "relationship_type": "helped_by",
+      "description": "Griphook is helping Harry Potter. (\"I have reached my decision, Harry Potter,\" said the goblin...)."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "godric griffindor",
+      "relationship_type": "wants_something_from",
+      "description": "Griphook wants something from Godric Gryffindor. (\"I want the sword of Godric Gryﬃndor,\" said the goblin...)"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "griphook",
+      "relationship_type": "offering_alternative_to",
+      "description": "Ron is offering an alternative to Griphook. (\"We can give you something else,\" said Ron eagerly.)"
+    }
+  ]
+}

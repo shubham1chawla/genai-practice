@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is the teacher in charge of the class. She is described as having a little laugh and smiling widely."
+    },
+    {
+      "name": "miss granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Miss Granger is one of the students in the class. She is mentioned as being addressed by Professor Umbridge."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron Weasley is a student in the class. He is mentioned as raising his hand to speak."
+    },
+    {
+      "name": "harry",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry is a student in the class. He is mentioned as raising his hand to speak."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "miss granger",
+      "relationship_type": "addressed_by",
+      "description": "Professor Umbridge addresses Miss Granger by name."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "professor umbridge",
+      "relationship_type": "spoke_to",
+      "description": "Ron Weasley speaks to Professor Umbridge, but she turns her back on him."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "looked_at_by",
+      "description": "Professor Umbridge's pouchy eyes linger on Harry for a moment."
+    }
+  ]
+}

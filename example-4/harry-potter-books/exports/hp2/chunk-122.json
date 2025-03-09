@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius is mentioned by Mr Weasley as being involved in the Ministry."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Weasley is described as having a cold nod and reacting to Lucius's comment."
+    },
+    {
+      "name": "mr malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Malfoy is mentioned as making snide comments about Mr Weasley's job at the Ministry."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny's cauldron is used by Mr Malfoy to reach into and extract a book."
+    },
+    {
+      "name": "lockhart books",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Lockhart books are mentioned as being in Ginny's cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "lucius",
+      "relationship_type": "disagreement",
+      "description": "Mr Weasley and Lucius have a disagreement about what disgraces the name of wizard."
+    },
+    {
+      "entity_1": "mr malfoy",
+      "entity_2": "ginny",
+      "relationship_type": "disrespect",
+      "description": "Mr Malfoy shows disrespect to Ginny by reaching into her cauldron without permission."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "mr malfoy",
+      "relationship_type": "anger",
+      "description": "Mr Weasley is angry at Mr Malfoy's comments and throws himself at him."
+    }
+  ]
+}

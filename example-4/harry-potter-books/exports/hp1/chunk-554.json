@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who is about to face a challenge."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A friend and companion of Harry's, who has already faced the purple fire."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The Potions master at Hogwarts, who is not present in this scene."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, who is also not present in this scene."
+    },
+    {
+      "name": "purple fire",
+      "entity_type": "object",
+      "singular": false,
+      "description": "A magical barrier that Hermione has already crossed."
+    },
+    {
+      "name": "black flames",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Magical flames that Harry is about to face."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "purple fire",
+      "relationship_type": "crossed",
+      "description": "Hermione has already crossed the purple fire, and now it's Harry's turn."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black flames",
+      "relationship_type": "facing",
+      "description": "Harry is about to face the black flames."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "purple fire",
+      "relationship_type": "crossed",
+      "description": "Hermione has already crossed the purple fire."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "black flames",
+      "relationship_type": "cannot feel",
+      "description": "Harry cannot feel the black flames, even though they are licking his body."
+    }
+  ]
+}

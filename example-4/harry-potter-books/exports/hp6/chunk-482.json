@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "Mrs Cole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The housekeeper who is being questioned by Dumbledore about the deceased woman."
+    },
+    {
+      "name": "Dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is questioning Mrs. Cole about the deceased woman."
+    },
+    {
+      "name": "the boy",
+      "entity_type": "child",
+      "singular": true,
+      "description": "The child whose mother has just died and whose father's identity is being discussed."
+    },
+    {
+      "name": "Tom Riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The name of the boy, given by his mother before she died."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Mrs Cole",
+      "entity_2": "the boy",
+      "relationship_type": "told_information_to",
+      "description": "Mrs. Cole told information about the boy to Dumbledore."
+    },
+    {
+      "entity_1": "Dumbledore",
+      "entity_2": "Mrs Cole",
+      "relationship_type": "asked_questions_from",
+      "description": "Dumbledore asked questions from Mrs. Cole about the deceased woman."
+    },
+    {
+      "entity_1": "the boy",
+      "entity_2": "Tom Riddle",
+      "relationship_type": "is_named_after",
+      "description": "The boy is named after his father, Tom Riddle."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Snape is mentioned as someone who would not know what had happened."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry is able to get back on his broom and speed towards the ground."
+    },
+    {
+      "name": "neville",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Neville has been sobbing into Hagrid's jacket for the last five minutes."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron tells Neville to look."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hagrid is providing a jacket for Neville to sob into."
+    },
+    {
+      "name": "crowd",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The crowd sees Harry speeding towards the ground."
+    },
+    {
+      "name": "broom",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broom is mentioned as something he gets back on."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "broom",
+      "relationship_type": "is_on",
+      "description": "Harry gets back on his broom."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "neville",
+      "relationship_type": "tells",
+      "description": "Ron tells Neville to look."
+    }
+  ]
+}

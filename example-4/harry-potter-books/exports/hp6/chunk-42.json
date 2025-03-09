@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is introduced as a person who gestures Narcissa to the sofa. He is described as someone who is usually inhabited by an air of neglect."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is introduced as a person who throws off her cloak and sits down on the sofa. She is described as having white and trembling hands clasped in her lap."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix is introduced as a person with heavily lidded eyes and a strong jaw. She does not take her gaze from Snape as she moves to stand behind Narcissa."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is mentioned as someone who is present in the room but is referred to as vermin by Snape."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "narcissa",
+      "relationship_type": "gestured_to",
+      "description": "Snape gestures Narcissa to the sofa."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "snape",
+      "relationship_type": "focused_on",
+      "description": "Bellatrix does not take her gaze from Snape as she moves to stand behind Narcissa."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "wormtail",
+      "relationship_type": "present_with",
+      "description": "Narcissa and Wormtail are present in the same room."
+    }
+  ]
+}

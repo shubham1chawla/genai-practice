@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "horace slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is introduced as he wears a ring that Dumbledore has never seen before. His eyes linger on the ring and he frowns momentarily."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as wearing a new ring that Slughorn notices. He is also referred to as questioning Slughorn about his precautions against intruders."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are mentioned as being the potential threat that Dumbledore and Slughorn are concerned about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "horace slughorn",
+      "relationship_type": "has_concerns_about",
+      "description": "Dumbledore is concerned about Slughorn's precautions against intruders and suspects that the Death Eaters may be after him."
+    },
+    {
+      "entity_1": "death eaters",
+      "entity_2": "horace slughorn",
+      "relationship_type": "target_of_recruitment",
+      "description": "The Death Eaters are suspected to be recruiting Slughorn for their purposes of coercion, torture, and murder."
+    }
+  ]
+}

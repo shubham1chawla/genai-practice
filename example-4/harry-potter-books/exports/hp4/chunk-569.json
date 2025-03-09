@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Malfoy, mentioned as 'Potter'."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is laughing along with Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is laughing along with Crabbe."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person who is being sarcastic and dismissive of Hagrid's plan."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper who has a plan to fix the Blast-Ended Skrewts."
+    },
+    {
+      "name": "blast-ended skrewt",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A creature that is being used in Hagrid's plan."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hagrid",
+      "relationship_type": "scoff_at",
+      "description": "Malfoy is scoffing at Hagrid's plan to fix the Blast-Ended Skrewts."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "goyle",
+      "relationship_type": "laugh_with",
+      "description": "Crabbe and Goyle are laughing together in response to Malfoy's sarcasm."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "blast-ended skrewt",
+      "relationship_type": "care_for",
+      "description": "Hagrid is caring for the Blast-Ended Skrewts by trying to fix them."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "blast-ended skrewt",
+      "relationship_type": "disdain",
+      "description": "Malfoy has disdain for the Blast-Ended Skrewts and Hagrid's plan."
+    }
+  ]
+}

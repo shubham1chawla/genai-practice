@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as the one who claims that the horn was from a Crumple-Horned Snorkack. She also talks to Mr. Ollivander and says goodbye to him."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who tries to correct Luna's mistake about the horn. She also lays down forks while talking to Bill and Mr. Ollivander."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as the one who appears with Mr. Ollivander, supporting him and carrying a large suitcase. He also has an Auntie Muriel who needs a package delivered."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Ollivander is mentioned as the wandmaker who looks frail and is being supported by Bill. He also talks to Luna, Fleur, and says goodbye to them."
+    },
+    {
+      "name": "fleur",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fleur is mentioned as the one who kisses Mr. Ollivander on both cheeks and asks him to deliver a package to Bill's Auntie Muriel."
+    },
+    {
+      "name": "crumple-horned snorkack",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The Crumple-Horned Snorkack is mentioned as the animal that Luna claims the horn came from. It is also contrasted with the Erumpent."
+    },
+    {
+      "name": "erumpent",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The Erumpent is mentioned as the animal that Hermione says the horn actually came from, not a Crumple-Horned Snorkack."
+    },
+    {
+      "name": "auntie muriel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Auntie Muriel is mentioned as Bill's aunt who needs a package delivered by Mr. Ollivander."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "luna",
+      "entity_2": "crumple-horned snorkack",
+      "relationship_type": "claimed_to_be_from",
+      "description": "Luna claims that the horn came from a Crumple-Horned Snorkack."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "erumpent",
+      "relationship_type": "said_came_from",
+      "description": "Hermione says that the horn actually came from an Erumpent, not a Crumple-Horned Snorkack."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "mr ollivander",
+      "relationship_type": "said_goodbye_to",
+      "description": "Luna says goodbye to Mr. Ollivander."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "mr ollivander",
+      "relationship_type": "kissed_on_both_cheeks",
+      "description": "Fleur kisses Mr. Ollivander on both cheeks."
+    },
+    {
+      "entity_1": "fleur",
+      "entity_2": "bill's auntie muriel",
+      "relationship_type": "asked_to_deliver_package_to",
+      "description": "Fleur asks Mr. Ollivander to deliver a package to Bill's Auntie Muriel."
+    },
+    {
+      "entity_1": "mr ollivander",
+      "entity_2": "bill's auntie muriel",
+      "relationship_type": "agreed_to_deliver_package_to",
+      "description": "Mr. Ollivander agrees to deliver a package to Bill's Auntie Muriel."
+    }
+  ]
+}

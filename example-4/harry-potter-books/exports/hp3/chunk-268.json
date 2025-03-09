@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "peeves",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Peeves is a character in the story who is talking to Dumbledore. He mentions Professorhead and Sirius Black."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dumbledore is a character in the story who is being talked about by Peeves."
+    },
+    {
+      "name": "professorhead",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Professorhead is a character mentioned by Peeves as someone who got angry when Sirius Black tried to get in."
+    },
+    {
+      "name": "sirius black",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sirius Black is a character mentioned by Peeves as having a nasty temper and trying to get into Professorhead's place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "peevs",
+      "entity_2": "dumbledore",
+      "relationship_type": "talk_to",
+      "description": "Peeves is talking to Dumbledore about Professorhead and Sirius Black."
+    },
+    {
+      "entity_1": "peevs",
+      "entity_2": "professorhead",
+      "relationship_type": "mention",
+      "description": "Peeves mentions Professorhead as someone who got angry when Sirius Black tried to get in."
+    },
+    {
+      "entity_1": "peevs",
+      "entity_2": "sirius black",
+      "relationship_type": "mention",
+      "description": "Peeves mentions Sirius Black as having a nasty temper and trying to get into Professorhead's place."
+    }
+  ]
+}

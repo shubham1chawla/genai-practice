@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character mentioned in the article as running away from the scene where Dumbledore fell."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who fell or was pushed, and is being discussed by Skeeter in her book."
+    },
+    {
+      "name": "skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The author of the book mentioned in the article, who has written about Dumbledore's death."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person against whom Potter gave evidence, and with whom he has a grudge."
+    },
+    {
+      "name": "hogwarts castle",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Dumbledore fell or was pushed."
+    },
+    {
+      "name": "wizarding community",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who will decide what to believe about the events described in Skeeter's book."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "ran_from",
+      "description": "Potter was seen running away from the scene where Dumbledore fell or was pushed."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "severus snape",
+      "relationship_type": "gave_evidence_against",
+      "description": "Potter gave evidence against Snape."
+    },
+    {
+      "entity_1": "skeeter",
+      "entity_2": "dumbledore",
+      "relationship_type": "wrote_about",
+      "description": "Skeeter wrote about Dumbledore's death in her book."
+    },
+    {
+      "entity_1": "wizarding community",
+      "entity_2": "harry potter",
+      "relationship_type": "will_decide_beliefs",
+      "description": "The Wizarding community will decide what to believe about the events described in Skeeter's book."
+    }
+  ]
+}

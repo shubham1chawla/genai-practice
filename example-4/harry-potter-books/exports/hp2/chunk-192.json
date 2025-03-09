@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is mentioned as a person in the conversation. He is referred to by name and is being talked about by Malfoy."
+    },
+    {
+      "name": "colin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Colin is mentioned as a person who speaks up in defense of Harry Potter."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as a person who is talking to Ron Weasley and making fun of him."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as a person who is laughing with Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as a person who is laughing with Crabbe."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron Weasley is mentioned as a person who is talking to Malfoy and defending himself."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who intervenes in the conversation by shutting Ron's wand away."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry potter",
+      "relationship_type": "tease",
+      "description": "Malfoy teases Harry Potter about his scar and says it doesn't make him special."
+    },
+    {
+      "entity_1": "crabbe",
+      "entity_2": "goyle",
+      "relationship_type": "laugh_with",
+      "description": "Crabbe and Goyle are laughing together in the courtyard."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ron weasley",
+      "relationship_type": "tease",
+      "description": "Malfoy teases Ron Weasley about his family's wealth and says he would like a signed photo of Harry Potter."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "be_target_of_teaching",
+      "description": "Malfoy is teaching or making fun of Harry Potter in front of the other students."
+    },
+    {
+      "entity_1": "ron weasley",
+      "entity_2": "hermione",
+      "relationship_type": "defend_by",
+      "description": "Hermione intervenes and shuts Ron's wand away, defending him from Malfoy."
+    }
+  ]
+}

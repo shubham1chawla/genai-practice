@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as having unruly hair that grows all over the place. He is also mentioned to be frying eggs in the kitchen."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is described as looking like Uncle Vernon with a large pink face, small watery blue eyes and thick blond hair that lies smoothly on his head. He is also mentioned to be counting his presents."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as having a similar appearance to Dudley with a large pink face and small watery blue eyes."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned to have said that Dudley looks like a baby angel."
+    },
+    {
+      "name": "marge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marge is mentioned as the aunt who gave a present to Dudley."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dudley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "looks_like",
+      "description": "Dudley looks like Uncle Vernon."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "dudley",
+      "relationship_type": "said_to_look_like",
+      "description": "Aunt Petunia said that Dudley looks like a baby angel."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dudley",
+      "relationship_type": "made_fun_of",
+      "description": "Harry often made fun of Dudley saying he looked like a pig in a wig."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having entered the Forbidden Forest only once and hoping not to do so again. (Excerpt: 'Harry had entered it only once...')"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as twirling his wand nervously and asking about werewolves in the Forest. (Excerpt: 'Ron had never been into the Forbidden Forest before...')"
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher, mentioned as bounding into the room and speaking to the class about the danger having passed. (Excerpt: 'Lockhart bounded into the room...')"
+    },
+    {
+      "name": "centaurs",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A type of creature mentioned as being in the Forest and being all right. (Excerpt: 'The centaurs are all right...')"
+    },
+    {
+      "name": "unicorns",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A type of creature mentioned as being in the Forest. (Excerpt: 'The unicorns.'"
+    },
+    {
+      "name": "werewolves",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A type of creature mentioned as possibly being in the Forest. (Excerpt: 'aren’t there – aren’t there supposed to be werewolves...')"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "centaurs",
+      "relationship_type": "has_good_relationship_with",
+      "description": "Harry mentions that the centaurs are all right. (Excerpt: 'The centaurs are all right...')"
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "unicorns",
+      "relationship_type": "has_good_relationship_with",
+      "description": "Harry mentions that the unicorns are in the Forest. (Excerpt: 'The unicorns.'"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Ron is mentioned as a friend of Harry's. (Excerpt: 'A friend of Harry’s...')"
+    }
+  ]
+}

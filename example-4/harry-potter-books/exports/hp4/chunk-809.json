@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "yule ball",
+      "entity_type": "event",
+      "singular": true,
+      "description": "The Yule Ball is mentioned as an event where S.P.E.W. is being discussed."
+    },
+    {
+      "name": "s.p.e.w.",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "S.P.E.W. (Society for the Promotion of Elfish Welfare) is a organization that Hermione is thinking about."
+    },
+    {
+      "name": "viktor krum",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Viktor Krum is a person who is talking enthusiastically with Hermione."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter is the one thinking about S.P.E.W. and listening to Viktor Krum."
+    },
+    {
+      "name": "igor karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Igor Karkaroff is a person who is laughing and telling Harry not to give away any more information."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is smiling and making a comment about Igor's secrecy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "s.p.e.w.",
+      "relationship_type": "thinking_about",
+      "description": "Harry Potter is thinking about S.P.E.W."
+    },
+    {
+      "entity_1": "viktor krum",
+      "entity_2": "harry potter",
+      "relationship_type": "talking_to",
+      "description": "Viktor Krum is talking to Harry Potter."
+    },
+    {
+      "entity_1": "igor karkaroff",
+      "entity_2": "yule ball",
+      "relationship_type": "trying_to_protect",
+      "description": "Igor Karkaroff is trying to protect the location of the Yule Ball."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "igor karkaroff",
+      "relationship_type": "commenting_on",
+      "description": "Dumbledore is commenting on Igor's secrecy."
+    }
+  ]
+}

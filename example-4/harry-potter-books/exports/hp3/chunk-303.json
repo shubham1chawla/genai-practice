@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Harry is thinking about his past experience with dementors."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend Ron is looking at him anxiously and trying to avoid talking about the Whomping Willow."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend Hermione is also looking at him anxiously and hesitant to talk about the Whomping Willow."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are creatures that have affected Harry in the past, causing a screaming voice."
+    },
+    {
+      "name": "whomping willow",
+      "entity_type": "tree",
+      "singular": true,
+      "description": "A violent tree on the school grounds that doesn't like being hit."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Flitwick is a teacher who brought back the Whomping Willow before Harry came around."
+    },
+    {
+      "name": "nimbus",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broomstick that got blown away when he fell off."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "affect",
+      "description": "Dementors have affected Harry in the past, causing a screaming voice."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "concern",
+      "description": "Ron is looking at Harry anxiously and trying to avoid talking about the Whomping Willow."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "concern",
+      "description": "Hermione is also looking at Harry anxiously and hesitant to talk about the Whomping Willow."
+    },
+    {
+      "entity_1": "whomping willow",
+      "entity_2": "nimbus",
+      "relationship_type": "hit",
+      "description": "The Whomping Willow hit Harry's broomstick, the Nimbus."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "whomping willow",
+      "relationship_type": "brought_back",
+      "description": "Professor Flitwick brought back the Whomping Willow before Harry came around."
+    }
+  ]
+}

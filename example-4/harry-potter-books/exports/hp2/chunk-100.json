@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "mr borgin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr Borgin is the one who is being spoken to by someone else in the conversation."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Draco interrupts Mr Borgin and points at something."
+    },
+    {
+      "name": "hand of glory",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Hand of Glory is a specific object that Draco points at."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "draco",
+      "entity_2": "mr borgin",
+      "relationship_type": "interrupts",
+      "description": "Draco interrupts Mr Borgin in the conversation."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "hand of glory",
+      "relationship_type": "points_at",
+      "description": "Draco points at the Hand of Glory."
+    },
+    {
+      "entity_1": "mr borgin",
+      "entity_2": "hand of glory",
+      "relationship_type": "owns",
+      "description": "Mr Borgin knows about and is familiar with the Hand of Glory."
+    }
+  ]
+}

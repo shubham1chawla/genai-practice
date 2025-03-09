@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "procession",
+      "entity_type": "event",
+      "singular": true,
+      "description": "A group of people walking in a formal or ceremonial manner, described as forming and moving through the garden towards the marquee."
+    },
+    {
+      "name": "garden",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where the procession is taking place, described as having exotic flowers and bewitched birds."
+    },
+    {
+      "name": "marquee",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A large tent or canopy, described as being at the end of the garden that the procession is moving towards."
+    },
+    {
+      "name": "exotic flowers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Flowers that are unusual or rare, described as fluttering on the witches' hats."
+    },
+    {
+      "name": "bewitched birds",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Birds that have been magically enchanted, described as fluttering on the witches' hats."
+    },
+    {
+      "name": "witches'",
+      "entity_type": "group",
+      "singular": true,
+      "description": "A group of middle-aged women who are part of the procession and wearing hats with exotic flowers and bewitched birds."
+    },
+    {
+      "name": "veela cousins",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of female wizards' relatives, described as needing help understanding English customs."
+    },
+    {
+      "name": "George",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who is helping to deal with the veela cousins and middle-aged witches."
+    },
+    {
+      "name": "Fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who is helping to escort French girls into the tent."
+    },
+    {
+      "name": "French girls",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A pair of young women from France, described as giggling and allowing Fred to escort them inside."
+    },
+    {
+      "name": "Ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the main characters, who is taking charge of dealing with the veela cousins."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "George",
+      "entity_2": "veela cousins",
+      "relationship_type": "helping",
+      "description": "George is helping to deal with the veela cousins and their understanding of English customs."
+    },
+    {
+      "entity_1": "Fred",
+      "entity_2": "French girls",
+      "relationship_type": "escorting",
+      "description": "Fred is escorting the French girls into the tent."
+    },
+    {
+      "entity_1": "Ron",
+      "entity_2": "veela cousins",
+      "relationship_type": "helping",
+      "description": "Ron is taking charge of dealing with the veela cousins."
+    },
+    {
+      "entity_1": "George",
+      "entity_2": "middle-aged witches",
+      "relationship_type": "dealing_with",
+      "description": "George is helping to deal with the middle-aged witches."
+    }
+  ]
+}

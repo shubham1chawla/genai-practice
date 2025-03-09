@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is present in the tent"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another friend of Harry's who is present in the tent"
+    },
+    {
+      "name": "demort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as being after the Elder Wand"
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is being sought by Demort"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "demort",
+      "relationship_type": "target_of_search",
+      "description": "Demort is searching for the Elder Wand, which Harry has"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "elder wand",
+      "relationship_type": "protector",
+      "description": "Ron is trying to protect the Elder Wand from Demort"
+    }
+  ]
+}

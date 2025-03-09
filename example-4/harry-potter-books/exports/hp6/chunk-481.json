@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is introduced as a character who accepts a glass of gin from Mrs Cole. He is described as beaming."
+    },
+    {
+      "name": "mrs cole",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs Cole is introduced as the one offering Dumbledore a glass of gin and showing expertise in drinking gin."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle's history is mentioned by Dumbledore, indicating that he was born at the orphanage."
+    },
+    {
+      "name": "the orphanage",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The orphanage is introduced as a location where Tom Riddle was born and Mrs Cole works."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "mrs cole",
+      "relationship_type": "offers_drink_to",
+      "description": "Mrs Cole offers Dumbledore a glass of gin, which he accepts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "tom riddle",
+      "relationship_type": "asks_about_history_of",
+      "description": "Dumbledore asks Mrs Cole about Tom Riddle's history."
+    },
+    {
+      "entity_1": "mrs cole",
+      "entity_2": "the orphanage",
+      "relationship_type": "works_at",
+      "description": "Mrs Cole works at the orphanage where Tom Riddle was born."
+    },
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "the orphanage",
+      "relationship_type": "born_at",
+      "description": "Tom Riddle was born at the orphanage."
+    }
+  ]
+}

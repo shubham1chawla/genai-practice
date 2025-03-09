@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is mentioned as a house that will have points docked from it."
+    },
+    {
+      "name": "hufflepuff",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Hufflepuff is mentioned as a house that will have points docked from it."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as the person who will be docking points."
+    },
+    {
+      "name": "ernie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ernie is mentioned as a teacher who corrects Malfoy's statement."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "gryffindor",
+      "relationship_type": "docks_points_from",
+      "description": "Malfoy will dock points from Gryffindor, as mentioned in the text."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "hufflepuff",
+      "relationship_type": "docks_points_from",
+      "description": "Malfoy will dock points from Hufflepuff, as mentioned in the text."
+    },
+    {
+      "entity_1": "ernie",
+      "entity_2": "malfoy",
+      "relationship_type": "corrects",
+      "description": "Ernie corrects Malfoy's statement that he can dock points from houses."
+    }
+  ]
+}

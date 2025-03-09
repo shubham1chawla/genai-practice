@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person mentioned in the text as Cornelius, who is speaking to Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person mentioned in the text as being spoken to by Fudge and responding gravely."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a person mentioned in the text as leaving the room, then returning with Marietta."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is a person mentioned in the text as being taken by Umbridge and comforted by her."
+    },
+    {
+      "name": "minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The minister is a position mentioned in the text as being pleased with Marietta's actions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fudge",
+      "entity_2": "dumbledore",
+      "relationship_type": "speak_to",
+      "description": "Fudge speaks to Dumbledore, asking if there's nothing like a good witness."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "marietta",
+      "relationship_type": "comfort",
+      "description": "Umbridge comforts Marietta, telling her not to be scared or frightened."
+    }
+  ]
+}

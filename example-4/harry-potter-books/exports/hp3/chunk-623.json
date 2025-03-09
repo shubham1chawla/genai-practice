@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as 'You-Know-Who' by the characters. (Excerpt: \"telling Voldemort you could hand him the Potters.\")"
+    },
+    {
+      "name": "pettigrew",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is suspected of working for Voldemort and has a maimed hand. (Excerpt: \"Pettigrew was muttering distractedly; Harry caught words like “far-fetched” and “lunacy,” but he couldn’t help paying more attention to the ashen color of Pettigrew’s face\")"
+    },
+    {
+      "name": "potters",
+      "entity_type": "family",
+      "singular": true,
+      "description": "A family that is mentioned as being in danger from Voldemort. (Excerpt: \"telling Voldemort you could hand him the Potters.\")"
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is addressed by Hermione and has a relationship with Pettigrew. (Excerpt: \"Professor Lupin?\" said Hermione timidly.)"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who asks Professor Lupin a question about Scabbers/Pettigrew. (Excerpt: \"Well — Scabbers — I mean, this — this man — he’s been sleeping in Harry’s dormitory for three years.\")"
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Pettigrew's pet rat that is suspected of being an Animagus. (Excerpt: \"Well — Scabbers — I mean, this — this man — he’s been sleeping in Harry’s dormitory for three years.\")"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is pointed at by Pettigrew. (Excerpt: \"There!\" said Pettigrew shrilly, pointing at Ron with his maimed hand.)"
+    },
+    {
+      "name": "black",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who makes a statement about Pettigrew's motivations. (Excerpt: \"I’ll tell you why,\" said Black.” Because you never did anything for anyone unless you could see what was in it for you.)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "voldemort",
+      "relationship_type": "working_for",
+      "description": "Pettigrew is suspected of working for Voldemort. (Excerpt: \"If he’s working for You-Know-Who, how come he never tried to hurt Harry before now?\")"
+    },
+    {
+      "entity_1": "pettigrew",
+      "entity_2": "ron",
+      "relationship_type": "pointing_at",
+      "description": "Pettigrew points at Ron. (Excerpt: \"There!\" said Pettigrew shrilly, pointing at Ron with his maimed hand.)"
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "pettigrew",
+      "relationship_type": "making_statement_about",
+      "description": "Black makes a statement about Pettigrew's motivations. (Excerpt: \"I’ll tell you why,\" said Black.” Because you never did anything for anyone unless you could see what was in it for you.)"
+    }
+  ]
+}

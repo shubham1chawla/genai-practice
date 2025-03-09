@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story, and he is being talked to by Hermione about blowing up his aunt."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a friend of Harry's who is scolding him for blowing up his aunt."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another friend of Harry's who is laughing at the situation."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person in authority who let Harry off for blowing up his aunt."
+    },
+    {
+      "name": "king’s cross",
+      "entity_type": "location",
+      "singular": true,
+      "description": "King's Cross is a location where Harry will be going with Ron and Hermione the next day."
+    },
+    {
+      "name": "leaky cauldron",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Leaky Cauldron is a location where Ron and his family are staying tonight."
+    },
+    {
+      "name": "aunt",
+      "entity_type": "relative",
+      "singular": false,
+      "description": "Harry's aunt was blown up by Harry."
+    },
+    {
+      "name": "mum",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Ron's mum would have killed him if he had blown up an aunt."
+    },
+    {
+      "name": "dad",
+      "entity_type": "family_member",
+      "singular": true,
+      "description": "Ron's dad doesn't know why Fudge let Harry off."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "aunt",
+      "relationship_type": "blown_up_by",
+      "description": "Harry blew up his aunt."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "harry",
+      "relationship_type": "let_off",
+      "description": "Fudge let Harry off for blowing up his aunt."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a student at Hogwarts."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend and classmate."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The caretaker of Hogwarts who is known for being strict."
+    },
+    {
+      "name": "fat lady",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A portrait that guards the entrance to a restricted area in Hogwarts."
+    },
+    {
+      "name": "harry's father",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's deceased father, who left him his Cloak."
+    },
+    {
+      "name": "flamel",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person Harry is trying to learn more about."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The school where Harry and Ron are students."
+    },
+    {
+      "name": "library",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A part of Hogwarts where books are kept."
+    },
+    {
+      "name": "invisibility cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that makes the wearer invisible."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hogwarts",
+      "relationship_type": "location_of",
+      "description": "Harry is a student at Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "library",
+      "relationship_type": "location_in",
+      "description": "Harry goes to the library in Hogwarts."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "invisibility cloak",
+      "relationship_type": "possesses",
+      "description": "Harry uses his father's Invisibility Cloak."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "flamel",
+      "relationship_type": "trying_to_learn_about",
+      "description": "Harry is trying to learn more about Flamel."
+    },
+    {
+      "entity_1": "fat lady",
+      "entity_2": "hogwarts",
+      "relationship_type": "guards",
+      "description": "The Fat Lady guards the entrance to a restricted area in Hogwarts."
+    }
+  ]
+}

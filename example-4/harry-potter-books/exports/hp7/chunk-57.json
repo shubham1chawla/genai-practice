@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as the main character who is being spoken to by Uncle Vernon. He is mentioned multiple times in the passage and is shown to be aware of what is coming."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is described as a large, purple-faced man who is pacing up and down. He is mentioned multiple times in the passage and is shown to be changing his mind."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is described as a woman with an anxious expression who is following Uncle Vernon's movements. She is mentioned multiple times in the passage and is shown to be reacting to Harry's tone."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is described as a boy with an anxious expression who is following Uncle Vernon's movements. He is mentioned multiple times in the passage and is shown to be reacting to Harry's tone."
+    },
+    {
+      "name": "harry's cousin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's cousin is described as a blond, muscular boy who is wearing a leather jacket. He is mentioned only once in the passage and is not shown to be interacting with anyone else."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "speaks_to",
+      "description": "Harry is spoken to by Uncle Vernon, who asks him to sit down and then tells him that he has changed his mind."
+    },
+    {
+      "entity_1": "aunt petunia",
+      "entity_2": "harry",
+      "relationship_type": "reacts_to_tone",
+      "description": "Aunt Petunia reacts to Harry's tone, which is described as being in a certain tone."
+    },
+    {
+      "entity_1": "dudley",
+      "entity_2": "harry",
+      "relationship_type": "reacts_to_tone",
+      "description": "Dudley also reacts to Harry's tone, which is described as being in a certain tone."
+    },
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "aunt petunia",
+      "relationship_type": "speaks_with",
+      "description": "Uncle Vernon speaks with Aunt Petunia, who follows his movements and reacts to Harry's tone."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "uncle vernon",
+      "relationship_type": "reacts_to_change_of_mind",
+      "description": "Harry reacts to Uncle Vernon's change of mind, which is described as a surprise."
+    }
+  ]
+}

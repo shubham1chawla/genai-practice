@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is interested in the Sneakoscope and asks questions about it. She stands up to get a better look."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron mentions that he bought a cheap Sneakoscope and it went haywire. He was trying to send Harry's present to him."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the recipient of Ron's present and Hermione asks if Ron did anything untrustworthy when sending it."
+    },
+    {
+      "name": "errol",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Errol is a horse that Ron was trying to use to send Harry's present to him."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin is mentioned as someone who might be woken up by the Sneakoscope."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon's old socks are used to deaden the sound of the Sneakoscope."
+    },
+    {
+      "name": "dervish and banges",
+      "entity_type": "store",
+      "singular": false,
+      "description": "Dervish and Banges is a store in Hogsmeade that sells magical instruments."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George told Ron about Dervish and Banges."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "sent_present",
+      "description": "Ron was trying to send Harry's present to him."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "sneakoscope",
+      "relationship_type": "interested_in",
+      "description": "Hermione is interested in the Sneakoscope and asks questions about it."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "errol",
+      "relationship_type": "used_for_transportation",
+      "description": "Ron was trying to use Errol to send Harry's present to him."
+    }
+  ]
+}

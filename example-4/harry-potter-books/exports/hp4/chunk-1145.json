@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is the one presenting evidence to the Ministry of Magic. He is tightly bound to a chair and his voice is scared but still has an unctuous note in it."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is the governing body that Karkaroff wants to help. It's trying to round up the last of the Dark Lord's supporters."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is present in the scene and has a familiar growling voice saying 'Filth'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "ministry of magic",
+      "relationship_type": "wants_to_help",
+      "description": "Karkaroff wants to help the Ministry of Magic in rounding up the last of the Dark Lord's supporters."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "karkaroff",
+      "relationship_type": "disapproves_of",
+      "description": "Dumbledore disapproves of Karkaroff, as evidenced by his growling voice saying 'Filth'."
+    }
+  ]
+}

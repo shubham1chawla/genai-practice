@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who has a wand that is connected to Voldemort's wand."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The antagonist of the story, whose wand core is connected to Harry's wand."
+    },
+    {
+      "name": "mr ollivander",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who explains the connection between Harry's and Voldemort's wands."
+    },
+    {
+      "name": "rita skeeter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A journalist who is mentioned as being excited about the connection between Harry's and Voldemort's wands."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's wand, which has a phoenix feather core that is connected to Voldemort's wand."
+    },
+    {
+      "name": "voldemort's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Voldemort's wand, whose core is connected to Harry's wand."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's aunt, who he is related to."
+    },
+    {
+      "name": "phoenix feather",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A component of Harry's wand that is connected to Voldemort's wand."
+    },
+    {
+      "name": "quick-quotes quill",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Rita Skeeter's tool for taking notes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "voldemort",
+      "relationship_type": "shared component",
+      "description": "Harry and Voldemort share a phoenix feather in their wands."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "mr ollivander",
+      "relationship_type": "interaction",
+      "description": "Harry interacts with Mr. Ollivander, who explains the connection between Harry's and Voldemort's wands."
+    }
+  ]
+}

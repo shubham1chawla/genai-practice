@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore's army",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Dumbledore's Army is mentioned as a group that Cho and others are part of. It is described as an army that fights against You-Know-Who."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is introduced as a friend of the main character's who looks at them sourly and turns away. Her parents work for the Ministry and have forbidden her to do anything that might upset Umbridge."
+    },
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is introduced as a friend of the main character's who has been made by her boyfriend to come with him. Her parents have forbidden her from doing anything that might upset Umbridge because her mum works for the Ministry."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is mentioned as someone whose approval or disapproval has an impact on others' actions. She is described as someone who is being appeased by Marietta's parents."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric is mentioned as a person who was killed by You-Know-Who. This event has an impact on Cho's decision to fight against You-Know-Who."
+    },
+    {
+      "name": "terry boot",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Terry Boot is introduced as someone whose wand goes whizzing past Harry's ear and hits Alicia Spinnet hard on the nose."
+    },
+    {
+      "name": "alicia spinnet",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Alicia Spinnet is hit by Terry Boot's wand. She is introduced as someone who is part of Dumbledore's Army."
+    },
+    {
+      "name": "luna lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna Lovegood is introduced as someone who is proud to support any anti-Ministry action and has a father who supports the same cause."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He asks Cho about her parents' views on fighting against You-Know-Who."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "group",
+      "singular": false,
+      "description": "You-Know-Who is mentioned as a group that Dumbledore's Army fights against. They are responsible for Cedric's death."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "cho",
+      "entity_2": "umbridge",
+      "relationship_type": "has_parent_forbidden_action",
+      "description": "Cho's parents have forbidden her from doing anything that might upset Umbridge because her mum works for the Ministry."
+    },
+    {
+      "entity_1": "luna lovegood",
+      "entity_2": "you-know-who",
+      "relationship_type": "supports_fighting_against",
+      "description": "Luna Lovegood proudly supports any anti-Ministry action and has a father who supports the same cause against You-Know-Who."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "cedric",
+      "relationship_type": "inspired_by_death",
+      "description": "Cho is inspired to fight against You-Know-Who after what happened to Cedric."
+    }
+  ]
+}

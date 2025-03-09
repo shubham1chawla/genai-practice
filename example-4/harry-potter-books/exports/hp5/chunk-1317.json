@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "centaur",
+      "entity_type": "magical_creature",
+      "singular": true,
+      "description": "The Centaur is mentioned as a creature that Firenze cares for."
+    },
+    {
+      "name": "sneak",
+      "entity_type": "magical_creature",
+      "singular": true,
+      "description": "The Sneak is mentioned as a creature that Firenze cares for."
+    },
+    {
+      "name": "firenze",
+      "entity_type": "centaur",
+      "singular": true,
+      "description": "Firenze is a centaur who cares for magical creatures and has a secret that Harry Potter must deliver to Hagrid."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "human",
+      "singular": true,
+      "description": "Harry Potter is the one who receives the message from Firenze and delivers it to Hagrid."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "human",
+      "singular": true,
+      "description": "Umbridge is a human who continues attending Care of Magical Creatures lessons."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "giant",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper at Hogwarts and receives the message from Harry Potter."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "firenze",
+      "entity_2": "centaur",
+      "relationship_type": "cared_for_by",
+      "description": "Firenze cares for magical creatures, including centaurs."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "firenze",
+      "relationship_type": "delivered_message_to",
+      "description": "Harry Potter delivers Firenze's message to Hagrid."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hagrid",
+      "relationship_type": "delivered_message_to",
+      "description": "Harry Potter delivers Firenze's message to Hagrid."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "care of magical creatures lessons",
+      "relationship_type": "attending",
+      "description": "Umbridge continues attending Care of Magical Creatures lessons."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "firenze's message",
+      "relationship_type": "received_message_from",
+      "description": "Hagrid receives Firenze's message from Harry Potter."
+    }
+  ]
+}

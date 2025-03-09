@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor tower",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is supposed to stay."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story who is being instructed by Dumbledore."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wise and powerful wizard who is giving instructions to Harry."
+    },
+    {
+      "name": "pigwidgeon",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Harry's owl that he wants to send a message with."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is the recipient of Harry's message."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts who is helping Dumbledore."
+    },
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is sprawled at the foot of a tree and being stared at by Hagrid."
+    },
+    {
+      "name": "fang",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Hagrid's dog that he leaves with Dumbledore."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "gryffindor tower",
+      "relationship_type": "location_of",
+      "description": "Harry is supposed to stay in Gryffindor Tower."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry potter",
+      "relationship_type": "instructs",
+      "description": "Dumbledore is instructing Harry on what to do."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "karkaroff",
+      "relationship_type": "stares_at",
+      "description": "Hagrid is staring menacingly at Karkaroff."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "fang",
+      "relationship_type": "leaves_with",
+      "description": "Hagrid leaves Fang with Dumbledore."
+    }
+  ]
+}

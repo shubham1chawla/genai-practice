@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as kneeling in Sirius's old bedroom and reading an old letter from Lily. He is also shown to be in the headmaster's study talking to Phineas Nigellus."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as being hit by a spell intended for Snape's wand hand."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as having an old bedroom where Snape was kneeling."
+    },
+    {
+      "name": "lily",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lily is mentioned as writing a letter to Snape and being referred to in the letter by Grindelwald."
+    },
+    {
+      "name": "gellert grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Grindelwald is mentioned as having written a letter to Lily."
+    },
+    {
+      "name": "phineas nigellus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Phineas Nigellus is shown talking to Snape in the headmaster's study."
+    },
+    {
+      "name": "james",
+      "entity_type": "person",
+      "singular": true,
+      "description": "James is mentioned as being in a photograph with Harry."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being in a photograph with James."
+    },
+    {
+      "name": "granger girl",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The Granger girl is mentioned as mentioning the Forest of Dean."
+    },
+    {
+      "name": "forest of dean",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Forest of Dean is mentioned as a place where Harry and others are camping."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "lily",
+      "relationship_type": "read_letter_from",
+      "description": "Snape read an old letter from Lily."
+    },
+    {
+      "entity_1": "phineas nigellus",
+      "entity_2": "snape",
+      "relationship_type": "talk_to",
+      "description": "Phineas Nigellus talked to Snape in the headmaster's study."
+    },
+    {
+      "entity_1": "granger girl",
+      "entity_2": "forest of dean",
+      "relationship_type": "mention_location",
+      "description": "The Granger girl mentioned the Forest of Dean."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "george",
+      "relationship_type": "missed_with_spell",
+      "description": "Snape missed George with a spell."
+    },
+    {
+      "entity_1": "grindelwald",
+      "entity_2": "lily",
+      "relationship_type": "wrote_letter_to",
+      "description": "Grindelwald wrote a letter to Lily."
+    }
+  ]
+}

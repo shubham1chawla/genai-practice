@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "libatius borage",
+      "entity_type": "person",
+      "singular": true,
+      "description": "author of Advanced Potion-Making"
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "professor who prepared potions for the class"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "student in Slughorn's class"
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "student in Slughorn's class"
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "student in Slughorn's class"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "libatius borage",
+      "relationship_type": "taught_by",
+      "description": "Slughorn is teaching potions that Libatius Borage wrote about"
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "gave_potions_to",
+      "description": "Slughorn gave Harry a potion to look at"
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "ron",
+      "relationship_type": "gave_potions_to",
+      "description": "Slughorn gave Ron a potion to look at"
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "veritaserum",
+      "relationship_type": "created",
+      "description": "Hermione identified the potion as Veritaserum"
+    }
+  ]
+}

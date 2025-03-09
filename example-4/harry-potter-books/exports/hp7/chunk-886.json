@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "you-know-who",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as following a particular line."
+    },
+    {
+      "name": "potterwatch",
+      "entity_type": "program",
+      "singular": true,
+      "description": "A program that is not following You-Know-Who's line, and provides advice on how to treat dragonpox."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "One of Harry Potter's friends, trying to tune into Potterwatch and guess the password."
+    },
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Another one of Ron's friends, on guard duty in the tent."
+    },
+    {
+      "name": "bill",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron's brother, who had a knack for guessing passwords."
+    },
+    {
+      "name": "dragonpox",
+      "entity_type": "disease",
+      "singular": true,
+      "description": "A disease that Potterwatch provides advice on how to treat."
+    },
+    {
+      "name": "cauldron full of hot strong love",
+      "entity_type": "song",
+      "singular": true,
+      "description": "A song that was played on the wireless."
+    },
+    {
+      "name": "order",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "An organization related to the password guessing."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "potterwatch",
+      "relationship_type": "listens_to",
+      "description": "Ron is trying to tune into Potterwatch."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "order",
+      "relationship_type": "related_to",
+      "description": "The password guessing is related to the Order."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "order",
+      "relationship_type": "related_to",
+      "description": "Bill's knack for guessing passwords is related to the Order."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "dragonpox",
+      "relationship_type": "affected_by",
+      "description": "Potterwatch provides advice on how to treat dragonpox, which affects Ron."
+    }
+  ]
+}

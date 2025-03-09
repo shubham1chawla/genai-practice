@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "xenophilius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Xenophilius is a person who is speaking in this conversation. He is mentioned as saying 'Prove that it is not' and later explaining the properties of the Elder Wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is looking outraged at Xenophilius's statement. She is mentioned as saying 'But that’s — I’m sorry, but that’s completely ridiculous!'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is quickly changing the subject to the Elder Wand. He is mentioned as saying 'So the Elder Wand,' and asking Xenophilius about it."
+    },
+    {
+      "name": "egbert",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Egbert is a person who previously owned the Elder Wand. He is mentioned by Xenophilius as an example of how the wand passes from hand to hand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is a magical object that is being discussed in this conversation. It is described by Xenophilius as 'the Hallow that is most easily traced' and explained how it passes from hand to hand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "xenophilius",
+      "entity_2": "elder wand",
+      "relationship_type": "owns",
+      "description": "Xenophilius explains the properties of the Elder Wand, implying that he has knowledge about it. He says 'The Elder Wand is the Hallow that is most easily traced'."
+    },
+    {
+      "entity_1": "egbert",
+      "entity_2": "elder wand",
+      "relationship_type": "owned",
+      "description": "Xenophilius mentions Egbert as an example of how the Elder Wand passes from hand to hand. He says 'the way the wand came to Egbert'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "elder wand",
+      "relationship_type": "interested_in",
+      "description": "Harry is interested in learning more about the Elder Wand and asks Xenophilius about it. He says 'So the Elder Wand,' and asks Xenophilius to explain."
+    }
+  ]
+}

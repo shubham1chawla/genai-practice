@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who wrote a letter and convinced some people of his story."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as excitedly reading a letter that Harry has convinced someone with."
+    },
+    {
+      "name": "fr ed",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as joining in the letter-opening and expressing his opinion about one of the letters."
+    },
+    {
+      "name": "paisley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Paisley is mentioned as the location where a witch wrote a long letter to Harry."
+    },
+    {
+      "name": "you-know-who",
+      "entity_type": "person",
+      "singular": true,
+      "description": "You-Know-Who is mentioned as the one that some people don't want to believe has come back."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "paisley",
+      "relationship_type": "wrote_to",
+      "description": "Harry received a letter from Paisley, as mentioned in the text: 'a long letter from a witch in Paisley'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "you-know-who",
+      "relationship_type": "believed_by",
+      "description": "Some people believe that You-Know-Who has come back, as mentioned in the text: 'he really doesn’t want to believe You-Know-Who’s back'."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "convinced",
+      "description": "Hermione is excitedly reading a letter that Harry has convinced someone with, as mentioned in the text: 'Here’s another one you’ve conv inced, Harry!'"
+    },
+    {
+      "entity_1": "fr ed",
+      "entity_2": "one_of_the_letters",
+      "relationship_type": "expressed_opinion_about",
+      "description": "Fred expressed his opinion about one of the letters, as mentioned in the text: 'Blimey, what a waste of parchment . . .’"
+    }
+  ]
+}

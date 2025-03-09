@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "teapot",
+      "entity_type": "tea_pot",
+      "singular": true,
+      "description": "The teapot is mentioned as an object used to make tea. It is described as part of the scene where the giant is making tea."
+    },
+    {
+      "name": "chipped mugs",
+      "entity_type": "mug",
+      "singular": false,
+      "description": "The chipped mugs are mentioned as objects that are present in the hut. They are not being used at this time."
+    },
+    {
+      "name": "bottle of amber liquid",
+      "entity_type": "alcohol_bottle",
+      "singular": true,
+      "description": "The bottle of amber liquid is mentioned as an object that the giant takes a swig from before making tea."
+    },
+    {
+      "name": "sausages",
+      "entity_type": "sausage",
+      "singular": false,
+      "description": "The sausages are mentioned as objects being cooked on the poker. They are described as fat, juicy, and slightly burnt."
+    },
+    {
+      "name": "poker",
+      "entity_type": "cooking_utensil",
+      "singular": true,
+      "description": "The poker is mentioned as an object used for cooking the sausages."
+    },
+    {
+      "name": "Dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as a person present in the hut. He does not say anything while the giant is working."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "giant",
+      "entity_2": "sausages",
+      "relationship_type": "cooked_by",
+      "description": "The giant is cooking the sausages on the poker. This relationship is described as the giant sliding the first six fat, juicy, slightly burnt sausages from the poker."
+    },
+    {
+      "entity_1": "giant",
+      "entity_2": "poker",
+      "relationship_type": "used_with",
+      "description": "The giant is using the poker to cook the sausages. This relationship is described as the giant working with the poker."
+    },
+    {
+      "entity_1": "giant",
+      "entity_2": "Dudley",
+      "relationship_type": "nearby_to",
+      "description": "The giant and Dudley are in close proximity to each other, as they are both present in the hut. This relationship is described as nobody saying a thing while the giant is working."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "the door of the classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The door is described as being in the classroom where Harry is located. (\"the door of the classroom\")"
+    },
+    {
+      "name": "he",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person performing actions in the story. (\"He opened it a couple of inches.\")"
+    },
+    {
+      "name": "the room",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where Harry is initially located. (\"Very carefully, he edged out of the room\")"
+    },
+    {
+      "name": "the statue of the one-eyed witch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A statue described as being behind which Harry edges out. (\"behind the statue of the one-eyed witch.\")"
+    },
+    {
+      "name": "Harry Potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person whose name appears on the map. (\"labeled Harry Potter\")"
+    },
+    {
+      "name": "the third-ﬂoor corridor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location described as being where Harry is standing according to the map. (\"about halfway down the third-ﬂoor corridor.\")"
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story. (\"He pulled out the map again and saw... that a new ink ﬁgure had appeared upon it, labeled Harry Potter.\")"
+    },
+    {
+      "name": "the map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry to navigate. (\"He pulled out the map again\")"
+    },
+    {
+      "name": "his little ink self",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A representation of Harry on the map. (\"His little ink self appeared to be tapping the witch with his minute wand.\")"
+    },
+    {
+      "name": "the witch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object described as being tapped by Harry's ink self. (\"tapping the witch with his minute wand\")"
+    },
+    {
+      "name": "his real wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry to tap the statue. (\"Harry quickly took out his real wand and tapped the statue.\")"
+    },
+    {
+      "name": "the statue",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object described as being tapped by Harry's real wand. (\"tapped the statue\")"
+    },
+    {
+      "name": "Dissendium",
+      "entity_type": "word",
+      "singular": true,
+      "description": "A word appearing on the map. (\"The tiniest speech bubble had appeared next to his ﬁgure. The word inside said, “Dissendium.”\")"
+    },
+    {
+      "name": "the corridor",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A location described as being where Harry is standing according to the map. (\"He glanced quickly up and down the corridor,\")"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "Harry",
+      "entity_2": "the door of the classroom",
+      "relationship_type": "opened_by",
+      "description": "The relationship between Harry and the door is described as an action performed by Harry. (\"He opened it a couple of inches.\")"
+    },
+    {
+      "entity_1": "he",
+      "entity_2": "the room",
+      "relationship_type": "exited_from",
+      "description": "The relationship between he and the room is described as an action performed by he. (\"Very carefully, he edged out of the room\")"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "the statue of the one-eyed witch",
+      "relationship_type": "behind",
+      "description": "The relationship between Harry and the statue is described as a location where Harry edges out. (\"behind the statue of the one-eyed witch.\")"
+    },
+    {
+      "entity_1": "Harry Potter",
+      "entity_2": "the third-ﬂoor corridor",
+      "relationship_type": "standing_in",
+      "description": "The relationship between Harry and the corridor is described as a location where Harry is standing according to the map. (\"about halfway down the third-ﬂoor corridor.\")"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "the map",
+      "relationship_type": "used",
+      "description": "The relationship between Harry and the map is described as an object used by Harry to navigate. (\"He pulled out the map again\")"
+    },
+    {
+      "entity_1": "his little ink self",
+      "entity_2": "the witch",
+      "relationship_type": "tapping",
+      "description": "The relationship between his little ink self and the witch is described as an action performed by his little ink self. (\"His little ink self appeared to be tapping the witch with his minute wand.\")"
+    },
+    {
+      "entity_1": "his real wand",
+      "entity_2": "the statue",
+      "relationship_type": "tapped",
+      "description": "The relationship between his real wand and the statue is described as an action performed by Harry. (\"Harry quickly took out his real wand and tapped the statue.\")"
+    },
+    {
+      "entity_1": "Dissendium",
+      "entity_2": "the map",
+      "relationship_type": "appeared_on",
+      "description": "The relationship between Dissendium and the map is described as a word appearing on the map. (\"The tiniest speech bubble had appeared next to his ﬁgure. The word inside said, “Dissendium.”\")"
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "the statue",
+      "relationship_type": "tapped_again",
+      "description": "The relationship between Harry and the statue is described as an action performed by Harry after seeing Dissendium. (\"“Dissendium!” Harry whispered, tapping the stone witch again.\")"
+    },
+    {
+      "entity_1": "the statue",
+      "entity_2": "Harry",
+      "relationship_type": "admitted",
+      "description": "The relationship between the statue and Harry is described as an action performed by the statue. (\"At once, the statue’s hump opened wide enough to admit a fairly thin person.\")"
+    }
+  ]
+}

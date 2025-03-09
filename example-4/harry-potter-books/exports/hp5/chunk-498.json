@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is mentioned as the one who set the potion task for Harry, Ron, and Hermione. The text states that Snape could hardly have set them a more difficult potion, implying that Professor Umbridge was involved in setting the task."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as the one who is supervising Harry, Ron, and Hermione while they work on their potions. He gives them instructions and checks on their progress."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the students working on the potion task. The text describes his cauldron as issuing copious amounts of dark gray steam."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is another student working on the potion task. His cauldron is described as spitting green sparks."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of the students working on the potion task."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a student who is also working on the potion task. The text describes him as feverishly prodding his cauldron."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "supervises",
+      "description": "Snape is supervising Harry while he works on the potion task. Snape gives him instructions and checks on his progress."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "ron",
+      "relationship_type": "supervises",
+      "description": "Snape is also supervising Ron while he works on the potion task."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "hermione",
+      "relationship_type": "supervises",
+      "description": "Snape is supervising Hermione as well, giving her instructions and checking on her progress."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "assigned_task_by",
+      "description": "Professor Umbridge assigned the potion task to Harry. The text states that Snape could hardly have set them a more difficult potion, implying that Professor Umbridge was involved in setting the task."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor umbridge",
+      "relationship_type": "assigned_task_by",
+      "description": "Professor Umbridge also assigned the potion task to Ron."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "professor umbridge",
+      "relationship_type": "assigned_task_by",
+      "description": "Professor Umbridge assigned the potion task to Hermione as well."
+    }
+  ]
+}

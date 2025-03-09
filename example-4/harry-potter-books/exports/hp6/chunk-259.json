@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned in the first line as '138 H ARRY  POTTER'."
+    },
+    {
+      "name": "marcus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's uncle, mentioned in the conversation between Slughorn and Belby."
+    },
+    {
+      "name": "belby",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who is eating pheasant and being helped by Slughorn."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher who helps Belby with his choking problem."
+    },
+    {
+      "name": "orde of merlin",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "Harry Potter's group, mentioned in the first line as 'his O r d e r  o f  M e r l i n'."
+    },
+    {
+      "name": "wolfsbane potion",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A potion that Slughorn mentions was invented by Harry's uncle."
+    },
+    {
+      "name": "pheasant",
+      "entity_type": "food",
+      "singular": false,
+      "description": "The food that Belby is eating when he starts choking."
+    },
+    {
+      "name": "mclaggen",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who Slughorn turns to after finishing with Belby."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "belby",
+      "relationship_type": "helps",
+      "description": "Slughorn helps Belby when he starts choking."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "mclaggen",
+      "relationship_type": "talks_to",
+      "description": "After finishing with Belby, Slughorn turns to McLaggen and talks to him."
+    }
+  ]
+}

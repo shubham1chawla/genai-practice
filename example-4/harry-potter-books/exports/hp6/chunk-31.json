@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is introduced as someone who is cutting in and speaking to the Prime Minister about security."
+    },
+    {
+      "name": "muggles",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Muggles are mentioned as a group that would be affected if their Prime Minister gets put under the Imperius Curse."
+    },
+    {
+      "name": "kingsley shacklebolt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Kingsley Shacklebolt is introduced as the new secretary in the Prime Minister's outer office and is described as highly efficient."
+    },
+    {
+      "name": "prime minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Prime Minister is mentioned as someone who has already got security but Scrimgeour suggests that it might not be enough."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "prime minister",
+      "relationship_type": "has_concerns_about_security",
+      "description": "Scrimgeour has concerns about the Prime Minister's security and suggests that it might not be enough."
+    },
+    {
+      "entity_1": "kingsley shacklebolt",
+      "entity_2": "prime minister",
+      "relationship_type": "works_for",
+      "description": "Kingsley Shacklebolt is assigned to work for the Prime Minister's protection."
+    }
+  ]
+}

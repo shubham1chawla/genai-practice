@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story, mentioned as a threat to Harry Potter. (How long it would take Voldemort to get to this place...)"
+    },
+    {
+      "name": "greyback",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Snatcher who is leading the group that has captured Harry Potter. (He roared triumphantly. \"We've got Potter!\" Greyback said.)"
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, being captured by the Snatchers. (They've got Potter! Harry Potter!)"
+    },
+    {
+      "name": "snatchers",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group of people who are working for Voldemort and have captured Harry Potter. (One of the Snatchers strode to the gates...)"
+    },
+    {
+      "name": "albino peacock",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A ghostly white shape seen by Harry above him as he is being dragged through the gates. (He saw a ghostly white shape above him...)"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "greyback",
+      "entity_2": "harry potter",
+      "relationship_type": "captured_by",
+      "description": "Greyback and his men have captured Harry Potter, as stated by Greyback. (We've got Potter! Harry Potter!)"
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "greyback",
+      "relationship_type": "working_for",
+      "description": "Voldemort is working through the Snatchers, including Greyback, to capture Harry Potter. (How long it would take Voldemort to get to this place...)"
+    }
+  ]
+}

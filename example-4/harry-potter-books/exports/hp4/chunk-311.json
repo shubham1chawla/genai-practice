@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as speaking quietly to Bill."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is mentioned as responding to Fred."
+    },
+    {
+      "name": "charlie",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Charlie is mentioned as speaking about Mad-Eye and Dumbledore."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is asked by Charlie who Mad-Eye is."
+    },
+    {
+      "name": "mad-eye",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mad-Eye is mentioned as a retired Auror and Dark wizard catcher."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned by Charlie as an old friend of his."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned by Bill as a great wizard in his time."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley leaves the room after Fred speaks."
+    },
+    {
+      "name": "dad",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dad is mentioned by Fred as collecting plugs."
+    },
+    {
+      "name": "azkaban",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Azkaban is mentioned as a place where Mad-Eye caught Dark wizards."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is mentioned as the workplace of Mad-Eye."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "charlie",
+      "entity_2": "mad-eye",
+      "relationship_type": "knew",
+      "description": "Charlie knew Mad-Eye from work."
+    },
+    {
+      "entity_1": "bill",
+      "entity_2": "moody",
+      "relationship_type": "admired",
+      "description": "Bill admired Moody as a great wizard in his time."
+    },
+    {
+      "entity_1": "charlie",
+      "entity_2": "dumbledore",
+      "relationship_type": "friend",
+      "description": "Charlie mentioned Dumbledore as an old friend of his."
+    },
+    {
+      "entity_1": "mad-eye",
+      "entity_2": "azkaban",
+      "relationship_type": "worked_at",
+      "description": "Mad-Eye worked at Azkaban to catch Dark wizards."
+    },
+    {
+      "entity_1": "dad",
+      "entity_2": "ministry",
+      "relationship_type": "employed_by",
+      "description": "Dad was employed by the Ministry."
+    }
+  ]
+}

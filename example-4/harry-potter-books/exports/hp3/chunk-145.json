@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as one of the people who got out of the carriage. She is described as getting out along with Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the people who got out of the carriage. He is described as getting out along with Hermione."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as stepping down from the carriage and being addressed by Malfoy."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as elbowed past Hermione to block Harry's way up the stone steps. He is also mentioned as addressing Ron."
+    },
+    {
+      "name": "longbottom",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Longbottom is mentioned by Malfoy as telling the truth about Harry fainting."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Professor Lupin is described as getting out of the next carriage and intervening in the situation between Malfoy and Ron."
+    },
+    {
+      "name": "dementor",
+      "entity_type": "monster",
+      "singular": true,
+      "description": "A dementor is mentioned by Malfoy as frightening Harry."
+    },
+    {
+      "name": "castle",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The castle is described as being up the stone steps that Harry and others are trying to reach."
+    },
+    {
+      "name": "carriage",
+      "entity_type": "vehicle",
+      "singular": true,
+      "description": "The carriage is mentioned as swaying to a halt and people getting out of it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "harry",
+      "relationship_type": "block",
+      "description": "Malfoy blocks Harry's way up the stone steps."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "ron",
+      "relationship_type": "tease",
+      "description": "Malfoy teases Ron about fainting."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "malfoy",
+      "relationship_type": "intervene",
+      "description": "Professor Lupin intervenes in the situation between Malfoy and Ron."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementor",
+      "relationship_type": "frightened_by",
+      "description": "Harry is frightened by a dementor."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "lupin",
+      "relationship_type": "disrespect",
+      "description": "Malfoy gives Professor Lupin an insolent stare, showing disrespect towards him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "defend",
+      "description": "Ron defends himself against Malfoy's teasing."
+    }
+  ]
+}

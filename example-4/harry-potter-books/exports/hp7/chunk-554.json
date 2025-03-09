@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a young wizard who lit his wand and looked out upon a deserted scene."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, who had not packed any food in her magical bag and had collected wild mushrooms for them to eat."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The location where they were supposed to return that night, but instead found themselves in a deserted clearing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who pushed his portion of the wild mushroom stew away due to feeling queasy."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "swapped_places_with",
+      "description": "Harry swapped places with Hermione at ten o'clock, as they were in a deserted clearing."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "grimmauld place",
+      "relationship_type": "supposed_to_return_to",
+      "description": "They were supposed to return to Grimmauld Place that night, but instead found themselves in a deserted clearing."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "collected_food_for",
+      "description": "Hermione had collected wild mushrooms for them to eat, which Harry only persevered with so as not to hurt her feelings."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "ate_with",
+      "description": "Ron ate the wild mushroom stew with Harry, but pushed his portion away due to feeling queasy."
+    }
+  ]
+}

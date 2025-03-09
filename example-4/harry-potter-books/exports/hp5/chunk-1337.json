@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "centaur",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A mythical creature with the upper body of a human and the lower body of a horse. It is mentioned in the context of a story or legend."
+    },
+    {
+      "name": "edgecombe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Edgecombe is a person who comes to Professor Umbridge's office with information about a secret meeting. She is described as telling Professor Umbridge that there will be a meeting in the Room of Requirement."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A secret room on the seventh floor of a building, also known as the Room of Requirement. It is mentioned as a place where Miss Edgecombe says something will be found to Professor Umbridge's advantage."
+    },
+    {
+      "name": "marietta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marietta is a person who is hiding her face and is affected by some kind of hex. She becomes distressed when she sees herself in the mirror."
+    },
+    {
+      "name": "fudge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fudge is a person who speaks to Marietta after she has become distressed. He tries to comfort her and asks her questions about the meeting."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is a person who receives information from Miss Edgecombe about a secret meeting in the Room of Requirement. He also speaks to Marietta after she has become distressed."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "edgecombe",
+      "entity_2": "umbridge",
+      "relationship_type": "informant",
+      "description": "Miss Edgecombe informs Professor Umbridge about a secret meeting in the Room of Requirement."
+    },
+    {
+      "entity_1": "fudge",
+      "entity_2": "marietta",
+      "relationship_type": "comforter",
+      "description": "Fudge tries to comfort Marietta after she has become distressed."
+    }
+  ]
+}

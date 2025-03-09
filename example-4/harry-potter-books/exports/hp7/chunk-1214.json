@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who is being addressed by McGonagall."
+    },
+    {
+      "name": "mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "McGonagall is introduced as a teacher who is giving instructions to Harry."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as a person who is accompanying Harry."
+    },
+    {
+      "name": "miss lovegood",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Miss Lovegood is introduced as a person who is being addressed by McGonagall."
+    },
+    {
+      "name": "gryﬃndors",
+      "entity_type": "house",
+      "singular": false,
+      "description": "Gryﬃndors is mentioned as a house in the school."
+    },
+    {
+      "name": "great hall",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Great Hall is introduced as a location where students are to be brought."
+    },
+    {
+      "name": "room of requirement",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Room of Requirement is mentioned as a location that Harry and Luna need to return to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "harry",
+      "relationship_type": "addressed_by",
+      "description": "McGonagall addresses Harry."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "miss lovegood",
+      "relationship_type": "addressed_by",
+      "description": "McGonagall addresses Miss Lovegood."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "accompanying",
+      "description": "Harry and Luna are accompanying each other."
+    },
+    {
+      "entity_1": "mcgonagall",
+      "entity_2": "gryﬃndors",
+      "relationship_type": "addressed_to",
+      "description": "McGonagall addresses the Gryﬃndors house."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "great hall",
+      "relationship_type": "to_be_brought_to",
+      "description": "Harry is to be brought to the Great Hall."
+    },
+    {
+      "entity_1": "luna",
+      "entity_2": "room of requirement",
+      "relationship_type": "returning_to",
+      "description": "Luna and Harry are returning to the Room of Requirement."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as speaking and being given advice by Cedric."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is giving advice to Harry, telling him where to take a bath."
+    },
+    {
+      "name": "boris the bewildered",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A statue of a person named Boris, mentioned as being located on the fifth floor."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "cedric",
+      "relationship_type": "advises",
+      "description": "Cedric is giving advice to Harry on how to think and where to take a bath."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "boris the bewildered",
+      "relationship_type": "related_to_location",
+      "description": "Harry needs to go to the bathroom located near the statue of Boris the Bewildered."
+    }
+  ]
+}

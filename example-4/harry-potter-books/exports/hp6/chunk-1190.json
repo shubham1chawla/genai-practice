@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "the white tomb",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The White Tomb 605 is mentioned as a location."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character and is being offered protection by the Ministry."
+    },
+    {
+      "name": "the ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry is offering Harry protection and is led by Scrimgeour."
+    },
+    {
+      "name": "scrimgeour",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Scrimgeour is the head of the Ministry delegation and has a cold tone towards Harry."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort wants to kill Harry himself and Aurors won't stop him."
+    },
+    {
+      "name": "aurors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Aurors are a group of wizards who work for the Ministry."
+    },
+    {
+      "name": "stan shunpike",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Stan Shunpike is mentioned as someone who has not been released yet."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is Harry's mentor and is implied to be behind the Ministry's actions."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a member of the Ministry delegation."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the ministry",
+      "relationship_type": "offered_protection_by",
+      "description": "The Ministry offers Harry protection."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "wants_to_kill",
+      "description": "Voldemort wants to kill Harry himself."
+    },
+    {
+      "entity_1": "aurors",
+      "entity_2": "voldemort",
+      "relationship_type": "cannot_stop",
+      "description": "Aurors won't stop Voldemort from killing Harry."
+    },
+    {
+      "entity_1": "scrimgeour",
+      "entity_2": "harry",
+      "relationship_type": "disapproves_of",
+      "description": "Scrimgeour has a cold tone towards Harry."
+    },
+    {
+      "entity_1": "stan shunpike",
+      "entity_2": "the ministry",
+      "relationship_type": "detained_by",
+      "description": "Stan Shunpike is detained by the Ministry."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "mentors",
+      "description": "Dumbledore is Harry's mentor."
+    },
+    {
+      "entity_1": "percy",
+      "entity_2": "the ministry",
+      "relationship_type": "member_of",
+      "description": "Percy is a member of the Ministry delegation."
+    }
+  ]
+}

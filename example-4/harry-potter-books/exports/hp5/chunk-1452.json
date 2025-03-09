@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor of Transfiguration at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "auror training",
+      "entity_type": "program",
+      "singular": false,
+      "description": "A three-year program for students to become Aurors."
+    },
+    {
+      "name": "ministry",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic that looks into the records of those applying to be Aurors."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Student at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Headmaster of Hogwarts School of Witchcraft and Wizardry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "auror training",
+      "entity_2": "ministry",
+      "relationship_type": "affiliated_with",
+      "description": "The Ministry is affiliated with Auror training, as they look into the records of those applying to be Aurors."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "auror training",
+      "relationship_type": "has_chance_of_becoming",
+      "description": "Harry Potter has a chance of becoming an Auror."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "defends",
+      "description": "Professor McGonagall defends Harry Potter against Professor Umbridge's accusations."
+    },
+    {
+      "entity_1": "ministry",
+      "entity_2": "professor umbridge",
+      "relationship_type": "employs",
+      "description": "The Ministry employs Professor Umbridge, who is investigating the records of those applying to be Aurors."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "dumbledore",
+      "relationship_type": "has_similar_chance_of_returning",
+      "description": "Harry Potter has a similar chance of becoming an Auror as Dumbledore has of returning to Hogwarts."
+    }
+  ]
+}

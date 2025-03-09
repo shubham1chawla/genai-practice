@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "house of gaunt",
+      "entity_type": "family",
+      "singular": true,
+      "description": "The House of Gaunt is a family known for their habit of marrying their own cousins. They squandered their family gold several generations before Marvolo was born."
+    },
+    {
+      "name": "marvolo",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Marvolo was left in squalor and poverty with a nasty temper, arrogance, and pride."
+    },
+    {
+      "name": "merope gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merope Gaunt is the mother of Voldemort. She fell in love with Tom Riddle Senior."
+    },
+    {
+      "name": "tom riddle senior",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle Senior was a handsome Muggle who used to go riding past the Gaunt cottage and had an affair with Merope Gaunt."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the son of Tom Riddle Senior and Merope Gaunt."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "house of gaunt",
+      "entity_2": "marvolo",
+      "relationship_type": "parent_of",
+      "description": "The House of Gaunt is Marvolo's family."
+    },
+    {
+      "entity_1": "merope gaunt",
+      "entity_2": "voldemort",
+      "relationship_type": "mother_of",
+      "description": "Merope Gaunt is Voldemort's mother."
+    },
+    {
+      "entity_1": "tom riddle senior",
+      "entity_2": "voldemort",
+      "relationship_type": "father_of",
+      "description": "Tom Riddle Senior is Voldemort's father."
+    },
+    {
+      "entity_1": "merope gaunt",
+      "entity_2": "tom riddle senior",
+      "relationship_type": "had_affair_with",
+      "description": "Merope Gaunt had an affair with Tom Riddle Senior."
+    }
+  ]
+}

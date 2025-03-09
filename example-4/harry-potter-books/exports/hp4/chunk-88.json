@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as leaving the room and being suspected of hoping for a glimpse of Dudley."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's bedroom is known to George and Harry has heard a lot about Dudley from him."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is suspected of hoping for a glimpse of Dudley along with George."
+    },
+    {
+      "name": "dudley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dudley is mentioned as being talked about by Harry and hoped to be seen by Fred and George."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley tries to break the silence with a compliment on the Dursleys' place."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon's face turns purple in anger at Mr. Weasley's comment."
+    },
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia starts chewing her tongue again in response to Mr. Weasley's comment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "harry",
+      "relationship_type": "knew_where",
+      "description": "George and Harry know where each other's bedrooms are."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "dudley",
+      "relationship_type": "wanted_to_see",
+      "description": "Fred wants to see Dudley, as he has heard a lot about him from Harry."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "dudley",
+      "relationship_type": "wanted_to_see",
+      "description": "George also wants to see Dudley, along with Fred."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "uncle vernon",
+      "relationship_type": "complimented",
+      "description": "Mr. Weasley compliments Uncle Vernon's place, which doesn't go down well with him."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "aunt petunia",
+      "relationship_type": "complimented",
+      "description": "Mr. Weasley also compliments Aunt Petunia's place, but she is too scared to respond."
+    }
+  ]
+}

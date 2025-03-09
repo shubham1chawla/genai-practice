@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth is introduced as the barman who is impassive and turns away from Harry without confirming or denying his identity."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who recognizes Aberforth's back and addresses him."
+    },
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is mentioned as the owner of a mirror that Harry broke nearly two years before."
+    },
+    {
+      "name": "dung",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dung is introduced as someone from whom Aberforth bought Sirius's mirror."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "aberforth",
+      "entity_2": "harry",
+      "relationship_type": "recognized_by",
+      "description": "Harry recognizes Aberforth's back."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "sirius",
+      "relationship_type": "owned_by",
+      "description": "Aberforth bought Sirius's mirror from Dung."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "dung",
+      "relationship_type": "bought_from",
+      "description": "Aberforth bought the mirror from Dung."
+    }
+  ]
+}

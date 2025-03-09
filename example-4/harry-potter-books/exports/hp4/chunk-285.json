@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "perce",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Perce is mentioned as a person who needs to shut up by Bill."
+    },
+    {
+      "name": "bill",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bill is the one who tells Perce to shut up."
+    },
+    {
+      "name": "mr. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mr. Weasley reads an article in the Daily Prophet and mentions that he is mentioned."
+    },
+    {
+      "name": "mrs. weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mrs. Weasley reacts to Mr. Weasley's mention of being mentioned."
+    },
+    {
+      "name": "daily prophet",
+      "entity_type": "newspaper",
+      "singular": true,
+      "description": "The Daily Prophet is the newspaper that Mr. Weasley reads."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bill",
+      "entity_2": "perce",
+      "relationship_type": "tells_to_shut_up",
+      "description": "Bill tells Perce to shut up."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "daily prophet",
+      "relationship_type": "reads",
+      "description": "Mr. Weasley reads the Daily Prophet article."
+    },
+    {
+      "entity_1": "mr. weasley",
+      "entity_2": "bill",
+      "relationship_type": "reacts_to",
+      "description": "Mrs. Weasley reacts to Mr. Weasley's mention of being mentioned by Bill."
+    },
+    {
+      "entity_1": "mrs. weasley",
+      "entity_2": "mr. weasley",
+      "relationship_type": "reacts_to",
+      "description": "Mrs. Weasley reacts to Mr. Weasley's mention of being mentioned."
+    }
+  ]
+}

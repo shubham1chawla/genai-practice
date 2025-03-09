@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is a werewolf who received the bite at a young age and has been taking the Wolfsbane Potion to control his transformations."
+    },
+    {
+      "name": "snape",
+      "entity_type": "professor",
+      "singular": true,
+      "description": "Snape is a professor who has been making the Wolfsbane Potion for Lupin."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends who tries to interrupt Lupin."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends who tells Ron to be quiet and watches Lupin intently."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lupin",
+      "entity_2": "snape",
+      "relationship_type": "makes_potion_for",
+      "description": "Snape makes the Wolfsbane Potion for Lupin."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ron",
+      "relationship_type": "tells_to_be_quiet",
+      "description": "Hermione tells Ron to be quiet."
+    },
+    {
+      "entity_1": "lupin",
+      "entity_2": "full_moon",
+      "relationship_type": "transforms_into_monster_during",
+      "description": "Lupin transforms into a monster during the full moon before taking the Wolfsbane Potion."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "lupin",
+      "relationship_type": "provides_potion_to",
+      "description": "Snape provides the Wolfsbane Potion to Lupin."
+    }
+  ]
+}

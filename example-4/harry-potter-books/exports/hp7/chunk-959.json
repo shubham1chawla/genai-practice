@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "dobby",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Dobby is a house-elf who is fiercely loyal to Harry Potter. He is described as 'tiny' and 'shaking', indicating his fear of Bellatrix."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Bellatrix is a Death Eater who is trying to kill Harry Potter. She is described as shrieking and bawling at Dobby."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main character of the story. He is being attacked by Bellatrix and her cohorts."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Narcissa is a witch who has her wand taken away by Dobby. She is described as shrieking along with Bellatrix."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Griphook is a goblin who is being rescued by Harry Potter from under the chandelier."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story. He is described as being about to arrive with his Death Eaters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry potter",
+      "relationship_type": "protects",
+      "description": "Dobby has come to save Harry Potter and his friends, indicating that he is protecting them."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "dobby",
+      "relationship_type": "attacks",
+      "description": "Bellatrix is trying to kill Dobby, indicating that she is attacking him."
+    },
+    {
+      "entity_1": "narcissa",
+      "entity_2": "dobby",
+      "relationship_type": "is_attacked_by",
+      "description": "Narcissa's wand is taken away by Dobby, indicating that he is attacking her."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "griphook",
+      "relationship_type": "rescues",
+      "description": "Harry Potter is rescuing Griphook from under the chandelier."
+    }
+  ]
+}

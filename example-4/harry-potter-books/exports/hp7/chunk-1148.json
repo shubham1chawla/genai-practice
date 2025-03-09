@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry Potter, a main character in the story. He is mentioned as being with Dumbledore and Grindelwald in the past."
+    },
+    {
+      "name": "grindelwald",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gellert Grindelwald, a dark wizard who hurt Ariana. He is mentioned as being present in Harry's memories."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Albus Dumbledore, Harry's mentor and friend. He is mentioned as whispering to Harry and watching Grindelwald hurting Ariana."
+    },
+    {
+      "name": "aberforth",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aberforth Dumbledore, Albus' brother. He is questioning Harry about his brother's intentions."
+    },
+    {
+      "name": "ariana",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ariana Dumbledore, Aberforth and Albus' sister. She was hurt by Grindelwald."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grindelwald",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Grindelwald in his memories."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "ariana",
+      "relationship_type": "protected",
+      "description": "Dumbledore was protecting Ariana from Grindelwald's harm."
+    },
+    {
+      "entity_1": "aberforth",
+      "entity_2": "harry",
+      "relationship_type": "questioned",
+      "description": "Aberforth is questioning Harry about his brother's intentions towards him."
+    }
+  ]
+}

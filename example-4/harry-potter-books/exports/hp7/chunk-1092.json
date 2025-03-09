@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "huffelpuffs cup",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cup is a magical object that is being protected by Hermione. It is mentioned as 'Huﬄepuﬀ’s cup' in the text, indicating its ownership."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a person who is trying to protect herself and others from the burning metal. She yells 'Impervius!' in an attempt to protect them."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is a person who is struggling to keep Bogrod from slipping beneath the rising tide, along with Hermione."
+    },
+    {
+      "name": "goblins",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The goblins are a group of people who are being protected by Ron and Hermione. They are struggling to keep Bogrod from slipping beneath the rising tide."
+    },
+    {
+      "name": "bogrod",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bogrod is a person who is trying to slip beneath the rising tide, and Ron and Hermione are struggling to keep him from doing so."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "Griphook is a goblin who has sunk out of sight, but Harry manages to pull his fingers and bring him back up. Griphook then clambered onto Harry's shoulders again."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who is trying to protect himself and others from the burning metal. He yells 'Liberatocorpus!' and pulls Griphook back up."
+    },
+    {
+      "name": "sword",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The sword is a magical object that flies out of Harry's hand when he lands on the surface of the treasure. It had the cup on it, which is why Harry wants to get it back."
+    },
+    {
+      "name": "treasure",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The treasure is a magical object that is rising up and causing problems for Ron, Hermione, and Griphook. It is mentioned as 'the swelling mass of red-hot objects'."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "huffelpuffs cup",
+      "entity_2": "sword",
+      "relationship_type": "attached_to",
+      "description": "The sword had the cup on it, which is why Harry wants to get it back."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "huffelpuffs cup",
+      "relationship_type": "protecting",
+      "description": "Hermione is trying to protect herself and the cup from the burning metal. She yells 'Impervius!' in an attempt to protect them."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "bogrod",
+      "relationship_type": "struggling_to_keep_from_slipping",
+      "description": "Ron is struggling to keep Bogrod from slipping beneath the rising tide, along with Hermione."
+    },
+    {
+      "entity_1": "griphook",
+      "entity_2": "harry",
+      "relationship_type": "on_shoulder_of",
+      "description": "Griphook clambered onto Harry's shoulders again after being pulled back up by Harry."
+    }
+  ]
+}

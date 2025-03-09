@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as a person who was not invisible, indicating he has a physical presence."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as a person who is eager to discuss the situation with Harry."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as a person who quickly suggests a possible explanation for Harry's disappearance."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as a person who has experience and expertise in the field of Aurorship."
+    },
+    {
+      "name": "auror",
+      "entity_type": "job_title",
+      "singular": true,
+      "description": "Auror is mentioned as a job title that Moody aspires to have."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "grounds",
+      "relationship_type": "left",
+      "description": "Harry left the grounds, indicating he was no longer present there."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "concerned_about",
+      "description": "Hermione is concerned about Harry's disappearance and wants to discuss it with him."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "moody",
+      "relationship_type": "admires",
+      "description": "Ron looks at Moody with admiration, hoping to be told he has the makings of an Auror like Moody."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "auror",
+      "relationship_type": "aspires_to_be",
+      "description": "Moody aspires to have the job title of Auror."
+    }
+  ]
+}

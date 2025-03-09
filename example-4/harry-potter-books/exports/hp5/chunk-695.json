@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "professor umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Umbridge is introduced as a teacher who asks Professor McGonagall about her teaching experience. She is described as making notes and speaking in a polite tone."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is introduced as a teacher who has been teaching at Hogwarts for 39 years. She is described as brusque and coldly indifferent."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being in detention with Professor Umbridge that evening. He is also seen giving a faint smile to Professor McGonagall."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is nudged by Professor McGonall and then falls back to eavesdrop on the conversation between Professor Umbridge and Professor McGonagall."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is nudged by Ron and then falls back to eavesdrop on the conversation between Professor Umbridge and Professor McGonagall."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor umbridge",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "question_answer",
+      "description": "Professor Umbridge asks Professor McGonagall about her teaching experience."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "professor umbridge",
+      "relationship_type": "answer_question",
+      "description": "Professor McGonagall answers Professor Umbridge's question about her teaching experience."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "smile",
+      "description": "Harry gives a faint smile to Professor McGonagall."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "nudge",
+      "description": "Ron is nudged by Professor McGonagall."
+    }
+  ]
+}

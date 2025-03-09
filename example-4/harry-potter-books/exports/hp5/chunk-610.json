@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "cho",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cho is a student who is talking to Harry about Umbridge and his detention."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student who was put in detention by Umbridge for telling the truth about Cedric's death."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is a teacher who put Harry in detention for telling the truth about Cedric's death."
+    },
+    {
+      "name": "cedric",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cedric died and his death was known to everyone at school."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "detained_by",
+      "description": "Umbridge put Harry in detention for telling the truth about Cedric's death."
+    },
+    {
+      "entity_1": "cho",
+      "entity_2": "harry",
+      "relationship_type": "admires",
+      "description": "Cho admires Harry for standing up to Umbridge and telling the truth."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "book_title",
+      "singular": true,
+      "description": "The title of a book mentioned in the text."
+    },
+    {
+      "name": "fred weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Weasley family, mentioned as entering the kitchen with his twin brother George."
+    },
+    {
+      "name": "george weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Weasley family, mentioned as sitting down at the kitchen table and teasing Ron."
+    },
+    {
+      "name": "ronald weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Weasley family, mentioned as grumbling about not being able to use magic yet."
+    },
+    {
+      "name": "ginny weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the Weasley family, mentioned as having information about Ron and a young lady called Lavender Brown."
+    },
+    {
+      "name": "lavender brown",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A young lady mentioned as being associated with Ron."
+    },
+    {
+      "name": "sprouts",
+      "entity_type": "food",
+      "singular": false,
+      "description": "Vegetables that Ron is cooking in the kitchen."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ronald weasley",
+      "entity_2": "fred weasley",
+      "relationship_type": "brother_of",
+      "description": "Ron and Fred are brothers, mentioned as entering the kitchen together."
+    },
+    {
+      "entity_1": "george weasley",
+      "entity_2": "ronald weasley",
+      "relationship_type": "brother_of",
+      "description": "George and Ron are brothers, mentioned as teasing each other in the kitchen."
+    },
+    {
+      "entity_1": "ginny weasley",
+      "entity_2": "lavender brown",
+      "relationship_type": "informant_about",
+      "description": "Ginny has information about Ron's association with Lavender Brown."
+    }
+  ]
+}

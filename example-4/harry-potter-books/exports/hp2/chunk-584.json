@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "chamber of secrets",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Chamber of Secrets is mentioned as the location where a student has been taken by the monster."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is introduced as one of the teachers who arrives in the staff room and announces that a student has been taken by the monster."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Flitwick is mentioned as one of the teachers who reacts to the news with fear and tears."
+    },
+    {
+      "name": "professor sprout",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Sprout is introduced as one of the teachers who claps her hands over her mouth in shock."
+    },
+    {
+      "name": "severus snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Severus Snape is mentioned as one of the teachers who reacts to the news with skepticism."
+    },
+    {
+      "name": "madam hooch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madam Hooch is introduced as one of the teachers who asks which student has been taken by the monster."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is mentioned as the house whose heir left a message in the Chamber."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "has taken student",
+      "description": "Professor McGonagall announces that a student has been taken by the monster into the Chamber itself."
+    },
+    {
+      "entity_1": "slytherin",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "left message",
+      "description": "The heir of Slytherin left another message in the Chamber, underneath the first one."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "chamber of secrets",
+      "relationship_type": "has been affected by news",
+      "description": "Professor Flitwick bursts into tears upon hearing the news that a student has been taken by the monster."
+    },
+    {
+      "entity_1": "madam hooch",
+      "entity_2": "student",
+      "relationship_type": "is asking about",
+      "description": "Madam Hooch asks which student has been taken by the monster."
+    },
+    {
+      "entity_1": "severus snape",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "has questioned",
+      "description": "Severus Snape questions Professor McGonagall about how she is sure that a student has been taken by the monster."
+    }
+  ]
+}

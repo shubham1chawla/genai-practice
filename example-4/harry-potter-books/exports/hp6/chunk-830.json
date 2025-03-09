@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, Harry, is described as frowning and staring at the fire. He is also mentioned as saying 'I've been stupid' and 'It's obvious, isn't it?' which shows his realization of Malfoy's plan."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is described as the one who stole some Polyjuice Potion. He is also mentioned as not telling Crabbe and Goyle what he's up to, which shows his cunning nature."
+    },
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is described as one of the students standing guard for Malfoy. He is also mentioned as being stupid enough to do what he's told, which shows his loyalty to Malfoy."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is described as one of the students standing guard for Malfoy. He is also mentioned as being stupid enough to do what he's told, which shows his loyalty to Malfoy."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Slughorn is described as the one who showed Harry and Ron the Polyjuice Potion in their first Potions lesson."
+    },
+    {
+      "name": "polyjuice potion",
+      "entity_type": "substance",
+      "singular": false,
+      "description": "The Polyjuice Potion is described as something that Malfoy stole from Slughorn's lesson. It is also mentioned as being used to disguise oneself."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "malfoy",
+      "relationship_type": "suspects",
+      "description": "Harry suspects Malfoy of stealing the Polyjuice Potion and using it for his own purposes. This is shown when Harry says 'It's obvious, isn't it?' and realizes that Malfoy must have stolen some of the potion during their Potions lesson."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "crabbe",
+      "relationship_type": "orders",
+      "description": "Malfoy orders Crabbe to stand guard for him, which shows that Malfoy is in charge and giving instructions to his loyal followers."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "goyle",
+      "relationship_type": "orders",
+      "description": "Malfoy also orders Goyle to stand guard for him, which shows that Malfoy is in charge and giving instructions to his loyal followers."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "polyjuice potion",
+      "relationship_type": "shows",
+      "description": "Slughorn shows Harry and Ron the Polyjuice Potion in their first Potions lesson, which is where Malfoy must have stolen some of it."
+    }
+  ]
+}

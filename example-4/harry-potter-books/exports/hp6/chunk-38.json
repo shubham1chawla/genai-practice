@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "cissy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Cissy is the person being addressed by Bella. The text mentions 'Cissy, wait!' indicating that Cissy is the one who needs to be stopped or waited for."
+    },
+    {
+      "name": "bella",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bella is the person chasing after Narcissa. The text mentions 'Bella followed' indicating that Bella is actively pursuing Cissy."
+    },
+    {
+      "name": "narcissa",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Narcissa is the person being chased by Bella. The text mentions 'Narcissa darting through an alley' indicating that Narcissa is trying to escape."
+    },
+    {
+      "name": "the dark lord",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Dark Lord is a person who trusts someone else. The text mentions 'The Dark Lord trusts him, doesn’t he?' indicating that the Dark Lord has some level of trust in this person."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "bella",
+      "entity_2": "narcissa",
+      "relationship_type": "chases",
+      "description": "Bella is chasing after Narcissa. The text mentions 'Bella followed' and 'The pursuer caught up with her prey' indicating that Bella is actively pursuing Narcissa."
+    },
+    {
+      "entity_1": "bella",
+      "entity_2": "cissy",
+      "relationship_type": "tries_to_stop",
+      "description": "Bella is trying to stop Cissy. The text mentions 'Cissy, wait!' and 'The pursuer caught up with her prey' indicating that Bella is trying to prevent Cissy from doing something."
+    },
+    {
+      "entity_1": "cissy",
+      "entity_2": "the dark lord",
+      "relationship_type": "has_trust_of",
+      "description": "Cissy has the trust of the Dark Lord. The text mentions 'The Dark Lord trusts him, doesn’t he?' indicating that Cissy is someone who has earned the trust of the Dark Lord."
+    }
+  ]
+}

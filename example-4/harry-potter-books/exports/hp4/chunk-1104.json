@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, who is listening to the argument between two voices."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who suddenly says 'Shh!' and interrupts the conversation. She is likely a friend of Harry's."
+    },
+    {
+      "name": "owlery",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place where owls are kept, mentioned as being climbed by someone."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "A government-like institution that deals with magical matters, mentioned as something that the speaker would not want to be known about."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "owlery",
+      "relationship_type": "location_hearing",
+      "description": "Harry is hearing two voices arguing as they climb the steps up to the Owlery."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "interrupting",
+      "description": "Hermione suddenly says 'Shh!' and interrupts the conversation between Harry and the other two voices."
+    },
+    {
+      "entity_1": "ministry of magic",
+      "entity_2": "owlery",
+      "relationship_type": "connection",
+      "description": "The Ministry of Magic is connected to the Owlery, as something that would not be wanted to be known about by someone who has done something wrong."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "connection_heard",
+      "description": "Harry is aware of the Ministry of Magic and its connection to the Owlery, as he hears the conversation between the two voices."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "ministry of magic",
+      "relationship_type": "connection_heard",
+      "description": "Hermione is also aware of the Ministry of Magic and its connection to the Owlery, as she interrupts the conversation between Harry and the other two voices."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "connection_heard",
+      "description": "Harry is aware of Hermione's connection to the Ministry of Magic, as he hears her interrupting the conversation between him and the other two voices."
+    }
+  ]
+}

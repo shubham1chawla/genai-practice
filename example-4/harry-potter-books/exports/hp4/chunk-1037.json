@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "karkaroff",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Karkaroff is mentioned as someone who is genuinely worried about something. He is going to Snape for answers."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is mentioned as someone who is being sought out by Karkaroff and others for answers. Dumbledore trusts him."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as someone who trusts Snape. He would not let Snape teach at Hogwarts if he had ever worked for Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as someone that Snape would never work for."
+    },
+    {
+      "name": "moody",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Moody is mentioned as someone who takes his Defense Against the Dark Arts seriously and does not trust anyone."
+    },
+    {
+      "name": "crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crouch is mentioned as someone who is keen to get into Snape's office."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "karkaroff",
+      "entity_2": "snape",
+      "relationship_type": "is_seeking_answers_from",
+      "description": "Karkaroff is seeking answers from Snape."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "trusts",
+      "description": "Dumbledore trusts Snape."
+    },
+    {
+      "entity_1": "moody",
+      "entity_2": "crouch",
+      "relationship_type": "is_working_with",
+      "description": "Moody and Crouch are working together to get into Snape's office."
+    }
+  ]
+}

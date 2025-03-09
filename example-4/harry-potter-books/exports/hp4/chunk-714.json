@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "beauxbatons caravan",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Beauxbatons caravan is mentioned as likely to be chilly too."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is the gamekeeper and is keeping Madame Maxime's horses well provided with their preferred drink of single-malt whiskey."
+    },
+    {
+      "name": "madame maxime",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Madame Maxime's horses are being kept by Hagrid."
+    },
+    {
+      "name": "skrewts",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "The skrewts are described as horrible creatures that the class is tending in the pumpkin patch."
+    },
+    {
+      "name": "pumpkin patch",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The pumpkin patch is where the class is tending the skrewts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "madame maxime's horses",
+      "relationship_type": "care_for",
+      "description": "Hagrid is keeping Madame Maxime's horses well provided with their preferred drink of single-malt whiskey."
+    },
+    {
+      "entity_1": "class",
+      "entity_2": "skrewts",
+      "relationship_type": "tend",
+      "description": "The class is tending the skrewts in the pumpkin patch."
+    }
+  ]
+}

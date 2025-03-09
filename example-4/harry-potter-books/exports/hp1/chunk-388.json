@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is mentioned as the one who seized."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is mentioned as the prefect who is being forced to wear a jumper."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who got a jumper and is having a Christmas dinner."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is mentioned as the one who said Percy is not sitting with the Prefects today."
+    },
+    {
+      "name": "jumper",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The jumper is being forced on Percy."
+    },
+    {
+      "name": "christmas dinner",
+      "entity_type": "event",
+      "singular": true,
+      "description": "Harry is having a Christmas dinner with many dishes."
+    },
+    {
+      "name": "wizard crackers",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Wizard crackers are being pulled by Harry and Fred."
+    },
+    {
+      "name": "muggle ones",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Muggle ones are mentioned as the feeble crackers bought by Dursleys."
+    },
+    {
+      "name": "dursleys",
+      "entity_type": "family",
+      "singular": false,
+      "description": "Dursleys are mentioned as Harry's relatives."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "percy",
+      "relationship_type": "forced_to_wear_jumper",
+      "description": "Fred is forcing Percy to wear a jumper."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "percy",
+      "relationship_type": "refused_sitting_with_prefects",
+      "description": "George refused Percy sitting with the Prefects today."
+    }
+  ]
+}

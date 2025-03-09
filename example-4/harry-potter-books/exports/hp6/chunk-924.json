@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts. Mentioned as having objects that Voldemort might have been interested in."
+    },
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "One of the four houses at Hogwarts. Mentioned as having objects that Voldemort might have been interested in."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main antagonist of the story. Mentioned as being interested in finding objects from the founders."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is a teacher at Hogwarts and has knowledge about Voldemort's intentions."
+    },
+    {
+      "name": "hogwarts",
+      "entity_type": "school",
+      "singular": true,
+      "description": "The school where the story takes place. Mentioned as being a place where Voldemort might have been interested in finding objects."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts who is having a conversation with Dumbledore about Voldemort's intentions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "gryffindor",
+      "relationship_type": "interested_in",
+      "description": "Voldemort was interested in finding objects from Gryffindor, as mentioned by Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "hogwarts",
+      "relationship_type": "knowledge_holder",
+      "description": "Dumbledore has knowledge about Hogwarts and Voldemort's intentions."
+    }
+  ]
+}

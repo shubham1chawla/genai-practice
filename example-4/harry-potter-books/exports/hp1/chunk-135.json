@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, introduced as 'H ARRY POTTER' in the first line."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper and a wizard, introduced as 'Hagrid' who welcomes Harry to Diagon Alley."
+    },
+    {
+      "name": "diagon alley",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A hidden street in London that is home to many shops selling magical items, introduced by Hagrid as 'Welcome, to Diagon Alley.'"
+    },
+    {
+      "name": "cauldrons - all sizes",
+      "entity_type": "shop",
+      "singular": false,
+      "description": "A shop selling cauldrons of different materials and features, described with a sign hanging over them."
+    },
+    {
+      "name": "apothecary's",
+      "entity_type": "shop",
+      "singular": true,
+      "description": "An apothecary's shop where a plump woman is doing her shopping."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "diagon alley",
+      "relationship_type": "location_visited",
+      "description": "Harry visits Diagon Alley with Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "diagon alley",
+      "relationship_type": "location_visited",
+      "description": "Hagrid takes Harry to Diagon Alley."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "cauldrons - all sizes",
+      "relationship_type": "visited_shop",
+      "description": "Harry sees the shop 'Cauldrons – All Sizes' with Hagrid."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "apothecary's",
+      "relationship_type": "nearby_location",
+      "description": "Hagrid and Harry walk past an apothecary's shop."
+    }
+  ]
+}

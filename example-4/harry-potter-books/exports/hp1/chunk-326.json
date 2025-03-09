@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "wizard baruffio",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A wizard who made a mistake in saying the magic words, resulting in a buffalo landing on him."
+    },
+    {
+      "name": "buffalo",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "An animal that landed on Wizard Baruffio's chest after he mispronounced the magic words."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who was trying to cast a spell with Seamus, but had trouble getting it right."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student who was trying to cast a spell with Harry, but ended up setting fire to the feather instead."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "wizard baruffio",
+      "entity_2": "buffalo",
+      "relationship_type": "landed_on",
+      "description": "The buffalo landed on Wizard Baruffio's chest after he mispronounced the magic words."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hat",
+      "relationship_type": "used_to_put_out_fire",
+      "description": "Harry used his hat to put out the fire that Seamus had set on the feather."
+    },
+    {
+      "entity_1": "seamus",
+      "entity_2": "feather",
+      "relationship_type": "set_fire_to",
+      "description": "Seamus accidentally set fire to the feather with his wand, causing Harry to have to put it out."
+    }
+  ]
+}

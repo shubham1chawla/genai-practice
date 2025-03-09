@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is introduced as a character who enters the scene and interacts with Harry. He is described as thinking that Harry's hex was 'a really good hex'."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the one who cast the hex on someone, and later he has an idea to enter the Slytherin compartment unseen."
+    },
+    {
+      "name": "zabini",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Zabini is introduced as a character who is part of the Slytherin sixth-year compartment."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is mentioned as someone who will be sitting in the Slytherin compartment and thinking himself unheard by anyone except fellow Slytherins."
+    },
+    {
+      "name": "hogsmeade station",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade station is mentioned as a location where Harry and his friends are on their way to."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "slughorn",
+      "entity_2": "harry",
+      "relationship_type": "invited",
+      "description": "Slughorn invited Harry to lunch after seeing him cast a hex."
+    },
+    {
+      "entity_1": "zabini",
+      "entity_2": "malfoy",
+      "relationship_type": "seated_with",
+      "description": "Zabini and Malfoy are part of the same compartment, with Zabini re-entering it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "zabini",
+      "relationship_type": "followed",
+      "description": "Harry plans to enter the Slytherin compartment unseen behind Zabini."
+    },
+    {
+      "entity_1": "hogsmeade station",
+      "entity_2": "harry",
+      "relationship_type": "location_of",
+      "description": "Hogsmeade station is mentioned as a location where Harry and his friends are on their way to."
+    }
+  ]
+}

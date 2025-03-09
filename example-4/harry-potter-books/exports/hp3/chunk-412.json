@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "ravenclaw",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Ravenclaw is one of the four houses in Hogwarts. It is mentioned that Ravenclaw was drawing nearer and nearer."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is a student at Hogwarts who is trying to get his Firebolt broom back. He is asking Professor McGonagall for news of the Firebolt after every Transfiguration lesson."
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher at Hogwarts who is in charge of checking the Firebolt broom. She tells Harry that he can't have it back yet because they are still checking for curses."
+    },
+    {
+      "name": "ron weasley",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron Weasley is a student at Hogwarts who is standing hopefully at Harry's shoulder while he asks Professor McGonagall about the Firebolt."
+    },
+    {
+      "name": "hermione granger",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Hermione Granger is a student at Hogwarts who rushes past with her face averted while Harry is asking Professor McGonagall about the Firebolt."
+    },
+    {
+      "name": "firebolt",
+      "entity_type": "broom",
+      "singular": true,
+      "description": "The Firebolt is a broom that belongs to Harry Potter. It has been taken away by the school and is being checked for curses."
+    },
+    {
+      "name": "professor flitwick",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Professor Flitwick believes that the Firebolt might be carrying a Hurling Hex."
+    },
+    {
+      "name": "hurling hex",
+      "entity_type": "curse",
+      "singular": true,
+      "description": "The Hurling Hex is a curse that Professor Flitwick believes the Firebolt might be carrying."
+    },
+    {
+      "name": "anti-dementor lessons",
+      "entity_type": "class",
+      "singular": false,
+      "description": "Harry's anti-dementor lessons are not going well. He is able to produce an indistinct silvery shadow every time the boggart-dementor approaches him."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "professor mcgonagall",
+      "relationship_type": "asked_for_information",
+      "description": "Harry is asking Professor McGonagall for news of the Firebolt after every Transfiguration lesson."
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "provided_update",
+      "description": "Professor McGonagall tells Harry that he can't have the Firebolt back yet because they are still checking for curses."
+    },
+    {
+      "entity_1": "professor flitwick",
+      "entity_2": "firebolt",
+      "relationship_type": "believed_to_be_infected",
+      "description": "Professor Flitwick believes that the Firebolt might be carrying a Hurling Hex."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "anti-dementor lessons",
+      "relationship_type": "attending_class",
+      "description": "Harry is attending anti-dementor lessons, but they are not going well."
+    },
+    {
+      "entity_1": "boggart-dementor",
+      "entity_2": "harry potter",
+      "relationship_type": "approached",
+      "description": "The boggart-dementor approaches Harry during his anti-dementor lessons."
+    }
+  ]
+}

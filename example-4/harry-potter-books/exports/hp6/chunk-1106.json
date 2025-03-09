@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "The main protagonist of the story, who is being attacked by Snape."
+    },
+    {
+      "name": "snape",
+      "entity_type": "character",
+      "singular": true,
+      "description": "A teacher at Hogwarts who is attacking Harry with a hex."
+    },
+    {
+      "name": "buckbeak",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A hippogriff that flies at Snape to defend Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "attacked_by",
+      "description": "Snape is attacking Harry with a hex."
+    },
+    {
+      "entity_1": "buckbeak",
+      "entity_2": "snape",
+      "relationship_type": "defended",
+      "description": "Buckbeak flies at Snape to defend Harry."
+    }
+  ]
+}

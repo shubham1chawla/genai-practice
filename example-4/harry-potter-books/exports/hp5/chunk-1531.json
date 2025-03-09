@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a gamekeeper at Hogwarts and is mentioned as still squinting toward the stadium."
+    },
+    {
+      "name": "stadium",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The stadium is where people are coming out of, according to Hagrid."
+    },
+    {
+      "name": "people",
+      "entity_type": "group",
+      "singular": false,
+      "description": "People are coming out of the stadium, as mentioned by Hagrid."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters and is mentioned as saying 'Good idea' to Hagrid's plan."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is another main character and is mentioned as not believing Hagrid."
+    },
+    {
+      "name": "giant",
+      "entity_type": "creature",
+      "singular": true,
+      "description": "A giant is mentioned in the forest, according to Hermione's concerns."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "hagrid",
+      "entity_2": "stadium",
+      "relationship_type": "location_of_interest",
+      "description": "Hagrid is still squinting toward the stadium."
+    },
+    {
+      "entity_1": "people",
+      "entity_2": "stadium",
+      "relationship_type": "exiting_from_location",
+      "description": "People are coming out of the stadium, as mentioned by Hagrid."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "associated_with",
+      "description": "Harry is associated with Hagrid's plan to blend in with the crowd."
+    }
+  ]
+}

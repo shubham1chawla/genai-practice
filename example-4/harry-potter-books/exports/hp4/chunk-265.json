@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "the dark arts",
+      "entity_type": "concept",
+      "singular": true,
+      "description": "Mr. Crouch despises and detests the Dark Arts and those who practice them."
+    },
+    {
+      "name": "mr crouch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry of Magic employee who accuses Amos Diggory's daughter of practicing the Dark Arts."
+    },
+    {
+      "name": "amos diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry of Magic employee who is accused by Mr. Crouch of having a connection to the Dark Arts."
+    },
+    {
+      "name": "winky",
+      "entity_type": "elf",
+      "singular": true,
+      "description": "An elf who finds Harry's wand in the trees and is questioned by Mr. Weasley."
+    },
+    {
+      "name": "mr weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A Ministry of Magic employee who defends Winky and suggests that she might have picked up conjuring skills anywhere."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A wand found by Winky in the trees."
+    },
+    {
+      "name": "the trees",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The location where Harry's wand was found."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "mr crouch",
+      "entity_2": "amos diggory",
+      "relationship_type": "accusation",
+      "description": "Mr. Crouch accuses Amos Diggory of having a connection to the Dark Arts."
+    },
+    {
+      "entity_1": "mr weasley",
+      "entity_2": "winky",
+      "relationship_type": "questioning",
+      "description": "Mr. Weasley questions Winky about finding Harry's wand in the trees."
+    }
+  ]
+}

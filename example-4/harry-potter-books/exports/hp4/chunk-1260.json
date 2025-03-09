@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker's father, mentioned in the context of being given his name by Tom Riddle."
+    },
+    {
+      "name": "tom riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The speaker's father, also known as Lord Voldemort, who gave the speaker his name."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The person being addressed by Tom Riddle."
+    },
+    {
+      "name": "lord voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Another name for Tom Riddle, mentioned in the context of giving his name to the speaker."
+    },
+    {
+      "name": "muggle orphanage",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The place where the speaker was raised after being left by their father."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "tom riddle",
+      "entity_2": "potter",
+      "relationship_type": "parent_of",
+      "description": "Tom Riddle is mentioned as giving his name to Potter, indicating a parental relationship."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "lord voldemort/tom riddle",
+      "relationship_type": "addressed_by",
+      "description": "Harry is being addressed by Lord Voldemort/Tom Riddle."
+    }
+  ]
+}

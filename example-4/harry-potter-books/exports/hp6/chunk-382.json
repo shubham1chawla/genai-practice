@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "morfin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Morfin is described as a Squib, implying he has no magical abilities. He is also referred to as 'disgusting' and 'filthy', indicating his behavior is considered unacceptable."
+    },
+    {
+      "name": "gaunt",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Gaunt is described as losing control and attacking his daughter, Merope. He is also referred to as a 'blood traitor', implying he has committed some kind of treachery."
+    },
+    {
+      "name": "merope",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Merope is described as being attacked by her father, Gaunt. She screams for help, indicating she is in distress."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is described as intervening to protect Merope from her father's attack. He uses magic to defend himself and others."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as reacting to the situation by yelling 'No!' and following Dumbledore's lead in pursuing Gaunt."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is described as indicating that they should follow Gaunt, implying he has some knowledge of what is happening or will happen."
+    },
+    {
+      "name": "squib",
+      "entity_type": "term",
+      "singular": false,
+      "description": "The term 'Squib' refers to a person born to magical parents but with no magical abilities themselves."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "gaunt",
+      "relationship_type": "defended_against",
+      "description": "Ogden uses magic to defend himself against Gaunt's attack."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "led",
+      "description": "Dumbledore indicates that Harry should follow him in pursuing Gaunt."
+    },
+    {
+      "entity_1": "ogden",
+      "entity_2": "merope",
+      "relationship_type": "protected",
+      "description": "Ogden intervenes to protect Merope from her father's attack."
+    },
+    {
+      "entity_1": "gaunt",
+      "entity_2": "merope",
+      "relationship_type": "attacked",
+      "description": "Gaunt attacks his daughter, Merope."
+    },
+    {
+      "entity_1": "morfin",
+      "entity_2": "ogden",
+      "relationship_type": "attacked",
+      "description": "Morfin attacks Ogden with a knife and hexes."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as having a death mask-like face, marble white and still. He is also referred to as 'My Lord' by Voldemort."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as sitting on the brink of victory, wondering why the Elder Wand refuses to perform as it should."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Elder Wand is referred to as a legendary object that should perform for its rightful owner."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "has_problem_with",
+      "description": "Voldemort has a problem with the Elder Wand, wondering why it refuses to perform as it should."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "voldemort",
+      "relationship_type": "is_subject_to",
+      "description": "Snape is subject to Voldemort's authority, referred to as 'My Lord'."
+    }
+  ]
+}

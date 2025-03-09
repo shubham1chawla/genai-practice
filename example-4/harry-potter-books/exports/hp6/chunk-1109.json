@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is able to cast spells and has a wand."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A gamekeeper at Hogwarts, who is able to cast spells and has a wand. He is also a close friend of Harry's."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who is mentioned as being unable to put things right."
+    },
+    {
+      "name": "bowtruckle",
+      "entity_type": "creature",
+      "singular": false,
+      "description": "A type of magical creature that Hagrid was binding up when the fire started."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "concerned_by",
+      "description": "Harry is concerned about Dumbledore's inability to put things right."
+    },
+    {
+      "entity_1": "hagrid",
+      "entity_2": "bowtruckle",
+      "relationship_type": "caring_for",
+      "description": "Hagrid was caring for the Bowtruckles when the fire started."
+    }
+  ]
+}

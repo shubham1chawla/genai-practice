@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "house-elf",
+      "entity_type": "type_of_entity",
+      "singular": true,
+      "description": "A type of elf that is known to be old and naked. It has a quantity of white hair growing out of its large, batlike ears."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story who is present in the room."
+    },
+    {
+      "name": "house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The house where Harry and the rest are present."
+    },
+    {
+      "name": "Mistress",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being referred to as the owner of the house."
+    },
+    {
+      "name": "brats",
+      "entity_type": "group_of_people",
+      "singular": false,
+      "description": "The children of Mistress who are causing trouble in her house."
+    },
+    {
+      "name": "blood traitor",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is being referred to as a traitor and has a connection with blood."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "house-elf",
+      "entity_2": "Harry",
+      "relationship_type": "no_interaction",
+      "description": "The house-elf does not take any notice of Harry."
+    },
+    {
+      "entity_1": "house-elf",
+      "entity_2": "Mistress",
+      "relationship_type": "concern_for",
+      "description": "The house-elf is concerned about Mistress and her house."
+    },
+    {
+      "entity_1": "house-elf",
+      "entity_2": "brats",
+      "relationship_type": "disapproval",
+      "description": "The house-elf disapproves of the brats for messing up Mistress's house."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as asking Neville for help to get out. He is also referred to as 'we' when discussing the uncertainty of their destination."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is mentioned as helping Harry and Luna find a way out by leading them to a staircase."
+    },
+    {
+      "name": "luna",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Luna is mentioned as being led by Neville along with Harry."
+    },
+    {
+      "name": "cupboard",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The cupboard is described as a small opening onto a staircase."
+    },
+    {
+      "name": "staircase",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The staircase is mentioned as being long and lit."
+    },
+    {
+      "name": "corridors",
+      "entity_type": "location",
+      "singular": false,
+      "description": "The corridors are mentioned as being patrolled by people at night."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "neville",
+      "relationship_type": "helped_by",
+      "description": "Neville helps Harry find a way out."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "luna",
+      "relationship_type": "accompanied_by",
+      "description": "Harry and Luna are led by Neville together."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "cupboard",
+      "relationship_type": "led_to",
+      "description": "Neville leads Harry and Luna to the cupboard."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "staircase",
+      "relationship_type": "went_up",
+      "description": "Harry and Luna go up the staircase."
+    },
+    {
+      "entity_1": "corridors",
+      "entity_2": "people",
+      "relationship_type": "patrolled_by",
+      "description": "The corridors are patrolled by people at night."
+    }
+  ]
+}

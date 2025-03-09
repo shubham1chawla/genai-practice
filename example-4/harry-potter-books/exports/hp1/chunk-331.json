@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hufflepuffs",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Hufflepuffs are one of the four houses in Hogwarts School of Witchcraft and Wizardry. They are mentioned as the group that Harry and Ron joined."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is a student at Hogwarts who is known to Harry and Ron. He is mistaken for Snape when he appears behind them in the corridor."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who is known to be strict and intimidating. He is seen by Harry and Ron as they follow him through the corridors."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the main characters in the story and a student at Hogwarts. He is following Snape with his friend Ron."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and a student at Hogwarts. He is following Snape with Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "percy",
+      "relationship_type": "mistaken_identity",
+      "description": "Harry mistakes Percy for Snape when he appears behind them in the corridor."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "dungeons",
+      "relationship_type": "location",
+      "description": "Snape is heading towards the dungeons, which are located below the rest of the school."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "accompaniment",
+      "description": "Harry and Ron are following Snape together through the corridors."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "third_floor",
+      "relationship_type": "destination",
+      "description": "Snape is heading towards the third floor, which Harry notices as they follow him."
+    }
+  ]
+}

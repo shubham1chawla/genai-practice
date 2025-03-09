@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the potions master who marks Harry's potion. He is described as watching Harry with 'a look of gloating pleasure' when Harry's potion sample breaks."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student who gives a 'gleeful yell of laughter' after Snape watches Harry's potion break."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is trying to get an E on his potion. He is described as being 'incensed' and 'too angry to speak' when his potion breaks."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student who apologizes to Harry for accidentally clearing up the rest of his potion. She says she thought Harry had finished with it."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "harry",
+      "relationship_type": "watching",
+      "description": "Snape watches Harry's potion break and seems to be enjoying the situation."
+    },
+    {
+      "entity_1": "malfoy",
+      "entity_2": "none",
+      "relationship_type": "laughing",
+      "description": "Malfoy laughs after Snape watches Harry's potion break."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snape",
+      "relationship_type": "being_marked_by",
+      "description": "Snape marks Harry's potion, which breaks before he can finish it."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry",
+      "relationship_type": "apologizing_to",
+      "description": "Hermione apologizes to Harry for accidentally clearing up the rest of his potion."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned by name in the conversation."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as thinking about the location of Durmstrang."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as dreaming up a scenario to get rid of Malfoy."
+    },
+    {
+      "name": "durmstrang",
+      "entity_type": "school",
+      "singular": true,
+      "description": "A school mentioned by Hermione as being located in the far north."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts, mentioned by Ron as someone he would like to get rid of."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "train",
+      "singular": true,
+      "description": "The train that the characters are on."
+    },
+    {
+      "name": "seamus finnigan",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as looking in on them."
+    },
+    {
+      "name": "dean thomas",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's, mentioned as looking in on them."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "durmstrang",
+      "relationship_type": "location_of",
+      "description": "Hermione thinks that Durmstrang is located somewhere in the far north."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "target_of_action",
+      "description": "Ron dreams up a scenario to get rid of Malfoy."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "cauldron cakes",
+      "relationship_type": "consumes",
+      "description": "Harry buys Cauldron Cakes for himself and his friends."
+    },
+    {
+      "entity_1": "seamus finnigan",
+      "entity_2": "harry",
+      "relationship_type": "looks_in_on",
+      "description": "Seamus looks in on Harry and his friends."
+    },
+    {
+      "entity_1": "dean thomas",
+      "entity_2": "harry",
+      "relationship_type": "looks_in_on",
+      "description": "Dean Thomas looks in on Harry and his friends."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "durmstrang",
+      "relationship_type": "has_knowledge_about",
+      "description": "Hermione thinks that Durmstrang is located somewhere in the far north."
+    }
+  ]
+}

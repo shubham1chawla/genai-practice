@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "centaur",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "A mythical creature mentioned in the text."
+    },
+    {
+      "name": "sneak",
+      "entity_type": "noun",
+      "singular": true,
+      "description": "An unknown entity that is described as 'hairy' and seen by Harry."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A member of the D.A. who has a Patronus, a silvery otter."
+    },
+    {
+      "name": "patronus",
+      "entity_type": "magical_entity",
+      "singular": true,
+      "description": "Hermione's magical protector, described as a shining silver otter."
+    },
+    {
+      "name": "room_of_requirment",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A location where the D.A. meeting is taking place."
+    },
+    {
+      "name": "dobby",
+      "entity_type": "house_elf",
+      "singular": true,
+      "description": "A house-elf who appears to Harry and is shaking with terror."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a member of the D.A."
+    },
+    {
+      "name": "d.a.",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A group that Harry is part of."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sneak",
+      "relationship_type": "sees",
+      "description": "Harry sees the sneak, which is described as 'hairy'."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "patronus",
+      "relationship_type": "has",
+      "description": "Hermione has a Patronus, a silvery otter."
+    },
+    {
+      "entity_1": "dobby",
+      "entity_2": "harry",
+      "relationship_type": "appears_to",
+      "description": "Dobby appears to Harry from beneath his robes."
+    },
+    {
+      "entity_1": "room_of_requirment",
+      "entity_2": "d.a.",
+      "relationship_type": "location_of_meeting",
+      "description": "The Room of Requirement is the location where the D.A. meeting is taking place."
+    }
+  ]
+}

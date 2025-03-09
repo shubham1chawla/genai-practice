@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character in the story, a student at Hogwarts. He is described as feeling drowsy after eating."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts, who gets up to give start-of-term notices. He is mentioned as being able to command the attention of all students."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a student at Hogwarts. He is mentioned as exchanging smirks with Harry and Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends and a student at Hogwarts. She is mentioned as exchanging smirks with Ron and Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "students",
+      "relationship_type": "addressed_by",
+      "description": "Dumbledore addresses the students, commanding their attention."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "exchanged_smirks_with",
+      "description": "Harry exchanges smirks with Ron and Hermione."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "forest",
+      "relationship_type": "mentioned_as_out_of_bounds",
+      "description": "Dumbledore mentions the forest as being out of bounds to students."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "bed",
+      "relationship_type": "waiting_for",
+      "description": "Harry's bed is waiting for him, described as warm and soft."
+    }
+  ]
+}

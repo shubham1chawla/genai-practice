@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "George is one of the three people who landed at the crate containing the balls and opened it to extract one of the Bludgers and the Snitch. He is mentioned as saying 'He was fine when I was practicing with him this morning.'"
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is one of the three people who landed at the crate containing the balls and opened it to extract one of the Bludgers and the Snitch. He is mentioned as saying 'He's just nervous' and releasing the Snitch."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fred is one of the three people who landed at the crate containing the balls and opened it to extract one of the Bludgers and the Snitch. He is mentioned as saying 'Yeah, well, I hope he hasn’t peaked too soon'."
+    },
+    {
+      "name": "bludger",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Bludger is a ball that is extracted from the crate by George and Fred. It is mentioned as being worth 150 points to the Seeker's team."
+    },
+    {
+      "name": "snitch",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Snitch is a tiny, golden ball that is released by Harry. It is worth 150 points to the Seeker's team and requires enormous speed and skill to recapture."
+    },
+    {
+      "name": "chaser",
+      "entity_type": "person",
+      "singular": false,
+      "description": "The Chasers are a group of people who are mentioned as being in the game. They are described as rolling and swerving in and out of Harry's path."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "team",
+      "singular": true,
+      "description": "The Slytherins are a team that is mentioned as being involved in the game. They are described as yelling in the distance, but their yells are considered meaningless to Harry."
+    },
+    {
+      "name": "angelina",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina is a person who blows her whistle at some point during the game. This brings Harry to a halt and ends his pursuit of the Snitch."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "george",
+      "entity_2": "bludger",
+      "relationship_type": "released",
+      "description": "George lets fly the Bludger, which is extracted from the crate by him and Fred. This is mentioned as happening after Angelina blows her whistle."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "bludger",
+      "relationship_type": "released",
+      "description": "Fred lets fly the Bludger, which is extracted from the crate by him and George. This is mentioned as happening after Angelina blows her whistle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "snitch",
+      "relationship_type": "released",
+      "description": "Harry releases the Snitch, which is worth 150 points to the Seeker's team. This is mentioned as happening after Angelina blows her whistle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "chaser",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacts with the Chasers, who are rolling and swerving in and out of his path. This is mentioned as happening during Harry's pursuit of the Snitch."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slytherin",
+      "relationship_type": "ignored",
+      "description": "Harry ignores the yells of the Slytherins, which are considered meaningless to him. This is mentioned as happening during Harry's pursuit of the Snitch."
+    },
+    {
+      "entity_1": "angelina",
+      "entity_2": "harry",
+      "relationship_type": "stopped",
+      "description": "Angelina blows her whistle, which brings Harry to a halt and ends his pursuit of the Snitch. This is mentioned as happening at some point during the game."
+    }
+  ]
+}

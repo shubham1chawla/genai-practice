@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "house",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The House of Gaunt is mentioned as a location where someone has nailed a dead snake to the front door."
+    },
+    {
+      "name": "ogden",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ogden is introduced as a person who is startled by the stranger and backs away several paces before speaking."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as someone who thinks Ogden is being dim for not understanding the stranger."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Ministry of Magic is introduced as an organization that Harry claims to be from."
+    },
+    {
+      "name": "stranger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The stranger is described as a person with thick hair, missing teeth, and small dark eyes that stare in opposite directions."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ogden",
+      "entity_2": "stranger",
+      "relationship_type": "frightened_by",
+      "description": "Ogden is frightened by the stranger's appearance."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ogden",
+      "relationship_type": "thought_of",
+      "description": "Harry thinks Ogden is being dim for not understanding the stranger."
+    },
+    {
+      "entity_1": "stranger",
+      "entity_2": "house of gaunt",
+      "relationship_type": "at_location",
+      "description": "The stranger is standing at the front door of the House of Gaunt."
+    }
+  ]
+}

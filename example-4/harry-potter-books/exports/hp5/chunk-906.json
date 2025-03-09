@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, who is knocking on Hagrid's door."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who screams when she sees Hagrid."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The gamekeeper at Hogwarts, who is home with his dog Fang."
+    },
+    {
+      "name": "fang",
+      "entity_type": "dog",
+      "singular": true,
+      "description": "Hagrid's dog, which barks frantically when Harry and his friends arrive."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hagrid",
+      "relationship_type": "visited",
+      "description": "Harry visits Hagrid at his home."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "hagrid",
+      "relationship_type": "visited",
+      "description": "Hermione also visits Hagrid at his home."
+    },
+    {
+      "entity_1": "fang",
+      "entity_2": "hagrid",
+      "relationship_type": "owned_by",
+      "description": "Fang is owned by Hagrid."
+    }
+  ]
+}

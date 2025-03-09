@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "aunt petunia",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Aunt Petunia is mentioned as a family member of the Dursleys. She glances at Uncle Vernon in despair."
+    },
+    {
+      "name": "uncle vernon",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Uncle Vernon is mentioned as a family member of the Dursleys and is described as having a throbbing vein on his temple."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who has been expelled from the Ministry of Magic. He is answering Uncle Vernon's questions."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend and his dad works at the Ministry of Magic."
+    },
+    {
+      "name": "ministry of magic",
+      "entity_type": "organization",
+      "singular": false,
+      "description": "The Ministry of Magic is mentioned as an organization that expelled Harry. It is also where Ron's dad works."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "uncle vernon",
+      "entity_2": "aunt petunia",
+      "relationship_type": "glances_at",
+      "description": "Uncle Vernon glares at Aunt Petunia."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ministry of magic",
+      "relationship_type": "expelled_by",
+      "description": "Harry was expelled from the Ministry of Magic."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "ministry of magic",
+      "relationship_type": "works_at",
+      "description": "Ron's dad works at the Ministry of Magic."
+    }
+  ]
+}

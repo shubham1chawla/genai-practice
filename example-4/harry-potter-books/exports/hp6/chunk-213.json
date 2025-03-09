@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "dab",
+      "entity_type": "product",
+      "singular": true,
+      "description": "A bruise remover product that can be applied directly to the skin."
+    },
+    {
+      "name": "bruise-remover",
+      "entity_type": "product_category",
+      "singular": true,
+      "description": "A type of product used to remove bruises."
+    },
+    {
+      "name": "fred",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who owns a shop selling magic products."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts and friend of Harry Potter."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main protagonist of the story, a wizard attending Hogwarts."
+    },
+    {
+      "name": "galleons",
+      "entity_type": "currency",
+      "singular": true,
+      "description": "A type of currency used in the wizarding world."
+    },
+    {
+      "name": "george",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of the Weasley twins who owns a shop selling magic products."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "group",
+      "singular": false,
+      "description": "A non-magical person or group of people."
+    },
+    {
+      "name": "shop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The Weasley twins' shop selling magic products."
+    },
+    {
+      "name": "card and rope tricks",
+      "entity_type": "product_category",
+      "singular": false,
+      "description": "A type of product used for magic tricks."
+    },
+    {
+      "name": "black eye",
+      "entity_type": "injury",
+      "singular": true,
+      "description": "An injury to the eye that causes it to turn black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fred",
+      "entity_2": "bruise-remover",
+      "relationship_type": "uses",
+      "description": "Fred is using the bruise remover product."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "black eye",
+      "relationship_type": "has",
+      "description": "Hermione has a black eye."
+    },
+    {
+      "entity_1": "fred",
+      "entity_2": "shop",
+      "relationship_type": "owns",
+      "description": "Fred owns the shop selling magic products."
+    },
+    {
+      "entity_1": "george",
+      "entity_2": "shop",
+      "relationship_type": "owns",
+      "description": "George also owns the shop selling magic products."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "card and rope tricks",
+      "relationship_type": "sees",
+      "description": "Harry sees the card and rope tricks in the shop."
+    }
+  ]
+}

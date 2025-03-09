@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a student at Hogwarts who led the way to Dean and Seamus. He had played Quidditch against Warrington."
+    },
+    {
+      "name": "dean",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dean is a student at Hogwarts who was discussing students entering with Harry and Seamus."
+    },
+    {
+      "name": "seamus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Seamus is a student at Hogwarts who was discussing students entering with Dean and Harry."
+    },
+    {
+      "name": "warrington",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Warrington is a big bloke from Slytherin who looks like a sloth. He put his name in for the Goblet of Fire."
+    },
+    {
+      "name": "diggory",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Diggory is a Hufflepuff student who is being talked about by the Hufflepuffs. He has good looks and might have wanted to risk them."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is a student at Hogwarts who suddenly said 'Listen!' when people were cheering in the entrance hall."
+    },
+    {
+      "name": "angelina johnson",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Angelina Johnson is a tall black girl who plays Chaser on the Gryffindor Quidditch team. She put her name in for the Goblet of Fire."
+    },
+    {
+      "name": "hufflepuffs",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Hufflepuffs are a group of students at Hogwarts who are talking about Diggory and putting their names in for the Goblet of Fire."
+    },
+    {
+      "name": "slytherin",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Slytherin is a house at Hogwarts where Warrington is from. It is being mentioned as a reason why Harry doesn't want to have a Slytherin champion."
+    },
+    {
+      "name": "gryffindor",
+      "entity_type": "house",
+      "singular": true,
+      "description": "Gryffindor is a house at Hogwarts where Angelina Johnson plays Quidditch. It is being mentioned as the team she plays for."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "warrington",
+      "relationship_type": "opposed",
+      "description": "Harry opposed Warrington's entry into the Goblet of Fire, saying 'We can't have a Slytherin champion!'"
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "diggory",
+      "relationship_type": "mentioned",
+      "description": "Harry was mentioned as someone who might be entering the Goblet of Fire, but it is actually Diggory who is being talked about by the Hufflepuffs."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "angelina johnson",
+      "relationship_type": "interrupted",
+      "description": "Hermione interrupted the conversation when Angelina Johnson came into the hall and said 'Well, I've done it! Just put my name in!'"
+    },
+    {
+      "entity_1": "hufflepuffs",
+      "entity_2": "diggory",
+      "relationship_type": "talked_about",
+      "description": "The Hufflepuffs were talking about Diggory and putting their names in for the Goblet of Fire."
+    },
+    {
+      "entity_1": "slytherin",
+      "entity_2": "warrington",
+      "relationship_type": "associated_with",
+      "description": "Slytherin is associated with Warrington, who put his name in for the Goblet of Fire."
+    },
+    {
+      "entity_1": "gryffindor",
+      "entity_2": "angelina johnson",
+      "relationship_type": "associated_with",
+      "description": "Gryffindor is associated with Angelina Johnson, who plays Chaser on the Gryffindor Quidditch team."
+    }
+  ]
+}

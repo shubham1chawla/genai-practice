@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Harry Potter is the main character in the story. He is mentioned as '104 H ARRY  POTTER' at the beginning of the text."
+    },
+    {
+      "name": "nearly headless nick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Nearly Headless Nick is a ghost and a character in the story. He is mentioned as being greeted by Sir Patrick."
+    },
+    {
+      "name": "ron",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Ron is one of Harry's friends and is mentioned as being spotted by Sir Patrick."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Hermione is one of Harry's friends and is mentioned as being spotted by Sir Patrick."
+    },
+    {
+      "name": "sir patrick",
+      "entity_type": "character",
+      "singular": true,
+      "description": "Sir Patrick is a character in the story who is beheaded but still able to speak and move around."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "greeted_by",
+      "description": "Harry greets Nearly Headless Nick."
+    },
+    {
+      "entity_1": "sir patrick",
+      "entity_2": "harry",
+      "relationship_type": "spotted",
+      "description": "Sir Patrick spots Harry, Ron and Hermione."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "sir patrick",
+      "relationship_type": "greeted_by",
+      "description": "Nearly Headless Nick is greeted by Sir Patrick."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend_of",
+      "description": "Harry and Ron are friends."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friend_of",
+      "description": "Harry and Hermione are friends."
+    },
+    {
+      "entity_1": "sir patrick",
+      "entity_2": "ron",
+      "relationship_type": "spotted",
+      "description": "Sir Patrick spots Ron."
+    },
+    {
+      "entity_1": "sir patrick",
+      "entity_2": "hermione",
+      "relationship_type": "spotted",
+      "description": "Sir Patrick spots Hermione."
+    },
+    {
+      "entity_1": "nearly headless nick",
+      "entity_2": "harry",
+      "relationship_type": "friend_of",
+      "description": "Nearly Headless Nick is a friend of Harry's."
+    },
+    {
+      "entity_1": "sir patrick",
+      "entity_2": "nearly headless nick",
+      "relationship_type": "teasingly_talking_to",
+      "description": "Sir Patrick teases Nearly Headless Nick."
+    }
+  ]
+}

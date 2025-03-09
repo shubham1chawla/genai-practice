@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is mentioned as the one Harry is going to see in his office. The text states 'straight to Dumbledore’s office' indicating that Dumbledore's office is a specific location."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story and is mentioned multiple times in the passage. He is described as having a dream and walking past a gargoyle to get to Dumbledore's office."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Wormtail is mentioned as being accused by Voldemort of making a blunder. The text states 'He had heard Voldemort accusing Wormtail of making a blunder' indicating that Wormtail is a specific person."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is mentioned as the one who accused Wormtail of making a blunder. The text states 'He had heard Voldemort accusing Wormtail of making a blunder' indicating that Voldemort is a specific person."
+    },
+    {
+      "name": "privet drive",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Privet Drive is mentioned as the location where Harry had a previous dream. The text states 'it had been as vivid as the one that had awoken him on Privet Drive' indicating that Privet Drive is a specific location."
+    },
+    {
+      "name": "dumbledore's office",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Dumbledore's office is mentioned as the location where Harry is going to see Dumbledore. The text states 'straight to Dumbledore’s office' indicating that Dumbledore's office is a specific location."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "visited",
+      "description": "Harry visited Dumbledore's office, as indicated by the text 'straight to Dumbledore’s office'. This relationship is bidirectional, meaning that Dumbledore also received Harry in his office."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "wormtail",
+      "relationship_type": "accused",
+      "description": "Voldemort accused Wormtail of making a blunder, as indicated by the text 'He had heard Voldemort accusing Wormtail of making a blunder'. This relationship is directed from Voldemort to Wormtail."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "privet drive",
+      "relationship_type": "awakened_by",
+      "description": "Harry was awakened by a dream on Privet Drive, as indicated by the text 'it had been as vivid as the one that had awoken him on Privet Drive'. This relationship is directed from Harry to Privet Drive."
+    }
+  ]
+}

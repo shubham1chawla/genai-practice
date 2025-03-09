@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "sirius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Sirius is a person who is being sent on a mission by Dumbledore. He is described as the black dog and is tasked with alerting Remus Lupin, Arabella Figg, and Mundungus Fletcher."
+    },
+    {
+      "name": "remus lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Remus Lupin is a person who needs to be alerted by Sirius. He is part of the old crowd that Sirius will contact."
+    },
+    {
+      "name": "arabella figg",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Arabella Figg is a person who needs to be alerted by Sirius. She is part of the old crowd that Sirius will contact."
+    },
+    {
+      "name": "mundungus fletcher",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Mundungus Fletcher is a person who needs to be alerted by Sirius. He is part of the old crowd that Sirius will contact."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who is sending Sirius on a mission. He asks Snape to do something but it is not specified what."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is a person who is asked by Dumbledore to do something but it is not specified what."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a person who does not want Sirius to leave. He wants him to stay."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "sirius",
+      "entity_2": "remus lupin",
+      "relationship_type": "alerted_by",
+      "description": "Sirius will alert Remus Lupin as part of his mission."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "arabella figg",
+      "relationship_type": "alerted_by",
+      "description": "Sirius will alert Arabella Figg as part of his mission."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "mundungus fletcher",
+      "relationship_type": "alerted_by",
+      "description": "Sirius will alert Mundungus Fletcher as part of his mission."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "snape",
+      "relationship_type": "asks_to_do_something",
+      "description": "Dumbledore asks Snape to do something but it is not specified what."
+    },
+    {
+      "entity_1": "sirius",
+      "entity_2": "harry",
+      "relationship_type": "said_goodbye_to",
+      "description": "Sirius said goodbye to Harry before leaving."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, Ron, is described as approaching the counter and talking to a witch."
+    },
+    {
+      "name": "scabbers",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "Scabbers is Ron's rat who has been acting strangely since being brought back from Egypt."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The witch is described as wearing heavy black spectacles and giving advice to Ron."
+    },
+    {
+      "name": "percy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Percy is Ron's brother who previously owned Scabbers."
+    },
+    {
+      "name": "egypt",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Egypt is mentioned as the place where Ron brought Scabbers back from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "ron",
+      "entity_2": "scabbers",
+      "relationship_type": "owns",
+      "description": "Ron owns Scabbers, his rat."
+    },
+    {
+      "entity_1": "witch",
+      "entity_2": "scabbers",
+      "relationship_type": "examines",
+      "description": "The witch examines Scabbers to determine the cause of his strange behavior."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "percy",
+      "relationship_type": "brother_of",
+      "description": "Ron is the brother of Percy, who previously owned Scabbers."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "egypt",
+      "relationship_type": "traveled_to",
+      "description": "Ron traveled to Egypt and brought Scabbers back with him."
+    }
+  ]
+}

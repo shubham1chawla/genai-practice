@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "professor slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is a teacher who accepts N.E.W.T. students with 'Exceeds Expectations' at O.W.L."
+    },
+    {
+      "name": "harry potter",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Harry Potter is a student who did not buy the books or ingredients for Potions"
+    },
+    {
+      "name": "professor mcgonagall",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor McGonagall is a teacher who helps Harry with his timetable and lends him some books"
+    },
+    {
+      "name": "ron",
+      "entity_type": "student",
+      "singular": true,
+      "description": "Ron is a student who was cleared to do the same subjects as Harry"
+    },
+    {
+      "name": "gryffindor quidditch team",
+      "entity_type": "team",
+      "singular": false,
+      "description": "The Gryffindor Quidditch team has twenty hopefuls who have already put down their names"
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "professor slughorn",
+      "entity_2": "harry potter",
+      "relationship_type": "helped_by",
+      "description": "Professor Slughorn will lend Harry some books for Potions"
+    },
+    {
+      "entity_1": "professor mcgonagall",
+      "entity_2": "harry potter",
+      "relationship_type": "helped_by",
+      "description": "Professor McGonagall helps Harry with his timetable and lends him some books"
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry potter",
+      "relationship_type": "friend_of",
+      "description": "Ron is a friend of Harry's who was cleared to do the same subjects as him"
+    }
+  ]
+}

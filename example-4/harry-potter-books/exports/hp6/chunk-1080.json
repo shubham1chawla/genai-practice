@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is the headmaster of Hogwarts School. He is being threatened by Malfoy but remains calm and composed."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Malfoy is a student at Hogwarts who is threatening Dumbledore with violence."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is watching the scene unfold between Malfoy and Dumbledore."
+    },
+    {
+      "name": "rosmerta",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Rosmerta is a woman who works at the Three Broomsticks pub. She tipped off Malfoy about Dumbledore's departure from Hogwarts."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "malfoy",
+      "entity_2": "dumbledore",
+      "relationship_type": "threatens",
+      "description": "Malfoy is threatening to kill Dumbledore, but Dumbledore remains calm and composed."
+    },
+    {
+      "entity_1": "rosmerta",
+      "entity_2": "malfoy",
+      "relationship_type": "informed",
+      "description": "Rosmerta informed Malfoy about Dumbledore's departure from Hogwarts."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "harry",
+      "relationship_type": "observed_by",
+      "description": "Dumbledore is being watched by Harry as he interacts with Malfoy."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as the one who had a secret. The text does not specify what this secret is."
+    },
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is thanked by the Minister for his presence at the scene of the incident."
+    },
+    {
+      "name": "minister",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister is mentioned as the one who is giving thanks and awards to Snape."
+    },
+    {
+      "name": "potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Potter is mentioned as one of the people who was bewitched by Black."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Weasley is mentioned as one of the people who was bewitched by Black."
+    },
+    {
+      "name": "granger",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Granger is mentioned as one of the people who was bewitched by Black."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "minister",
+      "entity_2": "snape",
+      "relationship_type": "thanks",
+      "description": "The Minister thanks Snape for his presence at the scene of the incident."
+    },
+    {
+      "entity_1": "black",
+      "entity_2": "potter",
+      "relationship_type": "bewitched",
+      "description": "Black bewitched Potter, Weasley, and Granger with a Confundus Charm."
+    },
+    {
+      "entity_1": "potter",
+      "entity_2": "weasley",
+      "relationship_type": "co-victim",
+      "description": "Potter, Weasley, and Granger were all victims of Black's Confundus Charm."
+    }
+  ]
+}

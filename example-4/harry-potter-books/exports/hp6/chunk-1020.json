@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "the cave",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The cave is described as a location where Harry swims with Dumbledore. It has a fissure that opens into a dark tunnel and is filled with water at high tide."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the protagonist of the story who swims with Dumbledore in the cave."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Dumbledore is a person who leads Harry through the cave and has silver hair and dark robes."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "the cave",
+      "relationship_type": "entered",
+      "description": "Harry enters the cave by swimming with Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "the cave",
+      "relationship_type": "led_into",
+      "description": "Dumbledore leads Harry into the cave."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "followed",
+      "description": "Harry follows Dumbledore through the cave."
+    },
+    {
+      "entity_1": "the cave",
+      "entity_2": "water",
+      "relationship_type": "filled_with",
+      "description": "The cave is filled with water at high tide."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Slughorn is a character in the story who is uncomfortable discussing the topic of Horcruxes."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is a character in the story who remembers words he heard from Professor Slughorn."
+    },
+    {
+      "name": "riddle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tom Riddle is a character in the story who is interested in creating Horcruxes."
+    },
+    {
+      "name": "horcruxes",
+      "entity_type": "concept",
+      "singular": false,
+      "description": "Horcruxes are objects that contain pieces of a person's soul."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "riddle",
+      "entity_2": "horcruxes",
+      "relationship_type": "interested_in",
+      "description": "Tom Riddle is interested in creating Horcruxes, as he wants to split his soul and encase the torn portion."
+    },
+    {
+      "entity_1": "slughorn",
+      "entity_2": "horcruxes",
+      "relationship_type": "opposed_to",
+      "description": "Professor Slughorn is opposed to the idea of creating Horcruxes, as he believes it is an act of violation and against nature."
+    }
+  ]
+}

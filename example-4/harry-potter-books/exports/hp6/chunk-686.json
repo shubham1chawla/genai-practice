@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to as 'Harry'. He is trying to make an antidote but doesn't know what he's doing."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who is also trying to make the antidote. He looks 'gormless' and unsure about what to do."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher whose desk Harry took a poison from. The poison is described as being a garish shade of pink."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "One of Harry's friends, who had previously recited Golpalott's Third Law to them. She is not present in this scene but mentioned as a source of knowledge."
+    },
+    {
+      "name": "golpalott",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person whose third law is mentioned in the story. The law is stated word for word by Hermione, but there are no notes on it in Harry's book."
+    },
+    {
+      "name": "the prince",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Someone who is not present in this scene but mentioned as a potential source of help. He has written some notes in Harry's book, but they are not helpful for the task at hand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "took_poison_from",
+      "description": "Harry took a poison from Slughorn's desk, which he is now trying to use to make an antidote."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "received_knowledge_from",
+      "description": "Hermione had previously recited Golpalott's Third Law to Harry, which he is now trying to understand."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "harry",
+      "relationship_type": "copied_actions_from",
+      "description": "Ron copied everything Harry did when making the antidote, but looks unsure about what to do next."
+    }
+  ]
+}

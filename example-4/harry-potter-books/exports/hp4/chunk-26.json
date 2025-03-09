@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "frank",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The protagonist of the story who is not a wizard."
+    },
+    {
+      "name": "wormtail",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Frank's servant who beckons him into the room."
+    },
+    {
+      "name": "muggle",
+      "entity_type": "term",
+      "singular": true,
+      "description": "A term used to describe someone who is not a wizard."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "frank",
+      "entity_2": "wormtail",
+      "relationship_type": "beckoned_by",
+      "description": "Wormtail beckons Frank into the room."
+    },
+    {
+      "entity_1": "frank",
+      "entity_2": "muggle",
+      "relationship_type": "called_as",
+      "description": "The cold voice calls Frank a Muggle."
+    }
+  ]
+}

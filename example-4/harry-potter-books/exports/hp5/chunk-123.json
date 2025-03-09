@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is being led by Lupin and taken to a new location."
+    },
+    {
+      "name": "lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lupin is leading Harry from the patch of grass."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is carrying Harry's trunk with Lupin."
+    },
+    {
+      "name": "grimmauld place",
+      "entity_type": "location",
+      "singular": true,
+      "description": "Grimmauld Place is the headquarters of the Order of the Phoenix."
+    },
+    {
+      "name": "order of the phoenix",
+      "entity_type": "organization",
+      "singular": true,
+      "description": "The Order of the Phoenix has its headquarters at Grimmauld Place."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "lupin",
+      "relationship_type": "led_by",
+      "description": "Lupin is leading Harry from the patch of grass."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "harry",
+      "relationship_type": "carrying_trunk_for",
+      "description": "Tonks is carrying Harry's trunk with Lupin."
+    },
+    {
+      "entity_1": "grimmauld place",
+      "entity_2": "order of the phoenix",
+      "relationship_type": "headquarters_of",
+      "description": "Grimmauld Place is the headquarters of the Order of the Phoenix."
+    }
+  ]
+}

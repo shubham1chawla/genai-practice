@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The village where Harry, Ron, and Hermione are walking to."
+    },
+    {
+      "name": "sensor",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object that is used by the students to navigate through the wind and sleet."
+    },
+    {
+      "name": "honeydukes",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A shop in Hogsmeade that is mercifully open."
+    },
+    {
+      "name": "zokno's joke shop",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A shop in Hogsmeade that has been boarded up."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "sensor",
+      "relationship_type": "affected_by",
+      "description": "Harry's cheek was affected by the Sensor."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "hogsmeade",
+      "relationship_type": "traveling_to",
+      "description": "Harry is walking to Hogsmeade with Ron and Hermione."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "honeydukes",
+      "relationship_type": "pointed_at",
+      "description": "Ron pointed at Honeydukes with his gloved hand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "honeydukes",
+      "relationship_type": "entered",
+      "description": "Harry and Hermione entered the crowded shop of Honeydukes in Ron's wake."
+    }
+  ]
+}

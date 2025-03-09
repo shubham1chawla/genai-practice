@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, a wizard who is unsure if a shard of mirror has been moved."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A friend of Harry's who is screaming in distress upstairs."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's other friend who is bellowing for Hermione."
+    },
+    {
+      "name": "bellatrix",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A villainous character who is accusing Harry and his friends of stealing from her vault."
+    },
+    {
+      "name": "lucius",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bellatrix's father, who suggests that a goblin can determine if the sword is real or not."
+    },
+    {
+      "name": "draco",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Lucius's son, who is tasked with fetching the goblin."
+    },
+    {
+      "name": "griphook",
+      "entity_type": "goblin",
+      "singular": true,
+      "description": "A goblin who lives in the cellar and may be able to determine if the sword is real or not."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "friendship",
+      "description": "Harry and Hermione are friends, as evidenced by their conversation in the story."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "lucius",
+      "relationship_type": "parent_child",
+      "description": "Bellatrix is Lucius's daughter, as mentioned in the story."
+    },
+    {
+      "entity_1": "draco",
+      "entity_2": "griphook",
+      "relationship_type": "interaction",
+      "description": "Draco is tasked with fetching Griphook, indicating that they will interact with each other."
+    },
+    {
+      "entity_1": "bellatrix",
+      "entity_2": "harry",
+      "relationship_type": "accusation",
+      "description": "Bellatrix accuses Harry of stealing from her vault."
+    }
+  ]
+}

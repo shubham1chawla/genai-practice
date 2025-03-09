@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character of the story. He is talking to someone about his experience with the Death Eaters."
+    },
+    {
+      "name": "death eaters",
+      "entity_type": "group",
+      "singular": false,
+      "description": "The Death Eaters are a group of people who are waiting for Harry and his friends. They surround them as soon as they take off."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is the main antagonist of the story. He catches up with Harry and his friends."
+    },
+    {
+      "name": "molly",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Molly is a character who is concerned about Harry's safety. She hugs him and asks if she has any brandy."
+    },
+    {
+      "name": "hagrid",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hagrid is a character who is shaken by the events that have occurred. He asks Molly if she has any brandy for medicinal purposes."
+    },
+    {
+      "name": "ginny",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ginny is a character who provides information to Harry about what happened to Ron and Tonks."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is one of Harry's friends. He missed his Portkey with Tonks."
+    },
+    {
+      "name": "tonks",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Tonks is one of Harry's friends. She missed her Portkey with Ron."
+    },
+    {
+      "name": "portkey",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Portkey is an object that allows people to travel quickly from one place to another."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "death eaters",
+      "relationship_type": "surrounded_by",
+      "description": "Harry and his friends were surrounded by the Death Eaters as soon as they took off."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "harry",
+      "relationship_type": "caught_up_with",
+      "description": "Voldemort caught up with Harry and his friends."
+    },
+    {
+      "entity_1": "molly",
+      "entity_2": "hagrid",
+      "relationship_type": "asked_for_brandy",
+      "description": "Molly asked Hagrid if she had any brandy for medicinal purposes."
+    },
+    {
+      "entity_1": "ginny",
+      "entity_2": "ron",
+      "relationship_type": "missed_portkey_with",
+      "description": "Ginny told Harry that Ron missed his Portkey with Tonks."
+    },
+    {
+      "entity_1": "tonks",
+      "entity_2": "ron",
+      "relationship_type": "missed_portkey_with",
+      "description": "Tonks missed her Portkey with Ron."
+    }
+  ]
+}

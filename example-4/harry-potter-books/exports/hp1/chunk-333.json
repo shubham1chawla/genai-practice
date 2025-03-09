@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "name": "shadows",
+      "entity_type": "plural_entities",
+      "singular": false,
+      "description": "The shadows are watching as the troll emerges into a patch of moonlight. The text describes the shadows as being present and observing the scene."
+    },
+    {
+      "name": "troll",
+      "entity_type": "singular_entity",
+      "singular": true,
+      "description": "The troll is described as a horrible sight, 12 feet tall, with a dull grey skin, lumpy body, small bald head, short thick legs, and flat horny feet. It's also holding a huge wooden club."
+    },
+    {
+      "name": "Harry",
+      "entity_type": "singular_entity",
+      "singular": true,
+      "description": "Harry is described as the one who muttered 'The key's in the lock' and came up with the idea to lock the troll in. He managed to grab the key and slam the door."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "troll",
+      "entity_2": "shadows",
+      "relationship_type": "observed_by",
+      "description": "The shadows are watching as the troll emerges into a patch of moonlight."
+    },
+    {
+      "entity_1": "Harry",
+      "entity_2": "key",
+      "relationship_type": "possesses",
+      "description": "Harry managed to grab the key and slam the door."
+    }
+  ]
+}

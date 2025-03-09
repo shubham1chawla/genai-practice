@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "sweeps",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Sweeps are mentioned as being chained and padlocked to a stout iron peg in the wall behind Umbridge's desk."
+    },
+    {
+      "name": "umbridge",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Umbridge is described as sitting behind her desk, busily scribbling upon some of her pink parchment."
+    },
+    {
+      "name": "argus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Argus is mentioned as being thanked by Umbridge for something."
+    },
+    {
+      "name": "filch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Filch is described as bowing low and exiting backward after speaking with Umbridge."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as sitting in a chair and watching the kittens gamboling around Umbridge's head."
+    },
+    {
+      "name": "kittens",
+      "entity_type": "animal",
+      "singular": false,
+      "description": "Kittens are described as gamboling around the plates over Umbridge's head."
+    },
+    {
+      "name": "tea",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "Tea is mentioned as one of the options for Harry to drink."
+    },
+    {
+      "name": "coffee",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "Coffee is mentioned as another option for Harry to drink."
+    },
+    {
+      "name": "pumpkin juice",
+      "entity_type": "drink",
+      "singular": true,
+      "description": "Pumpkin juice is mentioned as a third option for Harry to drink."
+    },
+    {
+      "name": "peg",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A peg in the wall behind Umbridge's desk is mentioned as being used to chain and padlock the sweeps."
+    },
+    {
+      "name": "desk",
+      "entity_type": "furniture",
+      "singular": true,
+      "description": "Umbridge's desk is described as being behind which the sweeps are chained and padlocked."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "umbridge",
+      "entity_2": "argus",
+      "relationship_type": "thanked_by",
+      "description": "Umbridge thanked Argus for something."
+    },
+    {
+      "entity_1": "filch",
+      "entity_2": "umbridge",
+      "relationship_type": "spoke_to",
+      "description": "Filch spoke to Umbridge before exiting backward."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "umbridge",
+      "relationship_type": "interacted_with",
+      "description": "Harry interacted with Umbridge by sitting in a chair and watching the kittens gamboling around her head."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "tea",
+      "relationship_type": "option_to_drink",
+      "description": "Tea was one of the options for Harry to drink."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "coffee",
+      "relationship_type": "option_to_drink",
+      "description": "Coffee was another option for Harry to drink."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "pumpkin juice",
+      "relationship_type": "option_to_drink",
+      "description": "Pumpkin juice was a third option for Harry to drink."
+    },
+    {
+      "entity_1": "umbridge",
+      "entity_2": "peg",
+      "relationship_type": "used_with",
+      "description": "Umbridge used the peg in the wall behind her desk to chain and padlock the sweeps."
+    }
+  ]
+}

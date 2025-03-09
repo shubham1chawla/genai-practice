@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character, who is trying to repair his wand."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as having said that the damage was too severe to be repaired."
+    },
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster, who is watching Harry with affection and admiration."
+    },
+    {
+      "name": "ignotus",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person mentioned as having died a natural death, which would break the power of the Elder Wand."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The powerful wand that Harry is trying to repair and return to its rightful place."
+    },
+    {
+      "name": "harry's wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Harry's broken wand, which he is trying to repair with the help of the Elder Wand."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "elder wand",
+      "relationship_type": "used_for_repair",
+      "description": "Harry used the Elder Wand to repair his broken wand."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "communicated_with",
+      "description": "Harry communicated with Dumbledore, telling him that he was putting the Elder Wand back where it came from."
+    },
+    {
+      "entity_1": "ignotus",
+      "entity_2": "elder wand",
+      "relationship_type": "affected_by_death",
+      "description": "Ignotus's natural death would break the power of the Elder Wand."
+    }
+  ]
+}

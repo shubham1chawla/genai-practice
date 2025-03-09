@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "fr ed",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Fr ed is taking orders from Gryffindors. He is mentioned as 'who was taking orders'."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is the one who wants to add her name to the waiting list and is asked by Fr ed for payment."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Gryffindors are a group of students clamoring for orders from Fr ed."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is sitting at the table with Ron and Hermione, staring at their schoolbags."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is sitting at the table with Harry and Hermione, staring at their schoolbags."
+    },
+    {
+      "name": "weasley",
+      "entity_type": "family",
+      "singular": false,
+      "description": "A silver-tailed Weasley rocket zoomed past the window."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "fr ed",
+      "entity_2": "gryffindors",
+      "relationship_type": "serves",
+      "description": "Fr ed is taking orders from Gryffindors."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "fr ed",
+      "relationship_type": "customer",
+      "description": "Hermione wants to add her name to the waiting list and is asked by Fr ed for payment."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "ron",
+      "relationship_type": "friend",
+      "description": "Harry, Ron, and Hermione are sitting together at the table."
+    }
+  ]
+}

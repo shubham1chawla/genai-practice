@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "crabbe",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Crabbe is mentioned as one of the students who followed Harry and Goyle."
+    },
+    {
+      "name": "goyle",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Goyle is mentioned as one of the students who followed Harry and Crabbe."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as the student who said 'Just looking' and then walked away with Crabbe and Goyle."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is mentioned as one of the students who hurried down the front steps into the grounds along with Harry and the other Gryffindors."
+    },
+    {
+      "name": "gryffindors",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Gryffindors are mentioned as a group of students who hurried down the front steps into the grounds."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "crabbe",
+      "relationship_type": "followed_by",
+      "description": "Harry was followed by Crabbe and Goyle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "goyle",
+      "relationship_type": "followed_by",
+      "description": "Harry was followed by Crabbe and Goyle."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "gryffindors",
+      "relationship_type": "part_of",
+      "description": "Ron is part of the group of Gryffindors who hurried down the front steps into the grounds."
+    }
+  ]
+}

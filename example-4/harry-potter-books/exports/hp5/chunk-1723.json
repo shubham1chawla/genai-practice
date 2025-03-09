@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "death eater",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Death Eater is described as a person who is wearing a mask, but it slips so that he cannot see. He has a wand and is trying to cast a spell."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is described as ducking down behind another desk to avoid the Death Eater's spell. He is with Hermione and they are trying to catch up with the Death Eater."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is described as catching up with Harry and shouting 'STUPEFY!' to cast a spell on the Death Eater."
+    },
+    {
+      "name": "bell jar",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The bell jar is described as glittering and being next to the Death Eater. Harry expects it to make a clunk sound when the Death Eater hits it."
+    },
+    {
+      "name": "glass-fronted cabinet",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The glass-fronted cabinet is described as being on the wall and containing variously shaped hour-glasses. It falls to the floor, bursts apart, and then mends itself before falling down again."
+    },
+    {
+      "name": "hour-glasses",
+      "entity_type": "object",
+      "singular": false,
+      "description": "The hour-glasses are described as being in the glass-fronted cabinet. They are variously shaped."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "death eater",
+      "entity_2": "harry",
+      "relationship_type": "target_of_spell",
+      "description": "The Death Eater is trying to cast a spell on Harry, but Hermione intervenes and casts a spell that hits the Death Eater instead."
+    },
+    {
+      "entity_1": "death eater",
+      "entity_2": "bell jar",
+      "relationship_type": "target_of_impact",
+      "description": "The Death Eater is expected to hit the bell jar, but it does not make a clunk sound because the Death Eater collapses backward instead."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "death eater",
+      "relationship_type": "avoider_of_spell",
+      "description": "Harry ducks down behind another desk to avoid the Death Eater's spell."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "death eater",
+      "relationship_type": "caster_of_spell",
+      "description": "Hermione casts a spell on the Death Eater, shouting 'STUPEFY!'"
+    }
+  ]
+}

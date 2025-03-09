@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is describing a dream to someone in a breezy courtyard."
+    },
+    {
+      "name": "fred and george",
+      "entity_type": "people",
+      "singular": false,
+      "description": "Fred and George are headless and selling their magical hats from under their cloaks on the other side of the yard."
+    },
+    {
+      "name": "bode",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Bode tried to steal a weapon that had defensive spells on it."
+    },
+    {
+      "name": "st mungo's",
+      "entity_type": "hospital",
+      "singular": false,
+      "description": "The Healer told Harry and the person he was talking to that Bode was recovering in St. Mungo's."
+    },
+    {
+      "name": "the healer",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The Healer is a medical professional who treated Bode at St. Mungo's."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "fred and george",
+      "relationship_type": "gaze",
+      "description": "Harry was looking at Fred and George when he told the person about his dream."
+    },
+    {
+      "entity_1": "bode",
+      "entity_2": "the weapon",
+      "relationship_type": "touched",
+      "description": "Bode tried to steal a weapon that had defensive spells on it."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "st mungo's",
+      "relationship_type": "visited",
+      "description": "Harry and the person he was talking to visited St. Mungo's where Bode was recovering."
+    },
+    {
+      "entity_1": "bode",
+      "entity_2": "the healer",
+      "relationship_type": "treated by",
+      "description": "The Healer treated Bode at St. Mungo's."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "the person he was talking to",
+      "relationship_type": "talked to",
+      "description": "Harry told the person about his dream in a breezy courtyard."
+    }
+  ]
+}

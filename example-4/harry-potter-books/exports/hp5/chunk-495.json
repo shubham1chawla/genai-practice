@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is the Potions master who is known for maintaining silence in his class. He reminds the students that they will be taking an important examination next June and expects them to achieve at least an 'Acceptable' grade in their O.W.L. (see line 1-5)."
+    },
+    {
+      "name": "neville",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Neville is a student who is being singled out by Snape's gaze, indicating that he may be struggling or not meeting expectations (see line 6-7)."
+    },
+    {
+      "name": "o.w.l.",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "O.W.L. stands for Ordinary Wizarding Level and is an important examination that the students will be taking next June (see line 4-5)."
+    },
+    {
+      "name": "n.e.w.t.",
+      "entity_type": "exam",
+      "singular": true,
+      "description": "N.E.W.T. stands for Nastily Exhausting Wizarding Test and is an advanced examination that the best students will be taking (see line 9-10)."
+    },
+    {
+      "name": "potions class",
+      "entity_type": "class",
+      "singular": true,
+      "description": "Potions class is a subject taught by Snape, which is considered challenging and only the best students are selected to continue studying it (see line 9-10)."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "o.w.l.",
+      "relationship_type": "expectation",
+      "description": "Snape expects the students to achieve at least an 'Acceptable' grade in their O.W.L. (see line 4-5)."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "neville",
+      "relationship_type": "gaze",
+      "description": "Snape's gaze lingers on Neville, indicating that he may be struggling or not meeting expectations (see line 6-7)."
+    },
+    {
+      "entity_1": "snape",
+      "entity_2": "potions class",
+      "relationship_type": "teacher_student",
+      "description": "Snape is the teacher of Potions class, which he selects only the best students to continue studying (see line 9-10)."
+    },
+    {
+      "entity_1": "neville",
+      "entity_2": "snape",
+      "relationship_type": "target",
+      "description": "Neville is being singled out by Snape's gaze, indicating that he may be struggling or not meeting expectations (see line 6-7)."
+    }
+  ]
+}

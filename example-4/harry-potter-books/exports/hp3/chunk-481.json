@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is the main character who is being questioned by Snape. He is described as 'Cold with dread' and trying to keep his face impassive."
+    },
+    {
+      "name": "snape",
+      "entity_type": "teacher",
+      "singular": true,
+      "description": "Snape is a teacher at Hogwarts who is suspicious of Harry's actions. He is described as having 'long nostrils quivering'."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron is Harry's friend who gave him the Zonko's tricks and Marauder's Map."
+    },
+    {
+      "name": "zokno's bag",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Zonko's bag is a collection of tricks that Ron brought back from Hogsmeade. It is described as being picked up by Snape."
+    },
+    {
+      "name": "marauder's map",
+      "entity_type": "object",
+      "singular": true,
+      "description": "The Marauder's Map is an object that Harry pulled out of his pocket. It is described as being picked up by Snape and suspected to be a letter written in invisible ink."
+    },
+    {
+      "name": "hogsmeade",
+      "entity_type": "location",
+      "singular": false,
+      "description": "Hogsmeade is a location where Ron brought back the Zonko's tricks from."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "snape",
+      "entity_2": "zokno's bag",
+      "relationship_type": "has",
+      "description": "Snape picked up the Zonko's bag."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "marauder's map",
+      "relationship_type": "possesses",
+      "description": "Harry pulled out the Marauder's Map from his pocket."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "zokno's bag",
+      "relationship_type": "gave",
+      "description": "Ron gave the Zonko's tricks to Harry."
+    }
+  ]
+}

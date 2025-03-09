@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "harry potter",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, referred to by his name and title."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned in a whisper."
+    },
+    {
+      "name": "malfoy",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A character who is being followed by Harry and his friends."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry's friend, mentioned as being anxious about their situation."
+    },
+    {
+      "name": "knockturn alley",
+      "entity_type": "location",
+      "singular": false,
+      "description": "A side street devoted to the Dark Arts."
+    },
+    {
+      "name": "cloak",
+      "entity_type": "object",
+      "singular": true,
+      "description": "An object used by Harry and his friends for concealment."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry potter",
+      "entity_2": "malfoy",
+      "relationship_type": "following",
+      "description": "Harry is following Malfoy through Knockturn Alley."
+    },
+    {
+      "entity_1": "harry potter",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Harry and Hermione are together in Knockturn Alley, trying to hide from view."
+    },
+    {
+      "entity_1": "ron",
+      "entity_2": "malfoy",
+      "relationship_type": "following",
+      "description": "Ron is also following Malfoy through Knockturn Alley."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "harry potter",
+      "relationship_type": "accompanying",
+      "description": "Hermione and Harry are together in Knockturn Alley, trying to hide from view."
+    }
+  ]
+}

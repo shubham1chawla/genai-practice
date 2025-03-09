@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "armenian warlock",
+      "entity_type": "person",
+      "singular": true,
+      "description": "An ugly old man who saved a village from werewolves."
+    },
+    {
+      "name": "village",
+      "entity_type": "location",
+      "singular": true,
+      "description": "A place that was saved by the Armenian warlock from werewolves."
+    },
+    {
+      "name": "werewolves",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Creatures that attacked a village and were defeated by the Armenian warlock."
+    },
+    {
+      "name": "witch",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A woman who banished the Bandon Banshee and has a hairy chin."
+    },
+    {
+      "name": "bandon banshee",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "A creature that was banished by the witch."
+    },
+    {
+      "name": "lockhart",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A person who is taking credit for others’ work and has a talent for Memory Charms."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "lockhart",
+      "entity_2": "armenian warlock",
+      "relationship_type": "took_credit_from",
+      "description": "Lockhart took credit for the Armenian warlock’s work."
+    },
+    {
+      "entity_1": "lockhart",
+      "entity_2": "witch",
+      "relationship_type": "similar_appearance",
+      "description": "Lockhart and the witch have similar appearances, as both are described as having a hairy chin."
+    }
+  ]
+}

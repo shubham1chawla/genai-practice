@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The main character of the story, mentioned as having used the Room before."
+    },
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A professor who is trying to hide items in the Room but finds someone already there."
+    },
+    {
+      "name": "half-blood prince's book",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A book that Harry had previously hidden in the Room."
+    },
+    {
+      "name": "sherry bottles",
+      "entity_type": "object",
+      "singular": false,
+      "description": "Bottles of sherry found in the Room by Harry."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "half-blood prince's book",
+      "relationship_type": "hid_in",
+      "description": "Harry had previously hidden the Half-Blood Prince's book in the Room."
+    },
+    {
+      "entity_1": "professor trelawney",
+      "entity_2": "sherry bottles",
+      "relationship_type": "tried_to_hide",
+      "description": "Professor Trelawney was trying to hide the sherry bottles in the Room."
+    }
+  ]
+}

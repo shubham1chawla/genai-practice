@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "dumbledore",
+      "entity_type": "person",
+      "singular": true,
+      "description": "The headmaster of Hogwarts School of Witchcraft and Wizardry. He is described as sounding exhausted when Harry knocks on the door."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A student at Hogwarts School of Witchcraft and Wizardry. He has a memory from Slughorn that he wants to share with Dumbledore."
+    },
+    {
+      "name": "slughorn",
+      "entity_type": "person",
+      "singular": true,
+      "description": "A teacher at Hogwarts School of Witchcraft and Wizardry. Harry has obtained a memory from him that he wants to share with Dumbledore."
+    },
+    {
+      "name": "gargoyle",
+      "entity_type": "object",
+      "singular": true,
+      "description": "A gargoyle that guards the entrance to Dumbledore's office. It leaps aside when Harry enters."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "dumbledore",
+      "relationship_type": "visited",
+      "description": "Harry visits Dumbledore in his office, as evidenced by the fact that he knocks on the door and is let in by the gargoyle."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "slughorn",
+      "relationship_type": "obtained_memory_from",
+      "description": "Harry has obtained a memory from Slughorn, which he wants to share with Dumbledore."
+    },
+    {
+      "entity_1": "dumbledore",
+      "entity_2": "gargoyle",
+      "relationship_type": "guarded_by",
+      "description": "The gargoyle guards the entrance to Dumbledore's office."
+    }
+  ]
+}

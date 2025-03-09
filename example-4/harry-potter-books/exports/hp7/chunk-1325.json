@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "snape",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Snape is described as losing color on his face and having black eyes that widened when the snake's fangs pierced his neck."
+    },
+    {
+      "name": "voldemort",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Voldemort is described as coldly saying 'I regret it' after killing Snape."
+    },
+    {
+      "name": "snake",
+      "entity_type": "animal",
+      "singular": true,
+      "description": "The snake's fangs pierced Snape's neck."
+    },
+    {
+      "name": "elder wand",
+      "entity_type": "object",
+      "singular": true,
+      "description": "Voldemort used the Elder Wand to take charge and make it do his full bidding."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "voldemort",
+      "entity_2": "snape",
+      "relationship_type": "killed_by",
+      "description": "Voldemort killed Snape with the snake's fangs."
+    },
+    {
+      "entity_1": "voldemort",
+      "entity_2": "elder wand",
+      "relationship_type": "used",
+      "description": "Voldemort used the Elder Wand to take charge and make it do his full bidding."
+    }
+  ]
+}

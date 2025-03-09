@@ -1,0 +1,42 @@
+{
+  "entities": [
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is mentioned as being left alone with Hermione."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is mentioned as leaving Harry and going after someone."
+    },
+    {
+      "name": "minister of magic",
+      "entity_type": "position",
+      "singular": true,
+      "description": "The Minister of Magic is mentioned in a conversation about levels."
+    },
+    {
+      "name": "support staff",
+      "entity_type": "group",
+      "singular": false,
+      "description": "Support Staff is mentioned as being part of the Ministry of Magic."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "hermione",
+      "relationship_type": "accompanying",
+      "description": "Hermione leaves Harry alone."
+    },
+    {
+      "entity_1": "hermione",
+      "entity_2": "minister of magic",
+      "relationship_type": "mentioned_in_conversation",
+      "description": "Hermione is mentioned in a conversation with the Minister of Magic."
+    }
+  ]
+}

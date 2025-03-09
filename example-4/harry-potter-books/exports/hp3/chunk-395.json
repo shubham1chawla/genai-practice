@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "professor trelawney",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Trelawney is teaching palmistry to Harry. She informs him that he has the shortest life line she has ever seen."
+    },
+    {
+      "name": "harry",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Harry is eager to start his anti-dementor lessons and reminds Professor Lupin of his promise at the end of class."
+    },
+    {
+      "name": "professor lupin",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Professor Lupin agrees to help Harry with his anti-dementor lessons and suggests a time and place for their practice."
+    },
+    {
+      "name": "ron",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Ron comments on Professor Lupin's appearance, saying he still looks ill."
+    },
+    {
+      "name": "hermione",
+      "entity_type": "person",
+      "singular": true,
+      "description": "Hermione is sitting at the feet of a suit and appears to be impatient."
+    },
+    {
+      "name": "history of magic classroom",
+      "entity_type": "location",
+      "singular": true,
+      "description": "The History of Magic classroom is suggested as a suitable place for Harry's anti-dementor lessons."
+    },
+    {
+      "name": "dementors",
+      "entity_type": "monster",
+      "singular": false,
+      "description": "Dementors are mentioned as creatures that Harry and Professor Lupin will be practicing against."
+    }
+  ],
+  "relationships": [
+    {
+      "entity_1": "harry",
+      "entity_2": "professor trelawney",
+      "relationship_type": "has_life_line",
+      "description": "Professor Trelawney informs Harry that he has the shortest life line she has ever seen."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "professor lupin",
+      "relationship_type": "practices_with",
+      "description": "Harry reminds Professor Lupin of his promise to help him with anti-dementor lessons."
+    },
+    {
+      "entity_1": "professor lupin",
+      "entity_2": "history of magic classroom",
+      "relationship_type": "will_practice_in",
+      "description": "Professor Lupin suggests the History of Magic classroom as a suitable place for their practice."
+    },
+    {
+      "entity_1": "harry",
+      "entity_2": "dementors",
+      "relationship_type": "practices_against",
+      "description": "Harry and Professor Lupin will be practicing against dementors."
+    }
+  ]
+}
