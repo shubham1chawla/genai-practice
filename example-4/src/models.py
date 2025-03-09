@@ -279,6 +279,7 @@ class BuildDatabaseAgentState(TypedDict):
 
 class ExportDirectoryMetdata(BaseModel):
     class Book(BaseModel):
+        name: str
         url: str
         start_page: int
         end_page: int
@@ -294,6 +295,7 @@ class ExportDirectoryMetdata(BaseModel):
         books: dict[str, ExportDirectoryMetdata.Book] = dict()
         for book in state['books']:
             books[book.id] = {
+                'name': book.name,
                 'url': book.url,
                 'start_page': book.start_page,
                 'end_page': book.end_page,

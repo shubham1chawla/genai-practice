@@ -102,6 +102,7 @@ def validate_export_metadata(state: BuildDatabaseAgentState):
 
         # Matching fields
         fields = {
+            'name': (book_metadata.name, book.name, False),
             'url': (book_metadata.url, book.url, False),
             'start_page': (book_metadata.start_page, book.start_page, False),
             'end_page': (book_metadata.end_page, book.end_page, False),

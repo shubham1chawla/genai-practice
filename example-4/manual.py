@@ -1,6 +1,9 @@
-from langchain_ollama import ChatOllama
+#!../.venv/bin/python
+
+
 from langchain.output_parsers.fix import OutputFixingParser
 from langchain.output_parsers.pydantic import PydanticOutputParser
+from langchain_ollama import ChatOllama
 
 from src import prompts
 from src.models import ExtractableEntitiesRelationships
