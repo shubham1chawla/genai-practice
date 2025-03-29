@@ -93,7 +93,7 @@ RETURN e1, e2, apoc.create.vRelationship(e1, 'RELATES_TO', {descriptions: descri
 
 ![harry-professors](./screenshots/harry-professors.png)
 
-**Find all entities related to location Privent Drive in Harry Potter and the Philosopher's Stone**
+**Find all entities related to the location Privet Drive in Harry Potter and the Philosopher's Stone**
 
 ```cypher
 MATCH (b:Book)-[:mentioned_in]-(d1)-[]-(e1:Entity), (e1:Entity)-[]-(d2)-[]-(e2:Entity)
