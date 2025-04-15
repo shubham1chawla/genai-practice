@@ -12,6 +12,7 @@ This repository contains several examples that showcase different aspects of wor
 - **Example 3**: Advanced RAG application using Harry Potter books, featuring stateful applications with Langgraph
 - **Example 4**: Knowledge Graph generator using Harry Potter books, featuring graph database Neo4j (Check example-4's [README](./example-4/README.md))
 - **Example 5**: Basic ReAct agent using legacy `AgentExecutor` and langgraph-based implementation
+- **Example 6**: Knowledge GraphRAG ReAct agent using Harry Potter books, featuring graph database Neo4j (Check example-6's [README](./example-6/README.md))
 
 ## Prerequisites
 
@@ -48,7 +49,8 @@ This repository contains several examples that showcase different aspects of wor
 ├── example-2/  # Recipe Generation RAG
 ├── example-3/  # Harry Potter RAG with Langgraph
 ├── example-4/  # Knowledge Graph Builder with Neo4j
-└── example-5/  # Basic ReAct agent implementation
+├── example-5/  # Basic ReAct agent implementation
+└── example-6/  # Knowledge GraphRAG ReAct agent implementation
 ```
 
 ## Usage
