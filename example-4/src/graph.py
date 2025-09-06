@@ -12,7 +12,7 @@ from langchain_core.documents import Document
 from langchain_ollama import ChatOllama
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langgraph.graph import StateGraph, START, END
-from langgraph.graph.graph import CompiledGraph
+from langgraph.graph.state import CompiledStateGraph
 from neo4j import GraphDatabase, ManagedTransaction, ResultSummary
 
 from src import prompts
@@ -374,7 +374,7 @@ def post_cyphers(state: BuildDatabaseAgentState):
     driver.close()
 
 
-def build_graph() -> CompiledGraph:
+def build_graph() -> CompiledStateGraph:
     logger.info(f'Building {BuildDatabaseAgentState.__name__} graph...')
     graph = StateGraph(BuildDatabaseAgentState)
 

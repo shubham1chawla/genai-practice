@@ -11,7 +11,7 @@ logger = logging.getLogger()
 
 import os
 
-MODEL_NAME = "llama3.2:3b"
+MODEL_NAME = "llama3.1:8b"
 COLLECTION_NAME = "example-2"
 VECTOR_STORE_DIR = os.path.join(os.path.dirname(__file__), "./db")
 CHUNK_SIZE = 200

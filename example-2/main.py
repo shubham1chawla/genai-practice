@@ -6,12 +6,12 @@ from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
 from langgraph.graph import START, StateGraph
-from langgraph.graph.graph import CompiledGraph
+from langgraph.graph.state import CompiledStateGraph
 from typing_extensions import List, TypedDict
 
 import os
 
-MODEL_NAME = "llama3.2:3b"
+MODEL_NAME = "llama3.1:8b"
 COLLECTION_NAME = "example-2"
 VECTOR_STORE_DIR = os.path.join(os.path.dirname(__file__), "./db")
 
@@ -101,7 +101,7 @@ def generate(state: State):
     }
 
 
-def build_graph() -> CompiledGraph:
+def build_graph() -> CompiledStateGraph:
     graph_builder = StateGraph(State).add_sequence([retrieve, generate])
     graph_builder.add_edge(START, "retrieve")
     return graph_builder.compile()

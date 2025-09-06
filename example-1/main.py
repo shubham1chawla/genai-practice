@@ -10,7 +10,7 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
-MODEL_NAME = "llama3.2:3b"
+MODEL_NAME = "llama3.1:8b"
 COLLECTION_NAME = "example-1"
 
 def add_documents(vector_store: Chroma):

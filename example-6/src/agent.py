@@ -2,7 +2,7 @@ import logging
 
 from langchain.tools import tool
 from langchain_ollama import ChatOllama
-from langgraph.graph.graph import CompiledGraph
+from langgraph.graph.state import CompiledStateGraph
 from langgraph.prebuilt import create_react_agent
 from neo4j.graph import Node, Relationship
 
@@ -233,9 +233,9 @@ def get_relationships_by_query(entity1_query: str, entity2_query: str) -> str:
     """
 
 
-def build_agent(llm: ChatOllama) -> CompiledGraph:
+def build_agent(llm: ChatOllama) -> CompiledStateGraph:
     return create_react_agent(llm, tools=[
         get_books_by_query,
         get_entities_by_query,
         get_relationships_by_query,
-    ], state_modifier=prompts.AGENT_SYSTEM_MESSAGE)
+    ], prompt=prompts.AGENT_SYSTEM_MESSAGE)

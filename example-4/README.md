@@ -1,7 +1,6 @@
 # Book Knowledge Graph Generator
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![Poetry](https://img.shields.io/badge/poetry-dependency%20manager-blue)](https://python-poetry.org/)
 [![Neo4j](https://img.shields.io/badge/neo4j-database-green)](https://neo4j.com/)
 [![Langchain](https://img.shields.io/badge/langchain-framework-orange)](https://www.langchain.com/)
 [![Langgraph](https://img.shields.io/badge/langgraph-engine-orange)](https://github.com/langchain-ai/langgraph)
@@ -16,24 +15,27 @@ This project extracts entities (characters, objects, locations) and their relati
 ## 🔧 Prerequisites
 
 - Python 3.12+
-- Poetry for dependency management
+- uv for dependency management
 - Docker and Docker Compose for Neo4j
 - Ollama with llama3.1:8b model (You can use any Ollama model of your choice)
 
 ## 🚀 Installation
 
 1. Clone the repository:
+
    ```bash
    git clone git@github.com:shubham1chawla/genai-practice.git
-   cd genai-practice/example-4/
+   cd genai-practice/
    ```
 
-2. Install dependencies using Poetry:
+2. Install dependencies using uv:
+
    ```bash
-   poetry install
+   uv sync --locked
    ```
 
 3. Pull the Llama3.1:8b model via Ollama:
+
    ```bash
    ollama pull llama3.1:8b
    ```
@@ -41,13 +43,15 @@ This project extracts entities (characters, objects, locations) and their relati
 4. Create `.env` file with your Neo4j password. Look at `.env.example` file.
 
 5. Start the Neo4j database:
+
    ```bash
-   docker compose up -d
+   docker compose up -f example-4/docker-compose.yml -d
    ```
 
 ## 🏗️ Usage
 
 1. Configure your books in the `books.json` configuration file:
+
    ```json
    [
        {
@@ -68,9 +72,9 @@ This project extracts entities (characters, objects, locations) and their relati
 2. Configure the build properties in [`build.py`](./build.py).
 
 3. Run the build script to generate the knowledge graph:
+
    ```bash
-   poetry shell
-   python build.py
+   uv run example-4/build.py
    ```
 
 4. View the generated knowledge graph in the Neo4j browser:

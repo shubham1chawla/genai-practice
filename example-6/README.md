@@ -1,7 +1,6 @@
 # Book Knowledge GraphRAG Agent
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![Poetry](https://img.shields.io/badge/poetry-dependency%20manager-blue)](https://python-poetry.org/)
 [![Neo4j](https://img.shields.io/badge/neo4j-database-green)](https://neo4j.com/)
 [![Langchain](https://img.shields.io/badge/langchain-framework-orange)](https://www.langchain.com/)
 [![Langgraph](https://img.shields.io/badge/langgraph-engine-orange)](https://github.com/langchain-ai/langgraph)
@@ -16,7 +15,7 @@ This project implements the RAG (Retrieval Augmented Generation) component of Gr
 ## 🔧 Prerequisites
 
 - Python 3.12+
-- Poetry for dependency management
+- uv for dependency management
 - Docker and Docker Compose for Neo4j
 - Ollama with llama3.1:8b model
 - A populated Neo4j database from the [Book Knowledge Graph Generator](../example-4)
@@ -26,15 +25,17 @@ This project implements the RAG (Retrieval Augmented Generation) component of Gr
 1. Clone the repository:
    ```bash
    git clone git@github.com:shubham1chawla/genai-practice.git
-   cd genai-practice/example-6/
+   cd genai-practice/
    ```
 
-2. Install dependencies using Poetry:
+2. Install dependencies using uv:
+
    ```bash
-   poetry install
+   uv sync --locked
    ```
 
 3. Pull the Llama3.1:8b model via Ollama:
+
    ```bash
    ollama pull llama3.1:8b
    ```
@@ -42,9 +43,9 @@ This project implements the RAG (Retrieval Augmented Generation) component of Gr
 4. Create `.env` file with your Neo4j password. Look at `.env.example` file.
 
 5. Ensure the Neo4j database is running:
+
    ```bash
-   cd ../example-4/
-   docker compose up -d
+   docker compose -f example-4/docker-compose.yml up -d
    ```
    
 6. Generate the Neo4j database with Harry Potter. Check [Book Knowledge Graph Generator](../example-4) for instructions.
@@ -56,7 +57,7 @@ This project implements the RAG (Retrieval Augmented Generation) component of Gr
 To run the _Streamlit_ application -
 
 ```bash
-poetry shell
+source .venv/bin/activate
 streamlit run app.py
 ```
 

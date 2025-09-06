@@ -6,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
 from langchain.output_parsers.fix import OutputFixingParser
 from langgraph.graph import StateGraph, START, END
-from langgraph.graph.graph import CompiledGraph
+from langgraph.graph.state import CompiledStateGraph
 from typing_extensions import List, TypedDict, Optional
 from pydantic import BaseModel, Field
 
@@ -289,7 +289,7 @@ def generate(state: State):
     }
 
 
-def build_graph() -> CompiledGraph:
+def build_graph() -> CompiledStateGraph:
     graph_builder = StateGraph(State)
 
     # Adding nodes to the graph

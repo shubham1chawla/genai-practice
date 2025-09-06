@@ -17,17 +17,14 @@ This repository contains several examples that showcase different aspects of wor
 ## Prerequisites
 
 - Python 3.12 or higher
-- Poetry (Python package manager)
+- uv (Python package manager)
 - Ollama
 
 ## Installation
 
 1. First, install Ollama by following the instructions for your operating system. Visit [Ollama's official website](https://ollama.ai/download) for Windows installation instructions.
 
-2. Install Poetry if you haven't already:
-   ```bash
-   curl -sSL https://install.python-poetry.org | python3 -
-   ```
+2. Install uv if you haven't already. If not, refer to the [installation page](https://docs.astral.sh/uv/getting-started/installation/).
 
 3. Clone this repository:
    ```bash
@@ -35,9 +32,10 @@ This repository contains several examples that showcase different aspects of wor
    cd genai-practice
    ```
 
-4. Install project dependencies using Poetry:
+4. Install project dependencies using uv:
+   
    ```bash
-   poetry install
+   uv sync --locked
    ```
 
 ## Project Structure
@@ -60,20 +58,14 @@ This repository contains several examples that showcase different aspects of wor
    ollama serve
    ```
 
-2. Pull the required model (e.g., llama2):
+2. Pull the required model (e.g., llama3):
    ```bash
-   ollama pull llama2
+   ollama pull llama3.1:8b
    ```
 
-3. Activate the Poetry virtual environment:
+3. Run the Python scripts:
    ```bash
-   poetry shell
-   ```
-
-4. Navigate to any example directory and run the Python scripts:
-   ```bash
-   cd example-0
-   python main.py
+   uv run example-0/main.py
    ```
 
 ## Contributing
