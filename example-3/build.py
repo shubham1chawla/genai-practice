@@ -1,24 +1,24 @@
 #!.venv/bin/python
 
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
-
-from uuid import uuid4
+from collections import deque
 from concurrent.futures import ThreadPoolExecutor
 from time import time
-from collections import deque
+from uuid import uuid4
 
-import constants
-from books import Book
-from db import create_vector_store
-from logger import logger
+from langchain_chroma import Chroma
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+from src import constants
+from src.books import Book
+from src.db import create_vector_store
+from src.logger import logger
 
 
 def get_pdf_loader(url: str) -> PyPDFLoader:
     return PyPDFLoader(
-        file_path = url,
-        headers = {"User-Agent": "Mozilla/5.0"}
+        file_path=url,
+        headers={"User-Agent": "Mozilla/5.0"}
         # password = "my-password",
         # extract_images = True,
         # extraction_mode = "plain",
@@ -39,7 +39,7 @@ def populate_vector_store(vector_store: Chroma, book: Book):
 
     # Splitting pages
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=constants.CHUNK_SIZE, 
+        chunk_size=constants.CHUNK_SIZE,
         chunk_overlap=constants.CHUNK_OVERLAP,
     )
     all_splits = text_splitter.split_documents(docs)
@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     # Populating vector store with PDF files' content
     futures = deque()
-    with ThreadPoolExecutor(max_workers = min(constants.MAX_THREADS, len(books))) as executor:
+    with ThreadPoolExecutor(max_workers=min(constants.MAX_THREADS, len(books))) as executor:
         for book in books:
             future = executor.submit(populate_vector_store, vector_store, book)
             futures.append(future)

@@ -1,19 +1,19 @@
 #!.venv/bin/python
 
-from langchain_ollama import ChatOllama
-from langchain_core.documents import Document
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
 from langchain.output_parsers.fix import OutputFixingParser
+from langchain_core.documents import Document
+from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_ollama import ChatOllama
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.state import CompiledStateGraph
-from typing_extensions import List, TypedDict, Optional
 from pydantic import BaseModel, Field
+from typing_extensions import List, TypedDict, Optional
 
-import constants
-from books import Book
-from db import create_vector_store
-from logger import logger, loggraph
+from src import constants
+from src.books import Book
+from src.db import create_vector_store
+from src.logger import logger, loggraph
 
 
 class State(TypedDict):
@@ -22,7 +22,7 @@ class State(TypedDict):
     relevant_books: List[Book]
     context: List[Document]
     answer: str
-    sources: List[str]
+    sources: List[Document]
     refine_notes: Optional[str]
     refine_count: int
 
@@ -104,11 +104,11 @@ def rephrase(state: State):
 @loggraph
 def retrieve(state: State):
     search_kwargs = {
-        "k": constants.K_VALUE, 
+        "k": constants.K_VALUE,
     }
 
     # Adding relevant books to filter
-    if relevant_books:= state.get("relevant_books", []):
+    if relevant_books := state.get("relevant_books", []):
         search_kwargs.update({
             "filter": {
                 "book.id": {
@@ -119,7 +119,7 @@ def retrieve(state: State):
 
     # Creating retriever for fetching documents
     retriever = vector_store.as_retriever(
-        search_type="mmr", 
+        search_type="mmr",
         search_kwargs=search_kwargs
     )
 
@@ -224,7 +224,7 @@ def review(state: State):
     if response.approved:
         logger.info("No need to refine prompts, proceeding to generate answer...")
         return "generate"
-    
+
     logger.info("Required additional context, refining prompts to fetch more documents...")
     return "refine"
 
@@ -347,7 +347,7 @@ if __name__ == "__main__":
         "question": "what did ollivander tell harry about his wand in the 1st book?",
         "refine_count": constants.REFINE_COUNT,
     })
-    
+
     print()
     print(result["answer"])
     print("\nSouces:")
