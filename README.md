@@ -13,6 +13,7 @@ This repository contains several examples that showcase different aspects of wor
 - **Example 4**: Knowledge Graph generator using Harry Potter books, featuring graph database Neo4j (Check example-4's [README](./example-4/README.md))
 - **Example 5**: Basic ReAct agent using legacy `AgentExecutor` and langgraph-based implementation
 - **Example 6**: Knowledge GraphRAG ReAct agent using Harry Potter books, featuring graph database Neo4j (Check example-6's [README](./example-6/README.md))
+- **Example 7**: Basic RAG implementation using `llama-index` - compared performance of `llama3.1:8b`'s 4-bit Medium Quantization with 2-bit Quantization when using `QuestionsAnsweredExtractor`
 
 ## Prerequisites
 
@@ -48,7 +49,8 @@ This repository contains several examples that showcase different aspects of wor
 ├── example-3/  # Harry Potter RAG with Langgraph
 ├── example-4/  # Knowledge Graph Builder with Neo4j
 ├── example-5/  # Basic ReAct agent implementation
-└── example-6/  # Knowledge GraphRAG ReAct agent implementation
+├── example-6/  # Knowledge GraphRAG ReAct agent implementation
+└── example-7/  # Basic RAG using llama-index (using QuestionsAnsweredExtractor)
 ```
 
 ## Usage
@@ -58,7 +60,7 @@ This repository contains several examples that showcase different aspects of wor
    ollama serve
    ```
 
-2. Pull the required model (e.g., llama3):
+2. Pull the required model (e.g., llama3.1:8b):
    ```bash
    ollama pull llama3.1:8b
    ```
